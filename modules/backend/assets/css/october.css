@@ -1186,3 +1186,12 @@ body.outer .layout > .layout-row > .layout-cell .outer-form-container .forgot-pa
 .form-control {
   box-shadow: none;
 }
+
+
+.layout.control-tabs.oc-logo-transparent:not(.has-tabs), .flex-layout-column.oc-logo-transparent:not(.has-tabs), .layout-cell.oc-logo-transparent {
+  background-image: url('../images/cadiz-grey.svg');
+}
+
+.layout.control-tabs.oc-logo-transparent:not(.has-tabs):after, .flex-layout-column.oc-logo-transparent:not(.has-tabs):after, .layout-cell.oc-logo-transparent:after {
+  background: none;
+}
