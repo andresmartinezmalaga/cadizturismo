@@ -19,11 +19,11 @@
                 <!-- *********************************************************************************************************** -->
                 <!-- Andres Martinez ******************************************************************************************* -->
                 <!-- *********************************************************************************************************** -->
-                
+
                 <!-- Logo image ************************************************************************************************ -->
-                <li class="active svg-icon-container svg-active-effects">
+                <li id="icon-container" class="active svg-icon-container svg-active-effects">
                         <!--<a href="">-->
-                            <span class='logomainmenu'>                                                   
+                            <span class='logomainmenu'>
                                 <img class="anagrama" src="<?= config('app.assetBackendUrl').'images/logo.svg' ?>">
                             </span>
                         <!--</a>-->
@@ -39,45 +39,45 @@
                     <!-- *********************************************************************************************************** -->
 
                     <!-- Filter button config only sudo **************************************************************************** -->
-                    <?php if( $item->iconSvg == 'modules/system/assets/images/cog-icon.svg' and $this->user->is_superuser == 1){ ?>  
-                   
+                    <?php if( $item->iconSvg == 'modules/system/assets/images/cog-icon.svg' and $this->user->is_superuser == 1){ ?>
+
                     <li class="<?= $isActive ? 'active' : null ?> svg-icon-container svg-active-effects">
-                        <a href="<?= $item->url ?>">                         
+                        <a href="<?= $item->url ?>">
                             <span class="nav-icon">
                                 <?php if ($item->iconSvg): ?>
                                     <img class="svg-icon" src="<?= URL::asset($item->iconSvg) ?>">
                                 <?php endif ?>
                                 <i class="<?= $item->iconSvg ? 'svg-replace' : null ?> <?= $item->icon ?>"></i>
                             </span>
-                            
+
                             <span class="nav-label">
-                                <?= e(trans($item->label)) ?>                                     
+                                <?= e(trans($item->label)) ?>
                             </span>
                         </a>
                     </li>
-                    
+
                     <?php }elseif ( $item->iconSvg != 'modules/system/assets/images/cog-icon.svg'){?>
-                   
+
                     <li class="<?= $isActive ? 'active' : null ?> svg-icon-container svg-active-effects">
-                        <a href="<?= $item->url ?>">                           
+                        <a href="<?= $item->url ?>">
                             <span class="nav-icon">
                                 <?php if ($item->iconSvg): ?>
                                     <img class="svg-icon" src="<?= URL::asset($item->iconSvg) ?>">
                                 <?php endif ?>
 
-                                <i class="<?= $item->iconSvg ? 'svg-replace' : null ?> <?= $item->icon ?>"></i>                            
+                                <i class="<?= $item->iconSvg ? 'svg-replace' : null ?> <?= $item->icon ?>"></i>
                             </span>
-                            
+
                             <span class="nav-label">
                                 <?= e(trans($item->label)) ?>
                             </span>
                         </a>
                     </li>
                     <?php } ?>
-                
+
                 <!-- *********************************************************************************************************** -->
                 <?php endforeach ?>
-              
+
             </ul>
         </div>
     </div>
