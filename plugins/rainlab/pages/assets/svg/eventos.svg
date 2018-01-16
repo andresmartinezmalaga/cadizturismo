@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="37px" height="37px" viewBox="0 0 37 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="2.3.Dashboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Dashboard" transform="translate(-557.000000, -22.000000)" stroke="#FFFFFF" stroke-width="1.571">
+            <g id="Page-1" transform="translate(557.000000, 22.000000)">
+                <g id="Group-11" transform="translate(0.000000, 0.145300)">
+                    <polyline id="Stroke-1" points="29.2501911 35.209 0.786 35.209 0.786 13.211"></polyline>
+                    <g id="Group-5" transform="translate(35.000000, 13.000000)">
+                        <path d="M0.3547,0.211 L0.3547,15.846" id="Stroke-3"></path>
+                    </g>
+                    <polygon id="Stroke-6" points="0.786 13.211 35.355 13.211 35.355 3.783 0.786 3.783"></polygon>
+                    <path d="M18.07,0.6402 L18.07,6.9262" id="Stroke-8"></path>
+                    <path d="M8.6423,0.6402 L8.6423,6.9262" id="Stroke-9"></path>
+                    <path d="M27.4982,0.6402 L27.4982,6.9262" id="Stroke-10"></path>
+                </g>
+                <path d="M6.675,19.3167 L10.61,19.3167" id="Stroke-12"></path>
+                <path d="M16.1027,19.3167 L20.0377,19.3167" id="Stroke-13"></path>
+                <path d="M25.5305,19.3167 L29.4655,19.3167" id="Stroke-14"></path>
+                <path d="M6.675,24.1536 L10.61,24.1536" id="Stroke-15"></path>
+                <path d="M16.1027,24.1536 L20.0377,24.1536" id="Stroke-16"></path>
+                <path d="M25.5305,24.1536 L29.4655,24.1536" id="Stroke-17"></path>
+                <path d="M6.675,28.991 L10.61,28.991" id="Stroke-18"></path>
+                <path d="M16.1027,28.991 L20.0377,28.991" id="Stroke-19"></path>
+                <polygon id="Stroke-20" points="35.3547 28.991 28.9857 35.36 28.9857 28.991"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

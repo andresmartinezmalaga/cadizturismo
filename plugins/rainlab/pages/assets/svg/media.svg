@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="37px" viewBox="0 0 44 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="2.3.Dashboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Dashboard" transform="translate(-682.000000, -21.000000)" stroke-width="2" stroke="#FFFFFF">
+            <g id="Group-2-Copy" transform="translate(683.000000, 21.000000)">
+                <g id="Page-1">
+                    <g id="Group-4" transform="translate(0.000000, 0.595900)">
+                        <polygon id="Stroke-1" points="0 35 41.05 35 41.05 9.235 0 9.235"></polygon>
+                        <polygon id="Stroke-3" points="26.233 0.4039 5.301 0.4039 3.249 9.2359 28.285 9.2359"></polygon>
+                    </g>
+                    <polygon id="Stroke-5" points="31.334 9.8319 37.801 9.8319 37.801 6.0439 31.334 6.0439"></polygon>
+                    <g id="Group-12" transform="translate(10.000000, 4.595900)">
+                        <path d="M20.2867,18.1178 C20.2867,23.5088 15.9157,27.8798 10.5247,27.8798 C5.1337,27.8798 0.7637,23.5088 0.7637,18.1178 C0.7637,12.7268 5.1337,8.3558 10.5247,8.3558 C15.9157,8.3558 20.2867,12.7268 20.2867,18.1178 Z" id="Stroke-6"></path>
+                        <path d="M16.0372,18.1178 C16.0372,21.1618 13.5692,23.6298 10.5252,23.6298 C7.4812,23.6298 5.0132,21.1618 5.0132,18.1178 C5.0132,15.0738 7.4812,12.6058 10.5252,12.6058 C13.5692,12.6058 16.0372,15.0738 16.0372,18.1178 Z" id="Stroke-8"></path>
+                        <path d="M2.149,0.8199 L9.385,0.8199" id="Stroke-10"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

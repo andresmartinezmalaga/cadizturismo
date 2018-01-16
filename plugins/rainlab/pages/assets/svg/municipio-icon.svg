@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>location-24px-outline-2_m-location</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Evento" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-354.000000, -3478.000000)">
+            <g id="location-24px-outline-2_m-location" transform="translate(355.000000, 3479.901918)">
+                <g id="Group">
+                    <polyline id="Shape" stroke="#4A4A4A" stroke-width="2" points="13.002 19.667 8 18 0 20 0 2 8 0 14 2 22 0 22 7"></polyline>
+                    <path d="M22,13.817 C22,16.183 18,20 18,20 C18,20 14,16.183 14,13.817 C14,11.374 16.08,10 18,10 C19.92,10 22,11.374 22,13.817 Z" id="Shape" stroke="#4A4A4A" stroke-width="2"></path>
+                    <circle id="Oval" fill="#4A4A4A" cx="18" cy="14" r="1"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

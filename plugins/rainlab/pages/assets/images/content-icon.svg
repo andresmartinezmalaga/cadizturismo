@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="37px" height="37px" viewBox="0 0 37 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="2.3.Dashboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Dashboard" transform="translate(-268.000000, -22.000000)" stroke-width="2" stroke="#FFFFFF">
+            <g id="Group-5" transform="translate(269.000000, 23.000000)">
+                <g id="Page-1">
+                    <path d="M11.0356,31.7508 L2.7976,23.9058 L24.9146,1.6768 C27.1506,-0.5592 30.7766,-0.5592 33.0126,1.6768 C35.2486,3.9128 35.2486,7.5388 33.0126,9.7738 L11.0356,31.7508 Z" id="Stroke-1"></path>
+                    <polyline id="Stroke-3" points="2.7973 23.9061 0.0003 34.6891 11.0353 31.7511"></polyline>
+                    <path d="M24.915,1.6771 L33.012,9.7741" id="Stroke-5"></path>
+                    <path d="M1.2738,29.7792 L4.8748,33.4322" id="Stroke-7"></path>
+                    <path d="M28.9799,5.7416 L7.0029,27.7186" id="Stroke-9"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

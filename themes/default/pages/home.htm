@@ -1,0 +1,19 @@
+title = "home"
+url = "/"
+layout = "home"
+is_hidden = 0
+
+[staticExperience]
+==
+
+<?php 
+
+
+?>
+
+==
+
+<h1>Home</h1>
+{% for experience in experiences %}
+    <li>{{ experience }}</li>
+{% endfor %}

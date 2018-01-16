@@ -1,0 +1,23 @@
+{
+    "name": "default",
+    "type": "theme",
+    "description": "Default theme",
+    "keywords": ["default", "cms", "theme"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrés Martínez",
+            "email": "andresmartinezmalaga@gmail.com",
+            "role": "Programmer"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "composer/installers": "~1.0"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}

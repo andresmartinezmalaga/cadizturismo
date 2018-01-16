@@ -1,0 +1,1 @@
+$(".select-days").select2({minimumResultsForSearch:1/0,dropdownCssClass:"dropdown-days"}),$(".select-interests").select2({minimumResultsForSearch:1/0}),$(".select-type").select2({minimumResultsForSearch:1/0});
