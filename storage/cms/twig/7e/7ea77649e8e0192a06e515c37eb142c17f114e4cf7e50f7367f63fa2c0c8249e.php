@@ -16,17 +16,14 @@ class __TwigTemplate_2d0e3ec13ac8068bacf06a6a764d8c43f0bdde585b0f26b41699468dc77
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 1
-        echo "--";
-        echo twig_escape_filter($this->env, ($context["lang"] ?? null), "html", null, true);
-        echo "--
-<!-- HEADER -->
+        echo "<!-- HEADER -->
 <div class=\"header-search search-exp\">
   
   <div class=\"header-container big-div\">
     <div id=\"exp-header\" class=\"header-txt\">
       <p class=\"txt\"><span id=\"exp\" class=\"first-word\">Experiencias</span> pensadas para ti </p>
         <img class=\"brush\" src=\"";
-        // line 8
+        // line 7
         echo url("/");
         echo "/plugins/rainlab/pages/assets/svg/brush-header.svg\" alt=\"\">
     </div>
@@ -37,14 +34,14 @@ class __TwigTemplate_2d0e3ec13ac8068bacf06a6a764d8c43f0bdde585b0f26b41699468dc77
                 <div class=\"days-container\">
                   <select class=\"custom-select select-days\" name=\"days\">
                     ";
-        // line 16
+        // line 15
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable(range(1, 7));
         foreach ($context['_seq'] as $context["_key"] => $context["i"]) {
-            // line 17
+            // line 16
             echo "                      ";
             if (($context["i"] < 2)) {
-                // line 18
+                // line 17
                 echo "                      \t* <option value=\"";
                 echo twig_escape_filter($this->env, $context["i"], "html", null, true);
                 echo "\">";
@@ -54,7 +51,7 @@ class __TwigTemplate_2d0e3ec13ac8068bacf06a6a764d8c43f0bdde585b0f26b41699468dc77
                 echo "</option>
                       ";
             } else {
-                // line 20
+                // line 19
                 echo "\t\t\t\t\t\t* <option value=\"";
                 echo twig_escape_filter($this->env, $context["i"], "html", null, true);
                 echo "\">";
@@ -64,92 +61,92 @@ class __TwigTemplate_2d0e3ec13ac8068bacf06a6a764d8c43f0bdde585b0f26b41699468dc77
                 echo "</option>
                       ";
             }
-            // line 22
+            // line 21
             echo "                    ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['i'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 23
+        // line 22
         echo "                  </select>
                   <span class=\"select-title\">";
-        // line 24
+        // line 23
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), array("TU ESTANCIA"));
         echo "</span>
                 </div>";
-        // line 25
+        // line 24
         $context['__cms_component_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->componentFunction("cadizevent"        , $context['__cms_component_params']        );
         unset($context['__cms_component_params']);
-        // line 26
+        // line 25
         echo "                <div class=\"interests-container\">
                   <select class=\"custom-select select-interests\" name=\"interest\">
                     <option value=\"playa-gastronomia\">";
-        // line 28
+        // line 27
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), array("Playa y gastronomía"));
         echo "</option>
                     <option value=\"cultura-gastronomia\">";
-        // line 29
+        // line 28
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), array("Cultura y gastronomía"));
         echo "</option>
                     <option value=\"fiesta-cultura\">";
-        // line 30
+        // line 29
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), array("Fiesta y cultura"));
         echo "</option>
                     <option value=\"gastronomia-naturaleza\">";
-        // line 31
+        // line 30
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), array("Gastronomía y naturaleza"));
         echo "</option>
                     <option value=\"naturaleza-aventura\">";
-        // line 32
+        // line 31
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), array("Naturaleza y aventura"));
         echo "</option>
                     <option value=\"playa-naturaleza\">";
-        // line 33
+        // line 32
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), array("Playa y naturaleza"));
         echo "</option>
                     <option value=\"vino-tradicion\">";
-        // line 34
+        // line 33
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), array("Vino y tradición"));
         echo "</option>
                     <option value=\"aventura-tradicion\">";
-        // line 35
+        // line 34
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), array("Aventura y tradición"));
         echo "</option>
                   </select>
                   <span class=\"select-title\">";
-        // line 37
+        // line 36
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), array("INTERESES"));
         echo "</span>
                 </div>
                 <div class=\"type-container\">
                   <select class=\"custom-select select-type\" name=\"tvisit\">
                     <option value=\"cadiz-oculta\">";
-        // line 41
+        // line 40
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), array("Cádiz oculta"));
         echo "</option>
                     <option value=\"cadiz-autentica\">";
-        // line 42
+        // line 41
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), array("Cádiz auténtica"));
         echo "</option>
                     <option value=\"cadiz-relax\">";
-        // line 43
+        // line 42
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), array("Cádiz relax"));
         echo "</option>
                     <option value=\"cadiz-urbano\">";
-        // line 44
+        // line 43
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), array("Cádiz urbano"));
         echo "</option>
                   </select>
                   <span class=\"select-title\">";
-        // line 46
+        // line 45
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), array("TIPO DE VISITA"));
         echo "</span>
                 </div>
               </div>
               <div class=\"button-container\">
                 <input type=\"submit\" value=\"";
-        // line 50
+        // line 49
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), array("Ven a Cádiz"));
         echo "\">
 
@@ -163,11 +160,11 @@ class __TwigTemplate_2d0e3ec13ac8068bacf06a6a764d8c43f0bdde585b0f26b41699468dc77
 
 <div id='prtlExperiences' class=\"all-exps\">
 \t";
-        // line 61
+        // line 60
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("experiences"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 62
+        // line 61
         echo "</div>";
     }
 
@@ -183,13 +180,12 @@ class __TwigTemplate_2d0e3ec13ac8068bacf06a6a764d8c43f0bdde585b0f26b41699468dc77
 
     public function getDebugInfo()
     {
-        return array (  171 => 62,  167 => 61,  153 => 50,  146 => 46,  141 => 44,  137 => 43,  133 => 42,  129 => 41,  122 => 37,  117 => 35,  113 => 34,  109 => 33,  105 => 32,  101 => 31,  97 => 30,  93 => 29,  89 => 28,  85 => 26,  81 => 25,  77 => 24,  74 => 23,  68 => 22,  58 => 20,  48 => 18,  45 => 17,  41 => 16,  30 => 8,  19 => 1,);
+        return array (  168 => 61,  164 => 60,  150 => 49,  143 => 45,  138 => 43,  134 => 42,  130 => 41,  126 => 40,  119 => 36,  114 => 34,  110 => 33,  106 => 32,  102 => 31,  98 => 30,  94 => 29,  90 => 28,  86 => 27,  82 => 25,  78 => 24,  74 => 23,  71 => 22,  65 => 21,  55 => 19,  45 => 17,  42 => 16,  38 => 15,  27 => 7,  19 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Twig_Source("--{{lang}}--
-<!-- HEADER -->
+        return new Twig_Source("<!-- HEADER -->
 <div class=\"header-search search-exp\">
   
   <div class=\"header-container big-div\">

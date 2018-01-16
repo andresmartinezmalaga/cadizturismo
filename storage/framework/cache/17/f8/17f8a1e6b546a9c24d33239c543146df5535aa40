@@ -1,5 +1,5 @@
-1516123460a:1:{s:15:"experiences.htm";a:5:{s:8:"fileName";s:15:"experiences.htm";s:7:"content";s:1760:"<div class="search-title-container">
-    <p class="title-search">Hemos encontrado 5 experiencias que se adaptan a ti</p>
+1516124312a:1:{s:15:"experiences.htm";a:5:{s:8:"fileName";s:15:"experiences.htm";s:7:"content";s:1781:"<div class="search-title-container">
+    <p class="title-search">Hemos encontrado {{experiences|length}} experiencias que se adaptan a ti</p>
 </div>
 
 <div class="all-events-container">
@@ -39,8 +39,8 @@
 
 	{% endfor %}
 
-</div>";s:5:"mtime";i:1516122257;s:6:"markup";s:1760:"<div class="search-title-container">
-    <p class="title-search">Hemos encontrado 5 experiencias que se adaptan a ti</p>
+</div>";s:5:"mtime";i:1516123706;s:6:"markup";s:1781:"<div class="search-title-container">
+    <p class="title-search">Hemos encontrado {{experiences|length}} experiencias que se adaptan a ti</p>
 </div>
 
 <div class="all-events-container">

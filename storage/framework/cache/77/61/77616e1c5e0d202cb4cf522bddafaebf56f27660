@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-1516203169a:1:{i:0;O:8:"stdClass":3:{s:2:"id";i:1;s:4:"item";s:22:"backend_brand_settings";s:5:"value";s:185:"{"app_name":"October CMS","app_tagline":"Volviendo a lo b\u00e1sico","primary_color":"#175da3","secondary_color":"#0c5095","accent_color":"#ffffff","menu_mode":"inline","custom_css":""}";}}
-=======
-1516193982a:0:{}
->>>>>>> b8d4fa4875e4ff34508077a7f1872908b4fa520f
+1516209848a:1:{i:0;O:8:"stdClass":3:{s:2:"id";i:1;s:4:"item";s:22:"backend_brand_settings";s:5:"value";s:185:"{"app_name":"October CMS","app_tagline":"Volviendo a lo b\u00e1sico","primary_color":"#175da3","secondary_color":"#0c5095","accent_color":"#ffffff","menu_mode":"inline","custom_css":""}";}}

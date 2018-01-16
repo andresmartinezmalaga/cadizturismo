@@ -17,7 +17,10 @@ class __TwigTemplate_8e72bae203137300a302fb7c16cd7a04990944811cc2b872a89c4d4ad07
     {
         // line 1
         echo "<div class=\"search-title-container\">
-    <p class=\"title-search\">Hemos encontrado 5 experiencias que se adaptan a ti</p>
+    <p class=\"title-search\">Hemos encontrado ";
+        // line 2
+        echo twig_escape_filter($this->env, twig_length_filter($this->env, ($context["experiences"] ?? null)), "html", null, true);
+        echo " experiencias que se adaptan a ti</p>
 </div>
 
 <div class=\"all-events-container\">
@@ -129,13 +132,13 @@ class __TwigTemplate_8e72bae203137300a302fb7c16cd7a04990944811cc2b872a89c4d4ad07
 
     public function getDebugInfo()
     {
-        return array (  116 => 41,  99 => 35,  92 => 31,  88 => 30,  82 => 27,  76 => 26,  70 => 23,  64 => 22,  58 => 19,  54 => 18,  48 => 15,  44 => 14,  39 => 12,  34 => 9,  31 => 8,  27 => 7,  19 => 1,);
+        return array (  119 => 41,  102 => 35,  95 => 31,  91 => 30,  85 => 27,  79 => 26,  73 => 23,  67 => 22,  61 => 19,  57 => 18,  51 => 15,  47 => 14,  42 => 12,  37 => 9,  34 => 8,  30 => 7,  22 => 2,  19 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Twig_Source("<div class=\"search-title-container\">
-    <p class=\"title-search\">Hemos encontrado 5 experiencias que se adaptan a ti</p>
+    <p class=\"title-search\">Hemos encontrado {{experiences|length}} experiencias que se adaptan a ti</p>
 </div>
 
 <div class=\"all-events-container\">
