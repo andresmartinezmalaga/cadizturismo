@@ -876,7 +876,7 @@ html.csstransitions body.outer .outer-form-container{-webkit-transition:all 0.5s
 html.csstransitions body.outer.preload .outer-form-container{-webkit-transform:scale(0.2,0.2);-moz-transform:scale(0.2,0.2);-ms-transform:scale(0.2,0.2);-o-transform:scale(0.2,0.2);transform:scale(0.2,0.2)}
 @media (max-width:768px){body.outer .layout > .layout-row.layout-head > .layout-cell{padding:50px 20px}
 body.outer .layout > .layout-row > .layout-cell .outer-form-container{width:auto;padding:40px}
-body.outer .layout > .layout-row > .layout-cell .outer-form-container .horizontal-form{display:block}
+/* body.outer .layout > .layout-row > .layout-cell .outer-form-container .horizontal-form{display:block} */
 body.outer .layout > .layout-row > .layout-cell .outer-form-container .horizontal-form input{display:block;width:100% !important;margin-bottom:20px}
 }
 body.breadcrumb-fancy .control-breadcrumb,.control-breadcrumb.breadcrumb-fancy{margin-bottom:0;background-color:#175da3}
@@ -1032,7 +1032,7 @@ body.flyout-visible .flyout-overlay{background-color:rgba(0,0,0,0.3)}
 .size33 {
 	float: left;
 	width: 30%!important;
-	margin-right: 3%;	
+	margin-right: 3%;
 }
 
 .size33nm{
@@ -1043,19 +1043,146 @@ body.flyout-visible .flyout-overlay{background-color:rgba(0,0,0,0.3)}
 
 .tab-pane form input{
 	background-color: #346eab!important;
-	
+
 }
 
 .selection{
 	background-color: #346eab!important;
-	
+
 }
 
 .tab-pane form label{
 	margin-top: 20px!important;
-	
+
 }
 
 .form-tabless-fields .select2-selection__rendered {
 	color:white!important;;
+}
+
+/* LOGIN */
+body.outer .layout > .layout-row.layout-head {
+  display: none !important;
+}
+
+body.outer .layout > .layout-row {
+  display: -webkit-box !important;
+  display: -moz-box !important;
+  display: -ms-flexbox !important;
+  display: -webkit-flex !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../images/login-main.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center ;
+}
+
+body.outer .layout > .layout-row > .layout-cell {
+  height: 415px;
+  width: 319px;
+  position: relative;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  background-color: white;
+}
+
+body.outer .layout > .layout-row > .layout-cell .outer-form-container {
+  width: 319px;
+}
+
+body.outer .layout > .layout-row > .layout-cell::before {
+  content: '';
+  position: absolute;
+  TOP: 0PX;
+  height: 105px;
+  width: 100%;
+  background-color: #175da3;
+  background-image: url('../images/mini-logo-cadiz.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+body.outer .layout > .layout-row > .layout-cell .outer-form-container h2 {
+  display: none;
+}
+
+body.outer .layout > .layout-row > .layout-cell .outer-form-container {
+  padding: 0px;
+  margin-top: 105px;
+}
+
+body.outer .layout > .layout-row > .layout-cell .outer-form-container .horizontal-form {
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+body.outer .layout > .layout-row > .layout-cell .outer-form-container .horizontal-form input {
+  height: 80px;
+  margin: 0px;
+  padding-left: 74px;
+  border-radius: 0px;
+  color: #818181;
+  font-size: 14px;
+  font-weight: 500;
+  border-bottom: 1px solid #F6F6F6;
+}
+
+body.outer .layout > .layout-row > .layout-cell .outer-form-container .horizontal-form input[type="text"] {
+  background-image: url('../images/user-icon.svg');
+  background-position: 30px 30px;
+}
+body.outer .layout > .layout-row > .layout-cell .outer-form-container .horizontal-form input[type="password"] {
+  background-image: url('../images/pass-icon.svg');
+  background-position: 30px 28px;
+}
+
+body.outer .layout > .layout-row > .layout-cell .outer-form-container .horizontal-form button {
+  width: 190px;
+  height: 50px;
+  background-color: #175DA3;
+  box-shadow: none;
+  font-size: 14px;
+  border-radius: 4px;
+  margin-top: 40px;
+  transition: background-color 0.3s ease;
+}
+
+body.outer .layout > .layout-row > .layout-cell .outer-form-container .horizontal-form .restore-button {
+  margin-top: 120px;
+}
+
+body.outer .layout > .layout-row > .layout-cell .outer-form-container .horizontal-form button:hover {
+  background-color: #0C5095;
+}
+
+body.outer .layout > .layout-row > .layout-cell .outer-form-container .forgot-password {
+  margin-top: 0px;
+  width: 100%;
+  text-align: center;
+  color: #175DA3
+}
+body.outer .layout > .layout-row > .layout-cell .outer-form-container .forgot-password a {
+  color: #175DA3;
+  font-size: 11px;
+  font-weight: 500;
+}
+body.outer .layout > .layout-row > .layout-cell .outer-form-container .forgot-password a:hover,
+body.outer .layout > .layout-row > .layout-cell .outer-form-container .forgot-password a:focus {
+  text-decoration: none;
+  color: #0C5095;
+}
+
+body.outer .layout > .layout-row > .layout-cell .outer-form-container .forgot-password::before {
+  content: none;
+}
+
+.form-control {
+  box-shadow: none;
 }

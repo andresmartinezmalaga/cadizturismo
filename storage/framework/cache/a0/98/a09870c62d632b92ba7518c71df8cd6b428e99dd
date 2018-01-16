@@ -1,4 +1,4 @@
-1516097247a:1:{s:11:"default.htm";a:10:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:2336:"description = "Default Layout"
+1516100266a:1:{s:11:"default.htm";a:10:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:2336:"description = "Default Layout"
 
 [staticPage]
 useContent = 1
@@ -62,7 +62,7 @@ code = "mi-estancia"
     <script type="text/javascript" src="{{url('/')}}/plugins/rainlab/pages/assets/js/style.js"></script>
    
   </body>
-</html>";s:5:"mtime";i:1516029718;s:6:"markup";s:2024:"<!DOCTYPE html>
+</html>";s:5:"mtime";i:1516098626;s:6:"markup";s:2024:"<!DOCTYPE html>
 <html lang="es">
 
 <head>
