@@ -36,69 +36,73 @@ class __TwigTemplate_8e72bae203137300a302fb7c16cd7a04990944811cc2b872a89c4d4ad07
             // line 9
             echo "\t    
 \t    <div class=\"event\">
+\t    \t";
+            // line 11
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), $context["experience"], "viewBag", array()), "cover", array()), "html", null, true);
+            echo "
 \t      <div class=\"overlay-img\"></div>
 \t      <img class=\"rec-img\" src=\"";
-            // line 12
+            // line 13
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), $context["experience"], "viewBag", array()), "cover", array()), "html", null, true);
             echo "\">
 \t      <div class=\"txt-container\">
 \t        <p class=\"name\">";
-            // line 14
+            // line 15
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), $context["experience"], "viewBag", array()), "title", array()), "html", null, true);
             echo "</p>
 \t        <img class=\"separator\" src=\"";
-            // line 15
+            // line 16
             echo url("/");
             echo "/plugins/rainlab/pages/assets/svg/small-yellow-separator.svg\">
 \t        <div class=\"icons\">
 \t          <div class=\"icon-pair\">
 \t            <img src=\"";
-            // line 18
+            // line 19
             echo url("/");
             echo "/plugins/rainlab/pages/assets/svg/calendar-exp.svg\">
 \t            <p class=\"icon-txt\">";
-            // line 19
+            // line 20
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), $context["experience"], "viewBag", array()), "days", array()), "html", null, true);
             echo " días</p>
 \t          </div>          
 \t          <div class=\"icon-pair\">
 \t            <img src=\"";
-            // line 22
-            echo url("/");
-            echo "/plugins/rainlab/pages/assets/svg/";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), ($context["interest"] ?? null), 0, array(), "array"), "html", null, true);
-            echo ".svg\">
-\t            <p class=\"icon-txt\">";
             // line 23
+            echo url("/");
+            echo "/plugins/rainlab/pages/assets/svg/";
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), ($context["interest"] ?? null), 0, array(), "array"), "html", null, true);
+            echo ".svg\">
+\t            <p class=\"icon-txt\">";
+            // line 24
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), ($context["interest"] ?? null), 0, array(), "array"), "html", null, true);
             echo "</p>
 \t          </div>
 \t          <div class=\"icon-pair\">
 \t            <img src=\"";
-            // line 26
+            // line 27
             echo url("/");
             echo "/plugins/rainlab/pages/assets/svg/";
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), ($context["interest"] ?? null), 1, array(), "array"), "html", null, true);
             echo ".svg\">
 \t            <p class=\"icon-txt\">";
-            // line 27
+            // line 28
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), ($context["interest"] ?? null), 1, array(), "array"), "html", null, true);
             echo "</p>
 \t          </div>
 \t          <div class=\"icon-pair\">
 \t            <img src=\"";
-            // line 30
+            // line 31
             echo url("/");
             echo "/plugins/rainlab/pages/assets/svg/cultura-event.svg\">
 \t            <p class=\"icon-txt\">";
-            // line 31
+            // line 32
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), $context["experience"], "viewBag", array()), "tvisit", array()), "html", null, true);
             echo "</p>
 \t          </div>
 \t        </div>
 \t        <div class=\"button-container\">
 \t          <a class=\"see-event\" href=\"";
-            // line 35
+            // line 36
             echo url("/");
             echo "/";
             echo twig_escape_filter($this->env, ($context["lang"] ?? null), "html", null, true);
@@ -115,7 +119,7 @@ class __TwigTemplate_8e72bae203137300a302fb7c16cd7a04990944811cc2b872a89c4d4ad07
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['experience'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 41
+        // line 42
         echo "
 </div>";
     }
@@ -132,7 +136,7 @@ class __TwigTemplate_8e72bae203137300a302fb7c16cd7a04990944811cc2b872a89c4d4ad07
 
     public function getDebugInfo()
     {
-        return array (  119 => 41,  102 => 35,  95 => 31,  91 => 30,  85 => 27,  79 => 26,  73 => 23,  67 => 22,  61 => 19,  57 => 18,  51 => 15,  47 => 14,  42 => 12,  37 => 9,  34 => 8,  30 => 7,  22 => 2,  19 => 1,);
+        return array (  123 => 42,  106 => 36,  99 => 32,  95 => 31,  89 => 28,  83 => 27,  77 => 24,  71 => 23,  65 => 20,  61 => 19,  55 => 16,  51 => 15,  46 => 13,  41 => 11,  37 => 9,  34 => 8,  30 => 7,  22 => 2,  19 => 1,);
     }
 
     public function getSourceContext()
@@ -147,6 +151,7 @@ class __TwigTemplate_8e72bae203137300a302fb7c16cd7a04990944811cc2b872a89c4d4ad07
 \t    {% set interest = experience.viewBag.interest|split('-') %}
 \t    
 \t    <div class=\"event\">
+\t    \t{{experience.viewBag.cover}}
 \t      <div class=\"overlay-img\"></div>
 \t      <img class=\"rec-img\" src=\"{{experience.viewBag.cover}}\">
 \t      <div class=\"txt-container\">

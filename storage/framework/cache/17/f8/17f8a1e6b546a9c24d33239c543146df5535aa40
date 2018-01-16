@@ -1,4 +1,4 @@
-1516124312a:1:{s:15:"experiences.htm";a:5:{s:8:"fileName";s:15:"experiences.htm";s:7:"content";s:1781:"<div class="search-title-container">
+1516125055a:1:{s:15:"experiences.htm";a:5:{s:8:"fileName";s:15:"experiences.htm";s:7:"content";s:1816:"<div class="search-title-container">
     <p class="title-search">Hemos encontrado {{experiences|length}} experiencias que se adaptan a ti</p>
 </div>
 
@@ -8,6 +8,7 @@
 	    {% set interest = experience.viewBag.interest|split('-') %}
 	    
 	    <div class="event">
+	    	{{experience.viewBag.cover}}
 	      <div class="overlay-img"></div>
 	      <img class="rec-img" src="{{experience.viewBag.cover}}">
 	      <div class="txt-container">
@@ -39,7 +40,7 @@
 
 	{% endfor %}
 
-</div>";s:5:"mtime";i:1516123706;s:6:"markup";s:1781:"<div class="search-title-container">
+</div>";s:5:"mtime";i:1516124443;s:6:"markup";s:1816:"<div class="search-title-container">
     <p class="title-search">Hemos encontrado {{experiences|length}} experiencias que se adaptan a ti</p>
 </div>
 
@@ -49,6 +50,7 @@
 	    {% set interest = experience.viewBag.interest|split('-') %}
 	    
 	    <div class="event">
+	    	{{experience.viewBag.cover}}
 	      <div class="overlay-img"></div>
 	      <img class="rec-img" src="{{experience.viewBag.cover}}">
 	      <div class="txt-container">
