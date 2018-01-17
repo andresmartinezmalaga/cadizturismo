@@ -4872,12 +4872,6 @@ nav#layout-mainmenu.navbar-mode-inline ul.mainmenu-nav li:first-child {
   width: 308px !important; }
   .w-350 .control-scrollbar {
     background-color: #CECECE; }
-    .w-350 .control-scrollbar div, .w-350 .control-scrollbar li, .w-350 .control-scrollbar a {
-      height: 70px; }
-    .w-350 .control-scrollbar a {
-      color: #818181;
-      font-weight: 600;
-      font-size: 14px; }
   .w-350 .form-control.icon.search {
     background-image: url("../images/search-icon.svg");
     background-position: 94% 50% !important;
@@ -4887,6 +4881,25 @@ nav#layout-mainmenu.navbar-mode-inline ul.mainmenu-nav li:first-child {
 
 .control-treeview ol > li > div {
   background: #F6F6F6; }
+  .control-treeview ol > li > div a {
+    color: #818181;
+    font-weight: 600;
+    font-size: 14px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    background-image: url("../images/file-icon.svg");
+    background-size: 16px 18px !important;
+    background-position: 10px 50%;
+    background-repeat: no-repeat;
+    padding-left: 34px;
+    line-height: 14px; }
+
+.control-treeview ol > li > div > ul.submenu li a {
+  background-image: none !important; }
 
 .control-treeview .custom-checkbox label:before, .control-treeview .custom-radio label:before {
   border: 1px solid #818181 !important;
@@ -4896,9 +4909,7 @@ nav#layout-mainmenu.navbar-mode-inline ul.mainmenu-nav li:first-child {
   color: #818181 !important; }
 
 .control-treeview ol > li > div:before {
-  background-image: url("../images/file-icon.svg");
-  background-size: 16px 18px !important;
-  background-position: 2px 50%; }
+  content: none; }
 
 /* ICONS CHANGE */
 .btn-default.oc-icon-plus {

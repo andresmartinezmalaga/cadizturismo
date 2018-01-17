@@ -2441,6 +2441,13 @@
 		"oAP": "\/modules\/backend\/classes\/NavigationManager.php",
 		"oF": 0
 		},
+	"\/modules\/backend\/classes\/PagesTemplates.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/modules\/backend\/classes\/PagesTemplates.php",
+		"oF": 0
+		},
 	"\/modules\/backend\/classes\/ReportWidgetBase.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -22368,6 +22375,286 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/arte-vida.jpg": {
+		"ft": 16384,
+		"iS": 198231,
+		"oA": 0,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/arte-vida.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/atun.jpg": {
+		"ft": 16384,
+		"iS": 81542,
+		"oA": 0,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/atun.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/barbate1.jpg": {
+		"ft": 16384,
+		"iS": 82958,
+		"oA": 0,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/barbate1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/big-yellow-separator.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/big-yellow-separator.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/brena.jpg": {
+		"ft": 16384,
+		"iS": 64284,
+		"oA": 0,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/brena.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/brush-header.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/brush-header.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/calendar-exp.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/calendar-exp.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/camping.jpg": {
+		"ft": 16384,
+		"iS": 110448,
+		"oA": 0,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/camping.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/conil.jpg": {
+		"ft": 16384,
+		"iS": 79411,
+		"oA": 0,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/conil.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/cultura-event.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/cultura-event.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/cultura-grey.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/cultura-grey.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/deporte-grey.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/deporte-grey.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/faro.jpg": {
+		"ft": 16384,
+		"iS": 80760,
+		"oA": 0,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/faro.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/gastro-exp.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/gastro-exp.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/gastro-grey.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/gastro-grey.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/janda2.jpg": {
+		"ft": 16384,
+		"iS": 9854359,
+		"oA": 0,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/janda2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/kite.jpg": {
+		"ft": 16384,
+		"iS": 57895,
+		"oA": 0,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/kite.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/link-arrow-yellow.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/link-arrow-yellow.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/link-icon.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/link-icon.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/marismas-barbate.jpg": {
+		"ft": 16384,
+		"iS": 274558,
+		"oA": 0,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/marismas-barbate.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/natu-events.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/natu-events.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/natu-grey.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/natu-grey.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/ocio-exp.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/ocio-exp.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/ocio.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/ocio.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/playa-lances.jpg": {
+		"ft": 16384,
+		"iS": 224808,
+		"oA": 0,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/playa-lances.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/ruta-exp.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/ruta-exp.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/small-yellow-separator.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/small-yellow-separator.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/vejer.jpg": {
+		"ft": 16384,
+		"iS": 952471,
+		"oA": 0,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/vejer.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/storage\/cms\/cache": {
 		"ft": 65536,
 		"oA": 1,
@@ -22389,11 +22676,32 @@
 		"oAP": "\/storage\/cms\/twig\/00\/007820f805988f169f1aa90d29958b971baea0d726ab2ae8265ae7a286c417d6.php",
 		"oF": 0
 		},
+	"\/storage\/cms\/twig\/23\/23a280e8e77c328037be3fa897657f62ca9207a2985a3a04c45f59d258a695db.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/storage\/cms\/twig\/23\/23a280e8e77c328037be3fa897657f62ca9207a2985a3a04c45f59d258a695db.php",
+		"oF": 0
+		},
+	"\/storage\/cms\/twig\/2c\/2c3fa6924959e0cf3a20cc2760eef72582ed7aba0e59cf875d2049ac7d13808a.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/storage\/cms\/twig\/2c\/2c3fa6924959e0cf3a20cc2760eef72582ed7aba0e59cf875d2049ac7d13808a.php",
+		"oF": 0
+		},
 	"\/storage\/cms\/twig\/40\/4073f45d8e9d5f95f317553492edc6528dc8e09a8c58905e903550b2adc9b540.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/storage\/cms\/twig\/40\/4073f45d8e9d5f95f317553492edc6528dc8e09a8c58905e903550b2adc9b540.php",
+		"oF": 0
+		},
+	"\/storage\/cms\/twig\/61\/611fdd9be672746e89ffd88e9524f6ca282708859089176facc28ea9d3daef36.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/storage\/cms\/twig\/61\/611fdd9be672746e89ffd88e9524f6ca282708859089176facc28ea9d3daef36.php",
 		"oF": 0
 		},
 	"\/storage\/cms\/twig\/63\/63652a2a7f131877d246b58be33171c7ebfba8c19680312a2b90f7ffd6ed0dea.php": {
@@ -22403,11 +22711,18 @@
 		"oAP": "\/storage\/cms\/twig\/63\/63652a2a7f131877d246b58be33171c7ebfba8c19680312a2b90f7ffd6ed0dea.php",
 		"oF": 0
 		},
-	"\/storage\/cms\/twig\/7e\/7ea77649e8e0192a06e515c37eb142c17f114e4cf7e50f7367f63fa2c0c8249e.php": {
+	"\/storage\/cms\/twig\/70\/7089efc7ebb3a92ce5377456e12592e77a99c12a81133a2bea53e41706119b47.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/storage\/cms\/twig\/7e\/7ea77649e8e0192a06e515c37eb142c17f114e4cf7e50f7367f63fa2c0c8249e.php",
+		"oAP": "\/storage\/cms\/twig\/70\/7089efc7ebb3a92ce5377456e12592e77a99c12a81133a2bea53e41706119b47.php",
+		"oF": 0
+		},
+	"\/storage\/cms\/twig\/93\/93d6f6585f461ae05a0aa015a77a0f23cee55ed50e54a1674e2e0d19c22a171e.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/storage\/cms\/twig\/93\/93d6f6585f461ae05a0aa015a77a0f23cee55ed50e54a1674e2e0d19c22a171e.php",
 		"oF": 0
 		},
 	"\/storage\/cms\/twig\/a8\/a8fe98d8140677238e8f703e7214bd70777971a5016e63777663f1349abfc51f.php": {
@@ -22417,11 +22732,32 @@
 		"oAP": "\/storage\/cms\/twig\/a8\/a8fe98d8140677238e8f703e7214bd70777971a5016e63777663f1349abfc51f.php",
 		"oF": 0
 		},
-	"\/storage\/cms\/twig\/be\/beec23200f1cc634e9752271d79b0b0bce54a419cc519d58615b88a173f24d9c.php": {
+	"\/storage\/cms\/twig\/a9\/a9e62f2c99306ef9d25e6699996b89c340ffa8aa6f7ac460aa6e64ae0f8efe2d.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/storage\/cms\/twig\/be\/beec23200f1cc634e9752271d79b0b0bce54a419cc519d58615b88a173f24d9c.php",
+		"oAP": "\/storage\/cms\/twig\/a9\/a9e62f2c99306ef9d25e6699996b89c340ffa8aa6f7ac460aa6e64ae0f8efe2d.php",
+		"oF": 0
+		},
+	"\/storage\/cms\/twig\/cb\/cbd4410c927ae6a05da85aa071e22bfe1ed18270f0f784a3761662560ed79e77.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/storage\/cms\/twig\/cb\/cbd4410c927ae6a05da85aa071e22bfe1ed18270f0f784a3761662560ed79e77.php",
+		"oF": 0
+		},
+	"\/storage\/cms\/twig\/cd\/cda30c35875b9b9c5909925e07ed85f23d5cefae6104204ed91ba4bd0eee645c.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/storage\/cms\/twig\/cd\/cda30c35875b9b9c5909925e07ed85f23d5cefae6104204ed91ba4bd0eee645c.php",
+		"oF": 0
+		},
+	"\/storage\/cms\/twig\/ce\/ceb6f456d615463ae18bfa00781b06309bef77d4fe331f9a897d3f52f2551802.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/storage\/cms\/twig\/ce\/ceb6f456d615463ae18bfa00781b06309bef77d4fe331f9a897d3f52f2551802.php",
 		"oF": 0
 		},
 	"\/storage\/cms\/twig\/df\/dfd94540ecd43f486f22319638f39901254a0d09b9e4fef155c570d9c010c56b.php": {
@@ -22443,13 +22779,6 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/storage\/cms\/twig\/e8\/e8b2cd3d4cd3ae8f47cb3dc7b365fd1f8ebeac1e3cd096dee65d8022fd19219a.php",
-		"oF": 0
-		},
-	"\/storage\/cms\/twig\/ea\/ea1a660a602474d88cd66957021ff74bcad49865d97964c8fb2a6fb23084e72c.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/storage\/cms\/twig\/ea\/ea1a660a602474d88cd66957021ff74bcad49865d97964c8fb2a6fb23084e72c.php",
 		"oF": 0
 		},
 	"\/storage\/cms\/twig\/f6\/f6a7bffe21a95ddee0579d3e969c23e4cddfe48ad5c04762eda12122b8db1ef8.php": {
@@ -22506,11 +22835,33 @@
 		"oO": 0,
 		"oS": 1
 		},
+	"\/storage\/temp\/public\/5bd\/123\/ac9\/thumb_5bd123ac97726b9884b8034f13c304931516191131_300x255_auto.png": {
+		"ft": 32768,
+		"iS": 104692,
+		"oA": 0,
+		"oAP": "\/storage\/temp\/public\/5bd\/123\/ac9\/thumb_5bd123ac97726b9884b8034f13c304931516191131_300x255_auto.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/storage\/temp\/public\/81e\/d3e\/867\/thumb_81ed3e867ff1dfafbd7054b4e9c4711a1515710103_300x255_auto.png": {
 		"ft": 32768,
 		"iS": 95370,
 		"oA": 0,
 		"oAP": "\/storage\/temp\/public\/81e\/d3e\/867\/thumb_81ed3e867ff1dfafbd7054b4e9c4711a1515710103_300x255_auto.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/storage\/temp\/public\/9c7\/00d\/cc1\/thumb_9c700dcc1fcc48bb1561d868c7611d0d1516190444_300x255_auto.png": {
+		"ft": 32768,
+		"iS": 129577,
+		"oA": 0,
+		"oAP": "\/storage\/temp\/public\/9c7\/00d\/cc1\/thumb_9c700dcc1fcc48bb1561d868c7611d0d1516190444_300x255_auto.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -24244,6 +24595,27 @@
 		"oO": 0,
 		"oS": 1
 		},
+	"\/themes\/default\/content\/static-pages\/comarcas.htm": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/themes\/default\/content\/static-pages\/comarcas.htm",
+		"oF": 0
+		},
+	"\/themes\/default\/content\/static-pages\/cultura.htm": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/themes\/default\/content\/static-pages\/cultura.htm",
+		"oF": 0
+		},
+	"\/themes\/default\/content\/static-pages\/diversion.htm": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/themes\/default\/content\/static-pages\/diversion.htm",
+		"oF": 0
+		},
 	"\/themes\/default\/content\/static-pages\/experiencias-dia-de-america.htm": {
 		"cB": 0,
 		"ft": 8192,
@@ -24258,6 +24630,41 @@
 		"oAP": "\/themes\/default\/content\/static-pages\/experiencias-la-magia-de-el-palmar.htm",
 		"oF": 0
 		},
+	"\/themes\/default\/content\/static-pages\/gastronomia.htm": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/themes\/default\/content\/static-pages\/gastronomia.htm",
+		"oF": 0
+		},
+	"\/themes\/default\/content\/static-pages\/municipios-marina.htm": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/themes\/default\/content\/static-pages\/municipios-marina.htm",
+		"oF": 0
+		},
+	"\/themes\/default\/content\/static-pages\/municipios.htm": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/themes\/default\/content\/static-pages\/municipios.htm",
+		"oF": 0
+		},
+	"\/themes\/default\/content\/static-pages\/naturaleza.htm": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/themes\/default\/content\/static-pages\/naturaleza.htm",
+		"oF": 0
+		},
+	"\/themes\/default\/content\/static-pages\/playas.htm": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/themes\/default\/content\/static-pages\/playas.htm",
+		"oF": 0
+		},
 	"\/themes\/default\/layouts\/default.htm": {
 		"cB": 0,
 		"ft": 8192,
@@ -24265,18 +24672,18 @@
 		"oAP": "\/themes\/default\/layouts\/default.htm",
 		"oF": 0
 		},
-	"\/themes\/default\/layouts\/home.htm": {
+	"\/themes\/default\/layouts\/dinamic.htm": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/themes\/default\/layouts\/home.htm",
+		"oAP": "\/themes\/default\/layouts\/dinamic.htm",
 		"oF": 0
 		},
-	"\/themes\/default\/meta\/menus\/menu.yaml": {
+	"\/themes\/default\/meta\/menus\/donde-ir.yaml": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/themes\/default\/meta\/menus\/menu.yaml",
+		"oAP": "\/themes\/default\/meta\/menus\/donde-ir.yaml",
 		"oF": 0
 		},
 	"\/themes\/default\/meta\/static-experiences.yaml": {
