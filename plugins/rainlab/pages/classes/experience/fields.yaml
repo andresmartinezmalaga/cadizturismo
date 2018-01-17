@@ -31,7 +31,7 @@ fields:
         type: dropdown
         options: getInterestsOptions
 
-    viewBag[visit]:
+    viewBag[tvisit]:
         label: 'tipo de visita'
         cssClass: size33nm
         type: dropdown

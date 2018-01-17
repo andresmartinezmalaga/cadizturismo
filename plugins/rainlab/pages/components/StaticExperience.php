@@ -16,11 +16,12 @@ use Url;
  */
 class StaticExperience extends ComponentBase
 {
+    
+
     /**
      * @var \RainLab\Pages\Classes\Page A reference to the static page object
      */
-    public $list;
-
+  
     public function componentDetails()
     {
         return [
@@ -41,13 +42,20 @@ class StaticExperience extends ComponentBase
         $pages = Page::listInTheme($theme, false);
         $events =  new \Illuminate\Support\Collection($pages);
         
-
         $result = $events->where("template","experiences");
-        $result = $events->where("title","asd");
+        
+        return $result;
+    }
 
-        dd($result);
+    public function experienceFind($days,$interest,$tvisit)
+    {
+        $theme = Theme::getActiveTheme();
+        $pages = Page::listInTheme($theme, false);
+        $events =  new \Illuminate\Support\Collection($pages);
         
-        
+       
+        $result = $events->where('template','experiences')->where('days',$days)->where('interest',$interest)->where('tvisit',$tvisit);
+       
         return $result;
     }
 

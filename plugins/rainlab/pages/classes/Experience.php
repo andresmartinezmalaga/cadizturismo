@@ -260,7 +260,7 @@ class Experience extends ContentBase
           </div>
           
           <!-- NUEVA FOTO -->
-          <img class="background-image" value="cover" src="**url**/plugins/rainlab/pages/assets/img/palmar1.jpg" alt="">
+          <img class="background-image" value="cover" src="**url**/storage/app/media/uploaded-files/palmar1.jpg" alt="">
           
           <!-- FEATURES -->
           <div class="event-features">
