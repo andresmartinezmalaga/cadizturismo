@@ -296,6 +296,8 @@
      */
     PagesPage.prototype.onSidebarItemClick = function(e) {
        
+       
+
         var self = this,
             $item = $(e.relatedTarget),
             $form = $item.closest('form'),
@@ -307,6 +309,12 @@
             },
             tabId = data.type + '-' + data.theme + '-' + data.path
 
+            // Andrés Martínez
+            // dont show this pages
+            if(data.path == 'municipios' || data.path == 'comarcas' || data.path == 'playas'){
+                return false;
+            }
+        
 
         if ($item.data('type') == 'snippet') {
             this.snippetManager.onSidebarSnippetClick($item)

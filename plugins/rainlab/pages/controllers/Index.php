@@ -30,6 +30,10 @@ use RainLab\Pages\Classes\SnippetManager;
 use ApplicationException;
 use Exception;
 
+// Andrés Martinez
+// create templates for pages
+use Backend\Classes\PagesTemplates;
+
 /**
  * Pages and Menus index
  *
@@ -109,13 +113,22 @@ class Index extends Controller
 
     public function index_onOpen()
     {
-       
         $this->validateRequestTheme();
         
         $type = Request::input('type');
         $object = $this->loadObject($type, Request::input('path'));
 
+        // Andrés Martínez
+        // load static templates        
+        $templateName = $object['fileName'];
+        $templateMarkup = $object['markup'];
+
+        if($templateName == 'naturaleza.htm' && $templateMarkup ==''){
+            $object['markup'] = PagesTemplates::getTNaturaleza();
+        }
+      
         return $this->pushObjectForm($type, $object);
+        
     }
 
     public function onSave()

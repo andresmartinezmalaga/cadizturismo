@@ -1,6 +1,9 @@
 static-pages:
-    municipios: {  }
-    comarcas: {  }
+    municipios:
+        municipios-uno: {  }
+        municipios-dos: {  }
+    comarcas:
+        comarcas-uno: {  }
     playas: {  }
     naturaleza: {  }
     diversion: {  }
