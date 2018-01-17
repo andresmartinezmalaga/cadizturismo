@@ -712,6 +712,16 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/modules\/backend\/assets\/images\/file-icon.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/modules\/backend\/assets\/images\/file-icon.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/modules\/backend\/assets\/images\/list1.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -918,6 +928,16 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/modules\/backend\/assets\/images\/select-arrow.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/modules\/backend\/assets\/images\/singout.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/modules\/backend\/assets\/images\/singout.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -4237,6 +4257,16 @@
 		"oA": 0,
 		"oAP": "\/modules\/backend\/formwidgets\/RichEditor.php",
 		"oF": 0
+		},
+	"\/modules\/backend\/formwidgets\/richeditor\/assets\/css\/richeditor-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/modules\/backend\/formwidgets\/richeditor\/assets\/css\/richeditor-min-min.css",
+		"oF": 0,
+		"oS": 3
 		},
 	"\/modules\/backend\/formwidgets\/richeditor\/assets\/css\/richeditor.css": {
 		"aP": 1,

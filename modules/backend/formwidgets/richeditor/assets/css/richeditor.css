@@ -356,10 +356,10 @@ to{left:100%}
 .fr-view span.fr-emoticon{font-weight:normal;font-family:"Apple Color Emoji","Segoe UI Emoji","NotoColorEmoji","Segoe UI Symbol","Android Emoji","EmojiSymbols";display:inline;line-height:0}
 .fr-view span.fr-emoticon.fr-emoticon-img{background-repeat:no-repeat !important;font-size:inherit;height:1em;width:1em;min-height:20px;min-width:20px;display:inline-block;margin:-0.1em 0.1em 0.1em;line-height:1;vertical-align:middle}
 .fr-view img{position:relative;max-width:100%}
-.fr-view img.fr-dib{margin:5px auto;display:block;float:none;vertical-align:top}
+/* .fr-view img.fr-dib{margin:5px auto;display:block;float:none;vertical-align:top} */
 .fr-view img.fr-dib.fr-fil{margin-left:0}
 .fr-view img.fr-dib.fr-fir{margin-right:0}
-.fr-view img.fr-dii{display:inline-block;float:none;vertical-align:bottom;margin-left:5px;margin-right:5px;max-width:calc(90%)}
+/*.fr-view img.fr-dii{display:inline-block;float:none;vertical-align:bottom;margin-left:5px;margin-right:5px;max-width:calc(90%)}*/
 .fr-view img.fr-dii.fr-fil{float:left;margin:5px 5px 5px 0;max-width:calc(95%)}
 .fr-view img.fr-dii.fr-fir{float:right;margin:5px 0 5px 5px;max-width:calc(95%)}
 .fr-view .fr-video{text-align:center;position:relative}
