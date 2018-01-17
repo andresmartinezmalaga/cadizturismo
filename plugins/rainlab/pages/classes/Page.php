@@ -111,6 +111,8 @@ class Page extends ContentBase
 
     protected $processedBlockMarkupCache = [];
 
+    public $pageTempl;
+
     /**
      * Creates an instance of the object and associates it with a CMS theme.
      * @param array $attributes
@@ -123,6 +125,8 @@ class Page extends ContentBase
             'url.regex'      => Lang::get('rainlab.pages::lang.page.invalid_url'),
             'url.unique_url' => Lang::get('rainlab.pages::lang.page.url_not_unique')
         ];
+
+        $this->pageTempl = New PagesTemplates();
         
     }
 
@@ -309,7 +313,7 @@ class Page extends ContentBase
             // Andrés Martínez
             // Load template on markup
             if($parentPage->fileName == 'comarcas.htm'){
-                $this->markup = PagesTemplates::$comarcas;
+                $this->markup = PagesTemplates::getTComarca();
             }
             
             $layout = Layout::load($this->theme, $parentPage->layout);

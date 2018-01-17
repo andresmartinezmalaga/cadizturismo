@@ -2,7 +2,9 @@
 
 class PagesTemplates
 {	
-	static $municipios = '
+	static $preUrl = '/cadizturismo';
+
+  static $municipios = '
 	<!-- HEADER -->
     <div class="header header-village">
       <div class="header-container header-village-container">
@@ -146,21 +148,22 @@ class PagesTemplates
       </div>
     </div>';
 
+  
 	static $comarcas = '
   <!-- HEADER -->
   <div class="header header-comarca">
     <div class="header-container header-village-container">
       <div class="header-txt header-txt-village">
-        <h1 class="txt"><span class="first-word">La Janda</span></h1><img class="brush fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
+        <h1 class="txt"><span class="first-word">La Janda</span></h1><img class="brush fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
     </div>
     <!-- NUEVA FOTO -->
-    <img class="background-image" src="/cadizturismo/storage/app/media/uploaded-files/templates/janda2.jpg" alt="">
+    <img class="background-image" src="***_preurl_***/storage/app/media/uploaded-files/templates/janda2.jpg" alt="">
   </div>
   <div class="section-txt-village">
     <div class="txt-container">
 
       <p class="title">UN LUGAR
-        <br>CON HISTORIA</p><img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+        <br>CON HISTORIA</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
 
       <p class="desc"><strong>La comarca de la Janda está situada en la zona central de la provincia de Cádiz y comprende 8 municipios diferentes: Alcalá de los Gazules, Barbate, Benalup-Casas viejas, Conil de la Frontera, Medina Sidonia, Pierna de Rivera, San José del Valle y Vejer de la Frontera.&nbsp;</strong></p>
 
@@ -179,16 +182,16 @@ class PagesTemplates
 
       <p class="title">Marismas de Barbate</p>
 
-      <p class="desc">¿Eres de emociones fuertes? Disfruta de Cádiz como nunca antes.</p><a class="events-link" href="#playas">Selección de rutas naturales <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-arrow-yellow.svg" alt="" class="fr-fic fr-dii">&nbsp;</a>
-      <img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
+      <p class="desc">¿Eres de emociones fuertes? Disfruta de Cádiz como nunca antes.</p><a class="events-link" href="#playas">Selección de rutas naturales <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-arrow-yellow.svg" alt="" class="fr-fic fr-dii">&nbsp;</a>
+      <img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
       <!-- NUEVA FOTO -->
-      <img class="img-destacada" src="/cadizturismo/storage/app/media/uploaded-files/templates/marismas-barbate.jpg" alt="">
+      <img class="img-destacada" src="***_preurl_***/storage/app/media/uploaded-files/templates/marismas-barbate.jpg" alt="">
   </div>
   <div class="section-txt-village">
     <div class="txt-container">
 
       <p class="title">MUNICIPIOS DE
-        <br>LA JANDA</p><img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+        <br>LA JANDA</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
 
       <p class="desc small-desc">Déjate enamorar por Alcalá de los Gazules, Barbate, Benalup-Casas viejas, Conil de la Frontera, Medina Sidonia, Pierna de Rivera, San José del Valle y Vejer de la Frontera.</p>
     </div>
@@ -198,51 +201,68 @@ class PagesTemplates
       <div class="event">
         <div class="overlay-img">
           <br>
-        </div><img class="rec-img fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/conil.jpg">
+        </div><img class="rec-img fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/conil.jpg">
         <div class="txt-container">
 
-          <p class="name">CONIL DE LA FRONTERA</p><img class="separator separator-municipio fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
-          <div class="button-container"><a class="see-event" href="#">Conocer municipio <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+          <p class="name">CONIL DE LA FRONTERA</p><img class="separator separator-municipio fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+          <div class="button-container"><a class="see-event" href="#">Conocer municipio <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
         </div>
       </div>
       <div class="event">
         <div class="overlay-img">
           <br>
-        </div><img class="rec-img fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/barbate1.jpg">
+        </div><img class="rec-img fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/barbate1.jpg">
         <div class="txt-container">
 
-          <p class="name">BARBATE</p><img class="separator separator-municipio fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
-          <div class="button-container"><a class="see-event" href="municipio.html">Conocer municipio <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+          <p class="name">BARBATE</p><img class="separator separator-municipio fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+          <div class="button-container"><a class="see-event" href="municipio.html">Conocer municipio <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
         </div>
       </div>
       <div class="event">
         <div class="overlay-img">
           <br>
-        </div><img class="rec-img fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/vejer.jpg">
+        </div><img class="rec-img fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/vejer.jpg">
         <div class="txt-container">
 
-          <p class="name">VEJER DE LA FRONTERA</p><img class="separator separator-municipio fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
-          <div class="button-container"><a class="see-event" href="#">Conocer municipio <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+          <p class="name">VEJER DE LA FRONTERA</p><img class="separator separator-municipio fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+          <div class="button-container"><a class="see-event" href="#">Conocer municipio <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
         </div>
       </div>
     </div>
   </div>
   <div class="icons-row">
     <div class="i-container">
-      <div class="also-feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/natu-grey.svg" class="fr-fil fr-dib">
+      <div class="also-feature"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/natu-grey.svg" class="fr-fil fr-dib">
 
         <p class="also-desc">Naturaleza</p>
       </div>
-      <div class="also-feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/deporte-grey.svg" class="fr-fil fr-dib">
+      <div class="also-feature"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/deporte-grey.svg" class="fr-fil fr-dib">
 
         <p class="also-desc">Deporte</p>
       </div>
-      <div class="also-feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/cultura-grey.svg" class="fr-fil fr-dib">
+      <div class="also-feature"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/cultura-grey.svg" class="fr-fil fr-dib">
 
         <p class="also-desc">Cultura</p>
       </div>
     </div>
   </div>';
+  
+  static function getFinalTemplate($template){
+    if (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false) {
+      $preurl = '/cadizturismo';
+    } else {
+      $preurl = '';
+    }
+
+    $result = str_replace('***_preurl_***',$preurl,$template);
+    
+    return $result;
+  }
+
+  static function getTComarca(){
+    $comarcas = PagesTemplates::getFinalTemplate(PagesTemplates::$comarcas);
+    return $comarcas;
+  }
 
 
     static $playas = '<!-- HEADER -->
