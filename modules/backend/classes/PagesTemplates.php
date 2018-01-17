@@ -2,7 +2,18 @@
 
 class PagesTemplates
 {	
-	static $preUrl = '/cadizturismo';
+  static function getFinalTemplate($template){
+    if (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false) {
+      $preurl = '/cadizturismo';
+    } else {
+      $preurl = '';
+    }
+
+    $result = str_replace('***_preurl_***',$preurl,$template);
+    
+    return $result;
+  }
+
 
   static $municipios = '
 	<!-- HEADER -->
@@ -246,19 +257,7 @@ class PagesTemplates
       </div>
     </div>
   </div>';
-  
-  static function getFinalTemplate($template){
-    if (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false) {
-      $preurl = '/cadizturismo';
-    } else {
-      $preurl = '';
-    }
-
-    $result = str_replace('***_preurl_***',$preurl,$template);
     
-    return $result;
-  }
-
   static function getTComarca(){
     $comarcas = PagesTemplates::getFinalTemplate(PagesTemplates::$comarcas);
     return $comarcas;
