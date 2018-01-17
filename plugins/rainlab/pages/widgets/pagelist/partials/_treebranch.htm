@@ -49,19 +49,24 @@
                         <label for="<?= $cbId ?>">Select</label>
                     </div>
                 <?php endif ?>
-
-                <ul class="submenu">
-                    <li>
-                        <a
-                            href="#"
-                            data-control="create-object"
-                            data-parent="<?= $fileName ?>"
-                        >
-                            <i class="icon-plus"></i>
-                            <?= e(trans($this->addSubpageLabel)) ?>
-                        </a>
-                    </li>
-                </ul>
+                
+                 <!-- Andrés Martínez
+                    Hidden add subpage. Only for Parents
+                -->
+                <?php if ($fileName == 'municipios' || $fileName == 'comarcas') : ?>
+                    <ul class="submenu">
+                        <li>
+                            <a
+                                href="#"
+                                data-control="create-object"
+                                data-parent="<?= $fileName ?>"
+                            >
+                                <i class="icon-plus"></i>
+                                <?= e(trans($this->addSubpageLabel)) ?>
+                            </a>
+                        </li>
+                    </ul>
+                <?php endif ?>
             </div>
 
             <ol>

@@ -65,6 +65,8 @@
      * Opens the menu item editor
      */
     MenuItemsEditor.prototype.onItemClick = function(item, newItemMode) {
+        
+
         var $item = $(item),
             $container = $('> div', $item),
             self = this
@@ -99,7 +101,6 @@
                 if (e.which == 13)
                     self.applyMenuItem()
             })
-
             $('button[data-control="apply-btn"]', self.$popupContainer).click($.proxy(self.applyMenuItem, self))
 
             var $updateTypeOptionsBtn = $('<a class="sidebar-control" href="#"><i class="icon-refresh"></i></a>')
@@ -141,6 +142,8 @@
             $('div[data-field-name=cmsPage]').addClass('input-sidebar-control').append($updateCmsPagesBtn)
 
             self.loadTypeInfo()
+
+
         })
 
         $container.one('hide.oc.popup', function(e) {
@@ -163,6 +166,7 @@
         $container.addClass('popover-highlight')
         $container.blur()
 
+       
         return false
     }
 
@@ -243,6 +247,7 @@
     }
 
     MenuItemsEditor.prototype.loadTypeInfo = function(force, focusList) {
+        
         var type = $('select[name=type]', this.$popupContainer).val()
 
         var self = this
@@ -253,17 +258,23 @@
         }
 
         $.oc.stripeLoadIndicator.show()
+
         this.$popupForm.request('onGetMenuItemTypeInfo')
             .always(function(){
                 $.oc.stripeLoadIndicator.hide()
             })
             .done(function(data){
+                
                 self.typeInfo[type] = data.menuItemTypeInfo
                 self.applyTypeInfo(data.menuItemTypeInfo, type, focusList)
             })
+
+        
+
     }
 
     MenuItemsEditor.prototype.applyTypeInfo = function(typeInfo, type, focusList) {
+        
         var $referenceFormGroup = $('div[data-field-name="reference"]', this.$popupContainer),
             $optionSelector = $('select', $referenceFormGroup),
             $nestingFormGroup = $('div[data-field-name="nesting"]', this.$popupContainer),
@@ -279,6 +290,7 @@
             prevSelectedReference = this.referenceSearchOverride;
             this.referenceSearchOverride = null;
         }
+        
         
         if (typeInfo.references) {
             $optionSelector.find('option').remove()

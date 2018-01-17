@@ -1,1 +1,15 @@
-1516125055N;
+1516192825a:1:{s:13:"donde-ir.yaml";a:7:{s:8:"fileName";s:13:"donde-ir.yaml";s:7:"content";s:359:"name: 'donde ir'
+items:
+    -
+        title: barbate
+        nesting: ''
+        type: static-page
+        code: ''
+        reference: barbate
+        viewBag:
+            nombrees: 'Barbate español'
+            nombreen: 'Barbate inglés'
+            nombrefr: 'Barbate francés'
+            nombrede: 'Barbate Alemán'
+            nombreru: 'Barbate ruso'
+";s:5:"mtime";i:1516187847;s:6:"markup";N;s:4:"code";N;s:4:"name";s:8:"donde ir";s:5:"items";a:1:{i:0;O:30:"RainLab\Pages\Classes\MenuItem":13:{s:5:"title";s:7:"barbate";s:5:"items";a:0:{}s:6:"parent";N;s:7:"nesting";s:0:"";s:4:"type";s:11:"static-page";s:3:"url";N;s:4:"code";s:0:"";s:9:"reference";s:7:"barbate";s:7:"replace";N;s:7:"cmsPage";N;s:6:"exists";b:0;s:8:"fillable";a:8:{i:0;s:5:"title";i:1;s:7:"nesting";i:2;s:4:"type";i:3;s:3:"url";i:4;s:4:"code";i:5;s:9:"reference";i:6;s:7:"cmsPage";i:7;s:7:"viewBag";}s:7:"viewBag";a:5:{s:8:"nombrees";s:16:"Barbate español";s:8:"nombreen";s:15:"Barbate inglés";s:8:"nombrefr";s:16:"Barbate francés";s:8:"nombrede";s:15:"Barbate Alemán";s:8:"nombreru";s:12:"Barbate ruso";}}}}}

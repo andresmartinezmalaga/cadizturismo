@@ -1,0 +1,14 @@
+name: 'donde ir'
+items:
+    -
+        title: barbate
+        nesting: ''
+        type: static-page
+        code: ''
+        reference: barbate
+        viewBag:
+            nombrees: 'Barbate español'
+            nombreen: 'Barbate inglés'
+            nombrefr: 'Barbate francés'
+            nombrede: 'Barbate Alemán'
+            nombreru: 'Barbate ruso'

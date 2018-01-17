@@ -44,12 +44,12 @@ tabs:
             type: checkbox
             comment: rainlab.pages::lang.editor.hidden_comment
 
-        viewBag[navigation_hidden]:
-            tab: cms::lang.editor.settings
-            span: right
-            label: rainlab.pages::lang.editor.navigation_hidden
-            type: checkbox
-            comment: rainlab.pages::lang.editor.navigation_hidden_comment
+        #viewBag[navigation_hidden]:
+            #tab: cms::lang.editor.settings
+            #span: right
+            #label: rainlab.pages::lang.editor.navigation_hidden
+            #type: checkbox
+            #comment: rainlab.pages::lang.editor.navigation_hidden_comment
 
         viewBag[meta_title]:
             tab: cms::lang.editor.meta

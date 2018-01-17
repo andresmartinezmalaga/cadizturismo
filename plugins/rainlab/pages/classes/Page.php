@@ -22,6 +22,10 @@ use October\Rain\Parse\Bracket as TextParser;
 use October\Rain\Parse\Syntax\Parser as SyntaxParser;
 use ApplicationException;
 
+// Andrés Martinez
+// create templates for pages
+use Backend\Classes\PagesTemplates;
+
 /**
  * Represents a static page.
  *
@@ -305,7 +309,7 @@ class Page extends ContentBase
             // Andrés Martínez
             // Load template on markup
             if($parentPage->fileName == 'comarcas.htm'){
-                $this->markup = '<h1>Plantilla Para Comarcas</h1>';
+                $this->markup = PagesTemplates::$comarcas;
             }
             
             $layout = Layout::load($this->theme, $parentPage->layout);
