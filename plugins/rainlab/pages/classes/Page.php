@@ -312,8 +312,12 @@ class Page extends ContentBase
 
             // Andrés Martínez
             // Load template on markup
-            if($parentPage->fileName == 'comarcas.htm'){
+            if($parentPage->fileName == 'municipios.htm'){
+                $this->markup = PagesTemplates::getTMunicipio();
+            } elseif ($parentPage->fileName == 'comarcas.htm') {
                 $this->markup = PagesTemplates::getTComarca();
+            } elseif ($parentPage->fileName == 'playas.htm') {
+                $this->markup = PagesTemplates::getTPlaya();
             }
             
             $layout = Layout::load($this->theme, $parentPage->layout);

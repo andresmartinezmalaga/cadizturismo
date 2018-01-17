@@ -1,8 +1,8 @@
 static-pages:
-    municipios:
-        barbate: {  }
-    comarcas:
-        comarcas-la-janda: {  }
-        comarcas-jaen: {  }
-        comarcas-madrid: {  }
-        comarcas-barcelona: {  }
+    municipios: {  }
+    comarcas: {  }
+    playas: {  }
+    naturaleza: {  }
+    diversion: {  }
+    cultura: {  }
+    gastronomia: {  }

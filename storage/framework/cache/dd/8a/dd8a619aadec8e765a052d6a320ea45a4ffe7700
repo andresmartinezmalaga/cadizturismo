@@ -1,6 +1,6 @@
-1516196352a:1:{s:8:"home.htm";a:10:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:7441:"title = "home"
+1516202845a:1:{s:8:"home.htm";a:10:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:7444:"title = "home"
 url = "/"
-layout = "home"
+layout = "dinamic"
 is_hidden = 0
 
 [staticExperience]
@@ -173,7 +173,7 @@ is_hidden = 0
         <a class="events-link" href="{{lang}}/rutas">{{'Selección de rutas secretas'|_}}<img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/link-arrow-yellow.svg" alt=""> </a>
         <img class="separator" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
       </div>
-    </div>";s:5:"mtime";i:1516122529;s:6:"markup";s:6846:"<!-- HEADER -->
+    </div>";s:5:"mtime";i:1516201242;s:6:"markup";s:6846:"<!-- HEADER -->
     <div class="header header-home">
       <div class="header-container">
         <div class="header-txt">
@@ -333,4 +333,4 @@ is_hidden = 0
     	$experiences = $this->staticExperience->experienceFind($days,$interest,$tvisit);
 
        	return Redirect::to('/experiences')->with( ['data' => json_encode($experiences)] );
-    }";s:5:"title";s:4:"home";s:3:"url";s:1:"/";s:6:"layout";s:4:"home";s:9:"is_hidden";s:1:"0";s:16:"staticExperience";a:0:{}}}
+    }";s:5:"title";s:4:"home";s:3:"url";s:1:"/";s:6:"layout";s:7:"dinamic";s:9:"is_hidden";s:1:"0";s:16:"staticExperience";a:0:{}}}
