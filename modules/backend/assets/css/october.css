@@ -4877,27 +4877,37 @@ nav#layout-mainmenu.navbar-mode-inline ul.mainmenu-nav li:first-child {
     background-color: #CECECE; }
     .w-350 .control-scrollbar div, .w-350 .control-scrollbar li, .w-350 .control-scrollbar a {
       height: 70px; }
-
-.form-control.icon.search {
-  background-image: url("../images/search-icon.svg");
-  background-position: 94% 50% !important; }
+  .w-350 .form-control.icon.search {
+    background-image: url("../images/search-icon.svg");
+    background-position: 94% 50% !important;
+    height: 50px !important;
+    background-color: #F6F6F6;
+    font-size: 11px !important; }
 
 /* ICONS CHANGE */
-.oc-icon-plus {
+.btn-default.oc-icon-plus {
+  background-color: #818181 !important;
   background-image: url("../images/add-icon.svg");
   background-repeat: no-repeat;
-  background-position: 8px 50%; }
-  .oc-icon-plus:before {
+  background-position: 8px 50%;
+  font-size: 11px !important;
+  background-size: 13px;
+  width: 76.5px; }
+  .btn-default.oc-icon-plus:before {
     content: ''; }
+
+#layout-side-panel div.control-toolbar .btn, .compact-toolbar div.control-toolbar .btn {
+  padding-bottom: 12px !important; }
 
 .oc-icon-upload:before, .icon-upload:before {
   content: url("../images/upload-icon.svg");
   opacity: 1 !important;
-  margin-top: 1px; }
+  margin-top: 0px; }
 
 .oc-icon-folder:before, .icon-folder:before {
   content: url("../images/new-folder.svg");
-  opacity: 1 !important; }
+  opacity: 1 !important;
+  margin-top: 1px; }
 
 .oc-icon-refresh:before, .icon-refresh:before {
   content: url("../images/reload-icon.svg");
@@ -4908,7 +4918,7 @@ nav#layout-mainmenu.navbar-mode-inline ul.mainmenu-nav li:first-child {
   opacity: 1 !important;
   margin-top: 2px; }
 
-.oc-icon-trash:before, .icon-trash:before {
+.oc-icon-trash:before, .icon-trash:before, .oc-icon-trash-o:before, .icon-trash-o:before {
   content: url("../images/trash-icon.svg");
   opacity: 1 !important; }
 
@@ -4916,6 +4926,14 @@ nav#layout-mainmenu.navbar-mode-inline ul.mainmenu-nav li:first-child {
   content: url("../images/list1.svg");
   opacity: 1 !important;
   margin-top: 1px; }
+
+.oc-icon-check:before, .icon-check:before {
+  content: url("../images/save-icon.svg");
+  opacity: 1 !important; }
+
+.oc-icon-crosshairs:before, .icon-crosshairs:before {
+  content: url("../images/prev-icon.svg");
+  opacity: 1 !important; }
 
 .oc-icon-th:before, .icon-th:before {
   content: url("../images/list2.svg");
@@ -4936,7 +4954,7 @@ nav#layout-mainmenu.navbar-mode-inline ul.mainmenu-nav li:first-child {
   border-bottom: 1px solid #818181; }
 
 /* MEDIA */
-.control-toolbar .toolbar-item .btn-group > .btn, .control-toolbar .toolbar-item .btn-group > .dropdown, .control-toolbar .toolbar-item .btn-group + .oc-icon-refresh {
+.control-toolbar.toolbar-padded .toolbar-item .btn-group > .btn, .control-toolbar.toolbar-padded .toolbar-item .btn-group > .dropdown, .control-toolbar.toolbar-padded .toolbar-item .btn-group + .oc-icon-refresh {
   height: 50px;
   background-color: #175DA3;
   color: white;
@@ -4949,8 +4967,86 @@ nav#layout-mainmenu.navbar-mode-inline ul.mainmenu-nav li:first-child {
   align-items: center;
   justify-content: center;
   transition: background-color 0.3s ease; }
-  .control-toolbar .toolbar-item .btn-group > .btn:hover, .control-toolbar .toolbar-item .btn-group > .dropdown:hover, .control-toolbar .toolbar-item .btn-group + .oc-icon-refresh:hover {
+  .control-toolbar.toolbar-padded .toolbar-item .btn-group > .btn:hover, .control-toolbar.toolbar-padded .toolbar-item .btn-group > .dropdown:hover, .control-toolbar.toolbar-padded .toolbar-item .btn-group + .oc-icon-refresh:hover {
     background-color: #2E98CE; }
 
 .btn-group .btn {
   border-right: 1px solid #FFFFFF; }
+
+/* EXPERIENCIAS */
+.fancy-layout .form-tabless-fields label {
+  text-transform: none !important;
+  color: white !important;
+  font-size: 14px !important;
+  margin-bottom: 4px; }
+  .fancy-layout .form-tabless-fields label::first-letter {
+    text-transform: uppercase !important; }
+
+.fancy-layout .form-tabless-fields input[type=text] {
+  font-size: 14px !important;
+  font-weight: 700;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  border-radius: 0px !important; }
+
+.fancy-layout .form-buttons {
+  padding-top: 16px !important; }
+  .fancy-layout .form-buttons .btn {
+    display: -moz-inline-box;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    align-items: center; }
+
+.fancy-layout .form-tabless-fields {
+  background: #0c5095 !important; }
+
+#experiences .control-toolbar .toolbar-item .btn-group > .btn {
+  background-color: #818181; }
+
+#layout-body select {
+  display: none !important; }
+
+#layout-body .select2 {
+  background-color: #346eab;
+  border-radius: 0px !important;
+  height: 50px !important; }
+
+#layout-body .select2-selection__rendered {
+  padding-left: 0px !important;
+  padding-top: 6px !important;
+  font-size: 14px !important;
+  font-weight: 700; }
+
+#layout-body .select2-container--default .select2-selection {
+  box-shadow: none !important; }
+
+#layout-body .select2-selection__arrow {
+  background-image: url("../images/select-arrow.svg") !important;
+  top: 23px !important;
+  right: 11px !important; }
+
+.compact-container .select2-container--open .select2-dropdown--below {
+  background-color: #346eab !important;
+  border-top: 1px solid #0c5095 !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-bottom: none !important;
+  border-radius: 0px !important; }
+
+.compact-container .select2-search {
+  display: none !important; }
+
+.compact-container .select2-results__option {
+  color: white !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  height: 50px;
+  padding-top: 15px;
+  padding-left: 12px !important; }
+
+.compact-container .select2-container--default .select2-results__option--highlighted[aria-selected],
+.compact-container .select2-container--default .select2-results__option[aria-selected=true] {
+  color: white !important;
+  background-color: #2E98CE !important; }

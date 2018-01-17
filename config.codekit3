@@ -863,11 +863,31 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/modules\/backend\/assets\/images\/prev-icon.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/modules\/backend\/assets\/images\/prev-icon.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/modules\/backend\/assets\/images\/reload-icon.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/modules\/backend\/assets\/images\/reload-icon.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/modules\/backend\/assets\/images\/save-icon.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/modules\/backend\/assets\/images\/save-icon.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -893,6 +913,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/modules\/backend\/assets\/images\/select-arrow.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/modules\/backend\/assets\/images\/select-arrow.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/modules\/backend\/assets\/images\/tab-shape.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -908,6 +938,16 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/modules\/backend\/assets\/images\/trash-icon.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/modules\/backend\/assets\/images\/trash.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/modules\/backend\/assets\/images\/trash.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -18287,6 +18327,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/plugins\/rainlab\/pages\/assets\/svg\/cultura.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/plugins\/rainlab\/pages\/assets\/svg\/cultura.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/plugins\/rainlab\/pages\/assets\/svg\/dashboard.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -18322,6 +18372,16 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/plugins\/rainlab\/pages\/assets\/svg\/deporte-grey.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/plugins\/rainlab\/pages\/assets\/svg\/deporte.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/plugins\/rainlab\/pages\/assets\/svg\/deporte.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -18565,6 +18625,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/plugins\/rainlab\/pages\/assets\/svg\/gastronomia.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/plugins\/rainlab\/pages\/assets\/svg\/gastronomia.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/plugins\/rainlab\/pages\/assets\/svg\/gourmet.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -18785,6 +18855,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/plugins\/rainlab\/pages\/assets\/svg\/naturaleza.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/plugins\/rainlab\/pages\/assets\/svg\/naturaleza.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/plugins\/rainlab\/pages\/assets\/svg\/nature-icon.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -18870,6 +18950,16 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/plugins\/rainlab\/pages\/assets\/svg\/playa-exp.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/plugins\/rainlab\/pages\/assets\/svg\/playa.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/plugins\/rainlab\/pages\/assets\/svg\/playa.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -22269,6 +22359,48 @@
 		"oAP": "\/storage\/cms\/twig\/00\/007820f805988f169f1aa90d29958b971baea0d726ab2ae8265ae7a286c417d6.php",
 		"oF": 0
 		},
+	"\/storage\/cms\/twig\/40\/4073f45d8e9d5f95f317553492edc6528dc8e09a8c58905e903550b2adc9b540.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/storage\/cms\/twig\/40\/4073f45d8e9d5f95f317553492edc6528dc8e09a8c58905e903550b2adc9b540.php",
+		"oF": 0
+		},
+	"\/storage\/cms\/twig\/63\/63652a2a7f131877d246b58be33171c7ebfba8c19680312a2b90f7ffd6ed0dea.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/storage\/cms\/twig\/63\/63652a2a7f131877d246b58be33171c7ebfba8c19680312a2b90f7ffd6ed0dea.php",
+		"oF": 0
+		},
+	"\/storage\/cms\/twig\/7e\/7ea77649e8e0192a06e515c37eb142c17f114e4cf7e50f7367f63fa2c0c8249e.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/storage\/cms\/twig\/7e\/7ea77649e8e0192a06e515c37eb142c17f114e4cf7e50f7367f63fa2c0c8249e.php",
+		"oF": 0
+		},
+	"\/storage\/cms\/twig\/a8\/a8fe98d8140677238e8f703e7214bd70777971a5016e63777663f1349abfc51f.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/storage\/cms\/twig\/a8\/a8fe98d8140677238e8f703e7214bd70777971a5016e63777663f1349abfc51f.php",
+		"oF": 0
+		},
+	"\/storage\/cms\/twig\/be\/beec23200f1cc634e9752271d79b0b0bce54a419cc519d58615b88a173f24d9c.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/storage\/cms\/twig\/be\/beec23200f1cc634e9752271d79b0b0bce54a419cc519d58615b88a173f24d9c.php",
+		"oF": 0
+		},
+	"\/storage\/cms\/twig\/df\/dfd94540ecd43f486f22319638f39901254a0d09b9e4fef155c570d9c010c56b.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/storage\/cms\/twig\/df\/dfd94540ecd43f486f22319638f39901254a0d09b9e4fef155c570d9c010c56b.php",
+		"oF": 0
+		},
 	"\/storage\/cms\/twig\/e6\/e6d62cba1eee2ac7cc4e1e05fcbf3905328e6bf151444bbcb74d623e993e8ef0.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -22281,6 +22413,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/storage\/cms\/twig\/e8\/e8b2cd3d4cd3ae8f47cb3dc7b365fd1f8ebeac1e3cd096dee65d8022fd19219a.php",
+		"oF": 0
+		},
+	"\/storage\/cms\/twig\/ea\/ea1a660a602474d88cd66957021ff74bcad49865d97964c8fb2a6fb23084e72c.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/storage\/cms\/twig\/ea\/ea1a660a602474d88cd66957021ff74bcad49865d97964c8fb2a6fb23084e72c.php",
 		"oF": 0
 		},
 	"\/storage\/cms\/twig\/f6\/f6a7bffe21a95ddee0579d3e969c23e4cddfe48ad5c04762eda12122b8db1ef8.php": {
@@ -24075,6 +24214,20 @@
 		"oO": 0,
 		"oS": 1
 		},
+	"\/themes\/default\/content\/static-pages\/experiencias-dia-de-america.htm": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/themes\/default\/content\/static-pages\/experiencias-dia-de-america.htm",
+		"oF": 0
+		},
+	"\/themes\/default\/content\/static-pages\/experiencias-la-magia-de-el-palmar.htm": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/themes\/default\/content\/static-pages\/experiencias-la-magia-de-el-palmar.htm",
+		"oF": 0
+		},
 	"\/themes\/default\/layouts\/default.htm": {
 		"cB": 0,
 		"ft": 8192,
@@ -24124,11 +24277,25 @@
 		"oAP": "\/themes\/default\/pages\/error.htm",
 		"oF": 0
 		},
+	"\/themes\/default\/pages\/experiences.htm": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/themes\/default\/pages\/experiences.htm",
+		"oF": 0
+		},
 	"\/themes\/default\/pages\/home.htm": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/themes\/default\/pages\/home.htm",
+		"oF": 0
+		},
+	"\/themes\/default\/partials\/experiences.htm": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/themes\/default\/partials\/experiences.htm",
 		"oF": 0
 		},
 	"\/themes\/default\/partials\/site\/footer.htm": {
