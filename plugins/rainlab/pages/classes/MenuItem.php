@@ -81,7 +81,8 @@ class MenuItem
         'code',
         'reference',
         'cmsPage',
-        'replace',
+        // Andrés Martínez no fillable. Error when save menus options. fields.yaml menuitem
+        //'replace',
         'viewBag'
     ];
 

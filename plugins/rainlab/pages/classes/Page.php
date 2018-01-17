@@ -22,6 +22,10 @@ use October\Rain\Parse\Bracket as TextParser;
 use October\Rain\Parse\Syntax\Parser as SyntaxParser;
 use ApplicationException;
 
+// Andrés Martinez
+// create templates for pages
+use Backend\Classes\PagesTemplates;
+
 /**
  * Represents a static page.
  *
@@ -107,6 +111,8 @@ class Page extends ContentBase
 
     protected $processedBlockMarkupCache = [];
 
+    public $pageTempl;
+
     /**
      * Creates an instance of the object and associates it with a CMS theme.
      * @param array $attributes
@@ -119,6 +125,8 @@ class Page extends ContentBase
             'url.regex'      => Lang::get('rainlab.pages::lang.page.invalid_url'),
             'url.unique_url' => Lang::get('rainlab.pages::lang.page.url_not_unique')
         ];
+
+        $this->pageTempl = New PagesTemplates();
         
     }
 
@@ -304,8 +312,12 @@ class Page extends ContentBase
 
             // Andrés Martínez
             // Load template on markup
-            if($parentPage->fileName == 'comarcas.htm'){
-                $this->markup = '<h1>Plantilla Para Comarcas</h1>';
+            if($parentPage->fileName == 'municipios.htm'){
+                $this->markup = PagesTemplates::getTMunicipio();
+            } elseif ($parentPage->fileName == 'comarcas.htm') {
+                $this->markup = PagesTemplates::getTComarca();
+            } elseif ($parentPage->fileName == 'playas.htm') {
+                $this->markup = PagesTemplates::getTPlaya();
             }
             
             $layout = Layout::load($this->theme, $parentPage->layout);

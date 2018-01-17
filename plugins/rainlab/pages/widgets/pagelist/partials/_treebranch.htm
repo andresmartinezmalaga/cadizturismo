@@ -29,7 +29,10 @@
             <div>
                 <a href="#">
                     <?= e($pageObj->page->getViewBag()->property('title')) ?>
-                    <span class="comment"><?= e($pageObj->page->getViewBag()->property('url')) ?></span>
+                    <!-- Andrés Martínez
+                        Hidden url at list
+                    -->
+                     <!-- <span class="comment"><?= e($pageObj->page->getViewBag()->property('url')) ?></span> -->
                 </a>
 
                 <input type="hidden" name="object[<?= e($fileName) ?>]" value="0"/>
@@ -37,7 +40,7 @@
                 <!-- Andrés Martínez
                     Hidden checkbox selct to delete on Parents
                 -->
-                <?php if ($fileName != 'municipios' && $fileName != 'comarcas') : ?>
+                <?php if ($fileName != 'municipios' && $fileName != 'comarcas' && $fileName != 'playas' && $fileName != 'naturaleza') : ?>
                     <div class="checkbox custom-checkbox nolabel">
                         <input
                             id="<?= $cbId ?>"
@@ -49,19 +52,24 @@
                         <label for="<?= $cbId ?>">Select</label>
                     </div>
                 <?php endif ?>
-
-                <ul class="submenu">
-                    <li>
-                        <a
-                            href="#"
-                            data-control="create-object"
-                            data-parent="<?= $fileName ?>"
-                        >
-                            <i class="icon-plus"></i>
-                            <?= e(trans($this->addSubpageLabel)) ?>
-                        </a>
-                    </li>
-                </ul>
+                
+                 <!-- Andrés Martínez
+                    Hidden add subpage. Only for Parents
+                -->
+                <?php if ($fileName == 'municipios' || $fileName == 'comarcas' || $fileName == 'playas' || $fileName == 'naturaleza') : ?>
+                    <ul class="submenu">
+                        <li>
+                            <a
+                                href="#"
+                                data-control="create-object"
+                                data-parent="<?= $fileName ?>"
+                            >
+                                <i class="icon-plus"></i>
+                                <?= e(trans($this->addSubpageLabel)) ?>
+                            </a>
+                        </li>
+                    </ul>
+                <?php endif ?>
             </div>
 
             <ol>

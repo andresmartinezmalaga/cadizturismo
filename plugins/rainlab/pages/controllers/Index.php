@@ -184,7 +184,7 @@ class Index extends Controller
                 $parentPage = StaticPage::load($this->theme, $parent);
             }
 
-            $object->setDefaultLayout($parentPage);
+            $object->setDefaultLayout($parentPage); 
         }
 
         if ($type == 'experience') {
@@ -654,6 +654,10 @@ class Index extends Controller
             }
 
             $objectData['placeholders'] = $placeholders;
+
+            // Andrés Martínez
+            // set layout default to new pages
+            $objectData['settings']['viewBag']['layout'] = 'default';
         }
 
         if ($type == 'experience') {
