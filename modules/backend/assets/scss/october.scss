@@ -236,9 +236,9 @@ html.mobile .control-scrollbar{overflow:auto;-webkit-overflow-scrolling:touch}
 .control-filelist.filelist-hero ul li > a span.title{font-size:14px;font-weight:normal;color:#2b3e50}
 .control-filelist.filelist-hero ul li > a span.description{font-size:13px}
 .control-filelist.filelist-hero ul li > a .list-icon{position:absolute;left:14px;top:15px;font-size:22px;color:#b7c0c2}
-.control-filelist.filelist-hero ul li > a:hover{background:#4ea5e0;border-bottom:1px solid #4ea5e0 !important}
-.control-filelist.filelist-hero ul li > a:hover span.title,.control-filelist.filelist-hero ul li > a:hover span.description{color:#ffffff !important}
-.control-filelist.filelist-hero ul li > a:hover .list-icon{color:#ffffff !important}
+.control-filelist.filelist-hero ul li > a:hover{background:#4ea5e0;border-bottom:1px solid #4ea5e0}
+.control-filelist.filelist-hero ul li > a:hover span.title,.control-filelist.filelist-hero ul li > a:hover span.description{color:#ffffff}
+.control-filelist.filelist-hero ul li > a:hover .list-icon{color:#ffffff}
 .control-filelist.filelist-hero ul li > a:active{background:#3498db;border-bottom:1px solid #3498db !important}
 .control-filelist.filelist-hero ul li > a:active span.title,.control-filelist.filelist-hero ul li > a:active span.description{color:#ffffff !important}
 .control-filelist.filelist-hero ul li > a:active .list-icon{color:#ffffff !important}
@@ -1202,6 +1202,10 @@ input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0px 1000px white inset !important;
 }
 
+.btn {
+  box-shadow: none !important;
+}
+
 nav#layout-mainmenu {
   padding: 0px;
   .active {
@@ -1245,6 +1249,7 @@ nav#layout-mainmenu.navbar-mode-inline ul.mainmenu-nav li:first-child {
 
 .layout-sidenav-container {
   width: 100px;
+  background-color: $blue;
 }
 
 #layout-sidenav {
@@ -1282,4 +1287,107 @@ nav#layout-mainmenu.navbar-mode-inline ul.mainmenu-nav li:first-child {
 #layout-sidenav ul li:first-child a {
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+/* MENÚ */
+.w-350 {
+  width: 308px !important;
+  .control-scrollbar {
+      background-color: #CECECE;
+      div, li, a {
+        height: 70px;
+      }
+  }
+}
+
+.control-filelist {
+ li.active {
+ }
+}
+
+.form-control.icon.search {
+  background-image: url('../images/search-icon.svg');
+  background-position: 94% 50% !important;
+}
+
+/* ICONS CHANGE */
+.oc-icon-plus {
+  background-image: url('../images/add-icon.svg');
+  background-repeat: no-repeat;
+  background-position: 8px 50%;
+  &:before {
+      content: '';
+  }
+}
+.oc-icon-upload:before, .icon-upload:before {
+  content: url('../images/upload-icon.svg');
+  opacity: 1 !important;
+  margin-top: 1px;
+}
+.oc-icon-folder:before, .icon-folder:before {
+  content: url('../images/new-folder.svg');
+  opacity: 1 !important;
+}
+.oc-icon-refresh:before, .icon-refresh:before {
+  content: url('../images/reload-icon.svg');
+  opacity: 1 !important;
+}
+
+.oc-icon-mail-reply-all:before, .icon-mail-reply-all:before, .oc-icon-reply-all:before, .icon-reply-all:before {
+  content: url('../images/move-icon.svg');
+  opacity: 1 !important;
+  margin-top: 2px;
+}
+
+.oc-icon-trash:before, .icon-trash:before {
+  content: url('../images/trash-icon.svg');
+  opacity: 1 !important;
+}
+
+.oc-icon-align-justify:before, .icon-align-justify:before {
+  content: url('../images/list1.svg');
+  opacity: 1 !important;
+  margin-top: 1px;
+}
+
+.oc-icon-th:before, .icon-th:before {
+  content: url('../images/list2.svg');
+  opacity: 1 !important;
+  margin-top: -1px;
+}
+
+.oc-icon-th-large:before, .icon-th-large:before {
+  content: url('../images/list3.svg');
+  opacity: 1 !important;
+}
+
+[class^="oc-icon-"].empty:before, [class*=" oc-icon-"].empty:before {
+  margin-right: -2px;
+}
+
+.control-filelist.filelist-hero ul li > a {
+  background-color: #F6F6F6;
+}
+
+#layout-side-panel div.control-toolbar.separator, .compact-toolbar div.control-toolbar.separator {
+  border-bottom: 1px solid #818181;
+}
+
+/* MEDIA */
+.control-toolbar .toolbar-item .btn-group > .btn, .control-toolbar .toolbar-item .btn-group > .dropdown, .control-toolbar .toolbar-item .btn-group + .oc-icon-refresh {
+  height: 50px;
+  background-color: #175DA3;
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+  @include inline-flexbox();
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: #2E98CE;
+  }
+}
+.btn-group .btn {
+  border-right: 1px solid #FFFFFF;
 }

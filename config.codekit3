@@ -671,6 +671,16 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"\/modules\/backend\/assets\/images\/add-icon.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/modules\/backend\/assets\/images\/add-icon.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/modules\/backend\/assets\/images\/cadiz-grey.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -701,6 +711,36 @@
 		"opt": 0,
 		"oT": 1,
 		"q": 100
+		},
+	"\/modules\/backend\/assets\/images\/list1.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/modules\/backend\/assets\/images\/list1.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/modules\/backend\/assets\/images\/list2.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/modules\/backend\/assets\/images\/list2.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/modules\/backend\/assets\/images\/list3.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/modules\/backend\/assets\/images\/list3.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"\/modules\/backend\/assets\/images\/login-main.jpg": {
 		"ft": 16384,
@@ -737,6 +777,26 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/modules\/backend\/assets\/images\/mini-logo-cadiz.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/modules\/backend\/assets\/images\/move-icon.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/modules\/backend\/assets\/images\/move-icon.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/modules\/backend\/assets\/images\/new-folder.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/modules\/backend\/assets\/images\/new-folder.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -803,6 +863,26 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/modules\/backend\/assets\/images\/reload-icon.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/modules\/backend\/assets\/images\/reload-icon.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/modules\/backend\/assets\/images\/search-icon.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/modules\/backend\/assets\/images\/search-icon.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/modules\/backend\/assets\/images\/secondary-tab-shape-content.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -818,6 +898,16 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/modules\/backend\/assets\/images\/tab-shape.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/modules\/backend\/assets\/images\/trash-icon.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/modules\/backend\/assets\/images\/trash-icon.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -844,6 +934,16 @@
 		"opt": 0,
 		"oT": 1,
 		"q": 100
+		},
+	"\/modules\/backend\/assets\/images\/upload-icon.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/modules\/backend\/assets\/images\/upload-icon.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"\/modules\/backend\/assets\/images\/user-icon.svg": {
 		"ft": 2097152,

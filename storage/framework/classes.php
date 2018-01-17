@@ -49,4 +49,6 @@
   'RainLab\\Pages\\Classes\\Experience' => 'plugins/rainlab/pages/classes/Experience.php',
   'RainLab\\Pages\\Components\\StaticExperience' => 'plugins/rainlab/pages/components/StaticExperience.php',
   'RainLab\\Pages\\Classes\\MenuItemReference' => 'plugins/rainlab/pages/classes/MenuItemReference.php',
+  'system\\Controllers\\mailbrandsettings' => 'modules/system/controllers/mailbrandsettings.php',
+  'rainlab\\translate\\Controllers\\messages' => 'plugins/rainlab/translate/controllers/messages.php',
 );
