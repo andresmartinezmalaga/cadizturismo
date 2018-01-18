@@ -128,6 +128,17 @@ class Index extends Controller
             $object['markup'] = PagesTemplates::getTComarcas();
         }
 
+            if(
+                $pageFileName == 'comarcas-bahia-de-cadiz.htm' ||
+                $pageFileName == 'comarcas-campina-de-jerez.htm' ||
+                $pageFileName == 'comarcas-campo-de-gibraltar.htm' ||
+                $pageFileName == 'comarcas-costa-noroeste.htm' ||
+                $pageFileName == 'comarcas-la-janda.htm' ||
+                $pageFileName == 'comarcas-sierra-de-cadiz.htm' && $templateMarkup =='') {
+
+                $object['markup'] = PagesTemplates::getTComarca();
+            }
+
         if($pageFileName == 'municipios.htm' && $templateMarkup ==''){
             $object['markup'] = PagesTemplates::getTMunicipios();
         }
@@ -140,32 +151,53 @@ class Index extends Controller
             $object['markup'] = PagesTemplates::getTNaturaleza();
         }
 
-        if($pageFileName == 'naturaleza-via-verde.htm' && $templateMarkup ==''){
-            $object['markup'] = PagesTemplates::getTViaVerde();
-        }
+            if($pageFileName == 'naturaleza-via-verde.htm' && $templateMarkup ==''){
+                $object['markup'] = PagesTemplates::getTViaVerde();
+            }
 
-        if($pageFileName == 'naturaleza-birdwatching.htm' && $templateMarkup ==''){
-            $object['markup'] = PagesTemplates::getTBirdwatching();
-        }
+            if($pageFileName == 'naturaleza-birdwatching.htm' && $templateMarkup ==''){
+                $object['markup'] = PagesTemplates::getTBirdwatching();
+            }
 
-        if($pageFileName == 'naturaleza-espacios-naturales.htm' && $templateMarkup ==''){
-            $object['markup'] = PagesTemplates::getTEspaciosnaturales();
-        }
-      
-        if(
-            $pageFileName == 'comarcas-bahia-de-cadiz.htm' ||
-            $pageFileName == 'comarcas-campina-de-jerez.htm' ||
-            $pageFileName == 'comarcas-campo-de-gibraltar.htm' ||
-            $pageFileName == 'comarcas-costa-noroeste.htm' ||
-            $pageFileName == 'comarcas-la-janda.htm' ||
-            $pageFileName == 'comarcas-sierra-de-cadiz.htm' && $templateMarkup =='') {
-
-            $object['markup'] = PagesTemplates::getTComarca();
-        }
+            if($pageFileName == 'naturaleza-espacios-naturales.htm' && $templateMarkup ==''){
+                $object['markup'] = PagesTemplates::getTEspaciosnaturales();
+            }      
+        
 
         if($pageFileName == 'diversion.htm' && $templateMarkup ==''){
             $object['markup'] = PagesTemplates::getTDiversion();
         }
+
+            if($pageFileName == 'diversion-compras.htm' && $templateMarkup ==''){
+                $object['markup'] = PagesTemplates::getTDiversion();
+            }
+
+            if($pageFileName == 'diversion-locales-de-ocio.htm' && $templateMarkup ==''){
+                $object['markup'] = PagesTemplates::getTLocalesOcio();
+            }
+
+            if($pageFileName == 'diversion-parques-de-ocio.htm' && $templateMarkup ==''){
+                $object['markup'] = PagesTemplates::getTParquesOcio();
+            }
+
+        if($pageFileName == 'cultura.htm' && $templateMarkup ==''){
+            $object['markup'] = PagesTemplates::getTCultura();
+        }
+            if($pageFileName == 'cultura-fiesta.htm' && $templateMarkup ==''){
+                $object['markup'] = PagesTemplates::getTFiesta();
+            }
+
+            if($pageFileName == 'cultura-flamenco.htm' && $templateMarkup ==''){
+                $object['markup'] = PagesTemplates::getTFlamenco();
+            }
+
+            if($pageFileName == 'cultura-monumentos.htm' && $templateMarkup ==''){
+                $object['markup'] = PagesTemplates::getTMonumento();
+            }
+
+            if($pageFileName == 'cultura-teatro.htm' && $templateMarkup ==''){
+                $object['markup'] = PagesTemplates::getTTeatro();
+            }
 
         return $this->pushObjectForm($type, $object);
         

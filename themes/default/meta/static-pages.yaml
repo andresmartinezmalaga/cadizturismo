@@ -1,6 +1,5 @@
 static-pages:
     comarcas:
-        comarcas-uno: {  }
         comarcas-bahia-de-cadiz: {  }
         comarcas-campina-de-jerez: {  }
         comarcas-campo-de-gibraltar: {  }
@@ -16,7 +15,20 @@ static-pages:
     naturaleza:
         naturaleza-via-verde: {  }
         naturaleza-birdwatching: {  }
-        naturaleza-espacios-naturales: {  }
-    diversion: {  }
-    cultura: {  }
+        naturaleza-espacios-naturales:
+            naturaleza-espacios-naturales-sierra-de-grazalema: {  }
+            naturaleza-espacios-naturales-los-alcornocales: {  }
+            naturaleza-espacios-naturales-del-estrecho: {  }
+            naturaleza-espacios-naturales-la-brena-y-marismas-de-barbate: {  }
+            naturaleza-espacios-naturales-bahia-de-cadiz: {  }
+            naturaleza-espacios-naturales-donana: {  }
+    diversion:
+        diversion-compras: {  }
+        diversion-locales-de-ocio: {  }
+        diversion-parques-de-ocio: {  }
+    cultura:
+        cultura-monumentos: {  }
+        cultura-flamenco: {  }
+        cultura-teatro: {  }
+        cultura-fiesta: {  }
     gastronomia: {  }

@@ -53,10 +53,24 @@
                     $fileName != 'municipios' && 
                     $fileName != 'playas' && 
                     $fileName != 'naturaleza' &&
-                        $fileName != 'naturaleza-birdwatching' &&
-                        $fileName != 'naturalezaespacios-naturales' &&
-                        $fileName != 'naturaleza-via-verde'
-
+                        $fileName != 'naturaleza-birdwatching' &&                        
+                        $fileName != 'naturaleza-via-verde' &&
+                        $fileName != 'naturaleza-espacios-naturales' &&
+                            $fileName != 'naturaleza-espacios-naturales-bahia-de-cadiz' &&
+                            $fileName != 'naturaleza-espacios-naturales-del-estrecho' &&
+                            $fileName != 'naturaleza-espacios-naturales-donana' &&
+                            $fileName != 'naturaleza-espacios-naturales-la-brena-y-marismas-de-barbate' &&
+                            $fileName != 'naturaleza-espacios-naturales-los-alcornocales' &&
+                            $fileName != 'naturaleza-espacios-naturales-sierra-de-grazalema' &&
+                    $fileName != 'diversion' &&
+                        $fileName != 'diversion-compras' &&
+                        $fileName != 'diversion-locales-de-ocio' &&
+                        $fileName != 'diversion-parques-de-ocio' &&
+                    $fileName != 'cultura' &&
+                        $fileName != 'cultura-fiesta' &&
+                        $fileName != 'cultura-flamenco' &&
+                        $fileName != 'cultura-monumentos' &&
+                        $fileName != 'cultura-teatro'
                 ) : ?>
                     <div class="checkbox custom-checkbox nolabel">
                         <input
@@ -73,7 +87,7 @@
                  <!-- Andrés Martínez
                     Hidden add subpage. Only for Parents
                 -->
-                <?php if ($fileName == 'home' || $fileName == 'municipios' || $fileName == 'comarcas' || $fileName == 'playas') : ?>
+                <?php if ($fileName == 'municipios' || $fileName == 'playas') : ?>
                     <ul class="submenu">
                         <li>
                             <a
