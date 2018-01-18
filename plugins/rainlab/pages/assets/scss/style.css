@@ -600,9 +600,6 @@ html, body {
 .field-richeditor .header-village .txt, .field-richeditor .header-comarca .txt {
   font-size: 274px !important; }
 
-.field-richeditor .header-event .header-container {
-  z-index: 100; }
-
 .fr-box.fr-basic .fr-element {
   padding: 0px !important; }
 
