@@ -199,6 +199,24 @@ class Index extends Controller
                 $object['markup'] = PagesTemplates::getTTeatro();
             }
 
+
+        if($pageFileName == 'gastronomia.htm' && $templateMarkup ==''){
+            $object['markup'] = PagesTemplates::getTGastronomia();
+        }
+        
+            if($pageFileName == 'gastronomia-el-vino.htm' && $templateMarkup ==''){
+                $object['markup'] = PagesTemplates::getTVino();
+            }
+
+            if($pageFileName == 'gastronomia-gourmet.htm' && $templateMarkup ==''){
+                $object['markup'] = PagesTemplates::getTGourmet();
+            }
+
+            if($pageFileName == 'gastronomia-comida-tradicional.htm' && $templateMarkup ==''){
+                $object['markup'] = PagesTemplates::getTComida();
+            }
+
+
         return $this->pushObjectForm($type, $object);
         
     }

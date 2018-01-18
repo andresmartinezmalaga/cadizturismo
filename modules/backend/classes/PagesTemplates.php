@@ -1360,7 +1360,97 @@ class PagesTemplates
     }
 
     static $monumento = '
-    ';
+    <!-- HEADER -->
+    <div class="header header-monumentos">
+      <div class="header-container header-village-container">
+        <div class="header-txt header-txt-village">
+          <h1 id="natu-via" class="txt">Monumentos</h1>
+          <img class="brush" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt="">
+        </div>
+      </div>
+      <!-- NUEVA FOTO -->
+      <img class="background-image" src="***_preurl_***/storage/app/media/uploaded-files/templates/monumentos.jpg">
+    </div>
+    <!-- TXT-->
+    <div class="section-txt-village">
+      <div class="txt-container">
+              <p class="title">LA HISTORIA DEL <br> MUNDO PASA <br> POR CÁDIZ</p>
+              <img class="separator" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+              <p class="desc">Castillos, baluartes o teatros son algunos de los muchos monumentos que vas a descubrir en una  provincia repleta de episodios históricos.</p>
+      </div>
+    </div>
+
+    <!-- IMAGEN -->
+    <div class="featured-element featured-monumentos">
+      <div class="txt-container">
+        <p class="title">RUTA POR EL CASTILLO DE SAN MARCOS</p>
+        <p class="desc">¿Un viaje en el tiempo? Este es el lugar perfecto.</p>
+        <a class="events-link" href="rutas.html">Selección de rutas <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-arrow-yellow.svg" alt=""> </a>
+        <img class="separator" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+      </div>
+      <!-- NUEVA FOTO -->
+      <div class="overlay"></div>
+      <img class="img-destacada" src="***_preurl_***/storage/app/media/uploaded-files/templates/castillo-marcos.jpg" alt="">
+    </div>
+
+    <div class="section-txt-village">
+      <div class="txt-container">
+              <p class="title">3 LUGARES <br> PARA DESCUBRIR <br> HISTORIA</p>
+              <img class="separator" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+      </div>
+    </div>
+
+    <div id="exps-playa" class="all-exps">
+      <div class="all-events-container">
+        <div class="event event-playa">
+          <div class="overlay-img"></div>
+          <img class="rec-img" src="***_preurl_***/storage/app/media/uploaded-files/templates/castillo-catalina.jpg">
+          <div class="txt-container">
+            <p class="name name-bird">CASTILLO DE SANTA CATALINA</p>
+            <p class="subtitle">El castillo constituye una importante muestra de la arquitectura militar de la Edad Moderna.</p>
+            <img class="separator separator-playa" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+            <a class="see-event" href="#">Más info <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg"></a>
+          </div>
+        </div>
+        <div class="event event-playa">
+          <div class="overlay-img"></div>
+          <img class="rec-img" src="***_preurl_***/storage/app/media/uploaded-files/templates/teatro-romano.jpg">
+          <div class="txt-container">
+            <p class="name name-bird">TEATRO ROMANO DE CÁDIZ</p>
+            <p class="subtitle">El  Teatro Romano de Cádiz se construyó hacia el año 70 a.C. por Lucio Cornelio Balbo.</p>
+            <img class="separator separator-playa" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+            <a class="see-event" href="#">Más info <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg"></a>
+          </div>
+        </div>
+        <div class="event event-playa">
+          <div class="overlay-img"></div>
+          <img class="rec-img" src="***_preurl_***/storage/app/media/uploaded-files/templates/gadir.jpg">
+          <div class="txt-container">
+            <p class="name name-bird">YACIMIENTO ARQUEOLÓGICO GADIR</p>
+            <p class="subtitle">La ciudad de Gadir es uno de los asentamientos fenicios más antiguos de Occidente. </p>
+            <img class="separator separator-playa" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+            <a class="see-event" href="#">Más info <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="icons-row">
+      <div class="i-container">
+        <div class="also-feature">
+          <img src="***_preurl_***/storage/app/media/uploaded-files/templates/natu-grey.svg">
+          <p class="also-desc">Naturaleza</p>
+        </div>
+        <div class="also-feature">
+          <img src="***_preurl_***/storage/app/media/uploaded-files/templates/cultura-grey.svg">
+          <p class="also-desc">Cultura</p>
+        </div>
+        <div class="also-feature">
+          <img src="***_preurl_***/storage/app/media/uploaded-files/templates/ruta-grey.svg">
+          <p class="also-desc">Ruta</p>
+        </div>
+      </div>
+    </div>';
 
     static function getTMonumento(){
       $monumento = PagesTemplates::getFinalTemplate(PagesTemplates::$monumento);
@@ -1467,7 +1557,98 @@ class PagesTemplates
     }
 
     static $flamenco = '
-    ';
+    <!-- HEADER -->
+    <div class="header header-flamenco">
+      <div class="header-container header-village-container">
+        <div class="header-txt header-txt-village">
+
+          <h1 class="txt" id="natu-via">Flamenco</h1><img class="brush fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
+      </div>
+      <!-- NUEVA FOTO -->
+      <img class="background-image" src="***_preurl_***/storage/app/media/uploaded-files/templates/flamencoheader.jpg" alt="">
+    </div>
+    <!-- TXT-->
+    <div class="section-txt-village">
+      <div class="txt-container">
+
+        <p class="title">TIERRA
+          <br>FORJADA
+          <br>DE CANTES</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+
+        <p class="desc">Esta expresión artística es una de las pasiones de la provincia, que vio nacer a muchos de los profesionales más destacados como Camarón de la Isla, Sara Baras o Paco de Lucía.</p>
+      </div>
+    </div>
+    <!-- IMAGEN -->
+    <div class="featured-element featured-flamenco">
+      <div class="txt-container">
+
+        <p class="title">EL MEJOR VINO Y EL MEJOR FLAMENCO</p>
+
+        <p class="desc">Nuestras raíces, arte en estado puro que te contagiará.</p><a class="events-link" href="rutas.html">Selección de rutas auténticas <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-arrow-yellow.svg" alt="" class="fr-fic fr-dii">&nbsp;</a>
+        <img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
+        <!-- NUEVA FOTO -->
+        <img class="img-destacada" src="***_preurl_***/storage/app/media/uploaded-files/templates/guitarra.jpg" alt="">
+    </div>
+    <div class="section-txt-village">
+      <div class="txt-container">
+
+        <p class="title">3 IDEAS PENSADAS
+          <br>ESPECIALMENTE
+          <br>PARA TI</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
+    </div>
+    <div class="all-exps" id="exps-playa">
+      <div class="all-events-container">
+        <div class="event event-playa">
+          <div class="overlay-img">
+            <br>
+          </div><img class="rec-img fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/la-cava.jpg">
+          <div class="txt-container">
+
+            <p class="name name-bird">LA CAVA</p>
+
+            <p class="subtitle">La Taberna Flamenca La Cava nace como “Tablao flamenco” en 1999.</p><img class="separator separator-playa fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+            <a class="see-event" href="http://www.flamencolacava.com/" target="_blank">Más info <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+        </div>
+        <div class="event event-playa">
+          <div class="overlay-img">
+            <br>
+          </div><img class="rec-img fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/torbellino.jpg">
+          <div class="txt-container">
+
+            <p class="name name-bird">EL RINCÓN DE LA TORBELLINO</p>
+
+            <p class="subtitle">El Rincón de la Torbellino&nbsp;es un exitoso&nbsp;tablao flamenco&nbsp;de Cádiz.</p><img class="separator separator-playa fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+            <a class="see-event" href="http://www.elrincondelatorbellino.com/es/" target="_blank">Más info <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+        </div>
+        <div class="event event-playa">
+          <div class="overlay-img">
+            <br>
+          </div><img class="rec-img fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/debla.jpg">
+          <div class="txt-container">
+
+            <p class="name name-bird">LA DEBLA</p>
+
+            <p class="subtitle">La Debla se inauguró en 1875 como una bodega para la producción del vino chiclanero.</p><img class="separator separator-playa fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+            <a class="see-event" href="http://www.ladebla.com/" target="_blank">Más info <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+        </div>
+      </div>
+    </div>
+    <div class="icons-row">
+      <div class="i-container">
+        <div class="also-feature"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/gastro-grey.svg" class="fr-fil fr-dib">
+
+          <p class="also-desc">Gastronomía</p>
+        </div>
+        <div class="also-feature"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/ocio.svg" class="fr-fil fr-dib">
+
+          <p class="also-desc">Ocio</p>
+        </div>
+        <div class="also-feature"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/flamenco-grey.svg" class="fr-fil fr-dib">
+
+          <p class="also-desc">Flamenco</p>
+        </div>
+      </div>
+    </div>';
 
     static function getTFlamenco(){
       $flamenco = PagesTemplates::getFinalTemplate(PagesTemplates::$flamenco);
@@ -1475,7 +1656,97 @@ class PagesTemplates
     }
 
     static $teatro = '
-    ';
+    <!-- HEADER -->
+    <div class="header header-teatro">
+      <div class="header-container header-village-container">
+        <div class="header-txt header-txt-village">
+          <h1 id="natu-via" class="txt">Teatro</h1>
+          <img class="brush" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt="">
+        </div>
+      </div>
+      <!-- NUEVA FOTO -->
+      <img class="background-image" src="***_preurl_***/storage/app/media/uploaded-files/templates/teatroheader.jpg">
+    </div>
+    <!-- TXT-->
+    <div class="section-txt-village">
+      <div class="txt-container">
+              <p class="title">A RITMO DE <br> CHIRIGOTA</p>
+              <img class="separator" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+              <p class="desc">Los teatros en Cádiz cuentan con una gran tradición e historia como refleja el Teatro Manuel Falla. Escenario de una de las fiestas más importantes de la provincia, el carnaval.</p>
+      </div>
+    </div>
+
+    <!-- IMAGEN -->
+    <div class="featured-element featured-teatro">
+      <div class="txt-container">
+        <p class="title">CARNAVALES DE CÁDIZ</p>
+        <p class="desc">Lo más nuestro, lo más auténtico de Cádiz.</p>
+        <a class="events-link" href="#">Ver evento <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-arrow-yellow.svg" alt=""> </a>
+        <img class="separator" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+      </div>
+      <!-- NUEVA FOTO -->
+      <div class="overlay"></div>
+      <img class="img-destacada" src="***_preurl_***/storage/app/media/uploaded-files/templates/carnavales-header.jpg" alt="">
+    </div>
+
+    <div class="section-txt-village">
+      <div class="txt-container">
+              <p class="title">3 IDEAS PENSADAS <br> ESPECIALMENTE <br> PARA TI</p>
+              <img class="separator" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+      </div>
+    </div>
+
+    <div id="exps-playa" class="all-exps">
+      <div class="all-events-container">
+        <div class="event event-playa">
+          <div class="overlay-img"></div>
+          <img class="rec-img" src="***_preurl_***/storage/app/media/uploaded-files/templates/teatro-falla.jpg">
+          <div class="txt-container">
+            <p class="name name-bird">TEATRO FALLA</p>
+            <p class="subtitle">El Gran Teatro Falla acoge todo tipo de obras relacionadas con las artes escénicas.</p>
+            <img class="separator separator-playa" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+            <a target="_blank" class="see-event" href="http://www.teatrofalla.com/">Más info <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg"></a>
+          </div>
+        </div>
+        <div class="event event-playa">
+          <div class="overlay-img"></div>
+          <img class="rec-img" src="***_preurl_***/storage/app/media/uploaded-files/templates/sala-lechera.jpg">
+          <div class="txt-container">
+            <p class="name name-bird">SALA CENTRAL LECHERA</p>
+            <p class="subtitle">Espacio escénico alternativo que acoge todo tipo de representaciones y espectáculos.</p>
+            <img class="separator separator-playa" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+            <a target="_blank" class="see-event" href="https://www.facebook.com/centrallechera">Más info <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg"></a>
+          </div>
+        </div>
+        <div class="event event-playa">
+          <div class="overlay-img"></div>
+          <img class="rec-img" src="***_preurl_***/storage/app/media/uploaded-files/templates/norica.jpg">
+          <div class="txt-container">
+            <p class="name name-bird">TEATRO DEL TÍTERE LA TÍA NORICA</p>
+            <p class="subtitle">Espacio escénico de Cádiz. Para disfrutar de las Artes Escénicas: teatro, danza, flamenco… </p>
+            <img class="separator separator-playa" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+            <a target="_blank" class="see-event" href="https://www.facebook.com/teatrolatianorica/ ">Más info <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="icons-row">
+      <div class="i-container">
+        <div class="also-feature">
+          <img src="***_preurl_***/storage/app/media/uploaded-files/templates/gastro-grey.svg">
+          <p class="also-desc">Gastronomía</p>
+        </div>
+        <div class="also-feature">
+          <img src="***_preurl_***/storage/app/media/uploaded-files/templates/ocio.svg">
+          <p class="also-desc">Ocio</p>
+        </div>
+        <div class="also-feature">
+          <img src="***_preurl_***/storage/app/media/uploaded-files/templates/fiesta-grey.svg">
+          <p class="also-desc">Fiesta</p>
+        </div>
+      </div>
+    </div>';
 
     static function getTTeatro(){
       $teatro = PagesTemplates::getFinalTemplate(PagesTemplates::$teatro);
@@ -1483,5 +1754,353 @@ class PagesTemplates
     }
 
     static $gastronomia = '
-    ';
+    <!-- HEADER -->
+    <div class="header-general header-cocina">
+      <div class="header-container">
+        <div class="header-txt">
+          <h1 class="txt">Gastronomía</h1><img class="brush fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
+      </div>
+      <!-- NUEVA FOTO -->
+      <img class="background-image" src="***_preurl_***/storage/app/media/uploaded-files/templates/cocina.jpg" alt="">
+    </div>
+    <div class="section-txt-comarca">
+      <!-- NUEVO DIV -->
+      <div class="txt-container">
+        <p class="title">NUESTRA
+          <br>GASTRONOMÍA</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+
+        <p class="desc">Los fogones de la gastronomía gaditana contienen una rica variedad de fusiones que hacen de ella un sabor único y especial. Descubre la diversidad de platos que cada rincón de la provincia ofrece para degustar de un sin fin de sabores.</p>
+      </div>
+    </div>
+    <div class="static-structure">
+      <div class="page page-compras">
+        <div class="overlay-img">
+          <br>
+        </div><img class="rec-img fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/gourmet.jpg">
+        <img class="icon fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/gourmet.svg">
+        <div class="txt-container">
+
+          <p class="name">GOURMET</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+          <a href="gourmet.html">Saber más sobre cocina Gourmet <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii">&nbsp;</a></div>
+      </div>
+      <div class="page">
+        <div class="overlay-img">
+          <br>
+        </div><img class="rec-img fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/vino.jpg">
+        <img class="icon fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/vino.svg">
+        <div class="txt-container">
+
+          <p class="name">EL VINO</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+          <a href="vino.html">Saber más sobre el vino <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii">&nbsp;</a></div>
+      </div>
+      <div class="page page-comida">
+        <div class="overlay-img">
+          <br>
+        </div><img class="rec-img fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/comida-tradicional.jpg">
+        <img class="icon fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/comida-tradicional.svg">
+        <div class="txt-container">
+
+          <p class="name">COMIDA TRADICIONAL</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+          <a href="comida-tradicional.html">Saber más sobre comida tradicional <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii">&nbsp;</a></div>
+      </div>
+    </div>';
+
+    static function getTGastronomia(){
+      $gastronomia = PagesTemplates::getFinalTemplate(PagesTemplates::$gastronomia);
+      return $gastronomia;
+    }
+
+    static $comida = '
+    <!-- HEADER -->
+    <div class="header header-comida">
+      <div class="header-container header-village-container">
+        <div class="header-txt header-txt-village">
+          <h1 id="natu-via" class="txt">Comida tradicional</h1>
+          <img class="brush" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt="">
+        </div>
+      </div>
+      <!-- NUEVA FOTO -->
+      <img class="background-image" src="***_preurl_***/storage/app/media/uploaded-files/templates/comidaheader.jpg">
+    </div>
+    <!-- TXT-->
+    <div class="section-txt-village">
+      <div class="txt-container">
+              <p class="title">LOS FOGONES <br> DEL SUR</p>
+              <img class="separator" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+              <p class="desc">Descubre la gran costumbre culinaria gaditana que destaca por su gran tradición marinera, fruto de platos conocidos como los cazones y freidurías de pescado. </p>
+      </div>
+    </div>
+
+    <!-- IMAGEN -->
+    <div class="featured-element featured-comida">
+      <div class="txt-container">
+        <p class="title">RUTA COMIDA TRADICIONAL</p>
+        <p class="desc">Deja que tu paladar se enamore.</p>
+        <a class="events-link" href="rutas.html">Selección de rutas <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-arrow-yellow.svg" alt=""> </a>
+        <img class="separator" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+      </div>
+      <!-- NUEVA FOTO -->
+      <div class="overlay"></div>
+      <img class="img-destacada" src="***_preurl_***/storage/app/media/uploaded-files/templates/comida2.jpg" alt="">
+    </div>
+
+    <div class="section-txt-village">
+      <div class="txt-container">
+              <p class="title">3 IDEAS PENSADAS <br> ESPECIALMENTE <br> PARA TI</p>
+              <img class="separator" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+      </div>
+    </div>
+
+    <div id="exps-playa" class="all-exps">
+      <div class="all-events-container">
+        <div class="event event-playa">
+          <div class="overlay-img"></div>
+          <img class="rec-img" src="***_preurl_***/storage/app/media/uploaded-files/templates/tabernita.jpg">
+          <div class="txt-container">
+            <p class="name name-bird">MINI BAR LA TABERNITA</p>
+            <p class="subtitle">Una taberna donde encontrar un servicio excelente y una comida de primera.</p>
+            <img class="separator separator-playa" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+            <a target="_blank" class="see-event" href="https://m.facebook.com/RafaTabernita/">Más info <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg"></a>
+          </div>
+        </div>
+        <div class="event event-playa">
+          <div class="overlay-img"></div>
+          <img class="rec-img" src="***_preurl_***/storage/app/media/uploaded-files/templates/codigo-barra.jpg">
+          <div class="txt-container">
+            <p class="name name-bird">CÓDIGO DE BARRA</p>
+            <p class="subtitle">Tradición y modernidad se cogen de la mano para la elaboración de estos platos. </p>
+            <img class="separator separator-playa" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+            <a target="_blank" class="see-event" href="https://www.tripadvisor.es/Restaurant_Review-g187432-d4071583-Reviews-Codigo_de_Barra-Cadiz_Costa_de_la_Luz_Andalucia.html">Más info <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg"></a>
+          </div>
+        </div>
+        <div class="event event-playa">
+          <div class="overlay-img"></div>
+          <img class="rec-img" src="***_preurl_***/storage/app/media/uploaded-files/templates/pantalan.jpg">
+          <div class="txt-container">
+            <p class="name name-bird">PANTALÁN G</p>
+            <p class="subtitle">Sencillez y exquisitez crean este restaurante que trae la mejor comida de Cádiz.</p>
+            <img class="separator separator-playa" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+            <a target="_blank" class="see-event" href="http://pantalang.com/">Más info <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="icons-row">
+      <div class="i-container">
+        <div class="also-feature">
+          <img src="***_preurl_***/storage/app/media/uploaded-files/templates/gastro-grey.svg">
+          <p class="also-desc">Gastronomía</p>
+        </div>
+        <div class="also-feature">
+          <img src="***_preurl_***/storage/app/media/uploaded-files/templates/cultura-grey.svg">
+          <p class="also-desc">Cultura</p>
+        </div>
+        <div class="also-feature">
+          <img src="***_preurl_***/storage/app/media/uploaded-files/templates/ruta-grey.svg">
+          <p class="also-desc">Ruta</p>
+        </div>
+      </div>
+    </div>';
+
+    static function getTComida(){
+      $comida = PagesTemplates::getFinalTemplate(PagesTemplates::$comida);
+      return $comida;
+    }
+
+    static $vino = '
+    <!-- HEADER -->
+    <div class="header header-vino">
+      <div class="header-container header-village-container">
+        <div class="header-txt header-txt-village">
+          <h1 id="natu-via" class="txt">El vino</h1>
+          <img class="brush" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt="">
+        </div>
+      </div>
+      <!-- NUEVA FOTO -->
+      <img class="background-image" src="***_preurl_***/storage/app/media/uploaded-files/templates/vinoheader.jpg">
+    </div>
+    <!-- TXT-->
+    <div class="section-txt-village">
+      <div class="txt-container">
+              <p class="title">TIERRA <br> DE VIÑAS</p>
+              <img class="separator" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+              <p class="desc">Bien es conocido la calidad y la dedicación al vino de la provincia de Cádiz. Diversos son los municipios en los que disfrutar de una  ruta por las bodegas y conocer aún más esta pasión.</p>
+      </div>
+    </div>
+
+    <!-- IMAGEN -->
+    <div class="featured-element featured-vino">
+      <div class="txt-container">
+        <p class="title">CATA DE VINOS EN VEJER DE LA FRONTERA</p>
+        <p class="desc">Un plan para todos los sentidos. De lo bueno, lo mejor. </p>
+        <a class="events-link" href="rutas.html">Selección de rutas <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-arrow-yellow.svg" alt=""> </a>
+        <img class="separator" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+      </div>
+      <!-- NUEVA FOTO -->
+      <div class="overlay"></div>
+      <img class="img-destacada" src="***_preurl_***/storage/app/media/uploaded-files/templates/cata-vinos.jpg" alt="">
+    </div>
+
+    <div class="section-txt-village">
+      <div class="txt-container">
+              <p class="title">3 IDEAS PENSADAS <br> ESPECIALMENTE <br> PARA TI</p>
+              <img class="separator" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+      </div>
+    </div>
+
+    <div id="exps-playa" class="all-exps">
+      <div class="all-events-container">
+        <div class="event event-playa">
+          <div class="overlay-img"></div>
+          <img class="rec-img" src="***_preurl_***/storage/app/media/uploaded-files/templates/osborne.jpg">
+          <div class="txt-container">
+            <p class="name name-bird">BODEGAS OSBORNE</p>
+            <p class="subtitle">Una experiencia única en la que descubrirás los sabores y olores más solemnes de Andalucía.</p>
+            <img class="separator separator-playa" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+            <a target="_blank" class="see-event" href="http://www.bodegas-osborne.com/puerto-de-santa-maria/">Más info <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg"></a>
+          </div>
+        </div>
+        <div class="event event-playa">
+          <div class="overlay-img"></div>
+          <img class="rec-img" src="***_preurl_***/storage/app/media/uploaded-files/templates/tio-pepe.jpg">
+          <div class="txt-container">
+            <p class="name name-bird">BODEGAS <br> TÍO PEPE</p>
+            <p class="subtitle">Atrévete a descubrir el origen del vino de Jerez y aprender de todos sus secretos. </p>
+            <img class="separator separator-playa" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+            <a target="_blank" class="see-event" href="https://bodegastiopepe.com/">Más info <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg"></a>
+          </div>
+        </div>
+        <div class="event event-playa">
+          <div class="overlay-img"></div>
+          <img class="rec-img" src="***_preurl_***/storage/app/media/uploaded-files/templates/petronila.jpg">
+          <div class="txt-container">
+            <p class="name name-bird">LA VIÑA SANTA PETRONILA</p>
+            <p class="subtitle">La Viña Santa Petronila está situada en la mejor zona vinícola del Jerez Superior.</p>
+            <img class="separator separator-playa" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+            <a target="_blank" class="see-event" href="http://santapetronila.com/">Más info <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="icons-row">
+      <div class="i-container">
+        <div class="also-feature">
+          <img src="***_preurl_***/storage/app/media/uploaded-files/templates/gastro-grey.svg">
+          <p class="also-desc">Gastronomía</p>
+        </div>
+        <div class="also-feature">
+          <img src="***_preurl_***/storage/app/media/uploaded-files/templates/cultura-grey.svg">
+          <p class="also-desc">Cultura</p>
+        </div>
+        <div class="also-feature">
+          <img src="***_preurl_***/storage/app/media/uploaded-files/templates/ruta-grey.svg">
+          <p class="also-desc">Ruta</p>
+        </div>
+      </div>
+    </div>';
+
+    static function getTVino(){
+      $vino = PagesTemplates::getFinalTemplate(PagesTemplates::$vino);
+      return $vino;
+    }
+
+    static $gourmet = '
+    <!-- HEADER -->
+    <div class="header header-gourmet">
+      <div class="header-container header-village-container">
+        <div class="header-txt header-txt-village">
+          <h1 class="txt" id="natu-via">Gourmet</h1><img class="brush fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
+      </div>
+      <!-- NUEVA FOTO -->
+      <img class="background-image" src="***_preurl_***/storage/app/media/uploaded-files/templates/gourmetheader.jpg" alt="">
+    </div>
+    <!-- TXT-->
+    <div class="section-txt-village">
+      <div class="txt-container">
+
+        <p class="title">TERRITORIO
+          <br>GOURMET</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+
+        <p class="desc">La gastronomía de Cádiz cuenta con una oferta Gourmet en productos como el pescado, el queso o la miel que la han convertido en una tendencia culinaria muy apreciada.</p>
+      </div>
+    </div>
+    <!-- IMAGEN -->
+    <div class="featured-element featured-gourmet">
+      <div class="txt-container">
+
+        <p class="title">RUTA CULINARIA EN EL PUERTO DE SANTA MARÍA</p>
+
+        <p class="desc">¿Eres de emociones fuertes? Disfruta de Cádiz como nunca antes.</p><a class="events-link" href="rutas.html">Selección de rutas culinarias <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-arrow-yellow.svg" alt="" class="fr-fic fr-dii">&nbsp;</a>
+        <img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
+        <!-- NUEVA FOTO -->
+        <div class="overlay"></div>
+        <img class="img-destacada" src="***_preurl_***/storage/app/media/uploaded-files/templates/retinto2.jpg" alt="">
+    </div>
+    <div class="section-txt-village">
+      <div class="txt-container">
+
+        <p class="title">3 IDEAS PENSADAS
+          <br>ESPECIALMENTE
+          <br>PARA TI</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
+    </div>
+    <div class="all-exps" id="exps-playa">
+      <div class="all-events-container">
+        <div class="event event-playa">
+          <div class="overlay-img">
+            <br>
+          </div><img class="rec-img fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/disparate.jpg">
+          <div class="txt-container">
+
+            <p class="name name-bird">DISPARATE</p>
+
+            <p class="subtitle">El restaurante del cocinero José Ruiz Loaiza mezcla cocina tradicional con modernidad.</p><img class="separator separator-playa fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+            <a class="see-event" href="http://disparate.business.site/" target="_blank">Más info <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+        </div>
+        <div class="event event-playa">
+          <div class="overlay-img">
+            <br>
+          </div><img class="rec-img fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/campero.jpg">
+          <div class="txt-container">
+
+            <p class="name name-bird">EL CAMPERO</p>
+
+            <p class="subtitle">La cocina de El Campero aúna las recetas más tradicionales de la gastronomía barbateña.</p><img class="separator separator-playa fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+            <a class="see-event" href="http://www.restauranteelcampero.es/" target="_blank">Más info <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+        </div>
+        <div class="event event-playa">
+          <div class="overlay-img">
+            <br>
+          </div><img class="rec-img fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/ultramar.jpg">
+          <div class="txt-container">
+
+            <p class="name name-bird">ULTRAMAR&amp;NOS</p>
+
+            <p class="subtitle">Espacio moderno, joven, informal y con intenciones de sorprender al cliente.</p><img class="separator separator-playa fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+            <a class="see-event" href="http://www.ultramarynos.com/" target="_blank">Más info <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+        </div>
+      </div>
+    </div>
+    <div class="icons-row">
+      <div class="i-container">
+        <div class="also-feature"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/gastro-grey.svg" class="fr-fil fr-dib">
+
+          <p class="also-desc">Gastronomía</p>
+        </div>
+        <div class="also-feature"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/cultura-grey.svg" class="fr-fil fr-dib">
+
+          <p class="also-desc">Cultura</p>
+        </div>
+        <div class="also-feature"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/ruta-grey.svg" class="fr-fil fr-dib">
+
+          <p class="also-desc">Ruta</p>
+        </div>
+      </div>
+    </div>';
+
+    static function getTGourmet(){
+      $gourmet = PagesTemplates::getFinalTemplate(PagesTemplates::$gourmet);
+      return $gourmet;
+    }
 }

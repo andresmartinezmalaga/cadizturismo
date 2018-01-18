@@ -53,7 +53,7 @@ class __TwigTemplate_c997bfc4d8a659b7a9a385cefb1e610919266a1d9603503b3bc92d8c40d
             echo "                <li class=\"menu-item\"><a href=\"";
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["item"], "url", array()), "html", null, true);
             echo "\">";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["item"], "title", array()), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), $context["item"], "viewBag", array()), "nombrees", array()), "html", null, true);
             echo "</a></li>
               ";
         }
@@ -306,7 +306,7 @@ class __TwigTemplate_c997bfc4d8a659b7a9a385cefb1e610919266a1d9603503b3bc92d8c40d
             <img class=\"separator-tiny\" src=\"{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg\">
             <ul class=\"menu-ul donde-ul\">
               {% for item in staticMenu.menuItems %}
-                <li class=\"menu-item\"><a href=\"{{ item.url }}\">{{ item.title }}</a></li>
+                <li class=\"menu-item\"><a href=\"{{ item.url }}\">{{ item.viewBag.nombrees }}</a></li>
               {% endfor %}
               <li class=\"menu-item\"><a href=\"{{url('/')}}/{{lang}}/comarcas\">{{'Todas las comarcas'|_}}</a></li>
               <li class=\"menu-item\"><a href=\"{{url('/')}}/{{lang}}/municipios\">{{'Todos los municipios'|_}}</a></li>

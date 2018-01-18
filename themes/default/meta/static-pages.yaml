@@ -9,7 +9,10 @@ static-pages:
     municipios:
         municipios-uno: {  }
         municipios-dos: {  }
-        municipios-tres: {  }
+        municipios-barbate: {  }
+        municipios-grazalema: {  }
+        municipios-jerez-de-la-frontera: {  }
+        municipios-tarifa: {  }
     playas:
         playas-uno: {  }
     naturaleza:
@@ -31,4 +34,7 @@ static-pages:
         cultura-flamenco: {  }
         cultura-teatro: {  }
         cultura-fiesta: {  }
-    gastronomia: {  }
+    gastronomia:
+        gastronomia-gourmet: {  }
+        gastronomia-el-vino: {  }
+        gastronomia-comida-tradicional: {  }
