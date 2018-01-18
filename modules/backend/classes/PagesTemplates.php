@@ -999,8 +999,488 @@ class PagesTemplates
       return $diversion;
     }
 
+    static $compras = '
+    <!-- HEADER -->
+    <div class="header header-compras">
+      <div class="header-container header-village-container">
+        <div class="header-txt header-txt-village">
+          <h1 class="txt" id="natu-via">Compras</h1><img class="brush fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
+      </div>
+      <!-- NUEVA FOTO -->
+      <img class="background-image" src="***_preurl_***/storage/app/media/uploaded-files/templates/compras.jpg" alt="">
+    </div>
+    <!-- TXT-->
+    <div class="section-txt-village">
+      <div class="txt-container">
+
+        <p class="title">EXPERIENCIAS
+          <br>PARA TODOS
+          <br>LOS SENTIDOS</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+
+        <p class="desc">El aroma de sus mercados, el color de sus calles, la simpatía y amabilidad de sus gentes, el sabor de sus productos mediterráneos, sentir la brisa y el sol crean un entorno perfecto para realizar tus compras.</p>
+      </div>
+    </div>
+    <!-- IMAGEN -->
+    <div class="featured-element featured-compras">
+      <div class="txt-container">
+
+        <p class="title">Mercado Central de Abastos</p>
+
+        <p class="desc">Adéntrate en "La Plaza" y disfruta de las compras de toda la vida en Jerez de la Frontera</p><a class="events-link" href="http://www.jerez.es/webs_municipales/medio_ambiente/consumo/mercados_de_abastos_mercadillos_y_venta_ambulante/mercados_de_abastos/mercado_central_de_abastos/">Saber más <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-arrow-yellow.svg" alt="" class="fr-fic fr-dii">&nbsp;</a>
+        <img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
+        <!-- NUEVA FOTO -->
+        <img class="img-destacada" src="***_preurl_***/storage/app/media/uploaded-files/templates/featured-compras.jpg" alt="">
+    </div>
+    <div class="section-txt-village">
+      <div class="txt-container">
+
+        <p class="title">3 LUGARES DONDE
+          <br>CONSEGUIR LO
+          <br>QUE BUSCAS</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
+    </div>
+    <div class="all-exps" id="exps-playa">
+      <div class="all-events-container">
+        <div class="event event-playa">
+          <div class="overlay-img">
+            <br>
+          </div><img class="rec-img fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/bahia-sur.jpg">
+          <div class="txt-container">
+
+            <p class="name">BAHÍA SUR</p>
+
+            <p class="subtitle">Situado en San Fernando, Cádiz, el Parque Comercial ofrece alimentación, moda y servicios.</p><img class="separator separator-playa fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+            <a class="see-event" href="http://ccbahiasur.com/" target="_blank">Más info <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+        </div>
+        <div class="event event-playa">
+          <div class="overlay-img">
+            <br>
+          </div><img class="rec-img fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/area-sur.jpg">
+          <div class="txt-container">
+
+            <p class="name">CC ÁREA SUR</p>
+
+            <p class="subtitle">Área Sur es el&nbsp;destino de Moda&nbsp;de Jerez y de la provincia de Cádiz.</p><img class="separator separator-playa fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+            <a class="see-event" href="https://www.ccareasur.com/es/" target="_blank">Más info <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+        </div>
+        <div class="event event-playa">
+          <div class="overlay-img">
+            <br>
+          </div><img class="rec-img fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/puerto-europa.jpg">
+          <div class="txt-container">
+
+            <p class="name">PUERTA EUROPA</p>
+
+            <p class="subtitle">Con 80 tiendas y diferentes servicios distribuidos en dos plantas.</p><img class="separator separator-playa fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+            <a class="see-event" href="https://ccpuertaeuropa.com/" target="_blank">Más info <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+        </div>
+      </div>
+    </div>
+    <div class="icons-row">
+      <div class="i-container">
+        <div class="also-feature"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/gastro-grey.svg" class="fr-fil fr-dib">
+
+          <p class="also-desc">Gastronomía</p>
+        </div>
+        <div class="also-feature"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/ocio.svg" class="fr-fil fr-dib">
+
+          <p class="also-desc">Ocio</p>
+        </div>
+        <div class="also-feature"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/fiesta-grey.svg" class="fr-fil fr-dib">
+
+          <p class="also-desc">Fiesta</p>
+        </div>
+      </div>
+    </div>';
+
+    static function getTCompras(){
+      $compras = PagesTemplates::getFinalTemplate(PagesTemplates::$compras);
+      return $compras;
+    }
+
+    static $localesOcio = '
+    <!-- HEADER -->
+    <div class="header header-locales">
+      <div class="header-container header-village-container">
+        <div class="header-txt header-txt-village">
+          <h1 id="natu-via" class="txt">Locales de ocio</h1>
+          <img class="brush" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt="">
+        </div>
+      </div>
+      <!-- NUEVA FOTO -->
+      <img class="background-image" src="***_preurl_***/storage/app/media/uploaded-files/templates/parqueocio-header.jpg">
+    </div>
+    <!-- TXT-->
+    <div class="section-txt-village">
+      <div class="txt-container">
+              <p class="title">VIVE COMO <br> UN GADITANO</p>
+              <img class="separator" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+              <p class="desc">Conoce la provincia a través de los diferentes rincones en los que parar a disfrutar de la vida gaditana.</p>
+      </div>
+    </div>
+
+    <!-- IMAGEN -->
+    <div class="featured-element featured-locales">
+      <div class="txt-container">
+        <p class="title">RUTA DE VINOS POR CHICLANA</p>
+        <p class="desc">Un plan para todos los sentidos. De lo bueno, lo mejor. </p>
+        <a class="events-link" href="rutas.html">Selección de rutas <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-arrow-yellow.svg" alt=""> </a>
+        <img class="separator" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+      </div>
+      <!-- NUEVA FOTO -->
+      <div class="overlay"></div>
+      <img class="img-destacada" src="***_preurl_***/storage/app/media/uploaded-files/templates/ruta-chiclana.jpg" alt="">
+    </div>
+
+    <div class="section-txt-village">
+      <div class="txt-container">
+              <p class="title">3 PLANES QUE <br> SEGURO TE <br> INTERESAN</p>
+              <img class="separator" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+      </div>
+    </div>
+
+    <div id="exps-playa" class="all-exps">
+      <div class="all-events-container">
+        <div class="event event-playa">
+          <div class="overlay-img"></div>
+          <img class="rec-img" src="***_preurl_***/storage/app/media/uploaded-files/templates/paypay.jpg">
+          <div class="txt-container">
+            <p class="name name-pay">CAFÉ TEATRO PAY PAY</p>
+            <p class="subtitle">Por su escenario pasan desde cantautores a cuentacuentos, música en directo de todo tipo…</p>
+            <img class="separator separator-playa" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+            <a target="_blank" class="see-event" href="http://www.cafeteatropaypay.com/">Más info <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg"></a>
+          </div>
+        </div>
+        <div class="event event-playa">
+          <div class="overlay-img"></div>
+          <img class="rec-img" src="***_preurl_***/storage/app/media/uploaded-files/templates/chicuco.jpg">
+          <div class="txt-container">
+            <p class="name">EL CHICUCO</p>
+            <p class="subtitle">El ultramarinos es un comercio típicamente gaditano. </p>
+            <img class="separator separator-playa" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+            <a target="_blank" class="see-event" href="http://www.elchicuco.com/ ">Más info <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg"></a>
+          </div>
+        </div>
+        <div class="event event-playa">
+          <div class="overlay-img"></div>
+          <img class="rec-img" src="***_preurl_***/storage/app/media/uploaded-files/templates/bebo-vientos.jpg">
+          <div class="txt-container">
+            <p class="name">CHIRINGUITO BEBO LOS VIENTOS</p>
+            <p class="subtitle">Espectacular restaurante y bar de copas situado en la mismisima playa de la Victoria. </p>
+            <img class="separator separator-playa" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+            <a target="_blank" class="see-event" href="https://www.facebook.com/BeboLosVientos">Más info <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="icons-row">
+      <div class="i-container">
+        <div class="also-feature">
+          <img src="***_preurl_***/storage/app/media/uploaded-files/templates/gastro-grey.svg">
+          <p class="also-desc">Gastronomía</p>
+        </div>
+        <div class="also-feature">
+          <img src="***_preurl_***/storage/app/media/uploaded-files/templates/ocio.svg">
+          <p class="also-desc">Ocio</p>
+        </div>
+        <div class="also-feature">
+          <img src="***_preurl_***/storage/app/media/uploaded-files/templates/fiesta-grey.svg">
+          <p class="also-desc">Fiesta</p>
+        </div>
+      </div>
+    </div>';
+
+    static function getTLocalesOcio(){
+      $localesOcio = PagesTemplates::getFinalTemplate(PagesTemplates::$localesOcio);
+      return $localesOcio;
+    }
+
+    static $parquesOcio = '
+    <!-- HEADER -->
+    <div class="header header-parques">
+      <div class="header-container header-village-container">
+        <div class="header-txt header-txt-village">
+          <h1 id="natu-via" class="txt">Parques de ocio</h1>
+          <img class="brush" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt="">
+        </div>
+      </div>
+      <!-- NUEVA FOTO -->
+      <img class="background-image" src="***_preurl_***/storage/app/media/uploaded-files/templates/po-header.jpg">
+    </div>
+    <!-- TXT-->
+    <div class="section-txt-village">
+      <div class="txt-container">
+              <p class="title">DIVERSIÓN <br> PARA TODOS</p>
+              <img class="separator" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+              <p class="desc">Un sin fin de propuestas hechas para el máximo disfrute, atrévete a conocer la oferta y llévate el mejor recuerdo posible.</p>
+      </div>
+    </div>
+
+    <!-- IMAGEN -->
+    <div class="featured-element featured-parques">
+      <div class="txt-container">
+        <p class="title">VISITA EL ZOO DE CASTELLAR</p>
+        <p class="desc">Un zoo familiar donde podrás dar de comer, tocar y ver de cerca maravillosas especies.</p>
+        <a target="_blank" class="events-link" href="https://www.zoodecastellar.es/">Saber más <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-arrow-yellow.svg" alt=""> </a>
+        <img class="separator" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+      </div>
+      <!-- NUEVA FOTO -->
+      <div class="overlay"></div>
+      <img class="img-destacada" src="***_preurl_***/storage/app/media/uploaded-files/templates/ocelote-castellar.jpg" alt="">
+    </div>
+
+    <div class="section-txt-village">
+      <div class="txt-container">
+              <p class="title">3 IDEAS PENSADAS <br> ESPECIALMENTE <br> PARA TI</p>
+              <img class="separator" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+      </div>
+    </div>
+
+    <div id="exps-playa" class="all-exps">
+      <div class="all-events-container">
+        <div class="event event-playa">
+          <div class="overlay-img"></div>
+          <img class="rec-img" src="***_preurl_***/storage/app/media/uploaded-files/templates/zoo.jpg">
+          <div class="txt-container">
+            <p class="name name-bird">ZOO BOTÁNICO DE JEREZ</p>
+            <p class="subtitle">El Parque Zoológico y Jardín Botánico de Jerez es uno de los más antiguos de España.</p>
+            <img class="separator separator-playa" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+            <a target="_blank" class="see-event" href="http://www.zoobotanicojerez.com/">Más info <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg"></a>
+          </div>
+        </div>
+        <div class="event event-playa">
+          <div class="overlay-img"></div>
+          <img class="rec-img" src="***_preurl_***/storage/app/media/uploaded-files/templates/aqualand.jpg">
+          <div class="txt-container">
+            <p class="name name-bird">AQUALAND BAHÍA DE CÁDIZ</p>
+            <p class="subtitle">Parque acuático situado en el Puerto de Santa María. Adrenalina Fun, Kidzworld, Family fun…</p>
+            <img class="separator separator-playa" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+            <a target="_blank" class="see-event" href="http://www.aqualand.es/bahiadecadiz/">Más info <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg"></a>
+          </div>
+        </div>
+        <div class="event event-playa">
+          <div class="overlay-img"></div>
+          <img class="rec-img" src="***_preurl_***/storage/app/media/uploaded-files/templates/circuito.jpg">
+          <div class="txt-container">
+            <p class="name name-bird">CIRCUITO DE JEREZ</p>
+            <p class="subtitle">Un paraíso para los amantes del motociclismo</p>
+            <img class="separator separator-playa" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+            <a target="_blank" class="see-event" href="http://www.circuitodejerez.com/">Más info <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="icons-row">
+      <div class="i-container">
+        <div class="also-feature">
+          <img src="***_preurl_***/storage/app/media/uploaded-files/templates/natu-grey.svg">
+          <p class="also-desc">Naturaleza</p>
+        </div>
+        <div class="also-feature">
+          <img src="***_preurl_***/storage/app/media/uploaded-files/templates/ocio.svg">
+          <p class="also-desc">Ocio</p>
+        </div>
+        <div class="also-feature">
+          <img src="***_preurl_***/storage/app/media/uploaded-files/templates/deporte-grey.svg">
+          <p class="also-desc">Deporte</p>
+        </div>
+      </div>
+    </div>';
+
+    static function getTParquesOcio(){
+      $parquesOcio = PagesTemplates::getFinalTemplate(PagesTemplates::$parquesOcio);
+      return $parquesOcio;
+    }
+
     static $cultura = '
+    <!-- HEADER -->
+    <div class="header-general header-cultura">
+      <div class="header-container">
+        <div class="header-txt">
+          <h1 class="txt">Cultura</h1><img class="brush fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
+      </div>
+      <!-- NUEVA FOTO -->
+      <img class="background-image" src="***_preurl_***/storage/app/media/uploaded-files/templates/cultura.jpg" alt="">
+    </div>
+    <div class="section-txt-comarca">
+      <!-- NUEVO DIV -->
+      <div class="txt-container">
+        <p class="title">CON MUCHO ARTE</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+        <p class="desc">El viento de levante y los atardeceres de Cádiz han sido testigo del paso de las diferentes civilizaciones por sus municipios. Prepárate para viajar en el tiempo y conoce el patrimonio cultural que ha dejado la esencia de la historia del mundo en la provincia.</p>
+      </div>
+    </div>
+    <div class="static-structure" id="structure-cultura">
+      <div class="page-cultura">
+        <div class="overlay-img">
+          <br>
+        </div><img class="rec-img fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/monumento.jpg">
+        <img class="icon fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/monumento.svg">
+        <div class="txt-container">
+
+          <p class="name">MONUMENTOS</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+          <a href="monumentos.html">Saber más <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii">&nbsp;</a></div>
+      </div>
+      <div class="page-cultura">
+        <div class="overlay-img">
+          <br>
+        </div><img class="rec-img fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/flamenco.jpg">
+        <img class="icon fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/flamenco.svg">
+        <div class="txt-container">
+
+          <p class="name">FLAMENCO</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+          <a href="flamenco.html">Saber más <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii">&nbsp;</a></div>
+      </div>
+      <div class="page-cultura">
+        <div class="overlay-img">
+          <br>
+        </div><img class="rec-img fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/flamenco-baile.jpg">
+        <img class="icon fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/teatro.svg">
+        <div class="txt-container">
+
+          <p class="name">TEATRO</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+          <a href="teatro.html">Saber más <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii">&nbsp;</a></div>
+      </div>
+      <div class="page-cultura">
+        <div class="overlay-img">
+          <br>
+        </div><img class="rec-img fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/fiesta.jpg">
+        <img class="icon fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/fiesta.svg">
+        <div class="txt-container">
+
+          <p class="name">FIESTA</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+          <a href="fiesta.html">Saber más <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii">&nbsp;</a></div>
+      </div>
+    </div>';
+
+    static function getTCultura(){
+      $cultura = PagesTemplates::getFinalTemplate(PagesTemplates::$cultura);
+      return $cultura;
+    }
+
+    static $monumento = '
     ';
+
+    static function getTMonumento(){
+      $monumento = PagesTemplates::getFinalTemplate(PagesTemplates::$monumento);
+      return $monumento;
+    }
+
+    static $fiesta = '
+    <!-- HEADER -->
+    <div class="header header-fiesta">
+      <div class="header-container header-village-container">
+        <div class="header-txt header-txt-village">
+          <h1 id="natu-via" class="txt">Fiesta</h1>
+          <img class="brush" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt="">
+        </div>
+      </div>
+      <!-- NUEVA FOTO -->
+      <img class="background-image" src="***_preurl_***/storage/app/media/uploaded-files/templates/fiestaheader.jpg">
+    </div>
+    <!-- TXT-->
+    <div class="section-txt-village">
+      <div class="txt-container">
+              <p class="title">EL AIRE DE <br> LA CALLE</p>
+              <img class="separator" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+              <p class="desc">Conoce la variedad de actividades festivas que se celebran en Cádiz durante el año, entre ellas una de las más conocidas a nivel nacional: el Carnaval. </p>
+      </div>
+    </div>
+
+    <!-- IMAGEN -->
+    <div class="featured-element featured-teatro">
+      <div class="txt-container">
+        <p class="title">CARNAVALES DE CÁDIZ</p>
+        <p class="desc">Lo más nuestro, lo más auténtico de Cádiz.</p>
+        <a class="events-link" href="#">Ver evento <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-arrow-yellow.svg" alt=""> </a>
+        <img class="separator" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+      </div>
+      <!-- NUEVA FOTO -->
+      <div class="overlay"></div>
+      <img class="img-destacada" src="***_preurl_***/storage/app/media/uploaded-files/templates/carnavales-header.jpg" alt="">
+    </div>
+
+    <div class="section-txt-village">
+      <div class="txt-container">
+              <p class="title">3 IDEAS PENSADAS <br> ESPECIALMENTE <br> PARA TI</p>
+              <img class="separator" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+      </div>
+    </div>
+
+    <div id="exps-playa" class="all-exps">
+      <div class="all-events-container">
+        <div class="event event-playa">
+          <div class="overlay-img"></div>
+          <img class="rec-img" src="***_preurl_***/storage/app/media/uploaded-files/templates/tarifa-night.jpg">
+          <div class="txt-container">
+            <p class="name name-bird">CAFÉ DEL MAR TARIFA NIGHT CLUB</p>
+            <p class="subtitle">Espacio único, gracias a su gran estilo, decoración, ambiente y arquitectura. </p>
+            <img class="separator separator-playa" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+            <a target="_blank" class="see-event" href="http://www.cafedelmartarifa.es/">Más info <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg"></a>
+          </div>
+        </div>
+        <div class="event event-playa">
+          <div class="overlay-img"></div>
+          <img class="rec-img" src="***_preurl_***/storage/app/media/uploaded-files/templates/babylonia.jpg">
+          <div class="txt-container">
+            <p class="name name-bird">LA POSADA DE BABYLONIA</p>
+            <p class="subtitle">Ideal para salir a bailar los fines de semana, ya que es uno de los locales del paseo marítimo.</p>
+            <img class="separator separator-playa" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+            <a target="_blank" class="see-event" href="http://www.laposadadebabyloniacadiz.com/">Más info <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg"></a>
+          </div>
+        </div>
+        <div class="event event-playa">
+          <div class="overlay-img"></div>
+          <img class="rec-img" src="***_preurl_***/storage/app/media/uploaded-files/templates/cafe-levante.jpg">
+          <div class="txt-container">
+            <p class="name name-bird">CAFÉ DE LEVANTE</p>
+            <p class="subtitle">Un lugar imprescindible de Cádiz con su ambiente acogedor y entrañable.</p>
+            <img class="separator separator-playa" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+            <a target="_blank" class="see-event" href="http://www.cafedelevantecadiz.com/">Más info <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="icons-row">
+      <div class="i-container">
+        <div class="also-feature">
+          <img src="***_preurl_***/storage/app/media/uploaded-files/templates/gastro-grey.svg">
+          <p class="also-desc">Gastronomía</p>
+        </div>
+        <div class="also-feature">
+          <img src="***_preurl_***/storage/app/media/uploaded-files/templates/ocio.svg">
+          <p class="also-desc">Ocio</p>
+        </div>
+        <div class="also-feature">
+          <img src="***_preurl_***/storage/app/media/uploaded-files/templates/fiesta-grey.svg">
+          <p class="also-desc">Fiesta</p>
+        </div>
+      </div>
+    </div>
+    ';
+
+    static function getTFiesta(){
+      $fiesta = PagesTemplates::getFinalTemplate(PagesTemplates::$fiesta);
+      return $fiesta;
+    }
+
+    static $flamenco = '
+    ';
+
+    static function getTFlamenco(){
+      $flamenco = PagesTemplates::getFinalTemplate(PagesTemplates::$flamenco);
+      return $flamenco;
+    }
+
+    static $teatro = '
+    ';
+
+    static function getTTeatro(){
+      $teatro = PagesTemplates::getFinalTemplate(PagesTemplates::$teatro);
+      return $teatro;
+    }
 
     static $gastronomia = '
     ';
