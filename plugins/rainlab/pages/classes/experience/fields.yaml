@@ -57,7 +57,7 @@ tabs:
         viewBag[layout]:
             tab: cms::lang.editor.settings
             label: rainlab.pages::lang.page.layout
-            default: 'default'
+            default: 'experience'
             cssClass: ocl
             
         viewBag[is_hidden]:
