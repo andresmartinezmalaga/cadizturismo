@@ -318,7 +318,7 @@ class Page extends ContentBase
                 $this->markup = PagesTemplates::getTComarca();
             } elseif ($parentPage->fileName == 'playas.htm') {
                 $this->markup = PagesTemplates::getTPlaya();
-            }
+            } 
             
             $layout = Layout::load($this->theme, $parentPage->layout);
             $component = $layout ? $layout->getComponent('staticPage') : null;
@@ -416,10 +416,7 @@ class Page extends ContentBase
         return $result;
     }
 
-    public function getPlan()
-    {
-        return "hola";
-    }
+   
     /**
      * Looks up the Layout Cms object for this page.
      * @return Cms\Classes\Layout
@@ -829,7 +826,7 @@ class Page extends ContentBase
      * @return array
      */
     public static function getRichEditorTypeInfo($type)
-    {
+    {   
         if ($type == 'static-page') {
 
             $pages = self::listStaticPageMenuOptions();
