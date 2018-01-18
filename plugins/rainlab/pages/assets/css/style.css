@@ -546,6 +546,20 @@ html, body {
   left: 140px !important;
   width: 75% !important; }
 
+.field-richeditor .header-village .txt, .field-richeditor .header-comarca .txt {
+  font-size: 274px !important;
+}
+
+.fr-box.fr-basic .fr-element {
+  padding: 0px !important;
+}
+
+.field-richeditor .also-feature img {
+  max-height: 70px;
+  width: auto !important;
+  object-fit: cover;
+}
+
 .field-richeditor .all-events {
   margin-top: 0px !important; }
   .field-richeditor .all-events .all-events-container {
