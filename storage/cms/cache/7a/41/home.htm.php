@@ -1,5 +1,5 @@
 <?php 
-class Cms5a5f1390c6496768452800_96882357b3a8a9bf52b4ba23e4aaffa7Class extends \Cms\Classes\PageCode
+class Cms5a605bb8c267d977225386_5190da4f3c6df168d0787aecb021ce4eClass extends \Cms\Classes\PageCode
 {
 public function onStart()
 	{
@@ -7,7 +7,7 @@ public function onStart()
 		if($this['lang']==''){
 			$this['lang']='es';
 		}
-	    $this['experiences'] = $this->staticExperience->experienceList();
+	    $this['experiences'] = $this->staticApp->experienceList();
 	}
 public function onFindExperience(){
 
@@ -15,7 +15,7 @@ public function onFindExperience(){
 		$interest = $_POST['interest'];
 		$tvisit = $_POST['tvisit'];
     	
-    	$experiences = $this->staticExperience->experienceFind($days,$interest,$tvisit);
+    	$experiences = $this->staticApp->experienceFind($days,$interest,$tvisit);
 
        	return Redirect::to('/experiences')->with( ['data' => json_encode($experiences)] );
     }

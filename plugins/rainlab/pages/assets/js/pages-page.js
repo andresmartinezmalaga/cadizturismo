@@ -311,9 +311,9 @@
 
             // Andrés Martínez
             // dont show this pages
-            if(data.path == 'municipios' || data.path == 'comarcas' || data.path == 'playas'){
+            /*if(data.path == 'comarcas'){
                 return false;
-            }
+            }*/
         
 
         if ($item.data('type') == 'snippet') {

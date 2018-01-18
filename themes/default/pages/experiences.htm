@@ -3,7 +3,7 @@ url = "/experiences"
 layout = "dinamic"
 is_hidden = 0
 
-[staticExperience]
+[staticApp]
 
 ==
 <?php  
@@ -29,7 +29,7 @@ is_hidden = 0
 		$interest = $_POST['interest'];
 		$tvisit = $_POST['tvisit'];
     	
-    	$experiences = $this->staticExperience->experienceFind($days,$interest,$tvisit);
+    	$experiences = $this->staticApp->experienceFind($days,$interest,$tvisit);
     	Session::put('data',json_encode($experiences));
 
     	$this['experiences'] = $experiences;

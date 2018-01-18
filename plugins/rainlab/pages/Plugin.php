@@ -28,7 +28,7 @@ class Plugin extends PluginBase
     {
         return [
             '\RainLab\Pages\Components\StaticPage' => 'staticPage',
-            '\RainLab\Pages\Components\StaticExperience' => 'staticExperience',
+            '\RainLab\Pages\Components\StaticApp' => 'staticApp',
             '\RainLab\Pages\Components\StaticMenu' => 'staticMenu',
             '\RainLab\Pages\Components\StaticBreadcrumbs' => 'staticBreadcrumbs'
         ];

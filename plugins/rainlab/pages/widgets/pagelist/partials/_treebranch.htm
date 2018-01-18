@@ -39,9 +39,25 @@
                 <input type="hidden" name="object[<?= e($fileName) ?>]" value="0"/>
                 
                 <!-- Andrés Martínez
-                    Hidden checkbox selct to delete on Parents
+                    Hidden checkbox selct to delete on Parents And sons fixeds
                 -->
-                <?php if ($fileName != 'municipios' && $fileName != 'comarcas' && $fileName != 'playas' && $fileName != 'naturaleza') : ?>
+
+                <?php if (                    
+                    $fileName != 'comarcas' &&
+                        $fileName != 'comarcas-bahia-de-cadiz' &&
+                        $fileName != 'comarcas-campina-de-jerez' &&
+                        $fileName != 'comarcas-campo-de-gibraltar' &&
+                        $fileName != 'comarcas-costa-noroeste' &&
+                        $fileName != 'comarcas-la-janda' &&
+                        $fileName != 'comarcas-sierra-de-cadiz' &&
+                    $fileName != 'municipios' && 
+                    $fileName != 'playas' && 
+                    $fileName != 'naturaleza' &&
+                        $fileName != 'naturaleza-birdwatching' &&
+                        $fileName != 'naturalezaespacios-naturales' &&
+                        $fileName != 'naturaleza-via-verde'
+
+                ) : ?>
                     <div class="checkbox custom-checkbox nolabel">
                         <input
                             id="<?= $cbId ?>"
@@ -57,7 +73,7 @@
                  <!-- Andrés Martínez
                     Hidden add subpage. Only for Parents
                 -->
-                <?php if ($fileName == 'municipios' || $fileName == 'comarcas' || $fileName == 'playas' || $fileName == 'naturaleza') : ?>
+                <?php if ($fileName == 'home' || $fileName == 'municipios' || $fileName == 'comarcas' || $fileName == 'playas') : ?>
                     <ul class="submenu">
                         <li>
                             <a

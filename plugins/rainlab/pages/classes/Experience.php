@@ -122,162 +122,37 @@ class Experience extends ContentBase
 
         // Andrés Martínez
         // Load experiences template on markup
-        
-        $templateB ='
-        <!-- HEADER -->
-        <div class="header-event main-event">
-          
-          <div class="header-container">
-            <div class="header-txt">
-              <h1 class="txt">Carreras de caballos</h1>
-              <img class="brush" src="**url**/plugins/rainlab/pages/assets/svg/brush-header.svg" alt="">
-              <div class="send-info">
-                <div class="button-send-info">
-                  <a href="#">Descarga el programa de carreras</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- NUEVA FOTO -->
-            <img class="background-image" value="cover" src="**url**/plugins/rainlab/pages/assets/img/caballos.jpg" alt="">
-          <!-- FEATURES -->
-          <div class="event-features">
-            <div class="feature">
-              <img src="**url**/plugins/rainlab/pages/assets/svg/calendar-event.svg">
-              <p class="feature-txt">03.08.17 - 05.08.17</p>
-            </div>
-            <div class="feature">
-              <img src="**url**/plugins/rainlab/pages/assets/svg/cultura-event.svg">
-              <p class="feature-txt">Cultura</p>
-            </div>
-            <div class="feature">
-              <img src="**url**/plugins/rainlab/pages/assets/svg/location.svg">
-              <p class="feature-txt">Sanlúcar de Barrameda</p>
-              <a target="_blank" href="https://www.google.es/maps/place/11540+Sanl%C3%BAcar+de+Barrameda,+C%C3%A1diz/@36.7732122,-6.391691,12.95z/data=!4m5!3m4!1s0xd0dde12a2f8e5ef:0xe9bbc21d97ce48c6!8m2!3d36.7725774!4d-6.3529689" class="feature-txt-mapa">Ver mapa</a>
-            </div>
-          </div>
-        </div>
-        <!-- SECTION TXT-->
-        <div class="section-txt">
-          <div class="big-number-container">
-            <span class="step">1</span>
-          </div>
-          <div class="txt-container">
-            <p class="title">UN ESCENARIO SINGULAR, UN AMBIENTE INMEJORABLE</p>
-            <p class="desc">Las Carreras de Caballos en las playas de Sanlúcar de Barrameda, que celebran el próximo mes de agosto su 173 aniversario. </p>
-            <p class="desc">Un hipódromo natural formado en las orillas de las playas sanluqueñas, entre el azul del mar, el verde horizonte del Parque de Doñana y el Paseo Marítimo de la ciudad. Todo un espectáculo hípico reconocido mundialmente como Fiesta de Interés Turístico Internacional. </p>
-          </div>
-        </div>
-        <!-- SECTION IMG -->
-        <div class="section-img">
-          <img src="**url**/plugins/rainlab/pages/assets/img/caballos2.jpg" alt="">
-        </div>
-        <div class="section-txt">
-          <div class="big-number-container">
-            <span class="step">2</span>
-          </div>
-          <div class="txt-container">
-            <p class="title">EL ENCUENTRO HÍPICO VERANIEGO MÁS ESPERADO</p>
-            <p class="desc">El encuentro se celebra cada año durante el mes de agosto, con la especial incógnita de que la fecha oficial no se establece hasta el final. El calendario de mareas es quien confirma esta cita anual, pues deben cuadrar las carreras con una buena bajamar para que los caballos purasangres puedan competir con orilla y pista suficiente por la playa. </p>
-            <p class="desc">La jornada se divide siempre en dos ciclos, de tres días cada uno. El horario de las carreras es otro misterio añadido que no se descubre hasta el mismo día. La cita siempre será a la caída del atardecer, pero entran en juego factores como el estado de la marea y el número de caballos que compiten en la jornada. A partir de las 18h de la tarde, los espectadores comienzan a ubicarse dentro de este hipódromo natural.</p>
-          <!--  <div class="municipios">
-              <div class="municipio">
-                <img src="**url**/plugins/rainlab/pages/assets/svg/municipio-icon.svg">
-                <p class="municipio-txt">Municipio 1</p>
-              </div>
-              <div class="municipio">
-                <img src="**url**/plugins/rainlab/pages/assets/svg/municipio-icon.svg">
-                <p class="municipio-txt">Municipio 2</p>
-              </div>
-              <div class="municipio">
-                <img src="**url**/plugins/rainlab/pages/assets/svg/municipio-icon.svg">
-                <p class="municipio-txt">Municipio 3</p>
-              </div>
-            </div> -->
-          </div>
-        </div>
-        <div class="section-img">
-          <img src="**url**/plugins/rainlab/pages/assets/img/caballos3.jpg" alt="">
-        </div>
-        <div class="section-txt">
-          <div class="big-number-container">
-            <span class="step">3</span>
-          </div>
-          <div class="txt-container">
-            <p class="title">UN HIPÓDROMO IMPROVISADO</p>
-            <p class="desc">Como si de uno convencional se tratase, el recinto se compone de taquillas de apuestas e instalaciones acondicionadas para caballos y jinetes alrededor de 20.000mts2. Antes de cada carrera los participantes desfilan ante sus espectadores para después situarse en los boxes de salida. </p>
-            <!-- VIDEO YOUTUBE -->
-            <iframe src="https://www.youtube.com/embed/C3mJHcRWRSM" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-            <p class="desc">Las diferentes pruebas y premios dependen de las características del caballo, del peso del jinete y de otras consideraciones que establecen las diferentes categorías en las que se compite. <a class="section-link" href="https://www.carrerassanlucar.es/">La Real Sociedad de Carreras de Caballos de Sanlúcar</a>, se encarga cada año de la celebración de este acontecimiento deportivo, en el que además una importante cuantía de premios son donados por empresas, entidades e instituciones de la zona, desde la captación de patrocinadores que cada año realiza este asociación. </p>
-          </div>
-        </div>
-        <div class="section-img">
-          <img src="**url**/plugins/rainlab/pages/assets/img/caballos4.jpg" alt="">
-        </div>
-        <div class="section-txt">
-          <div class="big-number-container">
-            <span class="step">4</span>
-          </div>
-          <div class="txt-container">
-            <p class="title">PURO ESPECTÁCULO</p>
-            <p class="desc">Las Carreras de Caballos de Sanlúcar ya se incluyen dentro de la Sociedad Estatal de Loterías y Apuestas del Estado, perteneciendo al calendario nacional de la apuesta hípica externa, junto a hipódromos como el de Madrid, San Sebastián, Dos Hermanas y Pineda. </p>
-            <p class="desc">Durante el año se realizan otros actos previos como el Concurso Morfológico Caballar, en marzo, o la elección del Cartel anunciador. Durante el mes de agosto, se celebran además otros actos paralelos como concursos fotográficos, de cometas, castillos y figuras de arena y otras competiciones deportivas que atraen a miles de personas a este encuentro tradicional. </p>
-            <span class="download">Descargar el cartel del evento <img src="**url**/plugins/rainlab/pages/assets/svg/yellow-arrow.svg"> </span>
-            <img class="cartel" src="**url**/plugins/rainlab/pages/assets/img/cartel-caballos.jpg">
-          </div>
-        </div>
-        <div class="section-img">
-          <img src="**url**/plugins/rainlab/pages/assets/img/caballos5.jpg" alt="">
-        </div>
-
-        <div class="icons-row">
-          <div class="i-container">
-            <div class="also-feature">
-              <img src="**url**/plugins/rainlab/pages/assets/svg/deporte-grey.svg">
-              <p class="also-desc">Deporte</p>
-            </div>
-            <div class="also-feature">
-              <img src="**url**/plugins/rainlab/pages/assets/svg/ocio.svg">
-              <p class="also-desc">Ocio</p>
-            </div>
-            <div class="also-feature">
-              <img src="**url**/plugins/rainlab/pages/assets/svg/cultura-grey.svg">
-              <p class="also-desc">Cultura</p>
-            </div>
-          </div>
-        </div>
-        ';
-
+                
         $template = '
         <!-- HEADER -->
         <div class="header-event main-exp">          
           <div class="header-container">
             <div class="header-txt">
               <h1 class="txt">La magia de El Palmar</h1>
-              <img class="brush" src="**url**/plugins/rainlab/pages/assets/svg/brush-header.svg" alt="">
+              <img class="brush" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt="">
             
             </div>
           </div>
           
           <!-- NUEVA FOTO -->
-          <img class="background-image" value="cover" src="**url**/storage/app/media/uploaded-files/palmar1.jpg" alt="">
+          <img class="background-image" value="cover" src="***_preurl_***/storage/app/media/uploaded-files/templates/palmar1.jpg" alt="">
           
           <!-- FEATURES -->
           <div class="event-features">
             <div class="feature-exp">
-              <img src="**url**/plugins/rainlab/pages/assets/svg/calendar-exp.svg">
+              <img src="***_preurl_***/storage/app/media/uploaded-files/templates/calendar-exp.svg">
               <p class="feature-txt">5 días</p>
             </div>
             <div class="feature-exp">
-              <img src="**url**/plugins/rainlab/pages/assets/svg/beach-exp.svg">
+              <img src="***_preurl_***/storage/app/media/uploaded-files/templates/beach-exp.svg">
               <p class="feature-txt">Playa</p>
             </div>
             <div class="feature-exp">
-              <img src="**url**/plugins/rainlab/pages/assets/svg/natu-exp.svg">
+              <img src="***_preurl_***/storage/app/media/uploaded-files/templates/natu-exp.svg">
               <p class="feature-txt">Naturaleza</p>
             </div>
             <div class="feature-exp">
-              <img src="**url**/plugins/rainlab/pages/assets/svg/cultura-event.svg">
+              <img src="***_preurl_***/storage/app/media/uploaded-files/templates/cultura-event.svg">
               <p class="feature-txt">Cádiz auténtica</p>
             </div>
           </div>
@@ -299,7 +174,7 @@ class Experience extends ContentBase
         
         <!-- SECTION IMG -->
         <div class="section-img">
-          <img src="**url**/plugins/rainlab/pages/assets/img/palmar2.jpg" alt="">
+          <img src="***_preurl_***/storage/app/media/uploaded-files/templates/palmar2.jpg" alt="">
         </div>
        
         <div class="section-txt">
@@ -314,7 +189,7 @@ class Experience extends ContentBase
         </div>
 
         <div class="section-img">
-          <img src="**url**/plugins/rainlab/pages/assets/img/surf3.jpg" alt="">
+          <img src="***_preurl_***/storage/app/media/uploaded-files/templates/surf3.jpg" alt="">
         </div>
 
         <div class="section-txt">
@@ -331,7 +206,7 @@ class Experience extends ContentBase
         </div>
 
         <div class="section-img">
-          <img src="**url**/plugins/rainlab/pages/assets/img/palmar4.jpg" alt="">
+          <img src="***_preurl_***/storage/app/media/uploaded-files/templates/palmar4.jpg" alt="">
         </div>
         
         <div class="section-txt">
@@ -348,19 +223,19 @@ class Experience extends ContentBase
             <p class="desc"><b>Zahora:</b> al otro extremo encontrarás esta pedanía casi anecdótica que pertenece al municipio de Barbate. Se encuentra en el Cabo de Trafalgar, donde se levanta su magestuoso Faro de Trafalgar y recoge playas como la del Sajorami o la playa de Mangueta. Un pequeño pueblo con encanto que se divide entre playas espectaculares con dunas en las que perderte y una pequeña urbanización que suele crecer en verano. </p>
             <div class="municipios">
                 <div class="municipio">
-                  <img src="**url**/plugins/rainlab/pages/assets/svg/location-municipio.svg">
+                  <img src="***_preurl_***/storage/app/media/uploaded-files/templates/location-municipio.svg">
                   <a target="_blank" href="https://www.google.es/maps/place/11140+Conil+de+la+Frontera,+C%C3%A1diz/data=!4m2!3m1!1s0xd0c381f6ac60cd1:0xf5342b7905a1d02e?sa=X&ved=0ahUKEwitqPGmhpvYAhXEaRQKHcK8D9UQ8gEImAEwEA">
                     <p class="municipio-txt">Conil</p>
                   </a>
                 </div>
                 <div class="municipio">
-                  <img src="**url**/plugins/rainlab/pages/assets/svg/location-municipio.svg">
+                  <img src="***_preurl_***/storage/app/media/uploaded-files/templates/location-municipio.svg">
                   <a target="_blank" href="https://www.google.es/search?q=las+calas+de+roche&npsic=0&rflfq=1&rlha=1&rlla=0&rlhsc=CgoIyO6usN2yuJMy&rllag=36307642,-6150099,109&tbm=lcl&ved=0ahUKEwj5y9q0hpvYAhVMWhQKHeu-BosQtgMIKg&hotel_dates=2018-01-14,2018-01-15&tbs=lf_hd:-1,lf_ho:2,lrf:!2m7!1e17!4m2!17m1!1e3!4m2!17m1!1e8!2m21!1e7!4m4!7m3!1m1!1u75!3sEUR!4m4!7m3!1m1!1u100!3sEUR!4m4!7m3!1m1!1u125!3sEUR!4m4!7m3!1m1!1u225!3sEUR!2m1!1e2!2m1!1e19!3sIAE,lf:1,lf_ui:6&rldoc=1#rlfi=hd:2018-01-14,2018-01-15;si:;mv:!1m3!1d5107.757163888957!2d-6.14749635!3d36.30320979999999!2m3!1f0!2f0!3f0!3m2!1i198!2i305!4f13.1;tbs:lf_hd:-1,lf_ho:2,lrf:!2m21!1e7!4m4!7m3!1m1!1u75!3sEUR!4m4!7m3!1m1!1u100!3sEUR!4m4!7m3!1m1!1u125!3sEUR!4m4!7m3!1m1!1u225!3sEUR!2m1!1e2!2m1!1e19!2m7!1e17!4m2!17m1!1e3!4m2!17m1!1e8!3sIAE,lf:1,lf_ui:6">
                     <p class="municipio-txt">Las Calas de Roche</p>
                   </a>
                 </div>
                 <div class="municipio">
-                  <img src="**url**/plugins/rainlab/pages/assets/svg/location-municipio.svg"/>
+                  <img src="***_preurl_***/storage/app/media/uploaded-files/templates/location-municipio.svg"/>
                   <a target="_blank" href="https://www.google.es/maps/place/11159+Zahora,+C%C3%A1diz/data=!4m2!3m1!1s0xd0c47338344472f:0xc21b61f8f66bf686?sa=X&ved=0ahUKEwizkfOYhpvYAhXHchQKHVwLDvEQ8gEIjQEwDg">
                     <p class="municipio-txt">Zahora</p>
                   </a>
@@ -369,10 +244,16 @@ class Experience extends ContentBase
         </div>
      
         <div class="section-img">
-          <img src="**url**/plugins/rainlab/pages/assets/img/palmar5.jpg" alt="">
+          <img src="***_preurl_***/storage/app/media/uploaded-files/templates/palmar5.jpg" alt="">
         </div>';
 
-        $this->markup = str_replace('**url**',url('/'),$template);
+        if (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false) {
+          $preurl = '/cadizturismo';
+        } else {
+          $preurl = '';
+        }
+
+        $this->markup = str_replace('***_preurl_***',$preurl,$template);
     }
 
     //

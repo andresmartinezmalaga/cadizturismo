@@ -1,9 +1,9 @@
-1516208051a:1:{s:15:"experiences.htm";a:10:{s:8:"fileName";s:15:"experiences.htm";s:7:"content";s:3809:"title = "experiences"
+1516275463a:1:{s:15:"experiences.htm";a:10:{s:8:"fileName";s:15:"experiences.htm";s:7:"content";s:3795:"title = "experiences"
 url = "/experiences"
 layout = "dinamic"
 is_hidden = 0
 
-[staticExperience]
+[staticApp]
 
 ==
 <?php  
@@ -29,7 +29,7 @@ is_hidden = 0
 		$interest = $_POST['interest'];
 		$tvisit = $_POST['tvisit'];
     	
-    	$experiences = $this->staticExperience->experienceFind($days,$interest,$tvisit);
+    	$experiences = $this->staticApp->experienceFind($days,$interest,$tvisit);
     	Session::put('data',json_encode($experiences));
 
     	$this['experiences'] = $experiences;
@@ -102,7 +102,7 @@ is_hidden = 0
 
 <div id='prtlExperiences' class="all-exps">
 	{% partial "experiences" %}
-</div>";s:5:"mtime";i:1516201253;s:6:"markup";s:2993:"<!-- HEADER -->
+</div>";s:5:"mtime";i:1516261716;s:6:"markup";s:2993:"<!-- HEADER -->
 <div class="header-search search-exp">
   
   <div class="header-container big-div">
@@ -162,7 +162,7 @@ is_hidden = 0
 
 <div id='prtlExperiences' class="all-exps">
 	{% partial "experiences" %}
-</div>";s:4:"code";s:702:"  
+</div>";s:4:"code";s:695:"  
 	
 	function onStart()
 	{		
@@ -185,7 +185,7 @@ is_hidden = 0
 		$interest = $_POST['interest'];
 		$tvisit = $_POST['tvisit'];
     	
-    	$experiences = $this->staticExperience->experienceFind($days,$interest,$tvisit);
+    	$experiences = $this->staticApp->experienceFind($days,$interest,$tvisit);
     	Session::put('data',json_encode($experiences));
 
     	$this['experiences'] = $experiences;
@@ -193,4 +193,4 @@ is_hidden = 0
     	return [
     		'#prtlExperiences' => $this->renderPartial('experiences')
     	];
-    }";s:5:"title";s:11:"experiences";s:3:"url";s:12:"/experiences";s:6:"layout";s:7:"dinamic";s:9:"is_hidden";s:1:"0";s:16:"staticExperience";a:0:{}}}
+    }";s:5:"title";s:11:"experiences";s:3:"url";s:12:"/experiences";s:6:"layout";s:7:"dinamic";s:9:"is_hidden";s:1:"0";s:9:"staticApp";a:0:{}}}
