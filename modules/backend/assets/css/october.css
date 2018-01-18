@@ -4891,27 +4891,21 @@ nav#layout-mainmenu.navbar-mode-inline ul.mainmenu-nav li:first-child {
     display: -webkit-flex;
     display: flex;
     align-items: center;
-    background-image: url("../images/file-icon.svg");
-    background-size: 16px 18px !important;
-    background-position: 10px 50%;
-    background-repeat: no-repeat;
-    padding-left: 34px;
     line-height: 14px;
-    padding-top: 28px;
-    padding-bottom: 28px; }
+    padding-top: 20px;
+    padding-bottom: 20px; }
 
 .control-treeview ol > li > div > ul.submenu li a {
   background-image: none !important; }
 
-.control-treeview .custom-checkbox label:before, .control-treeview .custom-radio label:before {
-  border: 1px solid #818181 !important;
-  background-color: #f6f6f6 !important; }
+.control-treeview ol > li.dragged div, .control-treeview ol > li > div:hover {
+  background-color: #175DA3 !important; }
 
-.control-treeview .custom-checkbox input[type=checkbox]:checked + label:before, .control-treeview .custom-radio input[type=checkbox]:checked + label:before {
-  color: #818181 !important; }
-
-.control-treeview ol > li > div:before {
-  content: none; }
+.control-treeview ol > li > div > span.drag-handle {
+  right: 7.5px !important;
+  bottom: -5px !important; }
+  .control-treeview ol > li > div > span.drag-handle:before {
+    font-size: 14px !important; }
 
 /* ICONS CHANGE */
 .btn-default.oc-icon-plus {

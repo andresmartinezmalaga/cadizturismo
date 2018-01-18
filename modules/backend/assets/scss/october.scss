@@ -1309,14 +1309,9 @@ nav#layout-mainmenu.navbar-mode-inline ul.mainmenu-nav li:first-child {
     font-size: 14px;
     @include flexbox();
     align-items: center;
-    background-image: url('../images/file-icon.svg');
-    background-size: 16px 18px !important;
-    background-position: 10px 50%;
-    background-repeat: no-repeat;
-    padding-left: 34px;
     line-height: 14px;
-    padding-top: 28px;
-    padding-bottom: 28px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
 
@@ -1325,19 +1320,31 @@ nav#layout-mainmenu.navbar-mode-inline ul.mainmenu-nav li:first-child {
 }
 
 .control-treeview {
-  .custom-checkbox label:before, .custom-radio label:before {
-    border: 1px solid #818181 !important;
-    background-color: #f6f6f6 !important;
-  }
+  // .custom-checkbox label:before, .custom-radio label:before {
+  //   border: 1px solid #818181 !important;
+  //   background-color: #f6f6f6 !important;
+  // }
+  //
+  // .custom-checkbox input[type=checkbox]:checked + label:before, .custom-radio input[type=checkbox]:checked + label:before {
+  //   color: #818181 !important;
+  // }
 
-  .custom-checkbox input[type=checkbox]:checked + label:before, .custom-radio input[type=checkbox]:checked + label:before {
-    color: #818181 !important;
-  }
+  // ol > li > div:before {
+  //   content: none;
+  // }
 
-  ol > li > div:before {
-    content: none;
-  }
+}
 
+.control-treeview ol > li.dragged div, .control-treeview ol > li > div:hover {
+  background-color: $blue !important;
+}
+
+.control-treeview ol > li > div > span.drag-handle {
+  right: 7.5px !important;
+  bottom: -5px !important;
+  &:before {
+    font-size: 14px !important;
+  }
 }
 
 /* ICONS CHANGE */

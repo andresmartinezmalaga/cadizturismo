@@ -990,8 +990,8 @@
 		"oA": 0,
 		"oAP": "\/modules\/backend\/assets\/images\/treeview-submenu-tabs.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -22375,6 +22375,16 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/adventour.jpg": {
+		"ft": 16384,
+		"iS": 132226,
+		"oA": 0,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/adventour.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/storage\/app\/media\/uploaded-files\/templates\/arte-vida.jpg": {
 		"ft": 16384,
 		"iS": 198231,
@@ -22460,6 +22470,16 @@
 		"iS": 79411,
 		"oA": 0,
 		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/conil.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/coripe.jpg": {
+		"ft": 16384,
+		"iS": 239717,
+		"oA": 0,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/coripe.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -22635,6 +22655,26 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/ruta-grey.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/ruta-grey.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/sierra-viva.jpg": {
+		"ft": 16384,
+		"iS": 139013,
+		"oA": 0,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/sierra-viva.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/storage\/app\/media\/uploaded-files\/templates\/small-yellow-separator.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -22650,6 +22690,36 @@
 		"iS": 952471,
 		"oA": 0,
 		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/vejer.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/via-verde1.jpg": {
+		"ft": 16384,
+		"iS": 146621,
+		"oA": 0,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/via-verde1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/viaverde.jpg": {
+		"ft": 16384,
+		"iS": 308761,
+		"oA": 0,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/viaverde.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/viaverde2.jpg": {
+		"ft": 16384,
+		"iS": 492809,
+		"oA": 0,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/viaverde2.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -24602,6 +24672,27 @@
 		"oO": 0,
 		"oS": 1
 		},
+	"\/themes\/default\/content\/static-pages-en\/naturaleza.htm": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/themes\/default\/content\/static-pages-en\/naturaleza.htm",
+		"oF": 0
+		},
+	"\/themes\/default\/content\/static-pages-fr\/naturaleza.htm": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/themes\/default\/content\/static-pages-fr\/naturaleza.htm",
+		"oF": 0
+		},
+	"\/themes\/default\/content\/static-pages\/comarcas-uno.htm": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/themes\/default\/content\/static-pages\/comarcas-uno.htm",
+		"oF": 0
+		},
 	"\/themes\/default\/content\/static-pages\/comarcas.htm": {
 		"cB": 0,
 		"ft": 8192,
@@ -24644,11 +24735,25 @@
 		"oAP": "\/themes\/default\/content\/static-pages\/gastronomia.htm",
 		"oF": 0
 		},
+	"\/themes\/default\/content\/static-pages\/municipios-dos.htm": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/themes\/default\/content\/static-pages\/municipios-dos.htm",
+		"oF": 0
+		},
 	"\/themes\/default\/content\/static-pages\/municipios-marina.htm": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/themes\/default\/content\/static-pages\/municipios-marina.htm",
+		"oF": 0
+		},
+	"\/themes\/default\/content\/static-pages\/municipios-uno.htm": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/themes\/default\/content\/static-pages\/municipios-uno.htm",
 		"oF": 0
 		},
 	"\/themes\/default\/content\/static-pages\/municipios.htm": {
