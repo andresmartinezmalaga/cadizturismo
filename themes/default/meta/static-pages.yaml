@@ -7,9 +7,8 @@ static-pages:
         comarcas-la-janda: {  }
         comarcas-sierra-de-cadiz: {  }
     municipios:
-        municipios-uno: {  }
         municipios-dos: {  }
-        municipios-tres: {  }
+    municipios-tres: {  }
     playas:
         playas-uno: {  }
     naturaleza:

@@ -533,6 +533,8 @@ html, body {
 .normal, .mobile {
   cursor: pointer; }
 
+
+
 /* CAMBIOS EDITOR */
 .field-richeditor .header-general .background-image, .field-richeditor .header .background-image, .field-richeditor .header-event .background-image {
   position: absolute !important;
