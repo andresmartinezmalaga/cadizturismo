@@ -1,9 +1,9 @@
-1516276953a:1:{s:8:"home.htm";a:10:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:7444:"title = "home"
+1516280202a:1:{s:8:"home.htm";a:10:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:7423:"title = "home"
 url = "/"
 layout = "dinamic"
 is_hidden = 0
 
-[staticExperience]
+[staticApp]
 
 ==
 
@@ -15,7 +15,7 @@ is_hidden = 0
 		if($this['lang']==''){
 			$this['lang']='es';
 		}
-	    $this['experiences'] = $this->staticExperience->experienceList();
+	    $this['experiences'] = $this->staticApp->experienceList();
 	}
 
 	function onFindExperience(){
@@ -24,7 +24,7 @@ is_hidden = 0
 		$interest = $_POST['interest'];
 		$tvisit = $_POST['tvisit'];
     	
-    	$experiences = $this->staticExperience->experienceFind($days,$interest,$tvisit);
+    	$experiences = $this->staticApp->experienceFind($days,$interest,$tvisit);
 
        	return Redirect::to('/experiences')->with( ['data' => json_encode($experiences)] );
     }
@@ -173,7 +173,7 @@ is_hidden = 0
         <a class="events-link" href="{{lang}}/rutas">{{'Selección de rutas secretas'|_}}<img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/link-arrow-yellow.svg" alt=""> </a>
         <img class="separator" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
       </div>
-    </div>";s:5:"mtime";i:1516202742;s:6:"markup";s:6846:"<!-- HEADER -->
+    </div>";s:5:"mtime";i:1516279275;s:6:"markup";s:6846:"<!-- HEADER -->
     <div class="header header-home">
       <div class="header-container">
         <div class="header-txt">
@@ -313,7 +313,7 @@ is_hidden = 0
         <a class="events-link" href="{{lang}}/rutas">{{'Selección de rutas secretas'|_}}<img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/link-arrow-yellow.svg" alt=""> </a>
         <img class="separator" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
       </div>
-    </div>";s:4:"code";s:499:" 
+    </div>";s:4:"code";s:485:" 
 
 	function onStart()
 	{
@@ -321,7 +321,7 @@ is_hidden = 0
 		if($this['lang']==''){
 			$this['lang']='es';
 		}
-	    $this['experiences'] = $this->staticExperience->experienceList();
+	    $this['experiences'] = $this->staticApp->experienceList();
 	}
 
 	function onFindExperience(){
@@ -330,7 +330,7 @@ is_hidden = 0
 		$interest = $_POST['interest'];
 		$tvisit = $_POST['tvisit'];
     	
-    	$experiences = $this->staticExperience->experienceFind($days,$interest,$tvisit);
+    	$experiences = $this->staticApp->experienceFind($days,$interest,$tvisit);
 
        	return Redirect::to('/experiences')->with( ['data' => json_encode($experiences)] );
-    }";s:5:"title";s:4:"home";s:3:"url";s:1:"/";s:6:"layout";s:7:"dinamic";s:9:"is_hidden";s:1:"0";s:16:"staticExperience";a:0:{}}}
+    }";s:5:"title";s:4:"home";s:3:"url";s:1:"/";s:6:"layout";s:7:"dinamic";s:9:"is_hidden";s:1:"0";s:9:"staticApp";a:0:{}}}

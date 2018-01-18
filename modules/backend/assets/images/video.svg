@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="19px" viewBox="0 0 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Media" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-20.000000, -270.000000)" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Page-1" transform="translate(20.000000, 271.000000)" stroke="#005DA7">
+            <polygon id="Stroke-1" points="0.5 16.7239 12.735 16.7239 12.735 6.6179 0.5 6.6179"></polygon>
+            <polygon id="Stroke-3" points="3.538 13.7079 9.696 13.7079 9.696 9.6329 3.538 9.6329"></polygon>
+            <g id="Group-10" transform="translate(0.000000, 0.223900)">
+                <polygon id="Stroke-4" points="17.7867 16.2397 12.7347 14.2637 12.7347 9.7397 17.7867 7.7647"></polygon>
+                <path d="M6.6173,3.3349 C6.6173,1.6459 5.2483,0.2759 3.5583,0.2759 C1.8693,0.2759 0.5003,1.6459 0.5003,3.3349 C0.5003,5.0239 1.8693,6.3939 3.5583,6.3939 C5.2483,6.3939 6.6173,5.0239 6.6173,3.3349 Z" id="Stroke-6"></path>
+                <path d="M12.735,3.3349 C12.735,1.6459 11.365,0.2759 9.676,0.2759 C7.987,0.2759 6.617,1.6459 6.617,3.3349 C6.617,5.0239 7.987,6.3939 9.676,6.3939 C11.365,6.3939 12.735,5.0239 12.735,3.3349 Z" id="Stroke-8"></path>
+            </g>
+        </g>
+    </g>
+</svg>
