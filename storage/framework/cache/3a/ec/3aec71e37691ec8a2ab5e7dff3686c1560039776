@@ -1,9 +1,9 @@
-1516198697a:1:{s:21:"comarcas-la-janda.htm";a:7:{s:8:"fileName";s:21:"comarcas-la-janda.htm";s:7:"content";s:6387:"[viewBag]
-title = "la janda"
+1516275463a:1:{s:21:"comarcas-la-janda.htm";a:7:{s:8:"fileName";s:21:"comarcas-la-janda.htm";s:7:"content";s:6358:"[viewBag]
+title = "LA JANDA"
 url = "/comarcas/la-janda"
 template = "pages"
-layout = "default"
 is_hidden = 0
+layout = "default"
 localeUrl[en] = "/comarcas/la-janda"
 localeUrl[fr] = "/comarcas/la-janda"
 localeUrl[de] = "/comarcas/la-janda"
@@ -17,7 +17,7 @@ localeUrl[ru] = "/comarcas/la-janda"
 			<h1 class="txt"><span class="first-word">La Janda</span></h1><img class="brush fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
 	</div>
 	<!-- NUEVA FOTO -->
-	<img class="background-image fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/janda2.jpg" alt="" style=""></div>
+	<img class="background-image fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/janda2.jpg" alt=""></div>
 <div class="section-txt-village">
 	<div class="txt-container">
 
@@ -44,7 +44,7 @@ localeUrl[ru] = "/comarcas/la-janda"
 		<p class="desc">¿Eres de emociones fuertes? Disfruta de Cádiz como nunca antes.</p><a class="events-link" href="#playas">Selección de rutas naturales <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-arrow-yellow.svg" alt="" class="fr-fic fr-dii">&nbsp;</a>
 		<img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
 	<!-- NUEVA FOTO -->
-	<img class="img-destacada fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/marismas-barbate.jpg" alt="" style=""></div>
+	<img class="img-destacada fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/marismas-barbate.jpg" alt=""></div>
 <div class="section-txt-village">
 	<div class="txt-container">
 
@@ -103,7 +103,7 @@ localeUrl[ru] = "/comarcas/la-janda"
 			<p class="also-desc">Cultura</p>
 		</div>
 	</div>
-</div>";s:5:"mtime";i:1516192218;s:6:"markup";s:6117:"<!-- HEADER -->
+</div>";s:5:"mtime";i:1516271606;s:6:"markup";s:6099:"<!-- HEADER -->
 <div class="header header-comarca">
 	<div class="header-container header-village-container">
 		<div class="header-txt header-txt-village">
@@ -111,7 +111,7 @@ localeUrl[ru] = "/comarcas/la-janda"
 			<h1 class="txt"><span class="first-word">La Janda</span></h1><img class="brush fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
 	</div>
 	<!-- NUEVA FOTO -->
-	<img class="background-image fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/janda2.jpg" alt="" style=""></div>
+	<img class="background-image fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/janda2.jpg" alt=""></div>
 <div class="section-txt-village">
 	<div class="txt-container">
 
@@ -138,7 +138,7 @@ localeUrl[ru] = "/comarcas/la-janda"
 		<p class="desc">¿Eres de emociones fuertes? Disfruta de Cádiz como nunca antes.</p><a class="events-link" href="#playas">Selección de rutas naturales <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-arrow-yellow.svg" alt="" class="fr-fic fr-dii">&nbsp;</a>
 		<img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
 	<!-- NUEVA FOTO -->
-	<img class="img-destacada fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/marismas-barbate.jpg" alt="" style=""></div>
+	<img class="img-destacada fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/marismas-barbate.jpg" alt=""></div>
 <div class="section-txt-village">
 	<div class="txt-container">
 
@@ -197,7 +197,7 @@ localeUrl[ru] = "/comarcas/la-janda"
 			<p class="also-desc">Cultura</p>
 		</div>
 	</div>
-</div>";s:4:"code";N;s:7:"viewBag";a:6:{s:5:"title";s:8:"la janda";s:3:"url";s:18:"/comarcas/la-janda";s:8:"template";s:5:"pages";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:9:"localeUrl";a:4:{s:2:"en";s:18:"/comarcas/la-janda";s:2:"fr";s:18:"/comarcas/la-janda";s:2:"de";s:18:"/comarcas/la-janda";s:2:"ru";s:18:"/comarcas/la-janda";}}s:12:"parsedMarkup";s:6117:"<!-- HEADER -->
+</div>";s:4:"code";N;s:7:"viewBag";a:6:{s:5:"title";s:8:"LA JANDA";s:3:"url";s:18:"/comarcas/la-janda";s:8:"template";s:5:"pages";s:9:"is_hidden";s:1:"0";s:6:"layout";s:7:"default";s:9:"localeUrl";a:4:{s:2:"en";s:18:"/comarcas/la-janda";s:2:"fr";s:18:"/comarcas/la-janda";s:2:"de";s:18:"/comarcas/la-janda";s:2:"ru";s:18:"/comarcas/la-janda";}}s:12:"parsedMarkup";s:6099:"<!-- HEADER -->
 <div class="header header-comarca">
 	<div class="header-container header-village-container">
 		<div class="header-txt header-txt-village">
@@ -205,7 +205,7 @@ localeUrl[ru] = "/comarcas/la-janda"
 			<h1 class="txt"><span class="first-word">La Janda</span></h1><img class="brush fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
 	</div>
 	<!-- NUEVA FOTO -->
-	<img class="background-image fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/janda2.jpg" alt="" style=""></div>
+	<img class="background-image fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/janda2.jpg" alt=""></div>
 <div class="section-txt-village">
 	<div class="txt-container">
 
@@ -232,7 +232,7 @@ localeUrl[ru] = "/comarcas/la-janda"
 		<p class="desc">¿Eres de emociones fuertes? Disfruta de Cádiz como nunca antes.</p><a class="events-link" href="#playas">Selección de rutas naturales <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-arrow-yellow.svg" alt="" class="fr-fic fr-dii">&nbsp;</a>
 		<img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
 	<!-- NUEVA FOTO -->
-	<img class="img-destacada fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/marismas-barbate.jpg" alt="" style=""></div>
+	<img class="img-destacada fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/marismas-barbate.jpg" alt=""></div>
 <div class="section-txt-village">
 	<div class="txt-container">
 

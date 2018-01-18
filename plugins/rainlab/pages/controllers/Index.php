@@ -119,14 +119,54 @@ class Index extends Controller
         $object = $this->loadObject($type, Request::input('path'));
 
         // Andrés Martínez
-        // load static templates        
-        $templateName = $object['fileName'];
+        // load Static-Parents templates and sons fixeds      
+        $pageFileName = $object['fileName'];
         $templateMarkup = $object['markup'];
 
-        if($templateName == 'naturaleza.htm' && $templateMarkup ==''){
+        
+        if($pageFileName == 'comarcas.htm' && $templateMarkup ==''){
+            $object['markup'] = PagesTemplates::getTComarcas();
+        }
+
+        if($pageFileName == 'municipios.htm' && $templateMarkup ==''){
+            $object['markup'] = PagesTemplates::getTMunicipios();
+        }
+
+        if($pageFileName == 'playas.htm' && $templateMarkup ==''){
+            $object['markup'] = PagesTemplates::getTPlayas();
+        }
+
+        if($pageFileName == 'naturaleza.htm' && $templateMarkup ==''){
             $object['markup'] = PagesTemplates::getTNaturaleza();
         }
+
+        if($pageFileName == 'naturaleza-via-verde.htm' && $templateMarkup ==''){
+            $object['markup'] = PagesTemplates::getTViaVerde();
+        }
+
+        if($pageFileName == 'naturaleza-birdwatching.htm' && $templateMarkup ==''){
+            $object['markup'] = PagesTemplates::getTBirdwatching();
+        }
+
+        if($pageFileName == 'naturaleza-espacios-naturales.htm' && $templateMarkup ==''){
+            $object['markup'] = PagesTemplates::getTEspaciosnaturales();
+        }
       
+        if(
+            $pageFileName == 'comarcas-bahia-de-cadiz.htm' ||
+            $pageFileName == 'comarcas-campina-de-jerez.htm' ||
+            $pageFileName == 'comarcas-campo-de-gibraltar.htm' ||
+            $pageFileName == 'comarcas-costa-noroeste.htm' ||
+            $pageFileName == 'comarcas-la-janda.htm' ||
+            $pageFileName == 'comarcas-sierra-de-cadiz.htm' && $templateMarkup =='') {
+
+            $object['markup'] = PagesTemplates::getTComarca();
+        }
+
+        if($pageFileName == 'diversion.htm' && $templateMarkup ==''){
+            $object['markup'] = PagesTemplates::getTDiversion();
+        }
+
         return $this->pushObjectForm($type, $object);
         
     }
@@ -668,9 +708,28 @@ class Index extends Controller
 
             $objectData['placeholders'] = $placeholders;
 
+            
+           
             // Andrés Martínez
-            // set layout default to new pages
-            $objectData['settings']['viewBag']['layout'] = 'default';
+            // set layout default to new pages except municipios - comarcas - playas
+            $getFileName = $object['fileName'];          
+    
+            if($getFileName != 'municipios.htm' && $getFileName != 'comarcas.htm' && $getFileName != 'playas.htm'){
+                $objectData['settings']['viewBag']['layout'] = 'default';
+            }
+
+            if($getFileName == 'municipios.htm'){
+                $objectData['settings']['viewBag']['layout'] = 'municipio';
+            }
+
+            if($getFileName == 'comarcas.htm'){
+                $objectData['settings']['viewBag']['layout'] = 'comarca';
+            }
+
+            if($getFileName == 'playas.htm'){
+                $objectData['settings']['viewBag']['layout'] = 'playa';
+            }
+            
         }
 
         if ($type == 'experience') {

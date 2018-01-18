@@ -1,13 +1,5 @@
-.header-espacios {
-  background-image: url("../img/espacios.jpg");
-  background-attachment: fixed; }
-
 .header-rutas {
   background-image: url("../img/rutas.jpg");
-  background-attachment: fixed; }
-
-.header-cocina {
-  background-image: url("../img/cocina.jpg");
   background-attachment: fixed; }
 
 .header-general {

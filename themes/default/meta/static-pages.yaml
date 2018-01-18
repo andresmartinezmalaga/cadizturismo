@@ -1,11 +1,22 @@
 static-pages:
+    comarcas:
+        comarcas-uno: {  }
+        comarcas-bahia-de-cadiz: {  }
+        comarcas-campina-de-jerez: {  }
+        comarcas-campo-de-gibraltar: {  }
+        comarcas-costa-noroeste: {  }
+        comarcas-la-janda: {  }
+        comarcas-sierra-de-cadiz: {  }
     municipios:
         municipios-uno: {  }
         municipios-dos: {  }
-    comarcas:
-        comarcas-uno: {  }
-    playas: {  }
-    naturaleza: {  }
+        municipios-tres: {  }
+    playas:
+        playas-uno: {  }
+    naturaleza:
+        naturaleza-via-verde: {  }
+        naturaleza-birdwatching: {  }
+        naturaleza-espacios-naturales: {  }
     diversion: {  }
     cultura: {  }
     gastronomia: {  }

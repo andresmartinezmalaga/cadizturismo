@@ -1,5 +1,5 @@
 <?php 
-class Cms5a5f1390c5545510479980_d5d1a93c23012a94fff8269d48831c2eClass extends \Cms\Classes\LayoutCode
+class Cms5a60526cc1b74248754299_a79c1b8bf2a59368a389c1c19c4a9a71Class extends \Cms\Classes\LayoutCode
 {
 public function onStart()
     {      
@@ -7,6 +7,8 @@ public function onStart()
         if($this['lang']==''){
             $this['lang']='es';
         }
+
+        $this['experiences'] = $this->staticApp->experienceList();
     }
   
 }

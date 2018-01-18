@@ -3,7 +3,7 @@ url = "/"
 layout = "dinamic"
 is_hidden = 0
 
-[staticExperience]
+[staticApp]
 
 ==
 
@@ -15,7 +15,7 @@ is_hidden = 0
 		if($this['lang']==''){
 			$this['lang']='es';
 		}
-	    $this['experiences'] = $this->staticExperience->experienceList();
+	    $this['experiences'] = $this->staticApp->experienceList();
 	}
 
 	function onFindExperience(){
@@ -24,7 +24,7 @@ is_hidden = 0
 		$interest = $_POST['interest'];
 		$tvisit = $_POST['tvisit'];
     	
-    	$experiences = $this->staticExperience->experienceFind($days,$interest,$tvisit);
+    	$experiences = $this->staticApp->experienceFind($days,$interest,$tvisit);
 
        	return Redirect::to('/experiences')->with( ['data' => json_encode($experiences)] );
     }

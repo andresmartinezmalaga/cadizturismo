@@ -51,4 +51,5 @@
   'RainLab\\Pages\\Classes\\MenuItemReference' => 'plugins/rainlab/pages/classes/MenuItemReference.php',
   'system\\Controllers\\mailbrandsettings' => 'modules/system/controllers/mailbrandsettings.php',
   'rainlab\\translate\\Controllers\\messages' => 'plugins/rainlab/translate/controllers/messages.php',
+  'RainLab\\Pages\\Components\\StaticApp' => 'plugins/rainlab/pages/components/StaticApp.php',
 );

@@ -1,0 +1,47 @@
+1516264425a:1:{s:15:"home-header.htm";a:7:{s:8:"fileName";s:15:"home-header.htm";s:7:"content";s:909:"[viewBag]
+title = "Header"
+url = "/home/header"
+template = "pages"
+is_hidden = 0
+layout = "default"
+==
+<!-- HEADER -->
+<div class="header-general header-municipios">
+	<div class="header-container">
+		<div class="header-txt">
+
+			<h1 class="txt">Playas</h1><span>que te llenan de luz</span>
+			<img class="brush fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/brush-header.svg" alt="">
+			<div class="header-comment">
+
+				<p class="comment">138km de playas, calas y ensenadas que invitan a perderse</p><a class="header-link" href="/playas">Conoce nuestras playas &nbsp;<img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-arrow.svg" alt="" class="fr-fic fr-dii">&nbsp;</a></div>
+		</div>
+	</div>
+	<!-- NUEVA FOTO -->
+	<img class="background-image fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/beach.jpg" alt=""></div>";s:5:"mtime";i:1516260349;s:6:"markup";s:806:"<!-- HEADER -->
+<div class="header-general header-municipios">
+	<div class="header-container">
+		<div class="header-txt">
+
+			<h1 class="txt">Playas</h1><span>que te llenan de luz</span>
+			<img class="brush fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/brush-header.svg" alt="">
+			<div class="header-comment">
+
+				<p class="comment">138km de playas, calas y ensenadas que invitan a perderse</p><a class="header-link" href="/playas">Conoce nuestras playas &nbsp;<img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-arrow.svg" alt="" class="fr-fic fr-dii">&nbsp;</a></div>
+		</div>
+	</div>
+	<!-- NUEVA FOTO -->
+	<img class="background-image fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/beach.jpg" alt=""></div>";s:4:"code";N;s:7:"viewBag";a:5:{s:5:"title";s:6:"Header";s:3:"url";s:12:"/home/header";s:8:"template";s:5:"pages";s:9:"is_hidden";s:1:"0";s:6:"layout";s:7:"default";}s:12:"parsedMarkup";s:806:"<!-- HEADER -->
+<div class="header-general header-municipios">
+	<div class="header-container">
+		<div class="header-txt">
+
+			<h1 class="txt">Playas</h1><span>que te llenan de luz</span>
+			<img class="brush fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/brush-header.svg" alt="">
+			<div class="header-comment">
+
+				<p class="comment">138km de playas, calas y ensenadas que invitan a perderse</p><a class="header-link" href="/playas">Conoce nuestras playas &nbsp;<img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-arrow.svg" alt="" class="fr-fic fr-dii">&nbsp;</a></div>
+		</div>
+	</div>
+	<!-- NUEVA FOTO -->
+	<img class="background-image fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/beach.jpg" alt=""></div>";}}

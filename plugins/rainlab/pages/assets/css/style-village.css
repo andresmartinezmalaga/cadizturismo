@@ -15,62 +15,44 @@
   object-fit: cover;
   z-index: 1; }
 
-.header-alcornocales {
-  background-image: url("../img/alcornocales1.jpg"); }
-  .header-alcornocales #natu-via {
-    font-size: 200px; }
+.header-alcornocales #natu-via {
+  font-size: 200px; }
 
 .header-viaverde #natu-via {
   font-size: 200px; }
 
-.header-birdwatching {
-  background-image: url("../img/bird-watching.jpg"); }
-  .header-birdwatching #natu-via {
-    font-size: 200px; }
+.header-birdwatching #natu-via {
+  font-size: 200px; }
 
 .header-compras #natu-via {
   font-size: 200px; }
 
-.header-locales {
-  background-image: url("../img/parqueocio-header.jpg"); }
-  .header-locales #natu-via {
-    font-size: 200px; }
+.header-locales #natu-via {
+  font-size: 200px; }
 
-.header-parques {
-  background-image: url("../img/po-header.jpg"); }
-  .header-parques #natu-via {
-    font-size: 200px; }
+.header-parques #natu-via {
+  font-size: 200px; }
 
-.header-monumentos {
-  background: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.68) 100%), url("../img/monumentos.jpg"); }
-  .header-monumentos #natu-via {
-    font-size: 200px; }
+.header-monumentos #natu-via {
+  font-size: 200px; }
 
 .header-gourmet #natu-via {
   font-size: 200px; }
 
-.header-fiesta {
-  background: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.68) 100%), url("../img/fiestaheader.jpg"); }
-  .header-fiesta #natu-via {
-    font-size: 200px; }
+.header-fiesta #natu-via {
+  font-size: 200px; }
 
 .header-flamenco #natu-via {
   font-size: 200px; }
 
-.header-teatro {
-  background: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.68) 100%), url("../img/teatroheader.jpg"); }
-  .header-teatro #natu-via {
-    font-size: 200px; }
+.header-teatro #natu-via {
+  font-size: 200px; }
 
-.header-vino {
-  background: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.68) 100%), url("../img/vinoheader.jpg"); }
-  .header-vino #natu-via {
-    font-size: 200px; }
+.header-vino #natu-via {
+  font-size: 200px; }
 
-.header-comida {
-  background: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.68) 100%), url("../img/comidaheader.jpg"); }
-  .header-comida #natu-via {
-    font-size: 200px; }
+.header-comida #natu-via {
+  font-size: 200px; }
 
 /* IMG SECTION - VILLAGE */
 .img-village {
@@ -191,27 +173,13 @@
         outline: none;
         opacity: 0.5; }
 
-.featured-bird {
-  background: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.68) 100%), url("../img/birdwatching.jpg");
-  background-attachment: fixed; }
+.featured-comida .txt-container {
+  width: 77%;
+  left: 172px; }
 
-.featured-teatro {
-  background: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.68) 100%), url("../img/carnavales-header.jpg");
-  background-attachment: fixed; }
-
-.featured-comida {
-  background: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.68) 100%), url("../img/comida2.jpg");
-  background-attachment: fixed; }
-  .featured-comida .txt-container {
-    width: 77%;
-    left: 172px; }
-
-.featured-monumentos {
-  background: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.68) 100%), url("../img/castillo-marcos.jpg");
-  background-attachment: fixed; }
-  .featured-monumentos .txt-container {
-    width: 77%;
-    left: 172px; }
+.featured-monumentos .txt-container {
+  width: 77%;
+  left: 172px; }
 
 .featured-flamenco {
   background-attachment: fixed; }
@@ -227,32 +195,19 @@
   width: 84%;
   left: 122px; }
 
-.featured-vino {
-  background: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.68) 100%), url("../img/cata-vinos.jpg");
-  background-attachment: fixed;
-  background-size: cover; }
-  .featured-vino .txt-container {
-    width: 84%;
-    left: 122px; }
+.featured-vino .txt-container {
+  width: 84%;
+  left: 122px; }
 
-.featured-alcornocales {
-  background: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.68) 100%), url("../img/alcornocales2.jpg");
-  background-attachment: fixed; }
-  .featured-alcornocales .txt-container {
-    width: 56%; }
+.featured-alcornocales .txt-container {
+  width: 56%; }
 
-.featured-locales {
-  background: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.68) 100%), url("../img/ruta-chiclana.jpg");
-  background-attachment: fixed; }
-  .featured-locales .txt-container {
-    width: 56%; }
+.featured-locales .txt-container {
+  width: 56%; }
 
-.featured-parques {
-  background: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.68) 100%), url("../img/ocelote-castellar.jpg");
-  background-attachment: fixed; }
-  .featured-parques .txt-container {
-    width: 77%;
-    left: 172px; }
+.featured-parques .txt-container {
+  width: 77%;
+  left: 172px; }
 
 .section-txt-village {
   width: 100%;

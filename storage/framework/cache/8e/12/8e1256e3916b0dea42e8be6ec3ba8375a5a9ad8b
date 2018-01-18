@@ -1,0 +1,32 @@
+1516264425a:1:{s:15:"home-footer.htm";a:7:{s:8:"fileName";s:15:"home-footer.htm";s:7:"content";s:646:"[viewBag]
+title = "Footer"
+url = "/home/footer"
+template = "pages"
+is_hidden = 0
+layout = "default"
+==
+<!--  RUTAS -->
+<div class="secret-routes">
+	<div class="txt-container">
+
+		<p class="title">rutas secretas</p>
+
+		<p class="desc">¿Eres de emociones fuertes? Disfruta de Cádiz como nunca antes.</p><a class="events-link" href="/rutas">Selección de rutas secretas<img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-arrow-yellow.svg" alt="" class="fr-fic fr-dii">&nbsp;</a>
+		<img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
+</div>";s:5:"mtime";i:1516260358;s:6:"markup";s:543:"<!--  RUTAS -->
+<div class="secret-routes">
+	<div class="txt-container">
+
+		<p class="title">rutas secretas</p>
+
+		<p class="desc">¿Eres de emociones fuertes? Disfruta de Cádiz como nunca antes.</p><a class="events-link" href="/rutas">Selección de rutas secretas<img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-arrow-yellow.svg" alt="" class="fr-fic fr-dii">&nbsp;</a>
+		<img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
+</div>";s:4:"code";N;s:7:"viewBag";a:5:{s:5:"title";s:6:"Footer";s:3:"url";s:12:"/home/footer";s:8:"template";s:5:"pages";s:9:"is_hidden";s:1:"0";s:6:"layout";s:7:"default";}s:12:"parsedMarkup";s:543:"<!--  RUTAS -->
+<div class="secret-routes">
+	<div class="txt-container">
+
+		<p class="title">rutas secretas</p>
+
+		<p class="desc">¿Eres de emociones fuertes? Disfruta de Cádiz como nunca antes.</p><a class="events-link" href="/rutas">Selección de rutas secretas<img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-arrow-yellow.svg" alt="" class="fr-fic fr-dii">&nbsp;</a>
+		<img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
+</div>";}}

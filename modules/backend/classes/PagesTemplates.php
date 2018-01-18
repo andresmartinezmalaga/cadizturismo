@@ -14,6 +14,289 @@ class PagesTemplates
     return $result;
   }
 
+  static $comarcas = '
+  <!-- HEADER -->
+  <div class="header-general header-comarcas">
+    <div class="header-container">
+      <div class="header-txt">
+        <h1 class="txt">Comarcas</h1>
+        <img class="brush fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt="">
+      </div>  
+    </div>
+    <img class="background-image fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/comarcas.jpg" alt="">
+  </div>
+
+  <div class="main-section-comarcas">
+    <div class="main-txt">
+
+      <p class="title">CÁDIZ, UNA
+        <br>HISTORIA ÚNICA</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+
+      <p class="desc"><strong>La provincia de Cádiz es la más meridional de la Península Ibérica.</strong> Tiene un perímetro de 586 kms de los que 260 corresponden a la costa. Su superficie es de 7.385 kms repartidos en sus 44 municipios. Su población supera ligeramente el millón de habitantes, dando una densidad por encima de la media nacional.</p>
+
+      <p class="desc">Su Historia es antiquísima. Tartesos y fenicios visitaron estas tierras hace más de 3.000 años, y en un punto de este territorio levantaron la antigua Gadir, que se sitúa a unos 1.100 años a. de C., convirtiendo a la capital de la provincia en la más antigua de Occidente. Los romanos y visigodos también dejaron sus huellas y a partir del año 711 fue territorio musulmán, hasta que Alfonso X El Sabio la reconquistó en la segunda mitad del siglo XIII incorporándola al Reino de Castilla.</p>
+
+      <p class="desc"><strong>Desde esta provincia se contribuyó notablemente al descubrimiento y colonización de América durante el s.XV. Cristóbal Colón</strong> y otros ilustres marinos utilizaron sus puertos como punto de partida hacia el Nuevo Continente.</p>
+
+      <p class="desc"><strong>En el s.XVIII, "siglo de Oro" de Cádiz, se monopoliza el comercio de ultramar, lo que le imprime un carácter cosmopolita, penetrando nuevas ideas que dieron lugar a la apertura liberal y democrática recogida en la Constitución de 1812.</strong></p>
+
+      <p class="desc">La provincia de Cádiz, privilegiada y singular, reúne todos los atractivos que puedan apetecer quienes valoran el turismo en su verdadera dimensión cultural y festiva, ecológica y monumental, costumbrista, auténtica y esencialmente andaluza.</p>
+    </div>
+
+    <div class="main-events-container">
+      <div class="event">
+        <div class="overlay-img">
+          <br>
+        </div><img class="rec-img fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/bahia-cadiz.jpg">
+        <div class="txt-container">
+
+          <p class="name">BAHÍA DE
+            <br>CÁDIZ</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+          <div class="button-container"><a class="see-event" href="#">Conocer comarca <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+        </div>
+      </div>
+      <div class="event">
+        <div class="overlay-img">
+          <br>
+        </div><img class="rec-img fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/campi.jpg">
+        <div class="txt-container">
+
+          <p class="name">CAMPIÑA
+            <br>DE JEREZ</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+          <div class="button-container"><a class="see-event" href="#">Conocer comarca <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+        </div>
+      </div>
+      <div class="event">
+        <div class="overlay-img">
+          <br>
+        </div><img class="rec-img fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/campo-gibraltar.jpg">
+        <div class="txt-container">
+
+          <p class="name">CAMPO DE GIBRALTAR</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+          <div class="button-container"><a class="see-event" href="#">Conocer comarca <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+        </div>
+      </div>
+      <div class="event">
+        <div class="overlay-img">
+          <br>
+        </div><img class="rec-img fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/costa-noroeste.jpg">
+        <div class="txt-container">
+
+          <p class="name">COSTA
+            <br>NOROESTE</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+          <div class="button-container"><a class="see-event" href="#">Conocer comarca <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+        </div>
+      </div>
+      <div class="event">
+        <div class="overlay-img">
+          <br>
+        </div><img class="rec-img fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/janda.jpg">
+        <div class="txt-container">
+
+          <p class="name">LA JANDA</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+          <div class="button-container"><a class="see-event" href="comarca.html">Conocer comarca <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+        </div>
+      </div>
+      <div class="event">
+        <div class="overlay-img">
+          <br>
+        </div><img class="rec-img fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/sierra.jpg">
+        <div class="txt-container">
+
+          <p class="name">SIERRA DE
+            <br>CÁDIZ</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+          <div class="button-container"><a class="see-event" href="#">Conocer comarca <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-txt-comarca">
+    <div class="txt-container">
+
+      <p class="title">ARTE Y CULTURA</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+
+      <p class="desc"><strong>El paso de las diferentes culturas por esta tierra a lo largo de su ancestral historia, ha dejado su huella. Las pinturas rupestres del "Tajo de las Figuras"</strong> en el municipio de Benalup; dos sarcófagos fenicios, actualmente en el Museo de Cádiz, o restos de ciudades romanas como <strong>"Baelo Claudia" en Tarifa, y "Carteia" en San Roque</strong>, así nos lo demuestran.</p>
+
+      <p class="desc"><strong>Más de 30 castillos y recintos fortificados</strong> se pueden encontrar a lo largo de toda la provincia, algunos de los cuales, en buen estado de conservación.</p>
+
+      <p class="desc">En el arte religioso, su riqueza monumental es extraordinaria. Buena muestra de ello es <strong>La Cartuja de Jerez o las catedrales de Cádiz y Jerez.</strong></p>
+
+      <p class="desc">En cuanto a muestras pictóricas, pueden encontrarse magníficos <strong>lienzos de El Greco, Murillo, Zurbarán y Goya</strong>, repartidos en diferentes iglesias y museos de la provincia.</p><a class="download" href="/es/cultura">Descubre toda la cultura de Cádiz <img src="***_preurl_***/storage/app/media/uploaded-files/templates/yellow-arrow.svg" alt="" class="fr-fic fr-dii">&nbsp;</a></div>
+  </div>
+  
+  <div class="section-img-comarca"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/comarcas2.jpg" alt="" class="fr-fic fr-dii"></div>
+  <div class="section-txt-comarca">
+    <div class="txt-container">
+
+      <p class="title">BODEGAS Y
+        <br>GASTRONOMÍA</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+
+      <p class="desc"><strong>La cocina gaditana está influenciada sobre todo por los vinos que se producen en la provincia y por la amplia gama de pescados propios del litoral gaditano</strong>: doradas, urtas, róbalos, acedías, mojarras, etc., así como por sus mariscos: gambas, cigalas, bocas, cañaíllas..., y los célebres langostinos de Sanlúcar de Barrameda.</p>
+
+      <p class="desc">La repostería, riquísima, con clara influencia de los árabes y la aportación de los conventos de las monjas. Son deliciosos el tocino de cielo, los alfajores de Medina Sidonia, el turrón y los churros de Cádiz, y los famosos "pestiños”, exquisitos dulces navideños típicos en toda la provincia.</p>
+
+      <p class="desc">Los numerosos restaurantes, bares, marisquerías, tabernas y "chiringuitos" (bares junto a la playa) nos dan la oportunidad de probar esta variada gastronomía y sus excelentes vinos: finos, amontillados, olorosos, manzanillas, así como sus brandies criados en la provincia, y que dan un especial carácter a esta tierra.</p>
+
+      <p class="desc"><strong>Quienes llegan a esta provincia no deben dejar de visitar alguna de las impresionantes Bodegas de Jerez, El Puerto de Santa María, Sanlúcar, o Chiclana donde se crían y envejecen exquisitos vinos como el fino, la manzanilla, el moscatel, y el jerez o “sherry”, embajador de España en el mundo entero.&nbsp;</strong></p><a class="download" href="/es/gastronomia">Descubre toda la gastronomía de Cádiz <img src="***_preurl_***/storage/app/media/uploaded-files/templates/yellow-arrow.svg" alt="" class="fr-fic fr-dii">&nbsp;</a></div>
+  </div>
+  <div class="section-img-comarca">
+    <img src="***_preurl_***/storage/app/media/uploaded-files/templates/comarcas3.jpg" alt="" class="fr-fic fr-dii">
+    </div>
+  <div class="section-txt-comarca">
+    <div class="txt-container">
+
+      <p class="title">NATURALEZA</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+
+      <p class="desc"><strong>Posee la provincia una gran variedad de espacios naturales, de excepcional riqueza ecológica y diversidad de recursos propios; especies faunísticas amenazadas, zonas húmedas y sectores costeros todavía intactos, que se han sabido mantener respetando su entorno.</strong></p>
+
+      <p class="desc">Se puede hacer realidad un apasionante recorrido por los seis parques naturales que se encuentran en esta provincia y que se relacionan en esta <a href="http://www.dipucadiz.es/patronatoturismocadiz">Web del Patronato Provincial de Turismo</a> dentro del apartado "Parques Naturales".</p>
+
+      <p class="desc">Sin duda alguna, uno de los principales recursos naturales de la provincia son sus playas, de arena blanca y fina, aguas transparentes y con la ventaja de su gran variedad.</p>
+
+      <p class="desc">En sus 260 Kms. de costa se pueden encontrar lo mismo playas vírgenes, que otras urbanas dotadas de infraestructura; pequeñas calas o también arenales de varios kilómetros; playas familiares y otras íntimas; de aguas tranquilas, o barridas por fuertes vientos, ideales para la práctica del windsurfing.</p>
+
+      <p class="desc">Muchas de ellas obtienen anualmente el distintivo de la Bandera Azul de los mares limpios de Europa. En total 138 Kms de playas.</p><a class="download" href="/es/naturaleza">Descubre toda la naturaleza de Cádiz <img src="***_preurl_***/storage/app/media/uploaded-files/templates/yellow-arrow.svg" alt="" class="fr-fic fr-dii">&nbsp;</a></div>
+  </div>
+  <div class="section-img-comarca">
+    <img src="***_preurl_***/storage/app/media/uploaded-files/templates/comarcas4.jpg" alt="" class="fr-fic fr-dii">
+  </div>
+  ';
+
+  static function getTComarcas(){
+    $comarcas = PagesTemplates::getFinalTemplate(PagesTemplates::$comarcas);
+    return $comarcas;
+  }
+
+  static $comarca = '
+  <!-- HEADER -->
+  <div class="header header-comarca">
+    <div class="header-container header-village-container">
+      <div class="header-txt header-txt-village">
+        <h1 class="txt"><span class="first-word">La Janda</span></h1><img class="brush fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
+    </div>
+    <!-- NUEVA FOTO -->
+    <img class="background-image" src="***_preurl_***/storage/app/media/uploaded-files/templates/janda2.jpg" alt="">
+  </div>
+  <div class="section-txt-village">
+    <div class="txt-container">
+
+      <p class="title">UN LUGAR
+        <br>CON HISTORIA</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+
+      <p class="desc"><strong>La comarca de la Janda está situada en la zona central de la provincia de Cádiz y comprende 8 municipios diferentes: Alcalá de los Gazules, Barbate, Benalup-Casas viejas, Conil de la Frontera, Medina Sidonia, Pierna de Rivera, San José del Valle y Vejer de la Frontera.&nbsp;</strong></p>
+
+      <p class="desc">Su localización es envidiable: inmersa entre los <strong>parques naturales</strong> de La Breña y Marismas de Barbate y de Los Alcornocales, y con el mar bañando sus costas. A la belleza del litoral se une además el encanto de la Ruta del Toro, que transcurre por todas sus localidades.</p>
+
+      <p class="desc">Son múltiples sus atractivos turísticos. Podemos optar por el turismo de playa, excelentes para jornadas de sol, baño y relajación. Además de contar con sus vientos de levante, ingrediente imprescindible para la práctica de deportes como el windsurf, con muchos seguidores en la costa y el kitesurf. El fuerte oleaje convierte esta parte del litoral gaditano en un paraíso para los surfistas.</p>
+
+      <p class="desc">La Janda es también perfecta para el turismo rural de interior, más tranquilo e idóneo para realizar múltiples y placenteras actividades de recreo y ocio al aire libre, tales como senderismo, cicloturismo, descenso de cañones, escalada, acampada libre o rutas a caballo.</p>
+
+      <p class="desc">Todo ello sin olvidar su ancestral cultura, su privilegiado entorno natural, su valioso patrimonio, la suculenta gastronomía y el colorido de sus fiestas.</p>
+    </div>
+  </div>
+  <!-- IMAGEN -->
+  <div class="img-village">
+    <div class="txt-container">
+
+      <p class="title">Marismas de Barbate</p>
+
+      <p class="desc">¿Eres de emociones fuertes? Disfruta de Cádiz como nunca antes.</p><a class="events-link" href="#playas">Selección de rutas naturales <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-arrow-yellow.svg" alt="" class="fr-fic fr-dii">&nbsp;</a>
+      <img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
+      <!-- NUEVA FOTO -->
+      <img class="img-destacada" src="***_preurl_***/storage/app/media/uploaded-files/templates/marismas-barbate.jpg" alt="">
+  </div>
+  <div class="section-txt-village">
+    <div class="txt-container">
+
+      <p class="title">MUNICIPIOS DE
+        <br>LA JANDA</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+
+      <p class="desc small-desc">Déjate enamorar por Alcalá de los Gazules, Barbate, Benalup-Casas viejas, Conil de la Frontera, Medina Sidonia, Pierna de Rivera, San José del Valle y Vejer de la Frontera.</p>
+    </div>
+  </div>
+  <div class="all-exps">
+    <div class="all-events-container">
+      <div class="event">
+        <div class="overlay-img">
+          <br>
+        </div><img class="rec-img fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/conil.jpg">
+        <div class="txt-container">
+
+          <p class="name">CONIL DE LA FRONTERA</p><img class="separator separator-municipio fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+          <div class="button-container"><a class="see-event" href="#">Conocer municipio <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+        </div>
+      </div>
+      <div class="event">
+        <div class="overlay-img">
+          <br>
+        </div><img class="rec-img fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/barbate1.jpg">
+        <div class="txt-container">
+
+          <p class="name">BARBATE</p><img class="separator separator-municipio fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+          <div class="button-container"><a class="see-event" href="municipio.html">Conocer municipio <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+        </div>
+      </div>
+      <div class="event">
+        <div class="overlay-img">
+          <br>
+        </div><img class="rec-img fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/vejer.jpg">
+        <div class="txt-container">
+
+          <p class="name">VEJER DE LA FRONTERA</p><img class="separator separator-municipio fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+          <div class="button-container"><a class="see-event" href="#">Conocer municipio <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="icons-row">
+    <div class="i-container">
+      <div class="also-feature"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/natu-grey.svg" class="fr-fil fr-dib">
+
+        <p class="also-desc">Naturaleza</p>
+      </div>
+      <div class="also-feature"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/deporte-grey.svg" class="fr-fil fr-dib">
+
+        <p class="also-desc">Deporte</p>
+      </div>
+      <div class="also-feature"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/cultura-grey.svg" class="fr-fil fr-dib">
+
+        <p class="also-desc">Cultura</p>
+      </div>
+    </div>
+  </div>';
+    
+  static function getTComarca(){
+    $comarca = PagesTemplates::getFinalTemplate(PagesTemplates::$comarca);
+    return $comarca;
+  }
+
+
+  static $municipios = '
+  <!-- HEADER -->
+  <div class="header-general header-municipios">
+    <div class="header-container">
+      <div class="header-txt">
+        <h1 class="txt">Municipios</h1><img class="brush fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
+    </div>
+    <!-- NUEVA FOTO -->
+    <img class="background-image" src="***_preurl_***/storage/app/media/uploaded-files/templates/municipios.jpg" alt="">
+  </div>
+  <div class="section-txt-comarca">
+    <!-- NUEVO DIV -->
+    <div class="txt-container">
+      <p class="title">LA MAGIA HABITA
+        <br>EN CADA RINCÓN
+        <br>DE CÁDIZ</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+
+      <p class="desc">Una provincia que destaca por sus contrastes, 3000 años de historia y 44 municipios que esconden rincones increíbles en su gran variedad de paisajes y culturas.</p>
+    </div>
+  </div>';
+
+  static function getTMunicipios(){
+    $municipios = PagesTemplates::getFinalTemplate(PagesTemplates::$municipios);
+    return $municipios;
+  }
 
   static $municipio = '
   <!-- HEADER -->
@@ -170,31 +453,60 @@ class PagesTemplates
   }
 
   
-	static $comarca = '
+  static $playas = '
   <!-- HEADER -->
-  <div class="header header-comarca">
-    <div class="header-container header-village-container">
-      <div class="header-txt header-txt-village">
-        <h1 class="txt"><span class="first-word">La Janda</span></h1><img class="brush fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
+  <div class="header-general header-playas">
+    <div class="header-container">
+      <div class="header-txt">
+        <h1 class="txt">Playas</h1><img class="brush fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
     </div>
     <!-- NUEVA FOTO -->
-    <img class="background-image" src="***_preurl_***/storage/app/media/uploaded-files/templates/janda2.jpg" alt="">
+    <img class="background-image" src="***_preurl_***/storage/app/media/uploaded-files/templates/playas.jpg" alt="">
   </div>
+
+  <div class="section-txt-comarca">
+    <!-- NUEVO DIV -->
+    <div class="txt-container">
+      <p class="title">PLAYAS
+        <br>LLENAS
+        <br>DE LUZ</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+
+      <p class="desc"><strong>La provincia reúne 260 kilómetros de costa y 138 kilómetros de playas: calas, ensenadas, arenales de varios kilómetros.</strong> Hay playas con historia como la de Trafalgar, frente a la que se libró la famosa batalla y playas de película como la de La Caleta donde se grabaron escenas del 007. Hay playas pioneras en Europa como la Victoria, en conseguir la certificación de gestión medioambiental de la UE y playas de colores como las de Tarifa, con el vértigo de los fly-surf y sus cometas. Playas ideales para la práctica del windsurf; igualmente la pesca submarina goza de numerosos adeptos entre las transparentes aguas de sus numerosas playas: Los Lances, Bolonia, y Valdevaqueros entre otras. En total, 83 playas distintas.</p>
+
+      <p class="desc">Llaman la atención los acantilados de los Caños de Meca (Barbate) y las calas de Conil. En algunas nos encontramos con monumentos naturales como las dunas de la playa de Bolonia o los corrales de pesca de Rota.</p>
+
+      <p class="desc">En Cádiz es muy frecuente que el mar se encuentre con la montaña, con paisajes de pinares, bosques y marismas. Punta Candor en Rota y la playa del Castillo de San Fernando, son playas muy naturales, pero cada una a su manera: si en una destacan los macizos rocosos, en otras sólo se puede acceder a nado o a pie.</p>
+    </div>
+  </div>';
+
+  static function getTPlayas(){
+    $playas = PagesTemplates::getFinalTemplate(PagesTemplates::$playas);
+    return $playas;
+  }
+
+  static $playa = '
+  <!-- HEADER -->
+  <div class="header header-playa">
+    <div class="header-container header-village-container">
+      <div class="header-txt header-txt-village">
+        <h1 class="txt"><span class="first-word">Los Lances</span></h1><img class="brush fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
+    </div>
+    <!-- NUEVA FOTO -->
+    <img class="background-image" src="***_preurl_***/storage/app/media/uploaded-files/templates/playa-lances.jpg" alt="">
+  </div>
+  <!-- TXT-->
   <div class="section-txt-village">
     <div class="txt-container">
 
-      <p class="title">UN LUGAR
-        <br>CON HISTORIA</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+      <p class="title">ARENA FINA,
+        <br>WINDSURF Y
+        <br>BUENA COMIDA</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
 
-      <p class="desc"><strong>La comarca de la Janda está situada en la zona central de la provincia de Cádiz y comprende 8 municipios diferentes: Alcalá de los Gazules, Barbate, Benalup-Casas viejas, Conil de la Frontera, Medina Sidonia, Pierna de Rivera, San José del Valle y Vejer de la Frontera.&nbsp;</strong></p>
+      <p class="desc">Situado en la comarca de La Janda, Barbate es un precioso pueblo gaditano que alberga uno de los puertos pesqueros más famosos de Andalucía. A lo largo de los 25 kilómetros de costa que agrupa el término municipal, encontrarás pueblos y pedanías como Zahara de los Atunes, Caños de Meca y Zahora, y en ellos, playas naturales, dunas y acantilados que componen uno de los núcleos turísticos más reconocidos del sur de España.</p>
 
-      <p class="desc">Su localización es envidiable: inmersa entre los <strong>parques naturales</strong> de La Breña y Marismas de Barbate y de Los Alcornocales, y con el mar bañando sus costas. A la belleza del litoral se une además el encanto de la Ruta del Toro, que transcurre por todas sus localidades.</p>
+      <p class="desc">El municipio ofrece la posibilidad de realizar una gran variedad de rutas de gran interés ecológico y paisajístico gracias al Parque Natural de la Breña y las Marismas de Barbate.</p>
 
-      <p class="desc">Son múltiples sus atractivos turísticos. Podemos optar por el turismo de playa, excelentes para jornadas de sol, baño y relajación. Además de contar con sus vientos de levante, ingrediente imprescindible para la práctica de deportes como el windsurf, con muchos seguidores en la costa y el kitesurf. El fuerte oleaje convierte esta parte del litoral gaditano en un paraíso para los surfistas.</p>
-
-      <p class="desc">La Janda es también perfecta para el turismo rural de interior, más tranquilo e idóneo para realizar múltiples y placenteras actividades de recreo y ocio al aire libre, tales como senderismo, cicloturismo, descenso de cañones, escalada, acampada libre o rutas a caballo.</p>
-
-      <p class="desc">Todo ello sin olvidar su ancestral cultura, su privilegiado entorno natural, su valioso patrimonio, la suculenta gastronomía y el colorido de sus fiestas.</p>
+      <p class="desc">Las condiciones de pesca que ofrece la zona permiten hacen destacar a su gastronomía por el famoso atún de Almadraba, un manjar único que merece la pena disfrutar en los restaurantes de Barbate.</p>
     </div>
   </div>
   <!-- IMAGEN -->
@@ -211,43 +523,44 @@ class PagesTemplates
   <div class="section-txt-village">
     <div class="txt-container">
 
-      <p class="title">MUNICIPIOS DE
-        <br>LA JANDA</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
-
-      <p class="desc small-desc">Déjate enamorar por Alcalá de los Gazules, Barbate, Benalup-Casas viejas, Conil de la Frontera, Medina Sidonia, Pierna de Rivera, San José del Valle y Vejer de la Frontera.</p>
-    </div>
+      <p class="title">3 COSAS QUE
+        <br>HACER EN LA PLAYA
+        <br>DE LOS LANCES</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
   </div>
-  <div class="all-exps">
+  <div class="all-exps" id="exps-playa">
     <div class="all-events-container">
-      <div class="event">
+      <div class="event event-playa">
         <div class="overlay-img">
           <br>
-        </div><img class="rec-img fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/conil.jpg">
+        </div><img class="rec-img fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/kite.jpg">
         <div class="txt-container">
 
-          <p class="name">CONIL DE LA FRONTERA</p><img class="separator separator-municipio fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
-          <div class="button-container"><a class="see-event" href="#">Conocer municipio <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
-        </div>
+          <p class="name">3 SIXTY KITE SCHOOL</p>
+
+          <p class="subtitle">Utilizamos el método IKO y todos los instructores están certificados en IKO de nivel 3.</p><img class="separator separator-playa fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+          <a class="see-event" href="#">Saber más <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
       </div>
-      <div class="event">
+      <div class="event event-playa">
         <div class="overlay-img">
           <br>
-        </div><img class="rec-img fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/barbate1.jpg">
+        </div><img class="rec-img fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/arte-vida.jpg">
         <div class="txt-container">
 
-          <p class="name">BARBATE</p><img class="separator separator-municipio fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
-          <div class="button-container"><a class="see-event" href="municipio.html">Conocer municipio <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
-        </div>
+          <p class="name">ARTE Y VIDA TARIFA</p>
+
+          <p class="subtitle">Lugar ideal para el descanso, y disfrutar de nuestras terrazas, restaurante o zonas chill out.</p><img class="separator separator-playa fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+          <a class="see-event" href="#">Saber más <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
       </div>
-      <div class="event">
+      <div class="event event-playa">
         <div class="overlay-img">
           <br>
-        </div><img class="rec-img fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/vejer.jpg">
+        </div><img class="rec-img fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/camping.jpg">
         <div class="txt-container">
 
-          <p class="name">VEJER DE LA FRONTERA</p><img class="separator separator-municipio fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
-          <div class="button-container"><a class="see-event" href="#">Conocer municipio <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
-        </div>
+          <p class="name">CAMPING TORRE DE LA PEÑA</p>
+
+          <p class="subtitle">Camping, Bungalows y Restaurante en Tarifa con un pesacado de primera.</p><img class="separator separator-playa fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+          <a class="see-event" href="#">Saber más <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
       </div>
     </div>
   </div>
@@ -261,227 +574,430 @@ class PagesTemplates
 
         <p class="also-desc">Deporte</p>
       </div>
-      <div class="also-feature"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/cultura-grey.svg" class="fr-fil fr-dib">
+      <div class="also-feature"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/gastro-grey.svg" class="fr-fil fr-dib">
 
-        <p class="also-desc">Cultura</p>
+        <p class="also-desc">Gastronomía</p>
       </div>
     </div>
   </div>';
-    
-  static function getTComarca(){
-    $comarca = PagesTemplates::getFinalTemplate(PagesTemplates::$comarca);
-    return $comarca;
+
+  static function getTPlaya(){
+    $playa = PagesTemplates::getFinalTemplate(PagesTemplates::$playa);
+    return $playa;
+  }
+ 
+  static $naturaleza = '
+  <!-- HEADER -->
+  <div class="header-general header-naturaleza">
+    <div class="header-container">
+      <div class="header-txt">
+        <h1 class="txt">Naturaleza</h1><img class="brush fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
+    </div>
+    <!-- NUEVA FOTO -->
+    <img class="background-image" src="***_preurl_***/storage/app/media/uploaded-files/templates/naturaleza.jpg" alt="">
+  </div>
+  <div class="section-txt-comarca">
+    <!-- NUEVO DIV -->
+    <div class="txt-container">
+      <p class="title">CÁDIZ ES
+        <br>NATURALEZA</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+
+      <p class="desc">Conoce una de las provincias con mayor diversidad de España. 6 parques naturales que descubrir por tierra o mar, todos ellos escenarios perfectos para disfrutar de la experiencia que necesitas.</p>
+    </div>
+  </div>
+  <div class="static-structure">
+    <div class="page">
+      <div class="overlay-img">
+        <br>
+      </div><img class="rec-img fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/via-verde1.jpg">
+      <img class="icon fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/via-verde.svg">
+      <div class="txt-container">
+
+        <p class="name">VÍA VERDE DE LA SIERRA</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+        <a href="via-verde.html">Ver Vía Verde de la Sierra <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii">&nbsp;</a></div>
+    </div>
+    <div class="page">
+      <div class="overlay-img">
+        <br>
+      </div><img class="rec-img fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/bird-watching.jpg">
+      <img class="icon fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/bird-watching.svg">
+      <div class="txt-container">
+
+        <p class="name">BIRDWATCHING</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+        <a href="birdwatching.html">Ver birdwatching <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii">&nbsp;</a></div>
+    </div>
+    <div class="page">
+      <div class="overlay-img">
+        <br>
+      </div><img class="rec-img fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/espacios-naturales.jpg">
+      <img class="icon fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/espacios-naturales.svg">
+      <div class="txt-container">
+
+        <p class="name">ESPACIOS NATURALES</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+        <a href="espacios-naturales.html">Ver espacios naturales <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii">&nbsp;</a></div>
+    </div>
+  </div>';
+
+  static function getTNaturaleza(){
+    $naturaleza = PagesTemplates::getFinalTemplate(PagesTemplates::$naturaleza);
+    return $naturaleza;
   }
 
+  static $viaVerde = '
+  <!-- HEADER -->
+  <div class="header header-viaverde" id="#ruta-viaverde">
+  <div class="header-container header-village-container">
+    <div class="header-txt header-txt-village">
+      <h1 class="txt" id="natu-via">Vía Verde de la Sierra</h1><img class="brush fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
+    </div>
+    <!-- NUEVA FOTO -->
+    <img class="background-image" src="***_preurl_***/storage/app/media/uploaded-files/templates/via-verde1.jpg" alt="">
+  </div>
+  <!-- TXT-->
+  <div class="section-txt-village">
+    <div class="txt-container">
 
-    static $playa = '
+      <p class="title">EL ENCANTO
+        <br>DE LA RUTA</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+
+      <p class="desc">La ruta de Vía Verde de la Sierra es una ruta natural que atraviesa una antigua estructura ferroviaria en desuso reconvertida ahora en trayecto turístico. Una enriquecedora excursión por plena naturaleza a través de las sierras Béticas andaluzas.</p>
+
+      <p class="desc">La ruta se inicia en la antigua estación del municipio de Olvera, bajo la estampa de su histórico castillo, y finaliza en la antigua estación de Puerto Serrano, en la vega del río Guadalete. Una travesía de 36km de entorno natural con 30 túneles que atravesar, 4 viaductos que cruzar y 5 estaciones para descansar que transcurre paralela a las orillas de numerosos ríos.</p>
+
+      <p class="desc">Encontrarás también una amplia oferta de actividades&nbsp;deportivas, educativas, turísticas y medioambientales. Como la sede de la Fundación Vía Verde de la Sierra, hoteles restaurante, espacio para autocaravanas, y el destacado Centro de Interpretación y Observatorio ornitológico, donde aprenderás todo lo que necesitas saber sobre la Vía Verde de la Sierra a través de soportes interactivos y proyecciones en 4D.</p>
+
+      <p class="desc">Disfruta de diferentes actividades al aire libre a través de este completo trayecto que podrás realizar a pie, en bici o a caballo.</p>
+    </div>
+  </div>
+  <!-- IMAGEN -->
+  <div class="featured-element featured-viaverde">
+    <div class="txt-container">
+
+      <p class="title">GARGANTA VERDE</p>
+
+      <p class="desc">¿Eres de emociones fuertes? Disfruta de Cádiz como nunca antes.</p><a class="events-link" href="rutas.html">Selección de rutas naturales <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-arrow-yellow.svg" alt="" class="fr-fic fr-dii">&nbsp;</a>
+      <img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
+      <!-- NUEVA FOTO -->
+      <div class="overlay"></div>
+      <img class="img-destacada" src="***_preurl_***/storage/app/media/uploaded-files/templates/viaverde2.jpg" alt="">
+  </div>
+  <div class="section-txt-village">
+    <div class="txt-container">
+
+      <p class="title">DISFRUTA LA
+        <br>VÍA VERDE
+        <br>DE LA MANO DE...</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
+  </div>
+  <div class="all-exps" id="exps-playa">
+    <div class="all-events-container">
+      <div class="event event-playa">
+        <div class="overlay-img">
+          <br>
+        </div><img class="rec-img fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/adventour.jpg">
+        <div class="txt-container">
+
+          <p class="name">ADVENTOUR</p>
+
+          <p class="subtitle">Empresa de turismo, deporte, aventura y animación con sede en Olvera.</p><img class="separator separator-playa fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+          <a class="see-event" href="http://www.adventour.es/" target="_blank">Ver rutas que ofrece <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+      </div>
+      <div class="event event-playa">
+        <div class="overlay-img">
+          <br>
+        </div><img class="rec-img fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/sierra-viva.jpg">
+        <div class="txt-container">
+
+          <p class="name">SIERRA VIVA</p>
+
+          <p class="subtitle">Empresa con gran variedad de rutas adaptadas a practicar deporte al aire libre.</p><img class="separator separator-playa fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+          <a class="see-event" href="http://www.sierraviva.es/" target="_blank">Ver rutas que ofrece <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+      </div>
+      <div class="event event-playa">
+        <div class="overlay-img">
+          <br>
+        </div><img class="rec-img fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/coripe.jpg">
+        <div class="txt-container">
+
+          <p class="name">CORIPE RURAL</p>
+
+          <p class="subtitle">Una de las empresas pioneras y con más experiencia en actividades medioambientales.</p><img class="separator separator-playa fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+          <a class="see-event" href="http://www.coriperural.es/" target="_blank">Ver rutas que ofrece <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+      </div>
+    </div>
+  </div>
+  <div class="icons-row">
+    <div class="i-container">
+      <div class="also-feature"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/natu-grey.svg" class="fr-fil fr-dib">
+
+        <p class="also-desc">Naturaleza</p>
+      </div>
+      <div class="also-feature"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/deporte-grey.svg" class="fr-fil fr-dib">
+
+        <p class="also-desc">Deporte</p>
+      </div>
+      <div class="also-feature"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/ruta-grey.svg" class="fr-fil fr-dib">
+
+        <p class="also-desc">Ruta</p>
+      </div>
+    </div>
+  </div>';
+
+  static function getTViaVerde(){
+    $viaVerde = PagesTemplates::getFinalTemplate(PagesTemplates::$viaVerde);
+    return $viaVerde;
+  }
+
+    static $birdwatching = '
     <!-- HEADER -->
-    <div class="header header-playa">
+    <div class="header header-birdwatching">
       <div class="header-container header-village-container">
         <div class="header-txt header-txt-village">
-          <h1 class="txt"><span class="first-word">Los Lances</span></h1><img class="brush fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
+          <h1 id="natu-via" class="txt">Birdwatching</h1>
+          <img class="brush" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt="">
+        </div>
       </div>
       <!-- NUEVA FOTO -->
-      <img class="background-image" src="***_preurl_***/storage/app/media/uploaded-files/templates/playa-lances.jpg" alt="">
+      <img class="background-image" src="***_preurl_***/storage/app/media/uploaded-files/templates/bird-watching.jpg">
     </div>
     <!-- TXT-->
     <div class="section-txt-village">
       <div class="txt-container">
-
-        <p class="title">ARENA FINA,
-          <br>WINDSURF Y
-          <br>BUENA COMIDA</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
-
-        <p class="desc">Situado en la comarca de La Janda, Barbate es un precioso pueblo gaditano que alberga uno de los puertos pesqueros más famosos de Andalucía. A lo largo de los 25 kilómetros de costa que agrupa el término municipal, encontrarás pueblos y pedanías como Zahara de los Atunes, Caños de Meca y Zahora, y en ellos, playas naturales, dunas y acantilados que componen uno de los núcleos turísticos más reconocidos del sur de España.</p>
-
-        <p class="desc">El municipio ofrece la posibilidad de realizar una gran variedad de rutas de gran interés ecológico y paisajístico gracias al Parque Natural de la Breña y las Marismas de Barbate.</p>
-
-        <p class="desc">Las condiciones de pesca que ofrece la zona permiten hacen destacar a su gastronomía por el famoso atún de Almadraba, un manjar único que merece la pena disfrutar en los restaurantes de Barbate.</p>
+              <p class="title">EL PARAÍSO DE <br> LAS AVES</p>
+              <img class="separator" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+              <p class="desc">Sé testigo de la mayor migración de aves de Europa entre dos mares y dos continentes. </p>
       </div>
     </div>
+
     <!-- IMAGEN -->
-    <div class="img-village">
+    <div class="featured-element featured-bird">
       <div class="txt-container">
-
-        <p class="title">Marismas de Barbate</p>
-
-        <p class="desc">¿Eres de emociones fuertes? Disfruta de Cádiz como nunca antes.</p><a class="events-link" href="#playas">Selección de rutas naturales <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-arrow-yellow.svg" alt="" class="fr-fic fr-dii">&nbsp;</a>
-        <img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
-        <!-- NUEVA FOTO -->
-        <img class="img-destacada" src="***_preurl_***/storage/app/media/uploaded-files/templates/marismas-barbate.jpg" alt="">
-    </div>
-    <div class="section-txt-village">
-      <div class="txt-container">
-
-        <p class="title">3 COSAS QUE
-          <br>HACER EN LA PLAYA
-          <br>DE LOS LANCES</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
-    </div>
-    <div class="all-exps" id="exps-playa">
-      <div class="all-events-container">
-        <div class="event event-playa">
-          <div class="overlay-img">
-            <br>
-          </div><img class="rec-img fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/kite.jpg">
-          <div class="txt-container">
-
-            <p class="name">3 SIXTY KITE SCHOOL</p>
-
-            <p class="subtitle">Utilizamos el método IKO y todos los instructores están certificados en IKO de nivel 3.</p><img class="separator separator-playa fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
-            <a class="see-event" href="#">Saber más <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
-        </div>
-        <div class="event event-playa">
-          <div class="overlay-img">
-            <br>
-          </div><img class="rec-img fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/arte-vida.jpg">
-          <div class="txt-container">
-
-            <p class="name">ARTE Y VIDA TARIFA</p>
-
-            <p class="subtitle">Lugar ideal para el descanso, y disfrutar de nuestras terrazas, restaurante o zonas chill out.</p><img class="separator separator-playa fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
-            <a class="see-event" href="#">Saber más <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
-        </div>
-        <div class="event event-playa">
-          <div class="overlay-img">
-            <br>
-          </div><img class="rec-img fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/camping.jpg">
-          <div class="txt-container">
-
-            <p class="name">CAMPING TORRE DE LA PEÑA</p>
-
-            <p class="subtitle">Camping, Bungalows y Restaurante en Tarifa con un pesacado de primera.</p><img class="separator separator-playa fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
-            <a class="see-event" href="#">Saber más <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
-        </div>
-      </div>
-    </div>
-    <div class="icons-row">
-      <div class="i-container">
-        <div class="also-feature"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/natu-grey.svg" class="fr-fil fr-dib">
-
-          <p class="also-desc">Naturaleza</p>
-        </div>
-        <div class="also-feature"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/deporte-grey.svg" class="fr-fil fr-dib">
-
-          <p class="also-desc">Deporte</p>
-        </div>
-        <div class="also-feature"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/gastro-grey.svg" class="fr-fil fr-dib">
-
-          <p class="also-desc">Gastronomía</p>
-        </div>
-      </div>
-    </div>';
-
-    static function getTPlaya(){
-      $playa = PagesTemplates::getFinalTemplate(PagesTemplates::$playa);
-      return $playa;
-    }
-	
-    static $naturaleza = '
-    <!-- HEADER -->
-    <div class="header header-viaverde" id="#ruta-viaverde">
-    <div class="header-container header-village-container">
-      <div class="header-txt header-txt-village">
-        <h1 class="txt" id="natu-via">Vía Verde de la Sierra</h1><img class="brush fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
+        <p class="title">RUTA BIRDWATCHING EN TARIFA</p>
+        <p class="desc">El escenario perfecto para dejarte envolver por un entorno alucinante. </p>
+        <a class="events-link" href="rutas.html">Selección de rutas naturales <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-arrow-yellow.svg" alt=""> </a>
+        <img class="separator" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
       </div>
       <!-- NUEVA FOTO -->
-      <img class="background-image" src="***_preurl_***/storage/app/media/uploaded-files/templates/via-verde1.jpg" alt="">
+      <div class="overlay"></div>
+      <img class="img-destacada" src="***_preurl_***/storage/app/media/uploaded-files/templates/birdwatching.jpg" alt="">
     </div>
-    <!-- TXT-->
+
     <div class="section-txt-village">
       <div class="txt-container">
-
-        <p class="title">EL ENCANTO
-          <br>DE LA RUTA</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
-
-        <p class="desc">La ruta de Vía Verde de la Sierra es una ruta natural que atraviesa una antigua estructura ferroviaria en desuso reconvertida ahora en trayecto turístico. Una enriquecedora excursión por plena naturaleza a través de las sierras Béticas andaluzas.</p>
-
-        <p class="desc">La ruta se inicia en la antigua estación del municipio de Olvera, bajo la estampa de su histórico castillo, y finaliza en la antigua estación de Puerto Serrano, en la vega del río Guadalete. Una travesía de 36km de entorno natural con 30 túneles que atravesar, 4 viaductos que cruzar y 5 estaciones para descansar que transcurre paralela a las orillas de numerosos ríos.</p>
-
-        <p class="desc">Encontrarás también una amplia oferta de actividades&nbsp;deportivas, educativas, turísticas y medioambientales. Como la sede de la Fundación Vía Verde de la Sierra, hoteles restaurante, espacio para autocaravanas, y el destacado Centro de Interpretación y Observatorio ornitológico, donde aprenderás todo lo que necesitas saber sobre la Vía Verde de la Sierra a través de soportes interactivos y proyecciones en 4D.</p>
-
-        <p class="desc">Disfruta de diferentes actividades al aire libre a través de este completo trayecto que podrás realizar a pie, en bici o a caballo.</p>
+              <p class="title">3 IDEAS PENSADAS <br> ESPECIALMENTE <br> PARA TI</p>
+              <img class="separator" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
       </div>
     </div>
-    <!-- IMAGEN -->
-    <div class="featured-element featured-viaverde">
-      <div class="txt-container">
 
-        <p class="title">GARGANTA VERDE</p>
-
-        <p class="desc">¿Eres de emociones fuertes? Disfruta de Cádiz como nunca antes.</p><a class="events-link" href="rutas.html">Selección de rutas naturales <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-arrow-yellow.svg" alt="" class="fr-fic fr-dii">&nbsp;</a>
-        <img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
-        <!-- NUEVA FOTO -->
-        <div class="overlay"></div>
-        <img class="img-destacada" src="***_preurl_***/storage/app/media/uploaded-files/templates/viaverde2.jpg" alt="">
-    </div>
-    <div class="section-txt-village">
-      <div class="txt-container">
-
-        <p class="title">DISFRUTA LA
-          <br>VÍA VERDE
-          <br>DE LA MANO DE...</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
-    </div>
-    <div class="all-exps" id="exps-playa">
+    <div id="exps-playa" class="all-exps">
       <div class="all-events-container">
         <div class="event event-playa">
-          <div class="overlay-img">
-            <br>
-          </div><img class="rec-img fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/adventour.jpg">
+          <div class="overlay-img"></div>
+          <img class="rec-img" src="***_preurl_***/storage/app/media/uploaded-files/templates/bird-tarifa.jpg">
           <div class="txt-container">
-
-            <p class="name">ADVENTOUR</p>
-
-            <p class="subtitle">Empresa de turismo, deporte, aventura y animación con sede en Olvera.</p><img class="separator separator-playa fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
-            <a class="see-event" href="http://www.adventour.es/" target="_blank">Ver rutas que ofrece <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+            <p class="name name-bird">BIRDING TARIFA</p>
+            <p class="subtitle">Observación de Aves en el estrecho de Gibraltar, migraciones de aves de Europa. </p>
+            <img class="separator separator-playa" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+            <a target="_blank" class="see-event" href="http://www.birdingtarifa.es/">Más info <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg"></a>
+          </div>
         </div>
         <div class="event event-playa">
-          <div class="overlay-img">
-            <br>
-          </div><img class="rec-img fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/sierra-viva.jpg">
+          <div class="overlay-img"></div>
+          <img class="rec-img" src="***_preurl_***/storage/app/media/uploaded-files/templates/birdacadiz.jpg">
           <div class="txt-container">
-
-            <p class="name">SIERRA VIVA</p>
-
-            <p class="subtitle">Empresa con gran variedad de rutas adaptadas a practicar deporte al aire libre.</p><img class="separator separator-playa fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
-            <a class="see-event" href="http://www.sierraviva.es/" target="_blank">Ver rutas que ofrece <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+            <p class="name name-bird">BIRDCÁDIZ</p>
+            <p class="subtitle">Portal donde encontrarás todo lo relacionado con las aves en Cádiz.</p>
+            <img class="separator separator-playa" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+            <a target="_blank" class="see-event" href="http://birdcadiz.com/">Más info <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg"></a>
+          </div>
         </div>
         <div class="event event-playa">
-          <div class="overlay-img">
-            <br>
-          </div><img class="rec-img fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/coripe.jpg">
+          <div class="overlay-img"></div>
+          <img class="rec-img" src="***_preurl_***/storage/app/media/uploaded-files/templates/cadizbird.jpg">
           <div class="txt-container">
-
-            <p class="name">CORIPE RURAL</p>
-
-            <p class="subtitle">Una de las empresas pioneras y con más experiencia en actividades medioambientales.</p><img class="separator separator-playa fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
-            <a class="see-event" href="http://www.coriperural.es/" target="_blank">Ver rutas que ofrece <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+            <p class="name name-bird">CÁDIZ BIRDING</p>
+            <p class="subtitle">Cadiz Birding emplea guías profesionales para experimentados.</p>
+            <img class="separator separator-playa" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+            <a target="_blank" class="see-event" href="http://www.cadizbirding.com/">Más info <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg"></a>
+          </div>
         </div>
       </div>
     </div>
+
     <div class="icons-row">
       <div class="i-container">
-        <div class="also-feature"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/natu-grey.svg" class="fr-fil fr-dib">
-
+        <div class="also-feature">
+          <img src="***_preurl_***/storage/app/media/uploaded-files/templates/natu-grey.svg">
           <p class="also-desc">Naturaleza</p>
         </div>
-        <div class="also-feature"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/deporte-grey.svg" class="fr-fil fr-dib">
-
-          <p class="also-desc">Deporte</p>
+        <div class="also-feature">
+          <img src="***_preurl_***/storage/app/media/uploaded-files/templates/ocio.svg">
+          <p class="also-desc">Ocio</p>
         </div>
-        <div class="also-feature"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/ruta-grey.svg" class="fr-fil fr-dib">
-
+        <div class="also-feature">
+          <img src="***_preurl_***/storage/app/media/uploaded-files/templates/ruta-grey.svg">
           <p class="also-desc">Ruta</p>
         </div>
       </div>
     </div>';
 
-    static function getTNaturaleza(){
-      $naturaleza = PagesTemplates::getFinalTemplate(PagesTemplates::$naturaleza);
-      return $naturaleza;
+    static function getTBirdwatching(){
+      $birdwatching = PagesTemplates::getFinalTemplate(PagesTemplates::$birdwatching);
+      return $birdwatching;
+    }
+
+    static $espaciosnaturales = '
+    <!-- HEADER -->
+    <div class="header-general header-espacios">
+      <div class="header-container">
+        <div class="header-txt">
+          <h1 id="espacios" class="txt">Espacios naturales</h1>
+          <img class="brush" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt="">
+        </div>
+      </div>
+      <!-- NUEVA FOTO -->
+      <img class="background-image" src="***_preurl_***/storage/app/media/uploaded-files/templates/espacios.jpg">
+    </div>
+    <div class="main-section-comarcas">
+      <div class="main-txt">
+        <p class="title">ENCUENTRA UN <br> LUGAR MÁGICO</p>
+        <img class="separator" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+        <p class="desc">Encontrarás un lugar mágico que trasciende a las descripciones. Su paisaje montañoso y multicolor, sus recónditas sendas, la gracia y el embrujo de sus espacios naturales... te envolverán en un mundo tan especial que no podrás olvidar.</p>
+        <p class="desc">El enclave natural de Cádiz conquista al visitante más atrevido, al que desea disfrutar activamente de las ventajas de su situación geográfica o al que prefiere deleitarse con sus rincones más escondidos. Te conquistará.</p>
+      </div>
+      <div id="main-espacios" class="main-events-container">
+        <div class="event">
+          <div class="overlay-img"></div>
+          <img class="rec-img" src="***_preurl_***/storage/app/media/uploaded-files/templates/sierra-grazalema.jpg">
+          <div class="txt-container">
+            <p class="name">SIERRA DE <br> GRAZALEMA</p>
+            <img class="separator" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+            <div class="button-container">
+              <a class="see-event" href="">Conocer espacio natural <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg"></a>
+            </div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="overlay-img"></div>
+          <img class="rec-img" src="***_preurl_***/storage/app/media/uploaded-files/templates/alcornocales.jpg">
+          <div class="txt-container">
+            <p class="name">LOS <br>ALCORNOCALES</p>
+            <img class="separator" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+            <div class="button-container">
+              <a class="see-event" href="espacio-natural.html">Conocer espacio natural <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg"></a>
+            </div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="overlay-img"></div>
+          <img class="rec-img" src="***_preurl_***/storage/app/media/uploaded-files/templates/estrecho.jpg">
+          <div class="txt-container">
+            <p class="name">DEL ESTRECHO</p>
+            <img class="separator" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+            <div class="button-container">
+              <a class="see-event" href="">Conocer espacio natural <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg"></a>
+            </div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="overlay-img"></div>
+          <img class="rec-img" src="***_preurl_***/storage/app/media/uploaded-files/templates/brena-marismas.jpg">
+          <div class="txt-container">
+            <p class="name">LA BREÑA Y <br> MARISMAS DE BARBATE</p>
+            <img class="separator" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+            <div class="button-container">
+              <a class="see-event" href="">Conocer espacio natural <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg"></a>
+            </div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="overlay-img"></div>
+          <img class="rec-img" src="***_preurl_***/storage/app/media/uploaded-files/templates/bahia-cadiz2.jpg">
+          <div class="txt-container">
+            <p class="name">BAHÍA DE CÁDIZ</p>
+            <img class="separator" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+            <div class="button-container">
+              <a class="see-event" href="">Conocer espacio natural <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg"></a>
+            </div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="overlay-img"></div>
+          <img class="rec-img" src="***_preurl_***/storage/app/media/uploaded-files/templates/donana.jpg">
+          <div class="txt-container">
+            <p class="name">DOÑANA</p>
+            <img class="separator" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+            <div class="button-container">
+              <a class="see-event" href="">Conocer espacio natural <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    ';
+
+    static function getTEspaciosnaturales(){
+      $espaciosnaturales = PagesTemplates::getFinalTemplate(PagesTemplates::$espaciosnaturales);
+      return $espaciosnaturales;
     }
 
     static $diversion = '
-    ';
+    <!-- HEADER -->
+    <div class="header-general header-ocio">
+      <div class="header-container">
+        <div class="header-txt">
+          <h1 class="txt">Diversión</h1><img class="brush fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt="">
+        </div>
+      </div>
+      <!-- NUEVA FOTO -->
+      <img class="background-image" src="***_preurl_***/storage/app/media/uploaded-files/templates/ocio.jpg">
+    </div>
+    <div class="section-txt-comarca">
+      <!-- NUEVO DIV -->
+      <div class="txt-container">
+        <p class="title">CREA MOMENTOS
+          <br>INOLVIDABLES</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+
+        <p class="desc">En Cádiz el concepto del tiempo se desploma con la risa de su gente y los planes para disfrutar en todo momento. Atardeceres en la playa, el arte del tapeo en el casco antiguo o perderse en la Sierra de Grazalema, no esperes a que te lo cuenten.</p>
+      </div>
+    </div>
+    <div class="static-structure">
+      <div class="page page-compras">
+        <div class="overlay-img">
+          <br>
+        </div><img class="rec-img fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/compras.jpg">
+        <img class="icon fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/compras.svg">
+        <div class="txt-container">
+
+          <p class="name">COMPRAS</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+          <a href="compras.html">Ver opciones de compras <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii">&nbsp;</a></div>
+      </div>
+      <div class="page">
+        <div class="overlay-img">
+          <br>
+        </div><img class="rec-img fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/parqueocio-header.jpg">
+        <img class="icon fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/locales-ocio.svg">
+        <div class="txt-container">
+
+          <p class="name">LOCALES DE OCIO</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+          <a href="locales-ocio.html">Ver locales de ocio <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii">&nbsp;</a></div>
+      </div>
+      <div class="page">
+        <div class="overlay-img">
+          <br>
+        </div><img class="rec-img fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/po-header.jpg">
+        <img class="icon fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/parques-ocio.svg">
+        <div class="txt-container">
+
+          <p class="name">PARQUES DE OCIO</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+          <a href="parques-ocio.html">Ver parques de ocio <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii">&nbsp;</a></div>
+      </div>
+    </div>';
+
+    static function getTDiversion(){
+      $diversion = PagesTemplates::getFinalTemplate(PagesTemplates::$diversion);
+      return $diversion;
+    }
 
     static $cultura = '
     ';

@@ -1,4 +1,4 @@
-1516206864a:1:{s:11:"dinamic.htm";a:10:{s:8:"fileName";s:11:"dinamic.htm";s:7:"content";s:2949:"description = "Dinamic Layout"
+1516274189a:1:{s:11:"dinamic.htm";a:10:{s:8:"fileName";s:11:"dinamic.htm";s:7:"content";s:2949:"description = "Dinamic Layout"
 layout = 'dinamic'
 [staticMenu]
 code = "donde-ir"
@@ -73,7 +73,7 @@ code = "mi-estancia"
     {% framework %}
    
   </body>
-</html>";s:5:"mtime";i:1516201279;s:6:"markup";s:2598:"<!DOCTYPE html>
+</html>";s:5:"mtime";i:1516208702;s:6:"markup";s:2598:"<!DOCTYPE html>
 <html lang="es">
 
 <head>
