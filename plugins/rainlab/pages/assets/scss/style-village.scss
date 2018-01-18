@@ -1,0 +1,626 @@
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.header-playa {
+  .brush {
+    margin-top: 34px !important;
+  }
+}
+.header-txt-village {
+  margin-bottom: 100px !important;
+}
+.header-village-container {
+  margin-top: 0px !important;
+}
+
+.header {
+  .background-image {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 4px;
+    object-fit: cover;
+    z-index: 1;
+  }
+}
+
+.header-alcornocales {
+  #natu-via {
+    font-size: 200px;
+  }
+}
+
+.header-viaverde {
+  #natu-via {
+    font-size: 200px;
+  }
+}
+
+.header-birdwatching {
+  #natu-via {
+    font-size: 200px;
+  }
+}
+
+.header-compras {
+  #natu-via {
+    font-size: 200px;
+  }
+}
+
+.header-locales {
+  #natu-via {
+    font-size: 200px;
+  }
+}
+
+.header-parques {
+  #natu-via {
+    font-size: 200px;
+  }
+}
+
+.header-monumentos {
+  #natu-via {
+    font-size: 200px;
+  }
+}
+
+.header-gourmet {
+  #natu-via {
+    font-size: 200px;
+  }
+}
+
+.header-fiesta {
+  #natu-via {
+    font-size: 200px;
+  }
+}
+
+.header-flamenco {
+  #natu-via {
+    font-size: 200px;
+  }
+}
+
+.header-teatro {
+  #natu-via {
+    font-size: 200px;
+  }
+}
+
+.header-vino {
+  #natu-via {
+    font-size: 200px;
+  }
+}
+
+.header-comida {
+  #natu-via {
+    font-size: 200px;
+  }
+}
+
+/* IMG SECTION - VILLAGE */
+.img-village {
+  padding: 60px 0;
+  position: relative;
+  height: 830px;
+  //background: linear-gradient(rgba(0,0,0,0.00) 0%, rgba(0,0,0,0.68) 100%), url("../img/marismas-barbate.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 10;
+  background-color: white;
+  .img-destacada {
+    mask-image: url('../svg/mask.svg');
+    -webkit-mask-image: url('../svg/mask.svg');
+    mask-position: center;
+    -webkit-mask-position: center;
+    width: 100%;
+    height: 100%;
+    mask-size: 300%;
+    -webkit-mask-size: 300%;
+    object-fit: cover;
+  }
+
+  .txt-container {
+    position: absolute;
+    left: 248px;
+    top: 208px;
+    width: 45%;
+    z-index: 10;
+    .title {
+      color: white;
+      font-size: 94px;
+      font-family: 'AvenirNext-DemiBold';
+      line-height: 90px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .desc {
+      color: white;
+      font-size: 23px;
+      font-weight: 300;
+      line-height: 31px;
+      width: 411px;
+      margin-bottom: 20px;
+    }
+    .events-link {
+      color: #F5A623;
+      font-weight: 700;
+      line-height: 27px;
+      font-size: 15px;
+      display: block;
+      margin-bottom: 26px;
+      opacity: 1;
+      img {
+        position: relative;
+        left: 4px;
+      }
+      &:hover, &:active, &:focus {
+        text-decoration: none;
+        outline: none;
+        opacity: 0.5;
+      }
+    }
+  }
+}
+.featured-element {
+  position: relative;
+  height: 830px;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: cover !important;
+  background-attachment: fixed !important;
+  z-index: 100;
+  .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.28);
+    position: absolute;
+    top: 0;
+    z-index: 10;
+  }
+  .img-destacada {
+    mask-image: url('../svg/mask.svg');
+    -webkit-mask-image: url('../svg/mask.svg');
+    mask-position: center;
+    -webkit-mask-position: center;
+    width: 100%;
+    height: 100%;
+    mask-size: 300%;
+    -webkit-mask-size: 300%;
+    z-index: 9;
+    object-fit: cover;
+  }
+
+  .txt-container {
+    position: absolute;
+    left: 248px;
+    top: 208px;
+    width: 45%;
+    z-index: 11;
+    .title {
+      color: white;
+      font-size: 94px;
+      font-family: 'AvenirNext-DemiBold';
+      line-height: 90px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .desc {
+      color: white;
+      font-size: 23px;
+      font-weight: 300;
+      line-height: 31px;
+      width: 411px;
+      margin-bottom: 20px;
+    }
+    .events-link {
+      color: #F5A623;
+      font-weight: 700;
+      line-height: 27px;
+      font-size: 15px;
+      display: block;
+      margin-bottom: 26px;
+      opacity: 1;
+      img {
+        position: relative;
+        left: 4px;
+      }
+      &:hover, &:active, &:focus {
+        text-decoration: none;
+        outline: none;
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
+.featured-comida {
+  .txt-container {
+    width: 77%;
+    left: 172px;
+  }
+}
+
+.featured-monumentos {
+  .txt-container {
+    width: 77%;
+    left: 172px;
+  }
+}
+
+.featured-flamenco {
+  background-attachment: fixed;
+  .txt-container {
+    width: 77%;
+    left: 172px;
+  }
+}
+
+.featured-compras {
+  .txt-container {
+    width: 77%;
+    left: 172px;
+  }
+}
+
+.featured-gourmet {
+  .txt-container {
+    width: 84%;
+    left: 122px;
+  }
+}
+
+.featured-vino {
+  .txt-container {
+    width: 84%;
+    left: 122px;
+  }
+}
+
+.featured-alcornocales {
+  .txt-container {
+    width: 56%;
+  }
+}
+
+.featured-locales {
+  .txt-container {
+    width: 56%;
+  }
+}
+
+.featured-parques {
+  .txt-container {
+    width: 77%;
+    left: 172px;
+  }
+}
+
+.section-txt-village {
+  width: 100%;
+  background-color: white;
+  position: relative;
+  z-index: 50;
+  .txt-container {
+    width: 90%;
+    padding: 180px 0px 160px 0px;
+    margin: 0 auto;
+    max-width: 1145px;
+  }
+  .title {
+    font-family: 'AvenirNext-DemiBold';
+    font-size: 64px;
+    color: #4A4A4A;
+    line-height: 65px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+  }
+  .desc{
+    color: #9B9B9B;
+    font-size: 18px;
+    line-height: 33px;
+    margin-bottom: 30px;
+    a {
+      color: #F5A623;
+      &:hover {
+        text-decoration: none;
+        color: #D0860C;
+      }
+    }
+    b {
+      color: #4A4A4A;
+      font-weight: 300;
+    }
+  }
+  .small-desc {
+    width: 55%;
+  }
+  .download {
+    color: #F5A623;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 33px;
+    text-align: left;
+    transition: color 0.3s ease;
+    img {
+      margin-left: 10px;
+    }
+    &:hover {
+      text-decoration: none;
+      color: #D0860C;
+    }
+  }
+  .separator {
+    margin-bottom: 60px;
+  }
+}
+.map {
+  width: 100%;
+  height: 844px;
+  background-image: url('../img/map.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.more-content {
+  width: 100%;
+  @include flexbox();
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: center;
+  margin-top: 180px;
+  .also-title {
+    font-family: 'AvenirNext-DemiBold';
+    color: #4A4A4A;
+    font-size: 32px;
+  }
+  .also-content {
+    @include flexbox();
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+    margin-top: 20px;
+    .also-feature {
+      @include flexbox();
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-right: 70px;
+      img {
+        margin-bottom: 12px;
+      }
+      .also-desc {
+        color: #CECECE;
+        font-size: 16px;
+        line-height: 22px;
+      }
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
+  }
+  .morelinks-share {
+    margin-right: 260px;
+  }
+  .more-links {
+    margin-bottom: 170px;
+    .links-container {
+      @include flexbox();
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 50px;
+      a {
+        color: #F7A700;
+        font-size: 16px;
+        line-height: 33px;
+        transition: color 0.3s ease;
+        &:hover, &:focus, &:active {
+          text-decoration: none;
+          color: #D0860C;
+        }
+      }
+    }
+  }
+  .also {
+    margin-bottom: 170px;
+  }
+}
+
+.all-exps {
+  width: 100%;
+  background-color: white;
+  position: relative;
+  z-index: 10;
+  .search-title-container {
+    width: 100%;
+    @include flexbox();
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -77px;
+    .title-search {
+      font-size: 16px;
+      color: #9B9B9B;
+      line-height: 33px;
+    }
+  }
+  .all-events-container {
+    width: 100%;
+    height: auto;
+    @include flexbox();
+    flex-direction: row;
+    flex-wrap: wrap;
+    .event {
+      width: calc(100% / 3);
+      width: -webkit-calc(100% / 3);
+      width: -moz-calc(100% / 3);
+      height: 640px;
+      position: relative;
+      .rec-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+      .overlay-img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        background: linear-gradient(-180deg, rgba(0,0,0,0.00) 41%, #000000 97%);
+      }
+
+      .txt-container {
+        position: absolute;
+        width: 81%;
+        bottom: 50px;
+        left: 10%;
+        .separator-municipio {
+          margin-bottom: 36px;
+          margin-top: 10px;
+        }
+        .name {
+          font-size: 39px;
+          color: white;
+          font-family: 'AvenirNext-DemiBold';
+          line-height: 48px;
+          max-width: 256px;
+          text-transform: uppercase;
+        }
+        .name-bird {
+          max-width: 316px !important;
+        }
+
+        .name-pay {
+          max-width: 263px !important;
+        }
+
+        .icons-nat {
+          margin-top: 16px;
+          margin-bottom: 16px;
+          @include flexbox();
+          flex-direction: row;
+          align-items: center;
+          .icon-pair {
+            @include flexbox();
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            img {
+              width: 23px;
+              height: auto;
+            }
+            p {
+              margin-bottom: 0px;
+              color: white;
+              font-size: 16px;
+              line-height: 22px;
+              margin-left: 11px;
+            }
+            &:first-child {
+              margin-right: 30px;
+            }
+          }
+        }
+        .icons {
+          margin-top: 22px;
+          margin-bottom: 30px;
+          @include flexbox();
+          flex-direction: row;
+          align-items: center;
+          flex-wrap: wrap;
+          width: 90%;
+          max-width: 312px;
+          .icon-pair:nth-child(1), .icon-pair:nth-child(2) {
+            margin-bottom: 10px;
+          }
+          .icon-pair {
+            width: 50%;
+            @include flexbox();
+            flex-direction: row;
+            align-items: center;
+            p {
+              margin-bottom: 0px;
+              color: white;
+              font-size: 16px;
+              line-height: 22px;
+              margin-left: 11px;
+              font-family: 'AvenirNext-DemiBold';
+            }
+            img {
+              width: 23px;
+              height: auto;
+            }
+          }
+          .first-icon {
+            width: 35%;
+          }
+          .second-icon {
+            width: 65%;
+          }
+        }
+        .button-container {
+          @include flexbox();
+          align-items: center;
+          width: 98%;
+          max-width: 378px;
+          border-radius: 3px;
+          position: relative;
+          a {
+            color: #F5A623;
+            font-size: 15px;
+            display: block;
+            font-weight: 700;
+            img {
+              margin-left: 12px;
+            }
+            &:hover, &:focus, &:active {
+              text-decoration: none;
+              color: #D0860C;
+            }
+          }
+        }
+      }
+      &:last-child {
+        .rec-img {
+          object-position: left;
+        }
+      }
+    }
+    .event-playa {
+      .subtitle {
+        font-size: 18px;
+        line-height: 20px;
+        color: white;
+      }
+      .separator-playa {
+        margin-top: 10px;
+      }
+      a {
+        color: #F5A623;
+        display: block;
+        font-weight: 700;
+        margin-top: 27px;
+        img {
+          margin-left: 12px;
+        }
+        &:hover, &:focus, &:active {
+          text-decoration: none;
+          color: #D0860C;
+        }
+      }
+    }
+  }
+}

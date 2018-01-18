@@ -1643,6 +1643,13 @@ div.panel h3.section {
   }
 }
 
+.dropdown-menu .dropdown-container > ul li a:hover, .dropdown-menu .dropdown-container > ul li a:focus {
+  background-color: $blue;
+}
+
+.dropdown-menu .dropdown-container > ul li.first-item a:hover:after, .dropdown-menu .dropdown-container > ul li.first-item a:focus:after, .dropdown-menu .dropdown-container > ul li.first-item a:active:after {
+  border-bottom: 8px solid $blue !important;
+}
 
 .compact-container {
   label {

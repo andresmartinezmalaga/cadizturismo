@@ -18224,6 +18224,68 @@
 		"sM": 0,
 		"sU": 0
 		},
+	"\/plugins\/rainlab\/pages\/assets\/scss\/style-comarcas.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/plugins\/rainlab\/pages\/assets\/css\/style-comarcas.css",
+		"oF": 2,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/plugins\/rainlab\/pages\/assets\/scss\/style-event.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/plugins\/rainlab\/pages\/assets\/css\/style-event.css",
+		"oF": 2,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/plugins\/rainlab\/pages\/assets\/scss\/style-village.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/plugins\/rainlab\/pages\/assets\/css\/style-village.css",
+		"oF": 2,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/plugins\/rainlab\/pages\/assets\/scss\/style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/plugins\/rainlab\/pages\/assets\/scss\/style-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/plugins\/rainlab\/pages\/assets\/scss\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/plugins\/rainlab\/pages\/assets\/css\/style.css",
+		"oF": 2,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/plugins\/rainlab\/pages\/assets\/svg\/alojamiento-icon.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -22485,6 +22547,16 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/babylonia.jpg": {
+		"ft": 16384,
+		"iS": 47613,
+		"oA": 0,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/babylonia.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/storage\/app\/media\/uploaded-files\/templates\/bahia-cadiz.jpg": {
 		"ft": 16384,
 		"iS": 851013,
@@ -22645,6 +22717,16 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/cafe-levante.jpg": {
+		"ft": 16384,
+		"iS": 50029,
+		"oA": 0,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/cafe-levante.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/storage\/app\/media\/uploaded-files\/templates\/calendar-exp.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -22654,6 +22736,16 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/campero.jpg": {
+		"ft": 16384,
+		"iS": 41438,
+		"oA": 0,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/campero.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/storage\/app\/media\/uploaded-files\/templates\/campi.jpg": {
 		"ft": 16384,
@@ -22685,6 +22777,46 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/carnavales-header.jpg": {
+		"ft": 16384,
+		"iS": 246824,
+		"oA": 0,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/carnavales-header.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/castillo-catalina.jpg": {
+		"ft": 16384,
+		"iS": 66749,
+		"oA": 0,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/castillo-catalina.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/castillo-marcos.jpg": {
+		"ft": 16384,
+		"iS": 208215,
+		"oA": 0,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/castillo-marcos.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/cata-vinos.jpg": {
+		"ft": 16384,
+		"iS": 133658,
+		"oA": 0,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/cata-vinos.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/storage\/app\/media\/uploaded-files\/templates\/chicuco.jpg": {
 		"ft": 16384,
 		"iS": 20243,
@@ -22700,6 +22832,26 @@
 		"iS": 512644,
 		"oA": 0,
 		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/circuito.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/cocina.jpg": {
+		"ft": 16384,
+		"iS": 155872,
+		"oA": 0,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/cocina.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/codigo-barra.jpg": {
+		"ft": 16384,
+		"iS": 63898,
+		"oA": 0,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/codigo-barra.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -22740,6 +22892,46 @@
 		"iS": 235873,
 		"oA": 0,
 		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/comarcas4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/comida-tradicional.jpg": {
+		"ft": 16384,
+		"iS": 111068,
+		"oA": 0,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/comida-tradicional.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/comida-tradicional.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/comida-tradicional.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/comida2.jpg": {
+		"ft": 16384,
+		"iS": 191873,
+		"oA": 0,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/comida2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/comidaheader.jpg": {
+		"ft": 16384,
+		"iS": 154363,
+		"oA": 0,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/comidaheader.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -22825,6 +23017,16 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/debla.jpg": {
+		"ft": 16384,
+		"iS": 21075,
+		"oA": 0,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/debla.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/storage\/app\/media\/uploaded-files\/templates\/deporte-grey.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -22834,6 +23036,16 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/disparate.jpg": {
+		"ft": 16384,
+		"iS": 56585,
+		"oA": 0,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/disparate.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/storage\/app\/media\/uploaded-files\/templates\/donana.jpg": {
 		"ft": 16384,
@@ -22925,6 +23137,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/fiestaheader.jpg": {
+		"ft": 16384,
+		"iS": 310781,
+		"oA": 0,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/fiestaheader.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/storage\/app\/media\/uploaded-files\/templates\/flamenco-baile.jpg": {
 		"ft": 16384,
 		"iS": 63129,
@@ -22934,6 +23156,16 @@
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
+		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/flamenco-grey.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/flamenco-grey.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"\/storage\/app\/media\/uploaded-files\/templates\/flamenco.jpg": {
 		"ft": 16384,
@@ -22955,6 +23187,26 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/flamencoheader.jpg": {
+		"ft": 16384,
+		"iS": 86481,
+		"oA": 0,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/flamencoheader.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/gadir.jpg": {
+		"ft": 16384,
+		"iS": 85294,
+		"oA": 0,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/gadir.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/storage\/app\/media\/uploaded-files\/templates\/gastro-exp.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -22974,6 +23226,46 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/gourmet.jpg": {
+		"ft": 16384,
+		"iS": 82519,
+		"oA": 0,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/gourmet.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/gourmet.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/gourmet.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/gourmetheader.jpg": {
+		"ft": 16384,
+		"iS": 137902,
+		"oA": 0,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/gourmetheader.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/guitarra.jpg": {
+		"ft": 16384,
+		"iS": 90409,
+		"oA": 0,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/guitarra.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/storage\/app\/media\/uploaded-files\/templates\/janda.jpg": {
 		"ft": 16384,
@@ -23000,6 +23292,16 @@
 		"iS": 57895,
 		"oA": 0,
 		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/kite.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/la-cava.jpg": {
+		"ft": 16384,
+		"iS": 37614,
+		"oA": 0,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/la-cava.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -23075,6 +23377,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/monumentos.jpg": {
+		"ft": 16384,
+		"iS": 249147,
+		"oA": 0,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/monumentos.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/storage\/app\/media\/uploaded-files\/templates\/municipios.jpg": {
 		"ft": 16384,
 		"iS": 173912,
@@ -23125,6 +23437,16 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/norica.jpg": {
+		"ft": 16384,
+		"iS": 91983,
+		"oA": 0,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/norica.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/storage\/app\/media\/uploaded-files\/templates\/ocelote-castellar.jpg": {
 		"ft": 16384,
 		"iS": 1444198,
@@ -23164,6 +23486,16 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/osborne.jpg": {
+		"ft": 16384,
+		"iS": 85888,
+		"oA": 0,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/osborne.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/storage\/app\/media\/uploaded-files\/templates\/palmar1.jpg": {
 		"ft": 16384,
@@ -23205,6 +23537,16 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/pantalan.jpg": {
+		"ft": 16384,
+		"iS": 47651,
+		"oA": 0,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/pantalan.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/storage\/app\/media\/uploaded-files\/templates\/parqueocio-header.jpg": {
 		"ft": 16384,
 		"iS": 278417,
@@ -23230,6 +23572,16 @@
 		"iS": 51041,
 		"oA": 0,
 		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/paypay.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/petronila.jpg": {
+		"ft": 16384,
+		"iS": 49496,
+		"oA": 0,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/petronila.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -23265,6 +23617,16 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/retinto2.jpg": {
+		"ft": 16384,
+		"iS": 119782,
+		"oA": 0,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/retinto2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/storage\/app\/media\/uploaded-files\/templates\/ruta-chiclana.jpg": {
 		"ft": 16384,
 		"iS": 119066,
@@ -23294,6 +23656,16 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/sala-lechera.jpg": {
+		"ft": 16384,
+		"iS": 41785,
+		"oA": 0,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/sala-lechera.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/storage\/app\/media\/uploaded-files\/templates\/sierra-grazalema.jpg": {
 		"ft": 16384,
@@ -23345,6 +23717,46 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/tabernita.jpg": {
+		"ft": 16384,
+		"iS": 43302,
+		"oA": 0,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/tabernita.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/tarifa-night.jpg": {
+		"ft": 16384,
+		"iS": 37661,
+		"oA": 0,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/tarifa-night.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/teatro-falla.jpg": {
+		"ft": 16384,
+		"iS": 63433,
+		"oA": 0,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/teatro-falla.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/teatro-romano.jpg": {
+		"ft": 16384,
+		"iS": 79552,
+		"oA": 0,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/teatro-romano.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/storage\/app\/media\/uploaded-files\/templates\/teatro.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -23354,6 +23766,46 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/teatroheader.jpg": {
+		"ft": 16384,
+		"iS": 103273,
+		"oA": 0,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/teatroheader.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/tio-pepe.jpg": {
+		"ft": 16384,
+		"iS": 103909,
+		"oA": 0,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/tio-pepe.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/torbellino.jpg": {
+		"ft": 16384,
+		"iS": 59669,
+		"oA": 0,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/torbellino.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/ultramar.jpg": {
+		"ft": 16384,
+		"iS": 38891,
+		"oA": 0,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/ultramar.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/storage\/app\/media\/uploaded-files\/templates\/vejer.jpg": {
 		"ft": 16384,
@@ -23400,6 +23852,36 @@
 		"iS": 492809,
 		"oA": 0,
 		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/viaverde2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/vino.jpg": {
+		"ft": 16384,
+		"iS": 78721,
+		"oA": 0,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/vino.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/vino.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/vino.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/storage\/app\/media\/uploaded-files\/templates\/vinoheader.jpg": {
+		"ft": 16384,
+		"iS": 257118,
+		"oA": 0,
+		"oAP": "\/storage\/app\/media\/uploaded-files\/templates\/vinoheader.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -25474,6 +25956,13 @@
 		"oAP": "\/themes\/default\/content\/static-pages-en\/comarcas-bahia-de-cadiz.htm",
 		"oF": 0
 		},
+	"\/themes\/default\/content\/static-pages-en\/municipios-barbate.htm": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/themes\/default\/content\/static-pages-en\/municipios-barbate.htm",
+		"oF": 0
+		},
 	"\/themes\/default\/content\/static-pages-en\/naturaleza.htm": {
 		"cB": 0,
 		"ft": 8192,
@@ -25486,6 +25975,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/themes\/default\/content\/static-pages-fr\/comarcas-bahia-de-cadiz.htm",
+		"oF": 0
+		},
+	"\/themes\/default\/content\/static-pages-fr\/municipios-barbate.htm": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/themes\/default\/content\/static-pages-fr\/municipios-barbate.htm",
 		"oF": 0
 		},
 	"\/themes\/default\/content\/static-pages-fr\/naturaleza.htm": {
@@ -25621,6 +26117,27 @@
 		"oAP": "\/themes\/default\/content\/static-pages\/experiencias-la-magia-de-el-palmar.htm",
 		"oF": 0
 		},
+	"\/themes\/default\/content\/static-pages\/gastronomia-comida-tradicional.htm": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/themes\/default\/content\/static-pages\/gastronomia-comida-tradicional.htm",
+		"oF": 0
+		},
+	"\/themes\/default\/content\/static-pages\/gastronomia-el-vino.htm": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/themes\/default\/content\/static-pages\/gastronomia-el-vino.htm",
+		"oF": 0
+		},
+	"\/themes\/default\/content\/static-pages\/gastronomia-gourmet.htm": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/themes\/default\/content\/static-pages\/gastronomia-gourmet.htm",
+		"oF": 0
+		},
 	"\/themes\/default\/content\/static-pages\/gastronomia.htm": {
 		"cB": 0,
 		"ft": 8192,
@@ -25628,11 +26145,25 @@
 		"oAP": "\/themes\/default\/content\/static-pages\/gastronomia.htm",
 		"oF": 0
 		},
-	"\/themes\/default\/content\/static-pages\/municipios-dos.htm": {
+	"\/themes\/default\/content\/static-pages\/municipios-barbate.htm": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/themes\/default\/content\/static-pages\/municipios-dos.htm",
+		"oAP": "\/themes\/default\/content\/static-pages\/municipios-barbate.htm",
+		"oF": 0
+		},
+	"\/themes\/default\/content\/static-pages\/municipios-grazalema.htm": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/themes\/default\/content\/static-pages\/municipios-grazalema.htm",
+		"oF": 0
+		},
+	"\/themes\/default\/content\/static-pages\/municipios-jerez-de-la-frontera.htm": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/themes\/default\/content\/static-pages\/municipios-jerez-de-la-frontera.htm",
 		"oF": 0
 		},
 	"\/themes\/default\/content\/static-pages\/municipios-marina.htm": {
@@ -25642,11 +26173,11 @@
 		"oAP": "\/themes\/default\/content\/static-pages\/municipios-marina.htm",
 		"oF": 0
 		},
-	"\/themes\/default\/content\/static-pages\/municipios-tres.htm": {
+	"\/themes\/default\/content\/static-pages\/municipios-tarifa.htm": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/themes\/default\/content\/static-pages\/municipios-tres.htm",
+		"oAP": "\/themes\/default\/content\/static-pages\/municipios-tarifa.htm",
 		"oF": 0
 		},
 	"\/themes\/default\/content\/static-pages\/municipios.htm": {
