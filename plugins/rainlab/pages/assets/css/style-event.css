@@ -43,7 +43,8 @@
     flex-direction: column;
     margin-bottom: 50px; }
     .header-event .header-txt .brush {
-      margin-top: -14px; }
+      margin-top: -14px;
+      margin-bottom: 150px; }
     .header-event .header-txt .txt {
       font-size: 144px;
       transform: rotate(-9deg);
@@ -87,6 +88,59 @@
           outline: none;
           background-color: transparent; }
       .header-event .send-info .button-send-info:hover {
+        background-color: #D0860C; }
+
+.send-info-container {
+  height: 969px;
+  width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0px; }
+  .send-info-container .send-info {
+    width: 391px;
+    height: 105px;
+    background-color: rgba(0, 0, 0, 0.18);
+    border-radius: 5px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 200px;
+    z-index: 999; }
+    .send-info-container .send-info .button-send-info {
+      width: 348px;
+      height: 70px;
+      background-color: #F5A623;
+      border-radius: 4px;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: background-color 0.3s ease; }
+      .send-info-container .send-info .button-send-info a {
+        color: white;
+        font-weight: 300;
+        font-size: 19px;
+        line-height: 27px;
+        padding: 22px 20px; }
+        .send-info-container .send-info .button-send-info a:hover, .send-info-container .send-info .button-send-info a:focus, .send-info-container .send-info .button-send-info a:active {
+          text-decoration: none;
+          outline: none;
+          background-color: transparent; }
+      .send-info-container .send-info .button-send-info:hover {
         background-color: #D0860C; }
 
 .header-ruta {

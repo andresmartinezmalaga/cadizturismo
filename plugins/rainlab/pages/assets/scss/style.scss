@@ -556,6 +556,14 @@ html, body {
   z-index: 100;
 }
 
+.field-richeditor .featured-element .overlay {
+  display: none;
+}
+
+.field-richeditor .header-event .brush {
+  margin-bottom: 150px;
+}
+
 .fr-box.fr-basic .fr-element {
   padding: 0px !important;
 }
@@ -1075,7 +1083,7 @@ html, body {
 
 @media (max-width: 725px) {
   .header-event + .section-txt {
-    margin-top: 59px; }
+    margin-top: 0px; }
   .section-txt-comarca .txt-container, .section-txt-village .txt-container {
     padding: 70px 0px 70px 0px !important; }
   .section-txt-comarca .separator, .section-txt-village .separator {

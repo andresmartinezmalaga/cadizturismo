@@ -15,7 +15,7 @@ code = "mi-estancia"
 
 ==
 
-<?php 
+<?php
 
     function onStart()
     {
@@ -37,6 +37,7 @@ code = "mi-estancia"
     <title>Cádiz</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="{{url('/')}}/plugins/rainlab/pages/assets/iziModal/css/iziModal.css"/>
     <link rel="stylesheet" href="{{url('/')}}/plugins/rainlab/pages/assets/css/style-comarcas.css"/>
     <link rel="stylesheet" href="{{url('/')}}/plugins/rainlab/pages/assets/css/style-village.css"/>
     <link rel="stylesheet" href="{{url('/')}}/plugins/rainlab/pages/assets/css/style-event.css"/>
@@ -49,7 +50,7 @@ code = "mi-estancia"
     <meta name="theme-color" content="#ffffff">
 </head>
 
-    {% partial 'site/header' %}
+    {% partial 'site/headerexp' %}
 
     {% component 'staticPage' %}
 
@@ -65,8 +66,9 @@ code = "mi-estancia"
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.full.min.js"></script>
     <script type="text/javascript" src="{{url('/')}}/plugins/rainlab/pages/assets/js/script-select2.js"></script>
+    <script type="text/javascript" src="{{url('/')}}/plugins/rainlab/pages/assets/iziModal/js/iziModal.js"></script>
 
     <script type="text/javascript" src="{{url('/')}}/plugins/rainlab/pages/assets/js/style.js"></script>
-   
+
   </body>
 </html>
