@@ -1,5 +1,5 @@
 <?php 
-class Cms5a60cbccd9e67562621039_02d2b689094e6ecff761cb0c9a76aed0Class extends \Cms\Classes\LayoutCode
+class Cms5a60cf053d2b2163191153_d14aa1a8f1ec945b104ad3857afc2322Class extends \Cms\Classes\LayoutCode
 {
 public function onStart()
     {      
@@ -7,8 +7,6 @@ public function onStart()
         if($this['lang']==''){
             $this['lang']='es';
         }
-
-        
     }
   
 }

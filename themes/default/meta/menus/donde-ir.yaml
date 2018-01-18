@@ -4,8 +4,10 @@ items:
         title: barbate
         nesting: ''
         type: static-page
+        url: ''
         code: ''
         reference: municipios-barbate
+        cmsPage: ''
         viewBag:
             nombrees: Barbate
             nombreen: Barbate
@@ -16,8 +18,10 @@ items:
         title: grazalema
         nesting: ''
         type: static-page
+        url: ''
         code: ''
         reference: municipios-grazalema
+        cmsPage: ''
         viewBag:
             nombrees: Grazalema
             nombreen: Grazalema
@@ -28,8 +32,10 @@ items:
         title: 'Jerez de la frontera'
         nesting: ''
         type: static-page
+        url: ''
         code: ''
         reference: municipios-jerez-de-la-frontera
+        cmsPage: ''
         viewBag:
             nombrees: 'Jerez de la frontera'
             nombreen: 'Jerez de la frontera'
@@ -40,8 +46,10 @@ items:
         title: tarifa
         nesting: ''
         type: static-page
+        url: ''
         code: ''
         reference: municipios-tarifa
+        cmsPage: ''
         viewBag:
             nombrees: Tarifa
             nombreen: Tarifa
@@ -56,10 +64,10 @@ items:
         reference: municipios
         viewBag:
             nombrees: 'Todos los municipios'
-            nombreen: 'Todos los municipios'
-            nombrefr: 'Todos los municipios'
-            nombrede: 'Todos los municipios'
-            nombreru: 'Todos los municipios'
+            nombreen: 'All the municipalities'
+            nombrefr: ''
+            nombrede: ''
+            nombreru: ''
     -
         title: Comarcas
         nesting: ''
@@ -68,7 +76,7 @@ items:
         reference: comarcas
         viewBag:
             nombrees: 'Todas las comarcas'
-            nombreen: 'Todas las comarcas'
-            nombrefr: 'Todas las comarcas'
-            nombrede: 'Todas las comarcas'
-            nombreru: 'Todas las comarcas'
+            nombreen: 'All the regions'
+            nombrefr: ''
+            nombrede: ''
+            nombreru: ''
