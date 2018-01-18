@@ -1,5 +1,6 @@
 
 $("#modal-exp").iziModal();
+$("#modal-success").iziModal();
 
 
 $(".normal").click(function(){

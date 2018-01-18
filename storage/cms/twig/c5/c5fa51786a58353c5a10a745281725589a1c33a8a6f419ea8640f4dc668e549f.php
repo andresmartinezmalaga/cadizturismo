@@ -269,20 +269,32 @@ class __TwigTemplate_ba27f9b7c10e74864291b8ffaa4b189d06f2aa35c8ccbb6b522e1787fcf
       </div>
     </div>
 
-    <!-- Modal structure -->
 <div id=\"modal-exp\"> <!-- data-iziModal-fullscreen=\"true\"  data-iziModal-title=\"Welcome\"  data-iziModal-subtitle=\"Subtitle\"  data-iziModal-icon=\"icon-home\" -->
     <!-- Modal content -->
     <div class=\"modal-container\">
       <img src=\"";
-        // line 89
+        // line 88
         echo url("/");
         echo "/plugins/rainlab/pages/assets/svg/modal-icon.svg\">
       <h3>¿Quieres recibir esta experiencia en tu email?</h3>
       <p>Escribe tu email y en unos segundos tendrás la experiencia en tu móvl para que puedas verla siempre que quieras.</p>
       <form class=\"\" action=\"index.html\" method=\"post\">
-        <input type=\"email\" name=\"mail\" />
-        <input type=\"sumbit\" value=\"Enviar experiencia\">
+        <input type=\"email\" name=\"mail\" placeholder=\"Escribe tu email\"/>
+        <input type=\"submit\" value=\"Enviar experiencia\" data-izimodal-open=\"#modal-success\">
       </form>
+    </div>
+</div>
+
+<div id=\"modal-success\"> <!-- data-iziModal-fullscreen=\"true\"  data-iziModal-title=\"Welcome\"  data-iziModal-subtitle=\"Subtitle\"  data-iziModal-icon=\"icon-home\" -->
+    <!-- Modal content -->
+    <div class=\"modal-container\">
+      <img src=\"";
+        // line 101
+        echo url("/");
+        echo "/plugins/rainlab/pages/assets/svg/sent-icon.svg\">
+      <h3>Tu experiencia ya ha llegado a tu correo</h3>
+      <p>Te hemos enviado la experiencia a tu correo, disfruta de Cádiz como nunca antes.</p>
+      <a href=\"#\" data-izimodal-close=\"#modal-success\" data-izimodal-open=\"#modal-exp\">¿No recibes tu experiencia?</a>
     </div>
 </div>";
     }
@@ -299,7 +311,7 @@ class __TwigTemplate_ba27f9b7c10e74864291b8ffaa4b189d06f2aa35c8ccbb6b522e1787fcf
 
     public function getDebugInfo()
     {
-        return array (  278 => 89,  241 => 73,  231 => 70,  223 => 65,  219 => 64,  207 => 54,  196 => 52,  192 => 51,  187 => 49,  183 => 48,  179 => 47,  167 => 43,  156 => 41,  152 => 40,  147 => 38,  143 => 37,  139 => 36,  130 => 32,  124 => 31,  118 => 30,  112 => 29,  106 => 28,  100 => 27,  95 => 25,  91 => 24,  87 => 23,  76 => 19,  68 => 18,  64 => 16,  53 => 14,  49 => 13,  44 => 11,  40 => 10,  36 => 9,  25 => 5,  19 => 1,);
+        return array (  293 => 101,  277 => 88,  241 => 73,  231 => 70,  223 => 65,  219 => 64,  207 => 54,  196 => 52,  192 => 51,  187 => 49,  183 => 48,  179 => 47,  167 => 43,  156 => 41,  152 => 40,  147 => 38,  143 => 37,  139 => 36,  130 => 32,  124 => 31,  118 => 30,  112 => 29,  106 => 28,  100 => 27,  95 => 25,  91 => 24,  87 => 23,  76 => 19,  68 => 18,  64 => 16,  53 => 14,  49 => 13,  44 => 11,  40 => 10,  36 => 9,  25 => 5,  19 => 1,);
     }
 
     public function getSourceContext()
@@ -388,7 +400,6 @@ class __TwigTemplate_ba27f9b7c10e74864291b8ffaa4b189d06f2aa35c8ccbb6b522e1787fcf
       </div>
     </div>
 
-    <!-- Modal structure -->
 <div id=\"modal-exp\"> <!-- data-iziModal-fullscreen=\"true\"  data-iziModal-title=\"Welcome\"  data-iziModal-subtitle=\"Subtitle\"  data-iziModal-icon=\"icon-home\" -->
     <!-- Modal content -->
     <div class=\"modal-container\">
@@ -396,9 +407,19 @@ class __TwigTemplate_ba27f9b7c10e74864291b8ffaa4b189d06f2aa35c8ccbb6b522e1787fcf
       <h3>¿Quieres recibir esta experiencia en tu email?</h3>
       <p>Escribe tu email y en unos segundos tendrás la experiencia en tu móvl para que puedas verla siempre que quieras.</p>
       <form class=\"\" action=\"index.html\" method=\"post\">
-        <input type=\"email\" name=\"mail\" />
-        <input type=\"sumbit\" value=\"Enviar experiencia\">
+        <input type=\"email\" name=\"mail\" placeholder=\"Escribe tu email\"/>
+        <input type=\"submit\" value=\"Enviar experiencia\" data-izimodal-open=\"#modal-success\">
       </form>
+    </div>
+</div>
+
+<div id=\"modal-success\"> <!-- data-iziModal-fullscreen=\"true\"  data-iziModal-title=\"Welcome\"  data-iziModal-subtitle=\"Subtitle\"  data-iziModal-icon=\"icon-home\" -->
+    <!-- Modal content -->
+    <div class=\"modal-container\">
+      <img src=\"{{url('/')}}/plugins/rainlab/pages/assets/svg/sent-icon.svg\">
+      <h3>Tu experiencia ya ha llegado a tu correo</h3>
+      <p>Te hemos enviado la experiencia a tu correo, disfruta de Cádiz como nunca antes.</p>
+      <a href=\"#\" data-izimodal-close=\"#modal-success\" data-izimodal-open=\"#modal-exp\">¿No recibes tu experiencia?</a>
     </div>
 </div>", "/Users/jekyll/Desktop/workspace/cadizturismo/themes/default/partials/site/headerexp.htm", "");
     }

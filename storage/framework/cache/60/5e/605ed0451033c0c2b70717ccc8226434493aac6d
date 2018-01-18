@@ -1,4 +1,4 @@
-1516294629a:1:{s:18:"site/headerexp.htm";a:5:{s:8:"fileName";s:18:"site/headerexp.htm";s:7:"content";s:5539:"<!-- MENU-->
+1516297293a:1:{s:18:"site/headerexp.htm";a:5:{s:8:"fileName";s:18:"site/headerexp.htm";s:7:"content";s:6169:"<!-- MENU-->
     <div class="slidemenu">
       <div class="elements">
         <div class="logo-container">
@@ -82,7 +82,6 @@
       </div>
     </div>
 
-    <!-- Modal structure -->
 <div id="modal-exp"> <!-- data-iziModal-fullscreen="true"  data-iziModal-title="Welcome"  data-iziModal-subtitle="Subtitle"  data-iziModal-icon="icon-home" -->
     <!-- Modal content -->
     <div class="modal-container">
@@ -90,12 +89,22 @@
       <h3>¿Quieres recibir esta experiencia en tu email?</h3>
       <p>Escribe tu email y en unos segundos tendrás la experiencia en tu móvl para que puedas verla siempre que quieras.</p>
       <form class="" action="index.html" method="post">
-        <input type="email" name="mail" />
-        <input type="sumbit" value="Enviar experiencia">
+        <input type="email" name="mail" placeholder="Escribe tu email"/>
+        <input type="submit" value="Enviar experiencia" data-izimodal-open="#modal-success">
       </form>
     </div>
 </div>
-";s:5:"mtime";i:1516294024;s:6:"markup";s:5538:"<!-- MENU-->
+
+<div id="modal-success"> <!-- data-iziModal-fullscreen="true"  data-iziModal-title="Welcome"  data-iziModal-subtitle="Subtitle"  data-iziModal-icon="icon-home" -->
+    <!-- Modal content -->
+    <div class="modal-container">
+      <img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/sent-icon.svg">
+      <h3>Tu experiencia ya ha llegado a tu correo</h3>
+      <p>Te hemos enviado la experiencia a tu correo, disfruta de Cádiz como nunca antes.</p>
+      <a href="#" data-izimodal-close="#modal-success" data-izimodal-open="#modal-exp">¿No recibes tu experiencia?</a>
+    </div>
+</div>
+";s:5:"mtime";i:1516296686;s:6:"markup";s:6168:"<!-- MENU-->
     <div class="slidemenu">
       <div class="elements">
         <div class="logo-container">
@@ -179,7 +188,6 @@
       </div>
     </div>
 
-    <!-- Modal structure -->
 <div id="modal-exp"> <!-- data-iziModal-fullscreen="true"  data-iziModal-title="Welcome"  data-iziModal-subtitle="Subtitle"  data-iziModal-icon="icon-home" -->
     <!-- Modal content -->
     <div class="modal-container">
@@ -187,8 +195,18 @@
       <h3>¿Quieres recibir esta experiencia en tu email?</h3>
       <p>Escribe tu email y en unos segundos tendrás la experiencia en tu móvl para que puedas verla siempre que quieras.</p>
       <form class="" action="index.html" method="post">
-        <input type="email" name="mail" />
-        <input type="sumbit" value="Enviar experiencia">
+        <input type="email" name="mail" placeholder="Escribe tu email"/>
+        <input type="submit" value="Enviar experiencia" data-izimodal-open="#modal-success">
       </form>
+    </div>
+</div>
+
+<div id="modal-success"> <!-- data-iziModal-fullscreen="true"  data-iziModal-title="Welcome"  data-iziModal-subtitle="Subtitle"  data-iziModal-icon="icon-home" -->
+    <!-- Modal content -->
+    <div class="modal-container">
+      <img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/sent-icon.svg">
+      <h3>Tu experiencia ya ha llegado a tu correo</h3>
+      <p>Te hemos enviado la experiencia a tu correo, disfruta de Cádiz como nunca antes.</p>
+      <a href="#" data-izimodal-close="#modal-success" data-izimodal-open="#modal-exp">¿No recibes tu experiencia?</a>
     </div>
 </div>";s:4:"code";N;}}
