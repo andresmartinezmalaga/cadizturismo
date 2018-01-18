@@ -4896,7 +4896,9 @@ nav#layout-mainmenu.navbar-mode-inline ul.mainmenu-nav li:first-child {
     background-position: 10px 50%;
     background-repeat: no-repeat;
     padding-left: 34px;
-    line-height: 14px; }
+    line-height: 14px;
+    padding-top: 28px;
+    padding-bottom: 28px; }
 
 .control-treeview ol > li > div > ul.submenu li a {
   background-image: none !important; }
