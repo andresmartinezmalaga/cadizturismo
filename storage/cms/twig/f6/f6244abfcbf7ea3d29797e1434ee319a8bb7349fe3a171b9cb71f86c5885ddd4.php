@@ -28,17 +28,21 @@ class __TwigTemplate_4838941dc7e57370954c1e1a94702f876a53a94be53061cf3a56f14d0e1
     <link rel=\"stylesheet\" href=\"";
         // line 10
         echo url("/");
-        echo "/plugins/rainlab/pages/assets/css/style-comarcas.css\"/>
+        echo "/plugins/rainlab/pages/assets/iziModal/css/iziModal.css\"/>
     <link rel=\"stylesheet\" href=\"";
         // line 11
         echo url("/");
-        echo "/plugins/rainlab/pages/assets/css/style-village.css\"/>
+        echo "/plugins/rainlab/pages/assets/css/style-comarcas.css\"/>
     <link rel=\"stylesheet\" href=\"";
         // line 12
         echo url("/");
-        echo "/plugins/rainlab/pages/assets/css/style-event.css\"/>
+        echo "/plugins/rainlab/pages/assets/css/style-village.css\"/>
     <link rel=\"stylesheet\" href=\"";
         // line 13
+        echo url("/");
+        echo "/plugins/rainlab/pages/assets/css/style-event.css\"/>
+    <link rel=\"stylesheet\" href=\"";
+        // line 14
         echo url("/");
         echo "/plugins/rainlab/pages/assets/css/style.css\"/>
     <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"./assets/svg/favicons/apple-touch-icon.png\">
@@ -50,22 +54,22 @@ class __TwigTemplate_4838941dc7e57370954c1e1a94702f876a53a94be53061cf3a56f14d0e1
 </head>
 
     ";
-        // line 22
+        // line 23
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("site/headerexp"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 23
+        // line 24
         echo "
     ";
-        // line 24
+        // line 25
         $context['__cms_component_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->componentFunction("staticPage"        , $context['__cms_component_params']        );
         unset($context['__cms_component_params']);
-        // line 25
+        // line 26
         echo "
     <div class=\"vertical-share\">
         <p class=\"also-title\">";
-        // line 27
+        // line 28
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), array("COMPARTIR"));
         echo "</p><img src=\"";
         echo url("/");
@@ -80,12 +84,16 @@ class __TwigTemplate_4838941dc7e57370954c1e1a94702f876a53a94be53061cf3a56f14d0e1
     <script type=\"text/javascript\" src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js\"></script>
     <script src=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.full.min.js\"></script>
     <script type=\"text/javascript\" src=\"";
-        // line 37
+        // line 38
         echo url("/");
         echo "/plugins/rainlab/pages/assets/js/script-select2.js\"></script>
-
     <script type=\"text/javascript\" src=\"";
         // line 39
+        echo url("/");
+        echo "/plugins/rainlab/pages/assets/iziModal/js/iziModal.js\"></script>
+
+    <script type=\"text/javascript\" src=\"";
+        // line 41
         echo url("/");
         echo "/plugins/rainlab/pages/assets/js/style.js\"></script>
 
@@ -105,7 +113,7 @@ class __TwigTemplate_4838941dc7e57370954c1e1a94702f876a53a94be53061cf3a56f14d0e1
 
     public function getDebugInfo()
     {
-        return array (  89 => 39,  84 => 37,  69 => 27,  65 => 25,  61 => 24,  58 => 23,  54 => 22,  42 => 13,  38 => 12,  34 => 11,  30 => 10,  19 => 1,);
+        return array (  97 => 41,  92 => 39,  88 => 38,  73 => 28,  69 => 26,  65 => 25,  62 => 24,  58 => 23,  46 => 14,  42 => 13,  38 => 12,  34 => 11,  30 => 10,  19 => 1,);
     }
 
     public function getSourceContext()
@@ -119,6 +127,7 @@ class __TwigTemplate_4838941dc7e57370954c1e1a94702f876a53a94be53061cf3a56f14d0e1
     <title>Cádiz</title>
     <link href=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css\" rel=\"stylesheet\" />
     <link href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\" rel=\"stylesheet\"/>
+    <link rel=\"stylesheet\" href=\"{{url('/')}}/plugins/rainlab/pages/assets/iziModal/css/iziModal.css\"/>
     <link rel=\"stylesheet\" href=\"{{url('/')}}/plugins/rainlab/pages/assets/css/style-comarcas.css\"/>
     <link rel=\"stylesheet\" href=\"{{url('/')}}/plugins/rainlab/pages/assets/css/style-village.css\"/>
     <link rel=\"stylesheet\" href=\"{{url('/')}}/plugins/rainlab/pages/assets/css/style-event.css\"/>
@@ -147,6 +156,7 @@ class __TwigTemplate_4838941dc7e57370954c1e1a94702f876a53a94be53061cf3a56f14d0e1
     <script type=\"text/javascript\" src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js\"></script>
     <script src=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.full.min.js\"></script>
     <script type=\"text/javascript\" src=\"{{url('/')}}/plugins/rainlab/pages/assets/js/script-select2.js\"></script>
+    <script type=\"text/javascript\" src=\"{{url('/')}}/plugins/rainlab/pages/assets/iziModal/js/iziModal.js\"></script>
 
     <script type=\"text/javascript\" src=\"{{url('/')}}/plugins/rainlab/pages/assets/js/style.js\"></script>
 

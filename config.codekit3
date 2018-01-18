@@ -19035,6 +19035,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/plugins\/rainlab\/pages\/assets\/svg\/modal-icon.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/plugins\/rainlab\/pages\/assets\/svg\/modal-icon.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/plugins\/rainlab\/pages\/assets\/svg\/monumento.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -19250,6 +19260,16 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/plugins\/rainlab\/pages\/assets\/svg\/select-arrow.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/plugins\/rainlab\/pages\/assets\/svg\/sent-icon.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/plugins\/rainlab\/pages\/assets\/svg\/sent-icon.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
