@@ -7,11 +7,11 @@ items:
         code: ''
         reference: municipios-barbate
         viewBag:
-            nombrees: 'Barbate[es]'
-            nombreen: 'Barbate[en]'
-            nombrefr: 'Barbate[fr]'
-            nombrede: 'Barbate[de]'
-            nombreru: 'Barbate[ru]'
+            nombrees: Barbate
+            nombreen: Barbate
+            nombrefr: Barbate
+            nombrede: Barbate
+            nombreru: Barbate
     -
         title: grazalema
         nesting: ''
@@ -19,11 +19,11 @@ items:
         code: ''
         reference: municipios-grazalema
         viewBag:
-            nombrees: 'Grazalema[es]'
-            nombreen: 'Grazalema[en]'
-            nombrefr: 'Grazalema[fr]'
-            nombrede: 'Grazalema[de]'
-            nombreru: 'Grazalema[ru]'
+            nombrees: Grazalema
+            nombreen: Grazalema
+            nombrefr: Grazalema
+            nombrede: Grazalema
+            nombreru: Grazalema
     -
         title: 'Jerez de la frontera'
         nesting: ''
@@ -31,11 +31,11 @@ items:
         code: ''
         reference: municipios-jerez-de-la-frontera
         viewBag:
-            nombrees: 'Jerez de la frontera[es]'
-            nombreen: 'Jerez de la frontera[en]'
-            nombrefr: 'Jerez de la frontera[fr]'
-            nombrede: 'Jerez de la frontera[de]'
-            nombreru: 'Jerez de la frontera[ru]'
+            nombrees: 'Jerez de la frontera'
+            nombreen: 'Jerez de la frontera'
+            nombrefr: 'Jerez de la frontera'
+            nombrede: 'Jerez de la frontera'
+            nombreru: 'Jerez de la frontera'
     -
         title: tarifa
         nesting: ''
@@ -43,11 +43,11 @@ items:
         code: ''
         reference: municipios-tarifa
         viewBag:
-            nombrees: 'Tarifa[es]'
-            nombreen: 'Tarifa[en]'
-            nombrefr: 'Tarifa[fr]'
-            nombrede: 'Tarifa[de]'
-            nombreru: 'Tarifa[ru]'
+            nombrees: Tarifa
+            nombreen: Tarifa
+            nombrefr: Tarifa
+            nombrede: Tarifa
+            nombreru: Tarifa
     -
         title: Municipios
         nesting: ''
@@ -55,11 +55,11 @@ items:
         code: ''
         reference: municipios
         viewBag:
-            nombrees: 'Todos los municipios[es]'
-            nombreen: 'Todos los municipios[en]'
-            nombrefr: 'Todos los municipios[fr]'
-            nombrede: 'Todos los municipios[de]'
-            nombreru: 'Todos los municipios[ru]'
+            nombrees: 'Todos los municipios'
+            nombreen: 'Todos los municipios'
+            nombrefr: 'Todos los municipios'
+            nombrede: 'Todos los municipios'
+            nombreru: 'Todos los municipios'
     -
         title: Comarcas
         nesting: ''
@@ -67,8 +67,8 @@ items:
         code: ''
         reference: comarcas
         viewBag:
-            nombrees: 'Todas las comarcas[es]'
-            nombreen: 'Todas las comarcas[en]'
-            nombrefr: 'Todas las comarcas[fr]'
-            nombrede: 'Todas las comarcas[de]'
-            nombreru: 'Todas las comarcas[ru]'
+            nombrees: 'Todas las comarcas'
+            nombreen: 'Todas las comarcas'
+            nombrefr: 'Todas las comarcas'
+            nombrede: 'Todas las comarcas'
+            nombreru: 'Todas las comarcas'

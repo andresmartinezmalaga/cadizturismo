@@ -9,6 +9,9 @@ code = "que-vivir"
 [staticMenu staticMenu3]
 code = "mi-estancia"
 
+[staticMenu staticMenu4]
+code = "que-hacer"
+
 ==
 
 <?php 
@@ -20,23 +23,13 @@ code = "mi-estancia"
             $this['lang']='es';
         }
 
-        if($this['lang'] == 'es'){
-            $this['menulang'] = 'nombrees';
-        } elseif ($this['lang'] == 'en') {
-            $this['menulang'] = 'nombreen';
-        } elseif ($this['lang'] == 'fr') {
-            $this['menulang'] = 'nombrefr';
-        } elseif ($this['lang'] == 'de') {
-            $this['menulang'] = 'nombrede';
-        } elseif ($this['lang'] == 'ru') {
-            $this['menulang'] = 'nombreru';
-        }
         
     }
   
 ?>
 
 ==
+
 <!DOCTYPE html>
 <html lang="es">
 
