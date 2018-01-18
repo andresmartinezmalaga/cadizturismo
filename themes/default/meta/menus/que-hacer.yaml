@@ -1,0 +1,62 @@
+name: 'que hacer'
+items:
+    -
+        title: Playas
+        nesting: ''
+        type: static-page
+        code: ''
+        reference: playas
+        viewBag:
+            nombrees: Playas
+            nombreen: Beaches
+            nombrefr: ''
+            nombrede: ''
+            nombreru: ''
+    -
+        title: Naturaleza
+        nesting: ''
+        type: static-page
+        code: ''
+        reference: naturaleza
+        viewBag:
+            nombrees: Naturaleza
+            nombreen: Nature
+            nombrefr: ''
+            nombrede: ''
+            nombreru: ''
+    -
+        title: Diversión
+        nesting: ''
+        type: static-page
+        code: ''
+        reference: diversion
+        viewBag:
+            nombrees: Diversión
+            nombreen: Fun
+            nombrefr: ''
+            nombrede: ''
+            nombreru: ''
+    -
+        title: Cultura
+        nesting: ''
+        type: static-page
+        code: ''
+        reference: cultura
+        viewBag:
+            nombrees: Cultura
+            nombreen: Culture
+            nombrefr: ''
+            nombrede: ''
+            nombreru: ''
+    -
+        title: Gastronomía
+        nesting: ''
+        type: static-page
+        code: ''
+        reference: gastronomia
+        viewBag:
+            nombrees: Gastronomía
+            nombreen: ' Gastronomy'
+            nombrefr: ''
+            nombrede: ''
+            nombreru: ''

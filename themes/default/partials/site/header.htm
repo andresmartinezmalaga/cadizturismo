@@ -1,3 +1,30 @@
+==
+
+<?php 
+
+    function onStart()
+    {   
+        if($this['lang'] == 'es'){
+            $this['menulang'] = 'nombrees';
+            $this['allEvents'] = 'Todos los eventos';
+        } elseif ($this['lang'] == 'en') {
+            $this['menulang'] = 'nombreen';
+            $this['allEvents'] = 'All events';
+        } elseif ($this['lang'] == 'fr') {
+            $this['menulang'] = 'nombrefr';
+            $this['allEvents'] = 'Todos los eventos';
+        } elseif ($this['lang'] == 'de') {
+            $this['menulang'] = 'nombrede';
+            $this['allEvents'] = 'Todos los eventos';
+        } elseif ($this['lang'] == 'ru') {
+            $this['menulang'] = 'nombreru';
+            $this['allEvents'] = 'Todos los eventos';
+        }        
+    }
+  
+?>
+
+==
 <!-- MENU-->
     <div class="slidemenu">
       <div class="elements">
@@ -10,7 +37,10 @@
             <img class="separator separator-menu" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
             <img class="separator-tiny" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg">
             <ul class="menu-ul donde-ul">
-              {% for item in staticMenu.menuItems %}
+              {% for item in staticMenu.menuItems %}              
+                {% if item.viewBag[menulang] == '' %}
+                {% set menulang = 'nombrees' %}
+                {% endif %}
                 <li class="menu-item"><a href="{{ item.url }}">{{ item.viewBag[menulang] }}</a></li>                
               {% endfor %}
             </ul>
@@ -24,12 +54,12 @@
             <img class="separator separator-menu" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
             <img class="separator-tiny" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg">
             <ul class="menu-ul">
-              <li class="menu-item"><a href="{{url('/')}}/{{lang}}/playas">Playas</a></li>
-              <li class="menu-item"><a href="{{url('/')}}/{{lang}}/rutas">Rutas</a></li>
-              <li class="menu-item"><a href="{{url('/')}}/{{lang}}/naturaleza">Naturaleza</a></li>
-              <li class="menu-item"><a href="{{url('/')}}/{{lang}}/diversion">Diversión</a></li>
-              <li class="menu-item"><a href="{{url('/')}}/{{lang}}/cultura">Cultura</a></li>
-              <li class="menu-item"><a href="{{url('/')}}/{{lang}}/gastronomia">Gastronomía</a></li>
+              {% for item in staticMenu4.menuItems %}
+                {% if item.viewBag[menulang] == '' %}
+                {% set menulang = 'nombrees' %}
+                {% endif %}
+                <li class="menu-item"><a href="{{ item.url }}">{{ item.viewBag[menulang] }}</a></li>                
+              {% endfor %}
             </ul>
           </div>
           <div class="menu-list">
@@ -38,9 +68,12 @@
             <img class="separator-tiny" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg">
             <ul class="menu-ul">
               {% for item in staticMenu2.menuItems %}
-                <li class="menu-item"><a href="{{ item.url }}">{{ item.title }}</a></li>
+                {% if item.viewBag[menulang] == '' %}
+                {% set menulang = 'nombrees' %}
+                {% endif %}
+                <li class="menu-item"><a href="{{ item.url }}">{{ item.viewBag[menulang] }}</a></li>                 
               {% endfor %}
-              <li class="menu-item"><a href="{{url('/')}}/{{lang}}/eventos">{{'Todos los eventos'|_}}</a></li>
+                <li class="menu-item"><a href="/eventos">{{ allEvents }}</a></li>
             </ul>
           </div>
           <div class="menu-list">
@@ -49,7 +82,10 @@
             <img class="separator-tiny" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg">
             <ul class="menu-ul">
               {% for item in staticMenu3.menuItems %}
-                <li class="menu-item"><a href="{{ item.url }}">{{ item.title }}</a></li>
+                {% if item.viewBag[menulang] == '' %}
+                {% set menulang = 'nombrees' %}
+                {% endif %}
+                <li class="menu-item"><a href="{{ item.url }}">{{ item.viewBag[menulang] }}</a></li> 
               {% endfor %}
             </ul>
           </div>
