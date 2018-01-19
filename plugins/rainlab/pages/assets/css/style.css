@@ -1342,3 +1342,37 @@ html, body {
   .featured-element .txt-container .desc {
     width: 80% !important;
     margin: 0 auto; } }
+
+@media (max-width: 860px) and (max-width: 400px) {
+  /* NEW */
+  .send-info-container .send-info {
+    bottom: 100px !important; } }
+
+@media (max-width: 720px) and (min-width: 400px) {
+  .header-event .header-txt {
+    margin-bottom: 140px !important;
+    margin-top: 50px !important; }
+  .send-info-container {
+    height: 850px !important; }
+    .send-info-container .send-info {
+      max-width: 300px; }
+      .send-info-container .send-info .button-send-info {
+        width: 88% !important; }
+        .send-info-container .send-info .button-send-info a {
+          font-size: 15px !important; } }
+
+@media (max-width: 400px) {
+  .header-event .header-txt {
+    margin-bottom: 10px !important;
+    margin-top: 30px !important; }
+  .send-info-container {
+    height: auto !important;
+    min-height: 650px !important; }
+    .send-info-container .send-info {
+      max-width: 300px; }
+      .send-info-container .send-info .button-send-info {
+        width: 88% !important; }
+        .send-info-container .send-info .button-send-info a {
+          font-size: 15px !important; }
+  .send-info-container .send-info {
+    bottom: -20px !important; } }
