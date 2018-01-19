@@ -13,8 +13,7 @@ static-pages:
         municipios-grazalema: {  }
         municipios-jerez-de-la-frontera: {  }
         municipios-tarifa: {  }
-    playas:
-        playas-uno: {  }
+    playas: {  }
     naturaleza:
         naturaleza-via-verde: {  }
         naturaleza-birdwatching: {  }

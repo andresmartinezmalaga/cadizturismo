@@ -4906,13 +4906,37 @@ nav#layout-mainmenu.navbar-mode-inline ul.mainmenu-nav li:first-child {
   color: #818181 !important; }
 
 .control-treeview ol > li.dragged div, .control-treeview ol > li > div:hover {
-  background-color: #175DA3 !important; }
+  background-color: #175DA3 !important;
+  border-bottom: 1px solid #175DA3 !important; }
 
 .control-treeview ol > li > div > span.drag-handle {
   right: 7.5px !important;
   bottom: -5px !important; }
   .control-treeview ol > li > div > span.drag-handle:before {
     font-size: 14px !important; }
+
+.control-filelist.filelist-hero ul li > a:active, .control-filelist.filelist-hero ul li > a:hover {
+  background: #175DA3;
+  border-bottom: 1px solid #175DA3; }
+
+.control-treeview.treeview-light ol > li > div > a {
+  padding-top: 20px !important;
+  padding-bottom: 20px !important; }
+
+.control-treeview ol > li > div span.comment {
+  margin-left: 15px !important;
+  margin-top: 0px !important; }
+
+.control-treeview a.menu-control:hover, .control-treeview a.menu-control:focus,
+.control-treeview ol > li > div.popover-highlight {
+  background-color: #175DA3 !important;
+  outline: none; }
+
+#layout-sidenav ul li span.counter {
+  background-color: #818181;
+  border-radius: 7px;
+  font-size: .756em !important;
+  padding: .143px .429px .214px .386px !important; }
 
 /* ICONS CHANGE */
 .btn-default.oc-icon-plus {
@@ -5172,26 +5196,56 @@ div.panel h3.section {
 .compact-container label {
   color: #818181; }
 
-.compact-container .select2-container--open .select2-dropdown--below {
-  background-color: #175DA3 !important;
-  border-top: 1px solid #0c5095 !important;
-  border-left: none !important;
-  border-right: none !important;
-  border-bottom: none !important;
-  border-radius: 0px !important; }
+.control-popup .control-tabs.primary-tabs > ul.nav-tabs > li a > span.title:before,
+.control-popup .control-tabs.primary-tabs > div > ul.nav-tabs > li a > span.title:before,
+.control-popup .control-tabs.primary-tabs > div > div > ul.nav-tabs > li a > span.title:before,
+.control-popup .control-tabs.primary-tabs > ul.nav-tabs > li a > span.title:after,
+.control-popup .control-tabs.primary-tabs > div > ul.nav-tabs > li a > span.title:after,
+.control-popup .control-tabs.primary-tabs > div > div > ul.nav-tabs > li a > span.title:after {
+  background: #ffffff; }
 
-.compact-container .select2-search {
-  display: none !important; }
+.control-popup .btn-primary {
+  background: #175DA3 !important; }
+  .control-popup .btn-primary:hover, .control-popup .btn-primary:focus, .control-popup .btn-primary:active {
+    background: #0C5095 !important; }
 
-.compact-container .select2-results__option {
-  color: white !important;
-  font-size: 14px !important;
-  font-weight: 700 !important;
-  height: 50px;
-  padding-top: 15px;
-  padding-left: 12px !important; }
+.control-popup .btn-default {
+  background: #818181 !important; }
+  .control-popup .btn-default:hover, .control-popup .btn-default:focus, .control-popup .btn-default:active {
+    background: #acacac !important; }
 
-.compact-container .select2-container--default .select2-results__option--highlighted[aria-selected],
-.compact-container .select2-container--default .select2-results__option[aria-selected=true] {
-  color: white !important;
-  background-color: #2E98CE !important; }
+.control-popup label, .control-popup .modal-header h4, .control-popup .control-tabs.primary-tabs > ul.nav-tabs > li.active a > span.title span,
+.control-popup .control-tabs.primary-tabs > div > ul.nav-tabs > li.active a > span.title span,
+.control-popup .control-tabs.primary-tabs > div > div > ul.nav-tabs > li.active a > span.title span {
+  color: #818181;
+  font-size: 14px !important; }
+
+.control-popup .modal-content {
+  background: #ffffff !important; }
+
+.control-popup .select2-container--default .select2-selection--single {
+  background-color: #F6F6F6 !important;
+  height: 50px !important;
+  padding-top: 14px !important; }
+
+.control-popup .select2-selection__arrow {
+  top: 22px !important; }
+
+.control-popup input[type="text"].form-control {
+  border: none !important;
+  background-color: #F6F6F6 !important;
+  height: 50px !important;
+  color: #818181 !important;
+  font-size: 14px !important; }
+
+.control-popup .select2-container--default .select2-selection--single .select2-selection__rendered {
+  color: #818181 !important;
+  padding-left: 0px !important;
+  font-size: 14px !important; }
+
+.control-popup .form-group.input-sidebar-control {
+  padding-right: 0px !important; }
+
+.popup-backdrop {
+  background-color: #0C5095 !important;
+  opacity: 0.8 !important; }

@@ -357,7 +357,10 @@
     .static-structure .page .icon {
       z-index: 10;
       position: absolute;
-      top: 235px; }
+      top: 235px;
+      max-height: 100px;
+      max-width: 100px;
+      object-fit: cover; }
     .static-structure .page .txt-container {
       position: absolute;
       width: 81%;
