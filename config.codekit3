@@ -10046,6 +10046,16 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/modules\/system\/assets\/ui\/js\/select-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/modules\/system\/assets\/ui\/js\/select-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/modules\/system\/assets\/ui\/js\/select.js": {
 		"ft": 64,
 		"ma": 0,
