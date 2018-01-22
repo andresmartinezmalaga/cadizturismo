@@ -13,6 +13,7 @@ static-pages:
         municipios-grazalema: {  }
         municipios-jerez-de-la-frontera: {  }
         municipios-tarifa: {  }
+<<<<<<< HEAD
     playas:
         playas-tres: {  }
         playas-1: {  }
@@ -22,6 +23,9 @@ static-pages:
         playas-uno: {  }
         playas-dos: {  }
         playas-cuatro: {  }
+=======
+    playas: {  }
+>>>>>>> fb370f36f8c51eb679fd7f5449034699618c5752
     naturaleza:
         naturaleza-via-verde: {  }
         naturaleza-birdwatching: {  }

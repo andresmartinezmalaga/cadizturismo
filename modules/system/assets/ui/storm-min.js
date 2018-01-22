@@ -3399,7 +3399,12 @@ $('select.custom-select').each(function(){var $element=$(this),extraOptions={dro
 if($element.data('select2')!=null){return true;}
 $element.attr('data-disposable','data-disposable')
 $element.one('dispose-control',function(){if($element.data('select2')){$element.select2('destroy')}})
-if($element.hasClass('select-no-search')){extraOptions.minimumResultsForSearch=Infinity}
+if($element.hasClass('select-no-search')){extraOptions.minimumResultsForSearch=Infinity, extraOptions.dropdownCssClass+='select-marina'}
+var selectAttribute = $element.attr('name');
+if(selectAttribute.indexOf('viewBag') != -1) {
+  extraOptions.dropdownCssClass+=' select-custom-marina'
+}
+// if($element.hasClass('select-no-search')){extraOptions.minimumResultsForSearch=Infinity, extraOptions.dropdownCssClass+='select-marina'}
 if($element.hasClass('select-no-dropdown')){extraOptions.dropdownCssClass+=' select-no-dropdown'
 extraOptions.containerCssClass+=' select-no-dropdown'}
 if($element.hasClass('select-hide-selected')){extraOptions.dropdownCssClass+=' select-hide-selected'}

@@ -607,6 +607,157 @@
     .icons-row .also-feature:last-child {
       margin-right: 0px; }
 
+/* Modal */
+#modal-exp {
+  max-width: 660px;
+  display: none; }
+  #modal-exp .modal-container {
+    width: 90%;
+    height: 100%;
+    max-width: 340px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+    #modal-exp .modal-container img {
+      padding-top: 75px; }
+    #modal-exp .modal-container h3 {
+      text-align: center;
+      font-family: 'AvenirNext-DemiBold';
+      color: #4A4A4A;
+      font-size: 30px;
+      line-height: 35px;
+      margin-top: 50px; }
+    #modal-exp .modal-container p {
+      color: #9B9B9B;
+      font-size: 16px;
+      line-height: 22px;
+      text-align: center;
+      margin-bottom: 30px; }
+    #modal-exp .modal-container form {
+      width: 100%;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      flex-direction: column; }
+      #modal-exp .modal-container form input {
+        width: 100%;
+        height: 57px; }
+      #modal-exp .modal-container form input[type="email"] {
+        background-color: rgba(206, 206, 206, 0.3);
+        color: #9B9B9B;
+        font-size: 16px;
+        padding-left: 20px;
+        box-shadow: none;
+        border: none;
+        border-radius: 4px;
+        margin-bottom: 20px; }
+        #modal-exp .modal-container form input[type="email"]:focus, #modal-exp .modal-container form input[type="email"]:active {
+          outline: none; }
+      #modal-exp .modal-container form input[type="submit"] {
+        background-color: #F5A623;
+        font-family: 'AvenirNext-DemiBold';
+        color: white;
+        font-size: 16px;
+        box-shadow: none;
+        border: none;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+        margin-bottom: 93px; }
+        #modal-exp .modal-container form input[type="submit"]:focus, #modal-exp .modal-container form input[type="submit"]:active, #modal-exp .modal-container form input[type="submit"]:hover {
+          outline: none;
+          background-color: #D0860C; }
+    #modal-exp .modal-container a {
+      color: #F5A623;
+      font-size: 14px;
+      margin-bottom: 190px; }
+      #modal-exp .modal-container a:focus, #modal-exp .modal-container a:active, #modal-exp .modal-container a:hover {
+        outline: none;
+        color: #D0860C; }
+
+#modal-success {
+  max-width: 660px;
+  display: none; }
+  #modal-success .modal-container {
+    width: 90%;
+    height: 100%;
+    max-width: 326px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+    #modal-success .modal-container img {
+      padding-top: 160px; }
+    #modal-success .modal-container h3 {
+      text-align: center;
+      font-family: 'AvenirNext-DemiBold';
+      color: #4A4A4A;
+      font-size: 30px;
+      line-height: 35px;
+      margin-top: 50px;
+      margin-bottom: 15px; }
+    #modal-success .modal-container p {
+      color: #9B9B9B;
+      font-size: 16px;
+      line-height: 22px;
+      text-align: center;
+      margin-bottom: 30px; }
+    #modal-success .modal-container form {
+      width: 100%;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      flex-direction: column; }
+      #modal-success .modal-container form input {
+        width: 100%;
+        height: 57px; }
+      #modal-success .modal-container form input[type="email"] {
+        background-color: rgba(206, 206, 206, 0.3);
+        color: #9B9B9B;
+        font-size: 16px;
+        padding-left: 20px;
+        box-shadow: none;
+        border: none;
+        border-radius: 4px;
+        margin-bottom: 20px; }
+        #modal-success .modal-container form input[type="email"]:focus, #modal-success .modal-container form input[type="email"]:active {
+          outline: none; }
+      #modal-success .modal-container form input[type="submit"] {
+        background-color: #F5A623;
+        font-family: 'AvenirNext-DemiBold';
+        color: white;
+        font-size: 16px;
+        box-shadow: none;
+        border: none;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+        margin-bottom: 93px; }
+        #modal-success .modal-container form input[type="submit"]:focus, #modal-success .modal-container form input[type="submit"]:active, #modal-success .modal-container form input[type="submit"]:hover {
+          outline: none;
+          background-color: #D0860C; }
+    #modal-success .modal-container a {
+      color: #F5A623;
+      font-size: 14px;
+      margin-bottom: 160px; }
+      #modal-success .modal-container a:focus, #modal-success .modal-container a:active, #modal-success .modal-container a:hover {
+        outline: none;
+        color: #D0860C;
+        text-decoration: none; }
+
 /* IMG SECTION - EVENTS */
 .section-img {
   width: 100%;

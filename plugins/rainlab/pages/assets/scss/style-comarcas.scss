@@ -373,6 +373,9 @@
       z-index: 10;
       position: absolute;
       top: 235px;
+      max-height: 100px;
+      max-width: 100px;
+      object-fit: cover;
 
     }
     .txt-container {
