@@ -5801,6 +5801,16 @@
 		"oAP": "\/modules\/backend\/widgets\/MediaManager.php",
 		"oF": 0
 		},
+	"\/modules\/backend\/widgets\/mediamanager\/assets\/css\/mediamanager-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/modules\/backend\/widgets\/mediamanager\/assets\/css\/mediamanager-min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"\/modules\/backend\/widgets\/mediamanager\/assets\/css\/mediamanager.css": {
 		"aP": 1,
 		"bl": 0,

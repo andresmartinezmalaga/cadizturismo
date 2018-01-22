@@ -5109,6 +5109,16 @@ div.panel h3.section {
 .nav.selector-group li a {
   color: #CECECE; }
 
+table.name-value-list > a:hover, table.name-value-list > a:focus, table.name-value-list > a:active {
+  color: #175DA3;
+  text-decoration: none;
+  outline: none; }
+
+.widget-field input[type="text"], .widget-field textarea {
+  background-color: #CECECE !important;
+  border: none !important;
+  color: #818181 !important; }
+
 #MediaManager-manager-filters ~ .sidebar-group .select2-container--default .select2-selection--single {
   background-color: #F6F6F6 !important;
   height: 50px !important;
