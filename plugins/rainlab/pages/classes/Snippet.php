@@ -1,6 +1,6 @@
 <?php namespace RainLab\Pages\Classes;
 
-use Event;
+use Event as MEvent;
 use Lang;
 use Cache;
 use Config;
@@ -551,7 +551,7 @@ class Snippet
     protected static function getMapCacheKey($theme)
     {
         $key = crc32($theme->getPath()).'snippet-map';
-        Event::fire('pages.snippet.getMapCacheKey', [&$key]);
+        MEvent::fire('pages.snippet.getMapCacheKey', [&$key]);
         return $key;
     }
 

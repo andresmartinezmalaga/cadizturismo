@@ -492,7 +492,7 @@ class PagesTemplates
         <h1 class="txt"><span class="first-word">Los Lances</span></h1><img class="brush fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
     </div>
     <!-- NUEVA FOTO -->
-    <img class="background-image" src="***_preurl_***/storage/app/media/uploaded-files/templates/playa-lances.jpg" alt="">
+    <img class="background-image" value="cover" src="***_preurl_***/storage/app/media/uploaded-files/templates/playa-lances.jpg" alt="">
   </div>
   <!-- TXT-->
   <div class="section-txt-village">
@@ -561,22 +561,6 @@ class PagesTemplates
 
           <p class="subtitle">Camping, Bungalows y Restaurante en Tarifa con un pesacado de primera.</p><img class="separator separator-playa fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
           <a class="see-event" href="#">Saber más <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
-      </div>
-    </div>
-  </div>
-  <div class="icons-row">
-    <div class="i-container">
-      <div class="also-feature"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/natu-grey.svg" class="fr-fil fr-dib">
-
-        <p class="also-desc">Naturaleza</p>
-      </div>
-      <div class="also-feature"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/deporte-grey.svg" class="fr-fil fr-dib">
-
-        <p class="also-desc">Deporte</p>
-      </div>
-      <div class="also-feature"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/gastro-grey.svg" class="fr-fil fr-dib">
-
-        <p class="also-desc">Gastronomía</p>
       </div>
     </div>
   </div>';

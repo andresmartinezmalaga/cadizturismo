@@ -11,11 +11,93 @@ is_hidden = 0
 
 	function onStart()
 	{
-		$this['lang']=\App::getLocale();
+    $this['lang']=\App::getLocale();
 		if($this['lang']==''){
 			$this['lang']='es';
 		}
-	    $this['experiences'] = $this->staticApp->experienceList();
+	 
+    $this['experiences'] = $this->staticApp->experienceList();
+
+    $this['translationPage'] = [      
+      'playas',
+      'que te llenan de luz',
+      '138km de playas, calas y ensenadas que invitan a perderse',
+      'Conoce nuestras playas',
+      'Qué se cuece hoy en Cádiz',
+      'Todos los eventos',
+      'rutas secretas',
+      '¿Eres de emociones fuertes? Disfruta de Cádiz como nunca antes.',
+      'Selección de rutas secretas'
+    ];
+
+    $this['translationSearch'] = [
+      'día',
+      'días',
+      'TU ESTANCIA',
+      'Playa y gastronomía',
+      'Cultura y gastronomía',
+      'Fiesta y cultura',
+      'Gastronomía y naturaleza',
+      'Naturaleza y aventura',
+      'Playa y naturaleza',
+      'Vino y tradición',
+      'Aventura y tradición',
+      'INTERESES',
+      'Cádiz oculta',
+      'Cádiz auténtica',
+      'Cádiz relax',
+      'Cádiz urbano',
+      'TIPO DE VISITA',
+      'Ven a Cádiz'
+    ];
+    
+    if ($this['lang'] == 'en') {
+
+      $this['translationPage'] = [      
+      'beachs',
+      'that fill you with light',
+      '138km of beaches, coves and inlets that invite you to get lost',
+      'Discover our beaches',
+      'What is cooked today in Cádiz',
+      'All events',
+      'secret routes',
+      'Are you strong emotions? Enjoy Cádiz like never before.',
+      'Selection of secret routes'
+    ];
+
+    $this['translationSearch'] = [
+      'day',
+      'days',
+      'YOUR STAY',
+      'Beach and gastronomy',
+      'Culture and gastronomy',
+      'Party and culture',
+      'Gastronomy and nature',
+      'Nature and adventure',
+      'Beach and nature',
+      'Wine and tradition',
+      'Adventure and tradition',
+      'INTERESTS',
+      'Cádiz hidden',
+      'Authentic Cádiz',
+      'Cadiz relax',
+      'Cadiz urban',
+      'TYPE OF VISIT',
+      'Come to Cádiz'
+    ];
+            
+    } elseif ($this['lang'] == 'fr') {
+            
+
+    } elseif ($this['lang'] == 'de') {
+           
+
+    } elseif ($this['lang'] == 'ru') {
+            
+
+    }        
+
+     
 	}
 
 	function onFindExperience(){
@@ -24,9 +106,10 @@ is_hidden = 0
 		$interest = $_POST['interest'];
 		$tvisit = $_POST['tvisit'];
     	
-    	$experiences = $this->staticApp->experienceFind($days,$interest,$tvisit);
+      $aLang = App::getLocale();
 
-       	return Redirect::to('/experiences')->with( ['data' => json_encode($experiences)] );
+    	$experiences = $this->staticApp->experienceFind($days,$interest,$tvisit);     
+      return Redirect::to($aLang.'/experiencias')->with( ['data' => json_encode($experiences)] );
     }
 
 ?>
@@ -38,60 +121,19 @@ is_hidden = 0
       <div class="header-container">
         <div class="header-txt">
           <h1 class="txt txt-home"><span class="first-word">
-           {{'Playas'|_}}
-            </span>{{'que te llenan de luz'|_}}</h1>
+           {{ translationPage[0] }}
+            </span>{{ translationPage[1] }}</h1>
           <img class="brush" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/brush-header.svg" alt="">
         </div>
-        <div class="search-bar-container">
-          <div class="search-bar">
-            <form data-request="onFindExperience">
-              <div class="inputs-container">
-                <div class="days-container">
-                  <select class="custom-select select-days" name="days">
-                    {% for i in 1..7 %}
-                      {% if i<2 %}
-                      	* <option value="{{ i }}">{{ i }} {{'día'|_}}</option>
-                      {% else %}
-						* <option value="{{ i }}">{{ i }} {{'días'|_}}</option>
-                      {% endif %}
-                    {% endfor %}
-                  </select>
-                  <span class="select-title">{{'TU ESTANCIA'|_}}</span>
-                </div>{% component 'cadizevent' %}
-                <div class="interests-container">
-                  <select class="custom-select select-interests" name="interest">
-                    <option value="playa-gastronomia">{{'Playa y gastronomía'|_}}</option>
-                    <option value="cultura-gastronomia">{{'Cultura y gastronomía'|_}}</option>
-                    <option value="fiesta-cultura">{{'Fiesta y cultura'|_}}</option>
-                    <option value="gastronomia-naturaleza">{{'Gastronomía y naturaleza'|_}}</option>
-                    <option value="naturaleza-aventura">{{'Naturaleza y aventura'|_}}</option>
-                    <option value="playa-naturaleza">{{'Playa y naturaleza'|_}}</option>
-                    <option value="vino-tradicion">{{'Vino y tradición'|_}}</option>
-                    <option value="aventura-tradicion">{{'Aventura y tradición'|_}}</option>
-                  </select>
-                  <span class="select-title">{{'INTERESES'|_}}</span>
-                </div>
-                <div class="type-container">
-                  <select class="custom-select select-type" name="tvisit">
-                    <option value="cadiz-oculta">{{'Cádiz oculta'|_}}</option>
-                    <option value="cadiz-autentica">{{'Cádiz auténtica'|_}}</option>
-                    <option value="cadiz-relax">{{'Cádiz relax'|_}}</option>
-                    <option value="cadiz-urbano">{{'Cádiz urbano'|_}}</option>
-                  </select>
-                  <span class="select-title">{{'TIPO DE VISITA'|_}}</span>
-                </div>
-              </div>
-              <div class="button-container">
-                <input type="submit" value="{{'Ven a Cádiz'|_}}">
 
-              
-              </div>
-            </form>
-          </div>
+        <!-- SEARCH -->
+        <div id='prtlSearch'>
+          {% partial "site/search" %}
         </div>
+        
         <div class="header-comment">
-          <p class="comment">{{'138km de playas, calas y ensenadas que invitan a perderse'|_}}</p>
-          <a class="header-link" href="{{lang}}/playas">{{'Conoce nuestras playas'|_}} &nbsp;<img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/link-arrow.svg" alt=""> </a>
+          <p class="comment">{{ translationPage[2] }}</p>
+          <a class="header-link" href="{{lang}}/playas">{{ translationPage[3] }} &nbsp;<img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/link-arrow.svg" alt=""> </a>
         </div>
       </div>
     </div>
@@ -100,7 +142,7 @@ is_hidden = 0
     <div class="whats-on">
 
       <div class="left-txt">
-        <p class="title">{{'Qué se cuece hoy en Cádiz'|_}}</p>
+        <p class="title">{{ translationPage[4] }}</p>
           <img class="separator" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
 
           {% for iEvent in events %}
@@ -111,7 +153,7 @@ is_hidden = 0
             </div>
           {% endfor %}
 
-            <a class="events-link" href="{{lang}}/eventos">{{'Todos los eventos'|_}}&nbsp;&nbsp;<img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/link-arrow-yellow.svg" alt=""> </a>
+            <a class="events-link" href="{{lang}}/eventos">{{ translationPage[5] }}&nbsp;&nbsp;<img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/link-arrow-yellow.svg" alt=""> </a>
       </div>
 
 
@@ -168,9 +210,9 @@ is_hidden = 0
     <!--  RUTAS -->
     <div class="secret-routes">
       <div class="txt-container">
-        <p class="title">{{'rutas secretas'|_}}</p>
-        <p class="desc">{{'¿Eres de emociones fuertes? Disfruta de Cádiz como nunca antes.'|_}}</p>
-        <a class="events-link" href="{{lang}}/rutas">{{'Selección de rutas secretas'|_}}<img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/link-arrow-yellow.svg" alt=""> </a>
+        <p class="title">{{ translationPage[6] }}</p>
+        <p class="desc">{{ translationPage[7] }}</p>
+        <a class="events-link" href="{{lang}}/rutas">{{ translationPage[8] }}<img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/link-arrow-yellow.svg" alt=""> </a>
         <img class="separator" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
       </div>
     </div>

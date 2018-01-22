@@ -23,8 +23,7 @@ return [
         'access_snippets' => 'Acceder a fragmentos',
         'manage_content' => 'Administrar contenidos'
     ],
-    // Andrés Martínez
-    // experience lang
+    // Andrés Martínez : experience lang
     'experience' => [
         'menu_label' => 'Experiencias',
         'delete_confirmation' => 'Estas seguro de querer borrar las experiencias seleccionadas? Esto también borrará las sub-experiencias que existan.',
@@ -43,6 +42,26 @@ return [
         'access_snippets' => 'Acceder a fragmentos',
         'manage_content' => 'Administrar contenidos',
         'new_title' => 'Título de la nueva experiencia'
+    ],
+    // Andrés Martínez : event lang
+    'event' => [
+        'menu_label' => 'Eventos',
+        'delete_confirmation' => 'Estas seguro de querer borrar los eventos seleccionadas? Esto también borrará los sub-eventos que existan.',
+        'no_records' => 'No se ha encontrado ninguna evento',
+        'delete_confirm_single' => 'Estas seguro de querer borrar este evento? Esto también borrará los sub-eventos que existan.',
+        'new' => 'Nuevo evento',
+        'add_subpage' => 'Añadir sub-evento',
+        'invalid_url' => 'Formato de URL no válido. La URL debería comenzar por una barra (\'/\'). Puede contener letras, números, y los siguientes símbolos  _ - / ',
+        'url_not_unique' => 'Esta URL ya está siendo utilizada por otro evento.',
+        'layout' => 'Plantilla',
+        'layouts_not_found' => 'No se han encontrado plantillas',
+        'saved' => 'El evento se ha guardado correctamente.',
+        'tab' => 'eventos',
+        'manage_pages' => 'Administrar eventos',
+        'manage_menus' => 'Administrar menús',
+        'access_snippets' => 'Acceder a fragmentos',
+        'manage_content' => 'Administrar contenidos',
+        'new_title' => 'Título del nuevo evento'
     ],
     'menu' => [
         'menu_label' => 'Menus',

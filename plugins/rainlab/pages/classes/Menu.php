@@ -4,7 +4,7 @@ use Url;
 use File;
 use Lang;
 use Yaml;
-use Event;
+use Event as MEvent;
 use Config;
 use Request;
 use Validator;
@@ -276,7 +276,7 @@ class Menu extends CmsObject
                      * If the item type is not URL, use the API to request the item type's provider to
                      * return the item URL, subitems and determine whether the item is active.
                      */
-                    $apiResult = Event::fire('pages.menuitem.resolveItem', [$item->type, $item, $currentUrl, $this->theme]);
+                    $apiResult = MEvent::fire('pages.menuitem.resolveItem', [$item->type, $item, $currentUrl, $this->theme]);
                     if (is_array($apiResult)) {
                         foreach ($apiResult as $itemInfo) {
                             if (!is_array($itemInfo)) {

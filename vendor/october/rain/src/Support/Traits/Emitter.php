@@ -106,6 +106,7 @@ trait Emitter
      */
     public function fireEvent($event, $params = [], $halt = false)
     {
+
         if (!is_array($params)) $params = [$params];
         $result = [];
 
@@ -122,6 +123,7 @@ trait Emitter
 
             unset($this->emitterSingleEventCollection[$event]);
         }
+
 
         /*
          * Recurring events, with priority

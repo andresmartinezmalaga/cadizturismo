@@ -1,5 +1,5 @@
 title = "experiences"
-url = "/experiences"
+url = "/experiencias"
 layout = "dinamic"
 is_hidden = 0
 
@@ -9,19 +9,21 @@ is_hidden = 0
 <?php  
 	
 	function onStart()
-	{		
-		$this['lang']=\App::getLocale();
+	{	    
+    $this['lang']=\App::getLocale();
 		if($this['lang']==''){
 			$this['lang']='es';
 		}
-
+    
 		if(Session::has('data')){
-			Session::put('reciveData',Session::get('data'));
-			Session::forget('data');
+			Session::put('reciveData',Session::get('data'));     
 		}
+    if(Session::has('reciveData')){
+      $this['experiences'] = json_decode(Session::get('reciveData'));     
+    }
 
-		$this['experiences'] = json_decode(Session::get('reciveData'));
 	}
+
 
 	function onFindExperience(){
 
@@ -33,11 +35,12 @@ is_hidden = 0
     	Session::put('data',json_encode($experiences));
 
     	$this['experiences'] = $experiences;
-
+    
     	return [
     		'#prtlExperiences' => $this->renderPartial('experiences')
     	];
-    }
+ 
+  }
 
 ?>
 ==
@@ -50,53 +53,12 @@ is_hidden = 0
       <p class="txt"><span id="exp" class="first-word">Experiencias</span> pensadas para ti </p>
         <img class="brush" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/brush-header.svg" alt="">
     </div>
-    <div class="search-bar-container">
-          <div class="search-bar">
-            <form data-request="onFindExperience">
-              <div class="inputs-container">
-                <div class="days-container">
-                  <select class="custom-select select-days" name="days">
-                    {% for i in 1..7 %}
-                      {% if i<2 %}
-                      	* <option value="{{ i }}">{{ i }} {{'día'|_}}</option>
-                      {% else %}
-						* <option value="{{ i }}">{{ i }} {{'días'|_}}</option>
-                      {% endif %}
-                    {% endfor %}
-                  </select>
-                  <span class="select-title">{{'TU ESTANCIA'|_}}</span>
-                </div>{% component 'cadizevent' %}
-                <div class="interests-container">
-                  <select class="custom-select select-interests" name="interest">
-                    <option value="playa-gastronomia">{{'Playa y gastronomía'|_}}</option>
-                    <option value="cultura-gastronomia">{{'Cultura y gastronomía'|_}}</option>
-                    <option value="fiesta-cultura">{{'Fiesta y cultura'|_}}</option>
-                    <option value="gastronomia-naturaleza">{{'Gastronomía y naturaleza'|_}}</option>
-                    <option value="naturaleza-aventura">{{'Naturaleza y aventura'|_}}</option>
-                    <option value="playa-naturaleza">{{'Playa y naturaleza'|_}}</option>
-                    <option value="vino-tradicion">{{'Vino y tradición'|_}}</option>
-                    <option value="aventura-tradicion">{{'Aventura y tradición'|_}}</option>
-                  </select>
-                  <span class="select-title">{{'INTERESES'|_}}</span>
-                </div>
-                <div class="type-container">
-                  <select class="custom-select select-type" name="tvisit">
-                    <option value="cadiz-oculta">{{'Cádiz oculta'|_}}</option>
-                    <option value="cadiz-autentica">{{'Cádiz auténtica'|_}}</option>
-                    <option value="cadiz-relax">{{'Cádiz relax'|_}}</option>
-                    <option value="cadiz-urbano">{{'Cádiz urbano'|_}}</option>
-                  </select>
-                  <span class="select-title">{{'TIPO DE VISITA'|_}}</span>
-                </div>
-              </div>
-              <div class="button-container">
-                <input type="submit" value="{{'Ven a Cádiz'|_}}">
+   
+    <!-- SEARCH -->
+    <div id='prtlSearch'>
+      {% partial "site/search" %}
+    </div>
 
-              
-              </div>
-            </form>
-          </div>
-        </div>
   </div>
 </div>
 

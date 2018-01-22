@@ -2,7 +2,7 @@
 
 use Lang;
 use Cache;
-use Event;
+use Event as MEvent;
 use Config;
 use Cms\Classes\Theme;
 use RainLab\Pages\Classes\Page;
@@ -151,7 +151,7 @@ class Router
     protected function getCacheKey($keyName)
     {
         $key = crc32($this->theme->getPath()).$keyName;
-        Event::fire('pages.router.getCacheKey', [&$key]);
+        MEvent::fire('pages.router.getCacheKey', [&$key]);
         return $key;
     }
 

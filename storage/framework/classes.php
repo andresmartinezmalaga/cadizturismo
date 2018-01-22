@@ -52,4 +52,12 @@
   'system\\Controllers\\mailbrandsettings' => 'modules/system/controllers/mailbrandsettings.php',
   'rainlab\\translate\\Controllers\\messages' => 'plugins/rainlab/translate/controllers/messages.php',
   'RainLab\\Pages\\Components\\StaticApp' => 'plugins/rainlab/pages/components/StaticApp.php',
+  'RainLab\\Pages\\Widgets\\EventList' => 'plugins/rainlab/pages/widgets/EventList.php',
+  'RainLab\\Pages\\Classes\\EventList' => 'plugins/rainlab/pages/classes/EventList.php',
+  'RainLab\\Pages\\Classes\\Event' => 'plugins/rainlab/pages/classes/Event.php',
+  'RainLab\\Pages\\Classes\\event' => 'plugins/rainlab/pages/classes/event.php',
+  'RainLab\\Pages\\Widgets\\EventoList' => 'plugins/rainlab/pages/widgets/EventoList.php',
+  'RainLab\\Pages\\Classes\\EventoList' => 'plugins/rainlab/pages/classes/EventoList.php',
+  'RainLab\\Pages\\Classes\\Evento' => 'plugins/rainlab/pages/classes/Evento.php',
+  'RainLab\\Pages\\Classes\\evento' => 'plugins/rainlab/pages/classes/evento.php',
 );

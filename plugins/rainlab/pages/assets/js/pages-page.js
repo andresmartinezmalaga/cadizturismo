@@ -31,6 +31,9 @@
 
         $(document).on('open.oc.treeview', 'form.layout[data-content-id=experiences]', this.proxy(this.onSidebarItemClick))
 
+        $(document).on('open.oc.treeview', 'form.layout[data-content-id=eventos]', this.proxy(this.onSidebarItemClick))
+
+      
         $(document).on('open.oc.list', this.$sidePanel, this.proxy(this.onSidebarItemClick))
 
         // A tab is shown / switched
@@ -56,6 +59,9 @@
 
         // Layout changed
         $(document).on('change', '#pages-master-tabs form[data-object-type=experience] select[name="viewBag[layout]"]', this.proxy(this.onLayoutChanged))
+
+        // Layout changed
+        $(document).on('change', '#pages-master-tabs form[data-object-type=evento] select[name="viewBag[layout]"]', this.proxy(this.onLayoutChanged))
 
         // Create object button click
         $(document).on(
@@ -141,6 +147,7 @@
             page: {menu: 'pages', count: 0},
             // Andrés Martínez add experience counter
             experience: {menu: 'experiences', count: 0},
+            evento: {menu: 'eventos', count: 0},
             menu: {menu: 'menus', count: 0},
             content: {menu: 'content', count: 0},
         }

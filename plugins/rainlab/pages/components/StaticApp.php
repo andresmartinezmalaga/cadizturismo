@@ -36,6 +36,17 @@ class StaticApp extends ComponentBase
         ];
     }
 
+    public function beachList()
+    {
+        $theme = Theme::getActiveTheme();
+        $pages = Page::listInTheme($theme, false);
+        $events =  new \Illuminate\Support\Collection($pages);
+        
+        $result = $events->where("subtemplate","playas")->values();
+        
+        return $result;
+    }
+
     public function experienceList()
     {
         $theme = Theme::getActiveTheme();
@@ -54,7 +65,7 @@ class StaticApp extends ComponentBase
         $events =  new \Illuminate\Support\Collection($pages);
         
        
-        $result = $events->where('template','experiences')->where('days',$days)->where('interest',$interest)->where('tvisit',$tvisit);
+        $result = $events->where('template','experiences')->where('days',$days)->where('interest',$interest)->where('tvisit',$tvisit)->values();
        
         return $result;
     }

@@ -14,7 +14,14 @@ static-pages:
         municipios-jerez-de-la-frontera: {  }
         municipios-tarifa: {  }
     playas:
+        playas-tres: {  }
+        playas-1: {  }
+        playas-e: {  }
+        playas-t: {  }
+        playas-k: {  }
         playas-uno: {  }
+        playas-dos: {  }
+        playas-cuatro: {  }
     naturaleza:
         naturaleza-via-verde: {  }
         naturaleza-birdwatching: {  }
@@ -39,3 +46,7 @@ static-pages:
         gastronomia-el-vino: {  }
         gastronomia-comida-tradicional: {  }
     experiencias-america: {  }
+    experiencias: {  }
+    aa: {  }
+    eventos-uno: {  }
+    eventos-dos: {  }

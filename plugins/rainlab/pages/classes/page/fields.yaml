@@ -29,6 +29,15 @@ fields:
         default: 'pages'
         cssClass: ocl
 
+    viewBag[subtemplate]:
+        label: 'subtemplate'       
+        cssClass: ocl   
+
+    viewBag[cover]:
+        label: 'cover'
+        default: 'default.jpg'
+        cssClass: ocl     
+
 tabs:
     fields:
         #viewBag[layout]:

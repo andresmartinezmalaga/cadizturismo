@@ -29,7 +29,9 @@ code = "que-hacer"
             $this['lang']='es';
         }
 
-        $this['experiences'] = $this->staticApp->experienceList();
+        $this['beaches'] = $this->staticApp->beachList();
+
+        //dd($this['beaches']);
      
     }
 
@@ -61,8 +63,10 @@ code = "que-hacer"
 
     {% component 'staticPage' %}
 
-    <div id='prtlExperiences' class="all-exps">
-        {% partial "experiences" %}
+    <div id='prtlBeaches' class="all-exps">
+        <div class="all-events-container">
+        {% partial "beaches" %}
+        </div>
     </div>
 
     <div class="vertical-share">

@@ -5,11 +5,16 @@
                 <?= $this->widget->pageList->render() ?>
             </form>
             
-            <!-- Andrés Martínez
-                Experiences widget->experienceList
+            <!-- Andrés Martínez : Experiences widget->experienceList
             -->
             <form class="layout hide" data-content-id="experiences" data-object-type="experience" data-type-icon="oc-icon-files-o" onsubmit="return false">
                 <?= $this->widget->experienceList->render() ?>
+            </form>
+
+            <!-- Andrés Martínez : Events widget->eventList
+            -->
+            <form class="layout hide" data-content-id="eventos" data-object-type="evento" data-type-icon="oc-icon-files-o" onsubmit="return false">
+                <?= $this->widget->eventoList->render() ?>
             </form>
 
             <form class="layout hide" data-content-id="menus" data-object-type="menu" data-type-icon="oc-icon-sitemap" onsubmit="return false">

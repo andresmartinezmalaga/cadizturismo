@@ -6,7 +6,7 @@
 	
 	{% for experience in experiences %}
 	    {% set interest = experience.viewBag.interest|split('-') %}
-	    
+   	
 	    <div class="event">
 	      <div class="overlay-img"></div>
 	      <img class="rec-img" src="{{experience.viewBag.cover}}">

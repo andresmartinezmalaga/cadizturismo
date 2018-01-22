@@ -990,6 +990,7 @@ class Model extends Extendable implements ArrayAccess, Arrayable, Jsonable, Json
      */
     public static function saved($callback, $priority = 0)
     {
+       
         static::registerModelEvent('saved', $callback, $priority);
     }
 
@@ -1191,6 +1192,7 @@ class Model extends Extendable implements ArrayAccess, Arrayable, Jsonable, Json
      */
     public function saveInternal(array $options = [])
     {
+        
         // Event
         if ($this->fireEvent('model.saveInternal', [$this->attributes, $options], true) === false) {
             return false;
@@ -1215,6 +1217,8 @@ class Model extends Extendable implements ArrayAccess, Arrayable, Jsonable, Json
         if ($saved) {
             $this->finishSave($options);
         }
+
+
 
         return $saved;
     }

@@ -104,7 +104,14 @@ class Plugin extends PluginBase
                         'attributes'  => ['data-menu-item'=>'experiences'],
                         'permissions' => ['rainlab.pages.manage_experiences']
                     ],
-
+                    'eventos' => [
+                        'label'       => 'rainlab.pages::lang.event.menu_label',
+                        'icon'        => '',
+                        'iconSvg'     => 'plugins/rainlab/pages/assets/images/menus-icon.svg',
+                        'url'         => 'javascript:;',
+                        'attributes'  => ['data-menu-item'=>'eventos'],
+                        'permissions' => ['rainlab.pages.manage_eventos']
+                    ],
                     // Andrés Martínez
                     // delete content & snippets menus
                     // 

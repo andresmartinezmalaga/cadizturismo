@@ -4,7 +4,7 @@ use Cms;
 use File;
 use Lang;
 use Cache;
-use Event;
+use Event as MEvent;
 use Route;
 use Config;
 use Validator;
@@ -22,8 +22,7 @@ use October\Rain\Parse\Bracket as TextParser;
 use October\Rain\Parse\Syntax\Parser as SyntaxParser;
 use ApplicationException;
 
-// Andrés Martinez
-// create templates for pages
+// Andrés Martinez : add use class for create templates for pages
 use Backend\Classes\PagesTemplates;
 
 /**
@@ -35,7 +34,8 @@ use Backend\Classes\PagesTemplates;
 class Page extends ContentBase
 {
     public $implement = [
-        '@RainLab.Translate.Behaviors.TranslatablePageUrl',
+        // Andrés Martínez : take out TranslatablePageUrl
+        //'@RainLab.Translate.Behaviors.TranslatablePageUrl',
         '@RainLab.Translate.Behaviors.TranslatableCmsObject'
     ];
 
@@ -56,6 +56,10 @@ class Page extends ContentBase
         'markup',
         'settings',
         'placeholders',
+        'subtemplate',
+        'cover',
+        'categoriea',
+        'categorieb'
     ];
 
     /**
@@ -86,6 +90,7 @@ class Page extends ContentBase
         'code',
         'markup',
         'viewBag[title]',
+        'viewBag[url]',
         'viewBag[meta_title]',
         'viewBag[meta_description]',
     ];
@@ -113,6 +118,8 @@ class Page extends ContentBase
 
     public $pageTempl;
 
+
+
     /**
      * Creates an instance of the object and associates it with a CMS theme.
      * @param array $attributes
@@ -128,6 +135,16 @@ class Page extends ContentBase
 
         $this->pageTempl = New PagesTemplates();
         
+    }
+
+     public function getBeachCategoriesOptions(){
+        return [
+            'deporte' => 'Deporte',
+            'fiesta' => 'Fiesta',
+            'gastronomía' => 'Gastronomía',
+            'naturaleza' => 'Naturaleza',
+            'ruta' => 'Ruta'
+        ];
     }
 
     //
@@ -310,8 +327,7 @@ class Page extends ContentBase
         // Check parent page for a defined child layout
         if ($parentPage) {
 
-            // Andrés Martínez
-            // Load template on markup
+            // Andrés Martínez : Load template on markup
             if($parentPage->fileName == 'municipios.htm'){
                 $this->markup = PagesTemplates::getTMunicipio();
             } elseif ($parentPage->fileName == 'comarcas.htm') {
@@ -693,7 +709,7 @@ class Page extends ContentBase
     protected static function getMenuCacheKey($theme)
     {
         $key = crc32($theme->getPath()).'static-page-menu';
-        Event::fire('pages.page.getMenuCacheKey', [&$key]);
+        MEvent::fire('pages.page.getMenuCacheKey', [&$key]);
         return $key;
     }
 

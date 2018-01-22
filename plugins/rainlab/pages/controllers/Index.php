@@ -3,7 +3,7 @@
 use Url;
 use Lang;
 use Flash;
-use Event;
+use Event as MEvent;
 use Config;
 use Request;
 use Response;
@@ -14,8 +14,12 @@ use Cms\Classes\CmsCompoundObject;
 use Cms\Widgets\TemplateList;
 use Backend\Classes\Controller;
 use RainLab\Pages\Widgets\PageList;
+
 use RainLab\Pages\Widgets\ExperienceList;
+use RainLab\Pages\Widgets\EventoList;
+
 use RainLab\Pages\Widgets\MenuList;
+
 use RainLab\Pages\Widgets\SnippetList;
 use RainLab\Pages\Classes\Snippet;
 
@@ -65,7 +69,10 @@ class Index extends Controller
             new PageList($this, 'pageList');
             new MenuList($this, 'menuList');
             new SnippetList($this, 'snippetList');
+            
+            // Andrés Martinez : create ExperienceList & EventList
             new ExperienceList($this, 'experienceList');
+            new EventoList($this, 'eventoList');
             
             new TemplateList($this, 'contentList', function() {
                 return $this->getContentTemplateList();
@@ -223,18 +230,20 @@ class Index extends Controller
 
     public function onSave()
     {
-
         $this->validateRequestTheme();
+       
         $type = Request::input('objectType');
-
+ 
         $object = $this->fillObjectFromPost($type);
+
         $object->save();
 
         /*
          * Extensibility
          */
-        Event::fire('pages.object.save', [$this, $object, $type]);
-        Event::fire('experiences.object.save', [$this, $object, $type]);
+        MEvent::fire('pages.object.save', [$this, $object, $type]);
+        MEvent::fire('experiences.object.save', [$this, $object, $type]);
+        MEvent::fire('eventos.object.save', [$this, $object, $type]);
         
         $this->fireEvent('object.save', [$object, $type]);
 
@@ -257,9 +266,16 @@ class Index extends Controller
             PagesPlugin::clearCache();
         }
 
+        if ($type == 'evento') {
+            $result['pageUrl'] = Url::to($object->getViewBag()->property('url'));
+
+            PagesPlugin::clearCache();
+        }
+
         $successMessages = [
             'page' => 'rainlab.pages::lang.page.saved',
             'experience' => 'rainlab.pages::lang.experience.saved',
+            'evento' => 'rainlab.pages::lang.event.saved',
             'menu' => 'rainlab.pages::lang.menu.saved'
         ];
 
@@ -277,7 +293,9 @@ class Index extends Controller
         $this->validateRequestTheme();
 
         $type = Request::input('type');
+        
         $object = $this->createObject($type);
+
         $parent = Request::input('parent');
         $parentPage = null;
 
@@ -290,6 +308,7 @@ class Index extends Controller
             $object->setDefaultLayout($parentPage); 
         }
 
+        // Andrés Martínez : parentPage setDefaultLayout Experiences
         if ($type == 'experience') {
 
             if (strlen($parent)) {
@@ -299,7 +318,26 @@ class Index extends Controller
             $object->setDefaultLayout($parentPage);
         }
 
-        $widget = $this->makeObjectFormWidget($type, $object);
+        // Andrés Martínez : parentPage setDefaultLayout Events
+        if ($type == 'evento') {
+
+            if (strlen($parent)) {
+                $parentPage = StaticExperience::load($this->theme, $parent);
+            }
+
+            $object->setDefaultLayout($parentPage);
+        }
+
+
+        // Andrés Martínez : add subtype to pages type, when we need change fields.yaml
+        if($parent == 'playas') {
+           
+            $widget = $this->makeObjectFormWidget($type, $object,null,'playas');
+           
+        } else {
+           $widget = $this->makeObjectFormWidget($type, $object);
+        }
+       
         $this->vars['objectPath'] = '';
 
         /*if ($type == 'page') {
@@ -525,6 +563,7 @@ class Index extends Controller
 
     protected function createObject($type)
     {
+        
         $class = $this->resolveTypeClassName($type);
 
         if (!($object = $class::inTheme($this->theme))) {
@@ -536,9 +575,11 @@ class Index extends Controller
 
     protected function resolveTypeClassName($type)
     {
+
         $types = [
             'page'    => 'RainLab\Pages\Classes\Page',
             'experience'    => 'RainLab\Pages\Classes\Experience',
+            'evento'    => 'RainLab\Pages\Classes\evento',
             'menu'    => 'RainLab\Pages\Classes\Menu',
             'content' => 'RainLab\Pages\Classes\Content'
         ];
@@ -550,11 +591,20 @@ class Index extends Controller
         return $types[$type];
     }
 
-    protected function makeObjectFormWidget($type, $object, $alias = null)
+    protected function makeObjectFormWidget($type, $object, $alias = null, $subtype = null)
     {
+        
+        // Andrés Martínez : add subtype to pages
+        $pageFieldsYaml = '~/plugins/rainlab/pages/classes/page/fields.yaml';
+        
+        if($subtype == 'playas'){
+           $pageFieldsYaml = '~/plugins/rainlab/pages/classes/page/playafields.yaml';
+        }
+
         $formConfigs = [
-            'page'          => '~/plugins/rainlab/pages/classes/page/fields.yaml',
+            'page'          => $pageFieldsYaml,
             'experience'    => '~/plugins/rainlab/pages/classes/experience/fields.yaml',
+            'evento'         => '~/plugins/rainlab/pages/classes/evento/fields.yaml',
             'menu'          => '~/plugins/rainlab/pages/classes/menu/fields.yaml',
             'content'       => '~/plugins/rainlab/pages/classes/content/fields.yaml'
         ];
@@ -579,6 +629,15 @@ class Index extends Controller
         }
 
         if ($type == 'experience') {
+ 
+            $widget->bindEvent('form.extendFieldsBefore', function() use ($widget, $object) {
+                $this->checkContentField($widget, $object);
+                $this->addPagePlaceholders($widget, $object);
+                $this->addPageSyntaxFields($widget, $object);
+            });
+        }
+
+        if ($type == 'evento') {
  
             $widget->bindEvent('form.extendFieldsBefore', function() use ($widget, $object) {
                 $this->checkContentField($widget, $object);
@@ -684,14 +743,17 @@ class Index extends Controller
     {
         // Andrés Martínez
         // add tab title for experiences events and routes
-        if ($type == 'page' || $type == 'experience') {
+        if ($type == 'page' || $type == 'experience' || $type == 'evento') {
             $viewBag = $object->getViewBag();
             $result = $viewBag ? $viewBag->property('title') : false;
             if (!$result && $type == 'page' ) {
                 $result = trans('rainlab.pages::lang.page.new');
-            }
-            elseif (!$result && $type == 'experience') {
+            
+            }elseif (!$result && $type == 'experience') {
                 $result = trans('rainlab.pages::lang.experience.new');
+            
+            } elseif (!$result && $type == 'evento') {
+                $result = trans('rainlab.pages::lang.event.new');
             }
 
             return $result;
@@ -720,12 +782,30 @@ class Index extends Controller
     }
 
     protected function fillObjectFromPost($type)
-    {
-        
+    {   
         $objectPath = trim(Request::input('objectPath'));
         $object = $objectPath ? $this->loadObject($type, $objectPath) : $this->createObject($type);
-        $formWidget = $this->makeObjectFormWidget($type, $object);
+        
+        // Andrés Martínez : change position at code, $object->parentFileName to get it before
+        if ($type != 'menu' && $type != 'content') {
+            $object->parentFileName = Request::input('parentFileName');
+        }
 
+        // Andrés Martínez : make $filterSubTemplate when new objt or when update it
+        $filterSubTemplate = '';
+        if($object->parentFileName != ''){
+            $filterSubTemplate = $object->parentFileName;
+        } else {
+            $filterSubTemplate = $object['viewBag']['subtemplate'];
+        }
+       
+        // Andrés Martínez : change $formWidget that will be save
+        if($filterSubTemplate == 'playas'){
+            $formWidget = $this->makeObjectFormWidget($type, $object,null,'playas');
+        } else {
+            $formWidget = $this->makeObjectFormWidget($type, $object);
+        }
+        
         $saveData = $formWidget->getSaveData();
         $postData = post();
         $objectData = [];
@@ -735,10 +815,6 @@ class Index extends Controller
         }
 
         $fields = ['markup', 'code', 'fileName', 'content', 'itemData', 'name'];
-
-        if ($type != 'menu' && $type != 'content') {
-            $object->parentFileName = Request::input('parentFileName');
-        }
 
         foreach ($fields as $field) {
             if (array_key_exists($field, $saveData)) {
@@ -750,6 +826,7 @@ class Index extends Controller
         }
 
         if ($type == 'page') {
+
             $placeholders = array_get($saveData, 'placeholders');
 
             if (is_array($placeholders) && Config::get('cms.convertLineEndings', false) === true) {
@@ -757,11 +834,8 @@ class Index extends Controller
             }
 
             $objectData['placeholders'] = $placeholders;
-
-            
            
-            // Andrés Martínez
-            // set layout default to new pages except municipios - comarcas - playas
+            // Andrés Martínez : set layout default to new pages except municipios - comarcas - playas
             $getFileName = $object['fileName'];          
     
             if($getFileName != 'municipios.htm' && $getFileName != 'comarcas.htm' && $getFileName != 'playas.htm'){
@@ -777,8 +851,25 @@ class Index extends Controller
             }
 
             if($getFileName == 'playas.htm'){
+                
                 $objectData['settings']['viewBag']['layout'] = 'playa';
             }
+
+
+            if($filterSubTemplate == 'playas'){
+           
+                $presrc1 = explode('value="cover"', $objectData['markup']);
+                if(count($presrc1)>1){
+                    $presrc2 = explode('alt', $presrc1[1]);
+                    $presrc3 = explode('src=', $presrc2[0]);
+                    $coverurl = str_replace('"', '', $presrc3[1]);
+                
+                    $objectData['settings']['viewBag']['cover'] = $coverurl;
+
+                }
+            }
+
+
             
         }
 
@@ -801,6 +892,29 @@ class Index extends Controller
             
                 $objectData['settings']['viewBag']['cover'] = $coverurl;
             }
+           
+        }
+
+
+        if ($type == 'evento') {
+            $placeholders = array_get($saveData, 'placeholders');
+
+            if (is_array($placeholders) && Config::get('cms.convertLineEndings', false) === true) {
+                $placeholders = array_map([$this, 'convertLineEndings'], $placeholders);
+            }
+           
+            $objectData['placeholders'] = $placeholders;
+           
+            // Andrés Martínez
+            // defining event cover
+            /*$presrc1 = explode('value="cover"', $objectData['markup']);
+            if(count($presrc1)>1){
+                $presrc2 = explode('alt', $presrc1[1]);
+                $presrc3 = explode('src=', $presrc2[0]);
+                $coverurl = str_replace('"', '', $presrc3[1]);
+            
+                $objectData['settings']['viewBag']['cover'] = $coverurl;
+            }*/
            
         }
 
@@ -828,8 +942,17 @@ class Index extends Controller
             }
         }
 
-        $object->fill($objectData);
+        // Andrés Martínez : multlng url force
+        
+        $objectData['settings']['viewBag']['localeUrl[en]'] = $objectData['settings']['viewBag']['url'];
+        $objectData['settings']['viewBag']['localeUrl[fr]'] = $objectData['settings']['viewBag']['url'];
+        $objectData['settings']['viewBag']['localeUrl[de]'] = $objectData['settings']['viewBag']['url'];
+        $objectData['settings']['viewBag']['localeUrl[ru]'] = $objectData['settings']['viewBag']['url'];
+        
 
+
+        $object->fill($objectData);
+        
         /*
          * Rehydrate the object viewBag array property where values are sourced.
          */
@@ -843,8 +966,13 @@ class Index extends Controller
 
     protected function pushObjectForm($type, $object)
     {
-       
-        $widget = $this->makeObjectFormWidget($type, $object);
+      
+        // Andrés Martínez : get subtype formWidget
+        if($object->subtemplate == 'playas'){
+            $widget = $this->makeObjectFormWidget($type, $object, null, 'playas');
+        } else {
+            $widget = $this->makeObjectFormWidget($type, $object);
+        }
 
         $this->vars['objectPath'] = Request::input('path');
 
@@ -858,6 +986,10 @@ class Index extends Controller
             $this->vars['pageUrl'] = Url::to($object->getViewBag()->property('url'));
         }
 
+        if ($type == 'evento') {
+           
+            $this->vars['pageUrl'] = Url::to($object->getViewBag()->property('url'));
+        }
         /*if ($type == 'page') {
             return [
                 'tabTitle' => $this->getTabTitle($type, $object),
@@ -899,6 +1031,8 @@ class Index extends Controller
 
     protected function bindFormWidgetToController()
     {
+        
+
         $alias = Request::input('formWidgetAlias');
         $type = Request::input('objectType');
         $objectPath = trim(Request::input('objectPath'));
@@ -935,7 +1069,7 @@ class Index extends Controller
          */
         if (
             ($event = $this->fireEvent('content.templateList', [$templates], true)) ||
-            ($event = Event::fire('pages.content.templateList', [$this, $templates], true))
+            ($event = MEvent::fire('pages.content.templateList', [$this, $templates], true))
         ) {
             return $event;
         }
