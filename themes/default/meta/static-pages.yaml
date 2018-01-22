@@ -7,25 +7,24 @@ static-pages:
         comarcas-la-janda: {  }
         comarcas-sierra-de-cadiz: {  }
     municipios:
-        municipios-uno: {  }
-        municipios-dos: {  }
         municipios-barbate: {  }
         municipios-grazalema: {  }
         municipios-jerez-de-la-frontera: {  }
-        municipios-tarifa: {  }
-<<<<<<< HEAD
+        municipios-torremolinos: {  }
+        municipios-fuengirola: {  }
+        municipios-torre: {  }
+        municipios-torremolinosv: {  }
+        municipios-benal: {  }
+        municipios-granjeo: {  }
+        municipios-15: {  }
+        municipios-17: {  }
+        municipios-20: {  }
+        municipios-22: {  }
     playas:
-        playas-tres: {  }
-        playas-1: {  }
-        playas-e: {  }
-        playas-t: {  }
-        playas-k: {  }
         playas-uno: {  }
         playas-dos: {  }
-        playas-cuatro: {  }
-=======
-    playas: {  }
->>>>>>> fb370f36f8c51eb679fd7f5449034699618c5752
+        playas-seis: {  }
+        playas-16: {  }
     naturaleza:
         naturaleza-via-verde: {  }
         naturaleza-birdwatching: {  }
@@ -49,8 +48,3 @@ static-pages:
         gastronomia-gourmet: {  }
         gastronomia-el-vino: {  }
         gastronomia-comida-tradicional: {  }
-    experiencias-america: {  }
-    experiencias: {  }
-    aa: {  }
-    eventos-uno: {  }
-    eventos-dos: {  }

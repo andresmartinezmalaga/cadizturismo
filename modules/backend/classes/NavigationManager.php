@@ -408,7 +408,7 @@ class NavigationManager
      * @return boolean Returns true if the menu item is active.
      */
     public function isMainMenuItemActive($item)
-    {
+    {        
         return $this->contextOwner == $item->owner && $this->contextMainMenuItemCode == $item->code;
     }
 

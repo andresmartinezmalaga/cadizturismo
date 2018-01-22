@@ -64,8 +64,7 @@ class MenuItems extends FormWidgetBase
         $emptyItem = new MenuItem;
         $emptyItem->title = trans($this->newItemTitle);
         
-        // Andrés Martínez
-        // set default type of menus to static-page
+        // Andrés Martínez : set default type of menus to static-page, for use pag statics first
         $emptyItem->type = 'static-page';
         $emptyItem->url = '/';
 

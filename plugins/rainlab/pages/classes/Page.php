@@ -327,7 +327,7 @@ class Page extends ContentBase
         // Check parent page for a defined child layout
         if ($parentPage) {
 
-            // Andrés Martínez : Load template on markup
+            // Andrés Martínez : Load parents template municipios, comarcas, playas on markup
             if($parentPage->fileName == 'municipios.htm'){
                 $this->markup = PagesTemplates::getTMunicipio();
             } elseif ($parentPage->fileName == 'comarcas.htm') {

@@ -16,8 +16,7 @@
 
 +function ($) { "use strict";
 
-    // Andrés Martínez
-    // add template to multilingual markups
+    // Andrés Martínez :  add template to multilingual markups
     // create var
     var templatePre;
    
@@ -35,10 +34,9 @@
         this.$dropdown     = $('ul.ml-dropdown-menu', this.$el)
         this.$placeholder  = $(this.options.placeholderField)
         
-        // Andrés Martínez
-        // add template to multilingual markups
+        // Andrés Martínez : add template to multilingual markups
         // take template form markup es
-        templatePre =  $('.fr-wrapper .fr-view', this.$el).html();
+        templatePre =  $('.tab-pane.layout-cell.active .fr-wrapper.fr-view', this.$el).html();
 
         this.$dropdown.on('click', '[data-switch-locale]', function(event){
       

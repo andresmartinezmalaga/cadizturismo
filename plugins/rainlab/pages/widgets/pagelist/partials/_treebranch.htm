@@ -1,7 +1,6 @@
 <?php foreach ($items as $pageObj): ?>
     
-    <!-- Andrés Martínez
-        Get template & filter pages show
+    <!-- Andrés Martínez : Get template & filter pages show
     -->
     <?php 
         $template = $pageObj->page->getViewBag()->property('template');
@@ -30,16 +29,14 @@
             <div>
                 <a href="#">
                     <?= e($pageObj->page->getViewBag()->property('title')) ?>
-                    <!-- Andrés Martínez
-                        Hidden url at list
+                    <!-- Andrés Martínez : Hidden url at list
                     -->
                      <!-- <span class="comment"><?= e($pageObj->page->getViewBag()->property('url')) ?></span> -->
                 </a>
 
                 <input type="hidden" name="object[<?= e($fileName) ?>]" value="0"/>
                 
-                <!-- Andrés Martínez
-                    Hidden checkbox selct to delete on Parents And sons fixeds
+                <!-- Andrés Martínez : Hidden checkbox selct to delete on Parents And sons fixeds
                 -->
 
                 <?php if (                    
@@ -88,8 +85,7 @@
                     </div>
                 <?php endif ?>
                 
-                 <!-- Andrés Martínez
-                    Hidden add subpage. Only for Parents
+                 <!-- Andrés Martínez : Hidden add subpage. Only for Parents
                 -->
                 <?php if ($fileName == 'municipios' || $fileName == 'playas') : ?>
                     <ul class="submenu">

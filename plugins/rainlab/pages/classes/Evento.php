@@ -120,8 +120,7 @@ class Evento extends ContentBase
             'url.unique_url' => Lang::get('rainlab.pages::lang.page.url_not_unique')
         ];
 
-        // Andrés Martínez
-        // Load events template on markup
+        // Andrés Martínez : Load events template on markup
                 
         $template = '
         <!-- HEADER -->

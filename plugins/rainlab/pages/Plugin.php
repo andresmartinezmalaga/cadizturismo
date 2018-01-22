@@ -69,15 +69,6 @@ class Plugin extends PluginBase
     {
         return [
             'pages' => [
-                // Andrés Martínez
-                // Change menu position. Pages before media. modules/backend/ServiceProvider.php
-                // 
-                /*'label'       => 'rainlab.pages::lang.plugin.name',
-                'url'         => Backend::url('rainlab/pages'),
-                'icon'        => '',
-                'iconSvg'     => 'plugins/rainlab/pages/assets/images/content-icon.svg',
-                'permissions' => ['rainlab.pages.*'],
-                'order'       => 200,*/
 
                 'sideMenu' => [
                     'pages' => [
@@ -99,7 +90,7 @@ class Plugin extends PluginBase
                     'experiences' => [
                         'label'       => 'rainlab.pages::lang.experience.menu_label',
                         'icon'        => '',
-                        'iconSvg'     => 'plugins/rainlab/pages/assets/images/menus-icon.svg',
+                        'iconSvg'     => 'plugins/rainlab/pages/assets/svg/experiencias.svg',
                         'url'         => 'javascript:;',
                         'attributes'  => ['data-menu-item'=>'experiences'],
                         'permissions' => ['rainlab.pages.manage_experiences']
@@ -112,9 +103,7 @@ class Plugin extends PluginBase
                         'attributes'  => ['data-menu-item'=>'eventos'],
                         'permissions' => ['rainlab.pages.manage_eventos']
                     ],
-                    // Andrés Martínez
-                    // delete content & snippets menus
-                    // 
+                    // Andrés Martínez : delete content & snippets menus
                     /*'content' => [
                         'label'       => 'rainlab.pages::lang.content.menu_label',
                         'icon'        => 'icon-file-text-o',

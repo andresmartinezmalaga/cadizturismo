@@ -99,16 +99,6 @@ class ServiceProvider extends ModuleServiceProvider
                     'permissions' => ['backend.access_dashboard'],
                     'order'       => 10
                 ],
-                // Andrés Martínez
-                // Change menu position. Pages before media.
-                // 
-                'pages' => [
-                    'label'       => 'rainlab.pages::lang.plugin.name',
-                    'url'         => Backend::url('rainlab/pages'),
-                    'icon'        => '',
-                    'iconSvg'     => 'plugins/rainlab/pages/assets/images/content-icon.svg',
-                    'permissions' => ['rainlab.pages.*'],
-                    'order'       => 200],
                 'media' => [
                     'label'       => 'backend::lang.media.menu_label',
                     'icon'        => 'icon-folder',
@@ -116,7 +106,15 @@ class ServiceProvider extends ModuleServiceProvider
                     'url'         => Backend::url('backend/media'),
                     'permissions' => ['media.*'],
                     'order'       => 200
-                ]
+                ],
+                'pages' => [
+                    'label'       => 'rainlab.pages::lang.plugin.name',
+                    'url'         => Backend::url('rainlab/pages'),
+                    'icon'        => '',
+                    'iconSvg'     => 'plugins/rainlab/pages/assets/images/content-icon.svg',
+                    'permissions' => ['rainlab.pages.*'],
+                     // Andrés Martínez : Change menu position. Pages before media.
+                    'order'       => 190],
             ]);
         });
     }

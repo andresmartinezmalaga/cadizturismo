@@ -34,8 +34,7 @@ use RainLab\Pages\Classes\SnippetManager;
 use ApplicationException;
 use Exception;
 
-// Andrés Martinez
-// create templates for pages
+// Andrés Martinez use PagesTemplates
 use Backend\Classes\PagesTemplates;
 
 /**
@@ -94,8 +93,7 @@ class Index extends Controller
         $this->addJs('/plugins/rainlab/pages/assets/js/pages-snippets.js');
         $this->addCss('/plugins/rainlab/pages/assets/css/pages.css');
 
-        // Andrés Martínez
-        // load ours css 
+        // Andrés Martínez :  load ours css 
         $this->addCss('/plugins/rainlab/pages/assets/css/style-totalEvents.css');        
         $this->addCss('/plugins/rainlab/pages/assets/css/style-comarcas.css');
         $this->addCss('/plugins/rainlab/pages/assets/css/style-event.css');
@@ -125,8 +123,7 @@ class Index extends Controller
         $type = Request::input('type');
         $object = $this->loadObject($type, Request::input('path'));
 
-        // Andrés Martínez
-        // load Static-Parents templates and sons fixeds      
+        // Andrés Martínez : load Static-Parents templates and sons fixeds      
         $pageFileName = $object['fileName'];
         $templateMarkup = $object['markup'];
 
@@ -741,8 +738,7 @@ class Index extends Controller
 
     protected function getTabTitle($type, $object)
     {
-        // Andrés Martínez
-        // add tab title for experiences events and routes
+        // Andrés Martínez : add tab title for experiences events and routes
         if ($type == 'page' || $type == 'experience' || $type == 'evento') {
             $viewBag = $object->getViewBag();
             $result = $viewBag ? $viewBag->property('title') : false;
@@ -793,11 +789,14 @@ class Index extends Controller
 
         // Andrés Martínez : make $filterSubTemplate when new objt or when update it
         $filterSubTemplate = '';
-        if($object->parentFileName != ''){
-            $filterSubTemplate = $object->parentFileName;
-        } else {
-            $filterSubTemplate = $object['viewBag']['subtemplate'];
-        }
+            
+            // Create    
+            if($object->parentFileName != ''){
+                $filterSubTemplate = $object->parentFileName;
+            } else {
+                $filterSubTemplate = $object['viewBag']['subtemplate'];                 
+            }
+        
        
         // Andrés Martínez : change $formWidget that will be save
         if($filterSubTemplate == 'playas'){
@@ -829,6 +828,16 @@ class Index extends Controller
 
             $placeholders = array_get($saveData, 'placeholders');
 
+            // Andrés Set Subtemplate to pages.
+            // Create
+            if($object->parentFileName != '' ){
+                $objectData['settings']['viewBag']['subtemplate'] = $object->parentFileName;
+            // Update
+            } else {
+                $objectData['settings']['viewBag']['subtemplate'] = $object['viewBag']['subtemplate'];
+            }
+
+              
             if (is_array($placeholders) && Config::get('cms.convertLineEndings', false) === true) {
                 $placeholders = array_map([$this, 'convertLineEndings'], $placeholders);
             }
@@ -869,8 +878,6 @@ class Index extends Controller
                 }
             }
 
-
-            
         }
 
         if ($type == 'experience') {
@@ -882,8 +889,7 @@ class Index extends Controller
            
             $objectData['placeholders'] = $placeholders;
            
-            // Andrés Martínez
-            // defining experience cover
+            // Andrés Martínez : defining experience cover
             $presrc1 = explode('value="cover"', $objectData['markup']);
             if(count($presrc1)>1){
                 $presrc2 = explode('alt', $presrc1[1]);
@@ -905,8 +911,7 @@ class Index extends Controller
            
             $objectData['placeholders'] = $placeholders;
            
-            // Andrés Martínez
-            // defining event cover
+            // Andrés Martínez : defining event cover
             /*$presrc1 = explode('value="cover"', $objectData['markup']);
             if(count($presrc1)>1){
                 $presrc2 = explode('alt', $presrc1[1]);

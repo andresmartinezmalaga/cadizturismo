@@ -120,8 +120,7 @@ class Experience extends ContentBase
             'url.unique_url' => Lang::get('rainlab.pages::lang.page.url_not_unique')
         ];
 
-        // Andrés Martínez
-        // Load experiences template on markup
+        // Andrés Martínez : Load experiences template on markup
                 
         $template = '
         <!-- HEADER -->

@@ -316,8 +316,7 @@
             },
             tabId = data.type + '-' + data.theme + '-' + data.path
 
-            // Andrés Martínez
-            // dont show this pages
+            // Andrés Martínez : dont show this pages
             /*if(data.path == 'comarcas'){
                 return false;
             }*/
