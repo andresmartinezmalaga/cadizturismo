@@ -4794,6 +4794,9 @@ body.outer .layout > .layout-row > .layout-cell .outer-form-container .forgot-pa
 .layout.control-tabs.oc-logo-transparent:not(.has-tabs):after, .flex-layout-column.oc-logo-transparent:not(.has-tabs):after, .layout-cell.oc-logo-transparent:after {
   background: none; }
 
+a:hover, a:focus, a:active, button:hover, button:focus, button:active {
+  outline: none !important; }
+
 /* GENERAL */
 input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0px 1000px white inset !important; }
@@ -5113,11 +5116,6 @@ table.name-value-list > a:hover, table.name-value-list > a:focus, table.name-val
   color: #175DA3;
   text-decoration: none;
   outline: none; }
-
-.widget-field input[type="text"], .widget-field textarea {
-  background-color: #CECECE !important;
-  border: none !important;
-  color: #818181 !important; }
 
 #MediaManager-manager-filters ~ .sidebar-group .select2-container--default .select2-selection--single {
   background-color: #F6F6F6 !important;

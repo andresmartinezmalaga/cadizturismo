@@ -1173,6 +1173,9 @@ body.outer .layout > .layout-row > .layout-cell .outer-form-container .forgot-pa
   background: none;
 }
 
+a:hover, a:focus, a:active, button:hover, button:focus, button:active {
+  outline: none !important;
+}
 
 @mixin flexbox() {
   display: -webkit-box;
@@ -1587,13 +1590,13 @@ table.name-value-list > a {
   }
 }
 
-.widget-field {
-  input[type="text"], textarea {
-    background-color: #CECECE !important;
-    border: none !important;
-    color: #818181 !important;
-  }
-}
+// .widget-field {
+//   input[type="text"], textarea {
+//     background-color: #CECECE !important;
+//     border: none !important;
+//     color: #818181 !important;
+//   }
+// }
 
 // table.table.data tbody tr.rowlink:hover td, table.table.data tbody tr:not(.no-data).selected td {background-color: $blue !important;}
 #MediaManager-manager-filters ~ .sidebar-group {

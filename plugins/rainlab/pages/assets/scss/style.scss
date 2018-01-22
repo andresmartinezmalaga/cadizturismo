@@ -40,6 +40,175 @@
   font-weight: normal;
   font-style: normal; }
 
+
+  //modal mobile
+  .navigation {
+    display: none;
+  }
+
+      // variables
+    $slowly: all .2s ease;
+
+    // mixins
+    @mixin transition($value...) {
+    -webkit-transition: $value;
+    -moz-transition: $value;
+    -ms-transition: $value;
+    transition: $value;
+    }
+
+    @mixin transform($value...) {
+    -webkit-transform: $value;
+    -moz-transform: $value;
+    -ms-transform: $value;
+    transform: $value;
+    }
+
+
+  @media (max-width: 725px) {
+    .slidemenu {
+      display: none;
+    }
+    .mini-logo-container {
+      width: 100%;
+      text-align: center;
+      left: auto !important;
+      top: 24px !important;
+    }
+    .language-container {
+      width: auto !important;
+      right: 20px !important;
+      top: 24px !important;
+      .languages {
+        flex-direction: column !important;
+      }
+    }
+    .navigation {
+      display: block;
+    }
+    // slide menu styles start here
+    .hamburger {
+      position: fixed;
+      top: 24px;
+      left: 20px;
+      cursor: pointer;
+      z-index: 1000;
+      padding: 10px 15px 5px;
+
+      span {
+        vertical-align: middle;
+      }
+      .bars {
+        display: block;
+        position: relative;
+        width: 20px;
+        height: 2px;
+        background-color: white;
+        @include transition($slowly);
+
+        &:before, &:after {
+          position: absolute;
+          content: " ";
+          width: 100%;
+          height: 2px;
+          background-color: white;
+          @include transition($slowly);
+        }
+        &:before {
+          top: 6px;
+        }
+        &:after {
+          bottom: 6px;
+        }
+      }
+    }
+
+    .open .hamburger {
+      left: 265px !important;
+      .bars {
+        &:before, &:after {
+            @include transition($slowly);
+            background-color: black !important;
+        }
+      }
+    }
+
+    .open .hamburger .bars {
+      background-color: transparent;
+      @include transition($slowly);
+
+      &::before {
+        top: 0;
+        @include transform(rotate(-45deg));
+      }
+      &::after {
+        bottom: 0;
+        @include transform(rotate(45deg));
+      }
+    }
+
+    .open-menu-mobile {
+      display: block !important;
+    }
+
+    .menu {
+      width: 320px;
+      height: 100%;
+      padding: 60px 20px 0;
+      background-color: white;
+      position: fixed;
+      left: -100%;
+      top: 0;
+      opacity: 0;
+      z-index: 999;
+      margin-top: 0;
+      @include transition($slowly);
+      .logo-container {
+        img {
+          width: 180px;
+          height: auto;
+          margin-left: 20px;
+        }
+      }
+      .menus {
+        margin-top: 50px;
+        padding-left: 20px;
+        .menu-ul, .menu-mobile {
+          display: none;
+        }
+      }
+      .menu-title {
+        font-size: 18px;
+        cursor: pointer;
+      }
+      .menu-ul, .menu-mobile {
+        list-style-type: none;
+        padding: 0px;
+        a {
+          color: #9B9B9B;
+          &:hover, &:focus, &:active {
+            opacity: 0.5;
+            text-decoration: none;
+          }
+        }
+        li {
+          padding-bottom: 4px;
+        }
+      }
+    }
+
+    .open .menu {
+      left: 0;
+      opacity: 1;
+      @include transition($slowly);
+    }
+
+    .menu:hover {
+      overflow-y: auto;
+    }
+
+  }
+
 html, body {
   width: 100%;
   height: 100%;
@@ -1150,24 +1319,24 @@ html, body {
       margin: 0 auto;
       justify-content: center;
       max-width: 400px; }
-  .donde-ul, .separator-menu, .separator-lang, .dis-item {
+   .separator-menu, .separator-lang, .dis-item {
     display: none !important; }
-  .menu-mobile, .separator-tiny {
+  .separator-tiny {
     display: block !important; }
   .separator-tiny {
-    margin-bottom: 4px;
+    margin-bottom: 14px;
     margin-top: -2px; }
   .menu-list {
     margin-top: 0px !important;
     margin-right: 0px !important;
     margin-left: 0px !important;
-    width: 141px !important; }
+    width: 210px !important; }
     .menu-list .menu-title {
-      font-size: 15px !important;
+      font-size: 18px !important;
       line-height: 33px !important;
       margin-bottom: 0px !important; }
     .menu-list a {
-      font-size: 15px !important;
+      font-size: 16px !important;
       line-height: 20px !important; }
   .menu-list:nth-of-type(1) {
     order: 3; }

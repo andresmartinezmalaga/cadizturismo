@@ -1,7 +1,16 @@
 
-$("#modal-exp").iziModal();
-$("#modal-success").iziModal();
+jQuery(function($)
+{
+    $(".hamburger").click(function()
+    {
+        $(".navigation").toggleClass("open");
+    })
+});
 
+$(".menu-title").click(function(){
+  console.log('hola caracola');
+  $(this).siblings('.menu-ul').toggleClass('open-menu-mobile');
+});
 
 $(".normal").click(function(){
   $(".elements").slideToggle(function() {
@@ -62,3 +71,7 @@ $("span.download").click(function(){
            $('.days-container').removeClass('downwards');
            $('.days-container').removeClass('upwards');
    });
+
+
+   $("#modal-exp").iziModal();
+   $("#modal-success").iziModal();
