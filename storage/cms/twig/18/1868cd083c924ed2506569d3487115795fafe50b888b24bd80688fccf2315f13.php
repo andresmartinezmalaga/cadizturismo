@@ -56,12 +56,6 @@ class __TwigTemplate_7104d5b3b804faa433fce85753f92f1f12fa201237eaee899a345480595
         </div>
       </div>
     </div>
-    <!-- <div class=\"\">
-        <p class=\"\">&copy;";
-        // line 24
-        echo twig_escape_filter($this->env, twig_date_format_filter($this->env, "now", "Y"), "html", null, true);
-        echo " Doctor Jekyll.</p>
-    </div> -->
 </footer>";
     }
 
@@ -77,7 +71,7 @@ class __TwigTemplate_7104d5b3b804faa433fce85753f92f1f12fa201237eaee899a345480595
 
     public function getDebugInfo()
     {
-        return array (  62 => 24,  54 => 19,  50 => 18,  46 => 17,  42 => 16,  37 => 14,  24 => 4,  19 => 1,);
+        return array (  54 => 19,  50 => 18,  46 => 17,  42 => 16,  37 => 14,  24 => 4,  19 => 1,);
     }
 
     public function getSourceContext()
@@ -104,9 +98,6 @@ class __TwigTemplate_7104d5b3b804faa433fce85753f92f1f12fa201237eaee899a345480595
         </div>
       </div>
     </div>
-    <!-- <div class=\"\">
-        <p class=\"\">&copy;{{ \"now\"|date(\"Y\") }} Doctor Jekyll.</p>
-    </div> -->
 </footer>", "/Users/jekyll/Desktop/workspace/cadizturismo/themes/default/partials/site/footer.htm", "");
     }
 }

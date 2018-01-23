@@ -5073,6 +5073,9 @@ div[data-control="media-manager"] .list-container table.table.data tbody tr:not(
 .control-filelist.menu-list li.active > a:before {
   background-position: 0 -60px !important; }
 
+.control-treeview ol > li.active > div:before {
+  background-position: 0 -80px !important; }
+
 .control-scrollbar.vertical > .scrollbar-scrollbar {
   margin-right: 0px !important; }
 
