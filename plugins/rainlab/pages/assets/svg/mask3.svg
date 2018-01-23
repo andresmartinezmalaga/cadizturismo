@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="830px" viewBox="0 0 1440 830" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Combined Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Municipio" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(0.000000, -1908.000000)">
+        <g id="Group-11" transform="translate(-992.000000, 1892.000000)" fill="#775A5A">
+            <path d="M989.465837,88 C1000.49823,41.7061061 1172.15415,16 1760,16 C2347.84585,16 2459.25285,41.7061061 2466.17268,88 L2467,88 L2467,756 L2465.61965,756 C2465.62308,756.166559 2465.625,756.333226 2465.625,756.5 C2465.625,805.929485 2296.97946,846 1687.57425,846 C1078.16903,846 989.203125,805.929485 989.203125,756.5 C989.203125,756.333226 989.204138,756.166559 989.20618,756 L988,756 L988,88 L989.465837,88 Z" id="Combined-Shape"></path>
+        </g>
+    </g>
+</svg>

@@ -82,19 +82,26 @@ class __TwigTemplate_b3f4fd9f50c9836bc0f8b39eabf102b19af0fb0f6fe6831ddead4b15224
         </div>
     </div>
 
+    ";
+        // line 37
+        $context['__cms_partial_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("site/footer"        , $context['__cms_partial_params']        , true        );
+        unset($context['__cms_partial_params']);
+        // line 38
+        echo "
     <!-- SCRIPTS -->
     <script type=\"text/javascript\" src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js\"></script>
     <script src=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.full.min.js\"></script>
     <script type=\"text/javascript\" src=\"";
-        // line 40
+        // line 42
         echo url("/");
         echo "/plugins/rainlab/pages/assets/js/script-select2.js\"></script>
 
     <script type=\"text/javascript\" src=\"";
-        // line 42
+        // line 44
         echo url("/");
         echo "/plugins/rainlab/pages/assets/js/style.js\"></script>
-   
+
   </body>
 </html>";
     }
@@ -111,7 +118,7 @@ class __TwigTemplate_b3f4fd9f50c9836bc0f8b39eabf102b19af0fb0f6fe6831ddead4b15224
 
     public function getDebugInfo()
     {
-        return array (  95 => 42,  90 => 40,  75 => 30,  71 => 29,  65 => 25,  61 => 24,  58 => 23,  54 => 22,  42 => 13,  38 => 12,  34 => 11,  30 => 10,  19 => 1,);
+        return array (  102 => 44,  97 => 42,  91 => 38,  87 => 37,  75 => 30,  71 => 29,  65 => 25,  61 => 24,  58 => 23,  54 => 22,  42 => 13,  38 => 12,  34 => 11,  30 => 10,  19 => 1,);
     }
 
     public function getSourceContext()
@@ -152,13 +159,15 @@ class __TwigTemplate_b3f4fd9f50c9836bc0f8b39eabf102b19af0fb0f6fe6831ddead4b15224
         </div>
     </div>
 
+    {% partial 'site/footer' %}
+
     <!-- SCRIPTS -->
     <script type=\"text/javascript\" src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js\"></script>
     <script src=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.full.min.js\"></script>
     <script type=\"text/javascript\" src=\"{{url('/')}}/plugins/rainlab/pages/assets/js/script-select2.js\"></script>
 
     <script type=\"text/javascript\" src=\"{{url('/')}}/plugins/rainlab/pages/assets/js/style.js\"></script>
-   
+
   </body>
 </html>", "/Users/jekyll/Desktop/workspace/cadizturismo/themes/default/layouts/default.htm", "");
     }

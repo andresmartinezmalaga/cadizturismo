@@ -44,7 +44,7 @@ class __TwigTemplate_a149fd00049e356d6e09ca5e80008af98fe715bc4e240279792f1661879
         unset($context['__cms_partial_params']);
         // line 14
         echo "        </div>
-        
+
         <div class=\"header-comment\">
           <p class=\"comment\">";
         // line 17
@@ -269,7 +269,7 @@ class __TwigTemplate_a149fd00049e356d6e09ca5e80008af98fe715bc4e240279792f1661879
         <div id='prtlSearch'>
           {% partial \"site/search\" %}
         </div>
-        
+
         <div class=\"header-comment\">
           <p class=\"comment\">{{ translationPage[2] }}</p>
           <a class=\"header-link\" href=\"{{lang}}/playas\">{{ translationPage[3] }} &nbsp;<img src=\"{{url('/')}}/plugins/rainlab/pages/assets/svg/link-arrow.svg\" alt=\"\"> </a>

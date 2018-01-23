@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 1516803131a:1:{i:0;O:8:"stdClass":3:{s:2:"id";i:1;s:4:"item";s:22:"backend_brand_settings";s:5:"value";s:185:"{"app_name":"October CMS","app_tagline":"Volviendo a lo b\u00e1sico","primary_color":"#175da3","secondary_color":"#0c5095","accent_color":"#ffffff","menu_mode":"inline","custom_css":""}";}}
+=======
+1516806433a:1:{i:0;O:8:"stdClass":3:{s:2:"id";i:1;s:4:"item";s:22:"backend_brand_settings";s:5:"value";s:185:"{"app_name":"October CMS","app_tagline":"Volviendo a lo b\u00e1sico","primary_color":"#175da3","secondary_color":"#0c5095","accent_color":"#ffffff","menu_mode":"inline","custom_css":""}";}}
+>>>>>>> b12d657c768298b9da601e53aaeb198cdf763fd4

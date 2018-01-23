@@ -1379,6 +1379,14 @@ nav#layout-mainmenu.navbar-mode-inline ul.mainmenu-nav li:first-child {
   padding: .143px .429px .214px .386px !important;
 }
 
+.control-treeview ol > li.has-subitems.active > div {
+  border: none !important;
+}
+
+.control-treeview ol > li.active > div {
+  border-bottom: none !important;
+}
+
 /* ICONS CHANGE */
 .btn-default.oc-icon-plus {
   background-color: #818181 !important;
@@ -1535,6 +1543,10 @@ div[data-control="media-manager"] .list-container table.table.data tbody tr:not(
 
 .control-filelist.menu-list li.active > a:before {
   background-position: 0 -60px !important;
+}
+
+.control-treeview ol > li.active > div:before {
+  background-position: 0 -80px !important;
 }
 
 .control-scrollbar.vertical > .scrollbar-scrollbar {

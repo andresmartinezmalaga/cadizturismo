@@ -21,7 +21,7 @@
     top: 73px; }
     .whats-on .left-txt .title {
       color: #4A4A4A;
-      font-family: 'AvenirNext-DemiBold';
+      font-family: 'AvenirNext-DemiBold', sans-serif;
       font-size: 64px;
       line-height: 65px;
       text-transform: uppercase;
@@ -44,7 +44,7 @@
         text-transform: uppercase;
         margin-bottom: -7px; }
       .whats-on .left-txt .event .event-name {
-        font-family: 'AvenirNext-DemiBold';
+        font-family: 'AvenirNext-DemiBold', sans-serif;
         color: #4A4A4A;
         font-size: 23px;
         line-height: 33px;
@@ -98,7 +98,7 @@
         .whats-on .right-photos .element .txt-container .name {
           font-size: 39px;
           color: white;
-          font-family: 'AvenirNext-DemiBold';
+          font-family: 'AvenirNext-DemiBold', sans-serif;
           line-height: 48px;
           max-width: 300px;
           text-transform: uppercase; }
@@ -175,7 +175,7 @@
     .secret-routes .txt-container .title {
       color: white;
       font-size: 94px;
-      font-family: 'AvenirNext-DemiBold';
+      font-family: 'AvenirNext-DemiBold', sans-serif;
       line-height: 90px;
       text-transform: uppercase;
       margin-bottom: 20px; }

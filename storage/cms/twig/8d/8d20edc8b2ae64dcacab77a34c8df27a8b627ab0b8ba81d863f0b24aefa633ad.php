@@ -85,26 +85,33 @@ class __TwigTemplate_426fa5756750075b968b2feea87501ca2253f596d5d1d668766d8b120b4
         </div>
     </div>
 
+      ";
+        // line 39
+        $context['__cms_partial_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("site/footer"        , $context['__cms_partial_params']        , true        );
+        unset($context['__cms_partial_params']);
+        // line 40
+        echo "
     <!-- SCRIPTS -->
     <script type=\"text/javascript\" src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js\"></script>
     <script src=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.full.min.js\"></script>
     <script type=\"text/javascript\" src=\"";
-        // line 42
+        // line 44
         echo url("/");
         echo "/plugins/rainlab/pages/assets/js/script-select2.js\"></script>
 
     <script type=\"text/javascript\" src=\"";
-        // line 44
+        // line 46
         echo url("/");
         echo "/plugins/rainlab/pages/assets/js/style.js\"></script>
-   
+
 
     ";
-        // line 47
+        // line 49
         echo '<script src="'. Request::getBasePath()
                 .'/modules/system/assets/js/framework.js"></script>'.PHP_EOL;
-        // line 48
-        echo "   
+        // line 50
+        echo "
   </body>
 </html>";
     }
@@ -121,7 +128,7 @@ class __TwigTemplate_426fa5756750075b968b2feea87501ca2253f596d5d1d668766d8b120b4
 
     public function getDebugInfo()
     {
-        return array (  107 => 48,  104 => 47,  98 => 44,  93 => 42,  78 => 32,  73 => 29,  71 => 28,  66 => 25,  62 => 24,  50 => 15,  46 => 14,  42 => 13,  38 => 12,  34 => 11,  30 => 10,  19 => 1,);
+        return array (  114 => 50,  111 => 49,  105 => 46,  100 => 44,  94 => 40,  90 => 39,  78 => 32,  73 => 29,  71 => 28,  66 => 25,  62 => 24,  50 => 15,  46 => 14,  42 => 13,  38 => 12,  34 => 11,  30 => 10,  19 => 1,);
     }
 
     public function getSourceContext()
@@ -164,16 +171,18 @@ class __TwigTemplate_426fa5756750075b968b2feea87501ca2253f596d5d1d668766d8b120b4
         </div>
     </div>
 
+      {% partial 'site/footer' %}
+
     <!-- SCRIPTS -->
     <script type=\"text/javascript\" src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js\"></script>
     <script src=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.full.min.js\"></script>
     <script type=\"text/javascript\" src=\"{{url('/')}}/plugins/rainlab/pages/assets/js/script-select2.js\"></script>
 
     <script type=\"text/javascript\" src=\"{{url('/')}}/plugins/rainlab/pages/assets/js/style.js\"></script>
-   
+
 
     {% framework %}
-   
+
   </body>
 </html>", "/Users/jekyll/Desktop/workspace/cadizturismo/themes/default/layouts/dinamic.htm", "");
     }
