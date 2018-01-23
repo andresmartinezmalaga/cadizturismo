@@ -4,8 +4,9 @@ jQuery(function($)
     $(".hamburger").click(function() {
         $(".navigation").toggleClass("open");
     });
-    $(".languages").click(function(e) {
-        $(this).toggleClass("show-lang");
+    $(".active-lang").click(function(e) {
+        $('.languages').toggleClass("show-lang");
+        e.preventDefault();
     });
 });
 

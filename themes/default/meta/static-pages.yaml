@@ -26,9 +26,7 @@ static-pages:
         playas-dos: {  }
         playas-seis: {  }
         playas-16: {  }
-<<<<<<< HEAD
         playas-marina: {  }
-=======
         playas-los-lances: {  }
         playas-atlanterra-zahara-de-los-atunes-y-cabo-de-la-playa: {  }
         playas-bolonia: {  }
@@ -36,7 +34,6 @@ static-pages:
         playas-los-alemanes: {  }
         playas-playa-chica: {  }
         playas-valdavaqueros: {  }
->>>>>>> 1fbd397fefdac2278ae8ad618d30873ace0347ce
     naturaleza:
         naturaleza-via-verde: {  }
         naturaleza-birdwatching: {  }

@@ -3062,7 +3062,7 @@ body.mainmenu-open {
   font-size: 13px;
   padding: 6px 16px; }
 
-/* Andrés Martínez  main menu background color*/
+/* Andrés Martínez : main menu background color*/
 nav#layout-mainmenu {
   background-color: #175da3;
   padding: 0 0 0 20px;
@@ -3606,7 +3606,7 @@ nav#layout-mainmenu.navbar ul li:hover, .mainmenu-collapsed li:hover {
 body.drag nav#layout-mainmenu.navbar ul.nav li:hover, body.drag .mainmenu-collapsed ul li:hover {
   color: rgba(255, 255, 255, 0.6); }
 
-/*Andrés Marténez ->background sidenav */
+/*Andrés Martínez : background sidenav */
 .bg-p {
   background-color: #175da3; }
 
@@ -5145,6 +5145,11 @@ table.name-value-list > a:hover, table.name-value-list > a:focus, table.name-val
   color: #175DA3;
   text-decoration: none;
   outline: none; }
+
+.help-block.before-field {
+  font-size: 11px; }
+  .help-block.before-field img {
+    margin-right: 10px; }
 
 #MediaManager-manager-filters ~ .sidebar-group .select2-container--default .select2-selection--single {
   background-color: #F6F6F6 !important;

@@ -344,7 +344,12 @@
     display: -webkit-flex;
     display: flex;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    color: rgba(106, 106, 106, 0.23);
+    font-family: Ryssa;
+    font-size: 384px;
+    transform: rotate(-9deg);
+    text-align: center; }
     .section-txt .big-number-container .step {
       color: rgba(106, 106, 106, 0.23);
       font-family: Ryssa;
