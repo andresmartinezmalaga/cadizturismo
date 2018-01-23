@@ -34,12 +34,11 @@
         this.$dropdown     = $('ul.ml-dropdown-menu', this.$el)
         this.$placeholder  = $(this.options.placeholderField)
         
-        // Andrés Martínez : add template to multilingual markups
-        // take template form markup es
-        templatePre =  $('.tab-pane.layout-cell.active .fr-wrapper.fr-view', this.$el).html();
-
+        // Andrés Martínez : add template to multilingual markups & take template form markup es
+        var templatePre = $(element).find('textarea').text();
+     
         this.$dropdown.on('click', '[data-switch-locale]', function(event){
-      
+
             var selectedLocale = $(this).data('switch-locale')
             self.setLocale(selectedLocale)
 
@@ -50,15 +49,12 @@
                 $('[data-switch-locale="'+selectedLocale+'"]').click()
             }
 
-            // Andrés Martínez
-            // add template to multilingual markups
-            // insert template at markups when empty
-            var $editor = $('.fr-wrapper .fr-view', this.$el);
-            if($editor.html()=='<p><br></p>' || $editor.html()=='<p></p>' || $editor.html()==''){
-                $editor.html(templatePre);
+            // Andrés Martínez :  add template to multilingual markups & insert template at markups when empty
+            var editor = $(element).find('.fr-wrapper .fr-view') 
+            if(editor.html()=='<p><br></p>' || editor.html()=='<p></p>' || editor.html()==''){
+                $(editor).html(templatePre)
             }
-            
-         })
+        })
 
         this.$placeholder.on('input', function(){
             self.$activeField.val(this.value)
