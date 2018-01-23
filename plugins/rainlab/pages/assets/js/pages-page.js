@@ -166,6 +166,9 @@
      * Triggered when a tab is displayed. Updated the current selection in the sidebar and sets focus on an editor.
      */
     PagesPage.prototype.onTabShown = function(e) {
+        
+    
+
         var $tabControl = $(e.target).closest('[data-control=tab]')
 
         if ($tabControl.attr('id') == 'pages-master-tabs') {
