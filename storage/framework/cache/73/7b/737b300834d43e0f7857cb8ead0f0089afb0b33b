@@ -1,0 +1,395 @@
+1516644310a:1:{s:15:"site/header.htm";a:6:{s:8:"fileName";s:15:"site/header.htm";s:7:"content";s:9581:"==
+
+<?php
+
+    function onStart()
+    {
+        if($this['lang'] == 'es'){
+            $this['menulang'] = 'nombrees';
+            $this['allEvents'] = 'Todos los eventos';
+            $this['whereToGo'] = 'Dónde ir';
+            $this['whatToDo'] = 'Qué hacer';
+            $this['whatToLive'] = 'Qué vivir';
+            $this['myStance'] = 'Mi estancia';
+
+        } elseif ($this['lang'] == 'en') {
+            $this['menulang'] = 'nombreen';
+            $this['allEvents'] = 'All events';
+            $this['whereToGo'] = 'Where to go';
+            $this['whatToDo'] = 'What to do';
+            $this['whatToLive'] = 'What to live';
+            $this['myStance'] = 'My stance';
+
+        } elseif ($this['lang'] == 'fr') {
+            $this['menulang'] = 'nombrefr';
+            $this['allEvents'] = 'Todos los eventos';
+            $this['whereToGo'] = 'Dónde ir';
+            $this['whatToDo'] = 'Qué hacer';
+            $this['whatToLive'] = 'Qué vivir';
+            $this['myStance'] = 'Mi estancia';
+
+        } elseif ($this['lang'] == 'de') {
+            $this['menulang'] = 'nombrede';
+            $this['allEvents'] = 'Todos los eventos';
+            $this['whereToGo'] = 'Dónde ir';
+            $this['whatToDo'] = 'Qué hacer';
+            $this['whatToLive'] = 'Qué vivir';
+            $this['myStance'] = 'Mi estancia';
+
+        } elseif ($this['lang'] == 'ru') {
+            $this['menulang'] = 'nombreru';
+            $this['allEvents'] = 'Todos los eventos';
+            $this['whereToGo'] = 'Dónde ir';
+            $this['whatToDo'] = 'Qué hacer';
+            $this['whatToLive'] = 'Qué vivir';
+            $this['myStance'] = 'Mi estancia';
+
+        }
+    }
+
+?>
+
+==
+<!-- MENU-->
+    <div class="slidemenu">
+      <div class="elements">
+        <div class="logo-container">
+          <a href="{{url('/')}}/{{lang}}"><img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/cadiz-menu.svg" alt=""></a>
+        </div>
+        <div class="menus">
+          <div class="menu-list">
+            <p class="menu-title">{{ whereToGo }}</p>
+            <img class="separator separator-menu" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
+            <img class="separator-tiny" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg">
+            <ul class="menu-ul donde-ul">
+              {% for item in staticMenu.menuItems %}
+                {% if item.viewBag[menulang] == '' %}
+                {% set menulang = 'nombrees' %}
+                {% endif %}
+                <li class="menu-item"><a href="{{ item.url }}">{{ item.viewBag[menulang] }}</a></li>
+              {% endfor %}
+            </ul>
+            <ul class="menu-mobile">
+              <li class="menu-item"><a href="{{url('/')}}/{{lang}}/comarcas">{{'Comarcas'|_}}</a></li>
+              <li class="menu-item"><a href="{{url('/')}}/{{lang}}/municipios">{{'Municipios'|_}}</a></li>
+            </ul>
+          </div>
+          <div class="menu-list">
+            <p class="menu-title">{{ whatToDo }}</p>
+            <img class="separator separator-menu" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
+            <img class="separator-tiny" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg">
+            <ul class="menu-ul">
+              {% for item in staticMenu4.menuItems %}
+                {% if item.viewBag[menulang] == '' %}
+                {% set menulang = 'nombrees' %}
+                {% endif %}
+                <li class="menu-item"><a href="{{ item.url }}">{{ item.viewBag[menulang] }}</a></li>
+              {% endfor %}
+            </ul>
+          </div>
+          <div class="menu-list">
+            <p class="menu-title">{{ whatToLive }}</p>
+            <img class="separator separator-menu" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
+            <img class="separator-tiny" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg">
+            <ul class="menu-ul">
+              {% for item in staticMenu2.menuItems %}
+                {% if item.viewBag[menulang] == '' %}
+                {% set menulang = 'nombrees' %}
+                {% endif %}
+                <li class="menu-item"><a href="{{ item.url }}">{{ item.viewBag[menulang] }}</a></li>
+              {% endfor %}
+                <li class="menu-item"><a href="/eventos">{{ allEvents }}</a></li>
+            </ul>
+          </div>
+          <div class="menu-list">
+            <p class="menu-title">{{ myStance }}</p>
+            <img class="separator separator-menu" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
+            <img class="separator-tiny" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg">
+            <ul class="menu-ul">
+              {% for item in staticMenu3.menuItems %}
+                {% if item.viewBag[menulang] == '' %}
+                {% set menulang = 'nombrees' %}
+                {% endif %}
+                <li class="menu-item"><a href="{{ item.url }}">{{ item.viewBag[menulang] }}</a></li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="border">
+        <label class="mobile-toggle" for="nav-toggle">
+          <div class="top-bar"></div>
+          <div class="middle-bar"></div>
+          <div class="bottom-bar"></div>
+        </label>
+        <img class="normal" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/top-menu.svg">
+        <img class="mobile" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/top-mobile.svg">
+      </div>
+    </div>
+
+    <div class="mini-logo-container">
+      <a href="{{url('/')}}/{{lang}}"><img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/mini-logo.svg"></a>
+    </div>
+    <div class="language-container">
+      <p class="languages"> <a href="{{url('/')}}/en{{this.page.url}}" class="lang">EN</a> <a class="separator separator-lang"> · </a><a href="{{url('/')}}/es{{this.page.url}}" class="lang-es">ES</a> <a class="separator separator-lang"> · </a> <a href="{{url('/')}}/fr{{this.page.url}}" class="lang">FR</a> <a class="separator separator-lang"> · </a><a href="{{url('/')}}/de{{this.page.url}}" class="lang">DE</a> <a class="separator separator-lang"> · </a> <a href="{{url('/')}}/ru{{this.page.url}}" class="lang">RU</a></p>
+    </div>
+
+<!-- MENÚ MOBILE -->
+<nav class="navigation">
+    <div class="hamburger">
+      <span class="bars"></span>
+    </div>
+    <div class="menu">
+      <div class="logo-container">
+        <a href="{{url('/')}}/{{lang}}"><img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/cadiz-menu.svg" alt=""></a>
+      </div>
+      <div class="menus">
+        <div class="menu-list">
+          <p class="menu-title">{{ whereToGo }}</p>
+          <img class="separator separator-menu" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
+          <img class="separator-tiny" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg">
+          <ul class="menu-ul donde-ul where-ul">
+            {% for item in staticMenu.menuItems %}
+              {% if item.viewBag[menulang] == '' %}
+              {% set menulang = 'nombrees' %}
+              {% endif %}
+              <li class="menu-item"><a href="{{ item.url }}">{{ item.viewBag[menulang] }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="menu-list">
+          <p class="menu-title">{{ whatToDo }}</p>
+          <img class="separator separator-menu" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
+          <img class="separator-tiny" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg">
+          <ul class="menu-ul do-ul">
+            {% for item in staticMenu4.menuItems %}
+              {% if item.viewBag[menulang] == '' %}
+              {% set menulang = 'nombrees' %}
+              {% endif %}
+              <li class="menu-item"><a href="{{ item.url }}">{{ item.viewBag[menulang] }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="menu-list">
+          <p class="menu-title">{{ whatToLive }}</p>
+          <img class="separator separator-menu" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
+          <img class="separator-tiny" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg">
+          <ul class="menu-ul live-ul">
+            {% for item in staticMenu2.menuItems %}
+              {% if item.viewBag[menulang] == '' %}
+              {% set menulang = 'nombrees' %}
+              {% endif %}
+              <li class="menu-item"><a href="{{ item.url }}">{{ item.viewBag[menulang] }}</a></li>
+            {% endfor %}
+              <li class="menu-item"><a href="/eventos">{{ allEvents }}</a></li>
+          </ul>
+        </div>
+        <div class="menu-list">
+          <p class="menu-title">{{ myStance }}</p>
+          <img class="separator separator-menu" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
+          <img class="separator-tiny" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg">
+          <ul class="menu-ul stance-ul">
+            {% for item in staticMenu3.menuItems %}
+              {% if item.viewBag[menulang] == '' %}
+              {% set menulang = 'nombrees' %}
+              {% endif %}
+              <li class="menu-item"><a href="{{ item.url }}">{{ item.viewBag[menulang] }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+";s:5:"mtime";i:1516642262;s:6:"markup";s:7884:"<!-- MENU-->
+    <div class="slidemenu">
+      <div class="elements">
+        <div class="logo-container">
+          <a href="{{url('/')}}/{{lang}}"><img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/cadiz-menu.svg" alt=""></a>
+        </div>
+        <div class="menus">
+          <div class="menu-list">
+            <p class="menu-title">{{ whereToGo }}</p>
+            <img class="separator separator-menu" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
+            <img class="separator-tiny" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg">
+            <ul class="menu-ul donde-ul">
+              {% for item in staticMenu.menuItems %}
+                {% if item.viewBag[menulang] == '' %}
+                {% set menulang = 'nombrees' %}
+                {% endif %}
+                <li class="menu-item"><a href="{{ item.url }}">{{ item.viewBag[menulang] }}</a></li>
+              {% endfor %}
+            </ul>
+            <ul class="menu-mobile">
+              <li class="menu-item"><a href="{{url('/')}}/{{lang}}/comarcas">{{'Comarcas'|_}}</a></li>
+              <li class="menu-item"><a href="{{url('/')}}/{{lang}}/municipios">{{'Municipios'|_}}</a></li>
+            </ul>
+          </div>
+          <div class="menu-list">
+            <p class="menu-title">{{ whatToDo }}</p>
+            <img class="separator separator-menu" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
+            <img class="separator-tiny" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg">
+            <ul class="menu-ul">
+              {% for item in staticMenu4.menuItems %}
+                {% if item.viewBag[menulang] == '' %}
+                {% set menulang = 'nombrees' %}
+                {% endif %}
+                <li class="menu-item"><a href="{{ item.url }}">{{ item.viewBag[menulang] }}</a></li>
+              {% endfor %}
+            </ul>
+          </div>
+          <div class="menu-list">
+            <p class="menu-title">{{ whatToLive }}</p>
+            <img class="separator separator-menu" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
+            <img class="separator-tiny" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg">
+            <ul class="menu-ul">
+              {% for item in staticMenu2.menuItems %}
+                {% if item.viewBag[menulang] == '' %}
+                {% set menulang = 'nombrees' %}
+                {% endif %}
+                <li class="menu-item"><a href="{{ item.url }}">{{ item.viewBag[menulang] }}</a></li>
+              {% endfor %}
+                <li class="menu-item"><a href="/eventos">{{ allEvents }}</a></li>
+            </ul>
+          </div>
+          <div class="menu-list">
+            <p class="menu-title">{{ myStance }}</p>
+            <img class="separator separator-menu" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
+            <img class="separator-tiny" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg">
+            <ul class="menu-ul">
+              {% for item in staticMenu3.menuItems %}
+                {% if item.viewBag[menulang] == '' %}
+                {% set menulang = 'nombrees' %}
+                {% endif %}
+                <li class="menu-item"><a href="{{ item.url }}">{{ item.viewBag[menulang] }}</a></li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="border">
+        <label class="mobile-toggle" for="nav-toggle">
+          <div class="top-bar"></div>
+          <div class="middle-bar"></div>
+          <div class="bottom-bar"></div>
+        </label>
+        <img class="normal" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/top-menu.svg">
+        <img class="mobile" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/top-mobile.svg">
+      </div>
+    </div>
+
+    <div class="mini-logo-container">
+      <a href="{{url('/')}}/{{lang}}"><img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/mini-logo.svg"></a>
+    </div>
+    <div class="language-container">
+      <p class="languages"> <a href="{{url('/')}}/en{{this.page.url}}" class="lang">EN</a> <a class="separator separator-lang"> · </a><a href="{{url('/')}}/es{{this.page.url}}" class="lang-es">ES</a> <a class="separator separator-lang"> · </a> <a href="{{url('/')}}/fr{{this.page.url}}" class="lang">FR</a> <a class="separator separator-lang"> · </a><a href="{{url('/')}}/de{{this.page.url}}" class="lang">DE</a> <a class="separator separator-lang"> · </a> <a href="{{url('/')}}/ru{{this.page.url}}" class="lang">RU</a></p>
+    </div>
+
+<!-- MENÚ MOBILE -->
+<nav class="navigation">
+    <div class="hamburger">
+      <span class="bars"></span>
+    </div>
+    <div class="menu">
+      <div class="logo-container">
+        <a href="{{url('/')}}/{{lang}}"><img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/cadiz-menu.svg" alt=""></a>
+      </div>
+      <div class="menus">
+        <div class="menu-list">
+          <p class="menu-title">{{ whereToGo }}</p>
+          <img class="separator separator-menu" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
+          <img class="separator-tiny" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg">
+          <ul class="menu-ul donde-ul where-ul">
+            {% for item in staticMenu.menuItems %}
+              {% if item.viewBag[menulang] == '' %}
+              {% set menulang = 'nombrees' %}
+              {% endif %}
+              <li class="menu-item"><a href="{{ item.url }}">{{ item.viewBag[menulang] }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="menu-list">
+          <p class="menu-title">{{ whatToDo }}</p>
+          <img class="separator separator-menu" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
+          <img class="separator-tiny" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg">
+          <ul class="menu-ul do-ul">
+            {% for item in staticMenu4.menuItems %}
+              {% if item.viewBag[menulang] == '' %}
+              {% set menulang = 'nombrees' %}
+              {% endif %}
+              <li class="menu-item"><a href="{{ item.url }}">{{ item.viewBag[menulang] }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="menu-list">
+          <p class="menu-title">{{ whatToLive }}</p>
+          <img class="separator separator-menu" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
+          <img class="separator-tiny" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg">
+          <ul class="menu-ul live-ul">
+            {% for item in staticMenu2.menuItems %}
+              {% if item.viewBag[menulang] == '' %}
+              {% set menulang = 'nombrees' %}
+              {% endif %}
+              <li class="menu-item"><a href="{{ item.url }}">{{ item.viewBag[menulang] }}</a></li>
+            {% endfor %}
+              <li class="menu-item"><a href="/eventos">{{ allEvents }}</a></li>
+          </ul>
+        </div>
+        <div class="menu-list">
+          <p class="menu-title">{{ myStance }}</p>
+          <img class="separator separator-menu" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
+          <img class="separator-tiny" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg">
+          <ul class="menu-ul stance-ul">
+            {% for item in staticMenu3.menuItems %}
+              {% if item.viewBag[menulang] == '' %}
+              {% set menulang = 'nombrees' %}
+              {% endif %}
+              <li class="menu-item"><a href="{{ item.url }}">{{ item.viewBag[menulang] }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>";s:4:"code";s:1676:"    function onStart()
+    {
+        if($this['lang'] == 'es'){
+            $this['menulang'] = 'nombrees';
+            $this['allEvents'] = 'Todos los eventos';
+            $this['whereToGo'] = 'Dónde ir';
+            $this['whatToDo'] = 'Qué hacer';
+            $this['whatToLive'] = 'Qué vivir';
+            $this['myStance'] = 'Mi estancia';
+
+        } elseif ($this['lang'] == 'en') {
+            $this['menulang'] = 'nombreen';
+            $this['allEvents'] = 'All events';
+            $this['whereToGo'] = 'Where to go';
+            $this['whatToDo'] = 'What to do';
+            $this['whatToLive'] = 'What to live';
+            $this['myStance'] = 'My stance';
+
+        } elseif ($this['lang'] == 'fr') {
+            $this['menulang'] = 'nombrefr';
+            $this['allEvents'] = 'Todos los eventos';
+            $this['whereToGo'] = 'Dónde ir';
+            $this['whatToDo'] = 'Qué hacer';
+            $this['whatToLive'] = 'Qué vivir';
+            $this['myStance'] = 'Mi estancia';
+
+        } elseif ($this['lang'] == 'de') {
+            $this['menulang'] = 'nombrede';
+            $this['allEvents'] = 'Todos los eventos';
+            $this['whereToGo'] = 'Dónde ir';
+            $this['whatToDo'] = 'Qué hacer';
+            $this['whatToLive'] = 'Qué vivir';
+            $this['myStance'] = 'Mi estancia';
+
+        } elseif ($this['lang'] == 'ru') {
+            $this['menulang'] = 'nombreru';
+            $this['allEvents'] = 'Todos los eventos';
+            $this['whereToGo'] = 'Dónde ir';
+            $this['whatToDo'] = 'Qué hacer';
+            $this['whatToLive'] = 'Qué vivir';
+            $this['myStance'] = 'Mi estancia';
+
+        }
+    }";s:17:"_PARSER_ERROR_INI";s:0:"";}}

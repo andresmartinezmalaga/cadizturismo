@@ -4794,6 +4794,9 @@ body.outer .layout > .layout-row > .layout-cell .outer-form-container .forgot-pa
 .layout.control-tabs.oc-logo-transparent:not(.has-tabs):after, .flex-layout-column.oc-logo-transparent:not(.has-tabs):after, .layout-cell.oc-logo-transparent:after {
   background: none; }
 
+a:hover, a:focus, a:active, button:hover, button:focus, button:active {
+  outline: none !important; }
+
 /* GENERAL */
 input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0px 1000px white inset !important; }
@@ -4906,8 +4909,8 @@ nav#layout-mainmenu.navbar-mode-inline ul.mainmenu-nav li:first-child {
   color: #818181 !important; }
 
 .control-treeview ol > li.dragged div, .control-treeview ol > li > div:hover {
-  background-color: #175DA3 !important;
-  border-bottom: 1px solid #175DA3 !important; }
+  background-color: #818181 !important;
+  border-bottom: 1px solid #818181 !important; }
 
 .control-treeview ol > li > div > span.drag-handle {
   right: 7.5px !important;
@@ -4916,8 +4919,8 @@ nav#layout-mainmenu.navbar-mode-inline ul.mainmenu-nav li:first-child {
     font-size: 14px !important; }
 
 .control-filelist.filelist-hero ul li > a:active, .control-filelist.filelist-hero ul li > a:hover {
-  background: #175DA3;
-  border-bottom: 1px solid #175DA3; }
+  background: #818181;
+  border-bottom: 1px solid #818181; }
 
 .control-treeview.treeview-light ol > li > div > a {
   padding-top: 20px !important;
@@ -5034,6 +5037,45 @@ nav#layout-mainmenu.navbar-mode-inline ul.mainmenu-nav li:first-child {
   border: none;
   font-size: 11px; }
 
+.control-treeview ol > li > ol > li.active > div:before {
+  background-position: 0px -80px !important; }
+
+.control-treeview ol > li.has-subitems.active > div:before {
+  background-position: 0px -52px !important; }
+
+.control-treeview ol > li.active > div:after, .control-filelist.filelist-hero ul li.active > a:after {
+  content: none !important; }
+
+.item-title {
+  color: #818181; }
+  .item-title .oc-icon-folder:before, .item-title .icon-folder:before {
+    -webkit-filter: contrast(4.7) invert(0.4);
+    -moz-filter: contrast(4.7) invert(0.4);
+    filter: contrast(4.7) invert(0.4); }
+
+table.table.data tbody tr.rowlink:hover td, table.table.data tbody tr:not(.no-data).selected td,
+div[data-control="media-manager"] .list-container table.table.data tbody tr:not(.no-data):active td {
+  background: #F6F6F6 !important;
+  color: #818181 !important; }
+  table.table.data tbody tr.rowlink:hover td .oc-icon-folder:before, table.table.data tbody tr.rowlink:hover td .icon-folder:before, table.table.data tbody tr:not(.no-data).selected td .oc-icon-folder:before, table.table.data tbody tr:not(.no-data).selected td .icon-folder:before,
+  div[data-control="media-manager"] .list-container table.table.data tbody tr:not(.no-data):active td .oc-icon-folder:before,
+  div[data-control="media-manager"] .list-container table.table.data tbody tr:not(.no-data):active td .icon-folder:before {
+    -webkit-filter: contrast(4.7) invert(0.4);
+    -moz-filter: contrast(4.7) invert(0.4);
+    filter: contrast(4.7) invert(0.4); }
+
+.control-filelist.filelist-hero ul li.active > a, .control-treeview ol > li.active > div {
+  background-color: #818181;
+  color: white !important; }
+  .control-filelist.filelist-hero ul li.active > a a, .control-filelist.filelist-hero ul li.active > a span, .control-treeview ol > li.active > div a, .control-treeview ol > li.active > div span {
+    color: white !important; }
+
+.control-filelist.menu-list li.active > a:before {
+  background-position: 0 -60px !important; }
+
+.control-scrollbar.vertical > .scrollbar-scrollbar {
+  margin-right: 0px !important; }
+
 /* MEDIA */
 .control-toolbar.toolbar-padded .toolbar-item .btn-group > .btn, .control-toolbar.toolbar-padded .toolbar-item .btn-group > .dropdown, .control-toolbar.toolbar-padded .toolbar-item .btn-group + .oc-icon-refresh {
   height: 50px;
@@ -5069,6 +5111,11 @@ div.panel h3.section {
 
 .nav.selector-group li a {
   color: #CECECE; }
+
+table.name-value-list > a:hover, table.name-value-list > a:focus, table.name-value-list > a:active {
+  color: #175DA3;
+  text-decoration: none;
+  outline: none; }
 
 #MediaManager-manager-filters ~ .sidebar-group .select2-container--default .select2-selection--single {
   background-color: #F6F6F6 !important;

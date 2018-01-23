@@ -1,0 +1,83 @@
+1516638643a:1:{s:15:"experiences.htm";a:5:{s:8:"fileName";s:15:"experiences.htm";s:7:"content";s:1780:"<div class="search-title-container">
+    <p class="title-search">Hemos encontrado {{experiences|length}} experiencias que se adaptan a ti</p>
+</div>
+
+<div class="all-events-container">
+	
+	{% for experience in experiences %}
+	    {% set interest = experience.viewBag.interest|split('-') %}
+   	
+	    <div class="event">
+	      <div class="overlay-img"></div>
+	      <img class="rec-img" src="{{experience.viewBag.cover}}">
+	      <div class="txt-container">
+	        <p class="name">{{experience.viewBag.title}}</p>
+	        <img class="separator" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/small-yellow-separator.svg">
+	        <div class="icons">
+	          <div class="icon-pair">
+	            <img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/calendar-exp.svg">
+	            <p class="icon-txt">{{experience.viewBag.days}} días</p>
+	          </div>          
+	          <div class="icon-pair">
+	            <img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/{{interest[0]}}.svg">
+	            <p class="icon-txt">{{interest[0]}}</p>
+	          </div>
+	          <div class="icon-pair">
+	            <img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/{{interest[1]}}.svg">
+	            <p class="icon-txt">{{interest[1]}}</p>
+	          </div>
+	          <div class="icon-pair">
+	            <img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/cultura-event.svg">
+	            <p class="icon-txt">{{experience.viewBag.tvisit}}</p>
+	          </div>
+	        </div>
+	        <div class="button-container">
+	          <a class="see-event" href="{{url('/')}}/{{lang}}{{experience.viewBag.url}}">Ver experiencia <img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/link-icon.svg"></a>
+	        </div>
+	      </div>
+	    </div>
+
+	{% endfor %}
+
+</div>";s:5:"mtime";i:1516622283;s:6:"markup";s:1780:"<div class="search-title-container">
+    <p class="title-search">Hemos encontrado {{experiences|length}} experiencias que se adaptan a ti</p>
+</div>
+
+<div class="all-events-container">
+	
+	{% for experience in experiences %}
+	    {% set interest = experience.viewBag.interest|split('-') %}
+   	
+	    <div class="event">
+	      <div class="overlay-img"></div>
+	      <img class="rec-img" src="{{experience.viewBag.cover}}">
+	      <div class="txt-container">
+	        <p class="name">{{experience.viewBag.title}}</p>
+	        <img class="separator" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/small-yellow-separator.svg">
+	        <div class="icons">
+	          <div class="icon-pair">
+	            <img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/calendar-exp.svg">
+	            <p class="icon-txt">{{experience.viewBag.days}} días</p>
+	          </div>          
+	          <div class="icon-pair">
+	            <img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/{{interest[0]}}.svg">
+	            <p class="icon-txt">{{interest[0]}}</p>
+	          </div>
+	          <div class="icon-pair">
+	            <img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/{{interest[1]}}.svg">
+	            <p class="icon-txt">{{interest[1]}}</p>
+	          </div>
+	          <div class="icon-pair">
+	            <img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/cultura-event.svg">
+	            <p class="icon-txt">{{experience.viewBag.tvisit}}</p>
+	          </div>
+	        </div>
+	        <div class="button-container">
+	          <a class="see-event" href="{{url('/')}}/{{lang}}{{experience.viewBag.url}}">Ver experiencia <img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/link-icon.svg"></a>
+	        </div>
+	      </div>
+	    </div>
+
+	{% endfor %}
+
+</div>";s:4:"code";N;}}
