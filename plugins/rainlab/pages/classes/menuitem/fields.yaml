@@ -4,12 +4,14 @@
 
 fields:
 
-    search:
-        type: Rainlab\Pages\FormWidgets\MenuItemSearch
-
     title:
         span: full
         label: rainlab.pages::lang.menuitem.title
+        commentAbove: rainlab.pages::lang.menuitem.title_comment
+
+    #search:
+        #label: rainlab.pages::lang.menuitem.reference
+        #type: Rainlab\Pages\FormWidgets\MenuItemSearch
 
     type:
         span: right
@@ -52,26 +54,31 @@ tabs:
             span: full
             label: 'Nombre'
             tab: Español
+            commentAbove: rainlab.pages::lang.menuitem.namemenu_comment
+           
+        viewBag[nombrede]:
+            span: full
+            label: 'Nombre'
+            tab: Alemán
+            commentAbove: rainlab.pages::lang.menuitem.namemenu_comment
+           
+        viewBag[nombrefr]:
+            span: full
+            label: 'Nombre'
+            tab: Francés
+            commentAbove: rainlab.pages::lang.menuitem.namemenu_comment
 
         viewBag[nombreen]:
             span: full
             label: 'Nombre'
             tab: Inglés
-
-        viewBag[nombrefr]:
-            span: full
-            label: 'Nombre'
-            tab: Francés
-
-        viewBag[nombrede]:
-            span: full
-            label: 'Nombre'
-            tab: Alemán
+            commentAbove: rainlab.pages::lang.menuitem.namemenu_comment
 
         viewBag[nombreru]:
             span: full
             label: 'Nombre'
             tab: Ruso
+            commentAbove: rainlab.pages::lang.menuitem.namemenu_comment
 
         #viewBag[isHidden]:
             #label: Hidden

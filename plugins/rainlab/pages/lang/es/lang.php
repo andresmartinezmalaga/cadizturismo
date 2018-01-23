@@ -81,13 +81,15 @@ return [
         'invalid_code' => 'El formato del código no es válido. Puede contener letras, números y los siguientes símbolos: _ - '
     ],
     'menuitem' => [
-        'title' => 'Título',
+        'title' => 'Nombre Privado',
+        'title_comment' => 'No será visible en la web. es privado y sirve para organizarse.',
+        'namemenu_comment' => 'Aparecerá publicado en la web como destacado y el usuario lo utilizará para navegar a través de esta.',
         'editor_title' => 'Editar elemento del menu',
         'type' => 'Tipo',
         'allow_nested_items' => 'Permitir elementos anidados',
         'allow_nested_items_comment' => 'Los elementos anidados se pueden generar automáticamente mediante las páginas y otros tipos de elementos.',
         'url' => 'URL',
-        'reference' => 'Referencia',
+        'reference' => 'Página',
         'title_required' => 'El título es obligatorio',
         'unknown_type' => 'Este tipo de elemento del menú es desconocido.',
         'unnamed' => 'Elemento del menú sin nombre',

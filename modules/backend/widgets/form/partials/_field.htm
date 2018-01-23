@@ -16,13 +16,13 @@
         <?php endif ?>
 
         <?php if ($field->comment && $field->commentPosition == 'above'): ?>
-            <p class="help-block before-field"><?= $fieldComment ?></p>
+            <p class="help-block before-field"><img src="<?= config('app.assetBackendUrl').'images/info-svg.svg' ?>" alt=""><?= $fieldComment ?></p>
         <?php endif ?>
 
         <?= $this->renderFieldElement($field) ?>
 
         <?php if ($field->comment && $field->commentPosition == 'below'): ?>
-            <p class="help-block"><?= $fieldComment ?></p>
+            <p class="help-block"><img src="<?= config('app.assetBackendUrl').'images/info-svg.svg' ?>" alt=""><?= $fieldComment ?></p>
         <?php endif ?>
 
     <?php endif ?>

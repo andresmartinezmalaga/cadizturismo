@@ -17,6 +17,7 @@
 
                 <input type="hidden" name="template[<?= e($item->getBaseFileName()) ?>]" value="0" />
 
+                <!-- Andrés Martínez : Removing del option to menu items 
                 <div class="checkbox custom-checkbox nolabel">
                     <input
                         id="<?= $cbId ?>"
@@ -26,7 +27,8 @@
                         data-request="<?= $this->getEventHandler('onSelect') ?>"
                         value="1" />
                     <label for="<?= $cbId ?>">Select</label>
-                </div>
+                </div>-->
+
             </li>
         <?php endforeach ?>
     </ul>

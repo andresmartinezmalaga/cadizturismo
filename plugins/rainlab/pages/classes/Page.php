@@ -137,13 +137,22 @@ class Page extends ContentBase
         
     }
 
-     public function getBeachCategoriesOptions(){
+    public function getBeachCategoriesType(){
+        return [
+            'urban' => 'Urban',
+            'virgen' => 'Virgen'
+        ];
+    }
+
+    public function getBeachCategoriesOptions(){
         return [
             'deporte' => 'Deporte',
-            'fiesta' => 'Fiesta',
-            'gastronomía' => 'Gastronomía',
             'naturaleza' => 'Naturaleza',
-            'ruta' => 'Ruta'
+            'animales' => 'Animales',
+            'nudista' => 'Nudista',            
+            'camping' => 'Camping',
+            'restauracion' => 'Restauración',            
+            'instalaciones' => 'instalaciones'
         ];
     }
 

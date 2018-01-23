@@ -1,0 +1,420 @@
+1516727257a:1:{s:8:"home.htm";a:10:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:6912:"title = "home"
+url = "/"
+layout = "dinamic"
+is_hidden = 0
+
+[staticApp]
+
+==
+
+<?php 
+
+	function onStart()
+	{
+    $this['lang']=\App::getLocale();
+		if($this['lang']==''){
+			$this['lang']='es';
+		}
+	 
+    $this['experiences'] = $this->staticApp->experienceList();
+
+    $this['translationPage'] = [      
+      'playas',
+      'que te llenan de luz',
+      '138km de playas, calas y ensenadas que invitan a perderse',
+      'Conoce nuestras playas',
+      'Qué se cuece hoy en Cádiz',
+      'Todos los eventos',
+      'rutas secretas',
+      '¿Eres de emociones fuertes? Disfruta de Cádiz como nunca antes.',
+      'Selección de rutas secretas'
+    ];
+
+    $this['translationSearch'] = [
+      'día',
+      'días',
+      'TU ESTANCIA',
+      'Playa y gastronomía',
+      'Cultura y gastronomía',
+      'Fiesta y cultura',
+      'Gastronomía y naturaleza',
+      'Naturaleza y aventura',
+      'Playa y naturaleza',
+      'Vino y tradición',
+      'Aventura y tradición',
+      'INTERESES',
+      'Cádiz oculta',
+      'Cádiz auténtica',
+      'Cádiz relax',
+      'Cádiz urbano',
+      'TIPO DE VISITA',
+      'Ven a Cádiz'
+    ];
+    
+    if ($this['lang'] == 'en') {
+
+      $this['translationPage'] = [      
+      'beachs',
+      'that fill you with light',
+      '138km of beaches, coves and inlets that invite you to get lost',
+      'Discover our beaches',
+      'What is cooked today in Cádiz',
+      'All events',
+      'secret routes',
+      'Are you strong emotions? Enjoy Cádiz like never before.',
+      'Selection of secret routes'
+    ];
+
+    $this['translationSearch'] = [
+      'day',
+      'days',
+      'YOUR STAY',
+      'Beach and gastronomy',
+      'Culture and gastronomy',
+      'Party and culture',
+      'Gastronomy and nature',
+      'Nature and adventure',
+      'Beach and nature',
+      'Wine and tradition',
+      'Adventure and tradition',
+      'INTERESTS',
+      'Cádiz hidden',
+      'Authentic Cádiz',
+      'Cadiz relax',
+      'Cadiz urban',
+      'TYPE OF VISIT',
+      'Come to Cádiz'
+    ];
+            
+    } elseif ($this['lang'] == 'fr') {
+            
+
+    } elseif ($this['lang'] == 'de') {
+           
+
+    } elseif ($this['lang'] == 'ru') {
+            
+
+    }        
+
+     
+	}
+
+	function onFindExperience(){
+
+		$days = $_POST['days'];
+		$interest = $_POST['interest'];
+		$tvisit = $_POST['tvisit'];
+    	
+      $aLang = App::getLocale();
+
+    	$experiences = $this->staticApp->experienceFind($days,$interest,$tvisit);     
+      return Redirect::to($aLang.'/experiencias')->with( ['data' => json_encode($experiences)] );
+    }
+
+?>
+
+==
+
+	<!-- HEADER -->
+    <div class="header header-home">
+      <div class="header-container">
+        <div class="header-txt">
+          <h1 class="txt txt-home"><span class="first-word">
+           {{ translationPage[0] }}
+            </span>{{ translationPage[1] }}</h1>
+          <img class="brush" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/brush-header.svg" alt="">
+        </div>
+
+        <!-- SEARCH -->
+        <div id='prtlSearch'>
+          {% partial "site/search" %}
+        </div>
+        
+        <div class="header-comment">
+          <p class="comment">{{ translationPage[2] }}</p>
+          <a class="header-link" href="{{lang}}/playas">{{ translationPage[3] }} &nbsp;<img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/link-arrow.svg" alt=""> </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- QUÉ SE CUECE -->
+    <div class="whats-on">
+
+      <div class="left-txt">
+        <p class="title">{{ translationPage[4] }}</p>
+          <img class="separator" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
+
+          {% for iEvent in events %}
+            <div class="event">
+              <p class="event-date">{{iEvent['date_start_pretty']}}</p>
+              <p class="event-place">{{iEvent['place']}}</p>
+              <a href="jornadas-micologicas.html" class="event-name">{{iEvent['title']}}</a>
+            </div>
+          {% endfor %}
+
+            <a class="events-link" href="{{lang}}/eventos">{{ translationPage[5] }}&nbsp;&nbsp;<img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/link-arrow-yellow.svg" alt=""> </a>
+      </div>
+
+
+      <div class="right-photos">
+        <!-- DIRECCIÓN 1º ARRIBA-ABAJO 2º IZQUIERDA-DERECHA -->
+
+        <a href="carreras-caballos.html">
+          <div id="element1" class="element">
+            <div class="overlay-img"></div>
+            <img class="rec-img" src="{{eventsVip[0]['image']}}">
+            <div class="txt-container">
+              <p class="date">{{eventsVip[0]['date_start_pretty']}}</p>
+              <p class="name">{{eventsVip[0]['title']}}</p>
+              <img class="separator" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/small-yellow-separator.svg">
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div id="element2" class="element">
+            <div class="overlay-img"></div>
+            <img class="rec-img" src="{{eventsVip[1]['image']}}">
+            <div class="txt-container">
+              <p class="date">{{eventsVip[1]['date_start_pretty']}}</p>
+              <p class="name">{{eventsVip[1]['title']}}</p>
+              <img class="separator" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/small-yellow-separator.svg">
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div id="element3" class="element">
+            <div class="overlay-img"></div>
+            <img class="rec-img" src="{{eventsVip[2]['image']}}">
+            <div class="txt-container">
+              <p class="date">{{eventsVip[2]['date_start_pretty']}}</p>
+              <p class="name">{{eventsVip[02]['title']}}</p>
+              <img class="separator" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/small-yellow-separator.svg">
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div id="element4" class="element">
+            <div class="overlay-img"></div>
+            <img class="rec-img" src="{{eventsVip[3]['image']}}">
+            <div class="txt-container">
+              <p class="date">{{eventsVip[3]['date_start_pretty']}}</p>
+              <p class="name">{{eventsVip[3]['title']}}</p>
+              <img class="separator" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/small-yellow-separator.svg">
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!--  RUTAS -->
+    <div class="secret-routes">
+      <div class="txt-container">
+        <p class="title">{{ translationPage[6] }}</p>
+        <p class="desc">{{ translationPage[7] }}</p>
+        <a class="events-link" href="{{lang}}/rutas">{{ translationPage[8] }}<img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/link-arrow-yellow.svg" alt=""> </a>
+        <img class="separator" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
+      </div>
+    </div>";s:5:"mtime";i:1516364384;s:6:"markup";s:4306:"<!-- HEADER -->
+    <div class="header header-home">
+      <div class="header-container">
+        <div class="header-txt">
+          <h1 class="txt txt-home"><span class="first-word">
+           {{ translationPage[0] }}
+            </span>{{ translationPage[1] }}</h1>
+          <img class="brush" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/brush-header.svg" alt="">
+        </div>
+
+        <!-- SEARCH -->
+        <div id='prtlSearch'>
+          {% partial "site/search" %}
+        </div>
+        
+        <div class="header-comment">
+          <p class="comment">{{ translationPage[2] }}</p>
+          <a class="header-link" href="{{lang}}/playas">{{ translationPage[3] }} &nbsp;<img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/link-arrow.svg" alt=""> </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- QUÉ SE CUECE -->
+    <div class="whats-on">
+
+      <div class="left-txt">
+        <p class="title">{{ translationPage[4] }}</p>
+          <img class="separator" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
+
+          {% for iEvent in events %}
+            <div class="event">
+              <p class="event-date">{{iEvent['date_start_pretty']}}</p>
+              <p class="event-place">{{iEvent['place']}}</p>
+              <a href="jornadas-micologicas.html" class="event-name">{{iEvent['title']}}</a>
+            </div>
+          {% endfor %}
+
+            <a class="events-link" href="{{lang}}/eventos">{{ translationPage[5] }}&nbsp;&nbsp;<img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/link-arrow-yellow.svg" alt=""> </a>
+      </div>
+
+
+      <div class="right-photos">
+        <!-- DIRECCIÓN 1º ARRIBA-ABAJO 2º IZQUIERDA-DERECHA -->
+
+        <a href="carreras-caballos.html">
+          <div id="element1" class="element">
+            <div class="overlay-img"></div>
+            <img class="rec-img" src="{{eventsVip[0]['image']}}">
+            <div class="txt-container">
+              <p class="date">{{eventsVip[0]['date_start_pretty']}}</p>
+              <p class="name">{{eventsVip[0]['title']}}</p>
+              <img class="separator" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/small-yellow-separator.svg">
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div id="element2" class="element">
+            <div class="overlay-img"></div>
+            <img class="rec-img" src="{{eventsVip[1]['image']}}">
+            <div class="txt-container">
+              <p class="date">{{eventsVip[1]['date_start_pretty']}}</p>
+              <p class="name">{{eventsVip[1]['title']}}</p>
+              <img class="separator" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/small-yellow-separator.svg">
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div id="element3" class="element">
+            <div class="overlay-img"></div>
+            <img class="rec-img" src="{{eventsVip[2]['image']}}">
+            <div class="txt-container">
+              <p class="date">{{eventsVip[2]['date_start_pretty']}}</p>
+              <p class="name">{{eventsVip[02]['title']}}</p>
+              <img class="separator" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/small-yellow-separator.svg">
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div id="element4" class="element">
+            <div class="overlay-img"></div>
+            <img class="rec-img" src="{{eventsVip[3]['image']}}">
+            <div class="txt-container">
+              <p class="date">{{eventsVip[3]['date_start_pretty']}}</p>
+              <p class="name">{{eventsVip[3]['title']}}</p>
+              <img class="separator" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/small-yellow-separator.svg">
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!--  RUTAS -->
+    <div class="secret-routes">
+      <div class="txt-container">
+        <p class="title">{{ translationPage[6] }}</p>
+        <p class="desc">{{ translationPage[7] }}</p>
+        <a class="events-link" href="{{lang}}/rutas">{{ translationPage[8] }}<img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/link-arrow-yellow.svg" alt=""> </a>
+        <img class="separator" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
+      </div>
+    </div>";s:4:"code";s:2514:" 
+
+	function onStart()
+	{
+    $this['lang']=\App::getLocale();
+		if($this['lang']==''){
+			$this['lang']='es';
+		}
+	 
+    $this['experiences'] = $this->staticApp->experienceList();
+
+    $this['translationPage'] = [      
+      'playas',
+      'que te llenan de luz',
+      '138km de playas, calas y ensenadas que invitan a perderse',
+      'Conoce nuestras playas',
+      'Qué se cuece hoy en Cádiz',
+      'Todos los eventos',
+      'rutas secretas',
+      '¿Eres de emociones fuertes? Disfruta de Cádiz como nunca antes.',
+      'Selección de rutas secretas'
+    ];
+
+    $this['translationSearch'] = [
+      'día',
+      'días',
+      'TU ESTANCIA',
+      'Playa y gastronomía',
+      'Cultura y gastronomía',
+      'Fiesta y cultura',
+      'Gastronomía y naturaleza',
+      'Naturaleza y aventura',
+      'Playa y naturaleza',
+      'Vino y tradición',
+      'Aventura y tradición',
+      'INTERESES',
+      'Cádiz oculta',
+      'Cádiz auténtica',
+      'Cádiz relax',
+      'Cádiz urbano',
+      'TIPO DE VISITA',
+      'Ven a Cádiz'
+    ];
+    
+    if ($this['lang'] == 'en') {
+
+      $this['translationPage'] = [      
+      'beachs',
+      'that fill you with light',
+      '138km of beaches, coves and inlets that invite you to get lost',
+      'Discover our beaches',
+      'What is cooked today in Cádiz',
+      'All events',
+      'secret routes',
+      'Are you strong emotions? Enjoy Cádiz like never before.',
+      'Selection of secret routes'
+    ];
+
+    $this['translationSearch'] = [
+      'day',
+      'days',
+      'YOUR STAY',
+      'Beach and gastronomy',
+      'Culture and gastronomy',
+      'Party and culture',
+      'Gastronomy and nature',
+      'Nature and adventure',
+      'Beach and nature',
+      'Wine and tradition',
+      'Adventure and tradition',
+      'INTERESTS',
+      'Cádiz hidden',
+      'Authentic Cádiz',
+      'Cadiz relax',
+      'Cadiz urban',
+      'TYPE OF VISIT',
+      'Come to Cádiz'
+    ];
+            
+    } elseif ($this['lang'] == 'fr') {
+            
+
+    } elseif ($this['lang'] == 'de') {
+           
+
+    } elseif ($this['lang'] == 'ru') {
+            
+
+    }        
+
+     
+	}
+
+	function onFindExperience(){
+
+		$days = $_POST['days'];
+		$interest = $_POST['interest'];
+		$tvisit = $_POST['tvisit'];
+    	
+      $aLang = App::getLocale();
+
+    	$experiences = $this->staticApp->experienceFind($days,$interest,$tvisit);     
+      return Redirect::to($aLang.'/experiencias')->with( ['data' => json_encode($experiences)] );
+    }";s:5:"title";s:4:"home";s:3:"url";s:1:"/";s:6:"layout";s:7:"dinamic";s:9:"is_hidden";s:1:"0";s:9:"staticApp";a:0:{}}}

@@ -1,11 +1,13 @@
-name: 'que hacer'
+name: 'Qué hacer'
 items:
     -
         title: Playas
         nesting: ''
         type: static-page
+        url: ''
         code: ''
         reference: playas
+        cmsPage: ''
         viewBag:
             nombrees: Playas
             nombreen: Beaches
@@ -16,8 +18,10 @@ items:
         title: Naturaleza
         nesting: ''
         type: static-page
+        url: ''
         code: ''
         reference: naturaleza
+        cmsPage: ''
         viewBag:
             nombrees: Naturaleza
             nombreen: Nature
@@ -28,8 +32,10 @@ items:
         title: Diversión
         nesting: ''
         type: static-page
+        url: ''
         code: ''
         reference: diversion
+        cmsPage: ''
         viewBag:
             nombrees: Diversión
             nombreen: Fun
@@ -40,8 +46,10 @@ items:
         title: Cultura
         nesting: ''
         type: static-page
+        url: ''
         code: ''
         reference: cultura
+        cmsPage: ''
         viewBag:
             nombrees: Cultura
             nombreen: Culture
@@ -52,8 +60,10 @@ items:
         title: Gastronomía
         nesting: ''
         type: static-page
+        url: ''
         code: ''
         reference: gastronomia
+        cmsPage: ''
         viewBag:
             nombrees: Gastronomía
             nombreen: ' Gastronomy'

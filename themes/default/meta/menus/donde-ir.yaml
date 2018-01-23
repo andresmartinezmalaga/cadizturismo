@@ -1,4 +1,4 @@
-name: 'donde ir'
+name: 'Dónde ir'
 items:
     -
         title: barbate
@@ -60,8 +60,10 @@ items:
         title: Municipios
         nesting: ''
         type: static-page
+        url: ''
         code: ''
         reference: municipios
+        cmsPage: ''
         viewBag:
             nombrees: 'Todos los municipios'
             nombreen: 'All the municipalities'
@@ -72,8 +74,10 @@ items:
         title: Comarcas
         nesting: ''
         type: static-page
+        url: ''
         code: ''
         reference: comarcas
+        cmsPage: ''
         viewBag:
             nombrees: 'Todas las comarcas'
             nombreen: 'All the regions'

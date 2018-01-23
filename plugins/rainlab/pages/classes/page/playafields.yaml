@@ -24,7 +24,7 @@ fields:
         label: 'Categoría'
         placeholder: 'categoría'
         type: dropdown
-        options: getBeachCategoriesOptions
+        options: getBeachCategoriesType
 
     viewBag[categorieb]:
         span: right

@@ -3062,7 +3062,7 @@ body.mainmenu-open {
   font-size: 13px;
   padding: 6px 16px; }
 
-/* Andres Martinez  main menu background color*/
+/* Andrés Martínez  main menu background color*/
 nav#layout-mainmenu {
   background-color: #175da3;
   padding: 0 0 0 20px;
@@ -3606,7 +3606,7 @@ nav#layout-mainmenu.navbar ul li:hover, .mainmenu-collapsed li:hover {
 body.drag nav#layout-mainmenu.navbar ul.nav li:hover, body.drag .mainmenu-collapsed ul li:hover {
   color: rgba(255, 255, 255, 0.6); }
 
-/*Andres Martinez ->background sidenav */
+/*Andrés Marténez ->background sidenav */
 .bg-p {
   background-color: #175da3; }
 
