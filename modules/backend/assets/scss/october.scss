@@ -1204,6 +1204,11 @@ input:-webkit-autofill {
   box-shadow: none !important;
 }
 
+a:hover, a:focus, a:active {
+  text-decoration: none;
+  outline: none;
+}
+
 nav#layout-mainmenu {
   padding: 0px;
   .active {
@@ -1303,6 +1308,13 @@ nav#layout-mainmenu.navbar-mode-inline ul.mainmenu-nav li:first-child {
     background-color: #F6F6F6;
     font-size: 11px !important;
   }
+  .control-treeview ol > li > div > span.drag-handle {
+    right: 7.5px;
+    bottom: -5px;
+    &:before {
+      font-size: 14px !important;
+    }
+  }
 }
 .control-treeview ol > li > div {
   background: #F6F6F6;
@@ -1343,12 +1355,27 @@ nav#layout-mainmenu.navbar-mode-inline ul.mainmenu-nav li:first-child {
   border-bottom: 1px solid #818181 !important;
 }
 
-.control-treeview ol > li > div > span.drag-handle {
-  right: 7.5px !important;
-  bottom: -5px !important;
-  &:before {
-    font-size: 14px !important;
+.control-treeview.treeview-light ol > li > div > ul.submenu li {
+  background-color: $blue;
+  border-right: 1px solid $blue;
+}
+
+#layout-body {
+  .control-treeview ol > li > div > span.drag-handle {
+    right: 0px;
+    background: $blue;
   }
+}
+
+nav#layout-mainmenu ul li .mainmenu-accountmenu li a:hover, nav#layout-mainmenu ul li .mainmenu-accountmenu li a:focus {
+  background: $blue !important;
+}
+nav#layout-mainmenu ul li .mainmenu-accountmenu li:first-child a:hover:after, nav#layout-mainmenu ul li .mainmenu-accountmenu li:first-child a:focus:after, nav#layout-mainmenu ul li .mainmenu-accountmenu li:first-child a:active:after {
+  border-bottom: 7px solid $blue !important;
+}
+
+.form-group.is-required > label:after {
+  background-color: $blue !important;
 }
 
 .control-filelist.filelist-hero ul li > a:active, .control-filelist.filelist-hero ul li > a:hover {
@@ -1376,7 +1403,7 @@ nav#layout-mainmenu.navbar-mode-inline ul.mainmenu-nav li:first-child {
   background-color: #818181;
   border-radius: 7px;
   font-size: .756em !important;
-  padding: .143px .429px .214px .386px !important;
+  padding: .143em .429em .214em .429em !important;
 }
 
 .control-treeview ol > li.has-subitems.active > div {
@@ -1386,6 +1413,8 @@ nav#layout-mainmenu.navbar-mode-inline ul.mainmenu-nav li:first-child {
 .control-treeview ol > li.active > div {
   border-bottom: none !important;
 }
+
+
 
 /* ICONS CHANGE */
 .btn-default.oc-icon-plus {
@@ -1940,4 +1969,32 @@ table.name-value-list > a {
 .popup-backdrop {
   background-color: #0C5095 !important;
   opacity: 0.8 !important;
+}
+
+/* Mi cuenta */
+.padded-container.layout {
+  background-color: white;
+  input[type="text"].form-control, input[type="password"].form-control {
+    border: none !important;
+    background-color: #F6F6F6 !important;
+    height: 50px !important;
+    color: #818181 !important;
+    font-size: 14px !important;
+    border-radius: 0px !important;
+  }
+  label {
+    font-size: 14px;
+  }
+  .control-tabs.primary-tabs > ul.nav-tabs > li.active a:before, .control-tabs.primary-tabs > div > ul.nav-tabs > li.active a:before, .control-tabs.primary-tabs > div > div > ul.nav-tabs > li.active a:before {
+    background-color: #ffffff !important;
+  }
+  .control-tabs.primary-tabs > ul.nav-tabs > li a > span.title:before, .control-tabs.primary-tabs > div > ul.nav-tabs > li a > span.title:before, .control-tabs.primary-tabs > div > div > ul.nav-tabs > li a > span.title:before, .control-tabs.primary-tabs > ul.nav-tabs > li a > span.title:after, .control-tabs.primary-tabs > div > ul.nav-tabs > li a > span.title:after, .control-tabs.primary-tabs > div > div > ul.nav-tabs > li a > span.title:after {
+    background: #ffffff !important;
+  }
+  .btn-primary {
+    background: $blue !important;
+    &:hover, &:focus, &:active {
+      background: $hover-blue !important;
+    }
+  }
 }

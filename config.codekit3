@@ -17837,6 +17837,17 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/plugins\/rainlab\/pages\/assets\/img\/superuser.png": {
+		"ft": 32768,
+		"iS": 1234,
+		"oA": 0,
+		"oAP": "\/plugins\/rainlab\/pages\/assets\/img\/superuser.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/plugins\/rainlab\/pages\/assets\/img\/surf1.jpg": {
 		"ft": 16384,
 		"iS": 107374,
@@ -18417,6 +18428,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/plugins\/rainlab\/pages\/assets\/svg\/animales.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/plugins\/rainlab\/pages\/assets\/svg\/animales.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/plugins\/rainlab\/pages\/assets\/svg\/beach-exp.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -18512,6 +18533,16 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/plugins\/rainlab\/pages\/assets\/svg\/calendar.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/plugins\/rainlab\/pages\/assets\/svg\/camping.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/plugins\/rainlab\/pages\/assets\/svg\/camping.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -18935,6 +18966,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/plugins\/rainlab\/pages\/assets\/svg\/instalaciones.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/plugins\/rainlab\/pages\/assets\/svg\/instalaciones.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/plugins\/rainlab\/pages\/assets\/svg\/interests.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -19195,6 +19236,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/plugins\/rainlab\/pages\/assets\/svg\/nudista.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/plugins\/rainlab\/pages\/assets\/svg\/nudista.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/plugins\/rainlab\/pages\/assets\/svg\/ocio-exp.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -19295,6 +19346,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/plugins\/rainlab\/pages\/assets\/svg\/restauracion.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/plugins\/rainlab\/pages\/assets\/svg\/restauracion.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/plugins\/rainlab\/pages\/assets\/svg\/routes-icon.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -19360,6 +19421,16 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/plugins\/rainlab\/pages\/assets\/svg\/small-yellow-separator.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/plugins\/rainlab\/pages\/assets\/svg\/superuser.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/plugins\/rainlab\/pages\/assets\/svg\/superuser.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -19435,6 +19506,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/plugins\/rainlab\/pages\/assets\/svg\/urban-beach.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/plugins\/rainlab\/pages\/assets\/svg\/urban-beach.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/plugins\/rainlab\/pages\/assets\/svg\/via-verde.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -19450,6 +19531,16 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/plugins\/rainlab\/pages\/assets\/svg\/vino.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/plugins\/rainlab\/pages\/assets\/svg\/virgin-beach.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/plugins\/rainlab\/pages\/assets\/svg\/virgin-beach.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -24218,6 +24309,28 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/storage\/app\/uploads\/public\/5a6\/764\/ac1\/5a6764ac10854432585071.png": {
+		"ft": 32768,
+		"iS": 1234,
+		"oA": 0,
+		"oAP": "\/storage\/app\/uploads\/public\/5a6\/764\/ac1\/5a6764ac10854432585071.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/storage\/app\/uploads\/public\/5a6\/764\/ac1\/thumb_1_250_250_0_0_crop.png": {
+		"ft": 32768,
+		"iS": 12415,
+		"oA": 0,
+		"oAP": "\/storage\/app\/uploads\/public\/5a6\/764\/ac1\/thumb_1_250_250_0_0_crop.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/storage\/cms\/cache": {
 		"ft": 65536,
 		"oA": 1,
@@ -24363,6 +24476,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/storage\/cms\/twig\/f6\/f6a7bffe21a95ddee0579d3e969c23e4cddfe48ad5c04762eda12122b8db1ef8.php",
+		"oF": 0
+		},
+	"\/storage\/cms\/twig\/fd\/fdcf477d1708dbcb08e46afbffed927ae37b42bd0221e8162f4e5e3304ff4f34.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/storage\/cms\/twig\/fd\/fdcf477d1708dbcb08e46afbffed927ae37b42bd0221e8162f4e5e3304ff4f34.php",
 		"oF": 0
 		},
 	"\/storage\/framework\/cache": {
@@ -26341,6 +26461,13 @@
 		"oAP": "\/themes\/default\/content\/static-pages-de\/playas-dos.htm",
 		"oF": 0
 		},
+	"\/themes\/default\/content\/static-pages-de\/playas-marina.htm": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/themes\/default\/content\/static-pages-de\/playas-marina.htm",
+		"oF": 0
+		},
 	"\/themes\/default\/content\/static-pages-de\/playas-seis.htm": {
 		"cB": 0,
 		"ft": 8192,
@@ -26528,6 +26655,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/themes\/default\/content\/static-pages-en\/playas-dos.htm",
+		"oF": 0
+		},
+	"\/themes\/default\/content\/static-pages-en\/playas-marina.htm": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/themes\/default\/content\/static-pages-en\/playas-marina.htm",
 		"oF": 0
 		},
 	"\/themes\/default\/content\/static-pages-en\/playas-seis.htm": {
@@ -26719,6 +26853,13 @@
 		"oAP": "\/themes\/default\/content\/static-pages-fr\/playas-dos.htm",
 		"oF": 0
 		},
+	"\/themes\/default\/content\/static-pages-fr\/playas-marina.htm": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/themes\/default\/content\/static-pages-fr\/playas-marina.htm",
+		"oF": 0
+		},
 	"\/themes\/default\/content\/static-pages-fr\/playas-seis.htm": {
 		"cB": 0,
 		"ft": 8192,
@@ -26894,6 +27035,13 @@
 		"oAP": "\/themes\/default\/content\/static-pages-ru\/playas-dos.htm",
 		"oF": 0
 		},
+	"\/themes\/default\/content\/static-pages-ru\/playas-marina.htm": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/themes\/default\/content\/static-pages-ru\/playas-marina.htm",
+		"oF": 0
+		},
 	"\/themes\/default\/content\/static-pages-ru\/playas-seis.htm": {
 		"cB": 0,
 		"ft": 8192,
@@ -27055,13 +27203,6 @@
 		"oAP": "\/themes\/default\/content\/static-pages\/experiencias-america.htm",
 		"oF": 0
 		},
-	"\/themes\/default\/content\/static-pages\/experiencias.htm": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/themes\/default\/content\/static-pages\/experiencias.htm",
-		"oF": 0
-		},
 	"\/themes\/default\/content\/static-pages\/gastronomia-comida-tradicional.htm": {
 		"cB": 0,
 		"ft": 8192,
@@ -27172,6 +27313,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/themes\/default\/content\/static-pages\/naturaleza.htm",
+		"oF": 0
+		},
+	"\/themes\/default\/content\/static-pages\/playas-marina.htm": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/themes\/default\/content\/static-pages\/playas-marina.htm",
 		"oF": 0
 		},
 	"\/themes\/default\/content\/static-pages\/playas.htm": {

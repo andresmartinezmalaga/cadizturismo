@@ -1,0 +1,70 @@
+1516729185a:1:{s:11:"beaches.htm";a:6:{s:8:"fileName";s:11:"beaches.htm";s:7:"content";s:1354:"==
+<?php 
+
+	function onStart()
+	{
+	 	if (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false) {
+	      	$this['preurl'] = '/cadizturismo';
+	    } else {
+	     	$this['preurl'] = '';
+	    }
+	}
+
+?>	
+
+==
+
+{% for beache in beaches %}
+	<div class="event">
+		<div class="overlay-img">
+			<br>
+		</div><img class="rec-img fr-fic fr-dii" src="{{beache.viewBag.cover}}">
+		<div class="txt-container">
+
+			<p class="name">{{beache.viewBag.title}}</p><img class="separator fr-fic fr-dii" src="http://localhost:8888/cadizturismo/plugins/rainlab/pages/assets/svg/small-yellow-separator.svg">
+			<div class="icons">
+				<div class="icon-pair">
+					<img src="{{preurl}}/storage/app/media/uploaded-files/templates/{{str_slug(beache.viewBag.categoriea)}}.svg" class="fr-fil fr-dib">
+					<p class="icon-txt">{{beache.viewBag.categoriea}}</p>
+				</div>
+				<div class="icon-pair">
+					<img src="{{preurl}}/storage/app/media/uploaded-files/templates/{{str_slug(beache.viewBag.categorieb)}}.svg" class="fr-fil fr-dib">
+
+					<p class="icon-txt">{{beache.viewBag.categorieb}}</p>
+				</div>
+			</div>
+			<div class="button-container"><a class="see-event" href="{{url('/')}}/{{lang}}{{beache.viewBag.url}}">Ver playa <img src="http://localhost:8888/cadizturismo/plugins/rainlab/pages/assets/svg/link-icon.svg" class="fr-fic fr-dii"></a></div>
+		</div>
+	</div>
+{% endfor %}";s:5:"mtime";i:1516622283;s:6:"markup";s:1151:"{% for beache in beaches %}
+	<div class="event">
+		<div class="overlay-img">
+			<br>
+		</div><img class="rec-img fr-fic fr-dii" src="{{beache.viewBag.cover}}">
+		<div class="txt-container">
+
+			<p class="name">{{beache.viewBag.title}}</p><img class="separator fr-fic fr-dii" src="http://localhost:8888/cadizturismo/plugins/rainlab/pages/assets/svg/small-yellow-separator.svg">
+			<div class="icons">
+				<div class="icon-pair">
+					<img src="{{preurl}}/storage/app/media/uploaded-files/templates/{{str_slug(beache.viewBag.categoriea)}}.svg" class="fr-fil fr-dib">
+					<p class="icon-txt">{{beache.viewBag.categoriea}}</p>
+				</div>
+				<div class="icon-pair">
+					<img src="{{preurl}}/storage/app/media/uploaded-files/templates/{{str_slug(beache.viewBag.categorieb)}}.svg" class="fr-fil fr-dib">
+
+					<p class="icon-txt">{{beache.viewBag.categorieb}}</p>
+				</div>
+			</div>
+			<div class="button-container"><a class="see-event" href="{{url('/')}}/{{lang}}{{beache.viewBag.url}}">Ver playa <img src="http://localhost:8888/cadizturismo/plugins/rainlab/pages/assets/svg/link-icon.svg" class="fr-fic fr-dii"></a></div>
+		</div>
+	</div>
+{% endfor %}";s:4:"code";s:184:" 
+
+	function onStart()
+	{
+	 	if (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false) {
+	      	$this['preurl'] = '/cadizturismo';
+	    } else {
+	     	$this['preurl'] = '';
+	    }
+	}";s:17:"_PARSER_ERROR_INI";s:0:"";}}

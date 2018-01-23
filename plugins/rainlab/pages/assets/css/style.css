@@ -635,6 +635,7 @@ html, body {
   display: -webkit-flex;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   z-index: 100;
@@ -652,8 +653,26 @@ html, body {
   min-height: 106px;
   margin-right: 50px; }
 
+.icons-row .main-feature {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  min-height: 106px;
+  margin-right: 30px;
+  padding-right: 30px;
+  border-right: 1px solid #4A4A4A; }
+  .icons-row .main-feature .also-desc {
+    color: #4A4A4A !important; }
+
 .icons-row .also-feature img {
-  margin-bottom: 12px; }
+  margin-bottom: 12px;
+  max-height: 64px;
+  width: auto; }
 
 .icons-row .also-feature .also-desc {
   color: #CECECE;
@@ -1256,9 +1275,13 @@ html, body {
     flex-direction: column !important;
     align-items: center !important;
     justify-content: center !important;
-    text-align: center; }
+    text-align: center;
+    padding-top: 30px !important; }
   .i-container .also-feature {
     margin: 0px auto 10px auto !important; }
+  .i-container .main-feature {
+    border: none !important;
+    padding: 0px !important; }
   .section-txt {
     padding-top: 90px;
     padding-bottom: 80px; }
