@@ -1,4 +1,4 @@
-1516644310a:1:{s:15:"site/header.htm";a:6:{s:8:"fileName";s:15:"site/header.htm";s:7:"content";s:9581:"==
+1516705754a:1:{s:15:"site/header.htm";a:6:{s:8:"fileName";s:15:"site/header.htm";s:7:"content";s:9733:"==
 
 <?php
 
@@ -131,7 +131,8 @@
       <a href="{{url('/')}}/{{lang}}"><img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/mini-logo.svg"></a>
     </div>
     <div class="language-container">
-      <p class="languages"> <a href="{{url('/')}}/en{{this.page.url}}" class="lang">EN</a> <a class="separator separator-lang"> · </a><a href="{{url('/')}}/es{{this.page.url}}" class="lang-es">ES</a> <a class="separator separator-lang"> · </a> <a href="{{url('/')}}/fr{{this.page.url}}" class="lang">FR</a> <a class="separator separator-lang"> · </a><a href="{{url('/')}}/de{{this.page.url}}" class="lang">DE</a> <a class="separator separator-lang"> · </a> <a href="{{url('/')}}/ru{{this.page.url}}" class="lang">RU</a></p>
+      <!-- Añadir la clase 'active-lang' al enlace cuando esté activo el idioma correspondiente - de ejemplo está puesto en ESPAÑOL -->
+      <p class="languages"> <a href="{{url('/')}}/en{{this.page.url}}" class="lang">EN</a> <a class="separator separator-lang"> · </a><a href="{{url('/')}}/es{{this.page.url}}" class="lang-es active-lang">ES</a> <a class="separator separator-lang"> · </a> <a href="{{url('/')}}/fr{{this.page.url}}" class="lang">FR</a> <a class="separator separator-lang"> · </a><a href="{{url('/')}}/de{{this.page.url}}" class="lang">DE</a> <a class="separator separator-lang"> · </a> <a href="{{url('/')}}/ru{{this.page.url}}" class="lang">RU</a></p>
     </div>
 
 <!-- MENÚ MOBILE -->
@@ -200,7 +201,7 @@
       </div>
     </div>
   </nav>
-";s:5:"mtime";i:1516642262;s:6:"markup";s:7884:"<!-- MENU-->
+";s:5:"mtime";i:1516700994;s:6:"markup";s:8036:"<!-- MENU-->
     <div class="slidemenu">
       <div class="elements">
         <div class="logo-container">
@@ -281,7 +282,8 @@
       <a href="{{url('/')}}/{{lang}}"><img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/mini-logo.svg"></a>
     </div>
     <div class="language-container">
-      <p class="languages"> <a href="{{url('/')}}/en{{this.page.url}}" class="lang">EN</a> <a class="separator separator-lang"> · </a><a href="{{url('/')}}/es{{this.page.url}}" class="lang-es">ES</a> <a class="separator separator-lang"> · </a> <a href="{{url('/')}}/fr{{this.page.url}}" class="lang">FR</a> <a class="separator separator-lang"> · </a><a href="{{url('/')}}/de{{this.page.url}}" class="lang">DE</a> <a class="separator separator-lang"> · </a> <a href="{{url('/')}}/ru{{this.page.url}}" class="lang">RU</a></p>
+      <!-- Añadir la clase 'active-lang' al enlace cuando esté activo el idioma correspondiente - de ejemplo está puesto en ESPAÑOL -->
+      <p class="languages"> <a href="{{url('/')}}/en{{this.page.url}}" class="lang">EN</a> <a class="separator separator-lang"> · </a><a href="{{url('/')}}/es{{this.page.url}}" class="lang-es active-lang">ES</a> <a class="separator separator-lang"> · </a> <a href="{{url('/')}}/fr{{this.page.url}}" class="lang">FR</a> <a class="separator separator-lang"> · </a><a href="{{url('/')}}/de{{this.page.url}}" class="lang">DE</a> <a class="separator separator-lang"> · </a> <a href="{{url('/')}}/ru{{this.page.url}}" class="lang">RU</a></p>
     </div>
 
 <!-- MENÚ MOBILE -->

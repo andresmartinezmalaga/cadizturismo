@@ -1,10 +1,12 @@
 
 jQuery(function($)
 {
-    $(".hamburger").click(function()
-    {
+    $(".hamburger").click(function() {
         $(".navigation").toggleClass("open");
-    })
+    });
+    $(".languages").click(function(e) {
+        $(this).toggleClass("show-lang");
+    });
 });
 
 $(".menu-title").click(function(){

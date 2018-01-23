@@ -1,10 +1,10 @@
 ==
 
-<?php 
+<?php
 
     function onStart()
-    {   
-        if($this['lang'] == 'es'){            
+    {
+        if($this['lang'] == 'es'){
             $this['menulang'] = 'nombrees';
             $this['allEvents'] = 'Todos los eventos';
             $this['whereToGo'] = 'Dónde ir';
@@ -19,7 +19,7 @@
             $this['whatToDo'] = 'What to do';
             $this['whatToLive'] = 'What to live';
             $this['myStance'] = 'My stance';
-        
+
         } elseif ($this['lang'] == 'fr') {
             $this['menulang'] = 'nombrefr';
             $this['allEvents'] = 'Todos los eventos';
@@ -44,9 +44,9 @@
             $this['whatToLive'] = 'Qué vivir';
             $this['myStance'] = 'Mi estancia';
 
-        }        
+        }
     }
-  
+
 ?>
 
 ==
@@ -62,11 +62,11 @@
             <img class="separator separator-menu" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
             <img class="separator-tiny" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg">
             <ul class="menu-ul donde-ul">
-              {% for item in staticMenu.menuItems %}              
+              {% for item in staticMenu.menuItems %}
                 {% if item.viewBag[menulang] == '' %}
                 {% set menulang = 'nombrees' %}
                 {% endif %}
-                <li class="menu-item"><a href="{{ item.url }}">{{ item.viewBag[menulang] }}</a></li>                
+                <li class="menu-item"><a href="{{ item.url }}">{{ item.viewBag[menulang] }}</a></li>
               {% endfor %}
             </ul>
             <ul class="menu-mobile">
@@ -83,7 +83,7 @@
                 {% if item.viewBag[menulang] == '' %}
                 {% set menulang = 'nombrees' %}
                 {% endif %}
-                <li class="menu-item"><a href="{{ item.url }}">{{ item.viewBag[menulang] }}</a></li>                
+                <li class="menu-item"><a href="{{ item.url }}">{{ item.viewBag[menulang] }}</a></li>
               {% endfor %}
             </ul>
           </div>
@@ -96,7 +96,7 @@
                 {% if item.viewBag[menulang] == '' %}
                 {% set menulang = 'nombrees' %}
                 {% endif %}
-                <li class="menu-item"><a href="{{ item.url }}">{{ item.viewBag[menulang] }}</a></li>                 
+                <li class="menu-item"><a href="{{ item.url }}">{{ item.viewBag[menulang] }}</a></li>
               {% endfor %}
                 <li class="menu-item"><a href="/eventos">{{ allEvents }}</a></li>
             </ul>
@@ -110,7 +110,7 @@
                 {% if item.viewBag[menulang] == '' %}
                 {% set menulang = 'nombrees' %}
                 {% endif %}
-                <li class="menu-item"><a href="{{ item.url }}">{{ item.viewBag[menulang] }}</a></li> 
+                <li class="menu-item"><a href="{{ item.url }}">{{ item.viewBag[menulang] }}</a></li>
               {% endfor %}
             </ul>
           </div>
@@ -165,3 +165,70 @@
       <a href="#" data-izimodal-close="#modal-success" data-izimodal-open="#modal-exp">¿No recibes tu experiencia?</a>
     </div>
 </div>
+
+<!-- MENÚ MOBILE -->
+<nav class="navigation">
+    <div class="hamburger">
+      <span class="bars"></span>
+    </div>
+    <div class="menu">
+      <div class="logo-container">
+        <a href="{{url('/')}}/{{lang}}"><img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/cadiz-menu.svg" alt=""></a>
+      </div>
+      <div class="menus">
+        <div class="menu-list">
+          <p class="menu-title">{{ whereToGo }}</p>
+          <img class="separator separator-menu" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
+          <img class="separator-tiny" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg">
+          <ul class="menu-ul donde-ul where-ul">
+            {% for item in staticMenu.menuItems %}
+              {% if item.viewBag[menulang] == '' %}
+              {% set menulang = 'nombrees' %}
+              {% endif %}
+              <li class="menu-item"><a href="{{ item.url }}">{{ item.viewBag[menulang] }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="menu-list">
+          <p class="menu-title">{{ whatToDo }}</p>
+          <img class="separator separator-menu" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
+          <img class="separator-tiny" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg">
+          <ul class="menu-ul do-ul">
+            {% for item in staticMenu4.menuItems %}
+              {% if item.viewBag[menulang] == '' %}
+              {% set menulang = 'nombrees' %}
+              {% endif %}
+              <li class="menu-item"><a href="{{ item.url }}">{{ item.viewBag[menulang] }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="menu-list">
+          <p class="menu-title">{{ whatToLive }}</p>
+          <img class="separator separator-menu" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
+          <img class="separator-tiny" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg">
+          <ul class="menu-ul live-ul">
+            {% for item in staticMenu2.menuItems %}
+              {% if item.viewBag[menulang] == '' %}
+              {% set menulang = 'nombrees' %}
+              {% endif %}
+              <li class="menu-item"><a href="{{ item.url }}">{{ item.viewBag[menulang] }}</a></li>
+            {% endfor %}
+              <li class="menu-item"><a href="/eventos">{{ allEvents }}</a></li>
+          </ul>
+        </div>
+        <div class="menu-list">
+          <p class="menu-title">{{ myStance }}</p>
+          <img class="separator separator-menu" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
+          <img class="separator-tiny" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg">
+          <ul class="menu-ul stance-ul">
+            {% for item in staticMenu3.menuItems %}
+              {% if item.viewBag[menulang] == '' %}
+              {% set menulang = 'nombrees' %}
+              {% endif %}
+              <li class="menu-item"><a href="{{ item.url }}">{{ item.viewBag[menulang] }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>

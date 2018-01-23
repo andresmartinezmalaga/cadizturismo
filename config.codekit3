@@ -15651,6 +15651,16 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"\/plugins\/rainlab\/pages\/assets\/css\/style-home-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/plugins\/rainlab\/pages\/assets\/css\/style-home-min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"\/plugins\/rainlab\/pages\/assets\/css\/style-home.css": {
 		"aP": 1,
 		"bl": 0,
@@ -18795,6 +18805,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/plugins\/rainlab\/pages\/assets\/svg\/fb-icon.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/plugins\/rainlab\/pages\/assets\/svg\/fb-icon.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/plugins\/rainlab\/pages\/assets\/svg\/fiesta-grey.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -18900,6 +18920,16 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/plugins\/rainlab\/pages\/assets\/svg\/gourmet.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/plugins\/rainlab\/pages\/assets\/svg\/insta-icon.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/plugins\/rainlab\/pages\/assets\/svg\/insta-icon.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -19365,6 +19395,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/plugins\/rainlab\/pages\/assets\/svg\/tw-icon.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/plugins\/rainlab\/pages\/assets\/svg\/tw-icon.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/plugins\/rainlab\/pages\/assets\/svg\/type.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -19390,6 +19430,16 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/plugins\/rainlab\/pages\/assets\/svg\/vino.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/plugins\/rainlab\/pages\/assets\/svg\/YB-ICON.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/plugins\/rainlab\/pages\/assets\/svg\/yb-icon.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -24167,6 +24217,20 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/storage\/cms\/twig\/00\/007820f805988f169f1aa90d29958b971baea0d726ab2ae8265ae7a286c417d6.php",
+		"oF": 0
+		},
+	"\/storage\/cms\/twig\/18\/1868cd083c924ed2506569d3487115795fafe50b888b24bd80688fccf2315f13.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/storage\/cms\/twig\/18\/1868cd083c924ed2506569d3487115795fafe50b888b24bd80688fccf2315f13.php",
+		"oF": 0
+		},
+	"\/storage\/cms\/twig\/3e\/3ef88af5b4af66c0fc9b1646dcf97c4624b3924518f21f8e00796b201909d66c.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/storage\/cms\/twig\/3e\/3ef88af5b4af66c0fc9b1646dcf97c4624b3924518f21f8e00796b201909d66c.php",
 		"oF": 0
 		},
 	"\/storage\/cms\/twig\/44\/44703e0ed338f54fdbcd4acfe7ae89106fa03e57d9a7b7b49c6f7ac75d50ec01.php": {
