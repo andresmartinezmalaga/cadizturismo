@@ -4941,6 +4941,12 @@ nav#layout-mainmenu.navbar-mode-inline ul.mainmenu-nav li:first-child {
   font-size: .756em !important;
   padding: .143px .429px .214px .386px !important; }
 
+.control-treeview ol > li.has-subitems.active > div {
+  border: none !important; }
+
+.control-treeview ol > li.active > div {
+  border-bottom: none !important; }
+
 /* ICONS CHANGE */
 .btn-default.oc-icon-plus {
   background-color: #818181 !important;

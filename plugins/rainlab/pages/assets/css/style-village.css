@@ -16,47 +16,111 @@
   z-index: 1; }
 
 .header-alcornocales #natu-via {
-  font-size: 200px; }
+  font-size: 200px;
+  text-align: center;
+  -webkit-transform: rotate(-9deg);
+  -moz-transform: rotate(-9deg);
+  -ms-transform: rotate(-9deg);
+  transform: rotate(-9deg); }
 
 .header-viaverde #natu-via {
-  font-size: 200px; }
+  font-size: 200px;
+  text-align: center;
+  -webkit-transform: rotate(-9deg);
+  -moz-transform: rotate(-9deg);
+  -ms-transform: rotate(-9deg);
+  transform: rotate(-9deg); }
 
 .header-birdwatching #natu-via {
-  font-size: 200px; }
+  font-size: 200px;
+  text-align: center;
+  -webkit-transform: rotate(-9deg);
+  -moz-transform: rotate(-9deg);
+  -ms-transform: rotate(-9deg);
+  transform: rotate(-9deg); }
 
 .header-compras #natu-via {
-  font-size: 200px; }
+  font-size: 200px;
+  text-align: center;
+  -webkit-transform: rotate(-9deg);
+  -moz-transform: rotate(-9deg);
+  -ms-transform: rotate(-9deg);
+  transform: rotate(-9deg); }
 
 .header-locales #natu-via {
-  font-size: 200px; }
+  font-size: 200px;
+  text-align: center;
+  -webkit-transform: rotate(-9deg);
+  -moz-transform: rotate(-9deg);
+  -ms-transform: rotate(-9deg);
+  transform: rotate(-9deg); }
 
 .header-parques #natu-via {
-  font-size: 200px; }
+  font-size: 200px;
+  text-align: center;
+  -webkit-transform: rotate(-9deg);
+  -moz-transform: rotate(-9deg);
+  -ms-transform: rotate(-9deg);
+  transform: rotate(-9deg); }
 
 .header-monumentos #natu-via {
-  font-size: 200px; }
+  font-size: 200px;
+  text-align: center;
+  -webkit-transform: rotate(-9deg);
+  -moz-transform: rotate(-9deg);
+  -ms-transform: rotate(-9deg);
+  transform: rotate(-9deg); }
 
 .header-gourmet #natu-via {
-  font-size: 200px; }
+  font-size: 200px;
+  text-align: center;
+  -webkit-transform: rotate(-9deg);
+  -moz-transform: rotate(-9deg);
+  -ms-transform: rotate(-9deg);
+  transform: rotate(-9deg); }
 
 .header-fiesta #natu-via {
-  font-size: 200px; }
+  font-size: 200px;
+  text-align: center;
+  -webkit-transform: rotate(-9deg);
+  -moz-transform: rotate(-9deg);
+  -ms-transform: rotate(-9deg);
+  transform: rotate(-9deg); }
 
 .header-flamenco #natu-via {
-  font-size: 200px; }
+  font-size: 200px;
+  text-align: center;
+  -webkit-transform: rotate(-9deg);
+  -moz-transform: rotate(-9deg);
+  -ms-transform: rotate(-9deg);
+  transform: rotate(-9deg); }
 
 .header-teatro #natu-via {
-  font-size: 200px; }
+  font-size: 200px;
+  text-align: center;
+  -webkit-transform: rotate(-9deg);
+  -moz-transform: rotate(-9deg);
+  -ms-transform: rotate(-9deg);
+  transform: rotate(-9deg); }
 
 .header-vino #natu-via {
-  font-size: 200px; }
+  font-size: 200px;
+  text-align: center;
+  -webkit-transform: rotate(-9deg);
+  -moz-transform: rotate(-9deg);
+  -ms-transform: rotate(-9deg);
+  transform: rotate(-9deg); }
 
 .header-comida #natu-via {
-  font-size: 200px; }
+  font-size: 200px;
+  text-align: center;
+  -webkit-transform: rotate(-9deg);
+  -moz-transform: rotate(-9deg);
+  -ms-transform: rotate(-9deg);
+  transform: rotate(-9deg); }
 
 /* IMG SECTION - VILLAGE */
 .img-village {
-  padding: 60px 0;
   position: relative;
   height: 830px;
   background-repeat: no-repeat;
@@ -66,15 +130,23 @@
   z-index: 10;
   background-color: white; }
   .img-village .img-destacada {
-    mask-image: url("../svg/mask.svg");
-    -webkit-mask-image: url("../svg/mask.svg");
-    mask-position: center;
-    -webkit-mask-position: center;
+    mask-image: url("../svg/mask4.svg");
+    -webkit-mask-image: url("../svg/mask4.svg");
+    mask-position: top;
+    -webkit-mask-position: top;
+    mask-repeat: no-repeat;
     width: 100%;
     height: 100%;
     mask-size: 300%;
-    -webkit-mask-size: 300%;
+    -webkit-mask-size: 150%;
     object-fit: cover; }
+  .img-village:before {
+    content: '';
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.68) 100%); }
   .img-village .txt-container {
     position: absolute;
     left: 248px;
@@ -118,25 +190,27 @@
   background-position: center !important;
   background-size: cover !important;
   background-attachment: fixed !important;
-  z-index: 100; }
+  z-index: 100;
+  background-color: white; }
   .featured-element .overlay {
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.28);
+    background: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.68) 100%);
     position: absolute;
     top: 0;
     z-index: 10; }
   .featured-element .img-destacada {
-    mask-image: url("../svg/mask.svg");
-    -webkit-mask-image: url("../svg/mask.svg");
-    mask-position: center;
-    -webkit-mask-position: center;
+    mask-image: url("../svg/mask4.svg");
+    -webkit-mask-image: url("../svg/mask4.svg");
+    mask-position: top;
+    -webkit-mask-position: top;
+    mask-repeat: no-repeat;
     width: 100%;
     height: 100%;
     mask-size: 300%;
-    -webkit-mask-size: 300%;
-    z-index: 9;
-    object-fit: cover; }
+    -webkit-mask-size: 150%;
+    object-fit: cover;
+    z-index: 9; }
   .featured-element .txt-container {
     position: absolute;
     left: 248px;

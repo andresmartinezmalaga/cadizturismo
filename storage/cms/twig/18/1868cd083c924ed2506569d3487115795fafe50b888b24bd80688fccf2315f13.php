@@ -37,19 +37,19 @@ class __TwigTemplate_7104d5b3b804faa433fce85753f92f1f12fa201237eaee899a345480595
         echo twig_escape_filter($this->env, twig_date_format_filter($this->env, "now", "Y"), "html", null, true);
         echo " Cádiz Turismo</p>
         <div class=\"social\">
-          <a href=\"#\"><img src=\"";
+          <a href=\"https://www.facebook.com/CadizTurismo\"><img src=\"";
         // line 16
         echo url("/");
         echo "/plugins/rainlab/pages/assets/svg/fb-icon.svg\" alt=\"facebook\"></a>
-          <a href=\"#\"><img src=\"";
+          <a href=\"https://twitter.com/CadizTurismo\"><img src=\"";
         // line 17
         echo url("/");
         echo "/plugins/rainlab/pages/assets/svg/tw-icon.svg\" alt=\"twitter\"></a>
-          <a href=\"#\"><img src=\"";
+          <a href=\"https://www.youtube.com/profile?gl=US&user=PatProvTurCadiz\"><img src=\"";
         // line 18
         echo url("/");
         echo "/plugins/rainlab/pages/assets/svg/yb-icon.svg\" alt=\"youtube\"></a>
-          <a href=\"#\"><img src=\"";
+          <a href=\"https://www.instagram.com/cadizturismo/\"><img src=\"";
         // line 19
         echo url("/");
         echo "/plugins/rainlab/pages/assets/svg/insta-icon.svg\" alt=\"instagram\"></a>
@@ -91,10 +91,10 @@ class __TwigTemplate_7104d5b3b804faa433fce85753f92f1f12fa201237eaee899a345480595
       <div class=\"copy-social-container\">
         <p class=\"date\">&copy; {{ \"now\"|date(\"Y\") }} Cádiz Turismo</p>
         <div class=\"social\">
-          <a href=\"#\"><img src=\"{{url('/')}}/plugins/rainlab/pages/assets/svg/fb-icon.svg\" alt=\"facebook\"></a>
-          <a href=\"#\"><img src=\"{{url('/')}}/plugins/rainlab/pages/assets/svg/tw-icon.svg\" alt=\"twitter\"></a>
-          <a href=\"#\"><img src=\"{{url('/')}}/plugins/rainlab/pages/assets/svg/yb-icon.svg\" alt=\"youtube\"></a>
-          <a href=\"#\"><img src=\"{{url('/')}}/plugins/rainlab/pages/assets/svg/insta-icon.svg\" alt=\"instagram\"></a>
+          <a href=\"https://www.facebook.com/CadizTurismo\"><img src=\"{{url('/')}}/plugins/rainlab/pages/assets/svg/fb-icon.svg\" alt=\"facebook\"></a>
+          <a href=\"https://twitter.com/CadizTurismo\"><img src=\"{{url('/')}}/plugins/rainlab/pages/assets/svg/tw-icon.svg\" alt=\"twitter\"></a>
+          <a href=\"https://www.youtube.com/profile?gl=US&user=PatProvTurCadiz\"><img src=\"{{url('/')}}/plugins/rainlab/pages/assets/svg/yb-icon.svg\" alt=\"youtube\"></a>
+          <a href=\"https://www.instagram.com/cadizturismo/\"><img src=\"{{url('/')}}/plugins/rainlab/pages/assets/svg/insta-icon.svg\" alt=\"instagram\"></a>
         </div>
       </div>
     </div>

@@ -7,7 +7,7 @@ is_hidden = 0
 
 ==
 
-<?php 
+<?php
 
 	function onStart()
 	{
@@ -15,11 +15,11 @@ is_hidden = 0
 		if($this['lang']==''){
 			$this['lang']='es';
 		}
-	 
+
     $this['experiences'] = $this->staticApp->experienceList();
 
-    $this['translationPage'] = [      
-      'playas',
+    $this['translationPage'] = [
+      'Playas',
       'que te llenan de luz',
       '138km de playas, calas y ensenadas que invitan a perderse',
       'Conoce nuestras playas',
@@ -50,10 +50,10 @@ is_hidden = 0
       'TIPO DE VISITA',
       'Ven a Cádiz'
     ];
-    
+
     if ($this['lang'] == 'en') {
 
-      $this['translationPage'] = [      
+      $this['translationPage'] = [
       'beachs',
       'that fill you with light',
       '138km of beaches, coves and inlets that invite you to get lost',
@@ -85,19 +85,19 @@ is_hidden = 0
       'TYPE OF VISIT',
       'Come to Cádiz'
     ];
-            
+
     } elseif ($this['lang'] == 'fr') {
-            
+
 
     } elseif ($this['lang'] == 'de') {
-           
+
 
     } elseif ($this['lang'] == 'ru') {
-            
 
-    }        
 
-     
+    }
+
+
 	}
 
 	function onFindExperience(){
@@ -105,10 +105,10 @@ is_hidden = 0
 		$days = $_POST['days'];
 		$interest = $_POST['interest'];
 		$tvisit = $_POST['tvisit'];
-    	
+
       $aLang = App::getLocale();
 
-    	$experiences = $this->staticApp->experienceFind($days,$interest,$tvisit);     
+    	$experiences = $this->staticApp->experienceFind($days,$interest,$tvisit);
       return Redirect::to($aLang.'/experiencias')->with( ['data' => json_encode($experiences)] );
     }
 
@@ -130,7 +130,7 @@ is_hidden = 0
         <div id='prtlSearch'>
           {% partial "site/search" %}
         </div>
-        
+
         <div class="header-comment">
           <p class="comment">{{ translationPage[2] }}</p>
           <a class="header-link" href="{{lang}}/playas">{{ translationPage[3] }} &nbsp;<img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/link-arrow.svg" alt=""> </a>

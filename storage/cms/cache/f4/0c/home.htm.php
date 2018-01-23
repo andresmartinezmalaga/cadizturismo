@@ -1,5 +1,5 @@
 <?php 
-class Cms5a660f153ac8d769024599_5835e8120da08de5ee7dcf59df5a0ee3Class extends \Cms\Classes\PageCode
+class Cms5a6741a0a23ee306521832_5c6293dccb2e5bfcd865d33a55b9970cClass extends \Cms\Classes\PageCode
 {
 public function onStart()
 	{
@@ -7,11 +7,11 @@ public function onStart()
 		if($this['lang']==''){
 			$this['lang']='es';
 		}
-	 
+
     $this['experiences'] = $this->staticApp->experienceList();
 
-    $this['translationPage'] = [      
-      'playas',
+    $this['translationPage'] = [
+      'Playas',
       'que te llenan de luz',
       '138km de playas, calas y ensenadas que invitan a perderse',
       'Conoce nuestras playas',
@@ -42,10 +42,10 @@ public function onStart()
       'TIPO DE VISITA',
       'Ven a Cádiz'
     ];
-    
+
     if ($this['lang'] == 'en') {
 
-      $this['translationPage'] = [      
+      $this['translationPage'] = [
       'beachs',
       'that fill you with light',
       '138km of beaches, coves and inlets that invite you to get lost',
@@ -77,29 +77,29 @@ public function onStart()
       'TYPE OF VISIT',
       'Come to Cádiz'
     ];
-            
+
     } elseif ($this['lang'] == 'fr') {
-            
+
 
     } elseif ($this['lang'] == 'de') {
-           
+
 
     } elseif ($this['lang'] == 'ru') {
-            
 
-    }        
 
-     
+    }
+
+
 	}
 public function onFindExperience(){
 
 		$days = $_POST['days'];
 		$interest = $_POST['interest'];
 		$tvisit = $_POST['tvisit'];
-    	
+
       $aLang = App::getLocale();
 
-    	$experiences = $this->staticApp->experienceFind($days,$interest,$tvisit);     
+    	$experiences = $this->staticApp->experienceFind($days,$interest,$tvisit);
       return Redirect::to($aLang.'/experiencias')->with( ['data' => json_encode($experiences)] );
     }
 }

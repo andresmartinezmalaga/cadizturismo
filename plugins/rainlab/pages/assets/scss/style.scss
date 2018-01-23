@@ -291,7 +291,8 @@ html, body {
 .slidemenu {
   position: absolute;
   width: 100%;
-  z-index: 100; }
+  z-index: 100;
+}
 
 .elements {
   display: none; }
@@ -410,10 +411,6 @@ html, body {
     margin-bottom: 50px; }
     .header .header-txt .brush {
       margin-top: -14px; }
-    .header .header-txt .txt {
-      font-size: 121px;
-      transform: rotate(-9deg);
-      text-align: center; }
       .header .header-txt .txt .first-word {
         font-size: 274px;
         display: block;
@@ -443,6 +440,18 @@ html, body {
       .header .header-comment .header-link:hover, .header .header-comment .header-link:active, .header .header-comment .header-link:focus {
         text-decoration: none;
         opacity: 0.5; }
+
+.header-home .header-txt .txt {
+  font-size: 121px;
+  transform: rotate(-9deg);
+  text-align: center;
+}
+
+.header-village .txt, .header-comarca .txt {
+    font-size: 274px;
+    transform: rotate(-9deg);
+    text-align: center;
+}
 
 .header:before {
   z-index: 2;
@@ -733,7 +742,6 @@ html, body {
   cursor: pointer; }
 
 
-
 /* CAMBIOS EDITOR */
 .field-richeditor .header-general .background-image, .field-richeditor .header .background-image, .field-richeditor .header-event .background-image {
   position: absolute !important;
@@ -742,6 +750,17 @@ html, body {
 
 .field-richeditor .overlay-img {
   display: none !important; }
+
+
+.field-richeditor .img-village {
+  &:before {
+    content: none !important;
+  }
+  .img-destacada {
+    mask-image: none !important;
+    -webkit-mask-image: none !important;
+  }
+}
 
 .field-richeditor .img-village .txt-container, .field-richeditor .featured-element .txt-container {
   left: 140px !important;
@@ -777,6 +796,13 @@ html, body {
   margin-top: 0px !important; }
   .field-richeditor .all-events .all-events-container {
     margin-top: 0px !important; }
+
+
+@media (max-width: 1695px) and (min-width: 1289px) {
+  .field-richeditor .main-section-comarcas .main-events-container {
+    margin-top: 30px !important;
+  }
+}
 
 /* RESPONSIVE */
 @media (max-width: 1400px) and (min-width: 1080px) {
@@ -968,7 +994,7 @@ html, body {
       margin-bottom: 28px !important; }
       .small-features .small-feature:last-child {
         margin-bottom: 0px !important; }
-  .more-popular, .all-events, .all-exps, .main-section-comarcas {
+  .more-popular, .all-events, .main-section-comarcas {
     margin-top: 90px !important; }
     .more-popular .title-search, .all-events .title-search, .all-exps .title-search, .main-section-comarcas .title-search {
       text-align: center;
@@ -1051,13 +1077,21 @@ html, body {
       margin-left: auto;
       margin-right: auto; }
   .section-txt-village .txt-container {
-    width: 100% !important;
+    width: 90% !important;
     margin: 0 auto !important; }
   .img-village .txt-container {
     width: 80% !important;
     position: relative !important;
     margin: 0 auto !important;
     left: 0px !important; }
+    .img-village {
+      .img-destacada {
+        position: absolute !important;
+        top: 0px;
+        mask-image: none !important;
+        -webkit-mask-image: none !important;
+      }
+    }
   .small-features {
     justify-content: space-evenly !important; }
     .small-features .small-feature {
@@ -1184,6 +1218,16 @@ html, body {
     width: 85%; } }
 
 @media (max-width: 709px) {
+
+  .header-txt .txt .first-word, .header-village .header-txt .txt, .header-comarca .header-txt .txt {
+    font-size: 120px !important;
+    line-height: 120px !important;
+  }
+
+  .header-txt {
+    margin-top: 120px !important;
+  }
+
   .more-content {
     margin-bottom: 20px !important; }
   form {
@@ -1194,6 +1238,9 @@ html, body {
   .header {
     height: auto !important;
     padding-bottom: 50px; }
+    .header .background-image {
+      top: 0px !important;
+    }
   .header-comarcas .header-txt .txt {
     font-size: 100px !important;
     line-height: 385px !important; }
@@ -1317,7 +1364,8 @@ html, body {
   .header-event {
     height: auto !important; }
   .header-txt .txt {
-    max-width: 86%; }
+    max-width: 86%;
+  line-height: 80px !important;}
   .header-comment .comment {
     margin: 0px auto 20px auto;
     width: 80%; }
@@ -1497,7 +1545,20 @@ html, body {
       line-height: 64px !important; }
     .featured-element .txt-container .desc {
       width: 80% !important;
-      margin: 0 auto; } }
+      margin: 0 auto; }
+
+      .language-container {
+        width: auto !important;
+        .languages {
+          flex-direction: column !important;
+          .separator {
+            display: none !important;
+          }
+        }
+      }
+
+
+    }
 
       @media (max-width: 860px) and (max-width: 400px) {
         /* NEW */
