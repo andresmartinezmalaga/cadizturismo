@@ -7,7 +7,6 @@ static-pages:
         comarcas-la-janda: {  }
         comarcas-sierra-de-cadiz: {  }
     municipios:
-        municipios-barbate: {  }
         municipios-grazalema: {  }
         municipios-jerez-de-la-frontera: {  }
         municipios-torremolinos: {  }
@@ -20,11 +19,20 @@ static-pages:
         municipios-17: {  }
         municipios-20: {  }
         municipios-22: {  }
+        municipios-barbate: {  }
+        municipios-tarifa: {  }
     playas:
         playas-uno: {  }
         playas-dos: {  }
         playas-seis: {  }
         playas-16: {  }
+        playas-los-lances: {  }
+        playas-atlanterra-zahara-de-los-atunes-y-cabo-de-la-playa: {  }
+        playas-bolonia: {  }
+        playas-el-canuelo: {  }
+        playas-los-alemanes: {  }
+        playas-playa-chica: {  }
+        playas-valdavaqueros: {  }
     naturaleza:
         naturaleza-via-verde: {  }
         naturaleza-birdwatching: {  }
@@ -48,3 +56,9 @@ static-pages:
         gastronomia-gourmet: {  }
         gastronomia-el-vino: {  }
         gastronomia-comida-tradicional: {  }
+    como-llegar: {  }
+    sobre-nosotros: {  }
+    necesitas-ayuda: {  }
+    legal: {  }
+    experiencias-una: {  }
+    experiencias-dos: {  }

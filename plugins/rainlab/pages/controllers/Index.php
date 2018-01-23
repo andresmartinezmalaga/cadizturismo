@@ -794,7 +794,9 @@ class Index extends Controller
             if($object->parentFileName != ''){
                 $filterSubTemplate = $object->parentFileName;
             } else {
-                $filterSubTemplate = $object['viewBag']['subtemplate'];                 
+                if(isset($object['viewBag']['subtemplate'])){
+                     $filterSubTemplate = $object['viewBag']['subtemplate'];  
+                }                              
             }
         
        
@@ -834,7 +836,9 @@ class Index extends Controller
                 $objectData['settings']['viewBag']['subtemplate'] = $object->parentFileName;
             // Update
             } else {
-                $objectData['settings']['viewBag']['subtemplate'] = $object['viewBag']['subtemplate'];
+                if(isset($object['viewBag']['subtemplate'])){
+                    $objectData['settings']['viewBag']['subtemplate'] = $object['viewBag']['subtemplate'];
+                }
             }
 
               
@@ -844,10 +848,10 @@ class Index extends Controller
 
             $objectData['placeholders'] = $placeholders;
            
-            // Andrés Martínez : set layout default to new pages except municipios - comarcas - playas
+            // Andrés Martínez : set layout default to new pages except municipios - rutas - playas
             $getFileName = $object['fileName'];          
     
-            if($getFileName != 'municipios.htm' && $getFileName != 'comarcas.htm' && $getFileName != 'playas.htm'){
+            if($getFileName != 'municipios.htm' && $getFileName != 'rutas.htm' && $getFileName != 'playas.htm'){
                 $objectData['settings']['viewBag']['layout'] = 'default';
             }
 
@@ -855,8 +859,8 @@ class Index extends Controller
                 $objectData['settings']['viewBag']['layout'] = 'municipio';
             }
 
-            if($getFileName == 'comarcas.htm'){
-                $objectData['settings']['viewBag']['layout'] = 'comarca';
+            if($getFileName == 'rutas.htm'){
+                $objectData['settings']['viewBag']['layout'] = 'ruta';
             }
 
             if($getFileName == 'playas.htm'){
@@ -864,8 +868,8 @@ class Index extends Controller
                 $objectData['settings']['viewBag']['layout'] = 'playa';
             }
 
-
-            if($filterSubTemplate == 'playas'){
+            // Andrés Martínez : add cover url
+            if($filterSubTemplate == 'playas' || $filterSubTemplate == 'municipios'){
            
                 $presrc1 = explode('value="cover"', $objectData['markup']);
                 if(count($presrc1)>1){
@@ -948,14 +952,13 @@ class Index extends Controller
         }
 
         // Andrés Martínez : multlng url force
-
-        $objectData['settings']['viewBag']['localeUrl[en]'] = $objectData['settings']['viewBag']['url'];
-        $objectData['settings']['viewBag']['localeUrl[fr]'] = $objectData['settings']['viewBag']['url'];
-        $objectData['settings']['viewBag']['localeUrl[de]'] = $objectData['settings']['viewBag']['url'];
-        $objectData['settings']['viewBag']['localeUrl[ru]'] = $objectData['settings']['viewBag']['url'];
+        if(isset($objectData['settings']['viewBag'])){
+            $objectData['settings']['viewBag']['localeUrl[en]'] = $objectData['settings']['viewBag']['url'];
+            $objectData['settings']['viewBag']['localeUrl[fr]'] = $objectData['settings']['viewBag']['url'];
+            $objectData['settings']['viewBag']['localeUrl[de]'] = $objectData['settings']['viewBag']['url'];
+            $objectData['settings']['viewBag']['localeUrl[ru]'] = $objectData['settings']['viewBag']['url'];
+        }
         
-
-
         $object->fill($objectData);
         
         /*

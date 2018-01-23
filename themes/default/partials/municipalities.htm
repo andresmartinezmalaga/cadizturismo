@@ -1,0 +1,28 @@
+==
+<?php 
+
+	function onStart()
+	{
+	 	if (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false) {
+	      	$this['preurl'] = '/cadizturismo';
+	    } else {
+	     	$this['preurl'] = '';
+	    }
+	}
+
+?>	
+
+==
+
+{% for municipality in municipalities %}
+	<div class="event">
+			<div class="overlay-img">
+				<br>
+			</div><img class="rec-img fr-fic fr-dii" src="{{municipality.viewBag.cover}}">
+			<div class="txt-container">
+
+				<p class="name">{{municipality.viewBag.title}}</p><img class="separator separator-mun fr-fic fr-dii" src="http://localhost:8888/cadizturismo/plugins/rainlab/pages/assets/svg/small-yellow-separator.svg">
+				<div class="button-container"><a class="see-event" href="{{url('/')}}/{{lang}}{{municipality.viewBag.url}}">Conocer municipio <img src="http://localhost:8888/cadizturismo/plugins/rainlab/pages/assets/svg/link-icon.svg" class="fr-fic fr-dii"></a></div>
+			</div>
+		</div>
+{% endfor %}

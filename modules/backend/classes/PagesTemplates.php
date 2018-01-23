@@ -306,7 +306,7 @@ class PagesTemplates
         <h1 class="txt"><span class="first-word">Tarifa</span></h1><img class="brush fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
     </div>
     <!-- NUEVA FOTO -->
-    <img class="background-image" src="***_preurl_***/storage/app/media/uploaded-files/templates/barbate1.jpg" alt="">
+    <img class="background-image" value="cover" src="***_preurl_***/storage/app/media/uploaded-files/templates/barbate1.jpg" alt="">
   </div>
   <!-- TXT-->
   <div class="section-txt-village">
