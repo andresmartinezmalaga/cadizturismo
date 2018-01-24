@@ -239,7 +239,7 @@ class Evento extends ContentBase
     // CMS Object
     //
 
-    public function getCategories(){
+    public function getEventsCategories(){
       return [
         'semana_santa' => 'Semana Santa',
         'carnaval' => 'Carnaval',
@@ -261,6 +261,55 @@ class Evento extends ContentBase
         'taller' => 'Taller',
         'teatro' => 'Teatro'
       ];
+    }
+
+     public function getMunicipalities(){
+        return [
+         'alcala de los gazules' => 'Alcalá de los Gazules',
+         'alcala del valle' => 'Alcalá del Valle',
+         'algar' => 'Algar',
+         'algeciras' => 'Algeciras',
+         'algodonales' => 'Algodonales',
+         'arcos de la frontera' => 'Arcos de la Frontera',
+         'barbate' => 'Barbate',
+         'benalup-casas viejas' => 'Benalup-Casas Viejas',
+         'benaocaz' => 'Benaocaz',
+         'bornos' => 'Bornos',
+         'cadiz' => 'Cádiz',
+         'castellar de la frontera' => 'Castellar de la Frontera',
+         'chiclana de la frontera' => 'Chiclana de la Frontera',
+         'chipiona' => 'Chipiona',
+         'conil de la frontera' => 'Conil de la Frontera',
+         'el bosque' => 'El Bosque',
+         'el gastor' => 'El Gastor',
+         'el puerto de santa maria' => 'El Puerto de Santa María',
+         'espera' => 'Espera',
+         'grazalema' => 'Grazalema',
+         'jerez de la frontera' => 'Jerez de la Frontera',
+         'jimena de la frontera' => 'Jimena de la Frontera',
+         'la linea de la concepcion' => 'La Línea de la Concepción',
+         'los barrios' => 'Los Barrios',
+         'medina sidonia' => 'Medina Sidonia',
+         'olvera' => 'Olvera',
+         'paterna de rivera' => 'Paterna de Rivera',
+         'prado del rey' => 'Prado del Rey',
+         'puerto real' => 'Puerto Real',
+         'puerto serrano' => 'Puerto Serrano',
+         'rota' => 'Rota',
+         'san fernando' => 'San Fernando',
+         'san jose del valle' => 'San José del Valle',
+         'sanlucar de barrameda' => 'Sanlúcar de Barrameda',
+         'san roque' => 'San Roque',
+         'setenil de las bodegas' => 'Setenil de las Bodegas',
+         'tarifa' => 'Tarifa',
+         'torre alhaquime' => 'Torre Alháquime',
+         'trebujena' => 'Trebujena',
+         'ubrique' => 'Ubrique',
+         'vejer de la frontera' => 'Vejer de la Frontera',
+         'villaluenga del rosario' => 'Villaluenga del Rosario',
+         'villamartin' => 'Villamartín',
+         'zahara de la sierra' => 'Zahara de la Sierra',
+        ];
     }
 
     public function getInterestsOptions() {

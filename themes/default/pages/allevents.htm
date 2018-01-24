@@ -1,0 +1,66 @@
+title = "allEvents"
+url = "/todos-los-eventos"
+layout = "dinamic"
+is_hidden = 0
+
+[staticApp]
+
+==
+<?php  
+	
+	function onStart()
+	{	    
+    $this['lang']=\App::getLocale();
+		if($this['lang']==''){
+			$this['lang']='es';
+		}
+    
+    if(Session::has('data')){
+      Session::put('reciveData',Session::get('data'));     
+    }
+
+    //$events = $this->staticApp->eventAll();
+    
+
+	}
+
+
+	function onFindEvent(){
+
+    $category = $_POST['interest'];
+
+		$daystart = $_POST['daystart'];
+    $dayend = $_POST['dayend'];
+
+		$location = $_POST['tvisit'];
+  	$aLang = App::getLocale();
+    $events = $this->staticApp->eventAll($category,$daystart,$dayend,$location);
+  
+    return Redirect::to($aLang.'/eventos')->with( ['data' => json_encode($events)] );
+ 
+  }
+
+?>
+==
+
+<!-- HEADER -->
+<div class="header header-events">
+  
+  <div class="header-container">
+      
+      <div class="header-txt">
+        <h1 class="txt txt-home"><span class="first-word">Vive</span> nuestros eventos</h1>
+        <img class="brush" src="assets/svg/brush-header.svg" alt="">
+      </div>
+   
+    <!-- SEARCH -->
+    <div id='prtlSearch'>
+      {% partial "site/searchevent" %}
+    </div>
+
+  </div>
+</div>
+
+<div id='prtlExperiences' class="all-exps">
+	{% partial "experiences" %}
+</div>
