@@ -441,7 +441,7 @@ html, body {
         text-decoration: none;
         opacity: 0.5; }
 
-.header-home .header-txt .txt {
+.header-home .header-txt .txt, .header-events .header-txt .txt {
   font-size: 121px;
   transform: rotate(-9deg);
   text-align: center;
