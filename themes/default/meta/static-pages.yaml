@@ -34,6 +34,7 @@ static-pages:
         playas-los-alemanes: {  }
         playas-playa-chica: {  }
         playas-valdavaqueros: {  }
+        playas-playa8: {  }
     naturaleza:
         naturaleza-via-verde: {  }
         naturaleza-birdwatching: {  }
@@ -65,3 +66,5 @@ static-pages:
     experiencias-dos: {  }
     eventos-evento-uno: {  }
     publicaciones: {  }
+    eventos-dos: {  }
+    eventos-tres: {  }

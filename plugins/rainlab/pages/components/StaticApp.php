@@ -8,6 +8,8 @@ use Cms\Classes\Theme;
 use Request;
 use Url;
 use DateTime;
+use Carbon\Carbon;
+use Carbon\CarbonInterval;
 
 /**
  * The static page component.
@@ -119,6 +121,25 @@ class StaticApp extends ComponentBase
         $beaches = $pages->where("is_hidden",0)->where("subtemplate","playas")->values();
 
         return $beaches;
+    }
+
+    public function eventAll()
+    {
+
+        $now = Carbon::now();
+
+        $theme = Theme::getActiveTheme();
+        $pagesList = Page::listInTheme($theme, false);
+        $pages =  new \Illuminate\Support\Collection($pagesList);
+        
+        $eventsVip = $pages->where("is_hidden",0)->where("template","eventos");
+
+
+    }
+
+    public function eventFind()
+    {
+
     }
 
     public function eventList()

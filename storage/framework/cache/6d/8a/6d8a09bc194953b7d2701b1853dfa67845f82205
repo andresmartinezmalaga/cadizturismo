@@ -1,0 +1,12 @@
+<<<<<<< HEAD:storage/framework/cache/34/84/34842a29e81be0075ad98aa14440abdf489c6c1a
+1516816424a:1:{s:33:"naturaleza-espacios-naturales.htm";a:7:{s:8:"fileName";s:33:"naturaleza-espacios-naturales.htm";s:7:"content";s:133:"[viewBag]
+=======
+1516815253a:1:{s:33:"naturaleza-espacios-naturales.htm";a:7:{s:8:"fileName";s:33:"naturaleza-espacios-naturales.htm";s:7:"content";s:133:"[viewBag]
+>>>>>>> d702da4b20f1bef006c6a5f4442dc8592d75cc38:storage/framework/cache/6d/8a/6d8a09bc194953b7d2701b1853dfa67845f82205
+title = "Espacios naturales"
+url = "/naturaleza/espacios-naturales"
+template = "pages"
+is_hidden = 0
+layout = "default"
+
+==";s:5:"mtime";i:1516786666;s:6:"markup";s:0:"";s:4:"code";N;s:7:"viewBag";a:5:{s:5:"title";s:18:"Espacios naturales";s:3:"url";s:30:"/naturaleza/espacios-naturales";s:8:"template";s:5:"pages";s:9:"is_hidden";s:1:"0";s:6:"layout";s:7:"default";}s:12:"parsedMarkup";s:0:"";}}

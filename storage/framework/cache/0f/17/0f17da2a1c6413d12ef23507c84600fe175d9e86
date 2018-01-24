@@ -1,0 +1,281 @@
+<<<<<<< HEAD:storage/framework/cache/a2/7e/a27ecb4a49440df200dbe3e32d47aade15e12202
+1516810070a:1:{s:8:"home.htm";a:10:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:5336:"title = "home"
+=======
+1516815253a:1:{s:8:"home.htm";a:10:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:5336:"title = "home"
+>>>>>>> d702da4b20f1bef006c6a5f4442dc8592d75cc38:storage/framework/cache/0f/17/0f17da2a1c6413d12ef23507c84600fe175d9e86
+url = "/"
+layout = "dinamic"
+is_hidden = 0
+
+[staticApp]
+
+==
+
+<?php
+
+	function onStart()
+	{
+
+    $this['lang']=\App::getLocale();
+		if($this['lang']==''){
+			$this['lang']='es';
+		}
+
+    $this['events3'] = $this->staticApp->event3List();
+    $this['eventsVip'] = $this->staticApp->eventVipList();
+
+	}
+
+	function onFindExperience(){
+
+		$days = $_POST['days'];
+		$interest = $_POST['interest'];
+		$tvisit = $_POST['tvisit'];
+
+      $aLang = App::getLocale();
+
+    	$experiences = $this->staticApp->experienceFind($days,$interest,$tvisit);
+      return Redirect::to($aLang.'/experiencias')->with( ['data' => json_encode($experiences)] );
+    }
+
+?>
+
+==
+
+	<!-- HEADER -->
+    <div class="header header-home">
+      <div class="header-container">
+        <div class="header-txt">
+          <h1 class="txt txt-home"><span class="first-word">
+           {{ "backend::lang.home.page.h1"|trans }}
+            </span>{{ "backend::lang.home.page.h1_span"|trans }}</h1>
+          <img class="brush" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/brush-header.svg" alt="">
+        </div>
+
+        <!-- SEARCH -->
+        <div id='prtlSearch'>
+          {% partial "site/search" %}
+        </div>
+
+        <div class="header-comment">
+          <p class="comment">{{ "backend::lang.home.page.comment"|trans }}</p>
+          <a class="header-link" href="{{lang}}/playas">{{ "backend::lang.home.page.link"|trans }} &nbsp;<img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/link-arrow.svg" alt=""> </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- QUÉ SE CUECE -->
+    <div class="whats-on">
+
+      <div class="left-txt">
+        <p class="title">{{ "backend::lang.home.page.events_title"|trans }}</p>
+          <img class="separator" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
+
+          {% for iEvent in events3 %}
+            
+              {% set i = "backend::lang.eventos.category."~iEvent['category'] %}
+              {{ i|trans }}
+           
+
+            <div class="event">
+              <p class="event-date">{{iEvent['date_start_pretty']}}</p>
+              <p class="event-place">{{iEvent['place']}}</p>
+              <a href="jornadas-micologicas.html" class="event-name">{{iEvent['title']}}</a> 
+              
+              
+            </div>
+          {% endfor %}
+
+            <a class="events-link" href="{{lang}}/eventos">{{ "backend::lang.home.page.all_events"|trans }}&nbsp;&nbsp;<img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/link-arrow-yellow.svg" alt=""> </a>
+      </div>
+
+
+      <div class="right-photos">
+        <!-- DIRECCIÓN 1º ARRIBA-ABAJO 2º IZQUIERDA-DERECHA -->
+
+        <a href="carreras-caballos.html">
+          <div id="element1" class="element">
+            <div class="overlay-img"></div>
+            <img class="rec-img" src="{{eventsVip[0]['image']}}">
+            <div class="txt-container">
+              <p class="date">{{eventsVip[0]['date_start_pretty']}}</p>
+              <p class="name">{{eventsVip[0]['title']}}</p>
+              <img class="separator" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/small-yellow-separator.svg">
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div id="element2" class="element">
+            <div class="overlay-img"></div>
+            <img class="rec-img" src="{{eventsVip[1]['image']}}">
+            <div class="txt-container">
+              <p class="date">{{eventsVip[1]['date_start_pretty']}}</p>
+              <p class="name">{{eventsVip[1]['title']}}</p>
+              <img class="separator" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/small-yellow-separator.svg">
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div id="element3" class="element">
+            <div class="overlay-img"></div>
+            <img class="rec-img" src="{{eventsVip[2]['image']}}">
+            <div class="txt-container">
+              <p class="date">{{eventsVip[2]['date_start_pretty']}}</p>
+              <p class="name">{{eventsVip[02]['title']}}</p>
+              <img class="separator" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/small-yellow-separator.svg">
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div id="element4" class="element">
+            <div class="overlay-img"></div>
+            <img class="rec-img" src="{{eventsVip[3]['image']}}">
+            <div class="txt-container">
+              <p class="date">{{eventsVip[3]['date_start_pretty']}}</p>
+              <p class="name">{{eventsVip[3]['title']}}</p>
+              <img class="separator" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/small-yellow-separator.svg">
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!--  RUTAS -->
+    <div class="secret-routes">
+      <div class="txt-container">
+        <p class="title">{{ "backend::lang.home.page.routes_title"|trans }}</p>
+        <p class="desc">{{ "backend::lang.home.page.routes_comment"|trans }}</p>
+        <a class="events-link" href="{{lang}}/rutas">{{ "backend::lang.home.page.routes_link"|trans }}<img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/link-arrow-yellow.svg" alt=""> </a>
+        <img class="separator" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
+      </div>
+    </div>
+";s:5:"mtime";i:1516791119;s:6:"markup";s:4670:"<!-- HEADER -->
+    <div class="header header-home">
+      <div class="header-container">
+        <div class="header-txt">
+          <h1 class="txt txt-home"><span class="first-word">
+           {{ "backend::lang.home.page.h1"|trans }}
+            </span>{{ "backend::lang.home.page.h1_span"|trans }}</h1>
+          <img class="brush" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/brush-header.svg" alt="">
+        </div>
+
+        <!-- SEARCH -->
+        <div id='prtlSearch'>
+          {% partial "site/search" %}
+        </div>
+
+        <div class="header-comment">
+          <p class="comment">{{ "backend::lang.home.page.comment"|trans }}</p>
+          <a class="header-link" href="{{lang}}/playas">{{ "backend::lang.home.page.link"|trans }} &nbsp;<img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/link-arrow.svg" alt=""> </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- QUÉ SE CUECE -->
+    <div class="whats-on">
+
+      <div class="left-txt">
+        <p class="title">{{ "backend::lang.home.page.events_title"|trans }}</p>
+          <img class="separator" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
+
+          {% for iEvent in events3 %}
+            
+              {% set i = "backend::lang.eventos.category."~iEvent['category'] %}
+              {{ i|trans }}
+           
+
+            <div class="event">
+              <p class="event-date">{{iEvent['date_start_pretty']}}</p>
+              <p class="event-place">{{iEvent['place']}}</p>
+              <a href="jornadas-micologicas.html" class="event-name">{{iEvent['title']}}</a> 
+              
+              
+            </div>
+          {% endfor %}
+
+            <a class="events-link" href="{{lang}}/eventos">{{ "backend::lang.home.page.all_events"|trans }}&nbsp;&nbsp;<img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/link-arrow-yellow.svg" alt=""> </a>
+      </div>
+
+
+      <div class="right-photos">
+        <!-- DIRECCIÓN 1º ARRIBA-ABAJO 2º IZQUIERDA-DERECHA -->
+
+        <a href="carreras-caballos.html">
+          <div id="element1" class="element">
+            <div class="overlay-img"></div>
+            <img class="rec-img" src="{{eventsVip[0]['image']}}">
+            <div class="txt-container">
+              <p class="date">{{eventsVip[0]['date_start_pretty']}}</p>
+              <p class="name">{{eventsVip[0]['title']}}</p>
+              <img class="separator" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/small-yellow-separator.svg">
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div id="element2" class="element">
+            <div class="overlay-img"></div>
+            <img class="rec-img" src="{{eventsVip[1]['image']}}">
+            <div class="txt-container">
+              <p class="date">{{eventsVip[1]['date_start_pretty']}}</p>
+              <p class="name">{{eventsVip[1]['title']}}</p>
+              <img class="separator" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/small-yellow-separator.svg">
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div id="element3" class="element">
+            <div class="overlay-img"></div>
+            <img class="rec-img" src="{{eventsVip[2]['image']}}">
+            <div class="txt-container">
+              <p class="date">{{eventsVip[2]['date_start_pretty']}}</p>
+              <p class="name">{{eventsVip[02]['title']}}</p>
+              <img class="separator" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/small-yellow-separator.svg">
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div id="element4" class="element">
+            <div class="overlay-img"></div>
+            <img class="rec-img" src="{{eventsVip[3]['image']}}">
+            <div class="txt-container">
+              <p class="date">{{eventsVip[3]['date_start_pretty']}}</p>
+              <p class="name">{{eventsVip[3]['title']}}</p>
+              <img class="separator" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/small-yellow-separator.svg">
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!--  RUTAS -->
+    <div class="secret-routes">
+      <div class="txt-container">
+        <p class="title">{{ "backend::lang.home.page.routes_title"|trans }}</p>
+        <p class="desc">{{ "backend::lang.home.page.routes_comment"|trans }}</p>
+        <a class="events-link" href="{{lang}}/rutas">{{ "backend::lang.home.page.routes_link"|trans }}<img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/link-arrow-yellow.svg" alt=""> </a>
+        <img class="separator" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
+      </div>
+    </div>";s:4:"code";s:571:"	function onStart()
+	{
+
+    $this['lang']=\App::getLocale();
+		if($this['lang']==''){
+			$this['lang']='es';
+		}
+
+    $this['events3'] = $this->staticApp->event3List();
+    $this['eventsVip'] = $this->staticApp->eventVipList();
+
+	}
+
+	function onFindExperience(){
+
+		$days = $_POST['days'];
+		$interest = $_POST['interest'];
+		$tvisit = $_POST['tvisit'];
+
+      $aLang = App::getLocale();
+
+    	$experiences = $this->staticApp->experienceFind($days,$interest,$tvisit);
+      return Redirect::to($aLang.'/experiencias')->with( ['data' => json_encode($experiences)] );
+    }";s:5:"title";s:4:"home";s:3:"url";s:1:"/";s:6:"layout";s:7:"dinamic";s:9:"is_hidden";s:1:"0";s:9:"staticApp";a:0:{}}}
