@@ -4,42 +4,51 @@
 
 fields:
     viewBag[title]:
-        span: left
+        span: full
         label: rainlab.pages::lang.editor.title
         placeholder: rainlab.pages::lang.event.new_title
         attributes:
             default-focus: 1
 
-    viewBag[url]:
+    viewBag[tlayout]:
         span: right
+        label: 'Plantilla'
+        type: dropdown
+        options: getEventsTPlantillas
+
+    viewBag[url]:
+        span: left
         placeholder: /
         label: rainlab.pages::lang.editor.url
         preset:
             field: viewBag[title]
             type: url
             prefixInput: input[data-parent-url]
-        
+    
     viewBag[date_start]:
-        span: left
+        cssClass: size33
         label: 'Fecha Inicio'
         type: datepicker
         mode: date 
 
     viewBag[date_end]:
-        span: right
+        cssClass: size33
         label: 'Fecha Fin'
         type: datepicker
         mode: date    
 
     viewBag[category]:
-        span: left
-        label: 'Categoría'
-        type: dropdown
-        options: getCategories
+       label: 'Categoría'
+       cssClass: size33nm
+       type: dropdown
+       options: getEventsCategories
 
     viewBag[Location]:
         span: left
         label: 'Ubicación'
+        type: dropdown
+        options: getMunicipalities
+
 
     viewBag[Locationgoogle]:
         span: right
@@ -75,6 +84,13 @@ tabs:
             label: rainlab.pages::lang.editor.hidden
             type: checkbox
             comment: rainlab.pages::lang.editor.hidden_comment
+
+        viewBag[is_top]:
+            tab: cms::lang.editor.settings
+            span: right
+            label: 'Destacar evento'
+            type: checkbox
+            comment: 'Si destacas este evento aparecerá en la sección de Eventos destacados y Qué se cuece hoy en Cádiz'
 
         #viewBag[navigation_hidden]:
             #tab: cms::lang.editor.settings

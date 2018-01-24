@@ -52,6 +52,11 @@ class Plugin extends PluginBase
                 'order' => 200,
                 'label' => 'rainlab.pages::lang.experience.manage_pages'
                 ],
+            'rainlab.pages.manage_eventos' => [
+                'tab'   => 'rainlab.pages::lang.event.tab',
+                'order' => 200,
+                'label' => 'rainlab.pages::lang.event.manage_pages'
+                ],
             'rainlab.pages.manage_content' => [
                 'tab'   => 'rainlab.pages::lang.page.tab',
                 'order' => 200,

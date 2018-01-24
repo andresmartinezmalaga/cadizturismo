@@ -541,6 +541,16 @@ return [
         'selected_size' => 'Selección:'
     ],
 
+    'menuheader' => [
+        'allEvents' => 'Todos los eventos',
+        'whereToGo' => 'Dónde ir',
+        'whatToDo' => 'Qué hacer',
+        'whatToLive' => 'Qué vivir',
+        'myStance' => 'Mi estancia',
+        'comarcas' => 'Comarcas',
+        'municipios' => 'Municipios'
+    ],
+
     'home' => [
         'page' => [
             'h1' => 'Playas',
@@ -556,6 +566,12 @@ return [
     ],
 
     'eventos' => [
+        'page' => [
+            'h1' => 'Vive',
+            'h1_span' => 'nuestros eventos',
+            'comment' => 'Descubre miles de eventos que no querrás perderte',
+        ],
+
         'category' => [
             'semana_santa' => 'Semana Santa',
             'carnaval' => 'Carnaval',
@@ -576,6 +592,10 @@ return [
             'ruta' => 'Ruta',
             'taller' => 'Taller',
             'teatro' => 'Teatro'
+        ],
+
+        'search' => [
+            'submit' => 'Ver eventos' 
         ],
     ],
 
