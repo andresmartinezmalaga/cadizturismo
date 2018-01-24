@@ -20,12 +20,11 @@ is_hidden = 0
     }
 
     //$events = $this->staticApp->eventAll();
-    
 
 	}
 
-
 	function onFindEvent(){
+
 
     $category = $_POST['category'];
     $location = $_POST['location'];
@@ -37,13 +36,6 @@ is_hidden = 0
     $daystart = new Date($edaystart[0].'-'.$edaystart[1].'-'.$edaystart[2]);
     $dayend = new Date($edayend[0].'-'.$edayend[1].'-'.$edayend[2]);
 
-    
-    echo $daystart;
-    echo $dayend;
-
-  
-
-	   dd(1);
   	$aLang = App::getLocale();
     $events = $this->staticApp->eventAll($category,$daystart,$dayend,$location);
   
