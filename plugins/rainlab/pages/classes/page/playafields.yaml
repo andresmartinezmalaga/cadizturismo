@@ -21,7 +21,7 @@ fields:
 
     viewBag[categoriea]:
         span: left
-        label: 'Categoría'
+        label: 'Tipo'
         placeholder: 'categoría'
         type: dropdown
         options: getBeachCategoriesType

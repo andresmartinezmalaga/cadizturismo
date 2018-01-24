@@ -19,24 +19,33 @@ fields:
             type: url
             prefixInput: input[data-parent-url]
         
-    viewBag[days]:
-        label: 'días'
-        cssClass: size33
-        type: dropdown
-        options: getDaysOptions
+    viewBag[date_start]:
+        span: left
+        label: 'Fecha Inicio'
+        type: datepicker
+        mode: date 
 
-    viewBag[interest]:
-        label: 'intereses'
-        cssClass: size33
-        type: dropdown
-        options: getInterestsOptions
+    viewBag[date_end]:
+        span: right
+        label: 'Fecha Fin'
+        type: datepicker
+        mode: date    
 
-    viewBag[tvisit]:
-        label: 'tipo de visita'
-        cssClass: size33nm
+    viewBag[category]:
+        span: left
+        label: 'Categoría'
         type: dropdown
-        options: getVisitsOptions
+        options: getCategories
 
+    viewBag[Location]:
+        span: left
+        label: 'Ubicación'
+
+    viewBag[Locationgoogle]:
+        span: right
+        label: 'Url Google Map'
+        
+    
     viewBag[template]:
         label: 'template'
         default: 'eventos'

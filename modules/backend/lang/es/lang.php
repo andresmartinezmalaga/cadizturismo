@@ -540,4 +540,105 @@ return [
         'image_size' => 'Tamaño de la imagen:',
         'selected_size' => 'Selección:'
     ],
+
+    'home' => [
+        'page' => [
+            'h1' => 'Playas',
+            'h1_span' => 'que te llenan de luz',
+            'comment' => '138km de playas, calas y ensenadas que invitan a perderse',
+            'link' => 'Conoce nuestras playas',
+            'events_title' => 'Qué se cuece hoy en Cádiz',
+            'all_events' => 'Todos los eventos',
+            'routes_title' => 'rutas secretas',
+            'routes_comment' => '¿Eres de emociones fuertes? Disfruta de Cádiz como nunca antes.',
+            'routes_link' => 'Selección de rutas secretas'
+        ],
+    ],
+
+    'eventos' => [
+        'category' => [
+            'semana_santa' => 'Semana Santa',
+            'carnaval' => 'Carnaval',
+            'congresos' => 'Congresos',
+            'cultura' => 'Cultura',
+            'danza' => 'Danza',
+            'deporte' => 'Deporte',
+            'espectaculos' => 'Espectáculos',
+            'exposiciones' => 'Exposiciones',
+            'ferias' => 'Ferias',
+            'fiesta' => 'Fiesta',
+            'flamenco' => 'Flamenco',
+            'gastronomia' => 'Gastronomía',
+            'naturaleza' => 'Naturaleza',
+            'navidad' => 'Navidad',
+            'ocio' => 'Ocio',
+            'romerias' => 'Romerías',
+            'ruta' => 'Ruta',
+            'taller' => 'Taller',
+            'teatro' => 'Teatro'
+        ],
+    ],
+
+    'experiences' => [
+        'page' => [
+            'h1' => 'Experiencias',
+            'comment' => 'pensadas para ti',
+            'result1' => 'Hemos encontrado',
+            'result2' => 'experiencias que se adaptan a ti',
+            'experience_link' => 'Ver experiencia',
+
+            'playa' => 'Playa',
+            'cultura' => 'Cultura',
+            'fiesta' => 'Fiesta',
+            'gastronomia' => 'Gastronomía',
+            'naturaleza' => 'Naturaleza',           
+            'vino' => 'Vino',
+            'aventura' => 'Aventura',
+            'tradicion' => 'Tradición', 
+
+            'cadiz-oculta' => 'Cádiz oculta',
+            'cadiz-autentica' => 'Cádiz auténtica',
+            'cadiz-relax' => 'Cádiz relax',
+            'cadiz-urbano' => 'Cádiz urbano',             
+        ],
+        'search' => [
+            'select1_name' => 'TU ESTANCIA',
+                'day' => 'dia',
+                'days' => 'dias',
+            'select2_name' => 'INTERESES',
+               'interest_1'=> 'Playa y gastronomía',
+               'interest_2'=> 'Cultura y gastronomía',
+               'interest_3'=> 'Fiesta y cultura',
+               'interest_4'=> 'Gastronomía y naturaleza',
+               'interest_5'=> 'Naturaleza y aventura',
+               'interest_6'=> 'Playa y naturaleza',
+               'interest_7'=> 'Vino y tradición',
+               'interest_8'=> 'Aventura y tradición',                
+            'select3_name' => 'TIPO DE VISITA',
+               'type_1' => 'Cádiz oculta',
+               'type_2' => 'Cádiz auténtica',
+               'type_3' => 'Cádiz relax',
+               'type_4' => 'Cádiz urbano',
+            'submit' => 'Ven a Cádiz' 
+        ],
+    ],
+        
+    'beaches' => [
+        'category' => [
+            'deporte' => 'Deporte',
+            'naturaleza' => 'Naturaleza',
+            'animales' => 'Animales',
+            'nudista' => 'Nudista',            
+            'camping' => 'Camping',
+            'restauracion' => 'Restauración',            
+            'instalaciones' => 'instalaciones'
+        ],
+        
+        'type' => [
+            'urban' => 'Urban',
+            'virgen' => 'Virgen'
+        ],
+
+    ],
+
 ];
