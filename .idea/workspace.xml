@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87ff11be-c4c2-4ca5-8374-8a1952dec0dc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/default/layouts/default.htm" afterPath="$PROJECT_DIR$/themes/default/layouts/default.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/default/layouts/dinamic.htm" afterPath="$PROJECT_DIR$/themes/default/layouts/dinamic.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/default/layouts/experience.htm" afterPath="$PROJECT_DIR$/themes/default/layouts/experience.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/default/layouts/municipio.htm" afterPath="$PROJECT_DIR$/themes/default/layouts/municipio.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/default/layouts/playa.htm" afterPath="$PROJECT_DIR$/themes/default/layouts/playa.htm" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -47,11 +50,51 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="default.htm" pinned="false" current-in-tab="true">
+      <file leaf-file-name="default.htm" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/default/layouts/default.htm">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="390">
+              <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dinamic.htm" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/default/layouts/dinamic.htm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="36" column="98" lean-forward="false" selection-start-line="36" selection-start-column="98" selection-end-line="36" selection-end-column="98" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="experience.htm" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/default/layouts/experience.htm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="615">
               <caret line="41" column="98" lean-forward="false" selection-start-line="41" selection-start-column="98" selection-end-line="41" selection-end-column="98" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="municipio.htm" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/default/layouts/municipio.htm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="660">
+              <caret line="44" column="98" lean-forward="false" selection-start-line="44" selection-start-column="98" selection-end-line="44" selection-end-column="98" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="playa.htm" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/themes/default/layouts/playa.htm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="660">
+              <caret line="44" column="98" lean-forward="false" selection-start-line="44" selection-start-column="98" selection-end-line="44" selection-end-column="98" />
               <folding />
             </state>
           </provider>
@@ -87,6 +130,10 @@
       <list>
         <option value="$PROJECT_DIR$/themes/demo/layouts/default.htm" />
         <option value="$PROJECT_DIR$/themes/default/layouts/default.htm" />
+        <option value="$PROJECT_DIR$/themes/default/layouts/dinamic.htm" />
+        <option value="$PROJECT_DIR$/themes/default/layouts/experience.htm" />
+        <option value="$PROJECT_DIR$/themes/default/layouts/municipio.htm" />
+        <option value="$PROJECT_DIR$/themes/default/layouts/playa.htm" />
       </list>
     </option>
   </component>
@@ -212,12 +259,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1516786709693</updated>
-      <workItem from="1516786712254" duration="3090000" />
+      <workItem from="1516786712254" duration="3161000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3090000" />
+    <option name="totallyTimeSpent" value="3161000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="845" y="22" width="1715" height="1054" extended-state="0" />
@@ -296,7 +343,39 @@
     <entry file="file://$PROJECT_DIR$/themes/default/layouts/default.htm">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
+          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/default/layouts/dinamic.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="98" lean-forward="false" selection-start-line="36" selection-start-column="98" selection-end-line="36" selection-end-column="98" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/default/layouts/experience.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
           <caret line="41" column="98" lean-forward="false" selection-start-line="41" selection-start-column="98" selection-end-line="41" selection-end-column="98" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/default/layouts/municipio.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="44" column="98" lean-forward="false" selection-start-line="44" selection-start-column="98" selection-end-line="44" selection-end-column="98" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/default/layouts/playa.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="44" column="98" lean-forward="false" selection-start-line="44" selection-start-column="98" selection-end-line="44" selection-end-column="98" />
           <folding />
         </state>
       </provider>
