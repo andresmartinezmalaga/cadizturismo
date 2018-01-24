@@ -1,0 +1,359 @@
+1516798409a:1:{s:17:"playas-marina.htm";a:7:{s:8:"fileName";s:17:"playas-marina.htm";s:7:"content";s:6842:"[viewBag]
+title = "Marina"
+url = "/playas/marina"
+template = "pages"
+subtemplate = "playas"
+cover = "/cadizturismo/storage/app/media/uploaded-files/templates/playa-lances.jpg"
+is_hidden = 0
+layout = "default"
+localeUrl[en] = "/playas/marina"
+localeUrl[fr] = "/playas/marina"
+localeUrl[de] = "/playas/marina"
+localeUrl[ru] = "/playas/marina"
+==
+<!-- HEADER -->
+<div class="header header-playa">
+	<div class="header-container header-village-container">
+		<div class="header-txt header-txt-village">
+
+			<h1 class="txt"><span class="first-word">Los Lances</span></h1><img class="brush fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
+	</div>
+	<!-- NUEVA FOTO -->
+	<img class="background-image fr-fil fr-dib" value="cover" src="/cadizturismo/storage/app/media/uploaded-files/templates/playa-lances.jpg" alt=""></div>
+<!-- TXT-->
+<div class="section-txt-village">
+	<div class="txt-container">
+
+		<p class="title">ARENA FINA,
+			<br>WINDSURF Y
+			<br>BUENA COMIDA</p><img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+
+		<p class="desc">Situado en la comarca de La Janda, Barbate es un precioso pueblo gaditano que alberga uno de los puertos pesqueros más famosos de Andalucía. A lo largo de los 25 kilómetros de costa que agrupa el término municipal, encontrarás pueblos y pedanías como Zahara de los Atunes, Caños de Meca y Zahora, y en ellos, playas naturales, dunas y acantilados que componen uno de los núcleos turísticos más reconocidos del sur de España.</p>
+
+		<p class="desc">El municipio ofrece la posibilidad de realizar una gran variedad de rutas de gran interés ecológico y paisajístico gracias al Parque Natural de la Breña y las Marismas de Barbate.</p>
+
+		<p class="desc">Las condiciones de pesca que ofrece la zona permiten hacen destacar a su gastronomía por el famoso atún de Almadraba, un manjar único que merece la pena disfrutar en los restaurantes de Barbate.</p>
+	</div>
+</div>
+<!-- IMAGEN -->
+<div class="img-village">
+	<div class="txt-container">
+
+		<p class="title">Marismas de Barbate</p>
+
+		<p class="desc">¿Eres de emociones fuertes? Disfruta de Cádiz como nunca antes.</p><a class="events-link" href="#playas">Selección de rutas naturales <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-arrow-yellow.svg" alt="" class="fr-fic fr-dii">&nbsp;</a>
+		<img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
+	<!-- NUEVA FOTO -->
+	<img class="img-destacada fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/marismas-barbate.jpg" alt=""></div>
+<div class="section-txt-village">
+	<div class="txt-container">
+
+		<p class="title">3 COSAS QUE
+			<br>HACER EN LA PLAYA
+			<br>DE LOS LANCES</p><img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
+</div>
+<div class="all-exps" id="exps-playa">
+	<div class="all-events-container">
+		<div class="event event-playa">
+			<div class="overlay-img">
+				<br>
+			</div><img class="rec-img fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/kite.jpg">
+			<div class="txt-container">
+
+				<p class="name">3 SIXTY KITE SCHOOL</p>
+
+				<p class="subtitle">Utilizamos el método IKO y todos los instructores están certificados en IKO de nivel 3.</p><img class="separator separator-playa fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+				<a class="see-event" href="#">Saber más <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+		</div>
+		<div class="event event-playa">
+			<div class="overlay-img">
+				<br>
+			</div><img class="rec-img fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/arte-vida.jpg">
+			<div class="txt-container">
+
+				<p class="name">ARTE Y VIDA TARIFA</p>
+
+				<p class="subtitle">Lugar ideal para el descanso, y disfrutar de nuestras terrazas, restaurante o zonas chill out.</p><img class="separator separator-playa fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+				<a class="see-event" href="#">Saber más <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+		</div>
+		<div class="event event-playa">
+			<div class="overlay-img">
+				<br>
+			</div><img class="rec-img fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/camping.jpg">
+			<div class="txt-container">
+
+				<p class="name">CAMPING TORRE DE LA PEÑA</p>
+
+				<p class="subtitle">Camping, Bungalows y Restaurante en Tarifa con un pesacado de primera.</p><img class="separator separator-playa fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+				<a class="see-event" href="#">Saber más <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+		</div>
+	</div>
+</div>
+<div class="icons-row">
+	<div class="i-container">
+		<div class="also-feature main-feature">
+			<!-- El icono de la urbana se llama urban-beach.svg -->
+			<img src="/cadizturismo/plugins/rainlab/pages/assets/svg/virgin-beach.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Playa virgen</p>
+		</div>
+		<div class="also-feature"><img src="/cadizturismo/plugins/rainlab/pages/assets/svg/natu-grey.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Naturaleza</p>
+		</div>
+		<div class="also-feature"><img src="/cadizturismo/plugins/rainlab/pages/assets/svg/deporte-grey.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Deporte</p>
+		</div>
+		<div class="also-feature"><img src="/cadizturismo/plugins/rainlab/pages/assets/svg/animales.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Animales</p>
+		</div>
+		<div class="also-feature"><img src="/cadizturismo/plugins/rainlab/pages/assets/svg/camping.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Camping</p>
+		</div>
+		<div class="also-feature"><img src="/cadizturismo/plugins/rainlab/pages/assets/svg/instalaciones.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Instalaciones</p>
+		</div>
+		<div class="also-feature"><img src="/cadizturismo/plugins/rainlab/pages/assets/svg/nudista.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Nudista</p>
+		</div>
+		<div class="also-feature"><img src="/cadizturismo/plugins/rainlab/pages/assets/svg/restauracion.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Restauración</p>
+		</div>
+	</div>
+</div>";s:5:"mtime";i:1516781841;s:6:"markup";s:6498:"<!-- HEADER -->
+<div class="header header-playa">
+	<div class="header-container header-village-container">
+		<div class="header-txt header-txt-village">
+
+			<h1 class="txt"><span class="first-word">Los Lances</span></h1><img class="brush fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
+	</div>
+	<!-- NUEVA FOTO -->
+	<img class="background-image fr-fil fr-dib" value="cover" src="/cadizturismo/storage/app/media/uploaded-files/templates/playa-lances.jpg" alt=""></div>
+<!-- TXT-->
+<div class="section-txt-village">
+	<div class="txt-container">
+
+		<p class="title">ARENA FINA,
+			<br>WINDSURF Y
+			<br>BUENA COMIDA</p><img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+
+		<p class="desc">Situado en la comarca de La Janda, Barbate es un precioso pueblo gaditano que alberga uno de los puertos pesqueros más famosos de Andalucía. A lo largo de los 25 kilómetros de costa que agrupa el término municipal, encontrarás pueblos y pedanías como Zahara de los Atunes, Caños de Meca y Zahora, y en ellos, playas naturales, dunas y acantilados que componen uno de los núcleos turísticos más reconocidos del sur de España.</p>
+
+		<p class="desc">El municipio ofrece la posibilidad de realizar una gran variedad de rutas de gran interés ecológico y paisajístico gracias al Parque Natural de la Breña y las Marismas de Barbate.</p>
+
+		<p class="desc">Las condiciones de pesca que ofrece la zona permiten hacen destacar a su gastronomía por el famoso atún de Almadraba, un manjar único que merece la pena disfrutar en los restaurantes de Barbate.</p>
+	</div>
+</div>
+<!-- IMAGEN -->
+<div class="img-village">
+	<div class="txt-container">
+
+		<p class="title">Marismas de Barbate</p>
+
+		<p class="desc">¿Eres de emociones fuertes? Disfruta de Cádiz como nunca antes.</p><a class="events-link" href="#playas">Selección de rutas naturales <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-arrow-yellow.svg" alt="" class="fr-fic fr-dii">&nbsp;</a>
+		<img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
+	<!-- NUEVA FOTO -->
+	<img class="img-destacada fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/marismas-barbate.jpg" alt=""></div>
+<div class="section-txt-village">
+	<div class="txt-container">
+
+		<p class="title">3 COSAS QUE
+			<br>HACER EN LA PLAYA
+			<br>DE LOS LANCES</p><img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
+</div>
+<div class="all-exps" id="exps-playa">
+	<div class="all-events-container">
+		<div class="event event-playa">
+			<div class="overlay-img">
+				<br>
+			</div><img class="rec-img fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/kite.jpg">
+			<div class="txt-container">
+
+				<p class="name">3 SIXTY KITE SCHOOL</p>
+
+				<p class="subtitle">Utilizamos el método IKO y todos los instructores están certificados en IKO de nivel 3.</p><img class="separator separator-playa fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+				<a class="see-event" href="#">Saber más <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+		</div>
+		<div class="event event-playa">
+			<div class="overlay-img">
+				<br>
+			</div><img class="rec-img fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/arte-vida.jpg">
+			<div class="txt-container">
+
+				<p class="name">ARTE Y VIDA TARIFA</p>
+
+				<p class="subtitle">Lugar ideal para el descanso, y disfrutar de nuestras terrazas, restaurante o zonas chill out.</p><img class="separator separator-playa fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+				<a class="see-event" href="#">Saber más <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+		</div>
+		<div class="event event-playa">
+			<div class="overlay-img">
+				<br>
+			</div><img class="rec-img fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/camping.jpg">
+			<div class="txt-container">
+
+				<p class="name">CAMPING TORRE DE LA PEÑA</p>
+
+				<p class="subtitle">Camping, Bungalows y Restaurante en Tarifa con un pesacado de primera.</p><img class="separator separator-playa fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+				<a class="see-event" href="#">Saber más <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+		</div>
+	</div>
+</div>
+<div class="icons-row">
+	<div class="i-container">
+		<div class="also-feature main-feature">
+			<!-- El icono de la urbana se llama urban-beach.svg -->
+			<img src="/cadizturismo/plugins/rainlab/pages/assets/svg/virgin-beach.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Playa virgen</p>
+		</div>
+		<div class="also-feature"><img src="/cadizturismo/plugins/rainlab/pages/assets/svg/natu-grey.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Naturaleza</p>
+		</div>
+		<div class="also-feature"><img src="/cadizturismo/plugins/rainlab/pages/assets/svg/deporte-grey.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Deporte</p>
+		</div>
+		<div class="also-feature"><img src="/cadizturismo/plugins/rainlab/pages/assets/svg/animales.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Animales</p>
+		</div>
+		<div class="also-feature"><img src="/cadizturismo/plugins/rainlab/pages/assets/svg/camping.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Camping</p>
+		</div>
+		<div class="also-feature"><img src="/cadizturismo/plugins/rainlab/pages/assets/svg/instalaciones.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Instalaciones</p>
+		</div>
+		<div class="also-feature"><img src="/cadizturismo/plugins/rainlab/pages/assets/svg/nudista.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Nudista</p>
+		</div>
+		<div class="also-feature"><img src="/cadizturismo/plugins/rainlab/pages/assets/svg/restauracion.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Restauración</p>
+		</div>
+	</div>
+</div>";s:4:"code";N;s:7:"viewBag";a:8:{s:5:"title";s:6:"Marina";s:3:"url";s:14:"/playas/marina";s:8:"template";s:5:"pages";s:11:"subtemplate";s:6:"playas";s:5:"cover";s:73:"/cadizturismo/storage/app/media/uploaded-files/templates/playa-lances.jpg";s:9:"is_hidden";s:1:"0";s:6:"layout";s:7:"default";s:9:"localeUrl";a:4:{s:2:"en";s:14:"/playas/marina";s:2:"fr";s:14:"/playas/marina";s:2:"de";s:14:"/playas/marina";s:2:"ru";s:14:"/playas/marina";}}s:12:"parsedMarkup";s:6498:"<!-- HEADER -->
+<div class="header header-playa">
+	<div class="header-container header-village-container">
+		<div class="header-txt header-txt-village">
+
+			<h1 class="txt"><span class="first-word">Los Lances</span></h1><img class="brush fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
+	</div>
+	<!-- NUEVA FOTO -->
+	<img class="background-image fr-fil fr-dib" value="cover" src="/cadizturismo/storage/app/media/uploaded-files/templates/playa-lances.jpg" alt=""></div>
+<!-- TXT-->
+<div class="section-txt-village">
+	<div class="txt-container">
+
+		<p class="title">ARENA FINA,
+			<br>WINDSURF Y
+			<br>BUENA COMIDA</p><img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+
+		<p class="desc">Situado en la comarca de La Janda, Barbate es un precioso pueblo gaditano que alberga uno de los puertos pesqueros más famosos de Andalucía. A lo largo de los 25 kilómetros de costa que agrupa el término municipal, encontrarás pueblos y pedanías como Zahara de los Atunes, Caños de Meca y Zahora, y en ellos, playas naturales, dunas y acantilados que componen uno de los núcleos turísticos más reconocidos del sur de España.</p>
+
+		<p class="desc">El municipio ofrece la posibilidad de realizar una gran variedad de rutas de gran interés ecológico y paisajístico gracias al Parque Natural de la Breña y las Marismas de Barbate.</p>
+
+		<p class="desc">Las condiciones de pesca que ofrece la zona permiten hacen destacar a su gastronomía por el famoso atún de Almadraba, un manjar único que merece la pena disfrutar en los restaurantes de Barbate.</p>
+	</div>
+</div>
+<!-- IMAGEN -->
+<div class="img-village">
+	<div class="txt-container">
+
+		<p class="title">Marismas de Barbate</p>
+
+		<p class="desc">¿Eres de emociones fuertes? Disfruta de Cádiz como nunca antes.</p><a class="events-link" href="#playas">Selección de rutas naturales <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-arrow-yellow.svg" alt="" class="fr-fic fr-dii">&nbsp;</a>
+		<img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
+	<!-- NUEVA FOTO -->
+	<img class="img-destacada fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/marismas-barbate.jpg" alt=""></div>
+<div class="section-txt-village">
+	<div class="txt-container">
+
+		<p class="title">3 COSAS QUE
+			<br>HACER EN LA PLAYA
+			<br>DE LOS LANCES</p><img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
+</div>
+<div class="all-exps" id="exps-playa">
+	<div class="all-events-container">
+		<div class="event event-playa">
+			<div class="overlay-img">
+				<br>
+			</div><img class="rec-img fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/kite.jpg">
+			<div class="txt-container">
+
+				<p class="name">3 SIXTY KITE SCHOOL</p>
+
+				<p class="subtitle">Utilizamos el método IKO y todos los instructores están certificados en IKO de nivel 3.</p><img class="separator separator-playa fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+				<a class="see-event" href="#">Saber más <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+		</div>
+		<div class="event event-playa">
+			<div class="overlay-img">
+				<br>
+			</div><img class="rec-img fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/arte-vida.jpg">
+			<div class="txt-container">
+
+				<p class="name">ARTE Y VIDA TARIFA</p>
+
+				<p class="subtitle">Lugar ideal para el descanso, y disfrutar de nuestras terrazas, restaurante o zonas chill out.</p><img class="separator separator-playa fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+				<a class="see-event" href="#">Saber más <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+		</div>
+		<div class="event event-playa">
+			<div class="overlay-img">
+				<br>
+			</div><img class="rec-img fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/camping.jpg">
+			<div class="txt-container">
+
+				<p class="name">CAMPING TORRE DE LA PEÑA</p>
+
+				<p class="subtitle">Camping, Bungalows y Restaurante en Tarifa con un pesacado de primera.</p><img class="separator separator-playa fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+				<a class="see-event" href="#">Saber más <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+		</div>
+	</div>
+</div>
+<div class="icons-row">
+	<div class="i-container">
+		<div class="also-feature main-feature">
+			<!-- El icono de la urbana se llama urban-beach.svg -->
+			<img src="/cadizturismo/plugins/rainlab/pages/assets/svg/virgin-beach.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Playa virgen</p>
+		</div>
+		<div class="also-feature"><img src="/cadizturismo/plugins/rainlab/pages/assets/svg/natu-grey.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Naturaleza</p>
+		</div>
+		<div class="also-feature"><img src="/cadizturismo/plugins/rainlab/pages/assets/svg/deporte-grey.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Deporte</p>
+		</div>
+		<div class="also-feature"><img src="/cadizturismo/plugins/rainlab/pages/assets/svg/animales.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Animales</p>
+		</div>
+		<div class="also-feature"><img src="/cadizturismo/plugins/rainlab/pages/assets/svg/camping.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Camping</p>
+		</div>
+		<div class="also-feature"><img src="/cadizturismo/plugins/rainlab/pages/assets/svg/instalaciones.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Instalaciones</p>
+		</div>
+		<div class="also-feature"><img src="/cadizturismo/plugins/rainlab/pages/assets/svg/nudista.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Nudista</p>
+		</div>
+		<div class="also-feature"><img src="/cadizturismo/plugins/rainlab/pages/assets/svg/restauracion.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Restauración</p>
+		</div>
+	</div>
+</div>";}}

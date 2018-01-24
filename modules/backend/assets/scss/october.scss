@@ -1734,7 +1734,9 @@ table.name-value-list > a {
 .fancy-layout .form-tabless-fields input[type=text]:focus, .fancy-layout .form-tabless-fields input[type=text]:hover {
   background-color: rgba(23,93,163,0.6);
 }
-
+.select2-container--default .select2-selection--single .select2-selection__placeholder {
+  color: white !important;
+}
 .fancy-layout .form-tabless-fields {
   background: #0c5095 !important;
 }
