@@ -1,8 +1,12 @@
+<<<<<<< HEAD
 <<<<<<< HEAD:storage/framework/cache/7c/be/7cbefae55d10a4299c1020b5454b04b8c3ed0df8
 1516816423a:1:{s:28:"comarcas-sierra-de-cadiz.htm";a:7:{s:8:"fileName";s:28:"comarcas-sierra-de-cadiz.htm";s:7:"content";s:6401:"[viewBag]
 =======
 1516815252a:1:{s:28:"comarcas-sierra-de-cadiz.htm";a:7:{s:8:"fileName";s:28:"comarcas-sierra-de-cadiz.htm";s:7:"content";s:6401:"[viewBag]
 >>>>>>> d702da4b20f1bef006c6a5f4442dc8592d75cc38:storage/framework/cache/d3/32/d33212c08a455a8a08316b56ec9b318917271eb7
+=======
+1516816044a:1:{s:28:"comarcas-sierra-de-cadiz.htm";a:7:{s:8:"fileName";s:28:"comarcas-sierra-de-cadiz.htm";s:7:"content";s:6401:"[viewBag]
+>>>>>>> 10ebf73545fd8470749cf0ac562b89208e5e8986
 title = "Sierra de Cádiz"
 url = "/comarcas/sierra-de-cadiz"
 template = "pages"

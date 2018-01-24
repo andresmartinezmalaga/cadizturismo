@@ -1,8 +1,12 @@
+<<<<<<< HEAD
 <<<<<<< HEAD:storage/framework/cache/6a/28/6a28439c0e58445e459cb8ad6f3481f5e161ed67
 1516816425a:1:{s:20:"site/searchevent.htm";a:6:{s:8:"fileName";s:20:"site/searchevent.htm";s:7:"content";s:2134:"==
 =======
 1516815749a:1:{s:20:"site/searchevent.htm";a:6:{s:8:"fileName";s:20:"site/searchevent.htm";s:7:"content";s:2566:"==
 >>>>>>> d702da4b20f1bef006c6a5f4442dc8592d75cc38:storage/framework/cache/1b/bf/1bbfce5170c7d16d0006182f5dc75eb639d8b69f
+=======
+1516816612a:1:{s:20:"site/searchevent.htm";a:6:{s:8:"fileName";s:20:"site/searchevent.htm";s:7:"content";s:2566:"==
+>>>>>>> 10ebf73545fd8470749cf0ac562b89208e5e8986
 
 <?php 
 
@@ -73,7 +77,7 @@
           <p class="comment">{{ 'Descubre miles de eventos que no querrás perderte'|_ }}</p>
         </div>
       </div>
-    </div>";s:5:"mtime";i:1516814192;s:6:"markup";s:2230:"<script>
+    </div>";s:5:"mtime";i:1516815504;s:6:"markup";s:2230:"<script>
     var calendarTranslate = {
         enero: "{{ 'enero'|_ }}",
         febrero: "{{ 'febrero'|_ }}",

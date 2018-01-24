@@ -1,8 +1,12 @@
+<<<<<<< HEAD
 <<<<<<< HEAD:storage/framework/cache/ab/5a/ab5a34dae8d2ad6b7ef1822a961519d10aa45abf
 1516816424a:1:{s:22:"playas-playa-chica.htm";a:7:{s:8:"fileName";s:22:"playas-playa-chica.htm";s:7:"content";s:5361:"[viewBag]
 =======
 1516815253a:1:{s:22:"playas-playa-chica.htm";a:7:{s:8:"fileName";s:22:"playas-playa-chica.htm";s:7:"content";s:5361:"[viewBag]
 >>>>>>> d702da4b20f1bef006c6a5f4442dc8592d75cc38:storage/framework/cache/7a/51/7a514c0dc1b0560c99d499e3eebe0a1518787d52
+=======
+1516816044a:1:{s:22:"playas-playa-chica.htm";a:7:{s:8:"fileName";s:22:"playas-playa-chica.htm";s:7:"content";s:5361:"[viewBag]
+>>>>>>> 10ebf73545fd8470749cf0ac562b89208e5e8986
 title = "Playa chica"
 url = "/playas/playa-chica"
 categoriea = "urban"

@@ -1,8 +1,12 @@
+<<<<<<< HEAD
 <<<<<<< HEAD:storage/framework/cache/bc/2a/bc2a1898f42d8ec3abd2350016681e73cb3b6a5c
 1516816424a:1:{s:61:"playas-atlanterra-zahara-de-los-atunes-y-cabo-de-la-playa.htm";a:7:{s:8:"fileName";s:61:"playas-atlanterra-zahara-de-los-atunes-y-cabo-de-la-playa.htm";s:7:"content";s:5632:"[viewBag]
 =======
 1516815253a:1:{s:61:"playas-atlanterra-zahara-de-los-atunes-y-cabo-de-la-playa.htm";a:7:{s:8:"fileName";s:61:"playas-atlanterra-zahara-de-los-atunes-y-cabo-de-la-playa.htm";s:7:"content";s:5632:"[viewBag]
 >>>>>>> d702da4b20f1bef006c6a5f4442dc8592d75cc38:storage/framework/cache/cc/12/cc128899cfb038ddeffd701f6cc889e8be55084e
+=======
+1516816044a:1:{s:61:"playas-atlanterra-zahara-de-los-atunes-y-cabo-de-la-playa.htm";a:7:{s:8:"fileName";s:61:"playas-atlanterra-zahara-de-los-atunes-y-cabo-de-la-playa.htm";s:7:"content";s:5632:"[viewBag]
+>>>>>>> 10ebf73545fd8470749cf0ac562b89208e5e8986
 title = "Atlanterra, Zahara de los atunes y Cabo de la playa"
 url = "/playas/atlanterra-zahara-de-los-atunes-y-cabo-de-la-playa"
 categoriea = "virgen"

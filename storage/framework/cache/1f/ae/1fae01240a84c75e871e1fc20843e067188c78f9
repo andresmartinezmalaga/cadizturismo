@@ -1,8 +1,4 @@
-<<<<<<< HEAD:storage/framework/cache/0b/ff/0bff6e62d88edf760982d32c1b943f485aba210f
-1516816424a:1:{s:21:"playas-el-canuelo.htm";a:7:{s:8:"fileName";s:21:"playas-el-canuelo.htm";s:7:"content";s:5352:"[viewBag]
-=======
-1516815253a:1:{s:21:"playas-el-canuelo.htm";a:7:{s:8:"fileName";s:21:"playas-el-canuelo.htm";s:7:"content";s:5352:"[viewBag]
->>>>>>> d702da4b20f1bef006c6a5f4442dc8592d75cc38:storage/framework/cache/1f/ae/1fae01240a84c75e871e1fc20843e067188c78f9
+1516816044a:1:{s:21:"playas-el-canuelo.htm";a:7:{s:8:"fileName";s:21:"playas-el-canuelo.htm";s:7:"content";s:5352:"[viewBag]
 title = "El Cañuelo"
 url = "/playas/el-canuelo"
 categoriea = "virgen"
