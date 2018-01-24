@@ -1,4 +1,4 @@
-1516831884a:1:{s:13:"allevents.htm";a:10:{s:8:"fileName";s:13:"allevents.htm";s:7:"content";s:1550:"title = "allEvents"
+1516834087a:1:{s:13:"allevents.htm";a:10:{s:8:"fileName";s:13:"allevents.htm";s:7:"content";s:1559:"title = "allEvents"
 url = "/todos-los-eventos"
 layout = "dinamic"
 is_hidden = 0
@@ -19,8 +19,9 @@ is_hidden = 0
       Session::put('reciveData',Session::get('data'));     
     }
 
-    //$events = $this->staticApp->eventAll();
+    $this['events'] = $this->staticApp->eventAll();
 
+    
 	}
 
 	function onFindEvent(){
@@ -65,8 +66,8 @@ is_hidden = 0
 </div>
 
 <div id='prtlExperiences' class="all-exps">
-	{% partial "experiences" %}
-</div>";s:5:"mtime";i:1516828315;s:6:"markup";s:551:"<!-- HEADER -->
+	{% partial "allevents" %}
+</div>";s:5:"mtime";i:1516832141;s:6:"markup";s:549:"<!-- HEADER -->
 <div class="header header-events">
   
   <div class="header-container">
@@ -85,8 +86,8 @@ is_hidden = 0
 </div>
 
 <div id='prtlExperiences' class="all-exps">
-	{% partial "experiences" %}
-</div>";s:4:"code";s:888:"  
+	{% partial "allevents" %}
+</div>";s:4:"code";s:899:"  
 	
 	function onStart()
 	{	    
@@ -99,8 +100,9 @@ is_hidden = 0
       Session::put('reciveData',Session::get('data'));     
     }
 
-    //$events = $this->staticApp->eventAll();
+    $this['events'] = $this->staticApp->eventAll();
 
+    
 	}
 
 	function onFindEvent(){

@@ -1,5 +1,5 @@
 <?php 
-class Cms5a690234efd1f000188001_b2cbd6208d8b1a02d653ddaf9843964bClass extends \Cms\Classes\PageCode
+class Cms5a6905928a2f5116975890_bbac5c014058daf91feaaf387d362609Class extends \Cms\Classes\PageCode
 {
 public function onStart()
 	{	    
@@ -12,8 +12,9 @@ public function onStart()
       Session::put('reciveData',Session::get('data'));     
     }
 
-    //$events = $this->staticApp->eventAll();
+    $this['events'] = $this->staticApp->eventAll();
 
+    
 	}
 public function onFindEvent(){
 

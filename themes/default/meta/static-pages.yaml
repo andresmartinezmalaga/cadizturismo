@@ -67,4 +67,5 @@ static-pages:
     eventos-evento-uno: {  }
     publicaciones: {  }
     eventos-dos: {  }
+    eventos-uno: {  }
     eventos-tres: {  }

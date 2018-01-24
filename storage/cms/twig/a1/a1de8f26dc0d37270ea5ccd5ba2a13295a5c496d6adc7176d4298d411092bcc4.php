@@ -51,7 +51,7 @@ class __TwigTemplate_36170d2790e35bd1f2e426ed7f8cb779bdc9db5fa353209686cb743ac5c
 \t";
         // line 20
         $context['__cms_partial_params'] = [];
-        echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("experiences"        , $context['__cms_partial_params']        , true        );
+        echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("allevents"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
         // line 21
         echo "</div>";
@@ -93,7 +93,7 @@ class __TwigTemplate_36170d2790e35bd1f2e426ed7f8cb779bdc9db5fa353209686cb743ac5c
 </div>
 
 <div id='prtlExperiences' class=\"all-exps\">
-\t{% partial \"experiences\" %}
+\t{% partial \"allevents\" %}
 </div>", "/Users/jekyll/workspace/cadizturismo/themes/default/pages/allevents.htm", "");
     }
 }

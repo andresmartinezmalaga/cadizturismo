@@ -140,7 +140,7 @@ class Evento extends ContentBase
             </div>
           </div>
           <!-- NUEVA FOTO -->
-          <img class="background-image" cover-start="2" src="***_preurl_***/storage/app/media/uploaded-files/templates/caballos.jpg" cover-end="2" alt="">
+          <img class="background-image" value="cover" src="***_preurl_***/storage/app/media/uploaded-files/templates/caballos.jpg" alt="">
           <!-- FEATURES -->
           <div class="event-features">
             <div class="feature">

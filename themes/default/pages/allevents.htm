@@ -19,8 +19,9 @@ is_hidden = 0
       Session::put('reciveData',Session::get('data'));     
     }
 
-    //$events = $this->staticApp->eventAll();
+    $this['events'] = $this->staticApp->eventAll();
 
+    
 	}
 
 	function onFindEvent(){
@@ -65,5 +66,5 @@ is_hidden = 0
 </div>
 
 <div id='prtlExperiences' class="all-exps">
-	{% partial "experiences" %}
+	{% partial "allevents" %}
 </div>
