@@ -4,17 +4,7 @@
 
     function onStart()
     {      
-      $this['menulang'] = 'nombrees';
-
-      if ($this['lang'] == 'en') {
-            $this['menulang'] = 'nombreen';
-        } elseif ($this['lang'] == 'fr') {
-            $this['menulang'] = 'nombrefr';
-        } elseif ($this['lang'] == 'de') {
-            $this['menulang'] = 'nombrede';
-        } elseif ($this['lang'] == 'ru') {
-            $this['menulang'] = 'nombreru';
-        }
+     
     }
 ?>
 
@@ -29,50 +19,54 @@
     <div class="menus">
       
       <div class="menu-list">
-        <p class="menu-title">{{ "backend::lang.menuheader.whereToGo"|trans }}</p>
+        <p class="menu-title">{{ 'Dónde ir'|_ }}</p>
         <img class="separator separator-menu" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
         <img class="separator-tiny" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg">
         <ul class="menu-ul donde-ul">
-          {% for item in staticMenu.menuItems %}               
-            <li class="menu-item"><a href="{{ item.url }}">{{ item.viewBag[menulang] }}</a></li>
+          {% for item in staticMenu.menuItems %}
+            {% set tt = '.'~item.title %} 
+            <li class="menu-item"><a href="{{ item.url }}">{{ tt|_ }}</a></li>
           {% endfor %}
         </ul>
         <ul class="menu-mobile">
-          <li class="menu-item"><a href="{{url('/')}}/{{lang}}/comarcas">{{ "backend::lang.menuheader.comarcas"|trans }}</a></li>
-          <li class="menu-item"><a href="{{url('/')}}/{{lang}}/municipios">{{ "backend::lang.menuheader.municipios"|trans }}</a></li>
+          <li class="menu-item"><a href="{{url('/')}}/{{lang}}/comarcas">{{ 'Comarcas'|_ }}</a></li>
+          <li class="menu-item"><a href="{{url('/')}}/{{lang}}/municipios">{{ 'Munucipios'|_ }}</a></li>
         </ul>
       </div>
       
       <div class="menu-list">
-        <p class="menu-title">{{ "backend::lang.menuheader.whatToDo"|trans }}</p>
+        <p class="menu-title">{{ 'Qué Hacer'|_ }}</p>
         <img class="separator separator-menu" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
         <img class="separator-tiny" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg">
         <ul class="menu-ul">
-          {% for item in staticMenu4.menuItems %}                
-            <li class="menu-item"><a href="{{ item.url }}">{{ item.viewBag[menulang] }}</a></li>
+          {% for item in staticMenu4.menuItems %}
+            {% set tt = '.'~item.title %}         
+            <li class="menu-item"><a href="{{ item.url }}">{{ tt|_ }}</a></li>
           {% endfor %}
         </ul>
       </div>
       
       <div class="menu-list">
-        <p class="menu-title">{{ "backend::lang.menuheader.whatToLive"|trans }}</p>
+        <p class="menu-title">{{ 'Qué Vivir'|_ }}</p>
         <img class="separator separator-menu" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
         <img class="separator-tiny" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg">
         <ul class="menu-ul">
-          {% for item in staticMenu2.menuItems %}              
-            <li class="menu-item"><a href="{{ item.url }}">{{ item.viewBag[menulang] }}</a></li>
+          {% for item in staticMenu2.menuItems %}
+            {% set tt = '.'~item.title %}             
+            <li class="menu-item"><a href="{{ item.url }}">{{ tt|_ }}</a></li>
           {% endfor %} 
-            <li class="menu-item"><a href="todos-los-eventos">{{ "backend::lang.menuheader.allEvents"|trans }}</a></li>              
+            <li class="menu-item"><a href="todos-los-eventos">{{ 'Todos los eventos'|_ }}</a></li>              
         </ul>
       </div>
      
       <div class="menu-list">
-        <p class="menu-title">{{ "backend::lang.menuheader.myStance"|trans }}</p>
+        <p class="menu-title">{{ 'Mi estancia'|_ }}</p>
         <img class="separator separator-menu" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
         <img class="separator-tiny" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg">
         <ul class="menu-ul">
-          {% for item in staticMenu3.menuItems %}              
-            <li class="menu-item"><a href="{{ item.url }}">{{ item.viewBag[menulang] }}</a></li>
+          {% for item in staticMenu3.menuItems %}
+            {% set tt = '.'~item.title %}              
+            <li class="menu-item"><a href="{{ item.url }}">{{ tt|_ }}</a></li>
           {% endfor %}
         </ul>
       </div>
@@ -108,43 +102,47 @@
       </div>
       <div class="menus">
         <div class="menu-list">
-          <p class="menu-title">{{ "backend::lang.menuheader.whereToGo"|trans }}</p>
+          <p class="menu-title">{{ 'Dónde ir'|_ }}</p>
           <img class="separator separator-menu" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
           <img class="separator-tiny" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg">
           <ul class="menu-ul donde-ul where-ul">
-            {% for item in staticMenu.menuItems %}             
-              <li class="menu-item"><a href="{{ item.url }}">{{ item.viewBag[menulang] }}</a></li>
+            {% for item in staticMenu.menuItems %}   
+              {% set tt = '.'~item.title %}           
+              <li class="menu-item"><a href="{{ item.url }}">{{ tt|_ }}</a></li>
             {% endfor %}
           </ul>
         </div>
         <div class="menu-list">
-          <p class="menu-title">{{ "backend::lang.menuheader.whatToDo"|trans }}</p>
+          <p class="menu-title">{{ 'Qué Hacer'|_  }}</p>
           <img class="separator separator-menu" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
           <img class="separator-tiny" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg">
           <ul class="menu-ul do-ul">
-            {% for item in staticMenu4.menuItems %}             
-              <li class="menu-item"><a href="{{ item.url }}">{{ item.viewBag[menulang] }}</a></li>
+            {% for item in staticMenu4.menuItems %}
+              {% set tt = '.'~item.title %}              
+              <li class="menu-item"><a href="{{ item.url }}">{{ tt|_ }}</a></li>
             {% endfor %}
           </ul>
         </div>
         <div class="menu-list">
-          <p class="menu-title">{{ "backend::lang.menuheader.whatToLive"|trans }}</p>
+          <p class="menu-title">{{ 'Qué Vivir'|_ }}</p>
           <img class="separator separator-menu" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
           <img class="separator-tiny" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg">
           <ul class="menu-ul live-ul">
             {% for item in staticMenu2.menuItems %}
-              <li class="menu-item"><a href="{{ item.url }}">{{ item.viewBag[menulang] }}</a></li>
+              {% set tt = '.'~item.title %} 
+              <li class="menu-item"><a href="{{ item.url }}">{{tt|_}}</a></li>
             {% endfor %}
-              <li class="menu-item"><a href="todos-los-eventos">{{ "backend::lang.menuheader.allEvents"|trans }}</a></li>
+              <li class="menu-item"><a href="todos-los-eventos">{{ 'Todos los eventos'|_ }}</a></li>
           </ul>
         </div>
         <div class="menu-list">
-          <p class="menu-title">{{ "backend::lang.menuheader.myStance"|trans }}</p>
+          <p class="menu-title">{{ 'Mi estancia'|_ }}</p>
           <img class="separator separator-menu" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
           <img class="separator-tiny" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg">
           <ul class="menu-ul stance-ul">
             {% for item in staticMenu3.menuItems %}
-              <li class="menu-item"><a href="{{ item.url }}">{{ item.viewBag[menulang] }}</a></li>
+              {% set tt = '.'~item.title %} 
+              <li class="menu-item"><a href="{{ item.url }}">{{ tt|_ }}</a></li>
             {% endfor %}
           </ul>
         </div>

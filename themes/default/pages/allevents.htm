@@ -37,9 +37,9 @@ is_hidden = 0
     $dayend = new Date($edayend[0].'-'.$edayend[1].'-'.$edayend[2]);
 
   	$aLang = App::getLocale();
-    $events = $this->staticApp->eventAll($category,$daystart,$dayend,$location);
+    $events = $this->staticApp->eventFind($category,$daystart,$dayend,$location);
   
-    return Redirect::to($aLang.'/eventos')->with( ['data' => json_encode($events)] );
+    return Redirect::to($aLang.'/listado-de-eventos')->with( ['data' => json_encode($events)] );
  
   }
 
