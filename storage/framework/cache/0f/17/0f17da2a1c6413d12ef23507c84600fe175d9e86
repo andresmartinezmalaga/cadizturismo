@@ -1,4 +1,4 @@
-1516815253a:1:{s:8:"home.htm";a:10:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:5336:"title = "home"
+1516816526a:1:{s:8:"home.htm";a:10:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:5096:"title = "home"
 url = "/"
 layout = "dinamic"
 is_hidden = 0
@@ -43,8 +43,8 @@ is_hidden = 0
       <div class="header-container">
         <div class="header-txt">
           <h1 class="txt txt-home"><span class="first-word">
-           {{ "backend::lang.home.page.h1"|trans }}
-            </span>{{ "backend::lang.home.page.h1_span"|trans }}</h1>
+           {{ 'Playas'|_ }}
+            </span>{{ 'que te llenan de luz'|_ }}</h1>
           <img class="brush" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/brush-header.svg" alt="">
         </div>
 
@@ -54,8 +54,8 @@ is_hidden = 0
         </div>
 
         <div class="header-comment">
-          <p class="comment">{{ "backend::lang.home.page.comment"|trans }}</p>
-          <a class="header-link" href="{{lang}}/playas">{{ "backend::lang.home.page.link"|trans }} &nbsp;<img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/link-arrow.svg" alt=""> </a>
+          <p class="comment">{{ '138km de playas, calas y ensenadas que invitan a perderse'|_ }}</p>
+          <a class="header-link" href="{{lang}}/playas">{{ 'Conoce nuestras playas'|_ }} &nbsp;<img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/link-arrow.svg" alt=""> </a>
         </div>
       </div>
     </div>
@@ -64,25 +64,19 @@ is_hidden = 0
     <div class="whats-on">
 
       <div class="left-txt">
-        <p class="title">{{ "backend::lang.home.page.events_title"|trans }}</p>
+        <p class="title">{{ 'QUÉ SE CUECE HOY EN CÁDIZ'|_ }}</p>
           <img class="separator" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
 
           {% for iEvent in events3 %}
-            
-              {% set i = "backend::lang.eventos.category."~iEvent['category'] %}
-              {{ i|trans }}
-           
 
             <div class="event">
               <p class="event-date">{{iEvent['date_start_pretty']}}</p>
               <p class="event-place">{{iEvent['place']}}</p>
-              <a href="jornadas-micologicas.html" class="event-name">{{iEvent['title']}}</a> 
-              
-              
+              <a href="jornadas-micologicas.html" class="event-name">{{iEvent['title']}}</a>
             </div>
           {% endfor %}
 
-            <a class="events-link" href="{{lang}}/eventos">{{ "backend::lang.home.page.all_events"|trans }}&nbsp;&nbsp;<img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/link-arrow-yellow.svg" alt=""> </a>
+            <a class="events-link" href="{{lang}}/eventos">{{ 'Todos los eventos'|_ }}&nbsp;&nbsp;<img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/link-arrow-yellow.svg" alt=""> </a>
       </div>
 
 
@@ -139,19 +133,19 @@ is_hidden = 0
     <!--  RUTAS -->
     <div class="secret-routes">
       <div class="txt-container">
-        <p class="title">{{ "backend::lang.home.page.routes_title"|trans }}</p>
-        <p class="desc">{{ "backend::lang.home.page.routes_comment"|trans }}</p>
-        <a class="events-link" href="{{lang}}/rutas">{{ "backend::lang.home.page.routes_link"|trans }}<img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/link-arrow-yellow.svg" alt=""> </a>
+        <p class="title">{{ 'RUTAS SECRETAS'|_ }}</p>
+        <p class="desc">{{ '¿Eres de emociones fuertes? Disfruta de Cádiz como nunca antes.'|_ }}</p>
+        <a class="events-link" href="{{lang}}/rutas">{{ 'Selección de rutas secretas'|_ }}<img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/link-arrow-yellow.svg" alt=""> </a>
         <img class="separator" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
       </div>
     </div>
-";s:5:"mtime";i:1516791119;s:6:"markup";s:4670:"<!-- HEADER -->
+";s:5:"mtime";i:1516815910;s:6:"markup";s:4430:"<!-- HEADER -->
     <div class="header header-home">
       <div class="header-container">
         <div class="header-txt">
           <h1 class="txt txt-home"><span class="first-word">
-           {{ "backend::lang.home.page.h1"|trans }}
-            </span>{{ "backend::lang.home.page.h1_span"|trans }}</h1>
+           {{ 'Playas'|_ }}
+            </span>{{ 'que te llenan de luz'|_ }}</h1>
           <img class="brush" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/brush-header.svg" alt="">
         </div>
 
@@ -161,8 +155,8 @@ is_hidden = 0
         </div>
 
         <div class="header-comment">
-          <p class="comment">{{ "backend::lang.home.page.comment"|trans }}</p>
-          <a class="header-link" href="{{lang}}/playas">{{ "backend::lang.home.page.link"|trans }} &nbsp;<img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/link-arrow.svg" alt=""> </a>
+          <p class="comment">{{ '138km de playas, calas y ensenadas que invitan a perderse'|_ }}</p>
+          <a class="header-link" href="{{lang}}/playas">{{ 'Conoce nuestras playas'|_ }} &nbsp;<img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/link-arrow.svg" alt=""> </a>
         </div>
       </div>
     </div>
@@ -171,25 +165,19 @@ is_hidden = 0
     <div class="whats-on">
 
       <div class="left-txt">
-        <p class="title">{{ "backend::lang.home.page.events_title"|trans }}</p>
+        <p class="title">{{ 'QUÉ SE CUECE HOY EN CÁDIZ'|_ }}</p>
           <img class="separator" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
 
           {% for iEvent in events3 %}
-            
-              {% set i = "backend::lang.eventos.category."~iEvent['category'] %}
-              {{ i|trans }}
-           
 
             <div class="event">
               <p class="event-date">{{iEvent['date_start_pretty']}}</p>
               <p class="event-place">{{iEvent['place']}}</p>
-              <a href="jornadas-micologicas.html" class="event-name">{{iEvent['title']}}</a> 
-              
-              
+              <a href="jornadas-micologicas.html" class="event-name">{{iEvent['title']}}</a>
             </div>
           {% endfor %}
 
-            <a class="events-link" href="{{lang}}/eventos">{{ "backend::lang.home.page.all_events"|trans }}&nbsp;&nbsp;<img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/link-arrow-yellow.svg" alt=""> </a>
+            <a class="events-link" href="{{lang}}/eventos">{{ 'Todos los eventos'|_ }}&nbsp;&nbsp;<img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/link-arrow-yellow.svg" alt=""> </a>
       </div>
 
 
@@ -246,9 +234,9 @@ is_hidden = 0
     <!--  RUTAS -->
     <div class="secret-routes">
       <div class="txt-container">
-        <p class="title">{{ "backend::lang.home.page.routes_title"|trans }}</p>
-        <p class="desc">{{ "backend::lang.home.page.routes_comment"|trans }}</p>
-        <a class="events-link" href="{{lang}}/rutas">{{ "backend::lang.home.page.routes_link"|trans }}<img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/link-arrow-yellow.svg" alt=""> </a>
+        <p class="title">{{ 'RUTAS SECRETAS'|_ }}</p>
+        <p class="desc">{{ '¿Eres de emociones fuertes? Disfruta de Cádiz como nunca antes.'|_ }}</p>
+        <a class="events-link" href="{{lang}}/rutas">{{ 'Selección de rutas secretas'|_ }}<img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/link-arrow-yellow.svg" alt=""> </a>
         <img class="separator" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
       </div>
     </div>";s:4:"code";s:571:"	function onStart()
