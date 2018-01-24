@@ -563,6 +563,48 @@ class PagesTemplates
           <a class="see-event" href="#">Saber más <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
       </div>
     </div>
+  </div>
+  <div class="icons-row">
+    <div class="i-container">
+      <div class="also-feature main-feature">
+        <!-- El icono de la urbana se llama urban-beach.svg -->
+        <img src="***_preurl_***/storage/app/media/uploaded-files/templates/virgin-beach.svg" class="fr-fil fr-dib">
+        <p class="also-desc">Playa virgen</p>
+      </div>
+      <div class="also-feature main-feature">
+        <!-- El icono de la urbana se llama urban-beach.svg -->
+        <img src="***_preurl_***/storage/app/media/uploaded-files/templates/urban-beach.svg" class="fr-fil fr-dib">
+        <p class="also-desc">Playa virgen</p>
+      </div>
+      <div class="also-feature"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/natu-grey.svg" class="fr-fil fr-dib">
+
+        <p class="also-desc">Naturaleza</p>
+      </div>
+      <div class="also-feature"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/deporte-grey.svg" class="fr-fil fr-dib">
+
+        <p class="also-desc">Deporte</p>
+      </div>
+      <div class="also-feature"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/animalesg.svg" class="fr-fil fr-dib">
+
+        <p class="also-desc">Animales</p>
+      </div>
+      <div class="also-feature"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/campingg.svg" class="fr-fil fr-dib">
+
+        <p class="also-desc">Camping</p>
+      </div>
+      <div class="also-feature"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/instalacionesg.svg" class="fr-fil fr-dib">
+
+        <p class="also-desc">Instalaciones</p>
+      </div>
+      <div class="also-feature"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/nudistag.svg" class="fr-fil fr-dib">
+
+        <p class="also-desc">Nudista</p>
+      </div>
+      <div class="also-feature"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/restauraciong.svg" class="fr-fil fr-dib">
+
+        <p class="also-desc">Restauración</p>
+      </div>
+    </div>
   </div>';
 
   static function getTPlaya(){

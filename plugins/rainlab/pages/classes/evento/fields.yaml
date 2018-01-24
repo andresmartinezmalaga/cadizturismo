@@ -15,6 +15,7 @@ fields:
         label: 'Plantilla'
         type: dropdown
         options: getEventsTPlantillas
+        cssClass: btnTTemplate
 
     viewBag[url]:
         span: left
@@ -43,14 +44,14 @@ fields:
        type: dropdown
        options: getEventsCategories
 
-    viewBag[Location]:
+    viewBag[location]:
         span: left
         label: 'Ubicación'
         type: dropdown
         options: getMunicipalities
 
 
-    viewBag[Locationgoogle]:
+    viewBag[locationgoogle]:
         span: right
         label: 'Url Google Map'
         
