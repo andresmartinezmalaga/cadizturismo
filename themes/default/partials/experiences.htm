@@ -18,32 +18,29 @@
 	            <img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/calendar-exp.svg">
 	            	
 	            	{% if experience.viewBag.days < 2 %}
-	              		{% set d = "backend::lang.experiences.search.day"|trans %}
+	              		{% set d = "día" %}
 	              	{% else %}
-	              		{% set d = "backend::lang.experiences.search.days"|trans %}
+	              		{% set d = "días" %}
 	              	{% endif %}
               		
 
-	            <p class="icon-txt">{{experience.viewBag.days}} {{ d|trans }}</p>
+	            <p class="icon-txt">{{experience.viewBag.days}} {{ d|_ }}</p>
 	          </div>          
 	          <div class="icon-pair">
 	            <img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/{{interest[0]}}.svg">
-	              {% set ia = "backend::lang.experiences.page."~interest[0] %}
-	            	<p class="icon-txt">{{ia|trans}}</p>
+	            	<p class="icon-txt">{{interest[0]|_}}</p>
 	          </div>
 	          <div class="icon-pair">
 	            <img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/{{interest[1]}}.svg">
-	            {% set ib = "backend::lang.experiences.page."~interest[1] %}
-	            <p class="icon-txt">{{ib|trans}}</p>
+	            <p class="icon-txt">{{interest[1]|_}}</p>
 	          </div>
 	          <div class="icon-pair">
 	            <img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/cultura-event.svg">
-	            {% set ty = "backend::lang.experiences.page."~experience.viewBag.tvisit %}
-	            <p class="icon-txt">{{ty|trans}}</p>
+	            <p class="icon-txt">{{experience.viewBag.tvisit|_}}</p>
 	          </div>
 	        </div>
 	        <div class="button-container">
-	          <a class="see-event" href="{{url('/')}}/{{lang}}{{experience.viewBag.url}}"> {{ "backend::lang.experiences.page.experience_link"|trans }} <img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/link-icon.svg"></a>
+	          <a class="see-event" href="{{url('/')}}/{{lang}}{{experience.viewBag.url}}"> {{'Ver experiencia'|_}} <img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/link-icon.svg"></a>
 	        </div>
 	      </div>
 	    </div>
