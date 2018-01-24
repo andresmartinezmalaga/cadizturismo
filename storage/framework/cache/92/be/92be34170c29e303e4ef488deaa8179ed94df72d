@@ -1,4 +1,8 @@
+<<<<<<< HEAD:storage/framework/cache/92/be/92be34170c29e303e4ef488deaa8179ed94df72d
 1516810106a:1:{s:24:"naturaleza-via-verde.htm";a:7:{s:8:"fileName";s:24:"naturaleza-via-verde.htm";s:7:"content";s:6217:"[viewBag]
+=======
+1516808802a:1:{s:24:"naturaleza-via-verde.htm";a:7:{s:8:"fileName";s:24:"naturaleza-via-verde.htm";s:7:"content";s:6217:"[viewBag]
+>>>>>>> 444a0de4ec43ad468379c9219594fdc15eee30fc:storage/framework/cache/10/9d/109d028e05c66ea1a424feb878d2acde36c3fb4b
 title = "Via verde"
 url = "/naturaleza/via-verde-1"
 template = "pages"

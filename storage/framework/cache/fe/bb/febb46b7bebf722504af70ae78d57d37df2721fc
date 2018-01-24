@@ -1,4 +1,8 @@
+<<<<<<< HEAD:storage/framework/cache/fe/bb/febb46b7bebf722504af70ae78d57d37df2721fc
 1516810106a:1:{s:9:"legal.htm";a:7:{s:8:"fileName";s:9:"legal.htm";s:7:"content";s:217:"[viewBag]
+=======
+1516808802a:1:{s:9:"legal.htm";a:7:{s:8:"fileName";s:9:"legal.htm";s:7:"content";s:217:"[viewBag]
+>>>>>>> 444a0de4ec43ad468379c9219594fdc15eee30fc:storage/framework/cache/77/ee/77ee4114143c1d0b29e0578c6678cd445532dc9c
 title = "Legal"
 url = "/legal"
 template = "pages"

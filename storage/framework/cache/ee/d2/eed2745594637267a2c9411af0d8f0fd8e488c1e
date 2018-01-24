@@ -1,4 +1,8 @@
+<<<<<<< HEAD:storage/framework/cache/ee/d2/eed2745594637267a2c9411af0d8f0fd8e488c1e
 1516810106a:1:{s:10:"playas.htm";a:7:{s:8:"fileName";s:10:"playas.htm";s:7:"content";s:2312:"[viewBag]
+=======
+1516808802a:1:{s:10:"playas.htm";a:7:{s:8:"fileName";s:10:"playas.htm";s:7:"content";s:2312:"[viewBag]
+>>>>>>> 444a0de4ec43ad468379c9219594fdc15eee30fc:storage/framework/cache/96/24/9624b266f95bc9bdc6d66178fb678ec0c1908645
 title = "playas"
 url = "/playas"
 template = "pages"

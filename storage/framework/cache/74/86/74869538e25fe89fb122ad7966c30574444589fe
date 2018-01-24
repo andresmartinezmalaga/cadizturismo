@@ -1,4 +1,8 @@
+<<<<<<< HEAD:storage/framework/cache/74/86/74869538e25fe89fb122ad7966c30574444589fe
 1516810106a:1:{s:21:"municipios-tarifa.htm";a:7:{s:8:"fileName";s:21:"municipios-tarifa.htm";s:7:"content";s:8813:"[viewBag]
+=======
+1516808802a:1:{s:21:"municipios-tarifa.htm";a:7:{s:8:"fileName";s:21:"municipios-tarifa.htm";s:7:"content";s:8813:"[viewBag]
+>>>>>>> 444a0de4ec43ad468379c9219594fdc15eee30fc:storage/framework/cache/20/33/20338b26f180cfaa91faa01b5e8efe0f83f30944
 title = "Tarifa"
 url = "/municipios/tarifa"
 template = "pages"

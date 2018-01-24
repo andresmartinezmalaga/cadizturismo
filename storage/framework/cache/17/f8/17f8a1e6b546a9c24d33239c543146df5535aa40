@@ -1,4 +1,8 @@
+<<<<<<< HEAD:storage/framework/cache/17/f8/17f8a1e6b546a9c24d33239c543146df5535aa40
 1516810010a:1:{s:15:"experiences.htm";a:5:{s:8:"fileName";s:15:"experiences.htm";s:7:"content";s:2399:"<div class="search-title-container">
+=======
+1516808802a:1:{s:15:"experiences.htm";a:5:{s:8:"fileName";s:15:"experiences.htm";s:7:"content";s:2399:"<div class="search-title-container">
+>>>>>>> 444a0de4ec43ad468379c9219594fdc15eee30fc:storage/framework/cache/b6/a0/b6a05715925edc790374b88d7645aecc498dd240
     <p class="title-search"> {{ "backend::lang.experiences.page.result1"|trans }} {{experiences|length}} {{ "backend::lang.experiences.page.result2"|trans }}</p>
 </div>
 

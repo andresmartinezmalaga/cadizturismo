@@ -1,4 +1,8 @@
+<<<<<<< HEAD:storage/framework/cache/42/cc/42cc638672ed2652e02b5f7514d79f82ab33687b
 1516810010a:1:{s:11:"beaches.htm";a:6:{s:8:"fileName";s:11:"beaches.htm";s:7:"content";s:1535:"==
+=======
+1516808802a:1:{s:11:"beaches.htm";a:6:{s:8:"fileName";s:11:"beaches.htm";s:7:"content";s:1535:"==
+>>>>>>> 444a0de4ec43ad468379c9219594fdc15eee30fc:storage/framework/cache/4d/85/4d8552f8cff671634efc91465235305d95e387a7
 <?php 
 
 	function onStart()

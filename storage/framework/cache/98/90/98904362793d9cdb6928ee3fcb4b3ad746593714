@@ -1,4 +1,8 @@
+<<<<<<< HEAD:storage/framework/cache/98/90/98904362793d9cdb6928ee3fcb4b3ad746593714
 1516810106a:1:{s:18:"cultura-teatro.htm";a:7:{s:8:"fileName";s:18:"cultura-teatro.htm";s:7:"content";s:5265:"[viewBag]
+=======
+1516808802a:1:{s:18:"cultura-teatro.htm";a:7:{s:8:"fileName";s:18:"cultura-teatro.htm";s:7:"content";s:5265:"[viewBag]
+>>>>>>> 444a0de4ec43ad468379c9219594fdc15eee30fc:storage/framework/cache/a6/98/a6983301568156e2d45053d22f9d5bf648df8aa0
 title = "Teatro"
 url = "/cultura/teatro"
 template = "pages"

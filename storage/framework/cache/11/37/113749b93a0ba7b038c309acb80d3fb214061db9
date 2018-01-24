@@ -1,4 +1,8 @@
+<<<<<<< HEAD:storage/framework/cache/11/37/113749b93a0ba7b038c309acb80d3fb214061db9
 1516810108a:1:{s:11:"default.htm";a:12:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:2958:"description = "Default Layout"
+=======
+1516808802a:1:{s:11:"default.htm";a:12:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:2958:"description = "Default Layout"
+>>>>>>> 444a0de4ec43ad468379c9219594fdc15eee30fc:storage/framework/cache/a0/98/a09870c62d632b92ba7518c71df8cd6b428e99dd
 
 [staticPage]
 useContent = 1

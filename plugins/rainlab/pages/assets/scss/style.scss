@@ -768,7 +768,8 @@ html, body {
 .field-richeditor .header .background-image,
 .field-richeditor .header-event .background-image,
 .field-richeditor .static-header .img-header,
-.field-richeditor .ayuda-header .img-header {
+.field-richeditor .ayuda-header .img-header,
+.field-richeditor .about-header .img-header {
   position: absolute !important;
   z-index: 4 !important;
   top: 0px !important; }
@@ -777,7 +778,7 @@ html, body {
   display: none !important; }
 
 .field-richeditor {
-  .pic-way, .static-header, .somos-section, .ayuda-header {
+  .pic-way, .static-header, .somos-section, .ayuda-header, .about-header {
     &:before {
       content: none !important;
     }
@@ -855,6 +856,90 @@ html, body {
       width: 100%;
       height: 100%;
       position: fixed;
+      top: 4px;
+      object-fit: cover;
+      z-index: -1;
+  }
+  .header-container {
+    z-index: 90;
+  }
+  .header-txt-comollegar {
+    font-family: Ryssa;
+    font-size: 274px;
+    line-height: 274px;
+    text-align: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    .txt {
+      font-family: Ryssa;
+      font-size: 274px;
+      line-height: 274px;
+      transform: rotate(-9deg);
+      text-align: center;
+      color: white;
+      text-align: center;
+    }
+    .brush {
+      position: absolute;
+      bottom: -14px;
+      left: 50%;
+      transform: translate(-50%,0);
+      position: absolute;
+      z-index: 1
+    }
+  }
+  .tagline {
+    font-family: 'AvenirNext-DemiBold';
+    font-size: 15px;
+    color: white;
+    position: absolute;
+    bottom: 75px;
+    z-index: 100;
+    img {
+      -webkit-filter: brightness(10);
+      filter: brightness(10);
+      -moz-filter: brightness(10);
+      margin-left: 20px;
+    }
+    &:hover, &:focus, &:active {
+      text-decoration: none;
+      outline: none;
+      opacity: 0.7;
+    }
+  }
+  .tagline-container {
+    position: absolute;
+    bottom: 140px;
+      color: white;
+      font-size: 20px;
+      line-height: 26px;
+      z-index: 10;
+      text-align: center;
+      margin: 0px;
+  }
+}
+.about-header {
+  width: 100%;
+  height: 920px;
+  margin-top: 4px;
+  @include flexbox();
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+  &:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.68) 100%);
+    z-index: 5;
+  }
+  .img-header {
+      width: 100%;
+      height: 100%;
+      position: absolute;
       top: 4px;
       object-fit: cover;
       z-index: -1;
@@ -1083,6 +1168,7 @@ html, body {
   height: auto;
   @include flexbox();
   flex-wrap: wrap;
+  background-color: white;
   .way {
     width: calc(100% / 3);
     width: -webkit-calc(100% / 3);
@@ -1335,7 +1421,47 @@ html, body {
     object-fit: cover;
   }
 }
-
+.publicaciones {
+  background-color: white;
+  position: relative;
+  z-index: 10;
+  height: auto;
+  .publi-container {
+    width: 80%;
+    margin: 0px auto;
+    padding: 130px 0px 0px 0px;
+  }
+  h3 {
+    font-family: 'AvenirNext-DemiBold';
+    font-size: 64px;
+    color: #4A4A4A;
+  }
+  .separator {
+    margin-top: 36px;
+  }
+}
+.publis {
+  width: 80%;
+  margin: 40px auto 0px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 370px);
+  -ms-grid-template-columns: repeat(3, 370px);
+  .publicacion {
+    border: 1px solid red;
+    min-height: 470px;
+  }
+}
+// .inner-publi {
+//   width: 100%;
+//   background-color: black;
+//   display: grid;
+//   grid-template-columns: repeat(3, 370px);
+//   -ms-grid-template-columns: repeat(3, 370px);
+//   .publi {
+//     background-color: red;
+//     min-height: 470px;
+//   }
+// }
 
 @media (max-width: 1100px) {
   .ways {
@@ -1343,7 +1469,7 @@ html, body {
       width: 100%;
     }
   }
-  .static-header, .somos-section, .ayuda-header {
+  .static-header, .somos-section, .ayuda-header, .about-header {
     .header-txt-comollegar {
       .txt {
         font-size: 170px !important;
@@ -1784,7 +1910,7 @@ html, body {
 
 @media (max-width: 709px) {
 
-  .static-header, .somos-section, .ayuda-header {
+  .static-header, .somos-section, .ayuda-header, .about-header {
     max-height: 800px !important;
     .tagline-container {
       bottom: 20px !important;
@@ -1914,10 +2040,10 @@ html, body {
     margin: 0px auto 60px auto; }
   .main-section-comarcas .main-events-container {
     margin-top: 60px !important; }
-  .header, .static-header, .ayuda-header, .header-event, .header-village, .header-general, .header-ruta, .header-search {
+  .header, .static-header, .ayuda-header, .about-header, .header-event, .header-village, .header-general, .header-ruta, .header-search {
     margin-top: 0px !important;
     min-height: 650px; }
-    .ayuda-header, .static-header {
+    .ayuda-header, .static-header, .about-header {
       .img-header {
         top: 0px !important;
       }

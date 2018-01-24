@@ -16,6 +16,7 @@ class __TwigTemplate_bdf40f9af6a79823269d631418c95fb8411eef3798fcd0d9c5c72c92ae5
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 1
+<<<<<<< HEAD:storage/cms/twig/d7/d709cbc1574147205f6d031d09201e0ffc904aa6fc18deb48a00799331f7b0fb.php
         echo "<!-- MENU-->
 <div class=\"slidemenu\">
   <div class=\"elements\">
@@ -405,6 +406,11 @@ class __TwigTemplate_bdf40f9af6a79823269d631418c95fb8411eef3798fcd0d9c5c72c92ae5
       </div>
     </div>
   </nav>";
+=======
+        $context['__cms_partial_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("site/menu"        , $context['__cms_partial_params']        , true        );
+        unset($context['__cms_partial_params']);
+>>>>>>> 444a0de4ec43ad468379c9219594fdc15eee30fc:storage/cms/twig/e6/e6d62cba1eee2ac7cc4e1e05fcbf3905328e6bf151444bbcb74d623e993e8ef0.php
     }
 
     public function getTemplateName()
@@ -419,11 +425,16 @@ class __TwigTemplate_bdf40f9af6a79823269d631418c95fb8411eef3798fcd0d9c5c72c92ae5
 
     public function getDebugInfo()
     {
+<<<<<<< HEAD:storage/cms/twig/d7/d709cbc1574147205f6d031d09201e0ffc904aa6fc18deb48a00799331f7b0fb.php
         return array (  403 => 127,  392 => 125,  388 => 124,  383 => 122,  379 => 121,  375 => 120,  367 => 116,  356 => 114,  352 => 113,  347 => 111,  343 => 110,  339 => 109,  334 => 106,  324 => 104,  318 => 103,  313 => 101,  309 => 100,  305 => 99,  300 => 96,  290 => 94,  284 => 93,  279 => 91,  275 => 90,  271 => 89,  260 => 85,  229 => 75,  218 => 71,  210 => 66,  206 => 65,  194 => 55,  184 => 53,  178 => 52,  173 => 50,  169 => 49,  165 => 48,  157 => 43,  154 => 42,  144 => 41,  138 => 40,  133 => 38,  129 => 37,  125 => 36,  119 => 32,  109 => 30,  103 => 29,  98 => 27,  94 => 26,  90 => 25,  78 => 20,  70 => 19,  66 => 17,  56 => 15,  50 => 14,  45 => 12,  41 => 11,  37 => 10,  25 => 5,  19 => 1,);
+=======
+        return array (  19 => 1,);
+>>>>>>> 444a0de4ec43ad468379c9219594fdc15eee30fc:storage/cms/twig/e6/e6d62cba1eee2ac7cc4e1e05fcbf3905328e6bf151444bbcb74d623e993e8ef0.php
     }
 
     public function getSourceContext()
     {
+<<<<<<< HEAD:storage/cms/twig/d7/d709cbc1574147205f6d031d09201e0ffc904aa6fc18deb48a00799331f7b0fb.php
         return new Twig_Source("<!-- MENU-->
 <div class=\"slidemenu\">
   <div class=\"elements\">
@@ -555,5 +566,8 @@ class __TwigTemplate_bdf40f9af6a79823269d631418c95fb8411eef3798fcd0d9c5c72c92ae5
       </div>
     </div>
   </nav>", "/Users/jekyll/workspace/cadizturismo/themes/default/partials/site/menu.htm", "");
+=======
+        return new Twig_Source("{% partial \"site/menu\" %}", "/Users/jekyll/Desktop/workspace/cadizturismo/themes/default/partials/site/header.htm", "");
+>>>>>>> 444a0de4ec43ad468379c9219594fdc15eee30fc:storage/cms/twig/e6/e6d62cba1eee2ac7cc4e1e05fcbf3905328e6bf151444bbcb74d623e993e8ef0.php
     }
 }

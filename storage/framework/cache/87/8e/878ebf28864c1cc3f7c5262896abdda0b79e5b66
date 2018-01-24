@@ -1,4 +1,8 @@
+<<<<<<< HEAD:storage/framework/cache/87/8e/878ebf28864c1cc3f7c5262896abdda0b79e5b66
 1516810106a:1:{s:13:"donde-ir.yaml";a:7:{s:8:"fileName";s:13:"donde-ir.yaml";s:7:"content";s:2144:"name: 'Dónde ir'
+=======
+1516808802a:1:{s:13:"donde-ir.yaml";a:7:{s:8:"fileName";s:13:"donde-ir.yaml";s:7:"content";s:2144:"name: 'Dónde ir'
+>>>>>>> 444a0de4ec43ad468379c9219594fdc15eee30fc:storage/framework/cache/df/a8/dfa85f8648c5f0fd5baa8e1948a06e3e5023afc2
 items:
     -
         title: barbate

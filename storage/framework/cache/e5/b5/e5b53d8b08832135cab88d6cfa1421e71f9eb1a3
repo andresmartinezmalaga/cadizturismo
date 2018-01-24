@@ -1,4 +1,8 @@
+<<<<<<< HEAD:storage/framework/cache/e5/b5/e5b53d8b08832135cab88d6cfa1421e71f9eb1a3
 1516810106a:1:{s:21:"diversion-compras.htm";a:7:{s:8:"fileName";s:21:"diversion-compras.htm";s:7:"content";s:3339:"[viewBag]
+=======
+1516808802a:1:{s:21:"diversion-compras.htm";a:7:{s:8:"fileName";s:21:"diversion-compras.htm";s:7:"content";s:3339:"[viewBag]
+>>>>>>> 444a0de4ec43ad468379c9219594fdc15eee30fc:storage/framework/cache/34/b4/34b4c8db5784aad3793908f9d29f777e5f1350d5
 title = "Compras"
 url = "/diversion/compras"
 template = "pages"

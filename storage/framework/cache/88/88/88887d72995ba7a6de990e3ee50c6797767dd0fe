@@ -1,4 +1,8 @@
+<<<<<<< HEAD:storage/framework/cache/88/88/88887d72995ba7a6de990e3ee50c6797767dd0fe
 1516810106a:1:{s:11:"cultura.htm";a:7:{s:8:"fileName";s:11:"cultura.htm";s:7:"content";s:100:"[viewBag]
+=======
+1516808802a:1:{s:11:"cultura.htm";a:7:{s:8:"fileName";s:11:"cultura.htm";s:7:"content";s:100:"[viewBag]
+>>>>>>> 444a0de4ec43ad468379c9219594fdc15eee30fc:storage/framework/cache/06/17/0617834081b5ae69707963c84643b45b6c22ecc8
 title = "Cultura"
 url = "/cultura"
 template = "pages"

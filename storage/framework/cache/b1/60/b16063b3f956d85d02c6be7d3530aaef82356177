@@ -1,4 +1,8 @@
+<<<<<<< HEAD:storage/framework/cache/b1/60/b16063b3f956d85d02c6be7d3530aaef82356177
 1516810106a:1:{s:15:"gastronomia.htm";a:7:{s:8:"fileName";s:15:"gastronomia.htm";s:7:"content";s:109:"[viewBag]
+=======
+1516808802a:1:{s:15:"gastronomia.htm";a:7:{s:8:"fileName";s:15:"gastronomia.htm";s:7:"content";s:109:"[viewBag]
+>>>>>>> 444a0de4ec43ad468379c9219594fdc15eee30fc:storage/framework/cache/8f/d9/8fd94e198b8e8f347440067452c12ed455985388
 title = "Gastronomía"
 url = "/gastronomia"
 template = "pages"

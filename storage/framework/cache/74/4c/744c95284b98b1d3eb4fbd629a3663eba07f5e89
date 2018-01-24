@@ -1,7 +1,13 @@
+<<<<<<< HEAD:storage/framework/cache/74/4c/744c95284b98b1d3eb4fbd629a3663eba07f5e89
 1516810106a:1:{s:22:"eventos-evento-uno.htm";a:7:{s:8:"fileName";s:22:"eventos-evento-uno.htm";s:7:"content";s:7097:"[viewBag]
 title = "Uno"
 tlayout = "maxi-evento"
 url = "/eventos/uno"
+=======
+1516808802a:1:{s:22:"eventos-evento-uno.htm";a:7:{s:8:"fileName";s:22:"eventos-evento-uno.htm";s:7:"content";s:7084:"[viewBag]
+title = "evento uno"
+url = "/eventos/evento-uno"
+>>>>>>> 444a0de4ec43ad468379c9219594fdc15eee30fc:storage/framework/cache/5b/a6/5ba64ad2379fedc5da62943e7a024dfdea2e1719
 date_start = "2018-01-23 21:36:55"
 date_end = "2018-01-25 21:37:00"
 category = "carnaval"

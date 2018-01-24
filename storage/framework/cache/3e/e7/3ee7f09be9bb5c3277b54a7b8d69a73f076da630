@@ -1,4 +1,8 @@
+<<<<<<< HEAD:storage/framework/cache/3e/e7/3ee7f09be9bb5c3277b54a7b8d69a73f076da630
 1516810106a:1:{s:18:"playas-bolonia.htm";a:7:{s:8:"fileName";s:18:"playas-bolonia.htm";s:7:"content";s:5328:"[viewBag]
+=======
+1516808802a:1:{s:18:"playas-bolonia.htm";a:7:{s:8:"fileName";s:18:"playas-bolonia.htm";s:7:"content";s:5328:"[viewBag]
+>>>>>>> 444a0de4ec43ad468379c9219594fdc15eee30fc:storage/framework/cache/70/84/708460fa3eddd198119837058f0761ad9c7363ce
 title = "Bolonia"
 url = "/playas/bolonia"
 categoriea = "urban"

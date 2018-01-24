@@ -1,4 +1,8 @@
+<<<<<<< HEAD:storage/framework/cache/c2/70/c27021c84918be3c869f78b5651f2eefdc3bc090
 1516810106a:1:{s:34:"gastronomia-comida-tradicional.htm";a:7:{s:8:"fileName";s:34:"gastronomia-comida-tradicional.htm";s:7:"content";s:5373:"[viewBag]
+=======
+1516808802a:1:{s:34:"gastronomia-comida-tradicional.htm";a:7:{s:8:"fileName";s:34:"gastronomia-comida-tradicional.htm";s:7:"content";s:5373:"[viewBag]
+>>>>>>> 444a0de4ec43ad468379c9219594fdc15eee30fc:storage/framework/cache/1b/96/1b966de70eeba06755c91584fa4bb51a2ea4be97
 title = "Comida tradicional"
 url = "/gastronomia/comida-tradicional"
 template = "pages"

@@ -1,4 +1,8 @@
+<<<<<<< HEAD:storage/framework/cache/b6/34/b634b30670636218a02fb0ec1c6847106c5661d4
 1516810106a:1:{s:23:"playas-los-alemanes.htm";a:7:{s:8:"fileName";s:23:"playas-los-alemanes.htm";s:7:"content";s:5364:"[viewBag]
+=======
+1516808802a:1:{s:23:"playas-los-alemanes.htm";a:7:{s:8:"fileName";s:23:"playas-los-alemanes.htm";s:7:"content";s:5364:"[viewBag]
+>>>>>>> 444a0de4ec43ad468379c9219594fdc15eee30fc:storage/framework/cache/79/80/79800aaea9101e96a5cb2e08e0d2c2572b326116
 title = "Los Alemanes"
 url = "/playas/los-alemanes"
 categoriea = "urban"

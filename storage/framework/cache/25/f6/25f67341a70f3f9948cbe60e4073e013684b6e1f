@@ -1,4 +1,8 @@
+<<<<<<< HEAD:storage/framework/cache/25/f6/25f67341a70f3f9948cbe60e4073e013684b6e1f
 1516810106a:1:{s:14:"municipios.htm";a:7:{s:8:"fileName";s:14:"municipios.htm";s:7:"content";s:1065:"[viewBag]
+=======
+1516808802a:1:{s:14:"municipios.htm";a:7:{s:8:"fileName";s:14:"municipios.htm";s:7:"content";s:1065:"[viewBag]
+>>>>>>> 444a0de4ec43ad468379c9219594fdc15eee30fc:storage/framework/cache/e3/a5/e3a534fad5fc3255ff34ab6d83498fe87b5c6bed
 title = "Municipios"
 url = "/municipios"
 template = "pages"

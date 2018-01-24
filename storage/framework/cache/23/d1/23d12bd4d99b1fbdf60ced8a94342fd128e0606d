@@ -1,4 +1,8 @@
+<<<<<<< HEAD:storage/framework/cache/23/d1/23d12bd4d99b1fbdf60ced8a94342fd128e0606d
 1516810106a:1:{s:12:"comarcas.htm";a:7:{s:8:"fileName";s:12:"comarcas.htm";s:7:"content";s:12011:"[viewBag]
+=======
+1516808802a:1:{s:12:"comarcas.htm";a:7:{s:8:"fileName";s:12:"comarcas.htm";s:7:"content";s:12011:"[viewBag]
+>>>>>>> 444a0de4ec43ad468379c9219594fdc15eee30fc:storage/framework/cache/18/ef/18efdc2f0d00242e3c6c49b2d4abc57a7f8bb6e8
 title = "Comarcas"
 url = "/comarcas"
 template = "pages"
