@@ -67,4 +67,5 @@
   'backend\\Controllers\\preferences' => 'modules/backend/controllers/preferences.php',
   'RainLab\\GoogleAnalytics\\ReportWidgets\\TrafficSources' => 'plugins/rainlab/googleanalytics/reportwidgets/TrafficSources.php',
   'RainLab\\GoogleAnalytics\\ReportWidgets\\TrafficOverview' => 'plugins/rainlab/googleanalytics/reportwidgets/TrafficOverview.php',
+  'RainLab\\Translate\\Classes\\ThemeScanner' => 'plugins/rainlab/translate/classes/ThemeScanner.php',
 );
