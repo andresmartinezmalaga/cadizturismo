@@ -1,4 +1,8 @@
+<<<<<<< HEAD:storage/framework/cache/1b/bf/1bbfce5170c7d16d0006182f5dc75eb639d8b69f
 1516814564a:1:{s:20:"site/searchevent.htm";a:6:{s:8:"fileName";s:20:"site/searchevent.htm";s:7:"content";s:2652:"==
+=======
+1516808802a:1:{s:20:"site/searchevent.htm";a:6:{s:8:"fileName";s:20:"site/searchevent.htm";s:7:"content";s:2134:"==
+>>>>>>> 62cddc41313baa7d23f10a95e65f8893e19c3f25:storage/framework/cache/6a/28/6a28439c0e58445e459cb8ad6f3481f5e161ed67
 
 <?php 
 

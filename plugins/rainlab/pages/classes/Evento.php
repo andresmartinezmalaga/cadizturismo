@@ -31,7 +31,7 @@ use ApplicationException;
 class Evento extends ContentBase
 {
     public $implement = [
-        '@RainLab.Translate.Behaviors.TranslatablePageUrl',
+        //'@RainLab.Translate.Behaviors.TranslatablePageUrl',
         '@RainLab.Translate.Behaviors.TranslatableCmsObject'
     ];
     
@@ -52,6 +52,15 @@ class Evento extends ContentBase
         'markup',
         'settings',
         'placeholders',
+        'tlayout',
+        'title',
+        'date_start',
+        'date_end',
+        'category',
+        'Location',
+        'locationgoogle',
+        'subtemplate',
+        'cover'
     ];
 
     /**

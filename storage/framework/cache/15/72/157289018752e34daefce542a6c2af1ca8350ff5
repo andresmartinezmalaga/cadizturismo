@@ -1,4 +1,8 @@
+<<<<<<< HEAD:storage/framework/cache/15/72/157289018752e34daefce542a6c2af1ca8350ff5
 1516814569a:1:{s:13:"site/menu.htm";a:6:{s:8:"fileName";s:13:"site/menu.htm";s:7:"content";s:7727:"==
+=======
+1516808802a:1:{s:13:"site/menu.htm";a:6:{s:8:"fileName";s:13:"site/menu.htm";s:7:"content";s:7727:"==
+>>>>>>> 62cddc41313baa7d23f10a95e65f8893e19c3f25:storage/framework/cache/33/70/3370883cb3c251f87a11bb74f9ff3bc0a2ac5ec3
 
 <?php
 
