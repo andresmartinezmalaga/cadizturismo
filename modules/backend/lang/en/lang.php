@@ -585,4 +585,47 @@ return [
         'image_size' => 'Image size:',
         'selected_size' => 'Selected:'
     ],
+    'eventos' => [
+        'category' => [
+            'semana_santa' => 'Semana Santa',
+            'carnaval' => 'Carnaval',
+            'congresos' => 'Congresos',
+            'cultura' => 'Cultura En Inglés',
+            'danza' => 'Danza',
+            'deporte' => 'Deporte',
+            'espectaculos' => 'Espectáculos',
+            'exposiciones' => 'Exposiciones',
+            'ferias' => 'Ferias',
+            'fiesta' => 'Fiesta',
+            'flamenco' => 'Flamenco',
+            'gastronomia' => 'Gastronomía',
+            'naturaleza' => 'Naturaleza',
+            'navidad' => 'Navidad',
+            'ocio' => 'Ocio',
+            'romerias' => 'Romerías',
+            'ruta' => 'Ruta',
+            'taller' => 'Taller',
+            'teatro' => 'Teatro'
+        ],
+        
+    ],
+
+    'beaches' => [
+        'category' => [
+            'deporte' => 'Deporte',
+            'naturaleza' => 'Naturaleza',
+            'animales' => 'Animales',
+            'nudista' => 'Nudista',            
+            'camping' => 'Camping',
+            'restauracion' => 'Restauración',            
+            'instalaciones' => 'instalaciones'
+        ],
+        
+        'type' => [
+            'urban' => 'Urban',
+            'virgen' => 'Virgen'
+        ],
+
+    ],
+
 ];

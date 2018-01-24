@@ -60,4 +60,11 @@
   'RainLab\\Pages\\Classes\\EventoList' => 'plugins/rainlab/pages/classes/EventoList.php',
   'RainLab\\Pages\\Classes\\Evento' => 'plugins/rainlab/pages/classes/Evento.php',
   'RainLab\\Pages\\Classes\\evento' => 'plugins/rainlab/pages/classes/evento.php',
+  'rainlab\\googleanalytics\\Plugin' => 'plugins/rainlab/googleanalytics/Plugin.php',
+  'RainLab\\GoogleAnalytics\\ReportWidgets\\Browsers' => 'plugins/rainlab/googleanalytics/reportwidgets/Browsers.php',
+  'RainLab\\GoogleAnalytics\\Classes\\Analytics' => 'plugins/rainlab/googleanalytics/classes/Analytics.php',
+  'RainLab\\GoogleAnalytics\\Models\\Settings' => 'plugins/rainlab/googleanalytics/models/Settings.php',
+  'backend\\Controllers\\preferences' => 'modules/backend/controllers/preferences.php',
+  'RainLab\\GoogleAnalytics\\ReportWidgets\\TrafficSources' => 'plugins/rainlab/googleanalytics/reportwidgets/TrafficSources.php',
+  'RainLab\\GoogleAnalytics\\ReportWidgets\\TrafficOverview' => 'plugins/rainlab/googleanalytics/reportwidgets/TrafficOverview.php',
 );

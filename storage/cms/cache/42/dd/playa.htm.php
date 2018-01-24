@@ -1,5 +1,5 @@
 <?php 
-class Cms5a67575d252da034081852_ec72c1c1c008a5803f2ccf84bb0e441cClass extends \Cms\Classes\LayoutCode
+class Cms5a676f0f9cbff741680456_61cb512014eb2f488908057c58f801caClass extends \Cms\Classes\LayoutCode
 {
 public function onStart()
     {
@@ -9,6 +9,6 @@ public function onStart()
         }
 
         $this['beaches'] = $this->staticApp->beachList();
-     
+
     }
 }

@@ -17,10 +17,14 @@ class __TwigTemplate_8e72bae203137300a302fb7c16cd7a04990944811cc2b872a89c4d4ad07
     {
         // line 1
         echo "<div class=\"search-title-container\">
-    <p class=\"title-search\">Hemos encontrado ";
+    <p class=\"title-search\"> ";
         // line 2
+        echo call_user_func_array($this->env->getFilter('trans')->getCallable(), array("backend::lang.experiences.page.result1"));
+        echo " ";
         echo twig_escape_filter($this->env, twig_length_filter($this->env, ($context["experiences"] ?? null)), "html", null, true);
-        echo " experiencias que se adaptan a ti</p>
+        echo " ";
+        echo call_user_func_array($this->env->getFilter('trans')->getCallable(), array("backend::lang.experiences.page.result2"));
+        echo "</p>
 </div>
 
 <div class=\"all-events-container\">
@@ -56,54 +60,86 @@ class __TwigTemplate_8e72bae203137300a302fb7c16cd7a04990944811cc2b872a89c4d4ad07
             // line 18
             echo url("/");
             echo "/plugins/rainlab/pages/assets/svg/calendar-exp.svg\">
-\t            <p class=\"icon-txt\">";
-            // line 19
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), $context["experience"], "viewBag", array()), "days", array()), "html", null, true);
-            echo " días</p>
-\t          </div>          
-\t          <div class=\"icon-pair\">
-\t            <img src=\"";
-            // line 22
-            echo url("/");
-            echo "/plugins/rainlab/pages/assets/svg/";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), ($context["interest"] ?? null), 0, array(), "array"), "html", null, true);
-            echo ".svg\">
-\t            <p class=\"icon-txt\">";
-            // line 23
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), ($context["interest"] ?? null), 0, array(), "array"), "html", null, true);
-            echo "</p>
-\t          </div>
-\t          <div class=\"icon-pair\">
-\t            <img src=\"";
-            // line 26
-            echo url("/");
-            echo "/plugins/rainlab/pages/assets/svg/";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), ($context["interest"] ?? null), 1, array(), "array"), "html", null, true);
-            echo ".svg\">
+\t            \t
+\t            \t";
+            // line 20
+            if ((twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), $context["experience"], "viewBag", array()), "days", array()) < 2)) {
+                // line 21
+                echo "\t              \t\t";
+                $context["d"] = call_user_func_array($this->env->getFilter('trans')->getCallable(), array("backend::lang.experiences.search.day"));
+                // line 22
+                echo "\t              \t";
+            } else {
+                // line 23
+                echo "\t              \t\t";
+                $context["d"] = call_user_func_array($this->env->getFilter('trans')->getCallable(), array("backend::lang.experiences.search.days"));
+                // line 24
+                echo "\t              \t";
+            }
+            // line 25
+            echo "              \t\t
+
 \t            <p class=\"icon-txt\">";
             // line 27
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), ($context["interest"] ?? null), 1, array(), "array"), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), $context["experience"], "viewBag", array()), "days", array()), "html", null, true);
+            echo " ";
+            echo call_user_func_array($this->env->getFilter('trans')->getCallable(), array(($context["d"] ?? null)));
             echo "</p>
-\t          </div>
+\t          </div>          
 \t          <div class=\"icon-pair\">
 \t            <img src=\"";
             // line 30
             echo url("/");
-            echo "/plugins/rainlab/pages/assets/svg/cultura-event.svg\">
-\t            <p class=\"icon-txt\">";
+            echo "/plugins/rainlab/pages/assets/svg/";
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), ($context["interest"] ?? null), 0, array(), "array"), "html", null, true);
+            echo ".svg\">
+\t              ";
             // line 31
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), $context["experience"], "viewBag", array()), "tvisit", array()), "html", null, true);
+            $context["ia"] = ("backend::lang.experiences.page." . twig_get_attribute($this->env, $this->getSourceContext(), ($context["interest"] ?? null), 0, array(), "array"));
+            // line 32
+            echo "\t            \t<p class=\"icon-txt\">";
+            echo call_user_func_array($this->env->getFilter('trans')->getCallable(), array(($context["ia"] ?? null)));
+            echo "</p>
+\t          </div>
+\t          <div class=\"icon-pair\">
+\t            <img src=\"";
+            // line 35
+            echo url("/");
+            echo "/plugins/rainlab/pages/assets/svg/";
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), ($context["interest"] ?? null), 1, array(), "array"), "html", null, true);
+            echo ".svg\">
+\t            ";
+            // line 36
+            $context["ib"] = ("backend::lang.experiences.page." . twig_get_attribute($this->env, $this->getSourceContext(), ($context["interest"] ?? null), 1, array(), "array"));
+            // line 37
+            echo "\t            <p class=\"icon-txt\">";
+            echo call_user_func_array($this->env->getFilter('trans')->getCallable(), array(($context["ib"] ?? null)));
+            echo "</p>
+\t          </div>
+\t          <div class=\"icon-pair\">
+\t            <img src=\"";
+            // line 40
+            echo url("/");
+            echo "/plugins/rainlab/pages/assets/svg/cultura-event.svg\">
+\t            ";
+            // line 41
+            $context["ty"] = ("backend::lang.experiences.page." . twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), $context["experience"], "viewBag", array()), "tvisit", array()));
+            // line 42
+            echo "\t            <p class=\"icon-txt\">";
+            echo call_user_func_array($this->env->getFilter('trans')->getCallable(), array(($context["ty"] ?? null)));
             echo "</p>
 \t          </div>
 \t        </div>
 \t        <div class=\"button-container\">
 \t          <a class=\"see-event\" href=\"";
-            // line 35
+            // line 46
             echo url("/");
             echo "/";
             echo twig_escape_filter($this->env, ($context["lang"] ?? null), "html", null, true);
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), $context["experience"], "viewBag", array()), "url", array()), "html", null, true);
-            echo "\">Ver experiencia <img src=\"";
+            echo "\"> ";
+            echo call_user_func_array($this->env->getFilter('trans')->getCallable(), array("backend::lang.experiences.page.experience_link"));
+            echo " <img src=\"";
             echo url("/");
             echo "/plugins/rainlab/pages/assets/svg/link-icon.svg\"></a>
 \t        </div>
@@ -115,7 +151,7 @@ class __TwigTemplate_8e72bae203137300a302fb7c16cd7a04990944811cc2b872a89c4d4ad07
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['experience'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 41
+        // line 52
         echo "
 </div>";
     }
@@ -132,13 +168,13 @@ class __TwigTemplate_8e72bae203137300a302fb7c16cd7a04990944811cc2b872a89c4d4ad07
 
     public function getDebugInfo()
     {
-        return array (  119 => 41,  102 => 35,  95 => 31,  91 => 30,  85 => 27,  79 => 26,  73 => 23,  67 => 22,  61 => 19,  57 => 18,  51 => 15,  47 => 14,  42 => 12,  37 => 9,  34 => 8,  30 => 7,  22 => 2,  19 => 1,);
+        return array (  155 => 52,  136 => 46,  128 => 42,  126 => 41,  122 => 40,  115 => 37,  113 => 36,  107 => 35,  100 => 32,  98 => 31,  92 => 30,  84 => 27,  80 => 25,  77 => 24,  74 => 23,  71 => 22,  68 => 21,  66 => 20,  61 => 18,  55 => 15,  51 => 14,  46 => 12,  41 => 9,  38 => 8,  34 => 7,  22 => 2,  19 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Twig_Source("<div class=\"search-title-container\">
-    <p class=\"title-search\">Hemos encontrado {{experiences|length}} experiencias que se adaptan a ti</p>
+    <p class=\"title-search\"> {{ \"backend::lang.experiences.page.result1\"|trans }} {{experiences|length}} {{ \"backend::lang.experiences.page.result2\"|trans }}</p>
 </div>
 
 <div class=\"all-events-container\">
@@ -155,23 +191,34 @@ class __TwigTemplate_8e72bae203137300a302fb7c16cd7a04990944811cc2b872a89c4d4ad07
 \t        <div class=\"icons\">
 \t          <div class=\"icon-pair\">
 \t            <img src=\"{{url('/')}}/plugins/rainlab/pages/assets/svg/calendar-exp.svg\">
-\t            <p class=\"icon-txt\">{{experience.viewBag.days}} días</p>
+\t            \t
+\t            \t{% if experience.viewBag.days < 2 %}
+\t              \t\t{% set d = \"backend::lang.experiences.search.day\"|trans %}
+\t              \t{% else %}
+\t              \t\t{% set d = \"backend::lang.experiences.search.days\"|trans %}
+\t              \t{% endif %}
+              \t\t
+
+\t            <p class=\"icon-txt\">{{experience.viewBag.days}} {{ d|trans }}</p>
 \t          </div>          
 \t          <div class=\"icon-pair\">
 \t            <img src=\"{{url('/')}}/plugins/rainlab/pages/assets/svg/{{interest[0]}}.svg\">
-\t            <p class=\"icon-txt\">{{interest[0]}}</p>
+\t              {% set ia = \"backend::lang.experiences.page.\"~interest[0] %}
+\t            \t<p class=\"icon-txt\">{{ia|trans}}</p>
 \t          </div>
 \t          <div class=\"icon-pair\">
 \t            <img src=\"{{url('/')}}/plugins/rainlab/pages/assets/svg/{{interest[1]}}.svg\">
-\t            <p class=\"icon-txt\">{{interest[1]}}</p>
+\t            {% set ib = \"backend::lang.experiences.page.\"~interest[1] %}
+\t            <p class=\"icon-txt\">{{ib|trans}}</p>
 \t          </div>
 \t          <div class=\"icon-pair\">
 \t            <img src=\"{{url('/')}}/plugins/rainlab/pages/assets/svg/cultura-event.svg\">
-\t            <p class=\"icon-txt\">{{experience.viewBag.tvisit}}</p>
+\t            {% set ty = \"backend::lang.experiences.page.\"~experience.viewBag.tvisit %}
+\t            <p class=\"icon-txt\">{{ty|trans}}</p>
 \t          </div>
 \t        </div>
 \t        <div class=\"button-container\">
-\t          <a class=\"see-event\" href=\"{{url('/')}}/{{lang}}{{experience.viewBag.url}}\">Ver experiencia <img src=\"{{url('/')}}/plugins/rainlab/pages/assets/svg/link-icon.svg\"></a>
+\t          <a class=\"see-event\" href=\"{{url('/')}}/{{lang}}{{experience.viewBag.url}}\"> {{ \"backend::lang.experiences.page.experience_link\"|trans }} <img src=\"{{url('/')}}/plugins/rainlab/pages/assets/svg/link-icon.svg\"></a>
 \t        </div>
 \t      </div>
 \t    </div>

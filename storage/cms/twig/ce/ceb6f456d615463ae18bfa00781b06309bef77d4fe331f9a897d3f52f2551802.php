@@ -23,11 +23,11 @@ class __TwigTemplate_4f75da0cf5fbe5d6a2d1e0b2a8f1c8b55d2c0ab6dda3c39736b417af44e
           <h1 class=\"txt txt-home\"><span class=\"first-word\">
            ";
         // line 6
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), ($context["translationPage"] ?? null), 0, array(), "array"), "html", null, true);
+        echo call_user_func_array($this->env->getFilter('trans')->getCallable(), array("backend::lang.home.page.h1"));
         echo "
             </span>";
         // line 7
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), ($context["translationPage"] ?? null), 1, array(), "array"), "html", null, true);
+        echo call_user_func_array($this->env->getFilter('trans')->getCallable(), array("backend::lang.home.page.h1_span"));
         echo "</h1>
           <img class=\"brush\" src=\"";
         // line 8
@@ -44,17 +44,17 @@ class __TwigTemplate_4f75da0cf5fbe5d6a2d1e0b2a8f1c8b55d2c0ab6dda3c39736b417af44e
         unset($context['__cms_partial_params']);
         // line 14
         echo "        </div>
-        
+
         <div class=\"header-comment\">
           <p class=\"comment\">";
         // line 17
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), ($context["translationPage"] ?? null), 2, array(), "array"), "html", null, true);
+        echo call_user_func_array($this->env->getFilter('trans')->getCallable(), array("backend::lang.home.page.comment"));
         echo "</p>
           <a class=\"header-link\" href=\"";
         // line 18
         echo twig_escape_filter($this->env, ($context["lang"] ?? null), "html", null, true);
         echo "/playas\">";
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), ($context["translationPage"] ?? null), 3, array(), "array"), "html", null, true);
+        echo call_user_func_array($this->env->getFilter('trans')->getCallable(), array("backend::lang.home.page.link"));
         echo " &nbsp;<img src=\"";
         echo url("/");
         echo "/plugins/rainlab/pages/assets/svg/link-arrow.svg\" alt=\"\"> </a>
@@ -68,7 +68,7 @@ class __TwigTemplate_4f75da0cf5fbe5d6a2d1e0b2a8f1c8b55d2c0ab6dda3c39736b417af44e
       <div class=\"left-txt\">
         <p class=\"title\">";
         // line 27
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), ($context["translationPage"] ?? null), 4, array(), "array"), "html", null, true);
+        echo call_user_func_array($this->env->getFilter('trans')->getCallable(), array("backend::lang.home.page.events_title"));
         echo "</p>
           <img class=\"separator\" src=\"";
         // line 28
@@ -78,35 +78,47 @@ class __TwigTemplate_4f75da0cf5fbe5d6a2d1e0b2a8f1c8b55d2c0ab6dda3c39736b417af44e
           ";
         // line 30
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(($context["events"] ?? null));
+        $context['_seq'] = twig_ensure_traversable(($context["events3"] ?? null));
         foreach ($context['_seq'] as $context["_key"] => $context["iEvent"]) {
             // line 31
-            echo "            <div class=\"event\">
-              <p class=\"event-date\">";
+            echo "            
+              ";
             // line 32
+            $context["i"] = ("backend::lang.eventos.category." . twig_get_attribute($this->env, $this->getSourceContext(), $context["iEvent"], "category", array(), "array"));
+            // line 33
+            echo "              ";
+            echo call_user_func_array($this->env->getFilter('trans')->getCallable(), array(($context["i"] ?? null)));
+            echo "
+           
+
+            <div class=\"event\">
+              <p class=\"event-date\">";
+            // line 37
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["iEvent"], "date_start_pretty", array(), "array"), "html", null, true);
             echo "</p>
               <p class=\"event-place\">";
-            // line 33
+            // line 38
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["iEvent"], "place", array(), "array"), "html", null, true);
             echo "</p>
               <a href=\"jornadas-micologicas.html\" class=\"event-name\">";
-            // line 34
+            // line 39
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["iEvent"], "title", array(), "array"), "html", null, true);
-            echo "</a>
+            echo "</a> 
+              
+              
             </div>
           ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['iEvent'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 37
+        // line 44
         echo "
             <a class=\"events-link\" href=\"";
-        // line 38
+        // line 45
         echo twig_escape_filter($this->env, ($context["lang"] ?? null), "html", null, true);
         echo "/eventos\">";
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), ($context["translationPage"] ?? null), 5, array(), "array"), "html", null, true);
+        echo call_user_func_array($this->env->getFilter('trans')->getCallable(), array("backend::lang.home.page.all_events"));
         echo "&nbsp;&nbsp;<img src=\"";
         echo url("/");
         echo "/plugins/rainlab/pages/assets/svg/link-arrow-yellow.svg\" alt=\"\"> </a>
@@ -120,20 +132,20 @@ class __TwigTemplate_4f75da0cf5fbe5d6a2d1e0b2a8f1c8b55d2c0ab6dda3c39736b417af44e
           <div id=\"element1\" class=\"element\">
             <div class=\"overlay-img\"></div>
             <img class=\"rec-img\" src=\"";
-        // line 48
+        // line 55
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), ($context["eventsVip"] ?? null), 0, array(), "array"), "image", array(), "array"), "html", null, true);
         echo "\">
             <div class=\"txt-container\">
               <p class=\"date\">";
-        // line 50
+        // line 57
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), ($context["eventsVip"] ?? null), 0, array(), "array"), "date_start_pretty", array(), "array"), "html", null, true);
         echo "</p>
               <p class=\"name\">";
-        // line 51
+        // line 58
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), ($context["eventsVip"] ?? null), 0, array(), "array"), "title", array(), "array"), "html", null, true);
         echo "</p>
               <img class=\"separator\" src=\"";
-        // line 52
+        // line 59
         echo url("/");
         echo "/plugins/rainlab/pages/assets/svg/small-yellow-separator.svg\">
             </div>
@@ -143,20 +155,20 @@ class __TwigTemplate_4f75da0cf5fbe5d6a2d1e0b2a8f1c8b55d2c0ab6dda3c39736b417af44e
           <div id=\"element2\" class=\"element\">
             <div class=\"overlay-img\"></div>
             <img class=\"rec-img\" src=\"";
-        // line 59
+        // line 66
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), ($context["eventsVip"] ?? null), 1, array(), "array"), "image", array(), "array"), "html", null, true);
         echo "\">
             <div class=\"txt-container\">
               <p class=\"date\">";
-        // line 61
+        // line 68
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), ($context["eventsVip"] ?? null), 1, array(), "array"), "date_start_pretty", array(), "array"), "html", null, true);
         echo "</p>
               <p class=\"name\">";
-        // line 62
+        // line 69
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), ($context["eventsVip"] ?? null), 1, array(), "array"), "title", array(), "array"), "html", null, true);
         echo "</p>
               <img class=\"separator\" src=\"";
-        // line 63
+        // line 70
         echo url("/");
         echo "/plugins/rainlab/pages/assets/svg/small-yellow-separator.svg\">
             </div>
@@ -166,20 +178,20 @@ class __TwigTemplate_4f75da0cf5fbe5d6a2d1e0b2a8f1c8b55d2c0ab6dda3c39736b417af44e
           <div id=\"element3\" class=\"element\">
             <div class=\"overlay-img\"></div>
             <img class=\"rec-img\" src=\"";
-        // line 70
+        // line 77
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), ($context["eventsVip"] ?? null), 2, array(), "array"), "image", array(), "array"), "html", null, true);
         echo "\">
             <div class=\"txt-container\">
               <p class=\"date\">";
-        // line 72
+        // line 79
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), ($context["eventsVip"] ?? null), 2, array(), "array"), "date_start_pretty", array(), "array"), "html", null, true);
         echo "</p>
               <p class=\"name\">";
-        // line 73
+        // line 80
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), ($context["eventsVip"] ?? null), 2, array(), "array"), "title", array(), "array"), "html", null, true);
         echo "</p>
               <img class=\"separator\" src=\"";
-        // line 74
+        // line 81
         echo url("/");
         echo "/plugins/rainlab/pages/assets/svg/small-yellow-separator.svg\">
             </div>
@@ -189,20 +201,20 @@ class __TwigTemplate_4f75da0cf5fbe5d6a2d1e0b2a8f1c8b55d2c0ab6dda3c39736b417af44e
           <div id=\"element4\" class=\"element\">
             <div class=\"overlay-img\"></div>
             <img class=\"rec-img\" src=\"";
-        // line 81
+        // line 88
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), ($context["eventsVip"] ?? null), 3, array(), "array"), "image", array(), "array"), "html", null, true);
         echo "\">
             <div class=\"txt-container\">
               <p class=\"date\">";
-        // line 83
+        // line 90
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), ($context["eventsVip"] ?? null), 3, array(), "array"), "date_start_pretty", array(), "array"), "html", null, true);
         echo "</p>
               <p class=\"name\">";
-        // line 84
+        // line 91
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), ($context["eventsVip"] ?? null), 3, array(), "array"), "title", array(), "array"), "html", null, true);
         echo "</p>
               <img class=\"separator\" src=\"";
-        // line 85
+        // line 92
         echo url("/");
         echo "/plugins/rainlab/pages/assets/svg/small-yellow-separator.svg\">
             </div>
@@ -215,23 +227,23 @@ class __TwigTemplate_4f75da0cf5fbe5d6a2d1e0b2a8f1c8b55d2c0ab6dda3c39736b417af44e
     <div class=\"secret-routes\">
       <div class=\"txt-container\">
         <p class=\"title\">";
-        // line 95
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), ($context["translationPage"] ?? null), 6, array(), "array"), "html", null, true);
+        // line 102
+        echo call_user_func_array($this->env->getFilter('trans')->getCallable(), array("backend::lang.home.page.routes_title"));
         echo "</p>
         <p class=\"desc\">";
-        // line 96
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), ($context["translationPage"] ?? null), 7, array(), "array"), "html", null, true);
+        // line 103
+        echo call_user_func_array($this->env->getFilter('trans')->getCallable(), array("backend::lang.home.page.routes_comment"));
         echo "</p>
         <a class=\"events-link\" href=\"";
-        // line 97
+        // line 104
         echo twig_escape_filter($this->env, ($context["lang"] ?? null), "html", null, true);
         echo "/rutas\">";
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), ($context["translationPage"] ?? null), 8, array(), "array"), "html", null, true);
+        echo call_user_func_array($this->env->getFilter('trans')->getCallable(), array("backend::lang.home.page.routes_link"));
         echo "<img src=\"";
         echo url("/");
         echo "/plugins/rainlab/pages/assets/svg/link-arrow-yellow.svg\" alt=\"\"> </a>
         <img class=\"separator\" src=\"";
-        // line 98
+        // line 105
         echo url("/");
         echo "/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg\">
       </div>
@@ -250,7 +262,7 @@ class __TwigTemplate_4f75da0cf5fbe5d6a2d1e0b2a8f1c8b55d2c0ab6dda3c39736b417af44e
 
     public function getDebugInfo()
     {
-        return array (  235 => 98,  227 => 97,  223 => 96,  219 => 95,  206 => 85,  202 => 84,  198 => 83,  193 => 81,  183 => 74,  179 => 73,  175 => 72,  170 => 70,  160 => 63,  156 => 62,  152 => 61,  147 => 59,  137 => 52,  133 => 51,  129 => 50,  124 => 48,  107 => 38,  104 => 37,  95 => 34,  91 => 33,  87 => 32,  84 => 31,  80 => 30,  75 => 28,  71 => 27,  55 => 18,  51 => 17,  46 => 14,  42 => 13,  34 => 8,  30 => 7,  26 => 6,  19 => 1,);
+        return array (  247 => 105,  239 => 104,  235 => 103,  231 => 102,  218 => 92,  214 => 91,  210 => 90,  205 => 88,  195 => 81,  191 => 80,  187 => 79,  182 => 77,  172 => 70,  168 => 69,  164 => 68,  159 => 66,  149 => 59,  145 => 58,  141 => 57,  136 => 55,  119 => 45,  116 => 44,  105 => 39,  101 => 38,  97 => 37,  89 => 33,  87 => 32,  84 => 31,  80 => 30,  75 => 28,  71 => 27,  55 => 18,  51 => 17,  46 => 14,  42 => 13,  34 => 8,  30 => 7,  26 => 6,  19 => 1,);
     }
 
     public function getSourceContext()
@@ -260,8 +272,8 @@ class __TwigTemplate_4f75da0cf5fbe5d6a2d1e0b2a8f1c8b55d2c0ab6dda3c39736b417af44e
       <div class=\"header-container\">
         <div class=\"header-txt\">
           <h1 class=\"txt txt-home\"><span class=\"first-word\">
-           {{ translationPage[0] }}
-            </span>{{ translationPage[1] }}</h1>
+           {{ \"backend::lang.home.page.h1\"|trans }}
+            </span>{{ \"backend::lang.home.page.h1_span\"|trans }}</h1>
           <img class=\"brush\" src=\"{{url('/')}}/plugins/rainlab/pages/assets/svg/brush-header.svg\" alt=\"\">
         </div>
 
@@ -269,10 +281,10 @@ class __TwigTemplate_4f75da0cf5fbe5d6a2d1e0b2a8f1c8b55d2c0ab6dda3c39736b417af44e
         <div id='prtlSearch'>
           {% partial \"site/search\" %}
         </div>
-        
+
         <div class=\"header-comment\">
-          <p class=\"comment\">{{ translationPage[2] }}</p>
-          <a class=\"header-link\" href=\"{{lang}}/playas\">{{ translationPage[3] }} &nbsp;<img src=\"{{url('/')}}/plugins/rainlab/pages/assets/svg/link-arrow.svg\" alt=\"\"> </a>
+          <p class=\"comment\">{{ \"backend::lang.home.page.comment\"|trans }}</p>
+          <a class=\"header-link\" href=\"{{lang}}/playas\">{{ \"backend::lang.home.page.link\"|trans }} &nbsp;<img src=\"{{url('/')}}/plugins/rainlab/pages/assets/svg/link-arrow.svg\" alt=\"\"> </a>
         </div>
       </div>
     </div>
@@ -281,18 +293,25 @@ class __TwigTemplate_4f75da0cf5fbe5d6a2d1e0b2a8f1c8b55d2c0ab6dda3c39736b417af44e
     <div class=\"whats-on\">
 
       <div class=\"left-txt\">
-        <p class=\"title\">{{ translationPage[4] }}</p>
+        <p class=\"title\">{{ \"backend::lang.home.page.events_title\"|trans }}</p>
           <img class=\"separator\" src=\"{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg\">
 
-          {% for iEvent in events %}
+          {% for iEvent in events3 %}
+            
+              {% set i = \"backend::lang.eventos.category.\"~iEvent['category'] %}
+              {{ i|trans }}
+           
+
             <div class=\"event\">
               <p class=\"event-date\">{{iEvent['date_start_pretty']}}</p>
               <p class=\"event-place\">{{iEvent['place']}}</p>
-              <a href=\"jornadas-micologicas.html\" class=\"event-name\">{{iEvent['title']}}</a>
+              <a href=\"jornadas-micologicas.html\" class=\"event-name\">{{iEvent['title']}}</a> 
+              
+              
             </div>
           {% endfor %}
 
-            <a class=\"events-link\" href=\"{{lang}}/eventos\">{{ translationPage[5] }}&nbsp;&nbsp;<img src=\"{{url('/')}}/plugins/rainlab/pages/assets/svg/link-arrow-yellow.svg\" alt=\"\"> </a>
+            <a class=\"events-link\" href=\"{{lang}}/eventos\">{{ \"backend::lang.home.page.all_events\"|trans }}&nbsp;&nbsp;<img src=\"{{url('/')}}/plugins/rainlab/pages/assets/svg/link-arrow-yellow.svg\" alt=\"\"> </a>
       </div>
 
 
@@ -349,9 +368,9 @@ class __TwigTemplate_4f75da0cf5fbe5d6a2d1e0b2a8f1c8b55d2c0ab6dda3c39736b417af44e
     <!--  RUTAS -->
     <div class=\"secret-routes\">
       <div class=\"txt-container\">
-        <p class=\"title\">{{ translationPage[6] }}</p>
-        <p class=\"desc\">{{ translationPage[7] }}</p>
-        <a class=\"events-link\" href=\"{{lang}}/rutas\">{{ translationPage[8] }}<img src=\"{{url('/')}}/plugins/rainlab/pages/assets/svg/link-arrow-yellow.svg\" alt=\"\"> </a>
+        <p class=\"title\">{{ \"backend::lang.home.page.routes_title\"|trans }}</p>
+        <p class=\"desc\">{{ \"backend::lang.home.page.routes_comment\"|trans }}</p>
+        <a class=\"events-link\" href=\"{{lang}}/rutas\">{{ \"backend::lang.home.page.routes_link\"|trans }}<img src=\"{{url('/')}}/plugins/rainlab/pages/assets/svg/link-arrow-yellow.svg\" alt=\"\"> </a>
         <img class=\"separator\" src=\"{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg\">
       </div>
     </div>", "/Users/jekyll/workspace/cadizturismo/themes/default/pages/home.htm", "");
