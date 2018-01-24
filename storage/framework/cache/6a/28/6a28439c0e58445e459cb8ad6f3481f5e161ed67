@@ -1,4 +1,4 @@
-1516805986a:1:{s:20:"site/searchevent.htm";a:6:{s:8:"fileName";s:20:"site/searchevent.htm";s:7:"content";s:2078:"==
+1516807679a:1:{s:20:"site/searchevent.htm";a:6:{s:8:"fileName";s:20:"site/searchevent.htm";s:7:"content";s:2134:"==
 
 <?php 
 
@@ -17,12 +17,11 @@
     }
 ?>
 
-
 ==
 
 <div class="search-bar-container">
           <div class="search-bar">
-            <form action="search-event.html" method="post">
+            <form data-request="onFindEvent">
               <div class="inputs-container">
                 <div id="event-category" class="days-container">
                   <select class="custom-select select-days" name="category">
@@ -36,7 +35,7 @@
                 <div id="event-datepicker" class="interests-container">
                   <input type="text" name="datepicker" id="datepicker" readonly>
                   <span class="select-title">FECHA</span>
-                  <img class="arrow" src="assets/svg/select-arrow.svg">
+                  <img class="arrow" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/select-arrow.svg">
                 </div>
                 <div id="event-location" class="type-container">
                   <select class="custom-select select-type" name="location">
@@ -48,18 +47,18 @@
                 </div>
               </div>
               <div class="button-container">
-                <input type="submit" value="Ver eventos">
+                <input type="submit" value='{{ "backend::lang.eventos.search.submit"|trans }}'>
               </div>
             </form>
           </div>
         </div>
         <div class="header-comment">
-          <p class="comment">Descubre miles de eventos que no querrás perderte</p>
+          <p class="comment">{{ "backend::lang.eventos.page.comment"|trans }}</p>
         </div>
       </div>
-    </div>";s:5:"mtime";i:1516800231;s:6:"markup";s:1739:"<div class="search-bar-container">
+    </div>";s:5:"mtime";i:1516806342;s:6:"markup";s:1796:"<div class="search-bar-container">
           <div class="search-bar">
-            <form action="search-event.html" method="post">
+            <form data-request="onFindEvent">
               <div class="inputs-container">
                 <div id="event-category" class="days-container">
                   <select class="custom-select select-days" name="category">
@@ -73,7 +72,7 @@
                 <div id="event-datepicker" class="interests-container">
                   <input type="text" name="datepicker" id="datepicker" readonly>
                   <span class="select-title">FECHA</span>
-                  <img class="arrow" src="assets/svg/select-arrow.svg">
+                  <img class="arrow" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/select-arrow.svg">
                 </div>
                 <div id="event-location" class="type-container">
                   <select class="custom-select select-type" name="location">
@@ -85,13 +84,13 @@
                 </div>
               </div>
               <div class="button-container">
-                <input type="submit" value="Ver eventos">
+                <input type="submit" value='{{ "backend::lang.eventos.search.submit"|trans }}'>
               </div>
             </form>
           </div>
         </div>
         <div class="header-comment">
-          <p class="comment">Descubre miles de eventos que no querrás perderte</p>
+          <p class="comment">{{ "backend::lang.eventos.page.comment"|trans }}</p>
         </div>
       </div>
     </div>";s:4:"code";s:320:" 
