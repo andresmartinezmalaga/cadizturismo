@@ -1293,6 +1293,32 @@ html, body {
     height: 100%;
     object-fit: cover; }
 
+.publicaciones {
+  background-color: white;
+  position: relative;
+  z-index: 10;
+  height: auto; }
+  .publicaciones .publi-container {
+    width: 80%;
+    margin: 0px auto;
+    padding: 130px 0px 0px 0px; }
+  .publicaciones h3 {
+    font-family: 'AvenirNext-DemiBold';
+    font-size: 64px;
+    color: #4A4A4A; }
+  .publicaciones .separator {
+    margin-top: 36px; }
+
+.publis {
+  width: 80%;
+  margin: 40px auto 0px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 370px);
+  -ms-grid-template-columns: repeat(3, 370px); }
+  .publis .publicacion {
+    border: 1px solid red;
+    min-height: 470px; }
+
 @media (max-width: 1100px) {
   .ways .way {
     width: 100%; }

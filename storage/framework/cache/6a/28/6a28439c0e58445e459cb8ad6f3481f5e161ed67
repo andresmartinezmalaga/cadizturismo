@@ -1,0 +1,111 @@
+1516805986a:1:{s:20:"site/searchevent.htm";a:6:{s:8:"fileName";s:20:"site/searchevent.htm";s:7:"content";s:2078:"==
+
+<?php 
+
+    function onStart()
+    {
+        $this['lang']=\App::getLocale();
+        
+        if($this['lang']==''){
+          $this['lang']='es';
+        }       
+
+        $this['municipalities'] = $this->staticApp->getMunicipalities();
+        $this['categories'] = $this->staticApp->getEventsCategories();
+        
+
+    }
+?>
+
+
+==
+
+<div class="search-bar-container">
+          <div class="search-bar">
+            <form action="search-event.html" method="post">
+              <div class="inputs-container">
+                <div id="event-category" class="days-container">
+                  <select class="custom-select select-days" name="category">
+                    {% for key,value in categories %}
+                        {% set ct = "backend::lang.eventos.category."~key %}
+                        <option value={{key}}>{{ ct|trans }}</option>
+                    {% endfor %}
+                  </select>
+                  <span class="select-title">CATEGORÍA</span>
+                </div>
+                <div id="event-datepicker" class="interests-container">
+                  <input type="text" name="datepicker" id="datepicker" readonly>
+                  <span class="select-title">FECHA</span>
+                  <img class="arrow" src="assets/svg/select-arrow.svg">
+                </div>
+                <div id="event-location" class="type-container">
+                  <select class="custom-select select-type" name="location">
+                    {% for key,value in municipalities %}
+                        <option value={{key}}>{{value}}</option>
+                    {% endfor %}
+                  </select>
+                  <span class="select-title">UBICACIÓN</span>
+                </div>
+              </div>
+              <div class="button-container">
+                <input type="submit" value="Ver eventos">
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="header-comment">
+          <p class="comment">Descubre miles de eventos que no querrás perderte</p>
+        </div>
+      </div>
+    </div>";s:5:"mtime";i:1516800231;s:6:"markup";s:1739:"<div class="search-bar-container">
+          <div class="search-bar">
+            <form action="search-event.html" method="post">
+              <div class="inputs-container">
+                <div id="event-category" class="days-container">
+                  <select class="custom-select select-days" name="category">
+                    {% for key,value in categories %}
+                        {% set ct = "backend::lang.eventos.category."~key %}
+                        <option value={{key}}>{{ ct|trans }}</option>
+                    {% endfor %}
+                  </select>
+                  <span class="select-title">CATEGORÍA</span>
+                </div>
+                <div id="event-datepicker" class="interests-container">
+                  <input type="text" name="datepicker" id="datepicker" readonly>
+                  <span class="select-title">FECHA</span>
+                  <img class="arrow" src="assets/svg/select-arrow.svg">
+                </div>
+                <div id="event-location" class="type-container">
+                  <select class="custom-select select-type" name="location">
+                    {% for key,value in municipalities %}
+                        <option value={{key}}>{{value}}</option>
+                    {% endfor %}
+                  </select>
+                  <span class="select-title">UBICACIÓN</span>
+                </div>
+              </div>
+              <div class="button-container">
+                <input type="submit" value="Ver eventos">
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="header-comment">
+          <p class="comment">Descubre miles de eventos que no querrás perderte</p>
+        </div>
+      </div>
+    </div>";s:4:"code";s:320:" 
+
+    function onStart()
+    {
+        $this['lang']=\App::getLocale();
+        
+        if($this['lang']==''){
+          $this['lang']='es';
+        }       
+
+        $this['municipalities'] = $this->staticApp->getMunicipalities();
+        $this['categories'] = $this->staticApp->getEventsCategories();
+        
+
+    }";s:17:"_PARSER_ERROR_INI";s:0:"";}}
