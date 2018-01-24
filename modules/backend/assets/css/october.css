@@ -3062,7 +3062,7 @@ body.mainmenu-open {
   font-size: 13px;
   padding: 6px 16px; }
 
-/* Andrés Martínez  main menu background color*/
+/* Andrés Martínez : main menu background color*/
 nav#layout-mainmenu {
   background-color: #175da3;
   padding: 0 0 0 20px;
@@ -3606,7 +3606,7 @@ nav#layout-mainmenu.navbar ul li:hover, .mainmenu-collapsed li:hover {
 body.drag nav#layout-mainmenu.navbar ul.nav li:hover, body.drag .mainmenu-collapsed ul li:hover {
   color: rgba(255, 255, 255, 0.6); }
 
-/*Andrés Marténez ->background sidenav */
+/*Andrés Martínez : background sidenav */
 .bg-p {
   background-color: #175da3; }
 
@@ -4804,6 +4804,10 @@ input:-webkit-autofill {
 .btn {
   box-shadow: none !important; }
 
+a:hover, a:focus, a:active {
+  text-decoration: none;
+  outline: none; }
+
 nav#layout-mainmenu {
   padding: 0px; }
   nav#layout-mainmenu .active {
@@ -4881,6 +4885,11 @@ nav#layout-mainmenu.navbar-mode-inline ul.mainmenu-nav li:first-child {
     height: 50px !important;
     background-color: #F6F6F6;
     font-size: 11px !important; }
+  .w-350 .control-treeview ol > li > div > span.drag-handle {
+    right: 7.5px;
+    bottom: -5px; }
+    .w-350 .control-treeview ol > li > div > span.drag-handle:before {
+      font-size: 14px !important; }
 
 .control-treeview ol > li > div {
   background: #F6F6F6; }
@@ -4912,11 +4921,22 @@ nav#layout-mainmenu.navbar-mode-inline ul.mainmenu-nav li:first-child {
   background-color: #818181 !important;
   border-bottom: 1px solid #818181 !important; }
 
-.control-treeview ol > li > div > span.drag-handle {
-  right: 7.5px !important;
-  bottom: -5px !important; }
-  .control-treeview ol > li > div > span.drag-handle:before {
-    font-size: 14px !important; }
+.control-treeview.treeview-light ol > li > div > ul.submenu li {
+  background-color: #175DA3;
+  border-right: 1px solid #175DA3; }
+
+#layout-body .control-treeview ol > li > div > span.drag-handle {
+  right: 0px;
+  background: #175DA3; }
+
+nav#layout-mainmenu ul li .mainmenu-accountmenu li a:hover, nav#layout-mainmenu ul li .mainmenu-accountmenu li a:focus {
+  background: #175DA3 !important; }
+
+nav#layout-mainmenu ul li .mainmenu-accountmenu li:first-child a:hover:after, nav#layout-mainmenu ul li .mainmenu-accountmenu li:first-child a:focus:after, nav#layout-mainmenu ul li .mainmenu-accountmenu li:first-child a:active:after {
+  border-bottom: 7px solid #175DA3 !important; }
+
+.form-group.is-required > label:after {
+  background-color: #175DA3 !important; }
 
 .control-filelist.filelist-hero ul li > a:active, .control-filelist.filelist-hero ul li > a:hover {
   background: #818181;
@@ -4939,7 +4959,7 @@ nav#layout-mainmenu.navbar-mode-inline ul.mainmenu-nav li:first-child {
   background-color: #818181;
   border-radius: 7px;
   font-size: .756em !important;
-  padding: .143px .429px .214px .386px !important; }
+  padding: .143em .429em .214em .429em !important; }
 
 .control-treeview ol > li.has-subitems.active > div {
   border: none !important; }
@@ -5125,6 +5145,11 @@ table.name-value-list > a:hover, table.name-value-list > a:focus, table.name-val
   color: #175DA3;
   text-decoration: none;
   outline: none; }
+
+.help-block.before-field {
+  font-size: 11px; }
+  .help-block.before-field img {
+    margin-right: 10px; }
 
 #MediaManager-manager-filters ~ .sidebar-group .select2-container--default .select2-selection--single {
   background-color: #F6F6F6 !important;
@@ -5375,3 +5400,24 @@ table.name-value-list > a:hover, table.name-value-list > a:focus, table.name-val
 .popup-backdrop {
   background-color: #0C5095 !important;
   opacity: 0.8 !important; }
+
+/* Mi cuenta */
+.padded-container.layout {
+  background-color: white; }
+  .padded-container.layout input[type="text"].form-control, .padded-container.layout input[type="password"].form-control {
+    border: none !important;
+    background-color: #F6F6F6 !important;
+    height: 50px !important;
+    color: #818181 !important;
+    font-size: 14px !important;
+    border-radius: 0px !important; }
+  .padded-container.layout label {
+    font-size: 14px; }
+  .padded-container.layout .control-tabs.primary-tabs > ul.nav-tabs > li.active a:before, .padded-container.layout .control-tabs.primary-tabs > div > ul.nav-tabs > li.active a:before, .padded-container.layout .control-tabs.primary-tabs > div > div > ul.nav-tabs > li.active a:before {
+    background-color: #ffffff !important; }
+  .padded-container.layout .control-tabs.primary-tabs > ul.nav-tabs > li a > span.title:before, .padded-container.layout .control-tabs.primary-tabs > div > ul.nav-tabs > li a > span.title:before, .padded-container.layout .control-tabs.primary-tabs > div > div > ul.nav-tabs > li a > span.title:before, .padded-container.layout .control-tabs.primary-tabs > ul.nav-tabs > li a > span.title:after, .padded-container.layout .control-tabs.primary-tabs > div > ul.nav-tabs > li a > span.title:after, .padded-container.layout .control-tabs.primary-tabs > div > div > ul.nav-tabs > li a > span.title:after {
+    background: #ffffff !important; }
+  .padded-container.layout .btn-primary {
+    background: #175DA3 !important; }
+    .padded-container.layout .btn-primary:hover, .padded-container.layout .btn-primary:focus, .padded-container.layout .btn-primary:active {
+      background: #0C5095 !important; }
