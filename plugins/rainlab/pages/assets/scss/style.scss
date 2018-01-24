@@ -1083,6 +1083,7 @@ html, body {
   height: auto;
   @include flexbox();
   flex-wrap: wrap;
+  background-color: white;
   .way {
     width: calc(100% / 3);
     width: -webkit-calc(100% / 3);

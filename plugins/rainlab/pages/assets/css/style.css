@@ -1038,7 +1038,8 @@ html, body {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  background-color: white; }
   .ways .way {
     width: calc(100% / 3);
     width: -webkit-calc(100% / 3);
