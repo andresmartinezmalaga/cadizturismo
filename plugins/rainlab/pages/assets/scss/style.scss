@@ -1441,27 +1441,186 @@ html, body {
   }
 }
 .publis {
-  width: 80%;
+  width: 85%;
   margin: 40px auto 0px auto;
   display: grid;
-  grid-template-columns: repeat(3, 370px);
-  -ms-grid-template-columns: repeat(3, 370px);
+  justify-content: center;
+  grid-template-columns: repeat(3, 400px);
+  -ms-grid-template-columns: repeat(3, 400px);
+  grid-row-gap: 30px;
+  -ms-grid-row-gap: 30px;
   .publicacion {
-    border: 1px solid red;
-    min-height: 470px;
+    border-bottom: 1px solid #CECECE;
+    min-height: 525px;
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      z-index: 10;
+      right: 0;
+      width: 1px;
+      height: 93.5%;
+      background: #CECECE;
+    }
+    &:nth-child(3), &:nth-child(6) {
+      &:before {
+        content: none;
+      }
+    }
+    .publi-title {
+      font-size: 42px;
+      line-height: 51px;
+      font-weight: 100;
+      color: #9B9B9B;
+      margin-bottom: 2px;
+      max-width: 93%;
+      min-height: 102px;
+      padding-left: 30px;
+      text-transform: uppercase;
+    }
+    .publi-icon {
+      margin-bottom: 23px;
+      padding-left: 30px;
+      max-height: 55px;
+    }
+    .publi-desc {
+      font-size: 16px;
+      line-height: 33px;
+      color: #9B9B9B;
+      max-width: 91%;
+      min-height: 165px;
+      padding-left: 30px;
+    }
+    .languages-publi {
+      color: #CECECE;
+      font-size: 12px;
+      line-height: 24px;
+      max-width: 93%;
+      padding-left: 30px;
+      min-height: 96px;
+      #languages-title {
+        color: #9B9B9B;
+        text-transform: uppercase;
+      }
+    }
+    a {
+      color: #F5A623;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 27px;
+      img {
+        margin-left: 8px;
+      }
+      &:hover, &:focus, &:active {
+        text-decoration: none;
+        outline: none;
+        opacity: 0.7;
+      }
+    }
+    .download-link {
+      img {
+        @include transform(rotate(90deg));
+      }
+    }
+    .links-container {
+      @include flexbox();
+      max-width: 91%;
+      justify-content: space-between;
+      padding-left: 30px;
+    }
   }
 }
-// .inner-publi {
-//   width: 100%;
-//   background-color: black;
-//   display: grid;
-//   grid-template-columns: repeat(3, 370px);
-//   -ms-grid-template-columns: repeat(3, 370px);
-//   .publi {
-//     background-color: red;
-//     min-height: 470px;
-//   }
-// }
+
+@media (max-width: 1250px) and (min-width: 840px) {
+  .publis {
+    grid-template-columns: repeat(2, 400px) !important;
+    -ms-grid-template-columns: repeat(2, 400px) !important;
+    .publicacion{
+      &:nth-child(2), &:nth-child(4), &:nth-child(6) {
+        &:before {
+          content: none;
+        }
+      }
+      &:nth-child(1), &:nth-child(3), &:nth-child(5) {
+        &:before {
+          content: '';
+          position: absolute;
+          z-index: 10;
+          right: 0;
+          width: 1px;
+          height: 93.5%;
+          background: #CECECE;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 839px) and (min-width: 661px) {
+  .publis {
+    grid-template-columns: repeat(2, 320px) !important;
+    -ms-grid-template-columns: repeat(2, 320px) !important;
+    .publicacion{
+      &:nth-child(2), &:nth-child(4), &:nth-child(6) {
+        &:before {
+          content: none;
+        }
+      }
+      &:nth-child(1), &:nth-child(3), &:nth-child(5) {
+        &:before {
+          content: '';
+          position: absolute;
+          z-index: 10;
+          right: 0;
+          width: 1px;
+          height: 93.5%;
+          background: #CECECE;
+        }
+      }
+      .links-container {
+        margin-bottom: 30px;
+      }
+      .publi-title {
+        font-size: 33px;
+        line-height: 36px;
+      }
+      .publi-desc {
+        min-height: 231px;
+      }
+      a {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+@media (max-width: 660px) {
+  .publicaciones-title {
+    font-size: 34px !important;
+  }
+  .publis {
+    grid-template-columns: repeat(1, 320px) !important;
+    -ms-grid-template-columns: repeat(1, 320px) !important;
+    .publicacion{
+        &:before {
+          content: none;
+      }
+      .links-container {
+        margin-bottom: 30px;
+      }
+      .publi-title {
+        font-size: 33px;
+        line-height: 36px;
+      }
+      .publi-desc {
+        min-height: 231px;
+      }
+      a {
+        font-size: 12px;
+      }
+    }
+  }
+}
 
 @media (max-width: 1100px) {
   .ways {
@@ -2166,7 +2325,7 @@ html, body {
 
     #ayuda-header {
       .txt {
-        font-size: 120px !important;
+        font-size: 100px !important;
         line-height: 120px !important;
       }
     }
