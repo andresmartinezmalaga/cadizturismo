@@ -13,9 +13,9 @@
 ?>	
 
 ==
-{% set i = 0 %}
-{% for beach in beaches['beaches'] %}
 
+{% for beach in beaches %}
+	
 	<div class="event">
 		<div class="overlay-img">
 			<br>
@@ -26,16 +26,22 @@
 			<div class="icons">
 				<div class="icon-pair">
 					<img src="{{preurl}}/storage/app/media/uploaded-files/templates/{{str_slug(beach.viewBag.categoriea)}}.svg" class="fr-fil fr-dib">
-					<p class="icon-txt">{{beaches['trducts']['types'][i][lang]}}</p>
+
+					<p class="icon-txt">
+						{% set ityp = "backend::lang.beaches.type."~beach.viewBag.categoriea %}
+              			{{ ityp|trans }}
+					</p>
 				</div>
 				<div class="icon-pair">
 					<img src="{{preurl}}/storage/app/media/uploaded-files/templates/{{str_slug(beach.viewBag.categorieb)}}.svg" class="fr-fil fr-dib">
-
-					<p class="icon-txt">{{beaches['trducts']['categories'][i][lang]}}</p>
+					<p class="icon-txt">
+						{% set icat = "backend::lang.beaches.category."~beach.viewBag.categorieb %}
+              			{{ icat|trans }}
+					</p>
 				</div>
 			</div>
 			<div class="button-container"><a class="see-event" href="{{url('/')}}/{{lang}}{{beach.viewBag.url}}">Ver playa <img src="http://localhost:8888/cadizturismo/plugins/rainlab/pages/assets/svg/link-icon.svg" class="fr-fic fr-dii"></a></div>
 		</div>
 	</div>
-	{% set i = i+1 %}
+	
 {% endfor %}

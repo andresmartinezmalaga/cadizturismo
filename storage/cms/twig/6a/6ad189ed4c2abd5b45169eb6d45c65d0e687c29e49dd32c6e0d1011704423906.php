@@ -72,39 +72,33 @@ class __TwigTemplate_9a5292f1353f7c52a09e07912d507110a742777a117ade34162e2e32c9a
         // line 29
         echo "    </section>
 
-    <div class=\"vertical-share\">
-        <p class=\"also-title\">";
+      ";
+        // line 31
+        $context['__cms_partial_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("site/footer"        , $context['__cms_partial_params']        , true        );
+        unset($context['__cms_partial_params']);
         // line 32
-        echo call_user_func_array($this->env->getFilter('_')->getCallable(), array("COMPARTIR"));
-        echo "</p><img src=\"";
-        echo url("/");
-        echo "/plugins/rainlab/pages/assets/svg/tiny-sep.svg\" class=\"fr-fil fr-dib\">
-        <div class=\"links-container\"><a href=\"https://www.facebook.com/sharer/sharer.php?u=cadiz-turismo.jekyllme.com\">Facebook&nbsp;</a>
-            <span>·</span>
-            <a data-action=\"share/whatsapp/share\" href=\"href=\">Whatsapp&nbsp;</a>
-        </div>
-    </div>
-
+        echo "
     <!-- SCRIPTS -->
     <script type=\"text/javascript\" src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js\"></script>
     <script src=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.full.min.js\"></script>
     <script type=\"text/javascript\" src=\"";
-        // line 42
+        // line 36
         echo url("/");
         echo "/plugins/rainlab/pages/assets/js/script-select2.js\"></script>
 
     <script type=\"text/javascript\" src=\"";
-        // line 44
+        // line 38
         echo url("/");
         echo "/plugins/rainlab/pages/assets/js/style.js\"></script>
-   
+
 
     ";
-        // line 47
+        // line 41
         echo '<script src="'. Request::getBasePath()
                 .'/modules/system/assets/js/framework.js"></script>'.PHP_EOL;
-        // line 48
-        echo "   
+        // line 42
+        echo "
   </body>
 </html>";
     }
@@ -121,7 +115,7 @@ class __TwigTemplate_9a5292f1353f7c52a09e07912d507110a742777a117ade34162e2e32c9a
 
     public function getDebugInfo()
     {
-        return array (  107 => 48,  104 => 47,  98 => 44,  93 => 42,  78 => 32,  73 => 29,  71 => 28,  66 => 25,  62 => 24,  50 => 15,  46 => 14,  42 => 13,  38 => 12,  34 => 11,  30 => 10,  19 => 1,);
+        return array (  101 => 42,  98 => 41,  92 => 38,  87 => 36,  81 => 32,  77 => 31,  73 => 29,  71 => 28,  66 => 25,  62 => 24,  50 => 15,  46 => 14,  42 => 13,  38 => 12,  34 => 11,  30 => 10,  19 => 1,);
     }
 
     public function getSourceContext()
@@ -156,13 +150,7 @@ class __TwigTemplate_9a5292f1353f7c52a09e07912d507110a742777a117ade34162e2e32c9a
         {% page %}
     </section>
 
-    <div class=\"vertical-share\">
-        <p class=\"also-title\">{{'COMPARTIR'|_}}</p><img src=\"{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-sep.svg\" class=\"fr-fil fr-dib\">
-        <div class=\"links-container\"><a href=\"https://www.facebook.com/sharer/sharer.php?u=cadiz-turismo.jekyllme.com\">Facebook&nbsp;</a>
-            <span>·</span>
-            <a data-action=\"share/whatsapp/share\" href=\"href=\">Whatsapp&nbsp;</a>
-        </div>
-    </div>
+      {% partial 'site/footer' %}
 
     <!-- SCRIPTS -->
     <script type=\"text/javascript\" src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js\"></script>
@@ -170,10 +158,10 @@ class __TwigTemplate_9a5292f1353f7c52a09e07912d507110a742777a117ade34162e2e32c9a
     <script type=\"text/javascript\" src=\"{{url('/')}}/plugins/rainlab/pages/assets/js/script-select2.js\"></script>
 
     <script type=\"text/javascript\" src=\"{{url('/')}}/plugins/rainlab/pages/assets/js/style.js\"></script>
-   
+
 
     {% framework %}
-   
+
   </body>
 </html>", "/Users/jekyll/workspace/cadizturismo/themes/default/layouts/dinamic.htm", "");
     }

@@ -87,16 +87,23 @@ class __TwigTemplate_5225f19e5bb2f9e50c96ff18cca6823c9b4a33a1b525906b7a59e6fa92d
         </div>
     </div>
 
+    ";
+        // line 40
+        $context['__cms_partial_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("site/footer"        , $context['__cms_partial_params']        , true        );
+        unset($context['__cms_partial_params']);
+        // line 41
+        echo "
     <!-- SCRIPTS -->
     <script type=\"text/javascript\" src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js\"></script>
     <script src=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.full.min.js\"></script>
     <script type=\"text/javascript\" src=\"";
-        // line 43
+        // line 45
         echo url("/");
         echo "/plugins/rainlab/pages/assets/js/script-select2.js\"></script>
 
     <script type=\"text/javascript\" src=\"";
-        // line 45
+        // line 47
         echo url("/");
         echo "/plugins/rainlab/pages/assets/js/style.js\"></script>
    
@@ -116,7 +123,7 @@ class __TwigTemplate_5225f19e5bb2f9e50c96ff18cca6823c9b4a33a1b525906b7a59e6fa92d
 
     public function getDebugInfo()
     {
-        return array (  100 => 45,  95 => 43,  80 => 33,  74 => 29,  70 => 28,  65 => 25,  61 => 24,  58 => 23,  54 => 22,  42 => 13,  38 => 12,  34 => 11,  30 => 10,  19 => 1,);
+        return array (  107 => 47,  102 => 45,  96 => 41,  92 => 40,  80 => 33,  74 => 29,  70 => 28,  65 => 25,  61 => 24,  58 => 23,  54 => 22,  42 => 13,  38 => 12,  34 => 11,  30 => 10,  19 => 1,);
     }
 
     public function getSourceContext()
@@ -159,6 +166,8 @@ class __TwigTemplate_5225f19e5bb2f9e50c96ff18cca6823c9b4a33a1b525906b7a59e6fa92d
             <a data-action=\"share/whatsapp/share\" href=\"href=\">Whatsapp&nbsp;</a>
         </div>
     </div>
+
+    {% partial 'site/footer' %}
 
     <!-- SCRIPTS -->
     <script type=\"text/javascript\" src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js\"></script>

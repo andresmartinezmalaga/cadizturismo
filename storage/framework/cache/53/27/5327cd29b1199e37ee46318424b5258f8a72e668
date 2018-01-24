@@ -1,4 +1,4 @@
-1516725450a:1:{s:13:"municipio.htm";a:12:{s:8:"fileName";s:13:"municipio.htm";s:7:"content";s:2993:"description = "Municipality Layout"
+1516789103a:1:{s:13:"municipio.htm";a:12:{s:8:"fileName";s:13:"municipio.htm";s:7:"content";s:3026:"description = "Municipality Layout"
 
 [staticPage]
 useContent = 1
@@ -75,6 +75,8 @@ code = "que-hacer"
         </div>
     </div>
 
+    {% partial 'site/footer' %}
+
     <!-- SCRIPTS -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.full.min.js"></script>
@@ -83,7 +85,7 @@ code = "que-hacer"
     <script type="text/javascript" src="{{url('/')}}/plugins/rainlab/pages/assets/js/style.js"></script>
    
   </body>
-</html>";s:5:"mtime";i:1516718681;s:6:"markup";s:2483:"<!DOCTYPE html>
+</html>";s:5:"mtime";i:1516728111;s:6:"markup";s:2516:"<!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -121,6 +123,8 @@ code = "que-hacer"
             <a data-action="share/whatsapp/share" href="href=">Whatsapp&nbsp;</a>
         </div>
     </div>
+
+    {% partial 'site/footer' %}
 
     <!-- SCRIPTS -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

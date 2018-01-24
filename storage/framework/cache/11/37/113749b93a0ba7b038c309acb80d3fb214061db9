@@ -1,4 +1,4 @@
-1516725450a:1:{s:11:"default.htm";a:12:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:2825:"description = "Default Layout"
+1516789051a:1:{s:11:"default.htm";a:12:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:2858:"description = "Default Layout"
 
 [staticPage]
 useContent = 1
@@ -20,7 +20,7 @@ code = "que-hacer"
 
 ==
 
-<?php 
+<?php
 
     function onStart()
     {
@@ -68,15 +68,18 @@ code = "que-hacer"
         </div>
     </div>
 
+    {% partial 'site/footer' %}
+
     <!-- SCRIPTS -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.full.min.js"></script>
     <script type="text/javascript" src="{{url('/')}}/plugins/rainlab/pages/assets/js/script-select2.js"></script>
 
     <script type="text/javascript" src="{{url('/')}}/plugins/rainlab/pages/assets/js/style.js"></script>
-   
+
   </body>
-</html>";s:5:"mtime";i:1516716597;s:6:"markup";s:2366:"<!DOCTYPE html>
+</html>
+";s:5:"mtime";i:1516727768;s:6:"markup";s:2398:"<!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -111,15 +114,17 @@ code = "que-hacer"
         </div>
     </div>
 
+    {% partial 'site/footer' %}
+
     <!-- SCRIPTS -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.full.min.js"></script>
     <script type="text/javascript" src="{{url('/')}}/plugins/rainlab/pages/assets/js/script-select2.js"></script>
 
     <script type="text/javascript" src="{{url('/')}}/plugins/rainlab/pages/assets/js/style.js"></script>
-   
+
   </body>
-</html>";s:4:"code";s:162:" 
+</html>";s:4:"code";s:161:"
 
     function onStart()
     {
