@@ -1,8 +1,4 @@
-<<<<<<< HEAD:storage/framework/cache/1b/bf/1bbfce5170c7d16d0006182f5dc75eb639d8b69f
-1516814564a:1:{s:20:"site/searchevent.htm";a:6:{s:8:"fileName";s:20:"site/searchevent.htm";s:7:"content";s:2652:"==
-=======
-1516808802a:1:{s:20:"site/searchevent.htm";a:6:{s:8:"fileName";s:20:"site/searchevent.htm";s:7:"content";s:2134:"==
->>>>>>> 62cddc41313baa7d23f10a95e65f8893e19c3f25:storage/framework/cache/6a/28/6a28439c0e58445e459cb8ad6f3481f5e161ed67
+1516815749a:1:{s:20:"site/searchevent.htm";a:6:{s:8:"fileName";s:20:"site/searchevent.htm";s:7:"content";s:2566:"==
 
 <?php 
 
@@ -44,8 +40,7 @@
                 <div id="event-category" class="days-container">
                   <select class="custom-select select-days" name="category">
                     {% for key,value in categories %}
-                        {% set ct = "backend::lang.eventos.category."~key %}
-                        <option value={{key}}>{{ ct|trans }}</option>
+                        <option value={{key}}>{{ value |_ }}</option>
                     {% endfor %}
                   </select>
                   <span class="select-title">{{ 'CATEGORÍA'|_ }}</span>
@@ -58,23 +53,23 @@
                 <div id="event-location" class="type-container">
                   <select class="custom-select select-type" name="location">
                     {% for key,value in municipalities %}
-                        <option value={{key}}>{{value|_ }}</option>
+                        <option value={{key}}>{{value}}</option>
                     {% endfor %}
                   </select>
-                  <span class="select-title">UBICACIÓN</span>
+                  <span class="select-title">{{ 'UBICACIÓN'|_ }}</span>
                 </div>
               </div>
               <div class="button-container">
-                <input type="submit" value='{{ "backend::lang.eventos.search.submit"|trans }}'>
+                <input type="submit" value="{{ 'Ver eventos'|_ }}">
               </div>
             </form>
           </div>
         </div>
         <div class="header-comment">
-          <p class="comment">{{ "backend::lang.eventos.page.comment"|trans }}</p>
+          <p class="comment">{{ 'Descubre miles de eventos que no querrás perderte'|_ }}</p>
         </div>
       </div>
-    </div>";s:5:"mtime";i:1516813960;s:6:"markup";s:2316:"<script>
+    </div>";s:5:"mtime";i:1516814192;s:6:"markup";s:2230:"<script>
     var calendarTranslate = {
         enero: "{{ 'enero'|_ }}",
         febrero: "{{ 'febrero'|_ }}",
@@ -97,8 +92,7 @@
                 <div id="event-category" class="days-container">
                   <select class="custom-select select-days" name="category">
                     {% for key,value in categories %}
-                        {% set ct = "backend::lang.eventos.category."~key %}
-                        <option value={{key}}>{{ ct|trans }}</option>
+                        <option value={{key}}>{{ value |_ }}</option>
                     {% endfor %}
                   </select>
                   <span class="select-title">{{ 'CATEGORÍA'|_ }}</span>
@@ -111,20 +105,20 @@
                 <div id="event-location" class="type-container">
                   <select class="custom-select select-type" name="location">
                     {% for key,value in municipalities %}
-                        <option value={{key}}>{{value|_ }}</option>
+                        <option value={{key}}>{{value}}</option>
                     {% endfor %}
                   </select>
-                  <span class="select-title">UBICACIÓN</span>
+                  <span class="select-title">{{ 'UBICACIÓN'|_ }}</span>
                 </div>
               </div>
               <div class="button-container">
-                <input type="submit" value='{{ "backend::lang.eventos.search.submit"|trans }}'>
+                <input type="submit" value="{{ 'Ver eventos'|_ }}">
               </div>
             </form>
           </div>
         </div>
         <div class="header-comment">
-          <p class="comment">{{ "backend::lang.eventos.page.comment"|trans }}</p>
+          <p class="comment">{{ 'Descubre miles de eventos que no querrás perderte'|_ }}</p>
         </div>
       </div>
     </div>";s:4:"code";s:319:" 

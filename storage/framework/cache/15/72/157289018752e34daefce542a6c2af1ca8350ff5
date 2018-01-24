@@ -1,8 +1,4 @@
-<<<<<<< HEAD:storage/framework/cache/15/72/157289018752e34daefce542a6c2af1ca8350ff5
-1516814569a:1:{s:13:"site/menu.htm";a:6:{s:8:"fileName";s:13:"site/menu.htm";s:7:"content";s:7727:"==
-=======
-1516808802a:1:{s:13:"site/menu.htm";a:6:{s:8:"fileName";s:13:"site/menu.htm";s:7:"content";s:7727:"==
->>>>>>> 62cddc41313baa7d23f10a95e65f8893e19c3f25:storage/framework/cache/33/70/3370883cb3c251f87a11bb74f9ff3bc0a2ac5ec3
+1516815749a:1:{s:13:"site/menu.htm";a:6:{s:8:"fileName";s:13:"site/menu.htm";s:7:"content";s:7910:"==
 
 <?php
 
@@ -98,7 +94,13 @@
 </div>
 <div class="language-container">
   <!-- Añadir la clase 'active-lang' al enlace cuando esté activo el idioma correspondiente - de ejemplo está puesto en ESPAÑOL -->
-  <p class="languages"> <a href="{{url('/')}}/en{{this.page.url}}" class="lang">EN</a> <a class="separator separator-lang"> · </a><a href="{{url('/')}}/es{{this.page.url}}" class="lang-es active-lang">ES</a> <a class="separator separator-lang"> · </a> <a href="{{url('/')}}/fr{{this.page.url}}" class="lang">FR</a> <a class="separator separator-lang"> · </a><a href="{{url('/')}}/de{{this.page.url}}" class="lang">DE</a> <a class="separator separator-lang"> · </a> <a href="{{url('/')}}/ru{{this.page.url}}" class="lang">RU</a></p>
+  <p class="languages">
+    <a href="{{url('/')}}/en{{this.page.url}}" class="lang {{(lang=='en')?'active-lang':''}}">EN</a>
+    <a class="separator separator-lang"> · </a>
+    <a href="{{url('/')}}/es{{this.page.url}}" class="lang-es {{(lang=='es')?'active-lang':''}}">ES</a>
+    <a class="separator separator-lang"> · </a> <a href="{{url('/')}}/fr{{this.page.url}}" class="lang {{(lang=='fr')?'active-lang':''}}">FR</a>
+    <a class="separator separator-lang"> · </a><a href="{{url('/')}}/de{{this.page.url}}" class="lang {{(lang=='de')?'active-lang':''}}">DE</a>
+    <a class="separator separator-lang"> · </a> <a href="{{url('/')}}/ru{{this.page.url}}" class="lang {{(lang=='ru')?'active-lang':''}}">RU</a></p>
 </div>
 
 <!-- MENÚ MOBILE -->
@@ -155,7 +157,7 @@
       </div>
     </div>
   </nav>
-";s:5:"mtime";i:1516808362;s:6:"markup";s:7277:"<!-- MENU-->
+";s:5:"mtime";i:1516815145;s:6:"markup";s:7460:"<!-- MENU-->
 <div class="slidemenu">
   <div class="elements">
     <div class="logo-container">
@@ -229,7 +231,13 @@
 </div>
 <div class="language-container">
   <!-- Añadir la clase 'active-lang' al enlace cuando esté activo el idioma correspondiente - de ejemplo está puesto en ESPAÑOL -->
-  <p class="languages"> <a href="{{url('/')}}/en{{this.page.url}}" class="lang">EN</a> <a class="separator separator-lang"> · </a><a href="{{url('/')}}/es{{this.page.url}}" class="lang-es active-lang">ES</a> <a class="separator separator-lang"> · </a> <a href="{{url('/')}}/fr{{this.page.url}}" class="lang">FR</a> <a class="separator separator-lang"> · </a><a href="{{url('/')}}/de{{this.page.url}}" class="lang">DE</a> <a class="separator separator-lang"> · </a> <a href="{{url('/')}}/ru{{this.page.url}}" class="lang">RU</a></p>
+  <p class="languages">
+    <a href="{{url('/')}}/en{{this.page.url}}" class="lang {{(lang=='en')?'active-lang':''}}">EN</a>
+    <a class="separator separator-lang"> · </a>
+    <a href="{{url('/')}}/es{{this.page.url}}" class="lang-es {{(lang=='es')?'active-lang':''}}">ES</a>
+    <a class="separator separator-lang"> · </a> <a href="{{url('/')}}/fr{{this.page.url}}" class="lang {{(lang=='fr')?'active-lang':''}}">FR</a>
+    <a class="separator separator-lang"> · </a><a href="{{url('/')}}/de{{this.page.url}}" class="lang {{(lang=='de')?'active-lang':''}}">DE</a>
+    <a class="separator separator-lang"> · </a> <a href="{{url('/')}}/ru{{this.page.url}}" class="lang {{(lang=='ru')?'active-lang':''}}">RU</a></p>
 </div>
 
 <!-- MENÚ MOBILE -->

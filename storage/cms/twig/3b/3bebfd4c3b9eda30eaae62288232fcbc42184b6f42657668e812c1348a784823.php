@@ -80,45 +80,6 @@ class __TwigTemplate_73590df902a7dd238fa446e34d75b9700784cc113c4282a52eec0fe16a7
         $context['_seq'] = twig_ensure_traversable(($context["categories"] ?? null));
         foreach ($context['_seq'] as $context["key"] => $context["value"]) {
             // line 24
-            echo "                        ";
-            $context["ct"] = ("backend::lang.eventos.category." . $context["key"]);
-            // line 25
-            echo "                        <option value=";
-            echo twig_escape_filter($this->env, $context["key"], "html", null, true);
-            echo ">";
-            echo call_user_func_array($this->env->getFilter('trans')->getCallable(), array(($context["ct"] ?? null)));
-            echo "</option>
-                    ";
-        }
-        $_parent = $context['_parent'];
-        unset($context['_seq'], $context['_iterated'], $context['key'], $context['value'], $context['_parent'], $context['loop']);
-        $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 27
-        echo "                  </select>
-                  <span class=\"select-title\">";
-        // line 28
-        echo call_user_func_array($this->env->getFilter('_')->getCallable(), array("CATEGORÍA"));
-        echo "</span>
-                </div>
-                <div id=\"event-datepicker\" class=\"interests-container\">
-                  <input type=\"text\" name=\"datepicker\" id=\"datepicker\" readonly>
-                  <span class=\"select-title\">";
-        // line 32
-        echo call_user_func_array($this->env->getFilter('_')->getCallable(), array("FECHA"));
-        echo "</span>
-                  <img class=\"arrow\" src=\"";
-        // line 33
-        echo url("/");
-        echo "/plugins/rainlab/pages/assets/svg/select-arrow.svg\">
-                </div>
-                <div id=\"event-location\" class=\"type-container\">
-                  <select class=\"custom-select select-type\" name=\"location\">
-                    ";
-        // line 37
-        $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(($context["municipalities"] ?? null));
-        foreach ($context['_seq'] as $context["key"] => $context["value"]) {
-            // line 38
             echo "                        <option value=";
             echo twig_escape_filter($this->env, $context["key"], "html", null, true);
             echo ">";
@@ -129,24 +90,63 @@ class __TwigTemplate_73590df902a7dd238fa446e34d75b9700784cc113c4282a52eec0fe16a7
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['key'], $context['value'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 40
+        // line 26
         echo "                  </select>
-                  <span class=\"select-title\">UBICACIÓN</span>
+                  <span class=\"select-title\">";
+        // line 27
+        echo call_user_func_array($this->env->getFilter('_')->getCallable(), array("CATEGORÍA"));
+        echo "</span>
+                </div>
+                <div id=\"event-datepicker\" class=\"interests-container\">
+                  <input type=\"text\" name=\"datepicker\" id=\"datepicker\" readonly>
+                  <span class=\"select-title\">";
+        // line 31
+        echo call_user_func_array($this->env->getFilter('_')->getCallable(), array("FECHA"));
+        echo "</span>
+                  <img class=\"arrow\" src=\"";
+        // line 32
+        echo url("/");
+        echo "/plugins/rainlab/pages/assets/svg/select-arrow.svg\">
+                </div>
+                <div id=\"event-location\" class=\"type-container\">
+                  <select class=\"custom-select select-type\" name=\"location\">
+                    ";
+        // line 36
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable(($context["municipalities"] ?? null));
+        foreach ($context['_seq'] as $context["key"] => $context["value"]) {
+            // line 37
+            echo "                        <option value=";
+            echo twig_escape_filter($this->env, $context["key"], "html", null, true);
+            echo ">";
+            echo twig_escape_filter($this->env, $context["value"], "html", null, true);
+            echo "</option>
+                    ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['key'], $context['value'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 39
+        echo "                  </select>
+                  <span class=\"select-title\">";
+        // line 40
+        echo call_user_func_array($this->env->getFilter('_')->getCallable(), array("UBICACIÓN"));
+        echo "</span>
                 </div>
               </div>
               <div class=\"button-container\">
-                <input type=\"submit\" value='";
-        // line 45
-        echo call_user_func_array($this->env->getFilter('trans')->getCallable(), array("backend::lang.eventos.search.submit"));
-        echo "'>
+                <input type=\"submit\" value=\"";
+        // line 44
+        echo call_user_func_array($this->env->getFilter('_')->getCallable(), array("Ver eventos"));
+        echo "\">
               </div>
             </form>
           </div>
         </div>
         <div class=\"header-comment\">
           <p class=\"comment\">";
-        // line 51
-        echo call_user_func_array($this->env->getFilter('trans')->getCallable(), array("backend::lang.eventos.page.comment"));
+        // line 50
+        echo call_user_func_array($this->env->getFilter('_')->getCallable(), array("Descubre miles de eventos que no querrás perderte"));
         echo "</p>
         </div>
       </div>
@@ -165,7 +165,7 @@ class __TwigTemplate_73590df902a7dd238fa446e34d75b9700784cc113c4282a52eec0fe16a7
 
     public function getDebugInfo()
     {
-        return array (  149 => 51,  140 => 45,  133 => 40,  122 => 38,  118 => 37,  111 => 33,  107 => 32,  100 => 28,  97 => 27,  86 => 25,  83 => 24,  79 => 23,  67 => 14,  63 => 13,  59 => 12,  55 => 11,  51 => 10,  47 => 9,  43 => 8,  39 => 7,  35 => 6,  31 => 5,  27 => 4,  23 => 3,  19 => 1,);
+        return array (  149 => 50,  140 => 44,  133 => 40,  130 => 39,  119 => 37,  115 => 36,  108 => 32,  104 => 31,  97 => 27,  94 => 26,  83 => 24,  79 => 23,  67 => 14,  63 => 13,  59 => 12,  55 => 11,  51 => 10,  47 => 9,  43 => 8,  39 => 7,  35 => 6,  31 => 5,  27 => 4,  23 => 3,  19 => 1,);
     }
 
     public function getSourceContext()
@@ -193,8 +193,7 @@ class __TwigTemplate_73590df902a7dd238fa446e34d75b9700784cc113c4282a52eec0fe16a7
                 <div id=\"event-category\" class=\"days-container\">
                   <select class=\"custom-select select-days\" name=\"category\">
                     {% for key,value in categories %}
-                        {% set ct = \"backend::lang.eventos.category.\"~key %}
-                        <option value={{key}}>{{ ct|trans }}</option>
+                        <option value={{key}}>{{ value |_ }}</option>
                     {% endfor %}
                   </select>
                   <span class=\"select-title\">{{ 'CATEGORÍA'|_ }}</span>
@@ -207,20 +206,20 @@ class __TwigTemplate_73590df902a7dd238fa446e34d75b9700784cc113c4282a52eec0fe16a7
                 <div id=\"event-location\" class=\"type-container\">
                   <select class=\"custom-select select-type\" name=\"location\">
                     {% for key,value in municipalities %}
-                        <option value={{key}}>{{value|_ }}</option>
+                        <option value={{key}}>{{value}}</option>
                     {% endfor %}
                   </select>
-                  <span class=\"select-title\">UBICACIÓN</span>
+                  <span class=\"select-title\">{{ 'UBICACIÓN'|_ }}</span>
                 </div>
               </div>
               <div class=\"button-container\">
-                <input type=\"submit\" value='{{ \"backend::lang.eventos.search.submit\"|trans }}'>
+                <input type=\"submit\" value=\"{{ 'Ver eventos'|_ }}\">
               </div>
             </form>
           </div>
         </div>
         <div class=\"header-comment\">
-          <p class=\"comment\">{{ \"backend::lang.eventos.page.comment\"|trans }}</p>
+          <p class=\"comment\">{{ 'Descubre miles de eventos que no querrás perderte'|_ }}</p>
         </div>
       </div>
     </div>", "/Users/jekyll/Workspace/cadizTurismo/themes/default/partials/site/searchevent.htm", "");

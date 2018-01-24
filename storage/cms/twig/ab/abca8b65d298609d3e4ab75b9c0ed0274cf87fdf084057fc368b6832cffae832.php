@@ -224,28 +224,48 @@ class __TwigTemplate_dfbeda240dc70d90438dad4611b2fadce2c3a1b7f0be346e861333fc915
 </div>
 <div class=\"language-container\">
   <!-- Añadir la clase 'active-lang' al enlace cuando esté activo el idioma correspondiente - de ejemplo está puesto en ESPAÑOL -->
-  <p class=\"languages\"> <a href=\"";
-        // line 75
+  <p class=\"languages\">
+    <a href=\"";
+        // line 76
         echo url("/");
         echo "/en";
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), ($context["this"] ?? null), "page", array()), "url", array()), "html", null, true);
-        echo "\" class=\"lang\">EN</a> <a class=\"separator separator-lang\"> · </a><a href=\"";
+        echo "\" class=\"lang ";
+        echo (((($context["lang"] ?? null) == "en")) ? ("active-lang") : (""));
+        echo "\">EN</a>
+    <a class=\"separator separator-lang\"> · </a>
+    <a href=\"";
+        // line 78
         echo url("/");
         echo "/es";
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), ($context["this"] ?? null), "page", array()), "url", array()), "html", null, true);
-        echo "\" class=\"lang-es active-lang\">ES</a> <a class=\"separator separator-lang\"> · </a> <a href=\"";
+        echo "\" class=\"lang-es ";
+        echo (((($context["lang"] ?? null) == "es")) ? ("active-lang") : (""));
+        echo "\">ES</a>
+    <a class=\"separator separator-lang\"> · </a> <a href=\"";
+        // line 79
         echo url("/");
         echo "/fr";
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), ($context["this"] ?? null), "page", array()), "url", array()), "html", null, true);
-        echo "\" class=\"lang\">FR</a> <a class=\"separator separator-lang\"> · </a><a href=\"";
+        echo "\" class=\"lang ";
+        echo (((($context["lang"] ?? null) == "fr")) ? ("active-lang") : (""));
+        echo "\">FR</a>
+    <a class=\"separator separator-lang\"> · </a><a href=\"";
+        // line 80
         echo url("/");
         echo "/de";
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), ($context["this"] ?? null), "page", array()), "url", array()), "html", null, true);
-        echo "\" class=\"lang\">DE</a> <a class=\"separator separator-lang\"> · </a> <a href=\"";
+        echo "\" class=\"lang ";
+        echo (((($context["lang"] ?? null) == "de")) ? ("active-lang") : (""));
+        echo "\">DE</a>
+    <a class=\"separator separator-lang\"> · </a> <a href=\"";
+        // line 81
         echo url("/");
         echo "/ru";
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), ($context["this"] ?? null), "page", array()), "url", array()), "html", null, true);
-        echo "\" class=\"lang\">RU</a></p>
+        echo "\" class=\"lang ";
+        echo (((($context["lang"] ?? null) == "ru")) ? ("active-lang") : (""));
+        echo "\">RU</a></p>
 </div>
 
 <!-- MENÚ MOBILE -->
@@ -256,7 +276,7 @@ class __TwigTemplate_dfbeda240dc70d90438dad4611b2fadce2c3a1b7f0be346e861333fc915
     <div class=\"menu\">
       <div class=\"logo-container\">
         <a href=\"";
-        // line 85
+        // line 91
         echo url("/");
         echo "/";
         echo twig_escape_filter($this->env, ($context["lang"] ?? null), "html", null, true);
@@ -267,26 +287,26 @@ class __TwigTemplate_dfbeda240dc70d90438dad4611b2fadce2c3a1b7f0be346e861333fc915
       <div class=\"menus\">
         <div class=\"menu-list\">
           <p class=\"menu-title\">";
-        // line 89
+        // line 95
         echo call_user_func_array($this->env->getFilter('trans')->getCallable(), array("backend::lang.menuheader.whereToGo"));
         echo "</p>
           <img class=\"separator separator-menu\" src=\"";
-        // line 90
+        // line 96
         echo url("/");
         echo "/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg\">
           <img class=\"separator-tiny\" src=\"";
-        // line 91
+        // line 97
         echo url("/");
         echo "/plugins/rainlab/pages/assets/svg/tiny-separator.svg\">
           <ul class=\"menu-ul donde-ul where-ul\">
             ";
-        // line 93
+        // line 99
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->getSourceContext(), ($context["staticMenu"] ?? null), "menuItems", array()));
         foreach ($context['_seq'] as $context["_key"] => $context["item"]) {
             echo "             
               <li class=\"menu-item\"><a href=\"";
-            // line 94
+            // line 100
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["item"], "url", array()), "html", null, true);
             echo "\">";
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), $context["item"], "viewBag", array()), ($context["menulang"] ?? null), array(), "array"), "html", null, true);
@@ -296,31 +316,31 @@ class __TwigTemplate_dfbeda240dc70d90438dad4611b2fadce2c3a1b7f0be346e861333fc915
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['item'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 96
+        // line 102
         echo "          </ul>
         </div>
         <div class=\"menu-list\">
           <p class=\"menu-title\">";
-        // line 99
+        // line 105
         echo call_user_func_array($this->env->getFilter('trans')->getCallable(), array("backend::lang.menuheader.whatToDo"));
         echo "</p>
           <img class=\"separator separator-menu\" src=\"";
-        // line 100
+        // line 106
         echo url("/");
         echo "/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg\">
           <img class=\"separator-tiny\" src=\"";
-        // line 101
+        // line 107
         echo url("/");
         echo "/plugins/rainlab/pages/assets/svg/tiny-separator.svg\">
           <ul class=\"menu-ul do-ul\">
             ";
-        // line 103
+        // line 109
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->getSourceContext(), ($context["staticMenu4"] ?? null), "menuItems", array()));
         foreach ($context['_seq'] as $context["_key"] => $context["item"]) {
             echo "             
               <li class=\"menu-item\"><a href=\"";
-            // line 104
+            // line 110
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["item"], "url", array()), "html", null, true);
             echo "\">";
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), $context["item"], "viewBag", array()), ($context["menulang"] ?? null), array(), "array"), "html", null, true);
@@ -330,29 +350,29 @@ class __TwigTemplate_dfbeda240dc70d90438dad4611b2fadce2c3a1b7f0be346e861333fc915
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['item'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 106
+        // line 112
         echo "          </ul>
         </div>
         <div class=\"menu-list\">
           <p class=\"menu-title\">";
-        // line 109
+        // line 115
         echo call_user_func_array($this->env->getFilter('trans')->getCallable(), array("backend::lang.menuheader.whatToLive"));
         echo "</p>
           <img class=\"separator separator-menu\" src=\"";
-        // line 110
+        // line 116
         echo url("/");
         echo "/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg\">
           <img class=\"separator-tiny\" src=\"";
-        // line 111
+        // line 117
         echo url("/");
         echo "/plugins/rainlab/pages/assets/svg/tiny-separator.svg\">
           <ul class=\"menu-ul live-ul\">
             ";
-        // line 113
+        // line 119
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->getSourceContext(), ($context["staticMenu2"] ?? null), "menuItems", array()));
         foreach ($context['_seq'] as $context["_key"] => $context["item"]) {
-            // line 114
+            // line 120
             echo "              <li class=\"menu-item\"><a href=\"";
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["item"], "url", array()), "html", null, true);
             echo "\">";
@@ -363,7 +383,7 @@ class __TwigTemplate_dfbeda240dc70d90438dad4611b2fadce2c3a1b7f0be346e861333fc915
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['item'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 116
+        // line 122
         echo "              <li class=\"menu-item\"><a href=\"todos-los-eventos\">";
         echo call_user_func_array($this->env->getFilter('trans')->getCallable(), array("backend::lang.menuheader.allEvents"));
         echo "</a></li>
@@ -371,24 +391,24 @@ class __TwigTemplate_dfbeda240dc70d90438dad4611b2fadce2c3a1b7f0be346e861333fc915
         </div>
         <div class=\"menu-list\">
           <p class=\"menu-title\">";
-        // line 120
+        // line 126
         echo call_user_func_array($this->env->getFilter('trans')->getCallable(), array("backend::lang.menuheader.myStance"));
         echo "</p>
           <img class=\"separator separator-menu\" src=\"";
-        // line 121
+        // line 127
         echo url("/");
         echo "/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg\">
           <img class=\"separator-tiny\" src=\"";
-        // line 122
+        // line 128
         echo url("/");
         echo "/plugins/rainlab/pages/assets/svg/tiny-separator.svg\">
           <ul class=\"menu-ul stance-ul\">
             ";
-        // line 124
+        // line 130
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->getSourceContext(), ($context["staticMenu3"] ?? null), "menuItems", array()));
         foreach ($context['_seq'] as $context["_key"] => $context["item"]) {
-            // line 125
+            // line 131
             echo "              <li class=\"menu-item\"><a href=\"";
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["item"], "url", array()), "html", null, true);
             echo "\">";
@@ -399,7 +419,7 @@ class __TwigTemplate_dfbeda240dc70d90438dad4611b2fadce2c3a1b7f0be346e861333fc915
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['item'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 127
+        // line 133
         echo "          </ul>
         </div>
       </div>
@@ -419,7 +439,7 @@ class __TwigTemplate_dfbeda240dc70d90438dad4611b2fadce2c3a1b7f0be346e861333fc915
 
     public function getDebugInfo()
     {
-        return array (  403 => 127,  392 => 125,  388 => 124,  383 => 122,  379 => 121,  375 => 120,  367 => 116,  356 => 114,  352 => 113,  347 => 111,  343 => 110,  339 => 109,  334 => 106,  324 => 104,  318 => 103,  313 => 101,  309 => 100,  305 => 99,  300 => 96,  290 => 94,  284 => 93,  279 => 91,  275 => 90,  271 => 89,  260 => 85,  229 => 75,  218 => 71,  210 => 66,  206 => 65,  194 => 55,  184 => 53,  178 => 52,  173 => 50,  169 => 49,  165 => 48,  157 => 43,  154 => 42,  144 => 41,  138 => 40,  133 => 38,  129 => 37,  125 => 36,  119 => 32,  109 => 30,  103 => 29,  98 => 27,  94 => 26,  90 => 25,  78 => 20,  70 => 19,  66 => 17,  56 => 15,  50 => 14,  45 => 12,  41 => 11,  37 => 10,  25 => 5,  19 => 1,);
+        return array (  423 => 133,  412 => 131,  408 => 130,  403 => 128,  399 => 127,  395 => 126,  387 => 122,  376 => 120,  372 => 119,  367 => 117,  363 => 116,  359 => 115,  354 => 112,  344 => 110,  338 => 109,  333 => 107,  329 => 106,  325 => 105,  320 => 102,  310 => 100,  304 => 99,  299 => 97,  295 => 96,  291 => 95,  280 => 91,  263 => 81,  255 => 80,  247 => 79,  239 => 78,  230 => 76,  218 => 71,  210 => 66,  206 => 65,  194 => 55,  184 => 53,  178 => 52,  173 => 50,  169 => 49,  165 => 48,  157 => 43,  154 => 42,  144 => 41,  138 => 40,  133 => 38,  129 => 37,  125 => 36,  119 => 32,  109 => 30,  103 => 29,  98 => 27,  94 => 26,  90 => 25,  78 => 20,  70 => 19,  66 => 17,  56 => 15,  50 => 14,  45 => 12,  41 => 11,  37 => 10,  25 => 5,  19 => 1,);
     }
 
     public function getSourceContext()
@@ -498,7 +518,13 @@ class __TwigTemplate_dfbeda240dc70d90438dad4611b2fadce2c3a1b7f0be346e861333fc915
 </div>
 <div class=\"language-container\">
   <!-- Añadir la clase 'active-lang' al enlace cuando esté activo el idioma correspondiente - de ejemplo está puesto en ESPAÑOL -->
-  <p class=\"languages\"> <a href=\"{{url('/')}}/en{{this.page.url}}\" class=\"lang\">EN</a> <a class=\"separator separator-lang\"> · </a><a href=\"{{url('/')}}/es{{this.page.url}}\" class=\"lang-es active-lang\">ES</a> <a class=\"separator separator-lang\"> · </a> <a href=\"{{url('/')}}/fr{{this.page.url}}\" class=\"lang\">FR</a> <a class=\"separator separator-lang\"> · </a><a href=\"{{url('/')}}/de{{this.page.url}}\" class=\"lang\">DE</a> <a class=\"separator separator-lang\"> · </a> <a href=\"{{url('/')}}/ru{{this.page.url}}\" class=\"lang\">RU</a></p>
+  <p class=\"languages\">
+    <a href=\"{{url('/')}}/en{{this.page.url}}\" class=\"lang {{(lang=='en')?'active-lang':''}}\">EN</a>
+    <a class=\"separator separator-lang\"> · </a>
+    <a href=\"{{url('/')}}/es{{this.page.url}}\" class=\"lang-es {{(lang=='es')?'active-lang':''}}\">ES</a>
+    <a class=\"separator separator-lang\"> · </a> <a href=\"{{url('/')}}/fr{{this.page.url}}\" class=\"lang {{(lang=='fr')?'active-lang':''}}\">FR</a>
+    <a class=\"separator separator-lang\"> · </a><a href=\"{{url('/')}}/de{{this.page.url}}\" class=\"lang {{(lang=='de')?'active-lang':''}}\">DE</a>
+    <a class=\"separator separator-lang\"> · </a> <a href=\"{{url('/')}}/ru{{this.page.url}}\" class=\"lang {{(lang=='ru')?'active-lang':''}}\">RU</a></p>
 </div>
 
 <!-- MENÚ MOBILE -->
