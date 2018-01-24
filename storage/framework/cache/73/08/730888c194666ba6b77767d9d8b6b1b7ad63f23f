@@ -1,0 +1,190 @@
+1516814564a:1:{s:11:"dinamic.htm";a:11:{s:8:"fileName";s:11:"dinamic.htm";s:7:"content";s:3946:"description = "Dinamic Layout"
+layout = 'dinamic'
+[staticMenu]
+code = "donde-ir"
+
+[staticMenu staticMenu2]
+code = "que-vivir"
+
+[staticMenu staticMenu3]
+code = "mi-estancia"
+
+[staticMenu staticMenu4]
+code = "que-hacer"
+
+==
+
+<?php
+
+    function onStart()
+    {
+        $this['lang']=\App::getLocale();
+        if($this['lang']==''){
+            $this['lang']='es';
+        }
+    }
+
+?>
+
+==
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="google-site-verification" content="KZtyPnD_0KXDnRTpmvwxNoBcvj3Osx_VKrXoJaucHrE" />
+    <title>Cádiz</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/bootstrap/3/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+
+    <link rel="stylesheet" href="{{url('/')}}/plugins/rainlab/pages/assets/css/style-comarcas.css"/>
+    <link rel="stylesheet" href="{{url('/')}}/plugins/rainlab/pages/assets/css/style-village.css"/>
+    <link rel="stylesheet" href="{{url('/')}}/plugins/rainlab/pages/assets/css/style-event.css"/>
+    <link rel="stylesheet" href="{{url('/')}}/plugins/rainlab/pages/assets/css/style-totalEvents.css"/>
+    <link rel="stylesheet" href="{{url('/')}}/plugins/rainlab/pages/assets/css/style-home.css"/>
+    <link rel="stylesheet" href="{{url('/')}}/plugins/rainlab/pages/assets/css/style-search.css"/>
+    <link rel="stylesheet" href="{{url('/')}}/plugins/rainlab/pages/assets/css/style.css"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/svg/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/svg/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/svg/favicons/favicon-16x16.png">
+
+    <link rel="manifest" href="{{url('/')}}/plugins/rainlab/pages/assets/svg/favicons/manifest.json">
+    <link rel="mask-icon" href="{{url('/')}}/plugins/rainlab/pages/assets/svg/favicons/safari-pinned-tab.svg" color="#383838">
+
+    <meta name="theme-color" content="#ffffff">
+
+    <style>
+      .calendar.right {
+        display: none !important;
+      }
+      .daterangepicker_input{
+        display: none;
+      }
+    </style>
+
+</head>
+
+    {% partial 'site/header' %}
+
+    <!-- Content -->
+    <section id="layout-content">
+        {% page %}
+    </section>
+
+      {% partial 'site/footer' %}
+
+    <!-- SCRIPTS -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.full.min.js"></script>
+<script type="text/javascript" src="{{url('/')}}/plugins/rainlab/pages/assets/iziModal/js/iziModal.js"></script>
+
+
+    <script type="text/javascript" src="{{url('/')}}/plugins/rainlab/pages/assets/js/style.js"></script>
+
+    <script type="text/javascript" src="{{url('/')}}/plugins/rainlab/pages/assets/js/script-select2.js"></script>
+
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+    <script type="text/javascript" src="{{url('/')}}/plugins/rainlab/pages/assets/js/range-datapicker.js"></script>
+
+
+
+    {% framework %}
+
+  </body>
+</html>
+";s:5:"mtime";i:1516809488;s:6:"markup";s:3557:"<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="google-site-verification" content="KZtyPnD_0KXDnRTpmvwxNoBcvj3Osx_VKrXoJaucHrE" />
+    <title>Cádiz</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/bootstrap/3/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+
+    <link rel="stylesheet" href="{{url('/')}}/plugins/rainlab/pages/assets/css/style-comarcas.css"/>
+    <link rel="stylesheet" href="{{url('/')}}/plugins/rainlab/pages/assets/css/style-village.css"/>
+    <link rel="stylesheet" href="{{url('/')}}/plugins/rainlab/pages/assets/css/style-event.css"/>
+    <link rel="stylesheet" href="{{url('/')}}/plugins/rainlab/pages/assets/css/style-totalEvents.css"/>
+    <link rel="stylesheet" href="{{url('/')}}/plugins/rainlab/pages/assets/css/style-home.css"/>
+    <link rel="stylesheet" href="{{url('/')}}/plugins/rainlab/pages/assets/css/style-search.css"/>
+    <link rel="stylesheet" href="{{url('/')}}/plugins/rainlab/pages/assets/css/style.css"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/svg/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/svg/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/svg/favicons/favicon-16x16.png">
+
+    <link rel="manifest" href="{{url('/')}}/plugins/rainlab/pages/assets/svg/favicons/manifest.json">
+    <link rel="mask-icon" href="{{url('/')}}/plugins/rainlab/pages/assets/svg/favicons/safari-pinned-tab.svg" color="#383838">
+
+    <meta name="theme-color" content="#ffffff">
+
+    <style>
+      .calendar.right {
+        display: none !important;
+      }
+      .daterangepicker_input{
+        display: none;
+      }
+    </style>
+
+</head>
+
+    {% partial 'site/header' %}
+
+    <!-- Content -->
+    <section id="layout-content">
+        {% page %}
+    </section>
+
+      {% partial 'site/footer' %}
+
+    <!-- SCRIPTS -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.full.min.js"></script>
+<script type="text/javascript" src="{{url('/')}}/plugins/rainlab/pages/assets/iziModal/js/iziModal.js"></script>
+
+
+    <script type="text/javascript" src="{{url('/')}}/plugins/rainlab/pages/assets/js/style.js"></script>
+
+    <script type="text/javascript" src="{{url('/')}}/plugins/rainlab/pages/assets/js/script-select2.js"></script>
+
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+    <script type="text/javascript" src="{{url('/')}}/plugins/rainlab/pages/assets/js/range-datapicker.js"></script>
+
+
+
+    {% framework %}
+
+  </body>
+</html>";s:4:"code";s:148:"    function onStart()
+    {
+        $this['lang']=\App::getLocale();
+        if($this['lang']==''){
+            $this['lang']='es';
+        }
+    }";s:11:"description";s:14:"Dinamic Layout";s:6:"layout";s:7:"dinamic";s:10:"staticMenu";a:1:{s:4:"code";s:8:"donde-ir";}s:22:"staticMenu staticMenu2";a:1:{s:4:"code";s:9:"que-vivir";}s:22:"staticMenu staticMenu3";a:1:{s:4:"code";s:11:"mi-estancia";}s:22:"staticMenu staticMenu4";a:1:{s:4:"code";s:9:"que-hacer";}}}

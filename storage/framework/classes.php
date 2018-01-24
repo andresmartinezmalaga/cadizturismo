@@ -67,4 +67,8 @@
   'backend\\Controllers\\preferences' => 'modules/backend/controllers/preferences.php',
   'RainLab\\GoogleAnalytics\\ReportWidgets\\TrafficSources' => 'plugins/rainlab/googleanalytics/reportwidgets/TrafficSources.php',
   'RainLab\\GoogleAnalytics\\ReportWidgets\\TrafficOverview' => 'plugins/rainlab/googleanalytics/reportwidgets/TrafficOverview.php',
+  'RainLab\\GoogleAnalytics\\ReportWidgets\\TrafficGoal' => 'plugins/rainlab/googleanalytics/reportwidgets/TrafficGoal.php',
+  'RainLab\\GoogleAnalytics\\ReportWidgets\\TopPages' => 'plugins/rainlab/googleanalytics/reportwidgets/TopPages.php',
+  'RainLab\\GoogleAnalytics\\Classes\\CacheItemPool' => 'plugins/rainlab/googleanalytics/classes/CacheItemPool.php',
+  'RainLab\\Translate\\Classes\\ThemeScanner' => 'plugins/rainlab/translate/classes/ThemeScanner.php',
 );
