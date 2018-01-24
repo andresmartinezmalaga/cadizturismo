@@ -1,4 +1,4 @@
-1516798409a:1:{s:17:"playas-marina.htm";a:7:{s:8:"fileName";s:17:"playas-marina.htm";s:7:"content";s:6842:"[viewBag]
+1516800215a:1:{s:17:"playas-marina.htm";a:7:{s:8:"fileName";s:17:"playas-marina.htm";s:7:"content";s:6842:"[viewBag]
 title = "Marina"
 url = "/playas/marina"
 template = "pages"
@@ -94,7 +94,6 @@ localeUrl[ru] = "/playas/marina"
 		<div class="also-feature main-feature">
 			<!-- El icono de la urbana se llama urban-beach.svg -->
 			<img src="/cadizturismo/plugins/rainlab/pages/assets/svg/virgin-beach.svg" class="fr-fil fr-dib">
-
 			<p class="also-desc">Playa virgen</p>
 		</div>
 		<div class="also-feature"><img src="/cadizturismo/plugins/rainlab/pages/assets/svg/natu-grey.svg" class="fr-fil fr-dib">
@@ -126,7 +125,8 @@ localeUrl[ru] = "/playas/marina"
 			<p class="also-desc">Restauración</p>
 		</div>
 	</div>
-</div>";s:5:"mtime";i:1516781841;s:6:"markup";s:6498:"<!-- HEADER -->
+</div>
+";s:5:"mtime";i:1516799242;s:6:"markup";s:6496:"<!-- HEADER -->
 <div class="header header-playa">
 	<div class="header-container header-village-container">
 		<div class="header-txt header-txt-village">
@@ -209,7 +209,6 @@ localeUrl[ru] = "/playas/marina"
 		<div class="also-feature main-feature">
 			<!-- El icono de la urbana se llama urban-beach.svg -->
 			<img src="/cadizturismo/plugins/rainlab/pages/assets/svg/virgin-beach.svg" class="fr-fil fr-dib">
-
 			<p class="also-desc">Playa virgen</p>
 		</div>
 		<div class="also-feature"><img src="/cadizturismo/plugins/rainlab/pages/assets/svg/natu-grey.svg" class="fr-fil fr-dib">
@@ -241,7 +240,7 @@ localeUrl[ru] = "/playas/marina"
 			<p class="also-desc">Restauración</p>
 		</div>
 	</div>
-</div>";s:4:"code";N;s:7:"viewBag";a:8:{s:5:"title";s:6:"Marina";s:3:"url";s:14:"/playas/marina";s:8:"template";s:5:"pages";s:11:"subtemplate";s:6:"playas";s:5:"cover";s:73:"/cadizturismo/storage/app/media/uploaded-files/templates/playa-lances.jpg";s:9:"is_hidden";s:1:"0";s:6:"layout";s:7:"default";s:9:"localeUrl";a:4:{s:2:"en";s:14:"/playas/marina";s:2:"fr";s:14:"/playas/marina";s:2:"de";s:14:"/playas/marina";s:2:"ru";s:14:"/playas/marina";}}s:12:"parsedMarkup";s:6498:"<!-- HEADER -->
+</div>";s:4:"code";N;s:7:"viewBag";a:8:{s:5:"title";s:6:"Marina";s:3:"url";s:14:"/playas/marina";s:8:"template";s:5:"pages";s:11:"subtemplate";s:6:"playas";s:5:"cover";s:73:"/cadizturismo/storage/app/media/uploaded-files/templates/playa-lances.jpg";s:9:"is_hidden";s:1:"0";s:6:"layout";s:7:"default";s:9:"localeUrl";a:4:{s:2:"en";s:14:"/playas/marina";s:2:"fr";s:14:"/playas/marina";s:2:"de";s:14:"/playas/marina";s:2:"ru";s:14:"/playas/marina";}}s:12:"parsedMarkup";s:6496:"<!-- HEADER -->
 <div class="header header-playa">
 	<div class="header-container header-village-container">
 		<div class="header-txt header-txt-village">
@@ -324,7 +323,6 @@ localeUrl[ru] = "/playas/marina"
 		<div class="also-feature main-feature">
 			<!-- El icono de la urbana se llama urban-beach.svg -->
 			<img src="/cadizturismo/plugins/rainlab/pages/assets/svg/virgin-beach.svg" class="fr-fil fr-dib">
-
 			<p class="also-desc">Playa virgen</p>
 		</div>
 		<div class="also-feature"><img src="/cadizturismo/plugins/rainlab/pages/assets/svg/natu-grey.svg" class="fr-fil fr-dib">

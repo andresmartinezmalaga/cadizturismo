@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="59px" height="55px" viewBox="0 0 59 55" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Publicaciones-(idiomas-descarga)" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-151.000000, -1325.000000)" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Page-1" transform="translate(153.000000, 1326.000000)" stroke="#4A4A4A" stroke-width="3">
+            <polygon id="Stroke-1" points="0 51.74 38.424 51.74 38.424 20 0 20"></polygon>
+            <polygon id="Stroke-3" points="10 41.798 29.338 41.798 29.338 29 10 29"></polygon>
+            <g id="Group-14" transform="translate(0.000000, 0.951400)">
+                <polygon id="Stroke-4" points="54.867 49.616 39 43.412 39 29.204 54.867 23"></polygon>
+                <path d="M19.212,9.606 C19.212,4.299 14.91,0 9.606,0 C4.302,0 0,4.299 0,9.606 C0,14.913 4.302,19.212 9.606,19.212 C14.91,19.212 19.212,14.913 19.212,9.606 Z" id="Stroke-6"></path>
+                <path d="M5,9 C5,11.919 7.367,14.286 10.286,14.286" id="Stroke-8"></path>
+                <path d="M24,9 C24,11.919 26.367,14.286 29.286,14.286" id="Stroke-10"></path>
+                <path d="M39.212,9.606 C39.212,4.299 34.91,0 29.606,0 C24.302,0 20,4.299 20,9.606 C20,14.913 24.302,19.212 29.606,19.212 C34.91,19.212 39.212,14.913 39.212,9.606 Z" id="Stroke-12"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,4 +1,4 @@
-1516798409a:1:{s:19:"necesitas-ayuda.htm";a:7:{s:8:"fileName";s:19:"necesitas-ayuda.htm";s:7:"content";s:2998:"[viewBag]
+1516800541a:1:{s:19:"necesitas-ayuda.htm";a:7:{s:8:"fileName";s:19:"necesitas-ayuda.htm";s:7:"content";s:2984:"[viewBag]
 title = "Necesitas ayuda"
 url = "/necesitas-ayuda"
 template = "pages"
@@ -11,7 +11,7 @@ localeUrl[de] = "/necesitas-ayuda"
 localeUrl[ru] = "/necesitas-ayuda"
 ==
 
-<div id="ayuda-header" class="static-header ayuda-header">
+<div id="ayuda-header" class="ayuda-header">
   <img class="img-header"
   src="/cadizturismo/plugins/rainlab/pages/assets/img/ayuda-header.jpg"
   alt="">
@@ -77,7 +77,7 @@ localeUrl[ru] = "/necesitas-ayuda"
 <section class="map-container">
   <img src="/cadizturismo/plugins/rainlab/pages/assets/img/map.jpg" alt="">
 </section>
-";s:5:"mtime";i:1516796542;s:6:"markup";s:2718:"<div id="ayuda-header" class="static-header ayuda-header">
+";s:5:"mtime";i:1516799937;s:6:"markup";s:2704:"<div id="ayuda-header" class="ayuda-header">
   <img class="img-header"
   src="/cadizturismo/plugins/rainlab/pages/assets/img/ayuda-header.jpg"
   alt="">
@@ -142,7 +142,7 @@ localeUrl[ru] = "/necesitas-ayuda"
 </section>
 <section class="map-container">
   <img src="/cadizturismo/plugins/rainlab/pages/assets/img/map.jpg" alt="">
-</section>";s:4:"code";N;s:7:"viewBag";a:7:{s:5:"title";s:15:"Necesitas ayuda";s:3:"url";s:16:"/necesitas-ayuda";s:8:"template";s:5:"pages";s:5:"cover";s:11:"default.jpg";s:9:"is_hidden";s:1:"0";s:6:"layout";s:7:"default";s:9:"localeUrl";a:4:{s:2:"en";s:16:"/necesitas-ayuda";s:2:"fr";s:16:"/necesitas-ayuda";s:2:"de";s:16:"/necesitas-ayuda";s:2:"ru";s:16:"/necesitas-ayuda";}}s:12:"parsedMarkup";s:2718:"<div id="ayuda-header" class="static-header ayuda-header">
+</section>";s:4:"code";N;s:7:"viewBag";a:7:{s:5:"title";s:15:"Necesitas ayuda";s:3:"url";s:16:"/necesitas-ayuda";s:8:"template";s:5:"pages";s:5:"cover";s:11:"default.jpg";s:9:"is_hidden";s:1:"0";s:6:"layout";s:7:"default";s:9:"localeUrl";a:4:{s:2:"en";s:16:"/necesitas-ayuda";s:2:"fr";s:16:"/necesitas-ayuda";s:2:"de";s:16:"/necesitas-ayuda";s:2:"ru";s:16:"/necesitas-ayuda";}}s:12:"parsedMarkup";s:2704:"<div id="ayuda-header" class="ayuda-header">
   <img class="img-header"
   src="/cadizturismo/plugins/rainlab/pages/assets/img/ayuda-header.jpg"
   alt="">
