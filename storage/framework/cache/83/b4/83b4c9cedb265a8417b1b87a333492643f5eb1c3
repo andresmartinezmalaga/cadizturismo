@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-1516878599a:1:{i:0;O:8:"stdClass":6:{s:2:"id";i:2;s:4:"code";s:2:"es";s:4:"name";s:8:"Español";s:10:"is_default";i:1;s:10:"is_enabled";i:1;s:10:"sort_order";i:1;}}
-=======
-1516884783a:1:{i:0;O:8:"stdClass":6:{s:2:"id";i:2;s:4:"code";s:2:"es";s:4:"name";s:8:"Español";s:10:"is_default";i:1;s:10:"is_enabled";i:1;s:10:"sort_order";i:1;}}
->>>>>>> 2bc0c1ae86fbd6b74a48180ee8bcf658c06ce2d4
+1516892278a:1:{i:0;O:8:"stdClass":6:{s:2:"id";i:2;s:4:"code";s:2:"es";s:4:"name";s:8:"Español";s:10:"is_default";i:1;s:10:"is_enabled";i:1;s:10:"sort_order";i:1;}}

@@ -263,6 +263,13 @@ class Evento extends ContentBase
       ];
     }
 
+    public function getEventsTPlantillas(){
+      return [
+        'maxi-evento' => 'Maxi evento',
+        'mini-evento' => 'Mini evento',
+      ];
+    }
+
      public function getMunicipalities(){
         return [
          'alcala de los gazules' => 'Alcalá de los Gazules',

@@ -27,12 +27,23 @@ is_hidden = 0
 
 	function onFindEvent(){
 
-    $category = $_POST['interest'];
+    $category = $_POST['category'];
+    $location = $_POST['location'];
+    $datepicker = explode('-', $_POST['datepicker']);
+		
+    $edaystart = explode('.', $datepicker[0]);
+    $edayend = explode('.', $datepicker[1]);
 
-		$daystart = $_POST['daystart'];
-    $dayend = $_POST['dayend'];
+    $daystart = new Date($edaystart[0].'-'.$edaystart[1].'-'.$edaystart[2]);
+    $dayend = new Date($edayend[0].'-'.$edayend[1].'-'.$edayend[2]);
 
-		$location = $_POST['tvisit'];
+    
+    echo $daystart;
+    echo $dayend;
+
+  
+
+	   dd(1);
   	$aLang = App::getLocale();
     $events = $this->staticApp->eventAll($category,$daystart,$dayend,$location);
   
@@ -49,8 +60,8 @@ is_hidden = 0
   <div class="header-container">
       
       <div class="header-txt">
-        <h1 class="txt txt-home"><span class="first-word">Vive</span> nuestros eventos</h1>
-        <img class="brush" src="assets/svg/brush-header.svg" alt="">
+        <h1 class="txt txt-home"><span class="first-word">{{ "backend::lang.eventos.page.h1"|trans }}</span> {{ "backend::lang.eventos.page.h1_span"|trans }}</h1>
+        <img class="brush" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/brush-header.svg" alt="">
       </div>
    
     <!-- SEARCH -->
