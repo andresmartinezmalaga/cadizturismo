@@ -23,30 +23,40 @@ class __TwigTemplate_9a5292f1353f7c52a09e07912d507110a742777a117ade34162e2e32c9a
     <meta charset=\"utf-8\"/>
     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1\">
     <title>Cádiz</title>
+    
+    <link href=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css\" rel=\"stylesheet\" />
     <link href=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css\" rel=\"stylesheet\" />
     <link href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\" rel=\"stylesheet\"/>
+
+    <link rel=\"stylesheet\" type=\"text/css\" href=\"http://cdn.jsdelivr.net/bootstrap/3/css/bootstrap.css\" />
+    <link rel=\"stylesheet\" type=\"text/css\" href=\"http://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css\" />
+
     <link rel=\"stylesheet\" href=\"";
-        // line 10
+        // line 16
         echo url("/");
         echo "/plugins/rainlab/pages/assets/css/style-comarcas.css\"/>
     <link rel=\"stylesheet\" href=\"";
-        // line 11
+        // line 17
         echo url("/");
         echo "/plugins/rainlab/pages/assets/css/style-village.css\"/>
     <link rel=\"stylesheet\" href=\"";
-        // line 12
+        // line 18
         echo url("/");
         echo "/plugins/rainlab/pages/assets/css/style-event.css\"/>
     <link rel=\"stylesheet\" href=\"";
-        // line 13
+        // line 19
+        echo url("/");
+        echo "/plugins/rainlab/pages/assets/css/style-totalEvents.css\"/>
+    <link rel=\"stylesheet\" href=\"";
+        // line 20
         echo url("/");
         echo "/plugins/rainlab/pages/assets/css/style-home.css\"/>
     <link rel=\"stylesheet\" href=\"";
-        // line 14
+        // line 21
         echo url("/");
         echo "/plugins/rainlab/pages/assets/css/style-search.css\"/>
     <link rel=\"stylesheet\" href=\"";
-        // line 15
+        // line 22
         echo url("/");
         echo "/plugins/rainlab/pages/assets/css/style.css\"/>
     <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"./assets/svg/favicons/apple-touch-icon.png\">
@@ -55,49 +65,70 @@ class __TwigTemplate_9a5292f1353f7c52a09e07912d507110a742777a117ade34162e2e32c9a
     <link rel=\"manifest\" href=\"./assets/svg/favicons/manifest.json\">
     <link rel=\"mask-icon\" href=\"./assets/svg/favicons/safari-pinned-tab.svg\" color=\"#383838\">
     <meta name=\"theme-color\" content=\"#ffffff\">
+
+    <style>
+      .calendar.right {
+        display: none !important;
+      }
+      .daterangepicker_input{
+        display: none;
+      }
+    </style>
+
 </head>
 
     ";
-        // line 24
+        // line 41
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("site/header"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 25
+        // line 42
         echo "
     <!-- Content -->
     <section id=\"layout-content\">
         ";
-        // line 28
+        // line 45
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFunction();
-        // line 29
+        // line 46
         echo "    </section>
 
       ";
-        // line 31
+        // line 48
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("site/footer"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 32
+        // line 49
         echo "
     <!-- SCRIPTS -->
     <script type=\"text/javascript\" src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js\"></script>
+
+    <script src=\"https://code.jquery.com/jquery-1.12.4.js\"></script>
+    <script src=\"https://code.jquery.com/ui/1.12.1/jquery-ui.js\"></script>
+
     <script src=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.full.min.js\"></script>
+    
+    <script type=\"text/javascript\" src=\"assets/js/style.js\"></script>
+
     <script type=\"text/javascript\" src=\"";
-        // line 36
+        // line 60
         echo url("/");
         echo "/plugins/rainlab/pages/assets/js/script-select2.js\"></script>
 
-    <script type=\"text/javascript\" src=\"";
-        // line 38
-        echo url("/");
-        echo "/plugins/rainlab/pages/assets/js/style.js\"></script>
+    <script type=\"text/javascript\" src=\"http://cdn.jsdelivr.net/momentjs/latest/moment.min.js\"></script>
 
+    <script type=\"text/javascript\" src=\"http://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js\"></script>
+    <script type=\"text/javascript\" src=\"";
+        // line 65
+        echo url("/");
+        echo "/plugins/rainlab/pages/assets/js/range-datapicker.js\"></script>
+
+   
 
     ";
-        // line 41
+        // line 69
         echo '<script src="'. Request::getBasePath()
                 .'/modules/system/assets/js/framework.js"></script>'.PHP_EOL;
-        // line 42
+        // line 70
         echo "
   </body>
 </html>";
@@ -115,7 +146,7 @@ class __TwigTemplate_9a5292f1353f7c52a09e07912d507110a742777a117ade34162e2e32c9a
 
     public function getDebugInfo()
     {
-        return array (  101 => 42,  98 => 41,  92 => 38,  87 => 36,  81 => 32,  77 => 31,  73 => 29,  71 => 28,  66 => 25,  62 => 24,  50 => 15,  46 => 14,  42 => 13,  38 => 12,  34 => 11,  30 => 10,  19 => 1,);
+        return array (  132 => 70,  129 => 69,  122 => 65,  114 => 60,  101 => 49,  97 => 48,  93 => 46,  91 => 45,  86 => 42,  82 => 41,  60 => 22,  56 => 21,  52 => 20,  48 => 19,  44 => 18,  40 => 17,  36 => 16,  19 => 1,);
     }
 
     public function getSourceContext()
@@ -127,11 +158,18 @@ class __TwigTemplate_9a5292f1353f7c52a09e07912d507110a742777a117ade34162e2e32c9a
     <meta charset=\"utf-8\"/>
     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1\">
     <title>Cádiz</title>
+    
+    <link href=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css\" rel=\"stylesheet\" />
     <link href=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css\" rel=\"stylesheet\" />
     <link href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\" rel=\"stylesheet\"/>
+
+    <link rel=\"stylesheet\" type=\"text/css\" href=\"http://cdn.jsdelivr.net/bootstrap/3/css/bootstrap.css\" />
+    <link rel=\"stylesheet\" type=\"text/css\" href=\"http://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css\" />
+
     <link rel=\"stylesheet\" href=\"{{url('/')}}/plugins/rainlab/pages/assets/css/style-comarcas.css\"/>
     <link rel=\"stylesheet\" href=\"{{url('/')}}/plugins/rainlab/pages/assets/css/style-village.css\"/>
     <link rel=\"stylesheet\" href=\"{{url('/')}}/plugins/rainlab/pages/assets/css/style-event.css\"/>
+    <link rel=\"stylesheet\" href=\"{{url('/')}}/plugins/rainlab/pages/assets/css/style-totalEvents.css\"/>
     <link rel=\"stylesheet\" href=\"{{url('/')}}/plugins/rainlab/pages/assets/css/style-home.css\"/>
     <link rel=\"stylesheet\" href=\"{{url('/')}}/plugins/rainlab/pages/assets/css/style-search.css\"/>
     <link rel=\"stylesheet\" href=\"{{url('/')}}/plugins/rainlab/pages/assets/css/style.css\"/>
@@ -141,6 +179,16 @@ class __TwigTemplate_9a5292f1353f7c52a09e07912d507110a742777a117ade34162e2e32c9a
     <link rel=\"manifest\" href=\"./assets/svg/favicons/manifest.json\">
     <link rel=\"mask-icon\" href=\"./assets/svg/favicons/safari-pinned-tab.svg\" color=\"#383838\">
     <meta name=\"theme-color\" content=\"#ffffff\">
+
+    <style>
+      .calendar.right {
+        display: none !important;
+      }
+      .daterangepicker_input{
+        display: none;
+      }
+    </style>
+
 </head>
 
     {% partial 'site/header' %}
@@ -154,11 +202,22 @@ class __TwigTemplate_9a5292f1353f7c52a09e07912d507110a742777a117ade34162e2e32c9a
 
     <!-- SCRIPTS -->
     <script type=\"text/javascript\" src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js\"></script>
+
+    <script src=\"https://code.jquery.com/jquery-1.12.4.js\"></script>
+    <script src=\"https://code.jquery.com/ui/1.12.1/jquery-ui.js\"></script>
+
     <script src=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.full.min.js\"></script>
+    
+    <script type=\"text/javascript\" src=\"assets/js/style.js\"></script>
+
     <script type=\"text/javascript\" src=\"{{url('/')}}/plugins/rainlab/pages/assets/js/script-select2.js\"></script>
 
-    <script type=\"text/javascript\" src=\"{{url('/')}}/plugins/rainlab/pages/assets/js/style.js\"></script>
+    <script type=\"text/javascript\" src=\"http://cdn.jsdelivr.net/momentjs/latest/moment.min.js\"></script>
 
+    <script type=\"text/javascript\" src=\"http://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js\"></script>
+    <script type=\"text/javascript\" src=\"{{url('/')}}/plugins/rainlab/pages/assets/js/range-datapicker.js\"></script>
+
+   
 
     {% framework %}
 

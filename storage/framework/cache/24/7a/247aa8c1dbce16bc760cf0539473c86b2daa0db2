@@ -1,4 +1,4 @@
-1516789932a:1:{s:24:"municipios-grazalema.htm";a:7:{s:8:"fileName";s:24:"municipios-grazalema.htm";s:7:"content";s:8255:"[viewBag]
+1516799973a:1:{s:24:"municipios-grazalema.htm";a:7:{s:8:"fileName";s:24:"municipios-grazalema.htm";s:7:"content";s:8223:"[viewBag]
 title = "Grazalema"
 url = "/municipios/grazalema"
 template = "pages"
@@ -16,7 +16,7 @@ localeUrl[ru] = "/municipios/grazalema"
 	<div class="header-container header-village-container">
 		<div class="header-txt header-txt-village">
 
-			<h1 class="txt"><span class="first-word">Grazalema</span></h1><img class="brush fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
+			<h1 class="txt">Grazalema</h1><img class="brush fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
 	</div>
 	<!-- NUEVA FOTO -->
 	<img class="background-image fr-fil fr-dib" value="cover" src="/cadizturismo/storage/app/media/uploaded-files/templates/barbate1.jpg" alt=""></div>
@@ -156,12 +156,12 @@ localeUrl[ru] = "/municipios/grazalema"
 			<p class="also-desc">Ocio</p>
 		</div>
 	</div>
-</div>";s:5:"mtime";i:1516711668;s:6:"markup";s:7873:"<!-- HEADER -->
+</div>";s:5:"mtime";i:1516792272;s:6:"markup";s:7841:"<!-- HEADER -->
 <div class="header header-village">
 	<div class="header-container header-village-container">
 		<div class="header-txt header-txt-village">
 
-			<h1 class="txt"><span class="first-word">Grazalema</span></h1><img class="brush fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
+			<h1 class="txt">Grazalema</h1><img class="brush fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
 	</div>
 	<!-- NUEVA FOTO -->
 	<img class="background-image fr-fil fr-dib" value="cover" src="/cadizturismo/storage/app/media/uploaded-files/templates/barbate1.jpg" alt=""></div>
@@ -301,12 +301,12 @@ localeUrl[ru] = "/municipios/grazalema"
 			<p class="also-desc">Ocio</p>
 		</div>
 	</div>
-</div>";s:4:"code";N;s:7:"viewBag";a:8:{s:5:"title";s:9:"Grazalema";s:3:"url";s:21:"/municipios/grazalema";s:8:"template";s:5:"pages";s:11:"subtemplate";s:10:"municipios";s:5:"cover";s:69:"/cadizturismo/storage/app/media/uploaded-files/templates/barbate1.jpg";s:9:"is_hidden";s:1:"0";s:6:"layout";s:7:"default";s:9:"localeUrl";a:4:{s:2:"en";s:21:"/municipios/grazalema";s:2:"fr";s:21:"/municipios/grazalema";s:2:"de";s:21:"/municipios/grazalema";s:2:"ru";s:21:"/municipios/grazalema";}}s:12:"parsedMarkup";s:7873:"<!-- HEADER -->
+</div>";s:4:"code";N;s:7:"viewBag";a:8:{s:5:"title";s:9:"Grazalema";s:3:"url";s:21:"/municipios/grazalema";s:8:"template";s:5:"pages";s:11:"subtemplate";s:10:"municipios";s:5:"cover";s:69:"/cadizturismo/storage/app/media/uploaded-files/templates/barbate1.jpg";s:9:"is_hidden";s:1:"0";s:6:"layout";s:7:"default";s:9:"localeUrl";a:4:{s:2:"en";s:21:"/municipios/grazalema";s:2:"fr";s:21:"/municipios/grazalema";s:2:"de";s:21:"/municipios/grazalema";s:2:"ru";s:21:"/municipios/grazalema";}}s:12:"parsedMarkup";s:7841:"<!-- HEADER -->
 <div class="header header-village">
 	<div class="header-container header-village-container">
 		<div class="header-txt header-txt-village">
 
-			<h1 class="txt"><span class="first-word">Grazalema</span></h1><img class="brush fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
+			<h1 class="txt">Grazalema</h1><img class="brush fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
 	</div>
 	<!-- NUEVA FOTO -->
 	<img class="background-image fr-fil fr-dib" value="cover" src="/cadizturismo/storage/app/media/uploaded-files/templates/barbate1.jpg" alt=""></div>

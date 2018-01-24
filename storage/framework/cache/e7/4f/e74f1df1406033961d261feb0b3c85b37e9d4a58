@@ -1,4 +1,4 @@
-1516789932a:1:{s:11:"dinamic.htm";a:11:{s:8:"fileName";s:11:"dinamic.htm";s:7:"content";s:2564:"description = "Dinamic Layout"
+1516800019a:1:{s:11:"dinamic.htm";a:11:{s:8:"fileName";s:11:"dinamic.htm";s:7:"content";s:3641:"description = "Dinamic Layout"
 layout = 'dinamic'
 [staticMenu]
 code = "donde-ir"
@@ -35,11 +35,18 @@ code = "que-hacer"
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <title>Cádiz</title>
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/bootstrap/3/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+
     <link rel="stylesheet" href="{{url('/')}}/plugins/rainlab/pages/assets/css/style-comarcas.css"/>
     <link rel="stylesheet" href="{{url('/')}}/plugins/rainlab/pages/assets/css/style-village.css"/>
     <link rel="stylesheet" href="{{url('/')}}/plugins/rainlab/pages/assets/css/style-event.css"/>
+    <link rel="stylesheet" href="{{url('/')}}/plugins/rainlab/pages/assets/css/style-totalEvents.css"/>
     <link rel="stylesheet" href="{{url('/')}}/plugins/rainlab/pages/assets/css/style-home.css"/>
     <link rel="stylesheet" href="{{url('/')}}/plugins/rainlab/pages/assets/css/style-search.css"/>
     <link rel="stylesheet" href="{{url('/')}}/plugins/rainlab/pages/assets/css/style.css"/>
@@ -49,6 +56,16 @@ code = "que-hacer"
     <link rel="manifest" href="./assets/svg/favicons/manifest.json">
     <link rel="mask-icon" href="./assets/svg/favicons/safari-pinned-tab.svg" color="#383838">
     <meta name="theme-color" content="#ffffff">
+
+    <style>
+      .calendar.right {
+        display: none !important;
+      }
+      .daterangepicker_input{
+        display: none;
+      }
+    </style>
+
 </head>
 
     {% partial 'site/header' %}
@@ -62,28 +79,46 @@ code = "que-hacer"
 
     <!-- SCRIPTS -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.full.min.js"></script>
+    
+    <script type="text/javascript" src="assets/js/style.js"></script>
+
     <script type="text/javascript" src="{{url('/')}}/plugins/rainlab/pages/assets/js/script-select2.js"></script>
 
-    <script type="text/javascript" src="{{url('/')}}/plugins/rainlab/pages/assets/js/style.js"></script>
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
 
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+    <script type="text/javascript" src="{{url('/')}}/plugins/rainlab/pages/assets/js/range-datapicker.js"></script>
+
+   
 
     {% framework %}
 
   </body>
 </html>
-";s:5:"mtime";i:1516785601;s:6:"markup";s:2175:"<!DOCTYPE html>
+";s:5:"mtime";i:1516799416;s:6:"markup";s:3252:"<!DOCTYPE html>
 <html lang="es">
 
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <title>Cádiz</title>
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/bootstrap/3/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+
     <link rel="stylesheet" href="{{url('/')}}/plugins/rainlab/pages/assets/css/style-comarcas.css"/>
     <link rel="stylesheet" href="{{url('/')}}/plugins/rainlab/pages/assets/css/style-village.css"/>
     <link rel="stylesheet" href="{{url('/')}}/plugins/rainlab/pages/assets/css/style-event.css"/>
+    <link rel="stylesheet" href="{{url('/')}}/plugins/rainlab/pages/assets/css/style-totalEvents.css"/>
     <link rel="stylesheet" href="{{url('/')}}/plugins/rainlab/pages/assets/css/style-home.css"/>
     <link rel="stylesheet" href="{{url('/')}}/plugins/rainlab/pages/assets/css/style-search.css"/>
     <link rel="stylesheet" href="{{url('/')}}/plugins/rainlab/pages/assets/css/style.css"/>
@@ -93,6 +128,16 @@ code = "que-hacer"
     <link rel="manifest" href="./assets/svg/favicons/manifest.json">
     <link rel="mask-icon" href="./assets/svg/favicons/safari-pinned-tab.svg" color="#383838">
     <meta name="theme-color" content="#ffffff">
+
+    <style>
+      .calendar.right {
+        display: none !important;
+      }
+      .daterangepicker_input{
+        display: none;
+      }
+    </style>
+
 </head>
 
     {% partial 'site/header' %}
@@ -106,11 +151,22 @@ code = "que-hacer"
 
     <!-- SCRIPTS -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.full.min.js"></script>
+    
+    <script type="text/javascript" src="assets/js/style.js"></script>
+
     <script type="text/javascript" src="{{url('/')}}/plugins/rainlab/pages/assets/js/script-select2.js"></script>
 
-    <script type="text/javascript" src="{{url('/')}}/plugins/rainlab/pages/assets/js/style.js"></script>
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
 
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+    <script type="text/javascript" src="{{url('/')}}/plugins/rainlab/pages/assets/js/range-datapicker.js"></script>
+
+   
 
     {% framework %}
 

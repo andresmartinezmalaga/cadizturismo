@@ -21,12 +21,7 @@ class __TwigTemplate_2d0e3ec13ac8068bacf06a6a764d8c43f0bdde585b0f26b41699468dc77
   
   <div class=\"header-container big-div\">
     <div id=\"exp-header\" class=\"header-txt\">
-      <p class=\"txt\"><span id=\"exp\" class=\"first-word\">";
-        // line 6
-        echo call_user_func_array($this->env->getFilter('trans')->getCallable(), array("backend::lang.experiences.page.h1"));
-        echo "</span>";
-        echo call_user_func_array($this->env->getFilter('trans')->getCallable(), array("backend::lang.experiences.page.comment"));
-        echo "</p>
+      <p class=\"txt\"><span id=\"exp\" class=\"first-word\">Experiencias</span> pensadas para ti </p>
         <img class=\"brush\" src=\"";
         // line 7
         echo url("/");
@@ -68,7 +63,7 @@ class __TwigTemplate_2d0e3ec13ac8068bacf06a6a764d8c43f0bdde585b0f26b41699468dc77
 
     public function getDebugInfo()
     {
-        return array (  56 => 20,  52 => 19,  44 => 13,  40 => 12,  32 => 7,  26 => 6,  19 => 1,);
+        return array (  51 => 20,  47 => 19,  39 => 13,  35 => 12,  27 => 7,  19 => 1,);
     }
 
     public function getSourceContext()
@@ -78,7 +73,7 @@ class __TwigTemplate_2d0e3ec13ac8068bacf06a6a764d8c43f0bdde585b0f26b41699468dc77
   
   <div class=\"header-container big-div\">
     <div id=\"exp-header\" class=\"header-txt\">
-      <p class=\"txt\"><span id=\"exp\" class=\"first-word\">{{ \"backend::lang.experiences.page.h1\"|trans }}</span>{{ \"backend::lang.experiences.page.comment\"|trans }}</p>
+      <p class=\"txt\"><span id=\"exp\" class=\"first-word\">Experiencias</span> pensadas para ti </p>
         <img class=\"brush\" src=\"{{url('/')}}/plugins/rainlab/pages/assets/svg/brush-header.svg\" alt=\"\">
     </div>
    

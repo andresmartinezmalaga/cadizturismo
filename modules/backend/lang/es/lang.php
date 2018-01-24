@@ -541,6 +541,16 @@ return [
         'selected_size' => 'Selección:'
     ],
 
+    'menuheader' => [
+        'allEvents' => 'Todos los eventos',
+        'whereToGo' => 'Dónde ir',
+        'whatToDo' => 'Qué hacer',
+        'whatToLive' => 'Qué vivir',
+        'myStance' => 'Mi estancia',
+        'comarcas' => 'Comarcas',
+        'municipios' => 'Municipios'
+    ],
+
     'home' => [
         'page' => [
             'h1' => 'Playas',
