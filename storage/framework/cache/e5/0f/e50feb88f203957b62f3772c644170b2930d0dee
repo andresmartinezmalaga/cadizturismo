@@ -1,0 +1,20 @@
+<<<<<<< HEAD
+<<<<<<< HEAD:storage/framework/cache/77/ee/77ee4114143c1d0b29e0578c6678cd445532dc9c
+1516816424a:1:{s:9:"legal.htm";a:7:{s:8:"fileName";s:9:"legal.htm";s:7:"content";s:217:"[viewBag]
+=======
+1516815253a:1:{s:9:"legal.htm";a:7:{s:8:"fileName";s:9:"legal.htm";s:7:"content";s:217:"[viewBag]
+>>>>>>> d702da4b20f1bef006c6a5f4442dc8592d75cc38:storage/framework/cache/e5/0f/e50feb88f203957b62f3772c644170b2930d0dee
+=======
+1516816044a:1:{s:9:"legal.htm";a:7:{s:8:"fileName";s:9:"legal.htm";s:7:"content";s:217:"[viewBag]
+>>>>>>> 10ebf73545fd8470749cf0ac562b89208e5e8986
+title = "Legal"
+url = "/legal"
+template = "pages"
+cover = "default.jpg"
+is_hidden = 0
+layout = "default"
+localeUrl[en] = "/legal"
+localeUrl[fr] = "/legal"
+localeUrl[de] = "/legal"
+localeUrl[ru] = "/legal"
+==";s:5:"mtime";i:1516786666;s:6:"markup";s:0:"";s:4:"code";N;s:7:"viewBag";a:7:{s:5:"title";s:5:"Legal";s:3:"url";s:6:"/legal";s:8:"template";s:5:"pages";s:5:"cover";s:11:"default.jpg";s:9:"is_hidden";s:1:"0";s:6:"layout";s:7:"default";s:9:"localeUrl";a:4:{s:2:"en";s:6:"/legal";s:2:"fr";s:6:"/legal";s:2:"de";s:6:"/legal";s:2:"ru";s:6:"/legal";}}s:12:"parsedMarkup";s:0:"";}}

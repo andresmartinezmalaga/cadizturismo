@@ -1,0 +1,125 @@
+1516816065a:1:{s:15:"site/search.htm";a:6:{s:8:"fileName";s:15:"site/search.htm";s:7:"content";s:2408:"==
+
+<?php 
+
+  function onStart()
+  {
+    $this['lang']=\App::getLocale();
+    if($this['lang']==''){
+      $this['lang']='es';
+    } 
+  }
+
+?>
+
+==
+
+<div class="search-bar-container">
+  <div class="search-bar">
+    <form data-request="onFindExperience">
+      <div class="inputs-container">
+        
+        <div class="days-container">
+          <select class="custom-select select-days" name="days">
+            {% for i in 1..7 %}
+              {% if i<2 %}
+              	* <option value="{{ i }}">{{ i }} {{'día'|_}}</option>
+              {% else %}
+		            * <option value="{{ i }}">{{ i }} {{ 'días'|_}}</option>
+              {% endif %}
+            {% endfor %}
+          </select>
+          <span class="select-title">{{ 'TU ESTANCIA'|_ }}</span>
+        </div>
+        
+        {% component 'cadizevent' %}
+        
+        <div class="interests-container">
+          <select class="custom-select select-interests" name="interest">
+            <option value="playa-gastronomia">{{'Playa y gastronomía'|_ }}</option>
+            <option value="cultura-gastronomia">{{'Cultura y gastronomía'|_ }}</option>
+            <option value="fiesta-cultura">{{'Fiesta y cultura'|_ }}</option>
+            <option value="gastronomia-naturaleza">{{'Gastronomía y naturaleza'|_ }}</option>
+            <option value="naturaleza-aventura">{{'Naturaleza y aventura'|_ }}</option>
+            <option value="playa-naturaleza">{{'Playa y naturaleza'|_ }}</option>
+            <option value="vino-tradicion">{{'Vino y tradición'|_ }}</option>
+            <option value="aventura-tradicion">{{'Aventura y tradición'|_ }}</option>
+          </select>
+          <span class="select-title">{{ 'INTERESES'|_ }}</span>
+        </div>
+        
+        <div class="type-container">
+          <select class="custom-select select-type" name="tvisit">
+            <option value="cadiz-oculta">{{ 'Cádiz oculta'|_ }}</option>
+            <option value="cadiz-autentica">{{ 'Cádiz auténtica'|_ }}</option>
+            <option value="cadiz-relax">{{ 'Cádiz relax'|_ }}</option>
+            <option value="cadiz-urbano">{{ 'Cádiz urbano'|_ }}</option>
+          </select>
+          <span class="select-title">{{ 'TIPO DE VISITA'|_ }}</span>
+        </div>
+      </div>
+      
+      <div class="button-container">
+        <input type="submit" value="{{ 'Ven a Cádiz'|_ }}">
+      </div>
+    </form>
+  </div>
+</div>";s:5:"mtime";i:1516814503;s:6:"markup";s:2261:"<div class="search-bar-container">
+  <div class="search-bar">
+    <form data-request="onFindExperience">
+      <div class="inputs-container">
+        
+        <div class="days-container">
+          <select class="custom-select select-days" name="days">
+            {% for i in 1..7 %}
+              {% if i<2 %}
+              	* <option value="{{ i }}">{{ i }} {{'día'|_}}</option>
+              {% else %}
+		            * <option value="{{ i }}">{{ i }} {{ 'días'|_}}</option>
+              {% endif %}
+            {% endfor %}
+          </select>
+          <span class="select-title">{{ 'TU ESTANCIA'|_ }}</span>
+        </div>
+        
+        {% component 'cadizevent' %}
+        
+        <div class="interests-container">
+          <select class="custom-select select-interests" name="interest">
+            <option value="playa-gastronomia">{{'Playa y gastronomía'|_ }}</option>
+            <option value="cultura-gastronomia">{{'Cultura y gastronomía'|_ }}</option>
+            <option value="fiesta-cultura">{{'Fiesta y cultura'|_ }}</option>
+            <option value="gastronomia-naturaleza">{{'Gastronomía y naturaleza'|_ }}</option>
+            <option value="naturaleza-aventura">{{'Naturaleza y aventura'|_ }}</option>
+            <option value="playa-naturaleza">{{'Playa y naturaleza'|_ }}</option>
+            <option value="vino-tradicion">{{'Vino y tradición'|_ }}</option>
+            <option value="aventura-tradicion">{{'Aventura y tradición'|_ }}</option>
+          </select>
+          <span class="select-title">{{ 'INTERESES'|_ }}</span>
+        </div>
+        
+        <div class="type-container">
+          <select class="custom-select select-type" name="tvisit">
+            <option value="cadiz-oculta">{{ 'Cádiz oculta'|_ }}</option>
+            <option value="cadiz-autentica">{{ 'Cádiz auténtica'|_ }}</option>
+            <option value="cadiz-relax">{{ 'Cádiz relax'|_ }}</option>
+            <option value="cadiz-urbano">{{ 'Cádiz urbano'|_ }}</option>
+          </select>
+          <span class="select-title">{{ 'TIPO DE VISITA'|_ }}</span>
+        </div>
+      </div>
+      
+      <div class="button-container">
+        <input type="submit" value="{{ 'Ven a Cádiz'|_ }}">
+      </div>
+    </form>
+  </div>
+</div>";s:4:"code";s:128:" 
+
+  function onStart()
+  {
+    $this['lang']=\App::getLocale();
+    if($this['lang']==''){
+      $this['lang']='es';
+    } 
+  }";s:17:"_PARSER_ERROR_INI";s:0:"";}}

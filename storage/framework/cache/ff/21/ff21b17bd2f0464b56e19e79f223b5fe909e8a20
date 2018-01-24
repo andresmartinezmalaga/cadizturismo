@@ -1,0 +1,90 @@
+<<<<<<< HEAD
+<<<<<<< HEAD:storage/framework/cache/96/24/9624b266f95bc9bdc6d66178fb678ec0c1908645
+1516816424a:1:{s:10:"playas.htm";a:7:{s:8:"fileName";s:10:"playas.htm";s:7:"content";s:2312:"[viewBag]
+=======
+1516815253a:1:{s:10:"playas.htm";a:7:{s:8:"fileName";s:10:"playas.htm";s:7:"content";s:2312:"[viewBag]
+>>>>>>> d702da4b20f1bef006c6a5f4442dc8592d75cc38:storage/framework/cache/ff/21/ff21b17bd2f0464b56e19e79f223b5fe909e8a20
+=======
+1516816044a:1:{s:10:"playas.htm";a:7:{s:8:"fileName";s:10:"playas.htm";s:7:"content";s:2312:"[viewBag]
+>>>>>>> 10ebf73545fd8470749cf0ac562b89208e5e8986
+title = "playas"
+url = "/playas"
+template = "pages"
+cover = "default.jpg"
+is_hidden = 0
+layout = "playa"
+localeUrl[en] = "/playas"
+localeUrl[fr] = "/playas"
+localeUrl[de] = "/playas"
+localeUrl[ru] = "/playas"
+==
+<!-- HEADER -->
+<div class="header-general header-playas">
+	<div class="header-container">
+		<div class="header-txt">
+
+			<h1 class="txt">Playas</h1><img class="brush fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
+	</div>
+	<!-- NUEVA FOTO -->
+	<img class="background-image fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/playas.jpg" alt=""></div>
+<div class="section-txt-comarca">
+	<!-- NUEVO DIV -->
+	<div class="txt-container">
+
+		<p class="title">PLAYAS
+			<br>LLENAS
+			<br>DE LUZ</p><img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+
+		<p class="desc"><strong>La provincia reúne 260 kilómetros de costa y 138 kilómetros de playas: calas, ensenadas, arenales de varios kilómetros.</strong> Hay playas con historia como la de Trafalgar, frente a la que se libró la famosa batalla y playas de película como la de La Caleta donde se grabaron escenas del 007. Hay playas pioneras en Europa como la Victoria, en conseguir la certificación de gestión medioambiental de la UE y playas de colores como las de Tarifa, con el vértigo de los fly-surf y sus cometas. Playas ideales para la práctica del windsurf; igualmente la pesca submarina goza de numerosos adeptos entre las transparentes aguas de sus numerosas playas: Los Lances, Bolonia, y Valdevaqueros entre otras. En total, 83 playas distintas.</p>
+
+		<p class="desc">Llaman la atención los acantilados de los Caños de Meca (Barbate) y las calas de Conil. En algunas nos encontramos con monumentos naturales como las dunas de la playa de Bolonia o los corrales de pesca de Rota.</p>
+
+		<p class="desc">En Cádiz es muy frecuente que el mar se encuentre con la montaña, con paisajes de pinares, bosques y marismas. Punta Candor en Rota y la playa del Castillo de San Fernando, son playas muy naturales, pero cada una a su manera: si en una destacan los macizos rocosos, en otras sólo se puede acceder a nado o a pie.</p>
+	</div>
+</div>";s:5:"mtime";i:1516786666;s:6:"markup";s:2090:"<!-- HEADER -->
+<div class="header-general header-playas">
+	<div class="header-container">
+		<div class="header-txt">
+
+			<h1 class="txt">Playas</h1><img class="brush fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
+	</div>
+	<!-- NUEVA FOTO -->
+	<img class="background-image fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/playas.jpg" alt=""></div>
+<div class="section-txt-comarca">
+	<!-- NUEVO DIV -->
+	<div class="txt-container">
+
+		<p class="title">PLAYAS
+			<br>LLENAS
+			<br>DE LUZ</p><img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+
+		<p class="desc"><strong>La provincia reúne 260 kilómetros de costa y 138 kilómetros de playas: calas, ensenadas, arenales de varios kilómetros.</strong> Hay playas con historia como la de Trafalgar, frente a la que se libró la famosa batalla y playas de película como la de La Caleta donde se grabaron escenas del 007. Hay playas pioneras en Europa como la Victoria, en conseguir la certificación de gestión medioambiental de la UE y playas de colores como las de Tarifa, con el vértigo de los fly-surf y sus cometas. Playas ideales para la práctica del windsurf; igualmente la pesca submarina goza de numerosos adeptos entre las transparentes aguas de sus numerosas playas: Los Lances, Bolonia, y Valdevaqueros entre otras. En total, 83 playas distintas.</p>
+
+		<p class="desc">Llaman la atención los acantilados de los Caños de Meca (Barbate) y las calas de Conil. En algunas nos encontramos con monumentos naturales como las dunas de la playa de Bolonia o los corrales de pesca de Rota.</p>
+
+		<p class="desc">En Cádiz es muy frecuente que el mar se encuentre con la montaña, con paisajes de pinares, bosques y marismas. Punta Candor en Rota y la playa del Castillo de San Fernando, son playas muy naturales, pero cada una a su manera: si en una destacan los macizos rocosos, en otras sólo se puede acceder a nado o a pie.</p>
+	</div>
+</div>";s:4:"code";N;s:7:"viewBag";a:7:{s:5:"title";s:6:"playas";s:3:"url";s:7:"/playas";s:8:"template";s:5:"pages";s:5:"cover";s:11:"default.jpg";s:9:"is_hidden";s:1:"0";s:6:"layout";s:5:"playa";s:9:"localeUrl";a:4:{s:2:"en";s:7:"/playas";s:2:"fr";s:7:"/playas";s:2:"de";s:7:"/playas";s:2:"ru";s:7:"/playas";}}s:12:"parsedMarkup";s:2090:"<!-- HEADER -->
+<div class="header-general header-playas">
+	<div class="header-container">
+		<div class="header-txt">
+
+			<h1 class="txt">Playas</h1><img class="brush fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
+	</div>
+	<!-- NUEVA FOTO -->
+	<img class="background-image fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/playas.jpg" alt=""></div>
+<div class="section-txt-comarca">
+	<!-- NUEVO DIV -->
+	<div class="txt-container">
+
+		<p class="title">PLAYAS
+			<br>LLENAS
+			<br>DE LUZ</p><img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+
+		<p class="desc"><strong>La provincia reúne 260 kilómetros de costa y 138 kilómetros de playas: calas, ensenadas, arenales de varios kilómetros.</strong> Hay playas con historia como la de Trafalgar, frente a la que se libró la famosa batalla y playas de película como la de La Caleta donde se grabaron escenas del 007. Hay playas pioneras en Europa como la Victoria, en conseguir la certificación de gestión medioambiental de la UE y playas de colores como las de Tarifa, con el vértigo de los fly-surf y sus cometas. Playas ideales para la práctica del windsurf; igualmente la pesca submarina goza de numerosos adeptos entre las transparentes aguas de sus numerosas playas: Los Lances, Bolonia, y Valdevaqueros entre otras. En total, 83 playas distintas.</p>
+
+		<p class="desc">Llaman la atención los acantilados de los Caños de Meca (Barbate) y las calas de Conil. En algunas nos encontramos con monumentos naturales como las dunas de la playa de Bolonia o los corrales de pesca de Rota.</p>
+
+		<p class="desc">En Cádiz es muy frecuente que el mar se encuentre con la montaña, con paisajes de pinares, bosques y marismas. Punta Candor en Rota y la playa del Castillo de San Fernando, son playas muy naturales, pero cada una a su manera: si en una destacan los macizos rocosos, en otras sólo se puede acceder a nado o a pie.</p>
+	</div>
+</div>";}}

@@ -1390,14 +1390,141 @@ html, body {
     margin-top: 36px; }
 
 .publis {
-  width: 80%;
+  width: 85%;
   margin: 40px auto 0px auto;
   display: grid;
-  grid-template-columns: repeat(3, 370px);
-  -ms-grid-template-columns: repeat(3, 370px); }
+  justify-content: center;
+  grid-template-columns: repeat(3, 400px);
+  -ms-grid-template-columns: repeat(3, 400px);
+  grid-row-gap: 30px;
+  -ms-grid-row-gap: 30px; }
   .publis .publicacion {
-    border: 1px solid red;
-    min-height: 470px; }
+    border-bottom: 1px solid #CECECE;
+    min-height: 525px;
+    position: relative; }
+    .publis .publicacion:before {
+      content: '';
+      position: absolute;
+      z-index: 10;
+      right: 0;
+      width: 1px;
+      height: 93.5%;
+      background: #CECECE; }
+    .publis .publicacion:nth-child(3):before, .publis .publicacion:nth-child(6):before {
+      content: none; }
+    .publis .publicacion .publi-title {
+      font-size: 42px;
+      line-height: 51px;
+      font-weight: 100;
+      color: #9B9B9B;
+      margin-bottom: 2px;
+      max-width: 93%;
+      min-height: 102px;
+      padding-left: 30px;
+      text-transform: uppercase; }
+    .publis .publicacion .publi-icon {
+      margin-bottom: 23px;
+      padding-left: 30px;
+      max-height: 55px; }
+    .publis .publicacion .publi-desc {
+      font-size: 16px;
+      line-height: 33px;
+      color: #9B9B9B;
+      max-width: 91%;
+      min-height: 165px;
+      padding-left: 30px; }
+    .publis .publicacion .languages-publi {
+      color: #CECECE;
+      font-size: 12px;
+      line-height: 24px;
+      max-width: 93%;
+      padding-left: 30px;
+      min-height: 96px; }
+      .publis .publicacion .languages-publi #languages-title {
+        color: #9B9B9B;
+        text-transform: uppercase; }
+    .publis .publicacion a {
+      color: #F5A623;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 27px; }
+      .publis .publicacion a img {
+        margin-left: 8px; }
+      .publis .publicacion a:hover, .publis .publicacion a:focus, .publis .publicacion a:active {
+        text-decoration: none;
+        outline: none;
+        opacity: 0.7; }
+    .publis .publicacion .download-link img {
+      -webkit-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      transform: rotate(90deg); }
+    .publis .publicacion .links-container {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      max-width: 91%;
+      justify-content: space-between;
+      padding-left: 30px; }
+
+@media (max-width: 1250px) and (min-width: 840px) {
+  .publis {
+    grid-template-columns: repeat(2, 400px) !important;
+    -ms-grid-template-columns: repeat(2, 400px) !important; }
+    .publis .publicacion:nth-child(2):before, .publis .publicacion:nth-child(4):before, .publis .publicacion:nth-child(6):before {
+      content: none; }
+    .publis .publicacion:nth-child(1):before, .publis .publicacion:nth-child(3):before, .publis .publicacion:nth-child(5):before {
+      content: '';
+      position: absolute;
+      z-index: 10;
+      right: 0;
+      width: 1px;
+      height: 93.5%;
+      background: #CECECE; } }
+
+@media (max-width: 839px) and (min-width: 661px) {
+  .publis {
+    grid-template-columns: repeat(2, 320px) !important;
+    -ms-grid-template-columns: repeat(2, 320px) !important; }
+    .publis .publicacion:nth-child(2):before, .publis .publicacion:nth-child(4):before, .publis .publicacion:nth-child(6):before {
+      content: none; }
+    .publis .publicacion:nth-child(1):before, .publis .publicacion:nth-child(3):before, .publis .publicacion:nth-child(5):before {
+      content: '';
+      position: absolute;
+      z-index: 10;
+      right: 0;
+      width: 1px;
+      height: 93.5%;
+      background: #CECECE; }
+    .publis .publicacion .links-container {
+      margin-bottom: 30px; }
+    .publis .publicacion .publi-title {
+      font-size: 33px;
+      line-height: 36px; }
+    .publis .publicacion .publi-desc {
+      min-height: 231px; }
+    .publis .publicacion a {
+      font-size: 12px; } }
+
+@media (max-width: 660px) {
+  .publicaciones-title {
+    font-size: 34px !important; }
+  .publis {
+    grid-template-columns: repeat(1, 320px) !important;
+    -ms-grid-template-columns: repeat(1, 320px) !important; }
+    .publis .publicacion:before {
+      content: none; }
+    .publis .publicacion .links-container {
+      margin-bottom: 30px; }
+    .publis .publicacion .publi-title {
+      font-size: 33px;
+      line-height: 36px; }
+    .publis .publicacion .publi-desc {
+      min-height: 231px; }
+    .publis .publicacion a {
+      font-size: 12px; } }
 
 @media (max-width: 1100px) {
   .ways .way {
@@ -2070,7 +2197,7 @@ html, body {
   .page-cultura {
     width: 100% !important; }
   #ayuda-header .txt {
-    font-size: 120px !important;
+    font-size: 100px !important;
     line-height: 120px !important; }
   .contact h3 {
     font-size: 45px; }
