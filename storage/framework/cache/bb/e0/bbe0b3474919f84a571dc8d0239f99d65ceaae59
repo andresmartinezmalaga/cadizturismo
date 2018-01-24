@@ -1,0 +1,125 @@
+1516800216a:1:{s:15:"site/search.htm";a:6:{s:8:"fileName";s:15:"site/search.htm";s:7:"content";s:2968:"==
+
+<?php 
+
+  function onStart()
+  {
+    $this['lang']=\App::getLocale();
+    if($this['lang']==''){
+      $this['lang']='es';
+    } 
+  }
+
+?>
+
+==
+
+<div class="search-bar-container">
+  <div class="search-bar">
+    <form data-request="onFindExperience">
+      <div class="inputs-container">
+        
+        <div class="days-container">
+          <select class="custom-select select-days" name="days">
+            {% for i in 1..7 %}
+              {% if i<2 %}
+              	* <option value="{{ i }}">{{ i }} {{ "backend::lang.experiences.search.day"|trans }}</option>
+              {% else %}
+		            * <option value="{{ i }}">{{ i }} {{ "backend::lang.experiences.search.days"|trans }}</option>
+              {% endif %}
+            {% endfor %}
+          </select>
+          <span class="select-title">{{ "backend::lang.experiences.search.select1_name"|trans }}</span>
+        </div>
+        
+        {% component 'cadizevent' %}
+        
+        <div class="interests-container">
+          <select class="custom-select select-interests" name="interest">
+            <option value="playa-gastronomia">{{ "backend::lang.experiences.search.interest_1"|trans }}</option>
+            <option value="cultura-gastronomia">{{ "backend::lang.experiences.search.interest_2"|trans }}</option>
+            <option value="fiesta-cultura">{{ "backend::lang.experiences.search.interest_3"|trans }}</option>
+            <option value="gastronomia-naturaleza">{{ "backend::lang.experiences.search.interest_4"|trans }}</option>
+            <option value="naturaleza-aventura">{{ "backend::lang.experiences.search.interest_5"|trans }}</option>
+            <option value="playa-naturaleza">{{ "backend::lang.experiences.search.interest_6"|trans }}</option>
+            <option value="vino-tradicion">{{ "backend::lang.experiences.search.interest_7"|trans }}</option>
+            <option value="aventura-tradicion">{{ "backend::lang.experiences.search.interest_8"|trans }}</option>
+          </select>
+          <span class="select-title">{{ "backend::lang.experiences.search.select2_name"|trans }}</span>
+        </div>
+        
+        <div class="type-container">
+          <select class="custom-select select-type" name="tvisit">
+            <option value="cadiz-oculta">{{ "backend::lang.experiences.search.type_1"|trans }}</option>
+            <option value="cadiz-autentica">{{ "backend::lang.experiences.search.type_2"|trans }}</option>
+            <option value="cadiz-relax">{{ "backend::lang.experiences.search.type_3"|trans }}</option>
+            <option value="cadiz-urbano">{{ "backend::lang.experiences.search.type_4"|trans }}</option>
+          </select>
+          <span class="select-title">{{ "backend::lang.experiences.search.select3_name"|trans }}</span>
+        </div>
+      </div>
+      
+      <div class="button-container">
+        <input type="submit" value="{{ "backend::lang.experiences.search.submit"|trans }}">
+      </div>
+    </form>
+  </div>
+</div>";s:5:"mtime";i:1516798335;s:6:"markup";s:2821:"<div class="search-bar-container">
+  <div class="search-bar">
+    <form data-request="onFindExperience">
+      <div class="inputs-container">
+        
+        <div class="days-container">
+          <select class="custom-select select-days" name="days">
+            {% for i in 1..7 %}
+              {% if i<2 %}
+              	* <option value="{{ i }}">{{ i }} {{ "backend::lang.experiences.search.day"|trans }}</option>
+              {% else %}
+		            * <option value="{{ i }}">{{ i }} {{ "backend::lang.experiences.search.days"|trans }}</option>
+              {% endif %}
+            {% endfor %}
+          </select>
+          <span class="select-title">{{ "backend::lang.experiences.search.select1_name"|trans }}</span>
+        </div>
+        
+        {% component 'cadizevent' %}
+        
+        <div class="interests-container">
+          <select class="custom-select select-interests" name="interest">
+            <option value="playa-gastronomia">{{ "backend::lang.experiences.search.interest_1"|trans }}</option>
+            <option value="cultura-gastronomia">{{ "backend::lang.experiences.search.interest_2"|trans }}</option>
+            <option value="fiesta-cultura">{{ "backend::lang.experiences.search.interest_3"|trans }}</option>
+            <option value="gastronomia-naturaleza">{{ "backend::lang.experiences.search.interest_4"|trans }}</option>
+            <option value="naturaleza-aventura">{{ "backend::lang.experiences.search.interest_5"|trans }}</option>
+            <option value="playa-naturaleza">{{ "backend::lang.experiences.search.interest_6"|trans }}</option>
+            <option value="vino-tradicion">{{ "backend::lang.experiences.search.interest_7"|trans }}</option>
+            <option value="aventura-tradicion">{{ "backend::lang.experiences.search.interest_8"|trans }}</option>
+          </select>
+          <span class="select-title">{{ "backend::lang.experiences.search.select2_name"|trans }}</span>
+        </div>
+        
+        <div class="type-container">
+          <select class="custom-select select-type" name="tvisit">
+            <option value="cadiz-oculta">{{ "backend::lang.experiences.search.type_1"|trans }}</option>
+            <option value="cadiz-autentica">{{ "backend::lang.experiences.search.type_2"|trans }}</option>
+            <option value="cadiz-relax">{{ "backend::lang.experiences.search.type_3"|trans }}</option>
+            <option value="cadiz-urbano">{{ "backend::lang.experiences.search.type_4"|trans }}</option>
+          </select>
+          <span class="select-title">{{ "backend::lang.experiences.search.select3_name"|trans }}</span>
+        </div>
+      </div>
+      
+      <div class="button-container">
+        <input type="submit" value="{{ "backend::lang.experiences.search.submit"|trans }}">
+      </div>
+    </form>
+  </div>
+</div>";s:4:"code";s:128:" 
+
+  function onStart()
+  {
+    $this['lang']=\App::getLocale();
+    if($this['lang']==''){
+      $this['lang']='es';
+    } 
+  }";s:17:"_PARSER_ERROR_INI";s:0:"";}}
