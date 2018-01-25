@@ -24,7 +24,8 @@
         <img class="separator-tiny" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg">
         <ul class="menu-ul donde-ul">
           {% for item in staticMenu.menuItems %}
-            <li class="menu-item"><a href="{{ item.url }}">{{ item.title | trans |_ }}</a></li>
+            {% set tt = '.'~item.title %}
+            <li class="menu-item"><a href="{{ item.url }}">{{ tt|_ }}</a></li>
           {% endfor %}
         </ul>
         <ul class="menu-mobile">
