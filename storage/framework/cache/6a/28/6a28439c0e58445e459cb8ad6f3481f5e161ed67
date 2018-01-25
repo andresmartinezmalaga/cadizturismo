@@ -1,4 +1,4 @@
-1516870645a:1:{s:20:"site/searchevent.htm";a:6:{s:8:"fileName";s:20:"site/searchevent.htm";s:7:"content";s:2566:"==
+1516871182a:1:{s:20:"site/searchevent.htm";a:6:{s:8:"fileName";s:20:"site/searchevent.htm";s:7:"content";s:2578:"==
 
 <?php 
 
@@ -17,7 +17,9 @@
 ?>
 
 ==
+
 <script>
+    
     var calendarTranslate = {
         enero: "{{ 'enero'|_ }}",
         febrero: "{{ 'febrero'|_ }}",
@@ -32,7 +34,9 @@
         noviembre: "{{ 'noviembre'|_ }}",
         diciembre: "{{ 'diciembre'|_ }}"
     };
+    
 </script>
+
 <div class="search-bar-container">
           <div class="search-bar">
             <form data-request="onFindEvent">
@@ -69,7 +73,8 @@
           <p class="comment">{{ 'Descubre miles de eventos que no querrás perderte'|_ }}</p>
         </div>
       </div>
-    </div>";s:5:"mtime";i:1516816160;s:6:"markup";s:2230:"<script>
+    </div>";s:5:"mtime";i:1516870225;s:6:"markup";s:2241:"<script>
+    
     var calendarTranslate = {
         enero: "{{ 'enero'|_ }}",
         febrero: "{{ 'febrero'|_ }}",
@@ -84,7 +89,9 @@
         noviembre: "{{ 'noviembre'|_ }}",
         diciembre: "{{ 'diciembre'|_ }}"
     };
+    
 </script>
+
 <div class="search-bar-container">
           <div class="search-bar">
             <form data-request="onFindEvent">

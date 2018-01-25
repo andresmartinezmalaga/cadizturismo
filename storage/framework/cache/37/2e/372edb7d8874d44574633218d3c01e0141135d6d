@@ -1,8 +1,4 @@
-<<<<<<< HEAD:storage/framework/cache/37/2e/372edb7d8874d44574633218d3c01e0141135d6d
-1516870645a:1:{s:18:"municipalities.htm";a:6:{s:8:"fileName";s:18:"municipalities.htm";s:7:"content";s:911:"==
-=======
-1516833826a:1:{s:18:"municipalities.htm";a:6:{s:8:"fileName";s:18:"municipalities.htm";s:7:"content";s:919:"==
->>>>>>> 97bddea29b170a1cfbf74751b63497d7665fdae7:storage/framework/cache/01/ac/01aca7e3a7170c9497d56602af261e452662aab9
+1516871182a:1:{s:18:"municipalities.htm";a:6:{s:8:"fileName";s:18:"municipalities.htm";s:7:"content";s:919:"==
 <?php 
 
 	function onStart()
@@ -29,7 +25,7 @@
 				<div class="button-container"><a class="see-event" href="{{url('/')}}/{{lang}}{{municipality.viewBag.url}}">{{'Conocer municipio'|_}} <img src="http://localhost:8888/cadizturismo/plugins/rainlab/pages/assets/svg/link-icon.svg" class="fr-fic fr-dii"></a></div>
 			</div>
 		</div>
-{% endfor %}";s:5:"mtime";i:1516830580;s:6:"markup";s:716:"{% for municipality in municipalities %}
+{% endfor %}";s:5:"mtime";i:1516870225;s:6:"markup";s:716:"{% for municipality in municipalities %}
 	<div class="event">
 			<div class="overlay-img">
 				<br>

@@ -1,5 +1,5 @@
-1516870645a:1:{s:15:"experiences.htm";a:5:{s:8:"fileName";s:15:"experiences.htm";s:7:"content";s:2399:"<div class="search-title-container">
-    <p class="title-search"> {{ "backend::lang.experiences.page.result1"|trans }} {{experiences|length}} {{ "backend::lang.experiences.page.result2"|trans }}</p>
+1516871182a:1:{s:15:"experiences.htm";a:5:{s:8:"fileName";s:15:"experiences.htm";s:7:"content";s:2035:"<div class="search-title-container">
+    <p class="title-search"> {{ 'Hemos encontrado'|_ }} {{experiences|length}} {{ 'experiencias que se adaptan ti'|_ }}</p>
 </div>
 
 <div class="all-events-container">
@@ -18,40 +18,37 @@
 	            <img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/calendar-exp.svg">
 	            	
 	            	{% if experience.viewBag.days < 2 %}
-	              		{% set d = "backend::lang.experiences.search.day"|trans %}
+	              		{% set d = "día" %}
 	              	{% else %}
-	              		{% set d = "backend::lang.experiences.search.days"|trans %}
+	              		{% set d = "días" %}
 	              	{% endif %}
               		
 
-	            <p class="icon-txt">{{experience.viewBag.days}} {{ d|trans }}</p>
+	            <p class="icon-txt">{{experience.viewBag.days}} {{ d|_ }}</p>
 	          </div>          
 	          <div class="icon-pair">
 	            <img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/{{interest[0]}}.svg">
-	              {% set ia = "backend::lang.experiences.page."~interest[0] %}
-	            	<p class="icon-txt">{{ia|trans}}</p>
+	            	<p class="icon-txt">{{interest[0]|_}}</p>
 	          </div>
 	          <div class="icon-pair">
 	            <img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/{{interest[1]}}.svg">
-	            {% set ib = "backend::lang.experiences.page."~interest[1] %}
-	            <p class="icon-txt">{{ib|trans}}</p>
+	            <p class="icon-txt">{{interest[1]|_}}</p>
 	          </div>
 	          <div class="icon-pair">
 	            <img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/cultura-event.svg">
-	            {% set ty = "backend::lang.experiences.page."~experience.viewBag.tvisit %}
-	            <p class="icon-txt">{{ty|trans}}</p>
+	            <p class="icon-txt">{{experience.viewBag.tvisit|_}}</p>
 	          </div>
 	        </div>
 	        <div class="button-container">
-	          <a class="see-event" href="{{url('/')}}/{{lang}}{{experience.viewBag.url}}"> {{ "backend::lang.experiences.page.experience_link"|trans }} <img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/link-icon.svg"></a>
+	          <a class="see-event" href="{{url('/')}}/{{lang}}{{experience.viewBag.url}}"> {{'Ver experiencia'|_}} <img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/link-icon.svg"></a>
 	        </div>
 	      </div>
 	    </div>
 
 	{% endfor %}
 
-</div>";s:5:"mtime";i:1516798335;s:6:"markup";s:2399:"<div class="search-title-container">
-    <p class="title-search"> {{ "backend::lang.experiences.page.result1"|trans }} {{experiences|length}} {{ "backend::lang.experiences.page.result2"|trans }}</p>
+</div>";s:5:"mtime";i:1516870225;s:6:"markup";s:2035:"<div class="search-title-container">
+    <p class="title-search"> {{ 'Hemos encontrado'|_ }} {{experiences|length}} {{ 'experiencias que se adaptan ti'|_ }}</p>
 </div>
 
 <div class="all-events-container">
@@ -70,32 +67,29 @@
 	            <img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/calendar-exp.svg">
 	            	
 	            	{% if experience.viewBag.days < 2 %}
-	              		{% set d = "backend::lang.experiences.search.day"|trans %}
+	              		{% set d = "día" %}
 	              	{% else %}
-	              		{% set d = "backend::lang.experiences.search.days"|trans %}
+	              		{% set d = "días" %}
 	              	{% endif %}
               		
 
-	            <p class="icon-txt">{{experience.viewBag.days}} {{ d|trans }}</p>
+	            <p class="icon-txt">{{experience.viewBag.days}} {{ d|_ }}</p>
 	          </div>          
 	          <div class="icon-pair">
 	            <img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/{{interest[0]}}.svg">
-	              {% set ia = "backend::lang.experiences.page."~interest[0] %}
-	            	<p class="icon-txt">{{ia|trans}}</p>
+	            	<p class="icon-txt">{{interest[0]|_}}</p>
 	          </div>
 	          <div class="icon-pair">
 	            <img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/{{interest[1]}}.svg">
-	            {% set ib = "backend::lang.experiences.page."~interest[1] %}
-	            <p class="icon-txt">{{ib|trans}}</p>
+	            <p class="icon-txt">{{interest[1]|_}}</p>
 	          </div>
 	          <div class="icon-pair">
 	            <img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/cultura-event.svg">
-	            {% set ty = "backend::lang.experiences.page."~experience.viewBag.tvisit %}
-	            <p class="icon-txt">{{ty|trans}}</p>
+	            <p class="icon-txt">{{experience.viewBag.tvisit|_}}</p>
 	          </div>
 	        </div>
 	        <div class="button-container">
-	          <a class="see-event" href="{{url('/')}}/{{lang}}{{experience.viewBag.url}}"> {{ "backend::lang.experiences.page.experience_link"|trans }} <img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/link-icon.svg"></a>
+	          <a class="see-event" href="{{url('/')}}/{{lang}}{{experience.viewBag.url}}"> {{'Ver experiencia'|_}} <img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/link-icon.svg"></a>
 	        </div>
 	      </div>
 	    </div>
