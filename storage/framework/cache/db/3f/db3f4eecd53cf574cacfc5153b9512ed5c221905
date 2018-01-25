@@ -1,0 +1,8 @@
+1516870787a:1:{s:27:"naturaleza-birdwatching.htm";a:7:{s:8:"fileName";s:27:"naturaleza-birdwatching.htm";s:7:"content";s:121:"[viewBag]
+title = "Birdwatching"
+url = "/naturaleza/birdwatching"
+template = "pages"
+is_hidden = 0
+layout = "default"
+
+==";s:5:"mtime";i:1516786666;s:6:"markup";s:0:"";s:4:"code";N;s:7:"viewBag";a:5:{s:5:"title";s:12:"Birdwatching";s:3:"url";s:24:"/naturaleza/birdwatching";s:8:"template";s:5:"pages";s:9:"is_hidden";s:1:"0";s:6:"layout";s:7:"default";}s:12:"parsedMarkup";s:0:"";}}
