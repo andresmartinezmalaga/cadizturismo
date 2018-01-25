@@ -24,7 +24,7 @@
         <img class="separator-tiny" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg">
         <ul class="menu-ul donde-ul">
           {% for item in staticMenu.menuItems %}
-            {% set tt = '.'~item.title %} 
+            {% set tt = '.'~item.title %}
             <li class="menu-item"><a href="{{ item.url }}">{{ tt|_ }}</a></li>
           {% endfor %}
         </ul>
@@ -40,7 +40,7 @@
         <img class="separator-tiny" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg">
         <ul class="menu-ul">
           {% for item in staticMenu4.menuItems %}
-            {% set tt = '.'~item.title %}         
+            {% set tt = '.'~item.title %}
             <li class="menu-item"><a href="{{ item.url }}">{{ tt|_ }}</a></li>
           {% endfor %}
         </ul>
@@ -65,7 +65,7 @@
         <img class="separator-tiny" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg">
         <ul class="menu-ul">
           {% for item in staticMenu3.menuItems %}
-            {% set tt = '.'~item.title %}              
+            {% set tt = '.'~item.title %}
             <li class="menu-item"><a href="{{ item.url }}">{{ tt|_ }}</a></li>
           {% endfor %}
         </ul>

@@ -1,0 +1,282 @@
+1516870806a:1:{s:23:"gastronomia-gourmet.htm";a:7:{s:8:"fileName";s:23:"gastronomia-gourmet.htm";s:7:"content";s:5294:"[viewBag]
+title = "Gourmet"
+url = "/gastronomia/gourmet"
+template = "pages"
+is_hidden = 0
+layout = "default"
+localeUrl[en] = "/gastronomia/gourmet"
+localeUrl[fr] = "/gastronomia/gourmet"
+localeUrl[de] = "/gastronomia/gourmet"
+localeUrl[ru] = "/gastronomia/gourmet"
+==
+<!-- HEADER -->
+<div class="header header-gourmet">
+	<div class="header-container header-village-container">
+		<div class="header-txt header-txt-village">
+
+			<h1 class="txt" id="natu-via">Gourmet</h1><img class="brush fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
+	</div>
+	<!-- NUEVA FOTO -->
+	<img class="background-image fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/gourmetheader.jpg" alt=""></div>
+<!-- TXT-->
+<div class="section-txt-village">
+	<div class="txt-container">
+
+		<p class="title">TERRITORIO
+			<br>GOURMET</p><img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+
+		<p class="desc">La gastronomía de Cádiz cuenta con una oferta Gourmet en productos como el pescado, el queso o la miel que la han convertido en una tendencia culinaria muy apreciada.</p>
+	</div>
+</div>
+<!-- IMAGEN -->
+<div class="featured-element featured-gourmet">
+	<div class="txt-container">
+
+		<p class="title">RUTA CULINARIA EN EL PUERTO DE SANTA MARÍA</p>
+
+		<p class="desc">¿Eres de emociones fuertes? Disfruta de Cádiz como nunca antes.</p><a class="events-link" href="rutas.html">Selección de rutas culinarias <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-arrow-yellow.svg" alt="" class="fr-fic fr-dii">&nbsp;</a>
+		<img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
+	<!-- NUEVA FOTO -->
+	<div class="overlay">
+		<br>
+	</div><img class="img-destacada fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/retinto2.jpg" alt=""></div>
+<div class="section-txt-village">
+	<div class="txt-container">
+
+		<p class="title">3 IDEAS PENSADAS
+			<br>ESPECIALMENTE
+			<br>PARA TI</p><img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
+</div>
+<div class="all-exps" id="exps-playa">
+	<div class="all-events-container">
+		<div class="event event-playa">
+			<div class="overlay-img">
+				<br>
+			</div><img class="rec-img fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/disparate.jpg">
+			<div class="txt-container">
+
+				<p class="name name-bird">DISPARATE</p>
+
+				<p class="subtitle">El restaurante del cocinero José Ruiz Loaiza mezcla cocina tradicional con modernidad.</p><img class="separator separator-playa fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+				<a class="see-event" href="http://disparate.business.site/" target="_blank">Más info <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+		</div>
+		<div class="event event-playa">
+			<div class="overlay-img">
+				<br>
+			</div><img class="rec-img fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/campero.jpg">
+			<div class="txt-container">
+
+				<p class="name name-bird">EL CAMPERO</p>
+
+				<p class="subtitle">La cocina de El Campero aúna las recetas más tradicionales de la gastronomía barbateña.</p><img class="separator separator-playa fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+				<a class="see-event" href="http://www.restauranteelcampero.es/" target="_blank">Más info <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+		</div>
+		<div class="event event-playa">
+			<div class="overlay-img">
+				<br>
+			</div><img class="rec-img fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/ultramar.jpg">
+			<div class="txt-container">
+
+				<p class="name name-bird">ULTRAMAR&amp;NOS</p>
+
+				<p class="subtitle">Espacio moderno, joven, informal y con intenciones de sorprender al cliente.</p><img class="separator separator-playa fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+				<a class="see-event" href="http://www.ultramarynos.com/" target="_blank">Más info <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+		</div>
+	</div>
+</div>
+<div class="icons-row">
+	<div class="i-container">
+		<div class="also-feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/gastro-grey.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Gastronomía</p>
+		</div>
+		<div class="also-feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/cultura-grey.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Cultura</p>
+		</div>
+		<div class="also-feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/ruta-grey.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Ruta</p>
+		</div>
+	</div>
+</div>";s:5:"mtime";i:1516786666;s:6:"markup";s:5026:"<!-- HEADER -->
+<div class="header header-gourmet">
+	<div class="header-container header-village-container">
+		<div class="header-txt header-txt-village">
+
+			<h1 class="txt" id="natu-via">Gourmet</h1><img class="brush fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
+	</div>
+	<!-- NUEVA FOTO -->
+	<img class="background-image fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/gourmetheader.jpg" alt=""></div>
+<!-- TXT-->
+<div class="section-txt-village">
+	<div class="txt-container">
+
+		<p class="title">TERRITORIO
+			<br>GOURMET</p><img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+
+		<p class="desc">La gastronomía de Cádiz cuenta con una oferta Gourmet en productos como el pescado, el queso o la miel que la han convertido en una tendencia culinaria muy apreciada.</p>
+	</div>
+</div>
+<!-- IMAGEN -->
+<div class="featured-element featured-gourmet">
+	<div class="txt-container">
+
+		<p class="title">RUTA CULINARIA EN EL PUERTO DE SANTA MARÍA</p>
+
+		<p class="desc">¿Eres de emociones fuertes? Disfruta de Cádiz como nunca antes.</p><a class="events-link" href="rutas.html">Selección de rutas culinarias <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-arrow-yellow.svg" alt="" class="fr-fic fr-dii">&nbsp;</a>
+		<img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
+	<!-- NUEVA FOTO -->
+	<div class="overlay">
+		<br>
+	</div><img class="img-destacada fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/retinto2.jpg" alt=""></div>
+<div class="section-txt-village">
+	<div class="txt-container">
+
+		<p class="title">3 IDEAS PENSADAS
+			<br>ESPECIALMENTE
+			<br>PARA TI</p><img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
+</div>
+<div class="all-exps" id="exps-playa">
+	<div class="all-events-container">
+		<div class="event event-playa">
+			<div class="overlay-img">
+				<br>
+			</div><img class="rec-img fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/disparate.jpg">
+			<div class="txt-container">
+
+				<p class="name name-bird">DISPARATE</p>
+
+				<p class="subtitle">El restaurante del cocinero José Ruiz Loaiza mezcla cocina tradicional con modernidad.</p><img class="separator separator-playa fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+				<a class="see-event" href="http://disparate.business.site/" target="_blank">Más info <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+		</div>
+		<div class="event event-playa">
+			<div class="overlay-img">
+				<br>
+			</div><img class="rec-img fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/campero.jpg">
+			<div class="txt-container">
+
+				<p class="name name-bird">EL CAMPERO</p>
+
+				<p class="subtitle">La cocina de El Campero aúna las recetas más tradicionales de la gastronomía barbateña.</p><img class="separator separator-playa fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+				<a class="see-event" href="http://www.restauranteelcampero.es/" target="_blank">Más info <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+		</div>
+		<div class="event event-playa">
+			<div class="overlay-img">
+				<br>
+			</div><img class="rec-img fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/ultramar.jpg">
+			<div class="txt-container">
+
+				<p class="name name-bird">ULTRAMAR&amp;NOS</p>
+
+				<p class="subtitle">Espacio moderno, joven, informal y con intenciones de sorprender al cliente.</p><img class="separator separator-playa fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+				<a class="see-event" href="http://www.ultramarynos.com/" target="_blank">Más info <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+		</div>
+	</div>
+</div>
+<div class="icons-row">
+	<div class="i-container">
+		<div class="also-feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/gastro-grey.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Gastronomía</p>
+		</div>
+		<div class="also-feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/cultura-grey.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Cultura</p>
+		</div>
+		<div class="also-feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/ruta-grey.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Ruta</p>
+		</div>
+	</div>
+</div>";s:4:"code";N;s:7:"viewBag";a:6:{s:5:"title";s:7:"Gourmet";s:3:"url";s:20:"/gastronomia/gourmet";s:8:"template";s:5:"pages";s:9:"is_hidden";s:1:"0";s:6:"layout";s:7:"default";s:9:"localeUrl";a:4:{s:2:"en";s:20:"/gastronomia/gourmet";s:2:"fr";s:20:"/gastronomia/gourmet";s:2:"de";s:20:"/gastronomia/gourmet";s:2:"ru";s:20:"/gastronomia/gourmet";}}s:12:"parsedMarkup";s:5026:"<!-- HEADER -->
+<div class="header header-gourmet">
+	<div class="header-container header-village-container">
+		<div class="header-txt header-txt-village">
+
+			<h1 class="txt" id="natu-via">Gourmet</h1><img class="brush fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
+	</div>
+	<!-- NUEVA FOTO -->
+	<img class="background-image fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/gourmetheader.jpg" alt=""></div>
+<!-- TXT-->
+<div class="section-txt-village">
+	<div class="txt-container">
+
+		<p class="title">TERRITORIO
+			<br>GOURMET</p><img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+
+		<p class="desc">La gastronomía de Cádiz cuenta con una oferta Gourmet en productos como el pescado, el queso o la miel que la han convertido en una tendencia culinaria muy apreciada.</p>
+	</div>
+</div>
+<!-- IMAGEN -->
+<div class="featured-element featured-gourmet">
+	<div class="txt-container">
+
+		<p class="title">RUTA CULINARIA EN EL PUERTO DE SANTA MARÍA</p>
+
+		<p class="desc">¿Eres de emociones fuertes? Disfruta de Cádiz como nunca antes.</p><a class="events-link" href="rutas.html">Selección de rutas culinarias <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-arrow-yellow.svg" alt="" class="fr-fic fr-dii">&nbsp;</a>
+		<img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
+	<!-- NUEVA FOTO -->
+	<div class="overlay">
+		<br>
+	</div><img class="img-destacada fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/retinto2.jpg" alt=""></div>
+<div class="section-txt-village">
+	<div class="txt-container">
+
+		<p class="title">3 IDEAS PENSADAS
+			<br>ESPECIALMENTE
+			<br>PARA TI</p><img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
+</div>
+<div class="all-exps" id="exps-playa">
+	<div class="all-events-container">
+		<div class="event event-playa">
+			<div class="overlay-img">
+				<br>
+			</div><img class="rec-img fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/disparate.jpg">
+			<div class="txt-container">
+
+				<p class="name name-bird">DISPARATE</p>
+
+				<p class="subtitle">El restaurante del cocinero José Ruiz Loaiza mezcla cocina tradicional con modernidad.</p><img class="separator separator-playa fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+				<a class="see-event" href="http://disparate.business.site/" target="_blank">Más info <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+		</div>
+		<div class="event event-playa">
+			<div class="overlay-img">
+				<br>
+			</div><img class="rec-img fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/campero.jpg">
+			<div class="txt-container">
+
+				<p class="name name-bird">EL CAMPERO</p>
+
+				<p class="subtitle">La cocina de El Campero aúna las recetas más tradicionales de la gastronomía barbateña.</p><img class="separator separator-playa fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+				<a class="see-event" href="http://www.restauranteelcampero.es/" target="_blank">Más info <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+		</div>
+		<div class="event event-playa">
+			<div class="overlay-img">
+				<br>
+			</div><img class="rec-img fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/ultramar.jpg">
+			<div class="txt-container">
+
+				<p class="name name-bird">ULTRAMAR&amp;NOS</p>
+
+				<p class="subtitle">Espacio moderno, joven, informal y con intenciones de sorprender al cliente.</p><img class="separator separator-playa fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+				<a class="see-event" href="http://www.ultramarynos.com/" target="_blank">Más info <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+		</div>
+	</div>
+</div>
+<div class="icons-row">
+	<div class="i-container">
+		<div class="also-feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/gastro-grey.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Gastronomía</p>
+		</div>
+		<div class="also-feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/cultura-grey.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Cultura</p>
+		</div>
+		<div class="also-feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/ruta-grey.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Ruta</p>
+		</div>
+	</div>
+</div>";}}
