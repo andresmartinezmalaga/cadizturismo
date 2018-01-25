@@ -1537,7 +1537,7 @@ html, body {
   z-index: 10;
   height: auto;
   .publi-container {
-    width: 80%;
+    width: 1200px;
     margin: 0px auto;
     padding: 130px 0px 0px 0px;
   }
@@ -1888,7 +1888,7 @@ html, body {
       }
     }
   }
-  .reportajes {
+  .reportajes, .publicaciones {
     .publi-container {
       width: 80%;
       margin-left: 100px !important;
@@ -1936,7 +1936,7 @@ html, body {
   #header-event-fr .send-info {
     margin-top: 50px !important;
   }
-  .reportajes {
+  .reportajes, .publicaciones {
     .publi-container {
       width: 80%;
       margin-left: 50px !important;
@@ -1987,7 +1987,7 @@ html, body {
     }
   }
 
-  .reportajes {
+  .reportajes, .publicaciones {
     .publi-container {
       width: 80%;
       font-size: 48px;
