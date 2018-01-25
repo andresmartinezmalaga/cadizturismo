@@ -69,3 +69,5 @@ static-pages:
     eventos-dos: {  }
     eventos-uno: {  }
     eventos-tres: {  }
+    sala-prensa: {  }
+    reportaje: {  }

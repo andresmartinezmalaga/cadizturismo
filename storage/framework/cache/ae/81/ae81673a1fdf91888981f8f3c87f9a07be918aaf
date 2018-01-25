@@ -1,0 +1,317 @@
+<<<<<<< HEAD:storage/framework/cache/19/47/194774251bff89980bceb10b1fdc341ffbb73c01
+1516877244a:1:{s:15:"eventos-uno.htm";a:7:{s:8:"fileName";s:15:"eventos-uno.htm";s:7:"content";s:7208:"[viewBag]
+title = "Uno"
+tlayout = "maxi evento"
+url = "/eventos/uno"
+date_start = "2018-01-25 22:32:58"
+date_end = "2018-01-27 22:33:02"
+category = "gastronomía"
+location = "alcalá de los gazules"
+template = "eventos"
+cover = "/cadizturismo/storage/app/media/uploaded-files/templates/caballos.jpg"
+layout = "evento"
+is_hidden = 0
+is_top = 1
+localeUrl[en] = "/eventos/uno"
+localeUrl[fr] = "/eventos/uno"
+localeUrl[de] = "/eventos/uno"
+localeUrl[ru] = "/eventos/uno"
+==
+=======
+1516877130a:1:{s:15:"eventos-uno.htm";a:7:{s:8:"fileName";s:15:"eventos-uno.htm";s:7:"content";s:7173:"[viewBag]
+title = "Uno"
+tlayout = "maxi-evento"
+url = "/eventos/uno"
+date_start = "2018-01-25 22:32:58"
+date_end = "2018-01-27 22:33:02"
+category = "carnaval"
+location = "algeciras"
+template = "eventos"
+cover = "/cadizturismo/storage/app/media/uploaded-files/templates/caballos.jpg"
+layout = "evento"
+is_hidden = 0
+is_top = 0
+localeUrl[en] = "/eventos/uno"
+localeUrl[fr] = "/eventos/uno"
+localeUrl[de] = "/eventos/uno"
+localeUrl[ru] = "/eventos/uno"
+==
+>>>>>>> 491ada266dd4d7718bcf5c9702c800d83ff94f0c:storage/framework/cache/ae/81/ae81673a1fdf91888981f8f3c87f9a07be918aaf
+<!-- HEADER -->
+<div class="header-event main-event">
+	<div class="header-container">
+		<div class="header-txt">
+
+			<h1 class="txt">Carreras de caballos</h1><img class="brush fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
+	</div>
+	<!-- NUEVA FOTO -->
+	<img class="background-image fr-fil fr-dib" value="cover" src="/cadizturismo/storage/app/media/uploaded-files/templates/caballos.jpg" alt="">
+	<!-- FEATURES -->
+	<div class="event-features">
+		<div class="feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/calendar-event.svg" class="fr-fil fr-dib">
+
+			<p class="feature-txt">03.08.17 - 05.08.17</p>
+		</div>
+		<div class="feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/cultura-event.svg" class="fr-fil fr-dib">
+
+			<p class="feature-txt">Cultura</p>
+		</div>
+		<div class="feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/location.svg" class="fr-fil fr-dib">
+
+			<p class="feature-txt">Sanlúcar de Barrameda</p><a class="feature-txt-mapa" href="https://www.google.es/maps/place/11540+Sanl%C3%BAcar+de+Barrameda,+C%C3%A1diz/@36.7732122,-6.391691,12.95z/data=!4m5!3m4!1s0xd0dde12a2f8e5ef:0xe9bbc21d97ce48c6!8m2!3d36.7725774!4d-6.3529689" target="_blank">Ver mapa</a></div>
+	</div>
+</div>
+<!-- SECTION TXT-->
+<div class="section-txt">
+	<div class="big-number-container"><span class="step">1</span></div>
+	<div class="txt-container">
+
+		<p class="title">UN ESCENARIO SINGULAR, UN AMBIENTE INMEJORABLE</p>
+
+		<p class="desc">Las Carreras de Caballos en las playas de Sanlúcar de Barrameda, que celebran el próximo mes de agosto su 173 aniversario.</p>
+
+		<p class="desc">Un hipódromo natural formado en las orillas de las playas sanluqueñas, entre el azul del mar, el verde horizonte del Parque de Doñana y el Paseo Marítimo de la ciudad. Todo un espectáculo hípico reconocido mundialmente como Fiesta de Interés Turístico Internacional.</p>
+	</div>
+</div>
+<!-- SECTION IMG -->
+<div class="section-img"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/caballos2.jpg" alt="" class="fr-fic fr-dii"></div>
+<div class="section-txt">
+	<div class="big-number-container"><span class="step">2</span></div>
+	<div class="txt-container">
+
+		<p class="title">EL ENCUENTRO HÍPICO VERANIEGO MÁS ESPERADO</p>
+
+		<p class="desc">El encuentro se celebra cada año durante el mes de agosto, con la especial incógnita de que la fecha oficial no se establece hasta el final. El calendario de mareas es quien confirma esta cita anual, pues deben cuadrar las carreras con una buena bajamar para que los caballos purasangres puedan competir con orilla y pista suficiente por la playa.&nbsp;</p>
+
+		<p class="desc">La jornada se divide siempre en dos ciclos, de tres días cada uno. El horario de las carreras es otro misterio añadido que no se descubre hasta el mismo día. La cita siempre será a la caída del atardecer, pero entran en juego factores como el estado de la marea y el número de caballos que compiten en la jornada. A partir de las 18h de la tarde, los espectadores comienzan a ubicarse dentro de este hipódromo natural.</p>
+	</div>
+</div>
+<div class="section-img"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/caballos3.jpg" alt="" class="fr-fic fr-dii"></div>
+<div class="section-txt">
+	<div class="big-number-container"><span class="step">3</span></div>
+	<div class="txt-container">
+
+		<p class="title">UN HIPÓDROMO IMPROVISADO</p>
+
+		<p class="desc">Como si de uno convencional se tratase, el recinto se compone de taquillas de apuestas e instalaciones acondicionadas para caballos y jinetes alrededor de 20.000mts2. Antes de cada carrera los participantes desfilan ante sus espectadores para después situarse en los boxes de salida.&nbsp;</p>
+		<!-- VIDEO YOUTUBE -->
+		<iframe src="https://www.youtube.com/embed/C3mJHcRWRSM" frameborder="0" allowfullscreen=""></iframe>
+
+		<p class="desc">Las diferentes pruebas y premios dependen de las características del caballo, del peso del jinete y de otras consideraciones que establecen las diferentes categorías en las que se compite. <a class="section-link" href="https://www.carrerassanlucar.es/">La Real Sociedad de Carreras de Caballos de Sanlúcar</a>, se encarga cada año de la celebración de este acontecimiento deportivo, en el que además una importante cuantía de premios son donados por empresas, entidades e instituciones de la zona, desde la captación de patrocinadores que cada año realiza este asociación.</p>
+	</div>
+</div>
+<div class="section-img"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/caballos4.jpg" alt="" class="fr-fic fr-dii"></div>
+<div class="section-txt">
+	<div class="big-number-container"><span class="step">4</span></div>
+	<div class="txt-container">
+
+		<p class="title">PURO ESPECTÁCULO</p>
+
+		<p class="desc">Las Carreras de Caballos de Sanlúcar ya se incluyen dentro de la Sociedad Estatal de Loterías y Apuestas del Estado, perteneciendo al calendario nacional de la apuesta hípica externa, junto a hipódromos como el de Madrid, San Sebastián, Dos Hermanas y Pineda.</p>
+
+		<p class="desc">Durante el año se realizan otros actos previos como el Concurso Morfológico Caballar, en marzo, o la elección del Cartel anunciador. Durante el mes de agosto, se celebran además otros actos paralelos como concursos fotográficos, de cometas, castillos y figuras de arena y otras competiciones deportivas que atraen a miles de personas a este encuentro tradicional.</p><span class="download">Descargar el cartel del evento <img src="/cadizturismo/storage/app/media/uploaded-files/templates/yellow-arrow.svg" class="fr-fic fr-dii">&nbsp;</span>
+		<img class="cartel fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/cartel-caballos.jpg"></div>
+</div>
+<div class="section-img"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/caballos5.jpg" alt="" class="fr-fic fr-dii"></div>
+<div class="icons-row">
+	<div class="i-container">
+		<div class="also-feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/deporte-grey.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Deporte</p>
+		</div>
+		<div class="also-feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/ocio.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Ocio</p>
+		</div>
+		<div class="also-feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/cultura-grey.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Cultura</p>
+		</div>
+	</div>
+<<<<<<< HEAD:storage/framework/cache/19/47/194774251bff89980bceb10b1fdc341ffbb73c01
+</div>";s:5:"mtime";i:1516874420;s:6:"markup";s:6720:"<!-- HEADER -->
+=======
+</div>";s:5:"mtime";i:1516870226;s:6:"markup";s:6720:"<!-- HEADER -->
+>>>>>>> 491ada266dd4d7718bcf5c9702c800d83ff94f0c:storage/framework/cache/ae/81/ae81673a1fdf91888981f8f3c87f9a07be918aaf
+<div class="header-event main-event">
+	<div class="header-container">
+		<div class="header-txt">
+
+			<h1 class="txt">Carreras de caballos</h1><img class="brush fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
+	</div>
+	<!-- NUEVA FOTO -->
+	<img class="background-image fr-fil fr-dib" value="cover" src="/cadizturismo/storage/app/media/uploaded-files/templates/caballos.jpg" alt="">
+	<!-- FEATURES -->
+	<div class="event-features">
+		<div class="feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/calendar-event.svg" class="fr-fil fr-dib">
+
+			<p class="feature-txt">03.08.17 - 05.08.17</p>
+		</div>
+		<div class="feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/cultura-event.svg" class="fr-fil fr-dib">
+
+			<p class="feature-txt">Cultura</p>
+		</div>
+		<div class="feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/location.svg" class="fr-fil fr-dib">
+
+			<p class="feature-txt">Sanlúcar de Barrameda</p><a class="feature-txt-mapa" href="https://www.google.es/maps/place/11540+Sanl%C3%BAcar+de+Barrameda,+C%C3%A1diz/@36.7732122,-6.391691,12.95z/data=!4m5!3m4!1s0xd0dde12a2f8e5ef:0xe9bbc21d97ce48c6!8m2!3d36.7725774!4d-6.3529689" target="_blank">Ver mapa</a></div>
+	</div>
+</div>
+<!-- SECTION TXT-->
+<div class="section-txt">
+	<div class="big-number-container"><span class="step">1</span></div>
+	<div class="txt-container">
+
+		<p class="title">UN ESCENARIO SINGULAR, UN AMBIENTE INMEJORABLE</p>
+
+		<p class="desc">Las Carreras de Caballos en las playas de Sanlúcar de Barrameda, que celebran el próximo mes de agosto su 173 aniversario.</p>
+
+		<p class="desc">Un hipódromo natural formado en las orillas de las playas sanluqueñas, entre el azul del mar, el verde horizonte del Parque de Doñana y el Paseo Marítimo de la ciudad. Todo un espectáculo hípico reconocido mundialmente como Fiesta de Interés Turístico Internacional.</p>
+	</div>
+</div>
+<!-- SECTION IMG -->
+<div class="section-img"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/caballos2.jpg" alt="" class="fr-fic fr-dii"></div>
+<div class="section-txt">
+	<div class="big-number-container"><span class="step">2</span></div>
+	<div class="txt-container">
+
+		<p class="title">EL ENCUENTRO HÍPICO VERANIEGO MÁS ESPERADO</p>
+
+		<p class="desc">El encuentro se celebra cada año durante el mes de agosto, con la especial incógnita de que la fecha oficial no se establece hasta el final. El calendario de mareas es quien confirma esta cita anual, pues deben cuadrar las carreras con una buena bajamar para que los caballos purasangres puedan competir con orilla y pista suficiente por la playa.&nbsp;</p>
+
+		<p class="desc">La jornada se divide siempre en dos ciclos, de tres días cada uno. El horario de las carreras es otro misterio añadido que no se descubre hasta el mismo día. La cita siempre será a la caída del atardecer, pero entran en juego factores como el estado de la marea y el número de caballos que compiten en la jornada. A partir de las 18h de la tarde, los espectadores comienzan a ubicarse dentro de este hipódromo natural.</p>
+	</div>
+</div>
+<div class="section-img"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/caballos3.jpg" alt="" class="fr-fic fr-dii"></div>
+<div class="section-txt">
+	<div class="big-number-container"><span class="step">3</span></div>
+	<div class="txt-container">
+
+		<p class="title">UN HIPÓDROMO IMPROVISADO</p>
+
+		<p class="desc">Como si de uno convencional se tratase, el recinto se compone de taquillas de apuestas e instalaciones acondicionadas para caballos y jinetes alrededor de 20.000mts2. Antes de cada carrera los participantes desfilan ante sus espectadores para después situarse en los boxes de salida.&nbsp;</p>
+		<!-- VIDEO YOUTUBE -->
+		<iframe src="https://www.youtube.com/embed/C3mJHcRWRSM" frameborder="0" allowfullscreen=""></iframe>
+
+		<p class="desc">Las diferentes pruebas y premios dependen de las características del caballo, del peso del jinete y de otras consideraciones que establecen las diferentes categorías en las que se compite. <a class="section-link" href="https://www.carrerassanlucar.es/">La Real Sociedad de Carreras de Caballos de Sanlúcar</a>, se encarga cada año de la celebración de este acontecimiento deportivo, en el que además una importante cuantía de premios son donados por empresas, entidades e instituciones de la zona, desde la captación de patrocinadores que cada año realiza este asociación.</p>
+	</div>
+</div>
+<div class="section-img"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/caballos4.jpg" alt="" class="fr-fic fr-dii"></div>
+<div class="section-txt">
+	<div class="big-number-container"><span class="step">4</span></div>
+	<div class="txt-container">
+
+		<p class="title">PURO ESPECTÁCULO</p>
+
+		<p class="desc">Las Carreras de Caballos de Sanlúcar ya se incluyen dentro de la Sociedad Estatal de Loterías y Apuestas del Estado, perteneciendo al calendario nacional de la apuesta hípica externa, junto a hipódromos como el de Madrid, San Sebastián, Dos Hermanas y Pineda.</p>
+
+		<p class="desc">Durante el año se realizan otros actos previos como el Concurso Morfológico Caballar, en marzo, o la elección del Cartel anunciador. Durante el mes de agosto, se celebran además otros actos paralelos como concursos fotográficos, de cometas, castillos y figuras de arena y otras competiciones deportivas que atraen a miles de personas a este encuentro tradicional.</p><span class="download">Descargar el cartel del evento <img src="/cadizturismo/storage/app/media/uploaded-files/templates/yellow-arrow.svg" class="fr-fic fr-dii">&nbsp;</span>
+		<img class="cartel fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/cartel-caballos.jpg"></div>
+</div>
+<div class="section-img"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/caballos5.jpg" alt="" class="fr-fic fr-dii"></div>
+<div class="icons-row">
+	<div class="i-container">
+		<div class="also-feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/deporte-grey.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Deporte</p>
+		</div>
+		<div class="also-feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/ocio.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Ocio</p>
+		</div>
+		<div class="also-feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/cultura-grey.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Cultura</p>
+		</div>
+	</div>
+</div>";s:4:"code";N;s:7:"viewBag";a:13:{s:5:"title";s:3:"Uno";s:7:"tlayout";s:11:"maxi evento";s:3:"url";s:12:"/eventos/uno";s:10:"date_start";s:19:"2018-01-25 22:32:58";s:8:"date_end";s:19:"2018-01-27 22:33:02";s:8:"category";s:12:"gastronomía";s:8:"location";s:22:"alcalá de los gazules";s:8:"template";s:7:"eventos";s:5:"cover";s:69:"/cadizturismo/storage/app/media/uploaded-files/templates/caballos.jpg";s:6:"layout";s:6:"evento";s:9:"is_hidden";s:1:"0";s:6:"is_top";s:1:"1";s:9:"localeUrl";a:4:{s:2:"en";s:12:"/eventos/uno";s:2:"fr";s:12:"/eventos/uno";s:2:"de";s:12:"/eventos/uno";s:2:"ru";s:12:"/eventos/uno";}}s:12:"parsedMarkup";s:6720:"<!-- HEADER -->
+<div class="header-event main-event">
+	<div class="header-container">
+		<div class="header-txt">
+
+			<h1 class="txt">Carreras de caballos</h1><img class="brush fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
+	</div>
+	<!-- NUEVA FOTO -->
+	<img class="background-image fr-fil fr-dib" value="cover" src="/cadizturismo/storage/app/media/uploaded-files/templates/caballos.jpg" alt="">
+	<!-- FEATURES -->
+	<div class="event-features">
+		<div class="feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/calendar-event.svg" class="fr-fil fr-dib">
+
+			<p class="feature-txt">03.08.17 - 05.08.17</p>
+		</div>
+		<div class="feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/cultura-event.svg" class="fr-fil fr-dib">
+
+			<p class="feature-txt">Cultura</p>
+		</div>
+		<div class="feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/location.svg" class="fr-fil fr-dib">
+
+			<p class="feature-txt">Sanlúcar de Barrameda</p><a class="feature-txt-mapa" href="https://www.google.es/maps/place/11540+Sanl%C3%BAcar+de+Barrameda,+C%C3%A1diz/@36.7732122,-6.391691,12.95z/data=!4m5!3m4!1s0xd0dde12a2f8e5ef:0xe9bbc21d97ce48c6!8m2!3d36.7725774!4d-6.3529689" target="_blank">Ver mapa</a></div>
+	</div>
+</div>
+<!-- SECTION TXT-->
+<div class="section-txt">
+	<div class="big-number-container"><span class="step">1</span></div>
+	<div class="txt-container">
+
+		<p class="title">UN ESCENARIO SINGULAR, UN AMBIENTE INMEJORABLE</p>
+
+		<p class="desc">Las Carreras de Caballos en las playas de Sanlúcar de Barrameda, que celebran el próximo mes de agosto su 173 aniversario.</p>
+
+		<p class="desc">Un hipódromo natural formado en las orillas de las playas sanluqueñas, entre el azul del mar, el verde horizonte del Parque de Doñana y el Paseo Marítimo de la ciudad. Todo un espectáculo hípico reconocido mundialmente como Fiesta de Interés Turístico Internacional.</p>
+	</div>
+</div>
+<!-- SECTION IMG -->
+<div class="section-img"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/caballos2.jpg" alt="" class="fr-fic fr-dii"></div>
+<div class="section-txt">
+	<div class="big-number-container"><span class="step">2</span></div>
+	<div class="txt-container">
+
+		<p class="title">EL ENCUENTRO HÍPICO VERANIEGO MÁS ESPERADO</p>
+
+		<p class="desc">El encuentro se celebra cada año durante el mes de agosto, con la especial incógnita de que la fecha oficial no se establece hasta el final. El calendario de mareas es quien confirma esta cita anual, pues deben cuadrar las carreras con una buena bajamar para que los caballos purasangres puedan competir con orilla y pista suficiente por la playa.&nbsp;</p>
+
+		<p class="desc">La jornada se divide siempre en dos ciclos, de tres días cada uno. El horario de las carreras es otro misterio añadido que no se descubre hasta el mismo día. La cita siempre será a la caída del atardecer, pero entran en juego factores como el estado de la marea y el número de caballos que compiten en la jornada. A partir de las 18h de la tarde, los espectadores comienzan a ubicarse dentro de este hipódromo natural.</p>
+	</div>
+</div>
+<div class="section-img"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/caballos3.jpg" alt="" class="fr-fic fr-dii"></div>
+<div class="section-txt">
+	<div class="big-number-container"><span class="step">3</span></div>
+	<div class="txt-container">
+
+		<p class="title">UN HIPÓDROMO IMPROVISADO</p>
+
+		<p class="desc">Como si de uno convencional se tratase, el recinto se compone de taquillas de apuestas e instalaciones acondicionadas para caballos y jinetes alrededor de 20.000mts2. Antes de cada carrera los participantes desfilan ante sus espectadores para después situarse en los boxes de salida.&nbsp;</p>
+		<!-- VIDEO YOUTUBE -->
+		<iframe src="https://www.youtube.com/embed/C3mJHcRWRSM" frameborder="0" allowfullscreen=""></iframe>
+
+		<p class="desc">Las diferentes pruebas y premios dependen de las características del caballo, del peso del jinete y de otras consideraciones que establecen las diferentes categorías en las que se compite. <a class="section-link" href="https://www.carrerassanlucar.es/">La Real Sociedad de Carreras de Caballos de Sanlúcar</a>, se encarga cada año de la celebración de este acontecimiento deportivo, en el que además una importante cuantía de premios son donados por empresas, entidades e instituciones de la zona, desde la captación de patrocinadores que cada año realiza este asociación.</p>
+	</div>
+</div>
+<div class="section-img"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/caballos4.jpg" alt="" class="fr-fic fr-dii"></div>
+<div class="section-txt">
+	<div class="big-number-container"><span class="step">4</span></div>
+	<div class="txt-container">
+
+		<p class="title">PURO ESPECTÁCULO</p>
+
+		<p class="desc">Las Carreras de Caballos de Sanlúcar ya se incluyen dentro de la Sociedad Estatal de Loterías y Apuestas del Estado, perteneciendo al calendario nacional de la apuesta hípica externa, junto a hipódromos como el de Madrid, San Sebastián, Dos Hermanas y Pineda.</p>
+
+		<p class="desc">Durante el año se realizan otros actos previos como el Concurso Morfológico Caballar, en marzo, o la elección del Cartel anunciador. Durante el mes de agosto, se celebran además otros actos paralelos como concursos fotográficos, de cometas, castillos y figuras de arena y otras competiciones deportivas que atraen a miles de personas a este encuentro tradicional.</p><span class="download">Descargar el cartel del evento <img src="/cadizturismo/storage/app/media/uploaded-files/templates/yellow-arrow.svg" class="fr-fic fr-dii">&nbsp;</span>
+		<img class="cartel fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/cartel-caballos.jpg"></div>
+</div>
+<div class="section-img"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/caballos5.jpg" alt="" class="fr-fic fr-dii"></div>
+<div class="icons-row">
+	<div class="i-container">
+		<div class="also-feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/deporte-grey.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Deporte</p>
+		</div>
+		<div class="also-feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/ocio.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Ocio</p>
+		</div>
+		<div class="also-feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/cultura-grey.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Cultura</p>
+		</div>
+	</div>
+</div>";}}

@@ -249,6 +249,10 @@ html, body {
   transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg); }
+  .rotate-arrow {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg); }
 
 /* NAVBAR TOGGLE & SLIDE-MENU */
 .mobile-toggle {
@@ -788,6 +792,9 @@ html, body {
       bottom: 40px !important;
     }
   }
+  .press-languages {
+    display: block !important;
+  }
 }
 
 .field-richeditor .img-village {
@@ -1184,6 +1191,16 @@ html, body {
     }
     .pic-way {
       height: 470px;
+      @include flexbox();
+      flex-direction: column;
+      .links-container {
+        z-index: 100;
+        a {
+          &:first-child {
+            margin-right: 30px;
+          }
+        }
+      }
       .background-way {
         position: absolute;
         width: 100%;
@@ -1216,7 +1233,24 @@ html, body {
           text-transform: uppercase;
         }
       }
-
+      .icon-press-container {
+        z-index: 80;
+        @include flexbox();
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .icon {
+          max-height: 72px;
+          width: auto;
+          margin-bottom: 28px;
+        }
+        p {
+          color: white;
+          font-family: 'AvenirNext-DemiBold';
+          font-size: 39px;
+          text-transform: uppercase;
+        }
+      }
     }
     .info-way {
       height: 376px;
@@ -1281,6 +1315,76 @@ html, body {
         min-width: 137px !important;
       }
     }
+  }
+  .download-link {
+    color: #F5A623;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 27px;
+    font-family: 'AvenirNext-Medium';
+    img {
+      margin-left: 8px;
+    }
+    &:hover, &:focus, &:active {
+      text-decoration: none;
+      outline: none;
+      opacity: 0.7;
+    }
+    img {
+      @include transform(rotate(90deg));
+    }
+  }
+  .see-link {
+    color: #F5A623;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 27px;
+    font-family: 'AvenirNext-Medium';
+    img {
+      margin-left: 8px;
+    }
+    &:hover {
+      text-decoration: none;
+      outline: none;
+      opacity: 0.7;
+    }
+    &:active, &:focus, &:visited {
+      text-decoration: none;
+      outline: none;
+      opacity: 1;
+    }
+  }
+  .press-languages {
+    position: absolute;
+    display: none;
+    color: white;
+    text-transform: uppercase;
+    z-index: 100;
+    min-height: 100px;
+    bottom: 15px;
+    p {
+      margin: 0px auto;
+      text-align: center;
+      width: 92%;
+      a {
+        color: white;
+        font-size: 13px;
+        text-transform: uppercase;
+        &:hover {
+          text-decoration: none;
+          outline: none;
+          opacity: 0.7;
+        }
+        &:active, &:focus, &:visited {
+          text-decoration: none;
+          outline: none;
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .show-international {
+    display: block !important;
   }
 }
 .ayuda-header:before {
@@ -1440,6 +1544,25 @@ html, body {
     margin-top: 36px;
   }
 }
+.reportajes {
+  background-color: white;
+  position: relative;
+  z-index: 10;
+  height: auto;
+  .publi-container {
+    width: 66%;
+    margin: 0px 0px 0px 160px;
+    padding: 130px 0px 0px 0px;
+  }
+  h3 {
+    font-family: 'AvenirNext-DemiBold';
+    font-size: 64px;
+    color: #4A4A4A;
+  }
+  .separator {
+    margin-top: 36px;
+  }
+}
 .publis {
   width: 85%;
   margin: 40px auto 0px auto;
@@ -1529,7 +1652,111 @@ html, body {
       padding-left: 30px;
     }
   }
+  .reportaje {
+    border-bottom: 1px solid #CECECE;
+    min-height: 270px;
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      z-index: 10;
+      right: 0;
+      top: 8px;
+      width: 1px;
+      height: 84%;
+      background: #CECECE;
+    }
+    &:nth-child(3), &:nth-child(6) {
+      &:before {
+        content: none;
+      }
+    }
+    .publi-title {
+      font-size: 42px;
+      line-height: 51px;
+      font-weight: 100;
+      color: #9B9B9B;
+      margin-bottom: 2px;
+      max-width: 88%;
+      min-height: 102px;
+      padding-left: 30px;
+      margin-top: 0px;
+      text-transform: uppercase;
+    }
+    .publi-desc {
+      font-size: 16px;
+      line-height: 33px;
+      color: #9B9B9B;
+      max-width: 91%;
+      min-height: 100px;
+      padding-left: 30px;
+    }
+    .languages-publi {
+      color: #CECECE;
+      font-size: 12px;
+      line-height: 24px;
+      max-width: 93%;
+      padding-left: 30px;
+      min-height: 96px;
+      #languages-title {
+        color: #9B9B9B;
+        text-transform: uppercase;
+      }
+    }
+    a {
+      color: #F5A623;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 27px;
+      img {
+        margin-left: 8px;
+      }
+      &:hover, &:focus, &:active {
+        text-decoration: none;
+        outline: none;
+        opacity: 0.7;
+      }
+    }
+    .download-link {
+      img {
+        @include transform(rotate(90deg));
+      }
+    }
+    .links-container {
+      @include flexbox();
+      justify-content: flex-end;
+      padding-right: 28px;
+    }
+  }
 }
+.somos-txt-container {
+    width: 80%;
+    margin: 0px auto;
+    padding: 130px 0px 0px 0px;
+  h3 {
+    font-family: 'AvenirNext-DemiBold';
+    font-size: 64px;
+    color: #4A4A4A;
+  }
+  .separator {
+    margin-top: 36px;
+    margin-bottom: 60px;
+  }
+  p {
+    color: #4A4A4A;
+    font-size: 16px;
+    line-height: 33px;
+    width: 68%;
+  }
+}
+
+#out-features {
+  top: 820px;
+}
+#phantom-div {
+  display: none;
+}
+
 
 @media (max-width: 1250px) and (min-width: 840px) {
   .publis {
@@ -2190,6 +2417,9 @@ html, body {
     width: 100% !important; } }
 
 @media (max-width: 725px) {
+  .background-image {
+    top: 0px !important;
+  }
   .header-event + .section-txt {
     margin-top: 0px; }
   .section-txt-comarca .txt-container, .section-txt-village .txt-container {
@@ -2215,17 +2445,17 @@ html, body {
       right: 20px !important; }
       .header .language-container .languages, .header-event .language-container .languages, .header-village .language-container .languages, .header-general .language-container .languages, .header-ruta .language-container .languages, .header-search .language-container .languages {
         flex-direction: column !important; }
-    .header .event-features, .header-event .event-features, .header-village .event-features, .header-general .event-features, .header-ruta .event-features, .header-search .event-features {
+    .header .event-features, .header-event .event-features, .event-features, .header-village .event-features, .header-general .event-features, .header-ruta .event-features, .header-search .event-features {
       flex-direction: column;
       height: auto;
       padding-top: 30px;
       padding-bottom: 30px;
       position: relative; }
-      .header .event-features .feature, .header .event-features .feature-exp, .header-event .event-features .feature, .header-event .event-features .feature-exp, .header-village .event-features .feature, .header-village .event-features .feature-exp, .header-general .event-features .feature, .header-general .event-features .feature-exp, .header-ruta .event-features .feature, .header-ruta .event-features .feature-exp, .header-search .event-features .feature, .header-search .event-features .feature-exp {
+      .header .event-features .feature, .header .event-features .feature-exp, #out-features .feature, .event-features .feature-exp, .header-event .event-features .feature, .header-event .event-features .feature-exp, .header-village .event-features .feature, .header-village .event-features .feature-exp, .header-general .event-features .feature, .header-general .event-features .feature-exp, .header-ruta .event-features .feature, .header-ruta .event-features .feature-exp, .header-search .event-features .feature, .header-search .event-features .feature-exp {
         margin: 0px !important;
         padding-top: 20px;
         padding-bottom: 20px; }
-        .header .event-features .feature .feature-txt-mapa, .header .event-features .feature-exp .feature-txt-mapa, .header-event .event-features .feature .feature-txt-mapa, .header-event .event-features .feature-exp .feature-txt-mapa, .header-village .event-features .feature .feature-txt-mapa, .header-village .event-features .feature-exp .feature-txt-mapa, .header-general .event-features .feature .feature-txt-mapa, .header-general .event-features .feature-exp .feature-txt-mapa, .header-ruta .event-features .feature .feature-txt-mapa, .header-ruta .event-features .feature-exp .feature-txt-mapa, .header-search .event-features .feature .feature-txt-mapa, .header-search .event-features .feature-exp .feature-txt-mapa {
+        .header .event-features .feature .feature-txt-mapa, .event-features .feature .feature-txt-mapa, .header .event-features .feature-exp .feature-txt-mapa, .header-event .event-features .feature .feature-txt-mapa, .header-event .event-features .feature-exp .feature-txt-mapa, .header-village .event-features .feature .feature-txt-mapa, .header-village .event-features .feature-exp .feature-txt-mapa, .header-general .event-features .feature .feature-txt-mapa, .header-general .event-features .feature-exp .feature-txt-mapa, .header-ruta .event-features .feature .feature-txt-mapa, .header-ruta .event-features .feature-exp .feature-txt-mapa, .header-search .event-features .feature .feature-txt-mapa, .header-search .event-features .feature-exp .feature-txt-mapa {
           top: 91px; }
   .header-event {
     height: auto !important; }
@@ -2292,7 +2522,7 @@ html, body {
   .menu-list:nth-of-type(4) {
     order: 4; }
   .section-txt, .section-txt-village {
-    padding-top: 50px !important;
+    padding-top: 92px !important;
     padding-bottom: 50px !important; }
     .section-txt .big-number-container, .section-txt-village .big-number-container {
       height: 175px !important; }
@@ -2342,7 +2572,18 @@ html, body {
         width: 100%;
       }
     }
+    #out-features {
+      position: absolute !important;
+      top: 687px;
+      min-height: 425px;
+    }
 
+
+    #phantom-div {
+      display: block;
+      height: 361px;
+      background-color: transparent;
+    }
 
   }
 

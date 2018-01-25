@@ -1,0 +1,49 @@
+1516877131a:1:{s:20:"site/headerevent.htm";a:6:{s:8:"fileName";s:20:"site/headerevent.htm";s:7:"content";s:983:"==
+
+<?php
+
+    function onStart()
+    {
+    }
+
+?>
+
+==
+<!-- MENU-->
+{% partial "site/menu" %}
+
+
+<!-- FEATURES -->
+<div id="out-features" class="event-features">
+  <div class="feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/calendar-event.svg" class="fr-fil fr-dib">
+
+    <p class="feature-txt">03.08.17 - 05.08.17</p>
+  </div>
+  <div class="feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/cultura-event.svg" class="fr-fil fr-dib">
+
+    <p class="feature-txt">Cultura</p>
+  </div>
+  <div class="feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/location.svg" class="fr-fil fr-dib">
+
+    <p class="feature-txt">Sanlúcar de Barrameda</p><a class="feature-txt-mapa" href="https://www.google.es/maps/place/11540+Sanl%C3%BAcar+de+Barrameda,+C%C3%A1diz/@36.7732122,-6.391691,12.95z/data=!4m5!3m4!1s0xd0dde12a2f8e5ef:0xe9bbc21d97ce48c6!8m2!3d36.7725774!4d-6.3529689" target="_blank">Ver mapa</a></div>
+</div>
+";s:5:"mtime";i:1516874409;s:6:"markup";s:928:"<!-- MENU-->
+{% partial "site/menu" %}
+
+
+<!-- FEATURES -->
+<div id="out-features" class="event-features">
+  <div class="feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/calendar-event.svg" class="fr-fil fr-dib">
+
+    <p class="feature-txt">03.08.17 - 05.08.17</p>
+  </div>
+  <div class="feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/cultura-event.svg" class="fr-fil fr-dib">
+
+    <p class="feature-txt">Cultura</p>
+  </div>
+  <div class="feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/location.svg" class="fr-fil fr-dib">
+
+    <p class="feature-txt">Sanlúcar de Barrameda</p><a class="feature-txt-mapa" href="https://www.google.es/maps/place/11540+Sanl%C3%BAcar+de+Barrameda,+C%C3%A1diz/@36.7732122,-6.391691,12.95z/data=!4m5!3m4!1s0xd0dde12a2f8e5ef:0xe9bbc21d97ce48c6!8m2!3d36.7725774!4d-6.3529689" target="_blank">Ver mapa</a></div>
+</div>";s:4:"code";s:34:"    function onStart()
+    {
+    }";s:17:"_PARSER_ERROR_INI";s:0:"";}}
