@@ -1,4 +1,4 @@
-1516874847a:1:{s:16:"eventos-tres.htm";a:7:{s:8:"fileName";s:16:"eventos-tres.htm";s:7:"content";s:7201:"[viewBag]
+1516877130a:1:{s:16:"eventos-tres.htm";a:7:{s:8:"fileName";s:16:"eventos-tres.htm";s:7:"content";s:7233:"[viewBag]
 title = "Tres"
 tlayout = "maxi-evento"
 url = "/eventos/tres"
@@ -26,7 +26,9 @@ localeUrl[ru] = "/eventos/tres"
 	<!-- NUEVA FOTO -->
 	<img class="background-image fr-fil fr-dib" value="cover" src="/cadizturismo/storage/app/media/uploaded-files/templates/caballos.jpg" alt="">
 </div>
+<div id="phantom-div">
 
+</div>
 <!-- FEATURES -->
 <!-- <div class="event-features">
 	<div class="feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/calendar-event.svg" class="fr-fil fr-dib">
@@ -111,7 +113,7 @@ localeUrl[ru] = "/eventos/tres"
 		</div>
 	</div>
 </div>
-";s:5:"mtime";i:1516874149;s:6:"markup";s:6724:"<!-- HEADER -->
+";s:5:"mtime";i:1516875842;s:6:"markup";s:6756:"<!-- HEADER -->
 <div class="header-event main-event">
 	<div class="header-container">
 		<div class="header-txt">
@@ -121,7 +123,9 @@ localeUrl[ru] = "/eventos/tres"
 	<!-- NUEVA FOTO -->
 	<img class="background-image fr-fil fr-dib" value="cover" src="/cadizturismo/storage/app/media/uploaded-files/templates/caballos.jpg" alt="">
 </div>
+<div id="phantom-div">
 
+</div>
 <!-- FEATURES -->
 <!-- <div class="event-features">
 	<div class="feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/calendar-event.svg" class="fr-fil fr-dib">
@@ -205,7 +209,7 @@ localeUrl[ru] = "/eventos/tres"
 			<p class="also-desc">Cultura</p>
 		</div>
 	</div>
-</div>";s:4:"code";N;s:7:"viewBag";a:13:{s:5:"title";s:4:"Tres";s:7:"tlayout";s:11:"maxi-evento";s:3:"url";s:13:"/eventos/tres";s:10:"date_start";s:19:"2018-02-15 22:37:48";s:8:"date_end";s:19:"2018-02-22 22:37:53";s:8:"category";s:9:"congresos";s:8:"location";s:24:"castellar de la frontera";s:8:"template";s:7:"eventos";s:5:"cover";s:69:"/cadizturismo/storage/app/media/uploaded-files/templates/caballos.jpg";s:6:"layout";s:6:"evento";s:9:"is_hidden";s:1:"0";s:6:"is_top";s:1:"0";s:9:"localeUrl";a:4:{s:2:"en";s:13:"/eventos/tres";s:2:"fr";s:13:"/eventos/tres";s:2:"de";s:13:"/eventos/tres";s:2:"ru";s:13:"/eventos/tres";}}s:12:"parsedMarkup";s:6724:"<!-- HEADER -->
+</div>";s:4:"code";N;s:7:"viewBag";a:13:{s:5:"title";s:4:"Tres";s:7:"tlayout";s:11:"maxi-evento";s:3:"url";s:13:"/eventos/tres";s:10:"date_start";s:19:"2018-02-15 22:37:48";s:8:"date_end";s:19:"2018-02-22 22:37:53";s:8:"category";s:9:"congresos";s:8:"location";s:24:"castellar de la frontera";s:8:"template";s:7:"eventos";s:5:"cover";s:69:"/cadizturismo/storage/app/media/uploaded-files/templates/caballos.jpg";s:6:"layout";s:6:"evento";s:9:"is_hidden";s:1:"0";s:6:"is_top";s:1:"0";s:9:"localeUrl";a:4:{s:2:"en";s:13:"/eventos/tres";s:2:"fr";s:13:"/eventos/tres";s:2:"de";s:13:"/eventos/tres";s:2:"ru";s:13:"/eventos/tres";}}s:12:"parsedMarkup";s:6756:"<!-- HEADER -->
 <div class="header-event main-event">
 	<div class="header-container">
 		<div class="header-txt">
@@ -215,7 +219,9 @@ localeUrl[ru] = "/eventos/tres"
 	<!-- NUEVA FOTO -->
 	<img class="background-image fr-fil fr-dib" value="cover" src="/cadizturismo/storage/app/media/uploaded-files/templates/caballos.jpg" alt="">
 </div>
+<div id="phantom-div">
 
+</div>
 <!-- FEATURES -->
 <!-- <div class="event-features">
 	<div class="feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/calendar-event.svg" class="fr-fil fr-dib">

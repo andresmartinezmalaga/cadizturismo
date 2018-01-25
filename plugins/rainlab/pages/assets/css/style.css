@@ -1666,7 +1666,10 @@ html, body {
     width: 68%; }
 
 #out-features {
-  bottom: -22%; }
+  top: 820px; }
+
+#phantom-div {
+  display: none; }
 
 @media (max-width: 1250px) and (min-width: 840px) {
   .publis {
@@ -2266,6 +2269,8 @@ html, body {
     width: 100% !important; } }
 
 @media (max-width: 725px) {
+  .background-image {
+    top: 0px !important; }
   .header-event + .section-txt {
     margin-top: 0px; }
   .section-txt-comarca .txt-container, .section-txt-village .txt-container {
@@ -2294,11 +2299,11 @@ html, body {
     padding-top: 30px;
     padding-bottom: 30px;
     position: relative; }
-  .header .event-features .feature, .header .event-features .feature-exp, .event-features .feature-exp, .header-event .event-features .feature, .header-event .event-features .feature-exp, .header-village .event-features .feature, .header-village .event-features .feature-exp, .header-general .event-features .feature, .header-general .event-features .feature-exp, .header-ruta .event-features .feature, .header-ruta .event-features .feature-exp, .header-search .event-features .feature, .header-search .event-features .feature-exp {
+  .header .event-features .feature, .header .event-features .feature-exp, #out-features .feature, .event-features .feature-exp, .header-event .event-features .feature, .header-event .event-features .feature-exp, .header-village .event-features .feature, .header-village .event-features .feature-exp, .header-general .event-features .feature, .header-general .event-features .feature-exp, .header-ruta .event-features .feature, .header-ruta .event-features .feature-exp, .header-search .event-features .feature, .header-search .event-features .feature-exp {
     margin: 0px !important;
     padding-top: 20px;
     padding-bottom: 20px; }
-  .header .event-features .feature .feature-txt-mapa, .header .event-features .feature-exp .feature-txt-mapa, .header-event .event-features .feature .feature-txt-mapa, .header-event .event-features .feature-exp .feature-txt-mapa, .header-village .event-features .feature .feature-txt-mapa, .header-village .event-features .feature-exp .feature-txt-mapa, .header-general .event-features .feature .feature-txt-mapa, .header-general .event-features .feature-exp .feature-txt-mapa, .header-ruta .event-features .feature .feature-txt-mapa, .header-ruta .event-features .feature-exp .feature-txt-mapa, .header-search .event-features .feature .feature-txt-mapa, .header-search .event-features .feature-exp .feature-txt-mapa {
+  .header .event-features .feature .feature-txt-mapa, .event-features .feature .feature-txt-mapa, .header .event-features .feature-exp .feature-txt-mapa, .header-event .event-features .feature .feature-txt-mapa, .header-event .event-features .feature-exp .feature-txt-mapa, .header-village .event-features .feature .feature-txt-mapa, .header-village .event-features .feature-exp .feature-txt-mapa, .header-general .event-features .feature .feature-txt-mapa, .header-general .event-features .feature-exp .feature-txt-mapa, .header-ruta .event-features .feature .feature-txt-mapa, .header-ruta .event-features .feature-exp .feature-txt-mapa, .header-search .event-features .feature .feature-txt-mapa, .header-search .event-features .feature-exp .feature-txt-mapa {
     top: 91px; }
   .header-event {
     height: auto !important; }
@@ -2365,7 +2370,7 @@ html, body {
   .menu-list:nth-of-type(4) {
     order: 4; }
   .section-txt, .section-txt-village {
-    padding-top: 50px !important;
+    padding-top: 92px !important;
     padding-bottom: 50px !important; }
   .section-txt .big-number-container, .section-txt-village .big-number-container {
     height: 175px !important; }
@@ -2403,7 +2408,15 @@ html, body {
   .contact-ways {
     flex-direction: column; }
     .contact-ways .way {
-      width: 100%; } }
+      width: 100%; }
+  #out-features {
+    position: absolute !important;
+    top: 687px;
+    min-height: 425px; }
+  #phantom-div {
+    display: block;
+    height: 361px;
+    background-color: transparent; } }
 
 @media (max-width: 1200px) and (min-width: 726px) {
   .border {

@@ -41,4 +41,5 @@
   'RainLab\\Translate\\Models\\Message' => 'plugins/rainlab/translate/models/Message.php',
   'RainLab\\Pages\\Classes\\MenuItem' => 'plugins/rainlab/pages/classes/MenuItem.php',
   'RainLab\\Pages\\Classes\\MenuItemReference' => 'plugins/rainlab/pages/classes/MenuItemReference.php',
+  'backend\\Controllers\\media' => 'modules/backend/controllers/media.php',
 );
