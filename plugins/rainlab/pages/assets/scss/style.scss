@@ -1544,6 +1544,25 @@ html, body {
     margin-top: 36px;
   }
 }
+.reportajes {
+  background-color: white;
+  position: relative;
+  z-index: 10;
+  height: auto;
+  .publi-container {
+    width: 66%;
+    margin: 0px 0px 0px 160px;
+    padding: 130px 0px 0px 0px;
+  }
+  h3 {
+    font-family: 'AvenirNext-DemiBold';
+    font-size: 64px;
+    color: #4A4A4A;
+  }
+  .separator {
+    margin-top: 36px;
+  }
+}
 .publis {
   width: 85%;
   margin: 40px auto 0px auto;
@@ -1633,6 +1652,82 @@ html, body {
       padding-left: 30px;
     }
   }
+  .reportaje {
+    border-bottom: 1px solid #CECECE;
+    min-height: 270px;
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      z-index: 10;
+      right: 0;
+      top: 8px;
+      width: 1px;
+      height: 84%;
+      background: #CECECE;
+    }
+    &:nth-child(3), &:nth-child(6) {
+      &:before {
+        content: none;
+      }
+    }
+    .publi-title {
+      font-size: 42px;
+      line-height: 51px;
+      font-weight: 100;
+      color: #9B9B9B;
+      margin-bottom: 2px;
+      max-width: 88%;
+      min-height: 102px;
+      padding-left: 30px;
+      margin-top: 0px;
+      text-transform: uppercase;
+    }
+    .publi-desc {
+      font-size: 16px;
+      line-height: 33px;
+      color: #9B9B9B;
+      max-width: 91%;
+      min-height: 100px;
+      padding-left: 30px;
+    }
+    .languages-publi {
+      color: #CECECE;
+      font-size: 12px;
+      line-height: 24px;
+      max-width: 93%;
+      padding-left: 30px;
+      min-height: 96px;
+      #languages-title {
+        color: #9B9B9B;
+        text-transform: uppercase;
+      }
+    }
+    a {
+      color: #F5A623;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 27px;
+      img {
+        margin-left: 8px;
+      }
+      &:hover, &:focus, &:active {
+        text-decoration: none;
+        outline: none;
+        opacity: 0.7;
+      }
+    }
+    .download-link {
+      img {
+        @include transform(rotate(90deg));
+      }
+    }
+    .links-container {
+      @include flexbox();
+      justify-content: flex-end;
+      padding-right: 28px;
+    }
+  }
 }
 .somos-txt-container {
     width: 80%;
@@ -1651,7 +1746,7 @@ html, body {
     color: #4A4A4A;
     font-size: 16px;
     line-height: 33px;
-    width: 78%;
+    width: 68%;
   }
 }
 

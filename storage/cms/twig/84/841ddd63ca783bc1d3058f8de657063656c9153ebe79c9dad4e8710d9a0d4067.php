@@ -53,9 +53,8 @@ class __TwigTemplate_b8ae5cec640fa54ac46df2d0bc8281884b28e03321611cca237847f62bb
             // line 15
             echo "            ";
             $context["tt"] = ("." . twig_get_attribute($this->env, $this->getSourceContext(), $context["item"], "title", array()));
-            echo " 
-            <li class=\"menu-item\"><a href=\"";
             // line 16
+            echo "            <li class=\"menu-item\"><a href=\"";
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["item"], "url", array()), "html", null, true);
             echo "\">";
             echo call_user_func_array($this->env->getFilter('_')->getCallable(), array(($context["tt"] ?? null)));
@@ -109,9 +108,8 @@ class __TwigTemplate_b8ae5cec640fa54ac46df2d0bc8281884b28e03321611cca237847f62bb
             // line 31
             echo "            ";
             $context["tt"] = ("." . twig_get_attribute($this->env, $this->getSourceContext(), $context["item"], "title", array()));
-            echo "         
-            <li class=\"menu-item\"><a href=\"";
             // line 32
+            echo "            <li class=\"menu-item\"><a href=\"";
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["item"], "url", array()), "html", null, true);
             echo "\">";
             echo call_user_func_array($this->env->getFilter('_')->getCallable(), array(($context["tt"] ?? null)));
@@ -190,9 +188,8 @@ class __TwigTemplate_b8ae5cec640fa54ac46df2d0bc8281884b28e03321611cca237847f62bb
             // line 56
             echo "            ";
             $context["tt"] = ("." . twig_get_attribute($this->env, $this->getSourceContext(), $context["item"], "title", array()));
-            echo "              
-            <li class=\"menu-item\"><a href=\"";
             // line 57
+            echo "            <li class=\"menu-item\"><a href=\"";
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["item"], "url", array()), "html", null, true);
             echo "\">";
             echo call_user_func_array($this->env->getFilter('_')->getCallable(), array(($context["tt"] ?? null)));
@@ -466,7 +463,7 @@ class __TwigTemplate_b8ae5cec640fa54ac46df2d0bc8281884b28e03321611cca237847f62bb
 
     public function getDebugInfo()
     {
-        return array (  450 => 141,  440 => 139,  435 => 138,  431 => 137,  426 => 135,  422 => 134,  418 => 133,  410 => 129,  400 => 127,  395 => 126,  391 => 125,  386 => 123,  382 => 122,  378 => 121,  373 => 118,  363 => 116,  358 => 115,  354 => 114,  349 => 112,  345 => 111,  341 => 110,  336 => 107,  326 => 105,  322 => 104,  316 => 103,  311 => 101,  307 => 100,  303 => 99,  292 => 95,  275 => 85,  267 => 84,  259 => 83,  251 => 82,  242 => 80,  230 => 75,  222 => 70,  218 => 69,  206 => 59,  196 => 57,  191 => 56,  187 => 55,  182 => 53,  178 => 52,  174 => 51,  166 => 46,  163 => 45,  153 => 44,  148 => 43,  144 => 42,  139 => 40,  135 => 39,  131 => 38,  125 => 34,  115 => 32,  110 => 31,  106 => 30,  101 => 28,  97 => 27,  93 => 26,  81 => 21,  73 => 20,  69 => 18,  59 => 16,  54 => 15,  50 => 14,  45 => 12,  41 => 11,  37 => 10,  25 => 5,  19 => 1,);
+        return array (  447 => 141,  437 => 139,  432 => 138,  428 => 137,  423 => 135,  419 => 134,  415 => 133,  407 => 129,  397 => 127,  392 => 126,  388 => 125,  383 => 123,  379 => 122,  375 => 121,  370 => 118,  360 => 116,  355 => 115,  351 => 114,  346 => 112,  342 => 111,  338 => 110,  333 => 107,  323 => 105,  319 => 104,  313 => 103,  308 => 101,  304 => 100,  300 => 99,  289 => 95,  272 => 85,  264 => 84,  256 => 83,  248 => 82,  239 => 80,  227 => 75,  219 => 70,  215 => 69,  203 => 59,  192 => 57,  189 => 56,  185 => 55,  180 => 53,  176 => 52,  172 => 51,  164 => 46,  161 => 45,  151 => 44,  146 => 43,  142 => 42,  137 => 40,  133 => 39,  129 => 38,  123 => 34,  112 => 32,  109 => 31,  105 => 30,  100 => 28,  96 => 27,  92 => 26,  80 => 21,  72 => 20,  68 => 18,  57 => 16,  54 => 15,  50 => 14,  45 => 12,  41 => 11,  37 => 10,  25 => 5,  19 => 1,);
     }
 
     public function getSourceContext()
@@ -485,7 +482,7 @@ class __TwigTemplate_b8ae5cec640fa54ac46df2d0bc8281884b28e03321611cca237847f62bb
         <img class=\"separator-tiny\" src=\"{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg\">
         <ul class=\"menu-ul donde-ul\">
           {% for item in staticMenu.menuItems %}
-            {% set tt = '.'~item.title %} 
+            {% set tt = '.'~item.title %}
             <li class=\"menu-item\"><a href=\"{{ item.url }}\">{{ tt|_ }}</a></li>
           {% endfor %}
         </ul>
@@ -501,7 +498,7 @@ class __TwigTemplate_b8ae5cec640fa54ac46df2d0bc8281884b28e03321611cca237847f62bb
         <img class=\"separator-tiny\" src=\"{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg\">
         <ul class=\"menu-ul\">
           {% for item in staticMenu4.menuItems %}
-            {% set tt = '.'~item.title %}         
+            {% set tt = '.'~item.title %}
             <li class=\"menu-item\"><a href=\"{{ item.url }}\">{{ tt|_ }}</a></li>
           {% endfor %}
         </ul>
@@ -526,7 +523,7 @@ class __TwigTemplate_b8ae5cec640fa54ac46df2d0bc8281884b28e03321611cca237847f62bb
         <img class=\"separator-tiny\" src=\"{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg\">
         <ul class=\"menu-ul\">
           {% for item in staticMenu3.menuItems %}
-            {% set tt = '.'~item.title %}              
+            {% set tt = '.'~item.title %}
             <li class=\"menu-item\"><a href=\"{{ item.url }}\">{{ tt|_ }}</a></li>
           {% endfor %}
         </ul>

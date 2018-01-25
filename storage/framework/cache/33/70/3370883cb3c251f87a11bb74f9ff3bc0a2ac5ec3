@@ -1,4 +1,4 @@
-1516871182a:1:{s:13:"site/menu.htm";a:6:{s:8:"fileName";s:13:"site/menu.htm";s:7:"content";s:7386:"==
+1516872713a:1:{s:13:"site/menu.htm";a:6:{s:8:"fileName";s:13:"site/menu.htm";s:7:"content";s:7362:"==
 
 <?php
 
@@ -24,7 +24,7 @@
         <img class="separator-tiny" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg">
         <ul class="menu-ul donde-ul">
           {% for item in staticMenu.menuItems %}
-            {% set tt = '.'~item.title %} 
+            {% set tt = '.'~item.title %}
             <li class="menu-item"><a href="{{ item.url }}">{{ tt|_ }}</a></li>
           {% endfor %}
         </ul>
@@ -40,7 +40,7 @@
         <img class="separator-tiny" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg">
         <ul class="menu-ul">
           {% for item in staticMenu4.menuItems %}
-            {% set tt = '.'~item.title %}         
+            {% set tt = '.'~item.title %}
             <li class="menu-item"><a href="{{ item.url }}">{{ tt|_ }}</a></li>
           {% endfor %}
         </ul>
@@ -65,7 +65,7 @@
         <img class="separator-tiny" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg">
         <ul class="menu-ul">
           {% for item in staticMenu3.menuItems %}
-            {% set tt = '.'~item.title %}              
+            {% set tt = '.'~item.title %}
             <li class="menu-item"><a href="{{ item.url }}">{{ tt|_ }}</a></li>
           {% endfor %}
         </ul>
@@ -155,7 +155,7 @@
       </div>
     </div>
   </nav>
-";s:5:"mtime";i:1516870225;s:6:"markup";s:7319:"<!-- MENU-->
+";s:5:"mtime";i:1516870839;s:6:"markup";s:7295:"<!-- MENU-->
 <div class="slidemenu">
   <div class="elements">
     <div class="logo-container">
@@ -169,7 +169,7 @@
         <img class="separator-tiny" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg">
         <ul class="menu-ul donde-ul">
           {% for item in staticMenu.menuItems %}
-            {% set tt = '.'~item.title %} 
+            {% set tt = '.'~item.title %}
             <li class="menu-item"><a href="{{ item.url }}">{{ tt|_ }}</a></li>
           {% endfor %}
         </ul>
@@ -185,7 +185,7 @@
         <img class="separator-tiny" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg">
         <ul class="menu-ul">
           {% for item in staticMenu4.menuItems %}
-            {% set tt = '.'~item.title %}         
+            {% set tt = '.'~item.title %}
             <li class="menu-item"><a href="{{ item.url }}">{{ tt|_ }}</a></li>
           {% endfor %}
         </ul>
@@ -210,7 +210,7 @@
         <img class="separator-tiny" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg">
         <ul class="menu-ul">
           {% for item in staticMenu3.menuItems %}
-            {% set tt = '.'~item.title %}              
+            {% set tt = '.'~item.title %}
             <li class="menu-item"><a href="{{ item.url }}">{{ tt|_ }}</a></li>
           {% endfor %}
         </ul>

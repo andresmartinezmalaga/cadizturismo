@@ -1485,6 +1485,22 @@ html, body {
   .publicaciones .separator {
     margin-top: 36px; }
 
+.reportajes {
+  background-color: white;
+  position: relative;
+  z-index: 10;
+  height: auto; }
+  .reportajes .publi-container {
+    width: 66%;
+    margin: 0px 0px 0px 160px;
+    padding: 130px 0px 0px 0px; }
+  .reportajes h3 {
+    font-family: 'AvenirNext-DemiBold';
+    font-size: 64px;
+    color: #4A4A4A; }
+  .reportajes .separator {
+    margin-top: 36px; }
+
 .publis {
   width: 85%;
   margin: 40px auto 0px auto;
@@ -1564,6 +1580,73 @@ html, body {
       max-width: 91%;
       justify-content: space-between;
       padding-left: 30px; }
+  .publis .reportaje {
+    border-bottom: 1px solid #CECECE;
+    min-height: 270px;
+    position: relative; }
+    .publis .reportaje:before {
+      content: '';
+      position: absolute;
+      z-index: 10;
+      right: 0;
+      top: 8px;
+      width: 1px;
+      height: 84%;
+      background: #CECECE; }
+    .publis .reportaje:nth-child(3):before, .publis .reportaje:nth-child(6):before {
+      content: none; }
+    .publis .reportaje .publi-title {
+      font-size: 42px;
+      line-height: 51px;
+      font-weight: 100;
+      color: #9B9B9B;
+      margin-bottom: 2px;
+      max-width: 88%;
+      min-height: 102px;
+      padding-left: 30px;
+      margin-top: 0px;
+      text-transform: uppercase; }
+    .publis .reportaje .publi-desc {
+      font-size: 16px;
+      line-height: 33px;
+      color: #9B9B9B;
+      max-width: 91%;
+      min-height: 100px;
+      padding-left: 30px; }
+    .publis .reportaje .languages-publi {
+      color: #CECECE;
+      font-size: 12px;
+      line-height: 24px;
+      max-width: 93%;
+      padding-left: 30px;
+      min-height: 96px; }
+      .publis .reportaje .languages-publi #languages-title {
+        color: #9B9B9B;
+        text-transform: uppercase; }
+    .publis .reportaje a {
+      color: #F5A623;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 27px; }
+      .publis .reportaje a img {
+        margin-left: 8px; }
+      .publis .reportaje a:hover, .publis .reportaje a:focus, .publis .reportaje a:active {
+        text-decoration: none;
+        outline: none;
+        opacity: 0.7; }
+    .publis .reportaje .download-link img {
+      -webkit-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      transform: rotate(90deg); }
+    .publis .reportaje .links-container {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 28px; }
 
 .somos-txt-container {
   width: 80%;
@@ -1580,7 +1663,7 @@ html, body {
     color: #4A4A4A;
     font-size: 16px;
     line-height: 33px;
-    width: 78%; }
+    width: 68%; }
 
 @media (max-width: 1250px) and (min-width: 840px) {
   .publis {
