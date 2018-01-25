@@ -212,6 +212,7 @@ form input[type="submit"]:hover, form input[type="submit"]:focus, form input[typ
   height: auto;
   z-index: 100;
   margin-top: 170px;
+  margin-bottom: 170px;
   position: relative; }
 
 .more-popular .title-container {
