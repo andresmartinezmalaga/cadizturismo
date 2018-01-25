@@ -1,0 +1,282 @@
+1516834005a:1:{s:29:"diversion-locales-de-ocio.htm";a:7:{s:8:"fileName";s:29:"diversion-locales-de-ocio.htm";s:7:"content";s:5214:"[viewBag]
+title = "Locales de ocio"
+url = "/diversion/locales-de-ocio"
+template = "pages"
+is_hidden = 0
+layout = "default"
+localeUrl[en] = "/diversion/locales-de-ocio"
+localeUrl[fr] = "/diversion/locales-de-ocio"
+localeUrl[de] = "/diversion/locales-de-ocio"
+localeUrl[ru] = "/diversion/locales-de-ocio"
+==
+<!-- HEADER -->
+<div class="header header-locales">
+	<div class="header-container header-village-container">
+		<div class="header-txt header-txt-village">
+
+			<h1 class="txt" id="natu-via">Locales de ocio</h1><img class="brush fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
+	</div>
+	<!-- NUEVA FOTO -->
+	<img class="background-image fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/parqueocio-header.jpg"></div>
+<!-- TXT-->
+<div class="section-txt-village">
+	<div class="txt-container">
+
+		<p class="title">VIVE COMO
+			<br>UN GADITANO</p><img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+
+		<p class="desc">Conoce la provincia a través de los diferentes rincones en los que parar a disfrutar de la vida gaditana.</p>
+	</div>
+</div>
+<!-- IMAGEN -->
+<div class="featured-element featured-locales">
+	<div class="txt-container">
+
+		<p class="title">RUTA DE VINOS POR CHICLANA</p>
+
+		<p class="desc">Un plan para todos los sentidos. De lo bueno, lo mejor.</p><a class="events-link" href="rutas.html">Selección de rutas <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-arrow-yellow.svg" alt="" class="fr-fic fr-dii">&nbsp;</a>
+		<img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
+	<!-- NUEVA FOTO -->
+	<div class="overlay">
+		<br>
+	</div><img class="img-destacada fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/ruta-chiclana.jpg" alt=""></div>
+<div class="section-txt-village">
+	<div class="txt-container">
+
+		<p class="title">3 PLANES QUE
+			<br>SEGURO TE
+			<br>INTERESAN</p><img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
+</div>
+<div class="all-exps" id="exps-playa">
+	<div class="all-events-container">
+		<div class="event event-playa">
+			<div class="overlay-img">
+				<br>
+			</div><img class="rec-img fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/paypay.jpg">
+			<div class="txt-container">
+
+				<p class="name name-pay">CAFÉ TEATRO PAY PAY</p>
+
+				<p class="subtitle">Por su escenario pasan desde cantautores a cuentacuentos, música en directo de todo tipo…</p><img class="separator separator-playa fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+				<a class="see-event" href="http://www.cafeteatropaypay.com/" target="_blank">Más info <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+		</div>
+		<div class="event event-playa">
+			<div class="overlay-img">
+				<br>
+			</div><img class="rec-img fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/chicuco.jpg">
+			<div class="txt-container">
+
+				<p class="name">EL CHICUCO</p>
+
+				<p class="subtitle">El ultramarinos es un comercio típicamente gaditano.</p><img class="separator separator-playa fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+				<a class="see-event" href="http://www.elchicuco.com/ " target="_blank">Más info <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+		</div>
+		<div class="event event-playa">
+			<div class="overlay-img">
+				<br>
+			</div><img class="rec-img fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/bebo-vientos.jpg">
+			<div class="txt-container">
+
+				<p class="name">CHIRINGUITO BEBO LOS VIENTOS</p>
+
+				<p class="subtitle">Espectacular restaurante y bar de copas situado en la mismisima playa de la Victoria.</p><img class="separator separator-playa fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+				<a class="see-event" href="https://www.facebook.com/BeboLosVientos" target="_blank">Más info <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+		</div>
+	</div>
+</div>
+<div class="icons-row">
+	<div class="i-container">
+		<div class="also-feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/gastro-grey.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Gastronomía</p>
+		</div>
+		<div class="also-feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/ocio.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Ocio</p>
+		</div>
+		<div class="also-feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/fiesta-grey.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Fiesta</p>
+		</div>
+	</div>
+</div>";s:5:"mtime";i:1516711272;s:6:"markup";s:4908:"<!-- HEADER -->
+<div class="header header-locales">
+	<div class="header-container header-village-container">
+		<div class="header-txt header-txt-village">
+
+			<h1 class="txt" id="natu-via">Locales de ocio</h1><img class="brush fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
+	</div>
+	<!-- NUEVA FOTO -->
+	<img class="background-image fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/parqueocio-header.jpg"></div>
+<!-- TXT-->
+<div class="section-txt-village">
+	<div class="txt-container">
+
+		<p class="title">VIVE COMO
+			<br>UN GADITANO</p><img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+
+		<p class="desc">Conoce la provincia a través de los diferentes rincones en los que parar a disfrutar de la vida gaditana.</p>
+	</div>
+</div>
+<!-- IMAGEN -->
+<div class="featured-element featured-locales">
+	<div class="txt-container">
+
+		<p class="title">RUTA DE VINOS POR CHICLANA</p>
+
+		<p class="desc">Un plan para todos los sentidos. De lo bueno, lo mejor.</p><a class="events-link" href="rutas.html">Selección de rutas <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-arrow-yellow.svg" alt="" class="fr-fic fr-dii">&nbsp;</a>
+		<img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
+	<!-- NUEVA FOTO -->
+	<div class="overlay">
+		<br>
+	</div><img class="img-destacada fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/ruta-chiclana.jpg" alt=""></div>
+<div class="section-txt-village">
+	<div class="txt-container">
+
+		<p class="title">3 PLANES QUE
+			<br>SEGURO TE
+			<br>INTERESAN</p><img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
+</div>
+<div class="all-exps" id="exps-playa">
+	<div class="all-events-container">
+		<div class="event event-playa">
+			<div class="overlay-img">
+				<br>
+			</div><img class="rec-img fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/paypay.jpg">
+			<div class="txt-container">
+
+				<p class="name name-pay">CAFÉ TEATRO PAY PAY</p>
+
+				<p class="subtitle">Por su escenario pasan desde cantautores a cuentacuentos, música en directo de todo tipo…</p><img class="separator separator-playa fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+				<a class="see-event" href="http://www.cafeteatropaypay.com/" target="_blank">Más info <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+		</div>
+		<div class="event event-playa">
+			<div class="overlay-img">
+				<br>
+			</div><img class="rec-img fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/chicuco.jpg">
+			<div class="txt-container">
+
+				<p class="name">EL CHICUCO</p>
+
+				<p class="subtitle">El ultramarinos es un comercio típicamente gaditano.</p><img class="separator separator-playa fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+				<a class="see-event" href="http://www.elchicuco.com/ " target="_blank">Más info <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+		</div>
+		<div class="event event-playa">
+			<div class="overlay-img">
+				<br>
+			</div><img class="rec-img fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/bebo-vientos.jpg">
+			<div class="txt-container">
+
+				<p class="name">CHIRINGUITO BEBO LOS VIENTOS</p>
+
+				<p class="subtitle">Espectacular restaurante y bar de copas situado en la mismisima playa de la Victoria.</p><img class="separator separator-playa fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+				<a class="see-event" href="https://www.facebook.com/BeboLosVientos" target="_blank">Más info <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+		</div>
+	</div>
+</div>
+<div class="icons-row">
+	<div class="i-container">
+		<div class="also-feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/gastro-grey.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Gastronomía</p>
+		</div>
+		<div class="also-feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/ocio.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Ocio</p>
+		</div>
+		<div class="also-feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/fiesta-grey.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Fiesta</p>
+		</div>
+	</div>
+</div>";s:4:"code";N;s:7:"viewBag";a:6:{s:5:"title";s:15:"Locales de ocio";s:3:"url";s:26:"/diversion/locales-de-ocio";s:8:"template";s:5:"pages";s:9:"is_hidden";s:1:"0";s:6:"layout";s:7:"default";s:9:"localeUrl";a:4:{s:2:"en";s:26:"/diversion/locales-de-ocio";s:2:"fr";s:26:"/diversion/locales-de-ocio";s:2:"de";s:26:"/diversion/locales-de-ocio";s:2:"ru";s:26:"/diversion/locales-de-ocio";}}s:12:"parsedMarkup";s:4908:"<!-- HEADER -->
+<div class="header header-locales">
+	<div class="header-container header-village-container">
+		<div class="header-txt header-txt-village">
+
+			<h1 class="txt" id="natu-via">Locales de ocio</h1><img class="brush fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
+	</div>
+	<!-- NUEVA FOTO -->
+	<img class="background-image fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/parqueocio-header.jpg"></div>
+<!-- TXT-->
+<div class="section-txt-village">
+	<div class="txt-container">
+
+		<p class="title">VIVE COMO
+			<br>UN GADITANO</p><img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+
+		<p class="desc">Conoce la provincia a través de los diferentes rincones en los que parar a disfrutar de la vida gaditana.</p>
+	</div>
+</div>
+<!-- IMAGEN -->
+<div class="featured-element featured-locales">
+	<div class="txt-container">
+
+		<p class="title">RUTA DE VINOS POR CHICLANA</p>
+
+		<p class="desc">Un plan para todos los sentidos. De lo bueno, lo mejor.</p><a class="events-link" href="rutas.html">Selección de rutas <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-arrow-yellow.svg" alt="" class="fr-fic fr-dii">&nbsp;</a>
+		<img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
+	<!-- NUEVA FOTO -->
+	<div class="overlay">
+		<br>
+	</div><img class="img-destacada fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/ruta-chiclana.jpg" alt=""></div>
+<div class="section-txt-village">
+	<div class="txt-container">
+
+		<p class="title">3 PLANES QUE
+			<br>SEGURO TE
+			<br>INTERESAN</p><img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
+</div>
+<div class="all-exps" id="exps-playa">
+	<div class="all-events-container">
+		<div class="event event-playa">
+			<div class="overlay-img">
+				<br>
+			</div><img class="rec-img fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/paypay.jpg">
+			<div class="txt-container">
+
+				<p class="name name-pay">CAFÉ TEATRO PAY PAY</p>
+
+				<p class="subtitle">Por su escenario pasan desde cantautores a cuentacuentos, música en directo de todo tipo…</p><img class="separator separator-playa fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+				<a class="see-event" href="http://www.cafeteatropaypay.com/" target="_blank">Más info <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+		</div>
+		<div class="event event-playa">
+			<div class="overlay-img">
+				<br>
+			</div><img class="rec-img fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/chicuco.jpg">
+			<div class="txt-container">
+
+				<p class="name">EL CHICUCO</p>
+
+				<p class="subtitle">El ultramarinos es un comercio típicamente gaditano.</p><img class="separator separator-playa fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+				<a class="see-event" href="http://www.elchicuco.com/ " target="_blank">Más info <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+		</div>
+		<div class="event event-playa">
+			<div class="overlay-img">
+				<br>
+			</div><img class="rec-img fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/bebo-vientos.jpg">
+			<div class="txt-container">
+
+				<p class="name">CHIRINGUITO BEBO LOS VIENTOS</p>
+
+				<p class="subtitle">Espectacular restaurante y bar de copas situado en la mismisima playa de la Victoria.</p><img class="separator separator-playa fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+				<a class="see-event" href="https://www.facebook.com/BeboLosVientos" target="_blank">Más info <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+		</div>
+	</div>
+</div>
+<div class="icons-row">
+	<div class="i-container">
+		<div class="also-feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/gastro-grey.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Gastronomía</p>
+		</div>
+		<div class="also-feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/ocio.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Ocio</p>
+		</div>
+		<div class="also-feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/fiesta-grey.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Fiesta</p>
+		</div>
+	</div>
+</div>";}}

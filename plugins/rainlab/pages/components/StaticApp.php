@@ -132,9 +132,17 @@ class StaticApp extends ComponentBase
         $pagesList = Page::listInTheme($theme, false);
         $pages =  new \Illuminate\Support\Collection($pagesList);
         
-        $eventsVip = $pages->where("is_hidden",0)->where("template","eventos");
+        $eventsVip = $pages->where("is_hidden",0)->where("template","eventos")->values();
 
+        foreach ($eventsVip as $event) {         
+            $event->date_start_ppretty = (new DateTime($event->date_start))->format('d');
+            $mes = intval( (new DateTime($event->date_start))->format('m') )-1;
+            $mesString = ['ENE','FEB','MAR','ABR','MAY','JUN','JUL','AGO','SEP','OCT','NOV','DIC',];
+            $event->date_start_pretty_day = $event->date_start_ppretty;
+            $event->date_start_pretty_month = $mesString[$mes];
+        }
 
+        return $eventsVip;
     }
 
     public function eventFind()
