@@ -916,14 +916,14 @@ class Index extends Controller
             $objectData['placeholders'] = $placeholders;
            
             // Andrés Martínez : defining event cover
-            /*$presrc1 = explode('value="cover"', $objectData['markup']);
+            $presrc1 = explode('value="cover"', $objectData['markup']);
             if(count($presrc1)>1){
                 $presrc2 = explode('alt', $presrc1[1]);
                 $presrc3 = explode('src=', $presrc2[0]);
                 $coverurl = str_replace('"', '', $presrc3[1]);
             
                 $objectData['settings']['viewBag']['cover'] = $coverurl;
-            }*/
+            }
            
         }
 

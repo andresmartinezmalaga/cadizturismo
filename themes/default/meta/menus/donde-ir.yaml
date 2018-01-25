@@ -1,33 +1,19 @@
 name: 'Dónde ir'
 items:
     -
-        title: barbate
+        title: Barbate
         nesting: ''
         type: static-page
-        url: ''
         code: ''
         reference: municipios-barbate
-        cmsPage: ''
-        viewBag:
-            nombrees: Barbate
-            nombreen: Barbate
-            nombrefr: Barbate
-            nombrede: Barbate
-            nombreru: Barbate
     -
-        title: grazalema
+        title: Grazalema
         nesting: ''
         type: static-page
         url: ''
         code: ''
         reference: municipios-grazalema
         cmsPage: ''
-        viewBag:
-            nombrees: Grazalema
-            nombreen: Grazalema
-            nombrefr: Grazalema
-            nombrede: Grazalema
-            nombreru: Grazalema
     -
         title: 'Jerez de la frontera'
         nesting: ''
@@ -43,19 +29,13 @@ items:
             nombrede: 'Jerez de la frontera'
             nombreru: 'Jerez de la frontera'
     -
-        title: tarifa
+        title: Tarifa
         nesting: ''
         type: static-page
         url: ''
         code: ''
         reference: municipios-tarifa
         cmsPage: ''
-        viewBag:
-            nombrees: Tarifa
-            nombreen: Tarifa
-            nombrefr: Tarifa
-            nombrede: Tarifa
-            nombreru: Tarifa
     -
         title: Municipios
         nesting: ''
@@ -64,12 +44,6 @@ items:
         code: ''
         reference: municipios
         cmsPage: ''
-        viewBag:
-            nombrees: 'Todos los municipios'
-            nombreen: 'All the municipalities'
-            nombrefr: ''
-            nombrede: ''
-            nombreru: ''
     -
         title: Comarcas
         nesting: ''
@@ -78,9 +52,3 @@ items:
         code: ''
         reference: comarcas
         cmsPage: ''
-        viewBag:
-            nombrees: 'Todas las comarcas'
-            nombreen: 'All the regions'
-            nombrefr: ''
-            nombrede: ''
-            nombreru: ''
