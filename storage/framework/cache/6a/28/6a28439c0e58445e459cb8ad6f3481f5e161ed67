@@ -1,17 +1,17 @@
-1516895312a:1:{s:20:"site/searchevent.htm";a:6:{s:8:"fileName";s:20:"site/searchevent.htm";s:7:"content";s:2578:"==
+1516898516a:1:{s:20:"site/searchevent.htm";a:6:{s:8:"fileName";s:20:"site/searchevent.htm";s:7:"content";s:2565:"==
 
-<?php 
+<?php
 
     function onStart()
     {
         $this['lang']=\App::getLocale();
-        
+
         if($this['lang']==''){
           $this['lang']='es';
-        }       
+        }
         $this['municipalities'] = $this->staticApp->getMunicipalities();
         $this['categories'] = $this->staticApp->getEventsCategories();
-        
+
 
     }
 ?>
@@ -19,7 +19,7 @@
 ==
 
 <script>
-    
+
     var calendarTranslate = {
         enero: "{{ 'enero'|_ }}",
         febrero: "{{ 'febrero'|_ }}",
@@ -34,10 +34,10 @@
         noviembre: "{{ 'noviembre'|_ }}",
         diciembre: "{{ 'diciembre'|_ }}"
     };
-    
+
 </script>
 
-<div class="search-bar-container">
+<div id="search-event" class="search-bar-container">
           <div class="search-bar">
             <form data-request="onFindEvent">
               <div class="inputs-container">
@@ -73,8 +73,9 @@
           <p class="comment">{{ 'Descubre miles de eventos que no querrás perderte'|_ }}</p>
         </div>
       </div>
-    </div>";s:5:"mtime";i:1516870225;s:6:"markup";s:2241:"<script>
-    
+    </div>
+";s:5:"mtime";i:1516896436;s:6:"markup";s:2251:"<script>
+
     var calendarTranslate = {
         enero: "{{ 'enero'|_ }}",
         febrero: "{{ 'febrero'|_ }}",
@@ -89,10 +90,10 @@
         noviembre: "{{ 'noviembre'|_ }}",
         diciembre: "{{ 'diciembre'|_ }}"
     };
-    
+
 </script>
 
-<div class="search-bar-container">
+<div id="search-event" class="search-bar-container">
           <div class="search-bar">
             <form data-request="onFindEvent">
               <div class="inputs-container">
@@ -128,17 +129,15 @@
           <p class="comment">{{ 'Descubre miles de eventos que no querrás perderte'|_ }}</p>
         </div>
       </div>
-    </div>";s:4:"code";s:319:" 
-
-    function onStart()
+    </div>";s:4:"code";s:293:"    function onStart()
     {
         $this['lang']=\App::getLocale();
-        
+
         if($this['lang']==''){
           $this['lang']='es';
-        }       
+        }
         $this['municipalities'] = $this->staticApp->getMunicipalities();
         $this['categories'] = $this->staticApp->getEventsCategories();
-        
+
 
     }";s:17:"_PARSER_ERROR_INI";s:0:"";}}

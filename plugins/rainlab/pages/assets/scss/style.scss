@@ -2374,11 +2374,12 @@ html, body {
         .search-bar-container .search-bar #event-category .select2-selection__arrow {
           right: 10px !important; }
       .search-bar-container .search-bar #event-datepicker {
-        width: 33% !important; }
+        width: 244px !important;
+        min-width: 244px; }
         .search-bar-container .search-bar #event-datepicker .select2-selection__arrow, .search-bar-container .search-bar #event-datepicker .arrow {
           right: 10px !important; }
       .search-bar-container .search-bar #event-location {
-        width: 40% !important; }
+        width: 37% !important; }
         .search-bar-container .search-bar #event-location .select2-selection__arrow {
           right: 10px !important; }
       .search-bar-container .search-bar .button-container {
@@ -2489,7 +2490,8 @@ html, body {
   .search-bar-container {
     width: 90% !important;
     height: 320px !important;
-    margin: 0 auto; }
+    margin: 0 auto;
+    max-width: 337px !important; }
     .search-bar-container .search-bar {
       width: 91% !important;
       height: 280px !important;
@@ -2508,6 +2510,13 @@ html, body {
           border-bottom-right-radius: 4px; }
       .search-bar-container .search-bar .days-container {
         border-top-right-radius: 4px; }
+  .daterangepicker {
+    width: 307px !important;
+    .calendar {
+      margin: 4px auto !important;
+      float: none !important;
+    }
+  }
   .more-content, .share {
     flex-direction: column;
     align-items: center;

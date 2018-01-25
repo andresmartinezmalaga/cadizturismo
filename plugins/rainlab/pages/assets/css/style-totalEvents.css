@@ -10,7 +10,7 @@
   margin-left: 28px; }
 
 /* BUSCADOR */
-.search-bar-container {
+#search-event {
   width: 973px;
   height: 105px;
   border-radius: 5px;
@@ -23,7 +23,7 @@
   align-items: center;
   justify-content: center; }
 
-.search-bar-container .search-bar {
+#search-event .search-bar {
   width: 929px;
   height: 70px;
   background-color: white;
@@ -36,24 +36,24 @@
   flex-direction: row;
   flex-wrap: wrap; }
 
-.search-bar-container .search-bar .days-container {
+#search-event .search-bar .days-container {
   width: 202px;
   min-width: 202px;
   height: 100%;
   border-right: 1px solid #DDDDDD; }
 
-.search-bar-container .search-bar .interests-container {
+#search-event .search-bar .interests-container {
   width: 244px;
   min-width: 244px;
   height: 100%;
   border-right: 1px solid #DDDDDD; }
 
-.search-bar-container .search-bar .type-container {
+#search-event .search-bar .type-container {
   width: 293px;
   min-width: 293px;
   height: 100%; }
 
-.search-bar-container .search-bar .button-container {
+#search-event .search-bar .button-container {
   width: 190px;
   min-width: 190px;
   height: 100%;
@@ -61,7 +61,7 @@
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px; }
 
-.search-bar-container .search-bar .button-container input {
+#search-event.search-bar .button-container input {
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px; }
 
@@ -101,52 +101,14 @@ form input[type="submit"]:hover, form input[type="submit"]:focus, form input[typ
 .select2:active, .select2:focus, .select2-selection--single:active, .select2-selection--single:focus, .select2-selection__rendered:active, .select2-selection__rendered:focus {
   outline: none; }
 
-.select2-selection__rendered {
+#search-event .select2-selection__rendered {
   padding-left: 55px !important;
   color: #4A4A4A !important;
   font-size: 15.72px;
   line-height: 22px !important;
   padding-top: 21px; }
 
-.days-container {
-  background-image: url("../svg/category-events.svg");
-  background-repeat: no-repeat;
-  background-position: 21px 50%;
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px; }
-
-.interests-container {
-  background-image: url("../svg/calendar-events.svg");
-  background-repeat: no-repeat;
-  background-position: 21px 50%;
-  cursor: pointer;
-  /* DATEPICKER */ }
-
-.interests-container input {
-  width: 100%;
-  height: 100%;
-  padding-left: 55px;
-  padding-bottom: 7px;
-  background-color: transparent;
-  border: none;
-  color: #4a4a4a;
-  font-size: 15.72px;
-  line-height: 22px;
-  cursor: pointer; }
-
-.interests-container .arrow {
-  position: absolute;
-  right: 17px;
-  top: 29px;
-  width: 11px;
-  height: 6px; }
-
-.type-container {
-  background-image: url("../svg/location-events.svg");
-  background-repeat: no-repeat;
-  background-position: 21px 50%; }
-
-.select2-container--default .select2-selection--single {
+#search-event .select2-container--default .select2-selection--single {
   background-color: transparent !important; }
 
 .select2-container--default .select2-results__option--highlighted[aria-selected], .select2-container--default .select2-results__option[aria-selected=true] {
@@ -194,11 +156,49 @@ form input[type="submit"]:hover, form input[type="submit"]:focus, form input[typ
   height: 38px;
   padding-left: 20px; }
 
-.days-container, .interests-container, .type-container {
+#search-event .days-container {
+  background-image: url("../svg/category-events.svg");
+  background-repeat: no-repeat;
+  background-position: 21px 50%;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px; }
+
+#search-event .interests-container {
+  background-image: url("../svg/calendar-events.svg");
+  background-repeat: no-repeat;
+  background-position: 21px 50%;
+  cursor: pointer;
+  /* DATEPICKER */ }
+
+#search-event .interests-container input {
+  width: 100%;
+  height: 100%;
+  padding-left: 55px;
+  padding-bottom: 7px;
+  background-color: transparent;
+  border: none;
+  color: #4a4a4a;
+  font-size: 15.72px;
+  line-height: 22px;
+  cursor: pointer; }
+
+#search-event .interests-container .arrow {
+  position: absolute;
+  right: 17px;
+  top: 29px;
+  width: 11px;
+  height: 6px; }
+
+#search-event .type-container {
+  background-image: url("../svg/location-events.svg");
+  background-repeat: no-repeat;
+  background-position: 21px 50%; }
+
+#search-event .days-container, #search-event .interests-container, #search-event .type-container {
   position: relative;
   background-color: white; }
 
-.days-container .select-title, .interests-container .select-title, .type-container .select-title {
+#search-event .interests-container .select-title, #search-event .days-container .select-title, #search-event .type-container .select-title {
   position: absolute;
   color: #9B9B9B;
   font-size: 8px;
