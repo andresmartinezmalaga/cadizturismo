@@ -34,7 +34,7 @@ class Evento extends ContentBase
         //'@RainLab.Translate.Behaviors.TranslatablePageUrl',
         '@RainLab.Translate.Behaviors.TranslatableCmsObject'
     ];
-    
+
     /**
      * @var string The container name associated with the model, eg: pages.
      */
@@ -132,11 +132,16 @@ class Evento extends ContentBase
         // Andrés Martínez : Load events template on markup
         $template = '
         <!-- HEADER -->
-        <div class="header-event main-event">
+        <div id="header-event-fr" class="header-event main-event">
           <div class="header-container">
             <div class="header-txt">
               <h1 class="txt">Carreras de caballos</h1>
               <img class="brush" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt="">
+              <div class="send-info">
+                <div class="button-send-info">
+                  <a href="#">Descarga el programa de carreras</a>
+                </div>
+              </div>
             </div>
           </div>
           <!-- NUEVA FOTO -->
@@ -217,8 +222,8 @@ class Evento extends ContentBase
               <p class="also-desc">Cultura</p>
             </div>
           </div>
-        </div>';     
-        
+        </div>';
+
 
         if (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false) {
           $preurl = '/cadizturismo';
@@ -327,14 +332,14 @@ class Evento extends ContentBase
 
         return['1' => '1 día', '2' => '2 días', '3' => '3 días', '4' => '4 días', '5' => '5 días', '6' => '6 días', '7' => '7 días'] ;
     }
-    
+
     /**
      * Sets the object attributes.
      * @param array $attributes A list of attributes to set.
      */
     public function fill(array $attributes)
     {
-       
+
         parent::fill($attributes);
 
         /*
@@ -385,7 +390,7 @@ class Evento extends ContentBase
      */
     public function beforeCreate()
     {
-        $this->fileName = $this->generateFilenameFromCode();       
+        $this->fileName = $this->generateFilenameFromCode();
     }
 
     /**
@@ -495,7 +500,7 @@ class Evento extends ContentBase
 
         return Cms::url($url);
     }
-    
+
     /**
      * Determine the default layout for a new page
      * @param \RainLab\Pages\Classes\Page $parentPage
@@ -513,7 +518,7 @@ class Evento extends ContentBase
                 return;
             }
         }
-        
+
         // Check theme layouts for one marked as the default
         foreach (Layout::listInTheme($this->theme) as $layout) {
             $component = $layout->getComponent('staticEvento');
@@ -909,7 +914,7 @@ class Evento extends ContentBase
      *   false if omitted.
      * - dynamicItems - Boolean value indicating whether the item type could generate new menu items.
      *   Optional, false if omitted.
-     * - cmsPages - a list of CMS pages (objects of the Cms\Classes\Page class), if the item type requires a CMS page reference to 
+     * - cmsPages - a list of CMS pages (objects of the Cms\Classes\Page class), if the item type requires a CMS page reference to
      *   resolve the item URL.
      * @param string $type Specifies the menu item type
      * @return array Returns an array
@@ -938,9 +943,9 @@ class Evento extends ContentBase
      * - url - the menu item URL. Not required for menu item types that return all available records.
      *   The URL should be returned relative to the website root and include the subdirectory, if any.
      *   Use the Cms::url() helper to generate the URLs.
-     * - isActive - determines whether the menu item is active. Not required for menu item types that 
+     * - isActive - determines whether the menu item is active. Not required for menu item types that
      *   return all available records.
-     * - items - an array of arrays with the same keys (url, isActive, items) + the title key. 
+     * - items - an array of arrays with the same keys (url, isActive, items) + the title key.
      *   The items array should be added only if the $item's $nesting property value is TRUE.
      * @param \RainLab\Pages\Classes\MenuItem $item Specifies the menu item.
      * @param \Cms\Classes\Theme $theme Specifies the current theme.

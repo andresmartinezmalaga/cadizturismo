@@ -775,6 +775,9 @@ html, body {
 .field-richeditor .press-languages {
   display: block !important; }
 
+.field-richeditor #header-event-fr .brush {
+  margin-bottom: 0px !important; }
+
 .field-richeditor .img-village:before {
   content: none !important; }
 

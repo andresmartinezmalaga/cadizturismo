@@ -1,12 +1,4 @@
-<<<<<<< HEAD
-1516878053a:1:{s:11:"default.htm";a:12:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:3072:"description = "Default Layout"
-=======
-<<<<<<< HEAD:storage/framework/cache/11/37/113749b93a0ba7b038c309acb80d3fb214061db9
-1516872717a:1:{s:11:"default.htm";a:12:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:3072:"description = "Default Layout"
-=======
-1516875808a:1:{s:11:"default.htm";a:12:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:3072:"description = "Default Layout"
->>>>>>> 491ada266dd4d7718bcf5c9702c800d83ff94f0c:storage/framework/cache/a0/98/a09870c62d632b92ba7518c71df8cd6b428e99dd
->>>>>>> 7e36ed94a1a1da4d9cff559cad46c3d35a70006a
+1516883080a:1:{s:11:"default.htm";a:12:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:3072:"description = "Default Layout"
 
 [staticPage]
 useContent = 1
