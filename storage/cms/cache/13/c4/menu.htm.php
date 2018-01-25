@@ -1,8 +1,8 @@
 <?php 
-class Cms5a699ac58424c774565894_b34d494d9c3d1ab6889f8b12205f9470Class extends \Cms\Classes\PartialCode
+class Cms5a69a0df501f1826392378_2df515ea874fe9c6d9dc4d8e2c189004Class extends \Cms\Classes\PartialCode
 {
 public function onStart()
     {      
-     
+
     }
 }

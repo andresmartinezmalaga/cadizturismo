@@ -21,7 +21,28 @@
   'RainLab\\Pages\\Classes\\Menu' => 'plugins/rainlab/pages/classes/Menu.php',
   'RainLab\\Pages\\Classes\\MenuItem' => 'plugins/rainlab/pages/classes/MenuItem.php',
   'RainLab\\Pages\\Classes\\MenuItemReference' => 'plugins/rainlab/pages/classes/MenuItemReference.php',
+<<<<<<< HEAD
   'RainLab\\Pages\\Classes\\SnippetManager' => 'plugins/rainlab/pages/classes/SnippetManager.php',
+=======
+  'RainLab\\Pages\\Components\\StaticPage' => 'plugins/rainlab/pages/components/StaticPage.php',
+  'backend\\Controllers\\index' => 'modules/backend/controllers/index.php',
+  'RainLab\\GoogleAnalytics\\ReportWidgets\\Browsers' => 'plugins/rainlab/googleanalytics/reportwidgets/Browsers.php',
+  'RainLab\\GoogleAnalytics\\ReportWidgets\\TrafficSources' => 'plugins/rainlab/googleanalytics/reportwidgets/TrafficSources.php',
+  'RainLab\\GoogleAnalytics\\ReportWidgets\\TrafficOverview' => 'plugins/rainlab/googleanalytics/reportwidgets/TrafficOverview.php',
+  'RainLab\\GoogleAnalytics\\ReportWidgets\\TrafficGoal' => 'plugins/rainlab/googleanalytics/reportwidgets/TrafficGoal.php',
+  'RainLab\\GoogleAnalytics\\ReportWidgets\\TopPages' => 'plugins/rainlab/googleanalytics/reportwidgets/TopPages.php',
+  'RainLab\\GoogleAnalytics\\Classes\\Analytics' => 'plugins/rainlab/googleanalytics/classes/Analytics.php',
+  'RainLab\\GoogleAnalytics\\Models\\Settings' => 'plugins/rainlab/googleanalytics/models/Settings.php',
+  'RainLab\\GoogleAnalytics\\Classes\\CacheItemPool' => 'plugins/rainlab/googleanalytics/classes/CacheItemPool.php',
+  'rainlab\\translate\\Controllers\\messages' => 'plugins/rainlab/translate/controllers/messages.php',
+  'RainLab\\Translate\\Classes\\ThemeScanner' => 'plugins/rainlab/translate/classes/ThemeScanner.php',
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 97bddea29b170a1cfbf74751b63497d7665fdae7
+>>>>>>> 53fdf7f89cd5f727fc7bca1882a8472e5280aa29
+>>>>>>> 2295e3eb652a3e0f3490156c070434d4910fb556
   'rainlab\\pages\\Controllers\\index' => 'plugins/rainlab/pages/controllers/index.php',
   'RainLab\\Pages\\Widgets\\PageList' => 'plugins/rainlab/pages/widgets/PageList.php',
   'RainLab\\Pages\\Widgets\\MenuList' => 'plugins/rainlab/pages/widgets/MenuList.php',
@@ -34,4 +55,24 @@
   'RainLab\\Translate\\FormWidgets\\MLRichEditor' => 'plugins/rainlab/translate/formwidgets/MLRichEditor.php',
   'RainLab\\Translate\\Classes\\MLCmsObject' => 'plugins/rainlab/translate/classes/MLCmsObject.php',
   'RainLab\\Translate\\Classes\\MLStaticPage' => 'plugins/rainlab/translate/classes/MLStaticPage.php',
+<<<<<<< HEAD
+=======
+  'RainLab\\Translate\\Classes\\LocaleMiddleware' => 'plugins/rainlab/translate/classes/LocaleMiddleware.php',
+  'RainLab\\Pages\\Classes\\Controller' => 'plugins/rainlab/pages/classes/Controller.php',
+  'RainLab\\Pages\\Classes\\Router' => 'plugins/rainlab/pages/classes/Router.php',
+  'RainLab\\Pages\\Components\\StaticMenu' => 'plugins/rainlab/pages/components/StaticMenu.php',
+  'RainLab\\Pages\\Components\\StaticApp' => 'plugins/rainlab/pages/components/StaticApp.php',
+  'RainLab\\Pages\\Classes\\Snippet' => 'plugins/rainlab/pages/classes/Snippet.php',
+<<<<<<< HEAD
+  'RainLab\\Translate\\Models\\Message' => 'plugins/rainlab/translate/models/Message.php',
+  'RainLab\\Pages\\Classes\\MenuItem' => 'plugins/rainlab/pages/classes/MenuItem.php',
+  'RainLab\\Pages\\Classes\\MenuItemReference' => 'plugins/rainlab/pages/classes/MenuItemReference.php',
+=======
+=======
+>>>>>>> b2c5647b2bcef2e64361ce5a640f7d3bb65e2e7c
+>>>>>>> 97bddea29b170a1cfbf74751b63497d7665fdae7
+>>>>>>> f689aa20475d697d4b8af475601afa205c155ef2
+>>>>>>> 53fdf7f89cd5f727fc7bca1882a8472e5280aa29
+>>>>>>> cff6ad756747592f101865b50e0a5c7b2fe6949d
+>>>>>>> 2295e3eb652a3e0f3490156c070434d4910fb556
 );
