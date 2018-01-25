@@ -1492,7 +1492,7 @@ html, body {
   height: auto; }
   .reportajes .publi-container {
     width: 66%;
-    margin: 0px 0px 0px 160px;
+    margin: 0px 0px 0px 151px;
     padding: 130px 0px 0px 0px; }
   .reportajes h3 {
     font-family: 'AvenirNext-DemiBold';
@@ -1675,9 +1675,9 @@ html, body {
   .publis {
     grid-template-columns: repeat(2, 400px) !important;
     -ms-grid-template-columns: repeat(2, 400px) !important; }
-    .publis .publicacion:nth-child(2):before, .publis .publicacion:nth-child(4):before, .publis .publicacion:nth-child(6):before {
+    .publis .publicacion:nth-child(2):before, .publis .publicacion:nth-child(4):before, .publis .publicacion:nth-child(6):before, .publis .reportaje:nth-child(2):before, .publis .reportaje:nth-child(4):before, .publis .reportaje:nth-child(6):before {
       content: none; }
-    .publis .publicacion:nth-child(1):before, .publis .publicacion:nth-child(3):before, .publis .publicacion:nth-child(5):before {
+    .publis .publicacion:nth-child(1):before, .publis .publicacion:nth-child(3):before, .publis .publicacion:nth-child(5):before, .publis .reportaje:nth-child(1):before, .publis .reportaje:nth-child(3):before, .publis .reportaje:nth-child(5):before {
       content: '';
       position: absolute;
       z-index: 10;
