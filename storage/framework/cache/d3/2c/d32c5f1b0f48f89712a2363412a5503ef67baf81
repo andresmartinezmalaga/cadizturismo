@@ -1,0 +1,285 @@
+1516870645a:1:{s:23:"gastronomia-el-vino.htm";a:7:{s:8:"fileName";s:23:"gastronomia-el-vino.htm";s:7:"content";s:5330:"[viewBag]
+title = "El vino"
+url = "/gastronomia/el-vino"
+template = "pages"
+is_hidden = 0
+layout = "default"
+localeUrl[en] = "/gastronomia/el-vino"
+localeUrl[fr] = "/gastronomia/el-vino"
+localeUrl[de] = "/gastronomia/el-vino"
+localeUrl[ru] = "/gastronomia/el-vino"
+==
+<!-- HEADER -->
+<div class="header header-vino">
+	<div class="header-container header-village-container">
+		<div class="header-txt header-txt-village">
+
+			<h1 class="txt" id="natu-via">El vino</h1><img class="brush fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
+	</div>
+	<!-- NUEVA FOTO -->
+	<img class="background-image fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/vinoheader.jpg"></div>
+<!-- TXT-->
+<div class="section-txt-village">
+	<div class="txt-container">
+
+		<p class="title">TIERRA
+			<br>DE VIÑAS</p><img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+
+		<p class="desc">Bien es conocido la calidad y la dedicación al vino de la provincia de Cádiz. Diversos son los municipios en los que disfrutar de una ruta por las bodegas y conocer aún más esta pasión.</p>
+	</div>
+</div>
+<!-- IMAGEN -->
+<div class="featured-element featured-vino">
+	<div class="txt-container">
+
+		<p class="title">CATA DE VINOS EN VEJER DE LA FRONTERA</p>
+
+		<p class="desc">Un plan para todos los sentidos. De lo bueno, lo mejor.</p><a class="events-link" href="rutas.html">Selección de rutas <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-arrow-yellow.svg" alt="" class="fr-fic fr-dii">&nbsp;</a>
+		<img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
+	<!-- NUEVA FOTO -->
+	<div class="overlay">
+		<br>
+	</div><img class="img-destacada fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/cata-vinos.jpg" alt=""></div>
+<div class="section-txt-village">
+	<div class="txt-container">
+
+		<p class="title">3 IDEAS PENSADAS
+			<br>ESPECIALMENTE
+			<br>PARA TI</p><img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
+</div>
+<div class="all-exps" id="exps-playa">
+	<div class="all-events-container">
+		<div class="event event-playa">
+			<div class="overlay-img">
+				<br>
+			</div><img class="rec-img fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/osborne.jpg">
+			<div class="txt-container">
+
+				<p class="name name-bird">BODEGAS OSBORNE</p>
+
+				<p class="subtitle">Una experiencia única en la que descubrirás&nbsp;los sabores y olores más solemnes de Andalucía.</p><img class="separator separator-playa fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+				<a class="see-event" href="http://www.bodegas-osborne.com/puerto-de-santa-maria/" target="_blank">Más info <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+		</div>
+		<div class="event event-playa">
+			<div class="overlay-img">
+				<br>
+			</div><img class="rec-img fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/tio-pepe.jpg">
+			<div class="txt-container">
+
+				<p class="name name-bird">BODEGAS
+					<br>TÍO PEPE</p>
+
+				<p class="subtitle">Atrévete a descubrir el origen del vino de Jerez y aprender de todos sus secretos.</p><img class="separator separator-playa fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+				<a class="see-event" href="https://bodegastiopepe.com/" target="_blank">Más info <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+		</div>
+		<div class="event event-playa">
+			<div class="overlay-img">
+				<br>
+			</div><img class="rec-img fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/petronila.jpg">
+			<div class="txt-container">
+
+				<p class="name name-bird">LA VIÑA SANTA PETRONILA</p>
+
+				<p class="subtitle">La Viña Santa Petronila está situada en la mejor zona vinícola del Jerez Superior.</p><img class="separator separator-playa fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+				<a class="see-event" href="http://santapetronila.com/" target="_blank">Más info <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+		</div>
+	</div>
+</div>
+<div class="icons-row">
+	<div class="i-container">
+		<div class="also-feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/gastro-grey.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Gastronomía</p>
+		</div>
+		<div class="also-feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/cultura-grey.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Cultura</p>
+		</div>
+		<div class="also-feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/ruta-grey.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Ruta</p>
+		</div>
+	</div>
+</div>";s:5:"mtime";i:1516729013;s:6:"markup";s:5062:"<!-- HEADER -->
+<div class="header header-vino">
+	<div class="header-container header-village-container">
+		<div class="header-txt header-txt-village">
+
+			<h1 class="txt" id="natu-via">El vino</h1><img class="brush fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
+	</div>
+	<!-- NUEVA FOTO -->
+	<img class="background-image fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/vinoheader.jpg"></div>
+<!-- TXT-->
+<div class="section-txt-village">
+	<div class="txt-container">
+
+		<p class="title">TIERRA
+			<br>DE VIÑAS</p><img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+
+		<p class="desc">Bien es conocido la calidad y la dedicación al vino de la provincia de Cádiz. Diversos son los municipios en los que disfrutar de una ruta por las bodegas y conocer aún más esta pasión.</p>
+	</div>
+</div>
+<!-- IMAGEN -->
+<div class="featured-element featured-vino">
+	<div class="txt-container">
+
+		<p class="title">CATA DE VINOS EN VEJER DE LA FRONTERA</p>
+
+		<p class="desc">Un plan para todos los sentidos. De lo bueno, lo mejor.</p><a class="events-link" href="rutas.html">Selección de rutas <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-arrow-yellow.svg" alt="" class="fr-fic fr-dii">&nbsp;</a>
+		<img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
+	<!-- NUEVA FOTO -->
+	<div class="overlay">
+		<br>
+	</div><img class="img-destacada fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/cata-vinos.jpg" alt=""></div>
+<div class="section-txt-village">
+	<div class="txt-container">
+
+		<p class="title">3 IDEAS PENSADAS
+			<br>ESPECIALMENTE
+			<br>PARA TI</p><img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
+</div>
+<div class="all-exps" id="exps-playa">
+	<div class="all-events-container">
+		<div class="event event-playa">
+			<div class="overlay-img">
+				<br>
+			</div><img class="rec-img fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/osborne.jpg">
+			<div class="txt-container">
+
+				<p class="name name-bird">BODEGAS OSBORNE</p>
+
+				<p class="subtitle">Una experiencia única en la que descubrirás&nbsp;los sabores y olores más solemnes de Andalucía.</p><img class="separator separator-playa fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+				<a class="see-event" href="http://www.bodegas-osborne.com/puerto-de-santa-maria/" target="_blank">Más info <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+		</div>
+		<div class="event event-playa">
+			<div class="overlay-img">
+				<br>
+			</div><img class="rec-img fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/tio-pepe.jpg">
+			<div class="txt-container">
+
+				<p class="name name-bird">BODEGAS
+					<br>TÍO PEPE</p>
+
+				<p class="subtitle">Atrévete a descubrir el origen del vino de Jerez y aprender de todos sus secretos.</p><img class="separator separator-playa fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+				<a class="see-event" href="https://bodegastiopepe.com/" target="_blank">Más info <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+		</div>
+		<div class="event event-playa">
+			<div class="overlay-img">
+				<br>
+			</div><img class="rec-img fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/petronila.jpg">
+			<div class="txt-container">
+
+				<p class="name name-bird">LA VIÑA SANTA PETRONILA</p>
+
+				<p class="subtitle">La Viña Santa Petronila está situada en la mejor zona vinícola del Jerez Superior.</p><img class="separator separator-playa fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+				<a class="see-event" href="http://santapetronila.com/" target="_blank">Más info <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+		</div>
+	</div>
+</div>
+<div class="icons-row">
+	<div class="i-container">
+		<div class="also-feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/gastro-grey.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Gastronomía</p>
+		</div>
+		<div class="also-feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/cultura-grey.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Cultura</p>
+		</div>
+		<div class="also-feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/ruta-grey.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Ruta</p>
+		</div>
+	</div>
+</div>";s:4:"code";N;s:7:"viewBag";a:6:{s:5:"title";s:7:"El vino";s:3:"url";s:20:"/gastronomia/el-vino";s:8:"template";s:5:"pages";s:9:"is_hidden";s:1:"0";s:6:"layout";s:7:"default";s:9:"localeUrl";a:4:{s:2:"en";s:20:"/gastronomia/el-vino";s:2:"fr";s:20:"/gastronomia/el-vino";s:2:"de";s:20:"/gastronomia/el-vino";s:2:"ru";s:20:"/gastronomia/el-vino";}}s:12:"parsedMarkup";s:5062:"<!-- HEADER -->
+<div class="header header-vino">
+	<div class="header-container header-village-container">
+		<div class="header-txt header-txt-village">
+
+			<h1 class="txt" id="natu-via">El vino</h1><img class="brush fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
+	</div>
+	<!-- NUEVA FOTO -->
+	<img class="background-image fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/vinoheader.jpg"></div>
+<!-- TXT-->
+<div class="section-txt-village">
+	<div class="txt-container">
+
+		<p class="title">TIERRA
+			<br>DE VIÑAS</p><img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+
+		<p class="desc">Bien es conocido la calidad y la dedicación al vino de la provincia de Cádiz. Diversos son los municipios en los que disfrutar de una ruta por las bodegas y conocer aún más esta pasión.</p>
+	</div>
+</div>
+<!-- IMAGEN -->
+<div class="featured-element featured-vino">
+	<div class="txt-container">
+
+		<p class="title">CATA DE VINOS EN VEJER DE LA FRONTERA</p>
+
+		<p class="desc">Un plan para todos los sentidos. De lo bueno, lo mejor.</p><a class="events-link" href="rutas.html">Selección de rutas <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-arrow-yellow.svg" alt="" class="fr-fic fr-dii">&nbsp;</a>
+		<img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
+	<!-- NUEVA FOTO -->
+	<div class="overlay">
+		<br>
+	</div><img class="img-destacada fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/cata-vinos.jpg" alt=""></div>
+<div class="section-txt-village">
+	<div class="txt-container">
+
+		<p class="title">3 IDEAS PENSADAS
+			<br>ESPECIALMENTE
+			<br>PARA TI</p><img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
+</div>
+<div class="all-exps" id="exps-playa">
+	<div class="all-events-container">
+		<div class="event event-playa">
+			<div class="overlay-img">
+				<br>
+			</div><img class="rec-img fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/osborne.jpg">
+			<div class="txt-container">
+
+				<p class="name name-bird">BODEGAS OSBORNE</p>
+
+				<p class="subtitle">Una experiencia única en la que descubrirás&nbsp;los sabores y olores más solemnes de Andalucía.</p><img class="separator separator-playa fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+				<a class="see-event" href="http://www.bodegas-osborne.com/puerto-de-santa-maria/" target="_blank">Más info <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+		</div>
+		<div class="event event-playa">
+			<div class="overlay-img">
+				<br>
+			</div><img class="rec-img fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/tio-pepe.jpg">
+			<div class="txt-container">
+
+				<p class="name name-bird">BODEGAS
+					<br>TÍO PEPE</p>
+
+				<p class="subtitle">Atrévete a descubrir el origen del vino de Jerez y aprender de todos sus secretos.</p><img class="separator separator-playa fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+				<a class="see-event" href="https://bodegastiopepe.com/" target="_blank">Más info <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+		</div>
+		<div class="event event-playa">
+			<div class="overlay-img">
+				<br>
+			</div><img class="rec-img fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/petronila.jpg">
+			<div class="txt-container">
+
+				<p class="name name-bird">LA VIÑA SANTA PETRONILA</p>
+
+				<p class="subtitle">La Viña Santa Petronila está situada en la mejor zona vinícola del Jerez Superior.</p><img class="separator separator-playa fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+				<a class="see-event" href="http://santapetronila.com/" target="_blank">Más info <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+		</div>
+	</div>
+</div>
+<div class="icons-row">
+	<div class="i-container">
+		<div class="also-feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/gastro-grey.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Gastronomía</p>
+		</div>
+		<div class="also-feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/cultura-grey.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Cultura</p>
+		</div>
+		<div class="also-feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/ruta-grey.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Ruta</p>
+		</div>
+	</div>
+</div>";}}
