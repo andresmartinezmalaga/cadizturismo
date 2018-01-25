@@ -1565,6 +1565,23 @@ html, body {
       justify-content: space-between;
       padding-left: 30px; }
 
+.somos-txt-container {
+  width: 80%;
+  margin: 0px auto;
+  padding: 130px 0px 0px 0px; }
+  .somos-txt-container h3 {
+    font-family: 'AvenirNext-DemiBold';
+    font-size: 64px;
+    color: #4A4A4A; }
+  .somos-txt-container .separator {
+    margin-top: 36px;
+    margin-bottom: 60px; }
+  .somos-txt-container p {
+    color: #4A4A4A;
+    font-size: 16px;
+    line-height: 33px;
+    width: 78%; }
+
 @media (max-width: 1250px) and (min-width: 840px) {
   .publis {
     grid-template-columns: repeat(2, 400px) !important;

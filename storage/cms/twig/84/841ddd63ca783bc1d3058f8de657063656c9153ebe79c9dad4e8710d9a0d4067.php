@@ -34,7 +34,7 @@ class __TwigTemplate_b8ae5cec640fa54ac46df2d0bc8281884b28e03321611cca237847f62bb
       <div class=\"menu-list\">
         <p class=\"menu-title\">";
         // line 10
-        echo call_user_func_array($this->env->getFilter('trans')->getCallable(), array("backend::lang.menuheader.whereToGo"));
+        echo call_user_func_array($this->env->getFilter('_')->getCallable(), array("Dónde ir"));
         echo "</p>
         <img class=\"separator separator-menu\" src=\"";
         // line 11
@@ -50,147 +50,159 @@ class __TwigTemplate_b8ae5cec640fa54ac46df2d0bc8281884b28e03321611cca237847f62bb
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->getSourceContext(), ($context["staticMenu"] ?? null), "menuItems", array()));
         foreach ($context['_seq'] as $context["_key"] => $context["item"]) {
-            echo "               
-            <li class=\"menu-item\"><a href=\"";
             // line 15
+            echo "            ";
+            $context["tt"] = ("." . twig_get_attribute($this->env, $this->getSourceContext(), $context["item"], "title", array()));
+            echo " 
+            <li class=\"menu-item\"><a href=\"";
+            // line 16
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["item"], "url", array()), "html", null, true);
             echo "\">";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), $context["item"], "viewBag", array()), ($context["menulang"] ?? null), array(), "array"), "html", null, true);
+            echo call_user_func_array($this->env->getFilter('_')->getCallable(), array(($context["tt"] ?? null)));
             echo "</a></li>
           ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['item'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 17
+        // line 18
         echo "        </ul>
         <ul class=\"menu-mobile\">
-          <li class=\"menu-item\"><a href=\"";
-        // line 19
-        echo url("/");
-        echo "/";
-        echo twig_escape_filter($this->env, ($context["lang"] ?? null), "html", null, true);
-        echo "/comarcas\">";
-        echo call_user_func_array($this->env->getFilter('trans')->getCallable(), array("backend::lang.menuheader.comarcas"));
-        echo "</a></li>
           <li class=\"menu-item\"><a href=\"";
         // line 20
         echo url("/");
         echo "/";
         echo twig_escape_filter($this->env, ($context["lang"] ?? null), "html", null, true);
+        echo "/comarcas\">";
+        echo call_user_func_array($this->env->getFilter('_')->getCallable(), array("Comarcas"));
+        echo "</a></li>
+          <li class=\"menu-item\"><a href=\"";
+        // line 21
+        echo url("/");
+        echo "/";
+        echo twig_escape_filter($this->env, ($context["lang"] ?? null), "html", null, true);
         echo "/municipios\">";
-        echo call_user_func_array($this->env->getFilter('trans')->getCallable(), array("backend::lang.menuheader.municipios"));
+        echo call_user_func_array($this->env->getFilter('_')->getCallable(), array("Munucipios"));
         echo "</a></li>
         </ul>
       </div>
       
       <div class=\"menu-list\">
         <p class=\"menu-title\">";
-        // line 25
-        echo call_user_func_array($this->env->getFilter('trans')->getCallable(), array("backend::lang.menuheader.whatToDo"));
+        // line 26
+        echo call_user_func_array($this->env->getFilter('_')->getCallable(), array("Qué Hacer"));
         echo "</p>
         <img class=\"separator separator-menu\" src=\"";
-        // line 26
+        // line 27
         echo url("/");
         echo "/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg\">
         <img class=\"separator-tiny\" src=\"";
-        // line 27
+        // line 28
         echo url("/");
         echo "/plugins/rainlab/pages/assets/svg/tiny-separator.svg\">
         <ul class=\"menu-ul\">
           ";
-        // line 29
+        // line 30
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->getSourceContext(), ($context["staticMenu4"] ?? null), "menuItems", array()));
         foreach ($context['_seq'] as $context["_key"] => $context["item"]) {
-            echo "                
+            // line 31
+            echo "            ";
+            $context["tt"] = ("." . twig_get_attribute($this->env, $this->getSourceContext(), $context["item"], "title", array()));
+            echo "         
             <li class=\"menu-item\"><a href=\"";
-            // line 30
+            // line 32
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["item"], "url", array()), "html", null, true);
             echo "\">";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), $context["item"], "viewBag", array()), ($context["menulang"] ?? null), array(), "array"), "html", null, true);
+            echo call_user_func_array($this->env->getFilter('_')->getCallable(), array(($context["tt"] ?? null)));
             echo "</a></li>
           ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['item'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 32
+        // line 34
         echo "        </ul>
       </div>
       
       <div class=\"menu-list\">
         <p class=\"menu-title\">";
-        // line 36
-        echo call_user_func_array($this->env->getFilter('trans')->getCallable(), array("backend::lang.menuheader.whatToLive"));
+        // line 38
+        echo call_user_func_array($this->env->getFilter('_')->getCallable(), array("Qué Vivir"));
         echo "</p>
         <img class=\"separator separator-menu\" src=\"";
-        // line 37
+        // line 39
         echo url("/");
         echo "/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg\">
         <img class=\"separator-tiny\" src=\"";
-        // line 38
+        // line 40
         echo url("/");
         echo "/plugins/rainlab/pages/assets/svg/tiny-separator.svg\">
         <ul class=\"menu-ul\">
           ";
-        // line 40
+        // line 42
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->getSourceContext(), ($context["staticMenu2"] ?? null), "menuItems", array()));
         foreach ($context['_seq'] as $context["_key"] => $context["item"]) {
-            echo "              
+            // line 43
+            echo "            ";
+            $context["tt"] = ("." . twig_get_attribute($this->env, $this->getSourceContext(), $context["item"], "title", array()));
+            echo "             
             <li class=\"menu-item\"><a href=\"";
-            // line 41
+            // line 44
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["item"], "url", array()), "html", null, true);
             echo "\">";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), $context["item"], "viewBag", array()), ($context["menulang"] ?? null), array(), "array"), "html", null, true);
+            echo call_user_func_array($this->env->getFilter('_')->getCallable(), array(($context["tt"] ?? null)));
             echo "</a></li>
           ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['item'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 42
+        // line 45
         echo " 
             <li class=\"menu-item\"><a href=\"todos-los-eventos\">";
-        // line 43
-        echo call_user_func_array($this->env->getFilter('trans')->getCallable(), array("backend::lang.menuheader.allEvents"));
+        // line 46
+        echo call_user_func_array($this->env->getFilter('_')->getCallable(), array("Todos los eventos"));
         echo "</a></li>              
         </ul>
       </div>
      
       <div class=\"menu-list\">
         <p class=\"menu-title\">";
-        // line 48
-        echo call_user_func_array($this->env->getFilter('trans')->getCallable(), array("backend::lang.menuheader.myStance"));
+        // line 51
+        echo call_user_func_array($this->env->getFilter('_')->getCallable(), array("Mi estancia"));
         echo "</p>
         <img class=\"separator separator-menu\" src=\"";
-        // line 49
+        // line 52
         echo url("/");
         echo "/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg\">
         <img class=\"separator-tiny\" src=\"";
-        // line 50
+        // line 53
         echo url("/");
         echo "/plugins/rainlab/pages/assets/svg/tiny-separator.svg\">
         <ul class=\"menu-ul\">
           ";
-        // line 52
+        // line 55
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->getSourceContext(), ($context["staticMenu3"] ?? null), "menuItems", array()));
         foreach ($context['_seq'] as $context["_key"] => $context["item"]) {
+            // line 56
+            echo "            ";
+            $context["tt"] = ("." . twig_get_attribute($this->env, $this->getSourceContext(), $context["item"], "title", array()));
             echo "              
             <li class=\"menu-item\"><a href=\"";
-            // line 53
+            // line 57
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["item"], "url", array()), "html", null, true);
             echo "\">";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), $context["item"], "viewBag", array()), ($context["menulang"] ?? null), array(), "array"), "html", null, true);
+            echo call_user_func_array($this->env->getFilter('_')->getCallable(), array(($context["tt"] ?? null)));
             echo "</a></li>
           ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['item'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 55
+        // line 59
         echo "        </ul>
       </div>
     </div>
@@ -202,11 +214,11 @@ class __TwigTemplate_b8ae5cec640fa54ac46df2d0bc8281884b28e03321611cca237847f62bb
       <div class=\"bottom-bar\"></div>
     </label>
     <img class=\"normal\" src=\"";
-        // line 65
+        // line 69
         echo url("/");
         echo "/plugins/rainlab/pages/assets/svg/top-menu.svg\">
     <img class=\"mobile\" src=\"";
-        // line 66
+        // line 70
         echo url("/");
         echo "/plugins/rainlab/pages/assets/svg/top-mobile.svg\">
   </div>
@@ -214,7 +226,7 @@ class __TwigTemplate_b8ae5cec640fa54ac46df2d0bc8281884b28e03321611cca237847f62bb
 
 <div class=\"mini-logo-container\">
   <a href=\"";
-        // line 71
+        // line 75
         echo url("/");
         echo "/";
         echo twig_escape_filter($this->env, ($context["lang"] ?? null), "html", null, true);
@@ -226,7 +238,7 @@ class __TwigTemplate_b8ae5cec640fa54ac46df2d0bc8281884b28e03321611cca237847f62bb
   <!-- Añadir la clase 'active-lang' al enlace cuando esté activo el idioma correspondiente - de ejemplo está puesto en ESPAÑOL -->
   <p class=\"languages\">
     <a href=\"";
-        // line 76
+        // line 80
         echo url("/");
         echo "/en";
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), ($context["this"] ?? null), "page", array()), "url", array()), "html", null, true);
@@ -235,7 +247,7 @@ class __TwigTemplate_b8ae5cec640fa54ac46df2d0bc8281884b28e03321611cca237847f62bb
         echo "\">EN</a>
     <a class=\"separator separator-lang\"> · </a>
     <a href=\"";
-        // line 78
+        // line 82
         echo url("/");
         echo "/es";
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), ($context["this"] ?? null), "page", array()), "url", array()), "html", null, true);
@@ -243,7 +255,7 @@ class __TwigTemplate_b8ae5cec640fa54ac46df2d0bc8281884b28e03321611cca237847f62bb
         echo (((($context["lang"] ?? null) == "es")) ? ("active-lang") : (""));
         echo "\">ES</a>
     <a class=\"separator separator-lang\"> · </a> <a href=\"";
-        // line 79
+        // line 83
         echo url("/");
         echo "/fr";
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), ($context["this"] ?? null), "page", array()), "url", array()), "html", null, true);
@@ -251,7 +263,7 @@ class __TwigTemplate_b8ae5cec640fa54ac46df2d0bc8281884b28e03321611cca237847f62bb
         echo (((($context["lang"] ?? null) == "fr")) ? ("active-lang") : (""));
         echo "\">FR</a>
     <a class=\"separator separator-lang\"> · </a><a href=\"";
-        // line 80
+        // line 84
         echo url("/");
         echo "/de";
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), ($context["this"] ?? null), "page", array()), "url", array()), "html", null, true);
@@ -259,7 +271,7 @@ class __TwigTemplate_b8ae5cec640fa54ac46df2d0bc8281884b28e03321611cca237847f62bb
         echo (((($context["lang"] ?? null) == "de")) ? ("active-lang") : (""));
         echo "\">DE</a>
     <a class=\"separator separator-lang\"> · </a> <a href=\"";
-        // line 81
+        // line 85
         echo url("/");
         echo "/ru";
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), ($context["this"] ?? null), "page", array()), "url", array()), "html", null, true);
@@ -276,7 +288,7 @@ class __TwigTemplate_b8ae5cec640fa54ac46df2d0bc8281884b28e03321611cca237847f62bb
     <div class=\"menu\">
       <div class=\"logo-container\">
         <a href=\"";
-        // line 91
+        // line 95
         echo url("/");
         echo "/";
         echo twig_escape_filter($this->env, ($context["lang"] ?? null), "html", null, true);
@@ -287,139 +299,154 @@ class __TwigTemplate_b8ae5cec640fa54ac46df2d0bc8281884b28e03321611cca237847f62bb
       <div class=\"menus\">
         <div class=\"menu-list\">
           <p class=\"menu-title\">";
-        // line 95
-        echo call_user_func_array($this->env->getFilter('trans')->getCallable(), array("backend::lang.menuheader.whereToGo"));
+        // line 99
+        echo call_user_func_array($this->env->getFilter('_')->getCallable(), array("Dónde ir"));
         echo "</p>
           <img class=\"separator separator-menu\" src=\"";
-        // line 96
+        // line 100
         echo url("/");
         echo "/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg\">
           <img class=\"separator-tiny\" src=\"";
-        // line 97
+        // line 101
         echo url("/");
         echo "/plugins/rainlab/pages/assets/svg/tiny-separator.svg\">
           <ul class=\"menu-ul donde-ul where-ul\">
             ";
-        // line 99
+        // line 103
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->getSourceContext(), ($context["staticMenu"] ?? null), "menuItems", array()));
         foreach ($context['_seq'] as $context["_key"] => $context["item"]) {
-            echo "             
+            echo "   
+              ";
+            // line 104
+            $context["tt"] = ("." . twig_get_attribute($this->env, $this->getSourceContext(), $context["item"], "title", array()));
+            echo "           
               <li class=\"menu-item\"><a href=\"";
-            // line 100
+            // line 105
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["item"], "url", array()), "html", null, true);
             echo "\">";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), $context["item"], "viewBag", array()), ($context["menulang"] ?? null), array(), "array"), "html", null, true);
+            echo call_user_func_array($this->env->getFilter('_')->getCallable(), array(($context["tt"] ?? null)));
             echo "</a></li>
             ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['item'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 102
+        // line 107
         echo "          </ul>
         </div>
         <div class=\"menu-list\">
           <p class=\"menu-title\">";
-        // line 105
-        echo call_user_func_array($this->env->getFilter('trans')->getCallable(), array("backend::lang.menuheader.whatToDo"));
+        // line 110
+        echo call_user_func_array($this->env->getFilter('_')->getCallable(), array("Qué Hacer"));
         echo "</p>
           <img class=\"separator separator-menu\" src=\"";
-        // line 106
+        // line 111
         echo url("/");
         echo "/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg\">
           <img class=\"separator-tiny\" src=\"";
-        // line 107
+        // line 112
         echo url("/");
         echo "/plugins/rainlab/pages/assets/svg/tiny-separator.svg\">
           <ul class=\"menu-ul do-ul\">
             ";
-        // line 109
+        // line 114
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->getSourceContext(), ($context["staticMenu4"] ?? null), "menuItems", array()));
         foreach ($context['_seq'] as $context["_key"] => $context["item"]) {
-            echo "             
+            // line 115
+            echo "              ";
+            $context["tt"] = ("." . twig_get_attribute($this->env, $this->getSourceContext(), $context["item"], "title", array()));
+            echo "              
               <li class=\"menu-item\"><a href=\"";
-            // line 110
+            // line 116
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["item"], "url", array()), "html", null, true);
             echo "\">";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), $context["item"], "viewBag", array()), ($context["menulang"] ?? null), array(), "array"), "html", null, true);
+            echo call_user_func_array($this->env->getFilter('_')->getCallable(), array(($context["tt"] ?? null)));
             echo "</a></li>
             ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['item'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 112
+        // line 118
         echo "          </ul>
         </div>
         <div class=\"menu-list\">
           <p class=\"menu-title\">";
-        // line 115
-        echo call_user_func_array($this->env->getFilter('trans')->getCallable(), array("backend::lang.menuheader.whatToLive"));
+        // line 121
+        echo call_user_func_array($this->env->getFilter('_')->getCallable(), array("Qué Vivir"));
         echo "</p>
           <img class=\"separator separator-menu\" src=\"";
-        // line 116
+        // line 122
         echo url("/");
         echo "/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg\">
           <img class=\"separator-tiny\" src=\"";
-        // line 117
+        // line 123
         echo url("/");
         echo "/plugins/rainlab/pages/assets/svg/tiny-separator.svg\">
           <ul class=\"menu-ul live-ul\">
             ";
-        // line 119
+        // line 125
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->getSourceContext(), ($context["staticMenu2"] ?? null), "menuItems", array()));
         foreach ($context['_seq'] as $context["_key"] => $context["item"]) {
-            // line 120
-            echo "              <li class=\"menu-item\"><a href=\"";
+            // line 126
+            echo "              ";
+            $context["tt"] = ("." . twig_get_attribute($this->env, $this->getSourceContext(), $context["item"], "title", array()));
+            echo " 
+              <li class=\"menu-item\"><a href=\"";
+            // line 127
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["item"], "url", array()), "html", null, true);
             echo "\">";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), $context["item"], "viewBag", array()), ($context["menulang"] ?? null), array(), "array"), "html", null, true);
+            echo call_user_func_array($this->env->getFilter('_')->getCallable(), array(($context["tt"] ?? null)));
             echo "</a></li>
             ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['item'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 122
+        // line 129
         echo "              <li class=\"menu-item\"><a href=\"todos-los-eventos\">";
-        echo call_user_func_array($this->env->getFilter('trans')->getCallable(), array("backend::lang.menuheader.allEvents"));
+        echo call_user_func_array($this->env->getFilter('_')->getCallable(), array("Todos los eventos"));
         echo "</a></li>
           </ul>
         </div>
         <div class=\"menu-list\">
           <p class=\"menu-title\">";
-        // line 126
-        echo call_user_func_array($this->env->getFilter('trans')->getCallable(), array("backend::lang.menuheader.myStance"));
+        // line 133
+        echo call_user_func_array($this->env->getFilter('_')->getCallable(), array("Mi estancia"));
         echo "</p>
           <img class=\"separator separator-menu\" src=\"";
-        // line 127
+        // line 134
         echo url("/");
         echo "/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg\">
           <img class=\"separator-tiny\" src=\"";
-        // line 128
+        // line 135
         echo url("/");
         echo "/plugins/rainlab/pages/assets/svg/tiny-separator.svg\">
           <ul class=\"menu-ul stance-ul\">
             ";
-        // line 130
+        // line 137
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->getSourceContext(), ($context["staticMenu3"] ?? null), "menuItems", array()));
         foreach ($context['_seq'] as $context["_key"] => $context["item"]) {
-            // line 131
-            echo "              <li class=\"menu-item\"><a href=\"";
+            // line 138
+            echo "              ";
+            $context["tt"] = ("." . twig_get_attribute($this->env, $this->getSourceContext(), $context["item"], "title", array()));
+            echo " 
+              <li class=\"menu-item\"><a href=\"";
+            // line 139
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["item"], "url", array()), "html", null, true);
             echo "\">";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), $context["item"], "viewBag", array()), ($context["menulang"] ?? null), array(), "array"), "html", null, true);
+            echo call_user_func_array($this->env->getFilter('_')->getCallable(), array(($context["tt"] ?? null)));
             echo "</a></li>
             ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['item'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 133
+        // line 141
         echo "          </ul>
         </div>
       </div>
@@ -439,7 +466,7 @@ class __TwigTemplate_b8ae5cec640fa54ac46df2d0bc8281884b28e03321611cca237847f62bb
 
     public function getDebugInfo()
     {
-        return array (  423 => 133,  412 => 131,  408 => 130,  403 => 128,  399 => 127,  395 => 126,  387 => 122,  376 => 120,  372 => 119,  367 => 117,  363 => 116,  359 => 115,  354 => 112,  344 => 110,  338 => 109,  333 => 107,  329 => 106,  325 => 105,  320 => 102,  310 => 100,  304 => 99,  299 => 97,  295 => 96,  291 => 95,  280 => 91,  263 => 81,  255 => 80,  247 => 79,  239 => 78,  230 => 76,  218 => 71,  210 => 66,  206 => 65,  194 => 55,  184 => 53,  178 => 52,  173 => 50,  169 => 49,  165 => 48,  157 => 43,  154 => 42,  144 => 41,  138 => 40,  133 => 38,  129 => 37,  125 => 36,  119 => 32,  109 => 30,  103 => 29,  98 => 27,  94 => 26,  90 => 25,  78 => 20,  70 => 19,  66 => 17,  56 => 15,  50 => 14,  45 => 12,  41 => 11,  37 => 10,  25 => 5,  19 => 1,);
+        return array (  450 => 141,  440 => 139,  435 => 138,  431 => 137,  426 => 135,  422 => 134,  418 => 133,  410 => 129,  400 => 127,  395 => 126,  391 => 125,  386 => 123,  382 => 122,  378 => 121,  373 => 118,  363 => 116,  358 => 115,  354 => 114,  349 => 112,  345 => 111,  341 => 110,  336 => 107,  326 => 105,  322 => 104,  316 => 103,  311 => 101,  307 => 100,  303 => 99,  292 => 95,  275 => 85,  267 => 84,  259 => 83,  251 => 82,  242 => 80,  230 => 75,  222 => 70,  218 => 69,  206 => 59,  196 => 57,  191 => 56,  187 => 55,  182 => 53,  178 => 52,  174 => 51,  166 => 46,  163 => 45,  153 => 44,  148 => 43,  144 => 42,  139 => 40,  135 => 39,  131 => 38,  125 => 34,  115 => 32,  110 => 31,  106 => 30,  101 => 28,  97 => 27,  93 => 26,  81 => 21,  73 => 20,  69 => 18,  59 => 16,  54 => 15,  50 => 14,  45 => 12,  41 => 11,  37 => 10,  25 => 5,  19 => 1,);
     }
 
     public function getSourceContext()
@@ -453,50 +480,54 @@ class __TwigTemplate_b8ae5cec640fa54ac46df2d0bc8281884b28e03321611cca237847f62bb
     <div class=\"menus\">
       
       <div class=\"menu-list\">
-        <p class=\"menu-title\">{{ \"backend::lang.menuheader.whereToGo\"|trans }}</p>
+        <p class=\"menu-title\">{{ 'Dónde ir'|_ }}</p>
         <img class=\"separator separator-menu\" src=\"{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg\">
         <img class=\"separator-tiny\" src=\"{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg\">
         <ul class=\"menu-ul donde-ul\">
-          {% for item in staticMenu.menuItems %}               
-            <li class=\"menu-item\"><a href=\"{{ item.url }}\">{{ item.viewBag[menulang] }}</a></li>
+          {% for item in staticMenu.menuItems %}
+            {% set tt = '.'~item.title %} 
+            <li class=\"menu-item\"><a href=\"{{ item.url }}\">{{ tt|_ }}</a></li>
           {% endfor %}
         </ul>
         <ul class=\"menu-mobile\">
-          <li class=\"menu-item\"><a href=\"{{url('/')}}/{{lang}}/comarcas\">{{ \"backend::lang.menuheader.comarcas\"|trans }}</a></li>
-          <li class=\"menu-item\"><a href=\"{{url('/')}}/{{lang}}/municipios\">{{ \"backend::lang.menuheader.municipios\"|trans }}</a></li>
+          <li class=\"menu-item\"><a href=\"{{url('/')}}/{{lang}}/comarcas\">{{ 'Comarcas'|_ }}</a></li>
+          <li class=\"menu-item\"><a href=\"{{url('/')}}/{{lang}}/municipios\">{{ 'Munucipios'|_ }}</a></li>
         </ul>
       </div>
       
       <div class=\"menu-list\">
-        <p class=\"menu-title\">{{ \"backend::lang.menuheader.whatToDo\"|trans }}</p>
+        <p class=\"menu-title\">{{ 'Qué Hacer'|_ }}</p>
         <img class=\"separator separator-menu\" src=\"{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg\">
         <img class=\"separator-tiny\" src=\"{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg\">
         <ul class=\"menu-ul\">
-          {% for item in staticMenu4.menuItems %}                
-            <li class=\"menu-item\"><a href=\"{{ item.url }}\">{{ item.viewBag[menulang] }}</a></li>
+          {% for item in staticMenu4.menuItems %}
+            {% set tt = '.'~item.title %}         
+            <li class=\"menu-item\"><a href=\"{{ item.url }}\">{{ tt|_ }}</a></li>
           {% endfor %}
         </ul>
       </div>
       
       <div class=\"menu-list\">
-        <p class=\"menu-title\">{{ \"backend::lang.menuheader.whatToLive\"|trans }}</p>
+        <p class=\"menu-title\">{{ 'Qué Vivir'|_ }}</p>
         <img class=\"separator separator-menu\" src=\"{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg\">
         <img class=\"separator-tiny\" src=\"{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg\">
         <ul class=\"menu-ul\">
-          {% for item in staticMenu2.menuItems %}              
-            <li class=\"menu-item\"><a href=\"{{ item.url }}\">{{ item.viewBag[menulang] }}</a></li>
+          {% for item in staticMenu2.menuItems %}
+            {% set tt = '.'~item.title %}             
+            <li class=\"menu-item\"><a href=\"{{ item.url }}\">{{ tt|_ }}</a></li>
           {% endfor %} 
-            <li class=\"menu-item\"><a href=\"todos-los-eventos\">{{ \"backend::lang.menuheader.allEvents\"|trans }}</a></li>              
+            <li class=\"menu-item\"><a href=\"todos-los-eventos\">{{ 'Todos los eventos'|_ }}</a></li>              
         </ul>
       </div>
      
       <div class=\"menu-list\">
-        <p class=\"menu-title\">{{ \"backend::lang.menuheader.myStance\"|trans }}</p>
+        <p class=\"menu-title\">{{ 'Mi estancia'|_ }}</p>
         <img class=\"separator separator-menu\" src=\"{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg\">
         <img class=\"separator-tiny\" src=\"{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg\">
         <ul class=\"menu-ul\">
-          {% for item in staticMenu3.menuItems %}              
-            <li class=\"menu-item\"><a href=\"{{ item.url }}\">{{ item.viewBag[menulang] }}</a></li>
+          {% for item in staticMenu3.menuItems %}
+            {% set tt = '.'~item.title %}              
+            <li class=\"menu-item\"><a href=\"{{ item.url }}\">{{ tt|_ }}</a></li>
           {% endfor %}
         </ul>
       </div>
@@ -538,43 +569,47 @@ class __TwigTemplate_b8ae5cec640fa54ac46df2d0bc8281884b28e03321611cca237847f62bb
       </div>
       <div class=\"menus\">
         <div class=\"menu-list\">
-          <p class=\"menu-title\">{{ \"backend::lang.menuheader.whereToGo\"|trans }}</p>
+          <p class=\"menu-title\">{{ 'Dónde ir'|_ }}</p>
           <img class=\"separator separator-menu\" src=\"{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg\">
           <img class=\"separator-tiny\" src=\"{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg\">
           <ul class=\"menu-ul donde-ul where-ul\">
-            {% for item in staticMenu.menuItems %}             
-              <li class=\"menu-item\"><a href=\"{{ item.url }}\">{{ item.viewBag[menulang] }}</a></li>
+            {% for item in staticMenu.menuItems %}   
+              {% set tt = '.'~item.title %}           
+              <li class=\"menu-item\"><a href=\"{{ item.url }}\">{{ tt|_ }}</a></li>
             {% endfor %}
           </ul>
         </div>
         <div class=\"menu-list\">
-          <p class=\"menu-title\">{{ \"backend::lang.menuheader.whatToDo\"|trans }}</p>
+          <p class=\"menu-title\">{{ 'Qué Hacer'|_  }}</p>
           <img class=\"separator separator-menu\" src=\"{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg\">
           <img class=\"separator-tiny\" src=\"{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg\">
           <ul class=\"menu-ul do-ul\">
-            {% for item in staticMenu4.menuItems %}             
-              <li class=\"menu-item\"><a href=\"{{ item.url }}\">{{ item.viewBag[menulang] }}</a></li>
+            {% for item in staticMenu4.menuItems %}
+              {% set tt = '.'~item.title %}              
+              <li class=\"menu-item\"><a href=\"{{ item.url }}\">{{ tt|_ }}</a></li>
             {% endfor %}
           </ul>
         </div>
         <div class=\"menu-list\">
-          <p class=\"menu-title\">{{ \"backend::lang.menuheader.whatToLive\"|trans }}</p>
+          <p class=\"menu-title\">{{ 'Qué Vivir'|_ }}</p>
           <img class=\"separator separator-menu\" src=\"{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg\">
           <img class=\"separator-tiny\" src=\"{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg\">
           <ul class=\"menu-ul live-ul\">
             {% for item in staticMenu2.menuItems %}
-              <li class=\"menu-item\"><a href=\"{{ item.url }}\">{{ item.viewBag[menulang] }}</a></li>
+              {% set tt = '.'~item.title %} 
+              <li class=\"menu-item\"><a href=\"{{ item.url }}\">{{tt|_}}</a></li>
             {% endfor %}
-              <li class=\"menu-item\"><a href=\"todos-los-eventos\">{{ \"backend::lang.menuheader.allEvents\"|trans }}</a></li>
+              <li class=\"menu-item\"><a href=\"todos-los-eventos\">{{ 'Todos los eventos'|_ }}</a></li>
           </ul>
         </div>
         <div class=\"menu-list\">
-          <p class=\"menu-title\">{{ \"backend::lang.menuheader.myStance\"|trans }}</p>
+          <p class=\"menu-title\">{{ 'Mi estancia'|_ }}</p>
           <img class=\"separator separator-menu\" src=\"{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg\">
           <img class=\"separator-tiny\" src=\"{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg\">
           <ul class=\"menu-ul stance-ul\">
             {% for item in staticMenu3.menuItems %}
-              <li class=\"menu-item\"><a href=\"{{ item.url }}\">{{ item.viewBag[menulang] }}</a></li>
+              {% set tt = '.'~item.title %} 
+              <li class=\"menu-item\"><a href=\"{{ item.url }}\">{{ tt|_ }}</a></li>
             {% endfor %}
           </ul>
         </div>
