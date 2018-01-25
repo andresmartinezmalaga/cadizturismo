@@ -37,4 +37,5 @@
   'RainLab\\Translate\\Classes\\LocaleMiddleware' => 'plugins/rainlab/translate/classes/LocaleMiddleware.php',
   'RainLab\\Pages\\Classes\\Controller' => 'plugins/rainlab/pages/classes/Controller.php',
   'RainLab\\Pages\\Components\\StaticPage' => 'plugins/rainlab/pages/components/StaticPage.php',
+  'backend\\Controllers\\media' => 'modules/backend/controllers/media.php',
 );

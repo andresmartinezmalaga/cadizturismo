@@ -1,0 +1,285 @@
+1516884352a:1:{s:15:"como-llegar.htm";a:7:{s:8:"fileName";s:15:"como-llegar.htm";s:7:"content";s:4960:"[viewBag]
+title = "Cómo llegar"
+url = "/como-llegar"
+template = "pages"
+cover = "default.jpg"
+is_hidden = 0
+layout = "default"
+localeUrl[en] = "/como-llegar"
+localeUrl[fr] = "/como-llegar"
+localeUrl[de] = "/como-llegar"
+localeUrl[ru] = "/como-llegar"
+==
+
+<div class="static-header como-llegar-header">
+  <img class="img-header"
+  src="/storage/app/media/uploaded-files/templates/como-llegar-header.jpg"
+  alt="">
+  <div class="header-container">
+		<div class="header-txt-comollegar">
+			<h1 class="txt">Cómo llegar</h1>
+      <img class="brush" src="/storage/app/media/uploaded-files/templates/brush-header.svg" alt="como llegar a cádíz">
+    </div>
+	</div>
+  <a class="tagline" target="_blank" href="https://www.google.es/maps/dir//C%C3%A1diz/@36.369828,-6.2720717,9.21z/data=!4m8!4m7!1m0!1m5!1m1!1s0xd0dd25724ec240f:0x40463fd8ca03b00!2m2!1d-6.2885962!2d36.5270612">Encuentra la mejor manera de llegar a Cádiz <img src="/storage/app/media/uploaded-files/templates/mini-arrow.svg" alt=""></a>
+</div>
+<section class="ways">
+  <div class="way aero-way">
+    <div class="pic-way">
+      <img class="background-way" src="/storage/app/media/uploaded-files/templates/aereo.jpg" alt="aéreo">
+      <div class="icon-container">
+        <img class="icon" src="/storage/app/media/uploaded-files/templates/aereo-icon.svg" alt="">
+        <p class="icon-txt">AÉREO</p>
+      </div>
+    </div>
+    <div class="info-way">
+      <div class="info-container">
+        <a class="info-link" target="_blank" href="http://www.aena.es/es/aeropuerto-jerez/jerez.html">Aeropuerto de Jerez
+          <img src="/storage/app/media/uploaded-files/templates/mini-arrow.svg" alt=""> </a>
+        <a class="info-link" target="_blank" href="http://www.aena.es/es/aeropuerto-malaga/malaga-costa-sol.html">Aeropuerto de Málaga
+          <img src="/storage/app/media/uploaded-files/templates/mini-arrow.svg" alt=""> </a>
+        <a class="info-link" target="_blank" href="http://www.aena.es/es/aeropuerto-sevilla/sevilla.html">Aeropuerto de Sevilla
+          <img src="/storage/app/media/uploaded-files/templates/mini-arrow.svg" alt=""> </a>
+        <a class="info-link" target="_blank" href="http://www.gibraltarairport.gi/">Aeropuerto de Gibraltar
+          <img src="/storage/app/media/uploaded-files/templates/mini-arrow.svg" alt=""> </a>
+      </div>
+    </div>
+  </div>
+  <div class="way ground-way">
+    <div class="pic-way">
+      <img class="background-way" src="/storage/app/media/uploaded-files/templates/terrestre.jpg" alt="aéreo">
+      <div class="icon-container">
+        <img class="icon" src="/storage/app/media/uploaded-files/templates/terrestre-icon.svg" alt="">
+        <p class="icon-txt">TERRESTRE</p>
+      </div>
+    </div>
+    <div class="info-way">
+      <div class="info-container">
+        <div class="info">
+          <p class="info-title">TREN</p>
+          <a href="http://www.renfe.com/" target="_blank">Renfe<img src="/storage/app/media/uploaded-files/templates/mini-arrow.svg" alt=""></a>
+        </div>
+        <div class="info">
+          <p class="info-title">BUS</p>
+          <a href="http://www.movelia.es/es/" target="_blank">Movelia<img src="/storage/app/media/uploaded-files/templates/mini-arrow.svg" alt=""></a>
+        </div>
+        <div class="info">
+          <p class="info-title">AUTOVÍA</p>
+          <p class="info-desc">A-4</p>
+        </div>
+        <div class="info">
+          <p class="info-title">AUTOPISTA</p>
+          <p class="info-desc">AP-4</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="way sea-way">
+    <div class="pic-way">
+      <img class="background-way" src="/storage/app/media/uploaded-files/templates/maritimo.jpg" alt="aéreo">
+      <div class="icon-container">
+        <img class="icon" src="/storage/app/media/uploaded-files/templates/maritimo-icon.svg" alt="">
+        <p class="icon-txt">MARÍTIMO</p>
+      </div>
+    </div>
+    <div class="info-way">
+      <div class="info-container">
+        <div class="info">
+          <p class="info-title">CEUTA O TÁNGER</p>
+          <div class="links-container">
+              <a href="https://www.frs.es/" target="_blank">Ferry <img src="/storage/app/media/uploaded-files/templates/mini-arrow.svg" alt=""></a>
+              <a href="https://www.balearia.com/es" target="_blank">Balearia <img src="/storage/app/media/uploaded-files/templates/mini-arrow.svg" alt=""></a>
+              <a href="https://www.trasmediterranea.es/" target="_blank">Trasmediterránea <img src="/storage/app/media/uploaded-files/templates/mini-arrow.svg" alt=""></a>
+          </div>
+        </div>
+        <div class="info">
+          <p class="info-title">ISLAS CANARIAS</p>
+          <div class="links-container">
+              <a href="https://www.trasmediterranea.es/" target="_blank">Trasmediterránea <img src="/storage/app/media/uploaded-files/templates/mini-arrow.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+";s:5:"mtime";i:1516807400;s:6:"markup";s:4703:"<div class="static-header como-llegar-header">
+  <img class="img-header"
+  src="/storage/app/media/uploaded-files/templates/como-llegar-header.jpg"
+  alt="">
+  <div class="header-container">
+		<div class="header-txt-comollegar">
+			<h1 class="txt">Cómo llegar</h1>
+      <img class="brush" src="/storage/app/media/uploaded-files/templates/brush-header.svg" alt="como llegar a cádíz">
+    </div>
+	</div>
+  <a class="tagline" target="_blank" href="https://www.google.es/maps/dir//C%C3%A1diz/@36.369828,-6.2720717,9.21z/data=!4m8!4m7!1m0!1m5!1m1!1s0xd0dd25724ec240f:0x40463fd8ca03b00!2m2!1d-6.2885962!2d36.5270612">Encuentra la mejor manera de llegar a Cádiz <img src="/storage/app/media/uploaded-files/templates/mini-arrow.svg" alt=""></a>
+</div>
+<section class="ways">
+  <div class="way aero-way">
+    <div class="pic-way">
+      <img class="background-way" src="/storage/app/media/uploaded-files/templates/aereo.jpg" alt="aéreo">
+      <div class="icon-container">
+        <img class="icon" src="/storage/app/media/uploaded-files/templates/aereo-icon.svg" alt="">
+        <p class="icon-txt">AÉREO</p>
+      </div>
+    </div>
+    <div class="info-way">
+      <div class="info-container">
+        <a class="info-link" target="_blank" href="http://www.aena.es/es/aeropuerto-jerez/jerez.html">Aeropuerto de Jerez
+          <img src="/storage/app/media/uploaded-files/templates/mini-arrow.svg" alt=""> </a>
+        <a class="info-link" target="_blank" href="http://www.aena.es/es/aeropuerto-malaga/malaga-costa-sol.html">Aeropuerto de Málaga
+          <img src="/storage/app/media/uploaded-files/templates/mini-arrow.svg" alt=""> </a>
+        <a class="info-link" target="_blank" href="http://www.aena.es/es/aeropuerto-sevilla/sevilla.html">Aeropuerto de Sevilla
+          <img src="/storage/app/media/uploaded-files/templates/mini-arrow.svg" alt=""> </a>
+        <a class="info-link" target="_blank" href="http://www.gibraltarairport.gi/">Aeropuerto de Gibraltar
+          <img src="/storage/app/media/uploaded-files/templates/mini-arrow.svg" alt=""> </a>
+      </div>
+    </div>
+  </div>
+  <div class="way ground-way">
+    <div class="pic-way">
+      <img class="background-way" src="/storage/app/media/uploaded-files/templates/terrestre.jpg" alt="aéreo">
+      <div class="icon-container">
+        <img class="icon" src="/storage/app/media/uploaded-files/templates/terrestre-icon.svg" alt="">
+        <p class="icon-txt">TERRESTRE</p>
+      </div>
+    </div>
+    <div class="info-way">
+      <div class="info-container">
+        <div class="info">
+          <p class="info-title">TREN</p>
+          <a href="http://www.renfe.com/" target="_blank">Renfe<img src="/storage/app/media/uploaded-files/templates/mini-arrow.svg" alt=""></a>
+        </div>
+        <div class="info">
+          <p class="info-title">BUS</p>
+          <a href="http://www.movelia.es/es/" target="_blank">Movelia<img src="/storage/app/media/uploaded-files/templates/mini-arrow.svg" alt=""></a>
+        </div>
+        <div class="info">
+          <p class="info-title">AUTOVÍA</p>
+          <p class="info-desc">A-4</p>
+        </div>
+        <div class="info">
+          <p class="info-title">AUTOPISTA</p>
+          <p class="info-desc">AP-4</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="way sea-way">
+    <div class="pic-way">
+      <img class="background-way" src="/storage/app/media/uploaded-files/templates/maritimo.jpg" alt="aéreo">
+      <div class="icon-container">
+        <img class="icon" src="/storage/app/media/uploaded-files/templates/maritimo-icon.svg" alt="">
+        <p class="icon-txt">MARÍTIMO</p>
+      </div>
+    </div>
+    <div class="info-way">
+      <div class="info-container">
+        <div class="info">
+          <p class="info-title">CEUTA O TÁNGER</p>
+          <div class="links-container">
+              <a href="https://www.frs.es/" target="_blank">Ferry <img src="/storage/app/media/uploaded-files/templates/mini-arrow.svg" alt=""></a>
+              <a href="https://www.balearia.com/es" target="_blank">Balearia <img src="/storage/app/media/uploaded-files/templates/mini-arrow.svg" alt=""></a>
+              <a href="https://www.trasmediterranea.es/" target="_blank">Trasmediterránea <img src="/storage/app/media/uploaded-files/templates/mini-arrow.svg" alt=""></a>
+          </div>
+        </div>
+        <div class="info">
+          <p class="info-title">ISLAS CANARIAS</p>
+          <div class="links-container">
+              <a href="https://www.trasmediterranea.es/" target="_blank">Trasmediterránea <img src="/storage/app/media/uploaded-files/templates/mini-arrow.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>";s:4:"code";N;s:7:"viewBag";a:7:{s:5:"title";s:12:"Cómo llegar";s:3:"url";s:12:"/como-llegar";s:8:"template";s:5:"pages";s:5:"cover";s:11:"default.jpg";s:9:"is_hidden";s:1:"0";s:6:"layout";s:7:"default";s:9:"localeUrl";a:4:{s:2:"en";s:12:"/como-llegar";s:2:"fr";s:12:"/como-llegar";s:2:"de";s:12:"/como-llegar";s:2:"ru";s:12:"/como-llegar";}}s:12:"parsedMarkup";s:4703:"<div class="static-header como-llegar-header">
+  <img class="img-header"
+  src="/storage/app/media/uploaded-files/templates/como-llegar-header.jpg"
+  alt="">
+  <div class="header-container">
+		<div class="header-txt-comollegar">
+			<h1 class="txt">Cómo llegar</h1>
+      <img class="brush" src="/storage/app/media/uploaded-files/templates/brush-header.svg" alt="como llegar a cádíz">
+    </div>
+	</div>
+  <a class="tagline" target="_blank" href="https://www.google.es/maps/dir//C%C3%A1diz/@36.369828,-6.2720717,9.21z/data=!4m8!4m7!1m0!1m5!1m1!1s0xd0dd25724ec240f:0x40463fd8ca03b00!2m2!1d-6.2885962!2d36.5270612">Encuentra la mejor manera de llegar a Cádiz <img src="/storage/app/media/uploaded-files/templates/mini-arrow.svg" alt=""></a>
+</div>
+<section class="ways">
+  <div class="way aero-way">
+    <div class="pic-way">
+      <img class="background-way" src="/storage/app/media/uploaded-files/templates/aereo.jpg" alt="aéreo">
+      <div class="icon-container">
+        <img class="icon" src="/storage/app/media/uploaded-files/templates/aereo-icon.svg" alt="">
+        <p class="icon-txt">AÉREO</p>
+      </div>
+    </div>
+    <div class="info-way">
+      <div class="info-container">
+        <a class="info-link" target="_blank" href="http://www.aena.es/es/aeropuerto-jerez/jerez.html">Aeropuerto de Jerez
+          <img src="/storage/app/media/uploaded-files/templates/mini-arrow.svg" alt=""> </a>
+        <a class="info-link" target="_blank" href="http://www.aena.es/es/aeropuerto-malaga/malaga-costa-sol.html">Aeropuerto de Málaga
+          <img src="/storage/app/media/uploaded-files/templates/mini-arrow.svg" alt=""> </a>
+        <a class="info-link" target="_blank" href="http://www.aena.es/es/aeropuerto-sevilla/sevilla.html">Aeropuerto de Sevilla
+          <img src="/storage/app/media/uploaded-files/templates/mini-arrow.svg" alt=""> </a>
+        <a class="info-link" target="_blank" href="http://www.gibraltarairport.gi/">Aeropuerto de Gibraltar
+          <img src="/storage/app/media/uploaded-files/templates/mini-arrow.svg" alt=""> </a>
+      </div>
+    </div>
+  </div>
+  <div class="way ground-way">
+    <div class="pic-way">
+      <img class="background-way" src="/storage/app/media/uploaded-files/templates/terrestre.jpg" alt="aéreo">
+      <div class="icon-container">
+        <img class="icon" src="/storage/app/media/uploaded-files/templates/terrestre-icon.svg" alt="">
+        <p class="icon-txt">TERRESTRE</p>
+      </div>
+    </div>
+    <div class="info-way">
+      <div class="info-container">
+        <div class="info">
+          <p class="info-title">TREN</p>
+          <a href="http://www.renfe.com/" target="_blank">Renfe<img src="/storage/app/media/uploaded-files/templates/mini-arrow.svg" alt=""></a>
+        </div>
+        <div class="info">
+          <p class="info-title">BUS</p>
+          <a href="http://www.movelia.es/es/" target="_blank">Movelia<img src="/storage/app/media/uploaded-files/templates/mini-arrow.svg" alt=""></a>
+        </div>
+        <div class="info">
+          <p class="info-title">AUTOVÍA</p>
+          <p class="info-desc">A-4</p>
+        </div>
+        <div class="info">
+          <p class="info-title">AUTOPISTA</p>
+          <p class="info-desc">AP-4</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="way sea-way">
+    <div class="pic-way">
+      <img class="background-way" src="/storage/app/media/uploaded-files/templates/maritimo.jpg" alt="aéreo">
+      <div class="icon-container">
+        <img class="icon" src="/storage/app/media/uploaded-files/templates/maritimo-icon.svg" alt="">
+        <p class="icon-txt">MARÍTIMO</p>
+      </div>
+    </div>
+    <div class="info-way">
+      <div class="info-container">
+        <div class="info">
+          <p class="info-title">CEUTA O TÁNGER</p>
+          <div class="links-container">
+              <a href="https://www.frs.es/" target="_blank">Ferry <img src="/storage/app/media/uploaded-files/templates/mini-arrow.svg" alt=""></a>
+              <a href="https://www.balearia.com/es" target="_blank">Balearia <img src="/storage/app/media/uploaded-files/templates/mini-arrow.svg" alt=""></a>
+              <a href="https://www.trasmediterranea.es/" target="_blank">Trasmediterránea <img src="/storage/app/media/uploaded-files/templates/mini-arrow.svg" alt=""></a>
+          </div>
+        </div>
+        <div class="info">
+          <p class="info-title">ISLAS CANARIAS</p>
+          <div class="links-container">
+              <a href="https://www.trasmediterranea.es/" target="_blank">Trasmediterránea <img src="/storage/app/media/uploaded-files/templates/mini-arrow.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>";}}

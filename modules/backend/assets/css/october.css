@@ -5107,6 +5107,9 @@ nav#layout-mainmenu ul li .mainmenu-accountmenu li:first-child a:hover:after, na
 .control-filelist.filelist-hero ul li > a {
   background-color: #F6F6F6; }
 
+table.table.data tbody.icons td i[class^="icon-"] {
+  color: #175DA3; }
+
 #layout-side-panel div.control-toolbar.separator, .compact-toolbar div.control-toolbar.separator {
   border-bottom: 1px solid #818181; }
 
@@ -5178,6 +5181,9 @@ div[data-control="media-manager"] .list-container table.table.data tbody tr:not(
 
 .btn-group .btn {
   border-right: 1px solid #FFFFFF; }
+
+table.table.data tbody tr:nth-child(even) td, table.table.data tbody tr:nth-child(even) th {
+  background-color: white; }
 
 ul.tree-path li.root a {
   color: #175DA3;
