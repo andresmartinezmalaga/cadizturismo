@@ -1758,6 +1758,9 @@ html, body {
 
 #out-features {
   top: 820px;
+  .feature {
+    min-width: 60px;
+  }
 }
 #phantom-div {
   display: none;
@@ -1824,6 +1827,9 @@ html, body {
         font-size: 12px;
       }
     }
+  }
+  #header-event-fr .send-info {
+    margin-top: 50px !important;
   }
 }
 

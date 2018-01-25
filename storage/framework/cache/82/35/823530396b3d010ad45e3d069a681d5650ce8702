@@ -1,8 +1,4 @@
-<<<<<<< HEAD:storage/framework/cache/e7/4f/e74f1df1406033961d261feb0b3c85b37e9d4a58
-1516880050a:1:{s:11:"dinamic.htm";a:11:{s:8:"fileName";s:11:"dinamic.htm";s:7:"content";s:3946:"description = "Dinamic Layout"
-=======
-1516883080a:1:{s:11:"dinamic.htm";a:11:{s:8:"fileName";s:11:"dinamic.htm";s:7:"content";s:3946:"description = "Dinamic Layout"
->>>>>>> e30d2a5d37d446e5ca3fef34b6c91229dabcea0a:storage/framework/cache/82/35/823530396b3d010ad45e3d069a681d5650ce8702
+1516884500a:1:{s:11:"dinamic.htm";a:11:{s:8:"fileName";s:11:"dinamic.htm";s:7:"content";s:3946:"description = "Dinamic Layout"
 layout = 'dinamic'
 [staticMenu]
 code = "donde-ir"

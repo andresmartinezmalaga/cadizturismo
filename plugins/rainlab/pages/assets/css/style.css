@@ -1670,6 +1670,8 @@ html, body {
 
 #out-features {
   top: 820px; }
+  #out-features .feature {
+    min-width: 60px; }
 
 #phantom-div {
   display: none; }
@@ -1711,7 +1713,9 @@ html, body {
     .publis .publicacion .publi-desc {
       min-height: 231px; }
     .publis .publicacion a {
-      font-size: 12px; } }
+      font-size: 12px; }
+  #header-event-fr .send-info {
+    margin-top: 50px !important; } }
 
 @media (max-width: 660px) {
   .publicaciones-title {

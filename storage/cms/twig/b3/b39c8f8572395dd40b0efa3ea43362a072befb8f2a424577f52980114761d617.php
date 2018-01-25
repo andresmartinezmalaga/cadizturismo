@@ -28,16 +28,32 @@ class __TwigTemplate_b9c9308ea7e79d3a9abc5180120c2a387985a5f6990f5a89d3f35ef2e93
 <!-- FEATURES -->
 <div id=\"out-features\" class=\"event-features\">
   <div class=\"feature\"><img src=\"/cadizturismo/storage/app/media/uploaded-files/templates/calendar-event.svg\" class=\"fr-fil fr-dib\">
-
-    <p class=\"feature-txt\">03.08.17 - 05.08.17</p>
+    
+    <p class=\"feature-txt\">";
+        // line 9
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), ($context["event"] ?? null), "date_start_pretty_num", array()), "html", null, true);
+        echo " - ";
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), ($context["event"] ?? null), "date_end_pretty_num", array()), "html", null, true);
+        echo "</p>
   </div>
-  <div class=\"feature\"><img src=\"/cadizturismo/storage/app/media/uploaded-files/templates/cultura-event.svg\" class=\"fr-fil fr-dib\">
+  <div class=\"feature\"><img src=\"/cadizturismo/storage/app/media/uploaded-files/templates/";
+        // line 11
+        echo call_user_func_array($this->env->getFunction('str_slug')->getCallable(), array("slug", twig_get_attribute($this->env, $this->getSourceContext(), ($context["event"] ?? null), "category", array())));
+        echo ".svg\" class=\"fr-fil fr-dib\">
 
-    <p class=\"feature-txt\">Cultura</p>
+    <p class=\"feature-txt\">";
+        // line 13
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), ($context["event"] ?? null), "category", array()), "html", null, true);
+        echo "</p>
   </div>
   <div class=\"feature\"><img src=\"/cadizturismo/storage/app/media/uploaded-files/templates/location.svg\" class=\"fr-fil fr-dib\">
 
-    <p class=\"feature-txt\">Sanlúcar de Barrameda</p><a class=\"feature-txt-mapa\" href=\"https://www.google.es/maps/place/11540+Sanl%C3%BAcar+de+Barrameda,+C%C3%A1diz/@36.7732122,-6.391691,12.95z/data=!4m5!3m4!1s0xd0dde12a2f8e5ef:0xe9bbc21d97ce48c6!8m2!3d36.7725774!4d-6.3529689\" target=\"_blank\">Ver mapa</a></div>
+    <p class=\"feature-txt\">";
+        // line 17
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), ($context["event"] ?? null), "location", array()), "html", null, true);
+        echo "</p><a class=\"feature-txt-mapa\" href=\"";
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), ($context["event"] ?? null), "locationgoogle", array()), "html", null, true);
+        echo "\" target=\"_blank\">Ver mapa</a></div>
 </div>";
     }
 
@@ -53,7 +69,7 @@ class __TwigTemplate_b9c9308ea7e79d3a9abc5180120c2a387985a5f6990f5a89d3f35ef2e93
 
     public function getDebugInfo()
     {
-        return array (  26 => 3,  22 => 2,  19 => 1,);
+        return array (  53 => 17,  46 => 13,  41 => 11,  34 => 9,  26 => 3,  22 => 2,  19 => 1,);
     }
 
     public function getSourceContext()
@@ -65,16 +81,16 @@ class __TwigTemplate_b9c9308ea7e79d3a9abc5180120c2a387985a5f6990f5a89d3f35ef2e93
 <!-- FEATURES -->
 <div id=\"out-features\" class=\"event-features\">
   <div class=\"feature\"><img src=\"/cadizturismo/storage/app/media/uploaded-files/templates/calendar-event.svg\" class=\"fr-fil fr-dib\">
-
-    <p class=\"feature-txt\">03.08.17 - 05.08.17</p>
+    
+    <p class=\"feature-txt\">{{event.date_start_pretty_num}} - {{event.date_end_pretty_num}}</p>
   </div>
-  <div class=\"feature\"><img src=\"/cadizturismo/storage/app/media/uploaded-files/templates/cultura-event.svg\" class=\"fr-fil fr-dib\">
+  <div class=\"feature\"><img src=\"/cadizturismo/storage/app/media/uploaded-files/templates/{{str_slug(event.category)}}.svg\" class=\"fr-fil fr-dib\">
 
-    <p class=\"feature-txt\">Cultura</p>
+    <p class=\"feature-txt\">{{event.category}}</p>
   </div>
   <div class=\"feature\"><img src=\"/cadizturismo/storage/app/media/uploaded-files/templates/location.svg\" class=\"fr-fil fr-dib\">
 
-    <p class=\"feature-txt\">Sanlúcar de Barrameda</p><a class=\"feature-txt-mapa\" href=\"https://www.google.es/maps/place/11540+Sanl%C3%BAcar+de+Barrameda,+C%C3%A1diz/@36.7732122,-6.391691,12.95z/data=!4m5!3m4!1s0xd0dde12a2f8e5ef:0xe9bbc21d97ce48c6!8m2!3d36.7725774!4d-6.3529689\" target=\"_blank\">Ver mapa</a></div>
+    <p class=\"feature-txt\">{{event.location}}</p><a class=\"feature-txt-mapa\" href=\"{{event.locationgoogle}}\" target=\"_blank\">Ver mapa</a></div>
 </div>", "/Users/jekyll/Desktop/workspace/cadizturismo/themes/default/partials/site/headerevent.htm", "");
     }
 }
