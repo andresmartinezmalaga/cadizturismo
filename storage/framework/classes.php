@@ -22,4 +22,5 @@
   'RainLab\\Pages\\Classes\\MenuItem' => 'plugins/rainlab/pages/classes/MenuItem.php',
   'RainLab\\Pages\\Classes\\MenuItemReference' => 'plugins/rainlab/pages/classes/MenuItemReference.php',
   'RainLab\\Pages\\Components\\StaticPage' => 'plugins/rainlab/pages/components/StaticPage.php',
+  'rainlab\\translate\\Controllers\\messages' => 'plugins/rainlab/translate/controllers/messages.php',
 );
