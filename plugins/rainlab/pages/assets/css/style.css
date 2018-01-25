@@ -2424,12 +2424,31 @@ html, body {
       width: 100%; }
   #out-features {
     position: absolute !important;
-    top: 687px;
-    min-height: 425px; }
+    min-height: 360px;
+    justify-content: flex-start !important; }
+    #out-features .feature {
+      padding-top: 0px; }
   #phantom-div {
     display: block;
     height: 361px;
     background-color: transparent; } }
+
+@media (max-width: 725px) and (min-width: 401px) {
+  #out-features {
+    position: absolute !important;
+    min-height: 360px;
+    justify-content: flex-start !important; }
+    #out-features .feature {
+      padding-top: 0px; } }
+
+@media (max-width: 400px) {
+  #out-features {
+    top: 700px;
+    position: absolute !important;
+    min-height: 360px;
+    justify-content: flex-start !important; }
+    #out-features .feature {
+      padding-top: 0px; } }
 
 @media (max-width: 1200px) and (min-width: 726px) {
   .border {
