@@ -1,4 +1,4 @@
-1516899124a:1:{s:27:"comarcas-bahia-de-cadiz.htm";a:7:{s:8:"fileName";s:27:"comarcas-bahia-de-cadiz.htm";s:7:"content";s:6395:"[viewBag]
+1516901964a:1:{s:27:"comarcas-bahia-de-cadiz.htm";a:7:{s:8:"fileName";s:27:"comarcas-bahia-de-cadiz.htm";s:7:"content";s:6603:"[viewBag]
 title = "Bahia de Cádiz"
 url = "/comarcas/bahia-de-cadiz"
 template = "pages"
@@ -33,6 +33,8 @@ localeUrl[ru] = "/comarcas/bahia-de-cadiz"
 		<p class="desc">La Janda es también perfecta para el turismo rural de interior, más tranquilo e idóneo para realizar múltiples y placenteras actividades de recreo y ocio al aire libre, tales como senderismo, cicloturismo, descenso de cañones, escalada, acampada libre o rutas a caballo.</p>
 
 		<p class="desc">Todo ello sin olvidar su ancestral cultura, su privilegiado entorno natural, su valioso patrimonio, la suculenta gastronomía y el colorido de sus fiestas.</p>
+
+		<p class="desc"><img src="/cadizturismo/storage/app/media/uploaded-files/arcos.jpg" style="width: 1181px; height: 763px;" class="fr-fic fr-dib" data-result="success"></p>
 	</div>
 </div>
 <!-- IMAGEN -->
@@ -90,6 +92,10 @@ localeUrl[ru] = "/comarcas/bahia-de-cadiz"
 </div>
 <div class="icons-row">
 	<div class="i-container">
+
+		<p>
+			<br>
+		</p>
 		<div class="also-feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/natu-grey.svg" class="fr-fil fr-dib">
 
 			<p class="also-desc">Naturaleza</p>
@@ -100,10 +106,10 @@ localeUrl[ru] = "/comarcas/bahia-de-cadiz"
 		</div>
 		<div class="also-feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/cultura-grey.svg" class="fr-fil fr-dib">
 
-			<p class="also-desc">Cultura</p>
+			<p class="also-desc">Cultura&nbsp;</p>
 		</div>
 	</div>
-</div>";s:5:"mtime";i:1516729013;s:6:"markup";s:6099:"<!-- HEADER -->
+</div>";s:5:"mtime";i:1516901357;s:6:"markup";s:6307:"<!-- HEADER -->
 <div class="header header-comarca">
 	<div class="header-container header-village-container">
 		<div class="header-txt header-txt-village">
@@ -127,6 +133,8 @@ localeUrl[ru] = "/comarcas/bahia-de-cadiz"
 		<p class="desc">La Janda es también perfecta para el turismo rural de interior, más tranquilo e idóneo para realizar múltiples y placenteras actividades de recreo y ocio al aire libre, tales como senderismo, cicloturismo, descenso de cañones, escalada, acampada libre o rutas a caballo.</p>
 
 		<p class="desc">Todo ello sin olvidar su ancestral cultura, su privilegiado entorno natural, su valioso patrimonio, la suculenta gastronomía y el colorido de sus fiestas.</p>
+
+		<p class="desc"><img src="/cadizturismo/storage/app/media/uploaded-files/arcos.jpg" style="width: 1181px; height: 763px;" class="fr-fic fr-dib" data-result="success"></p>
 	</div>
 </div>
 <!-- IMAGEN -->
@@ -184,6 +192,10 @@ localeUrl[ru] = "/comarcas/bahia-de-cadiz"
 </div>
 <div class="icons-row">
 	<div class="i-container">
+
+		<p>
+			<br>
+		</p>
 		<div class="also-feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/natu-grey.svg" class="fr-fil fr-dib">
 
 			<p class="also-desc">Naturaleza</p>
@@ -194,10 +206,10 @@ localeUrl[ru] = "/comarcas/bahia-de-cadiz"
 		</div>
 		<div class="also-feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/cultura-grey.svg" class="fr-fil fr-dib">
 
-			<p class="also-desc">Cultura</p>
+			<p class="also-desc">Cultura&nbsp;</p>
 		</div>
 	</div>
-</div>";s:4:"code";N;s:7:"viewBag";a:6:{s:5:"title";s:15:"Bahia de Cádiz";s:3:"url";s:24:"/comarcas/bahia-de-cadiz";s:8:"template";s:5:"pages";s:9:"is_hidden";s:1:"0";s:6:"layout";s:7:"default";s:9:"localeUrl";a:4:{s:2:"en";s:24:"/comarcas/bahia-de-cadiz";s:2:"fr";s:24:"/comarcas/bahia-de-cadiz";s:2:"de";s:24:"/comarcas/bahia-de-cadiz";s:2:"ru";s:24:"/comarcas/bahia-de-cadiz";}}s:12:"parsedMarkup";s:6099:"<!-- HEADER -->
+</div>";s:4:"code";N;s:7:"viewBag";a:6:{s:5:"title";s:15:"Bahia de Cádiz";s:3:"url";s:24:"/comarcas/bahia-de-cadiz";s:8:"template";s:5:"pages";s:9:"is_hidden";s:1:"0";s:6:"layout";s:7:"default";s:9:"localeUrl";a:4:{s:2:"en";s:24:"/comarcas/bahia-de-cadiz";s:2:"fr";s:24:"/comarcas/bahia-de-cadiz";s:2:"de";s:24:"/comarcas/bahia-de-cadiz";s:2:"ru";s:24:"/comarcas/bahia-de-cadiz";}}s:12:"parsedMarkup";s:6307:"<!-- HEADER -->
 <div class="header header-comarca">
 	<div class="header-container header-village-container">
 		<div class="header-txt header-txt-village">
@@ -221,6 +233,8 @@ localeUrl[ru] = "/comarcas/bahia-de-cadiz"
 		<p class="desc">La Janda es también perfecta para el turismo rural de interior, más tranquilo e idóneo para realizar múltiples y placenteras actividades de recreo y ocio al aire libre, tales como senderismo, cicloturismo, descenso de cañones, escalada, acampada libre o rutas a caballo.</p>
 
 		<p class="desc">Todo ello sin olvidar su ancestral cultura, su privilegiado entorno natural, su valioso patrimonio, la suculenta gastronomía y el colorido de sus fiestas.</p>
+
+		<p class="desc"><img src="/cadizturismo/storage/app/media/uploaded-files/arcos.jpg" style="width: 1181px; height: 763px;" class="fr-fic fr-dib" data-result="success"></p>
 	</div>
 </div>
 <!-- IMAGEN -->
@@ -278,6 +292,10 @@ localeUrl[ru] = "/comarcas/bahia-de-cadiz"
 </div>
 <div class="icons-row">
 	<div class="i-container">
+
+		<p>
+			<br>
+		</p>
 		<div class="also-feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/natu-grey.svg" class="fr-fil fr-dib">
 
 			<p class="also-desc">Naturaleza</p>
@@ -288,7 +306,7 @@ localeUrl[ru] = "/comarcas/bahia-de-cadiz"
 		</div>
 		<div class="also-feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/cultura-grey.svg" class="fr-fil fr-dib">
 
-			<p class="also-desc">Cultura</p>
+			<p class="also-desc">Cultura&nbsp;</p>
 		</div>
 	</div>
 </div>";}}

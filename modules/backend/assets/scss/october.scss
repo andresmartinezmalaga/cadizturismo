@@ -1368,10 +1368,11 @@ nav#layout-mainmenu.navbar-mode-inline ul.mainmenu-nav li:first-child {
 }
 
 nav#layout-mainmenu ul li .mainmenu-accountmenu li a:hover, nav#layout-mainmenu ul li .mainmenu-accountmenu li a:focus {
-  background: $blue !important;
+  background: #E8E8E8 !important;
+  color: #818181 !important;
 }
 nav#layout-mainmenu ul li .mainmenu-accountmenu li:first-child a:hover:after, nav#layout-mainmenu ul li .mainmenu-accountmenu li:first-child a:focus:after, nav#layout-mainmenu ul li .mainmenu-accountmenu li:first-child a:active:after {
-  border-bottom: 7px solid $blue !important;
+  border-bottom: 7px solid #E8E8E8 !important;
 }
 
 .form-group.is-required > label:after {
@@ -1924,11 +1925,12 @@ table.name-value-list > a {
 }
 
 .dropdown-menu .dropdown-container > ul li a:hover, .dropdown-menu .dropdown-container > ul li a:focus {
-  background-color: $blue;
+  background-color: #E8E8E8;
+  color: #818181;
 }
 
 .dropdown-menu .dropdown-container > ul li.first-item a:hover:after, .dropdown-menu .dropdown-container > ul li.first-item a:focus:after, .dropdown-menu .dropdown-container > ul li.first-item a:active:after {
-  border-bottom: 8px solid $blue !important;
+  border-bottom: 8px solid #E8E8E8 !important;
 }
 
 .compact-container {

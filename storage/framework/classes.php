@@ -44,4 +44,7 @@
   'RainLab\\Pages\\FormWidgets\\MenuItems' => 'plugins/rainlab/pages/formwidgets/MenuItems.php',
   'backend\\Controllers\\auth' => 'modules/backend/controllers/auth.php',
   'backend\\Controllers\\index' => 'modules/backend/controllers/index.php',
+  'backend\\Controllers\\users' => 'modules/backend/controllers/users.php',
+  'system\\Controllers\\settings' => 'modules/system/controllers/settings.php',
+  'RainLab\\GoogleAnalytics\\Models\\Settings' => 'plugins/rainlab/googleanalytics/models/Settings.php',
 );

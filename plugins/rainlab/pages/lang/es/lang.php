@@ -129,9 +129,9 @@ return [
         'enter_fullscreen' => 'Entrar en modo de pantalla completa',
         'exit_fullscreen' => 'Salir del modo de pantalla completa',
         'hidden' => 'Guardar como borrador',
-        'hidden_comment' => 'Estas páginas solo seran visibles para los administradores de la web, de maneraque nunca serán publicadas hasta que tu quieras.',
-        'navigation_hidden' => 'No mostrar en el menu',
-        'navigation_hidden_comment' => 'Marca esta casilla para ocultar esta página en los menus generados automáticamente.',
+        'hidden_comment' => 'Estas páginas sólo serán visibles para los administradores de la web, de manera que no serán publicadas hasta que tú quieras.',
+        'navigation_hidden' => 'No mostrar en el menú',
+        'navigation_hidden_comment' => 'Marca esta casilla para ocultar esta página en los menús generados automáticamente.',
     ],
     'snippet' => [
         'partialtab' => 'Fragmentos',
