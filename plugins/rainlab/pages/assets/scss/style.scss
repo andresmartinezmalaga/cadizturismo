@@ -452,7 +452,7 @@ html, body {
   text-align: center;
 }
 
-.header-village .txt, .header-comarca .txt {
+.header-village .txt, .header-comarca .txt, .header-playa .txt {
     font-size: 274px;
     transform: rotate(-9deg);
     text-align: center;
@@ -801,6 +801,9 @@ html, body {
       margin-bottom: 0px !important;
     }
   }
+  .section-txt .cartel {
+    display: block !important;
+  }
 }
 
 .field-richeditor .img-village {
@@ -817,7 +820,7 @@ html, body {
   left: 140px !important;
   width: 75% !important; }
 
-.field-richeditor .header-village .txt, .field-richeditor .header-comarca .txt {
+.field-richeditor .header-village .txt, .field-richeditor .header-comarca .txt, .field-richeditor .header-playa .txt, {
   font-size: 274px !important;
 }
 

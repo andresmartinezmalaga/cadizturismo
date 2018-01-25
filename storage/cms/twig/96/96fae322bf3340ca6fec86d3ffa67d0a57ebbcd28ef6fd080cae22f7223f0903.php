@@ -77,30 +77,32 @@ class __TwigTemplate_0c2e72ca62e5fbbc9c1cbf0712e70fb94422432f917c18e1af64cc18b72
         <div class=\"links-container\"><a href=\"https://www.facebook.com/sharer/sharer.php?u=cadiz-turismo.jekyllme.com\">Facebook&nbsp;</a>
             <span>·</span>
             <a data-action=\"share/whatsapp/share\" href=\"href=\">Whatsapp&nbsp;</a>
+            <span>·</span>
+            <a href=\"https://twitter.com/home?status=cadizturismo.jekyllme.com\">Twitter&nbsp;</a>
         </div>
     </div>
 
     ";
-        // line 35
+        // line 37
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("site/footer"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 36
+        // line 38
         echo "
     <!-- SCRIPTS -->
     <script type=\"text/javascript\" src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js\"></script>
     <script src=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.full.min.js\"></script>
     <script type=\"text/javascript\" src=\"";
-        // line 40
+        // line 42
         echo url("/");
         echo "/plugins/rainlab/pages/assets/js/script-select2.js\"></script>
     <script type=\"text/javascript\" src=\"";
-        // line 41
+        // line 43
         echo url("/");
         echo "/plugins/rainlab/pages/assets/iziModal/js/iziModal.js\"></script>
 
     <script type=\"text/javascript\" src=\"";
-        // line 43
+        // line 45
         echo url("/");
         echo "/plugins/rainlab/pages/assets/js/style.js\"></script>
 
@@ -120,7 +122,7 @@ class __TwigTemplate_0c2e72ca62e5fbbc9c1cbf0712e70fb94422432f917c18e1af64cc18b72
 
     public function getDebugInfo()
     {
-        return array (  104 => 43,  99 => 41,  95 => 40,  89 => 36,  85 => 35,  73 => 28,  69 => 26,  65 => 25,  62 => 24,  58 => 23,  46 => 14,  42 => 13,  38 => 12,  34 => 11,  30 => 10,  19 => 1,);
+        return array (  106 => 45,  101 => 43,  97 => 42,  91 => 38,  87 => 37,  73 => 28,  69 => 26,  65 => 25,  62 => 24,  58 => 23,  46 => 14,  42 => 13,  38 => 12,  34 => 11,  30 => 10,  19 => 1,);
     }
 
     public function getSourceContext()
@@ -156,6 +158,8 @@ class __TwigTemplate_0c2e72ca62e5fbbc9c1cbf0712e70fb94422432f917c18e1af64cc18b72
         <div class=\"links-container\"><a href=\"https://www.facebook.com/sharer/sharer.php?u=cadiz-turismo.jekyllme.com\">Facebook&nbsp;</a>
             <span>·</span>
             <a data-action=\"share/whatsapp/share\" href=\"href=\">Whatsapp&nbsp;</a>
+            <span>·</span>
+            <a href=\"https://twitter.com/home?status=cadizturismo.jekyllme.com\">Twitter&nbsp;</a>
         </div>
     </div>
 

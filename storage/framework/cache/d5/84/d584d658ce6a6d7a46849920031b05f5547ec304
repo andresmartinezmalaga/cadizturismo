@@ -1,4 +1,4 @@
-1516891918a:1:{s:14:"experience.htm";a:12:{s:8:"fileName";s:14:"experience.htm";s:7:"content";s:3101:"description = "Expereince Layout"
+1516895687a:1:{s:14:"experience.htm";a:12:{s:8:"fileName";s:14:"experience.htm";s:7:"content";s:3226:"description = "Expereince Layout"
 
 [staticPage]
 useContent = 1
@@ -62,9 +62,11 @@ code = "que-hacer"
 
     <div class="vertical-share">
         <p class="also-title">{{'COMPARTIR'|_}}</p><img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-sep.svg" class="fr-fil fr-dib">
-        <div class="links-container"><a href="https://www.facebook.com/sharer/sharer.php?u=cadiz-turismo.jekyllme.com">Facebook&nbsp;</a>
+        <div class="links-container"><a href="https://www.facebook.com/sharer/sharer.php?u=cadizturismo.jekyllme.com">Facebook&nbsp;</a>
             <span>·</span>
             <a data-action="share/whatsapp/share" href="href=">Whatsapp&nbsp;</a>
+            <span>·</span>
+            <a href="https://twitter.com/home?status=cadizturismo.jekyllme.com">Twitter&nbsp;</a>
         </div>
     </div>
 
@@ -80,7 +82,7 @@ code = "que-hacer"
 
   </body>
 </html>
-";s:5:"mtime";i:1516798335;s:6:"markup";s:2674:"<!DOCTYPE html>
+";s:5:"mtime";i:1516893639;s:6:"markup";s:2799:"<!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -109,9 +111,11 @@ code = "que-hacer"
 
     <div class="vertical-share">
         <p class="also-title">{{'COMPARTIR'|_}}</p><img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-sep.svg" class="fr-fil fr-dib">
-        <div class="links-container"><a href="https://www.facebook.com/sharer/sharer.php?u=cadiz-turismo.jekyllme.com">Facebook&nbsp;</a>
+        <div class="links-container"><a href="https://www.facebook.com/sharer/sharer.php?u=cadizturismo.jekyllme.com">Facebook&nbsp;</a>
             <span>·</span>
             <a data-action="share/whatsapp/share" href="href=">Whatsapp&nbsp;</a>
+            <span>·</span>
+            <a href="https://twitter.com/home?status=cadizturismo.jekyllme.com">Twitter&nbsp;</a>
         </div>
     </div>
 
