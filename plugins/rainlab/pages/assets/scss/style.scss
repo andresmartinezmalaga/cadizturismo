@@ -1039,7 +1039,7 @@ html, body {
   .header-txt-comollegar {
     font-family: Ryssa;
     font-size: 274px;
-    line-height: 274px;
+    line-height: 218px;
     text-align: center;
     color: white;
     text-align: center;
@@ -1047,7 +1047,7 @@ html, body {
     .txt {
       font-family: Ryssa;
       font-size: 274px;
-      line-height: 274px;
+      line-height: 218px;
       transform: rotate(-9deg);
       text-align: center;
       color: white;
@@ -1556,8 +1556,8 @@ html, body {
   z-index: 10;
   height: auto;
   .publi-container {
-    width: 66%;
-    margin: 0px 0px 0px 151px;
+    width: 1200px;
+    margin: 0px auto;
     padding: 130px 0px 0px 0px;
   }
   h3 {
@@ -1570,7 +1570,7 @@ html, body {
   }
 }
 .publis {
-  width: 85%;
+  width: 1200px;
   margin: 40px auto 0px auto;
   display: grid;
   justify-content: center;
@@ -1697,6 +1697,96 @@ html, body {
       min-height: 100px;
       padding-left: 30px;
     }
+    .publi-source {
+      font-size: 16px;
+      line-height: 33px;
+      color: #4A4A4A;
+      max-width: 91%;
+      padding-left: 30px;
+    }
+    .languages-publi {
+      color: #CECECE;
+      font-size: 12px;
+      line-height: 24px;
+      max-width: 93%;
+      padding-left: 30px;
+      min-height: 96px;
+      #languages-title {
+        color: #9B9B9B;
+        text-transform: uppercase;
+      }
+    }
+    a {
+      color: #F5A623;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 27px;
+      img {
+        margin-left: 8px;
+      }
+      &:hover, &:focus, &:active {
+        text-decoration: none;
+        outline: none;
+        opacity: 0.7;
+      }
+    }
+    .download-link {
+      img {
+        @include transform(rotate(90deg));
+      }
+    }
+    .links-container {
+      @include flexbox();
+      justify-content: flex-end;
+      padding-right: 28px;
+    }
+  }
+  .prensa {
+    border-bottom: 1px solid #CECECE;
+    min-height: 260px;
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      z-index: 10;
+      right: 0;
+      top: 8px;
+      width: 1px;
+      height: 82%;
+      background: #CECECE;
+    }
+    &:nth-child(3), &:nth-child(6) {
+      &:before {
+        content: none;
+      }
+    }
+    .publi-title {
+      font-size: 42px;
+      line-height: 51px;
+      font-weight: 100;
+      color: #9B9B9B;
+      margin-bottom: 2px;
+      max-width: 87%;
+      min-height: 153px;
+      padding-left: 30px;
+      margin-top: 0px;
+      text-transform: uppercase;
+    }
+    .publi-desc {
+      font-size: 16px;
+      line-height: 33px;
+      color: #9B9B9B;
+      max-width: 91%;
+      min-height: 100px;
+      padding-left: 30px;
+    }
+    .publi-source {
+      font-size: 16px;
+      line-height: 33px;
+      color: #4A4A4A;
+      max-width: 91%;
+      padding-left: 30px;
+    }
     .languages-publi {
       color: #CECECE;
       font-size: 12px;
@@ -1774,12 +1864,12 @@ html, body {
   display: none;
 }
 
-
 @media (max-width: 1250px) and (min-width: 840px) {
   .publis {
+    width: auto;
     grid-template-columns: repeat(2, 400px) !important;
     -ms-grid-template-columns: repeat(2, 400px) !important;
-    .publicacion, .reportaje {
+    .publicacion, .reportaje, .prensa {
       &:nth-child(2), &:nth-child(4), &:nth-child(6) {
         &:before {
           content: none;
@@ -1798,13 +1888,20 @@ html, body {
       }
     }
   }
+  .reportajes {
+    .publi-container {
+      width: 80%;
+      margin-left: 100px !important;
+    }
+  }
 }
 
 @media (max-width: 839px) and (min-width: 661px) {
   .publis {
-    grid-template-columns: repeat(2, 320px) !important;
-    -ms-grid-template-columns: repeat(2, 320px) !important;
-    .publicacion{
+    width: auto;
+    grid-template-columns: repeat(2, 325px) !important;
+    -ms-grid-template-columns: repeat(2, 325px) !important;
+    .publicacion, .reportaje, .prensa {
       &:nth-child(2), &:nth-child(4), &:nth-child(6) {
         &:before {
           content: none;
@@ -1839,6 +1936,12 @@ html, body {
   #header-event-fr .send-info {
     margin-top: 50px !important;
   }
+  .reportajes {
+    .publi-container {
+      width: 80%;
+      margin-left: 50px !important;
+    }
+  }
 }
 
 @media (max-width: 660px) {
@@ -1846,9 +1949,10 @@ html, body {
     font-size: 34px !important;
   }
   .publis {
+    width: auto;
     grid-template-columns: repeat(1, 320px) !important;
     -ms-grid-template-columns: repeat(1, 320px) !important;
-    .publicacion{
+    .publicacion, .prensa {
         &:before {
           content: none;
       }
@@ -1866,7 +1970,31 @@ html, body {
         font-size: 12px;
       }
     }
+    .reportaje {
+        &:before {
+          content: none;
+      }
+      .links-container {
+        margin-bottom: 30px;
+      }
+      .publi-title {
+        font-size: 33px;
+        line-height: 36px;
+      }
+      a {
+        font-size: 12px;
+      }
+    }
   }
+
+  .reportajes {
+    .publi-container {
+      width: 80%;
+      font-size: 48px;
+      margin-left: 50px !important;
+    }
+  }
+
 }
 
 @media (max-width: 1100px) {

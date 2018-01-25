@@ -73,33 +73,35 @@ class __TwigTemplate_b3f4fd9f50c9836bc0f8b39eabf102b19af0fb0f6fe6831ddead4b15224
         echo "</p><img src=\"";
         echo url("/");
         echo "/plugins/rainlab/pages/assets/svg/tiny-sep.svg\" class=\"fr-fil fr-dib\">
-        <div class=\"links-container\"><a href=\"https://www.facebook.com/sharer/sharer.php?u=cadiz-turismo.jekyllme.com\">Facebook&nbsp;</a>
+        <div class=\"links-container\"><a href=\"https://www.facebook.com/sharer/sharer.php?u=cadizturismo.jekyllme.com\">Facebook&nbsp;</a>
             <span>·</span>
             <a data-action=\"share/whatsapp/share\" href=\"href=\">Whatsapp&nbsp;</a>
+            <span>·</span>
+            <a href=\"https://twitter.com/home?status=cadizturismo.jekyllme.com\">Twitter&nbsp;</a>
         </div>
     </div>
 
     ";
-        // line 37
+        // line 39
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("site/footer"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 38
+        // line 40
         echo "
     <!-- SCRIPTS -->
     <script type=\"text/javascript\" src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js\"></script>
     <script src=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.full.min.js\"></script>
     <script type=\"text/javascript\" src=\"";
-        // line 42
+        // line 44
         echo url("/");
         echo "/plugins/rainlab/pages/assets/js/script-select2.js\"></script>
 <script type=\"text/javascript\" src=\"";
-        // line 43
+        // line 45
         echo url("/");
         echo "/plugins/rainlab/pages/assets/iziModal/js/iziModal.js\"></script>
 
     <script type=\"text/javascript\" src=\"";
-        // line 45
+        // line 47
         echo url("/");
         echo "/plugins/rainlab/pages/assets/js/style.js\"></script>
 
@@ -119,7 +121,7 @@ class __TwigTemplate_b3f4fd9f50c9836bc0f8b39eabf102b19af0fb0f6fe6831ddead4b15224
 
     public function getDebugInfo()
     {
-        return array (  103 => 45,  98 => 43,  94 => 42,  88 => 38,  84 => 37,  72 => 30,  66 => 26,  62 => 25,  59 => 24,  55 => 23,  43 => 14,  39 => 13,  35 => 12,  31 => 11,  19 => 1,);
+        return array (  105 => 47,  100 => 45,  96 => 44,  90 => 40,  86 => 39,  72 => 30,  66 => 26,  62 => 25,  59 => 24,  55 => 23,  43 => 14,  39 => 13,  35 => 12,  31 => 11,  19 => 1,);
     }
 
     public function getSourceContext()
@@ -154,9 +156,11 @@ class __TwigTemplate_b3f4fd9f50c9836bc0f8b39eabf102b19af0fb0f6fe6831ddead4b15224
 
     <div class=\"vertical-share\">
         <p class=\"also-title\">{{'COMPARTIR'|_}}</p><img src=\"{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-sep.svg\" class=\"fr-fil fr-dib\">
-        <div class=\"links-container\"><a href=\"https://www.facebook.com/sharer/sharer.php?u=cadiz-turismo.jekyllme.com\">Facebook&nbsp;</a>
+        <div class=\"links-container\"><a href=\"https://www.facebook.com/sharer/sharer.php?u=cadizturismo.jekyllme.com\">Facebook&nbsp;</a>
             <span>·</span>
             <a data-action=\"share/whatsapp/share\" href=\"href=\">Whatsapp&nbsp;</a>
+            <span>·</span>
+            <a href=\"https://twitter.com/home?status=cadizturismo.jekyllme.com\">Twitter&nbsp;</a>
         </div>
     </div>
 

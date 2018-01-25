@@ -1,4 +1,4 @@
-1516891629a:1:{s:11:"default.htm";a:12:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:3072:"description = "Default Layout"
+1516894370a:1:{s:11:"default.htm";a:12:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:3199:"description = "Default Layout"
 
 [staticPage]
 useContent = 1
@@ -63,9 +63,11 @@ code = "que-hacer"
 
     <div class="vertical-share">
         <p class="also-title">{{'COMPARTIR'|_}}</p><img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-sep.svg" class="fr-fil fr-dib">
-        <div class="links-container"><a href="https://www.facebook.com/sharer/sharer.php?u=cadiz-turismo.jekyllme.com">Facebook&nbsp;</a>
+        <div class="links-container"><a href="https://www.facebook.com/sharer/sharer.php?u=cadizturismo.jekyllme.com">Facebook&nbsp;</a>
             <span>·</span>
             <a data-action="share/whatsapp/share" href="href=">Whatsapp&nbsp;</a>
+            <span>·</span>
+            <a href="https://twitter.com/home?status=cadizturismo.jekyllme.com">Twitter&nbsp;</a>
         </div>
     </div>
 
@@ -81,7 +83,7 @@ code = "que-hacer"
 
   </body>
 </html>
-";s:5:"mtime";i:1516816160;s:6:"markup";s:2612:"<!DOCTYPE html>
+";s:5:"mtime";i:1516893643;s:6:"markup";s:2739:"<!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -111,9 +113,11 @@ code = "que-hacer"
 
     <div class="vertical-share">
         <p class="also-title">{{'COMPARTIR'|_}}</p><img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-sep.svg" class="fr-fil fr-dib">
-        <div class="links-container"><a href="https://www.facebook.com/sharer/sharer.php?u=cadiz-turismo.jekyllme.com">Facebook&nbsp;</a>
+        <div class="links-container"><a href="https://www.facebook.com/sharer/sharer.php?u=cadizturismo.jekyllme.com">Facebook&nbsp;</a>
             <span>·</span>
             <a data-action="share/whatsapp/share" href="href=">Whatsapp&nbsp;</a>
+            <span>·</span>
+            <a href="https://twitter.com/home?status=cadizturismo.jekyllme.com">Twitter&nbsp;</a>
         </div>
     </div>
 
