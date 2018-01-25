@@ -1,1 +1,9 @@
+<<<<<<< HEAD
 1516969897a:1:{i:0;O:8:"stdClass":3:{s:2:"id";i:1;s:4:"item";s:22:"backend_brand_settings";s:5:"value";s:185:"{"app_name":"October CMS","app_tagline":"Volviendo a lo b\u00e1sico","primary_color":"#175da3","secondary_color":"#0c5095","accent_color":"#ffffff","menu_mode":"inline","custom_css":""}";}}
+=======
+<<<<<<< HEAD
+1516966176a:1:{i:0;O:8:"stdClass":3:{s:2:"id";i:1;s:4:"item";s:22:"backend_brand_settings";s:5:"value";s:185:"{"app_name":"October CMS","app_tagline":"Volviendo a lo b\u00e1sico","primary_color":"#175da3","secondary_color":"#0c5095","accent_color":"#ffffff","menu_mode":"inline","custom_css":""}";}}
+=======
+1516968875a:1:{i:0;O:8:"stdClass":3:{s:2:"id";i:1;s:4:"item";s:22:"backend_brand_settings";s:5:"value";s:185:"{"app_name":"October CMS","app_tagline":"Volviendo a lo b\u00e1sico","primary_color":"#175da3","secondary_color":"#0c5095","accent_color":"#ffffff","menu_mode":"inline","custom_css":""}";}}
+>>>>>>> e30d2a5d37d446e5ca3fef34b6c91229dabcea0a
+>>>>>>> ae2741dcb4b2928fbe92146bb3b501e006f4ff4f

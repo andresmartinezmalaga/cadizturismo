@@ -28,6 +28,9 @@ code = "que-hacer"
         if($this['lang']==''){
             $this['lang']='es';
         }
+
+       $this['event'] = $this->staticApp->eventFindByUrl($this->page->url)[0];
+
     }
 
 ?>

@@ -156,40 +156,52 @@ class StaticApp extends ComponentBase
         }
 
         foreach ($eventsNormal as $event) {
-
-            if($count < 7){
-                if( (new DateTime($event->date_start)) > $now){
-                    $resultVip->push($event);
-                    $count = $count+1;
-                }
-                
-            } else {
-                if( (new DateTime($event->date_start)) > $now){
-                    $resultNormal->push($event);
-                    $count = $count+1;
-                }
-            }
+     
+            if( (new DateTime($event->date_start)) > $now){
+                $resultNormal->push($event);
+                $count = $count+1;
+            }            
         }
-            
-        foreach ($resultVip as $event) {
+  
+        foreach ($resultVip as  $event) {
             $event->date_start_ppretty = (new DateTime($event->date_start))->format('d');
+            $event->date = (new DateTime($event->date_start));
             $mes = intval( (new DateTime($event->date_start))->format('m') )-1;
             $mesString = ['ENE','FEB','MAR','ABR','MAY','JUN','JUL','AGO','SEP','OCT','NOV','DIC',];
             $event->date_start_pretty_day = $event->date_start_ppretty;
             $event->date_start_pretty_month = $mesString[$mes];
-            $events->push($event);
+            $event->date_start_pretty_num = (new DateTime($event->date_start))->format('d.m.y');
+            $event->date_end_pretty_num = (new DateTime($event->date_end))->format('d.m.y');
+            
         }
 
-        $resultNormalOrder = $resultNormal;
-        
+        $eventsVipOrder = $resultVip->sortBy('date');
+
         foreach ($resultNormal as $event) {
             $event->date_start_ppretty = (new DateTime($event->date_start))->format('d');
+            $event->date = (new DateTime($event->date_start));
             $mes = intval( (new DateTime($event->date_start))->format('m') )-1;
             $mesString = ['ENE','FEB','MAR','ABR','MAY','JUN','JUL','AGO','SEP','OCT','NOV','DIC',];
             $event->date_start_pretty_day = $event->date_start_ppretty;
             $event->date_start_pretty_month = $mesString[$mes];
-            $events->push($event);
+            $event->date_start_pretty_num = (new DateTime($event->date_start))->format('d.m.y');
+            $event->date_end_pretty_num = (new DateTime($event->date_end))->format('d.m.y');
+            
         }
+
+        $eventsNormalOrder = $resultNormal->sortBy('date');
+
+        foreach ($eventsVipOrder as $event) {
+           $events->push($event);
+        }
+
+        foreach ($eventsNormalOrder as $event) {
+           $events->push($event);
+        }
+
+
+
+       
 
         return $events;
     }
@@ -197,6 +209,21 @@ class StaticApp extends ComponentBase
     public function eventFind()
     {
 
+    }
+
+    public function eventFindByUrl($url)
+    {
+        $theme = Theme::getActiveTheme();
+        $pagesList = Page::listInTheme($theme, false);
+        $pages =  new \Illuminate\Support\Collection($pagesList);
+
+        $event = $pages->where("is_hidden",0)->where("url",$url)->values();
+
+       
+        $event[0]->date_start_pretty_num = (new DateTime($event[0]->date_start))->format('d.m.y');
+        $event[0]->date_end_pretty_num = (new DateTime($event[0]->date_end))->format('d.m.y');
+       
+        return $event;
     }
 
     public function eventList()
@@ -212,6 +239,8 @@ class StaticApp extends ComponentBase
             $mes = intval( (new DateTime($event->date_start))->format('m') )-1;
             $mesString = ['ENE','FEB','MAR','ABR','MAY','JUN','JUL','AGO','SEP','OCT','NOV','DIC',];
             $event->date_start_pretty = $event->date_start_ppretty.' '.$mesString[$mes];
+            $event->date_start_pretty_num = (new DateTime($event->date_start))->format('d.m.y');
+            $event->date_end_pretty_num = (new DateTime($event->date_end))->format('d.m.y');
         }
 
         return $events;
