@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="37px" height="37px" viewBox="0 0 37 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
     <title>Page 1</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="2.3.Dashboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
-        <g id="Dashboard" transform="translate(-807.000000, -21.000000)" stroke="#FFFFFF" stroke-width="1.678">
-            <g id="Page-1" transform="translate(807.000000, 21.000000)">
+    <g id="Dashboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-692.000000, -21.000000)" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Group-8" transform="translate(692.000000, 21.000000)" stroke="#FFFFFF" stroke-width="1.678">
+            <g id="Page-1" transform="translate(-0.000000, 0.000000)">
                 <path d="M35.3276,18.0834 C35.3276,27.6064 27.6066,35.3274 18.0826,35.3274 C8.5596,35.3274 0.8386,27.6064 0.8386,18.0834 C0.8386,8.5594 8.5596,0.8384 18.0826,0.8384 C27.6066,0.8384 35.3276,8.5594 35.3276,18.0834 Z" id="Stroke-1"></path>
                 <path d="M18.083,18.0834 L30.276,5.8904" id="Stroke-3"></path>
                 <path d="M18.083,18.0834 L30.271,30.2714" id="Stroke-5"></path>

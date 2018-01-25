@@ -103,7 +103,7 @@ class Plugin extends PluginBase
                     'eventos' => [
                         'label'       => 'rainlab.pages::lang.event.menu_label',
                         'icon'        => '',
-                        'iconSvg'     => 'plugins/rainlab/pages/assets/images/menus-icon.svg',
+                        'iconSvg'     => 'plugins/rainlab/pages/assets/svg/contenido-eventos.svg',
                         'url'         => 'javascript:;',
                         'attributes'  => ['data-menu-item'=>'eventos'],
                         'permissions' => ['rainlab.pages.manage_eventos']

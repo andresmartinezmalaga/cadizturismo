@@ -1,4 +1,4 @@
-1516834087a:1:{s:13:"allevents.htm";a:6:{s:8:"fileName";s:13:"allevents.htm";s:7:"content";s:1782:"==
+1516877255a:1:{s:13:"allevents.htm";a:6:{s:8:"fileName";s:13:"allevents.htm";s:7:"content";s:1778:"==
 <?php 
 
 	function onStart()
@@ -35,7 +35,7 @@
               </div>
               <div class="icon-pair">
                 <img src="{{preurl}}/storage/app/media/uploaded-files/templates/loc-events.svg">
-                <p class="icon-txt">Sanlúcar de Barrameda</p>
+                <p class="icon-txt">{{event.location}}</p>
               </div>
             </div>
             <div class="button-container">
@@ -46,7 +46,7 @@
 
 	{% endfor %}
 	</div>
-</div>";s:5:"mtime";i:1516832839;s:6:"markup";s:1580:"<div class="more-popular">
+</div>";s:5:"mtime";i:1516872996;s:6:"markup";s:1576:"<div class="more-popular">
   	<div class="title-container">
     <p class="title">MÁS <br> POPULARES <br> EN CÁDIZ </p>
       <img class="separator" src="{{preurl}}/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
@@ -68,7 +68,7 @@
               </div>
               <div class="icon-pair">
                 <img src="{{preurl}}/storage/app/media/uploaded-files/templates/loc-events.svg">
-                <p class="icon-txt">Sanlúcar de Barrameda</p>
+                <p class="icon-txt">{{event.location}}</p>
               </div>
             </div>
             <div class="button-container">
