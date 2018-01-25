@@ -1,4 +1,8 @@
+<<<<<<< HEAD:storage/framework/cache/9e/c1/9ec1b9049341f3764beb08ea6f614c8ae7b87477
+1516877244a:1:{s:9:"error.htm";a:8:{s:8:"fileName";s:9:"error.htm";s:7:"content";s:242:"title = "Error page (500)"
+=======
 1516875808a:1:{s:9:"error.htm";a:8:{s:8:"fileName";s:9:"error.htm";s:7:"content";s:242:"title = "Error page (500)"
+>>>>>>> 491ada266dd4d7718bcf5c9702c800d83ff94f0c:storage/framework/cache/a2/88/a288a9056e800f9b89e6921a6dfacab2b8678d07
 url = "/error"
 layout = "default"
 ==

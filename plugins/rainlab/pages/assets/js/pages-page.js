@@ -21,11 +21,26 @@
         this.masterTabsObj = this.$masterTabs.data('oc.tab')
         this.snippetManager = new $.oc.pages.snippetManager(this.$masterTabs)
 
+        this.$maxi = $('#select2-Form-formEvento2a87bca672b3855440f81bce17dc35665a6918369a607-field-viewBag-tlayout-result-8ezo-maxi-evento')
+        this.$mini = $('#select2-Form-formEvento2a87bca672b3855440f81bce17dc35665a6918369a607-field-viewBag-tlayout-result-aq0x-mini-evento')
+
         this.registerHandlers()
     }
 
     PagesPage.prototype.registerHandlers = function() {
         
+       
+        this.$maxi.on(
+            'click'
+            ,this.proxy(this.onMaxi)
+        )
+
+
+        this.$mini.on(
+            'click'
+            ,this.proxy(this.onMini)
+        )
+
         // Item is clicked in the sidebar
         $(document).on('open.oc.treeview', 'form.layout[data-content-id=pages]', this.proxy(this.onSidebarItemClick))
 
@@ -82,6 +97,14 @@
 
         // Handle the menu saving
         $(document).on('oc.beforeRequest', '#pages-master-tabs form[data-object-type=menu]', this.proxy(this.onSaveMenu))
+    }
+
+    PagesPage.prototype.onMini = function(e) {
+        console.log('Mini')
+    }
+
+    PagesPage.prototype.onMaxi = function(e) {
+        console.log('Maxi')
     }
 
     /*

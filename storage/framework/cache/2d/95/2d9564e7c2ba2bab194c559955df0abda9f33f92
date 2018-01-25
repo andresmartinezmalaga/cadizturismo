@@ -1,4 +1,12 @@
+<<<<<<< HEAD
 1516878053a:1:{s:17:"publicaciones.htm";a:7:{s:8:"fileName";s:17:"publicaciones.htm";s:7:"content";s:5908:"[viewBag]
+=======
+<<<<<<< HEAD:storage/framework/cache/fc/5d/fc5d7133347f44fe897d1e660ef0020a8930ebe1
+1516877244a:1:{s:17:"publicaciones.htm";a:7:{s:8:"fileName";s:17:"publicaciones.htm";s:7:"content";s:5908:"[viewBag]
+=======
+1516877131a:1:{s:17:"publicaciones.htm";a:7:{s:8:"fileName";s:17:"publicaciones.htm";s:7:"content";s:5908:"[viewBag]
+>>>>>>> 491ada266dd4d7718bcf5c9702c800d83ff94f0c:storage/framework/cache/2d/95/2d9564e7c2ba2bab194c559955df0abda9f33f92
+>>>>>>> 7e36ed94a1a1da4d9cff559cad46c3d35a70006a
 title = "Publicaciones"
 url = "/publicaciones"
 template = "pages"

@@ -141,23 +141,8 @@ class Evento extends ContentBase
           </div>
           <!-- NUEVA FOTO -->
           <img class="background-image" value="cover" src="***_preurl_***/storage/app/media/uploaded-files/templates/caballos.jpg" alt="">
-          <!-- FEATURES -->
-          <div class="event-features">
-            <div class="feature">
-              <img src="***_preurl_***/storage/app/media/uploaded-files/templates/calendar-event.svg">
-              <p class="feature-txt">03.08.17 - 05.08.17</p>
-            </div>
-            <div class="feature">
-              <img src="***_preurl_***/storage/app/media/uploaded-files/templates/cultura-event.svg">
-              <p class="feature-txt">Cultura</p>
-            </div>
-            <div class="feature">
-              <img src="***_preurl_***/storage/app/media/uploaded-files/templates/location.svg">
-              <p class="feature-txt">Sanlúcar de Barrameda</p>
-              <a target="_blank" href="https://www.google.es/maps/place/11540+Sanl%C3%BAcar+de+Barrameda,+C%C3%A1diz/@36.7732122,-6.391691,12.95z/data=!4m5!3m4!1s0xd0dde12a2f8e5ef:0xe9bbc21d97ce48c6!8m2!3d36.7725774!4d-6.3529689" class="feature-txt-mapa">Ver mapa</a>
-            </div>
-          </div>
         </div>
+        <div id="phantom-div"></div>
         <!-- SECTION TXT-->
         <div class="section-txt">
           <div class="big-number-container">
@@ -250,92 +235,92 @@ class Evento extends ContentBase
 
     public function getEventsCategories(){
       return [
-        'semana_santa' => 'Semana Santa',
-        'carnaval' => 'Carnaval',
-        'congresos' => 'Congresos',
-        'cultura' => 'Cultura',
-        'danza' => 'Danza',
-        'deporte' => 'Deporte',
-        'espectaculos' => 'Espectáculos',
-        'exposiciones' => 'Exposiciones',
-        'ferias' => 'Ferias',
-        'fiesta' => 'Fiesta',
-        'flamenco' => 'Flamenco',
-        'gastronomia' => 'Gastronomía',
-        'naturaleza' => 'Naturaleza',
-        'navidad' => 'Navidad',
-        'ocio' => 'Ocio',
-        'romerias' => 'Romerías',
-        'ruta' => 'Ruta',
-        'taller' => 'Taller',
-        'teatro' => 'Teatro'
+           'semana santa' => 'Semana Santa',
+           'carnaval' => 'Carnaval',
+           'congresos' => 'Congresos',
+           'cultura' => 'Cultura',
+           'danza' => 'Danza',
+           'deporte' => 'Deporte',
+           'espectáculos' => 'Espectáculos',
+           'exposiciones' => 'Exposiciones',
+           'ferias' => 'Ferias',
+           'fiesta' => 'Fiesta',
+           'flamenco' => 'Flamenco',
+           'gastronomía' => 'Gastronomía',
+           'naturaleza' => 'Naturaleza',
+           'navidad' => 'Navidad',
+           'ocio' => 'Ocio',
+           'romerías' => 'Romerías',
+           'ruta' => 'Ruta',
+           'taller' => 'Taller',
+           'teatro' => 'Teatro'
       ];
     }
 
     public function getEventsTPlantillas(){
       return [
-        'maxi-evento' => 'Maxi evento',
-        'mini-evento' => 'Mini evento',
+        'maxi evento' => 'Maxi evento',
+        'mini evento' => 'Mini evento',
       ];
     }
 
      public function getMunicipalities(){
         return [
-         'alcala de los gazules' => 'Alcalá de los Gazules',
-         'alcala del valle' => 'Alcalá del Valle',
-         'algar' => 'Algar',
-         'algeciras' => 'Algeciras',
-         'algodonales' => 'Algodonales',
-         'arcos de la frontera' => 'Arcos de la Frontera',
-         'barbate' => 'Barbate',
-         'benalup-casas viejas' => 'Benalup-Casas Viejas',
-         'benaocaz' => 'Benaocaz',
-         'bornos' => 'Bornos',
-         'cadiz' => 'Cádiz',
-         'castellar de la frontera' => 'Castellar de la Frontera',
-         'chiclana de la frontera' => 'Chiclana de la Frontera',
-         'chipiona' => 'Chipiona',
-         'conil de la frontera' => 'Conil de la Frontera',
-         'el bosque' => 'El Bosque',
-         'el gastor' => 'El Gastor',
-         'el puerto de santa maria' => 'El Puerto de Santa María',
-         'espera' => 'Espera',
-         'grazalema' => 'Grazalema',
-         'jerez de la frontera' => 'Jerez de la Frontera',
-         'jimena de la frontera' => 'Jimena de la Frontera',
-         'la linea de la concepcion' => 'La Línea de la Concepción',
-         'los barrios' => 'Los Barrios',
-         'medina sidonia' => 'Medina Sidonia',
-         'olvera' => 'Olvera',
-         'paterna de rivera' => 'Paterna de Rivera',
-         'prado del rey' => 'Prado del Rey',
-         'puerto real' => 'Puerto Real',
-         'puerto serrano' => 'Puerto Serrano',
-         'rota' => 'Rota',
-         'san fernando' => 'San Fernando',
-         'san jose del valle' => 'San José del Valle',
-         'sanlucar de barrameda' => 'Sanlúcar de Barrameda',
-         'san roque' => 'San Roque',
-         'setenil de las bodegas' => 'Setenil de las Bodegas',
-         'tarifa' => 'Tarifa',
-         'torre alhaquime' => 'Torre Alháquime',
-         'trebujena' => 'Trebujena',
-         'ubrique' => 'Ubrique',
-         'vejer de la frontera' => 'Vejer de la Frontera',
-         'villaluenga del rosario' => 'Villaluenga del Rosario',
-         'villamartin' => 'Villamartín',
-         'zahara de la sierra' => 'Zahara de la Sierra',
+        'alcalá de los gazules' => 'Alcalá de los Gazules',
+        'alcalá del valle' => 'Alcalá del Valle',
+        'algar' => 'Algar',
+        'algeciras' => 'Algeciras',
+        'algodonales' => 'Algodonales',
+        'arcos de la frontera' => 'Arcos de la Frontera',
+        'barbate' => 'Barbate',
+        'benalup-casas viejas' => 'Benalup-Casas Viejas',
+        'benaocaz' => 'Benaocaz',
+        'bornos' => 'Bornos',
+        'cádiz' => 'Cádiz',
+        'castellar de la frontera' => 'Castellar de la Frontera',
+        'chiclana de la frontera' => 'Chiclana de la Frontera',
+        'chipiona' => 'Chipiona',
+        'conil de la frontera' => 'Conil de la Frontera',
+        'el bosque' => 'El Bosque',
+        'el gastor' => 'El Gastor',
+        'el puerto de santa maría' => 'El Puerto de Santa María',
+        'espera' => 'Espera',
+        'grazalema' => 'Grazalema',
+        'jerez de la frontera' => 'Jerez de la Frontera',
+        'jimena de la frontera' => 'Jimena de la Frontera',
+        'la línea de la concepción' => 'La Línea de la Concepción',
+        'los barrios' => 'Los Barrios',
+        'medina sidonia' => 'Medina Sidonia',
+        'olvera' => 'Olvera',
+        'paterna de rivera' => 'Paterna de Rivera',
+        'prado del rey' => 'Prado del Rey',
+        'puerto real' => 'Puerto Real',
+        'puerto serrano' => 'Puerto Serrano',
+        'rota' => 'Rota',
+        'san fernando' => 'San Fernando',
+        'san josé del valle' => 'San José del Valle',
+        'sanlúcar de barrameda' => 'Sanlúcar de Barrameda',
+        'san roque' => 'San Roque',
+        'setenil de las bodegas' => 'Setenil de las Bodegas',
+        'tarifa' => 'Tarifa',
+        'torre alháquime' => 'Torre Alháquime',
+        'trebujena' => 'Trebujena',
+        'ubrique' => 'Ubrique',
+        'vejer de la frontera' => 'Vejer de la Frontera',
+        'villaluenga del rosario' => 'Villaluenga del Rosario',
+        'villamartín' => 'Villamartín',
+        'zahara de la sierra' => 'Zahara de la Sierra',
         ];
     }
 
     public function getInterestsOptions() {
 
-        return['playa-gastronomia' => 'Playa y gastronomía', 'cultura-gastronomia' => 'Cultura y gastronomía', 'fiesta-cultura' => 'Fiesta y cultura', 'gastronomia-naturaleza' => 'Gastronomía y naturaleza', 'naturaleza-aventura' => 'Naturaleza y aventura', 'playa-naturaleza' => 'Playa y naturaleza', 'vino-tradicion' => 'Vino y tradición', 'aventura-tradicion' => 'Aventura y tradición'] ;
+        return['playa y gastronomía' => 'Playa y gastronomía', 'cultura y gastronomía' => 'Cultura y gastronomía', 'fiesta y cultura' => 'Fiesta y cultura', 'gastronomía y naturaleza' => 'Gastronomía y naturaleza', 'naturaleza y aventura' => 'Naturaleza y aventura', 'playa y naturaleza' => 'Playa y naturaleza', 'vino y tradición' => 'Vino y tradición', 'aventura y tradición' => 'Aventura y tradición'] ;
     }
 
     public function getVisitsOptions() {
 
-        return['cadiz-oculta' => 'Cádiz oculta', 'cadiz-autentica' => 'Cádiz auténtica', 'cadiz-relax' => 'Cádiz relax', 'cadiz-urbano' => 'Cádiz urbano'] ;
+        return['cádiz oculta' => 'Cádiz oculta', 'cádiz auténtica' => 'Cádiz auténtica', 'cádiz relax' => 'Cádiz relax', 'cádiz urbano' => 'Cádiz urbano'] ;
     }
 
     public function getDaysOptions() {

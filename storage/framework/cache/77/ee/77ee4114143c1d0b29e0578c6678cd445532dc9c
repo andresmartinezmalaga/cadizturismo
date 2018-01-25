@@ -1,4 +1,12 @@
+<<<<<<< HEAD
 1516878052a:1:{s:9:"legal.htm";a:7:{s:8:"fileName";s:9:"legal.htm";s:7:"content";s:217:"[viewBag]
+=======
+<<<<<<< HEAD:storage/framework/cache/fe/bb/febb46b7bebf722504af70ae78d57d37df2721fc
+1516877244a:1:{s:9:"legal.htm";a:7:{s:8:"fileName";s:9:"legal.htm";s:7:"content";s:217:"[viewBag]
+=======
+1516877130a:1:{s:9:"legal.htm";a:7:{s:8:"fileName";s:9:"legal.htm";s:7:"content";s:217:"[viewBag]
+>>>>>>> 491ada266dd4d7718bcf5c9702c800d83ff94f0c:storage/framework/cache/77/ee/77ee4114143c1d0b29e0578c6678cd445532dc9c
+>>>>>>> 7e36ed94a1a1da4d9cff559cad46c3d35a70006a
 title = "Legal"
 url = "/legal"
 template = "pages"

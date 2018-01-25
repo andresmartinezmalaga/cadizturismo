@@ -151,7 +151,7 @@ class Page extends ContentBase
             'animales' => 'Animales',
             'nudista' => 'Nudista',            
             'camping' => 'Camping',
-            'restauracion' => 'Restauración',            
+            'restauración' => 'Restauración',            
             'instalaciones' => 'instalaciones'
         ];
     }

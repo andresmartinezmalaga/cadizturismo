@@ -30,6 +30,14 @@
   'RainLab\\Translate\\FormWidgets\\MLText' => 'plugins/rainlab/translate/formwidgets/MLText.php',
   'RainLab\\Translate\\FormWidgets\\MLTextarea' => 'plugins/rainlab/translate/formwidgets/MLTextarea.php',
   'RainLab\\Translate\\FormWidgets\\MLRichEditor' => 'plugins/rainlab/translate/formwidgets/MLRichEditor.php',
+<<<<<<< HEAD
+  'backend\\Controllers\\media' => 'modules/backend/controllers/media.php',
+  'cms\\Controllers\\index' => 'modules/cms/controllers/index.php',
+  'RainLab\\GoogleAnalytics\\Components\\Tracker' => 'plugins/rainlab/googleanalytics/components/Tracker.php',
+  'RainLab\\Pages\\Components\\StaticBreadcrumbs' => 'plugins/rainlab/pages/components/StaticBreadcrumbs.php',
+  'RainLab\\Translate\\Components\\LocalePicker' => 'plugins/rainlab/translate/components/LocalePicker.php',
+  'RainLab\\Translate\\Components\\AlternateHrefLangElements' => 'plugins/rainlab/translate/components/AlternateHrefLangElements.php',
+=======
   'RainLab\\Translate\\Classes\\MLCmsObject' => 'plugins/rainlab/translate/classes/MLCmsObject.php',
   'RainLab\\Translate\\Classes\\MLStaticPage' => 'plugins/rainlab/translate/classes/MLStaticPage.php',
   'RainLab\\Translate\\Classes\\LocaleMiddleware' => 'plugins/rainlab/translate/classes/LocaleMiddleware.php',
@@ -42,4 +50,5 @@
   'RainLab\\Pages\\Classes\\MenuItem' => 'plugins/rainlab/pages/classes/MenuItem.php',
   'RainLab\\Pages\\Classes\\MenuItemReference' => 'plugins/rainlab/pages/classes/MenuItemReference.php',
   'backend\\Controllers\\media' => 'modules/backend/controllers/media.php',
+>>>>>>> 491ada266dd4d7718bcf5c9702c800d83ff94f0c
 );

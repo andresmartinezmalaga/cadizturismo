@@ -1,5 +1,9 @@
 <?php 
+<<<<<<< HEAD:storage/cms/cache/56/9a/allevents.htm.php
+class Cms5a69a39a2a5e5048769438_700852002e6a0243a7b651bddff1c192Class extends \Cms\Classes\PageCode
+=======
 class Cms5a6997d1d6345520480406_c7f455114c42dd32fbe052b6df675f56Class extends \Cms\Classes\PageCode
+>>>>>>> 491ada266dd4d7718bcf5c9702c800d83ff94f0c:storage/cms/cache/88/2b/allevents.htm.php
 {
 public function onStart()
 	{	    

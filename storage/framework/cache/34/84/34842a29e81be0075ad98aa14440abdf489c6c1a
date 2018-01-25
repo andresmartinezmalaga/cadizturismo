@@ -1,4 +1,12 @@
+<<<<<<< HEAD
 1516878053a:1:{s:33:"naturaleza-espacios-naturales.htm";a:7:{s:8:"fileName";s:33:"naturaleza-espacios-naturales.htm";s:7:"content";s:133:"[viewBag]
+=======
+<<<<<<< HEAD:storage/framework/cache/27/9a/279adaaab28c95d92fb52996e3ca0724ae6d773f
+1516877244a:1:{s:33:"naturaleza-espacios-naturales.htm";a:7:{s:8:"fileName";s:33:"naturaleza-espacios-naturales.htm";s:7:"content";s:133:"[viewBag]
+=======
+1516877131a:1:{s:33:"naturaleza-espacios-naturales.htm";a:7:{s:8:"fileName";s:33:"naturaleza-espacios-naturales.htm";s:7:"content";s:133:"[viewBag]
+>>>>>>> 491ada266dd4d7718bcf5c9702c800d83ff94f0c:storage/framework/cache/34/84/34842a29e81be0075ad98aa14440abdf489c6c1a
+>>>>>>> 7e36ed94a1a1da4d9cff559cad46c3d35a70006a
 title = "Espacios naturales"
 url = "/naturaleza/espacios-naturales"
 template = "pages"

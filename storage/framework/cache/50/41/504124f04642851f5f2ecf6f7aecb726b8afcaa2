@@ -1,4 +1,12 @@
+<<<<<<< HEAD
 1516878053a:1:{s:14:"que-hacer.yaml";a:7:{s:8:"fileName";s:14:"que-hacer.yaml";s:7:"content";s:1590:"name: 'Qué hacer'
+=======
+<<<<<<< HEAD:storage/framework/cache/d4/c0/d4c036502c2d479c036b465817342725d76c08d4
+1516877254a:1:{s:14:"que-hacer.yaml";a:7:{s:8:"fileName";s:14:"que-hacer.yaml";s:7:"content";s:1590:"name: 'Qué hacer'
+=======
+1516877131a:1:{s:14:"que-hacer.yaml";a:7:{s:8:"fileName";s:14:"que-hacer.yaml";s:7:"content";s:1590:"name: 'Qué hacer'
+>>>>>>> 491ada266dd4d7718bcf5c9702c800d83ff94f0c:storage/framework/cache/50/41/504124f04642851f5f2ecf6f7aecb726b8afcaa2
+>>>>>>> 7e36ed94a1a1da4d9cff559cad46c3d35a70006a
 items:
     -
         title: Playas

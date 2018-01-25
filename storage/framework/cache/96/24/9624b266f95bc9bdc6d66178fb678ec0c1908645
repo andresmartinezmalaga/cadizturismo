@@ -1,4 +1,12 @@
+<<<<<<< HEAD
 1516878053a:1:{s:10:"playas.htm";a:7:{s:8:"fileName";s:10:"playas.htm";s:7:"content";s:2312:"[viewBag]
+=======
+<<<<<<< HEAD:storage/framework/cache/ee/d2/eed2745594637267a2c9411af0d8f0fd8e488c1e
+1516877244a:1:{s:10:"playas.htm";a:7:{s:8:"fileName";s:10:"playas.htm";s:7:"content";s:2312:"[viewBag]
+=======
+1516877131a:1:{s:10:"playas.htm";a:7:{s:8:"fileName";s:10:"playas.htm";s:7:"content";s:2312:"[viewBag]
+>>>>>>> 491ada266dd4d7718bcf5c9702c800d83ff94f0c:storage/framework/cache/96/24/9624b266f95bc9bdc6d66178fb678ec0c1908645
+>>>>>>> 7e36ed94a1a1da4d9cff559cad46c3d35a70006a
 title = "playas"
 url = "/playas"
 template = "pages"

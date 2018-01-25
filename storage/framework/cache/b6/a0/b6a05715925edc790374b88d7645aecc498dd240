@@ -1,11 +1,19 @@
+<<<<<<< HEAD
 1516878053a:1:{s:15:"experiences.htm";a:5:{s:8:"fileName";s:15:"experiences.htm";s:7:"content";s:2035:"<div class="search-title-container">
+=======
+<<<<<<< HEAD:storage/framework/cache/17/f8/17f8a1e6b546a9c24d33239c543146df5535aa40
+1516873642a:1:{s:15:"experiences.htm";a:5:{s:8:"fileName";s:15:"experiences.htm";s:7:"content";s:2055:"<div class="search-title-container">
+=======
+1516877131a:1:{s:15:"experiences.htm";a:5:{s:8:"fileName";s:15:"experiences.htm";s:7:"content";s:2035:"<div class="search-title-container">
+>>>>>>> 491ada266dd4d7718bcf5c9702c800d83ff94f0c:storage/framework/cache/b6/a0/b6a05715925edc790374b88d7645aecc498dd240
+>>>>>>> 7e36ed94a1a1da4d9cff559cad46c3d35a70006a
     <p class="title-search"> {{ 'Hemos encontrado'|_ }} {{experiences|length}} {{ 'experiencias que se adaptan ti'|_ }}</p>
 </div>
 
 <div class="all-events-container">
 	
 	{% for experience in experiences %}
-	    {% set interest = experience.viewBag.interest|split('-') %}
+	    {% set interest = experience.viewBag.interest|split('y') %}
    	
 	    <div class="event">
 	      <div class="overlay-img"></div>
@@ -27,11 +35,11 @@
 	            <p class="icon-txt">{{experience.viewBag.days}} {{ d|_ }}</p>
 	          </div>          
 	          <div class="icon-pair">
-	            <img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/{{interest[0]}}.svg">
+	            <img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/{{str_slug(interest[0])}}.svg">
 	            	<p class="icon-txt">{{interest[0]|_}}</p>
 	          </div>
 	          <div class="icon-pair">
-	            <img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/{{interest[1]}}.svg">
+	            <img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/{{str_slug(interest[1])}}.svg">
 	            <p class="icon-txt">{{interest[1]|_}}</p>
 	          </div>
 	          <div class="icon-pair">
@@ -47,14 +55,18 @@
 
 	{% endfor %}
 
+<<<<<<< HEAD:storage/framework/cache/17/f8/17f8a1e6b546a9c24d33239c543146df5535aa40
+</div>";s:5:"mtime";i:1516871080;s:6:"markup";s:2055:"<div class="search-title-container">
+=======
 </div>";s:5:"mtime";i:1516870225;s:6:"markup";s:2035:"<div class="search-title-container">
+>>>>>>> 491ada266dd4d7718bcf5c9702c800d83ff94f0c:storage/framework/cache/b6/a0/b6a05715925edc790374b88d7645aecc498dd240
     <p class="title-search"> {{ 'Hemos encontrado'|_ }} {{experiences|length}} {{ 'experiencias que se adaptan ti'|_ }}</p>
 </div>
 
 <div class="all-events-container">
 	
 	{% for experience in experiences %}
-	    {% set interest = experience.viewBag.interest|split('-') %}
+	    {% set interest = experience.viewBag.interest|split('y') %}
    	
 	    <div class="event">
 	      <div class="overlay-img"></div>
@@ -76,11 +88,11 @@
 	            <p class="icon-txt">{{experience.viewBag.days}} {{ d|_ }}</p>
 	          </div>          
 	          <div class="icon-pair">
-	            <img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/{{interest[0]}}.svg">
+	            <img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/{{str_slug(interest[0])}}.svg">
 	            	<p class="icon-txt">{{interest[0]|_}}</p>
 	          </div>
 	          <div class="icon-pair">
-	            <img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/{{interest[1]}}.svg">
+	            <img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/{{str_slug(interest[1])}}.svg">
 	            <p class="icon-txt">{{interest[1]|_}}</p>
 	          </div>
 	          <div class="icon-pair">

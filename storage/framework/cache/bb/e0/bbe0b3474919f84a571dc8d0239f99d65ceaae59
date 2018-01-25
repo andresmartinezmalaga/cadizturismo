@@ -1,4 +1,12 @@
+<<<<<<< HEAD
 1516878053a:1:{s:15:"site/search.htm";a:6:{s:8:"fileName";s:15:"site/search.htm";s:7:"content";s:2408:"==
+=======
+<<<<<<< HEAD:storage/framework/cache/ad/1c/ad1cbf0d95ed944a30694763d04ad151ceccb692
+1516873642a:1:{s:15:"site/search.htm";a:6:{s:8:"fileName";s:15:"site/search.htm";s:7:"content";s:2434:"==
+=======
+1516877131a:1:{s:15:"site/search.htm";a:6:{s:8:"fileName";s:15:"site/search.htm";s:7:"content";s:2408:"==
+>>>>>>> 491ada266dd4d7718bcf5c9702c800d83ff94f0c:storage/framework/cache/bb/e0/bbe0b3474919f84a571dc8d0239f99d65ceaae59
+>>>>>>> 7e36ed94a1a1da4d9cff559cad46c3d35a70006a
 
 <?php 
 
@@ -36,24 +44,24 @@
         
         <div class="interests-container">
           <select class="custom-select select-interests" name="interest">
-            <option value="playa-gastronomia">{{'Playa y gastronomía'|_ }}</option>
-            <option value="cultura-gastronomia">{{'Cultura y gastronomía'|_ }}</option>
-            <option value="fiesta-cultura">{{'Fiesta y cultura'|_ }}</option>
-            <option value="gastronomia-naturaleza">{{'Gastronomía y naturaleza'|_ }}</option>
-            <option value="naturaleza-aventura">{{'Naturaleza y aventura'|_ }}</option>
-            <option value="playa-naturaleza">{{'Playa y naturaleza'|_ }}</option>
-            <option value="vino-tradicion">{{'Vino y tradición'|_ }}</option>
-            <option value="aventura-tradicion">{{'Aventura y tradición'|_ }}</option>
+            <option value="playa y gastronomía">{{'Playa y gastronomía'|_ }}</option>
+            <option value="cultura y gastronomía">{{'Cultura y gastronomía'|_ }}</option>
+            <option value="fiesta y cultura">{{'Fiesta y cultura'|_ }}</option>
+            <option value="gastronomía y naturaleza">{{'Gastronomía y naturaleza'|_ }}</option>
+            <option value="naturaleza y aventura">{{'Naturaleza y aventura'|_ }}</option>
+            <option value="playa y naturaleza">{{'Playa y naturaleza'|_ }}</option>
+            <option value="vino y tradición">{{'Vino y tradición'|_ }}</option>
+            <option value="aventura y tradición">{{'Aventura y tradición'|_ }}</option>
           </select>
           <span class="select-title">{{ 'INTERESES'|_ }}</span>
         </div>
         
         <div class="type-container">
           <select class="custom-select select-type" name="tvisit">
-            <option value="cadiz-oculta">{{ 'Cádiz oculta'|_ }}</option>
-            <option value="cadiz-autentica">{{ 'Cádiz auténtica'|_ }}</option>
-            <option value="cadiz-relax">{{ 'Cádiz relax'|_ }}</option>
-            <option value="cadiz-urbano">{{ 'Cádiz urbano'|_ }}</option>
+            <option value="cádiz oculta">{{ 'Cádiz oculta'|_ }}</option>
+            <option value="cádiz auténtica">{{ 'Cádiz auténtica'|_ }}</option>
+            <option value="cádiz relax">{{ 'Cádiz relax'|_ }}</option>
+            <option value="cádiz urbano">{{ 'Cádiz urbano'|_ }}</option>
           </select>
           <span class="select-title">{{ 'TIPO DE VISITA'|_ }}</span>
         </div>
@@ -64,7 +72,11 @@
       </div>
     </form>
   </div>
+<<<<<<< HEAD:storage/framework/cache/ad/1c/ad1cbf0d95ed944a30694763d04ad151ceccb692
+</div>";s:5:"mtime";i:1516868610;s:6:"markup";s:2287:"<div class="search-bar-container">
+=======
 </div>";s:5:"mtime";i:1516816160;s:6:"markup";s:2261:"<div class="search-bar-container">
+>>>>>>> 491ada266dd4d7718bcf5c9702c800d83ff94f0c:storage/framework/cache/bb/e0/bbe0b3474919f84a571dc8d0239f99d65ceaae59
   <div class="search-bar">
     <form data-request="onFindExperience">
       <div class="inputs-container">
@@ -86,24 +98,24 @@
         
         <div class="interests-container">
           <select class="custom-select select-interests" name="interest">
-            <option value="playa-gastronomia">{{'Playa y gastronomía'|_ }}</option>
-            <option value="cultura-gastronomia">{{'Cultura y gastronomía'|_ }}</option>
-            <option value="fiesta-cultura">{{'Fiesta y cultura'|_ }}</option>
-            <option value="gastronomia-naturaleza">{{'Gastronomía y naturaleza'|_ }}</option>
-            <option value="naturaleza-aventura">{{'Naturaleza y aventura'|_ }}</option>
-            <option value="playa-naturaleza">{{'Playa y naturaleza'|_ }}</option>
-            <option value="vino-tradicion">{{'Vino y tradición'|_ }}</option>
-            <option value="aventura-tradicion">{{'Aventura y tradición'|_ }}</option>
+            <option value="playa y gastronomía">{{'Playa y gastronomía'|_ }}</option>
+            <option value="cultura y gastronomía">{{'Cultura y gastronomía'|_ }}</option>
+            <option value="fiesta y cultura">{{'Fiesta y cultura'|_ }}</option>
+            <option value="gastronomía y naturaleza">{{'Gastronomía y naturaleza'|_ }}</option>
+            <option value="naturaleza y aventura">{{'Naturaleza y aventura'|_ }}</option>
+            <option value="playa y naturaleza">{{'Playa y naturaleza'|_ }}</option>
+            <option value="vino y tradición">{{'Vino y tradición'|_ }}</option>
+            <option value="aventura y tradición">{{'Aventura y tradición'|_ }}</option>
           </select>
           <span class="select-title">{{ 'INTERESES'|_ }}</span>
         </div>
         
         <div class="type-container">
           <select class="custom-select select-type" name="tvisit">
-            <option value="cadiz-oculta">{{ 'Cádiz oculta'|_ }}</option>
-            <option value="cadiz-autentica">{{ 'Cádiz auténtica'|_ }}</option>
-            <option value="cadiz-relax">{{ 'Cádiz relax'|_ }}</option>
-            <option value="cadiz-urbano">{{ 'Cádiz urbano'|_ }}</option>
+            <option value="cádiz oculta">{{ 'Cádiz oculta'|_ }}</option>
+            <option value="cádiz auténtica">{{ 'Cádiz auténtica'|_ }}</option>
+            <option value="cádiz relax">{{ 'Cádiz relax'|_ }}</option>
+            <option value="cádiz urbano">{{ 'Cádiz urbano'|_ }}</option>
           </select>
           <span class="select-title">{{ 'TIPO DE VISITA'|_ }}</span>
         </div>

@@ -1,4 +1,12 @@
+<<<<<<< HEAD
 1516878052a:1:{s:22:"municipios-barbate.htm";a:7:{s:8:"fileName";s:22:"municipios-barbate.htm";s:7:"content";s:8209:"[viewBag]
+=======
+<<<<<<< HEAD:storage/framework/cache/4e/62/4e627d1186750a22b5c968d4efd4fe304870e312
+1516877244a:1:{s:22:"municipios-barbate.htm";a:7:{s:8:"fileName";s:22:"municipios-barbate.htm";s:7:"content";s:8209:"[viewBag]
+=======
+1516877130a:1:{s:22:"municipios-barbate.htm";a:7:{s:8:"fileName";s:22:"municipios-barbate.htm";s:7:"content";s:8209:"[viewBag]
+>>>>>>> 491ada266dd4d7718bcf5c9702c800d83ff94f0c:storage/framework/cache/1d/75/1d752d5b02426be3800cb9d7e6f8fad23b7a441a
+>>>>>>> 7e36ed94a1a1da4d9cff559cad46c3d35a70006a
 title = "Barbate"
 url = "/municipios/barbate"
 template = "pages"

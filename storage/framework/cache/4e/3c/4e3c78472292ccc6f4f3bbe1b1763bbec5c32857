@@ -1,4 +1,12 @@
+<<<<<<< HEAD
 1516878052a:1:{s:29:"comarcas-campina-de-jerez.htm";a:7:{s:8:"fileName";s:29:"comarcas-campina-de-jerez.htm";s:7:"content";s:6407:"[viewBag]
+=======
+<<<<<<< HEAD:storage/framework/cache/5d/1b/5d1bd3f096279f4e0a9aa9013bd7e10cf890be66
+1516877244a:1:{s:29:"comarcas-campina-de-jerez.htm";a:7:{s:8:"fileName";s:29:"comarcas-campina-de-jerez.htm";s:7:"content";s:6407:"[viewBag]
+=======
+1516877130a:1:{s:29:"comarcas-campina-de-jerez.htm";a:7:{s:8:"fileName";s:29:"comarcas-campina-de-jerez.htm";s:7:"content";s:6407:"[viewBag]
+>>>>>>> 491ada266dd4d7718bcf5c9702c800d83ff94f0c:storage/framework/cache/4e/3c/4e3c78472292ccc6f4f3bbe1b1763bbec5c32857
+>>>>>>> 7e36ed94a1a1da4d9cff559cad46c3d35a70006a
 title = "Campiña de Jerez"
 url = "/comarcas/campina-de-jerez"
 template = "pages"

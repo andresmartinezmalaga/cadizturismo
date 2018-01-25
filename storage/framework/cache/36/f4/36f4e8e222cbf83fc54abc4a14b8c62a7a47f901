@@ -1,4 +1,12 @@
+<<<<<<< HEAD
 1516878053a:1:{s:27:"naturaleza-birdwatching.htm";a:7:{s:8:"fileName";s:27:"naturaleza-birdwatching.htm";s:7:"content";s:121:"[viewBag]
+=======
+<<<<<<< HEAD:storage/framework/cache/b5/97/b59745cdda8af68ea2600a03be4ab66af955f710
+1516877244a:1:{s:27:"naturaleza-birdwatching.htm";a:7:{s:8:"fileName";s:27:"naturaleza-birdwatching.htm";s:7:"content";s:121:"[viewBag]
+=======
+1516877130a:1:{s:27:"naturaleza-birdwatching.htm";a:7:{s:8:"fileName";s:27:"naturaleza-birdwatching.htm";s:7:"content";s:121:"[viewBag]
+>>>>>>> 491ada266dd4d7718bcf5c9702c800d83ff94f0c:storage/framework/cache/36/f4/36f4e8e222cbf83fc54abc4a14b8c62a7a47f901
+>>>>>>> 7e36ed94a1a1da4d9cff559cad46c3d35a70006a
 title = "Birdwatching"
 url = "/naturaleza/birdwatching"
 template = "pages"

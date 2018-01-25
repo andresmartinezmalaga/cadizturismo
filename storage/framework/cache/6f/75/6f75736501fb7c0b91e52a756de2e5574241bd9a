@@ -1,4 +1,12 @@
+<<<<<<< HEAD
 1516878053a:1:{s:13:"allevents.htm";a:6:{s:8:"fileName";s:13:"allevents.htm";s:7:"content";s:1782:"==
+=======
+<<<<<<< HEAD:storage/framework/cache/20/67/2067439a3db8a850ba520e7536cb62a1037b5fd5
+1516877255a:1:{s:13:"allevents.htm";a:6:{s:8:"fileName";s:13:"allevents.htm";s:7:"content";s:1778:"==
+=======
+1516877131a:1:{s:13:"allevents.htm";a:6:{s:8:"fileName";s:13:"allevents.htm";s:7:"content";s:1782:"==
+>>>>>>> 491ada266dd4d7718bcf5c9702c800d83ff94f0c:storage/framework/cache/6f/75/6f75736501fb7c0b91e52a756de2e5574241bd9a
+>>>>>>> 7e36ed94a1a1da4d9cff559cad46c3d35a70006a
 <?php 
 
 	function onStart()
@@ -35,7 +43,7 @@
               </div>
               <div class="icon-pair">
                 <img src="{{preurl}}/storage/app/media/uploaded-files/templates/loc-events.svg">
-                <p class="icon-txt">Sanlúcar de Barrameda</p>
+                <p class="icon-txt">{{event.location}}</p>
               </div>
             </div>
             <div class="button-container">
@@ -46,7 +54,11 @@
 
 	{% endfor %}
 	</div>
+<<<<<<< HEAD:storage/framework/cache/20/67/2067439a3db8a850ba520e7536cb62a1037b5fd5
+</div>";s:5:"mtime";i:1516872996;s:6:"markup";s:1576:"<div class="more-popular">
+=======
 </div>";s:5:"mtime";i:1516870225;s:6:"markup";s:1580:"<div class="more-popular">
+>>>>>>> 491ada266dd4d7718bcf5c9702c800d83ff94f0c:storage/framework/cache/6f/75/6f75736501fb7c0b91e52a756de2e5574241bd9a
   	<div class="title-container">
     <p class="title">MÁS <br> POPULARES <br> EN CÁDIZ </p>
       <img class="separator" src="{{preurl}}/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
@@ -68,7 +80,7 @@
               </div>
               <div class="icon-pair">
                 <img src="{{preurl}}/storage/app/media/uploaded-files/templates/loc-events.svg">
-                <p class="icon-txt">Sanlúcar de Barrameda</p>
+                <p class="icon-txt">{{event.location}}</p>
               </div>
             </div>
             <div class="button-container">

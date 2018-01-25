@@ -1,4 +1,12 @@
+<<<<<<< HEAD
 1516878053a:1:{s:15:"site/footer.htm";a:5:{s:8:"fileName";s:15:"site/footer.htm";s:7:"content";s:1266:"<footer>
+=======
+<<<<<<< HEAD:storage/framework/cache/72/2f/722f699d9f7c07df946a8d96702f59e4b68b9759
+1516877255a:1:{s:15:"site/footer.htm";a:5:{s:8:"fileName";s:15:"site/footer.htm";s:7:"content";s:1266:"<footer>
+=======
+1516877131a:1:{s:15:"site/footer.htm";a:5:{s:8:"fileName";s:15:"site/footer.htm";s:7:"content";s:1266:"<footer>
+>>>>>>> 491ada266dd4d7718bcf5c9702c800d83ff94f0c:storage/framework/cache/85/60/8560bc829efc2a3494a56b7150b0d71363231033
+>>>>>>> 7e36ed94a1a1da4d9cff559cad46c3d35a70006a
     <div class="footer-container">
       <div class="left-container">
         <img class="mini-logo" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/mini-logo.svg" alt="logo cádiz">

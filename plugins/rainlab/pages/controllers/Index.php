@@ -91,6 +91,7 @@ class Index extends Controller
         $this->addJs('/modules/backend/assets/js/october.treeview.js', 'core');
         $this->addJs('/plugins/rainlab/pages/assets/js/pages-page.js');
         $this->addJs('/plugins/rainlab/pages/assets/js/pages-snippets.js');
+        $this->addJs('/plugins/rainlab/pages/assets/js/eventos.js');
         $this->addCss('/plugins/rainlab/pages/assets/css/pages.css');
 
         // Andrés Martínez :  load ours css 

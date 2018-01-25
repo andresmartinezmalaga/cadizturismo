@@ -66,7 +66,10 @@ class __TwigTemplate_796174ae4d4318c3bfbb26601126d13da28625d517369b52eab8bc427e9
             // line 22
             echo twig_escape_filter($this->env, ($context["preurl"] ?? null), "html", null, true);
             echo "/storage/app/media/uploaded-files/templates/loc-events.svg\">
-                <p class=\"icon-txt\">Sanlúcar de Barrameda</p>
+                <p class=\"icon-txt\">";
+            // line 23
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["event"], "location", array()), "html", null, true);
+            echo "</p>
               </div>
             </div>
             <div class=\"button-container\">
@@ -107,7 +110,7 @@ class __TwigTemplate_796174ae4d4318c3bfbb26601126d13da28625d517369b52eab8bc427e9
 
     public function getDebugInfo()
     {
-        return array (  94 => 33,  75 => 27,  67 => 22,  60 => 18,  54 => 15,  50 => 14,  44 => 13,  39 => 11,  34 => 8,  30 => 7,  24 => 4,  19 => 1,);
+        return array (  97 => 33,  78 => 27,  71 => 23,  67 => 22,  60 => 18,  54 => 15,  50 => 14,  44 => 13,  39 => 11,  34 => 8,  30 => 7,  24 => 4,  19 => 1,);
     }
 
     public function getSourceContext()
@@ -134,7 +137,7 @@ class __TwigTemplate_796174ae4d4318c3bfbb26601126d13da28625d517369b52eab8bc427e9
               </div>
               <div class=\"icon-pair\">
                 <img src=\"{{preurl}}/storage/app/media/uploaded-files/templates/loc-events.svg\">
-                <p class=\"icon-txt\">Sanlúcar de Barrameda</p>
+                <p class=\"icon-txt\">{{event.location}}</p>
               </div>
             </div>
             <div class=\"button-container\">

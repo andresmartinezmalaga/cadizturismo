@@ -1,4 +1,12 @@
+<<<<<<< HEAD
 1516878053a:1:{s:11:"beaches.htm";a:6:{s:8:"fileName";s:11:"beaches.htm";s:7:"content";s:1386:"==
+=======
+<<<<<<< HEAD:storage/framework/cache/42/cc/42cc638672ed2652e02b5f7514d79f82ab33687b
+1516873642a:1:{s:11:"beaches.htm";a:6:{s:8:"fileName";s:11:"beaches.htm";s:7:"content";s:1386:"==
+=======
+1516877131a:1:{s:11:"beaches.htm";a:6:{s:8:"fileName";s:11:"beaches.htm";s:7:"content";s:1386:"==
+>>>>>>> 491ada266dd4d7718bcf5c9702c800d83ff94f0c:storage/framework/cache/4d/85/4d8552f8cff671634efc91465235305d95e387a7
+>>>>>>> 7e36ed94a1a1da4d9cff559cad46c3d35a70006a
 <?php 
 
 	function onStart()

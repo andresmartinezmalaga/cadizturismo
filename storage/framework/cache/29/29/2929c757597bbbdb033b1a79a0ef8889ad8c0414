@@ -1,4 +1,12 @@
+<<<<<<< HEAD
 1516878053a:1:{s:19:"necesitas-ayuda.htm";a:7:{s:8:"fileName";s:19:"necesitas-ayuda.htm";s:7:"content";s:2925:"[viewBag]
+=======
+<<<<<<< HEAD:storage/framework/cache/3d/e1/3de1e6b69073139f7a76ea6f11bf70818bc396ae
+1516877244a:1:{s:19:"necesitas-ayuda.htm";a:7:{s:8:"fileName";s:19:"necesitas-ayuda.htm";s:7:"content";s:2925:"[viewBag]
+=======
+1516877131a:1:{s:19:"necesitas-ayuda.htm";a:7:{s:8:"fileName";s:19:"necesitas-ayuda.htm";s:7:"content";s:2925:"[viewBag]
+>>>>>>> 491ada266dd4d7718bcf5c9702c800d83ff94f0c:storage/framework/cache/29/29/2929c757597bbbdb033b1a79a0ef8889ad8c0414
+>>>>>>> 7e36ed94a1a1da4d9cff559cad46c3d35a70006a
 title = "Necesitas ayuda"
 url = "/necesitas-ayuda"
 template = "pages"
