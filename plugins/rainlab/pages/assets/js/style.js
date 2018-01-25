@@ -8,10 +8,14 @@ jQuery(function($)
         $('.languages').toggleClass("show-lang");
         e.preventDefault();
     });
+    $("#international-press").click(function(e) {
+        $('.press-languages').toggleClass("show-international");
+        $(this).children('.arrow').toggleClass("rotate-arrow");
+        e.preventDefault();
+    });
 });
 
 $(".menu-title").click(function(){
-  console.log('hola caracola');
   $(this).siblings('.menu-ul').toggleClass('open-menu-mobile');
 });
 

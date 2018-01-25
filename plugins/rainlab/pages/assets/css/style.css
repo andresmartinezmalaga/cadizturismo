@@ -190,6 +190,11 @@ html, body {
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg); }
 
+.rotate-arrow {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg); }
+
 /* NAVBAR TOGGLE & SLIDE-MENU */
 .mobile-toggle {
   display: inline-block;
@@ -767,6 +772,9 @@ html, body {
 .field-richeditor .somos-section .tagline-container {
   bottom: 40px !important; }
 
+.field-richeditor .press-languages {
+  display: block !important; }
+
 .field-richeditor .img-village:before {
   content: none !important; }
 
@@ -1140,7 +1148,17 @@ html, body {
       justify-content: center;
       position: relative; }
     .ways .way .pic-way {
-      height: 470px; }
+      height: 470px;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      flex-direction: column; }
+      .ways .way .pic-way .links-container {
+        z-index: 100; }
+        .ways .way .pic-way .links-container a:first-child {
+          margin-right: 30px; }
       .ways .way .pic-way .background-way {
         position: absolute;
         width: 100%;
@@ -1168,6 +1186,25 @@ html, body {
           width: auto;
           margin-bottom: 28px; }
         .ways .way .pic-way .icon-container p {
+          color: white;
+          font-family: 'AvenirNext-DemiBold';
+          font-size: 39px;
+          text-transform: uppercase; }
+      .ways .way .pic-way .icon-press-container {
+        z-index: 80;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column; }
+        .ways .way .pic-way .icon-press-container .icon {
+          max-height: 72px;
+          width: auto;
+          margin-bottom: 28px; }
+        .ways .way .pic-way .icon-press-container p {
           color: white;
           font-family: 'AvenirNext-DemiBold';
           font-size: 39px;
@@ -1226,6 +1263,65 @@ html, body {
     background-color: #CECECE; }
   .ways .sea-way .info-container .info-title {
     min-width: 137px !important; }
+  .ways .download-link {
+    color: #F5A623;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 27px;
+    font-family: 'AvenirNext-Medium'; }
+    .ways .download-link img {
+      margin-left: 8px; }
+    .ways .download-link:hover, .ways .download-link:focus, .ways .download-link:active {
+      text-decoration: none;
+      outline: none;
+      opacity: 0.7; }
+    .ways .download-link img {
+      -webkit-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      transform: rotate(90deg); }
+  .ways .see-link {
+    color: #F5A623;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 27px;
+    font-family: 'AvenirNext-Medium'; }
+    .ways .see-link img {
+      margin-left: 8px; }
+    .ways .see-link:hover {
+      text-decoration: none;
+      outline: none;
+      opacity: 0.7; }
+    .ways .see-link:active, .ways .see-link:focus, .ways .see-link:visited {
+      text-decoration: none;
+      outline: none;
+      opacity: 1; }
+  .ways .press-languages {
+    position: absolute;
+    display: none;
+    color: white;
+    text-transform: uppercase;
+    z-index: 100;
+    min-height: 100px;
+    bottom: 15px; }
+    .ways .press-languages p {
+      margin: 0px auto;
+      text-align: center;
+      width: 92%; }
+      .ways .press-languages p a {
+        color: white;
+        font-size: 13px;
+        text-transform: uppercase; }
+        .ways .press-languages p a:hover {
+          text-decoration: none;
+          outline: none;
+          opacity: 0.7; }
+        .ways .press-languages p a:active, .ways .press-languages p a:focus, .ways .press-languages p a:visited {
+          text-decoration: none;
+          outline: none;
+          opacity: 1; }
+  .ways .show-international {
+    display: block !important; }
 
 .ayuda-header:before {
   z-index: 2;
