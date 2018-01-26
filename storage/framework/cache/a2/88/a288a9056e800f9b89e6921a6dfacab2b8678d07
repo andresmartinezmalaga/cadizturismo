@@ -1,0 +1,19 @@
+<<<<<<< HEAD:storage/framework/cache/9e/c1/9ec1b9049341f3764beb08ea6f614c8ae7b87477
+1516960936a:1:{s:9:"error.htm";a:8:{s:8:"fileName";s:9:"error.htm";s:7:"content";s:242:"title = "Error page (500)"
+=======
+1516899127a:1:{s:9:"error.htm";a:8:{s:8:"fileName";s:9:"error.htm";s:7:"content";s:242:"title = "Error page (500)"
+>>>>>>> d6b07ef84145464d77a009b68dd3294b100d8f57:storage/framework/cache/a2/88/a288a9056e800f9b89e6921a6dfacab2b8678d07
+url = "/error"
+layout = "default"
+==
+<div class="">
+    <div class="container">
+        <h1>{{'Error'|_}}</h1>
+        <p>We're sorry, but something went wrong and the page cannot be displayed.</p>
+    </div>
+</div>";s:5:"mtime";i:1516870225;s:6:"markup";s:178:"<div class="">
+    <div class="container">
+        <h1>{{'Error'|_}}</h1>
+        <p>We're sorry, but something went wrong and the page cannot be displayed.</p>
+    </div>
+</div>";s:4:"code";N;s:5:"title";s:16:"Error page (500)";s:3:"url";s:6:"/error";s:6:"layout";s:7:"default";}}

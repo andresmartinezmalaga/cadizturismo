@@ -90,6 +90,9 @@
       .header-event .send-info .button-send-info:hover {
         background-color: #D0860C; }
 
+#header-event-fr .brush {
+  margin-bottom: 0px; }
+
 .send-info-container {
   height: 969px;
   width: 100%;

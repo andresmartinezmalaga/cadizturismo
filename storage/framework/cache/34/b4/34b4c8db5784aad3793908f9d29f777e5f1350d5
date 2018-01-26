@@ -1,0 +1,166 @@
+<<<<<<< HEAD:storage/framework/cache/e5/b5/e5b53d8b08832135cab88d6cfa1421e71f9eb1a3
+1516960936a:1:{s:21:"diversion-compras.htm";a:7:{s:8:"fileName";s:21:"diversion-compras.htm";s:7:"content";s:3339:"[viewBag]
+=======
+1516901964a:1:{s:21:"diversion-compras.htm";a:7:{s:8:"fileName";s:21:"diversion-compras.htm";s:7:"content";s:3339:"[viewBag]
+>>>>>>> d6b07ef84145464d77a009b68dd3294b100d8f57:storage/framework/cache/34/b4/34b4c8db5784aad3793908f9d29f777e5f1350d5
+title = "Compras"
+url = "/diversion/compras"
+template = "pages"
+is_hidden = 0
+layout = "default"
+localeUrl[en] = "/diversion/compras"
+localeUrl[fr] = "/diversion/compras"
+localeUrl[de] = "/diversion/compras"
+localeUrl[ru] = "/diversion/compras"
+==
+<!-- HEADER -->
+<div class="header-general header-ocio">
+	<div class="header-container">
+		<div class="header-txt">
+
+			<h1 class="txt">Diversión</h1><img class="brush fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
+	</div>
+	<!-- NUEVA FOTO -->
+	<img class="background-image fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/ocio.jpg"></div>
+<div class="section-txt-comarca">
+	<!-- NUEVO DIV -->
+	<div class="txt-container">
+
+		<p class="title">CREA MOMENTOS
+			<br>INOLVIDABLES</p><img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+
+		<p class="desc">En Cádiz el concepto del tiempo se desploma con la risa de su gente y los planes para disfrutar en todo momento. Atardeceres en la playa, el arte del tapeo en el casco antiguo o perderse en la Sierra de Grazalema, no esperes a que te lo cuenten.</p>
+	</div>
+</div>
+<div class="static-structure">
+	<div class="page page-compras">
+		<div class="overlay-img">
+			<br>
+		</div><img class="rec-img fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/compras.jpg">
+		<img class="icon fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/compras.svg">
+		<div class="txt-container">
+
+			<p class="name">COMPRAS</p><img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+			<a href="compras.html">Ver opciones de compras <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii">&nbsp;</a></div>
+	</div>
+	<div class="page">
+		<div class="overlay-img">
+			<br>
+		</div><img class="rec-img fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/parqueocio-header.jpg">
+		<img class="icon fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/locales-ocio.svg">
+		<div class="txt-container">
+
+			<p class="name">LOCALES DE OCIO</p><img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+			<a href="locales-ocio.html">Ver locales de ocio <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii">&nbsp;</a></div>
+	</div>
+	<div class="page">
+		<div class="overlay-img">
+			<br>
+		</div><img class="rec-img fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/po-header.jpg">
+		<img class="icon fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/parques-ocio.svg">
+		<div class="txt-container">
+
+			<p class="name">PARQUES DE OCIO</p><img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+			<a href="parques-ocio.html">Ver parques de ocio <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii">&nbsp;</a></div>
+	</div>
+</div>";s:5:"mtime";i:1516729013;s:6:"markup";s:3081:"<!-- HEADER -->
+<div class="header-general header-ocio">
+	<div class="header-container">
+		<div class="header-txt">
+
+			<h1 class="txt">Diversión</h1><img class="brush fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
+	</div>
+	<!-- NUEVA FOTO -->
+	<img class="background-image fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/ocio.jpg"></div>
+<div class="section-txt-comarca">
+	<!-- NUEVO DIV -->
+	<div class="txt-container">
+
+		<p class="title">CREA MOMENTOS
+			<br>INOLVIDABLES</p><img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+
+		<p class="desc">En Cádiz el concepto del tiempo se desploma con la risa de su gente y los planes para disfrutar en todo momento. Atardeceres en la playa, el arte del tapeo en el casco antiguo o perderse en la Sierra de Grazalema, no esperes a que te lo cuenten.</p>
+	</div>
+</div>
+<div class="static-structure">
+	<div class="page page-compras">
+		<div class="overlay-img">
+			<br>
+		</div><img class="rec-img fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/compras.jpg">
+		<img class="icon fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/compras.svg">
+		<div class="txt-container">
+
+			<p class="name">COMPRAS</p><img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+			<a href="compras.html">Ver opciones de compras <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii">&nbsp;</a></div>
+	</div>
+	<div class="page">
+		<div class="overlay-img">
+			<br>
+		</div><img class="rec-img fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/parqueocio-header.jpg">
+		<img class="icon fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/locales-ocio.svg">
+		<div class="txt-container">
+
+			<p class="name">LOCALES DE OCIO</p><img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+			<a href="locales-ocio.html">Ver locales de ocio <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii">&nbsp;</a></div>
+	</div>
+	<div class="page">
+		<div class="overlay-img">
+			<br>
+		</div><img class="rec-img fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/po-header.jpg">
+		<img class="icon fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/parques-ocio.svg">
+		<div class="txt-container">
+
+			<p class="name">PARQUES DE OCIO</p><img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+			<a href="parques-ocio.html">Ver parques de ocio <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii">&nbsp;</a></div>
+	</div>
+</div>";s:4:"code";N;s:7:"viewBag";a:6:{s:5:"title";s:7:"Compras";s:3:"url";s:18:"/diversion/compras";s:8:"template";s:5:"pages";s:9:"is_hidden";s:1:"0";s:6:"layout";s:7:"default";s:9:"localeUrl";a:4:{s:2:"en";s:18:"/diversion/compras";s:2:"fr";s:18:"/diversion/compras";s:2:"de";s:18:"/diversion/compras";s:2:"ru";s:18:"/diversion/compras";}}s:12:"parsedMarkup";s:3081:"<!-- HEADER -->
+<div class="header-general header-ocio">
+	<div class="header-container">
+		<div class="header-txt">
+
+			<h1 class="txt">Diversión</h1><img class="brush fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
+	</div>
+	<!-- NUEVA FOTO -->
+	<img class="background-image fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/ocio.jpg"></div>
+<div class="section-txt-comarca">
+	<!-- NUEVO DIV -->
+	<div class="txt-container">
+
+		<p class="title">CREA MOMENTOS
+			<br>INOLVIDABLES</p><img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+
+		<p class="desc">En Cádiz el concepto del tiempo se desploma con la risa de su gente y los planes para disfrutar en todo momento. Atardeceres en la playa, el arte del tapeo en el casco antiguo o perderse en la Sierra de Grazalema, no esperes a que te lo cuenten.</p>
+	</div>
+</div>
+<div class="static-structure">
+	<div class="page page-compras">
+		<div class="overlay-img">
+			<br>
+		</div><img class="rec-img fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/compras.jpg">
+		<img class="icon fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/compras.svg">
+		<div class="txt-container">
+
+			<p class="name">COMPRAS</p><img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+			<a href="compras.html">Ver opciones de compras <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii">&nbsp;</a></div>
+	</div>
+	<div class="page">
+		<div class="overlay-img">
+			<br>
+		</div><img class="rec-img fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/parqueocio-header.jpg">
+		<img class="icon fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/locales-ocio.svg">
+		<div class="txt-container">
+
+			<p class="name">LOCALES DE OCIO</p><img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+			<a href="locales-ocio.html">Ver locales de ocio <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii">&nbsp;</a></div>
+	</div>
+	<div class="page">
+		<div class="overlay-img">
+			<br>
+		</div><img class="rec-img fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/po-header.jpg">
+		<img class="icon fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/parques-ocio.svg">
+		<div class="txt-container">
+
+			<p class="name">PARQUES DE OCIO</p><img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+			<a href="parques-ocio.html">Ver parques de ocio <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii">&nbsp;</a></div>
+	</div>
+</div>";}}

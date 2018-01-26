@@ -1,0 +1,130 @@
+<<<<<<< HEAD:storage/framework/cache/be/f7/bef7ad833c0bed818772f817127a30687c4d4910
+1516960936a:1:{s:13:"allevents.htm";a:10:{s:8:"fileName";s:13:"allevents.htm";s:7:"content";s:1559:"title = "allEvents"
+=======
+1516899127a:1:{s:13:"allevents.htm";a:10:{s:8:"fileName";s:13:"allevents.htm";s:7:"content";s:1559:"title = "allEvents"
+>>>>>>> d6b07ef84145464d77a009b68dd3294b100d8f57:storage/framework/cache/2a/06/2a069d4516769356f2abad883d280b919531bcc5
+url = "/todos-los-eventos"
+layout = "dinamic"
+is_hidden = 0
+
+[staticApp]
+
+==
+<?php  
+	
+	function onStart()
+	{	    
+    $this['lang']=\App::getLocale();
+		if($this['lang']==''){
+			$this['lang']='es';
+		}
+    
+    if(Session::has('data')){
+      Session::put('reciveData',Session::get('data'));     
+    }
+
+    $this['events'] = $this->staticApp->eventAll();
+
+    
+	}
+
+	function onFindEvent(){
+
+
+    $category = $_POST['category'];
+    $location = $_POST['location'];
+    $datepicker = explode('-', $_POST['datepicker']);
+		
+    $edaystart = explode('.', $datepicker[0]);
+    $edayend = explode('.', $datepicker[1]);
+
+    $daystart = new Date($edaystart[0].'-'.$edaystart[1].'-'.$edaystart[2]);
+    $dayend = new Date($edayend[0].'-'.$edayend[1].'-'.$edayend[2]);
+
+  	$aLang = App::getLocale();
+    $events = $this->staticApp->eventFind($category,$daystart,$dayend,$location);
+  
+    return Redirect::to($aLang.'/listado-de-eventos')->with( ['data' => json_encode($events)] );
+ 
+  }
+
+?>
+==
+
+<!-- HEADER -->
+<div class="header header-events">
+  
+  <div class="header-container">
+      
+      <div class="header-txt">
+        <h1 class="txt txt-home"><span class="first-word">{{ "Vive"|_ }}</span> {{ "nuestros eventos"|_ }}</h1>
+        <img class="brush" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/brush-header.svg" alt="">
+      </div>
+   
+    <!-- SEARCH -->
+    <div id='prtlSearch'>
+      {% partial "site/searchevent" %}
+    </div>
+
+  </div>
+</div>
+
+<div id='prtlExperiences' class="all-exps">
+	{% partial "allevents" %}
+</div>";s:5:"mtime";i:1516870225;s:6:"markup";s:549:"<!-- HEADER -->
+<div class="header header-events">
+  
+  <div class="header-container">
+      
+      <div class="header-txt">
+        <h1 class="txt txt-home"><span class="first-word">{{ "Vive"|_ }}</span> {{ "nuestros eventos"|_ }}</h1>
+        <img class="brush" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/brush-header.svg" alt="">
+      </div>
+   
+    <!-- SEARCH -->
+    <div id='prtlSearch'>
+      {% partial "site/searchevent" %}
+    </div>
+
+  </div>
+</div>
+
+<div id='prtlExperiences' class="all-exps">
+	{% partial "allevents" %}
+</div>";s:4:"code";s:899:"  
+	
+	function onStart()
+	{	    
+    $this['lang']=\App::getLocale();
+		if($this['lang']==''){
+			$this['lang']='es';
+		}
+    
+    if(Session::has('data')){
+      Session::put('reciveData',Session::get('data'));     
+    }
+
+    $this['events'] = $this->staticApp->eventAll();
+
+    
+	}
+
+	function onFindEvent(){
+
+
+    $category = $_POST['category'];
+    $location = $_POST['location'];
+    $datepicker = explode('-', $_POST['datepicker']);
+		
+    $edaystart = explode('.', $datepicker[0]);
+    $edayend = explode('.', $datepicker[1]);
+
+    $daystart = new Date($edaystart[0].'-'.$edaystart[1].'-'.$edaystart[2]);
+    $dayend = new Date($edayend[0].'-'.$edayend[1].'-'.$edayend[2]);
+
+  	$aLang = App::getLocale();
+    $events = $this->staticApp->eventFind($category,$daystart,$dayend,$location);
+  
+    return Redirect::to($aLang.'/listado-de-eventos')->with( ['data' => json_encode($events)] );
+ 
+  }";s:5:"title";s:9:"allEvents";s:3:"url";s:18:"/todos-los-eventos";s:6:"layout";s:7:"dinamic";s:9:"is_hidden";s:1:"0";s:9:"staticApp";a:0:{}}}
