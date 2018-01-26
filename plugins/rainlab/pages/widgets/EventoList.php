@@ -8,6 +8,7 @@ use Response;
 use Backend\Classes\WidgetBase;
 use RainLab\Pages\Classes\EventoList as StaticPageList;
 use Cms\Classes\Theme;
+use DateTime;
 
 /**
  * Static page list widget.
@@ -42,7 +43,7 @@ class EventoList extends WidgetBase
         
         // Andrés Martinez : change prefix page to event
         //$this->dataIdPrefix = 'page-'.$this->theme->getDirName();
-        $this->dataIdPrefix = 'event-'.$this->theme->getDirName();
+        $this->dataIdPrefix = 'evento-'.$this->theme->getDirName();
       
         parent::__construct($controller, []);
         $this->bindToController();
@@ -97,6 +98,17 @@ class EventoList extends WidgetBase
     {
         $pageList = new StaticPageList($this->theme);
         $pages = $pageList->getPageTree(true);
+
+        // Andrés Martínez : get only events pages to list at treebranch
+        $events = collect();
+        foreach ($pages as $i) {
+           if($i->page->template == 'eventos'){
+                $i->date_start_pretty_num = (new DateTime($i->page->date_start))->format('d.m.y');
+                $events->push($i);
+           }
+        }
+       
+        $pages = $events->values();
 
         $searchTerm = Str::lower($this->getSearchTerm());
 

@@ -28,10 +28,13 @@
         >
             <div>
                 <a href="#">
+                    <div>
                     <?= e($pageObj->page->getViewBag()->property('title')) ?>
-                    <!-- Andrés Martínez : Hidden url at list
-                    -->
-                     <!-- <span class="comment"><?= e($pageObj->page->getViewBag()->property('url')) ?></span> -->
+                    <p><span class="comment"><?= e($pageObj->page->getViewBag()->property('url')) ?></span></p>
+                    <?php if ($pageObj->page->getViewBag()->property('is_hidden') == 1): ?>
+                        <p><span class="comment borrador">BORRADOR</span></p>
+                    <?php endif ?>
+                    </div>
                 </a>
 
                 <input type="hidden" name="object[<?= e($fileName) ?>]" value="0"/>

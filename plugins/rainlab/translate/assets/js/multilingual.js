@@ -16,7 +16,7 @@
 
 +function ($) { "use strict";
 
-    // Andrés Martínez :  add template to multilingual markups
+    // Martínez :  add template to multilingual markups
     // create var
     var templatePre;
    
@@ -33,10 +33,47 @@
         this.$activeButton = $('[data-active-locale]', this.$el)
         this.$dropdown     = $('ul.ml-dropdown-menu', this.$el)
         this.$placeholder  = $(this.options.placeholderField)
+
+        this.$ss = $('.custom-select');
+        this.$p = 0;
+        
         
         // Andrés Martínez : add template to multilingual markups & take template form markup es
-        var templatePre = $(element).find('textarea').text();
-     
+        if(this.$p == 0){
+            var templatePre = $(element).find('textarea').text();
+        }
+        
+        
+        this.$ss.on('change', function(event){
+            
+            var valor = $('#'+event.target.id).val();
+            console.log(valor)
+            var editor = $(element).find('.fr-wrapper .fr-view') 
+
+            if(valor == 'mini evento'){
+                
+                this.$p = 1;
+
+                $(editor).html('<h1>mini</h1>');
+                 
+                 templatePre = $(editor).html();
+                 console.log('mini'); 
+ 
+            } else if(valor == 'maxi evento') {
+                this.$p = 1;
+
+                $(editor).html('<h1>maxi</h1>');
+                
+                templatePre = $(editor).html();
+                console.log('maxi');  
+            }
+           
+            if(editor.html()=='<p><br></p>' || editor.html()=='<p></p>' || editor.html()==''){
+                $(editor).html(templatePre)
+            }
+        })
+
+
         this.$dropdown.on('click', '[data-switch-locale]', function(event){
 
             var selectedLocale = $(this).data('switch-locale')

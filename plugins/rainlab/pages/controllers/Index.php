@@ -91,7 +91,6 @@ class Index extends Controller
         $this->addJs('/modules/backend/assets/js/october.treeview.js', 'core');
         $this->addJs('/plugins/rainlab/pages/assets/js/pages-page.js');
         $this->addJs('/plugins/rainlab/pages/assets/js/pages-snippets.js');
-        $this->addJs('/plugins/rainlab/pages/assets/js/eventos.js');
         $this->addCss('/plugins/rainlab/pages/assets/css/pages.css');
 
         // Andrés Martínez :  load ours css 
@@ -121,6 +120,8 @@ class Index extends Controller
     {
         $this->validateRequestTheme();
         
+       
+
         $type = Request::input('type');
         $object = $this->loadObject($type, Request::input('path'));
 
@@ -221,8 +222,10 @@ class Index extends Controller
                 $object['markup'] = PagesTemplates::getTComida();
             }
 
+           
 
         return $this->pushObjectForm($type, $object);
+
         
     }
 
@@ -319,6 +322,8 @@ class Index extends Controller
         // Andrés Martínez : parentPage setDefaultLayout Events
         if ($type == 'evento') {
 
+            
+
             if (strlen($parent)) {
                 $parentPage = StaticExperience::load($this->theme, $parent);
             }
@@ -377,6 +382,8 @@ class Index extends Controller
                 'parentPage'   => $parentPage
             ])
         ];
+
+       
 
         return $result;
     }
@@ -443,6 +450,7 @@ class Index extends Controller
 
     public function onOpenConcurrencyResolveForm()
     {
+       
         return $this->makePartial('concurrency_resolve_form');
     }
 
@@ -463,6 +471,7 @@ class Index extends Controller
 
         $object = $this->fillObjectFromPost($type);
 
+       
         return $this->pushObjectForm($type, $object);
     }
 
@@ -568,6 +577,7 @@ class Index extends Controller
             throw new ApplicationException(trans('rainlab.pages::lang.object.not_found'));
         }
 
+       
         return $object;
     }
 
@@ -644,6 +654,7 @@ class Index extends Controller
             });
         }
        
+      
         return $widget;
     }
 
@@ -734,6 +745,9 @@ class Index extends Controller
              * Translation support
              */
             $page->translatable[] = 'placeholders['.$placeholderCode.']';
+
+           
+
         }
     }
 
@@ -774,6 +788,8 @@ class Index extends Controller
 
             return $result;
         }
+        
+       
 
         return $object->getFileName();
     }
@@ -969,6 +985,7 @@ class Index extends Controller
             $object->viewBag = $viewBag + $object->viewBag;
         }
 
+       
 
         return $object;
     }
@@ -1025,6 +1042,8 @@ class Index extends Controller
             ];
         }*/
 
+       
+
         return [
             'tabTitle' => $this->getTabTitle($type, $object),
             'tab'      => $this->makePartial('form_page', [
@@ -1049,6 +1068,7 @@ class Index extends Controller
 
         $widget = $this->makeObjectFormWidget($type, $object, $alias);
         $widget->bindToController();
+       
     }
 
     /**
@@ -1062,6 +1082,7 @@ class Index extends Controller
         $markup = str_replace("\r\n", "\n", $markup);
         $markup = str_replace("\r", "\n", $markup);
 
+       
         return $markup;
     }
 

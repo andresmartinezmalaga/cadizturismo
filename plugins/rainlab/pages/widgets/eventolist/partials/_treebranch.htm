@@ -1,72 +1,73 @@
+ <div class="tab-content" id="nav-tabContent">
+      <div class="tab-pane fade active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">1</div>
+      <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">2</div>
+      <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">3</div>
+    </div>
+    
 <?php foreach ($items as $pageObj): ?>
     
-    <!-- Andrés Martínez : Get template & filter pages show
-    -->
-    <?php 
-        $template = $pageObj->page->getViewBag()->property('template');
+    <?php
+        $fileName = $pageObj->page->getBaseFileName();
+        $groupStatus = $this->getCollapseStatus($fileName);
+        $dataId = $this->dataIdPrefix.'-'.$fileName;
+        $searchMode = strlen($this->getSearchTerm()) > 0;
+        $cbId = 'cb'.md5($fileName);
     ?>
-    
-    <?php if ($template == 'eventos') : ?>
 
-        <?php
-            $fileName = $pageObj->page->getBaseFileName();
-            $groupStatus = $this->getCollapseStatus($fileName);
-            $dataId = $this->dataIdPrefix.'-'.$fileName;
-            $searchMode = strlen($this->getSearchTerm()) > 0;
-            $cbId = 'cb'.md5($fileName);
-        ?>
-
-    
-
-        <li
-            class="<?= $pageObj->subpages ? 'has-subitems' : null ?>" 
-            data-status="<?= $groupStatus || !$pageObj->subpages ? 'expanded' : 'collapsed' ?>"
-            data-group-id="<?= e($fileName) ?>"
-            data-item-path="<?= e($fileName) ?>"
-            <?php if ($searchMode): ?>data-no-drag-mode<?php endif ?>
-            data-id="<?= e($dataId) ?>"
-        >
-            <div>
-                <a href="#">
-                    <?= e($pageObj->page->getViewBag()->property('title')) ?>
-                    <span class="comment"><?= e($pageObj->page->getViewBag()->property('url')) ?></span>
-                </a>
-
-                <input type="hidden" name="object[<?= e($fileName) ?>]" value="0"/>
-                <div class="checkbox custom-checkbox nolabel">
-                    <input
-                        id="<?= $cbId ?>"
-                        type="checkbox"
-                        name="object[<?= e($fileName) ?>]"
-                        <?= $this->isItemSelected($fileName) ? 'checked' : null ?>
-                        data-request="<?= $this->getEventHandler('onSelect') ?>"
-                        value="1">
-                    <label for="<?= $cbId ?>">Select</label>
+    <li
+        class="<?= $pageObj->subpages ? 'has-subitems' : null ?>" 
+        data-status="<?= $groupStatus || !$pageObj->subpages ? 'expanded' : 'collapsed' ?>"
+        data-group-id="<?= e($fileName) ?>"
+        data-item-path="<?= e($fileName) ?>"
+        <?php if ($searchMode): ?>data-no-drag-mode<?php endif ?>
+        data-id="<?= e($dataId) ?>"
+    >
+        <div>
+            <a href="#">
+                <div>
+                    <?= e($pageObj->page->getViewBag()->property('title')) ?>                    
+                    <p><span class="comment date_start_pretty_num"><?= e($pageObj->date_start_pretty_num) ?></span></p>
+                    <?php if ($pageObj->page->getViewBag()->property('is_hidden') == 1): ?>
+                        <p><span class="comment borrador">BORRADOR</span></p>
+                    <?php endif ?>
                 </div>
-            
-                <!-- Andrés Martínez : Hidden addSubpag button
-                -->
-                <!--<ul class="submenu">
-                    <li>
-                        <a
-                            href="#"
-                            data-control="create-object"
-                            data-parent="<?= $fileName ?>"
-                        >
-                            <i class="icon-plus"></i>
-                            <?= e(trans($this->addSubpageLabel)) ?>
-                        </a>
-                    </li>
-                </ul>-->
+            </a>
+
+            <input type="hidden" name="object[<?= e($fileName) ?>]" value="0"/>
+            <div class="checkbox custom-checkbox nolabel">
+                <input
+                    id="<?= $cbId ?>"
+                    type="checkbox"
+                    name="object[<?= e($fileName) ?>]"
+                    <?= $this->isItemSelected($fileName) ? 'checked' : null ?>
+                    data-request="<?= $this->getEventHandler('onSelect') ?>"
+                    value="1">
+                <label for="<?= $cbId ?>">Select</label>
             </div>
+        
+            <!-- Andrés Martínez : Hidden addSubpag button
+            -->
+            <!--<ul class="submenu">
+                <li>
+                    <a
+                        href="#"
+                        data-control="create-object"
+                        data-parent="<?= $fileName ?>"
+                    >
+                        <i class="icon-plus"></i>
+                        <?= e(trans($this->addSubpageLabel)) ?>
+                    </a>
+                </li>
+            </ul>-->
+        </div>
 
-            <ol>
-                <?php if ($subpages = $pageObj->subpages): ?>
-                    <?= $this->makePartial('treebranch', ['items' => $subpages]) ?>
-                <?php endif ?>
-            </ol>
-        </li>
+        <ol>
+            <?php if ($subpages = $pageObj->subpages): ?>
+                <?= $this->makePartial('treebranch', ['items' => $subpages]) ?>
+            <?php endif ?>
+        </ol>
+    </li>
 
-    <?php endif ?>
+   
 
 <?php endforeach ?>

@@ -130,7 +130,7 @@ class Evento extends ContentBase
         ];
 
         // Andrés Martínez : Load events template on markup
-        $template = '
+        $templateg = '
         <!-- HEADER -->
         <div id="header-event-fr" class="header-event main-event">
           <div class="header-container">
@@ -231,7 +231,7 @@ class Evento extends ContentBase
           $preurl = '';
         }
 
-        $this->markup = str_replace('***_preurl_***',$preurl,$template);
+        //$this->markup = str_replace('***_preurl_***',$preurl,$template);
     }
 
     //

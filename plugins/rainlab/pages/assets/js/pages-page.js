@@ -15,31 +15,17 @@
     PagesPage.prototype.constructor = PagesPage
 
     PagesPage.prototype.init = function() {
+        
         this.$masterTabs = $('#pages-master-tabs')
         this.$sidePanel = $('#pages-side-panel')
         this.$pageTree = $('[data-control=treeview]', this.$sidePanel)
         this.masterTabsObj = this.$masterTabs.data('oc.tab')
         this.snippetManager = new $.oc.pages.snippetManager(this.$masterTabs)
 
-        this.$maxi = $('#select2-Form-formEvento2a87bca672b3855440f81bce17dc35665a6918369a607-field-viewBag-tlayout-result-8ezo-maxi-evento')
-        this.$mini = $('#select2-Form-formEvento2a87bca672b3855440f81bce17dc35665a6918369a607-field-viewBag-tlayout-result-aq0x-mini-evento')
-
         this.registerHandlers()
     }
 
     PagesPage.prototype.registerHandlers = function() {
-        
-       
-        this.$maxi.on(
-            'click'
-            ,this.proxy(this.onMaxi)
-        )
-
-
-        this.$mini.on(
-            'click'
-            ,this.proxy(this.onMini)
-        )
 
         // Item is clicked in the sidebar
         $(document).on('open.oc.treeview', 'form.layout[data-content-id=pages]', this.proxy(this.onSidebarItemClick))
@@ -185,13 +171,64 @@
         })
     }
 
+    // Andrés Martínez : Select maxi mini template on events
+    PagesPage.prototype.sclc = function() {
+            /*
+
+            var txa = $('#pages-master-tabs > .tab-content.layout-row > .active')
+            var ttx = $('#pages-master-tabs > .tab-content.layout-row > .active .tab-pane.active.layout-cell > div > div > div')
+           
+            var wid = $(ttx).attr('id');
+
+            $(txa.context).find('')
+            $(ttx).css('border','solid 3px red')
+            console.log($(ttx))
+
+             $(ww).css('border','solid 3px red')
+            var dd = $('#'+wid)
+
+            $(dd).css('border','solid 3px')
+            
+            console.log($(ttx).elements)
+
+            ttx.context.elements.each(function( index ) {
+                console.log(index)
+            });
+
+            //console.log($(jj).text());
+
+        $('.custom-select').on( "change", function(e) {
+
+            
+            $(txa).css('border','solid 3px red');  
+            var valor = $('#'+e.target.id).val();
+
+            if(valor == 'mini evento'){
+            
+                $(dd).text('<h1>mini</h1>');
+                
+               console.log( $(txa).text());
+            
+            } else if(valor == 'maxi evento') {
+            
+                $(dd).text('<h1>maxi</h1>');
+                console.log('maxi');
+                  console.log( $(txa).text());   
+            }
+
+        });
+        */
+
+    }
+
     /*
      * Triggered when a tab is displayed. Updated the current selection in the sidebar and sets focus on an editor.
      */
     PagesPage.prototype.onTabShown = function(e) {
-        
-    
 
+        // Andrés Martínez : Init Select maxi mini template on events, When load a event
+        //this.sclc()
+   
         var $tabControl = $(e.target).closest('[data-control=tab]')
 
         if ($tabControl.attr('id') == 'pages-master-tabs') {
@@ -204,6 +241,7 @@
             this.$pageTree.treeView('markActive', dataId)
             $('[data-control=filelist]', this.$sidePanel).fileList('markActive', dataId)
             $(window).trigger('resize')
+
         } else if ($tabControl.hasClass('secondary')) {
             // TODO: Focus the code or rich editor here
         }
@@ -329,8 +367,6 @@
      */
     PagesPage.prototype.onSidebarItemClick = function(e) {
        
-       
-
         var self = this,
             $item = $(e.relatedTarget),
             $form = $item.closest('form'),
@@ -456,6 +492,7 @@
      * Triggered when a static page layout changes
      */
     PagesPage.prototype.onLayoutChanged = function(e) {
+
         var
             self = this,
             $el = $(e.target),
@@ -490,6 +527,7 @@
      * Triggered when a new tab is added to the Editor
      */
     PagesPage.prototype.onInitTab = function(e, data) {
+
         if ($(e.target).attr('id') != 'pages-master-tabs')
             return
 
@@ -595,6 +633,9 @@
      * Updates the content editor to correspond the conten file extension
      */
     PagesPage.prototype.updateContentEditorMode = function(pane, initialization) {
+        
+
+
         if ($('[data-toolbar-type]', pane).data('toolbar-type') !== 'content')
             return
 
@@ -618,8 +659,8 @@
             }
         }
         else {
-            $('[data-field-name=markup]', pane).show()
-            $('[data-field-name=markup_html]', pane).hide()
+           $('[data-field-name=markup]', pane).show()
+           $('[data-field-name=markup_html]', pane).hide()
 
             if (!initialization && $(pane).data('prev-extension') == 'htm') {
                 var val = $('div[data-control=richeditor]', pane).richEditor('getContent')
