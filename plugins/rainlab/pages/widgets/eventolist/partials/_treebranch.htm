@@ -1,11 +1,4 @@
- <div class="tab-content" id="nav-tabContent">
-      <div class="tab-pane fade active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">1</div>
-      <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">2</div>
-      <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">3</div>
-    </div>
-    
-<?php foreach ($items as $pageObj): ?>
-    
+<?php foreach ($items as $pageObj): ?>    
     <?php
         $fileName = $pageObj->page->getBaseFileName();
         $groupStatus = $this->getCollapseStatus($fileName);
@@ -13,7 +6,6 @@
         $searchMode = strlen($this->getSearchTerm()) > 0;
         $cbId = 'cb'.md5($fileName);
     ?>
-
     <li
         class="<?= $pageObj->subpages ? 'has-subitems' : null ?>" 
         data-status="<?= $groupStatus || !$pageObj->subpages ? 'expanded' : 'collapsed' ?>"
@@ -32,7 +24,6 @@
                     <?php endif ?>
                 </div>
             </a>
-
             <input type="hidden" name="object[<?= e($fileName) ?>]" value="0"/>
             <div class="checkbox custom-checkbox nolabel">
                 <input
@@ -42,32 +33,14 @@
                     <?= $this->isItemSelected($fileName) ? 'checked' : null ?>
                     data-request="<?= $this->getEventHandler('onSelect') ?>"
                     value="1">
-                <label for="<?= $cbId ?>">Select</label>
+                <label for="<?= $cbId ?>"></label>
             </div>
-        
-            <!-- Andrés Martínez : Hidden addSubpag button
-            -->
-            <!--<ul class="submenu">
-                <li>
-                    <a
-                        href="#"
-                        data-control="create-object"
-                        data-parent="<?= $fileName ?>"
-                    >
-                        <i class="icon-plus"></i>
-                        <?= e(trans($this->addSubpageLabel)) ?>
-                    </a>
-                </li>
-            </ul>-->
         </div>
-
         <ol>
             <?php if ($subpages = $pageObj->subpages): ?>
                 <?= $this->makePartial('treebranch', ['items' => $subpages]) ?>
             <?php endif ?>
         </ol>
     </li>
-
-   
-
 <?php endforeach ?>
+     

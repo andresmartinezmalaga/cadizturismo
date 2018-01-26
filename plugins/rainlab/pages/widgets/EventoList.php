@@ -9,6 +9,8 @@ use Backend\Classes\WidgetBase;
 use RainLab\Pages\Classes\EventoList as StaticPageList;
 use Cms\Classes\Theme;
 use DateTime;
+use Carbon\Carbon;
+use Carbon\CarbonInterval;
 
 /**
  * Static page list widget.
@@ -25,6 +27,7 @@ class EventoList extends WidgetBase
     protected $theme;
 
     protected $dataIdPrefix;
+    public $tpe;
 
     /**
      * @var string Message to display when the Delete button is clicked.
@@ -47,6 +50,7 @@ class EventoList extends WidgetBase
       
         parent::__construct($controller, []);
         $this->bindToController();
+        $this->tpe = 1;
     }
 
     /**
@@ -90,6 +94,22 @@ class EventoList extends WidgetBase
         return $this->updateList();
     }
 
+    public function onAllEvents()
+    {
+        return ['#'.$this->getId('page-list') => $this->makePartial('items', ['items' => $this->getData()])];
+    }
+
+
+    public function onOpenEvents()
+    {
+        return ['#'.$this->getId('page-list') => $this->makePartial('items', ['items' => $this->getDataOpen()])];
+    }
+
+
+    public function onClosedEvents()
+    {
+        return ['#'.$this->getId('page-list') => $this->makePartial('items', ['items' => $this->getDataClosed()])];
+    }
     /*
      * Methods for th internal use
      */
@@ -103,6 +123,7 @@ class EventoList extends WidgetBase
         $events = collect();
         foreach ($pages as $i) {
            if($i->page->template == 'eventos'){
+                $i->date_start = (new DateTime($i->page->date_start))->format('d-m-y');
                 $i->date_start_pretty_num = (new DateTime($i->page->date_start))->format('d.m.y');
                 $events->push($i);
            }
@@ -135,6 +156,105 @@ class EventoList extends WidgetBase
 
         return $pages;
     }
+
+    protected function getDataOpen()
+    {
+        $now = Carbon::now();
+
+        $pageList = new StaticPageList($this->theme);
+        $pages = $pageList->getPageTree(true);
+
+        // Andrés Martínez : get only events pages to list at treebranch
+        $events = collect();
+        foreach ($pages as $i) {
+           if($i->page->template == 'eventos'){
+                $i->date_start = (new DateTime($i->page->date_start))->format('d-m-y');
+                $i->date_start_pretty_num = (new DateTime($i->page->date_start))->format('d.m.y');
+                
+                if($i->date_start >= $now){
+                    $events->push($i);
+                }
+                
+           }
+        }
+       
+        $pages = $events->values();
+
+        $searchTerm = Str::lower($this->getSearchTerm());
+
+        if (strlen($searchTerm)) {
+            $words = explode(' ', $searchTerm);
+
+            $iterator = function($pages) use (&$iterator, $words) {
+                $result = [];
+
+                foreach ($pages as $page) {
+                    if ($this->textMatchesSearch($words, $this->subtreeToText($page))) {
+                        $result[] = (object) [
+                            'page'     => $page->page,
+                            'subpages' => $iterator($page->subpages)
+                        ];
+                    }
+                }
+
+                return $result;
+            };
+
+            $pages = $iterator($pages);
+        }
+
+        return $pages;
+    }
+
+    protected function getDataClosed()
+    {
+        $now = Carbon::now();
+
+        $pageList = new StaticPageList($this->theme);
+        $pages = $pageList->getPageTree(true);
+
+        // Andrés Martínez : get only events pages to list at treebranch
+        $events = collect();
+        foreach ($pages as $i) {
+           if($i->page->template == 'eventos'){
+                $i->date_start = (new DateTime($i->page->date_start))->format('d-m-y');
+                $i->date_start_pretty_num = (new DateTime($i->page->date_start))->format('d.m.y');
+                
+                if($i->date_start < $now){
+                    $events->push($i);
+                }
+           }
+        }
+       
+        $pages = $events->values();
+
+        $searchTerm = Str::lower($this->getSearchTerm());
+
+        if (strlen($searchTerm)) {
+            $words = explode(' ', $searchTerm);
+
+            $iterator = function($pages) use (&$iterator, $words) {
+                $result = [];
+
+                foreach ($pages as $page) {
+                    if ($this->textMatchesSearch($words, $this->subtreeToText($page))) {
+                        $result[] = (object) [
+                            'page'     => $page->page,
+                            'subpages' => $iterator($page->subpages)
+                        ];
+                    }
+                }
+
+                return $result;
+            };
+
+            $pages = $iterator($pages);
+        }
+
+        return $pages;
+    }
+
+
 
     protected function getThemeSessionKey($prefix)
     {
