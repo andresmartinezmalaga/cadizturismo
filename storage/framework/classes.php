@@ -47,4 +47,7 @@
   'RainLab\\Translate\\FormWidgets\\MLRichEditor' => 'plugins/rainlab/translate/formwidgets/MLRichEditor.php',
   'RainLab\\Translate\\Classes\\MLCmsObject' => 'plugins/rainlab/translate/classes/MLCmsObject.php',
   'RainLab\\Translate\\Classes\\MLStaticPage' => 'plugins/rainlab/translate/classes/MLStaticPage.php',
+  'RainLab\\Pages\\FormWidgets\\MenuItems' => 'plugins/rainlab/pages/formwidgets/MenuItems.php',
+  'RainLab\\Pages\\Classes\\Snippet' => 'plugins/rainlab/pages/classes/Snippet.php',
+  'backend\\Controllers\\auth' => 'modules/backend/controllers/auth.php',
 );
