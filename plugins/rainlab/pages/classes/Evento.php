@@ -264,6 +264,7 @@ class Evento extends ContentBase
 
     public function getEventsTPlantillas(){
       return [
+        'null' => 'Seleccione un tipo de evento',
         'maxi evento' => 'Maxi evento',
         'mini evento' => 'Mini evento',
       ];

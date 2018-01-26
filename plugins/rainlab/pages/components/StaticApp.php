@@ -126,7 +126,7 @@ class StaticApp extends ComponentBase
     public function eventAll()
     {
 
-        $now = Carbon::now();
+        $now = Carbon::now()->format('Y-m-d');
 
         $theme = Theme::getActiveTheme();
         $pagesList = Page::listInTheme($theme, false);
@@ -134,7 +134,7 @@ class StaticApp extends ComponentBase
         
         $eventsVip = $pages->where("is_hidden",0)->where("template","eventos")->where('is_top',1)->values();
         $eventsNormal = $pages->where("is_hidden",0)->where("template","eventos")->where('is_top',0)->values();
-        
+      
         $resultVip = collect();
         $resultNormal = collect();
 
@@ -168,9 +168,10 @@ class StaticApp extends ComponentBase
             $event->date = (new DateTime($event->date_start));
             $mes = intval( (new DateTime($event->date_start))->format('m') )-1;
             $mesString = ['ENE','FEB','MAR','ABR','MAY','JUN','JUL','AGO','SEP','OCT','NOV','DIC',];
-            $event->date_start_pretty_day = $event->date_start_ppretty;
+            $event->date_start_pretty_day = (new DateTime($event->date_start))->format('d');
             $event->date_start_pretty_month = $mesString[$mes];
             $event->date_start_pretty_num = (new DateTime($event->date_start))->format('d.m.y');
+            $event->date_start_pretty_numf = (new DateTime($event->date_start))->format('d/m');
             $event->date_end_pretty_num = (new DateTime($event->date_end))->format('d.m.y');
             
         }
@@ -182,9 +183,10 @@ class StaticApp extends ComponentBase
             $event->date = (new DateTime($event->date_start));
             $mes = intval( (new DateTime($event->date_start))->format('m') )-1;
             $mesString = ['ENE','FEB','MAR','ABR','MAY','JUN','JUL','AGO','SEP','OCT','NOV','DIC',];
-            $event->date_start_pretty_day = $event->date_start_ppretty;
+            $event->date_start_pretty_day = (new DateTime($event->date_start))->format('d');
             $event->date_start_pretty_month = $mesString[$mes];
             $event->date_start_pretty_num = (new DateTime($event->date_start))->format('d.m.y');
+            $event->date_start_pretty_numf = (new DateTime($event->date_start))->format('d/m');
             $event->date_end_pretty_num = (new DateTime($event->date_end))->format('d.m.y');
             
         }
@@ -198,10 +200,6 @@ class StaticApp extends ComponentBase
         foreach ($eventsNormalOrder as $event) {
            $events->push($event);
         }
-
-
-
-       
 
         return $events;
     }

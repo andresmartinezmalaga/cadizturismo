@@ -1,4 +1,77 @@
 static-pages:
-    eventos-tres: {  }
-    eventos-evento-marina: {  }
+    comarcas:
+        comarcas-bahia-de-cadiz: {  }
+        comarcas-campina-de-jerez: {  }
+        comarcas-campo-de-gibraltar: {  }
+        comarcas-costa-noroeste: {  }
+        comarcas-la-janda: {  }
+        comarcas-sierra-de-cadiz: {  }
+    municipios:
+        municipios-grazalema: {  }
+        municipios-jerez-de-la-frontera: {  }
+        municipios-torremolinos: {  }
+        municipios-fuengirola: {  }
+        municipios-torre: {  }
+        municipios-torremolinosv: {  }
+        municipios-benal: {  }
+        municipios-granjeo: {  }
+        municipios-15: {  }
+        municipios-17: {  }
+        municipios-20: {  }
+        municipios-22: {  }
+        municipios-barbate: {  }
+        municipios-tarifa: {  }
+    playas:
+        playas-uno: {  }
+        playas-dos: {  }
+        playas-seis: {  }
+        playas-16: {  }
+        playas-marina: {  }
+        playas-los-lances: {  }
+        playas-atlanterra-zahara-de-los-atunes-y-cabo-de-la-playa: {  }
+        playas-bolonia: {  }
+        playas-el-canuelo: {  }
+        playas-los-alemanes: {  }
+        playas-playa-chica: {  }
+        playas-valdavaqueros: {  }
+        playas-playa8: {  }
+    naturaleza:
+        naturaleza-via-verde: {  }
+        naturaleza-birdwatching: {  }
+        naturaleza-espacios-naturales:
+            naturaleza-espacios-naturales-sierra-de-grazalema: {  }
+            naturaleza-espacios-naturales-los-alcornocales: {  }
+            naturaleza-espacios-naturales-del-estrecho: {  }
+            naturaleza-espacios-naturales-la-brena-y-marismas-de-barbate: {  }
+            naturaleza-espacios-naturales-bahia-de-cadiz: {  }
+            naturaleza-espacios-naturales-donana: {  }
+    diversion:
+        diversion-compras: {  }
+        diversion-locales-de-ocio: {  }
+        diversion-parques-de-ocio: {  }
+    cultura:
+        cultura-monumentos: {  }
+        cultura-flamenco: {  }
+        cultura-teatro: {  }
+        cultura-fiesta: {  }
+    gastronomia:
+        gastronomia-gourmet: {  }
+        gastronomia-el-vino: {  }
+        gastronomia-comida-tradicional: {  }
+    como-llegar: {  }
+    sobre-nosotros: {  }
+    necesitas-ayuda: {  }
+    legal: {  }
+    experiencias-una: {  }
+    experiencias-dos: {  }
+    eventos-evento-uno: {  }
+    publicaciones: {  }
+    eventos-dos: {  }
     eventos-uno: {  }
+    eventos-tres: {  }
+    sala-prensa: {  }
+    reportaje: {  }
+    eventos-marina: {  }
+    prensa-nacional: {  }
+    eventos-evento-marina: {  }
+    eventos-cuatro: {  }

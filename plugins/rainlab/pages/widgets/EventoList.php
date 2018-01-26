@@ -123,7 +123,7 @@ class EventoList extends WidgetBase
         $events = collect();
         foreach ($pages as $i) {
            if($i->page->template == 'eventos'){
-                $i->date_start = (new DateTime($i->page->date_start))->format('d-m-y');
+                $i->date_start = (new DateTime($i->page->date_start))->format('Y-m-d');
                 $i->date_start_pretty_num = (new DateTime($i->page->date_start))->format('d.m.y');
                 $events->push($i);
            }
@@ -159,7 +159,7 @@ class EventoList extends WidgetBase
 
     protected function getDataOpen()
     {
-        $now = Carbon::now();
+        $now = Carbon::now()->format('Y-m-d');
 
         $pageList = new StaticPageList($this->theme);
         $pages = $pageList->getPageTree(true);
@@ -168,7 +168,7 @@ class EventoList extends WidgetBase
         $events = collect();
         foreach ($pages as $i) {
            if($i->page->template == 'eventos'){
-                $i->date_start = (new DateTime($i->page->date_start))->format('d-m-y');
+                $i->date_start = (new DateTime($i->page->date_start))->format('Y-m-d');
                 $i->date_start_pretty_num = (new DateTime($i->page->date_start))->format('d.m.y');
                 
                 if($i->date_start >= $now){
@@ -208,8 +208,8 @@ class EventoList extends WidgetBase
 
     protected function getDataClosed()
     {
-        $now = Carbon::now();
-
+        $now = Carbon::now()->format('Y-m-d');
+      
         $pageList = new StaticPageList($this->theme);
         $pages = $pageList->getPageTree(true);
 
@@ -217,7 +217,7 @@ class EventoList extends WidgetBase
         $events = collect();
         foreach ($pages as $i) {
            if($i->page->template == 'eventos'){
-                $i->date_start = (new DateTime($i->page->date_start))->format('d-m-y');
+                $i->date_start = (new DateTime($i->page->date_start))->format('Y-m-d');
                 $i->date_start_pretty_num = (new DateTime($i->page->date_start))->format('d.m.y');
                 
                 if($i->date_start < $now){
