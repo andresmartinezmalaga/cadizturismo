@@ -1,3 +1,5 @@
 /themes/default/content
 /themes/default/content/static-pages/comarcas-bahia-de-cadiz.htm
 /themes/default/content/static-pages
+.DS_Store
+/storage
