@@ -555,30 +555,27 @@ class Index extends Controller
 
     protected function loadObject($type, $path, $ignoreNotFound = false)
     {
-        echo $type;
+        echo 'type:'.$type;
         echo "\n\n";
-echo "\n\n";
-echo $path;
+        echo "\n\n";
+        echo 'path:'.$path;
+        echo "\n\n";
+        echo "\n\n";
         $class = $this->resolveTypeClassName($type);
 
         //RainLab\Pages\Classes\Experience
         //RainLab\Pages\Classes\evento
-        echo $class;
+        echo 'class:'.$class;
         //$object = call_user_func(array($class, 'load'), $this->theme, $path);
-echo "\n\n";
-echo "\n\n";
+        echo "\n\n";
+        echo "\n\n";
 
-echo $this->teme;
+        echo 'theme'.$this->teme;
 
-echo "\n\n";
-echo "\n\n";
+        echo "\n\n";
+        echo "\n\n";
 
-echo $path;
-
-echo "\n\n";
-echo "\n\n";
-
-echo json_encode($object);
+        //echo json_encode($object);
         dd(1);
 
         if (!($object = call_user_func(array($class, 'load'), $this->theme, $path))) {
