@@ -576,7 +576,7 @@ class Index extends Controller
         echo "\n\n";
 
         //echo json_encode($object);
-        dd(1);
+        //dd(1);
 
         if (!($object = call_user_func(array($class, 'load'), $this->theme, $path))) {
             if (!$ignoreNotFound) {
@@ -608,7 +608,7 @@ class Index extends Controller
         $types = [
             'page'    => 'RainLab\Pages\Classes\Page',
             'experience'    => 'RainLab\Pages\Classes\Experience',
-            'evento'    => 'RainLab\Pages\Classes\evento',
+            'evento'    => 'RainLab\Pages\Classes\Evento',
             'menu'    => 'RainLab\Pages\Classes\Menu',
             'content' => 'RainLab\Pages\Classes\Content'
         ];
