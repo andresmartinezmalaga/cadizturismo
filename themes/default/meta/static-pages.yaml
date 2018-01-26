@@ -2,13 +2,10 @@ static-pages:
     eventos-tres: {  }
     eventos-dos: {  }
     eventos-uno: {  }
-<<<<<<< HEAD
     experiencias-cinco: {  }
-=======
     eventos-tres: {  }
     sala-prensa: {  }
     reportaje: {  }
     eventos-marina: {  }
     prensa-nacional: {  }
     eventos-evento-marina: {  }
->>>>>>> d6b07ef84145464d77a009b68dd3294b100d8f57
