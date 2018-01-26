@@ -557,6 +557,26 @@ class Index extends Controller
     {
         $class = $this->resolveTypeClassName($type);
 
+        //RainLab\Pages\Classes\Experience
+        //RainLab\Pages\Classes\evento
+        echo $class;
+        $object = call_user_func(array($class, 'load'), $this->theme, $path);
+echo "\n\n";
+echo "\n\n";
+
+echo $this->teme;
+
+echo "\n\n";
+echo "\n\n";
+
+echo $path;
+
+echo "\n\n";
+echo "\n\n";
+
+echo json_encode($object);
+        dd(1);
+
         if (!($object = call_user_func(array($class, 'load'), $this->theme, $path))) {
             if (!$ignoreNotFound) {
                throw new ApplicationException(trans('rainlab.pages::lang.object.not_found'));               
