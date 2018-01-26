@@ -556,7 +556,9 @@ class Index extends Controller
     protected function loadObject($type, $path, $ignoreNotFound = false)
     {
         echo $type;
-        
+        echo "\n\n";
+echo "\n\n";
+echo $path;
         $class = $this->resolveTypeClassName($type);
 
         //RainLab\Pages\Classes\Experience
