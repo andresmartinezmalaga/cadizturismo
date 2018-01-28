@@ -419,11 +419,14 @@ class Form extends WidgetBase
             return;
         }
 
+
         /*
          * Extensibility
          */
         $this->fireSystemEvent('backend.form.extendFieldsBefore');
 
+      
+         
         /*
          * Outside fields
          */
@@ -963,6 +966,8 @@ class Form extends WidgetBase
     {
         $this->defineFormFields();
 
+         
+
         $result = [];
 
         /*
@@ -972,6 +977,7 @@ class Form extends WidgetBase
         if (!$data) {
             $data = [];
         }
+
 
         /*
          * Spin over each field and extract the postback value

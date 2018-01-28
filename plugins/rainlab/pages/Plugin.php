@@ -57,6 +57,11 @@ class Plugin extends PluginBase
                 'order' => 200,
                 'label' => 'rainlab.pages::lang.event.manage_pages'
                 ],
+            'rainlab.pages.manage_rutas' => [
+                'tab'   => 'rainlab.pages::lang.event.tab',
+                'order' => 200,
+                'label' => 'rainlab.pages::lang.event.manage_pages'
+                ],
             'rainlab.pages.manage_content' => [
                 'tab'   => 'rainlab.pages::lang.page.tab',
                 'order' => 200,
@@ -107,6 +112,14 @@ class Plugin extends PluginBase
                         'url'         => 'javascript:;',
                         'attributes'  => ['data-menu-item'=>'eventos'],
                         'permissions' => ['rainlab.pages.manage_eventos']
+                    ],
+                    'rutas' => [
+                        'label'       => 'Rutas',
+                        'icon'        => '',
+                        'iconSvg'     => 'plugins/rainlab/pages/assets/svg/contenido-rutas.svg',
+                        'url'         => 'javascript:;',
+                        'attributes'  => ['data-menu-item'=>'rutas'],
+                        'permissions' => ['rainlab.pages.manage_rutas']
                     ],
                     // Andrés Martínez : delete content & snippets menus
                     /*'content' => [

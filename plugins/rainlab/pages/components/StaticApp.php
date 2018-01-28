@@ -144,11 +144,11 @@ class StaticApp extends ComponentBase
         
         foreach ($eventsVip as $event) {
 
-            if( (new DateTime($event->date_start)) > $now && $count < 7){
+            if( (new DateTime($event->date_start))->format('Y-m-d') > $now && $count < 7){
                 $resultVip->push($event);
                 $count = $count+1;
             
-            } elseif( (new DateTime($event->date_start)) > $now && $count > 6){
+            } elseif( (new DateTime($event->date_start))->format('Y-m-d') > $now && $count > 6){
                 $resultNormal->push($event);
                 $count = $count+1;
             }
@@ -157,7 +157,7 @@ class StaticApp extends ComponentBase
 
         foreach ($eventsNormal as $event) {
      
-            if( (new DateTime($event->date_start)) > $now){
+            if( (new DateTime($event->date_start))->format('Y-m-d') > $now){
                 $resultNormal->push($event);
                 $count = $count+1;
             }            
@@ -169,7 +169,7 @@ class StaticApp extends ComponentBase
             $mes = intval( (new DateTime($event->date_start))->format('m') )-1;
             $mesString = ['ENE','FEB','MAR','ABR','MAY','JUN','JUL','AGO','SEP','OCT','NOV','DIC',];
             $event->date_start_pretty_day = (new DateTime($event->date_start))->format('d');
-            $event->date_start_pretty_month = $mesString[$mes];
+            $event->date_start_pretty_month = $mesString[($mes)];
             $event->date_start_pretty_num = (new DateTime($event->date_start))->format('d.m.y');
             $event->date_start_pretty_numf = (new DateTime($event->date_start))->format('d/m');
             $event->date_end_pretty_num = (new DateTime($event->date_end))->format('d.m.y');
@@ -184,7 +184,7 @@ class StaticApp extends ComponentBase
             $mes = intval( (new DateTime($event->date_start))->format('m') )-1;
             $mesString = ['ENE','FEB','MAR','ABR','MAY','JUN','JUL','AGO','SEP','OCT','NOV','DIC',];
             $event->date_start_pretty_day = (new DateTime($event->date_start))->format('d');
-            $event->date_start_pretty_month = $mesString[$mes];
+            $event->date_start_pretty_month = $mesString[($mes)];
             $event->date_start_pretty_num = (new DateTime($event->date_start))->format('d.m.y');
             $event->date_start_pretty_numf = (new DateTime($event->date_start))->format('d/m');
             $event->date_end_pretty_num = (new DateTime($event->date_end))->format('d.m.y');
@@ -204,8 +204,90 @@ class StaticApp extends ComponentBase
         return $events;
     }
 
-    public function eventFind()
+    public function rutaAll()
     {
+
+        
+
+        $theme = Theme::getActiveTheme();
+        $pagesList = Page::listInTheme($theme, false);
+        $pages =  new \Illuminate\Support\Collection($pagesList);
+        
+        $rutasVip = $pages->where("is_hidden",0)->where("template","rutas")->where('is_top',1)->values();
+        $rutasNormal = $pages->where("is_hidden",0)->where("template","rutas")->where('is_top',0)->values();
+      
+        $resultVip = collect();
+        $resultNormal = collect();
+
+        $rutas = collect();
+
+        $count = 0;
+        
+        foreach ($rutasVip as $ruta) {
+
+            if( $count < 7){
+                $resultVip->push($ruta);
+                $count = $count+1;
+            
+            } elseif( $count > 6){
+                $resultNormal->push($ruta);
+                $count = $count+1;
+            }
+
+        }
+
+        foreach ($rutasNormal as $ruta) {
+     
+            $resultNormal->push($ruta);
+            $count = $count+1;
+                     
+        }
+      
+
+        foreach ($resultVip as $ruta) {
+           $rutas->push($ruta);
+        }
+
+        foreach ($resultNormal as $ruta) {
+           $rutas->push($ruta);
+        }
+
+        return $rutas;
+    }
+
+    public function eventFind($category, $date_start, $date_end, $location)
+    {
+        $theme = Theme::getActiveTheme();
+        $pages = Page::listInTheme($theme, false);
+        $events =  new \Illuminate\Support\Collection($pages);
+        
+        $validEvents = collect();
+
+        $preEvents = $events->where("is_hidden",0)->where('template','eventos')->where('category',$category)->where('location',$location)->values();
+        
+       
+        foreach ($preEvents as $i) {
+        
+            $eventDateStart = (new DateTime($i->date_start))->format('d-m-Y');           
+            $eventDateEnd = (new DateTime($i->date_end))->format('d-m-Y');
+
+            $bs = new Carbon($date_start);
+            $es = new Carbon($eventDateStart);
+
+            $be = new Carbon($date_end);
+            $ee = new Carbon($eventDateEnd);
+
+            $diffStart = $bs->diffInDays($es,false);
+            $diffEnd = $be->diffInDays($ee,false);
+
+          
+           if($diffStart>=0  && $diffEnd<1 ) {
+            $validEvents->push($i);
+           }
+
+        }
+
+        return $validEvents->values();
 
     }
 
@@ -245,37 +327,6 @@ class StaticApp extends ComponentBase
 
     } 
 
-    public function event3List()
-    {
-        $theme = Theme::getActiveTheme();
-        $pagesList = Page::listInTheme($theme, false);
-        $pages =  new \Illuminate\Support\Collection($pagesList);
-        
-        $events = $pages->where("is_hidden",0)->where("template","eventos")->take(3);
-
-        foreach ($events as $event) {         
-            $event->date_start_ppretty = (new DateTime($event->date_start))->format('d');
-            $mes = intval( (new DateTime($event->date_start))->format('m') )-1;
-            $mesString = ['ENE','FEB','MAR','ABR','MAY','JUN','JUL','AGO','SEP','OCT','NOV','DIC',];
-            $event->date_start_pretty = $event->date_start_ppretty.' '.$mesString[$mes];
-        }
-
-        return $events;
-
-    } 
-
-    public function eventVipList()
-    {
-        $theme = Theme::getActiveTheme();
-        $pagesList = Page::listInTheme($theme, false);
-        $pages =  new \Illuminate\Support\Collection($pagesList);
-        
-        $fevents = $pages->where("is_hidden",0)->where("template","eventos")->take(7);
-        $events = $fevents->slice(4,count($fevents));
-        return $events;
-
-    } 
-
     public function municipalitiesList()
     {
         $theme = Theme::getActiveTheme();
@@ -291,9 +342,9 @@ class StaticApp extends ComponentBase
     {
         $theme = Theme::getActiveTheme();
         $pages = Page::listInTheme($theme, false);
-        $events =  new \Illuminate\Support\Collection($pages);
+        $experiences =  new \Illuminate\Support\Collection($pages);
         
-        $result = $events->where("is_hidden",0)->where("template","experiences");
+        $result = $experiences->where("is_hidden",0)->where("template","experiences");
         
         return $result;
     }
@@ -302,10 +353,10 @@ class StaticApp extends ComponentBase
     {
         $theme = Theme::getActiveTheme();
         $pages = Page::listInTheme($theme, false);
-        $events =  new \Illuminate\Support\Collection($pages);
+        $experiences =  new \Illuminate\Support\Collection($pages);
         
        
-        $result = $events->where("is_hidden",0)->where('template','experiences')->where('days',$days)->where('interest',$interest)->where('tvisit',$tvisit)->values();
+        $result = $experiences->where("is_hidden",0)->where('template','experiences')->where('days',$days)->where('interest',$interest)->where('tvisit',$tvisit)->values();
        
         return $result;
     }

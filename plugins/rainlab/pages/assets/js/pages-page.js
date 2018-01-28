@@ -34,7 +34,9 @@
 
         $(document).on('open.oc.treeview', 'form.layout[data-content-id=eventos]', this.proxy(this.onSidebarItemClick))
 
-      
+        $(document).on('open.oc.treeview', 'form.layout[data-content-id=rutas]', this.proxy(this.onSidebarItemClick))
+
+        
         $(document).on('open.oc.list', this.$sidePanel, this.proxy(this.onSidebarItemClick))
 
         // A tab is shown / switched
@@ -64,6 +66,9 @@
         // Layout changed
         $(document).on('change', '#pages-master-tabs form[data-object-type=evento] select[name="viewBag[layout]"]', this.proxy(this.onLayoutChanged))
 
+        // Layout changed
+        $(document).on('change', '#pages-master-tabs form[data-object-type=ruta] select[name="viewBag[layout]"]', this.proxy(this.onLayoutChanged))
+
         // Create object button click
         $(document).on(
             'click',
@@ -83,14 +88,6 @@
 
         // Handle the menu saving
         $(document).on('oc.beforeRequest', '#pages-master-tabs form[data-object-type=menu]', this.proxy(this.onSaveMenu))
-    }
-
-    PagesPage.prototype.onMini = function(e) {
-        console.log('Mini')
-    }
-
-    PagesPage.prototype.onMaxi = function(e) {
-        console.log('Maxi')
     }
 
     /*
@@ -157,6 +154,7 @@
             // Andrés Martínez add experience counter
             experience: {menu: 'experiences', count: 0},
             evento: {menu: 'eventos', count: 0},
+            ruta: {menu: 'rutas', count: 0},
             menu: {menu: 'menus', count: 0},
             content: {menu: 'content', count: 0},
         }
@@ -171,64 +169,13 @@
         })
     }
 
-    // Andrés Martínez : Select maxi mini template on events
-    PagesPage.prototype.sclc = function() {
-            /*
-
-            var txa = $('#pages-master-tabs > .tab-content.layout-row > .active')
-            var ttx = $('#pages-master-tabs > .tab-content.layout-row > .active .tab-pane.active.layout-cell > div > div > div')
-           
-            var wid = $(ttx).attr('id');
-
-            $(txa.context).find('')
-            $(ttx).css('border','solid 3px red')
-            console.log($(ttx))
-
-             $(ww).css('border','solid 3px red')
-            var dd = $('#'+wid)
-
-            $(dd).css('border','solid 3px')
-            
-            console.log($(ttx).elements)
-
-            ttx.context.elements.each(function( index ) {
-                console.log(index)
-            });
-
-            //console.log($(jj).text());
-
-        $('.custom-select').on( "change", function(e) {
-
-            
-            $(txa).css('border','solid 3px red');  
-            var valor = $('#'+e.target.id).val();
-
-            if(valor == 'mini evento'){
-            
-                $(dd).text('<h1>mini</h1>');
-                
-               console.log( $(txa).text());
-            
-            } else if(valor == 'maxi evento') {
-            
-                $(dd).text('<h1>maxi</h1>');
-                console.log('maxi');
-                  console.log( $(txa).text());   
-            }
-
-        });
-        */
-
-    }
-
     /*
      * Triggered when a tab is displayed. Updated the current selection in the sidebar and sets focus on an editor.
      */
     PagesPage.prototype.onTabShown = function(e) {
 
-        // Andrés Martínez : Init Select maxi mini template on events, When load a event
-        //this.sclc()
-   
+       
+
         var $tabControl = $(e.target).closest('[data-control=tab]')
 
         if ($tabControl.attr('id') == 'pages-master-tabs') {
@@ -236,7 +183,7 @@
                 title = $(e.target).attr('title')
 
             if (title)
-                this.setPageTitle(title)
+                this.setPageTitle('title')
 
             this.$pageTree.treeView('markActive', dataId)
             $('[data-control=filelist]', this.$sidePanel).fileList('markActive', dataId)
@@ -367,6 +314,7 @@
      */
     PagesPage.prototype.onSidebarItemClick = function(e) {
        
+ 
         var self = this,
             $item = $(e.relatedTarget),
             $form = $item.closest('form'),
@@ -383,6 +331,7 @@
                 return false;
             }*/
         
+          
 
         if ($item.data('type') == 'snippet') {
             this.snippetManager.onSidebarSnippetClick($item)
@@ -390,6 +339,7 @@
             return
         }
 
+       
         /*
          * Find if the tab is already opened
          */
@@ -397,15 +347,23 @@
          if (this.masterTabsObj.goTo(tabId))
             return false
 
+
         /*
          * Open a new tab
          */
 
        $.oc.stripeLoadIndicator.show()
+       
+              
+
         $form.request('onOpen', {
+            
             data: data
         }).done(function(data) {
+
+            
             self.$masterTabs.ocTab('addTab', data.tabTitle, data.tab, tabId, $form.data('type-icon'))
+
         }).always(function() {
             $.oc.stripeLoadIndicator.hide()
         })

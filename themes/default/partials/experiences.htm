@@ -5,7 +5,7 @@
 <div class="all-events-container">
 	
 	{% for experience in experiences %}
-	    {% set interest = experience.viewBag.interest|split('y') %}
+	    {% set interest = experience.viewBag.interest|split(' y ') %}
    	
 	    <div class="event">
 	      <div class="overlay-img"></div>

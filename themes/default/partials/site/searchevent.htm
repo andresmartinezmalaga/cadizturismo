@@ -44,7 +44,7 @@
                 <div id="event-category" class="days-container">
                   <select class="custom-select select-days" name="category">
                     {% for key,value in categories %}
-                        <option value={{key}}>{{ value |_ }}</option>
+                        <option value="{{key}}">{{ value |_ }}</option>
                     {% endfor %}
                   </select>
                   <span class="select-title">{{ 'CATEGORÍA'|_ }}</span>
@@ -57,7 +57,7 @@
                 <div id="event-location" class="type-container">
                   <select class="custom-select select-type" name="location">
                     {% for key,value in municipalities %}
-                        <option value={{key}}>{{value}}</option>
+                        <option value="{{key}}">{{value}}</option>
                     {% endfor %}
                   </select>
                   <span class="select-title">{{ 'UBICACIÓN'|_ }}</span>

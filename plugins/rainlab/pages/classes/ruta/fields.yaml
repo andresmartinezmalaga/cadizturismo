@@ -4,42 +4,42 @@
 
 fields:
     viewBag[title]:
-        span: left
+        span: full
         label: rainlab.pages::lang.editor.title
-        placeholder: rainlab.pages::lang.experience.new_title
+        placeholder: rainlab.pages::lang.event.new_title
         attributes:
             default-focus: 1
 
     viewBag[url]:
-        span: right
+        span: left
         placeholder: /
         label: rainlab.pages::lang.editor.url
         preset:
             field: viewBag[title]
             type: url
             prefixInput: input[data-parent-url]
+    
+    viewBag[category]:
+       span: right
+       label: 'Categoría'
+       type: dropdown
+       options: getCategories
+
+    viewBag[location]:
+        span: left
+        label: 'Ubicación'
+        type: dropdown
+        options: getMunicipalities
+
+
+    viewBag[locationgoogle]:
+        span: right
+        label: 'Url Google Map'
         
-    viewBag[days]:
-        label: 'días'
-        cssClass: size33
-        type: dropdown
-        options: getDaysOptions
-
-    viewBag[interest]:
-        label: 'intereses'
-        cssClass: size33
-        type: dropdown
-        options: getInterestsOptions
-
-    viewBag[tvisit]:
-        label: 'tipo de visita'
-        cssClass: size33nm
-        type: dropdown
-        options: getVisitsOptions
-
+    
     viewBag[template]:
         label: 'template'
-        default: 'experiences'
+        default: 'rutas'
         cssClass: ocl
 
     viewBag[cover]:
@@ -57,7 +57,7 @@ tabs:
         viewBag[layout]:
             tab: cms::lang.editor.settings
             label: rainlab.pages::lang.page.layout
-            default: 'experience'
+            default: 'evento'
             cssClass: ocl
             
         viewBag[is_hidden]:
@@ -66,6 +66,13 @@ tabs:
             label: rainlab.pages::lang.editor.hidden
             type: checkbox
             comment: rainlab.pages::lang.editor.hidden_comment
+
+        viewBag[is_top]:
+            tab: cms::lang.editor.settings
+            span: right
+            label: 'Destacar ruta'
+            type: checkbox
+            comment: 'Si destacas esta ruta aparecerá en la sección de Rutas destacadas'
 
         #viewBag[navigation_hidden]:
             #tab: cms::lang.editor.settings
@@ -92,4 +99,3 @@ secondaryTabs:
             type: richeditor
             stretch: true
             size: huge
-            cssClass: ppo

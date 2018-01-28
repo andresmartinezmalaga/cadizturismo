@@ -63,6 +63,25 @@ return [
         'manage_content' => 'Administrar contenidos',
         'new_title' => 'Título del nuevo evento'
     ],
+    'ruta' => [
+        'menu_label' => 'Rutas',
+        'delete_confirmation' => 'Estas seguro de querer borrar las rutas seleccionadas? Esto también borrará las sub-rutas que existan.',
+        'no_records' => 'No se ha encontrado ninguna ruta',
+        'delete_confirm_single' => 'Estas seguro de querer borrar esta ruta? Esto también borrará los sub-rutas que existan.',
+        'new' => 'Nueva ruta',
+        'add_subpage' => 'Añadir sub-ruta',
+        'invalid_url' => 'Formato de URL no válido. La URL debería comenzar por una barra (\'/\'). Puede contener letras, números, y los siguientes símbolos  _ - / ',
+        'url_not_unique' => 'Esta URL ya está siendo utilizada por otra ruta.',
+        'layout' => 'Plantilla',
+        'layouts_not_found' => 'No se han encontrado plantillas',
+        'saved' => 'La ruta se ha guardado correctamente.',
+        'tab' => 'eventos',
+        'manage_pages' => 'Administrar rutas',
+        'manage_menus' => 'Administrar menús',
+        'access_snippets' => 'Acceder a fragmentos',
+        'manage_content' => 'Administrar contenidos',
+        'new_title' => 'Título del la nueva ruta'
+    ],
     'menu' => [
         'menu_label' => 'Menus',
         'delete_confirmation' => 'Estas seguro de querer borrar los menus seleccionados?',
