@@ -13,6 +13,18 @@ jQuery(function($)
         $(this).children('.arrow').toggleClass("rotate-arrow");
         e.preventDefault();
     });
+
+    $('.i-container').children('.also-feature').each(function () {
+      if ($(this).children('.also-desc').is(':empty')) {
+        $(this).hide();
+        console.log('oculto');
+      }
+    });
+
+    if ($('#popupdialog > p').is(':empty')) {
+    // we're empty. do stuff.
+}
+
 });
 
 $(".menu-title").click(function(){
