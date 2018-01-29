@@ -230,27 +230,21 @@
                 </tr>
             </table>
 
-             <table class="panel-icons" role="panel" width="640" height="180px" cellspacing="0" cellpadding="0" border="0" align="center" style="width:100%;">
+            <table class="panel panel-table" role="panel" width="640" cellspacing="0" cellpadding="0" border="0" align="center" style="width:100%;" bgcolor="#FFFFFF">
                 <tr>
-                    <td align="center" valign="top" style="height: 100%;">
-                        <!-- ICONOS EXPERIENCIA -->
-                        <table role="panel" cellspacing="0" cellpadding="0" border="0" align="left" style="width:58%; height: 100%; margin: 0 auto; float: none;">
-                            <tr class="icons-row" style="height: 100%;">
-                                <td width="200" align="center" valign="top">
-                                  <img src="http://cadizturismo.jekyllme.com/storage/app/media/uploaded-files/templates/calendar.svg">
-                                  <p class="tag">5 días</p>
+                    <td align="center" valign="top">
+
+                        <table role="panel" width="640" cellspacing="0" cellpadding="0" border="0" align="left" style="width:100%;">
+                            <tr>
+                                <td width="420" class="leftie" align="left" valign="top" style="padding:83px 0px 77px 0px; color: #3C3C3B;">
+                                  <!-- NÚMERO -->
+                                    <p class="big-number" style="margin-bottom: 2px;">1</p>
                                 </td>
-                                <td width="200" align="center" valign="top">
-                                  <img src="http://cadizturismo.jekyllme.com/storage/app/media/uploaded-files/templates/playa.svg" alt="">
-                                  <p class="tag">Playa</p>
-                                </td>
-                                <td width="200" align="center" valign="top">
-                                  <img src="http://cadizturismo.jekyllme.com/storage/app/media/uploaded-files/templates/naturaleza.svg" alt="">
-                                  <p class="tag">Naturaleza</p>
-                                </td>
-                                <td width="200" align="center" valign="top">
-                                  <img src="http://cadizturismo.jekyllme.com/storage/app/media/uploaded-files/templates/autentica.svg" alt="">
-                                  <p class="tag">Cádiz auténtica</p>
+                                <td width="220" class="rightie" align="left" valign="top" style="padding:44px 0px 77px 0px; color: #3C3C3B;">
+                                      <!-- CONTENIDO -->
+                                      <h2 class="section-title" style="margin-bottom: 2px;">LA MAGIA DE EL PALMAR</h2>
+                                      <p class="hello">Si buscas conocer las auténticas playas de Cádiz, tienes una visita obligada a la zona de El Palmar. Situada en la costa del municipio de Vejer de la Frontera, dentro de la comarca de la Janda, encontrarás en el Palmar una kilométrica playa de aguas atlánticas que no te dejará indiferente.</p>
+                                      <p class="hello">Alrededor de una dehesa de palmeras se abre una enorme playa virgen a lo largo de 8km. Si eres de los que huyen de de las masificaciones y los macrocomplejos, y antepones lo natural a las comodidades que ofrecen los grandes resorts ubicados en otras costas, no puedes perderte este  espectáculo visual: playas que conservan su atractivo más puro y natural.</p>
                                 </td>
                             </tr>
                         </table>
