@@ -405,13 +405,19 @@ class StaticApp extends ComponentBase
         $sendContact ='noreply@cadizturismo.es';
         $sendTo =  $mail;
 
+        $experience = $this->experienceFindByUrl($url);
 
+        $preexperiencemarkup = $experience[0]['markup'];
+        $experiencemarkup = str_replace('.svg', '.png', $preexperiencemarkup);
 
-        $data = array('experience' => $this->experienceFindByUrl($url));
+        //dd(1);
 
+        /*$interest1 = explode(' y ', $experience )[0];
+        $interest2 = explode(' y ', $experience )[1];*/
+
+        $data = array('experiencemarkup' => $experiencemarkup );
        
-
-        $pdf = PDFS::loadView('pdf.experience', compact('data'))->setOption('page-size', 'A4')->setOption('dpi',300);
+        $pdf = PDFS::loadView('pdf.experience', compat('data'))->setOption('page-size', 'A4')->setOption('dpi',300);
         $pdf_data = $pdf->output();
        
         $experience = 'experiencia';
