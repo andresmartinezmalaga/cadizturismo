@@ -220,7 +220,7 @@
 <center>
     <div class="all-element">
         <div class="whole-container" style=" margin: auto;">
-        {{ data['experiencemarkup'] }}
+        {{ $data['experiencemarkup'] }}
         
         </div>
     </div>
