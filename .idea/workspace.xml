@@ -91,9 +91,11 @@
       <file leaf-file-name="evento.htm" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/themes/default/layouts/evento.htm">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="18" lean-forward="true" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-              <folding />
+            <state relative-caret-position="188">
+              <caret line="66" column="138" lean-forward="false" selection-start-line="66" selection-start-column="138" selection-end-line="66" selection-end-column="138" />
+              <folding>
+                <element signature="e#2282#2288#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -343,12 +345,12 @@
       <option name="presentableId" value="Default" />
       <updated>1516786709693</updated>
       <workItem from="1516786712254" duration="14987000" />
-      <workItem from="1517217750113" duration="1612000" />
+      <workItem from="1517217750113" duration="1687000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16599000" />
+    <option name="totallyTimeSpent" value="16674000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="292" y="22" width="2268" height="1054" extended-state="0" />
@@ -677,9 +679,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/default/layouts/evento.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="18" lean-forward="true" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-          <folding />
+        <state relative-caret-position="188">
+          <caret line="66" column="138" lean-forward="false" selection-start-line="66" selection-start-column="138" selection-end-line="66" selection-end-column="138" />
+          <folding>
+            <element signature="e#2282#2288#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
