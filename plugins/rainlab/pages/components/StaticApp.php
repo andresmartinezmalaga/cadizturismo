@@ -407,7 +407,7 @@ class StaticApp extends ComponentBase
 
         $experience = $this->experienceFindByUrl($url);
 
-        $preexperiencemarkup = $experience[0]['markup']);
+        $preexperiencemarkup = $experience[0]['markup'];
         $experiencemarkup = str_replace('.svg', '.png', $preexperiencemarkup);
 
         //dd(1);
