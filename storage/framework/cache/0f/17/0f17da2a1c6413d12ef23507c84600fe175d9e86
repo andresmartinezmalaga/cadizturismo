@@ -1,4 +1,4 @@
-1517218378a:1:{s:8:"home.htm";a:10:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:5096:"title = "home"
+1517219203a:1:{s:8:"home.htm";a:10:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:5666:"title = "home"
 url = "/"
 layout = "dinamic"
 is_hidden = 0
@@ -17,8 +17,7 @@ is_hidden = 0
 			$this['lang']='es';
 		}
 
-    $this['events3'] = $this->staticApp->event3List();
-    $this['eventsVip'] = $this->staticApp->eventVipList();
+    $this['events'] = $this->staticApp->eventAll();
 
 	}
 
@@ -66,70 +65,85 @@ is_hidden = 0
       <div class="left-txt">
         <p class="title">{{ 'QUÉ SE CUECE HOY EN CÁDIZ'|_ }}</p>
           <img class="separator" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
-
-          {% for iEvent in events3 %}
-
-            <div class="event">
-              <p class="event-date">{{iEvent['date_start_pretty']}}</p>
-              <p class="event-place">{{iEvent['place']}}</p>
-              <a href="jornadas-micologicas.html" class="event-name">{{iEvent['title']}}</a>
-            </div>
+         
+         
+          {% for i in 4..5 %}
+             {% if events[i] %}
+               <div class="event">
+                <p class="event-date">{{events[i]['date_start_pretty_numf']}}</p>
+                <p class="event-place">{{events[i]['location']}}</p>
+                <a href="{{url('/')}}/{{lang}}{{events[i]['url']}}" class="event-name">{{events[i]['title']}}</a>
+              </div>
+              {% endif %}
           {% endfor %}
 
-            <a class="events-link" href="{{lang}}/eventos">{{ 'Todos los eventos'|_ }}&nbsp;&nbsp;<img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/link-arrow-yellow.svg" alt=""> </a>
+          
+
+            <a class="events-link" href="{{lang}}/todos-los-eventos">{{ 'Todos los eventos'|_ }}&nbsp;&nbsp;<img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/link-arrow-yellow.svg" alt=""> </a>
       </div>
 
-
+    
       <div class="right-photos">
         <!-- DIRECCIÓN 1º ARRIBA-ABAJO 2º IZQUIERDA-DERECHA -->
-
-        <a href="carreras-caballos.html">
+        
+        {% if events[0] %}
+        <a href="{{url('/')}}/{{lang}}{{events[0]['url']}}">
           <div id="element1" class="element">
             <div class="overlay-img"></div>
-            <img class="rec-img" src="{{eventsVip[0]['image']}}">
+            <img class="rec-img" src="{{events[0]['cover']}}">
             <div class="txt-container">
-              <p class="date">{{eventsVip[0]['date_start_pretty']}}</p>
-              <p class="name">{{eventsVip[0]['title']}}</p>
+              <p class="date">{{ events[0]['date_start_pretty_day'] }} {{events[0]['date_start_pretty_month']|_}}</p>
+              <p class="name">{{events[0]['title']}}</p>
               <img class="separator" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/small-yellow-separator.svg">
             </div>
           </div>
         </a>
-        <a href="#">
+        {% endif %}
+
+        {% if events[1] %}
+        <a href="{{url('/')}}/{{lang}}{{events[1]['url']}}">
           <div id="element2" class="element">
             <div class="overlay-img"></div>
-            <img class="rec-img" src="{{eventsVip[1]['image']}}">
+            <img class="rec-img" src="{{events[1]['cover']}}">
             <div class="txt-container">
-              <p class="date">{{eventsVip[1]['date_start_pretty']}}</p>
-              <p class="name">{{eventsVip[1]['title']}}</p>
+              <p class="date">{{ events[1]['date_start_pretty_day'] }} {{events[1]['date_start_pretty_month']|_}}</p>
+              <p class="name">{{events[1]['title']}}</p>
               <img class="separator" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/small-yellow-separator.svg">
             </div>
           </div>
         </a>
-        <a href="#">
+        {% endif %}
+
+        {% if events[2] %}
+        <a href="{{url('/')}}/{{lang}}{{events[2]['url']}}">
           <div id="element3" class="element">
             <div class="overlay-img"></div>
-            <img class="rec-img" src="{{eventsVip[2]['image']}}">
+            <img class="rec-img" src="{{events[2]['cover']}}">
             <div class="txt-container">
-              <p class="date">{{eventsVip[2]['date_start_pretty']}}</p>
-              <p class="name">{{eventsVip[02]['title']}}</p>
+              <p class="date">{{ events[2]['date_start_pretty_day'] }} {{events[2]['date_start_pretty_month']|_}}</p>
+              <p class="name">{{events[2]['title']}}</p>
               <img class="separator" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/small-yellow-separator.svg">
             </div>
           </div>
         </a>
-        <a href="#">
+        {% endif %}
+
+        {% if 1==1 %}
+        <a href="{{url('/')}}/{{lang}}{{events[3]['url']}}">
           <div id="element4" class="element">
             <div class="overlay-img"></div>
-            <img class="rec-img" src="{{eventsVip[3]['image']}}">
+            <img class="rec-img" src="{{events[3]['cover']}}">
             <div class="txt-container">
-              <p class="date">{{eventsVip[3]['date_start_pretty']}}</p>
-              <p class="name">{{eventsVip[3]['title']}}</p>
+              <p class="date">{{ events[3]['date_start_pretty_day'] }} {{events[3]['date_start_pretty_month']|_}}</p>
+              <p class="name">{{events[3]['title']}}</p>
               <img class="separator" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/small-yellow-separator.svg">
             </div>
           </div>
         </a>
       </div>
+      {% endif %}
     </div>
-
+    
     <!--  RUTAS -->
     <div class="secret-routes">
       <div class="txt-container">
@@ -139,7 +153,7 @@ is_hidden = 0
         <img class="separator" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
       </div>
     </div>
-";s:5:"mtime";i:1516815910;s:6:"markup";s:4430:"<!-- HEADER -->
+";s:5:"mtime";i:1517218422;s:6:"markup";s:5062:"<!-- HEADER -->
     <div class="header header-home">
       <div class="header-container">
         <div class="header-txt">
@@ -167,70 +181,85 @@ is_hidden = 0
       <div class="left-txt">
         <p class="title">{{ 'QUÉ SE CUECE HOY EN CÁDIZ'|_ }}</p>
           <img class="separator" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
-
-          {% for iEvent in events3 %}
-
-            <div class="event">
-              <p class="event-date">{{iEvent['date_start_pretty']}}</p>
-              <p class="event-place">{{iEvent['place']}}</p>
-              <a href="jornadas-micologicas.html" class="event-name">{{iEvent['title']}}</a>
-            </div>
+         
+         
+          {% for i in 4..5 %}
+             {% if events[i] %}
+               <div class="event">
+                <p class="event-date">{{events[i]['date_start_pretty_numf']}}</p>
+                <p class="event-place">{{events[i]['location']}}</p>
+                <a href="{{url('/')}}/{{lang}}{{events[i]['url']}}" class="event-name">{{events[i]['title']}}</a>
+              </div>
+              {% endif %}
           {% endfor %}
 
-            <a class="events-link" href="{{lang}}/eventos">{{ 'Todos los eventos'|_ }}&nbsp;&nbsp;<img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/link-arrow-yellow.svg" alt=""> </a>
+          
+
+            <a class="events-link" href="{{lang}}/todos-los-eventos">{{ 'Todos los eventos'|_ }}&nbsp;&nbsp;<img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/link-arrow-yellow.svg" alt=""> </a>
       </div>
 
-
+    
       <div class="right-photos">
         <!-- DIRECCIÓN 1º ARRIBA-ABAJO 2º IZQUIERDA-DERECHA -->
-
-        <a href="carreras-caballos.html">
+        
+        {% if events[0] %}
+        <a href="{{url('/')}}/{{lang}}{{events[0]['url']}}">
           <div id="element1" class="element">
             <div class="overlay-img"></div>
-            <img class="rec-img" src="{{eventsVip[0]['image']}}">
+            <img class="rec-img" src="{{events[0]['cover']}}">
             <div class="txt-container">
-              <p class="date">{{eventsVip[0]['date_start_pretty']}}</p>
-              <p class="name">{{eventsVip[0]['title']}}</p>
+              <p class="date">{{ events[0]['date_start_pretty_day'] }} {{events[0]['date_start_pretty_month']|_}}</p>
+              <p class="name">{{events[0]['title']}}</p>
               <img class="separator" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/small-yellow-separator.svg">
             </div>
           </div>
         </a>
-        <a href="#">
+        {% endif %}
+
+        {% if events[1] %}
+        <a href="{{url('/')}}/{{lang}}{{events[1]['url']}}">
           <div id="element2" class="element">
             <div class="overlay-img"></div>
-            <img class="rec-img" src="{{eventsVip[1]['image']}}">
+            <img class="rec-img" src="{{events[1]['cover']}}">
             <div class="txt-container">
-              <p class="date">{{eventsVip[1]['date_start_pretty']}}</p>
-              <p class="name">{{eventsVip[1]['title']}}</p>
+              <p class="date">{{ events[1]['date_start_pretty_day'] }} {{events[1]['date_start_pretty_month']|_}}</p>
+              <p class="name">{{events[1]['title']}}</p>
               <img class="separator" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/small-yellow-separator.svg">
             </div>
           </div>
         </a>
-        <a href="#">
+        {% endif %}
+
+        {% if events[2] %}
+        <a href="{{url('/')}}/{{lang}}{{events[2]['url']}}">
           <div id="element3" class="element">
             <div class="overlay-img"></div>
-            <img class="rec-img" src="{{eventsVip[2]['image']}}">
+            <img class="rec-img" src="{{events[2]['cover']}}">
             <div class="txt-container">
-              <p class="date">{{eventsVip[2]['date_start_pretty']}}</p>
-              <p class="name">{{eventsVip[02]['title']}}</p>
+              <p class="date">{{ events[2]['date_start_pretty_day'] }} {{events[2]['date_start_pretty_month']|_}}</p>
+              <p class="name">{{events[2]['title']}}</p>
               <img class="separator" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/small-yellow-separator.svg">
             </div>
           </div>
         </a>
-        <a href="#">
+        {% endif %}
+
+        {% if 1==1 %}
+        <a href="{{url('/')}}/{{lang}}{{events[3]['url']}}">
           <div id="element4" class="element">
             <div class="overlay-img"></div>
-            <img class="rec-img" src="{{eventsVip[3]['image']}}">
+            <img class="rec-img" src="{{events[3]['cover']}}">
             <div class="txt-container">
-              <p class="date">{{eventsVip[3]['date_start_pretty']}}</p>
-              <p class="name">{{eventsVip[3]['title']}}</p>
+              <p class="date">{{ events[3]['date_start_pretty_day'] }} {{events[3]['date_start_pretty_month']|_}}</p>
+              <p class="name">{{events[3]['title']}}</p>
               <img class="separator" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/small-yellow-separator.svg">
             </div>
           </div>
         </a>
       </div>
+      {% endif %}
     </div>
-
+    
     <!--  RUTAS -->
     <div class="secret-routes">
       <div class="txt-container">
@@ -239,7 +268,7 @@ is_hidden = 0
         <a class="events-link" href="{{lang}}/rutas">{{ 'Selección de rutas secretas'|_ }}<img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/link-arrow-yellow.svg" alt=""> </a>
         <img class="separator" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
       </div>
-    </div>";s:4:"code";s:571:"	function onStart()
+    </div>";s:4:"code";s:509:"	function onStart()
 	{
 
     $this['lang']=\App::getLocale();
@@ -247,8 +276,7 @@ is_hidden = 0
 			$this['lang']='es';
 		}
 
-    $this['events3'] = $this->staticApp->event3List();
-    $this['eventsVip'] = $this->staticApp->eventVipList();
+    $this['events'] = $this->staticApp->eventAll();
 
 	}
 

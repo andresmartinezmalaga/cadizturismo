@@ -1,4 +1,4 @@
-1517218378a:1:{s:14:"listevents.htm";a:10:{s:8:"fileName";s:14:"listevents.htm";s:7:"content";s:1539:"title = "allEvents"
+1517219203a:1:{s:14:"listevents.htm";a:10:{s:8:"fileName";s:14:"listevents.htm";s:7:"content";s:1699:"title = "allEvents"
 url = "/listado-de-eventos"
 layout = "dinamic"
 is_hidden = 0
@@ -19,7 +19,9 @@ is_hidden = 0
       Session::put('reciveData',Session::get('data'));     
     }
 
-    //$events = $this->staticApp->eventAll();
+    if(Session::has('reciveData')){
+      $this['events'] = json_decode(Session::get('reciveData'));     
+    }
 
 	}
 
@@ -29,18 +31,22 @@ is_hidden = 0
     $category = $_POST['category'];
     $location = $_POST['location'];
     $datepicker = explode('-', $_POST['datepicker']);
-		
+    
     $edaystart = explode('.', $datepicker[0]);
     $edayend = explode('.', $datepicker[1]);
 
-    $daystart = new Date($edaystart[0].'-'.$edaystart[1].'-'.$edaystart[2]);
-    $dayend = new Date($edayend[0].'-'.$edayend[1].'-'.$edayend[2]);
+    $daystart = (new Date(intval($edaystart[2]).'-'.intval($edaystart[1]).'-'.intval($edaystart[0])))->format('d-m-Y');
+    $dayend = (new Date(intval($edayend[2]).'-'.intval($edayend[1]).'-'.intval($edayend[0])))->format('d-m-Y');
 
-  	$aLang = App::getLocale();
-    $events = $this->staticApp->eventAll($category,$daystart,$dayend,$location);
-  
-    return Redirect::to($aLang.'/eventos')->with( ['data' => json_encode($events)] );
- 
+    $aLang = App::getLocale();
+    $this['events'] = $this->staticApp->eventFind($category,$daystart,$dayend,$location);
+
+    
+    
+    return [
+        '#prtlEventsl' => $this->renderPartial('events')
+    ];
+    
   }
 
 ?>
@@ -52,7 +58,7 @@ is_hidden = 0
   <div class="header-container">
       
       <div class="header-txt">
-        <h1 class="txt txt-home"><span class="first-word">{{ 'Vive'|_ }}</span> {{ 'nuestros eventos'|_ }}</h1>
+        <h1 class="txt txt-home"><span class="first-word">{{ 'Eventos'|_ }}</span> {{ 'pensados para ti'|_ }}</h1>
         <img class="brush" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/brush-header.svg" alt="">
       </div>
    
@@ -64,15 +70,15 @@ is_hidden = 0
   </div>
 </div>
 
-<div id='prtlExperiences' class="all-exps">
-	{% partial "experiences" %}
-</div>";s:5:"mtime";i:1516868990;s:6:"markup";s:551:"<!-- HEADER -->
+<div id='prtlEventsl' class="all-exps">
+	{% partial "events" %}
+</div>";s:5:"mtime";i:1517218422;s:6:"markup";s:545:"<!-- HEADER -->
 <div class="header header-events">
   
   <div class="header-container">
       
       <div class="header-txt">
-        <h1 class="txt txt-home"><span class="first-word">{{ 'Vive'|_ }}</span> {{ 'nuestros eventos'|_ }}</h1>
+        <h1 class="txt txt-home"><span class="first-word">{{ 'Eventos'|_ }}</span> {{ 'pensados para ti'|_ }}</h1>
         <img class="brush" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/brush-header.svg" alt="">
       </div>
    
@@ -84,9 +90,9 @@ is_hidden = 0
   </div>
 </div>
 
-<div id='prtlExperiences' class="all-exps">
-	{% partial "experiences" %}
-</div>";s:4:"code";s:876:"  
+<div id='prtlEventsl' class="all-exps">
+	{% partial "events" %}
+</div>";s:4:"code";s:1042:"  
 	
 	function onStart()
 	{	    
@@ -99,7 +105,9 @@ is_hidden = 0
       Session::put('reciveData',Session::get('data'));     
     }
 
-    //$events = $this->staticApp->eventAll();
+    if(Session::has('reciveData')){
+      $this['events'] = json_decode(Session::get('reciveData'));     
+    }
 
 	}
 
@@ -109,16 +117,20 @@ is_hidden = 0
     $category = $_POST['category'];
     $location = $_POST['location'];
     $datepicker = explode('-', $_POST['datepicker']);
-		
+    
     $edaystart = explode('.', $datepicker[0]);
     $edayend = explode('.', $datepicker[1]);
 
-    $daystart = new Date($edaystart[0].'-'.$edaystart[1].'-'.$edaystart[2]);
-    $dayend = new Date($edayend[0].'-'.$edayend[1].'-'.$edayend[2]);
+    $daystart = (new Date(intval($edaystart[2]).'-'.intval($edaystart[1]).'-'.intval($edaystart[0])))->format('d-m-Y');
+    $dayend = (new Date(intval($edayend[2]).'-'.intval($edayend[1]).'-'.intval($edayend[0])))->format('d-m-Y');
 
-  	$aLang = App::getLocale();
-    $events = $this->staticApp->eventAll($category,$daystart,$dayend,$location);
-  
-    return Redirect::to($aLang.'/eventos')->with( ['data' => json_encode($events)] );
- 
+    $aLang = App::getLocale();
+    $this['events'] = $this->staticApp->eventFind($category,$daystart,$dayend,$location);
+
+    
+    
+    return [
+        '#prtlEventsl' => $this->renderPartial('events')
+    ];
+    
   }";s:5:"title";s:9:"allEvents";s:3:"url";s:19:"/listado-de-eventos";s:6:"layout";s:7:"dinamic";s:9:"is_hidden";s:1:"0";s:9:"staticApp";a:0:{}}}

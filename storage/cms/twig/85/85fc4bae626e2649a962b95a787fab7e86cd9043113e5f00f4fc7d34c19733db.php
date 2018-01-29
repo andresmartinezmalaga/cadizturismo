@@ -75,34 +75,36 @@ class __TwigTemplate_76982b0e9c0e4047bf9c0396954bb01d07a9dbf589e33b2c9818e74a38c
         echo "/plugins/rainlab/pages/assets/svg/tiny-sep.svg\" class=\"fr-fil fr-dib\">
         <div class=\"links-container\"><a href=\"https://www.facebook.com/sharer/sharer.php?u=";
         // line 31
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), ($context["this"] ?? null), "page", array()), "id", array()), "html", null, true);
+        echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter(twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), ($context["this"] ?? null), "page", array()), "id", array()));
         echo "\" target=\"_blank\">Facebook&nbsp;</a>
-            <span>·</span>
+                <span>·</span>
             <a data-action=\"share/whatsapp/share\" href=\"href=\">Whatsapp&nbsp;</a>
+            <span>·</span>
+            <a href=\"https://twitter.com/home?status=cadizturismo.jekyllme.com\">Twitter&nbsp;</a>
         </div>
     </div>
 
     ";
-        // line 37
+        // line 39
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("site/footer"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 38
+        // line 40
         echo "
     <!-- SCRIPTS -->
     <script type=\"text/javascript\" src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js\"></script>
     <script src=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.full.min.js\"></script>
     <script type=\"text/javascript\" src=\"";
-        // line 42
+        // line 44
         echo url("/");
         echo "/plugins/rainlab/pages/assets/js/script-select2.js\"></script>
 <script type=\"text/javascript\" src=\"";
-        // line 43
+        // line 45
         echo url("/");
         echo "/plugins/rainlab/pages/assets/iziModal/js/iziModal.js\"></script>
 
     <script type=\"text/javascript\" src=\"";
-        // line 45
+        // line 47
         echo url("/");
         echo "/plugins/rainlab/pages/assets/js/style.js\"></script>
 
@@ -122,7 +124,7 @@ class __TwigTemplate_76982b0e9c0e4047bf9c0396954bb01d07a9dbf589e33b2c9818e74a38c
 
     public function getDebugInfo()
     {
-        return array (  106 => 45,  101 => 43,  97 => 42,  91 => 38,  87 => 37,  78 => 31,  72 => 30,  66 => 26,  62 => 25,  59 => 24,  55 => 23,  43 => 14,  39 => 13,  35 => 12,  31 => 11,  19 => 1,);
+        return array (  108 => 47,  103 => 45,  99 => 44,  93 => 40,  89 => 39,  78 => 31,  72 => 30,  66 => 26,  62 => 25,  59 => 24,  55 => 23,  43 => 14,  39 => 13,  35 => 12,  31 => 11,  19 => 1,);
     }
 
     public function getSourceContext()
@@ -157,9 +159,11 @@ class __TwigTemplate_76982b0e9c0e4047bf9c0396954bb01d07a9dbf589e33b2c9818e74a38c
 
     <div class=\"vertical-share\">
         <p class=\"also-title\">{{'COMPARTIR'|_}}</p><img src=\"{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-sep.svg\" class=\"fr-fil fr-dib\">
-        <div class=\"links-container\"><a href=\"https://www.facebook.com/sharer/sharer.php?u={{ this.page.id }}\" target=\"_blank\">Facebook&nbsp;</a>
-            <span>·</span>
+        <div class=\"links-container\"><a href=\"https://www.facebook.com/sharer/sharer.php?u={{ this.page.id | page }}\" target=\"_blank\">Facebook&nbsp;</a>
+                <span>·</span>
             <a data-action=\"share/whatsapp/share\" href=\"href=\">Whatsapp&nbsp;</a>
+            <span>·</span>
+            <a href=\"https://twitter.com/home?status=cadizturismo.jekyllme.com\">Twitter&nbsp;</a>
         </div>
     </div>
 

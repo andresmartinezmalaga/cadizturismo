@@ -1,4 +1,4 @@
-1517218380a:1:{s:13:"site/menu.htm";a:6:{s:8:"fileName";s:13:"site/menu.htm";s:7:"content";s:7357:"==
+1517219203a:1:{s:13:"site/menu.htm";a:6:{s:8:"fileName";s:13:"site/menu.htm";s:7:"content";s:7401:"==
 
 <?php
 
@@ -55,7 +55,7 @@
             {% set tt = '.'~item.title %}             
             <li class="menu-item"><a href="{{ item.url }}">{{ tt|_ }}</a></li>
           {% endfor %} 
-            <li class="menu-item"><a href="todos-los-eventos">{{ 'Todos los eventos'|_ }}</a></li>              
+            <li class="menu-item"><a href="{{url('/')}}/{{lang}}/todos-los-eventos">{{ 'Todos los eventos'|_ }}</a></li>              
         </ul>
       </div>
      
@@ -138,7 +138,7 @@
               {% set tt = '.'~item.title %} 
               <li class="menu-item"><a href="{{ item.url }}">{{tt|_}}</a></li>
             {% endfor %}
-              <li class="menu-item"><a href="todos-los-eventos">{{ 'Todos los eventos'|_ }}</a></li>
+              <li class="menu-item"><a href="{{url('/')}}/{{lang}}/todos-los-eventos">{{ 'Todos los eventos'|_ }}</a></li>
           </ul>
         </div>
         <div class="menu-list">
@@ -155,7 +155,7 @@
       </div>
     </div>
   </nav>
-";s:5:"mtime";i:1516872131;s:6:"markup";s:7295:"<!-- MENU-->
+";s:5:"mtime";i:1517218422;s:6:"markup";s:7339:"<!-- MENU-->
 <div class="slidemenu">
   <div class="elements">
     <div class="logo-container">
@@ -200,7 +200,7 @@
             {% set tt = '.'~item.title %}             
             <li class="menu-item"><a href="{{ item.url }}">{{ tt|_ }}</a></li>
           {% endfor %} 
-            <li class="menu-item"><a href="todos-los-eventos">{{ 'Todos los eventos'|_ }}</a></li>              
+            <li class="menu-item"><a href="{{url('/')}}/{{lang}}/todos-los-eventos">{{ 'Todos los eventos'|_ }}</a></li>              
         </ul>
       </div>
      
@@ -283,7 +283,7 @@
               {% set tt = '.'~item.title %} 
               <li class="menu-item"><a href="{{ item.url }}">{{tt|_}}</a></li>
             {% endfor %}
-              <li class="menu-item"><a href="todos-los-eventos">{{ 'Todos los eventos'|_ }}</a></li>
+              <li class="menu-item"><a href="{{url('/')}}/{{lang}}/todos-los-eventos">{{ 'Todos los eventos'|_ }}</a></li>
           </ul>
         </div>
         <div class="menu-list">

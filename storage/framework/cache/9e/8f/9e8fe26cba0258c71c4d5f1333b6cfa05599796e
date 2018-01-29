@@ -1,4 +1,4 @@
-1517218902a:1:{s:11:"default.htm";a:12:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:3080:"description = "Default Layout"
+1517219203a:1:{s:11:"default.htm";a:12:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:3219:"description = "Default Layout"
 
 [staticPage]
 useContent = 1
@@ -63,9 +63,11 @@ code = "que-hacer"
 
     <div class="vertical-share">
         <p class="also-title">{{'COMPARTIR'|_}}</p><img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-sep.svg" class="fr-fil fr-dib">
-        <div class="links-container"><a href="https://www.facebook.com/sharer/sharer.php?u={{ this.page.id }}" target="_blank">Facebook&nbsp;</a>
-            <span>·</span>
+        <div class="links-container"><a href="https://www.facebook.com/sharer/sharer.php?u={{ this.page.id | page }}" target="_blank">Facebook&nbsp;</a>
+                <span>·</span>
             <a data-action="share/whatsapp/share" href="href=">Whatsapp&nbsp;</a>
+            <span>·</span>
+            <a href="https://twitter.com/home?status=cadizturismo.jekyllme.com">Twitter&nbsp;</a>
         </div>
     </div>
 
@@ -81,7 +83,7 @@ code = "que-hacer"
 
   </body>
 </html>
-";s:5:"mtime";i:1517218300;s:6:"markup";s:2620:"<!DOCTYPE html>
+";s:5:"mtime";i:1517218580;s:6:"markup";s:2759:"<!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -111,9 +113,11 @@ code = "que-hacer"
 
     <div class="vertical-share">
         <p class="also-title">{{'COMPARTIR'|_}}</p><img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-sep.svg" class="fr-fil fr-dib">
-        <div class="links-container"><a href="https://www.facebook.com/sharer/sharer.php?u={{ this.page.id }}" target="_blank">Facebook&nbsp;</a>
-            <span>·</span>
+        <div class="links-container"><a href="https://www.facebook.com/sharer/sharer.php?u={{ this.page.id | page }}" target="_blank">Facebook&nbsp;</a>
+                <span>·</span>
             <a data-action="share/whatsapp/share" href="href=">Whatsapp&nbsp;</a>
+            <span>·</span>
+            <a href="https://twitter.com/home?status=cadizturismo.jekyllme.com">Twitter&nbsp;</a>
         </div>
     </div>
 
