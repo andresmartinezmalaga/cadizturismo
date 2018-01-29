@@ -251,6 +251,10 @@ class Index extends Controller
                 $object['markup'] = PagesTemplates::getTSomos();
             }
 
+            if($pageFileName == 'necesitas-ayuda.htm' && $templateMarkup ==''){
+                $object['markup'] = PagesTemplates::getTAyuda();
+            }
+
         return $this->pushObjectForm($type, $object);
 
 

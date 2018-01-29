@@ -2157,12 +2157,12 @@ class PagesTemplates
 
     static $ayuda = '<div id="ayuda-header" class="ayuda-header">
       <img class="img-header"
-      src="/cadizturismo/storage/app/media/uploaded-files/templates/ayuda-header.jpg"
+      src="***_preurl_***/storage/app/media/uploaded-files/templates/ayuda-header.jpg"
       alt="">
       <div class="header-container">
     		<div class="header-txt-comollegar">
     			<h1 class="txt">Necesitas ayuda</h1>
-          <img class="brush" src="/cadizturismo/storage/app/media/uploaded-files/templates/brush-header.svg"
+          <img class="brush" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg"
           alt="necesitas ayuda">
         </div>
     	</div>
@@ -2170,23 +2170,23 @@ class PagesTemplates
     <section class="contact">
       <div class="contact-container">
         <h3 class="contact-title">CONTACTO</h3>
-        <img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+        <img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
       <div class="contact-info">
         <div class="contact-line">
           <div class="icon-container">
-            <img src="/cadizturismo/storage/app/media/uploaded-files/templates/phone-icon.svg" alt="">
+            <img src="***_preurl_***/storage/app/media/uploaded-files/templates/phone-icon.svg" alt="">
           </div>
           <p class="info">TLF.: 956 807 061  |  956 807 223</p>
         </div>
         <div class="contact-line">
           <div class="icon-container">
-            <img src="/cadizturismo/storage/app/media/uploaded-files/templates/fax-icon.svg" alt="">
+            <img src="***_preurl_***/storage/app/media/uploaded-files/templates/fax-icon.svg" alt="">
           </div>
           <p class="info">FAX: 956 214 635</p>
         </div>
         <div class="contact-line">
           <div class="icon-container">
-              <img src="/cadizturismo/storage/app/media/uploaded-files/templates/address-icon.svg" alt="">
+              <img src="***_preurl_***/storage/app/media/uploaded-files/templates/address-icon.svg" alt="">
           </div>
           <div class="info-cont">
             <p class="info">DIRECCIÓN: Plaza de Madrid s/n</p>
@@ -2199,27 +2199,27 @@ class PagesTemplates
     <section class="contact-ways">
       <div class="way">
         <div class="pic-way">
-          <img class="background-way" src="/cadizturismo/storage/app/media/uploaded-files/templates/turistica.jpg" alt="aéreo">
+          <img class="background-way" src="***_preurl_***/storage/app/media/uploaded-files/templates/turistica.jpg" alt="aéreo">
           <div class="icon-container">
-            <img class="icon" src="/cadizturismo/storage/app/media/uploaded-files/templates/info-turistica-icon.svg" alt="">
+            <img class="icon" src="***_preurl_***/storage/app/media/uploaded-files/templates/info-turistica-icon.svg" alt="">
             <p class="icon-txt">INFORMACIÓN TURÍSTICA</p>
           </div>
-          <a href="#">Contactar<img src="/cadizturismo/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""></a>
+          <a href="#">Contactar<img src="***_preurl_***/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""></a>
         </div>
       </div>
       <div class="way">
         <div class="pic-way">
-          <img class="background-way" src="/cadizturismo/storage/app/media/uploaded-files/templates/prensa.jpg" alt="aéreo">
+          <img class="background-way" src="***_preurl_***/storage/app/media/uploaded-files/templates/prensa.jpg" alt="aéreo">
           <div class="icon-container">
-            <img class="icon" src="/cadizturismo/storage/app/media/uploaded-files/templates/prensa-icon.svg" alt="">
+            <img class="icon" src="***_preurl_***/storage/app/media/uploaded-files/templates/prensa-icon.svg" alt="">
             <p class="icon-txt">PRENSA Y EMPRESAS</p>
           </div>
-            <a href="#">Contactar<img src="/cadizturismo/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""></a>
+            <a href="#">Contactar<img src="***_preurl_***/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""></a>
         </div>
       </div>
     </section>
     <section class="map-container">
-      <img src="/cadizturismo/storage/app/media/uploaded-files/templates/map.jpg" alt="">
+      <img src="***_preurl_***/storage/app/media/uploaded-files/templates/map.jpg" alt="">
     </section>';
 
     static function getTAyuda(){
