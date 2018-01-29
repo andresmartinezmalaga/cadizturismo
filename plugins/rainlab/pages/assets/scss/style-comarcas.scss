@@ -714,7 +714,7 @@
 }
 
 /* BUSCADOR */
-.search-bar-container {
+#search-rutas {
   width: 877px;
   height: 105px;
   border-radius: 5px;
@@ -723,6 +723,7 @@
   align-items: center;
   justify-content: center;
   .search-bar {
+    width: 839px;
     height: 70px;
     background-color: white;
     border-radius: 4px;
@@ -760,7 +761,7 @@
     }
   }
 }
-form, .inputs-container {
+#search-rutas form, #search-rutas .inputs-container {
   width: 100%;
   @include flexbox();
   flex-direction: row;
@@ -801,7 +802,7 @@ form, .inputs-container {
   padding-top: 21px;
 }
 
-.days-container {
+#search-rutas .days-container {
   background-image: url('../svg/category-events.svg');
   background-repeat: no-repeat;
   background-position: 21px 50%;
@@ -809,13 +810,13 @@ form, .inputs-container {
   border-bottom-left-radius: 4px;
 }
 
-.interests-container {
+#search-rutas .interests-container {
   background-image: url('../svg/calendar.svg');
   background-repeat: no-repeat;
   background-position: 21px 50%;
 }
 
-.type-container {
+#search-rutas .type-container {
   background-image: url('../svg/location-events.svg');
   background-repeat: no-repeat;
   background-position: 21px 50%;

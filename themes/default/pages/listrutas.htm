@@ -6,11 +6,11 @@ is_hidden = 0
 [staticApp]
 
 ==
-<?php  
-	
+<?php
+
 	function onStart()
-	{	    
-  
+	{
+
 
     if (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false) {
           $this['preurl'] = '/cadizturismo';
@@ -22,13 +22,13 @@ is_hidden = 0
 		if($this['lang']==''){
 			$this['lang']='es';
 		}
-    
+
     if(Session::has('data')){
-      Session::put('reciveData',Session::get('data'));     
+      Session::put('reciveData',Session::get('data'));
     }
 
     if(Session::has('reciveData')){
-      $this['rutas'] = json_decode(Session::get('reciveData'));     
+      $this['rutas'] = json_decode(Session::get('reciveData'));
     }
 
 
@@ -40,36 +40,33 @@ is_hidden = 0
     $category = $_POST['category'];
     $days = $_POST['days'];
     $location = $_POST['location'];
-   
+
     $this['rutas'] = $this->staticApp->rutaFind($category,$days,$location);
-    
+
     return [
         '#prtlRutasl' => $this->renderPartial('rutas')
     ];
- 
+
   }
 
 ?>
 ==
 
 <!-- HEADER -->
-<div class="header header-events">
-  
+<div class="header-search" id="searchbar-rutas">
   <div class="header-container">
-      
-      <div class="header-txt">
-        <h1 class="txt txt-home"><span class="first-word">{{ 'Rutas'|_ }}</span> {{ 'con encanto'|_ }}</h1>
+      <div id="exp-header" class="header-txt">
+        <p class="txt"><span class="first-word-event">{{ 'Rutas'|_ }}</span> {{ 'pensadas para ti'|_ }}</p>
         <img class="brush" src="{{preurl}}/storage/app/media/uploaded-files/templates/brush-header.svg" alt="">
       </div>
-   
+
     <!-- SEARCH -->
     <div id='prtlSearch'>
       {% partial "site/searchruta" %}
     </div>
-
   </div>
 </div>
-
+</div>
 <div id='prtlRutasl' class="all-exps">
 	{% partial "rutas" %}
 </div>

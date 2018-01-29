@@ -675,7 +675,7 @@
           color: #D0860C; }
 
 /* BUSCADOR */
-.search-bar-container {
+#search-rutas {
   width: 877px;
   height: 105px;
   border-radius: 5px;
@@ -687,7 +687,8 @@
   display: flex;
   align-items: center;
   justify-content: center; }
-  .search-bar-container .search-bar {
+  #search-rutas .search-bar {
+    width: 839px;
     height: 70px;
     background-color: white;
     border-radius: 4px;
@@ -698,32 +699,32 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap; }
-    .search-bar-container .search-bar .days-container {
+    #search-rutas .search-bar .days-container {
       width: 204px;
       min-width: 204px;
       height: 100%;
       border-right: 1px solid #DDDDDD; }
-    .search-bar-container .search-bar .interests-container {
+    #search-rutas .search-bar .interests-container {
       width: 152px;
       min-width: 152px;
       height: 100%;
       border-right: 1px solid #DDDDDD; }
-    .search-bar-container .search-bar .type-container {
+    #search-rutas .search-bar .type-container {
       width: 293px;
       min-width: 293px;
       height: 100%; }
-    .search-bar-container .search-bar .button-container {
+    #search-rutas .search-bar .button-container {
       width: 190px;
       min-width: 190px;
       height: 100%;
       background-color: #F5A623;
       border-top-right-radius: 4px;
       border-bottom-right-radius: 4px; }
-      .search-bar-container .search-bar .button-container input {
+      #search-rutas .search-bar .button-container input {
         border-top-right-radius: 4px;
         border-bottom-right-radius: 4px; }
 
-form, .inputs-container {
+#search-rutas form, #search-rutas .inputs-container {
   width: 100%;
   display: -webkit-box;
   display: -moz-box;
@@ -731,9 +732,9 @@ form, .inputs-container {
   display: -webkit-flex;
   display: flex;
   flex-direction: row; }
-  form select, .inputs-container select {
+  #search-rutas form select, #search-rutas .inputs-container select {
     display: none; }
-  form input[type="submit"], .inputs-container input[type="submit"] {
+  #search-rutas form input[type="submit"], #search-rutas .inputs-container input[type="submit"] {
     width: 100%;
     height: 100%;
     background-color: #F5A623;
@@ -742,7 +743,7 @@ form, .inputs-container {
     font-size: 19.72px;
     line-height: 27px;
     transition: background-color 0.3s ease; }
-    form input[type="submit"]:hover, form input[type="submit"]:focus, form input[type="submit"]:active, .inputs-container input[type="submit"]:hover, .inputs-container input[type="submit"]:focus, .inputs-container input[type="submit"]:active {
+    #search-rutas form input[type="submit"]:hover, #search-rutas form input[type="submit"]:focus, #search-rutas form input[type="submit"]:active, #search-rutas .inputs-container input[type="submit"]:hover, #search-rutas .inputs-container input[type="submit"]:focus, #search-rutas .inputs-container input[type="submit"]:active {
       background-color: #D0860C;
       outline: none; }
 
@@ -762,19 +763,19 @@ form, .inputs-container {
   line-height: 22px !important;
   padding-top: 21px; }
 
-.days-container {
+#search-rutas .days-container {
   background-image: url("../svg/category-events.svg");
   background-repeat: no-repeat;
   background-position: 21px 50%;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px; }
 
-.interests-container {
+#search-rutas .interests-container {
   background-image: url("../svg/calendar.svg");
   background-repeat: no-repeat;
   background-position: 21px 50%; }
 
-.type-container {
+#search-rutas .type-container {
   background-image: url("../svg/location-events.svg");
   background-repeat: no-repeat;
   background-position: 21px 50%; }

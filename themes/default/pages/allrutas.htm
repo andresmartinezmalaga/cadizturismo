@@ -6,11 +6,11 @@ is_hidden = 0
 [staticApp]
 
 ==
-<?php  
-	
+<?php
+
 	function onStart()
-	{	    
-    
+	{
+
     if (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false) {
           $this['preurl'] = '/cadizturismo';
     } else {
@@ -21,14 +21,14 @@ is_hidden = 0
 		if($this['lang']==''){
 			$this['lang']='es';
 		}
-    
+
     if(Session::has('data')){
-      Session::put('reciveData',Session::get('data'));     
+      Session::put('reciveData',Session::get('data'));
     }
 
     $this['rutas'] = $this->staticApp->rutaAll();
 
-    
+
 	}
 
 	function onFindRuta(){
@@ -37,32 +37,36 @@ is_hidden = 0
     $category = $_POST['category'];
     $days = $_POST['days'];
     $location = $_POST['location'];
-   
-	  
+
+
   	$aLang = App::getLocale();
     $rutas = $this->staticApp->rutaFind($category,$days,$location);
-    
+
     return Redirect::to($aLang.'/listado-de-rutas')->with( ['data' => json_encode($rutas)] );
- 
+
   }
 
 ?>
 ==
 
 <!-- HEADER -->
-<div class="header header-events">
-  
+<div class="header-general header-rutas">
+
   <div class="header-container">
-      
+
       <div class="header-txt">
-        <h1 class="txt txt-home"><span class="first-word">{{ "Rutas"|_ }}</span> {{ "con encanto"|_ }}</h1>
+        <h1 class="txt-rutas"><span class="first-word-rutas">{{ "Rutas"|_ }}</span><span style="font-size: 121px; display: block;"> {{ "con encanto"|_ }} </span></h1>
         <img class="brush" src="{{preurl}}/storage/app/media/uploaded-files/templates/brush-header.svg" alt="">
       </div>
-   
+
     <!-- SEARCH -->
     <div id='prtlSearch'>
       {% partial "site/searchruta" %}
     </div>
+
+		<div class="header-comment">
+			<p class="comment">Déjate llevar por el <br> encanto de Cádiz</p>
+		</div>
 
   </div>
 </div>
