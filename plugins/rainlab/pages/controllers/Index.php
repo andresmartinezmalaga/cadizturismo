@@ -172,6 +172,9 @@ class Index extends Controller
                 $object['markup'] = PagesTemplates::getTEspaciosnaturales();
             }
 
+              if($pageFileName == 'naturaleza-espacios-naturales-bahia-de-cadiz.htm' && $templateMarkup ==''){
+                  $object['markup'] = PagesTemplates::getTBirdwatching();
+                }
 
         if($pageFileName == 'diversion.htm' && $templateMarkup ==''){
             $object['markup'] = PagesTemplates::getTDiversion();
@@ -224,7 +227,6 @@ class Index extends Controller
             if($pageFileName == 'gastronomia-comida-tradicional.htm' && $templateMarkup ==''){
                 $object['markup'] = PagesTemplates::getTComida();
             }
-
 
             if($pageFileName == 'como-llegar.htm' && $templateMarkup ==''){
                 $object['markup'] = PagesTemplates::getTLlegar();

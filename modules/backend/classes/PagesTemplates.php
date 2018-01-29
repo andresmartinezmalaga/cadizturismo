@@ -879,6 +879,120 @@ class PagesTemplates
       return $espaciosnaturales;
     }
 
+    static $espacionatural = '<!-- HEADER -->
+    <div class="header header-alcornocales">
+      <div class="header-container header-village-container">
+        <div class="header-txt header-txt-village">
+          <h1 id="natu-via" class="txt">Nombre del espacio</h1>
+          <img class="brush" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt="">
+        </div>
+      </div>
+      <!-- NUEVA FOTO -->
+    	<img class="background-image fr-fil fr-dib" value="cover" src="***_preurl_***/storage/app/media/uploaded-files/templates/alcornocales1.jpg" alt="">
+    </div>
+    <!-- TXT-->
+    <div class="section-txt-village">
+      <div class="txt-container">
+              <p class="title">TITULAR</p>
+              <img class="separator" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+              <p class="desc">Escribe aquí el contenido a desarrollar y agrega una imagen adicional si lo necesitas.</p>
+      </div>
+    </div>
+
+    <!-- IMAGEN -->
+    <div class="featured-element featured-alcornocales">
+      <div class="txt-container">
+        <p class="title">TÍTULO DEL DESTACADO</p>
+        <p class="desc">Breve descripción</p>
+        <a class="events-link" href="rutas.html">Conocer <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-arrow-yellow.svg" alt=""> </a>
+        <img class="separator" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+      </div>
+      <!-- NUEVA FOTO -->
+    	<div class="overlay">
+    		<br>
+    	</div>
+      <img class="img-destacada fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/alcornocales2.jpg" alt="">
+      </div>
+    </div> <div class="section-txt-village">
+      <div class="txt-container">
+              <p class="title">3 RUTAS QUE <br> HACER EN <br> (ESPACIO NATURAL)</p>
+              <img class="separator" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+      </div>
+    </div>
+
+    <div id="exps-playa" class="all-exps">
+      <div class="all-events-container">
+        <div class="event event-playa">
+          <div class="overlay-img"></div>
+          <img class="rec-img" src="***_preurl_***/storage/app/media/uploaded-files/templates/rio-miel.jpg">
+          <div class="txt-container">
+            <p class="name name-bird">RUTA 1</p>
+            <img class="separator" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+            <div class="icons-nat">
+              <div class="icon-pair">
+                <img src="***_preurl_***/storage/app/media/uploaded-files/templates/natu-events.svg">
+                <p class="icon-txt">Tipo de ruta</p>
+              </div>
+              <div class="icon-pair">
+                <img src="***_preurl_***/storage/app/media/uploaded-files/templates/loc-events.svg">
+                <p class="icon-txt">Ubicación</p>
+              </div>
+            </div>
+            <div class="button-container">
+              <a class="see-event" href="">Ver ruta  <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a>
+            </div>
+          </div>
+        </div>
+        <div class="event event-playa">
+          <div class="overlay-img"></div>
+          <img class="rec-img" src="***_preurl_***/storage/app/media/uploaded-files/templates/rio-horgarganta.jpg">
+          <div class="txt-container">
+            <p class="name name-bird">RUTA 2</p>
+            <img class="separator separator" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+            <div class="icons-nat">
+              <div class="icon-pair">
+                <img src="***_preurl_***/storage/app/media/uploaded-files/templates/natu-events.svg">
+                <p class="icon-txt">Tipo de ruta</p>
+              </div>
+              <div class="icon-pair">
+                <img src="***_preurl_***/storage/app/media/uploaded-files/templates/loc-events.svg">
+                <p class="icon-txt">Ubicación</p>
+              </div>
+            </div>
+            <div class="button-container">
+              <a class="see-event" href="">Ver ruta  <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a>
+            </div>
+          </div>
+        </div>
+        <div class="event event-playa">
+          <div class="overlay-img"></div>
+          <img class="rec-img" src="***_preurl_***/storage/app/media/uploaded-files/templates/rio-guadalmesi.jpg">
+          <div class="txt-container">
+            <p class="name name-bird">RUTA 3</p>
+            <img class="separator" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+            <div class="icons-nat">
+              <div class="icon-pair">
+                <img src="***_preurl_***/storage/app/media/uploaded-files/templates/natu-events.svg">
+                <p class="icon-txt">Tipo de ruta</p>
+              </div>
+              <div class="icon-pair">
+                <img src="***_preurl_***/storage/app/media/uploaded-files/templates/loc-events.svg">
+                <p class="icon-txt">Ubicación</p>
+              </div>
+            </div>
+            <div class="button-container">
+              <a class="see-event" href="">Ver ruta  <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>';
+
+    static function getTEspacioNatural(){
+      $espacionatural = PagesTemplates::getFinalTemplate(PagesTemplates::$espacionatural);
+      return $espacionatural;
+    }
+
     static $diversion = '
     <!-- HEADER -->
     <div class="header-general header-ocio">
