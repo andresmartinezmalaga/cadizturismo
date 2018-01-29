@@ -173,7 +173,7 @@ class PagesTemplates
   <div class="header header-comarca">
     <div class="header-container header-village-container">
       <div class="header-txt header-txt-village">
-        <h1 class="txt"><span class="first-word">Nombre de la comarca</span></h1><img class="brush fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
+        <h1 class="txt">>Nombre de la comarca</h1><img class="brush fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
     </div>
     <!-- NUEVA FOTO -->
     <img class="background-image" src="***_preurl_***/storage/app/media/uploaded-files/templates/janda2.jpg" alt="">
@@ -276,7 +276,7 @@ class PagesTemplates
   <div class="header header-village">
     <div class="header-container header-village-container">
       <div class="header-txt header-txt-village">
-        <h1 class="txt"><span class="first-word">Nombre del municipio</span></h1><img class="brush fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
+        <h1 class="txt">Nombre del municipio</h1><img class="brush fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
     </div>
     <!-- NUEVA FOTO -->
     <img class="background-image" value="cover" src="***_preurl_***/storage/app/media/uploaded-files/templates/barbate1.jpg" alt="">
@@ -440,7 +440,7 @@ class PagesTemplates
   <div class="header header-playa">
     <div class="header-container header-village-container">
       <div class="header-txt header-txt-village">
-        <h1 class="txt"><span class="first-word">Nombre de la playa</span></h1><img class="brush fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
+        <h1 class="txt">Nombre de la playa</h1><img class="brush fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
     </div>
     <!-- NUEVA FOTO -->
     <img class="background-image" value="cover" src="***_preurl_***/storage/app/media/uploaded-files/templates/playa-lances.jpg" alt="">
