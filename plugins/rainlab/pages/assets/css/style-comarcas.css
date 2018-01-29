@@ -284,6 +284,18 @@
   .main-section-comarcas .main-events-container .event .txt-container .icons .icon-pair img {
     max-width: 23px; }
 
+.main-events-container .event .txt-container .icons .icon-pair {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; }
+  .main-events-container .event .txt-container .icons .icon-pair img {
+    max-width: 23px; }
+
 .main-section-comarcas .main-events-container .event .txt-container .icons .icon-pair p {
   margin-bottom: 0px;
   color: white;
@@ -413,7 +425,8 @@
     .static-structure .page-cultura .icon {
       z-index: 10;
       position: absolute;
-      top: 235px; }
+      top: 235px;
+      max-height: 100px; }
     .static-structure .page-cultura .txt-container {
       position: absolute;
       width: 81%;

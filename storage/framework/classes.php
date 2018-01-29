@@ -43,4 +43,10 @@
   'RainLab\\Translate\\FormWidgets\\MLTextarea' => 'plugins/rainlab/translate/formwidgets/MLTextarea.php',
   'RainLab\\Translate\\FormWidgets\\MLRichEditor' => 'plugins/rainlab/translate/formwidgets/MLRichEditor.php',
   'backend\\Controllers\\media' => 'modules/backend/controllers/media.php',
+  'backend\\Controllers\\index' => 'modules/backend/controllers/index.php',
+  'RainLab\\GoogleAnalytics\\ReportWidgets\\Browsers' => 'plugins/rainlab/googleanalytics/reportwidgets/Browsers.php',
+  'RainLab\\GoogleAnalytics\\ReportWidgets\\TrafficSources' => 'plugins/rainlab/googleanalytics/reportwidgets/TrafficSources.php',
+  'RainLab\\GoogleAnalytics\\ReportWidgets\\TrafficOverview' => 'plugins/rainlab/googleanalytics/reportwidgets/TrafficOverview.php',
+  'RainLab\\GoogleAnalytics\\ReportWidgets\\TrafficGoal' => 'plugins/rainlab/googleanalytics/reportwidgets/TrafficGoal.php',
+  'RainLab\\GoogleAnalytics\\ReportWidgets\\TopPages' => 'plugins/rainlab/googleanalytics/reportwidgets/TopPages.php',
 );
