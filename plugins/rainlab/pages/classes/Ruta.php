@@ -128,16 +128,16 @@ class Ruta extends ContentBase
         // Andrés Martínez : Load rutas template on markup
         $template = '
         <!-- HEADER -->
-        <div class="header-event main-exp">          
+        <div class="header-event main-exp">
           <div class="header-container">
             <div class="header-txt">
-              <h1 class="txt">Via Verde de la Sierra</h1>
-              <img class="brush" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt="">            
+              <h1 class="txt">Nombre de la ruta</h1>
+              <img class="brush" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt="">
             </div>
-          </div>          
+          </div>
           <!-- NUEVA FOTO -->
           <img class="background-image" value="cover" src="***_preurl_***/storage/app/media/uploaded-files/templates/viaverde.jpg" alt="">
-          
+
         </div>
         <!-- SECTION TXT-->
         <div class="section-txt">
@@ -145,8 +145,8 @@ class Ruta extends ContentBase
             <span class="step">1</span>
           </div>
           <div class="txt-container">
-            <p class="title">LA VÍA VERDE</p>
-            <p class="desc">La ruta de Vía Verde de la Sierra es una ruta natural que atraviesa una antigua estructura ferroviaria en desuso reconvertida ahora en trayecto turístico. Una enriquecedora excursión por plena naturaleza a través de las sierras Béticas andaluzas.  </p>
+            <p class="title">TITULAR 1</p>
+            <p class="desc">Escribe aquí el contenido a desarrollar y agrega una imagen adicional si lo necesitas.</p>
           </div>
         </div>
         <!-- SECTION IMG -->
@@ -158,10 +158,8 @@ class Ruta extends ContentBase
             <span class="step">2</span>
           </div>
           <div class="txt-container">
-            <p class="title">EL ENCANTO <br>DE LA RUTA</p>
-            <p class="desc">La ruta se inicia en la antigua estación del municipio de Olvera, bajo la estampa de su histórico castillo, y finaliza en la antigua estación de Puerto Serrano, en la vega del río Guadalete. Una travesía de 36km de entorno natural con 30 túneles que atravesar, 4 viaductos que cruzar y 5 estaciones para descansar que transcurre paralela a las orillas de numerosos ríos.  </p>
-            <p class="desc">Encontrarás también una amplia oferta de actividades deportivas, educativas, turísticas y medioambientales. Como la sede de la Fundación Vía Verde de la Sierra, hoteles restaurante, espacio para autocaravanas, y el destacado Centro de Interpretación y Observatorio ornitológico, donde aprenderás todo lo que necesitas saber sobre la Vía Verde de la Sierra a través de soportes interactivos y proyecciones en 4D. </p>
-            <p class="desc">Disfruta de diferentes actividades al aire libre a través de este completo trayecto que podrás realizar a pie, en bici o a caballo. </p>
+            <p class="title">TITULAR 2</p>
+            <p class="desc">Escribe aquí el contenido a desarrollar y agrega una imagen adicional si lo necesitas. </p>
           <!--  <div class="municipios">
               <div class="municipio">
                 <img src="***_preurl_***/storage/app/media/uploaded-files/templates/municipio-icon.svg">
@@ -186,8 +184,8 @@ class Ruta extends ContentBase
             <span class="step">3</span>
           </div>
           <div class="txt-container">
-            <p class="title">MONUMENTO <br> Y RESERVA</p>
-            <p class="desc">Destacamos también la localización geográfica de este recorrido, ya que atraviesa la reserva natural del peñón de Zaframagón,  la mayor reserva de buitres de Andalucía y una de las más pobladas de Europa. Este espacio alberga una vegetación singular y una de las mayores colonias de buitres leonados. Otro destacado es el monumento natural Chaparro de la Vega, con su protagonista encina de más de 200 años que hace tan característico a este serrano paisaje andaluz. </p>
+            <p class="title">TITULAR 3</p>
+            <p class="desc">Escribe aquí el contenido a desarrollar y agrega una imagen adicional si lo necesitas.</p>
           </div>
         </div>
         <div class="section-img">
@@ -198,8 +196,8 @@ class Ruta extends ContentBase
             <span class="step">4</span>
           </div>
           <div class="txt-container">
-            <p class="title">PUEBLOS CON <br> HISTORIA</p>
-            <p class="desc">El recorrido permite además conocer diferentes municipios de las provincias de Cádiz y Sevilla,  como Montellano, El Coronil, Olvera, Coripe o Pruna. Pueblos inmersos en un contexto histórico de la época hispano-musulmana que ha dejado una gran huella en su patrimonio cultural. Castillos, iglesias o yacimientos arqueológicos para visitar y deleitar.</p>
+            <p class="title">TITULAR 4</p>
+            <p class="desc">Escribe aquí el contenido a desarrollar y agrega una imagen adicional si lo necesitas.</p>
           </div>
         </div>
         <div class="section-img">
@@ -221,12 +219,12 @@ class Ruta extends ContentBase
     //
 
     public function getCategories(){
-      return [           
+      return [
            'cultura' => 'Cultura',
            'deporte' => 'Deporte',
            'gastronomía' => 'Gastronomía',
-           'naturaleza' => 'Naturaleza',         
-           'ocio' => 'Ocio',         
+           'naturaleza' => 'Naturaleza',
+           'ocio' => 'Ocio',
       ];
     }
 
