@@ -220,7 +220,8 @@
 <center>
     <div class="all-element">
         <div class="whole-container" style=" margin: auto;">
-        {!! $data['experiencemarkup'] !!}
+       
+        {{ html_entity_decode($data['experiencemarkup']) }}
         </div>
     </div>
 
