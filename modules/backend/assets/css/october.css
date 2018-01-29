@@ -5091,53 +5091,12 @@ nav#layout-mainmenu ul li .mainmenu-accountmenu li:first-child a:hover:after, na
 #layout-side-panel div.control-toolbar .btn, .compact-toolbar div.control-toolbar .btn {
   padding-bottom: 12px !important; }
 
-.oc-icon-upload:before, .icon-upload:before {
-  content: url("../images/upload-icon.svg");
-  opacity: 1 !important;
-  margin-top: 0px; }
-
-.oc-icon-folder:before, .icon-folder:before {
-  content: url("../images/new-folder.svg");
-  opacity: 1 !important;
-  margin-top: 1px; }
-
-.oc-icon-refresh:before, .icon-refresh:before {
-  content: url("../images/reload-icon.svg");
-  opacity: 1 !important; }
-
-.oc-icon-mail-reply-all:before, .icon-mail-reply-all:before, .oc-icon-reply-all:before, .icon-reply-all:before {
-  content: url("../images/move-icon.svg");
-  opacity: 1 !important;
-  margin-top: 2px; }
-
-.oc-icon-trash:before, .icon-trash:before {
-  content: url("../images/trash-icon.svg");
-  opacity: 1 !important; }
-
-.oc-icon-trash-o:before, .icon-trash-o:before {
-  content: url("../images/trash-icon.svg");
-  opacity: 1 !important; }
-
-.oc-icon-align-justify:before, .icon-align-justify:before {
-  content: url("../images/list1.svg");
-  opacity: 1 !important;
-  margin-top: 1px; }
-
 .oc-icon-check:before, .icon-check:before {
   content: url("../images/save-icon.svg");
   opacity: 1 !important; }
 
 .oc-icon-crosshairs:before, .icon-crosshairs:before {
   content: url("../images/prev-icon.svg");
-  opacity: 1 !important; }
-
-.oc-icon-th:before, .icon-th:before {
-  content: url("../images/list2.svg");
-  opacity: 1 !important;
-  margin-top: -1px; }
-
-.oc-icon-th-large:before, .icon-th-large:before {
-  content: url("../images/list3.svg");
   opacity: 1 !important; }
 
 .oc-icon-sign-out:before, .icon-sign-out:before {

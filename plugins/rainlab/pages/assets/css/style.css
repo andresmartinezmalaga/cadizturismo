@@ -793,7 +793,8 @@ html, body {
   width: 75% !important; }
 
 .field-richeditor .header-village .txt, .field-richeditor .header-comarca .txt, .field-richeditor .header-playa .txt {
-  font-size: 200px !important; }
+  font-size: 200px !important;
+  line-height: 168px !important; }
 
 .field-richeditor .header-event .header-container {
   z-index: 100; }

@@ -454,6 +454,7 @@ html, body {
 
 .header-village .txt, .header-comarca .txt, .header-playa .txt {
     font-size: 200px;
+    line-height: 168px;
     transform: rotate(-9deg);
     text-align: center;
 }
@@ -822,6 +823,7 @@ html, body {
 
 .field-richeditor .header-village .txt, .field-richeditor .header-comarca .txt, .field-richeditor .header-playa .txt, {
   font-size: 200px !important;
+  line-height: 168px !important;
 }
 
 .field-richeditor .header-event .header-container {

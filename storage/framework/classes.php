@@ -49,4 +49,10 @@
   'RainLab\\GoogleAnalytics\\ReportWidgets\\TrafficOverview' => 'plugins/rainlab/googleanalytics/reportwidgets/TrafficOverview.php',
   'RainLab\\GoogleAnalytics\\ReportWidgets\\TrafficGoal' => 'plugins/rainlab/googleanalytics/reportwidgets/TrafficGoal.php',
   'RainLab\\GoogleAnalytics\\ReportWidgets\\TopPages' => 'plugins/rainlab/googleanalytics/reportwidgets/TopPages.php',
+  'cms\\Controllers\\index' => 'modules/cms/controllers/index.php',
+  'RainLab\\GoogleAnalytics\\Components\\Tracker' => 'plugins/rainlab/googleanalytics/components/Tracker.php',
+  'RainLab\\Pages\\Components\\StaticBreadcrumbs' => 'plugins/rainlab/pages/components/StaticBreadcrumbs.php',
+  'RainLab\\Translate\\Components\\LocalePicker' => 'plugins/rainlab/translate/components/LocalePicker.php',
+  'RainLab\\Translate\\Components\\AlternateHrefLangElements' => 'plugins/rainlab/translate/components/AlternateHrefLangElements.php',
+  'backend\\Controllers\\auth' => 'modules/backend/controllers/auth.php',
 );
