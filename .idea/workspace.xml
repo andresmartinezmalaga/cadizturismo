@@ -2,30 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87ff11be-c4c2-4ca5-8374-8a1952dec0dc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/cms/cache/13/c4/menu.htm.php" afterPath="$PROJECT_DIR$/storage/cms/cache/13/c4/menu.htm.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/cms/cache/58/a2/default.htm.php" afterPath="$PROJECT_DIR$/storage/cms/cache/58/a2/default.htm.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/cms/cache/8e/a4/menu.htm.php" afterPath="$PROJECT_DIR$/storage/cms/cache/8e/a4/menu.htm.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/cms/twig/85/85fc4bae626e2649a962b95a787fab7e86cd9043113e5f00f4fc7d34c19733db.php" afterPath="$PROJECT_DIR$/storage/cms/twig/85/85fc4bae626e2649a962b95a787fab7e86cd9043113e5f00f4fc7d34c19733db.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/00/64/0064abc8d1b7a4647605149c946f09f9e8baf276" afterPath="$PROJECT_DIR$/storage/framework/cache/00/64/0064abc8d1b7a4647605149c946f09f9e8baf276" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/0e/66/0e662f04ddb5b70071e23bd6fa2775cc91f976e3" afterPath="$PROJECT_DIR$/storage/framework/cache/0e/66/0e662f04ddb5b70071e23bd6fa2775cc91f976e3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/15/72/157289018752e34daefce542a6c2af1ca8350ff5" afterPath="$PROJECT_DIR$/storage/framework/cache/15/72/157289018752e34daefce542a6c2af1ca8350ff5" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/19/db/19db56000bd7ac3a4b8d3955d010a774739cfc88" afterPath="$PROJECT_DIR$/storage/framework/cache/19/db/19db56000bd7ac3a4b8d3955d010a774739cfc88" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/5b/54/5b54a1a5b8e828d4a9e90bf61846a0da0bf0050a" afterPath="$PROJECT_DIR$/storage/framework/cache/5b/54/5b54a1a5b8e828d4a9e90bf61846a0da0bf0050a" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/6f/74/6f740a4dbaaa86c019346e325872febebdfb20e8" afterPath="$PROJECT_DIR$/storage/framework/cache/6f/74/6f740a4dbaaa86c019346e325872febebdfb20e8" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/7f/11/7f113731de3dff6c8147b4247a91e7c4f8cf0de4" afterPath="$PROJECT_DIR$/storage/framework/cache/7f/11/7f113731de3dff6c8147b4247a91e7c4f8cf0de4" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/83/c3/83c33e64043c6a1293dfb54d2973b6324f609d2d" afterPath="$PROJECT_DIR$/storage/framework/cache/83/c3/83c33e64043c6a1293dfb54d2973b6324f609d2d" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/95/d1/95d1fc0a5a1bc11dbdf33a1aa0423519d9ae8f03" afterPath="$PROJECT_DIR$/storage/framework/cache/95/d1/95d1fc0a5a1bc11dbdf33a1aa0423519d9ae8f03" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/99/77/997743d04d7e079e552d301ce846f21505e95e00" afterPath="$PROJECT_DIR$/storage/framework/cache/99/77/997743d04d7e079e552d301ce846f21505e95e00" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/9e/8f/9e8fe26cba0258c71c4d5f1333b6cfa05599796e" afterPath="$PROJECT_DIR$/storage/framework/cache/9e/8f/9e8fe26cba0258c71c4d5f1333b6cfa05599796e" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/b1/b6/b1b6b61b6cd58fcbec08f9d00687d524901e8a6d" afterPath="$PROJECT_DIR$/storage/framework/cache/b1/b6/b1b6b61b6cd58fcbec08f9d00687d524901e8a6d" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/c3/29/c329d12ce45fec52220977e5cb8951bf52566f34" afterPath="$PROJECT_DIR$/storage/framework/cache/c3/29/c329d12ce45fec52220977e5cb8951bf52566f34" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/d0/1e/d01e8e95ac402ba16ad83ad09f6851991c3b6212" afterPath="$PROJECT_DIR$/storage/framework/cache/d0/1e/d01e8e95ac402ba16ad83ad09f6851991c3b6212" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/d6/a8/d6a8dc1cfaee0c092c67e3b97bf7c53047f5e377" afterPath="$PROJECT_DIR$/storage/framework/cache/d6/a8/d6a8dc1cfaee0c092c67e3b97bf7c53047f5e377" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/f3/81/f381012f607d0be63b5c531e52960ddd18de75cd" afterPath="$PROJECT_DIR$/storage/framework/cache/f3/81/f381012f607d0be63b5c531e52960ddd18de75cd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/sessions/tj4ht9DQ3lvtMD1EEbkbflBPxTumuL1cDuVpKOTK" afterPath="$PROJECT_DIR$/storage/framework/sessions/tj4ht9DQ3lvtMD1EEbkbflBPxTumuL1cDuVpKOTK" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/default/layouts/default.htm" afterPath="$PROJECT_DIR$/themes/default/layouts/default.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/default/layouts/dinamic.htm" afterPath="$PROJECT_DIR$/themes/default/layouts/dinamic.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/default/layouts/evento.htm" afterPath="$PROJECT_DIR$/themes/default/layouts/evento.htm" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/default/layouts/experience.htm" afterPath="$PROJECT_DIR$/themes/default/layouts/experience.htm" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/default/layouts/municipio.htm" afterPath="$PROJECT_DIR$/themes/default/layouts/municipio.htm" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/default/layouts/playa.htm" afterPath="$PROJECT_DIR$/themes/default/layouts/playa.htm" />
@@ -59,8 +37,8 @@
       <file leaf-file-name="experience.htm" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/default/layouts/experience.htm">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+            <state relative-caret-position="550">
+              <caret line="72" column="110" lean-forward="false" selection-start-line="72" selection-start-column="28" selection-end-line="72" selection-end-column="110" />
               <folding />
             </state>
           </provider>
@@ -99,10 +77,11 @@
       <file leaf-file-name="default.htm" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/themes/default/layouts/default.htm">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="33" column="15" lean-forward="false" selection-start-line="33" selection-start-column="15" selection-end-line="33" selection-end-column="21" />
+            <state relative-caret-position="550">
+              <caret line="73" column="130" lean-forward="false" selection-start-line="73" selection-start-column="130" selection-end-line="73" selection-end-column="130" />
               <folding>
-                <element signature="e#2757#2763#0" expanded="true" />
+                <element signature="e#2624#2630#0" expanded="true" />
+                <element signature="e#2774#2780#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -134,9 +113,11 @@
     <findStrings>
       <find>date</find>
       <find>}}&quot;&gt;Twitter&amp;nb</find>
+      <find>share/whatsapp/share&quot; href=&quot;href={{url('/')}}/{{lang}}{{urlPage}}&quot;</find>
     </findStrings>
     <replaceStrings>
       <replace>}}&quot; target=&quot;_blank&quot; &gt;Twitter&amp;nb</replace>
+      <replace>share/whatsapp/share&quot; href=&quot;whatsapp://send?text={{url('/')}}/{{lang}}{{urlPage}}&quot;</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/themes/default</dir>
@@ -347,12 +328,12 @@
       <option name="presentableId" value="Default" />
       <updated>1516786709693</updated>
       <workItem from="1516786712254" duration="14987000" />
-      <workItem from="1517217750113" duration="6487000" />
+      <workItem from="1517217750113" duration="6717000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21474000" />
+    <option name="totallyTimeSpent" value="21704000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="899" y="22" width="2268" height="1054" extended-state="0" />
@@ -655,14 +636,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/default/layouts/experience.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/default/layouts/municipio.htm">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
@@ -687,12 +660,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/themes/default/layouts/experience.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="72" column="110" lean-forward="false" selection-start-line="72" selection-start-column="28" selection-end-line="72" selection-end-column="110" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/themes/default/layouts/default.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="33" column="15" lean-forward="false" selection-start-line="33" selection-start-column="15" selection-end-line="33" selection-end-column="21" />
+        <state relative-caret-position="550">
+          <caret line="73" column="130" lean-forward="false" selection-start-line="73" selection-start-column="130" selection-end-line="73" selection-end-column="130" />
           <folding>
-            <element signature="e#2757#2763#0" expanded="true" />
+            <element signature="e#2624#2630#0" expanded="true" />
+            <element signature="e#2774#2780#0" expanded="true" />
           </folding>
         </state>
       </provider>
