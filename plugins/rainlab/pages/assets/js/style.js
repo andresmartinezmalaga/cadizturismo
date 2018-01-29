@@ -15,7 +15,7 @@ jQuery(function($)
     });
 
     $('.i-container').children('.also-feature').each(function () {
-      if ($(this).children('.also-desc').indexOf('br') != -1) {
+      if ($(this).children('.also-desc').children('br')) {
         $(this).hide();
         console.log('oculto');
       } else {
