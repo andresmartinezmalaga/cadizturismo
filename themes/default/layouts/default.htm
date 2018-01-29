@@ -30,10 +30,9 @@ code = "que-hacer"
         }
                 $this['urlPage'] = $this->page->url;
 
-    if($this->page->apiBag)
-        $this['metaImg'] = $this->page->apiBag["staticPage"]->attributes["viewBag"]["cover"];
-
-}
+        if($this->page->apiBag)
+            $this['metaImg'] = $this->page->apiBag["staticPage"]->attributes["viewBag"]["cover"];
+        }
 
 ?>
 

@@ -28,8 +28,12 @@ code = "que-hacer"
         if($this['lang']==''){
             $this['lang']='es';
         }
-                $this['urlPage'] = $this->page->url;
-$this['metaImg'] = $this->page->apiBag["staticPage"]->attributes["viewBag"]["cover"];
+        
+        $this['urlPage'] = $this->page->url;
+        
+        if($this->page->apiBag){
+            $this['metaImg'] = $this->page->apiBag["staticPage"]->attributes["viewBag"]["cover"];
+        }
 
 
 }
