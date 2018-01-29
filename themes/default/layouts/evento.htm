@@ -32,7 +32,7 @@ code = "que-hacer"
         $this['beaches'] = $this->staticApp->beachList();
 
         $this['urlPage'] = $this->page->url;
-        dump($this->page->apiBag["staticPage"]->attributes["content"]);
+        dump($this->page->apiBag["staticPage"]->attributes["viewBag"]["cover"]);
         dump($this);
 }
 
