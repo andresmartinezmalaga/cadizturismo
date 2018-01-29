@@ -29,7 +29,7 @@ return [
     |
     */
 
-    'host' => 'noresponse-cadiz@jekyllme.com',
+    'host' => 'mail.jekyllme.com',
 
     /*
     |--------------------------------------------------------------------------

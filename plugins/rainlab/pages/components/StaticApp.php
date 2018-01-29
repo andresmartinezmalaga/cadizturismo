@@ -385,6 +385,19 @@ class StaticApp extends ComponentBase
         return $result;
     }
 
+    public function experienceFindByUrl($url)
+    {
+        $theme = Theme::getActiveTheme();
+        $pagesList = Page::listInTheme($theme, false);
+        $pages =  new \Illuminate\Support\Collection($pagesList);
+
+        $event = $pages->where("is_hidden",0)->where("url",$url)->values();
+      
+        //$event[0]->date_start_pretty_num = (new DateTime($event[0]->date_start))->format('d.m.y');
+        //$event[0]->date_end_pretty_num = (new DateTime($event[0]->date_end))->format('d.m.y');
+       
+        return $event;
+    }
 
     public function sendMailExperience($mail, $url) {
 
@@ -392,16 +405,16 @@ class StaticApp extends ComponentBase
         $sendContact ='noreply@cadizturismo.es';
         $sendTo =  $mail;
 
-        $data = array('experience' => 'experience');
+        $data = array('experience' => $this->experienceFindByUrl($url));
 
-        $pdf = PDFS::loadView('pdf.experience', $data);
+        $pdf = PDFS::loadView('pdf.experience', $data)->setOption('page-size', 'A4')->setOption('dpi',300);
         $pdf_data = $pdf->output();
        
         $experience = 'experiencia';
 
         $dataemail = array('experience' => 'experience');
 
-        Mail::send('mails.experience', $dataemail, function($message) use ($contactName, $sendContact, $sendTo)
+        Mail::send('mails.experience', $dataemail, function($message) use ($pdf_data, $contactName, $sendContact, $sendTo)
         {   
 
             $message->from($sendContact, $contactName);
