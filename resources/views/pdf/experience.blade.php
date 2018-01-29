@@ -237,7 +237,7 @@
                                 <td class="logo-container" align="center" valign="top" style="background-image: url('http://cadizturismo.jekyllme.com/storage/app/media/uploaded-files/templates/magia-palmar.jpg')">
                                     <div class="logo" style="display: table-cell; vertical-align: middle;">
                                       <!-- TÍTULO DE LA EXPERIENCIA -->
-                                      <h1>La magia de El Palmar</h1>
+                                      <h1>{{$data['experience'][0]['viewBag']['cover']}}</h1>
                                       <img src="http://cadizturismo.jekyllme.com/storage/app/media/uploaded-files/templates/brush.png" alt="" style="width: auto; height: auto;">
                                     </div>
                                 </td>
@@ -248,14 +248,29 @@
                 </tr>
             </table>
 
-
             <table class="panel-icons" role="panel" width="640" height="180px" cellspacing="0" cellpadding="0" border="0" align="center" style="width:100%;">
                 <tr>
                     <td align="center" valign="top" style="height: 100%;">
                         <!-- ICONOS EXPERIENCIA -->
                         <table role="panel" cellspacing="0" cellpadding="0" border="0" align="left" style="width:58%; height: 100%; margin: 0 auto; float: none;">
                             <tr class="icons-row" style="height: 100%;">
-                               
+                                <td width="200" align="center" valign="top">
+                                  <img src="http://cadizturismo.jekyllme.com/storage/app/media/uploaded-files/templates/calendar.png">
+                                  <p class="tag">{{$data['experience'][0]['viewBag']['days']}} días</p>
+                                </td>
+                                
+                                <td width="200" align="center" valign="top">
+                                  <img src="http://cadizturismo.jekyllme.com/storage/app/media/uploaded-files/templates/{{str_slug(interest1)}}.png" alt="">
+                                  <p class="tag">{{$data['interest1']}}</p>
+                                </td>
+                                <td width="200" align="center" valign="top">
+                                  <img src="http://cadizturismo.jekyllme.com/storage/app/media/uploaded-files/templates/{{str_slug(interest2)}}.png" alt="">
+                                  <p class="tag">{{$data['interest2']}}</p>
+                                </td>
+                                <td width="200" align="center" valign="top">
+                                  <img src="http://cadizturismo.jekyllme.com/storage/app/media/uploaded-files/templates/{{str_slug($data['experience'][0]['viewBag']['tvisit'])}}.png" alt="">
+                                  <p class="tag">{{$data['experience'][0]['viewBag']['tvisit']}}</p> interest
+                                </td>
                             </tr>
                         </table>
 
