@@ -1,3 +1,19 @@
+==
+
+<?php
+
+  function onStart()
+  {
+     if (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false) {
+          $this['preurl'] = '/cadizturismo';
+     } else {
+        $this['preurl'] = '';
+     }
+  }
+
+?>
+
+==
 
 {% if events|length > 0 %}
     
@@ -14,19 +30,19 @@
             <div class="txt-container">
               <p class="date">{{event.date_start_pretty_day}} {{event.date_start_pretty_month|_}}</p>
               <p class="name">{{event.viewBag.title}}</p>
-              <img class="separator" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/small-yellow-separator.svg">
+              <img class="separator" src="{{preurl}}/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
               <div class="icons">
                 <div class="icon-pair">
-                  <img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/natu-events.svg">
+                  <img src="{{preurl}}/storage/app/media/uploaded-files/templates/natu-events.svg">
                   <p class="icon-txt">Naturaleza</p>
                 </div>
                 <div class="icon-pair">
-                  <img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/loc-events.svg">
+                  <img src="{{preurl}}/storage/app/media/uploaded-files/templates/loc-events.svg">
                   <p class="icon-txt">{{event.viewBag.location}}</p>
                 </div>
               </div>
               <div class="button-container">
-                <a class="see-event" href="{{url('/')}}/{{lang}}{{event.viewBag.url}}">{{'Ver evento'|_}}_ <img ssrc="{{url('/')}}/plugins/rainlab/pages/assets/svg/link-icon.svg"></a>
+                <a class="see-event" href="{{url('/')}}/{{lang}}{{event.viewBag.url}}">{{'Ver evento'|_}}_ <img ssrc="{{preurl}}/storage/app/media/uploaded-files/templates/link-icon.svg"></a>
               </div>
             </div>
           </div>

@@ -1,3 +1,20 @@
+==
+
+<?php
+
+  function onStart()
+  {
+     if (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false) {
+          $this['preurl'] = '/cadizturismo';
+     } else {
+        $this['preurl'] = '';
+     }
+  }
+
+?>
+
+==
+
 <div class="search-title-container">
     <p class="title-search"> {{ 'Hemos encontrado'|_ }} {{experiences|length}} {{ 'experiencias que se adaptan ti'|_ }}</p>
 </div>
@@ -12,10 +29,10 @@
 	      <img class="rec-img" src="{{experience.viewBag.cover}}">
 	      <div class="txt-container">
 	        <p class="name">{{experience.viewBag.title}}</p>
-	        <img class="separator" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/small-yellow-separator.svg">
+	        <img class="separator" src="{{preurl}}/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
 	        <div class="icons">
 	          <div class="icon-pair">
-	            <img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/calendar-exp.svg">
+	            <img src="{{preurl}}/storage/app/media/uploaded-files/templates/calendar-exp.svg">
 	            	
 	            	{% if experience.viewBag.days < 2 %}
 	              		{% set d = "día" %}
@@ -27,20 +44,20 @@
 	            <p class="icon-txt">{{experience.viewBag.days}} {{ d|_ }}</p>
 	          </div>          
 	          <div class="icon-pair">
-	            <img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/{{str_slug(interest[0])}}.svg">
+	            <img src="{{preurl}}/storage/app/media/uploaded-files/templates/{{str_slug(interest[0])}}.svg">
 	            	<p class="icon-txt">{{interest[0]|_}}</p>
 	          </div>
 	          <div class="icon-pair">
-	            <img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/{{str_slug(interest[1])}}.svg">
+	            <img src="{{preurl}}/storage/app/media/uploaded-files/templates/{{str_slug(interest[1])}}.svg">
 	            <p class="icon-txt">{{interest[1]|_}}</p>
 	          </div>
 	          <div class="icon-pair">
-	            <img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/cultura-event.svg">
+	            <img src="{{preurl}}/storage/app/media/uploaded-files/templates/{{str_slug(experience.viewBag.tvisit)}}.svg">
 	            <p class="icon-txt">{{experience.viewBag.tvisit|_}}</p>
 	          </div>
 	        </div>
 	        <div class="button-container">
-	          <a class="see-event" href="{{url('/')}}/{{lang}}{{experience.viewBag.url}}"> {{'Ver experiencia'|_}} <img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/link-icon.svg"></a>
+	          <a class="see-event" href="{{url('/')}}/{{lang}}{{experience.viewBag.url}}"> {{'Ver experiencia'|_}} <img src="{{preurl}}/storage/app/media/uploaded-files/templates/link-icon.svg"></a>
 	        </div>
 	      </div>
 	    </div>
