@@ -5508,3 +5508,7 @@ table.name-value-list > a:hover, table.name-value-list > a:focus, table.name-val
 
 .tooltip.bottom .tooltip-arrow {
   border-bottom-color: #0C5095; }
+
+div[data-control="media-manager"] .media-list.tiles li.selected .icon-container {
+  background: #175DA3 !important;
+  border-color: #175DA3 !important; }

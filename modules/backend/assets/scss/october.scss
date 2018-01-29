@@ -2165,3 +2165,8 @@ table.name-value-list > a {
 .tooltip.bottom .tooltip-arrow {
   border-bottom-color: #0C5095;
 }
+
+div[data-control="media-manager"] .media-list.tiles li.selected .icon-container {
+  background: $blue !important;
+  border-color: $blue !important;
+}
