@@ -1,5 +1,5 @@
-title = "allEvents"
-url = "/listado-de-eventos"
+title = "allRutas"
+url = "/listado-de-rutas"
 layout = "dinamic"
 is_hidden = 0
 
@@ -10,7 +10,8 @@ is_hidden = 0
 	
 	function onStart()
 	{	    
-    
+  
+
     if (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false) {
           $this['preurl'] = '/cadizturismo';
     } else {
@@ -27,8 +28,10 @@ is_hidden = 0
     }
 
     if(Session::has('reciveData')){
-      $this['events'] = json_decode(Session::get('reciveData'));     
+      $this['rutas'] = json_decode(Session::get('reciveData'));     
     }
+
+
 
 	}
 
@@ -41,7 +44,7 @@ is_hidden = 0
     $this['rutas'] = $this->staticApp->rutaFind($category,$days,$location);
     
     return [
-        '#prtlRutasl' => $this->renderPartial('events')
+        '#prtlRutasl' => $this->renderPartial('rutas')
     ];
  
   }
@@ -55,7 +58,7 @@ is_hidden = 0
   <div class="header-container">
       
       <div class="header-txt">
-        <h1 class="txt txt-home"><span class="first-word">{{ 'Eventos'|_ }}</span> {{ 'pensados para ti'|_ }}</h1>
+        <h1 class="txt txt-home"><span class="first-word">{{ 'Rutas'|_ }}</span> {{ 'con encanto'|_ }}</h1>
         <img class="brush" src="{{preurl}}/storage/app/media/uploaded-files/templates/brush-header.svg" alt="">
       </div>
    
@@ -67,6 +70,6 @@ is_hidden = 0
   </div>
 </div>
 
-<div id='prtlEventsl' class="all-exps">
+<div id='prtlRutasl' class="all-exps">
 	{% partial "rutas" %}
 </div>

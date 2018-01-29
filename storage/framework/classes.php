@@ -33,4 +33,13 @@
   'RainLab\\Pages\\Classes\\Menu' => 'plugins/rainlab/pages/classes/Menu.php',
   'RainLab\\Pages\\Classes\\MenuItem' => 'plugins/rainlab/pages/classes/MenuItem.php',
   'RainLab\\Pages\\Classes\\MenuItemReference' => 'plugins/rainlab/pages/classes/MenuItemReference.php',
+  'RainLab\\Pages\\Classes\\ExperienceList' => 'plugins/rainlab/pages/classes/ExperienceList.php',
+  'RainLab\\Pages\\Classes\\Experience' => 'plugins/rainlab/pages/classes/Experience.php',
+  'RainLab\\Pages\\Classes\\EventoList' => 'plugins/rainlab/pages/classes/EventoList.php',
+  'RainLab\\Pages\\Classes\\Evento' => 'plugins/rainlab/pages/classes/Evento.php',
+  'RainLab\\Pages\\Classes\\RutaList' => 'plugins/rainlab/pages/classes/RutaList.php',
+  'RainLab\\Pages\\Classes\\Ruta' => 'plugins/rainlab/pages/classes/Ruta.php',
+  'RainLab\\Pages\\Classes\\Content' => 'plugins/rainlab/pages/classes/Content.php',
+  'RainLab\\Pages\\Classes\\SnippetManager' => 'plugins/rainlab/pages/classes/SnippetManager.php',
+  'RainLab\\Pages\\Classes\\Snippet' => 'plugins/rainlab/pages/classes/Snippet.php',
 );
