@@ -207,24 +207,7 @@
                     <td align="center" valign="top" style="height: 100%;">
                         <!-- ICONOS EXPERIENCIA -->
                         <table role="panel" cellspacing="0" cellpadding="0" border="0" align="left" style="width:58%; height: 100%; margin: 0 auto; float: none;">
-                            <tr class="icons-row" style="height: 100%;">
-                                <td width="200" align="center" valign="top">
-                                  <img src="http://cadizturismo.jekyllme.com/storage/app/media/uploaded-files/templates/calendar.svg">
-                                  <p class="tag">5 días</p>
-                                </td>
-                                <td width="200" align="center" valign="top">
-                                  <img src="http://cadizturismo.jekyllme.com/storage/app/media/uploaded-files/templates/playa.svg" alt="">
-                                  <p class="tag">Playa</p>
-                                </td>
-                                <td width="200" align="center" valign="top">
-                                  <img src="http://cadizturismo.jekyllme.com/storage/app/media/uploaded-files/templates/naturaleza.svg" alt="">
-                                  <p class="tag">Naturaleza</p>
-                                </td>
-                                <td width="200" align="center" valign="top">
-                                  <img src="http://cadizturismo.jekyllme.com/storage/app/media/uploaded-files/templates/autentica.svg" alt="">
-                                  <p class="tag">Cádiz auténtica</p>
-                                </td>
-                            </tr>
+                            
                         </table>
 
                     </td>
