@@ -1390,8 +1390,15 @@ nav#layout-mainmenu ul li .mainmenu-accountmenu li:first-child a:hover:after, na
 }
 
 .control-treeview ol > li > div span.comment {
-  margin-left: 15px !important;
-  margin-top: 0px !important;
+  // margin-left: 15px !important;
+  // margin-top: 0px !important;
+  margin-bottom: 0px;
+  color: #CECECE;
+  font-size: 11px;
+}
+
+.control-treeview ol > li > div p {
+  margin-bottom: 0px;
 }
 
 .control-treeview a.menu-control:hover, .control-treeview a.menu-control:focus,

@@ -63,6 +63,16 @@ class StaticApp extends ComponentBase
       ];
     }
 
+    public function getRutasCategories(){
+      return [           
+           'cultura' => 'Cultura',
+           'deporte' => 'Deporte',
+           'gastronomía' => 'Gastronomía',
+           'naturaleza' => 'Naturaleza',         
+           'ocio' => 'Ocio',         
+      ];
+    }
+
     public function getMunicipalities(){
         return [
         'alcalá de los gazules' => 'Alcalá de los Gazules',
@@ -360,6 +370,19 @@ class StaticApp extends ComponentBase
        
         return $result;
     }
+
+    public function rutaFind($category, $days, $location)
+    {
+        $theme = Theme::getActiveTheme();
+        $pages = Page::listInTheme($theme, false);
+        $rutas =  new \Illuminate\Support\Collection($pages);
+        
+       
+        $result = $rutas->where("is_hidden",0)->where('template','rutas')->where('category',$category)->where('days',$days)->where('location',$location)->values();
+       
+        return $result;
+    }
+
 
    
 }

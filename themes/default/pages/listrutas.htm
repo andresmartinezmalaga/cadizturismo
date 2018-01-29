@@ -1,0 +1,72 @@
+title = "allEvents"
+url = "/listado-de-eventos"
+layout = "dinamic"
+is_hidden = 0
+
+[staticApp]
+
+==
+<?php  
+	
+	function onStart()
+	{	    
+    
+    if (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false) {
+          $this['preurl'] = '/cadizturismo';
+    } else {
+        $this['preurl'] = '';
+    }
+
+    $this['lang']=\App::getLocale();
+		if($this['lang']==''){
+			$this['lang']='es';
+		}
+    
+    if(Session::has('data')){
+      Session::put('reciveData',Session::get('data'));     
+    }
+
+    if(Session::has('reciveData')){
+      $this['events'] = json_decode(Session::get('reciveData'));     
+    }
+
+	}
+
+  function onFindRuta(){
+
+    $category = $_POST['category'];
+    $days = $_POST['days'];
+    $location = $_POST['location'];
+   
+    $this['rutas'] = $this->staticApp->rutaFind($category,$days,$location);
+    
+    return [
+        '#prtlRutasl' => $this->renderPartial('events')
+    ];
+ 
+  }
+
+?>
+==
+
+<!-- HEADER -->
+<div class="header header-events">
+  
+  <div class="header-container">
+      
+      <div class="header-txt">
+        <h1 class="txt txt-home"><span class="first-word">{{ 'Eventos'|_ }}</span> {{ 'pensados para ti'|_ }}</h1>
+        <img class="brush" src="{{preurl}}/storage/app/media/uploaded-files/templates/brush-header.svg" alt="">
+      </div>
+   
+    <!-- SEARCH -->
+    <div id='prtlSearch'>
+      {% partial "site/searchruta" %}
+    </div>
+
+  </div>
+</div>
+
+<div id='prtlEventsl' class="all-exps">
+	{% partial "rutas" %}
+</div>

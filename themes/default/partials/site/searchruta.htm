@@ -1,0 +1,62 @@
+==
+
+<?php 
+
+  function onStart()
+  {
+    
+    $this['lang']=\App::getLocale();
+    if($this['lang']==''){
+      $this['lang']='es';
+    } 
+
+    $this['municipalities'] = $this->staticApp->getMunicipalities();
+    $this['categories'] = $this->staticApp->getRutasCategories();
+  }
+
+?>
+
+==
+
+<div class="search-bar-container">
+  <div class="search-bar">
+    <form data-request="onFindRuta">
+      <div class="inputs-container">
+        
+        <div id="event-category" class="days-container">
+          <select class="custom-select select-days" name="category">
+            {% for key,value in categories %}
+                <option value="{{key}}">{{ value |_ }}</option>
+            {% endfor %}
+          </select>
+          <span class="select-title">{{ 'CATEGORÍA'|_ }}</span>
+        </div>
+
+        <div class="days-container">
+          <select class="custom-select select-days" name="days">
+            {% for i in 1..3 %}
+              {% if i<2 %}
+              	* <option value="{{ i }}">{{ i }} {{'día'|_}}</option>
+              {% else %}
+		            * <option value="{{ i }}">{{ i }} {{ 'días'|_}}</option>
+              {% endif %}
+            {% endfor %}
+          </select>
+          <span class="select-title">{{ 'TU ESTANCIA'|_ }}</span>
+        </div>
+        
+        <div id="event-location" class="type-container">
+          <select class="custom-select select-type" name="location">
+            {% for key,value in municipalities %}
+                <option value="{{key}}">{{value}}</option>
+            {% endfor %}
+          </select>
+          <span class="select-title">{{ 'UBICACIÓN'|_ }}</span>
+        </div>
+      
+      <div class="button-container">
+        <input type="submit" value="{{ 'Ver rutas'|_ }}">
+      </div>
+    </form>
+  </div>
+</div>
