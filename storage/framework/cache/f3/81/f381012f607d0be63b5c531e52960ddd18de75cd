@@ -1,11 +1,16 @@
-1516872750a:1:{s:13:"site/menu.htm";a:6:{s:8:"fileName";s:13:"site/menu.htm";s:7:"content";s:7357:"==
+1517225651a:1:{s:13:"site/menu.htm";a:6:{s:8:"fileName";s:13:"site/menu.htm";s:7:"content";s:7892:"==
 
 <?php
 
-    function onStart()
-    {      
+  function onStart()
+  {
+     if (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false) {
+          $this['preurl'] = '/cadizturismo';
+     } else {
+        $this['preurl'] = '';
+     }
+  }
 
-    }
 ?>
 
 ==
@@ -14,14 +19,14 @@
 <div class="slidemenu">
   <div class="elements">
     <div class="logo-container">
-      <a href="{{url('/')}}/{{lang}}"><img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/cadiz-menu.svg" alt=""></a>
+      <a href="{{url('/')}}/{{lang}}"><img src="{{preurl}}/storage/app/media/uploaded-files/templates/cadiz-menu.svg" alt=""></a>
     </div>
     <div class="menus">
       
       <div class="menu-list">
         <p class="menu-title">{{ 'Dónde ir'|_ }}</p>
-        <img class="separator separator-menu" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
-        <img class="separator-tiny" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg">
+        <img class="separator separator-menu" src="{{preurl}}/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+        <img class="separator-tiny" src="{{preurl}}/storage/app/media/uploaded-files/templates/tiny-separator.svg">
         <ul class="menu-ul donde-ul">
           {% for item in staticMenu.menuItems %}
             {% set tt = '.'~item.title %}
@@ -36,33 +41,36 @@
       
       <div class="menu-list">
         <p class="menu-title">{{ 'Qué Hacer'|_ }}</p>
-        <img class="separator separator-menu" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
-        <img class="separator-tiny" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg">
+        <img class="separator separator-menu" src="{{preurl}}/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+        <img class="separator-tiny" src="{{preurl}}/storage/app/media/uploaded-files/templates/tiny-separator.svg">
         <ul class="menu-ul">
           {% for item in staticMenu4.menuItems %}
             {% set tt = '.'~item.title %}
             <li class="menu-item"><a href="{{ item.url }}">{{ tt|_ }}</a></li>
+            {% if item.title == 'Playas' %}
+            <li class="menu-item"><a href="{{url('/')}}/{{lang}}/todas-las-rutas">{{'Rutas'|_ }}</a></li>
+            {% endif %}
           {% endfor %}
         </ul>
       </div>
       
       <div class="menu-list">
         <p class="menu-title">{{ 'Qué Vivir'|_ }}</p>
-        <img class="separator separator-menu" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
-        <img class="separator-tiny" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg">
+        <img class="separator separator-menu" src="{{preurl}}/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+        <img class="separator-tiny" src="{{preurl}}/storage/app/media/uploaded-files/templates/tiny-separator.svg">
         <ul class="menu-ul">
           {% for item in staticMenu2.menuItems %}
             {% set tt = '.'~item.title %}             
             <li class="menu-item"><a href="{{ item.url }}">{{ tt|_ }}</a></li>
           {% endfor %} 
-            <li class="menu-item"><a href="todos-los-eventos">{{ 'Todos los eventos'|_ }}</a></li>              
+            <li class="menu-item"><a href="{{url('/')}}/{{lang}}/todos-los-eventos">{{ 'Todos los eventos'|_ }}</a></li>              
         </ul>
       </div>
      
       <div class="menu-list">
         <p class="menu-title">{{ 'Mi estancia'|_ }}</p>
-        <img class="separator separator-menu" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
-        <img class="separator-tiny" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg">
+        <img class="separator separator-menu" src="{{preurl}}/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+        <img class="separator-tiny" src="{{preurl}}/storage/app/media/uploaded-files/templates/tiny-separator.svg">
         <ul class="menu-ul">
           {% for item in staticMenu3.menuItems %}
             {% set tt = '.'~item.title %}
@@ -78,13 +86,13 @@
       <div class="middle-bar"></div>
       <div class="bottom-bar"></div>
     </label>
-    <img class="normal" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/top-menu.svg">
-    <img class="mobile" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/top-mobile.svg">
+    <img class="normal" src="{{preurl}}/storage/app/media/uploaded-files/templates/top-menu.svg">
+    <img class="mobile" src="{{preurl}}/storage/app/media/uploaded-files/templates/top-mobile.svg">
   </div>
 </div>
 
 <div class="mini-logo-container">
-  <a href="{{url('/')}}/{{lang}}"><img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/mini-logo.svg"></a>
+  <a href="{{url('/')}}/{{lang}}"><img src="{{preurl}}/storage/app/media/uploaded-files/templates/mini-logo.svg"></a>
 </div>
 <div class="language-container">
   <!-- Añadir la clase 'active-lang' al enlace cuando esté activo el idioma correspondiente - de ejemplo está puesto en ESPAÑOL -->
@@ -104,13 +112,13 @@
     </div>
     <div class="menu">
       <div class="logo-container">
-        <a href="{{url('/')}}/{{lang}}"><img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/cadiz-menu.svg" alt=""></a>
+        <a href="{{url('/')}}/{{lang}}"><img src="{{preurl}}/storage/app/media/uploaded-files/templates/cadiz-menu.svg" alt=""></a>
       </div>
       <div class="menus">
         <div class="menu-list">
           <p class="menu-title">{{ 'Dónde ir'|_ }}</p>
-          <img class="separator separator-menu" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
-          <img class="separator-tiny" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg">
+          <img class="separator separator-menu" src="{{preurl}}/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+          <img class="separator-tiny" src="{{preurl}}/storage/app/media/uploaded-files/templates/tiny-separator.svg">
           <ul class="menu-ul donde-ul where-ul">
             {% for item in staticMenu.menuItems %}   
               {% set tt = '.'~item.title %}           
@@ -120,8 +128,8 @@
         </div>
         <div class="menu-list">
           <p class="menu-title">{{ 'Qué Hacer'|_  }}</p>
-          <img class="separator separator-menu" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
-          <img class="separator-tiny" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg">
+          <img class="separator separator-menu" src="{{preurl}}/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+          <img class="separator-tiny" src="{{preurl}}/storage/app/media/uploaded-files/templates/tiny-separator.svg">
           <ul class="menu-ul do-ul">
             {% for item in staticMenu4.menuItems %}
               {% set tt = '.'~item.title %}              
@@ -131,20 +139,20 @@
         </div>
         <div class="menu-list">
           <p class="menu-title">{{ 'Qué Vivir'|_ }}</p>
-          <img class="separator separator-menu" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
-          <img class="separator-tiny" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg">
+          <img class="separator separator-menu" src="{{preurl}}/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+          <img class="separator-tiny" src="{{preurl}}/storage/app/media/uploaded-files/templates/tiny-separator.svg">
           <ul class="menu-ul live-ul">
             {% for item in staticMenu2.menuItems %}
               {% set tt = '.'~item.title %} 
               <li class="menu-item"><a href="{{ item.url }}">{{tt|_}}</a></li>
             {% endfor %}
-              <li class="menu-item"><a href="todos-los-eventos">{{ 'Todos los eventos'|_ }}</a></li>
+              <li class="menu-item"><a href="{{url('/')}}/{{lang}}/todos-los-eventos">{{ 'Todos los eventos'|_ }}</a></li>
           </ul>
         </div>
         <div class="menu-list">
           <p class="menu-title">{{ 'Mi estancia'|_ }}</p>
-          <img class="separator separator-menu" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
-          <img class="separator-tiny" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg">
+          <img class="separator separator-menu" src="{{preurl}}/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+          <img class="separator-tiny" src="{{preurl}}/storage/app/media/uploaded-files/templates/tiny-separator.svg">
           <ul class="menu-ul stance-ul">
             {% for item in staticMenu3.menuItems %}
               {% set tt = '.'~item.title %} 
@@ -155,18 +163,18 @@
       </div>
     </div>
   </nav>
-";s:5:"mtime";i:1516872131;s:6:"markup";s:7295:"<!-- MENU-->
+";s:5:"mtime";i:1517223344;s:6:"markup";s:7681:"<!-- MENU-->
 <div class="slidemenu">
   <div class="elements">
     <div class="logo-container">
-      <a href="{{url('/')}}/{{lang}}"><img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/cadiz-menu.svg" alt=""></a>
+      <a href="{{url('/')}}/{{lang}}"><img src="{{preurl}}/storage/app/media/uploaded-files/templates/cadiz-menu.svg" alt=""></a>
     </div>
     <div class="menus">
       
       <div class="menu-list">
         <p class="menu-title">{{ 'Dónde ir'|_ }}</p>
-        <img class="separator separator-menu" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
-        <img class="separator-tiny" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg">
+        <img class="separator separator-menu" src="{{preurl}}/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+        <img class="separator-tiny" src="{{preurl}}/storage/app/media/uploaded-files/templates/tiny-separator.svg">
         <ul class="menu-ul donde-ul">
           {% for item in staticMenu.menuItems %}
             {% set tt = '.'~item.title %}
@@ -181,33 +189,36 @@
       
       <div class="menu-list">
         <p class="menu-title">{{ 'Qué Hacer'|_ }}</p>
-        <img class="separator separator-menu" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
-        <img class="separator-tiny" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg">
+        <img class="separator separator-menu" src="{{preurl}}/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+        <img class="separator-tiny" src="{{preurl}}/storage/app/media/uploaded-files/templates/tiny-separator.svg">
         <ul class="menu-ul">
           {% for item in staticMenu4.menuItems %}
             {% set tt = '.'~item.title %}
             <li class="menu-item"><a href="{{ item.url }}">{{ tt|_ }}</a></li>
+            {% if item.title == 'Playas' %}
+            <li class="menu-item"><a href="{{url('/')}}/{{lang}}/todas-las-rutas">{{'Rutas'|_ }}</a></li>
+            {% endif %}
           {% endfor %}
         </ul>
       </div>
       
       <div class="menu-list">
         <p class="menu-title">{{ 'Qué Vivir'|_ }}</p>
-        <img class="separator separator-menu" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
-        <img class="separator-tiny" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg">
+        <img class="separator separator-menu" src="{{preurl}}/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+        <img class="separator-tiny" src="{{preurl}}/storage/app/media/uploaded-files/templates/tiny-separator.svg">
         <ul class="menu-ul">
           {% for item in staticMenu2.menuItems %}
             {% set tt = '.'~item.title %}             
             <li class="menu-item"><a href="{{ item.url }}">{{ tt|_ }}</a></li>
           {% endfor %} 
-            <li class="menu-item"><a href="todos-los-eventos">{{ 'Todos los eventos'|_ }}</a></li>              
+            <li class="menu-item"><a href="{{url('/')}}/{{lang}}/todos-los-eventos">{{ 'Todos los eventos'|_ }}</a></li>              
         </ul>
       </div>
      
       <div class="menu-list">
         <p class="menu-title">{{ 'Mi estancia'|_ }}</p>
-        <img class="separator separator-menu" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
-        <img class="separator-tiny" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg">
+        <img class="separator separator-menu" src="{{preurl}}/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+        <img class="separator-tiny" src="{{preurl}}/storage/app/media/uploaded-files/templates/tiny-separator.svg">
         <ul class="menu-ul">
           {% for item in staticMenu3.menuItems %}
             {% set tt = '.'~item.title %}
@@ -223,13 +234,13 @@
       <div class="middle-bar"></div>
       <div class="bottom-bar"></div>
     </label>
-    <img class="normal" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/top-menu.svg">
-    <img class="mobile" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/top-mobile.svg">
+    <img class="normal" src="{{preurl}}/storage/app/media/uploaded-files/templates/top-menu.svg">
+    <img class="mobile" src="{{preurl}}/storage/app/media/uploaded-files/templates/top-mobile.svg">
   </div>
 </div>
 
 <div class="mini-logo-container">
-  <a href="{{url('/')}}/{{lang}}"><img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/mini-logo.svg"></a>
+  <a href="{{url('/')}}/{{lang}}"><img src="{{preurl}}/storage/app/media/uploaded-files/templates/mini-logo.svg"></a>
 </div>
 <div class="language-container">
   <!-- Añadir la clase 'active-lang' al enlace cuando esté activo el idioma correspondiente - de ejemplo está puesto en ESPAÑOL -->
@@ -249,13 +260,13 @@
     </div>
     <div class="menu">
       <div class="logo-container">
-        <a href="{{url('/')}}/{{lang}}"><img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/cadiz-menu.svg" alt=""></a>
+        <a href="{{url('/')}}/{{lang}}"><img src="{{preurl}}/storage/app/media/uploaded-files/templates/cadiz-menu.svg" alt=""></a>
       </div>
       <div class="menus">
         <div class="menu-list">
           <p class="menu-title">{{ 'Dónde ir'|_ }}</p>
-          <img class="separator separator-menu" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
-          <img class="separator-tiny" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg">
+          <img class="separator separator-menu" src="{{preurl}}/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+          <img class="separator-tiny" src="{{preurl}}/storage/app/media/uploaded-files/templates/tiny-separator.svg">
           <ul class="menu-ul donde-ul where-ul">
             {% for item in staticMenu.menuItems %}   
               {% set tt = '.'~item.title %}           
@@ -265,8 +276,8 @@
         </div>
         <div class="menu-list">
           <p class="menu-title">{{ 'Qué Hacer'|_  }}</p>
-          <img class="separator separator-menu" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
-          <img class="separator-tiny" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg">
+          <img class="separator separator-menu" src="{{preurl}}/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+          <img class="separator-tiny" src="{{preurl}}/storage/app/media/uploaded-files/templates/tiny-separator.svg">
           <ul class="menu-ul do-ul">
             {% for item in staticMenu4.menuItems %}
               {% set tt = '.'~item.title %}              
@@ -276,20 +287,20 @@
         </div>
         <div class="menu-list">
           <p class="menu-title">{{ 'Qué Vivir'|_ }}</p>
-          <img class="separator separator-menu" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
-          <img class="separator-tiny" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg">
+          <img class="separator separator-menu" src="{{preurl}}/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+          <img class="separator-tiny" src="{{preurl}}/storage/app/media/uploaded-files/templates/tiny-separator.svg">
           <ul class="menu-ul live-ul">
             {% for item in staticMenu2.menuItems %}
               {% set tt = '.'~item.title %} 
               <li class="menu-item"><a href="{{ item.url }}">{{tt|_}}</a></li>
             {% endfor %}
-              <li class="menu-item"><a href="todos-los-eventos">{{ 'Todos los eventos'|_ }}</a></li>
+              <li class="menu-item"><a href="{{url('/')}}/{{lang}}/todos-los-eventos">{{ 'Todos los eventos'|_ }}</a></li>
           </ul>
         </div>
         <div class="menu-list">
           <p class="menu-title">{{ 'Mi estancia'|_ }}</p>
-          <img class="separator separator-menu" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
-          <img class="separator-tiny" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-separator.svg">
+          <img class="separator separator-menu" src="{{preurl}}/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+          <img class="separator-tiny" src="{{preurl}}/storage/app/media/uploaded-files/templates/tiny-separator.svg">
           <ul class="menu-ul stance-ul">
             {% for item in staticMenu3.menuItems %}
               {% set tt = '.'~item.title %} 
@@ -299,7 +310,11 @@
         </div>
       </div>
     </div>
-  </nav>";s:4:"code";s:41:"    function onStart()
-    {      
-
-    }";s:17:"_PARSER_ERROR_INI";s:0:"";}}
+  </nav>";s:4:"code";s:189:"  function onStart()
+  {
+     if (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false) {
+          $this['preurl'] = '/cadizturismo';
+     } else {
+        $this['preurl'] = '';
+     }
+  }";s:17:"_PARSER_ERROR_INI";s:0:"";}}

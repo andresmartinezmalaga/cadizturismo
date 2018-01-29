@@ -29,7 +29,9 @@ code = "que-hacer"
             $this['lang']='es';
         }
                 $this['urlPage'] = $this->page->url;
-$this['metaImg'] = $this->page->apiBag["staticPage"]->attributes["viewBag"]["cover"];
+
+    if($this->page->apiBag)
+        $this['metaImg'] = $this->page->apiBag["staticPage"]->attributes["viewBag"]["cover"];
 
 }
 
@@ -43,7 +45,7 @@ $this['metaImg'] = $this->page->apiBag["staticPage"]->attributes["viewBag"]["cov
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <meta name="google-site-verification" content="KZtyPnD_0KXDnRTpmvwxNoBcvj3Osx_VKrXoJaucHrE" />
-    <meta property="og:image" content="{{ this.page.meta_image }}">
+    <meta property="og:image" content="{{ metaImg }}">
     <title>Cádiz</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
