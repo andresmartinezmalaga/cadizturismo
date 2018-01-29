@@ -1,0 +1,282 @@
+1517218378a:1:{s:29:"diversion-parques-de-ocio.htm";a:7:{s:8:"fileName";s:29:"diversion-parques-de-ocio.htm";s:7:"content";s:5314:"[viewBag]
+title = "Parques de ocio"
+url = "/diversion/parques-de-ocio"
+template = "pages"
+is_hidden = 0
+layout = "default"
+localeUrl[en] = "/diversion/parques-de-ocio"
+localeUrl[fr] = "/diversion/parques-de-ocio"
+localeUrl[de] = "/diversion/parques-de-ocio"
+localeUrl[ru] = "/diversion/parques-de-ocio"
+==
+<!-- HEADER -->
+<div class="header header-parques">
+	<div class="header-container header-village-container">
+		<div class="header-txt header-txt-village">
+
+			<h1 class="txt" id="natu-via">Parques de ocio</h1><img class="brush fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
+	</div>
+	<!-- NUEVA FOTO -->
+	<img class="background-image fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/po-header.jpg"></div>
+<!-- TXT-->
+<div class="section-txt-village">
+	<div class="txt-container">
+
+		<p class="title">DIVERSIÓN
+			<br>PARA TODOS</p><img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+
+		<p class="desc">Un sin fin de propuestas hechas para el máximo disfrute, atrévete a conocer la oferta y llévate el mejor recuerdo posible.</p>
+	</div>
+</div>
+<!-- IMAGEN -->
+<div class="featured-element featured-parques">
+	<div class="txt-container">
+
+		<p class="title">VISITA EL ZOO DE CASTELLAR</p>
+
+		<p class="desc">Un zoo familiar donde podrás dar de comer, tocar y ver de cerca maravillosas especies.</p><a class="events-link" href="https://www.zoodecastellar.es/" target="_blank">Saber más <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-arrow-yellow.svg" alt="" class="fr-fic fr-dii">&nbsp;</a>
+		<img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
+	<!-- NUEVA FOTO -->
+	<div class="overlay">
+		<br>
+	</div><img class="img-destacada fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/ocelote-castellar.jpg" alt=""></div>
+<div class="section-txt-village">
+	<div class="txt-container">
+
+		<p class="title">3 IDEAS PENSADAS
+			<br>ESPECIALMENTE
+			<br>PARA TI</p><img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
+</div>
+<div class="all-exps" id="exps-playa">
+	<div class="all-events-container">
+		<div class="event event-playa">
+			<div class="overlay-img">
+				<br>
+			</div><img class="rec-img fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/zoo.jpg">
+			<div class="txt-container">
+
+				<p class="name name-bird">ZOO BOTÁNICO DE JEREZ</p>
+
+				<p class="subtitle">El Parque Zoológico y Jardín Botánico de Jerez es uno de los más antiguos de España.</p><img class="separator separator-playa fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+				<a class="see-event" href="http://www.zoobotanicojerez.com/" target="_blank">Más info <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+		</div>
+		<div class="event event-playa">
+			<div class="overlay-img">
+				<br>
+			</div><img class="rec-img fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/aqualand.jpg">
+			<div class="txt-container">
+
+				<p class="name name-bird">AQUALAND BAHÍA DE CÁDIZ</p>
+
+				<p class="subtitle">Parque acuático situado en el Puerto de Santa María. Adrenalina Fun, Kidzworld, Family fun…</p><img class="separator separator-playa fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+				<a class="see-event" href="http://www.aqualand.es/bahiadecadiz/" target="_blank">Más info <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+		</div>
+		<div class="event event-playa">
+			<div class="overlay-img">
+				<br>
+			</div><img class="rec-img fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/circuito.jpg">
+			<div class="txt-container">
+
+				<p class="name name-bird">CIRCUITO DE JEREZ</p>
+
+				<p class="subtitle">Un paraíso para los amantes del motociclismo</p><img class="separator separator-playa fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+				<a class="see-event" href="http://www.circuitodejerez.com/" target="_blank">Más info <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+		</div>
+	</div>
+</div>
+<div class="icons-row">
+	<div class="i-container">
+		<div class="also-feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/natu-grey.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Naturaleza</p>
+		</div>
+		<div class="also-feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/ocio.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Ocio</p>
+		</div>
+		<div class="also-feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/deporte-grey.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Deporte</p>
+		</div>
+	</div>
+</div>";s:5:"mtime";i:1516786666;s:6:"markup";s:5008:"<!-- HEADER -->
+<div class="header header-parques">
+	<div class="header-container header-village-container">
+		<div class="header-txt header-txt-village">
+
+			<h1 class="txt" id="natu-via">Parques de ocio</h1><img class="brush fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
+	</div>
+	<!-- NUEVA FOTO -->
+	<img class="background-image fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/po-header.jpg"></div>
+<!-- TXT-->
+<div class="section-txt-village">
+	<div class="txt-container">
+
+		<p class="title">DIVERSIÓN
+			<br>PARA TODOS</p><img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+
+		<p class="desc">Un sin fin de propuestas hechas para el máximo disfrute, atrévete a conocer la oferta y llévate el mejor recuerdo posible.</p>
+	</div>
+</div>
+<!-- IMAGEN -->
+<div class="featured-element featured-parques">
+	<div class="txt-container">
+
+		<p class="title">VISITA EL ZOO DE CASTELLAR</p>
+
+		<p class="desc">Un zoo familiar donde podrás dar de comer, tocar y ver de cerca maravillosas especies.</p><a class="events-link" href="https://www.zoodecastellar.es/" target="_blank">Saber más <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-arrow-yellow.svg" alt="" class="fr-fic fr-dii">&nbsp;</a>
+		<img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
+	<!-- NUEVA FOTO -->
+	<div class="overlay">
+		<br>
+	</div><img class="img-destacada fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/ocelote-castellar.jpg" alt=""></div>
+<div class="section-txt-village">
+	<div class="txt-container">
+
+		<p class="title">3 IDEAS PENSADAS
+			<br>ESPECIALMENTE
+			<br>PARA TI</p><img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
+</div>
+<div class="all-exps" id="exps-playa">
+	<div class="all-events-container">
+		<div class="event event-playa">
+			<div class="overlay-img">
+				<br>
+			</div><img class="rec-img fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/zoo.jpg">
+			<div class="txt-container">
+
+				<p class="name name-bird">ZOO BOTÁNICO DE JEREZ</p>
+
+				<p class="subtitle">El Parque Zoológico y Jardín Botánico de Jerez es uno de los más antiguos de España.</p><img class="separator separator-playa fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+				<a class="see-event" href="http://www.zoobotanicojerez.com/" target="_blank">Más info <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+		</div>
+		<div class="event event-playa">
+			<div class="overlay-img">
+				<br>
+			</div><img class="rec-img fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/aqualand.jpg">
+			<div class="txt-container">
+
+				<p class="name name-bird">AQUALAND BAHÍA DE CÁDIZ</p>
+
+				<p class="subtitle">Parque acuático situado en el Puerto de Santa María. Adrenalina Fun, Kidzworld, Family fun…</p><img class="separator separator-playa fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+				<a class="see-event" href="http://www.aqualand.es/bahiadecadiz/" target="_blank">Más info <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+		</div>
+		<div class="event event-playa">
+			<div class="overlay-img">
+				<br>
+			</div><img class="rec-img fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/circuito.jpg">
+			<div class="txt-container">
+
+				<p class="name name-bird">CIRCUITO DE JEREZ</p>
+
+				<p class="subtitle">Un paraíso para los amantes del motociclismo</p><img class="separator separator-playa fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+				<a class="see-event" href="http://www.circuitodejerez.com/" target="_blank">Más info <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+		</div>
+	</div>
+</div>
+<div class="icons-row">
+	<div class="i-container">
+		<div class="also-feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/natu-grey.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Naturaleza</p>
+		</div>
+		<div class="also-feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/ocio.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Ocio</p>
+		</div>
+		<div class="also-feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/deporte-grey.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Deporte</p>
+		</div>
+	</div>
+</div>";s:4:"code";N;s:7:"viewBag";a:6:{s:5:"title";s:15:"Parques de ocio";s:3:"url";s:26:"/diversion/parques-de-ocio";s:8:"template";s:5:"pages";s:9:"is_hidden";s:1:"0";s:6:"layout";s:7:"default";s:9:"localeUrl";a:4:{s:2:"en";s:26:"/diversion/parques-de-ocio";s:2:"fr";s:26:"/diversion/parques-de-ocio";s:2:"de";s:26:"/diversion/parques-de-ocio";s:2:"ru";s:26:"/diversion/parques-de-ocio";}}s:12:"parsedMarkup";s:5008:"<!-- HEADER -->
+<div class="header header-parques">
+	<div class="header-container header-village-container">
+		<div class="header-txt header-txt-village">
+
+			<h1 class="txt" id="natu-via">Parques de ocio</h1><img class="brush fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
+	</div>
+	<!-- NUEVA FOTO -->
+	<img class="background-image fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/po-header.jpg"></div>
+<!-- TXT-->
+<div class="section-txt-village">
+	<div class="txt-container">
+
+		<p class="title">DIVERSIÓN
+			<br>PARA TODOS</p><img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+
+		<p class="desc">Un sin fin de propuestas hechas para el máximo disfrute, atrévete a conocer la oferta y llévate el mejor recuerdo posible.</p>
+	</div>
+</div>
+<!-- IMAGEN -->
+<div class="featured-element featured-parques">
+	<div class="txt-container">
+
+		<p class="title">VISITA EL ZOO DE CASTELLAR</p>
+
+		<p class="desc">Un zoo familiar donde podrás dar de comer, tocar y ver de cerca maravillosas especies.</p><a class="events-link" href="https://www.zoodecastellar.es/" target="_blank">Saber más <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-arrow-yellow.svg" alt="" class="fr-fic fr-dii">&nbsp;</a>
+		<img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
+	<!-- NUEVA FOTO -->
+	<div class="overlay">
+		<br>
+	</div><img class="img-destacada fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/ocelote-castellar.jpg" alt=""></div>
+<div class="section-txt-village">
+	<div class="txt-container">
+
+		<p class="title">3 IDEAS PENSADAS
+			<br>ESPECIALMENTE
+			<br>PARA TI</p><img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
+</div>
+<div class="all-exps" id="exps-playa">
+	<div class="all-events-container">
+		<div class="event event-playa">
+			<div class="overlay-img">
+				<br>
+			</div><img class="rec-img fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/zoo.jpg">
+			<div class="txt-container">
+
+				<p class="name name-bird">ZOO BOTÁNICO DE JEREZ</p>
+
+				<p class="subtitle">El Parque Zoológico y Jardín Botánico de Jerez es uno de los más antiguos de España.</p><img class="separator separator-playa fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+				<a class="see-event" href="http://www.zoobotanicojerez.com/" target="_blank">Más info <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+		</div>
+		<div class="event event-playa">
+			<div class="overlay-img">
+				<br>
+			</div><img class="rec-img fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/aqualand.jpg">
+			<div class="txt-container">
+
+				<p class="name name-bird">AQUALAND BAHÍA DE CÁDIZ</p>
+
+				<p class="subtitle">Parque acuático situado en el Puerto de Santa María. Adrenalina Fun, Kidzworld, Family fun…</p><img class="separator separator-playa fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+				<a class="see-event" href="http://www.aqualand.es/bahiadecadiz/" target="_blank">Más info <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+		</div>
+		<div class="event event-playa">
+			<div class="overlay-img">
+				<br>
+			</div><img class="rec-img fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/circuito.jpg">
+			<div class="txt-container">
+
+				<p class="name name-bird">CIRCUITO DE JEREZ</p>
+
+				<p class="subtitle">Un paraíso para los amantes del motociclismo</p><img class="separator separator-playa fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+				<a class="see-event" href="http://www.circuitodejerez.com/" target="_blank">Más info <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+		</div>
+	</div>
+</div>
+<div class="icons-row">
+	<div class="i-container">
+		<div class="also-feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/natu-grey.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Naturaleza</p>
+		</div>
+		<div class="also-feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/ocio.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Ocio</p>
+		</div>
+		<div class="also-feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/deporte-grey.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Deporte</p>
+		</div>
+	</div>
+</div>";}}

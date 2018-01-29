@@ -1,0 +1,282 @@
+1517218378a:1:{s:18:"cultura-teatro.htm";a:7:{s:8:"fileName";s:18:"cultura-teatro.htm";s:7:"content";s:5265:"[viewBag]
+title = "Teatro"
+url = "/cultura/teatro"
+template = "pages"
+is_hidden = 0
+layout = "default"
+localeUrl[en] = "/cultura/teatro"
+localeUrl[fr] = "/cultura/teatro"
+localeUrl[de] = "/cultura/teatro"
+localeUrl[ru] = "/cultura/teatro"
+==
+<!-- HEADER -->
+<div class="header header-teatro">
+	<div class="header-container header-village-container">
+		<div class="header-txt header-txt-village">
+
+			<h1 class="txt" id="natu-via">Teatro</h1><img class="brush fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
+	</div>
+	<!-- NUEVA FOTO -->
+	<img class="background-image fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/teatroheader.jpg"></div>
+<!-- TXT-->
+<div class="section-txt-village">
+	<div class="txt-container">
+
+		<p class="title">A RITMO DE
+			<br>CHIRIGOTA</p><img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+
+		<p class="desc">Los teatros en Cádiz cuentan con una gran tradición e historia como refleja el Teatro Manuel Falla. Escenario de una de las fiestas más importantes de la provincia, el carnaval.</p>
+	</div>
+</div>
+<!-- IMAGEN -->
+<div class="featured-element featured-teatro">
+	<div class="txt-container">
+
+		<p class="title">CARNAVALES DE CÁDIZ</p>
+
+		<p class="desc">Lo más nuestro, lo más auténtico de Cádiz.</p><a class="events-link" href="#">Ver evento <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-arrow-yellow.svg" alt="" class="fr-fic fr-dii">&nbsp;</a>
+		<img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
+	<!-- NUEVA FOTO -->
+	<div class="overlay">
+		<br>
+	</div><img class="img-destacada fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/carnavales-header.jpg" alt=""></div>
+<div class="section-txt-village">
+	<div class="txt-container">
+
+		<p class="title">3 IDEAS PENSADAS
+			<br>ESPECIALMENTE
+			<br>PARA TI</p><img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
+</div>
+<div class="all-exps" id="exps-playa">
+	<div class="all-events-container">
+		<div class="event event-playa">
+			<div class="overlay-img">
+				<br>
+			</div><img class="rec-img fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/teatro-falla.jpg">
+			<div class="txt-container">
+
+				<p class="name name-bird">TEATRO FALLA</p>
+
+				<p class="subtitle">El Gran Teatro Falla acoge todo tipo de obras relacionadas con las artes escénicas.</p><img class="separator separator-playa fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+				<a class="see-event" href="http://www.teatrofalla.com/" target="_blank">Más info <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+		</div>
+		<div class="event event-playa">
+			<div class="overlay-img">
+				<br>
+			</div><img class="rec-img fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/sala-lechera.jpg">
+			<div class="txt-container">
+
+				<p class="name name-bird">SALA CENTRAL LECHERA</p>
+
+				<p class="subtitle">Espacio escénico alternativo que acoge todo tipo de representaciones y espectáculos.</p><img class="separator separator-playa fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+				<a class="see-event" href="https://www.facebook.com/centrallechera" target="_blank">Más info <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+		</div>
+		<div class="event event-playa">
+			<div class="overlay-img">
+				<br>
+			</div><img class="rec-img fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/norica.jpg">
+			<div class="txt-container">
+
+				<p class="name name-bird">TEATRO DEL TÍTERE LA TÍA NORICA</p>
+
+				<p class="subtitle">Espacio escénico de Cádiz. Para disfrutar de las Artes Escénicas: teatro, danza, flamenco…</p><img class="separator separator-playa fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+				<a class="see-event" href="https://www.facebook.com/teatrolatianorica/ " target="_blank">Más info <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+		</div>
+	</div>
+</div>
+<div class="icons-row">
+	<div class="i-container">
+		<div class="also-feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/gastro-grey.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Gastronomía</p>
+		</div>
+		<div class="also-feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/ocio.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Ocio</p>
+		</div>
+		<div class="also-feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/fiesta-grey.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Fiesta</p>
+		</div>
+	</div>
+</div>";s:5:"mtime";i:1516786666;s:6:"markup";s:5023:"<!-- HEADER -->
+<div class="header header-teatro">
+	<div class="header-container header-village-container">
+		<div class="header-txt header-txt-village">
+
+			<h1 class="txt" id="natu-via">Teatro</h1><img class="brush fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
+	</div>
+	<!-- NUEVA FOTO -->
+	<img class="background-image fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/teatroheader.jpg"></div>
+<!-- TXT-->
+<div class="section-txt-village">
+	<div class="txt-container">
+
+		<p class="title">A RITMO DE
+			<br>CHIRIGOTA</p><img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+
+		<p class="desc">Los teatros en Cádiz cuentan con una gran tradición e historia como refleja el Teatro Manuel Falla. Escenario de una de las fiestas más importantes de la provincia, el carnaval.</p>
+	</div>
+</div>
+<!-- IMAGEN -->
+<div class="featured-element featured-teatro">
+	<div class="txt-container">
+
+		<p class="title">CARNAVALES DE CÁDIZ</p>
+
+		<p class="desc">Lo más nuestro, lo más auténtico de Cádiz.</p><a class="events-link" href="#">Ver evento <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-arrow-yellow.svg" alt="" class="fr-fic fr-dii">&nbsp;</a>
+		<img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
+	<!-- NUEVA FOTO -->
+	<div class="overlay">
+		<br>
+	</div><img class="img-destacada fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/carnavales-header.jpg" alt=""></div>
+<div class="section-txt-village">
+	<div class="txt-container">
+
+		<p class="title">3 IDEAS PENSADAS
+			<br>ESPECIALMENTE
+			<br>PARA TI</p><img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
+</div>
+<div class="all-exps" id="exps-playa">
+	<div class="all-events-container">
+		<div class="event event-playa">
+			<div class="overlay-img">
+				<br>
+			</div><img class="rec-img fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/teatro-falla.jpg">
+			<div class="txt-container">
+
+				<p class="name name-bird">TEATRO FALLA</p>
+
+				<p class="subtitle">El Gran Teatro Falla acoge todo tipo de obras relacionadas con las artes escénicas.</p><img class="separator separator-playa fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+				<a class="see-event" href="http://www.teatrofalla.com/" target="_blank">Más info <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+		</div>
+		<div class="event event-playa">
+			<div class="overlay-img">
+				<br>
+			</div><img class="rec-img fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/sala-lechera.jpg">
+			<div class="txt-container">
+
+				<p class="name name-bird">SALA CENTRAL LECHERA</p>
+
+				<p class="subtitle">Espacio escénico alternativo que acoge todo tipo de representaciones y espectáculos.</p><img class="separator separator-playa fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+				<a class="see-event" href="https://www.facebook.com/centrallechera" target="_blank">Más info <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+		</div>
+		<div class="event event-playa">
+			<div class="overlay-img">
+				<br>
+			</div><img class="rec-img fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/norica.jpg">
+			<div class="txt-container">
+
+				<p class="name name-bird">TEATRO DEL TÍTERE LA TÍA NORICA</p>
+
+				<p class="subtitle">Espacio escénico de Cádiz. Para disfrutar de las Artes Escénicas: teatro, danza, flamenco…</p><img class="separator separator-playa fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+				<a class="see-event" href="https://www.facebook.com/teatrolatianorica/ " target="_blank">Más info <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+		</div>
+	</div>
+</div>
+<div class="icons-row">
+	<div class="i-container">
+		<div class="also-feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/gastro-grey.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Gastronomía</p>
+		</div>
+		<div class="also-feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/ocio.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Ocio</p>
+		</div>
+		<div class="also-feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/fiesta-grey.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Fiesta</p>
+		</div>
+	</div>
+</div>";s:4:"code";N;s:7:"viewBag";a:6:{s:5:"title";s:6:"Teatro";s:3:"url";s:15:"/cultura/teatro";s:8:"template";s:5:"pages";s:9:"is_hidden";s:1:"0";s:6:"layout";s:7:"default";s:9:"localeUrl";a:4:{s:2:"en";s:15:"/cultura/teatro";s:2:"fr";s:15:"/cultura/teatro";s:2:"de";s:15:"/cultura/teatro";s:2:"ru";s:15:"/cultura/teatro";}}s:12:"parsedMarkup";s:5023:"<!-- HEADER -->
+<div class="header header-teatro">
+	<div class="header-container header-village-container">
+		<div class="header-txt header-txt-village">
+
+			<h1 class="txt" id="natu-via">Teatro</h1><img class="brush fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
+	</div>
+	<!-- NUEVA FOTO -->
+	<img class="background-image fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/teatroheader.jpg"></div>
+<!-- TXT-->
+<div class="section-txt-village">
+	<div class="txt-container">
+
+		<p class="title">A RITMO DE
+			<br>CHIRIGOTA</p><img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+
+		<p class="desc">Los teatros en Cádiz cuentan con una gran tradición e historia como refleja el Teatro Manuel Falla. Escenario de una de las fiestas más importantes de la provincia, el carnaval.</p>
+	</div>
+</div>
+<!-- IMAGEN -->
+<div class="featured-element featured-teatro">
+	<div class="txt-container">
+
+		<p class="title">CARNAVALES DE CÁDIZ</p>
+
+		<p class="desc">Lo más nuestro, lo más auténtico de Cádiz.</p><a class="events-link" href="#">Ver evento <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-arrow-yellow.svg" alt="" class="fr-fic fr-dii">&nbsp;</a>
+		<img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
+	<!-- NUEVA FOTO -->
+	<div class="overlay">
+		<br>
+	</div><img class="img-destacada fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/carnavales-header.jpg" alt=""></div>
+<div class="section-txt-village">
+	<div class="txt-container">
+
+		<p class="title">3 IDEAS PENSADAS
+			<br>ESPECIALMENTE
+			<br>PARA TI</p><img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
+</div>
+<div class="all-exps" id="exps-playa">
+	<div class="all-events-container">
+		<div class="event event-playa">
+			<div class="overlay-img">
+				<br>
+			</div><img class="rec-img fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/teatro-falla.jpg">
+			<div class="txt-container">
+
+				<p class="name name-bird">TEATRO FALLA</p>
+
+				<p class="subtitle">El Gran Teatro Falla acoge todo tipo de obras relacionadas con las artes escénicas.</p><img class="separator separator-playa fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+				<a class="see-event" href="http://www.teatrofalla.com/" target="_blank">Más info <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+		</div>
+		<div class="event event-playa">
+			<div class="overlay-img">
+				<br>
+			</div><img class="rec-img fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/sala-lechera.jpg">
+			<div class="txt-container">
+
+				<p class="name name-bird">SALA CENTRAL LECHERA</p>
+
+				<p class="subtitle">Espacio escénico alternativo que acoge todo tipo de representaciones y espectáculos.</p><img class="separator separator-playa fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+				<a class="see-event" href="https://www.facebook.com/centrallechera" target="_blank">Más info <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+		</div>
+		<div class="event event-playa">
+			<div class="overlay-img">
+				<br>
+			</div><img class="rec-img fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/norica.jpg">
+			<div class="txt-container">
+
+				<p class="name name-bird">TEATRO DEL TÍTERE LA TÍA NORICA</p>
+
+				<p class="subtitle">Espacio escénico de Cádiz. Para disfrutar de las Artes Escénicas: teatro, danza, flamenco…</p><img class="separator separator-playa fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+				<a class="see-event" href="https://www.facebook.com/teatrolatianorica/ " target="_blank">Más info <img src="/cadizturismo/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+		</div>
+	</div>
+</div>
+<div class="icons-row">
+	<div class="i-container">
+		<div class="also-feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/gastro-grey.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Gastronomía</p>
+		</div>
+		<div class="also-feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/ocio.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Ocio</p>
+		</div>
+		<div class="also-feature"><img src="/cadizturismo/storage/app/media/uploaded-files/templates/fiesta-grey.svg" class="fr-fil fr-dib">
+
+			<p class="also-desc">Fiesta</p>
+		</div>
+	</div>
+</div>";}}

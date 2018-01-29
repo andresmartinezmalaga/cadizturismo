@@ -1,0 +1,205 @@
+1516872592a:1:{s:18:"sobre-nosotros.htm";a:7:{s:8:"fileName";s:18:"sobre-nosotros.htm";s:7:"content";s:2922:"[viewBag]
+title = "Sobre nosotros"
+url = "/sobre-nosotros"
+template = "pages"
+cover = "default.jpg"
+is_hidden = 0
+layout = "default"
+localeUrl[en] = "/sobre-nosotros"
+localeUrl[fr] = "/sobre-nosotros"
+localeUrl[de] = "/sobre-nosotros"
+localeUrl[ru] = "/sobre-nosotros"
+==
+
+
+<div class="static-header about-header">
+  <img class="img-header"
+  src="/storage/app/media/uploaded-files/templates/cultura.jpg"
+  alt="">
+  <div class="header-container">
+		<div class="header-txt-comollegar">
+			<h1 class="txt">Somos arte</h1>
+      <img class="brush" src="/storage/app/media/uploaded-files/templates/brush-header.svg">
+    </div>
+	</div>
+  <div class="tagline-container">
+    <p>Somos arte y mar, naturaleza, luz, aire, tradición, cultura, historia…</p>
+    <p><b>Somos su gente y nuestras ganas de vivir y disfrutar.</b></p>
+  </div>
+</div>
+<div class="somos-section">
+  <img class="img-header"
+  src="/storage/app/media/uploaded-files/templates/somos-costa.jpg"
+  alt="">
+  <div class="header-container">
+		<div class="header-txt-comollegar">
+			<h1 class="txt">Somos costa</h1>
+      <img class="brush" src="/storage/app/media/uploaded-files/templates/brush-header.svg">
+    </div>
+	</div>
+  <div class="tagline-container">
+    <p>Somos 260km de costa atlántica y arena fina, de playas vírgenes y urbanas.</p>
+    <p><b>Somos la Costa de la Luz. Somos esencia mediterránea. </b></p>
+  </div>
+</div>
+<div class="somos-section">
+  <img class="img-header"
+  src="/storage/app/media/uploaded-files/templates/somos-paisaje.jpg"
+  alt="">
+  <div class="header-container">
+		<div class="header-txt-comollegar">
+			<h1 class="txt">Somos paisaje</h1>
+      <img class="brush" src="/storage/app/media/uploaded-files/templates/brush-header.svg">
+    </div>
+	</div>
+  <div class="tagline-container">
+    <p><b>Somos paisaje, la provincia más meridional de la península Ibérica.</b></p>
+    <p>Comarcas y localidades que te invitan a disfrutar de su recorrido y distintas experiencias.</p>
+  </div>
+</div>
+<div class="somos-section">
+  <img class="img-header"
+  src="/storage/app/media/uploaded-files/templates/somos-mas.jpg"
+  alt="">
+  <div class="header-container">
+		<div class="header-txt-comollegar">
+			<h1 class="txt">Somos más</h1>
+      <img class="brush" src="/storage/app/media/uploaded-files/templates/brush-header.svg">
+    </div>
+	</div>
+  <div class="tagline-container">
+    <p>Somos <b>aventura, relax, fiesta y diversión.</b></p>
+  </div>
+</div>
+<div class="somos-txt-container">
+  <h3 class="publicaciones-title">SOBRE NOSOTROS</h3>
+  <img class="separator fr-fic fr-dii" src="/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+  <p><b>Patronato Provincial de Turismo,</b> un organismo autónomo local adscrito al Área de Turismo de la Diputación Provincial de Cádiz. El Patronato tiene por objeto la promoción, fomento y desarrollo del turismo en la provincia de Cádiz.</p>
+</div>
+";s:5:"mtime";i:1516871970;s:6:"markup";s:2647:"<div class="static-header about-header">
+  <img class="img-header"
+  src="/storage/app/media/uploaded-files/templates/cultura.jpg"
+  alt="">
+  <div class="header-container">
+		<div class="header-txt-comollegar">
+			<h1 class="txt">Somos arte</h1>
+      <img class="brush" src="/storage/app/media/uploaded-files/templates/brush-header.svg">
+    </div>
+	</div>
+  <div class="tagline-container">
+    <p>Somos arte y mar, naturaleza, luz, aire, tradición, cultura, historia…</p>
+    <p><b>Somos su gente y nuestras ganas de vivir y disfrutar.</b></p>
+  </div>
+</div>
+<div class="somos-section">
+  <img class="img-header"
+  src="/storage/app/media/uploaded-files/templates/somos-costa.jpg"
+  alt="">
+  <div class="header-container">
+		<div class="header-txt-comollegar">
+			<h1 class="txt">Somos costa</h1>
+      <img class="brush" src="/storage/app/media/uploaded-files/templates/brush-header.svg">
+    </div>
+	</div>
+  <div class="tagline-container">
+    <p>Somos 260km de costa atlántica y arena fina, de playas vírgenes y urbanas.</p>
+    <p><b>Somos la Costa de la Luz. Somos esencia mediterránea. </b></p>
+  </div>
+</div>
+<div class="somos-section">
+  <img class="img-header"
+  src="/storage/app/media/uploaded-files/templates/somos-paisaje.jpg"
+  alt="">
+  <div class="header-container">
+		<div class="header-txt-comollegar">
+			<h1 class="txt">Somos paisaje</h1>
+      <img class="brush" src="/storage/app/media/uploaded-files/templates/brush-header.svg">
+    </div>
+	</div>
+  <div class="tagline-container">
+    <p><b>Somos paisaje, la provincia más meridional de la península Ibérica.</b></p>
+    <p>Comarcas y localidades que te invitan a disfrutar de su recorrido y distintas experiencias.</p>
+  </div>
+</div>
+<div class="somos-section">
+  <img class="img-header"
+  src="/storage/app/media/uploaded-files/templates/somos-mas.jpg"
+  alt="">
+  <div class="header-container">
+		<div class="header-txt-comollegar">
+			<h1 class="txt">Somos más</h1>
+      <img class="brush" src="/storage/app/media/uploaded-files/templates/brush-header.svg">
+    </div>
+	</div>
+  <div class="tagline-container">
+    <p>Somos <b>aventura, relax, fiesta y diversión.</b></p>
+  </div>
+</div>
+<div class="somos-txt-container">
+  <h3 class="publicaciones-title">SOBRE NOSOTROS</h3>
+  <img class="separator fr-fic fr-dii" src="/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+  <p><b>Patronato Provincial de Turismo,</b> un organismo autónomo local adscrito al Área de Turismo de la Diputación Provincial de Cádiz. El Patronato tiene por objeto la promoción, fomento y desarrollo del turismo en la provincia de Cádiz.</p>
+</div>";s:4:"code";N;s:7:"viewBag";a:7:{s:5:"title";s:14:"Sobre nosotros";s:3:"url";s:15:"/sobre-nosotros";s:8:"template";s:5:"pages";s:5:"cover";s:11:"default.jpg";s:9:"is_hidden";s:1:"0";s:6:"layout";s:7:"default";s:9:"localeUrl";a:4:{s:2:"en";s:15:"/sobre-nosotros";s:2:"fr";s:15:"/sobre-nosotros";s:2:"de";s:15:"/sobre-nosotros";s:2:"ru";s:15:"/sobre-nosotros";}}s:12:"parsedMarkup";s:2647:"<div class="static-header about-header">
+  <img class="img-header"
+  src="/storage/app/media/uploaded-files/templates/cultura.jpg"
+  alt="">
+  <div class="header-container">
+		<div class="header-txt-comollegar">
+			<h1 class="txt">Somos arte</h1>
+      <img class="brush" src="/storage/app/media/uploaded-files/templates/brush-header.svg">
+    </div>
+	</div>
+  <div class="tagline-container">
+    <p>Somos arte y mar, naturaleza, luz, aire, tradición, cultura, historia…</p>
+    <p><b>Somos su gente y nuestras ganas de vivir y disfrutar.</b></p>
+  </div>
+</div>
+<div class="somos-section">
+  <img class="img-header"
+  src="/storage/app/media/uploaded-files/templates/somos-costa.jpg"
+  alt="">
+  <div class="header-container">
+		<div class="header-txt-comollegar">
+			<h1 class="txt">Somos costa</h1>
+      <img class="brush" src="/storage/app/media/uploaded-files/templates/brush-header.svg">
+    </div>
+	</div>
+  <div class="tagline-container">
+    <p>Somos 260km de costa atlántica y arena fina, de playas vírgenes y urbanas.</p>
+    <p><b>Somos la Costa de la Luz. Somos esencia mediterránea. </b></p>
+  </div>
+</div>
+<div class="somos-section">
+  <img class="img-header"
+  src="/storage/app/media/uploaded-files/templates/somos-paisaje.jpg"
+  alt="">
+  <div class="header-container">
+		<div class="header-txt-comollegar">
+			<h1 class="txt">Somos paisaje</h1>
+      <img class="brush" src="/storage/app/media/uploaded-files/templates/brush-header.svg">
+    </div>
+	</div>
+  <div class="tagline-container">
+    <p><b>Somos paisaje, la provincia más meridional de la península Ibérica.</b></p>
+    <p>Comarcas y localidades que te invitan a disfrutar de su recorrido y distintas experiencias.</p>
+  </div>
+</div>
+<div class="somos-section">
+  <img class="img-header"
+  src="/storage/app/media/uploaded-files/templates/somos-mas.jpg"
+  alt="">
+  <div class="header-container">
+		<div class="header-txt-comollegar">
+			<h1 class="txt">Somos más</h1>
+      <img class="brush" src="/storage/app/media/uploaded-files/templates/brush-header.svg">
+    </div>
+	</div>
+  <div class="tagline-container">
+    <p>Somos <b>aventura, relax, fiesta y diversión.</b></p>
+  </div>
+</div>
+<div class="somos-txt-container">
+  <h3 class="publicaciones-title">SOBRE NOSOTROS</h3>
+  <img class="separator fr-fic fr-dii" src="/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+  <p><b>Patronato Provincial de Turismo,</b> un organismo autónomo local adscrito al Área de Turismo de la Diputación Provincial de Cádiz. El Patronato tiene por objeto la promoción, fomento y desarrollo del turismo en la provincia de Cádiz.</p>
+</div>";}}
