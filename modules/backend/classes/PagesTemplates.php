@@ -695,22 +695,6 @@ class PagesTemplates
           <a class="see-event" href="http://www.coriperural.es/" target="_blank">Ver rutas que ofrece <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
       </div>
     </div>
-  </div>
-  <div class="icons-row">
-    <div class="i-container">
-      <div class="also-feature"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/natu-grey.svg" class="fr-fil fr-dib">
-
-        <p class="also-desc">Naturaleza</p>
-      </div>
-      <div class="also-feature"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/deporte-grey.svg" class="fr-fil fr-dib">
-
-        <p class="also-desc">Deporte</p>
-      </div>
-      <div class="also-feature"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/ruta-grey.svg" class="fr-fil fr-dib">
-
-        <p class="also-desc">Ruta</p>
-      </div>
-    </div>
   </div>';
 
   static function getTViaVerde(){
@@ -790,23 +774,6 @@ class PagesTemplates
             <img class="separator separator-playa" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
             <a target="_blank" class="see-event" href="http://www.cadizbirding.com/">Más info <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg"></a>
           </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="icons-row">
-      <div class="i-container">
-        <div class="also-feature">
-          <img src="***_preurl_***/storage/app/media/uploaded-files/templates/natu-grey.svg">
-          <p class="also-desc">Naturaleza</p>
-        </div>
-        <div class="also-feature">
-          <img src="***_preurl_***/storage/app/media/uploaded-files/templates/ocio.svg">
-          <p class="also-desc">Ocio</p>
-        </div>
-        <div class="also-feature">
-          <img src="***_preurl_***/storage/app/media/uploaded-files/templates/ruta-grey.svg">
-          <p class="also-desc">Ruta</p>
         </div>
       </div>
     </div>';
@@ -1045,22 +1012,6 @@ class PagesTemplates
             <a class="see-event" href="https://ccpuertaeuropa.com/" target="_blank">Más info <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
         </div>
       </div>
-    </div>
-    <div class="icons-row">
-      <div class="i-container">
-        <div class="also-feature"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/gastro-grey.svg" class="fr-fil fr-dib">
-
-          <p class="also-desc">Gastronomía</p>
-        </div>
-        <div class="also-feature"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/ocio.svg" class="fr-fil fr-dib">
-
-          <p class="also-desc">Ocio</p>
-        </div>
-        <div class="also-feature"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/fiesta-grey.svg" class="fr-fil fr-dib">
-
-          <p class="also-desc">Fiesta</p>
-        </div>
-      </div>
     </div>';
 
     static function getTCompras(){
@@ -1142,24 +1093,6 @@ class PagesTemplates
           </div>
         </div>
       </div>
-    </div>
-
-
-    <div class="icons-row">
-      <div class="i-container">
-        <div class="also-feature">
-          <img src="***_preurl_***/storage/app/media/uploaded-files/templates/gastro-grey.svg">
-          <p class="also-desc">Gastronomía</p>
-        </div>
-        <div class="also-feature">
-          <img src="***_preurl_***/storage/app/media/uploaded-files/templates/ocio.svg">
-          <p class="also-desc">Ocio</p>
-        </div>
-        <div class="also-feature">
-          <img src="***_preurl_***/storage/app/media/uploaded-files/templates/fiesta-grey.svg">
-          <p class="also-desc">Fiesta</p>
-        </div>
-      </div>
     </div>';
 
     static function getTLocalesOcio(){
@@ -1239,23 +1172,6 @@ class PagesTemplates
             <img class="separator separator-playa" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
             <a target="_blank" class="see-event" href="http://www.circuitodejerez.com/">Más info <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg"></a>
           </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="icons-row">
-      <div class="i-container">
-        <div class="also-feature">
-          <img src="***_preurl_***/storage/app/media/uploaded-files/templates/natu-grey.svg">
-          <p class="also-desc">Naturaleza</p>
-        </div>
-        <div class="also-feature">
-          <img src="***_preurl_***/storage/app/media/uploaded-files/templates/ocio.svg">
-          <p class="also-desc">Ocio</p>
-        </div>
-        <div class="also-feature">
-          <img src="***_preurl_***/storage/app/media/uploaded-files/templates/deporte-grey.svg">
-          <p class="also-desc">Deporte</p>
         </div>
       </div>
     </div>';
@@ -1404,23 +1320,6 @@ class PagesTemplates
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="icons-row">
-      <div class="i-container">
-        <div class="also-feature">
-          <img src="***_preurl_***/storage/app/media/uploaded-files/templates/natu-grey.svg">
-          <p class="also-desc">Naturaleza</p>
-        </div>
-        <div class="also-feature">
-          <img src="***_preurl_***/storage/app/media/uploaded-files/templates/cultura-grey.svg">
-          <p class="also-desc">Cultura</p>
-        </div>
-        <div class="also-feature">
-          <img src="***_preurl_***/storage/app/media/uploaded-files/templates/ruta-grey.svg">
-          <p class="also-desc">Ruta</p>
-        </div>
-      </div>
     </div>';
 
     static function getTMonumento(){
@@ -1500,23 +1399,6 @@ class PagesTemplates
             <img class="separator separator-playa" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
             <a target="_blank" class="see-event" href="http://www.cafedelevantecadiz.com/">Más info <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg"></a>
           </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="icons-row">
-      <div class="i-container">
-        <div class="also-feature">
-          <img src="***_preurl_***/storage/app/media/uploaded-files/templates/gastro-grey.svg">
-          <p class="also-desc">Gastronomía</p>
-        </div>
-        <div class="also-feature">
-          <img src="***_preurl_***/storage/app/media/uploaded-files/templates/ocio.svg">
-          <p class="also-desc">Ocio</p>
-        </div>
-        <div class="also-feature">
-          <img src="***_preurl_***/storage/app/media/uploaded-files/templates/fiesta-grey.svg">
-          <p class="also-desc">Fiesta</p>
         </div>
       </div>
     </div>
@@ -1603,22 +1485,6 @@ class PagesTemplates
             <a class="see-event" href="http://www.ladebla.com/" target="_blank">Más info <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
         </div>
       </div>
-    </div>
-    <div class="icons-row">
-      <div class="i-container">
-        <div class="also-feature"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/gastro-grey.svg" class="fr-fil fr-dib">
-
-          <p class="also-desc">Gastronomía</p>
-        </div>
-        <div class="also-feature"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/ocio.svg" class="fr-fil fr-dib">
-
-          <p class="also-desc">Ocio</p>
-        </div>
-        <div class="also-feature"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/flamenco-grey.svg" class="fr-fil fr-dib">
-
-          <p class="also-desc">Flamenco</p>
-        </div>
-      </div>
     </div>';
 
     static function getTFlamenco(){
@@ -1698,23 +1564,6 @@ class PagesTemplates
             <img class="separator separator-playa" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
             <a target="_blank" class="see-event" href="https://www.facebook.com/teatrolatianorica/ ">Más info <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg"></a>
           </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="icons-row">
-      <div class="i-container">
-        <div class="also-feature">
-          <img src="***_preurl_***/storage/app/media/uploaded-files/templates/gastro-grey.svg">
-          <p class="also-desc">Gastronomía</p>
-        </div>
-        <div class="also-feature">
-          <img src="***_preurl_***/storage/app/media/uploaded-files/templates/ocio.svg">
-          <p class="also-desc">Ocio</p>
-        </div>
-        <div class="also-feature">
-          <img src="***_preurl_***/storage/app/media/uploaded-files/templates/fiesta-grey.svg">
-          <p class="also-desc">Fiesta</p>
         </div>
       </div>
     </div>';
@@ -1855,23 +1704,6 @@ class PagesTemplates
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="icons-row">
-      <div class="i-container">
-        <div class="also-feature">
-          <img src="***_preurl_***/storage/app/media/uploaded-files/templates/gastro-grey.svg">
-          <p class="also-desc">Gastronomía</p>
-        </div>
-        <div class="also-feature">
-          <img src="***_preurl_***/storage/app/media/uploaded-files/templates/cultura-grey.svg">
-          <p class="also-desc">Cultura</p>
-        </div>
-        <div class="also-feature">
-          <img src="***_preurl_***/storage/app/media/uploaded-files/templates/ruta-grey.svg">
-          <p class="also-desc">Ruta</p>
-        </div>
-      </div>
     </div>';
 
     static function getTComida(){
@@ -1951,23 +1783,6 @@ class PagesTemplates
             <img class="separator separator-playa" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
             <a target="_blank" class="see-event" href="http://santapetronila.com/">Más info <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg"></a>
           </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="icons-row">
-      <div class="i-container">
-        <div class="also-feature">
-          <img src="***_preurl_***/storage/app/media/uploaded-files/templates/gastro-grey.svg">
-          <p class="also-desc">Gastronomía</p>
-        </div>
-        <div class="also-feature">
-          <img src="***_preurl_***/storage/app/media/uploaded-files/templates/cultura-grey.svg">
-          <p class="also-desc">Cultura</p>
-        </div>
-        <div class="also-feature">
-          <img src="***_preurl_***/storage/app/media/uploaded-files/templates/ruta-grey.svg">
-          <p class="also-desc">Ruta</p>
         </div>
       </div>
     </div>';
@@ -2050,22 +1865,6 @@ class PagesTemplates
 
             <p class="subtitle">Espacio moderno, joven, informal y con intenciones de sorprender al cliente.</p><img class="separator separator-playa fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
             <a class="see-event" href="http://www.ultramarynos.com/" target="_blank">Más info <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
-        </div>
-      </div>
-    </div>
-    <div class="icons-row">
-      <div class="i-container">
-        <div class="also-feature"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/gastro-grey.svg" class="fr-fil fr-dib">
-
-          <p class="also-desc">Gastronomía</p>
-        </div>
-        <div class="also-feature"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/cultura-grey.svg" class="fr-fil fr-dib">
-
-          <p class="also-desc">Cultura</p>
-        </div>
-        <div class="also-feature"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/ruta-grey.svg" class="fr-fil fr-dib">
-
-          <p class="also-desc">Ruta</p>
         </div>
       </div>
     </div>';
