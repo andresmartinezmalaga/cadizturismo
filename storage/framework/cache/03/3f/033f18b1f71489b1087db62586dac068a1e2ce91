@@ -1,4 +1,4 @@
-1517223405a:1:{s:13:"allevents.htm";a:10:{s:8:"fileName";s:13:"allevents.htm";s:7:"content";s:1643:"title = "allEvents"
+1517225414a:1:{s:13:"allevents.htm";a:10:{s:8:"fileName";s:13:"allevents.htm";s:7:"content";s:1815:"title = "allEvents"
 url = "/todos-los-eventos"
 layout = "dinamic"
 is_hidden = 0
@@ -10,6 +10,13 @@ is_hidden = 0
 	
 	function onStart()
 	{	    
+    
+    if (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false) {
+          $this['preurl'] = '/cadizturismo';
+    } else {
+        $this['preurl'] = '';
+    }
+
     $this['lang']=\App::getLocale();
 		if($this['lang']==''){
 			$this['lang']='es';
@@ -54,7 +61,7 @@ is_hidden = 0
       
       <div class="header-txt">
         <h1 class="txt txt-home"><span class="first-word">{{ "Vive"|_ }}</span> {{ "nuestros eventos"|_ }}</h1>
-        <img class="brush" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/brush-header.svg" alt="">
+        <img class="brush" src="{{preurl}}/storage/app/media/uploaded-files/templates/brush-header.svg" alt="">
       </div>
    
     <!-- SEARCH -->
@@ -67,14 +74,14 @@ is_hidden = 0
 
 <div id='prtlEvents' class="all-exps">
   {% partial "allevents" %}
-</div>";s:5:"mtime";i:1517218422;s:6:"markup";s:545:"<!-- HEADER -->
+</div>";s:5:"mtime";i:1517223344;s:6:"markup";s:553:"<!-- HEADER -->
 <div class="header header-events">
   
   <div class="header-container">
       
       <div class="header-txt">
         <h1 class="txt txt-home"><span class="first-word">{{ "Vive"|_ }}</span> {{ "nuestros eventos"|_ }}</h1>
-        <img class="brush" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/brush-header.svg" alt="">
+        <img class="brush" src="{{preurl}}/storage/app/media/uploaded-files/templates/brush-header.svg" alt="">
       </div>
    
     <!-- SEARCH -->
@@ -87,10 +94,17 @@ is_hidden = 0
 
 <div id='prtlEvents' class="all-exps">
   {% partial "allevents" %}
-</div>";s:4:"code";s:987:"  
+</div>";s:4:"code";s:1151:"  
 	
 	function onStart()
 	{	    
+    
+    if (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false) {
+          $this['preurl'] = '/cadizturismo';
+    } else {
+        $this['preurl'] = '';
+    }
+
     $this['lang']=\App::getLocale();
 		if($this['lang']==''){
 			$this['lang']='es';

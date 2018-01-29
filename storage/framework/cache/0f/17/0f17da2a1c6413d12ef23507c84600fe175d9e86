@@ -1,4 +1,4 @@
-1517223405a:1:{s:8:"home.htm";a:10:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:5666:"title = "home"
+1517225414a:1:{s:8:"home.htm";a:10:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:5897:"title = "home"
 url = "/"
 layout = "dinamic"
 is_hidden = 0
@@ -11,6 +11,12 @@ is_hidden = 0
 
 	function onStart()
 	{
+
+    if (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false) {
+          $this['preurl'] = '/cadizturismo';
+    } else {
+        $this['preurl'] = '';
+    }
 
     $this['lang']=\App::getLocale();
 		if($this['lang']==''){
@@ -54,7 +60,7 @@ is_hidden = 0
 
         <div class="header-comment">
           <p class="comment">{{ '138km de playas, calas y ensenadas que invitan a perderse'|_ }}</p>
-          <a class="header-link" href="{{lang}}/playas">{{ 'Conoce nuestras playas'|_ }} &nbsp;<img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/link-arrow.svg" alt=""> </a>
+          <a class="header-link" href="{{lang}}/playas">{{ 'Conoce nuestras playas'|_ }} &nbsp;<img src="{{preurl}}/storage/app/media/uploaded-files/templates/link-arrow.svg" alt=""> </a>
         </div>
       </div>
     </div>
@@ -64,7 +70,7 @@ is_hidden = 0
 
       <div class="left-txt">
         <p class="title">{{ 'QUÉ SE CUECE HOY EN CÁDIZ'|_ }}</p>
-          <img class="separator" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
+          <img class="separator" src="{{preurl}}/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
          
          
           {% for i in 4..5 %}
@@ -79,7 +85,7 @@ is_hidden = 0
 
           
 
-            <a class="events-link" href="{{lang}}/todos-los-eventos">{{ 'Todos los eventos'|_ }}&nbsp;&nbsp;<img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/link-arrow-yellow.svg" alt=""> </a>
+            <a class="events-link" href="{{lang}}/todos-los-eventos">{{ 'Todos los eventos'|_ }}&nbsp;&nbsp;<img src="{{preurl}}/storage/app/media/uploaded-files/templates/link-arrow-yellow.svg" alt=""> </a>
       </div>
 
     
@@ -94,7 +100,7 @@ is_hidden = 0
             <div class="txt-container">
               <p class="date">{{ events[0]['date_start_pretty_day'] }} {{events[0]['date_start_pretty_month']|_}}</p>
               <p class="name">{{events[0]['title']}}</p>
-              <img class="separator" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/small-yellow-separator.svg">
+              <img class="separator" src="{{preurl}}/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
             </div>
           </div>
         </a>
@@ -108,7 +114,7 @@ is_hidden = 0
             <div class="txt-container">
               <p class="date">{{ events[1]['date_start_pretty_day'] }} {{events[1]['date_start_pretty_month']|_}}</p>
               <p class="name">{{events[1]['title']}}</p>
-              <img class="separator" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/small-yellow-separator.svg">
+              <img class="separator" src="{{preurl}}/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
             </div>
           </div>
         </a>
@@ -122,7 +128,7 @@ is_hidden = 0
             <div class="txt-container">
               <p class="date">{{ events[2]['date_start_pretty_day'] }} {{events[2]['date_start_pretty_month']|_}}</p>
               <p class="name">{{events[2]['title']}}</p>
-              <img class="separator" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/small-yellow-separator.svg">
+              <img class="separator" src="{{preurl}}/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
             </div>
           </div>
         </a>
@@ -136,7 +142,7 @@ is_hidden = 0
             <div class="txt-container">
               <p class="date">{{ events[3]['date_start_pretty_day'] }} {{events[3]['date_start_pretty_month']|_}}</p>
               <p class="name">{{events[3]['title']}}</p>
-              <img class="separator" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/small-yellow-separator.svg">
+              <img class="separator" src="{{preurl}}/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
             </div>
           </div>
         </a>
@@ -149,11 +155,11 @@ is_hidden = 0
       <div class="txt-container">
         <p class="title">{{ 'RUTAS SECRETAS'|_ }}</p>
         <p class="desc">{{ '¿Eres de emociones fuertes? Disfruta de Cádiz como nunca antes.'|_ }}</p>
-        <a class="events-link" href="{{lang}}/rutas">{{ 'Selección de rutas secretas'|_ }}<img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/link-arrow-yellow.svg" alt=""> </a>
-        <img class="separator" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
+        <a class="events-link" href="{{lang}}/rutas">{{ 'Selección de rutas secretas'|_ }}<img src="{{preurl}}/storage/app/media/uploaded-files/templates/link-arrow-yellow.svg" alt=""> </a>
+        <img class="separator" src="{{preurl}}/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
       </div>
     </div>
-";s:5:"mtime";i:1517218422;s:6:"markup";s:5062:"<!-- HEADER -->
+";s:5:"mtime";i:1517223344;s:6:"markup";s:5134:"<!-- HEADER -->
     <div class="header header-home">
       <div class="header-container">
         <div class="header-txt">
@@ -170,7 +176,7 @@ is_hidden = 0
 
         <div class="header-comment">
           <p class="comment">{{ '138km de playas, calas y ensenadas que invitan a perderse'|_ }}</p>
-          <a class="header-link" href="{{lang}}/playas">{{ 'Conoce nuestras playas'|_ }} &nbsp;<img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/link-arrow.svg" alt=""> </a>
+          <a class="header-link" href="{{lang}}/playas">{{ 'Conoce nuestras playas'|_ }} &nbsp;<img src="{{preurl}}/storage/app/media/uploaded-files/templates/link-arrow.svg" alt=""> </a>
         </div>
       </div>
     </div>
@@ -180,7 +186,7 @@ is_hidden = 0
 
       <div class="left-txt">
         <p class="title">{{ 'QUÉ SE CUECE HOY EN CÁDIZ'|_ }}</p>
-          <img class="separator" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
+          <img class="separator" src="{{preurl}}/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
          
          
           {% for i in 4..5 %}
@@ -195,7 +201,7 @@ is_hidden = 0
 
           
 
-            <a class="events-link" href="{{lang}}/todos-los-eventos">{{ 'Todos los eventos'|_ }}&nbsp;&nbsp;<img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/link-arrow-yellow.svg" alt=""> </a>
+            <a class="events-link" href="{{lang}}/todos-los-eventos">{{ 'Todos los eventos'|_ }}&nbsp;&nbsp;<img src="{{preurl}}/storage/app/media/uploaded-files/templates/link-arrow-yellow.svg" alt=""> </a>
       </div>
 
     
@@ -210,7 +216,7 @@ is_hidden = 0
             <div class="txt-container">
               <p class="date">{{ events[0]['date_start_pretty_day'] }} {{events[0]['date_start_pretty_month']|_}}</p>
               <p class="name">{{events[0]['title']}}</p>
-              <img class="separator" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/small-yellow-separator.svg">
+              <img class="separator" src="{{preurl}}/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
             </div>
           </div>
         </a>
@@ -224,7 +230,7 @@ is_hidden = 0
             <div class="txt-container">
               <p class="date">{{ events[1]['date_start_pretty_day'] }} {{events[1]['date_start_pretty_month']|_}}</p>
               <p class="name">{{events[1]['title']}}</p>
-              <img class="separator" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/small-yellow-separator.svg">
+              <img class="separator" src="{{preurl}}/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
             </div>
           </div>
         </a>
@@ -238,7 +244,7 @@ is_hidden = 0
             <div class="txt-container">
               <p class="date">{{ events[2]['date_start_pretty_day'] }} {{events[2]['date_start_pretty_month']|_}}</p>
               <p class="name">{{events[2]['title']}}</p>
-              <img class="separator" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/small-yellow-separator.svg">
+              <img class="separator" src="{{preurl}}/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
             </div>
           </div>
         </a>
@@ -252,7 +258,7 @@ is_hidden = 0
             <div class="txt-container">
               <p class="date">{{ events[3]['date_start_pretty_day'] }} {{events[3]['date_start_pretty_month']|_}}</p>
               <p class="name">{{events[3]['title']}}</p>
-              <img class="separator" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/small-yellow-separator.svg">
+              <img class="separator" src="{{preurl}}/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
             </div>
           </div>
         </a>
@@ -265,11 +271,17 @@ is_hidden = 0
       <div class="txt-container">
         <p class="title">{{ 'RUTAS SECRETAS'|_ }}</p>
         <p class="desc">{{ '¿Eres de emociones fuertes? Disfruta de Cádiz como nunca antes.'|_ }}</p>
-        <a class="events-link" href="{{lang}}/rutas">{{ 'Selección de rutas secretas'|_ }}<img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/link-arrow-yellow.svg" alt=""> </a>
-        <img class="separator" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/big-yellow-separator.svg">
+        <a class="events-link" href="{{lang}}/rutas">{{ 'Selección de rutas secretas'|_ }}<img src="{{preurl}}/storage/app/media/uploaded-files/templates/link-arrow-yellow.svg" alt=""> </a>
+        <img class="separator" src="{{preurl}}/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
       </div>
-    </div>";s:4:"code";s:509:"	function onStart()
+    </div>";s:4:"code";s:668:"	function onStart()
 	{
+
+    if (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false) {
+          $this['preurl'] = '/cadizturismo';
+    } else {
+        $this['preurl'] = '';
+    }
 
     $this['lang']=\App::getLocale();
 		if($this['lang']==''){
