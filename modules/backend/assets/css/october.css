@@ -4955,8 +4955,19 @@ nav#layout-mainmenu ul li .mainmenu-accountmenu li:first-child a:hover:after, na
   color: #CECECE;
   font-size: 11px; }
 
+.tab-pane span.comment {
+  margin-left: 15px !important; }
+
 .control-treeview ol > li > div p {
   margin-bottom: 0px; }
+
+.control-treeview ol > li > div:active {
+  background-color: #818181 !important;
+  outline: none; }
+  .control-treeview ol > li > div:active:before {
+    filter: brightness(10);
+    filter: -webkit-brightness(10);
+    filter: -moz-brightness(10); }
 
 .control-treeview ol > li > div > span.expand:before {
   top: 6px; }
@@ -5109,7 +5120,7 @@ nav#layout-mainmenu ul li .mainmenu-accountmenu li:first-child a:hover:after, na
 .control-filelist.filelist-hero ul li > a {
   background-color: #F6F6F6; }
 
-table.table.data tbody.icons td i[class^="icon-"] {
+table.table.data tbody.icons td i[class^="icon-"], table.table.data tbody tr.rowlink:hover td a:not(.btn), table.table.data tbody tr:not(.no-data).selected td a:not(.btn), table.table.data tbody tr.rowlink:hover td span, table.table.data tbody tr:not(.no-data).selected td span, table.table.data tbody tr.rowlink:hover td i[class^="icon-"], table.table.data tbody tr:not(.no-data).selected td i[class^="icon-"] {
   color: #175DA3; }
 
 #layout-side-panel div.control-toolbar.separator, .compact-toolbar div.control-toolbar.separator {
@@ -5151,7 +5162,9 @@ div[data-control="media-manager"] .list-container table.table.data tbody tr:not(
 
 .control-filelist.filelist-hero ul li.active > a, .control-treeview ol > li.active > div {
   background-color: #818181;
-  color: white !important; }
+  color: white !important;
+  border-bottom: 1px solid #818181 !important;
+  border-top: 1px solid #818181 !important; }
   .control-filelist.filelist-hero ul li.active > a a, .control-filelist.filelist-hero ul li.active > a span, .control-treeview ol > li.active > div a, .control-treeview ol > li.active > div span {
     color: white !important; }
 
@@ -5292,7 +5305,7 @@ table.name-value-list > a:hover, table.name-value-list > a:focus, table.name-val
 .fancy-layout .form-tabless-fields input[type=text]:focus, .fancy-layout .form-tabless-fields input[type=text]:hover {
   background-color: rgba(23, 93, 163, 0.6); }
 
-.select2-container--default .select2-selection--single .select2-selection__placeholder {
+.fancy-layout .select2-container--default .select2-selection--single .select2-selection__placeholder {
   color: white !important; }
 
 .fancy-layout .form-tabless-fields {
@@ -5488,3 +5501,10 @@ table.name-value-list > a:hover, table.name-value-list > a:focus, table.name-val
     background: #175DA3 !important; }
     .padded-container.layout .btn-primary:hover, .padded-container.layout .btn-primary:focus, .padded-container.layout .btn-primary:active {
       background: #0C5095 !important; }
+
+.tooltip-inner {
+  background-color: #0C5095;
+  font-size: 12px !important; }
+
+.tooltip.bottom .tooltip-arrow {
+  border-bottom-color: #0C5095; }
