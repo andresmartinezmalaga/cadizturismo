@@ -18,6 +18,8 @@ jQuery(function($)
       if ($(this).children('.also-desc').is(':empty')) {
         $(this).hide();
         console.log('oculto');
+      } else {
+        console.log('mostrar');
       }
     });
 
