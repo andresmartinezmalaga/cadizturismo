@@ -263,6 +263,14 @@ class Index extends Controller
                 $object['markup'] = PagesTemplates::getTPublicaciones();
             }
 
+            if($pageFileName == 'prensa-nacional.htm' && $templateMarkup ==''){
+                $object['markup'] = PagesTemplates::getTPrensa();
+            }
+
+            if($pageFileName == 'reportaje.htm' && $templateMarkup ==''){
+                $object['markup'] = PagesTemplates::getTReportaje();
+            }
+
         return $this->pushObjectForm($type, $object);
 
 
