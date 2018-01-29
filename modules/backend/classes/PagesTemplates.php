@@ -879,7 +879,8 @@ class PagesTemplates
       return $espaciosnaturales;
     }
 
-    static $espacionatural = '<!-- HEADER -->
+    static $espacionatural = '
+    <!-- HEADER -->
     <div class="header header-alcornocales">
       <div class="header-container header-village-container">
         <div class="header-txt header-txt-village">
@@ -888,7 +889,7 @@ class PagesTemplates
         </div>
       </div>
       <!-- NUEVA FOTO -->
-    	<img class="background-image fr-fil fr-dib" value="cover" src="***_preurl_***/storage/app/media/uploaded-files/templates/alcornocales1.jpg" alt="">
+      <img class="background-image fr-fil fr-dib" value="cover" src="***_preurl_***/storage/app/media/uploaded-files/templates/alcornocales1.jpg" alt="">
     </div>
     <!-- TXT-->
     <div class="section-txt-village">
@@ -901,19 +902,17 @@ class PagesTemplates
 
     <!-- IMAGEN -->
     <div class="featured-element featured-alcornocales">
-      <div class="txt-container">
-        <p class="title">TÍTULO DEL DESTACADO</p>
-        <p class="desc">Breve descripción</p>
-        <a class="events-link" href="rutas.html">Conocer <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-arrow-yellow.svg" alt=""> </a>
-        <img class="separator" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
-      </div>
+    <div class="txt-container">
+      <p class="title">TÍTULO DEL DESTACADO</p>
+      <p class="desc">Breve descripción</p>
+      <a class="events-link" href="rutas.html">Conocer <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-arrow-yellow.svg" alt=""> </a>
+      <img class="separator" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+    </div>
       <!-- NUEVA FOTO -->
-    	<div class="overlay">
-    		<br>
-    	</div>
+      <div class="overlay"><br></div>
       <img class="img-destacada fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/alcornocales2.jpg" alt="">
       </div>
-    </div> <div class="section-txt-village">
+    <div class="section-txt-village">
       <div class="txt-container">
               <p class="title">3 RUTAS QUE <br> HACER EN <br> (ESPACIO NATURAL)</p>
               <img class="separator" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">

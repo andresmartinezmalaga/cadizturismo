@@ -173,8 +173,23 @@ class Index extends Controller
             }
 
               if($pageFileName == 'naturaleza-espacios-naturales-bahia-de-cadiz.htm' && $templateMarkup ==''){
-                  $object['markup'] = PagesTemplates::getTBirdwatching();
-                }
+                  $object['markup'] = PagesTemplates::getTEspacioNatural();
+              }
+              if($pageFileName == 'naturaleza-espacios-naturales-del-estrecho.htm' && $templateMarkup ==''){
+                  $object['markup'] = PagesTemplates::getTEspacioNatural();
+              }
+              if($pageFileName == 'naturaleza-espacios-naturales-donana.htm' && $templateMarkup ==''){
+                  $object['markup'] = PagesTemplates::getTEspacioNatural();
+              }
+              if($pageFileName == 'naturaleza-espacios-naturales-la-brena-y-marismas-de-barbate.htm' && $templateMarkup ==''){
+                  $object['markup'] = PagesTemplates::getTEspacioNatural();
+              }
+              if($pageFileName == 'naturaleza-espacios-naturales-los-alcornocales.htm' && $templateMarkup ==''){
+                  $object['markup'] = PagesTemplates::getTEspacioNatural();
+              }
+              if($pageFileName == 'naturaleza-espacios-naturales-sierra-de-grazalema.htm' && $templateMarkup ==''){
+                  $object['markup'] = PagesTemplates::getTEspacioNatural();
+              }
 
         if($pageFileName == 'diversion.htm' && $templateMarkup ==''){
             $object['markup'] = PagesTemplates::getTDiversion();
