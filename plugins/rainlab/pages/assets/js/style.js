@@ -14,14 +14,14 @@ jQuery(function($)
         e.preventDefault();
     });
 
-    $('.i-container').children('.also-feature').each(function () {
-      if ($(this).children('.also-desc').html().indexOf('br')) {
-        $(this).hide();
-        console.log('oculto');
-      } else {
-        console.log('mostrar');
-      }
-    });
+    // $('.i-container').children('.also-feature').each(function () {
+    //   if ($(this).children('.also-desc').html().indexOf('br')) {
+    //     $(this).hide();
+    //     console.log('oculto');
+    //   } else {
+    //     console.log('mostrar');
+    //   }
+    // });
 
 });
 
