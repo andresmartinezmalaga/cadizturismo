@@ -259,6 +259,10 @@ class Index extends Controller
                 $object['markup'] = PagesTemplates::getTSala();
             }
 
+            if($pageFileName == 'publicaciones.htm' && $templateMarkup ==''){
+                $object['markup'] = PagesTemplates::getTPublicaciones();
+            }
+
         return $this->pushObjectForm($type, $object);
 
 
