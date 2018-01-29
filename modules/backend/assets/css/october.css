@@ -4955,6 +4955,12 @@ nav#layout-mainmenu ul li .mainmenu-accountmenu li:first-child a:hover:after, na
 .control-treeview ol > li > div p {
   margin-bottom: 0px; }
 
+.control-treeview ol > li > div > span.expand:before {
+  top: 6px; }
+
+.control-treeview ol > li > div:before {
+  top: 19px; }
+
 .control-treeview a.menu-control:hover, .control-treeview a.menu-control:focus,
 .control-treeview ol > li > div.popover-highlight {
   background-color: #818181 !important;
@@ -4972,7 +4978,7 @@ nav#layout-mainmenu ul li .mainmenu-accountmenu li:first-child a:hover:after, na
 .control-treeview ol > li.active > div {
   border-bottom: none !important; }
 
-/* CALENDAR */
+/* CALENDAR - EVENTOS */
 .pika-single {
   width: 296px;
   padding: 0px;
@@ -5000,6 +5006,35 @@ nav#layout-mainmenu ul li .mainmenu-accountmenu li:first-child a:hover:after, na
     text-decoration: none; }
   .pika-single .pika-table .pika-button {
     color: white; }
+
+.order-container {
+  height: 50px;
+  background-color: #E8E8E8;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; }
+  .order-container a {
+    display: block;
+    width: calc(100% / 3);
+    width: -webkit-calc(100% / 3);
+    width: -moz-calc(100% / 3);
+    color: #818181;
+    font-size: 11px;
+    text-align: center;
+    padding: 18px 0px;
+    transition: background-color 0.3s ease;
+    border-right: 1px solid #CECECE; }
+    .order-container a:hover {
+      background-color: #CECECE; }
+    .order-container a:last-child {
+      border-right: none; }
+  .order-container .active-a {
+    background-color: #CECECE; }
 
 .pika-single .pika-button:hover {
   background: #3498db !important;
