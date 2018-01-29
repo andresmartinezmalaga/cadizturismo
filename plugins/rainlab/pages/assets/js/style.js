@@ -14,19 +14,14 @@ jQuery(function($)
         e.preventDefault();
     });
 
-    $('.i-container').children('.also-feature').each(function () {
-      if ($(this).children('.also-desc').indexOf('br') != -1) {
-        $(this).hide();
-        console.log('oculto');
-      } else {
-        console.log('mostrar');
-        console.log($(this).html());
-      }
-    });
-
-    if ($('#popupdialog > p').is(':empty')) {
-    // we're empty. do stuff.
-}
+    // $('.i-container').children('.also-feature').each(function () {
+    //   if ($(this).children('.also-desc').html().indexOf('br')) {
+    //     $(this).hide();
+    //     console.log('oculto');
+    //   } else {
+    //     console.log('mostrar');
+    //   }
+    // });
 
 });
 
