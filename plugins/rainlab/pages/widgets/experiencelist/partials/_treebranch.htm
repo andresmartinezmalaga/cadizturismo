@@ -1,11 +1,11 @@
 <?php foreach ($items as $pageObj): ?>
-    
+
     <!-- Andrés Martínez : Get template & filter pages show
     -->
-    <?php 
+    <?php
         $template = $pageObj->page->getViewBag()->property('template');
     ?>
-    
+
     <?php if ($template == 'experiences') : ?>
 
         <?php
@@ -16,10 +16,10 @@
             $cbId = 'cb'.md5($fileName);
         ?>
 
-    
+
 
         <li
-            class="<?= $pageObj->subpages ? 'has-subitems' : null ?>" 
+            class="<?= $pageObj->subpages ? 'has-subitems' : null ?>"
             data-status="<?= $groupStatus || !$pageObj->subpages ? 'expanded' : 'collapsed' ?>"
             data-group-id="<?= e($fileName) ?>"
             data-item-path="<?= e($fileName) ?>"
@@ -30,9 +30,9 @@
                 <a href="#">
                     <div>
                         <?= e($pageObj->page->getViewBag()->property('title')) ?>
-                        <!-- Andrés Martínez : hidden url 
+                        
                             <span class="comment"><?= e($pageObj->page->getViewBag()->property('url')) ?></span>
-                        -->
+
                         <?php if ($pageObj->page->getViewBag()->property('is_hidden') == 1): ?>
                             <p><span class="comment borrador">BORRADOR</span></p>
                         <?php endif ?>
@@ -50,7 +50,7 @@
                         value="1">
                     <label for="<?= $cbId ?>">Select</label>
                 </div>
-            
+
                 <!-- Andrés Martínez : Hidden addSubpag button
                 -->
                 <!--<ul class="submenu">

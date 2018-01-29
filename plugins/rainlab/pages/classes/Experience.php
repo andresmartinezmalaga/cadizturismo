@@ -34,7 +34,7 @@ class Experience extends ContentBase
         '@RainLab.Translate.Behaviors.TranslatablePageUrl',
         '@RainLab.Translate.Behaviors.TranslatableCmsObject'
     ];
-    
+
     /**
      * @var string The container name associated with the model, eg: pages.
      */
@@ -121,69 +121,67 @@ class Experience extends ContentBase
         ];
 
         // Andrés Martínez : Load experiences template on markup
-                
+
         $template = '
         <!-- HEADER -->
-        <div class="header-event main-exp">          
+        <div class="header-event main-exp">
           <div class="header-container">
             <div class="header-txt">
-              <h1 class="txt">La magia de El Palmar</h1>
+              <h1 class="txt">Título</h1>
               <img class="brush" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt="">
-            
+
             </div>
           </div>
-          
+
           <!-- NUEVA FOTO -->
           <img class="background-image" value="cover" src="***_preurl_***/storage/app/media/uploaded-files/templates/palmar1.jpg" alt="">
-          
+
           <!-- FEATURES -->
           <div class="event-features">
             <div class="feature-exp">
               <img src="***_preurl_***/storage/app/media/uploaded-files/templates/calendar-exp.svg">
-              <p class="feature-txt">5 días</p>
+              <p class="feature-txt">Nº días</p>
             </div>
             <div class="feature-exp">
               <img src="***_preurl_***/storage/app/media/uploaded-files/templates/beach-exp.svg">
-              <p class="feature-txt">Playa</p>
+              <p class="feature-txt">Categoría 1</p>
             </div>
             <div class="feature-exp">
               <img src="***_preurl_***/storage/app/media/uploaded-files/templates/natu-exp.svg">
-              <p class="feature-txt">Naturaleza</p>
+              <p class="feature-txt">Categoría 2</p>
             </div>
             <div class="feature-exp">
               <img src="***_preurl_***/storage/app/media/uploaded-files/templates/cultura-event.svg">
-              <p class="feature-txt">Cádiz auténtica</p>
+              <p class="feature-txt">Tipo de visita</p>
             </div>
           </div>
         </div>
 
         <!-- SECTION TXT-->
         <div class="section-txt">
-          
+
           <div class="big-number-container">
             <span class="step">1</span>
           </div>
-          
+
           <div class="txt-container">
-            <p class="title">LA MAGIA DE <br> EL PALMAR</p>
-            <p class="desc">Si buscas conocer las auténticas playas de Cádiz, tienes una visita obligada a la zona de El Palmar. Situada en la costa del municipio de Vejer de la Frontera, dentro de la comarca de la Janda, encontrarás en el Palmar una kilométrica playa de aguas atlánticas que no te dejará indiferente. </p>
-            <p class="desc">Alrededor de una dehesa de palmeras se abre una enorme playa virgen a lo largo de 8km. Si eres de los que huyen de de las masificaciones y los macrocomplejos, y antepones lo natural a las comodidades que ofrecen los grandes resorts ubicados en otras costas, no puedes perderte este  espectáculo visual: playas que conservan su atractivo más puro y natural. </p>
+            <p class="title">TITULAR 1</p>
+            <p class="desc">Escribe aquí el contenido a desarrollar y agrega una imagen adicional si lo necesitas.</p>
           </div>
         </div>
-        
+
         <!-- SECTION IMG -->
         <div class="section-img">
           <img src="***_preurl_***/storage/app/media/uploaded-files/templates/palmar2.jpg" alt="">
         </div>
-       
+
         <div class="section-txt">
           <div class="big-number-container">
             <span class="step">2</span>
           </div>
           <div class="txt-container">
-            <p class="title">SURF</p>
-            <p class="desc">La situación geográfica del Palmar está condicionada por una gran variedad de vientos, y esto contribuye a que sus playas se consideren como el spot de surf mas consistente de toda la costa andaluza. La calidad de sus olas de derechas e izquierdas, su gran cantidad de picos repartidos por toda la playa y unas condiciones climatológicas inmejorables, hacen el lugar ideal para todo surfista.</p>
-            <p class="desc">De mayo a octubre se dan las condiciones más adecuadas: viento del Este y olas de mediana estatura que forman tubos y aseguran la diversión a los expertos de este deporte. </p>
+            <p class="title">TITULAR 2</p>
+            <p class="desc">Escribe aquí el contenido a desarrollar y agrega una imagen adicional si lo necesitas.</p>
           </div>
         </div>
 
@@ -192,56 +190,51 @@ class Experience extends ContentBase
         </div>
 
         <div class="section-txt">
-          
+
           <div class="big-number-container">
             <span class="step">3</span>
           </div>
-          
+
           <div class="txt-container">
-            <p class="title">ATMÓSFERA DE DESCONEXIÓN</p>
-            <p class="desc">En los meses de verano, un recopilado de chiringuitos se han instalado a pie de playa para asegurar a los visitantes ambientes chill donde disfrutar entre familia y amigos de la magia del Palmar. Tardes de baños y espectaculares puesta de sol que podrás acompañar con música en directo, mojitos y un ambiente más alternativo que te envolverán en esta atmósfera única.  </p>
-            <p class="desc">La gran afluencia turística de los últimos años no impide que la playa del Palmar haya dejado de presumir de su infinita tranquilidad. Hablamos de kilómetros de playa versátil, donde encontrarás un ambiente más alternativo y juvenil en la zona céntrica, o kilómetros a los extremos donde sumergirte en una fusión de pureza y paz en cualquier época del año.  </p>
+            <p class="title">TITULAR 3</p>
+            <p class="desc">Escribe aquí el contenido a desarrollar y agrega una imagen adicional si lo necesitas.</p>
           </div>
         </div>
 
         <div class="section-img">
           <img src="***_preurl_***/storage/app/media/uploaded-files/templates/palmar4.jpg" alt="">
         </div>
-        
+
         <div class="section-txt">
           <div class="big-number-container">
             <span class="step">4</span>
           </div>
-          
+
           <div class="txt-container">
-            <p class="title">LOS VECINOS</p>
-            <p class="desc">Aún tienes más por descubrir, porque los vecinos de El Palmar también tienen mucho para sorprenderte. En los kilómetros colindantes encontrarás otras zonas con mucho encanto que no querrás perderte:</p>
-            <p class="desc"><b>Conil:</b> famoso por sus playas, gastronomía y ambiente nocturno, se eleva sobre la llanura de el Palmar. Un pintoresco pueblo marinero de calles estrechas y casas blancas. Destacamos su famosa calle del Peñón, repleta de bares y pubs donde disfrutar del pescaíto frito de la zona. </p>
-            <p class="desc"><b>Las Calas de Roche:</b> Los acantilados que unen las costas de Chiclana y Conil atesoran un grupo de calas bellísimas, de arena fina y dorada, resguardadas del Levante. </p>
-            <p class="desc">Desde la carretera pasan desapercibidas y eso las hacen aún más especiales. Para llegar a ellas, antes deberás atravesar mediante pasarelas de madera un bosquecillo de matorrales y enebros marítimos único en Europa, para después bajar por escaleras de piedra que surgen entre las rocas de los acantilados hasta alcanzar la arena.</p>
-            <p class="desc"><b>Zahora:</b> al otro extremo encontrarás esta pedanía casi anecdótica que pertenece al municipio de Barbate. Se encuentra en el Cabo de Trafalgar, donde se levanta su magestuoso Faro de Trafalgar y recoge playas como la del Sajorami o la playa de Mangueta. Un pequeño pueblo con encanto que se divide entre playas espectaculares con dunas en las que perderte y una pequeña urbanización que suele crecer en verano. </p>
+            <p class="title">TITULAR 4</p>
+            <p class="desc">Escribe aquí el contenido a desarrollar y agrega una imagen adicional si lo necesitas.</p>
             <div class="municipios">
                 <div class="municipio">
                   <img src="***_preurl_***/storage/app/media/uploaded-files/templates/location-municipio.svg">
-                  <a target="_blank" href="https://www.google.es/maps/place/11140+Conil+de+la+Frontera,+C%C3%A1diz/data=!4m2!3m1!1s0xd0c381f6ac60cd1:0xf5342b7905a1d02e?sa=X&ved=0ahUKEwitqPGmhpvYAhXEaRQKHcK8D9UQ8gEImAEwEA">
-                    <p class="municipio-txt">Conil</p>
+                  <a target="_blank" href="Añade el enlace a la Ubicación 1 o a Google Maps">
+                    <p class="municipio-txt">Ubicación 1</p>
                   </a>
                 </div>
                 <div class="municipio">
                   <img src="***_preurl_***/storage/app/media/uploaded-files/templates/location-municipio.svg">
-                  <a target="_blank" href="https://www.google.es/search?q=las+calas+de+roche&npsic=0&rflfq=1&rlha=1&rlla=0&rlhsc=CgoIyO6usN2yuJMy&rllag=36307642,-6150099,109&tbm=lcl&ved=0ahUKEwj5y9q0hpvYAhVMWhQKHeu-BosQtgMIKg&hotel_dates=2018-01-14,2018-01-15&tbs=lf_hd:-1,lf_ho:2,lrf:!2m7!1e17!4m2!17m1!1e3!4m2!17m1!1e8!2m21!1e7!4m4!7m3!1m1!1u75!3sEUR!4m4!7m3!1m1!1u100!3sEUR!4m4!7m3!1m1!1u125!3sEUR!4m4!7m3!1m1!1u225!3sEUR!2m1!1e2!2m1!1e19!3sIAE,lf:1,lf_ui:6&rldoc=1#rlfi=hd:2018-01-14,2018-01-15;si:;mv:!1m3!1d5107.757163888957!2d-6.14749635!3d36.30320979999999!2m3!1f0!2f0!3f0!3m2!1i198!2i305!4f13.1;tbs:lf_hd:-1,lf_ho:2,lrf:!2m21!1e7!4m4!7m3!1m1!1u75!3sEUR!4m4!7m3!1m1!1u100!3sEUR!4m4!7m3!1m1!1u125!3sEUR!4m4!7m3!1m1!1u225!3sEUR!2m1!1e2!2m1!1e19!2m7!1e17!4m2!17m1!1e3!4m2!17m1!1e8!3sIAE,lf:1,lf_ui:6">
-                    <p class="municipio-txt">Las Calas de Roche</p>
+                  <a target="_blank" href="Añade el enlace a la Ubicación 2 o a Google Maps">
+                    <p class="municipio-txt">Ubicación 2</p>
                   </a>
                 </div>
                 <div class="municipio">
                   <img src="***_preurl_***/storage/app/media/uploaded-files/templates/location-municipio.svg"/>
-                  <a target="_blank" href="https://www.google.es/maps/place/11159+Zahora,+C%C3%A1diz/data=!4m2!3m1!1s0xd0c47338344472f:0xc21b61f8f66bf686?sa=X&ved=0ahUKEwizkfOYhpvYAhXHchQKHVwLDvEQ8gEIjQEwDg">
-                    <p class="municipio-txt">Zahora</p>
+                  <a target="_blank" href="Añade el enlace a la Ubicación 3 o a Google Maps">
+                    <p class="municipio-txt">Ubicación 3</p>
                   </a>
                 </div>
             </div>
         </div>
-     
+
         <div class="section-img">
           <img src="***_preurl_***/storage/app/media/uploaded-files/templates/palmar5.jpg" alt="">
         </div>';
@@ -273,7 +266,7 @@ class Experience extends ContentBase
 
         return['1' => '1 día', '2' => '2 días', '3' => '3 días', '4' => '4 días', '5' => '5 días', '6' => '6 días', '7' => '7 días'] ;
     }
-    
+
     /**
      * Sets the object attributes.
      * @param array $attributes A list of attributes to set.
@@ -330,7 +323,7 @@ class Experience extends ContentBase
      */
     public function beforeCreate()
     {
-        $this->fileName = $this->generateFilenameFromCode();       
+        $this->fileName = $this->generateFilenameFromCode();
     }
 
     /**
@@ -440,7 +433,7 @@ class Experience extends ContentBase
 
         return Cms::url($url);
     }
-    
+
     /**
      * Determine the default layout for a new page
      * @param \RainLab\Pages\Classes\Page $parentPage
@@ -458,7 +451,7 @@ class Experience extends ContentBase
                 return;
             }
         }
-        
+
         // Check theme layouts for one marked as the default
         foreach (Layout::listInTheme($this->theme) as $layout) {
             $component = $layout->getComponent('staticExperience');
@@ -854,7 +847,7 @@ class Experience extends ContentBase
      *   false if omitted.
      * - dynamicItems - Boolean value indicating whether the item type could generate new menu items.
      *   Optional, false if omitted.
-     * - cmsPages - a list of CMS pages (objects of the Cms\Classes\Page class), if the item type requires a CMS page reference to 
+     * - cmsPages - a list of CMS pages (objects of the Cms\Classes\Page class), if the item type requires a CMS page reference to
      *   resolve the item URL.
      * @param string $type Specifies the menu item type
      * @return array Returns an array
@@ -883,9 +876,9 @@ class Experience extends ContentBase
      * - url - the menu item URL. Not required for menu item types that return all available records.
      *   The URL should be returned relative to the website root and include the subdirectory, if any.
      *   Use the Cms::url() helper to generate the URLs.
-     * - isActive - determines whether the menu item is active. Not required for menu item types that 
+     * - isActive - determines whether the menu item is active. Not required for menu item types that
      *   return all available records.
-     * - items - an array of arrays with the same keys (url, isActive, items) + the title key. 
+     * - items - an array of arrays with the same keys (url, isActive, items) + the title key.
      *   The items array should be added only if the $item's $nesting property value is TRUE.
      * @param \RainLab\Pages\Classes\MenuItem $item Specifies the menu item.
      * @param \Cms\Classes\Theme $theme Specifies the current theme.

@@ -1395,7 +1395,7 @@ nav#layout-mainmenu ul li .mainmenu-accountmenu li:first-child a:hover:after, na
   padding-bottom: 20px !important;
 }
 
-.control-treeview ol > li > div span.comment {
+.control-treeview ol > li > div span.comment, .control-filelist.filelist-hero ul li > a span.description {
   // margin-left: 15px !important;
   // margin-top: 0px !important;
   margin-bottom: 0px;
@@ -1412,7 +1412,7 @@ nav#layout-mainmenu ul li .mainmenu-accountmenu li:first-child a:hover:after, na
 }
 
 .control-treeview ol > li > div:before {
-  top: 19px;
+  top: 22px;
 }
 
 .control-treeview a.menu-control:hover, .control-treeview a.menu-control:focus,

@@ -4950,7 +4950,7 @@ nav#layout-mainmenu ul li .mainmenu-accountmenu li:first-child a:hover:after, na
   padding-top: 20px !important;
   padding-bottom: 20px !important; }
 
-.control-treeview ol > li > div span.comment {
+.control-treeview ol > li > div span.comment, .control-filelist.filelist-hero ul li > a span.description {
   margin-bottom: 0px;
   color: #CECECE;
   font-size: 11px; }
@@ -4962,7 +4962,7 @@ nav#layout-mainmenu ul li .mainmenu-accountmenu li:first-child a:hover:after, na
   top: 6px; }
 
 .control-treeview ol > li > div:before {
-  top: 19px; }
+  top: 22px; }
 
 .control-treeview a.menu-control:hover, .control-treeview a.menu-control:focus,
 .control-treeview ol > li > div.popover-highlight {
