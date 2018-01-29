@@ -2086,12 +2086,12 @@ class PagesTemplates
 
     static $somos = '<div class="static-header about-header">
       <img class="img-header"
-      src="/cadizturismo/storage/app/media/uploaded-files/templates/cultura.jpg"
+      src="***_preurl_***/storage/app/media/uploaded-files/templates/cultura.jpg"
       alt="">
       <div class="header-container">
     		<div class="header-txt-comollegar">
     			<h1 class="txt">Somos arte</h1>
-          <img class="brush" src="/cadizturismo/storage/app/media/uploaded-files/templates/brush-header.svg">
+          <img class="brush" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg">
         </div>
     	</div>
       <div class="tagline-container">
@@ -2101,12 +2101,12 @@ class PagesTemplates
     </div>
     <div class="somos-section">
       <img class="img-header"
-      src="/cadizturismo/storage/app/media/uploaded-files/templates/somos-costa.jpg"
+      src="***_preurl_***/storage/app/media/uploaded-files/templates/somos-costa.jpg"
       alt="">
       <div class="header-container">
     		<div class="header-txt-comollegar">
     			<h1 class="txt">Somos costa</h1>
-          <img class="brush" src="/cadizturismo/storage/app/media/uploaded-files/templates/brush-header.svg">
+          <img class="brush" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg">
         </div>
     	</div>
       <div class="tagline-container">
@@ -2116,12 +2116,12 @@ class PagesTemplates
     </div>
     <div class="somos-section">
       <img class="img-header"
-      src="/cadizturismo/storage/app/media/uploaded-files/templates/somos-paisaje.jpg"
+      src="***_preurl_***/storage/app/media/uploaded-files/templates/somos-paisaje.jpg"
       alt="">
       <div class="header-container">
     		<div class="header-txt-comollegar">
     			<h1 class="txt">Somos paisaje</h1>
-          <img class="brush" src="/cadizturismo/storage/app/media/uploaded-files/templates/brush-header.svg">
+          <img class="brush" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg">
         </div>
     	</div>
       <div class="tagline-container">
@@ -2131,12 +2131,12 @@ class PagesTemplates
     </div>
     <div class="somos-section">
       <img class="img-header"
-      src="/cadizturismo/storage/app/media/uploaded-files/templates/somos-mas.jpg"
+      src="***_preurl_***/storage/app/media/uploaded-files/templates/somos-mas.jpg"
       alt="">
       <div class="header-container">
     		<div class="header-txt-comollegar">
     			<h1 class="txt">Somos más</h1>
-          <img class="brush" src="/cadizturismo/storage/app/media/uploaded-files/templates/brush-header.svg">
+          <img class="brush" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg">
         </div>
     	</div>
       <div class="tagline-container">
@@ -2146,7 +2146,7 @@ class PagesTemplates
     </div>
     <div class="somos-txt-container">
       <h3 class="publicaciones-title">SOBRE NOSOTROS</h3>
-      <img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+      <img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
       <p><b>Patronato Provincial de Turismo,</b> organismo autónomo local adscrito al Área de Turismo de la Diputación Provincial de Cádiz, con la misión de promocionar y fomentar el turismo de nuestra provincia.</p>
     </div>';
 
