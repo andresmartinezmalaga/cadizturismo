@@ -394,7 +394,7 @@ class StaticApp extends ComponentBase
 
         $data = array('experience' => 'experience');
 
-        $pdf = PDFS::renderView('pdf.experience.html.twig', $data);
+        $pdf = PDFS::loadView('pdf.experience', $data);
         $pdf_data = $pdf->output();
        
         $experience = 'experiencia';
