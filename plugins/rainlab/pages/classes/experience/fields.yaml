@@ -20,19 +20,19 @@ fields:
             prefixInput: input[data-parent-url]
         
     viewBag[days]:
-        label: 'días'
+        label: 'Días'
         cssClass: size33
         type: dropdown
         options: getDaysOptions
 
     viewBag[interest]:
-        label: 'intereses'
+        label: 'Intereses'
         cssClass: size33
         type: dropdown
         options: getInterestsOptions
 
     viewBag[tvisit]:
-        label: 'tipo de visita'
+        label: 'Tipo de visita'
         cssClass: size33nm
         type: dropdown
         options: getVisitsOptions

@@ -4,14 +4,14 @@
 
 fields:
     viewBag[title]:
-        span: full
+        span: left
         label: rainlab.pages::lang.editor.title
         placeholder: rainlab.pages::lang.event.new_title
         attributes:
             default-focus: 1
 
     viewBag[url]:
-        span: left
+        span: right
         placeholder: /
         label: rainlab.pages::lang.editor.url
         preset:
@@ -20,20 +20,25 @@ fields:
             prefixInput: input[data-parent-url]
     
     viewBag[category]:
-       span: right
+       cssClass: size33
        label: 'Categoría'
        type: dropdown
        options: getCategories
 
     viewBag[location]:
-        span: left
+        cssClass: size33       
         label: 'Ubicación'
         type: dropdown
         options: getMunicipalities
 
+    viewBag[days]:
+        cssClass: size33nm
+        label: 'Días'
+        type: dropdown
+        options: getDaysOptions
 
     viewBag[locationgoogle]:
-        span: right
+        span: left
         label: 'Url Google Map'
         
     

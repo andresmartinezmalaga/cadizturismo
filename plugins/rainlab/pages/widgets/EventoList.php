@@ -28,6 +28,7 @@ class EventoList extends WidgetBase
 
     protected $dataIdPrefix;
     public $tpe;
+    public $activeMenuFilter = 'all';
 
     /**
      * @var string Message to display when the Delete button is clicked.
@@ -118,6 +119,7 @@ class EventoList extends WidgetBase
     {
         $pageList = new StaticPageList($this->theme);
         $pages = $pageList->getPageTree(true);
+        $this->activeMenuFilter = 'all';
 
         // Andrés Martínez : get only events pages to list at treebranch
         $events = collect();
@@ -160,6 +162,8 @@ class EventoList extends WidgetBase
     protected function getDataOpen()
     {
         $now = Carbon::now()->format('Y-m-d');
+
+        $this->activeMenuFilter = 'open';
 
         $pageList = new StaticPageList($this->theme);
         $pages = $pageList->getPageTree(true);
@@ -209,7 +213,9 @@ class EventoList extends WidgetBase
     protected function getDataClosed()
     {
         $now = Carbon::now()->format('Y-m-d');
-      
+        
+        $this->activeMenuFilter = 'closed';
+
         $pageList = new StaticPageList($this->theme);
         $pages = $pageList->getPageTree(true);
 
