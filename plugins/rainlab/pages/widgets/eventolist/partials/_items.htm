@@ -1,6 +1,8 @@
-<a href="" data-request='onAllEvents'>Todos</a>
-<a href="" data-request='onOpenEvents'>Abiertos</a>
-<a href="" data-request='onClosedEvents'>Cerrados</a>
+<a href="" class="<?php if($this->activeMenuFilter == 'all'){echo 'active';} ?>" data-request='onAllEvents'>Todos</a>
+
+<a href="" class="<?php if($this->activeMenuFilter == 'open'){echo 'active';} ?>" data-request='onOpenEvents'>Abiertos</a>
+
+<a href="" class="<?php if($this->activeMenuFilter == 'closed'){echo 'active';} ?>" data-request='onClosedEvents'>Cerrados</a>
 
 <?php if ($items): ?>
     <ol>
