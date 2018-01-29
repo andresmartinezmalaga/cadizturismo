@@ -93,7 +93,7 @@ return [
         'saved' => 'El menú se ha guardado correctamente.',
         'name' => 'Nombre',
         'code' => 'Código',
-        'items' => 'Elementos del menu',
+        'items' => 'Elementos del menú',
         'add_subitem' => 'Añadir sub-elemento',
         'no_records' => 'No se han encontrado elementos.',
         'code_required' => 'El código es obligatorio',
