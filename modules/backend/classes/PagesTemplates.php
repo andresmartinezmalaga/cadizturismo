@@ -202,7 +202,6 @@ class PagesTemplates
 
       <p class="title">MUNICIPIOS DE
         <br>(COMARCA)</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
-      // <p class="desc small-desc">Déjate enamorar por Alcalá de los Gazules, Barbate, Benalup-Casas viejas, Conil de la Frontera, Medina Sidonia, Pierna de Rivera, San José del Valle y Vejer de la Frontera.</p>
     </div>
   </div>
   <div class="all-exps">
@@ -452,20 +451,16 @@ class PagesTemplates
 
       <p class="title">TITULAR 1</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
 
-      <p class="desc">Situado en la comarca de La Janda, Barbate es un precioso pueblo gaditano que alberga uno de los puertos pesqueros más famosos de Andalucía. A lo largo de los 25 kilómetros de costa que agrupa el término municipal, encontrarás pueblos y pedanías como Zahara de los Atunes, Caños de Meca y Zahora, y en ellos, playas naturales, dunas y acantilados que componen uno de los núcleos turísticos más reconocidos del sur de España.</p>
-
-      <p class="desc">El municipio ofrece la posibilidad de realizar una gran variedad de rutas de gran interés ecológico y paisajístico gracias al Parque Natural de la Breña y las Marismas de Barbate.</p>
-
-      <p class="desc">Las condiciones de pesca que ofrece la zona permiten hacen destacar a su gastronomía por el famoso atún de Almadraba, un manjar único que merece la pena disfrutar en los restaurantes de Barbate.</p>
+      <p class="desc">Escribe aquí el contenido a desarrollar y agrega una imagen adicional si lo necesitas. </p>
     </div>
   </div>
   <!-- IMAGEN -->
   <div class="img-village">
     <div class="txt-container">
 
-      <p class="title">Marismas de Barbate</p>
+      <p class="title">TÍTULO DE 1 EXPERIENCIA</p>
 
-      <p class="desc">¿Eres de emociones fuertes? Disfruta de Cádiz como nunca antes.</p><a class="events-link" href="#playas">Selección de rutas naturales <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-arrow-yellow.svg" alt="" class="fr-fic fr-dii">&nbsp;</a>
+      <p class="desc">Escribe aquí una breve descripción al enlace que vas a sugerir.</p><a class="events-link" href="#">Conocer <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-arrow-yellow.svg" alt="" class="fr-fic fr-dii">&nbsp;</a>
       <img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
       <!-- NUEVA FOTO -->
       <img class="img-destacada" src="***_preurl_***/storage/app/media/uploaded-files/templates/marismas-barbate.jpg" alt="">
@@ -473,9 +468,9 @@ class PagesTemplates
   <div class="section-txt-village">
     <div class="txt-container">
 
-      <p class="title">3 COSAS QUE
+      <p class="title">QUÉ
         <br>HACER EN LA PLAYA
-        <br>DE LOS LANCES</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
+        <br>DE (NOMBRE)</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
   </div>
   <div class="all-exps" id="exps-playa">
     <div class="all-events-container">
@@ -485,9 +480,9 @@ class PagesTemplates
         </div><img class="rec-img fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/kite.jpg">
         <div class="txt-container">
 
-          <p class="name">3 SIXTY KITE SCHOOL</p>
+          <p class="name">SUGERENCIA 1</p>
 
-          <p class="subtitle">Utilizamos el método IKO y todos los instructores están certificados en IKO de nivel 3.</p><img class="separator separator-playa fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+          <p class="subtitle">Pequeña descripción de la sugerencia</p><img class="separator separator-playa fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
           <a class="see-event" href="#">Saber más <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
       </div>
       <div class="event event-playa">
@@ -496,9 +491,9 @@ class PagesTemplates
         </div><img class="rec-img fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/arte-vida.jpg">
         <div class="txt-container">
 
-          <p class="name">ARTE Y VIDA TARIFA</p>
+          <p class="name">SUGERENCIA 2</p>
 
-          <p class="subtitle">Lugar ideal para el descanso, y disfrutar de nuestras terrazas, restaurante o zonas chill out.</p><img class="separator separator-playa fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+          <p class="subtitle">Pequeña descripción de la sugerencia</p><img class="separator separator-playa fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
           <a class="see-event" href="#">Saber más <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
       </div>
       <div class="event event-playa">
@@ -507,9 +502,9 @@ class PagesTemplates
         </div><img class="rec-img fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/camping.jpg">
         <div class="txt-container">
 
-          <p class="name">CAMPING TORRE DE LA PEÑA</p>
+          <p class="name">SUGERENCIA 3</p>
 
-          <p class="subtitle">Camping, Bungalows y Restaurante en Tarifa con un pesacado de primera.</p><img class="separator separator-playa fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+          <p class="subtitle">Pequeña descripción de la sugerencia</p><img class="separator separator-playa fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
           <a class="see-event" href="#">Saber más <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
       </div>
     </div>
