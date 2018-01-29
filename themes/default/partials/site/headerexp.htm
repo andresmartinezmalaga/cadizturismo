@@ -11,11 +11,18 @@
      }
   }
 
+  
+
 ?>
 
 ==
 <!-- MENU-->
 {% partial "site/menu" %}  
+
+        <form data-request="onMailExperience">
+            <input type="submit" value="Prueba">
+        </form>
+
 
 <div class="send-info-container">
   <!-- Botón para enviar la experiencia -->
@@ -26,15 +33,16 @@
   </div>
 </div>
 
+ 
 <div id="modal-exp"> <!-- data-iziModal-fullscreen="true"  data-iziModal-title="Welcome"  data-iziModal-subtitle="Subtitle"  data-iziModal-icon="icon-home" -->
     <!-- Modal content -->
     <div class="modal-container">
       <img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/modal-icon.svg">
       <h3>{{'¿Quieres recibir esta experiencia en tu email?'|_}}</h3>
       <p>{{'Escribe tu email y en unos segundos tendrás la experiencia en tu móvl para que puedas verla siempre que quieras.'|_}}</p>
-      <form class="" action="index.html" method="post">
+      <form id = "modalMailExperience" class="" data-request="onMailExperience">
         <input type="email" name="mail" placeholder="Escribe tu email"/>
-        <input type="submit" value="Enviar experiencia" data-izimodal-open="#modal-success">
+        <input  type="submit" value="Enviar experiencia">
       </form>
     </div>
 </div>
@@ -48,4 +56,5 @@
       <a href="#" data-izimodal-close="#modal-success" data-izimodal-open="#modal-exp">{{'¿No recibes tu experiencia?'|_}}</a>
     </div>
 </div>
+
 

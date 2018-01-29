@@ -11,6 +11,10 @@ use DateTime;
 use Carbon\Carbon;
 use Carbon\CarbonInterval;
 
+use Barryvdh\Snappy\Facades\SnappyPdf as PDFS;
+
+use Mail;
+
 /**
  * The static page component.
  *
@@ -379,6 +383,36 @@ class StaticApp extends ComponentBase
         $result = $rutas->where("is_hidden",0)->where('template','rutas')->where('category',$category)->where('days',$days)->where('location',$location)->values();
        
         return $result;
+    }
+
+
+    public function sendMailExperience($mail, $url) {
+
+        $contactName ='Cadiz Turismo';
+        $sendContact ='noreply@cadizturismo.es';
+        $sendTo =  $mail;
+
+        $data = array('experience' => 'experience');
+
+        $pdf = PDFS::loadView('pdf.experience', $data);
+        $pdf_data = $pdf->output();
+       
+        $experience = 'experiencia';
+
+        $dataemail = array('experience' => 'experience');
+
+        Mail::send('mails.experience', $dataemail, function($message) use ($contactName, $sendContact, $sendTo)
+        {   
+
+            $message->from($sendContact, $contactName);
+            $message->to($sendTo);
+            $message->attachData($pdf_data, 'experience.pdf');
+            $message->subject('Tu experiencia en Cadiz Turismo');
+
+        });
+
+
+
     }
 
 
