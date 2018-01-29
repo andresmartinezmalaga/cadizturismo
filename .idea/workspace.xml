@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87ff11be-c4c2-4ca5-8374-8a1952dec0dc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/cms/cache/58/a2/default.htm.php" afterPath="$PROJECT_DIR$/storage/cms/cache/58/a2/default.htm.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/9e/8f/9e8fe26cba0258c71c4d5f1333b6cfa05599796e" afterPath="$PROJECT_DIR$/storage/framework/cache/9e/8f/9e8fe26cba0258c71c4d5f1333b6cfa05599796e" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/b1/b6/b1b6b61b6cd58fcbec08f9d00687d524901e8a6d" afterPath="$PROJECT_DIR$/storage/framework/cache/b1/b6/b1b6b61b6cd58fcbec08f9d00687d524901e8a6d" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/c3/29/c329d12ce45fec52220977e5cb8951bf52566f34" afterPath="$PROJECT_DIR$/storage/framework/cache/c3/29/c329d12ce45fec52220977e5cb8951bf52566f34" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/d0/1e/d01e8e95ac402ba16ad83ad09f6851991c3b6212" afterPath="$PROJECT_DIR$/storage/framework/cache/d0/1e/d01e8e95ac402ba16ad83ad09f6851991c3b6212" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/d6/a8/d6a8dc1cfaee0c092c67e3b97bf7c53047f5e377" afterPath="$PROJECT_DIR$/storage/framework/cache/d6/a8/d6a8dc1cfaee0c092c67e3b97bf7c53047f5e377" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/default/layouts/evento.htm" afterPath="$PROJECT_DIR$/themes/default/layouts/evento.htm" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -98,7 +92,7 @@
         <entry file="file://$PROJECT_DIR$/themes/default/layouts/evento.htm">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="563">
-              <caret line="66" column="106" lean-forward="false" selection-start-line="66" selection-start-column="106" selection-end-line="66" selection-end-column="106" />
+              <caret line="66" column="102" lean-forward="false" selection-start-line="66" selection-start-column="102" selection-end-line="66" selection-end-column="102" />
               <folding />
             </state>
           </provider>
@@ -349,12 +343,12 @@
       <option name="presentableId" value="Default" />
       <updated>1516786709693</updated>
       <workItem from="1516786712254" duration="14987000" />
-      <workItem from="1517217750113" duration="1315000" />
+      <workItem from="1517217750113" duration="1349000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16302000" />
+    <option name="totallyTimeSpent" value="16336000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="292" y="22" width="2268" height="1054" extended-state="0" />
@@ -684,7 +678,7 @@
     <entry file="file://$PROJECT_DIR$/themes/default/layouts/evento.htm">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="563">
-          <caret line="66" column="106" lean-forward="false" selection-start-line="66" selection-start-column="106" selection-end-line="66" selection-end-column="106" />
+          <caret line="66" column="102" lean-forward="false" selection-start-line="66" selection-start-column="102" selection-end-line="66" selection-end-column="102" />
           <folding />
         </state>
       </provider>
