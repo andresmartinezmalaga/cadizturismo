@@ -207,7 +207,9 @@
                     <td align="center" valign="top" style="height: 100%;">
                         <!-- ICONOS EXPERIENCIA -->
                         <table role="panel" cellspacing="0" cellpadding="0" border="0" align="left" style="width:58%; height: 100%; margin: 0 auto; float: none;">
-                            
+                            <tr class="icons-row" style="height: 100%;">
+                                
+                            </tr>
                         </table>
 
                     </td>
