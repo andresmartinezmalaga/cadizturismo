@@ -216,20 +216,20 @@ class Experience extends ContentBase
             <div class="municipios">
                 <div class="municipio">
                   <img src="***_preurl_***/storage/app/media/uploaded-files/templates/location-municipio.svg">
-                  <a target="_blank" href="Añade el enlace a la Ubicación 1 o a Google Maps">
-                    <p class="municipio-txt">Ubicación 1</p>
+                  <a class=""municipio-txt" target="_blank" href="">
+                    Ubicación 1
                   </a>
                 </div>
                 <div class="municipio">
                   <img src="***_preurl_***/storage/app/media/uploaded-files/templates/location-municipio.svg">
-                  <a target="_blank" href="Añade el enlace a la Ubicación 2 o a Google Maps">
-                    <p class="municipio-txt">Ubicación 2</p>
+                  <a class="municipio-txt" target="_blank" href="">
+                    Ubicación 2
                   </a>
                 </div>
                 <div class="municipio">
                   <img src="***_preurl_***/storage/app/media/uploaded-files/templates/location-municipio.svg"/>
-                  <a target="_blank" href="Añade el enlace a la Ubicación 3 o a Google Maps">
-                    <p class="municipio-txt">Ubicación 3</p>
+                  <a class="municipio-txt" target="_blank" href="">
+                  Ubicación 3
                   </a>
                 </div>
             </div>
