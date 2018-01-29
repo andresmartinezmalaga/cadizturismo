@@ -1,7 +1,7 @@
 <?php namespace Backend\Classes;
 
 class PagesTemplates
-{	
+{
   static function getFinalTemplate($template){
     if (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false) {
       $preurl = '/cadizturismo';
@@ -10,7 +10,7 @@ class PagesTemplates
     }
 
     $result = str_replace('***_preurl_***',$preurl,$template);
-    
+
     return $result;
   }
 
@@ -21,7 +21,7 @@ class PagesTemplates
       <div class="header-txt">
         <h1 class="txt">Comarcas</h1>
         <img class="brush fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt="">
-      </div>  
+      </div>
     </div>
     <img class="background-image fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/comarcas.jpg" alt="">
   </div>
@@ -124,7 +124,7 @@ class PagesTemplates
 
       <p class="desc">En cuanto a muestras pictóricas, pueden encontrarse magníficos <strong>lienzos de El Greco, Murillo, Zurbarán y Goya</strong>, repartidos en diferentes iglesias y museos de la provincia.</p><a class="download" href="/es/cultura">Descubre toda la cultura de Cádiz <img src="***_preurl_***/storage/app/media/uploaded-files/templates/yellow-arrow.svg" alt="" class="fr-fic fr-dii">&nbsp;</a></div>
   </div>
-  
+
   <div class="section-img-comarca"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/comarcas2.jpg" alt="" class="fr-fic fr-dii"></div>
   <div class="section-txt-comarca">
     <div class="txt-container">
@@ -265,7 +265,7 @@ class PagesTemplates
       </div>
     </div>
   </div>';
-    
+
   static function getTComarca(){
     $comarca = PagesTemplates::getFinalTemplate(PagesTemplates::$comarca);
     return $comarca;
@@ -303,7 +303,7 @@ class PagesTemplates
   <div class="header header-village">
     <div class="header-container header-village-container">
       <div class="header-txt header-txt-village">
-        <h1 class="txt"><span class="first-word">Tarifa</span></h1><img class="brush fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
+        <h1 class="txt"><span class="first-word">Nombre del municipio</span></h1><img class="brush fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
     </div>
     <!-- NUEVA FOTO -->
     <img class="background-image" value="cover" src="***_preurl_***/storage/app/media/uploaded-files/templates/barbate1.jpg" alt="">
@@ -312,23 +312,27 @@ class PagesTemplates
   <div class="section-txt-village">
     <div class="txt-container">
 
-      <p class="title">LA CIUDAD DE
-        <br>LA ALMADRABA</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+      <p class="title">TITULAR</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
 
-      <p class="desc">Situado en la comarca de La Janda, Barbate es un precioso pueblo gaditano que alberga uno de los puertos pesqueros más famosos de Andalucía. A lo largo de los 25 kilómetros de costa que agrupa el término municipal, encontrarás pueblos y pedanías como Zahara de los Atunes, Caños de Meca y Zahora, y en ellos, playas naturales, dunas y acantilados que componen uno de los núcleos turísticos más reconocidos del sur de España.</p>
+      <p class="desc">Escribe aquí el contenido a desarrollar y agrega una imagen adicional si lo necesitas.</p>
+    </div>
+  </div>
+  <div class="section-txt-village">
+    <div class="txt-container">
 
-      <p class="desc">El municipio ofrece la posibilidad de realizar una gran variedad de rutas de gran interés ecológico y paisajístico gracias al Parque Natural de la Breña y las Marismas de Barbate.</p>
+      <p class="title">TITULAR 2 (OPCIONAL)</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
 
-      <p class="desc">Las condiciones de pesca que ofrece la zona permiten hacen destacar a su gastronomía por el famoso atún de Almadraba, un manjar único que merece la pena disfrutar en los restaurantes de Barbate.</p>
+      <p class="desc">Añade aquí un nuevo bloque de texto si necesitas ampliar la información de este municipio. También puedes agregar una nueva imagen. </p>
     </div>
   </div>
   <!-- IMAGEN -->
   <div class="img-village">
     <div class="txt-container">
 
-      <p class="title">Marismas de Barbate</p>
+      <p class="title">Título del destacado</p>
 
-      <p class="desc">¿Eres de emociones fuertes? Disfruta de Cádiz como nunca antes.</p><a class="events-link" href="rutas.html">Selección de rutas naturales <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-arrow-yellow.svg" alt="" class="fr-fic fr-dii">&nbsp;</a>
+      <p class="desc">Puedes destacar una ruta, una playa o un evento. Escribe una breve descripción sobre el enlace que vas a sugerir.</p>
+      <a class="events-link" href="rutas.html">Conocer <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-arrow-yellow.svg" alt="" class="fr-fic fr-dii">&nbsp;</a>
       <img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
       <!-- NUEVA FOTO -->
       <img class="img-destacada" src="***_preurl_***/storage/app/media/uploaded-files/templates/marismas-barbate.jpg" alt="">
@@ -337,9 +341,7 @@ class PagesTemplates
     <div class="txt-container">
 
       <p class="title">EXPERIENCIAS
-        <br>EN BARBATE</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
-
-      <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse non dolor diam. Donec lobortis arcu sem, vitae rhoncus magna rhoncus ut. Proin ut est at est mollis pellentesque eu a sem.</p>
+        <br>EN (MUNICIPIO)</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
     </div>
   </div>
   <div class="all-exps">
@@ -350,23 +352,23 @@ class PagesTemplates
         </div><img class="rec-img fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/atun.jpg">
         <div class="txt-container">
 
-          <p class="name">SEMANA GASTRONÓMICA DEL ATÚN</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+          <p class="name">TÍTULO EXPERIENCIA 1</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
           <div class="icons">
             <div class="icon-pair"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/calendar-exp.svg" class="fr-fil fr-dib">
 
-              <p class="icon-txt">5 días</p>
+              <p class="icon-txt">Nº días</p>
             </div>
             <div class="icon-pair"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/cultura-event.svg" class="fr-fil fr-dib">
 
-              <p class="icon-txt">Cádiz auténtica</p>
+              <p class="icon-txt">Tipo de visita</p>
             </div>
             <div class="icon-pair"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/natu-events.svg" class="fr-fil fr-dib">
 
-              <p class="icon-txt">Naturaleza</p>
+              <p class="icon-txt">Interés 1</p>
             </div>
             <div class="icon-pair"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/gastro-exp.svg" class="fr-fil fr-dib">
 
-              <p class="icon-txt">Gastronomía</p>
+              <p class="icon-txt">Interés 2</p>
             </div>
           </div>
           <div class="button-container"><a class="see-event" href="#">Ver experiencia <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
@@ -378,23 +380,23 @@ class PagesTemplates
         </div><img class="rec-img fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/faro.jpg">
         <div class="txt-container">
 
-          <p class="name">VISITA AL FARO DE TRAFALGAR</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+          <p class="name">TÍTULO EXPERIENCIA 2</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
           <div class="icons">
             <div class="icon-pair"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/calendar-exp.svg" class="fr-fil fr-dib">
 
-              <p class="icon-txt">3 horas</p>
+              <p class="icon-txt">Nº días</p>
             </div>
             <div class="icon-pair"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/cultura-event.svg" class="fr-fil fr-dib">
 
-              <p class="icon-txt">Cádiz auténtica</p>
+              <p class="icon-txt">Tipo de visita</p>
             </div>
             <div class="icon-pair"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/cultura-event.svg" class="fr-fil fr-dib">
 
-              <p class="icon-txt">Naturaleza</p>
+              <p class="icon-txt">Interés 1</p>
             </div>
             <div class="icon-pair"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/ocio-exp.svg" class="fr-fil fr-dib">
 
-              <p class="icon-txt">Ocio</p>
+              <p class="icon-txt">Interés 2</p>
             </div>
           </div>
           <div class="button-container"><a class="see-event" href="#">Ver experiencia <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
@@ -406,23 +408,23 @@ class PagesTemplates
         </div><img class="rec-img fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/brena.jpg">
         <div class="txt-container">
 
-          <p class="name">LA BREÑA Y MARISMAS DE BARBATE</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+          <p class="name">TÍTULO EXPERIENCIA 3</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
           <div class="icons">
             <div class="icon-pair"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/calendar-exp.svg" class="fr-fil fr-dib">
 
-              <p class="icon-txt">2 horas</p>
+              <p class="icon-txt">Nº días</p>
             </div>
             <div class="icon-pair"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/cultura-event.svg" class="fr-fil fr-dib">
 
-              <p class="icon-txt">Cádiz auténtica</p>
+              <p class="icon-txt">Tipo de visita</p>
             </div>
             <div class="icon-pair"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/natu-events.svg" class="fr-fil fr-dib">
 
-              <p class="icon-txt">Naturaleza</p>
+              <p class="icon-txt">Interés 1</p>
             </div>
             <div class="icon-pair"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/ruta-exp.svg" class="fr-fil fr-dib">
 
-              <p class="icon-txt">Ruta</p>
+              <p class="icon-txt">Interés 2</p>
             </div>
           </div>
           <div class="button-container"><a class="see-event" href="#">Ver experiencia <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
@@ -452,7 +454,7 @@ class PagesTemplates
     return $municipio;
   }
 
-  
+
   static $playas = '
   <!-- HEADER -->
   <div class="header-general header-playas">
@@ -611,7 +613,7 @@ class PagesTemplates
     $playa = PagesTemplates::getFinalTemplate(PagesTemplates::$playa);
     return $playa;
   }
- 
+
   static $naturaleza = '
   <!-- HEADER -->
   <div class="header-general header-naturaleza">

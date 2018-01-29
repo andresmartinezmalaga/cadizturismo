@@ -4874,6 +4874,9 @@ nav#layout-mainmenu.navbar-mode-inline ul.mainmenu-nav li:first-child {
   padding-top: 20px;
   padding-bottom: 20px; }
 
+#layout-side-panel .menu-list {
+  margin-top: 0px !important; }
+
 /* MENÚ */
 .w-350 {
   width: 308px !important; }
