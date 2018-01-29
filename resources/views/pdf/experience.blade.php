@@ -1,26 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Email Framework - HTML Email Fluid Grid Layout</title>
     <style type="text/css">
 
-    @font-face {
-      font-family: 'AvenirNext-Medium';
-      src: url("/exp-pdf/fonts/avenirnext/AvenirNext-Medium.eot");
-      src: url("/exp-pdf/fonts/avenirnext/AvenirNext-Medium.eot?#iefix") format("embedded-opentype"),
-      url("/exp-pdf/fonts/avenirnext/AvenirNext-Medium.woff") format("woff"),
-      url("/exp-pdf/fonts/avenirnext/AvenirNext-Medium.ttf") format("truetype");
-      font-weight: normal;
-      font-style: normal; }
-
-      @font-face {
-        font-family: Ryssa;
-        src: url("/exp-pdf/fonts/ryssa/RissaTypeface.eot");
-        src: url("/exp-pdf/fonts/ryssa/RissaTypeface.eot?#iefix") format("embedded-opentype"),
-        url("/exp-pdf/fonts/ryssa/RissaTypeface.woff") format("woff"),
-        url("/exp-pdf/fonts/ryssa/RissaTypeface.ttf") format("truetype");
-        font-weight: normal;
-        font-style: normal; }
+   
 
         /* CLIENT-SPECIFIC STYLES */
         body, table, td, a, p { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; font-size: 10px; font-family: 'AvenirNext-Medium'; }
