@@ -1,4 +1,4 @@
-1517225414a:1:{s:11:"default.htm";a:12:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:3490:"description = "Default Layout"
+1517225650a:1:{s:11:"default.htm";a:12:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:3512:"description = "Default Layout"
 
 [staticPage]
 useContent = 1
@@ -29,7 +29,9 @@ code = "que-hacer"
             $this['lang']='es';
         }
                 $this['urlPage'] = $this->page->url;
-$this['metaImg'] = $this->page->apiBag["staticPage"]->attributes["viewBag"]["cover"];
+
+    if($this->page->apiBag)
+    $this['metaImg'] = $this->page->apiBag["staticPage"]->attributes["viewBag"]["cover"];
 
 }
 
@@ -43,7 +45,7 @@ $this['metaImg'] = $this->page->apiBag["staticPage"]->attributes["viewBag"]["cov
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <meta name="google-site-verification" content="KZtyPnD_0KXDnRTpmvwxNoBcvj3Osx_VKrXoJaucHrE" />
-    <meta property="og:image" content="{{ this.page.meta_image }}">
+    <meta property="og:image" content="{{ metaImg }}">
     <title>Cádiz</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
@@ -87,14 +89,14 @@ $this['metaImg'] = $this->page->apiBag["staticPage"]->attributes["viewBag"]["cov
 
   </body>
 </html>
-";s:5:"mtime";i:1517224811;s:6:"markup";s:2891:"<!DOCTYPE html>
+";s:5:"mtime";i:1517225047;s:6:"markup";s:2878:"<!DOCTYPE html>
 <html lang="es">
 
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <meta name="google-site-verification" content="KZtyPnD_0KXDnRTpmvwxNoBcvj3Osx_VKrXoJaucHrE" />
-    <meta property="og:image" content="{{ this.page.meta_image }}">
+    <meta property="og:image" content="{{ metaImg }}">
     <title>Cádiz</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
@@ -137,7 +139,7 @@ $this['metaImg'] = $this->page->apiBag["staticPage"]->attributes["viewBag"]["cov
     <script type="text/javascript" src="{{url('/')}}/plugins/rainlab/pages/assets/js/style.js"></script>
 
   </body>
-</html>";s:4:"code";s:300:"
+</html>";s:4:"code";s:335:"
 
     function onStart()
     {
@@ -146,7 +148,9 @@ $this['metaImg'] = $this->page->apiBag["staticPage"]->attributes["viewBag"]["cov
             $this['lang']='es';
         }
                 $this['urlPage'] = $this->page->url;
-$this['metaImg'] = $this->page->apiBag["staticPage"]->attributes["viewBag"]["cover"];
+
+    if($this->page->apiBag)
+    $this['metaImg'] = $this->page->apiBag["staticPage"]->attributes["viewBag"]["cover"];
 
 }
 ";s:11:"description";s:14:"Default Layout";s:10:"staticPage";a:2:{s:10:"useContent";s:1:"1";s:7:"default";s:1:"0";}s:10:"staticMenu";a:1:{s:4:"code";s:8:"donde-ir";}s:22:"staticMenu staticMenu2";a:1:{s:4:"code";s:9:"que-vivir";}s:22:"staticMenu staticMenu3";a:1:{s:4:"code";s:11:"mi-estancia";}s:22:"staticMenu staticMenu4";a:1:{s:4:"code";s:9:"que-hacer";}s:9:"staticApp";a:0:{}}}

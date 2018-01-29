@@ -29,6 +29,8 @@ code = "que-hacer"
             $this['lang']='es';
         }
                 $this['urlPage'] = $this->page->url;
+$this['metaImg'] = $this->page->apiBag["staticPage"]->attributes["viewBag"]["cover"];
+
 
 }
 
@@ -42,7 +44,7 @@ code = "que-hacer"
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <meta name="google-site-verification" content="KZtyPnD_0KXDnRTpmvwxNoBcvj3Osx_VKrXoJaucHrE" />
-    <meta property="og:image" content="{{ this.page.meta_image }}">
+    <meta property="og:image" content="{{ metaImg }}">
     <title>Cádiz</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
@@ -67,7 +69,7 @@ code = "que-hacer"
         <p class="also-title">{{'COMPARTIR'|_}}</p><img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-sep.svg" class="fr-fil fr-dib">
         <div class="links-container"><a href="https://www.facebook.com/sharer/sharer.php?u={{url('/')}}/{{lang}}{{urlPage}}" target="_blank">Facebook&nbsp;</a>
             <span>·</span>
-            <a data-action="share/whatsapp/share" href="href={{url('/')}}/{{lang}}{{urlPage}}">Whatsapp&nbsp;</a>
+            <a data-action="share/whatsapp/share" href="whatsapp://send?text={{url('/')}}/{{lang}}{{urlPage}}">Whatsapp&nbsp;</a>
             <span>·</span>
             <a href="https://twitter.com/home?status={{url('/')}}/{{lang}}{{urlPage}}" target="_blank" >Twitter&nbsp;</a>
         </div>
