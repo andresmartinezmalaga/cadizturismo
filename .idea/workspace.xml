@@ -2,7 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87ff11be-c4c2-4ca5-8374-8a1952dec0dc" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/cms/cache/58/a2/default.htm.php" afterPath="$PROJECT_DIR$/storage/cms/cache/58/a2/default.htm.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/03/3f/033f18b1f71489b1087db62586dac068a1e2ce91" afterPath="$PROJECT_DIR$/storage/framework/cache/03/3f/033f18b1f71489b1087db62586dac068a1e2ce91" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/0f/17/0f17da2a1c6413d12ef23507c84600fe175d9e86" afterPath="$PROJECT_DIR$/storage/framework/cache/0f/17/0f17da2a1c6413d12ef23507c84600fe175d9e86" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/16/2e/162e04f769b234c9de474e8485fb8ab6eb03bf21" afterPath="$PROJECT_DIR$/storage/framework/cache/16/2e/162e04f769b234c9de474e8485fb8ab6eb03bf21" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/5a/ee/5aeeb95c72700206a24a1d2ad02ec21eb55b7e42" afterPath="$PROJECT_DIR$/storage/framework/cache/5a/ee/5aeeb95c72700206a24a1d2ad02ec21eb55b7e42" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/78/9b/789b9bacc3b4b264b7f0721aaacb326e92673d1a" afterPath="$PROJECT_DIR$/storage/framework/cache/78/9b/789b9bacc3b4b264b7f0721aaacb326e92673d1a" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/81/dc/81dcacdb46848003682d59dadfe1a1f9296565e3" afterPath="$PROJECT_DIR$/storage/framework/cache/81/dc/81dcacdb46848003682d59dadfe1a1f9296565e3" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/9e/8f/9e8fe26cba0258c71c4d5f1333b6cfa05599796e" afterPath="$PROJECT_DIR$/storage/framework/cache/9e/8f/9e8fe26cba0258c71c4d5f1333b6cfa05599796e" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/b1/b6/b1b6b61b6cd58fcbec08f9d00687d524901e8a6d" afterPath="$PROJECT_DIR$/storage/framework/cache/b1/b6/b1b6b61b6cd58fcbec08f9d00687d524901e8a6d" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/d0/1e/d01e8e95ac402ba16ad83ad09f6851991c3b6212" afterPath="$PROJECT_DIR$/storage/framework/cache/d0/1e/d01e8e95ac402ba16ad83ad09f6851991c3b6212" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/default/layouts/default.htm" afterPath="$PROJECT_DIR$/themes/default/layouts/default.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/default/layouts/dinamic.htm" afterPath="$PROJECT_DIR$/themes/default/layouts/dinamic.htm" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/default/layouts/evento.htm" afterPath="$PROJECT_DIR$/themes/default/layouts/evento.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/default/layouts/experience.htm" afterPath="$PROJECT_DIR$/themes/default/layouts/experience.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/default/layouts/municipio.htm" afterPath="$PROJECT_DIR$/themes/default/layouts/municipio.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/default/layouts/playa.htm" afterPath="$PROJECT_DIR$/themes/default/layouts/playa.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/default/layouts/ruta.htm" afterPath="$PROJECT_DIR$/themes/default/layouts/ruta.htm" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,14 +33,76 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="evento.htm" pinned="false" current-in-tab="true">
+      <file leaf-file-name="evento.htm" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/default/layouts/evento.htm">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="67" column="112" lean-forward="false" selection-start-line="67" selection-start-column="112" selection-end-line="67" selection-end-column="112" />
+            <state relative-caret-position="240">
+              <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
               <folding>
-                <element signature="e#2341#2347#0" expanded="true" />
+                <element signature="e#2481#2487#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="experience.htm" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/themes/default/layouts/experience.htm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="214">
+              <caret line="45" column="67" lean-forward="false" selection-start-line="45" selection-start-column="67" selection-end-line="45" selection-end-column="67" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="municipio.htm" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/default/layouts/municipio.htm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="199">
+              <caret line="46" column="67" lean-forward="false" selection-start-line="46" selection-start-column="67" selection-end-line="46" selection-end-column="67" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="playa.htm" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/default/layouts/playa.htm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="46" column="67" lean-forward="false" selection-start-line="46" selection-start-column="67" selection-end-line="46" selection-end-column="67" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ruta.htm" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/default/layouts/ruta.htm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="44" column="67" lean-forward="false" selection-start-line="44" selection-start-column="67" selection-end-line="44" selection-end-column="67" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="default.htm" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/default/layouts/default.htm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+              <folding>
+                <element signature="e#2733#2739#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dinamic.htm" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/default/layouts/dinamic.htm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -32,8 +110,8 @@
       <file leaf-file-name="events.htm" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/default/partials/events.htm">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="26" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="26" />
+            <state relative-caret-position="180">
+              <caret line="12" column="59" lean-forward="false" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -44,7 +122,14 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>date</find>
+      <find>}}&quot;&gt;Twitter&amp;nb</find>
     </findStrings>
+    <replaceStrings>
+      <replace>}}&quot; target=&quot;_blank&quot; &gt;Twitter&amp;nb</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/themes/default</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -53,9 +138,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/themes/demo/layouts/default.htm" />
-        <option value="$PROJECT_DIR$/themes/default/layouts/playa.htm" />
-        <option value="$PROJECT_DIR$/themes/default/layouts/municipio.htm" />
-        <option value="$PROJECT_DIR$/themes/default/layouts/dinamic.htm" />
         <option value="$PROJECT_DIR$/plugins/rainlab/pages/assets/js/range-datapicker.js" />
         <option value="$PROJECT_DIR$/themes/default/pages/404.htm" />
         <option value="$PROJECT_DIR$/themes/default/partials/site/searchevent.htm" />
@@ -64,8 +146,12 @@
         <option value="$PROJECT_DIR$/themes/default/pages/experiences.htm" />
         <option value="$PROJECT_DIR$/themes/default/partials/site/menu.htm" />
         <option value="$PROJECT_DIR$/themes/default/layouts/experience.htm" />
-        <option value="$PROJECT_DIR$/themes/default/layouts/default.htm" />
+        <option value="$PROJECT_DIR$/themes/default/layouts/municipio.htm" />
+        <option value="$PROJECT_DIR$/themes/default/layouts/playa.htm" />
+        <option value="$PROJECT_DIR$/themes/default/layouts/ruta.htm" />
         <option value="$PROJECT_DIR$/themes/default/layouts/evento.htm" />
+        <option value="$PROJECT_DIR$/themes/default/layouts/dinamic.htm" />
+        <option value="$PROJECT_DIR$/themes/default/layouts/default.htm" />
       </list>
     </option>
   </component>
@@ -77,8 +163,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="292" />
-    <option name="y" value="22" />
+    <option name="x" value="1068" />
+    <option name="y" value="49" />
     <option name="width" value="2268" />
     <option name="height" value="1054" />
   </component>
@@ -161,33 +247,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="partials" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cadizTurismo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cadizTurismo" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="default" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="partials" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="site" />
+              <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -276,25 +336,25 @@
       <option name="presentableId" value="Default" />
       <updated>1516786709693</updated>
       <workItem from="1516786712254" duration="14987000" />
-      <workItem from="1517217750113" duration="2558000" />
+      <workItem from="1517217750113" duration="6262000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17545000" />
+    <option name="totallyTimeSpent" value="21249000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="292" y="22" width="2268" height="1054" extended-state="0" />
+    <frame x="1068" y="49" width="2268" height="1054" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28481582" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952183" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32952183" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952183" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -455,29 +515,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/default/layouts/dinamic.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="574">
-          <caret line="90" column="0" lean-forward="false" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/default/layouts/municipio.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="769">
-          <caret line="84" column="4" lean-forward="false" selection-start-line="84" selection-start-column="4" selection-end-line="84" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/default/layouts/playa.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="769">
-          <caret line="85" column="0" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/default/partials/site/headerevent.htm">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -544,11 +581,11 @@
         <state relative-caret-position="293">
           <caret line="54" column="83" lean-forward="false" selection-start-line="54" selection-start-column="83" selection-end-line="54" selection-end-column="83" />
           <folding>
-            <marker date="1517218422000" expanded="true" signature="903:1331" ph="..." />
-            <marker date="1517218422000" expanded="true" signature="947:1324" ph="..." />
-            <marker date="1517218422000" expanded="true" signature="992:1219" ph="..." />
-            <marker date="1517218422000" expanded="true" signature="1269:1314" ph="..." />
-            <marker date="1517218422000" expanded="true" signature="1376:1412" ph="..." />
+            <marker date="1517223344000" expanded="true" signature="1355:1503" ph="..." />
+            <marker date="1517223344000" expanded="true" signature="1355:1496" ph="..." />
+            <marker date="1517223344000" expanded="true" signature="1355:1391" ph="..." />
+            <marker date="1517223344000" expanded="true" signature="1441:1486" ph="..." />
+            <marker date="1517223344000" expanded="true" signature="1548:1584" ph="..." />
           </folding>
         </state>
       </provider>
@@ -558,7 +595,7 @@
         <state relative-caret-position="-517">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1517218422000" expanded="true" signature="1687:1698" ph="..." />
+            <marker date="1517223344000" expanded="true" signature="1818:1829" ph="..." />
           </folding>
         </state>
       </provider>
@@ -568,7 +605,7 @@
         <state relative-caret-position="293">
           <caret line="55" column="103" lean-forward="false" selection-start-line="55" selection-start-column="103" selection-end-line="55" selection-end-column="103" />
           <folding>
-            <marker date="1517218422000" expanded="true" signature="1611:1642" ph="..." />
+            <marker date="1517223344000" expanded="true" signature="1783:1814" ph="..." />
           </folding>
         </state>
       </provider>
@@ -581,40 +618,71 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/default/layouts/experience.htm">
+    <entry file="file://$PROJECT_DIR$/themes/default/partials/events.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="62" column="32" lean-forward="false" selection-start-line="62" selection-start-column="32" selection-end-line="62" selection-end-column="32" />
+        <state relative-caret-position="180">
+          <caret line="12" column="59" lean-forward="false" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/default/layouts/municipio.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="46" column="67" lean-forward="false" selection-start-line="46" selection-start-column="67" selection-end-line="46" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/default/layouts/playa.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="46" column="67" lean-forward="false" selection-start-line="46" selection-start-column="67" selection-end-line="46" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/default/layouts/ruta.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="44" column="67" lean-forward="false" selection-start-line="44" selection-start-column="67" selection-end-line="44" selection-end-column="67" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/default/layouts/default.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="65" column="116" lean-forward="false" selection-start-line="65" selection-start-column="116" selection-end-line="65" selection-end-column="116" />
+        <state relative-caret-position="250">
+          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding>
-            <element signature="e#2228#2234#0" expanded="true" />
-            <element signature="e#2341#2347#0" expanded="true" />
+            <element signature="e#2733#2739#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/default/partials/events.htm">
+    <entry file="file://$PROJECT_DIR$/themes/default/layouts/dinamic.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="26" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="26" />
+        <state relative-caret-position="330">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/default/layouts/evento.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="67" column="112" lean-forward="false" selection-start-line="67" selection-start-column="112" selection-end-line="67" selection-end-column="112" />
+        <state relative-caret-position="240">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
           <folding>
-            <element signature="e#2341#2347#0" expanded="true" />
+            <element signature="e#2481#2487#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/default/layouts/experience.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="45" column="67" lean-forward="false" selection-start-line="45" selection-start-column="67" selection-end-line="45" selection-end-column="67" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -22,8 +22,20 @@
   'RainLab\\Pages\\Components\\StaticPage' => 'plugins/rainlab/pages/components/StaticPage.php',
   'rainlab\\translate\\Controllers\\messages' => 'plugins/rainlab/translate/controllers/messages.php',
   'RainLab\\Translate\\Classes\\ThemeScanner' => 'plugins/rainlab/translate/classes/ThemeScanner.php',
+<<<<<<< HEAD
   'RainLab\\Translate\\Classes\\MLCmsObject' => 'plugins/rainlab/translate/classes/MLCmsObject.php',
   'RainLab\\Translate\\Classes\\MLStaticPage' => 'plugins/rainlab/translate/classes/MLStaticPage.php',
+=======
+  'backend\\Controllers\\index' => 'modules/backend/controllers/index.php',
+  'RainLab\\GoogleAnalytics\\ReportWidgets\\Browsers' => 'plugins/rainlab/googleanalytics/reportwidgets/Browsers.php',
+  'RainLab\\GoogleAnalytics\\ReportWidgets\\TrafficSources' => 'plugins/rainlab/googleanalytics/reportwidgets/TrafficSources.php',
+  'RainLab\\GoogleAnalytics\\ReportWidgets\\TrafficOverview' => 'plugins/rainlab/googleanalytics/reportwidgets/TrafficOverview.php',
+  'RainLab\\GoogleAnalytics\\ReportWidgets\\TrafficGoal' => 'plugins/rainlab/googleanalytics/reportwidgets/TrafficGoal.php',
+  'RainLab\\GoogleAnalytics\\ReportWidgets\\TopPages' => 'plugins/rainlab/googleanalytics/reportwidgets/TopPages.php',
+  'RainLab\\GoogleAnalytics\\Classes\\Analytics' => 'plugins/rainlab/googleanalytics/classes/Analytics.php',
+  'RainLab\\GoogleAnalytics\\Models\\Settings' => 'plugins/rainlab/googleanalytics/models/Settings.php',
+  'RainLab\\GoogleAnalytics\\Classes\\CacheItemPool' => 'plugins/rainlab/googleanalytics/classes/CacheItemPool.php',
+>>>>>>> da00b43b47251557abfdd85415f0a273b5f79376
   'rainlab\\pages\\Controllers\\index' => 'plugins/rainlab/pages/controllers/index.php',
   'RainLab\\Pages\\Widgets\\PageList' => 'plugins/rainlab/pages/widgets/PageList.php',
   'RainLab\\Pages\\Widgets\\MenuList' => 'plugins/rainlab/pages/widgets/MenuList.php',
@@ -31,6 +43,7 @@
   'RainLab\\Pages\\Widgets\\ExperienceList' => 'plugins/rainlab/pages/widgets/ExperienceList.php',
   'RainLab\\Pages\\Widgets\\EventoList' => 'plugins/rainlab/pages/widgets/EventoList.php',
   'RainLab\\Pages\\Widgets\\RutaList' => 'plugins/rainlab/pages/widgets/RutaList.php',
+<<<<<<< HEAD
   'RainLab\\Pages\\Classes\\Ruta' => 'plugins/rainlab/pages/classes/Ruta.php',
   'RainLab\\Translate\\Traits\\MLControl' => 'plugins/rainlab/translate/traits/MLControl.php',
   'RainLab\\Translate\\FormWidgets\\MLText' => 'plugins/rainlab/translate/formwidgets/MLText.php',
@@ -39,9 +52,24 @@
   'RainLab\\Pages\\Classes\\SnippetManager' => 'plugins/rainlab/pages/classes/SnippetManager.php',
   'RainLab\\Pages\\Classes\\Snippet' => 'plugins/rainlab/pages/classes/Snippet.php',
   'RainLab\\Pages\\Classes\\RutaList' => 'plugins/rainlab/pages/classes/RutaList.php',
+=======
+>>>>>>> da00b43b47251557abfdd85415f0a273b5f79376
   'RainLab\\Pages\\Classes\\ExperienceList' => 'plugins/rainlab/pages/classes/ExperienceList.php',
   'RainLab\\Pages\\Classes\\Experience' => 'plugins/rainlab/pages/classes/Experience.php',
   'RainLab\\Pages\\Classes\\EventoList' => 'plugins/rainlab/pages/classes/EventoList.php',
   'RainLab\\Pages\\Classes\\Evento' => 'plugins/rainlab/pages/classes/Evento.php',
+<<<<<<< HEAD
   'RainLab\\Pages\\Classes\\Content' => 'plugins/rainlab/pages/classes/Content.php',
+=======
+  'RainLab\\Pages\\Classes\\RutaList' => 'plugins/rainlab/pages/classes/RutaList.php',
+  'RainLab\\Pages\\Classes\\Ruta' => 'plugins/rainlab/pages/classes/Ruta.php',
+  'RainLab\\Pages\\Classes\\Content' => 'plugins/rainlab/pages/classes/Content.php',
+  'RainLab\\Pages\\Classes\\SnippetManager' => 'plugins/rainlab/pages/classes/SnippetManager.php',
+  'RainLab\\Translate\\Traits\\MLControl' => 'plugins/rainlab/translate/traits/MLControl.php',
+  'RainLab\\Translate\\FormWidgets\\MLText' => 'plugins/rainlab/translate/formwidgets/MLText.php',
+  'RainLab\\Translate\\FormWidgets\\MLTextarea' => 'plugins/rainlab/translate/formwidgets/MLTextarea.php',
+  'RainLab\\Translate\\FormWidgets\\MLRichEditor' => 'plugins/rainlab/translate/formwidgets/MLRichEditor.php',
+  'RainLab\\Translate\\Classes\\MLCmsObject' => 'plugins/rainlab/translate/classes/MLCmsObject.php',
+  'RainLab\\Translate\\Classes\\MLStaticPage' => 'plugins/rainlab/translate/classes/MLStaticPage.php',
+>>>>>>> da00b43b47251557abfdd85415f0a273b5f79376
 );

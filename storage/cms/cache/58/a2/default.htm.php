@@ -1,5 +1,5 @@
 <?php 
-class Cms5a6eecbb9dd12165420077_288f9406a8eba663e0ba7a6f0147e61dClass extends \Cms\Classes\LayoutCode
+class Cms5a6f036e443ba791311827_e351027f82d9b19ee463fcebc3967adaClass extends \Cms\Classes\LayoutCode
 {
 public function onStart()
     {
@@ -7,6 +7,9 @@ public function onStart()
         if($this['lang']==''){
             $this['lang']='es';
         }
-    }
+                $this['urlPage'] = $this->page->url;
+$this['metaImg'] = $this->page->apiBag["staticPage"]->attributes["viewBag"]["cover"];
+
+}
 
 }
