@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="87ff11be-c4c2-4ca5-8374-8a1952dec0dc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/default/layouts/default.htm" afterPath="$PROJECT_DIR$/themes/default/layouts/default.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/default/layouts/evento.htm" afterPath="$PROJECT_DIR$/themes/default/layouts/evento.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/default/layouts/experience.htm" afterPath="$PROJECT_DIR$/themes/default/layouts/experience.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/default/layouts/municipio.htm" afterPath="$PROJECT_DIR$/themes/default/layouts/municipio.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/default/layouts/playa.htm" afterPath="$PROJECT_DIR$/themes/default/layouts/playa.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/default/layouts/ruta.htm" afterPath="$PROJECT_DIR$/themes/default/layouts/ruta.htm" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -78,10 +73,10 @@
         <entry file="file://$PROJECT_DIR$/themes/default/layouts/default.htm">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="550">
-              <caret line="73" column="130" lean-forward="false" selection-start-line="73" selection-start-column="130" selection-end-line="73" selection-end-column="130" />
+              <caret line="73" column="56" lean-forward="false" selection-start-line="73" selection-start-column="56" selection-end-line="73" selection-end-column="56" />
               <folding>
                 <element signature="e#2624#2630#0" expanded="true" />
-                <element signature="e#2774#2780#0" expanded="true" />
+                <element signature="e#2773#2779#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -328,12 +323,12 @@
       <option name="presentableId" value="Default" />
       <updated>1516786709693</updated>
       <workItem from="1516786712254" duration="14987000" />
-      <workItem from="1517217750113" duration="6717000" />
+      <workItem from="1517217750113" duration="7000000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21704000" />
+    <option name="totallyTimeSpent" value="21987000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="899" y="22" width="2268" height="1054" extended-state="0" />
@@ -671,10 +666,10 @@
     <entry file="file://$PROJECT_DIR$/themes/default/layouts/default.htm">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="550">
-          <caret line="73" column="130" lean-forward="false" selection-start-line="73" selection-start-column="130" selection-end-line="73" selection-end-column="130" />
+          <caret line="73" column="56" lean-forward="false" selection-start-line="73" selection-start-column="56" selection-end-line="73" selection-end-column="56" />
           <folding>
             <element signature="e#2624#2630#0" expanded="true" />
-            <element signature="e#2774#2780#0" expanded="true" />
+            <element signature="e#2773#2779#0" expanded="true" />
           </folding>
         </state>
       </provider>
