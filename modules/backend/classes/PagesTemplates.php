@@ -2229,46 +2229,46 @@ class PagesTemplates
 
     static $sala = '<div class="static-header about-header">
       <img class="img-header"
-      src="/cadizturismo/storage/app/media/uploaded-files/templates/sala-prensa.jpg"
+      src="***_preurl_***/storage/app/media/uploaded-files/templates/sala-prensa.jpg"
       alt="">
       <div class="header-container">
     		<div class="header-txt-comollegar">
     			<h1 class="txt">Sala prensa</h1>
-          <img class="brush" src="/cadizturismo/storage/app/media/uploaded-files/templates/brush-header.svg">
+          <img class="brush" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg">
         </div>
     	</div>
     </div>
     <section class="ways">
       <div class="way aero-way">
         <div class="pic-way">
-          <img class="background-way" src="/cadizturismo/storage/app/media/uploaded-files/templates/dossier.jpg" alt="dossier">
+          <img class="background-way" src="***_preurl_***/storage/app/media/uploaded-files/templates/dossier.jpg" alt="dossier">
           <div class="icon-press-container">
-            <img class="icon" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-dossier.svg" alt="">
+            <img class="icon" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-dossier.svg" alt="">
             <p class="icon-txt">DOSSIER</p>
-            <a class="download-link" href="#">Descargar dossier <img src="/cadizturismo/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""></a>
+            <a class="download-link" href="#">Descargar dossier <img src="***_preurl_***/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""></a>
           </div>
         </div>
       </div>
       <div class="way ground-way">
         <div class="pic-way">
-          <img class="background-way" src="/cadizturismo/storage/app/media/uploaded-files/templates/reportaje.jpg" alt="reportaje">
+          <img class="background-way" src="***_preurl_***/storage/app/media/uploaded-files/templates/reportaje.jpg" alt="reportaje">
           <div class="icon-press-container">
-            <img class="icon" src="/cadizturismo/storage/app/media/uploaded-files/templates/reportaje-icon.svg" alt="">
+            <img class="icon" src="***_preurl_***/storage/app/media/uploaded-files/templates/reportaje-icon.svg" alt="">
             <p class="icon-txt">REPORTAJE</p>
-            <a class="see-link" href="#">Saber más <img src="/cadizturismo/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""></a>
+            <a class="see-link" href="#">Saber más <img src="***_preurl_***/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""></a>
           </div>
         </div>
       </div>
       <div class="way sea-way">
         <div class="pic-way">
-          <img class="background-way" src="/cadizturismo/storage/app/media/uploaded-files/templates/press.jpg" alt="prensa">
+          <img class="background-way" src="***_preurl_***/storage/app/media/uploaded-files/templates/press.jpg" alt="prensa">
           <div class="icon-press-container">
-            <img class="icon" src="/cadizturismo/storage/app/media/uploaded-files/templates/press-icon.svg" alt="">
+            <img class="icon" src="***_preurl_***/storage/app/media/uploaded-files/templates/press-icon.svg" alt="">
             <p class="icon-txt">PRENSA</p>
           </div>
           <div class="links-container">
-            <a class="see-link" href="#">Prensa nacional <img src="/cadizturismo/storage/app/media/uploaded-files/templates//yellow-arrow2.svg" alt=""></a>
-              <a id="international-press" class="see-link" href="#">Prensa internacional <img class="arrow" src="/cadizturismo/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""></a>
+            <a class="see-link" href="#">Prensa nacional <img src="***_preurl_***/storage/app/media/uploaded-files/templates//yellow-arrow2.svg" alt=""></a>
+              <a id="international-press" class="see-link" href="#">Prensa internacional <img class="arrow" src="***_preurl_***/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""></a>
           </div>
           <div class="press-languages">
             <p class="p-languages"> <a href="#">ALEMÁN</a> | <a href="#">CHECO</a> | <a href="#">CHINO</a> | <a href="#">DANÉS</a> | <a href="#">HISPANOAMÉRICA</a> |
