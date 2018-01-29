@@ -41,11 +41,14 @@
   'RainLab\\Pages\\Classes\\Ruta' => 'plugins/rainlab/pages/classes/Ruta.php',
   'RainLab\\Pages\\Classes\\Content' => 'plugins/rainlab/pages/classes/Content.php',
   'RainLab\\Pages\\Classes\\SnippetManager' => 'plugins/rainlab/pages/classes/SnippetManager.php',
+<<<<<<< HEAD
+=======
   'backend\\Controllers\\index' => 'modules/backend/controllers/index.php',
   'RainLab\\GoogleAnalytics\\ReportWidgets\\Browsers' => 'plugins/rainlab/googleanalytics/reportwidgets/Browsers.php',
   'RainLab\\GoogleAnalytics\\ReportWidgets\\TrafficSources' => 'plugins/rainlab/googleanalytics/reportwidgets/TrafficSources.php',
   'RainLab\\GoogleAnalytics\\ReportWidgets\\TrafficOverview' => 'plugins/rainlab/googleanalytics/reportwidgets/TrafficOverview.php',
   'RainLab\\GoogleAnalytics\\ReportWidgets\\TrafficGoal' => 'plugins/rainlab/googleanalytics/reportwidgets/TrafficGoal.php',
   'RainLab\\GoogleAnalytics\\ReportWidgets\\TopPages' => 'plugins/rainlab/googleanalytics/reportwidgets/TopPages.php',
+>>>>>>> e97758a795f1831e96129e8465f476c67e7118dd
   'RainLab\\Pages\\Classes\\Snippet' => 'plugins/rainlab/pages/classes/Snippet.php',
 );
