@@ -401,7 +401,7 @@ class StaticApp extends ComponentBase
 
         $dataemail = array('experience' => 'experience');
 
-        Mail::send('mails.experience', $dataemail, function($message) use ($contactName, $sendContact, $sendTo)
+        Mail::send('mails.experience', $dataemail, function($message) use ($pdf_data, $contactName, $sendContact, $sendTo)
         {   
 
             $message->from($sendContact, $contactName);
