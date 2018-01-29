@@ -1,4 +1,4 @@
-1516872142a:1:{s:18:"sobre-nosotros.htm";a:7:{s:8:"fileName";s:18:"sobre-nosotros.htm";s:7:"content";s:2460:"[viewBag]
+1517218378a:1:{s:18:"sobre-nosotros.htm";a:7:{s:8:"fileName";s:18:"sobre-nosotros.htm";s:7:"content";s:2922:"[viewBag]
 title = "Sobre nosotros"
 url = "/sobre-nosotros"
 template = "pages"
@@ -71,7 +71,12 @@ localeUrl[ru] = "/sobre-nosotros"
     <p>Somos <b>aventura, relax, fiesta y diversión.</b></p>
   </div>
 </div>
-";s:5:"mtime";i:1516808362;s:6:"markup";s:2185:"<div class="static-header about-header">
+<div class="somos-txt-container">
+  <h3 class="publicaciones-title">SOBRE NOSOTROS</h3>
+  <img class="separator fr-fic fr-dii" src="/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+  <p><b>Patronato Provincial de Turismo,</b> un organismo autónomo local adscrito al Área de Turismo de la Diputación Provincial de Cádiz. El Patronato tiene por objeto la promoción, fomento y desarrollo del turismo en la provincia de Cádiz.</p>
+</div>
+";s:5:"mtime";i:1516871970;s:6:"markup";s:2647:"<div class="static-header about-header">
   <img class="img-header"
   src="/storage/app/media/uploaded-files/templates/cultura.jpg"
   alt="">
@@ -129,7 +134,12 @@ localeUrl[ru] = "/sobre-nosotros"
   <div class="tagline-container">
     <p>Somos <b>aventura, relax, fiesta y diversión.</b></p>
   </div>
-</div>";s:4:"code";N;s:7:"viewBag";a:7:{s:5:"title";s:14:"Sobre nosotros";s:3:"url";s:15:"/sobre-nosotros";s:8:"template";s:5:"pages";s:5:"cover";s:11:"default.jpg";s:9:"is_hidden";s:1:"0";s:6:"layout";s:7:"default";s:9:"localeUrl";a:4:{s:2:"en";s:15:"/sobre-nosotros";s:2:"fr";s:15:"/sobre-nosotros";s:2:"de";s:15:"/sobre-nosotros";s:2:"ru";s:15:"/sobre-nosotros";}}s:12:"parsedMarkup";s:2185:"<div class="static-header about-header">
+</div>
+<div class="somos-txt-container">
+  <h3 class="publicaciones-title">SOBRE NOSOTROS</h3>
+  <img class="separator fr-fic fr-dii" src="/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+  <p><b>Patronato Provincial de Turismo,</b> un organismo autónomo local adscrito al Área de Turismo de la Diputación Provincial de Cádiz. El Patronato tiene por objeto la promoción, fomento y desarrollo del turismo en la provincia de Cádiz.</p>
+</div>";s:4:"code";N;s:7:"viewBag";a:7:{s:5:"title";s:14:"Sobre nosotros";s:3:"url";s:15:"/sobre-nosotros";s:8:"template";s:5:"pages";s:5:"cover";s:11:"default.jpg";s:9:"is_hidden";s:1:"0";s:6:"layout";s:7:"default";s:9:"localeUrl";a:4:{s:2:"en";s:15:"/sobre-nosotros";s:2:"fr";s:15:"/sobre-nosotros";s:2:"de";s:15:"/sobre-nosotros";s:2:"ru";s:15:"/sobre-nosotros";}}s:12:"parsedMarkup";s:2647:"<div class="static-header about-header">
   <img class="img-header"
   src="/storage/app/media/uploaded-files/templates/cultura.jpg"
   alt="">
@@ -187,4 +197,9 @@ localeUrl[ru] = "/sobre-nosotros"
   <div class="tagline-container">
     <p>Somos <b>aventura, relax, fiesta y diversión.</b></p>
   </div>
+</div>
+<div class="somos-txt-container">
+  <h3 class="publicaciones-title">SOBRE NOSOTROS</h3>
+  <img class="separator fr-fic fr-dii" src="/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+  <p><b>Patronato Provincial de Turismo,</b> un organismo autónomo local adscrito al Área de Turismo de la Diputación Provincial de Cádiz. El Patronato tiene por objeto la promoción, fomento y desarrollo del turismo en la provincia de Cádiz.</p>
 </div>";}}
