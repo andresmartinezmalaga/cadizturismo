@@ -1989,43 +1989,43 @@ class PagesTemplates
 
     static $llegar = '<div class="static-header como-llegar-header">
       <img class="img-header"
-      src="/cadizturismo/storage/app/media/uploaded-files/templates/como-llegar-header.jpg"
+      src="***_preurl_***/storage/app/media/uploaded-files/templates/como-llegar-header.jpg"
       alt="">
       <div class="header-container">
     		<div class="header-txt-comollegar">
     			<h1 class="txt">Cómo llegar</h1>
-          <img class="brush" src="/cadizturismo/storage/app/media/uploaded-files/templates/brush-header.svg" alt="como llegar a cádíz">
+          <img class="brush" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt="como llegar a cádíz">
         </div>
     	</div>
-      <a class="tagline" target="_blank" href="https://www.google.es/maps/dir//C%C3%A1diz/@36.369828,-6.2720717,9.21z/data=!4m8!4m7!1m0!1m5!1m1!1s0xd0dd25724ec240f:0x40463fd8ca03b00!2m2!1d-6.2885962!2d36.5270612">Encuentra la mejor manera de llegar a Cádiz <img src="/cadizturismo/storage/app/media/uploaded-files/templates/mini-arrow.svg" alt=""></a>
+      <a class="tagline" target="_blank" href="https://www.google.es/maps/dir//C%C3%A1diz/@36.369828,-6.2720717,9.21z/data=!4m8!4m7!1m0!1m5!1m1!1s0xd0dd25724ec240f:0x40463fd8ca03b00!2m2!1d-6.2885962!2d36.5270612">Encuentra la mejor manera de llegar a Cádiz <img src="***_preurl_***/storage/app/media/uploaded-files/templates/mini-arrow.svg" alt=""></a>
     </div>
     <section class="ways">
       <div class="way aero-way">
         <div class="pic-way">
-          <img class="background-way" src="/cadizturismo/storage/app/media/uploaded-files/templates/aereo.jpg" alt="aéreo">
+          <img class="background-way" src="***_preurl_***/storage/app/media/uploaded-files/templates/aereo.jpg" alt="aéreo">
           <div class="icon-container">
-            <img class="icon" src="/cadizturismo/storage/app/media/uploaded-files/templates/aereo-icon.svg" alt="">
+            <img class="icon" src="***_preurl_***/storage/app/media/uploaded-files/templates/aereo-icon.svg" alt="">
             <p class="icon-txt">AÉREO</p>
           </div>
         </div>
         <div class="info-way">
           <div class="info-container">
             <a class="info-link" target="_blank" href="http://www.aena.es/es/aeropuerto-jerez/jerez.html">Aeropuerto de Jerez
-              <img src="/cadizturismo/storage/app/media/uploaded-files/templates/mini-arrow.svg" alt=""> </a>
+              <img src="***_preurl_***/storage/app/media/uploaded-files/templates/mini-arrow.svg" alt=""> </a>
             <a class="info-link" target="_blank" href="http://www.aena.es/es/aeropuerto-malaga/malaga-costa-sol.html">Aeropuerto de Málaga
-              <img src="/cadizturismo/storage/app/media/uploaded-files/templates/mini-arrow.svg" alt=""> </a>
+              <img src="***_preurl_***/storage/app/media/uploaded-files/templates/mini-arrow.svg" alt=""> </a>
             <a class="info-link" target="_blank" href="http://www.aena.es/es/aeropuerto-sevilla/sevilla.html">Aeropuerto de Sevilla
-              <img src="/cadizturismo/storage/app/media/uploaded-files/templates/mini-arrow.svg" alt=""> </a>
+              <img src="***_preurl_***/storage/app/media/uploaded-files/templates/mini-arrow.svg" alt=""> </a>
             <a class="info-link" target="_blank" href="http://www.gibraltarairport.gi/">Aeropuerto de Gibraltar
-              <img src="/cadizturismo/storage/app/media/uploaded-files/templates/mini-arrow.svg" alt=""> </a>
+              <img src="***_preurl_***/storage/app/media/uploaded-files/templates/mini-arrow.svg" alt=""> </a>
           </div>
         </div>
       </div>
       <div class="way ground-way">
         <div class="pic-way">
-          <img class="background-way" src="/cadizturismo/storage/app/media/uploaded-files/templates/terrestre.jpg" alt="aéreo">
+          <img class="background-way" src="***_preurl_***/storage/app/media/uploaded-files/templates/terrestre.jpg" alt="aéreo">
           <div class="icon-container">
-            <img class="icon" src="/cadizturismo/storage/app/media/uploaded-files/templates/terrestre-icon.svg" alt="">
+            <img class="icon" src="***_preurl_***/storage/app/media/uploaded-files/templates/terrestre-icon.svg" alt="">
             <p class="icon-txt">TERRESTRE</p>
           </div>
         </div>
@@ -2033,11 +2033,11 @@ class PagesTemplates
           <div class="info-container">
             <div class="info">
               <p class="info-title">TREN</p>
-              <a href="http://www.renfe.com/" target="_blank">Renfe<img src="/cadizturismo/storage/app/media/uploaded-files/templates/mini-arrow.svg" alt=""></a>
+              <a href="http://www.renfe.com/" target="_blank">Renfe<img src="***_preurl_***/storage/app/media/uploaded-files/templates/mini-arrow.svg" alt=""></a>
             </div>
             <div class="info">
               <p class="info-title">BUS</p>
-              <a href="http://www.movelia.es/es/" target="_blank">Movelia<img src="/cadizturismo/storage/app/media/uploaded-files/templates/mini-arrow.svg" alt=""></a>
+              <a href="http://www.movelia.es/es/" target="_blank">Movelia<img src="***_preurl_***/storage/app/media/uploaded-files/templates/mini-arrow.svg" alt=""></a>
             </div>
             <div class="info">
               <p class="info-title">AUTOVÍA</p>
@@ -2052,9 +2052,9 @@ class PagesTemplates
       </div>
       <div class="way sea-way">
         <div class="pic-way">
-          <img class="background-way" src="/cadizturismo/storage/app/media/uploaded-files/templates/maritimo.jpg" alt="aéreo">
+          <img class="background-way" src="***_preurl_***/storage/app/media/uploaded-files/templates/maritimo.jpg" alt="aéreo">
           <div class="icon-container">
-            <img class="icon" src="/cadizturismo/storage/app/media/uploaded-files/templates/maritimo-icon.svg" alt="">
+            <img class="icon" src="***_preurl_***/storage/app/media/uploaded-files/templates/maritimo-icon.svg" alt="">
             <p class="icon-txt">MARÍTIMO</p>
           </div>
         </div>
@@ -2063,15 +2063,15 @@ class PagesTemplates
             <div class="info">
               <p class="info-title">CEUTA O TÁNGER</p>
               <div class="links-container">
-                  <a href="https://www.frs.es/" target="_blank">Ferry <img src="/cadizturismo/storage/app/media/uploaded-files/templates/mini-arrow.svg" alt=""></a>
-                  <a href="https://www.balearia.com/es" target="_blank">Balearia <img src="/cadizturismo/storage/app/media/uploaded-files/templates/mini-arrow.svg" alt=""></a>
-                  <a href="https://www.trasmediterranea.es/" target="_blank">Trasmediterránea <img src="/cadizturismo/storage/app/media/uploaded-files/templates/mini-arrow.svg" alt=""></a>
+                  <a href="https://www.frs.es/" target="_blank">Ferry <img src="***_preurl_***/storage/app/media/uploaded-files/templates/mini-arrow.svg" alt=""></a>
+                  <a href="https://www.balearia.com/es" target="_blank">Balearia <img src="***_preurl_***/storage/app/media/uploaded-files/templates/mini-arrow.svg" alt=""></a>
+                  <a href="https://www.trasmediterranea.es/" target="_blank">Trasmediterránea <img src="***_preurl_***/storage/app/media/uploaded-files/templates/mini-arrow.svg" alt=""></a>
               </div>
             </div>
             <div class="info">
               <p class="info-title">ISLAS CANARIAS</p>
               <div class="links-container">
-                  <a href="https://www.trasmediterranea.es/" target="_blank">Trasmediterránea <img src="/cadizturismo/storage/app/media/uploaded-files/templates/mini-arrow.svg" alt=""></a>
+                  <a href="https://www.trasmediterranea.es/" target="_blank">Trasmediterránea <img src="***_preurl_***/storage/app/media/uploaded-files/templates/mini-arrow.svg" alt=""></a>
               </div>
             </div>
           </div>

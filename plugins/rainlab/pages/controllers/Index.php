@@ -247,6 +247,10 @@ class Index extends Controller
                 $object['markup'] = PagesTemplates::getTLlegar();
             }
 
+            if($pageFileName == 'sobre-nosotros.htm' && $templateMarkup ==''){
+                $object['markup'] = PagesTemplates::getTSomos();
+            }
+
         return $this->pushObjectForm($type, $object);
 
 
