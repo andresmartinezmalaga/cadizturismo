@@ -411,7 +411,7 @@ class StaticApp extends ComponentBase
 
        
 
-        $pdf = PDFS::loadView('pdf.experience', $data)->setOption('page-size', 'A4')->setOption('dpi',300);
+        $pdf = PDFS::loadView('pdf.experience', compact('data'))->setOption('page-size', 'A4')->setOption('dpi',300);
         $pdf_data = $pdf->output();
        
         $experience = 'experiencia';
