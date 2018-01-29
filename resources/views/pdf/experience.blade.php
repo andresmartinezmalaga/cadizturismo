@@ -232,11 +232,11 @@
                         <table role="logo" width="660" cellspacing="0" cellpadding="0" border="0" align="left" style="width:100%;">
                             <tr>
                               <!-- AQUÍ ESTÁ LA IMAGEN DE PORTADA -->
-                                <td class="logo-container" align="center" valign="top" style="background-image: url('/storage/app/media/uploaded-files/templates/magia-palmar.jpg')">
+                                <td class="logo-container" align="center" valign="top" style="background-image: url('storage/app/media/uploaded-files/templates/magia-palmar.jpg')">
                                     <div class="logo" style="display: table-cell; vertical-align: middle;">
                                       <!-- TÍTULO DE LA EXPERIENCIA -->
                                       <h1>La magia de El Palmar</h1>
-                                      <img src="/storage/app/media/uploaded-files/templates/brush.png" alt="" style="width: auto; height: auto;">
+                                      <img src="storage/app/media/uploaded-files/templates/brush.png" alt="" style="width: auto; height: auto;">
                                     </div>
                                 </td>
                             </tr>
@@ -254,19 +254,19 @@
                         <table role="panel" cellspacing="0" cellpadding="0" border="0" align="left" style="width:58%; height: 100%; margin: 0 auto; float: none;">
                             <tr class="icons-row" style="height: 100%;">
                                 <td width="200" align="center" valign="top">
-                                  <img src="/storage/app/media/uploaded-files/templates/calendar.svg">
+                                  <img src="storage/app/media/uploaded-files/templates/calendar.svg">
                                   <p class="tag">5 días</p>
                                 </td>
                                 <td width="200" align="center" valign="top">
-                                  <img src="/storage/app/media/uploaded-files/templates/playa.svg" alt="">
+                                  <img src="storage/app/media/uploaded-files/templates/playa.svg" alt="">
                                   <p class="tag">Playa</p>
                                 </td>
                                 <td width="200" align="center" valign="top">
-                                  <img src="/storage/app/media/uploaded-files/templates/naturaleza.svg" alt="">
+                                  <img src="storage/app/media/uploaded-files/templates/naturaleza.svg" alt="">
                                   <p class="tag">Naturaleza</p>
                                 </td>
                                 <td width="200" align="center" valign="top">
-                                  <img src="/storage/app/media/uploaded-files/templates/autentica.svg" alt="">
+                                  <img src="storage/app/media/uploaded-files/templates/autentica.svg" alt="">
                                   <p class="tag">Cádiz auténtica</p>
                                 </td>
                             </tr>
@@ -306,7 +306,7 @@
                             <tr>
                                 <td align="center" valign="top">
                                     <div class="logo">
-                                      <img src="/storage/app/media/uploaded-files/templates/palmar2.jpg" alt="">
+                                      <img src="storage/app/media/uploaded-files/templates/palmar2.jpg" alt="">
                                     </div>
                                 </td>
                             </tr>
@@ -343,7 +343,7 @@
                             <tr>
                                 <td align="center" valign="top">
                                     <div class="logo">
-                                      <img src="/storage/app/media/uploaded-files/templates/palmar3.jpg" alt="">
+                                      <img src="storage/app/media/uploaded-files/templates/palmar3.jpg" alt="">
                                     </div>
                                 </td>
                             </tr>
@@ -380,7 +380,7 @@
                             <tr>
                                 <td align="center" valign="top">
                                     <div class="logo">
-                                      <img src="/storage/app/media/uploaded-files/templates/palmar4.jpg" alt="">
+                                      <img src="storage/app/media/uploaded-files/templates/palmar4.jpg" alt="">
                                     </div>
                                 </td>
                             </tr>
@@ -408,15 +408,15 @@
                                       <table role="panel" cellspacing="0" cellpadding="0" border="0" align="left" style="width:100%; height: 100%; margin: 50px auto 0px auto;">
                                           <tr class="second-icons-row" style="height: 100%;">
                                               <td width="auto" align="center" valign="top">
-                                                <img src="/storage/app/media/uploaded-files/templates/ubicacion.svg" style="margin: -5px 0px;">
+                                                <img src="storage/app/media/uploaded-files/templates/ubicacion.svg" style="margin: -5px 0px;">
                                                 <p class="tag-bottom">Conil</p>
                                               </td>
                                               <td width="auto" align="center" valign="top">
-                                                <img src="/storage/app/media/uploaded-files/templates/ubicacion.svg" alt="" style="margin: -5px 0px;">
+                                                <img src="storage/app/media/uploaded-files/templates/ubicacion.svg" alt="" style="margin: -5px 0px;">
                                                 <p class="tag-bottom">Las Calas de Roche</p>
                                               </td>
                                               <td width="auto" align="center" valign="top">
-                                                <img src="/storage/app/media/uploaded-files/templates/ubicacion.svg" alt="" style="margin: -5px 0px;">
+                                                <img src="storage/app/media/uploaded-files/templates/ubicacion.svg" alt="" style="margin: -5px 0px;">
                                                 <p class="tag-bottom">Zahora</p>
                                               </td>
                                           </tr>
@@ -436,7 +436,7 @@
                             <tr>
                                 <td align="center" valign="top">
                                     <div class="logo">
-                                      <img src="/storage/app/media/uploaded-files/templates/palmar5.jpg" alt="">
+                                      <img src="storage/app/media/uploaded-files/templates/palmar5.jpg" alt="">
                                     </div>
                                 </td>
                             </tr>
