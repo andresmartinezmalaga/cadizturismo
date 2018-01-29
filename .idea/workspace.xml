@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87ff11be-c4c2-4ca5-8374-8a1952dec0dc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/default/layouts/default.htm" afterPath="$PROJECT_DIR$/themes/default/layouts/default.htm" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/default/layouts/evento.htm" afterPath="$PROJECT_DIR$/themes/default/layouts/evento.htm" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -92,8 +91,8 @@
       <file leaf-file-name="evento.htm" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/themes/default/layouts/evento.htm">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="67" column="0" lean-forward="true" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+            <state relative-caret-position="233">
+              <caret line="66" column="137" lean-forward="false" selection-start-line="66" selection-start-column="137" selection-end-line="66" selection-end-column="137" />
               <folding />
             </state>
           </provider>
@@ -137,6 +136,7 @@
         <option value="$PROJECT_DIR$/themes/default/partials/site/menu.htm" />
         <option value="$PROJECT_DIR$/themes/default/layouts/experience.htm" />
         <option value="$PROJECT_DIR$/themes/default/layouts/default.htm" />
+        <option value="$PROJECT_DIR$/themes/default/layouts/evento.htm" />
       </list>
     </option>
   </component>
@@ -343,12 +343,12 @@
       <option name="presentableId" value="Default" />
       <updated>1516786709693</updated>
       <workItem from="1516786712254" duration="14987000" />
-      <workItem from="1517217750113" duration="1015000" />
+      <workItem from="1517217750113" duration="1047000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16002000" />
+    <option name="totallyTimeSpent" value="16034000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="292" y="22" width="2268" height="1054" extended-state="0" />
@@ -677,8 +677,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/default/layouts/evento.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="67" column="0" lean-forward="true" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+        <state relative-caret-position="233">
+          <caret line="66" column="137" lean-forward="false" selection-start-line="66" selection-start-column="137" selection-end-line="66" selection-end-column="137" />
           <folding />
         </state>
       </provider>
