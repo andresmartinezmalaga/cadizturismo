@@ -15,18 +15,13 @@ jQuery(function($)
     });
 
     $('.i-container').children('.also-feature').each(function () {
-      if ($(this).children('.also-desc').children('br')) {
+      if ($(this).children('.also-desc').html().indexOf('br')) {
         $(this).hide();
         console.log('oculto');
       } else {
         console.log('mostrar');
-        console.log($(this).html());
       }
     });
-
-    if ($('#popupdialog > p').is(':empty')) {
-    // we're empty. do stuff.
-}
 
 });
 
