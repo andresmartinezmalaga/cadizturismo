@@ -1873,4 +1873,511 @@ class PagesTemplates
       $gourmet = PagesTemplates::getFinalTemplate(PagesTemplates::$gourmet);
       return $gourmet;
     }
+
+    static $llegar = '<div class="static-header como-llegar-header">
+      <img class="img-header"
+      src="/cadizturismo/storage/app/media/uploaded-files/templates/como-llegar-header.jpg"
+      alt="">
+      <div class="header-container">
+    		<div class="header-txt-comollegar">
+    			<h1 class="txt">Cómo llegar</h1>
+          <img class="brush" src="/cadizturismo/storage/app/media/uploaded-files/templates/brush-header.svg" alt="como llegar a cádíz">
+        </div>
+    	</div>
+      <a class="tagline" target="_blank" href="https://www.google.es/maps/dir//C%C3%A1diz/@36.369828,-6.2720717,9.21z/data=!4m8!4m7!1m0!1m5!1m1!1s0xd0dd25724ec240f:0x40463fd8ca03b00!2m2!1d-6.2885962!2d36.5270612">Encuentra la mejor manera de llegar a Cádiz <img src="/cadizturismo/storage/app/media/uploaded-files/templates/mini-arrow.svg" alt=""></a>
+    </div>
+    <section class="ways">
+      <div class="way aero-way">
+        <div class="pic-way">
+          <img class="background-way" src="/cadizturismo/storage/app/media/uploaded-files/templates/aereo.jpg" alt="aéreo">
+          <div class="icon-container">
+            <img class="icon" src="/cadizturismo/storage/app/media/uploaded-files/templates/aereo-icon.svg" alt="">
+            <p class="icon-txt">AÉREO</p>
+          </div>
+        </div>
+        <div class="info-way">
+          <div class="info-container">
+            <a class="info-link" target="_blank" href="http://www.aena.es/es/aeropuerto-jerez/jerez.html">Aeropuerto de Jerez
+              <img src="/cadizturismo/storage/app/media/uploaded-files/templates/mini-arrow.svg" alt=""> </a>
+            <a class="info-link" target="_blank" href="http://www.aena.es/es/aeropuerto-malaga/malaga-costa-sol.html">Aeropuerto de Málaga
+              <img src="/cadizturismo/storage/app/media/uploaded-files/templates/mini-arrow.svg" alt=""> </a>
+            <a class="info-link" target="_blank" href="http://www.aena.es/es/aeropuerto-sevilla/sevilla.html">Aeropuerto de Sevilla
+              <img src="/cadizturismo/storage/app/media/uploaded-files/templates/mini-arrow.svg" alt=""> </a>
+            <a class="info-link" target="_blank" href="http://www.gibraltarairport.gi/">Aeropuerto de Gibraltar
+              <img src="/cadizturismo/storage/app/media/uploaded-files/templates/mini-arrow.svg" alt=""> </a>
+          </div>
+        </div>
+      </div>
+      <div class="way ground-way">
+        <div class="pic-way">
+          <img class="background-way" src="/cadizturismo/storage/app/media/uploaded-files/templates/terrestre.jpg" alt="aéreo">
+          <div class="icon-container">
+            <img class="icon" src="/cadizturismo/storage/app/media/uploaded-files/templates/terrestre-icon.svg" alt="">
+            <p class="icon-txt">TERRESTRE</p>
+          </div>
+        </div>
+        <div class="info-way">
+          <div class="info-container">
+            <div class="info">
+              <p class="info-title">TREN</p>
+              <a href="http://www.renfe.com/" target="_blank">Renfe<img src="/cadizturismo/storage/app/media/uploaded-files/templates/mini-arrow.svg" alt=""></a>
+            </div>
+            <div class="info">
+              <p class="info-title">BUS</p>
+              <a href="http://www.movelia.es/es/" target="_blank">Movelia<img src="/cadizturismo/storage/app/media/uploaded-files/templates/mini-arrow.svg" alt=""></a>
+            </div>
+            <div class="info">
+              <p class="info-title">AUTOVÍA</p>
+              <p class="info-desc">A-4</p>
+            </div>
+            <div class="info">
+              <p class="info-title">AUTOPISTA</p>
+              <p class="info-desc">AP-4</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="way sea-way">
+        <div class="pic-way">
+          <img class="background-way" src="/cadizturismo/storage/app/media/uploaded-files/templates/maritimo.jpg" alt="aéreo">
+          <div class="icon-container">
+            <img class="icon" src="/cadizturismo/storage/app/media/uploaded-files/templates/maritimo-icon.svg" alt="">
+            <p class="icon-txt">MARÍTIMO</p>
+          </div>
+        </div>
+        <div class="info-way">
+          <div class="info-container">
+            <div class="info">
+              <p class="info-title">CEUTA O TÁNGER</p>
+              <div class="links-container">
+                  <a href="https://www.frs.es/" target="_blank">Ferry <img src="/cadizturismo/storage/app/media/uploaded-files/templates/mini-arrow.svg" alt=""></a>
+                  <a href="https://www.balearia.com/es" target="_blank">Balearia <img src="/cadizturismo/storage/app/media/uploaded-files/templates/mini-arrow.svg" alt=""></a>
+                  <a href="https://www.trasmediterranea.es/" target="_blank">Trasmediterránea <img src="/cadizturismo/storage/app/media/uploaded-files/templates/mini-arrow.svg" alt=""></a>
+              </div>
+            </div>
+            <div class="info">
+              <p class="info-title">ISLAS CANARIAS</p>
+              <div class="links-container">
+                  <a href="https://www.trasmediterranea.es/" target="_blank">Trasmediterránea <img src="/cadizturismo/storage/app/media/uploaded-files/templates/mini-arrow.svg" alt=""></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>';
+
+    static function getTLlegar(){
+      $llegar = PagesTemplates::getFinalTemplate(PagesTemplates::$llegar);
+      return $llegar;
+    }
+
+    static $somos = '<div class="static-header about-header">
+      <img class="img-header"
+      src="/cadizturismo/storage/app/media/uploaded-files/templates/cultura.jpg"
+      alt="">
+      <div class="header-container">
+    		<div class="header-txt-comollegar">
+    			<h1 class="txt">Somos arte</h1>
+          <img class="brush" src="/cadizturismo/storage/app/media/uploaded-files/templates/brush-header.svg">
+        </div>
+    	</div>
+      <div class="tagline-container">
+        <p>Somos arte y mar, naturaleza, luz, aire, tradición, cultura, historia…</p>
+        <p><b>Somos su gente y nuestras ganas de vivir y disfrutar.</b></p>
+      </div>
+    </div>
+    <div class="somos-section">
+      <img class="img-header"
+      src="/cadizturismo/storage/app/media/uploaded-files/templates/somos-costa.jpg"
+      alt="">
+      <div class="header-container">
+    		<div class="header-txt-comollegar">
+    			<h1 class="txt">Somos costa</h1>
+          <img class="brush" src="/cadizturismo/storage/app/media/uploaded-files/templates/brush-header.svg">
+        </div>
+    	</div>
+      <div class="tagline-container">
+        <p>Más de 260km de costa y arena fina, de playas vírgenes y urbanas.</p>
+        <p><b>Somos la Costa de la Luz. Somos esencia atlántica y mediterránea.</b></p>
+      </div>
+    </div>
+    <div class="somos-section">
+      <img class="img-header"
+      src="/cadizturismo/storage/app/media/uploaded-files/templates/somos-paisaje.jpg"
+      alt="">
+      <div class="header-container">
+    		<div class="header-txt-comollegar">
+    			<h1 class="txt">Somos paisaje</h1>
+          <img class="brush" src="/cadizturismo/storage/app/media/uploaded-files/templates/brush-header.svg">
+        </div>
+    	</div>
+      <div class="tagline-container">
+        <p><b>Somos paisaje, la provincia más meridional de la península Ibérica.</b></p>
+        <p>Comarcas y localidades que te invitan a disfrutar de su recorrido y distintas experiencias.</p>
+      </div>
+    </div>
+    <div class="somos-section">
+      <img class="img-header"
+      src="/cadizturismo/storage/app/media/uploaded-files/templates/somos-mas.jpg"
+      alt="">
+      <div class="header-container">
+    		<div class="header-txt-comollegar">
+    			<h1 class="txt">Somos más</h1>
+          <img class="brush" src="/cadizturismo/storage/app/media/uploaded-files/templates/brush-header.svg">
+        </div>
+    	</div>
+      <div class="tagline-container">
+        <p>Tierra donde sumar <b>aventura, relax, fiesta y diversión.</b></p>
+        <p>Somos Cádiz.</p>
+      </div>
+    </div>
+    <div class="somos-txt-container">
+      <h3 class="publicaciones-title">SOBRE NOSOTROS</h3>
+      <img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+      <p><b>Patronato Provincial de Turismo,</b> organismo autónomo local adscrito al Área de Turismo de la Diputación Provincial de Cádiz, con la misión de promocionar y fomentar el turismo de nuestra provincia.</p>
+    </div>';
+
+    static function getTSomos(){
+      $somos = PagesTemplates::getFinalTemplate(PagesTemplates::$somos);
+      return $somos;
+    }
+
+    static $ayuda = '<div id="ayuda-header" class="ayuda-header">
+      <img class="img-header"
+      src="/cadizturismo/storage/app/media/uploaded-files/templates/ayuda-header.jpg"
+      alt="">
+      <div class="header-container">
+    		<div class="header-txt-comollegar">
+    			<h1 class="txt">Necesitas ayuda</h1>
+          <img class="brush" src="/cadizturismo/storage/app/media/uploaded-files/templates/brush-header.svg"
+          alt="necesitas ayuda">
+        </div>
+    	</div>
+    </div>
+    <section class="contact">
+      <div class="contact-container">
+        <h3 class="contact-title">CONTACTO</h3>
+        <img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+      <div class="contact-info">
+        <div class="contact-line">
+          <div class="icon-container">
+            <img src="/cadizturismo/storage/app/media/uploaded-files/templates/phone-icon.svg" alt="">
+          </div>
+          <p class="info">TLF.: 956 807 061  |  956 807 223</p>
+        </div>
+        <div class="contact-line">
+          <div class="icon-container">
+            <img src="/cadizturismo/storage/app/media/uploaded-files/templates/fax-icon.svg" alt="">
+          </div>
+          <p class="info">FAX: 956 214 635</p>
+        </div>
+        <div class="contact-line">
+          <div class="icon-container">
+              <img src="/cadizturismo/storage/app/media/uploaded-files/templates/address-icon.svg" alt="">
+          </div>
+          <div class="info-cont">
+            <p class="info">DIRECCIÓN: Plaza de Madrid s/n</p>
+            <p class="info">Estadio Ramón de Carranza (Fondo Sur) 4º Planta</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <section class="contact-ways">
+      <div class="way">
+        <div class="pic-way">
+          <img class="background-way" src="/cadizturismo/storage/app/media/uploaded-files/templates/turistica.jpg" alt="aéreo">
+          <div class="icon-container">
+            <img class="icon" src="/cadizturismo/storage/app/media/uploaded-files/templates/info-turistica-icon.svg" alt="">
+            <p class="icon-txt">INFORMACIÓN TURÍSTICA</p>
+          </div>
+          <a href="#">Contactar<img src="/cadizturismo/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""></a>
+        </div>
+      </div>
+      <div class="way">
+        <div class="pic-way">
+          <img class="background-way" src="/cadizturismo/storage/app/media/uploaded-files/templates/prensa.jpg" alt="aéreo">
+          <div class="icon-container">
+            <img class="icon" src="/cadizturismo/storage/app/media/uploaded-files/templates/prensa-icon.svg" alt="">
+            <p class="icon-txt">PRENSA Y EMPRESAS</p>
+          </div>
+            <a href="#">Contactar<img src="/cadizturismo/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""></a>
+        </div>
+      </div>
+    </section>
+    <section class="map-container">
+      <img src="/cadizturismo/storage/app/media/uploaded-files/templates/map.jpg" alt="">
+    </section>';
+
+    static function getTAyuda(){
+      $ayuda = PagesTemplates::getFinalTemplate(PagesTemplates::$ayuda);
+      return $ayuda;
+    }
+
+    static $sala = '<div class="static-header about-header">
+      <img class="img-header"
+      src="/cadizturismo/storage/app/media/uploaded-files/templates/sala-prensa.jpg"
+      alt="">
+      <div class="header-container">
+    		<div class="header-txt-comollegar">
+    			<h1 class="txt">Sala prensa</h1>
+          <img class="brush" src="/cadizturismo/storage/app/media/uploaded-files/templates/brush-header.svg">
+        </div>
+    	</div>
+    </div>
+    <section class="ways">
+      <div class="way aero-way">
+        <div class="pic-way">
+          <img class="background-way" src="/cadizturismo/storage/app/media/uploaded-files/templates/dossier.jpg" alt="dossier">
+          <div class="icon-press-container">
+            <img class="icon" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-dossier.svg" alt="">
+            <p class="icon-txt">DOSSIER</p>
+            <a class="download-link" href="#">Descargar dossier <img src="/cadizturismo/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+      <div class="way ground-way">
+        <div class="pic-way">
+          <img class="background-way" src="/cadizturismo/storage/app/media/uploaded-files/templates/reportaje.jpg" alt="reportaje">
+          <div class="icon-press-container">
+            <img class="icon" src="/cadizturismo/storage/app/media/uploaded-files/templates/reportaje-icon.svg" alt="">
+            <p class="icon-txt">REPORTAJE</p>
+            <a class="see-link" href="#">Saber más <img src="/cadizturismo/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+      <div class="way sea-way">
+        <div class="pic-way">
+          <img class="background-way" src="/cadizturismo/storage/app/media/uploaded-files/templates/press.jpg" alt="prensa">
+          <div class="icon-press-container">
+            <img class="icon" src="/cadizturismo/storage/app/media/uploaded-files/templates/press-icon.svg" alt="">
+            <p class="icon-txt">PRENSA</p>
+          </div>
+          <div class="links-container">
+            <a class="see-link" href="#">Prensa nacional <img src="/cadizturismo/storage/app/media/uploaded-files/templates//yellow-arrow2.svg" alt=""></a>
+              <a id="international-press" class="see-link" href="#">Prensa internacional <img class="arrow" src="/cadizturismo/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""></a>
+          </div>
+          <div class="press-languages">
+            <p class="p-languages"> <a href="#">ALEMÁN</a> | <a href="#">CHECO</a> | <a href="#">CHINO</a> | <a href="#">DANÉS</a> | <a href="#">HISPANOAMÉRICA</a> |
+              <a href="#">ESTONIO</a> | <a href="#">FINLANDÉS </a> | <a href="#">FLAMENCO</a> |
+              <a href="#">FRANCÉS</a> | <a href="#">HEBREO</a> | <a href="#">HOLANDÉS </a> | <a href="#">HÚNGARO</a>  |
+              <a href="#">INGLÉS </a> | <a href="#">ITALIANO</a> | <a href="#">JAPONÉS</a> | <a href="#">NORUEGO</a>
+              | <a href="#">POLACO</a> | <a href="#">PORTUGUÉS</a> | <a href="#">RUSO</a> | <a href="#">SUECO</a> | <a href="#">UCRANIANO</a></p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>';
+
+    static function getTSala(){
+      $sala = PagesTemplates::getFinalTemplate(PagesTemplates::$sala);
+      return $sala;
+    }
+
+
+    static $publicaciones = '<div id="ayuda-header" class="ayuda-header">
+      <img class="img-header"
+      src="/cadizturismo/storage/app/media/uploaded-files/templates/publicaciones.jpg"
+      alt="publicaciones">
+      <div class="header-container">
+    		<div class="header-txt-comollegar">
+    			<h1 class="txt">Publicaciones</h1>
+          <img class="brush" src="/cadizturismo/storage/app/media/uploaded-files/templates/brush-header.svg"
+          alt="publicaciones">
+        </div>
+    	</div>
+    </div>
+    <section class="publicaciones">
+      <div class="publi-container">
+        <h3 class="publicaciones-title">DESCUBRE CÁDIZ CON NUESTRAS GUÍAS Y PUBLICACIONES</h3>
+        <img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+      </div>
+      <div class="publis">
+        <div class="publicacion">
+          <img class="publi-icon" src="/cadizturismo/storage/app/media/uploaded-files/templates/video-icon.svg" alt="">
+          <h6 class="publi-title">MAGIC</h6>
+          <p class="publi-desc">"Magic" recorre la provincia con una familia, que se adentra en la naturaleza, en los pueblos, en el deporte…; unas amigas ávidas de acción, paisajes y turismo activo y una pareja, enamorada de la historia y la cultura.</p>
+          <p class="languages-publi"><span id="languages-title">IDIOMAS DISPONIBLES: </span>Español, Inglés, Español, Inglés, Español, Inglés, Español, Inglés, Español, Inglés, Español, Inglés, Español, Inglés, Español, Inglés, Español, Inglés, Español, Inglés, Español, Inglés.</p>
+          <div class="links-container">
+            <a class="see-link" href="#">Ver video <img src="/cadizturismo/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""> </a>
+            <a class="download-link" href="#">Descargar video <img src="/cadizturismo/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""> </a>
+          </div>
+        </div>
+        <div class="publicacion">
+          <img class="publi-icon" src="/cadizturismo/storage/app/media/uploaded-files/templates/guide-icon.svg" alt="">
+          <h6 class="publi-title">CÁDIZ A PEDIR DE BOCA</h6>
+          <p class="publi-desc">Te contamos sitios donde los platos son como fuegos artificiales y los sabores te explotan por todos los huecos del paladar.</p>
+            <p class="languages-publi"><span id="languages-title">IDIOMAS DISPONIBLES: </span>Español, Inglés, Español, Inglés, Español, Inglés, Español, Inglés, Español, Inglés, Español, Inglés, Español, Inglés, Español, Inglés, Español, Inglés, Español, Inglés, Español, Inglés.</p>
+          <div class="links-container">
+            <a class="see-link" href="#">Ver guía <img src="/cadizturismo/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""> </a>
+            <a class="download-link" href="#">Descargar guía <img src="/cadizturismo/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""> </a>
+          </div>
+        </div>
+        <div class="publicacion">
+          <img class="publi-icon" src="/cadizturismo/storage/app/media/uploaded-files/templates/guide-icon.svg" alt="">
+          <h6 class="publi-title">GUÍA CULTURAL</h6>
+          <p class="publi-desc">Historias de dioses y mitos como la Atlántida, los doce trabajos de Hércules o el fabuloso reino de Tartessos forman parte indisoluble de los orígenes del territorio gaditano.</p>
+            <p class="languages-publi"><span id="languages-title">IDIOMAS DISPONIBLES: </span>Español, Inglés, Español, Inglés, Español, Inglés, Español, Inglés, Español, Inglés, Español, Inglés, Español, Inglés, Español, Inglés, Español, Inglés, Español, Inglés, Español, Inglés.</p>
+          <div class="links-container">
+            <a class="see-link" href="#">Ver guía <img src="/cadizturismo/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""> </a>
+            <a class="download-link" href="#">Descargar guía <img src="/cadizturismo/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""> </a>
+          </div>
+        </div>
+        <div class="publicacion">
+          <img class="publi-icon" src="/cadizturismo/storage/app/media/uploaded-files/templates/video-icon.svg" alt="">
+          <h6 class="publi-title">CÁDIZ ES SINGULAR</h6>
+          <p class="publi-desc">"Cádiz es singular, es plural" es un vídeo premiado en el Festival de Cine Turístico de la República Checa. Ganador de la categoría de Mejor Fotografía en el Festival Internacional de Cine Turístico de Brasil. </p>
+          <p class="languages-publi"><span id="languages-title">IDIOMAS DISPONIBLES: </span>Español, Inglés, Español, Inglés, Español, Inglés, Español, Inglés, Español, Inglés, Español, Inglés, Español, Inglés, Español, Inglés, Español, Inglés, Español, Inglés, Español, Inglés.</p>
+          <div class="links-container">
+            <a class="see-link" href="#">Ver video <img src="/cadizturismo/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""> </a>
+            <a class="download-link" href="#">Descargar video <img src="/cadizturismo/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""> </a>
+          </div>
+        </div>
+        <div class="publicacion">
+          <img class="publi-icon" src="/cadizturismo/storage/app/media/uploaded-files/templates/doc-icon.svg" alt="">
+          <h6 class="publi-title">BIRDING CÁDIZ</h6>
+          <p class="publi-desc">Guía de turismo ornitológico de la provincia de Cádiz.</p>
+          <p class="languages-publi"><span id="languages-title">IDIOMAS DISPONIBLES: </span>Español, Inglés</p>
+          <div class="links-container">
+            <a class="see-link" href="#">Ver publicación <img src="/cadizturismo/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""> </a>
+            <a class="download-link" href="#">Descargar publicación <img src="/cadizturismo/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""> </a>
+          </div>
+        </div>
+      </div>
+    </section>';
+
+    static function getTPublicaciones(){
+      $publicaciones = PagesTemplates::getFinalTemplate(PagesTemplates::$publicaciones);
+      return $publicaciones;
+    }
+
+    static $prensa = '<div id="ayuda-header" class="ayuda-header">
+      <img class="img-header"
+      src="/cadizturismo/storage/app/media/uploaded-files/templates/prensa-header.jpg"
+      alt="">
+      <div class="header-container">
+    		<div class="header-txt-comollegar">
+    			<h1 class="txt">Prensa <br> nacional</h1>
+          <img class="brush" src="/cadizturismo/storage/app/media/uploaded-files/templates/brush-header.svg"
+          alt="necesitas ayuda">
+        </div>
+    	</div>
+    </div>
+    <section class="reportajes">
+      <div class="publi-container">
+        <h3 class="publicaciones-title">¿QUÉ DICEN DE NOSOTROS?</h3>
+        <img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+      </div>
+      <div class="publis">
+        <div class="prensa">
+          <h6 class="publi-title">A GALOPE SOBRE ARENA GADITANA</h6>
+          <p class="publi-source">ANDALUCÍA ÚNICA  |  01.09.17</p>
+          <div class="links-container">
+            <a class="download-link" href="#">Descargar pdf <img src="/cadizturismo/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""> </a>
+          </div>
+        </div>
+        <div class="prensa">
+          <h6 class="publi-title">PARQUE SIERRA DE GRAZALEMA</h6>
+          <p class="publi-source">EL ECONOMISTA  |  28.04.17</p>
+          <div class="links-container">
+            <a class="download-link" href="#">Descargar pdf <img src="/cadizturismo/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""> </a>
+          </div>
+        </div>
+        <div class="prensa">
+          <h6 class="publi-title">GRAZALEMA, VERDE QUE TE QUIERO VERDE</h6>
+          <p class="publi-source">CINCO DÍAS  |  14.04.17</p>
+          <div class="links-container">
+            <a class="download-link" href="#">Descargar pdf <img src="/cadizturismo/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""> </a>
+          </div>
+        </div>
+      </div>
+    </section>';
+
+    static function getTPrensa(){
+      $prensa = PagesTemplates::getFinalTemplate(PagesTemplates::$prensa);
+      return $prensa;
+    }
+
+    static $reportaje = '<div id="ayuda-header" class="ayuda-header">
+      <img class="img-header"
+      src="/cadizturismo/storage/app/media/uploaded-files/templates/reportaje-header.jpg"
+      alt="">
+      <div class="header-container">
+    		<div class="header-txt-comollegar">
+    			<h1 class="txt">Reportaje</h1>
+          <img class="brush" src="/cadizturismo/storage/app/media/uploaded-files/templates/brush-header.svg"
+          alt="necesitas ayuda">
+        </div>
+    	</div>
+    </div>
+    <section class="reportajes">
+      <div class="publi-container">
+        <h3 class="publicaciones-title">HISTORIAS PARA ENAMORARTE DE CÁDIZ</h3>
+        <img class="separator fr-fic fr-dii" src="/cadizturismo/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+      </div>
+      <div class="publis">
+        <div class="reportaje">
+          <h6 class="publi-title">TURISMO TODO EL AÑO</h6>
+          <p class="publi-desc"></p>
+          <div class="links-container">
+            <a class="download-link" href="#">Descargar pdf <img src="/cadizturismo/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""> </a>
+          </div>
+        </div>
+        <div class="reportaje">
+          <h6 class="publi-title">LA ALEGRÍA DEL CARNAVAL</h6>
+          <p class="publi-desc"></p>
+          <div class="links-container">
+            <a class="download-link" href="#">Descargar pdf <img src="/cadizturismo/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""> </a>
+          </div>
+        </div>
+        <div class="reportaje">
+          <h6 class="publi-title">NOCHE DE HOGUERAS</h6>
+          <p class="publi-desc">Ubrique celebra las Cruces de Mayo que dan comienzo a la “Crujía de gamones”.</p>
+          <div class="links-container">
+            <a class="download-link" href="#">Descargar pdf <img src="/cadizturismo/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""> </a>
+          </div>
+        </div>
+        <div class="reportaje">
+          <h6 class="publi-title">REVIVE LA HISTORIA</h6>
+          <p class="publi-desc">Algodonales celebra que hace más de 200 años sus campesinos se enfrentaron a un ejército de 5.000 soldados.</p>
+          <div class="links-container">
+            <a class="download-link" href="#">Descargar pdf <img src="/cadizturismo/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""> </a>
+          </div>
+        </div>
+        <div class="reportaje">
+          <h6 class="publi-title">JEREZ, VINO, FLAMENCO…</h6>
+          <p class="publi-desc">Algodonales celebra que hace más de 200 años sus campesinos se enfrentaron a un ejército de 5.000 soldados.</p>
+          <div class="links-container">
+            <a class="download-link" href="#">Descargar pdf <img src="/cadizturismo/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""> </a>
+          </div>
+        </div>
+        <div class="reportaje">
+          <h6 class="publi-title">CIUDAD DE ÉPOCAS</h6>
+          <p class="publi-desc">Algodonales celebra que hace más de 200 años sus campesinos se enfrentaron a un ejército de 5.000 soldados.</p>
+          <div class="links-container">
+            <a class="download-link" href="#">Descargar pdf <img src="/cadizturismo/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""> </a>
+          </div>
+        </div>
+        <div class="reportaje">
+          <h6 class="publi-title">LOS PUEBLOS BLANCOS</h6>
+          <p class="publi-desc">Un recorrido verde, sabroso y sentimental por la Sierra de Cádiz.</p>
+          <div class="links-container">
+            <a class="download-link" href="#">Descargar pdf <img src="/cadizturismo/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""> </a>
+          </div>
+        </div>
+        <div class="reportaje">
+          <h6 class="publi-title">BANDOLEROS</h6>
+          <p class="publi-desc">Grazalema recrea el bandolerismo de la Sierra de Cádiz en el siglo XIX. Reconstruyen la vida de José María El Tempranillo.</p>
+          <div class="links-container">
+            <a class="download-link" href="#">Descargar pdf <img src="/cadizturismo/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""> </a>
+          </div>
+        </div>
+      </div>
+    </section>';
+
+    static function getTReportaje(){
+      $reportaje = PagesTemplates::getFinalTemplate(PagesTemplates::$reportaje);
+      return $reportaje;
+    }
+
 }

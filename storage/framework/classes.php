@@ -42,4 +42,5 @@
   'RainLab\\Translate\\FormWidgets\\MLText' => 'plugins/rainlab/translate/formwidgets/MLText.php',
   'RainLab\\Translate\\FormWidgets\\MLTextarea' => 'plugins/rainlab/translate/formwidgets/MLTextarea.php',
   'RainLab\\Translate\\FormWidgets\\MLRichEditor' => 'plugins/rainlab/translate/formwidgets/MLRichEditor.php',
+  'backend\\Controllers\\media' => 'modules/backend/controllers/media.php',
 );
