@@ -1,3 +1,7 @@
+<a href="" data-request='onAllEvents'>Todos</a>
+<a href="" data-request='onOpenEvents'>Abiertos</a>
+<a href="" data-request='onClosedEvents'>Cerrados</a>
+
 <?php if ($items): ?>
     <ol>
         <?= $this->makePartial('treebranch', ['items' => $items]) ?>

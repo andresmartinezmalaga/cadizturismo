@@ -215,6 +215,7 @@ class CmsCompoundObject extends CmsObject
      */
     public function getComponent($componentName)
     {
+
         if (!($componentSection = $this->hasComponent($componentName))) {
             return null;
         }
@@ -236,16 +237,20 @@ class CmsCompoundObject extends CmsObject
         $componentManager = ComponentManager::instance();
         $componentName = $componentManager->resolve($componentName);
 
+
         foreach ($this->settings['components'] as $sectionName => $values) {
 
             $result = $sectionName;
 
             if ($sectionName == $componentName) {
+              
                 return $result;
+
             }
 
             $parts = explode(' ', $sectionName);
             if (count($parts) > 1) {
+                
                 $sectionName = trim($parts[0]);
 
                 if ($sectionName == $componentName) {
@@ -255,10 +260,12 @@ class CmsCompoundObject extends CmsObject
 
             $sectionName = $componentManager->resolve($sectionName);
             if ($sectionName == $componentName) {
+              
                 return $result;
             }
 
         }
+
 
         return false;
     }

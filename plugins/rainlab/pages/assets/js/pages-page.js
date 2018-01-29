@@ -15,6 +15,7 @@
     PagesPage.prototype.constructor = PagesPage
 
     PagesPage.prototype.init = function() {
+        
         this.$masterTabs = $('#pages-master-tabs')
         this.$sidePanel = $('#pages-side-panel')
         this.$pageTree = $('[data-control=treeview]', this.$sidePanel)
@@ -25,7 +26,7 @@
     }
 
     PagesPage.prototype.registerHandlers = function() {
-        
+
         // Item is clicked in the sidebar
         $(document).on('open.oc.treeview', 'form.layout[data-content-id=pages]', this.proxy(this.onSidebarItemClick))
 
@@ -33,7 +34,9 @@
 
         $(document).on('open.oc.treeview', 'form.layout[data-content-id=eventos]', this.proxy(this.onSidebarItemClick))
 
-      
+        $(document).on('open.oc.treeview', 'form.layout[data-content-id=rutas]', this.proxy(this.onSidebarItemClick))
+
+        
         $(document).on('open.oc.list', this.$sidePanel, this.proxy(this.onSidebarItemClick))
 
         // A tab is shown / switched
@@ -62,6 +65,9 @@
 
         // Layout changed
         $(document).on('change', '#pages-master-tabs form[data-object-type=evento] select[name="viewBag[layout]"]', this.proxy(this.onLayoutChanged))
+
+        // Layout changed
+        $(document).on('change', '#pages-master-tabs form[data-object-type=ruta] select[name="viewBag[layout]"]', this.proxy(this.onLayoutChanged))
 
         // Create object button click
         $(document).on(
@@ -148,6 +154,7 @@
             // Andrés Martínez add experience counter
             experience: {menu: 'experiences', count: 0},
             evento: {menu: 'eventos', count: 0},
+            ruta: {menu: 'rutas', count: 0},
             menu: {menu: 'menus', count: 0},
             content: {menu: 'content', count: 0},
         }
@@ -166,8 +173,8 @@
      * Triggered when a tab is displayed. Updated the current selection in the sidebar and sets focus on an editor.
      */
     PagesPage.prototype.onTabShown = function(e) {
-        
-    
+
+       
 
         var $tabControl = $(e.target).closest('[data-control=tab]')
 
@@ -176,11 +183,12 @@
                 title = $(e.target).attr('title')
 
             if (title)
-                this.setPageTitle(title)
+                this.setPageTitle('title')
 
             this.$pageTree.treeView('markActive', dataId)
             $('[data-control=filelist]', this.$sidePanel).fileList('markActive', dataId)
             $(window).trigger('resize')
+
         } else if ($tabControl.hasClass('secondary')) {
             // TODO: Focus the code or rich editor here
         }
@@ -306,8 +314,7 @@
      */
     PagesPage.prototype.onSidebarItemClick = function(e) {
        
-       
-
+ 
         var self = this,
             $item = $(e.relatedTarget),
             $form = $item.closest('form'),
@@ -324,6 +331,7 @@
                 return false;
             }*/
         
+          
 
         if ($item.data('type') == 'snippet') {
             this.snippetManager.onSidebarSnippetClick($item)
@@ -331,6 +339,7 @@
             return
         }
 
+       
         /*
          * Find if the tab is already opened
          */
@@ -338,15 +347,23 @@
          if (this.masterTabsObj.goTo(tabId))
             return false
 
+
         /*
          * Open a new tab
          */
 
        $.oc.stripeLoadIndicator.show()
+       
+              
+
         $form.request('onOpen', {
+            
             data: data
         }).done(function(data) {
+
+            
             self.$masterTabs.ocTab('addTab', data.tabTitle, data.tab, tabId, $form.data('type-icon'))
+
         }).always(function() {
             $.oc.stripeLoadIndicator.hide()
         })
@@ -433,6 +450,7 @@
      * Triggered when a static page layout changes
      */
     PagesPage.prototype.onLayoutChanged = function(e) {
+
         var
             self = this,
             $el = $(e.target),
@@ -467,6 +485,7 @@
      * Triggered when a new tab is added to the Editor
      */
     PagesPage.prototype.onInitTab = function(e, data) {
+
         if ($(e.target).attr('id') != 'pages-master-tabs')
             return
 
@@ -572,6 +591,9 @@
      * Updates the content editor to correspond the conten file extension
      */
     PagesPage.prototype.updateContentEditorMode = function(pane, initialization) {
+        
+
+
         if ($('[data-toolbar-type]', pane).data('toolbar-type') !== 'content')
             return
 
@@ -595,8 +617,8 @@
             }
         }
         else {
-            $('[data-field-name=markup]', pane).show()
-            $('[data-field-name=markup_html]', pane).hide()
+           $('[data-field-name=markup]', pane).show()
+           $('[data-field-name=markup_html]', pane).hide()
 
             if (!initialization && $(pane).data('prev-extension') == 'htm') {
                 var val = $('div[data-control=richeditor]', pane).richEditor('getContent')

@@ -34,12 +34,12 @@ is_hidden = 0
     $edaystart = explode('.', $datepicker[0]);
     $edayend = explode('.', $datepicker[1]);
 
-    $daystart = new Date($edaystart[0].'-'.$edaystart[1].'-'.$edaystart[2]);
-    $dayend = new Date($edayend[0].'-'.$edayend[1].'-'.$edayend[2]);
+    $daystart = (new Date(intval($edaystart[2]).'-'.intval($edaystart[1]).'-'.intval($edaystart[0])))->format('d-m-Y');
+    $dayend = (new Date(intval($edayend[2]).'-'.intval($edayend[1]).'-'.intval($edayend[0])))->format('d-m-Y');
 
   	$aLang = App::getLocale();
     $events = $this->staticApp->eventFind($category,$daystart,$dayend,$location);
-  
+    
     return Redirect::to($aLang.'/listado-de-eventos')->with( ['data' => json_encode($events)] );
  
   }
@@ -65,6 +65,6 @@ is_hidden = 0
   </div>
 </div>
 
-<div id='prtlExperiences' class="all-exps">
-	{% partial "allevents" %}
+<div id='prtlEvents' class="all-exps">
+  {% partial "allevents" %}
 </div>

@@ -5,7 +5,7 @@
 <div class="all-events-container">
 	
 	{% for experience in experiences %}
-	    {% set interest = experience.viewBag.interest|split('-') %}
+	    {% set interest = experience.viewBag.interest|split(' y ') %}
    	
 	    <div class="event">
 	      <div class="overlay-img"></div>
@@ -27,11 +27,11 @@
 	            <p class="icon-txt">{{experience.viewBag.days}} {{ d|_ }}</p>
 	          </div>          
 	          <div class="icon-pair">
-	            <img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/{{interest[0]}}.svg">
+	            <img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/{{str_slug(interest[0])}}.svg">
 	            	<p class="icon-txt">{{interest[0]|_}}</p>
 	          </div>
 	          <div class="icon-pair">
-	            <img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/{{interest[1]}}.svg">
+	            <img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/{{str_slug(interest[1])}}.svg">
 	            <p class="icon-txt">{{interest[1]|_}}</p>
 	          </div>
 	          <div class="icon-pair">

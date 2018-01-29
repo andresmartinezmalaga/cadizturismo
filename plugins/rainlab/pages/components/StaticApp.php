@@ -41,74 +41,74 @@ class StaticApp extends ComponentBase
 
     public function getEventsCategories(){
       return [
-        'semana_santa' => 'Semana Santa',
-        'carnaval' => 'Carnaval',
-        'congresos' => 'Congresos',
-        'cultura' => 'Cultura',
-        'danza' => 'Danza',
-        'deporte' => 'Deporte',
-        'espectaculos' => 'Espectáculos',
-        'exposiciones' => 'Exposiciones',
-        'ferias' => 'Ferias',
-        'fiesta' => 'Fiesta',
-        'flamenco' => 'Flamenco',
-        'gastronomia' => 'Gastronomía',
-        'naturaleza' => 'Naturaleza',
-        'navidad' => 'Navidad',
-        'ocio' => 'Ocio',
-        'romerias' => 'Romerías',
-        'ruta' => 'Ruta',
-        'taller' => 'Taller',
-        'teatro' => 'Teatro'
+           'semana santa' => 'Semana Santa',
+           'carnaval' => 'Carnaval',
+           'congresos' => 'Congresos',
+           'cultura' => 'Cultura',
+           'danza' => 'Danza',
+           'deporte' => 'Deporte',
+           'espectáculos' => 'Espectáculos',
+           'exposiciones' => 'Exposiciones',
+           'ferias' => 'Ferias',
+           'fiesta' => 'Fiesta',
+           'flamenco' => 'Flamenco',
+           'gastronomía' => 'Gastronomía',
+           'naturaleza' => 'Naturaleza',
+           'navidad' => 'Navidad',
+           'ocio' => 'Ocio',
+           'romerías' => 'Romerías',
+           'ruta' => 'Ruta',
+           'taller' => 'Taller',
+           'teatro' => 'Teatro'
       ];
     }
 
     public function getMunicipalities(){
         return [
-         'alcala de los gazules' => 'Alcalá de los Gazules',
-         'alcala del valle' => 'Alcalá del Valle',
-         'algar' => 'Algar',
-         'algeciras' => 'Algeciras',
-         'algodonales' => 'Algodonales',
-         'arcos de la frontera' => 'Arcos de la Frontera',
-         'barbate' => 'Barbate',
-         'benalup-casas viejas' => 'Benalup-Casas Viejas',
-         'benaocaz' => 'Benaocaz',
-         'bornos' => 'Bornos',
-         'cadiz' => 'Cádiz',
-         'castellar de la frontera' => 'Castellar de la Frontera',
-         'chiclana de la frontera' => 'Chiclana de la Frontera',
-         'chipiona' => 'Chipiona',
-         'conil de la frontera' => 'Conil de la Frontera',
-         'el bosque' => 'El Bosque',
-         'el gastor' => 'El Gastor',
-         'el puerto de santa maria' => 'El Puerto de Santa María',
-         'espera' => 'Espera',
-         'grazalema' => 'Grazalema',
-         'jerez de la frontera' => 'Jerez de la Frontera',
-         'jimena de la frontera' => 'Jimena de la Frontera',
-         'la linea de la concepcion' => 'La Línea de la Concepción',
-         'los barrios' => 'Los Barrios',
-         'medina sidonia' => 'Medina Sidonia',
-         'olvera' => 'Olvera',
-         'paterna de rivera' => 'Paterna de Rivera',
-         'prado del rey' => 'Prado del Rey',
-         'puerto real' => 'Puerto Real',
-         'puerto serrano' => 'Puerto Serrano',
-         'rota' => 'Rota',
-         'san fernando' => 'San Fernando',
-         'san jose del valle' => 'San José del Valle',
-         'sanlucar de barrameda' => 'Sanlúcar de Barrameda',
-         'san roque' => 'San Roque',
-         'setenil de las bodegas' => 'Setenil de las Bodegas',
-         'tarifa' => 'Tarifa',
-         'torre alhaquime' => 'Torre Alháquime',
-         'trebujena' => 'Trebujena',
-         'ubrique' => 'Ubrique',
-         'vejer de la frontera' => 'Vejer de la Frontera',
-         'villaluenga del rosario' => 'Villaluenga del Rosario',
-         'villamartin' => 'Villamartín',
-         'zahara de la sierra' => 'Zahara de la Sierra',
+        'alcalá de los gazules' => 'Alcalá de los Gazules',
+        'alcalá del valle' => 'Alcalá del Valle',
+        'algar' => 'Algar',
+        'algeciras' => 'Algeciras',
+        'algodonales' => 'Algodonales',
+        'arcos de la frontera' => 'Arcos de la Frontera',
+        'barbate' => 'Barbate',
+        'benalup-casas viejas' => 'Benalup-Casas Viejas',
+        'benaocaz' => 'Benaocaz',
+        'bornos' => 'Bornos',
+        'cádiz' => 'Cádiz',
+        'castellar de la frontera' => 'Castellar de la Frontera',
+        'chiclana de la frontera' => 'Chiclana de la Frontera',
+        'chipiona' => 'Chipiona',
+        'conil de la frontera' => 'Conil de la Frontera',
+        'el bosque' => 'El Bosque',
+        'el gastor' => 'El Gastor',
+        'el puerto de santa maría' => 'El Puerto de Santa María',
+        'espera' => 'Espera',
+        'grazalema' => 'Grazalema',
+        'jerez de la frontera' => 'Jerez de la Frontera',
+        'jimena de la frontera' => 'Jimena de la Frontera',
+        'la línea de la concepción' => 'La Línea de la Concepción',
+        'los barrios' => 'Los Barrios',
+        'medina sidonia' => 'Medina Sidonia',
+        'olvera' => 'Olvera',
+        'paterna de rivera' => 'Paterna de Rivera',
+        'prado del rey' => 'Prado del Rey',
+        'puerto real' => 'Puerto Real',
+        'puerto serrano' => 'Puerto Serrano',
+        'rota' => 'Rota',
+        'san fernando' => 'San Fernando',
+        'san josé del valle' => 'San José del Valle',
+        'sanlúcar de barrameda' => 'Sanlúcar de Barrameda',
+        'san roque' => 'San Roque',
+        'setenil de las bodegas' => 'Setenil de las Bodegas',
+        'tarifa' => 'Tarifa',
+        'torre alháquime' => 'Torre Alháquime',
+        'trebujena' => 'Trebujena',
+        'ubrique' => 'Ubrique',
+        'vejer de la frontera' => 'Vejer de la Frontera',
+        'villaluenga del rosario' => 'Villaluenga del Rosario',
+        'villamartín' => 'Villamartín',
+        'zahara de la sierra' => 'Zahara de la Sierra',
         ];
     }
 
@@ -126,28 +126,184 @@ class StaticApp extends ComponentBase
     public function eventAll()
     {
 
-        $now = Carbon::now();
+        $now = Carbon::now()->format('Y-m-d');
 
         $theme = Theme::getActiveTheme();
         $pagesList = Page::listInTheme($theme, false);
         $pages =  new \Illuminate\Support\Collection($pagesList);
         
-        $eventsVip = $pages->where("is_hidden",0)->where("template","eventos")->values();
+        $eventsVip = $pages->where("is_hidden",0)->where("template","eventos")->where('is_top',1)->values();
+        $eventsNormal = $pages->where("is_hidden",0)->where("template","eventos")->where('is_top',0)->values();
+      
+        $resultVip = collect();
+        $resultNormal = collect();
 
-        foreach ($eventsVip as $event) {         
-            $event->date_start_ppretty = (new DateTime($event->date_start))->format('d');
-            $mes = intval( (new DateTime($event->date_start))->format('m') )-1;
-            $mesString = ['ENE','FEB','MAR','ABR','MAY','JUN','JUL','AGO','SEP','OCT','NOV','DIC',];
-            $event->date_start_pretty_day = $event->date_start_ppretty;
-            $event->date_start_pretty_month = $mesString[$mes];
+        $events = collect();
+
+        $count = 0;
+        
+        foreach ($eventsVip as $event) {
+
+            if( (new DateTime($event->date_start))->format('Y-m-d') > $now && $count < 7){
+                $resultVip->push($event);
+                $count = $count+1;
+            
+            } elseif( (new DateTime($event->date_start))->format('Y-m-d') > $now && $count > 6){
+                $resultNormal->push($event);
+                $count = $count+1;
+            }
+
         }
 
-        return $eventsVip;
+        foreach ($eventsNormal as $event) {
+     
+            if( (new DateTime($event->date_start))->format('Y-m-d') > $now){
+                $resultNormal->push($event);
+                $count = $count+1;
+            }            
+        }
+  
+        foreach ($resultVip as  $event) {
+            $event->date_start_ppretty = (new DateTime($event->date_start))->format('d');
+            $event->date = (new DateTime($event->date_start));
+            $mes = intval( (new DateTime($event->date_start))->format('m') )-1;
+            $mesString = ['ENE','FEB','MAR','ABR','MAY','JUN','JUL','AGO','SEP','OCT','NOV','DIC',];
+            $event->date_start_pretty_day = (new DateTime($event->date_start))->format('d');
+            $event->date_start_pretty_month = $mesString[($mes)];
+            $event->date_start_pretty_num = (new DateTime($event->date_start))->format('d.m.y');
+            $event->date_start_pretty_numf = (new DateTime($event->date_start))->format('d/m');
+            $event->date_end_pretty_num = (new DateTime($event->date_end))->format('d.m.y');
+            
+        }
+
+        $eventsVipOrder = $resultVip->sortBy('date');
+
+        foreach ($resultNormal as $event) {
+            $event->date_start_ppretty = (new DateTime($event->date_start))->format('d');
+            $event->date = (new DateTime($event->date_start));
+            $mes = intval( (new DateTime($event->date_start))->format('m') )-1;
+            $mesString = ['ENE','FEB','MAR','ABR','MAY','JUN','JUL','AGO','SEP','OCT','NOV','DIC',];
+            $event->date_start_pretty_day = (new DateTime($event->date_start))->format('d');
+            $event->date_start_pretty_month = $mesString[($mes)];
+            $event->date_start_pretty_num = (new DateTime($event->date_start))->format('d.m.y');
+            $event->date_start_pretty_numf = (new DateTime($event->date_start))->format('d/m');
+            $event->date_end_pretty_num = (new DateTime($event->date_end))->format('d.m.y');
+            
+        }
+
+        $eventsNormalOrder = $resultNormal->sortBy('date');
+
+        foreach ($eventsVipOrder as $event) {
+           $events->push($event);
+        }
+
+        foreach ($eventsNormalOrder as $event) {
+           $events->push($event);
+        }
+
+        return $events;
     }
 
-    public function eventFind()
+    public function rutaAll()
     {
 
+        
+
+        $theme = Theme::getActiveTheme();
+        $pagesList = Page::listInTheme($theme, false);
+        $pages =  new \Illuminate\Support\Collection($pagesList);
+        
+        $rutasVip = $pages->where("is_hidden",0)->where("template","rutas")->where('is_top',1)->values();
+        $rutasNormal = $pages->where("is_hidden",0)->where("template","rutas")->where('is_top',0)->values();
+      
+        $resultVip = collect();
+        $resultNormal = collect();
+
+        $rutas = collect();
+
+        $count = 0;
+        
+        foreach ($rutasVip as $ruta) {
+
+            if( $count < 7){
+                $resultVip->push($ruta);
+                $count = $count+1;
+            
+            } elseif( $count > 6){
+                $resultNormal->push($ruta);
+                $count = $count+1;
+            }
+
+        }
+
+        foreach ($rutasNormal as $ruta) {
+     
+            $resultNormal->push($ruta);
+            $count = $count+1;
+                     
+        }
+      
+
+        foreach ($resultVip as $ruta) {
+           $rutas->push($ruta);
+        }
+
+        foreach ($resultNormal as $ruta) {
+           $rutas->push($ruta);
+        }
+
+        return $rutas;
+    }
+
+    public function eventFind($category, $date_start, $date_end, $location)
+    {
+        $theme = Theme::getActiveTheme();
+        $pages = Page::listInTheme($theme, false);
+        $events =  new \Illuminate\Support\Collection($pages);
+        
+        $validEvents = collect();
+
+        $preEvents = $events->where("is_hidden",0)->where('template','eventos')->where('category',$category)->where('location',$location)->values();
+        
+       
+        foreach ($preEvents as $i) {
+        
+            $eventDateStart = (new DateTime($i->date_start))->format('d-m-Y');           
+            $eventDateEnd = (new DateTime($i->date_end))->format('d-m-Y');
+
+            $bs = new Carbon($date_start);
+            $es = new Carbon($eventDateStart);
+
+            $be = new Carbon($date_end);
+            $ee = new Carbon($eventDateEnd);
+
+            $diffStart = $bs->diffInDays($es,false);
+            $diffEnd = $be->diffInDays($ee,false);
+
+          
+           if($diffStart>=0  && $diffEnd<1 ) {
+            $validEvents->push($i);
+           }
+
+        }
+
+        return $validEvents->values();
+
+    }
+
+    public function eventFindByUrl($url)
+    {
+        $theme = Theme::getActiveTheme();
+        $pagesList = Page::listInTheme($theme, false);
+        $pages =  new \Illuminate\Support\Collection($pagesList);
+
+        $event = $pages->where("is_hidden",0)->where("url",$url)->values();
+
+       
+        $event[0]->date_start_pretty_num = (new DateTime($event[0]->date_start))->format('d.m.y');
+        $event[0]->date_end_pretty_num = (new DateTime($event[0]->date_end))->format('d.m.y');
+       
+        return $event;
     }
 
     public function eventList()
@@ -163,39 +319,10 @@ class StaticApp extends ComponentBase
             $mes = intval( (new DateTime($event->date_start))->format('m') )-1;
             $mesString = ['ENE','FEB','MAR','ABR','MAY','JUN','JUL','AGO','SEP','OCT','NOV','DIC',];
             $event->date_start_pretty = $event->date_start_ppretty.' '.$mesString[$mes];
+            $event->date_start_pretty_num = (new DateTime($event->date_start))->format('d.m.y');
+            $event->date_end_pretty_num = (new DateTime($event->date_end))->format('d.m.y');
         }
 
-        return $events;
-
-    } 
-
-    public function event3List()
-    {
-        $theme = Theme::getActiveTheme();
-        $pagesList = Page::listInTheme($theme, false);
-        $pages =  new \Illuminate\Support\Collection($pagesList);
-        
-        $events = $pages->where("is_hidden",0)->where("template","eventos")->take(3);
-
-        foreach ($events as $event) {         
-            $event->date_start_ppretty = (new DateTime($event->date_start))->format('d');
-            $mes = intval( (new DateTime($event->date_start))->format('m') )-1;
-            $mesString = ['ENE','FEB','MAR','ABR','MAY','JUN','JUL','AGO','SEP','OCT','NOV','DIC',];
-            $event->date_start_pretty = $event->date_start_ppretty.' '.$mesString[$mes];
-        }
-
-        return $events;
-
-    } 
-
-    public function eventVipList()
-    {
-        $theme = Theme::getActiveTheme();
-        $pagesList = Page::listInTheme($theme, false);
-        $pages =  new \Illuminate\Support\Collection($pagesList);
-        
-        $fevents = $pages->where("is_hidden",0)->where("template","eventos")->take(7);
-        $events = $fevents->slice(4,count($fevents));
         return $events;
 
     } 
@@ -215,9 +342,9 @@ class StaticApp extends ComponentBase
     {
         $theme = Theme::getActiveTheme();
         $pages = Page::listInTheme($theme, false);
-        $events =  new \Illuminate\Support\Collection($pages);
+        $experiences =  new \Illuminate\Support\Collection($pages);
         
-        $result = $events->where("is_hidden",0)->where("template","experiences");
+        $result = $experiences->where("is_hidden",0)->where("template","experiences");
         
         return $result;
     }
@@ -226,10 +353,10 @@ class StaticApp extends ComponentBase
     {
         $theme = Theme::getActiveTheme();
         $pages = Page::listInTheme($theme, false);
-        $events =  new \Illuminate\Support\Collection($pages);
+        $experiences =  new \Illuminate\Support\Collection($pages);
         
        
-        $result = $events->where("is_hidden",0)->where('template','experiences')->where('days',$days)->where('interest',$interest)->where('tvisit',$tvisit)->values();
+        $result = $experiences->where("is_hidden",0)->where('template','experiences')->where('days',$days)->where('interest',$interest)->where('tvisit',$tvisit)->values();
        
         return $result;
     }

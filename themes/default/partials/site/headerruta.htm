@@ -1,0 +1,28 @@
+==
+
+<?php
+
+    function onStart()
+    {
+     
+    }
+
+?>
+
+==
+<!-- MENU-->
+{% partial "site/menu" %}
+
+
+<!-- FEATURES -->
+<div id="out-features" class="event-features">
+  
+  <div class="feature"><img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/{{str_slug(ruta.category)}}.svg" class="fr-fil fr-dib">
+
+    <p class="feature-txt">{{ruta.category}}</p>
+  </div>
+  <div class="feature"><img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/location.svg" class="fr-fil fr-dib">
+
+    <p class="feature-txt">{{ruta.location}}</p><a class="feature-txt-mapa" href="{{ruta.locationgoogle}}" target="_blank">Ver mapa</a></div>
+</div>
+

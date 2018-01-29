@@ -92,3 +92,4 @@ secondaryTabs:
             type: richeditor
             stretch: true
             size: huge
+            cssClass: ppo

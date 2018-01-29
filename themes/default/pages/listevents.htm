@@ -19,7 +19,9 @@ is_hidden = 0
       Session::put('reciveData',Session::get('data'));     
     }
 
-    //$events = $this->staticApp->eventAll();
+    if(Session::has('reciveData')){
+      $this['events'] = json_decode(Session::get('reciveData'));     
+    }
 
 	}
 
@@ -29,18 +31,22 @@ is_hidden = 0
     $category = $_POST['category'];
     $location = $_POST['location'];
     $datepicker = explode('-', $_POST['datepicker']);
-		
+    
     $edaystart = explode('.', $datepicker[0]);
     $edayend = explode('.', $datepicker[1]);
 
-    $daystart = new Date($edaystart[0].'-'.$edaystart[1].'-'.$edaystart[2]);
-    $dayend = new Date($edayend[0].'-'.$edayend[1].'-'.$edayend[2]);
+    $daystart = (new Date(intval($edaystart[2]).'-'.intval($edaystart[1]).'-'.intval($edaystart[0])))->format('d-m-Y');
+    $dayend = (new Date(intval($edayend[2]).'-'.intval($edayend[1]).'-'.intval($edayend[0])))->format('d-m-Y');
 
-  	$aLang = App::getLocale();
-    $events = $this->staticApp->eventAll($category,$daystart,$dayend,$location);
-  
-    return Redirect::to($aLang.'/eventos')->with( ['data' => json_encode($events)] );
- 
+    $aLang = App::getLocale();
+    $this['events'] = $this->staticApp->eventFind($category,$daystart,$dayend,$location);
+
+    
+    
+    return [
+        '#prtlEventsl' => $this->renderPartial('events')
+    ];
+    
   }
 
 ?>
@@ -52,7 +58,7 @@ is_hidden = 0
   <div class="header-container">
       
       <div class="header-txt">
-        <h1 class="txt txt-home"><span class="first-word">{{ 'Vive'|_ }}</span> {{ 'nuestros eventos'|_ }}</h1>
+        <h1 class="txt txt-home"><span class="first-word">{{ 'Eventos'|_ }}</span> {{ 'pensados para ti'|_ }}</h1>
         <img class="brush" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/brush-header.svg" alt="">
       </div>
    
@@ -64,6 +70,6 @@ is_hidden = 0
   </div>
 </div>
 
-<div id='prtlExperiences' class="all-exps">
-	{% partial "experiences" %}
+<div id='prtlEventsl' class="all-exps">
+	{% partial "events" %}
 </div>

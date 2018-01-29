@@ -4930,10 +4930,11 @@ nav#layout-mainmenu.navbar-mode-inline ul.mainmenu-nav li:first-child {
   background: #175DA3; }
 
 nav#layout-mainmenu ul li .mainmenu-accountmenu li a:hover, nav#layout-mainmenu ul li .mainmenu-accountmenu li a:focus {
-  background: #175DA3 !important; }
+  background: #E8E8E8 !important;
+  color: #818181 !important; }
 
 nav#layout-mainmenu ul li .mainmenu-accountmenu li:first-child a:hover:after, nav#layout-mainmenu ul li .mainmenu-accountmenu li:first-child a:focus:after, nav#layout-mainmenu ul li .mainmenu-accountmenu li:first-child a:active:after {
-  border-bottom: 7px solid #175DA3 !important; }
+  border-bottom: 7px solid #E8E8E8 !important; }
 
 .form-group.is-required > label:after {
   background-color: #175DA3 !important; }
@@ -4967,6 +4968,55 @@ nav#layout-mainmenu ul li .mainmenu-accountmenu li:first-child a:hover:after, na
 .control-treeview ol > li.active > div {
   border-bottom: none !important; }
 
+/* CALENDAR */
+.pika-single {
+  width: 296px;
+  padding: 0px;
+  box-shadow: none !important;
+  font-family: 'AvenirNext-Medium' !important;
+  background-color: #175DA3; }
+  .pika-single .is-today .pika-button {
+    background: #0C5095 !important; }
+  .pika-single .pika-lendar {
+    background-color: #175DA3;
+    width: 83%;
+    margin: 0 auto;
+    padding-bottom: 5px; }
+  .pika-single .pika-title {
+    padding: 8px; }
+  .pika-single .pika-label {
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    padding-bottom: 5px; }
+  .pika-single .pika-table th {
+    color: white;
+    text-decoration: none; }
+  .pika-single .pika-table abbr {
+    text-decoration: none; }
+  .pika-single .pika-table .pika-button {
+    color: white; }
+
+.pika-single .pika-button:hover {
+  background: #3498db !important;
+  color: white !important; }
+
+.pika-prev, .is-rtl .pika-next {
+  background-image: url("../images/select-arrow.svg");
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  background-size: 11px; }
+
+.pika-next, .is-rtl .pika-prev {
+  background-image: url("../images/select-arrow.svg");
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  background-size: 11px; }
+
 /* ICONS CHANGE */
 .btn-default.oc-icon-plus {
   background-color: #818181 !important;
@@ -4990,6 +5040,11 @@ nav#layout-mainmenu ul li .mainmenu-accountmenu li:first-child a:hover:after, na
   width: 50px; }
   .btn-default.oc-icon-trash-o:before {
     content: ''; }
+
+.input-with-icon > .icon {
+  color: white;
+  margin-top: 3px;
+  font-size: 15px; }
 
 #layout-side-panel div.control-toolbar .btn, .compact-toolbar div.control-toolbar .btn {
   padding-bottom: 12px !important; }
@@ -5052,6 +5107,9 @@ nav#layout-mainmenu ul li .mainmenu-accountmenu li:first-child a:hover:after, na
 
 .control-filelist.filelist-hero ul li > a {
   background-color: #F6F6F6; }
+
+table.table.data tbody.icons td i[class^="icon-"] {
+  color: #175DA3; }
 
 #layout-side-panel div.control-toolbar.separator, .compact-toolbar div.control-toolbar.separator {
   border-bottom: 1px solid #818181; }
@@ -5124,6 +5182,9 @@ div[data-control="media-manager"] .list-container table.table.data tbody tr:not(
 
 .btn-group .btn {
   border-right: 1px solid #FFFFFF; }
+
+table.table.data tbody tr:nth-child(even) td, table.table.data tbody tr:nth-child(even) th {
+  background-color: white; }
 
 ul.tree-path li.root a {
   color: #175DA3;
@@ -5215,7 +5276,8 @@ table.name-value-list > a:hover, table.name-value-list > a:focus, table.name-val
   padding-bottom: 15px;
   padding-left: 10px;
   border-radius: 0px !important;
-  background-color: #175DA3; }
+  background-color: #175DA3;
+  text-align: left; }
 
 .fancy-layout .form-buttons {
   padding-top: 16px !important; }
@@ -5320,10 +5382,11 @@ table.name-value-list > a:hover, table.name-value-list > a:focus, table.name-val
   color: #818181 !important; }
 
 .dropdown-menu .dropdown-container > ul li a:hover, .dropdown-menu .dropdown-container > ul li a:focus {
-  background-color: #175DA3; }
+  background-color: #E8E8E8;
+  color: #818181; }
 
 .dropdown-menu .dropdown-container > ul li.first-item a:hover:after, .dropdown-menu .dropdown-container > ul li.first-item a:focus:after, .dropdown-menu .dropdown-container > ul li.first-item a:active:after {
-  border-bottom: 8px solid #175DA3 !important; }
+  border-bottom: 8px solid #E8E8E8 !important; }
 
 .compact-container label {
   color: #818181; }

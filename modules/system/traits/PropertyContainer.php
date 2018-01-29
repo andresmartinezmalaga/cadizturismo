@@ -89,10 +89,11 @@ trait PropertyContainer
      * @return string The property value or the default specified.
      */
     public function property($name, $default = null)
-    {
+    {       
         return array_key_exists($name, $this->properties)
             ? $this->properties[$name]
             : $default;
+       
     }
 
     /**

@@ -1,0 +1,70 @@
+title = "allRutas"
+url = "/todas-las-rutas"
+layout = "dinamic"
+is_hidden = 0
+
+[staticApp]
+
+==
+<?php  
+	
+	function onStart()
+	{	    
+    $this['lang']=\App::getLocale();
+		if($this['lang']==''){
+			$this['lang']='es';
+		}
+    
+    if(Session::has('data')){
+      Session::put('reciveData',Session::get('data'));     
+    }
+
+    $this['rutas'] = $this->staticApp->rutaAll();
+
+    
+	}
+
+	/*function onFindEvent(){
+
+
+    $category = $_POST['category'];
+    $location = $_POST['location'];
+    $datepicker = explode('-', $_POST['datepicker']);
+		
+    $edaystart = explode('.', $datepicker[0]);
+    $edayend = explode('.', $datepicker[1]);
+
+    $daystart = (new Date(intval($edaystart[2]).'-'.intval($edaystart[1]).'-'.intval($edaystart[0])))->format('d-m-Y');
+    $dayend = (new Date(intval($edayend[2]).'-'.intval($edayend[1]).'-'.intval($edayend[0])))->format('d-m-Y');
+
+  	$aLang = App::getLocale();
+    $events = $this->staticApp->eventFind($category,$daystart,$dayend,$location);
+    
+    return Redirect::to($aLang.'/listado-de-eventos')->with( ['data' => json_encode($events)] );
+ 
+  }*/
+
+?>
+==
+
+<!-- HEADER -->
+<div class="header header-events">
+  
+  <div class="header-container">
+      
+      <div class="header-txt">
+        <h1 class="txt txt-home"><span class="first-word">{{ "Rutas"|_ }}</span> {{ "con encanto"|_ }}</h1>
+        <img class="brush" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/brush-header.svg" alt="">
+      </div>
+   
+    <!-- SEARCH -->
+    <div id='prtlSearch'>
+      {% partial "site/searchruta" %}
+    </div>
+
+  </div>
+</div>
+
+<div id='prtlEvents' class="all-exps">
+  {% partial "allrutas" %}
+</div>

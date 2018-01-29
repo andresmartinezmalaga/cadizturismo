@@ -4,11 +4,28 @@
 
     function onStart()
     {
+     
     }
 
 ?>
 
 ==
 <!-- MENU-->
-{% partial "site/menu" %}  
+{% partial "site/menu" %}
+
+
+<!-- FEATURES -->
+<div id="out-features" class="event-features">
+  <div class="feature"><img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/calendar-event.svg" class="fr-fil fr-dib">
+    
+    <p class="feature-txt">{{event.date_start_pretty_num}} - {{event.date_end_pretty_num}}</p>
+  </div>
+  <div class="feature"><img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/{{str_slug(event.category)}}.svg" class="fr-fil fr-dib">
+
+    <p class="feature-txt">{{event.category}}</p>
+  </div>
+  <div class="feature"><img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/location.svg" class="fr-fil fr-dib">
+
+    <p class="feature-txt">{{event.location}}</p><a class="feature-txt-mapa" href="{{event.locationgoogle}}" target="_blank">Ver mapa</a></div>
+</div>
 

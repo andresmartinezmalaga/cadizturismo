@@ -63,6 +63,25 @@ return [
         'manage_content' => 'Administrar contenidos',
         'new_title' => 'Título del nuevo evento'
     ],
+    'ruta' => [
+        'menu_label' => 'Rutas',
+        'delete_confirmation' => 'Estas seguro de querer borrar las rutas seleccionadas? Esto también borrará las sub-rutas que existan.',
+        'no_records' => 'No se ha encontrado ninguna ruta',
+        'delete_confirm_single' => 'Estas seguro de querer borrar esta ruta? Esto también borrará los sub-rutas que existan.',
+        'new' => 'Nueva ruta',
+        'add_subpage' => 'Añadir sub-ruta',
+        'invalid_url' => 'Formato de URL no válido. La URL debería comenzar por una barra (\'/\'). Puede contener letras, números, y los siguientes símbolos  _ - / ',
+        'url_not_unique' => 'Esta URL ya está siendo utilizada por otra ruta.',
+        'layout' => 'Plantilla',
+        'layouts_not_found' => 'No se han encontrado plantillas',
+        'saved' => 'La ruta se ha guardado correctamente.',
+        'tab' => 'eventos',
+        'manage_pages' => 'Administrar rutas',
+        'manage_menus' => 'Administrar menús',
+        'access_snippets' => 'Acceder a fragmentos',
+        'manage_content' => 'Administrar contenidos',
+        'new_title' => 'Título del la nueva ruta'
+    ],
     'menu' => [
         'menu_label' => 'Menus',
         'delete_confirmation' => 'Estas seguro de querer borrar los menus seleccionados?',
@@ -129,9 +148,9 @@ return [
         'enter_fullscreen' => 'Entrar en modo de pantalla completa',
         'exit_fullscreen' => 'Salir del modo de pantalla completa',
         'hidden' => 'Guardar como borrador',
-        'hidden_comment' => 'Estas páginas solo seran visibles para los administradores de la web, de maneraque nunca serán publicadas hasta que tu quieras.',
-        'navigation_hidden' => 'No mostrar en el menu',
-        'navigation_hidden_comment' => 'Marca esta casilla para ocultar esta página en los menus generados automáticamente.',
+        'hidden_comment' => 'Estas páginas sólo serán visibles para los administradores de la web, de manera que no serán publicadas hasta que tú quieras.',
+        'navigation_hidden' => 'No mostrar en el menú',
+        'navigation_hidden_comment' => 'Marca esta casilla para ocultar esta página en los menús generados automáticamente.',
     ],
     'snippet' => [
         'partialtab' => 'Fragmentos',

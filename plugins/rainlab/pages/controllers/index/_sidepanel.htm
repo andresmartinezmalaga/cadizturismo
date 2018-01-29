@@ -17,6 +17,12 @@
                 <?= $this->widget->eventoList->render() ?>
             </form>
 
+            <!-- Andrés Martínez : Rutas widget->rutatList
+            -->
+            <form class="layout hide" data-content-id="rutas" data-object-type="ruta" data-type-icon="oc-icon-files-o" onsubmit="return false">
+                <?= $this->widget->rutaList->render() ?>
+            </form>
+
             <form class="layout hide" data-content-id="menus" data-object-type="menu" data-type-icon="oc-icon-sitemap" onsubmit="return false">
                 <?= $this->widget->menuList->render() ?>
             </form>

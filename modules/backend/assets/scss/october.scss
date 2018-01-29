@@ -1368,10 +1368,11 @@ nav#layout-mainmenu.navbar-mode-inline ul.mainmenu-nav li:first-child {
 }
 
 nav#layout-mainmenu ul li .mainmenu-accountmenu li a:hover, nav#layout-mainmenu ul li .mainmenu-accountmenu li a:focus {
-  background: $blue !important;
+  background: #E8E8E8 !important;
+  color: #818181 !important;
 }
 nav#layout-mainmenu ul li .mainmenu-accountmenu li:first-child a:hover:after, nav#layout-mainmenu ul li .mainmenu-accountmenu li:first-child a:focus:after, nav#layout-mainmenu ul li .mainmenu-accountmenu li:first-child a:active:after {
-  border-bottom: 7px solid $blue !important;
+  border-bottom: 7px solid #E8E8E8 !important;
 }
 
 .form-group.is-required > label:after {
@@ -1414,7 +1415,71 @@ nav#layout-mainmenu ul li .mainmenu-accountmenu li:first-child a:hover:after, na
   border-bottom: none !important;
 }
 
+/* CALENDAR */
+.pika-single {
+  //width: 20.5%;
+  width: 296px;
+  padding: 0px;
+  box-shadow: none !important;
+  font-family: 'AvenirNext-Medium' !important;
+  background-color: #175DA3;
+  .is-today .pika-button {
+    background: $hover-blue !important;
+  }
+  .pika-lendar {
+    background-color: #175DA3;
+    width: 83%;
+    margin: 0 auto;
+    padding-bottom: 5px;
+  }
+  .pika-title {
+    padding: 8px;
+  }
+  .pika-label {
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+  }
+  .pika-table {
+    th {
+      color: white;
+      text-decoration: none;
+    }
+    abbr {
+      text-decoration: none;
+    }
+    .pika-button {
+      color: white;
+    }
+  }
+}
 
+
+
+@mixin transform($value...) {
+-webkit-transform: $value;
+-moz-transform: $value;
+-ms-transform: $value;
+transform: $value;
+}
+
+.pika-single .pika-button:hover {
+  background: #3498db !important;
+  color: white !important;
+}
+
+.pika-prev, .is-rtl .pika-next {
+  background-image: url('../images/select-arrow.svg');
+  @include transform(rotate(90deg));
+  background-size: 11px;
+}
+
+.pika-next, .is-rtl .pika-prev {
+  background-image: url('../images/select-arrow.svg');
+  @include transform(rotate(-90deg));
+  background-size: 11px;
+}
 
 /* ICONS CHANGE */
 .btn-default.oc-icon-plus {
@@ -1442,7 +1507,11 @@ nav#layout-mainmenu ul li .mainmenu-accountmenu li:first-child a:hover:after, na
       content: '';
   }
 }
-
+.input-with-icon > .icon {
+  color: white;
+  margin-top: 3px;
+  font-size: 15px;
+}
 #layout-side-panel div.control-toolbar .btn, .compact-toolbar div.control-toolbar .btn {
   padding-bottom: 12px !important;
 }
@@ -1517,6 +1586,11 @@ nav#layout-mainmenu ul li .mainmenu-accountmenu li:first-child a:hover:after, na
 .control-filelist.filelist-hero ul li > a {
   background-color: #F6F6F6;
 }
+
+table.table.data tbody.icons td i[class^="icon-"] {
+  color: $blue;
+}
+
 
 #layout-side-panel div.control-toolbar.separator, .compact-toolbar div.control-toolbar.separator {
   border-bottom: 1px solid #818181;
@@ -1602,7 +1676,9 @@ div[data-control="media-manager"] .list-container table.table.data tbody tr:not(
 .btn-group .btn {
   border-right: 1px solid #FFFFFF;
 }
-
+table.table.data tbody tr:nth-child(even) td, table.table.data tbody tr:nth-child(even) th {
+  background-color: white;
+}
 ul.tree-path li.root a {
   color: #175DA3;
   text-transform: uppercase;
@@ -1723,6 +1799,7 @@ table.name-value-list > a {
   padding-left: 10px;
   border-radius: 0px !important;
   background-color: #175DA3;
+  text-align: left;
 }
 .fancy-layout .form-buttons {
   padding-top: 16px !important;
@@ -1848,11 +1925,12 @@ table.name-value-list > a {
 }
 
 .dropdown-menu .dropdown-container > ul li a:hover, .dropdown-menu .dropdown-container > ul li a:focus {
-  background-color: $blue;
+  background-color: #E8E8E8;
+  color: #818181;
 }
 
 .dropdown-menu .dropdown-container > ul li.first-item a:hover:after, .dropdown-menu .dropdown-container > ul li.first-item a:focus:after, .dropdown-menu .dropdown-container > ul li.first-item a:active:after {
-  border-bottom: 8px solid $blue !important;
+  border-bottom: 8px solid #E8E8E8 !important;
 }
 
 .compact-container {

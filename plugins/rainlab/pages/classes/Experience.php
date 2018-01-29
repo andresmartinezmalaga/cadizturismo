@@ -261,12 +261,12 @@ class Experience extends ContentBase
 
     public function getInterestsOptions() {
 
-        return['playa-gastronomia' => 'Playa y gastronomía', 'cultura-gastronomia' => 'Cultura y gastronomía', 'fiesta-cultura' => 'Fiesta y cultura', 'gastronomia-naturaleza' => 'Gastronomía y naturaleza', 'naturaleza-aventura' => 'Naturaleza y aventura', 'playa-naturaleza' => 'Playa y naturaleza', 'vino-tradicion' => 'Vino y tradición', 'aventura-tradicion' => 'Aventura y tradición'] ;
+        return['playa y gastronomía' => 'Playa y gastronomía', 'cultura y gastronomía' => 'Cultura y gastronomía', 'fiesta y cultura' => 'Fiesta y cultura', 'gastronomìa y naturaleza' => 'Gastronomía y naturaleza', 'naturaleza y aventura' => 'Naturaleza y aventura', 'playa y naturaleza' => 'Playa y naturaleza', 'vino y tradición' => 'Vino y tradición', 'aventura y tradición' => 'Aventura y tradición'] ;
     }
 
     public function getVisitsOptions() {
 
-        return['cadiz-oculta' => 'Cádiz oculta', 'cadiz-autentica' => 'Cádiz auténtica', 'cadiz-relax' => 'Cádiz relax', 'cadiz-urbano' => 'Cádiz urbano'] ;
+        return['cádiz oculta' => 'Cádiz oculta', 'cádiz auténtica' => 'Cádiz auténtica', 'cádiz relax' => 'Cádiz relax', 'cádiz urbano' => 'Cádiz urbano'] ;
     }
 
     public function getDaysOptions() {
