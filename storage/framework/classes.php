@@ -28,4 +28,9 @@
   'RainLab\\Pages\\Components\\StaticMenu' => 'plugins/rainlab/pages/components/StaticMenu.php',
   'RainLab\\Pages\\Components\\StaticApp' => 'plugins/rainlab/pages/components/StaticApp.php',
   'RainLab\\Translate\\Models\\Message' => 'plugins/rainlab/translate/models/Message.php',
+  'RainLab\\Translate\\Classes\\MLCmsObject' => 'plugins/rainlab/translate/classes/MLCmsObject.php',
+  'RainLab\\Translate\\Classes\\MLStaticPage' => 'plugins/rainlab/translate/classes/MLStaticPage.php',
+  'RainLab\\Pages\\Classes\\Menu' => 'plugins/rainlab/pages/classes/Menu.php',
+  'RainLab\\Pages\\Classes\\MenuItem' => 'plugins/rainlab/pages/classes/MenuItem.php',
+  'RainLab\\Pages\\Classes\\MenuItemReference' => 'plugins/rainlab/pages/classes/MenuItemReference.php',
 );

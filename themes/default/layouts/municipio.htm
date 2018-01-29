@@ -30,8 +30,12 @@ code = "que-hacer"
         }
 
         $this['municipalities'] = $this->staticApp->municipalitiesList();
-$this['urlPage'] = $this->page->url;
-$this['metaImg'] = $this->page->apiBag["staticPage"]->attributes["viewBag"]["cover"];
+       
+        $this['urlPage'] = $this->page->url;
+        
+        if($this->page->apiBag){
+            $this['metaImg'] = $this->page->apiBag["staticPage"]->attributes["viewBag"]["cover"];
+        }
 
 
     }

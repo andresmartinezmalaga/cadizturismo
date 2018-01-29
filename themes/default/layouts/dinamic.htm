@@ -22,7 +22,10 @@ code = "que-hacer"
         if($this['lang']==''){
             $this['lang']='es';
         }
-                $this['metaImg'] = $this->page->apiBag["staticPage"]->attributes["viewBag"]["cover"];
+        
+        if($this->page->apiBag){
+            $this['metaImg'] = $this->page->apiBag["staticPage"]->attributes["viewBag"]["cover"];
+        }
 
 }
 
