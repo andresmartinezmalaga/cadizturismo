@@ -20,6 +20,7 @@ jQuery(function($)
         console.log('oculto');
       } else {
         console.log('mostrar');
+        console.log($(this).children('.also-desc').html());
       }
     });
 
