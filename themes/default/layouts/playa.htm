@@ -30,9 +30,9 @@ code = "que-hacer"
         }
 
         $this['beaches'] = $this->staticApp->beachList();
-        
+
         $this['urlPage'] = $this->page->url;
-        
+
         if($this->page->apiBag){
             $this['metaImg'] = $this->page->apiBag["staticPage"]->attributes["viewBag"]["cover"];
         }
@@ -69,7 +69,7 @@ code = "que-hacer"
 
     {% component 'staticPage' %}
 
-    <div id='prtlBeaches' class="all-exps">
+    <div id='prtlBeaches' class="all-events">
         <div class="all-events-container">
         {% partial "beaches" %}
         </div>
