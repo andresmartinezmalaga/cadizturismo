@@ -7,21 +7,22 @@
     <title>Email Framework - HTML Email Fluid Grid Layout</title>
     <style type="text/css">
 
+     
       @font-face {
         font-family: 'AvenirNext-Medium';
-        src: url("/exp-pdf/fonts/avenirnext/AvenirNext-Medium.eot");
-        src: url("/exp-pdf/fonts/avenirnext/AvenirNext-Medium.eot?#iefix") format("embedded-opentype"),
-        url("/exp-pdf/fonts/avenirnext/AvenirNext-Medium.woff") format("woff"),
-        url("/exp-pdf/fonts/avenirnext/AvenirNext-Medium.ttf") format("truetype");
+        src: url("{{resource_path('views/pdf/fonts/')}}avenirnext/AvenirNext-Medium.eot");
+        src: url("{{resource_path('views/pdf/fonts/')}}avenirnext/AvenirNext-Medium.eot?#iefix") format("embedded-opentype"),
+        url("{{resource_path('views/pdf/fonts/')}}avenirnext/AvenirNext-Medium.woff") format("woff"),
+        url("{{resource_path('views/pdf/fonts/')}}avenirnext/AvenirNext-Medium.ttf") format("truetype");
         font-weight: normal;
         font-style: normal; }
 
       @font-face {
         font-family: Ryssa;
-        src: url("/exp-pdf/fonts/ryssa/RissaTypeface.eot");
-        src: url("/exp-pdf/fonts/ryssa/RissaTypeface.eot?#iefix") format("embedded-opentype"),
-        url("/exp-pdf/fonts/ryssa/RissaTypeface.woff") format("woff"),
-        url("/exp-pdf/fonts/ryssa/RissaTypeface.ttf") format("truetype");
+        src: url("{{resource_path('views/pdf/fonts/')}}ryssa/RissaTypeface.eot");
+        src: url("{{resource_path('views/pdf/fonts/')}}ryssa/RissaTypeface.eot?#iefix") format("embedded-opentype"),
+        url("{{resource_path('views/pdf/fonts/')}}ryssa/RissaTypeface.woff") format("woff"),
+        url("{{resource_path('views/pdf/fonts/')}}ryssa/RissaTypeface.ttf") format("truetype");
         font-weight: normal;
         font-style: normal; }
 
