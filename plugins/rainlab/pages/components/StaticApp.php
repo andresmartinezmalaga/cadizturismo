@@ -217,8 +217,6 @@ class StaticApp extends ComponentBase
     public function rutaAll()
     {
 
-        
-
         $theme = Theme::getActiveTheme();
         $pagesList = Page::listInTheme($theme, false);
         $pages =  new \Illuminate\Support\Collection($pagesList);

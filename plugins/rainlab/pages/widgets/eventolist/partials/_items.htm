@@ -1,17 +1,11 @@
-<<<<<<< HEAD
-<a href="" class="<?php if($this->activeMenuFilter == 'all'){echo 'active';} ?>" data-request='onAllEvents'>Todos</a>
 
-<a href="" class="<?php if($this->activeMenuFilter == 'open'){echo 'active';} ?>" data-request='onOpenEvents'>Abiertos</a>
-
-<a href="" class="<?php if($this->activeMenuFilter == 'closed'){echo 'active';} ?>" data-request='onClosedEvents'>Cerrados</a>
-=======
 <div class="order-container">
   <!-- añadir la clase active-a cuando esté activo -->
-  <a class="order-event active-a" href="" data-request='onAllEvents'>Todos</a>
-  <a class="order-event" href="" data-request='onOpenEvents'>Abiertos</a>
-  <a class="order-event" href="" data-request='onClosedEvents'>Cerrados</a>
+  <a class="order-event <?php if($this->activeMenuFilter == 'all'){echo 'active-a';} ?>" href="" data-request='onAllEvents'>Todos</a>
+  <a class="order-event <?php if($this->activeMenuFilter == 'open'){echo 'active-a';} ?>" href="" data-request='onOpenEvents'>Abiertos</a>
+  <a class="order-event <?php if($this->activeMenuFilter == 'closed'){echo 'active-a';} ?>" href="" data-request='onClosedEvents'>Cerrados</a>
 </div>
->>>>>>> da00b43b47251557abfdd85415f0a273b5f79376
+
 
 <?php if ($items): ?>
     <ol>
