@@ -407,10 +407,15 @@ class StaticApp extends ComponentBase
 
         $experience = $this->experienceFindByUrl($url);
 
-        $interest1 = explode(' y ', $experience )[0];
-        $interest2 = explode(' y ', $experience )[1];
+        $preexperiencemarkup = $experience[0]['markup']);
+        $experiencemarkup = str_replace('.svg', '.png', $preexperiencemarkup);
 
-        $data = array('experience' => $experience, 'interest1' => $interest1, 'interest2' => $interest2 );
+        //dd(1);
+
+        /*$interest1 = explode(' y ', $experience )[0];
+        $interest2 = explode(' y ', $experience )[1];*/
+
+        $data = array('experiencemarkup' => $experiencemarkup );
        
         $pdf = PDFS::loadView('pdf.experience', $data)->setOption('page-size', 'A4')->setOption('dpi',300);
         $pdf_data = $pdf->output();

@@ -56,4 +56,7 @@
   'RainLab\\Translate\\Components\\AlternateHrefLangElements' => 'plugins/rainlab/translate/components/AlternateHrefLangElements.php',
   'backend\\Controllers\\auth' => 'modules/backend/controllers/auth.php',
   'RainLab\\Pages\\FormWidgets\\MenuItems' => 'plugins/rainlab/pages/formwidgets/MenuItems.php',
+  'RainLab\\GoogleAnalytics\\Classes\\Analytics' => 'plugins/rainlab/googleanalytics/classes/Analytics.php',
+  'RainLab\\GoogleAnalytics\\Models\\Settings' => 'plugins/rainlab/googleanalytics/models/Settings.php',
+  'RainLab\\GoogleAnalytics\\Classes\\CacheItemPool' => 'plugins/rainlab/googleanalytics/classes/CacheItemPool.php',
 );
