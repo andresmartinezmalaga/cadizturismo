@@ -220,7 +220,7 @@ class Ruta extends ContentBase
     // CMS Object
     //
 
-     public function getCategories(){
+    public function getCategories(){
       return [           
            'cultura' => 'Cultura',
            'deporte' => 'Deporte',

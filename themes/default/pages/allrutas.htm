@@ -10,6 +10,13 @@ is_hidden = 0
 	
 	function onStart()
 	{	    
+    
+    if (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false) {
+          $this['preurl'] = '/cadizturismo';
+    } else {
+        $this['preurl'] = '';
+    }
+
     $this['lang']=\App::getLocale();
 		if($this['lang']==''){
 			$this['lang']='es';
@@ -24,25 +31,20 @@ is_hidden = 0
     
 	}
 
-	/*function onFindEvent(){
+	function onFindRuta(){
 
 
     $category = $_POST['category'];
+    $days = $_POST['days'];
     $location = $_POST['location'];
-    $datepicker = explode('-', $_POST['datepicker']);
-		
-    $edaystart = explode('.', $datepicker[0]);
-    $edayend = explode('.', $datepicker[1]);
-
-    $daystart = (new Date(intval($edaystart[2]).'-'.intval($edaystart[1]).'-'.intval($edaystart[0])))->format('d-m-Y');
-    $dayend = (new Date(intval($edayend[2]).'-'.intval($edayend[1]).'-'.intval($edayend[0])))->format('d-m-Y');
-
+   
+	  
   	$aLang = App::getLocale();
-    $events = $this->staticApp->eventFind($category,$daystart,$dayend,$location);
+    $rutas = $this->staticApp->rutaFind($category,$days,$location);
     
-    return Redirect::to($aLang.'/listado-de-eventos')->with( ['data' => json_encode($events)] );
+    return Redirect::to($aLang.'/listado-de-rutas')->with( ['data' => json_encode($events)] );
  
-  }*/
+  }
 
 ?>
 ==
@@ -54,7 +56,7 @@ is_hidden = 0
       
       <div class="header-txt">
         <h1 class="txt txt-home"><span class="first-word">{{ "Rutas"|_ }}</span> {{ "con encanto"|_ }}</h1>
-        <img class="brush" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/brush-header.svg" alt="">
+        <img class="brush" src="{{preurl}}/storage/app/media/uploaded-files/templates/brush-header.svg" alt="">
       </div>
    
     <!-- SEARCH -->

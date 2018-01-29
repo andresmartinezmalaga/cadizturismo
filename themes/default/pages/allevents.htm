@@ -10,6 +10,13 @@ is_hidden = 0
 	
 	function onStart()
 	{	    
+    
+    if (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false) {
+          $this['preurl'] = '/cadizturismo';
+    } else {
+        $this['preurl'] = '';
+    }
+
     $this['lang']=\App::getLocale();
 		if($this['lang']==''){
 			$this['lang']='es';
@@ -54,7 +61,7 @@ is_hidden = 0
       
       <div class="header-txt">
         <h1 class="txt txt-home"><span class="first-word">{{ "Vive"|_ }}</span> {{ "nuestros eventos"|_ }}</h1>
-        <img class="brush" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/brush-header.svg" alt="">
+        <img class="brush" src="{{preurl}}/storage/app/media/uploaded-files/templates/brush-header.svg" alt="">
       </div>
    
     <!-- SEARCH -->

@@ -10,6 +10,13 @@ is_hidden = 0
 	
 	function onStart()
 	{	    
+    
+    if (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false) {
+          $this['preurl'] = '/cadizturismo';
+    } else {
+        $this['preurl'] = '';
+    }
+
     $this['lang']=\App::getLocale();
 		if($this['lang']==''){
 			$this['lang']='es';
@@ -52,7 +59,7 @@ is_hidden = 0
   <div class="header-container big-div">
     <div id="exp-header" class="header-txt">
       <p class="txt"><span id="exp" class="first-word">{{'Experiencias'|_}}</span> {{'pensadas para ti'|_}}</p>
-        <img class="brush" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/brush-header.svg" alt="">
+        <img class="brush" src="{{preurl}}/storage/app/media/uploaded-files/templates/brush-header.svg" alt="">
     </div>
    
     <!-- SEARCH -->

@@ -3,9 +3,13 @@
 <?php
 
     function onStart()
-    {
-     
-    }
+  {
+     if (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false) {
+          $this['preurl'] = '/cadizturismo';
+     } else {
+        $this['preurl'] = '';
+     }
+  }
 
 ?>
 
@@ -17,11 +21,11 @@
 <!-- FEATURES -->
 <div id="out-features" class="event-features">
   
-  <div class="feature"><img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/{{str_slug(ruta.category)}}.svg" class="fr-fil fr-dib">
+  <div class="feature"><img src="{{preurl}}/storage/app/media/uploaded-files/templates/{{str_slug(ruta.category)}}.svg" class="fr-fil fr-dib">
 
     <p class="feature-txt">{{ruta.category}}</p>
   </div>
-  <div class="feature"><img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/location.svg" class="fr-fil fr-dib">
+  <div class="feature"><img src="{{preurl}}/storage/app/media/uploaded-files/templates/location.svg" class="fr-fil fr-dib">
 
     <p class="feature-txt">{{ruta.location}}</p><a class="feature-txt-mapa" href="{{ruta.locationgoogle}}" target="_blank">Ver mapa</a></div>
 </div>

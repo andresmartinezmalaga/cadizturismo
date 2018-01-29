@@ -4,6 +4,12 @@
 
     function onStart()
     {
+        if (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false) {
+          $this['preurl'] = '/cadizturismo';
+        } else {
+          $this['preurl'] = '';
+        }
+
         $this['lang']=\App::getLocale();
 
         if($this['lang']==''){
@@ -52,7 +58,7 @@
                 <div id="event-datepicker" class="interests-container">
                   <input type="text" name="datepicker" id="datepicker" readonly>
                   <span class="select-title">{{ 'FECHA'|_ }}</span>
-                  <img class="arrow" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/select-arrow.svg">
+                  <img class="arrow" src="{{preurl}}/storage/app/media/uploaded-files/templates/select-arrow.svg">
                 </div>
                 <div id="event-location" class="type-container">
                   <select class="custom-select select-type" name="location">
