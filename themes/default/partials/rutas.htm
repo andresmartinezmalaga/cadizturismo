@@ -1,3 +1,19 @@
+==
+<?php 
+
+  function onStart()
+  {
+    if (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false) {
+          $this['preurl'] = '/cadizturismo';
+      } else {
+        $this['preurl'] = '';
+      }
+  }
+
+?>  
+
+==
+
 <div class="search-title-container">
     <p class="title-search"> {{ 'Hemos encontrado'|_ }} {{rutas|length}} {{ 'rutas que se adaptan ti'|_ }}</p>
 </div>
@@ -11,22 +27,22 @@
         <img class="rec-img" src="{{ruta.viewBag.cover}}">
         <div class="txt-container">
           <p class="name">{{ruta.viewBag.title}}</p>
-          <img class="separator" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/small-yellow-separator.svg">
+          <img class="separator" src="{{preurl}}/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
           <div class="icons">
             
             <div class="icon-pair">
-              <img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/{{str_slug(ruta.viewBag.category)}}.svg">
+              <img src="{{preurl}}/storage/app/media/uploaded-files/templates/{{str_slug(ruta.viewBag.category)}}.svg">
                 <p class="icon-txt">{{ruta.viewBag.category|_}}</p>
             </div>
            
             <div class="icon-pair">
-              <img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/loc-events.svg">
+              <img src="{{preurl}}/storage/app/media/uploaded-files/templates/loc-events.svg">
               <p class="icon-txt">{{event.viewBag.location}}</p>
             </div>
             
           </div>
           <div class="button-container">
-            <a class="see-event" href="{{url('/')}}/{{lang}}{{ruta.viewBag.url}}"> {{'Ver ruta'|_}} <img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/link-icon.svg"></a>
+            <a class="see-event" href="{{url('/')}}/{{lang}}{{ruta.viewBag.url}}"> {{'Ver ruta'|_}} <img src="{{preurl}}/storage/app/media/uploaded-files/templates/link-icon.svg"></a>
           </div>
         </div>
       </div>
