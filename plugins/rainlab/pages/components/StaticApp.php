@@ -407,7 +407,7 @@ class StaticApp extends ComponentBase
 
         $data = array('experience' => $this->experienceFindByUrl($url));
 
-        $pdf = PDFS::loadView('pdf.experience', $data)->setPaper('a4')->setOption('dpi',300)->setWarnings(false);
+        $pdf = PDFS::loadView('pdf.experience', $data);
         $pdf_data = $pdf->output();
        
         $experience = 'experiencia';
