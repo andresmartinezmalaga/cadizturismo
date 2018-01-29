@@ -7,7 +7,6 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'XdgBaseDir\\' => array($vendorDir . '/dnoegel/php-xdg-base-dir/src'),
-    'Wikimedia\\Composer\\' => array($vendorDir . '/wikimedia/composer-merge-plugin/src'),
     'Twig\\' => array($vendorDir . '/twig/twig/src'),
     'TijsVerkoyen\\CssToInlineStyles\\' => array($vendorDir . '/tijsverkoyen/css-to-inline-styles/src'),
     'System\\' => array($baseDir . '/modules/system'),
@@ -37,6 +36,7 @@ return array(
     'League\\Csv\\' => array($vendorDir . '/league/csv/src'),
     'Leafo\\ScssPhp\\' => array($vendorDir . '/leafo/scssphp/src'),
     'Laravel\\Tinker\\' => array($vendorDir . '/laravel/tinker/src'),
+    'Knp\\Snappy\\' => array($vendorDir . '/knplabs/knp-snappy/src/Knp/Snappy'),
     'Jenssegers\\Date\\' => array($vendorDir . '/jenssegers/date/src'),
     'Illuminate\\' => array($vendorDir . '/laravel/framework/src/Illuminate'),
     'Egulias\\EmailValidator\\' => array($vendorDir . '/egulias/email-validator/EmailValidator'),
@@ -49,5 +49,6 @@ return array(
     'Composer\\Installers\\' => array($vendorDir . '/composer/installers/src/Composer/Installers'),
     'Cms\\' => array($baseDir . '/modules/cms'),
     'Carbon\\' => array($vendorDir . '/nesbot/carbon/src/Carbon'),
+    'Barryvdh\\Snappy\\' => array($vendorDir . '/barryvdh/laravel-snappy/src'),
     'Backend\\' => array($baseDir . '/modules/backend'),
 );
