@@ -1,6 +1,9 @@
-<a href="" data-request='onAllEvents'>Todos</a>
-<a href="" data-request='onOpenEvents'>Abiertos</a>
-<a href="" data-request='onClosedEvents'>Cerrados</a>
+<div class="order-container">
+  <!-- añadir la clase active-a cuando esté activo -->
+  <a class="order-event active-a" href="" data-request='onAllEvents'>Todos</a>
+  <a class="order-event" href="" data-request='onOpenEvents'>Abiertos</a>
+  <a class="order-event" href="" data-request='onClosedEvents'>Cerrados</a>
+</div>
 
 <?php if ($items): ?>
     <ol>
