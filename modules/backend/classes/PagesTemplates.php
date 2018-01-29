@@ -173,7 +173,7 @@ class PagesTemplates
   <div class="header header-comarca">
     <div class="header-container header-village-container">
       <div class="header-txt header-txt-village">
-        <h1 class="txt"><span class="first-word">La Janda</span></h1><img class="brush fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
+        <h1 class="txt">>Nombre de la comarca</h1><img class="brush fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
     </div>
     <!-- NUEVA FOTO -->
     <img class="background-image" src="***_preurl_***/storage/app/media/uploaded-files/templates/janda2.jpg" alt="">
@@ -181,27 +181,18 @@ class PagesTemplates
   <div class="section-txt-village">
     <div class="txt-container">
 
-      <p class="title">UN LUGAR
-        <br>CON HISTORIA</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+      <p class="title">TITULAR</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
 
-      <p class="desc"><strong>La comarca de la Janda está situada en la zona central de la provincia de Cádiz y comprende 8 municipios diferentes: Alcalá de los Gazules, Barbate, Benalup-Casas viejas, Conil de la Frontera, Medina Sidonia, Pierna de Rivera, San José del Valle y Vejer de la Frontera.&nbsp;</strong></p>
-
-      <p class="desc">Su localización es envidiable: inmersa entre los <strong>parques naturales</strong> de La Breña y Marismas de Barbate y de Los Alcornocales, y con el mar bañando sus costas. A la belleza del litoral se une además el encanto de la Ruta del Toro, que transcurre por todas sus localidades.</p>
-
-      <p class="desc">Son múltiples sus atractivos turísticos. Podemos optar por el turismo de playa, excelentes para jornadas de sol, baño y relajación. Además de contar con sus vientos de levante, ingrediente imprescindible para la práctica de deportes como el windsurf, con muchos seguidores en la costa y el kitesurf. El fuerte oleaje convierte esta parte del litoral gaditano en un paraíso para los surfistas.</p>
-
-      <p class="desc">La Janda es también perfecta para el turismo rural de interior, más tranquilo e idóneo para realizar múltiples y placenteras actividades de recreo y ocio al aire libre, tales como senderismo, cicloturismo, descenso de cañones, escalada, acampada libre o rutas a caballo.</p>
-
-      <p class="desc">Todo ello sin olvidar su ancestral cultura, su privilegiado entorno natural, su valioso patrimonio, la suculenta gastronomía y el colorido de sus fiestas.</p>
+      <p class="desc">Escribe aquí el contenido a desarrollar y agrega una imagen adicional si lo necesitas. </p>
     </div>
   </div>
   <!-- IMAGEN -->
   <div class="img-village">
     <div class="txt-container">
 
-      <p class="title">Marismas de Barbate</p>
+      <p class="title">TÍTULO DEL DESTACADO</p>
 
-      <p class="desc">¿Eres de emociones fuertes? Disfruta de Cádiz como nunca antes.</p><a class="events-link" href="#playas">Selección de rutas naturales <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-arrow-yellow.svg" alt="" class="fr-fic fr-dii">&nbsp;</a>
+      <p class="desc">Puedes destacar una ruta, una playa o un evento. Escribe una breve descripción sobre el enlace que vas a sugerir.</p><a class="events-link" href="#">Conocer <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-arrow-yellow.svg" alt="" class="fr-fic fr-dii">&nbsp;</a>
       <img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
       <!-- NUEVA FOTO -->
       <img class="img-destacada" src="***_preurl_***/storage/app/media/uploaded-files/templates/marismas-barbate.jpg" alt="">
@@ -210,9 +201,7 @@ class PagesTemplates
     <div class="txt-container">
 
       <p class="title">MUNICIPIOS DE
-        <br>LA JANDA</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
-
-      <p class="desc small-desc">Déjate enamorar por Alcalá de los Gazules, Barbate, Benalup-Casas viejas, Conil de la Frontera, Medina Sidonia, Pierna de Rivera, San José del Valle y Vejer de la Frontera.</p>
+        <br>(COMARCA)</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
     </div>
   </div>
   <div class="all-exps">
@@ -223,7 +212,7 @@ class PagesTemplates
         </div><img class="rec-img fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/conil.jpg">
         <div class="txt-container">
 
-          <p class="name">CONIL DE LA FRONTERA</p><img class="separator separator-municipio fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+          <p class="name">MUNICIPIO 1</p><img class="separator separator-municipio fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
           <div class="button-container"><a class="see-event" href="#">Conocer municipio <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
         </div>
       </div>
@@ -233,7 +222,7 @@ class PagesTemplates
         </div><img class="rec-img fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/barbate1.jpg">
         <div class="txt-container">
 
-          <p class="name">BARBATE</p><img class="separator separator-municipio fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+          <p class="name">MUNICIPIO 2</p><img class="separator separator-municipio fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
           <div class="button-container"><a class="see-event" href="municipio.html">Conocer municipio <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
         </div>
       </div>
@@ -243,25 +232,9 @@ class PagesTemplates
         </div><img class="rec-img fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/vejer.jpg">
         <div class="txt-container">
 
-          <p class="name">VEJER DE LA FRONTERA</p><img class="separator separator-municipio fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+          <p class="name">MUNICIPIO 3</p><img class="separator separator-municipio fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
           <div class="button-container"><a class="see-event" href="#">Conocer municipio <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
         </div>
-      </div>
-    </div>
-  </div>
-  <div class="icons-row">
-    <div class="i-container">
-      <div class="also-feature"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/natu-grey.svg" class="fr-fil fr-dib">
-
-        <p class="also-desc">Naturaleza</p>
-      </div>
-      <div class="also-feature"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/deporte-grey.svg" class="fr-fil fr-dib">
-
-        <p class="also-desc">Deporte</p>
-      </div>
-      <div class="also-feature"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/cultura-grey.svg" class="fr-fil fr-dib">
-
-        <p class="also-desc">Cultura</p>
       </div>
     </div>
   </div>';
@@ -303,7 +276,7 @@ class PagesTemplates
   <div class="header header-village">
     <div class="header-container header-village-container">
       <div class="header-txt header-txt-village">
-        <h1 class="txt"><span class="first-word">Nombre del municipio</span></h1><img class="brush fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
+        <h1 class="txt">Nombre del municipio</h1><img class="brush fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
     </div>
     <!-- NUEVA FOTO -->
     <img class="background-image" value="cover" src="***_preurl_***/storage/app/media/uploaded-files/templates/barbate1.jpg" alt="">
@@ -315,14 +288,6 @@ class PagesTemplates
       <p class="title">TITULAR</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
 
       <p class="desc">Escribe aquí el contenido a desarrollar y agrega una imagen adicional si lo necesitas.</p>
-    </div>
-  </div>
-  <div class="section-txt-village">
-    <div class="txt-container">
-
-      <p class="title">TITULAR 2 (OPCIONAL)</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
-
-      <p class="desc">Añade aquí un nuevo bloque de texto si necesitas ampliar la información de este municipio. También puedes agregar una nueva imagen. </p>
     </div>
   </div>
   <!-- IMAGEN -->
@@ -431,22 +396,6 @@ class PagesTemplates
         </div>
       </div>
     </div>
-  </div>
-  <div class="icons-row">
-    <div class="i-container">
-      <div class="also-feature"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/natu-grey.svg" class="fr-fil fr-dib">
-
-        <p class="also-desc">Naturaleza</p>
-      </div>
-      <div class="also-feature"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/gastro-grey.svg" class="fr-fil fr-dib">
-
-        <p class="also-desc">Gastronomía</p>
-      </div>
-      <div class="also-feature"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/ocio.svg" class="fr-fil fr-dib">
-
-        <p class="also-desc">Ocio</p>
-      </div>
-    </div>
   </div>';
 
   static function getTMunicipio(){
@@ -491,7 +440,7 @@ class PagesTemplates
   <div class="header header-playa">
     <div class="header-container header-village-container">
       <div class="header-txt header-txt-village">
-        <h1 class="txt"><span class="first-word">Los Lances</span></h1><img class="brush fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
+        <h1 class="txt">Nombre de la playa</h1><img class="brush fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
     </div>
     <!-- NUEVA FOTO -->
     <img class="background-image" value="cover" src="***_preurl_***/storage/app/media/uploaded-files/templates/playa-lances.jpg" alt="">
@@ -500,24 +449,18 @@ class PagesTemplates
   <div class="section-txt-village">
     <div class="txt-container">
 
-      <p class="title">ARENA FINA,
-        <br>WINDSURF Y
-        <br>BUENA COMIDA</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+      <p class="title">TITULAR 1</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
 
-      <p class="desc">Situado en la comarca de La Janda, Barbate es un precioso pueblo gaditano que alberga uno de los puertos pesqueros más famosos de Andalucía. A lo largo de los 25 kilómetros de costa que agrupa el término municipal, encontrarás pueblos y pedanías como Zahara de los Atunes, Caños de Meca y Zahora, y en ellos, playas naturales, dunas y acantilados que componen uno de los núcleos turísticos más reconocidos del sur de España.</p>
-
-      <p class="desc">El municipio ofrece la posibilidad de realizar una gran variedad de rutas de gran interés ecológico y paisajístico gracias al Parque Natural de la Breña y las Marismas de Barbate.</p>
-
-      <p class="desc">Las condiciones de pesca que ofrece la zona permiten hacen destacar a su gastronomía por el famoso atún de Almadraba, un manjar único que merece la pena disfrutar en los restaurantes de Barbate.</p>
+      <p class="desc">Escribe aquí el contenido a desarrollar y agrega una imagen adicional si lo necesitas. </p>
     </div>
   </div>
   <!-- IMAGEN -->
   <div class="img-village">
     <div class="txt-container">
 
-      <p class="title">Marismas de Barbate</p>
+      <p class="title">TÍTULO DE 1 EXPERIENCIA</p>
 
-      <p class="desc">¿Eres de emociones fuertes? Disfruta de Cádiz como nunca antes.</p><a class="events-link" href="#playas">Selección de rutas naturales <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-arrow-yellow.svg" alt="" class="fr-fic fr-dii">&nbsp;</a>
+      <p class="desc">Escribe aquí una breve descripción al enlace que vas a sugerir.</p><a class="events-link" href="#">Conocer <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-arrow-yellow.svg" alt="" class="fr-fic fr-dii">&nbsp;</a>
       <img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
       <!-- NUEVA FOTO -->
       <img class="img-destacada" src="***_preurl_***/storage/app/media/uploaded-files/templates/marismas-barbate.jpg" alt="">
@@ -525,9 +468,9 @@ class PagesTemplates
   <div class="section-txt-village">
     <div class="txt-container">
 
-      <p class="title">3 COSAS QUE
+      <p class="title">QUÉ
         <br>HACER EN LA PLAYA
-        <br>DE LOS LANCES</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
+        <br>DE (NOMBRE)</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
   </div>
   <div class="all-exps" id="exps-playa">
     <div class="all-events-container">
@@ -537,9 +480,9 @@ class PagesTemplates
         </div><img class="rec-img fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/kite.jpg">
         <div class="txt-container">
 
-          <p class="name">3 SIXTY KITE SCHOOL</p>
+          <p class="name">SUGERENCIA 1</p>
 
-          <p class="subtitle">Utilizamos el método IKO y todos los instructores están certificados en IKO de nivel 3.</p><img class="separator separator-playa fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+          <p class="subtitle">Pequeña descripción de la sugerencia</p><img class="separator separator-playa fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
           <a class="see-event" href="#">Saber más <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
       </div>
       <div class="event event-playa">
@@ -548,9 +491,9 @@ class PagesTemplates
         </div><img class="rec-img fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/arte-vida.jpg">
         <div class="txt-container">
 
-          <p class="name">ARTE Y VIDA TARIFA</p>
+          <p class="name">SUGERENCIA 2</p>
 
-          <p class="subtitle">Lugar ideal para el descanso, y disfrutar de nuestras terrazas, restaurante o zonas chill out.</p><img class="separator separator-playa fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+          <p class="subtitle">Pequeña descripción de la sugerencia</p><img class="separator separator-playa fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
           <a class="see-event" href="#">Saber más <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
       </div>
       <div class="event event-playa">
@@ -559,9 +502,9 @@ class PagesTemplates
         </div><img class="rec-img fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/camping.jpg">
         <div class="txt-container">
 
-          <p class="name">CAMPING TORRE DE LA PEÑA</p>
+          <p class="name">SUGERENCIA 3</p>
 
-          <p class="subtitle">Camping, Bungalows y Restaurante en Tarifa con un pesacado de primera.</p><img class="separator separator-playa fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+          <p class="subtitle">Pequeña descripción de la sugerencia</p><img class="separator separator-playa fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
           <a class="see-event" href="#">Saber más <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
       </div>
     </div>
