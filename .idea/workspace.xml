@@ -2,29 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87ff11be-c4c2-4ca5-8374-8a1952dec0dc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/cms/cache/58/a2/default.htm.php" afterPath="$PROJECT_DIR$/storage/cms/cache/58/a2/default.htm.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/cms/cache/8e/a4/menu.htm.php" afterPath="$PROJECT_DIR$/storage/cms/cache/8e/a4/menu.htm.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/cms/twig/85/85fc4bae626e2649a962b95a787fab7e86cd9043113e5f00f4fc7d34c19733db.php" afterPath="$PROJECT_DIR$/storage/cms/twig/85/85fc4bae626e2649a962b95a787fab7e86cd9043113e5f00f4fc7d34c19733db.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/03/3f/033f18b1f71489b1087db62586dac068a1e2ce91" afterPath="$PROJECT_DIR$/storage/framework/cache/03/3f/033f18b1f71489b1087db62586dac068a1e2ce91" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/0f/17/0f17da2a1c6413d12ef23507c84600fe175d9e86" afterPath="$PROJECT_DIR$/storage/framework/cache/0f/17/0f17da2a1c6413d12ef23507c84600fe175d9e86" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/15/72/157289018752e34daefce542a6c2af1ca8350ff5" afterPath="$PROJECT_DIR$/storage/framework/cache/15/72/157289018752e34daefce542a6c2af1ca8350ff5" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/16/2e/162e04f769b234c9de474e8485fb8ab6eb03bf21" afterPath="$PROJECT_DIR$/storage/framework/cache/16/2e/162e04f769b234c9de474e8485fb8ab6eb03bf21" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/19/db/19db56000bd7ac3a4b8d3955d010a774739cfc88" afterPath="$PROJECT_DIR$/storage/framework/cache/19/db/19db56000bd7ac3a4b8d3955d010a774739cfc88" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/5a/ee/5aeeb95c72700206a24a1d2ad02ec21eb55b7e42" afterPath="$PROJECT_DIR$/storage/framework/cache/5a/ee/5aeeb95c72700206a24a1d2ad02ec21eb55b7e42" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/5b/54/5b54a1a5b8e828d4a9e90bf61846a0da0bf0050a" afterPath="$PROJECT_DIR$/storage/framework/cache/5b/54/5b54a1a5b8e828d4a9e90bf61846a0da0bf0050a" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/6f/74/6f740a4dbaaa86c019346e325872febebdfb20e8" afterPath="$PROJECT_DIR$/storage/framework/cache/6f/74/6f740a4dbaaa86c019346e325872febebdfb20e8" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/78/9b/789b9bacc3b4b264b7f0721aaacb326e92673d1a" afterPath="$PROJECT_DIR$/storage/framework/cache/78/9b/789b9bacc3b4b264b7f0721aaacb326e92673d1a" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/7f/11/7f113731de3dff6c8147b4247a91e7c4f8cf0de4" afterPath="$PROJECT_DIR$/storage/framework/cache/7f/11/7f113731de3dff6c8147b4247a91e7c4f8cf0de4" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/81/dc/81dcacdb46848003682d59dadfe1a1f9296565e3" afterPath="$PROJECT_DIR$/storage/framework/cache/81/dc/81dcacdb46848003682d59dadfe1a1f9296565e3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/83/c3/83c33e64043c6a1293dfb54d2973b6324f609d2d" afterPath="$PROJECT_DIR$/storage/framework/cache/83/c3/83c33e64043c6a1293dfb54d2973b6324f609d2d" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/95/d1/95d1fc0a5a1bc11dbdf33a1aa0423519d9ae8f03" afterPath="$PROJECT_DIR$/storage/framework/cache/95/d1/95d1fc0a5a1bc11dbdf33a1aa0423519d9ae8f03" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/99/77/997743d04d7e079e552d301ce846f21505e95e00" afterPath="$PROJECT_DIR$/storage/framework/cache/99/77/997743d04d7e079e552d301ce846f21505e95e00" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/9e/8f/9e8fe26cba0258c71c4d5f1333b6cfa05599796e" afterPath="$PROJECT_DIR$/storage/framework/cache/9e/8f/9e8fe26cba0258c71c4d5f1333b6cfa05599796e" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/b1/b6/b1b6b61b6cd58fcbec08f9d00687d524901e8a6d" afterPath="$PROJECT_DIR$/storage/framework/cache/b1/b6/b1b6b61b6cd58fcbec08f9d00687d524901e8a6d" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/c3/29/c329d12ce45fec52220977e5cb8951bf52566f34" afterPath="$PROJECT_DIR$/storage/framework/cache/c3/29/c329d12ce45fec52220977e5cb8951bf52566f34" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/d0/1e/d01e8e95ac402ba16ad83ad09f6851991c3b6212" afterPath="$PROJECT_DIR$/storage/framework/cache/d0/1e/d01e8e95ac402ba16ad83ad09f6851991c3b6212" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/d6/a8/d6a8dc1cfaee0c092c67e3b97bf7c53047f5e377" afterPath="$PROJECT_DIR$/storage/framework/cache/d6/a8/d6a8dc1cfaee0c092c67e3b97bf7c53047f5e377" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/default/layouts/default.htm" afterPath="$PROJECT_DIR$/themes/default/layouts/default.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/default/layouts/evento.htm" afterPath="$PROJECT_DIR$/themes/default/layouts/evento.htm" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -87,14 +66,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="default.htm" pinned="false" current-in-tab="true">
+      <file leaf-file-name="default.htm" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/default/layouts/default.htm">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="443">
-              <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+            <state relative-caret-position="203">
+              <caret line="65" column="116" lean-forward="false" selection-start-line="65" selection-start-column="116" selection-end-line="65" selection-end-column="116" />
               <folding>
-                <element signature="e#2188#2194#0" expanded="true" />
+                <element signature="e#2228#2234#0" expanded="true" />
+                <element signature="e#2341#2347#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="events.htm" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/default/partials/events.htm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="evento.htm" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/themes/default/layouts/evento.htm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="248">
+              <caret line="67" column="0" lean-forward="true" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -214,6 +214,50 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cadizTurismo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cadizTurismo" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="partials" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cadizTurismo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cadizTurismo" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -299,12 +343,12 @@
       <option name="presentableId" value="Default" />
       <updated>1516786709693</updated>
       <workItem from="1516786712254" duration="14987000" />
-      <workItem from="1517217750113" duration="881000" />
+      <workItem from="1517217750113" duration="1015000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15868000" />
+    <option name="totallyTimeSpent" value="16002000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="292" y="22" width="2268" height="1054" extended-state="0" />
@@ -485,14 +529,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/default/layouts/evento.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-390">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/default/layouts/municipio.htm">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="769">
@@ -622,11 +658,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/default/layouts/default.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+        <state relative-caret-position="203">
+          <caret line="65" column="116" lean-forward="false" selection-start-line="65" selection-start-column="116" selection-end-line="65" selection-end-column="116" />
           <folding>
-            <element signature="e#2188#2194#0" expanded="true" />
+            <element signature="e#2228#2234#0" expanded="true" />
+            <element signature="e#2341#2347#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/default/partials/events.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/default/layouts/evento.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="67" column="0" lean-forward="true" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
