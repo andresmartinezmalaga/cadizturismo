@@ -423,8 +423,7 @@ class StaticApp extends ComponentBase
         <style>
                 .section-txt, .section-img, .header-event {
                     
-                    display:block!important;
-
+                   
                 }
 
                 .section-txt .big-number-container, .section-txt .txt-container, .section-txt .big-number-container span, .section-txt .txt-container p {
@@ -432,19 +431,19 @@ class StaticApp extends ComponentBase
                     display:block!important;
                 }
                 .section-txt .txt-container {
-                    margin: 40px auto 0px auto;
+                    margin: 40in auto 0px auto;
                 }
 
                 .section-txt .big-number-container span {
-                    font-size: 400px !important;
+                    
                 }
 
                 .section-txt .txt-container .title {
-                    font-size: 100px;
+                   
                 }
 
                 .section-txt .txt-container p {
-                    font-size: 30px;
+                    font-size: 300in!important;
                 }
 
         </style>
