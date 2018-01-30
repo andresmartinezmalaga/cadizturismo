@@ -288,6 +288,10 @@
   background-color: white;
   position: relative;
   z-index: 50; }
+  .section-txt-village a, .section-txt-village .section-link {
+    color: #F7A700; }
+    .section-txt-village a:hover, .section-txt-village a:active, .section-txt-village a:focus, .section-txt-village .section-link:hover, .section-txt-village .section-link:active, .section-txt-village .section-link:focus {
+      text-decoration: none; }
   .section-txt-village .txt-container {
     width: 90%;
     padding: 180px 0px 160px 0px;

@@ -356,6 +356,12 @@ transform: $value;
   background-color: white;
   position: relative;
   z-index: 50;
+  a, .section-link {
+    color: #F7A700;
+    &:hover, &:active, &:focus {
+      text-decoration: none;
+    }
+  }
   .txt-container {
     width: 90%;
     padding: 180px 0px 160px 0px;

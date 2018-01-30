@@ -364,9 +364,9 @@
     min-height: 355px;
     position: relative;
     top: -7px; }
-    .section-txt .txt-container .section-link {
+    .section-txt .txt-container a, .section-txt .txt-container .section-link {
       color: #F7A700; }
-      .section-txt .txt-container .section-link:hover, .section-txt .txt-container .section-link:active, .section-txt .txt-container .section-link:focus {
+      .section-txt .txt-container a:hover, .section-txt .txt-container a:active, .section-txt .txt-container a:focus, .section-txt .txt-container .section-link:hover, .section-txt .txt-container .section-link:active, .section-txt .txt-container .section-link:focus {
         text-decoration: none; }
     .section-txt .txt-container .title {
       color: #4A4A4A;

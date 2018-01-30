@@ -234,7 +234,7 @@ class Experience extends ContentBase
                 </div>
             </div>
         </div>
-
+        </div>
         <div class="section-img">
           <img src="***_preurl_***/storage/app/media/uploaded-files/templates/palmar5.jpg" alt="">
         </div>';
