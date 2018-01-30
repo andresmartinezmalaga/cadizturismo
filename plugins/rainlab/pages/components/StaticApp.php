@@ -432,19 +432,19 @@ class StaticApp extends ComponentBase
                     display:block!important;
                 }
                 .section-txt .txt-container {
-                    margin: 40px auto 0px auto;
+                    margin: 40in auto 0px auto;
                 }
 
                 .section-txt .big-number-container span {
-                    font-size: 400px !important;
+                    font-size: 400in !important;
                 }
 
                 .section-txt .txt-container .title {
-                    font-size: 100px;
+                    font-size: 100in;
                 }
 
                 .section-txt .txt-container p {
-                    font-size: 30px;
+                    font-size: 30in;
                 }
 
         </style>
