@@ -462,7 +462,7 @@ class StaticApp extends ComponentBase
         //
         
         $nombre = 'Andres';
-        $template = '<h1>Hola {{nombre}}</h1>';
+        $template = '<h1>Hola</h1>';
         $renderedHtml = Twig::parse($template);
         
         $pdf_data = PDFS::loadHTML($renderedHtml)
