@@ -15,6 +15,9 @@ use Barryvdh\Snappy\Facades\SnappyPdf as PDFS;
 
 use Mail;
 
+use File;
+use Twig;
+
 /**
  * The static page component.
  *
@@ -425,11 +428,35 @@ class StaticApp extends ComponentBase
         
         //$pdf = PDFS::generateFromHtml($experiencemarkup,  '/tmp/experience3.pdf');
         //
-        $pdf = PDFS::generate('http://google.com', '/tmp/experience343.pdf');
+        //$pdf = PDFS::generate('http://google.com', '/tmp/experience343.pdf');
 
-        $pdf_data = $pdf;
+        //$pdf_data = $pdf;
+        //
+        
+        // Load the template
+        $template = File::get(plugins_path('themes/default/content/static-pages/experiencias-cinco.htm'));
+
+        // Render the template
+        $renderedHtml = Twig::parse($template);
+
+
+         // Render as a PDF
+        $pdf = SnappyPDF::loadHTML($renderedHtml)
+            ->setOption('margin-top', 0)
+            ->setOption('margin-bottom', 0)
+            ->setOption('margin-left', 0)
+            ->setOption('margin-right', 0)
+            ->setPaper('letter')
+            ->output();
+
+
+        return Response::make($pdf, 200, [
+            'Content-Type'        => 'application/pdf',
+            'Content-Disposition' => "filename.pdf",
+        ]);
+
        
-        $experience = 'experiencia';
+        /*$experience = 'experiencia';
 
         $dataemail = array('experience' => 'experience');
 
@@ -441,7 +468,7 @@ class StaticApp extends ComponentBase
             $message->attachData($pdf_data, 'experience.pdf');
             $message->subject('Tu experiencia en Cadiz Turismo');
 
-        });
+        });*/
 
 
 
