@@ -423,12 +423,8 @@ class StaticApp extends ComponentBase
         <style>
                 
 
-                .desc  {
-                     font-size: 300pt!important;
-                }
 
                 .section-txt, .section-img, .header-event {
-                    
                    
                 }
 
@@ -438,18 +434,6 @@ class StaticApp extends ComponentBase
                 }
                 .section-txt .txt-container {
                     margin: 40in auto 0px auto;
-                }
-
-                .section-txt .big-number-container span {
-                    
-                }
-
-                .section-txt .txt-container .title {
-                   
-                }
-
-                .section-txt .txt-container p {
-                    font-size: 300pt!important;
                 }
 
         </style>
