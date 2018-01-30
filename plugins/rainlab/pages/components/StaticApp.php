@@ -458,7 +458,7 @@ class StaticApp extends ComponentBase
                
         //$renderedHtml = Twig::parse($template);
         
-        $pdf_data = PDFS::getOutput('https://www.google.es');
+        $pdf_data = PDFS::getOutput('http://cadizturismo.jekyllme.com/es/experiencias/cinco');
         
         $experience = 'experiencia';
 
