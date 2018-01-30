@@ -427,12 +427,12 @@ class StaticApp extends ComponentBase
                     font-size: 20px!important;
                 };
 
-                .section-txt div {
+                div.section-txt  {
                     border: 1px solid red;
                     display:block!important;
                 };
 
-                .section-txt img {
+                img.section-txt  {
                     border: 1px solid red;
                     display:block!important;
                 };
