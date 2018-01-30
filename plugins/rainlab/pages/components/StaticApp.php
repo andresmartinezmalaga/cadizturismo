@@ -484,7 +484,7 @@ class StaticApp extends ComponentBase
         
         $pdf_data = PDFS::loadHTML($experiencemarkup)
            
-            ->setOption('orientation','Landscape')
+          
             ->setPaper('a1')
             ->output();
 
