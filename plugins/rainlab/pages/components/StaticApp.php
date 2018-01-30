@@ -481,7 +481,9 @@ class StaticApp extends ComponentBase
             ->setOption('margin-bottom', 0)
             ->setOption('margin-left', 0)
             ->setOption('margin-right', 0)
-            ->setPaper('letter')
+            ->setOption('dpi',300)
+            ->setOption('orientation','Landscape')
+            ->setPaper('a4')
             ->output();
 
         //$pdf_data = PDFS::getOutput('http://cadizturismo.jekyllme.com/es/experiencias/cinco');
