@@ -456,8 +456,9 @@ class StaticApp extends ComponentBase
             'Content-Disposition' => "filename.pdf",
         ]);*/
 
-        $pdf_data = PDFS::generate('http://cadizturismo.jekyllme.com/es/experiencias/cinco', '/tmp/experience666.pdf');
-
+        $pdf= PDFS::generate('http://cadizturismo.jekyllme.com/es/experiencias/cinco', '/tmp/experience665.pdf');
+        $pdf_data = $pdf->output();
+        
         $experience = 'experiencia';
 
         $dataemail = array('experience' => 'experience');
