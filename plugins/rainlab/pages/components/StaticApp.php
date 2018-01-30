@@ -421,14 +421,18 @@ class StaticApp extends ComponentBase
         <link rel="stylesheet" href="http://cadizturismo.jekyllme.com/plugins/rainlab/pages/assets/css/style-event.css"/>
         <link rel="stylesheet" href="http://cadizturismo.jekyllme.com/plugins/rainlab/pages/assets/css/style.css"/> 
         <style>
-                .section-txt, .section-img  {
+                .section-txt, .section-img, .header-event {
                     border: 1px solid red;
                     display:block!important;
+
                 }
 
                 .section-txt .big-number-container, .section-txt .txt-container, .section-txt .big-number-container span, .section-txt .txt-container p {
                     border: 1px solid red;
                     display:block!important;
+                }
+                .section-txt .txt-container {
+                    margin: 0 auto;
                 }
 
         </style>
