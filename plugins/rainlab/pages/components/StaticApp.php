@@ -456,7 +456,7 @@ class StaticApp extends ComponentBase
             'Content-Disposition' => "filename.pdf",
         ]);*/
                
-        $renderedHtml = Twig::parse($template);
+        //$renderedHtml = Twig::parse($template);
         
         $pdf_data = PDFS::getOutput('http://cadizturismo.jekyllme.com/es/experiencias/cinco');
         
