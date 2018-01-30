@@ -78,13 +78,15 @@ code = "que-hacer"
         </div>
     </div>
 
-     <script>
+    {% if $this->paga->subtemplate = "municipios" %}
+    <script>
         var address = "{{this.page.title}}";
     </script>
 
     <div id="map" style="height: 800px">
         <br>
     </div>
+    {% endif %}
 
     {% partial 'site/footer' %}
 
