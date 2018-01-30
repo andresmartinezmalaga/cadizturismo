@@ -420,7 +420,7 @@ class StaticApp extends ComponentBase
         <link rel="stylesheet" href="http://cadizturismo.jekyllme.com/plugins/rainlab/pages/assets/css/style-village.css"/>
         <link rel="stylesheet" href="http://cadizturismo.jekyllme.com/plugins/rainlab/pages/assets/css/style-event.css"/>
         <link rel="stylesheet" href="http://cadizturismo.jekyllme.com/plugins/rainlab/pages/assets/css/style.css"/> 
-        <style>div {
+        <style>.section-txt, .section-img {
             border: 1px solid red;
             display:block!important;
             font-size: 20px!important;
