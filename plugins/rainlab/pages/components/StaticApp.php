@@ -421,9 +421,10 @@ class StaticApp extends ComponentBase
         <link rel="stylesheet" href="http://cadizturismo.jekyllme.com/plugins/rainlab/pages/assets/css/style-event.css"/>
         <link rel="stylesheet" href="http://cadizturismo.jekyllme.com/plugins/rainlab/pages/assets/css/style.css"/> 
         <style>p {
-            border: 1px solid red;}</style>
+            border: 1px solid red;
             display:block;
             font-size: 1em;
+            }</style>
         ';
         
         $preexperiencemarkup = $baseHtml.$experience[0]['markup'];
