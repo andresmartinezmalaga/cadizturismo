@@ -423,7 +423,7 @@ class StaticApp extends ComponentBase
         <style>p {
             border: 1px solid red;
             display:block!important;
-            font-size: 3em!important;
+            font-size: 20px!important;
             }</style>
         ';
         
