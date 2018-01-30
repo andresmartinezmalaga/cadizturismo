@@ -408,7 +408,9 @@ class StaticApp extends ComponentBase
         $experience = $this->experienceFindByUrl($url);
 
         $preexperiencemarkup = $experience[0]['markup'];
-        $experiencemarkup = str_replace('.svg', '.png', $preexperiencemarkup);
+        //$experiencemarkup = str_replace('.svg', '.png', $preexperiencemarkup);
+        //
+        $experiencemarkup = str_replace('/storage/', 'http://cadizturismo.jekyllme.com/storage/', $preexperiencemarkup);
 
         //dd(1);
 
@@ -417,8 +419,12 @@ class StaticApp extends ComponentBase
 
         $data = array('experiencemarkup' => $experiencemarkup );
        
-        $pdf = PDFS::loadView('pdf.experience', compact('data'))->setOption('page-size', 'A4')->setOption('dpi',300);
-        $pdf_data = $pdf->output();
+        
+        //$pdf = PDFS::loadView('pdf.experience', compact('data'))->setOption('page-size', 'A4')->setOption('dpi',300);
+        //$pdf_data = $pdf->output();
+        
+        $pdf = PDFS::generateFromHtml($experiencemarkup,  '/tmp/experience3.pdf');
+        $pdf_data = $pdf;
        
         $experience = 'experiencia';
 
