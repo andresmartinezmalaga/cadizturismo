@@ -4895,7 +4895,8 @@ nav#layout-mainmenu.navbar-mode-inline ul.mainmenu-nav li:first-child {
       font-size: 14px !important; }
 
 .control-treeview ol > li > div {
-  background: #F6F6F6; }
+  background: #F6F6F6;
+  min-height: 70px; }
   .control-treeview ol > li > div a {
     color: #818181;
     font-weight: 600;
