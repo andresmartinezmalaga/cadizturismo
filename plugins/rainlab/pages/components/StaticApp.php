@@ -426,6 +426,11 @@ class StaticApp extends ComponentBase
                     display:block!important;
                 }
 
+                .section-txt .big-number-container, .section-txt .txt-container, .section-txt .big-number-container span, .section-txt .txt-container p {
+                    border: 1px solid red;
+                    display:block!important;
+                }
+
         </style>
         ';
         
