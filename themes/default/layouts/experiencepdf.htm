@@ -64,21 +64,24 @@ code = "que-hacer"
     <link rel="stylesheet" href="{{url('/')}}/plugins/rainlab/pages/assets/css/style-village.css"/>
     <link rel="stylesheet" href="{{url('/')}}/plugins/rainlab/pages/assets/css/style-event.css"/>
     <link rel="stylesheet" href="{{url('/')}}/plugins/rainlab/pages/assets/css/style.css"/>
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/svg/favicons/apple-touch-icon.png">
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="./assets/svg/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/svg/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/svg/favicons/favicon-16x16.png">
     <link rel="manifest" href="./assets/svg/favicons/manifest.json">
-    <link rel="mask-icon" href="./assets/svg/favicons/safari-pinned-tab.svg" color="#383838">
+    <link rel="mask-icon" href="./assets/svg/favicons/safari-pinned-tab.svg" color="#383838"> -->
     <meta name="theme-color" content="#ffffff">
 </head>
 
-    {% partial 'site/headerexp' %}
+    
 
-    {% component 'staticPage' %}
+    
 
     <div class="vertical-share">
         
-        <p class="also-title">{{'COMPARTIR'|_}}</p><img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-sep.svg" class="fr-fil fr-dib">
+        <p class="also-title">{{'COMPARTIR'|_}}</p>
+
+        <!-- <img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-sep.svg" class="fr-fil fr-dib"> -->
+        
         <div class="links-container"><a href="https://www.facebook.com/sharer/sharer.php?u={{url('/')}}/{{lang}}{{urlPage}}" target="_blank">Facebook&nbsp;</a>
             <span>·</span>
             <a data-action="share/whatsapp/share" href="whatsapp://send?text={{url('/')}}/{{lang}}{{urlPage}}">Whatsapp&nbsp;</a>
