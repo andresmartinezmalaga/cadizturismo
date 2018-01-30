@@ -441,7 +441,12 @@ class StaticApp extends ComponentBase
                     border: 1px solid red;
                     display:block!important;
                 }
-                
+
+                .title, .desc {
+                    border: 1px solid red;
+                    display:block!important;
+                }
+
         </style>
         ';
         
