@@ -457,7 +457,14 @@ class StaticApp extends ComponentBase
         ]);*/
 
         $pdf= PDFS::generate('http://cadizturismo.jekyllme.com/es/experiencias/cinco', '/tmp/experience665.pdf');
-        $pdf_data = $pdf->output();
+        $renderedHtml = Twig::parse($pdf);
+        $pdf_data = PDFS::loadHTML($renderedHtml)
+            ->setOption('margin-top', 0)
+            ->setOption('margin-bottom', 0)
+            ->setOption('margin-left', 0)
+            ->setOption('margin-right', 0)
+            ->setPaper('letter')
+            ->output();
         
         $experience = 'experiencia';
 
