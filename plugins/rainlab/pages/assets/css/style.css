@@ -184,6 +184,8 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: 'AvenirNext-Medium', sans-serif; }
+  html ::selection, body ::selection {
+    background-color: #FFE8CA; }
 
 .transform-arrow {
   transform: rotate(180deg);
