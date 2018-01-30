@@ -423,7 +423,10 @@ class StaticApp extends ComponentBase
         //$pdf = PDFS::loadView('pdf.experience', compact('data'))->setOption('page-size', 'A4')->setOption('dpi',300);
         //$pdf_data = $pdf->output();
         
-        $pdf = PDFS::generateFromHtml($experiencemarkup,  '/tmp/experience3.pdf');
+        //$pdf = PDFS::generateFromHtml($experiencemarkup,  '/tmp/experience3.pdf');
+        //
+        $pdf = PDFS::generate('http://cadizturismo.jekyllme.com/es/experiencias/cinco', '/tmp/experience'.Carbon::now().'.pdf');
+
         $pdf_data = $pdf;
        
         $experience = 'experiencia';
