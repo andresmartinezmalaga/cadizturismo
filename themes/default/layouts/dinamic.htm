@@ -24,7 +24,9 @@ code = "que-hacer"
         }
         
         if($this->page->apiBag){
-            $this['metaImg'] = $this->page->apiBag["staticPage"]->attributes["viewBag"]["cover"];
+            if(isset($this->page->apiBag["staticPage"]->attributes["viewBag"]["cover"])){
+                $this['metaImg'] = $this->page->apiBag["staticPage"]->attributes["viewBag"]["cover"];
+            }
         }
 
 }

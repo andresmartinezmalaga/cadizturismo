@@ -2304,59 +2304,7 @@ class PagesTemplates
       <div class="publi-container">
         <h3 class="publicaciones-title">DESCUBRE CÁDIZ CON NUESTRAS GUÍAS Y PUBLICACIONES</h3>
         <img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
-      </div>
-      <div class="publis">
-        <div class="publicacion">
-          <img class="publi-icon" src="***_preurl_***/storage/app/media/uploaded-files/templates/video-icon.svg" alt="">
-          <h6 class="publi-title">MAGIC</h6>
-          <p class="publi-desc">"Magic" recorre la provincia con una familia, que se adentra en la naturaleza, en los pueblos, en el deporte…; unas amigas ávidas de acción, paisajes y turismo activo y una pareja, enamorada de la historia y la cultura.</p>
-          <p class="languages-publi"><span id="languages-title">IDIOMAS DISPONIBLES: </span>Español, Inglés, Español, Inglés, Español, Inglés, Español, Inglés, Español, Inglés, Español, Inglés, Español, Inglés, Español, Inglés, Español, Inglés, Español, Inglés, Español, Inglés.</p>
-          <div class="links-container">
-            <a class="see-link" href="#">Ver video <img src="***_preurl_***/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""> </a>
-            <a class="download-link" href="#">Descargar video <img src="***_preurl_***/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""> </a>
-          </div>
-        </div>
-        <div class="publicacion">
-          <img class="publi-icon" src="***_preurl_***/storage/app/media/uploaded-files/templates/guide-icon.svg" alt="">
-          <h6 class="publi-title">CÁDIZ A PEDIR DE BOCA</h6>
-          <p class="publi-desc">Te contamos sitios donde los platos son como fuegos artificiales y los sabores te explotan por todos los huecos del paladar.</p>
-            <p class="languages-publi"><span id="languages-title">IDIOMAS DISPONIBLES: </span>Español, Inglés, Español, Inglés, Español, Inglés, Español, Inglés, Español, Inglés, Español, Inglés, Español, Inglés, Español, Inglés, Español, Inglés, Español, Inglés, Español, Inglés.</p>
-          <div class="links-container">
-            <a class="see-link" href="#">Ver guía <img src="***_preurl_***/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""> </a>
-            <a class="download-link" href="#">Descargar guía <img src="***_preurl_***/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""> </a>
-          </div>
-        </div>
-        <div class="publicacion">
-          <img class="publi-icon" src="***_preurl_***/storage/app/media/uploaded-files/templates/guide-icon.svg" alt="">
-          <h6 class="publi-title">GUÍA CULTURAL</h6>
-          <p class="publi-desc">Historias de dioses y mitos como la Atlántida, los doce trabajos de Hércules o el fabuloso reino de Tartessos forman parte indisoluble de los orígenes del territorio gaditano.</p>
-            <p class="languages-publi"><span id="languages-title">IDIOMAS DISPONIBLES: </span>Español, Inglés, Español, Inglés, Español, Inglés, Español, Inglés, Español, Inglés, Español, Inglés, Español, Inglés, Español, Inglés, Español, Inglés, Español, Inglés, Español, Inglés.</p>
-          <div class="links-container">
-            <a class="see-link" href="#">Ver guía <img src="***_preurl_***/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""> </a>
-            <a class="download-link" href="#">Descargar guía <img src="***_preurl_***/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""> </a>
-          </div>
-        </div>
-        <div class="publicacion">
-          <img class="publi-icon" src="***_preurl_***/storage/app/media/uploaded-files/templates/video-icon.svg" alt="">
-          <h6 class="publi-title">CÁDIZ ES SINGULAR</h6>
-          <p class="publi-desc">"Cádiz es singular, es plural" es un vídeo premiado en el Festival de Cine Turístico de la República Checa. Ganador de la categoría de Mejor Fotografía en el Festival Internacional de Cine Turístico de Brasil. </p>
-          <p class="languages-publi"><span id="languages-title">IDIOMAS DISPONIBLES: </span>Español, Inglés, Español, Inglés, Español, Inglés, Español, Inglés, Español, Inglés, Español, Inglés, Español, Inglés, Español, Inglés, Español, Inglés, Español, Inglés, Español, Inglés.</p>
-          <div class="links-container">
-            <a class="see-link" href="#">Ver video <img src="***_preurl_***/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""> </a>
-            <a class="download-link" href="#">Descargar video <img src="***_preurl_***/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""> </a>
-          </div>
-        </div>
-        <div class="publicacion">
-          <img class="publi-icon" src="***_preurl_***/storage/app/media/uploaded-files/templates/doc-icon.svg" alt="">
-          <h6 class="publi-title">BIRDING CÁDIZ</h6>
-          <p class="publi-desc">Guía de turismo ornitológico de la provincia de Cádiz.</p>
-          <p class="languages-publi"><span id="languages-title">IDIOMAS DISPONIBLES: </span>Español, Inglés</p>
-          <div class="links-container">
-            <a class="see-link" href="#">Ver publicación <img src="***_preurl_***/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""> </a>
-            <a class="download-link" href="#">Descargar publicación <img src="***_preurl_***/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""> </a>
-          </div>
-        </div>
-      </div>
+      </div>      
     </section>';
 
     static function getTPublicaciones(){
