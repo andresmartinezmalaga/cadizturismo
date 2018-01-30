@@ -1,4 +1,5 @@
 static-pages:
+    publicaciones: {  }
     comarcas:
         comarcas-bahia-de-cadiz: {  }
         comarcas-campina-de-jerez: {  }
@@ -9,23 +10,9 @@ static-pages:
     municipios:
         municipios-grazalema: {  }
         municipios-jerez-de-la-frontera: {  }
-        municipios-torremolinos: {  }
-        municipios-fuengirola: {  }
-        municipios-torre: {  }
-        municipios-torremolinosv: {  }
-        municipios-benal: {  }
-        municipios-granjeo: {  }
-        municipios-15: {  }
-        municipios-17: {  }
-        municipios-20: {  }
-        municipios-22: {  }
         municipios-barbate: {  }
         municipios-tarifa: {  }
     playas:
-        playas-uno: {  }
-        playas-dos: {  }
-        playas-seis: {  }
-        playas-16: {  }
         playas-marina: {  }
         playas-los-lances: {  }
         playas-atlanterra-zahara-de-los-atunes-y-cabo-de-la-playa: {  }
@@ -62,21 +49,6 @@ static-pages:
     sobre-nosotros: {  }
     necesitas-ayuda: {  }
     legal: {  }
-    experiencias-una: {  }
-    experiencias-dos: {  }
-    eventos-evento-uno: {  }
-    publicaciones: {  }
-    eventos-dos: {  }
-    eventos-uno: {  }
-    eventos-tres: {  }
     sala-prensa: {  }
     reportaje: {  }
-    eventos-marina: {  }
     prensa-nacional: {  }
-    eventos-evento-marina: {  }
-    eventos-cuatro: {  }
-    rutas-una: {  }
-    eventos-unob: {  }
-    rutas-dos: {  }
-    rutas-marina: {  }
-    experiencias-mariniss: {  }
