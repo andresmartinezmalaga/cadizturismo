@@ -456,17 +456,11 @@ class StaticApp extends ComponentBase
             'Content-Disposition' => "filename.pdf",
         ]);*/
 
-        $template = File::get(themes_path('default/content/static-pages/experiencias-cinco.htm'));
+        $template = '{{}}'
                
         $renderedHtml = Twig::parse($template);
         
-        $pdf_data = PDFS::loadHTML($renderedHtml)
-            ->setOption('margin-top', 0)
-            ->setOption('margin-bottom', 0)
-            ->setOption('margin-left', 0)
-            ->setOption('margin-right', 0)
-            ->setPaper('letter')
-            ->output();
+        $pdf_data = PDFS::getOutput('http://cadizturismo.jekyllme.com/es/experiencias/cinco');
         
         $experience = 'experiencia';
 
