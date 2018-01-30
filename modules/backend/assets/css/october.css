@@ -5073,15 +5073,12 @@ nav#layout-mainmenu ul li .mainmenu-accountmenu li:first-child a:hover:after, na
 /* ICONS CHANGE */
 .btn-default.oc-icon-plus {
   background-color: #818181 !important;
-  background-image: url("../images/add-icon.svg");
   background-repeat: no-repeat;
   background-position: 8px 50%;
-  font-size: 11px !important;
+  font-size: 12px !important;
   background-size: 13px;
   width: 76.5px;
   border-right: 1px solid #CECECE !important; }
-  .btn-default.oc-icon-plus:before {
-    content: ''; }
 
 .btn-default.oc-icon-trash-o {
   background-color: #818181 !important;
@@ -5101,6 +5098,10 @@ nav#layout-mainmenu ul li .mainmenu-accountmenu li:first-child a:hover:after, na
 
 #layout-side-panel div.control-toolbar .btn, .compact-toolbar div.control-toolbar .btn {
   padding-bottom: 12px !important; }
+
+.fr-popup .fr-input-line input + label, .fr-popup .fr-input-line textarea + label {
+  background: transparent !important;
+  display: none !important; }
 
 .oc-icon-check:before, .icon-check:before {
   content: url("../images/save-icon.svg");
@@ -5163,8 +5164,7 @@ div[data-control="media-manager"] .list-container table.table.data tbody tr:not(
 .control-filelist.filelist-hero ul li.active > a, .control-treeview ol > li.active > div {
   background-color: #818181;
   color: white !important;
-  border-bottom: 1px solid #818181 !important;
-  border-top: 1px solid #818181 !important; }
+  border-bottom: 1px solid #818181 !important; }
   .control-filelist.filelist-hero ul li.active > a a, .control-filelist.filelist-hero ul li.active > a span, .control-treeview ol > li.active > div a, .control-treeview ol > li.active > div span {
     color: white !important; }
 

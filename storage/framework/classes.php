@@ -59,4 +59,6 @@
   'RainLab\\GoogleAnalytics\\Classes\\Analytics' => 'plugins/rainlab/googleanalytics/classes/Analytics.php',
   'RainLab\\GoogleAnalytics\\Models\\Settings' => 'plugins/rainlab/googleanalytics/models/Settings.php',
   'RainLab\\GoogleAnalytics\\Classes\\CacheItemPool' => 'plugins/rainlab/googleanalytics/classes/CacheItemPool.php',
+  'backend\\Controllers\\users' => 'modules/backend/controllers/users.php',
+  'system\\Controllers\\settings' => 'modules/system/controllers/settings.php',
 );
