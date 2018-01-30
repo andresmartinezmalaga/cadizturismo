@@ -461,7 +461,7 @@ class StaticApp extends ComponentBase
         //
         
         $pdf_data = new PDFS;
-        $pdf_data->generateFromHtml('<h1>Bill</h1><p>You owe me money, dude.</p>', '/tmp/bill-123.pdf');
+        $pdf_data::generateFromHtml('<h1>Bill</h1><p>You owe me money, dude.</p>', '/tmp/bill-123.pdf');
         
         //$pdf_data = PDFS::getOutput('http://cadizturismo.jekyllme.com/es/experiencias/cinco');
         
