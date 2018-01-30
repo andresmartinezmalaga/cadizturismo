@@ -422,6 +422,8 @@ class StaticApp extends ComponentBase
         <link rel="stylesheet" href="http://cadizturismo.jekyllme.com/plugins/rainlab/pages/assets/css/style.css"/> 
         <style>p {
             border: 1px solid red;}</style>
+            display:block;
+            font-size: 1em;
         ';
         
         $preexperiencemarkup = $baseHtml.$experience[0]['markup'];
@@ -480,8 +482,6 @@ class StaticApp extends ComponentBase
         //$renderedHtml = Twig::parse($template);
         
         $pdf_data = PDFS::loadHTML($experiencemarkup)
-           
-           
            
             ->setOption('orientation','Landscape')
             ->setPaper('a4')
