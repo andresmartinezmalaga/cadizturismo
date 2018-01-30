@@ -243,7 +243,11 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: 'AvenirNext-Medium', sans-serif; }
+  font-family: 'AvenirNext-Medium', sans-serif;
+  ::selection {
+    background-color: #FFE8CA;
+  }
+ }
 
 .transform-arrow {
   transform: rotate(180deg);
