@@ -1,4 +1,4 @@
-description = "Municipality Layout"
+description = "Default Layout"
 
 [staticPage]
 useContent = 1
@@ -28,19 +28,13 @@ code = "que-hacer"
         if($this['lang']==''){
             $this['lang']='es';
         }
+                $this['urlPage'] = $this->page->url;
 
-        $this['municipalities'] = $this->staticApp->municipalitiesList();
-
-        $this['urlPage'] = $this->page->url;
-
-        if($this->page->apiBag){
+        if($this->page->apiBag)
             if(isset($this->page->apiBag["staticPage"]->attributes["viewBag"]["cover"])){
                 $this['metaImg'] = $this->page->apiBag["staticPage"]->attributes["viewBag"]["cover"];
             }
         }
-
-
-    }
 
 ?>
 
@@ -53,7 +47,7 @@ code = "que-hacer"
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <meta name="google-site-verification" content="KZtyPnD_0KXDnRTpmvwxNoBcvj3Osx_VKrXoJaucHrE" />
     <meta property="og:image" content="{{ metaImg }}">
-    <title>Cádiz te hace libre</title>
+    <title>Cádiz</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="{{url('/')}}/plugins/rainlab/pages/assets/css/style-comarcas.css"/>
@@ -72,19 +66,13 @@ code = "que-hacer"
 
     {% component 'staticPage' %}
 
-    <div id='prtlMunicipalities' class="all-events">
-        <div class="all-events-container">
-        {% partial "municipalities" %}
-        </div>
-    </div>
-
     {% partial 'site/footer' %}
 
     <!-- SCRIPTS -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.full.min.js"></script>
     <script type="text/javascript" src="{{url('/')}}/plugins/rainlab/pages/assets/js/script-select2.js"></script>
-    <script type="text/javascript" src="{{url('/')}}/plugins/rainlab/pages/assets/iziModal/js/iziModal.js"></script>
+<script type="text/javascript" src="{{url('/')}}/plugins/rainlab/pages/assets/iziModal/js/iziModal.js"></script>
 
     <script type="text/javascript" src="{{url('/')}}/plugins/rainlab/pages/assets/js/style.js"></script>
 
