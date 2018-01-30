@@ -5517,3 +5517,6 @@ table.name-value-list > a:hover, table.name-value-list > a:focus, table.name-val
 div[data-control="media-manager"] .media-list.tiles li.selected .icon-container {
   background: #175DA3 !important;
   border-color: #175DA3 !important; }
+
+.menus-items {
+  min-height: auto !important; }
