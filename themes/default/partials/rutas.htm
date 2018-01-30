@@ -13,40 +13,53 @@
 ?>  
 
 ==
+{% if rutas|length > 0 %}
 
-<div class="search-title-container">
-    <p class="title-search"> {{ 'Hemos encontrado'|_ }} {{rutas|length}} {{ 'rutas que se adaptan ti'|_ }}</p>
-</div>
+  <div class="search-title-container">
+      {% if rutas|length > 1 %}
+        <p class="title-search"> {{ 'Hemos encontrado'|_ }} {{rutas|length}} {{ 'rutas que se adaptan ti'|_ }}</p>
+       {% else %}
+         <p class="title-search"> {{ 'Hemos encontrado'|_ }} {{rutas|length}} {{ 'ruta que se adaptan ti'|_ }}</p>
+       {% endif %}
+  </div>
 
-<div class="all-events-container">
-  
-  {% for ruta in rutas %}
-         
-      <div class="event">
-        <div class="overlay-img"></div>
-        <img class="rec-img" src="{{ruta.viewBag.cover}}">
-        <div class="txt-container">
-          <p class="name">{{ruta.viewBag.title}}</p>
-          <img class="separator" src="{{preurl}}/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
-          <div class="icons">
-            
-            <div class="icon-pair">
-              <img src="{{preurl}}/storage/app/media/uploaded-files/templates/{{str_slug(ruta.viewBag.category)}}.svg">
-                <p class="icon-txt">{{ruta.viewBag.category|_}}</p>
-            </div>
+  <div class="all-events-container">
+    
+    {% for ruta in rutas %}
            
-            <div class="icon-pair">
-              <img src="{{preurl}}/storage/app/media/uploaded-files/templates/loc-events.svg">
-              <p class="icon-txt">{{event.viewBag.location}}</p>
+        <div class="event">
+          <div class="overlay-img"></div>
+          <img class="rec-img" src="{{ruta.viewBag.cover}}">
+          <div class="txt-container">
+            <p class="name">{{ruta.viewBag.title}}</p>
+            <img class="separator" src="{{preurl}}/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+            <div class="icons">
+              
+              <div class="icon-pair">
+                <img src="{{preurl}}/storage/app/media/uploaded-files/templates/{{str_slug(ruta.viewBag.category)}}.svg">
+                  <p class="icon-txt">{{ruta.viewBag.category|_}}</p>
+              </div>
+             
+              <div class="icon-pair">
+                <img src="{{preurl}}/storage/app/media/uploaded-files/templates/loc-events.svg">
+                <p class="icon-txt">{{event.viewBag.location}}</p>
+              </div>
+              
             </div>
-            
-          </div>
-          <div class="button-container">
-            <a class="see-event" href="{{url('/')}}/{{lang}}{{ruta.viewBag.url}}"> {{'Ver ruta'|_}} <img src="{{preurl}}/storage/app/media/uploaded-files/templates/link-icon.svg"></a>
+            <div class="button-container">
+              <a class="see-event" href="{{url('/')}}/{{lang}}{{ruta.viewBag.url}}"> {{'Ver ruta'|_}} <img src="{{preurl}}/storage/app/media/uploaded-files/templates/link-icon.svg"></a>
+            </div>
           </div>
         </div>
-      </div>
 
-  {% endfor %}
+    {% endfor %}
 
+  </div>
+
+
+{% else %}
+<div class="search-title-container">
+     <p class="title-search"> {{ 'No hemos encontrado resultados que se adapten a tus criterios.'|_ }}</p>
 </div>
+
+{% endif %}
