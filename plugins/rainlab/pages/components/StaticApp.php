@@ -421,6 +421,12 @@ class StaticApp extends ComponentBase
         <link rel="stylesheet" href="http://cadizturismo.jekyllme.com/plugins/rainlab/pages/assets/css/style-event.css"/>
         <link rel="stylesheet" href="http://cadizturismo.jekyllme.com/plugins/rainlab/pages/assets/css/style.css"/> 
         <style>
+                
+
+                .desc  {
+                     font-size: 300pt!important;
+                }
+
                 .section-txt, .section-img, .header-event {
                     
                    
@@ -443,7 +449,7 @@ class StaticApp extends ComponentBase
                 }
 
                 .section-txt .txt-container p {
-                    font-size: 300in!important;
+                    font-size: 300pt!important;
                 }
 
         </style>
