@@ -16,11 +16,11 @@
 ==
 
 {% if events|length > 0 %}
-    
+
     <div class="search-title-container">
       <p class="title-search"> {{ 'Hemos encontrado'|_ }} {{events|length}} {{ 'eventos que se adaptan ti'|_ }}</p>
     </div>
-   	
+
    <div class="all-events-container">
   	{% for event in events %}
   	    <!--  MÁS POPULARES -->
@@ -42,7 +42,7 @@
                 </div>
               </div>
               <div class="button-container">
-                <a class="see-event" href="{{url('/')}}/{{lang}}{{event.viewBag.url}}">{{'Ver evento'|_}}_ <img ssrc="{{preurl}}/storage/app/media/uploaded-files/templates/link-icon.svg"></a>
+                <a class="see-event" href="{{url('/')}}/{{lang}}{{event.viewBag.url}}">{{'Ver evento'|_}} <img ssrc="{{preurl}}/storage/app/media/uploaded-files/templates/link-icon.svg"></a>
               </div>
             </div>
           </div>
@@ -50,5 +50,5 @@
   	{% endfor %}
   	</div>
 
-  
+
 {% endif %}
