@@ -431,11 +431,14 @@ class StaticApp extends ComponentBase
         
         $preexperiencemarkup2 = str_replace('.svg', '.png', $preexperiencemarkup);
 
-         $preexperiencemarkup3 = str_replace('</p>', '</p><br/><br/>', $preexperiencemarkup2);
+        $preexperiencemarkup3 = str_replace('</p>', '</p><br/><br/>', $preexperiencemarkup2);
         
         $experiencemarkup = str_replace('/storage/', 'http://cadizturismo.jekyllme.com/storage/', $preexperiencemarkup3);
 
         //dd(1);
+        //
+        
+        $experiencemarkup = '<p>Hola</p><p>Adios</p>';
 
         /*$interest1 = explode(' y ', $experience )[0];
         $interest2 = explode(' y ', $experience )[1];*/
@@ -487,7 +490,7 @@ class StaticApp extends ComponentBase
         $pdf_data = PDFS::loadHTML($experiencemarkup)
            
           
-            ->setPaper('a1')
+            ->setPaper('a4')
             ->output();
 
         //$pdf_data = PDFS::getOutput('http://cadizturismo.jekyllme.com/es/experiencias/cinco');
