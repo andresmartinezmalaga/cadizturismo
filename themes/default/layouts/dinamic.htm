@@ -85,15 +85,6 @@ code = "que-hacer"
         {% page %}
     </section>
 
-    <script>
-        var address = "{{this.page.title}}";
-    </script>
-
-    <div id="map" style="height: 800px">
-        <br>
-    </div>
-
-
       {% partial 'site/footer' %}
 
     <!-- SCRIPTS -->
@@ -111,9 +102,6 @@ code = "que-hacer"
     <script type="text/javascript" src="{{url('/')}}/plugins/rainlab/pages/assets/js/script-select2.js"></script>
 
     <script type="text/javascript" src="http://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-
-    <script type="text/javascript" src="{{url('/')}}/plugins/rainlab/pages/assets/js/map.js"></script>
-    <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDDmzy36wKzsJB_flAMdhaLttNVU1SDqpg&callback=initMap' async defer></script>
 
     <script type="text/javascript" src="http://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
     <script type="text/javascript" src="{{url('/')}}/plugins/rainlab/pages/assets/js/range-datapicker.js"></script>
