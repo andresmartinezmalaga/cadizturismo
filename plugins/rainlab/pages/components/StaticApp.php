@@ -15,6 +15,7 @@ use Barryvdh\Snappy\Facades\SnappyPdf as PDFS;
 
 use Mail;
 
+use Response;
 use File;
 use Twig;
 
@@ -410,12 +411,36 @@ class StaticApp extends ComponentBase
 
         $experience = $this->experienceFindByUrl($url);
 
-        $preexperiencemarkup = $experience[0]['markup'];
-        //$experiencemarkup = str_replace('.svg', '.png', $preexperiencemarkup);
-        //
-        $experiencemarkup = str_replace('/storage/', 'http://cadizturismo.jekyllme.com/storage/', $preexperiencemarkup);
+        $baseHtml = '
+        <meta charset="utf-8"/>
+       
+       
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="http://cadizturismo.jekyllme.com/plugins/rainlab/pages/assets/css/style-comarcas.css"/>
+        <link rel="stylesheet" href="http://cadizturismo.jekyllme.com/plugins/rainlab/pages/assets/css/style-village.css"/>
+        <link rel="stylesheet" href="http://cadizturismo.jekyllme.com/plugins/rainlab/pages/assets/css/style-event.css"/>
+        <link rel="stylesheet" href="http://cadizturismo.jekyllme.com/plugins/rainlab/pages/assets/css/style.css"/> 
+        <style>
+                div {
+                    border: 1px solid red;
+                    display:block!important;
+                }
+
+        </style>
+        ';
+        
+        $preexperiencemarkup = $baseHtml.$experience[0]['markup'];
+        
+        $preexperiencemarkup2 = str_replace('.svg', '.png', $preexperiencemarkup);
+
+        $preexperiencemarkup3 = str_replace('</p>', '</p><br/><br/>', $preexperiencemarkup2);
+        
+        $experiencemarkup = str_replace('/storage/', 'http://cadizturismo.jekyllme.com/storage/', $preexperiencemarkup3);
 
         //dd(1);
+        //
+        
+        //$experiencemarkup = '<p>Hola</p><p>Adios</p>';
 
         /*$interest1 = explode(' y ', $experience )[0];
         $interest2 = explode(' y ', $experience )[1];*/
@@ -434,29 +459,45 @@ class StaticApp extends ComponentBase
         //
         
         // Load the template
-        $template = File::get('http://cadizturismo.jekyllme.com/themes/default/content/static-pages/experiencias-cinco.htm');
+        //$template = File::get(themes_path('default/content/static-pages/pdftest.htm'));
 
         // Render the template
-        $renderedHtml = Twig::parse($template);
+        //$renderedHtml = Twig::parse($template);
 
 
          // Render as a PDF
-        $pdf = SnappyPDF::loadHTML($renderedHtml)
+        /*$pdf_data = PDFS::loadHTML($renderedHtml)
             ->setOption('margin-top', 0)
             ->setOption('margin-bottom', 0)
             ->setOption('margin-left', 0)
             ->setOption('margin-right', 0)
             ->setPaper('letter')
-            ->output();
+            ->output();*/
 
 
-        return Response::make($pdf, 200, [
+        /*return Response::make($pdf, 200, [
             'Content-Type'        => 'application/pdf',
             'Content-Disposition' => "filename.pdf",
-        ]);
+        ]);*/
+               
+        //$renderedHtml = Twig::parse($template);
+        //
+        //
+        //
+        
+        //$nombre = 'Andres';
+        //$template = '<h1>Hola</h1>';
+        //$renderedHtml = Twig::parse($template);
+        
+        $pdf_data = PDFS::loadHTML($experiencemarkup)
+           
+          
+            ->setPaper('a4')
+            ->output();
 
-       
-        /*$experience = 'experiencia';
+        //$pdf_data = PDFS::getOutput('http://cadizturismo.jekyllme.com/es/experiencias/cinco');
+        
+        $experience = 'experiencia';
 
         $dataemail = array('experience' => 'experience');
 
@@ -468,7 +509,7 @@ class StaticApp extends ComponentBase
             $message->attachData($pdf_data, 'experience.pdf');
             $message->subject('Tu experiencia en Cadiz Turismo');
 
-        });*/
+        });
 
 
 

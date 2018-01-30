@@ -21,6 +21,10 @@ class ComposerStaticInitc541f6b08440555bb0b657f35b92c195
     );
 
     public static $prefixLengthsPsr4 = array (
+        'h' => 
+        array (
+            'h4cc\\WKHTMLToPDF\\' => 17,
+        ),
         'X' => 
         array (
             'XdgBaseDir\\' => 11,
@@ -114,6 +118,10 @@ class ComposerStaticInitc541f6b08440555bb0b657f35b92c195
     );
 
     public static $prefixDirsPsr4 = array (
+        'h4cc\\WKHTMLToPDF\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/h4cc/wkhtmltopdf-amd64',
+        ),
         'XdgBaseDir\\' => 
         array (
             0 => __DIR__ . '/..' . '/dnoegel/php-xdg-base-dir/src',
