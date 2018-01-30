@@ -441,7 +441,7 @@ class StaticApp extends ComponentBase
 
 
          // Render as a PDF
-        $pdf = SnappyPDF::loadHTML($renderedHtml)
+        $pdf = PDFS::loadHTML($renderedHtml)
             ->setOption('margin-top', 0)
             ->setOption('margin-bottom', 0)
             ->setOption('margin-left', 0)
