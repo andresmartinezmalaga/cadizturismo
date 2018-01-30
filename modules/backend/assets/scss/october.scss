@@ -2199,3 +2199,7 @@ div[data-control="media-manager"] .media-list.tiles li.selected .icon-container 
 .translate-messages .header-hide-translated label:before {
   top: 5px !important;
 }
+
+  [id*='select2-dest'] + .select2-selection__arrow {
+  top: 0px !important;
+}
