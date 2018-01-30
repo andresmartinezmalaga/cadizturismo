@@ -459,10 +459,19 @@ class StaticApp extends ComponentBase
         //$renderedHtml = Twig::parse($template);
         //
         //
+        //
         
-        $pdfd = new PDFS;
-        $pdf_data = $pdfd::generateFromHtml('<h1>Bill</h1><p>You owe me money, dude.</p>', '/tmp/bill-14446.pdf')->output();
+
+        $renderedHtml = '<h1>Hola</h1>'
         
+        $pdf_data = PDFS::loadHTML($renderedHtml)
+            ->setOption('margin-top', 0)
+            ->setOption('margin-bottom', 0)
+            ->setOption('margin-left', 0)
+            ->setOption('margin-right', 0)
+            ->setPaper('letter')
+            ->output();
+
         //$pdf_data = PDFS::getOutput('http://cadizturismo.jekyllme.com/es/experiencias/cinco');
         
         $experience = 'experiencia';
