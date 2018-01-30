@@ -455,8 +455,6 @@ class StaticApp extends ComponentBase
             'Content-Type'        => 'application/pdf',
             'Content-Disposition' => "filename.pdf",
         ]);*/
-
-        $template = '{{}}'
                
         $renderedHtml = Twig::parse($template);
         
