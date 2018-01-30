@@ -374,7 +374,7 @@
     min-height: 355px;
     position: relative;
     top: -7px;
-    .section-link {
+    a, .section-link {
       color: #F7A700;
       &:hover, &:active, &:focus {
         text-decoration: none;
