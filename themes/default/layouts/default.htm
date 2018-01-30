@@ -22,15 +22,10 @@ code = "pie"
 [staticMenu staticMenu6]
 code = "redes-sociales"
 
-
-
 [staticApp]
-
 ==
-
 <?php
-
-    function onStart()
+function onStart()
     {
         $this['lang']=\App::getLocale();
         if($this['lang']==''){
@@ -43,9 +38,7 @@ code = "redes-sociales"
                 $this['metaImg'] = $this->page->apiBag["staticPage"]->attributes["viewBag"]["cover"];
             }
         }
-
 ?>
-
 ==
 <!DOCTYPE html>
 <html lang="es">
