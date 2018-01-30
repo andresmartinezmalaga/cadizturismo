@@ -435,20 +435,20 @@ class StaticApp extends ComponentBase
         //
         
         // Load the template
-        $template = File::get(themes_path('default/content/static-pages/pdftest.htm'));
+        //$template = File::get(themes_path('default/content/static-pages/pdftest.htm'));
 
         // Render the template
-        $renderedHtml = Twig::parse($template);
+        //$renderedHtml = Twig::parse($template);
 
 
          // Render as a PDF
-        $pdf_data = PDFS::loadHTML($renderedHtml)
+        /*$pdf_data = PDFS::loadHTML($renderedHtml)
             ->setOption('margin-top', 0)
             ->setOption('margin-bottom', 0)
             ->setOption('margin-left', 0)
             ->setOption('margin-right', 0)
             ->setPaper('letter')
-            ->output();
+            ->output();*/
 
 
         /*return Response::make($pdf, 200, [
@@ -456,7 +456,8 @@ class StaticApp extends ComponentBase
             'Content-Disposition' => "filename.pdf",
         ]);*/
 
-       
+        $pdf_data = PDFS::generate('http://cadizturismo.jekyllme.com/es/experiencias/cinco', '/tmp/experience666.pdf');
+
         $experience = 'experiencia';
 
         $dataemail = array('experience' => 'experience');
