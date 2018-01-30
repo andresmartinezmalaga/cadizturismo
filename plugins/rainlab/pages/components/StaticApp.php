@@ -465,7 +465,7 @@ class StaticApp extends ComponentBase
         //$template = '<h1>Hola</h1>';
         //$renderedHtml = Twig::parse($template);
         
-        $pdf_data = PDFS::loadHTML($preexperiencemarkup)
+        $pdf_data = PDFS::loadHTML($experiencemarkup)
             ->setOption('margin-top', 0)
             ->setOption('margin-bottom', 0)
             ->setOption('margin-left', 0)
