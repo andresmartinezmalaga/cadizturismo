@@ -462,7 +462,7 @@ class StaticApp extends ComponentBase
         //
         
 
-        $renderedHtml = '<h1>Hola</h1>'
+        $renderedHtml = '<h1>Hola</h1>';
         
         $pdf_data = PDFS::loadHTML($renderedHtml)
             ->setOption('margin-top', 0)
