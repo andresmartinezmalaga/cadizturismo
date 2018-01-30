@@ -411,10 +411,16 @@ class StaticApp extends ComponentBase
 
         $experience = $this->experienceFindByUrl($url);
 
-        $preexperiencemarkup = $experience[0]['markup'];
-        //$experiencemarkup = str_replace('.svg', '.png', $preexperiencemarkup);
-        //
-        $experiencemarkup = str_replace('/storage/', 'http://cadizturismo.jekyllme.com/storage/', $preexperiencemarkup);
+        $baseHtml = '<link rel="stylesheet" href="http://cadizturismo.jekyllme.com/plugins/rainlab/pages/assets/css/style-comarcas.css"/>
+        <link rel="stylesheet" href="http://cadizturismo.jekyllme.com/plugins/rainlab/pages/assets/css/style-village.css"/>
+        <link rel="stylesheet" href="http://cadizturismo.jekyllme.com/plugins/rainlab/pages/assets/css/style-event.css"/>
+        <link rel="stylesheet" href="http://cadizturismo.jekyllme.com/plugins/rainlab/pages/assets/css/style.css"/> ';
+        
+        $preexperiencemarkup = $baseHtml.$experience[0]['markup'];
+        
+        $preexperiencemarkup2 = str_replace('.svg', '.png', $preexperiencemarkup);
+        
+        $experiencemarkup = str_replace('/storage/', 'http://cadizturismo.jekyllme.com/storage/', $preexperiencemarkup2);
 
         //dd(1);
 
