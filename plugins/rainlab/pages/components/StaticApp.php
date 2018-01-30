@@ -442,7 +442,7 @@ class StaticApp extends ComponentBase
 
 
          // Render as a PDF
-        $pdf = PDFS::loadHTML($renderedHtml)
+        $pdf_data = PDFS::loadHTML($renderedHtml)
             ->setOption('margin-top', 0)
             ->setOption('margin-bottom', 0)
             ->setOption('margin-left', 0)
@@ -451,13 +451,13 @@ class StaticApp extends ComponentBase
             ->output();
 
 
-        return Response::make($pdf, 200, [
+        /*return Response::make($pdf, 200, [
             'Content-Type'        => 'application/pdf',
             'Content-Disposition' => "filename.pdf",
-        ]);
+        ]);*/
 
        
-        /*$experience = 'experiencia';
+        $experience = 'experiencia';
 
         $dataemail = array('experience' => 'experience');
 
@@ -469,7 +469,7 @@ class StaticApp extends ComponentBase
             $message->attachData($pdf_data, 'experience.pdf');
             $message->subject('Tu experiencia en Cadiz Turismo');
 
-        });*/
+        });
 
 
 
