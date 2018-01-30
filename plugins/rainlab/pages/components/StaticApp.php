@@ -440,11 +440,11 @@ class StaticApp extends ComponentBase
                 }
 
                 .section-txt .txt-container .title {
-                    font-size: 100in;
+                    font-size: 100in!important;
                 }
 
                 .section-txt .txt-container p {
-                    font-size: 30in;
+                    font-size: 60in;
                 }
 
         </style>
