@@ -169,7 +169,8 @@
   z-index: 10px;
   position: relative;
   background-color: white;
-  z-index: 50; }
+  z-index: 50;
+  margin-bottom: 100px; }
   .main-section-comarcas #container-rutas {
     margin-top: -227px; }
 
@@ -270,7 +271,8 @@
   display: -webkit-flex;
   display: flex;
   flex-direction: row;
-  align-items: center; }
+  align-items: center;
+  margin-left: 14px; }
 
 .main-section-comarcas .main-events-container .event .txt-container .icons .icon-pair {
   display: -webkit-box;
@@ -283,6 +285,9 @@
   justify-content: center; }
   .main-section-comarcas .main-events-container .event .txt-container .icons .icon-pair img {
     max-width: 23px; }
+
+.con-encanto {
+  font-size: 121px; }
 
 .main-events-container .event .txt-container .icons .icon-pair {
   display: -webkit-box;
