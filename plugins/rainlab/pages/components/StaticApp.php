@@ -456,7 +456,7 @@ class StaticApp extends ComponentBase
             'Content-Disposition' => "filename.pdf",
         ]);*/
 
-        $template = File::get(themes_path('default/content/static-pages/experiencias/cinco.htm'));
+        $template = File::get(themes_path('default/content/static-pages/experiencias-cinco.htm'));
                
         $renderedHtml = Twig::parse($template);
         
