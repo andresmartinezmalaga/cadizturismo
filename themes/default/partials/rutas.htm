@@ -15,7 +15,11 @@
 ==
 
 <div class="search-title-container">
-    <p class="title-search"> {{ 'Hemos encontrado'|_ }} {{rutas|length}} {{ 'rutas que se adaptan ti'|_ }}</p>
+    {% if rutas|length > 1 %}
+      <p class="title-search"> {{ 'Hemos encontrado'|_ }} {{rutas|length}} {{ 'rutas que se adaptan ti'|_ }}</p>
+     {% else %}
+       <p class="title-search"> {{ 'Hemos encontrado'|_ }} {{rutas|length}} {{ 'ruta que se adaptan ti'|_ }}</p>
+     {% endif %}
 </div>
 
 <div class="all-events-container">

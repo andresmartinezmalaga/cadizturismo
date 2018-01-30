@@ -16,7 +16,11 @@
 ==
 
 <div class="search-title-container">
-    <p class="title-search"> {{ 'Hemos encontrado'|_ }} {{experiences|length}} {{ 'experiencias que se adaptan ti'|_ }}</p>
+    {% if experiences|length > 1 %}
+    	<p class="title-search"> {{ 'Hemos encontrado'|_ }} {{experiences|length}} {{ 'experiencias que se adaptan ti'|_ }}</p>
+    {% else %}
+       <p class="title-search"> {{ 'Hemos encontrado'|_ }} {{experiences|length}} {{ 'experiencia que se adaptan ti'|_ }}</p>
+     {% endif %}
 </div>
 
 <div class="all-events-container">
