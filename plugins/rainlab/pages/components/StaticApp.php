@@ -424,12 +424,12 @@ class StaticApp extends ComponentBase
                 .section-txt, .section-img, .header-event {
                     
                     display:block!important;
-                    border: solid 1px red!important;
+                    border: solid 1px white!important;
 
                 }
 
                 .section-txt .big-number-container, .section-txt .txt-container, .section-txt .big-number-container span, .section-txt .txt-container p {
-                     border: solid 1px red!important;
+                     border: solid 1px white!important;
                     display:block!important;
                 }
                 .section-txt .txt-container {
