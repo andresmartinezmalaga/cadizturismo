@@ -196,7 +196,7 @@ class Index extends Controller
         }
 
             if($pageFileName == 'diversion-compras.htm' && $templateMarkup ==''){
-                $object['markup'] = PagesTemplates::getTDiversion();
+                $object['markup'] = PagesTemplates::getTCompras();
             }
 
             if($pageFileName == 'diversion-locales-de-ocio.htm' && $templateMarkup ==''){
