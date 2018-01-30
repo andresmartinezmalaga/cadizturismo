@@ -187,6 +187,38 @@ html, body {
   html ::selection, body ::selection {
     background-color: #FFE8CA; }
 
+.glyphicon-chevron-right {
+  background-image: url("../svg/calendar-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 6px;
+  height: 30px;
+  background-size: 7px; }
+  .glyphicon-chevron-right:before {
+    content: ''; }
+
+.glyphicon-chevron-left {
+  background-image: url("../svg/calendar-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 6px;
+  height: 30px;
+  background-size: 7px;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+  .glyphicon-chevron-left:before {
+    content: ''; }
+
+.daterangepicker.ltr .calendar.left .calendar-table {
+  padding-left: 2px;
+  padding-right: 6px;
+  padding-bottom: 10px; }
+
+.daterangepicker.ltr .calendar.left {
+  margin-right: 4px; }
+
 .transform-arrow {
   transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
