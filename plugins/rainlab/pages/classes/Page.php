@@ -93,6 +93,8 @@ class Page extends ContentBase
         'viewBag[url]',
         'viewBag[meta_title]',
         'viewBag[meta_description]',
+        'viewBag[descrptn]',
+        'viewBag[urlExternaVideo]'
     ];
 
     /**
@@ -135,6 +137,14 @@ class Page extends ContentBase
 
         $this->pageTempl = New PagesTemplates();
         
+    }
+
+    public function getPublicationsType(){
+        return [
+            'guía' => 'Guía',
+            'vídeo' => 'Vídeo',
+            'publicación' => 'Publicación'
+        ];
     }
 
     public function getBeachCategoriesType(){
@@ -343,7 +353,7 @@ class Page extends ContentBase
                 $this->markup = PagesTemplates::getTComarca();
             } elseif ($parentPage->fileName == 'playas.htm') {
                 $this->markup = PagesTemplates::getTPlaya();
-            } 
+            }
             
             $layout = Layout::load($this->theme, $parentPage->layout);
             $component = $layout ? $layout->getComponent('staticPage') : null;

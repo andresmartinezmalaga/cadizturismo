@@ -1,0 +1,49 @@
+==
+<?php 
+
+	function onStart()
+	{
+	 	if (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false) {
+	      	$this['preurl'] = '/cadizturismo';
+	    } else {
+	     	$this['preurl'] = '';
+	    }
+	}
+
+?>	
+
+==
+
+{% for publication in publications %}
+	
+	<div class="event">
+		
+		<div class="txt-container">
+
+			<p class="name">{{publication.viewBag.title}}</p><img class="separator fr-fic fr-dii" src="{{preurl}}/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+			
+			<div class="icons">
+				<div class="icon-pair">
+					<img src="{{preurl}}/storage/app/media/uploaded-files/templates/{{str_slug(beach.publication.type)}}.svg" class="fr-fil fr-dib">
+
+					<p class="icon-txt">
+              			{{beach.publication.type|_}}
+					</p>
+				</div>
+			</div>
+			
+			{{publication.viewBag.title}}
+			
+			{{publication.viewBag.type|_}}
+
+			{{publication.viewBag.descrptn}}
+
+			{{publication.viewBag.urlExternaVideo}}
+
+			{{publication.viewBag.urlExternaZip}}
+
+			
+		</div>
+	</div>
+	
+{% endfor %}

@@ -400,6 +400,10 @@ class Index extends Controller
 
             $widget = $this->makeObjectFormWidget($type, $object,null,'playas');
 
+        } elseif($parent == 'publicaciones'){
+
+            $widget = $this->makeObjectFormWidget($type, $object,null,'publicaciones');
+
         } else {
            $widget = $this->makeObjectFormWidget($type, $object);
         }
@@ -646,6 +650,10 @@ class Index extends Controller
            $pageFieldsYaml = '~/plugins/rainlab/pages/classes/page/playafields.yaml';
         }
 
+        if($subtype == 'publicaciones'){
+           $pageFieldsYaml = '~/plugins/rainlab/pages/classes/page/publicacionesfields.yaml';
+        }
+
         $formConfigs = [
             'page'          => $pageFieldsYaml,
             'experience'    => '~/plugins/rainlab/pages/classes/experience/fields.yaml',
@@ -879,6 +887,10 @@ class Index extends Controller
         // Andrés Martínez : change $formWidget that will be save
         if($filterSubTemplate == 'playas'){
             $formWidget = $this->makeObjectFormWidget($type, $object,null,'playas');
+        
+        } elseif($filterSubTemplate == 'publicaciones'){
+            $formWidget = $this->makeObjectFormWidget($type, $object,null,'publicaciones');
+        
         } else {
             $formWidget = $this->makeObjectFormWidget($type, $object);
         }
@@ -930,10 +942,10 @@ class Index extends Controller
 
             $objectData['placeholders'] = $placeholders;
 
-            // Andrés Martínez : set layout default to new pages except municipios - rutas - playas
+            // Andrés Martínez : set layout default to new pages except municipios - rutas - playas - publicaciones
             $getFileName = $object['fileName'];
 
-            if($getFileName != 'municipios.htm' && $getFileName != 'rutas.htm' && $getFileName != 'playas.htm'){
+            if($getFileName != 'municipios.htm' && $getFileName != 'rutas.htm' && $getFileName != 'playas.htm' && $getFileName != 'publicaciones.htm'){
                 $objectData['settings']['viewBag']['layout'] = 'default';
             }
 
@@ -948,6 +960,11 @@ class Index extends Controller
             if($getFileName == 'playas.htm'){
 
                 $objectData['settings']['viewBag']['layout'] = 'playa';
+            }
+
+            if($getFileName == 'publicaciones.htm'){
+
+                $objectData['settings']['viewBag']['layout'] = 'publicacion';
             }
 
             // Andrés Martínez : add cover url
@@ -1084,6 +1101,10 @@ class Index extends Controller
         // Andrés Martínez : get subtype formWidget
         if($object->subtemplate == 'playas'){
             $widget = $this->makeObjectFormWidget($type, $object, null, 'playas');
+        
+        }elseif($object->subtemplate == 'publicaciones'){
+            $widget = $this->makeObjectFormWidget($type, $object, null, 'publicaciones');
+        
         } else {
             $widget = $this->makeObjectFormWidget($type, $object);
         }

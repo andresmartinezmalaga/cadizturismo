@@ -343,6 +343,7 @@ class StaticApp extends ComponentBase
 
     } 
 
+
     public function municipalitiesList()
     {
         $theme = Theme::getActiveTheme();
@@ -527,6 +528,17 @@ class StaticApp extends ComponentBase
 
     }
 
+
+    public function publicationList()
+    {
+        $theme = Theme::getActiveTheme();
+        $pages = Page::listInTheme($theme, false);
+        $publications =  new \Illuminate\Support\Collection($pages);
+        
+        $result = $publications->where("is_hidden",0)->where("subtemplate","publicaciones");
+        
+        return $result;
+    }
 
    
 }
