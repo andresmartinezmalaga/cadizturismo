@@ -584,7 +584,6 @@
   align-items: center;
   justify-content: center;
   height: 482px;
-  border-bottom: 1px solid #979797;
   position: relative;
   background-color: white;
   z-index: 100; }
