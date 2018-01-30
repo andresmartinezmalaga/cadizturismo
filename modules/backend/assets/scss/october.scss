@@ -2187,3 +2187,15 @@ div[data-control="media-manager"] .media-list.tiles li.selected .icon-container 
 .fr-tooltip {
   background: $blue !important;
 }
+
+.delete-table-row + .table-search > input#search {
+  height: auto !important;
+}
+
+.delete-table-row + .table-search  {
+  margin: 6px 3px 0 0 !important;
+}
+
+.translate-messages .header-hide-translated label:before {
+  top: 5px !important;
+}
