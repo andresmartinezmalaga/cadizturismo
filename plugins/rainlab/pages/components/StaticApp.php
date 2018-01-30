@@ -15,6 +15,7 @@ use Barryvdh\Snappy\Facades\SnappyPdf as PDFS;
 
 use Mail;
 
+use Response;
 use File;
 use Twig;
 
