@@ -485,7 +485,7 @@ class StaticApp extends ComponentBase
         $pdf_data = PDFS::loadHTML($experiencemarkup)
            
             ->setOption('orientation','Landscape')
-            ->setPaper('a4')
+            ->setPaper('a1')
             ->output();
 
         //$pdf_data = PDFS::getOutput('http://cadizturismo.jekyllme.com/es/experiencias/cinco');
