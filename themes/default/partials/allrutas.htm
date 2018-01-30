@@ -1,5 +1,5 @@
 ==
-<?php 
+<?php
 
 	function onStart()
 	{
@@ -10,16 +10,15 @@
 	    }
 	}
 
-?>	
+?>
 
 ==
 {% if rutas|length > 0 %}
-  <div class="more-popular">
-    	<div class="title-container">
-      <p class="title">MÁS <br> POPULARES <br> EN CÁDIZ </p>
+    	<div class="main-txt">
+      <p class="title">MÁS POPULARES <br> EN CÁDIZ </p>
         <img class="separator" src="{{preurl}}/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
     	</div>
-   	<div class="main-events-container">
+   	<div id="container-rutas" class="main-events-container">
   	{% for ruta in rutas %}
   	    <!--  MÁS POPULARES -->
           <div class="event">
@@ -39,12 +38,11 @@
                 </div>
               </div>
               <div class="button-container">
-                <a class="see-event" href="{{url('/')}}/{{lang}}{{ruta.viewBag.url}}">{{'Ver ruta'|_}}_ <img src="{{preurl}}/storage/app/media/uploaded-files/templates/link-icon.svg"></a>
+                <a class="see-event" href="{{url('/')}}/{{lang}}{{ruta.viewBag.url}}">{{'Ver ruta'|_}} <img src="{{preurl}}/storage/app/media/uploaded-files/templates/link-icon.svg"></a>
               </div>
             </div>
           </div>
 
   	{% endfor %}
   	</div>
-  </div>
 {% endif %}
