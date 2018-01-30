@@ -413,8 +413,8 @@ class StaticApp extends ComponentBase
 
         $baseHtml = '
         <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-        <meta name="google-site-verification" content="KZtyPnD_0KXDnRTpmvwxNoBcvj3Osx_VKrXoJaucHrE" />
+       
+       
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
         <link rel="stylesheet" href="http://cadizturismo.jekyllme.com/plugins/rainlab/pages/assets/css/style-comarcas.css"/>
         <link rel="stylesheet" href="http://cadizturismo.jekyllme.com/plugins/rainlab/pages/assets/css/style-village.css"/>
@@ -477,10 +477,8 @@ class StaticApp extends ComponentBase
         //$renderedHtml = Twig::parse($template);
         
         $pdf_data = PDFS::loadHTML($experiencemarkup)
-            ->setOption('margin-top', 0)
-            ->setOption('margin-bottom', 0)
-            ->setOption('margin-left', 0)
-            ->setOption('margin-right', 0)
+           
+           
             ->setOption('dpi',300)
             ->setOption('orientation','Landscape')
             ->setPaper('a4')
