@@ -422,8 +422,8 @@ class StaticApp extends ComponentBase
         <link rel="stylesheet" href="http://cadizturismo.jekyllme.com/plugins/rainlab/pages/assets/css/style.css"/> 
         <style>p {
             border: 1px solid red;
-            display:block;
-            font-size: 1em;
+            display:block!important;
+            font-size: 3em!important;
             }</style>
         ';
         
