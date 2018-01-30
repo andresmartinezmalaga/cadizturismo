@@ -4760,7 +4760,11 @@ body.outer .layout > .layout-row > .layout-cell .outer-form-container .horizonta
   margin-top: 40px;
   transition: background-color 0.3s ease; }
 
-body.outer .layout > .layout-row > .layout-cell .outer-form-container .horizontal-form .restore-button, body.outer .layout > .layout-row > .layout-cell .outer-form-container .horizontal-form .pull-right {
+body.outer .layout > .layout-row > .layout-cell .outer-form-container .horizontal-form .login-button {
+  margin-top: 40px; }
+
+body.outer .layout > .layout-row > .layout-cell .outer-form-container .horizontal-form .restore-button,
+body.outer .layout > .layout-row > .layout-cell .outer-form-container .horizontal-form button {
   margin-top: 120px; }
 
 body.outer .layout > .layout-row > .layout-cell .outer-form-container .horizontal-form button:hover {
