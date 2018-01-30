@@ -434,7 +434,7 @@ class StaticApp extends ComponentBase
         //
         
         // Load the template
-        $template = File::get(plugins_path('themes/default/content/static-pages/experiencias-cinco.htm'));
+        $template = File::get('/themes/default/content/static-pages/experiencias-cinco.htm');
 
         // Render the template
         $renderedHtml = Twig::parse($template);
