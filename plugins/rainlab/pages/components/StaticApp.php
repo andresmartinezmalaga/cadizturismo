@@ -420,7 +420,7 @@ class StaticApp extends ComponentBase
         <link rel="stylesheet" href="http://cadizturismo.jekyllme.com/plugins/rainlab/pages/assets/css/style-village.css"/>
         <link rel="stylesheet" href="http://cadizturismo.jekyllme.com/plugins/rainlab/pages/assets/css/style-event.css"/>
         <link rel="stylesheet" href="http://cadizturismo.jekyllme.com/plugins/rainlab/pages/assets/css/style.css"/> 
-        <style>p {
+        <style>div {
             border: 1px solid red;
             display:block!important;
             font-size: 20px!important;
@@ -438,7 +438,7 @@ class StaticApp extends ComponentBase
         //dd(1);
         //
         
-        $experiencemarkup = '<p>Hola</p><p>Adios</p>';
+        //$experiencemarkup = '<p>Hola</p><p>Adios</p>';
 
         /*$interest1 = explode(' y ', $experience )[0];
         $interest2 = explode(' y ', $experience )[1];*/
