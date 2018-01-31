@@ -2564,9 +2564,7 @@ html, body {
   .section-txt .txt-container .title, .section-txt-village .txt-container .title {
     font-size: 30px !important;
     line-height: 36px !important;
-    width: 86%;
-    margin: 0px auto 20px auto;
-    text-align: center !important; }
+    width: 86%; }
   .section-txt .txt-container .desc, .section-txt-village .txt-container .desc {
     font-size: 18px !important;
     width: 80%;
@@ -2579,9 +2577,7 @@ html, body {
   .section-txt-comarca .title {
     font-size: 30px !important;
     line-height: 36px !important;
-    width: 86%;
-    margin: 0px auto 20px auto;
-    text-align: center !important; }
+    width: 86%; }
   .page-cultura {
     width: 100% !important; }
   #ayuda-header .txt {
