@@ -311,7 +311,7 @@ form input[type="submit"]:hover, form input[type="submit"]:focus, form input[typ
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center; }
+  justify-content: flex-start !important; }
 
 .more-popular .main-events-container .event .txt-container .icons .icon-pair p {
   margin-bottom: 0px;
