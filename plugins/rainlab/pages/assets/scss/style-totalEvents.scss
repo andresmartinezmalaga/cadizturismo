@@ -292,9 +292,7 @@ form, .inputs-container {
               font-size: 16px;
               line-height: 22px;
               margin-left: 11px;
-              &::first-letter {
-                text-transform: capitalize;
-              }
+              text-transform: capitalize;
              }
             .more-popular .main-events-container .event .txt-container .icons .icon-pair:first-child {
               margin-right: 30px; }
