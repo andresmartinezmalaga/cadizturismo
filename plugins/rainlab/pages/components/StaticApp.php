@@ -350,7 +350,7 @@ class StaticApp extends ComponentBase
         $pages = Page::listInTheme($theme, false);
         $events =  new \Illuminate\Support\Collection($pages);
 
-        $result = $events->where("is_hidden",0)->where("subtemplate","municipios")->values();
+        $result = $events->where("is_hidden",0)->where("subtemplate","municipios")->sortBy('title')->values();
 
         return $result;
     }
