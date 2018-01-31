@@ -59,7 +59,9 @@ class Page extends ContentBase
         'subtemplate',
         'cover',
         'categoriea',
-        'categorieb'
+        'categorieb',
+        'media',
+        'date'
     ];
 
     /**

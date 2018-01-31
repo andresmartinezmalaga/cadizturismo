@@ -75,7 +75,10 @@
                         $fileName != 'gastronomia-comida-tradicional' &&
                         $fileName != 'gastronomia-el-vino' &&
                         $fileName != 'gastronomia-gourmet' &&
-                    $fileName != 'publicaciones'
+                    $fileName != 'publicaciones' &&
+                    $fileName != 'sala-prensa' &&
+                    $fileName != 'sala-prensa-reportajes'&&
+                    $fileName != 'sala-prensa-prensa'
                 ) : ?>
                     <div class="checkbox custom-checkbox nolabel">
                         <input
@@ -91,7 +94,7 @@
                 
                  <!-- Andrés Martínez : Hidden add subpage. Only for Parents
                 -->
-                <?php if ($fileName == 'municipios' || $fileName == 'playas' || $fileName == 'publicaciones' ) : ?>
+                <?php if ($fileName == 'municipios' || $fileName == 'playas' || $fileName == 'publicaciones' || $fileName == 'sala-prensa-prensa' || $fileName == 'sala-prensa-reportajes' ) : ?>
                     <ul class="submenu">
                         <li>
                             <a
