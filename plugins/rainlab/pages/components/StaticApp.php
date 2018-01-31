@@ -421,7 +421,7 @@ class StaticApp extends ComponentBase
         <style>
           .background-image {
             position: absolute !important;
-            height: 1000px !important;
+            height: 980px !important;
           }
                 .section-txt, .section-img, .header-event {
                     display:block!important;
