@@ -94,7 +94,7 @@ input:-webkit-autofill {
     left: 20px;
     cursor: pointer;
     z-index: 1000;
-    padding: 10px 15px 5px; }
+    padding: 10px 0px; }
     .hamburger span {
       vertical-align: middle; }
     .hamburger .bars {
@@ -2463,6 +2463,9 @@ html, body {
     width: 100% !important; } }
 
 @media (max-width: 725px) {
+  .header-playa .txt {
+    font-size: 130px !important;
+    line-height: 130px !important; }
   .background-image {
     top: 0px !important; }
   .header-event + .section-txt {

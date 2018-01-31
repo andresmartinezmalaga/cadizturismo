@@ -147,7 +147,7 @@
       left: 20px;
       cursor: pointer;
       z-index: 1000;
-      padding: 10px 15px 5px;
+      padding: 10px 0px;
 
       span {
         vertical-align: middle;
@@ -2666,6 +2666,11 @@ html, body {
     width: 100% !important; } }
 
 @media (max-width: 725px) {
+  .header-playa .txt {
+    font-size: 130px !important;
+    line-height: 130px !important;
+  }
+
   .background-image {
     top: 0px !important;
   }
