@@ -447,6 +447,7 @@ class StaticApp extends ComponentBase
                 .section-txt .txt-container {
                     margin: 40px auto 0px auto;
                     width: 100% !important;
+                    max-width: auto !important;
                 }
 
 
