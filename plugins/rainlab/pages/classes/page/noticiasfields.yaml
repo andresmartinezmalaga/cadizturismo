@@ -25,16 +25,22 @@ fields:
         label: 'Media'
 
     viewBag[date]:
+        span: left
         label: 'Fecha de publicación'
         type: datepicker
         mode: date 
    
     viewBag[idioma]:
-        span: left
+        span: right
         label: 'Idioma'
         placeholder: 'Seleccione un idioma'
         type: dropdown
         options: getNewsIdiomasOptions
+
+    viewBag[urlExternaZip]:
+        span: left
+        placeholder: /
+        label: 'URL para descargar el zip'
 
     toolbar:
         type: partial
