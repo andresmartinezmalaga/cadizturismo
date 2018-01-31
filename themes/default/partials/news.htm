@@ -14,36 +14,17 @@
 
 ==
 
-{% for new in news %}
-	
-	<div class="event">
-		
-		<div class="txt-container">
+<div class="publis">
+	{% for new in news %}
+		<div class="prensa">
 
-			<p class="name">{{new.viewBag.title}}</p><img class="separator fr-fic fr-dii" src="{{preurl}}/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
-			
-			<div class="icons">
-				<div class="icon-pair">
-					<img src="{{preurl}}/storage/app/media/uploaded-files/templates/{{str_slug(beach.new.type)}}.svg" class="fr-fil fr-dib">
+			<h6 class="publi-title">{{new.viewBag.title}}</h6>
 
-					<p class="icon-txt">
-              			{{beach.new.type|_}}
-					</p>
-				</div>
+			{%set date = new.viewBag.date|split(' ') %}
+			<p class="publi-source">{{new.viewBag.media}} | {{date[0]}}</p>
+			<div class="links-container">
+				<a class="download-link" href="{{new.viewBag.urlExternaZip}}">{{'Descargar pdf'|_}} <img src="/{{preurl}}/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt="" class="fr-fic fr-dii">&nbsp;</a>
 			</div>
-			
-			{{new.viewBag.title}}
-			
-			{{new.viewBag.type|_}}
-
-			{{new.viewBag.descrptn}}
-
-			{{new.viewBag.urlExternaVideo}}
-
-			{{new.viewBag.urlExternaZip}}
-
-			
 		</div>
-	</div>
-	
-{% endfor %}
+	{% endfor %}	
+</div>

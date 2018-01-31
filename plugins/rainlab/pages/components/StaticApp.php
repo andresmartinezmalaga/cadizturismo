@@ -605,7 +605,18 @@ class StaticApp extends ComponentBase
         $pages = Page::listInTheme($theme, false);
         $publications =  new \Illuminate\Support\Collection($pages);
 
-        $result = $publications->where("is_hidden",0)->where("subtemplate","publicaciones");
+        $result = $publications->where("is_hidden",0)->where("subtemplate","publicaciones")->values();
+
+        return $result;
+    }
+
+    public function newList($idm)
+    {
+        $theme = Theme::getActiveTheme();
+        $pages = Page::listInTheme($theme, false);
+        $news =  new \Illuminate\Support\Collection($pages);
+
+        $result = $news->where("is_hidden",0)->where("subtemplate","sala-prensa-prensa")->where("idioma",$idm)->values();
 
         return $result;
     }
