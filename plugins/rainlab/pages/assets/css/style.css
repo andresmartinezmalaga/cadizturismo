@@ -2696,7 +2696,6 @@ html, body {
     padding-bottom: 60px; }
   .featured-element .txt-container {
     left: 50% !important;
-    top: 50% !important;
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -2704,6 +2703,8 @@ html, body {
     margin: 178px auto;
     width: 80% !important;
     text-align: center; }
+  .featured-element .img-destacada {
+    mask-image: none !important; }
   .featured-element .txt-container .title {
     font-size: 64px !important;
     line-height: 64px !important; }
