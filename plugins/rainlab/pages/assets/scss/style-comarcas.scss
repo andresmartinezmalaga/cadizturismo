@@ -327,7 +327,8 @@
               color: white;
               font-size: 16px;
               line-height: 22px;
-              margin-left: 11px; }
+              margin-left: 11px;
+              text-transform: capitalize; }
             .main-section-comarcas .main-events-container .event .txt-container .icons .icon-pair:first-child {
               margin-right: 30px; }
         .main-section-comarcas .main-events-container .event .txt-container {
@@ -610,6 +611,7 @@
               font-size: 16px;
               line-height: 22px;
               margin-left: 11px;
+              text-transform: capitalize;
             }
             &:first-child {
               margin-right: 30px;

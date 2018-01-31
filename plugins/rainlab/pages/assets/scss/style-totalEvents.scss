@@ -285,13 +285,15 @@ form, .inputs-container {
             display: flex;
             flex-direction: row;
             align-items: center;
-            justify-content: center; }
+            justify-content: flex-start !important; }
             .more-popular .main-events-container .event .txt-container .icons .icon-pair p {
               margin-bottom: 0px;
               color: white;
               font-size: 16px;
               line-height: 22px;
-              margin-left: 11px; }
+              margin-left: 11px;
+              text-transform: capitalize;
+             }
             .more-popular .main-events-container .event .txt-container .icons .icon-pair:first-child {
               margin-right: 30px; }
         .more-popular .main-events-container .event .txt-container .button-container {
@@ -430,7 +432,9 @@ form, .inputs-container {
               color: white;
               font-size: 16px;
               line-height: 22px;
-              margin-left: 11px; }
+              margin-left: 11px;
+              text-transform: capitalize;
+            }
             .all-events .all-events-container .event .txt-container .icons .icon-pair:first-child {
               margin-right: 30px; }
         .all-events .all-events-container .event .txt-container .button-container {
