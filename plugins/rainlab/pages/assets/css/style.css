@@ -2704,7 +2704,8 @@ html, body {
     width: 80% !important;
     text-align: center; }
   .featured-element .img-destacada {
-    mask-image: none !important; }
+    mask-image: none !important;
+    -webkit-mask-image: none !important; }
   .featured-element .txt-container .title {
     font-size: 64px !important;
     line-height: 64px !important; }

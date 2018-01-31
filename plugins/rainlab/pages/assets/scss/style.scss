@@ -2928,6 +2928,7 @@ html, body {
     .featured-element {
       .img-destacada {
         mask-image: none !important;
+        -webkit-mask-image: none !important;
       }
     }
     .featured-element .txt-container .title {
