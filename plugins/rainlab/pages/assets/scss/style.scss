@@ -2333,15 +2333,20 @@ html, body {
     width: 80%;
     margin: 0 auto; }
   .featured-element .txt-container {
-    position: relative !important;
-    left: 0px !important;
-    top: 0px !important;
+    left: 50% !important;
+    @include transform(translate(-50%, -50%));
     margin: 178px auto;
     width: 80% !important;
     text-align: center; }
     .featured-element .txt-container .title {
       font-size: 33px !important;
       line-height: 33px !important; }
+      .featured-element {
+        .img-destacada {
+          mask-image: none !important;
+          -webkit-mask-image: none !important;
+        }
+      }
     .featured-element .txt-container .desc {
       width: 80% !important;
       margin: 0px auto 20px auto;
