@@ -14,36 +14,19 @@
 
 ==
 
+<div class="publis">
 {% for publication in publications %}
-	
-	<div class="event">
-		
-		<div class="txt-container">
 
-			<p class="name">{{publication.viewBag.title}}</p><img class="separator fr-fic fr-dii" src="{{preurl}}/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
-			
-			<div class="icons">
-				<div class="icon-pair">
-					<img src="{{preurl}}/storage/app/media/uploaded-files/templates/{{str_slug(beach.publication.type)}}.svg" class="fr-fil fr-dib">
+    <div class="publicacion">
+      <img class="publi-icon" src="{{preurl}}/storage/app/media/uploaded-files/templates/{{publication.viewBag.type}}-icon.svg" alt="">
+      <h6 class="publi-title">{{publication.viewBag.title}}</h6>
+      <p class="publi-desc">{{publication.viewBag.descrptn}}</p>
+      <p class="languages-publi"><span id="languages-title">{{'IDIOMAS DISPONIBLES:'|_ }}</span> {{publication.viewBag.idiomas}}</p>
+      <div class="links-container">
+        <a class="see-link" href="{{publication.viewBag.descrptn}}">{{'Ver'|_}} {{publication.viewBag.type|_}} <img src="{{preurl}}/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""> </a>
+        <a class="download-link" href="#">{{'Descargar'|_}} {{publication.viewBag.type|_}} <img src="{{preurl}}/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""> </a>
+      </div>
+    </div>
 
-					<p class="icon-txt">
-              			{{beach.publication.type|_}}
-					</p>
-				</div>
-			</div>
-			
-			{{publication.viewBag.title}}
-			
-			{{publication.viewBag.type|_}}
-
-			{{publication.viewBag.descrptn}}
-
-			{{publication.viewBag.urlExternaVideo}}
-
-			{{publication.viewBag.urlExternaZip}}
-
-			
-		</div>
-	</div>
-	
 {% endfor %}
+</div>
