@@ -419,12 +419,6 @@ class StaticApp extends ComponentBase
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
         <link rel="stylesheet" href="http://cadizturismo.jekyllme.com/plugins/rainlab/pages/assets/css/style-event.css"/>
         <style>
-        @font-face {
-          font-family: Ryssa;
-          src: url("../assets/fonts/ryssa/RissaTypeface.eot");
-          src: url("../../assets/fonts/ryssa/RissaTypeface.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/ryssa/RissaTypeface.woff") format("woff"), url("../assets/fonts/ryssa/RissaTypeface.ttf") format("truetype");
-          font-weight: normal;
-          font-style: normal; }
 
           .background-image {
             position: absolute !important;
@@ -483,9 +477,9 @@ class StaticApp extends ComponentBase
 
         $preexperiencemarkup = $baseHtml.$experience[0]['markup'];
 
-        // $preexperiencemarkup2 = str_replace('.svg', '.png', $preexperiencemarkup);
+         $preexperiencemarkup2 = str_replace('.svg', '.png', $preexperiencemarkup);
 
-        $preexperiencemarkup2 = $preexperiencemarkup;
+        // $preexperiencemarkup2 = $preexperiencemarkup;
         $preexperiencemarkup3 = str_replace('</p>', '</p><br/><br/>', $preexperiencemarkup2);
 
         $experiencemarkup = str_replace('/storage/', 'http://cadizturismo.jekyllme.com/storage/', $preexperiencemarkup3);
