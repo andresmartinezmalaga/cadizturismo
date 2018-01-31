@@ -91,6 +91,11 @@
   }
 }
 
+.section-txt img, .section-txt-village img, .section-txt-comarca img {
+  max-width: 100%;
+}
+
+
   @media (max-width: 725px) {
     .slidemenu {
       display: none;
