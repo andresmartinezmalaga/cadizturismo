@@ -425,12 +425,17 @@ class StaticApp extends ComponentBase
             object-fit: cover !important;
             object-position: center !important;
             height: 980px !important;
+            text-align: center !important;
           }
 
         .header-txt, .txt, .header-container {
           text-align: center !important;
           font-size: 110px !important;
           font-weight: 500;
+        }
+
+        .header-event {
+          text-align: center !important;
         }
 
           .brush {
