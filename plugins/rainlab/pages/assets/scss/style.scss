@@ -54,6 +54,10 @@
     display: none;
   }
 
+  input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px rgba(206,206,206, 1) inset !important;
+}
+
       // variables
     $slowly: all .2s ease;
 
