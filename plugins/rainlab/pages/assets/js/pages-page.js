@@ -183,7 +183,8 @@
                 title = $(e.target).attr('title')
 
             if (title)
-                this.setPageTitle('title')
+                // Andrés Martinez : dont put title
+                //this.setPageTitle('title')
 
             this.$pageTree.treeView('markActive', dataId)
             $('[data-control=filelist]', this.$sidePanel).fileList('markActive', dataId)
@@ -273,7 +274,8 @@
      * Updates the browser title when an object is saved.
      */
     PagesPage.prototype.setPageTitle = function(title) {
-        $.oc.layout.setPageTitle(title.length ? (title + ' | ') : title)
+        // Andrés Martinez : dont put title
+        //$.oc.layout.setPageTitle(title.length ? (title + ' | ') : title)
     }
 
     /*
