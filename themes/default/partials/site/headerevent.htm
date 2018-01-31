@@ -22,14 +22,14 @@
 <div id="out-features" class="event-features">
   <div class="feature"><img src="{{preurl}}/storage/app/media/uploaded-files/templates/calendar-event.svg" class="fr-fil fr-dib">
     
-    <p class="feature-txt">{{event.date_start_pretty_num}} - {{event.date_end_pretty_num}}</p>
+    <p class="feature-txt">{{event[0].date_start_pretty_num}} - {{event[0].date_end_pretty_num}}</p>
   </div>
-  <div class="feature"><img src="{{preurl}}/storage/app/media/uploaded-files/templates/{{str_slug(event.category)}}.svg" class="fr-fil fr-dib">
+  <div class="feature"><img src="{{preurl}}/storage/app/media/uploaded-files/templates/{{str_slug(event[0].category)}}.svg" class="fr-fil fr-dib">
 
-    <p class="feature-txt">{{event.category}}</p>
+    <p class="feature-txt">{{event[0].category}}</p>
   </div>
   <div class="feature"><img src="{{preurl}}/storage/app/media/uploaded-files/templates/location.svg" class="fr-fil fr-dib">
 
-    <p class="feature-txt">{{event.location}}</p><a class="feature-txt-mapa" href="{{event.locationgoogle}}" target="_blank">Ver mapa</a></div>
+    <p class="feature-txt">{{event[0].location}}</p><a class="feature-txt-mapa" href="{{event.locationgoogle}}" target="_blank">Ver mapa</a></div>
 </div>
 

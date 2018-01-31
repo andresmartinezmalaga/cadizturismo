@@ -35,8 +35,8 @@ code = "redes-sociales"
             $this['lang']='es';
         }
 
-        $this['beaches'] = $this->staticApp->beachList();
-
+        $this['event'] = $this->staticApp->eventFindByUrl($this->page->url);
+        
         $this['urlPage'] = $this->page->url;
 
         if($this->page->apiBag){
