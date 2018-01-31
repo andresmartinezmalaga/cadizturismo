@@ -464,7 +464,14 @@ class StaticApp extends ComponentBase
                     max-width: none !important;
                 }
 
-                
+                .event-features::after {
+                  content: none !important;
+                }
+
+                .event-features {
+                  background-color: black !important;
+                }
+
                 .event-features .feature-exp {
                   display: inline-block !important;
                 }
