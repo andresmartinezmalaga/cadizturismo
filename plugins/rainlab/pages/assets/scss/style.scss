@@ -2920,9 +2920,9 @@ html, body {
       padding-top: 60px;
       padding-bottom: 60px; }
   .featured-element .txt-container {
-    position: relative !important;
-    left: 0px !important;
-    top: 0px !important;
+    left: 50% !important;
+    top: 50% !important;
+    @include transform(translate(-50%, -50%)); 
     margin: 178px auto;
     width: 80% !important;
     text-align: center; }
