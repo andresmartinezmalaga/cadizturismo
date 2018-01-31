@@ -419,9 +419,10 @@ class StaticApp extends ComponentBase
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
         <link rel="stylesheet" href="http://cadizturismo.jekyllme.com/plugins/rainlab/pages/assets/css/style-event.css"/>
         <style>
+
           .background-image {
             position: absolute !important;
-            height: 1000px !important;
+            height: 980px !important;
           }
                 .section-txt, .section-img, .header-event {
                     display:block!important;
@@ -463,12 +464,17 @@ class StaticApp extends ComponentBase
                     max-width: none !important;
                 }
 
-                .event-features::after {
-                  content: none !important;
-                }
-
+                
                 .event-features .feature-exp {
                   display: inline-block !important;
+                }
+
+                .section-txt .txt-container .municipios {
+                  margin-top: 50px !important;
+                }
+
+                .section-txt .txt-container .municipios a  {
+                  margin-top: 10px !important;
                 }
 
         </style>
@@ -476,8 +482,9 @@ class StaticApp extends ComponentBase
 
         $preexperiencemarkup = $baseHtml.$experience[0]['markup'];
 
-        $preexperiencemarkup2 = str_replace('.svg', '.png', $preexperiencemarkup);
+         $preexperiencemarkup2 = str_replace('.svg', '.png', $preexperiencemarkup);
 
+        // $preexperiencemarkup2 = $preexperiencemarkup;
         $preexperiencemarkup3 = str_replace('</p>', '</p><br/><br/>', $preexperiencemarkup2);
 
         $experiencemarkup = str_replace('/storage/', 'http://cadizturismo.jekyllme.com/storage/', $preexperiencemarkup3);
@@ -573,15 +580,4 @@ class StaticApp extends ComponentBase
     }
 
 
-    public function newList()
-    {
-        $theme = Theme::getActiveTheme();
-        $pages = Page::listInTheme($theme, false);
-        $news =  new \Illuminate\Support\Collection($pages);
-        
-        $result = $news->where("is_hidden",0)->where("subtemplate","noticias");
-        
-        return $result;
-    }
-   
 }
