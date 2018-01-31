@@ -69,7 +69,8 @@ class BrandSetting extends Model
     {
         $config = App::make('config');
 
-        $this->app_name = $config->get('brand.appName', Lang::get('system::lang.app.name'));
+        //$this->app_name = $config->get('brand.appName', Lang::get('system::lang.app.name'));
+       $this->app_name = "Cádiz Sudo"
         $this->app_tagline = $config->get('brand.tagline', Lang::get('system::lang.app.tagline'));
         $this->primary_color = $config->get('brand.primaryColor', self::PRIMARY_COLOR);
         $this->secondary_color = $config->get('brand.secondaryColor', self::SECONDARY_COLOR);
