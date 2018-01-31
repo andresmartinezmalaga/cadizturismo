@@ -43,7 +43,6 @@ fields:
    
     viewBag[idiomas]:
         span: full
-        placeholder: /
         label: 'Escribe los idiomas en los que estara disponible esta publicación para su descarga'
 
     toolbar:
