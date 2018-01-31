@@ -62,7 +62,7 @@ tabs:
         viewBag[layout]:
             tab: cms::lang.editor.settings
             label: rainlab.pages::lang.page.layout
-            default: 'evento'
+            default: 'ruta'
             cssClass: ocl
             
         viewBag[is_hidden]:

@@ -322,6 +322,17 @@ class StaticApp extends ComponentBase
         return $event;
     }
 
+    public function rutaFindByUrl($url)
+    {
+        $theme = Theme::getActiveTheme();
+        $pagesList = Page::listInTheme($theme, false);
+        $pages =  new \Illuminate\Support\Collection($pagesList);
+
+        $ruta = $pages->where("is_hidden",0)->where("url",$url)->values();
+
+        return $ruta;
+    }
+
     public function eventList()
     {
         $theme = Theme::getActiveTheme();
@@ -605,10 +616,33 @@ class StaticApp extends ComponentBase
         $pages = Page::listInTheme($theme, false);
         $publications =  new \Illuminate\Support\Collection($pages);
 
-        $result = $publications->where("is_hidden",0)->where("subtemplate","publicaciones");
+        $result = $publications->where("is_hidden",0)->where("subtemplate","publicaciones")->values();
 
         return $result;
     }
+
+    public function newList($idm)
+    {
+        $theme = Theme::getActiveTheme();
+        $pages = Page::listInTheme($theme, false);
+        $news =  new \Illuminate\Support\Collection($pages);
+
+        $result = $news->where("is_hidden",0)->where("subtemplate","sala-prensa-prensa")->where("idioma",$idm)->values();
+
+        return $result;
+    }
+
+    public function reportList()
+    {
+        $theme = Theme::getActiveTheme();
+        $pages = Page::listInTheme($theme, false);
+        $reports =  new \Illuminate\Support\Collection($pages);
+
+        $result = $reports->where("is_hidden",0)->where("subtemplate","sala-prensa-reportajes")->values();
+
+        return $result;
+    }
+
 
 
 }

@@ -27,17 +27,32 @@
 
         >
             <div>
-                <a href="#">
-                    <div>
-                    <?= e($pageObj->page->getViewBag()->property('title')) ?>
-                    <p><span class="comment"><?= e($pageObj->page->getViewBag()->property('url')) ?></span></p>
-                    <?php if ($pageObj->page->getViewBag()->property('is_hidden') == 1): ?>
-                        <p><span class="comment borrador">BORRADOR</span></p>
-                    <?php endif ?>
-                    </div>
-                </a>
+                
+                <?php if (                    
+                    $fileName != 'sala-prensa-prensa' ) { ?>
+                    <a href="#">
+                        <div>
+                        <?= e($pageObj->page->getViewBag()->property('title')) ?>
+                        <p><span class="comment"><?= e($pageObj->page->getViewBag()->property('url')) ?></span></p>
+                        <?php if ($pageObj->page->getViewBag()->property('is_hidden') == 1): ?>
+                            <p><span class="comment borrador">BORRADOR</span></p>
+                        <?php endif ?>
+                        </div>
+                    </a>
 
-                <input type="hidden" name="object[<?= e($fileName) ?>]" value="0"/>
+                    <input type="hidden" name="object[<?= e($fileName) ?>]" value="0"/>
+                
+                <?php } else { ?>
+                        
+                        <div class='link-prensa'>
+                        <?= e($pageObj->page->getViewBag()->property('title')) ?>
+                        <p><span class="comment"><?= e($pageObj->page->getViewBag()->property('url')) ?></span></p>
+                        <?php if ($pageObj->page->getViewBag()->property('is_hidden') == 1): ?>
+                            <p><span class="comment borrador">BORRADOR</span></p>
+                        <?php endif ?>
+                        </div>
+
+                <?php } ?>
                 
                 <!-- Andrés Martínez : Hidden checkbox selct to delete on Parents And sons fixeds
                 -->

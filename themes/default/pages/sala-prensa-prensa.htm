@@ -1,0 +1,48 @@
+title = "prensa"
+url = "/sala-prensa/prensa/:idm?"
+layout = "dinamic"
+is_hidden = 0
+
+[staticApp]
+
+==
+
+<?php
+
+	function onStart()
+	{
+
+	    if (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false) {
+	          $this['preurl'] = '/cadizturismo';
+	    } else {
+	        $this['preurl'] = '';
+	    }
+
+	   	$this['news'] = $this->staticApp->newList($this->param('idm'));
+
+	}
+
+
+	
+?>
+
+==
+<div class="ayuda-header" id="ayuda-header"><img class="img-header fr-fil fr-dib" src="{{preurl}}/storage/app/media/uploaded-files/templates/prensa-header.jpg" alt="">
+	<div class="header-container">
+		<div class="header-txt-comollegar">
+
+			<h1 class="txt">Prensa
+				<br>nacional</h1><img class="brush fr-fil fr-dib" src="{{preurl}}/storage/app/media/uploaded-files/templates/brush-header.svg" alt="necesitas ayuda"></div>
+	</div>
+</div>
+<section class="reportajes">
+	<div class="publi-container">
+
+		<h3 class="publicaciones-title">¿QUÉ DICEN DE NOSOTROS?</h3><img class="separator fr-fic fr-dii" src="{{preurl}}/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
+	
+</section>
+
+ <!-- NEWS -->
+<div id='prtlSearch'>
+  {% partial "news" %}
+</div>

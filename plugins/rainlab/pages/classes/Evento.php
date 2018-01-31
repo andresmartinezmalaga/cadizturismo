@@ -73,7 +73,8 @@ class Evento extends ContentBase
      */
     public $rules = [
         'title' => 'required',
-        'url'   => ['required', 'regex:/^\/[a-z0-9\/_\-\.]*$/i', 'uniqueUrl']
+        'url'   => ['required', 'regex:/^\/[a-z0-9\/_\-\.]*$/i', 'uniqueUrl'],
+        'date_end'      => 'required|date|after_or_equal:date_start'
     ];
 
     /**

@@ -21,11 +21,15 @@
 <!-- FEATURES -->
 <div id="out-features" class="event-features">
   <div class="feature"><img src="{{preurl}}/storage/app/media/uploaded-files/templates/calendar-event.svg" class="fr-fil fr-dib">
-    <p class="feature-txt">2 días</p>
+    {% if ruta[0].days > 1 %}
+      <p class="feature-txt">{{ruta[0].days}} días</p>
+    {% else %}
+      <p class="feature-txt">{{ruta[0].days}} día</p>
+    {%endif%}
   </div>
-  <div class="feature"><img src="{{preurl}}/storage/app/media/uploaded-files/templates/natu-exp.svg" class="fr-fil fr-dib">
-    <p class="feature-txt">Naturaleza</p>
+  <div class="feature"><img src="{{preurl}}/storage/app/media/uploaded-files/templates/{{str_slug(ruta[0].category)}}.svg" class="fr-fil fr-dib">
+    <p class="feature-txt">{{ruta[0].category}}</p>
   </div>
   <div class="feature"><img src="{{preurl}}/storage/app/media/uploaded-files/templates/location.svg" class="fr-fil fr-dib">
-    <p class="feature-txt">Alcalá de los Gazules</p><a class="feature-txt-mapa" href="{{ruta.locationgoogle}}" target="_blank">Ver mapa</a></div>
+    <p class="feature-txt">{{ruta[0].location}}</p><a class="feature-txt-mapa" href="{{ruta[0].locationgoogle}}" target="_blank">Ver mapa</a></div>
 </div>
