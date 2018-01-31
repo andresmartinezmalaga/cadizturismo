@@ -429,9 +429,9 @@ class StaticApp extends ComponentBase
 
                 }
 
-                 .section-txt .txt-container .desc {
-                     display: block!important;
-                     font-size: 20px !important;
+                .section-txt {
+                  padding-top: 80px !important;
+                  padding-bottom: 80px !important;
                 }
 
                 .section-txt .txt-container .desc {
@@ -445,6 +445,7 @@ class StaticApp extends ComponentBase
                     display: block!important;
                     font-size: 40px !important;
                     line-height: 40px !important;
+                    margin-bottom: 0px !important;
                }
 
                 .section-txt .big-number-container, .section-txt .txt-container, .section-txt .big-number-container span, .section-txt .txt-container p {
