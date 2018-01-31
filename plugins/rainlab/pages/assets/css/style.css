@@ -70,7 +70,9 @@ input:-webkit-autofill {
     opacity: 1 !important;
     order: -1; }
   .languages {
-    visibility: hidden; }
+    visibility: hidden;
+    font-size: 18px !important;
+    line-height: 31px !important; }
   .show-lang {
     visibility: visible !important; }
   .stop-click {
