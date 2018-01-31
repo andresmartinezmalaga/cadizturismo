@@ -2337,7 +2337,11 @@ html, body {
     @include transform(translate(-50%, -50%));
     margin: 178px auto;
     width: 80% !important;
-    text-align: center; }
+    text-align: center;
+    .events-link {
+      text-align: left;
+    }
+  }
     .featured-element .txt-container .title {
       font-size: 33px !important;
       line-height: 33px !important;
@@ -2930,7 +2934,10 @@ html, body {
     @include transform(translate(-50%, -50%));
     margin: 178px auto;
     width: 80% !important;
-    text-align: center; }
+    text-align: center;
+    .events-link {
+      text-align: left;
+    }}
     .featured-element {
       .img-destacada {
         mask-image: none !important;

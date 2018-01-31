@@ -2161,6 +2161,8 @@ html, body {
     margin: 178px auto;
     width: 80% !important;
     text-align: center; }
+    .featured-element .txt-container .events-link {
+      text-align: left; }
   .featured-element .txt-container .title {
     font-size: 33px !important;
     line-height: 33px !important;
@@ -2709,6 +2711,8 @@ html, body {
     margin: 178px auto;
     width: 80% !important;
     text-align: center; }
+    .featured-element .txt-container .events-link {
+      text-align: left; }
   .featured-element .img-destacada {
     mask-image: none !important;
     -webkit-mask-image: none !important; }
