@@ -464,16 +464,17 @@ class StaticApp extends ComponentBase
                     max-width: none !important;
                 }
 
-                .event-features::after {
-                  content: none !important;
-                }
-
+                
                 .event-features .feature-exp {
                   display: inline-block !important;
                 }
 
                 .section-txt .txt-container .municipios {
                   margin-top: 50px !important;
+                }
+
+                .section-txt .txt-container .municipios a  {
+                  margin-top: 10px !important;
                 }
 
         </style>
