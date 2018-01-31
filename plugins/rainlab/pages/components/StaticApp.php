@@ -431,7 +431,7 @@ class StaticApp extends ComponentBase
 
                 .section-txt {
                   padding-top: 80px !important;
-                  padding-bottom: 80px !important;
+                  padding-bottom: 40px !important;
                 }
 
                 .section-txt .txt-container .desc {
