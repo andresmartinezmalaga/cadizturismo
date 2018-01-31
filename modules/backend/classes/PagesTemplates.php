@@ -2255,7 +2255,7 @@ class PagesTemplates
           <div class="icon-press-container">
             <img class="icon" src="***_preurl_***/storage/app/media/uploaded-files/templates/reportaje-icon.svg" alt="">
             <p class="icon-txt">REPORTAJE</p>
-            <a class="see-link" href="#">Saber más <img src="***_preurl_***/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""></a>
+            <a class="see-link" href="/sala-prensa/reportajes">Saber más <img src="***_preurl_***/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""></a>
           </div>
         </div>
       </div>
@@ -2267,7 +2267,7 @@ class PagesTemplates
             <p class="icon-txt">PRENSA</p>
           </div>
           <div class="links-container">
-            <a class="see-link" href="#">Prensa nacional <img src="***_preurl_***/storage/app/media/uploaded-files/templates//yellow-arrow2.svg" alt=""></a>
+            <a class="see-link" href="/sala-prensa/prensa/espanol">Prensa nacional <img src="***_preurl_***/storage/app/media/uploaded-files/templates//yellow-arrow2.svg" alt=""></a>
               <a id="international-press" class="see-link" href="#">Prensa internacional <img class="arrow" src="***_preurl_***/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""></a>
           </div>
           <div class="press-languages">
@@ -2329,29 +2329,6 @@ class PagesTemplates
         <h3 class="publicaciones-title">¿QUÉ DICEN DE NOSOTROS?</h3>
         <img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
       </div>
-      <div class="publis">
-        <div class="prensa">
-          <h6 class="publi-title">A GALOPE SOBRE ARENA GADITANA</h6>
-          <p class="publi-source">ANDALUCÍA ÚNICA  |  01.09.17</p>
-          <div class="links-container">
-            <a class="download-link" href="#">Descargar pdf <img src="***_preurl_***/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""> </a>
-          </div>
-        </div>
-        <div class="prensa">
-          <h6 class="publi-title">PARQUE SIERRA DE GRAZALEMA</h6>
-          <p class="publi-source">EL ECONOMISTA  |  28.04.17</p>
-          <div class="links-container">
-            <a class="download-link" href="#">Descargar pdf <img src="***_preurl_***/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""> </a>
-          </div>
-        </div>
-        <div class="prensa">
-          <h6 class="publi-title">GRAZALEMA, VERDE QUE TE QUIERO VERDE</h6>
-          <p class="publi-source">CINCO DÍAS  |  14.04.17</p>
-          <div class="links-container">
-            <a class="download-link" href="#">Descargar pdf <img src="***_preurl_***/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""> </a>
-          </div>
-        </div>
-      </div>
     </section>';
 
     static function getTPrensa(){
@@ -2375,64 +2352,6 @@ class PagesTemplates
       <div class="publi-container">
         <h3 class="publicaciones-title">HISTORIAS PARA ENAMORARTE DE CÁDIZ</h3>
         <img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
-      </div>
-      <div class="publis">
-        <div class="reportaje">
-          <h6 class="publi-title">TURISMO TODO EL AÑO</h6>
-          <p class="publi-desc"></p>
-          <div class="links-container">
-            <a class="download-link" href="#">Descargar pdf <img src="***_preurl_***/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""> </a>
-          </div>
-        </div>
-        <div class="reportaje">
-          <h6 class="publi-title">LA ALEGRÍA DEL CARNAVAL</h6>
-          <p class="publi-desc"></p>
-          <div class="links-container">
-            <a class="download-link" href="#">Descargar pdf <img src="***_preurl_***/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""> </a>
-          </div>
-        </div>
-        <div class="reportaje">
-          <h6 class="publi-title">NOCHE DE HOGUERAS</h6>
-          <p class="publi-desc">Ubrique celebra las Cruces de Mayo que dan comienzo a la “Crujía de gamones”.</p>
-          <div class="links-container">
-            <a class="download-link" href="#">Descargar pdf <img src="***_preurl_***/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""> </a>
-          </div>
-        </div>
-        <div class="reportaje">
-          <h6 class="publi-title">REVIVE LA HISTORIA</h6>
-          <p class="publi-desc">Algodonales celebra que hace más de 200 años sus campesinos se enfrentaron a un ejército de 5.000 soldados.</p>
-          <div class="links-container">
-            <a class="download-link" href="#">Descargar pdf <img src="***_preurl_***/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""> </a>
-          </div>
-        </div>
-        <div class="reportaje">
-          <h6 class="publi-title">JEREZ, VINO, FLAMENCO…</h6>
-          <p class="publi-desc">Algodonales celebra que hace más de 200 años sus campesinos se enfrentaron a un ejército de 5.000 soldados.</p>
-          <div class="links-container">
-            <a class="download-link" href="#">Descargar pdf <img src="***_preurl_***/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""> </a>
-          </div>
-        </div>
-        <div class="reportaje">
-          <h6 class="publi-title">CIUDAD DE ÉPOCAS</h6>
-          <p class="publi-desc">Algodonales celebra que hace más de 200 años sus campesinos se enfrentaron a un ejército de 5.000 soldados.</p>
-          <div class="links-container">
-            <a class="download-link" href="#">Descargar pdf <img src="***_preurl_***/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""> </a>
-          </div>
-        </div>
-        <div class="reportaje">
-          <h6 class="publi-title">LOS PUEBLOS BLANCOS</h6>
-          <p class="publi-desc">Un recorrido verde, sabroso y sentimental por la Sierra de Cádiz.</p>
-          <div class="links-container">
-            <a class="download-link" href="#">Descargar pdf <img src="***_preurl_***/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""> </a>
-          </div>
-        </div>
-        <div class="reportaje">
-          <h6 class="publi-title">BANDOLEROS</h6>
-          <p class="publi-desc">Grazalema recrea el bandolerismo de la Sierra de Cádiz en el siglo XIX. Reconstruyen la vida de José María El Tempranillo.</p>
-          <div class="links-container">
-            <a class="download-link" href="#">Descargar pdf <img src="***_preurl_***/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""> </a>
-          </div>
-        </div>
       </div>
     </section>';
 
