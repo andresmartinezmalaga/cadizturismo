@@ -566,9 +566,7 @@ class StaticApp extends ComponentBase
 
         //$renderedHtml = Twig::parse($template);
         //
-        //
-        //
-
+        
         //$nombre = 'Andres';
         //$template = '<h1>Hola</h1>';
         //$renderedHtml = Twig::parse($template);
