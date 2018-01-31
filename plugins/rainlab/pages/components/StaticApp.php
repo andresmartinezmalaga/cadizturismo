@@ -483,8 +483,9 @@ class StaticApp extends ComponentBase
 
         $preexperiencemarkup = $baseHtml.$experience[0]['markup'];
 
-        $preexperiencemarkup2 = str_replace('.svg', '.png', $preexperiencemarkup);
+        // $preexperiencemarkup2 = str_replace('.svg', '.png', $preexperiencemarkup);
 
+        $preexperiencemarkup2 = $preexperiencemarkup;
         $preexperiencemarkup3 = str_replace('</p>', '</p><br/><br/>', $preexperiencemarkup2);
 
         $experiencemarkup = str_replace('/storage/', 'http://cadizturismo.jekyllme.com/storage/', $preexperiencemarkup3);
