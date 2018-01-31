@@ -443,7 +443,8 @@ class StaticApp extends ComponentBase
 
                 .section-txt .txt-container .title {
                     display: block!important;
-                    font-size: 40px !important;
+                    font-size: 50px !important;
+                    font-weight: 700 !important;
                     line-height: 40px !important;
                     margin-bottom: 0px !important;
                }
