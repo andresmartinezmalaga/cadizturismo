@@ -3,12 +3,10 @@
       <div class="left-container">
         <img class="mini-logo" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/mini-logo.svg" alt="logo cádiz">
         <div class="links-container">
-
           {% for item in staticMenu5.menuItems %}
             {% set tt = '.'~item.title %}
             <a href="{{ item.url }}">{{ tt|_ }}</a>
           {% endfor %}
-
         </div>
       </div>
       <div class="copy-social-container">

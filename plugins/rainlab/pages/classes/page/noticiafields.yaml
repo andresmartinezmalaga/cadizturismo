@@ -10,13 +10,6 @@ fields:
         attributes:
             default-focus: 1
 
-    viewBag[type]:
-        span: right
-        label: 'Tipo'
-        placeholder: 'Tipo de publicación'
-        type: dropdown
-        options: getPublicationsType
-
     viewBag[url]:
         span: right
         placeholder: /
@@ -27,20 +20,22 @@ fields:
             prefixInput: input[data-parent-url]
         cssClass: ocl
 
-    viewBag[descrptn]:
-        span: full
-        label: 'Descripción (max 120 caracteres)'
-       
-    viewBag[urlExternaVideo]:
+    viewBag[media]:
         span: right
-        placeholder: /
-        label: 'URL para ver la publicación online'
+        label: 'Media'
 
-    viewBag[urlExternaZip]:
-        span: left
-        placeholder: /
-        label: 'URL para descargar el zip'
+    viewBag[date]:
+        label: 'Fecha de publicación'
+        type: datepicker
+        mode: date 
    
+    viewBag[idioma]:
+        span: right
+        label: 'Idioma'
+        placeholder: 'categoría'
+        type: dropdown
+        options: getNewsIdiomasOptions
+
     toolbar:
         type: partial
         path: page_toolbar
@@ -53,7 +48,7 @@ fields:
 
     viewBag[subtemplate]:
         label: 'template'
-        default: 'publicaciones'
+        default: 'noticias'
         cssClass: ocl
 
     viewBag[cover]:
