@@ -7,10 +7,13 @@
 <meta name="backend-timezone" content="<?= e(Backend\Models\Preference::get('timezone')) ?>">
 <meta name="backend-locale" content="<?= e(Backend\Models\Preference::get('locale')) ?>">
 <meta name="csrf-token" content="<?= csrf_token() ?>">
-<link rel="icon" type="image/png" href="<?= Backend::skinAsset('assets/images/favicon.png') ?>">
-<title data-title-template="<?= empty($this->pageTitleTemplate) ? '%s' : e($this->pageTitleTemplate) ?> | <?= e(Backend\Models\BrandSetting::get('app_name')) ?>">
-    <?= e(trans($this->pageTitle)) ?> | <?= e(Backend\Models\BrandSetting::get('app_name')) ?>
-</title>
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="{{url('/')}}/plugins/rainlab/pages/assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{url('/')}}/plugins/rainlab/pages/assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{url('/')}}/plugins/rainlab/pages/assets/img/favicons/favicon-16x16.png">
+    
+<title>Cádiz Sudo</title>
 <?php
     $coreBuild = System\Models\Parameter::get('system::core.build', 1);
 ?>
