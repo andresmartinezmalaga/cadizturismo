@@ -58,6 +58,10 @@ input:-webkit-autofill {
   line-height: 20px;
   color: white; }
 
+.section-txt img, .section-txt-village img, .section-txt-comarca img {
+  max-width: 100%;
+  height: auto !important; }
+
 @media (max-width: 725px) {
   .slidemenu {
     display: none; }
@@ -1965,6 +1969,11 @@ html, body {
 @media (max-width: 600px) {
   .con-encanto {
     font-size: 100px !important; }
+  .header-playa .txt {
+    font-size: 100px !important;
+    line-height: 130px !important; }
+  .somos-txt-container p {
+    width: 100% !important; }
   .all-exps .search-title-container, .all-events .search-title-container {
     top: -65px !important; }
   .all-exps .search-title-container .title-search, .all-events .search-title-container .title-search {
@@ -2153,20 +2162,27 @@ html, body {
     width: 80%;
     margin: 0 auto; }
   .featured-element .txt-container {
-    position: relative !important;
-    left: 0px !important;
-    top: 0px !important;
+    left: 50% !important;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     margin: 178px auto;
-    width: 80% !important;
-    text-align: center; }
+    width: 80% !important; }
+    .featured-element .txt-container .events-link {
+      text-align: left; }
   .featured-element .txt-container .title {
     font-size: 33px !important;
-    line-height: 33px !important; }
+    line-height: 33px !important;
+    text-align: left; }
+  .featured-element .img-destacada {
+    mask-image: none !important;
+    -webkit-mask-image: none !important; }
   .featured-element .txt-container .desc {
     width: 80% !important;
-    margin: 0px auto 20px auto;
     line-height: 28px !important;
-    font-size: 20px !important; } }
+    font-size: 20px !important;
+    text-align: left; } }
 
 @media (max-width: 1100px) {
   .section-txt, .section-txt-comarca {
@@ -2177,14 +2193,12 @@ html, body {
     text-align: center; }
   .section-txt .big-number-container, .section-txt-comarca .big-number-container {
     margin-right: 0px !important; }
-  .section-txt .title, .section-txt .desc, .section-txt-comarca .title, .section-txt-comarca .desc {
-    text-align: center !important; }
   .section-txt .municipios, .section-txt-comarca .municipios {
     justify-content: center !important; }
   .section-txt .separator, .section-txt-comarca .separator {
     display: block;
-    margin-left: auto;
-    margin-right: auto; }
+    margin-left: 0;
+    margin-right: 0; }
   .section-txt-village .txt-container {
     width: 90% !important;
     margin: 0 auto !important; }
@@ -2438,7 +2452,6 @@ html, body {
     min-height: 500px; }
   .main-section-comarcas .main-txt {
     margin: 0px auto !important;
-    text-align: center;
     width: 85%; }
   .main-section-comarcas .main-txt .title {
     font-size: 45px !important;
@@ -2457,8 +2470,7 @@ html, body {
   .section-txt-comarca .txt-container, .section-txt-village .txt-container {
     padding: 70px 0px 70px 0px !important; }
   .section-txt-comarca .separator, .section-txt-village .separator {
-    display: block;
-    margin: 0px auto 60px auto; }
+    display: block; }
   .main-section-comarcas .main-events-container {
     margin-top: 60px !important; }
   .header, .static-header, .ayuda-header, .about-header, .header-event, .header-village, .header-general, .header-ruta, .header-search {
@@ -2560,14 +2572,11 @@ html, body {
   .section-txt .txt-container .title, .section-txt-village .txt-container .title {
     font-size: 30px !important;
     line-height: 36px !important;
-    width: 86%;
-    margin: 0px auto 20px auto;
-    text-align: center !important; }
+    width: 86%; }
   .section-txt .txt-container .desc, .section-txt-village .txt-container .desc {
     font-size: 18px !important;
     width: 80%;
-    margin: 0 auto;
-    text-align: center !important; }
+    margin: 0 auto; }
   .section-txt .txt-container .municipios, .section-txt-village .txt-container .municipios {
     flex-direction: column;
     align-items: center !important; }
@@ -2576,9 +2585,7 @@ html, body {
   .section-txt-comarca .title {
     font-size: 30px !important;
     line-height: 36px !important;
-    width: 86%;
-    margin: 0px auto 20px auto;
-    text-align: center !important; }
+    width: 86%; }
   .page-cultura {
     width: 100% !important; }
   #ayuda-header .txt {
@@ -2701,17 +2708,20 @@ html, body {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     margin: 178px auto;
-    width: 80% !important;
-    text-align: center; }
+    width: 80% !important; }
+    .featured-element .txt-container .events-link {
+      text-align: left; }
   .featured-element .img-destacada {
     mask-image: none !important;
     -webkit-mask-image: none !important; }
   .featured-element .txt-container .title {
     font-size: 64px !important;
-    line-height: 64px !important; }
+    line-height: 64px !important;
+    text-align: left; }
   .featured-element .txt-container .desc {
     width: 80% !important;
-    margin: 0 auto; }
+    margin: 0 auto;
+    text-align: left; }
   .language-container {
     width: auto !important; }
     .language-container .languages {
