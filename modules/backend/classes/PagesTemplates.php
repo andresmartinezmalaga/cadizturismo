@@ -2271,11 +2271,30 @@ class PagesTemplates
               <a id="international-press" class="see-link" href="#">Prensa internacional <img class="arrow" src="***_preurl_***/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""></a>
           </div>
           <div class="press-languages">
-            <p class="p-languages"> <a href="#">ALEMÁN</a> | <a href="#">CHECO</a> | <a href="#">CHINO</a> | <a href="#">DANÉS</a> | <a href="#">HISPANOAMÉRICA</a> |
-              <a href="#">ESTONIO</a> | <a href="#">FINLANDÉS </a> | <a href="#">FLAMENCO</a> |
-              <a href="#">FRANCÉS</a> | <a href="#">HEBREO</a> | <a href="#">HOLANDÉS </a> | <a href="#">HÚNGARO</a>  |
-              <a href="#">INGLÉS </a> | <a href="#">ITALIANO</a> | <a href="#">JAPONÉS</a> | <a href="#">NORUEGO</a>
-              | <a href="#">POLACO</a> | <a href="#">PORTUGUÉS</a> | <a href="#">RUSO</a> | <a href="#">SUECO</a> | <a href="#">UCRANIANO</a></p>
+            <p class="p-languages">
+               <a href="/sala-prensa/prensa/aleman">ALEMÁN</a>
+             | <a href="/sala-prensa/prensa/checo">CHECO</a>
+             | <a href="/sala-prensa/prensa/chino">CHINO</a>
+             | <a href="/sala-prensa/prensa/danes">DANÉS</a>
+             | <a href="/sala-prensa/prensa/hispanoamerica">HISPANOAMÉRICA</a>
+             | <a href="/sala-prensa/prensa/estonio">ESTONIO</a>
+             | <a href="/sala-prensa/prensa/finlandes">FINLANDÉS </a>
+             | <a href="/sala-prensa/prensa/flamenco">FLAMENCO</a>
+             | <a href="/sala-prensa/prensa/frances">FRANCÉS</a>
+             | <a href="/sala-prensa/prensa/hebreo">HEBREO</a>
+             | <a href="/sala-prensa/prensa/holandes">HOLANDÉS </a>
+             | <a href="/sala-prensa/prensa/hungaro">HÚNGARO</a>
+             | <a href="/sala-prensa/prensa/ingles">INGLÉS </a>
+             | <a href="/sala-prensa/prensa/italiano">ITALIANO</a>
+             | <a href="/sala-prensa/prensa/japones">JAPONÉS</a>
+             | <a href="/sala-prensa/prensa/noruego">NORUEGO</a>
+             | <a href="/sala-prensa/prensa/polaco">POLACO</a>
+             | <a href="/sala-prensa/prensa/portugues">PORTUGUÉS</a>
+             | <a href="/sala-prensa/prensa/ruso">RUSO</a>
+             | <a href="/sala-prensa/prensa/sueco">SUECO</a>
+             | <a href="/sala-prensa/prensa/ucraniano">UCRANIANO</a>
+            
+            </p>
           </div>
           </div>
         </div>
