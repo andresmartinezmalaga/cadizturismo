@@ -419,6 +419,13 @@ class StaticApp extends ComponentBase
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
         <link rel="stylesheet" href="http://cadizturismo.jekyllme.com/plugins/rainlab/pages/assets/css/style-event.css"/>
         <style>
+        @font-face {
+          font-family: Ryssa;
+          src: url("../assets/fonts/ryssa/RissaTypeface.eot");
+          src: url("../../assets/fonts/ryssa/RissaTypeface.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/ryssa/RissaTypeface.woff") format("woff"), url("../assets/fonts/ryssa/RissaTypeface.ttf") format("truetype");
+          font-weight: normal;
+          font-style: normal; }
+
           .background-image {
             position: absolute !important;
             height: 980px !important;
@@ -573,15 +580,4 @@ class StaticApp extends ComponentBase
     }
 
 
-    public function newList()
-    {
-        $theme = Theme::getActiveTheme();
-        $pages = Page::listInTheme($theme, false);
-        $news =  new \Illuminate\Support\Collection($pages);
-        
-        $result = $news->where("is_hidden",0)->where("subtemplate","noticias");
-        
-        return $result;
-    }
-   
 }
