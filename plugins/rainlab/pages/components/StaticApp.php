@@ -420,8 +420,8 @@ class StaticApp extends ComponentBase
         <link rel="stylesheet" href="http://cadizturismo.jekyllme.com/plugins/rainlab/pages/assets/css/style-event.css"/>
         <style>
           .background-image {
-            position: absolute;
-            height: 800px;
+            position: absolute !important;
+            height: 600px !important;
           }
                 .section-txt, .section-img, .header-event {
 
