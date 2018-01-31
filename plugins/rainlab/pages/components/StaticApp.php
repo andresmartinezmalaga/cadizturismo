@@ -422,7 +422,24 @@ class StaticApp extends ComponentBase
 
           .background-image {
             position: absolute !important;
+            width: 100%;
+            object-position: center !important;
             height: 980px !important;
+            text-align: center !important;
+          }
+
+        .header-txt, .txt, .header-container {
+          text-align: center !important;
+          font-size: 110px !important;
+          font-weight: 500;
+        }
+
+        .header-event {
+          text-align: center !important;
+        }
+
+          .brush {
+            display: none !important;
           }
                 .section-txt, .section-img, .header-event {
                     display:block!important;
@@ -470,10 +487,13 @@ class StaticApp extends ComponentBase
 
                 .event-features {
                   background-color: black !important;
+                  display: inline-block !important;
+                  text-align: center !important;
                 }
 
                 .event-features .feature-exp {
                   display: inline-block !important;
+                  margin-top: 50px !important;
                 }
 
                 .section-txt .txt-container .municipios {
@@ -482,6 +502,11 @@ class StaticApp extends ComponentBase
 
                 .section-txt .txt-container .municipios a  {
                   margin-top: 10px !important;
+                  margin-bottom: 0px !important;
+                }
+
+                .section-txt .txt-container .municipios img  {
+                  display: none !important;
                 }
 
         </style>

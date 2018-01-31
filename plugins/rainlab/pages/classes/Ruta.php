@@ -139,6 +139,7 @@ class Ruta extends ContentBase
           <img class="background-image" value="cover" src="***_preurl_***/storage/app/media/uploaded-files/templates/viaverde.jpg" alt="">
 
         </div>
+        <div id="phantom-div"></div>
         <!-- SECTION TXT-->
         <div class="section-txt">
           <div class="big-number-container">
