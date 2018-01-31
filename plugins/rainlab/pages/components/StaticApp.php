@@ -425,6 +425,10 @@ class StaticApp extends ComponentBase
             height: 980px !important;
           }
 
+        .header-txt, .txt {
+          text-align: center;
+        }
+
           .brush {
             display: none !important;
           }
