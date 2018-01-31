@@ -422,7 +422,7 @@ class StaticApp extends ComponentBase
 
           .background-image {
             position: absolute !important;
-            height: 880px !important;
+            height: 980px !important;
           }
 
         .header-txt, .txt, .header-container {
