@@ -417,10 +417,7 @@ class StaticApp extends ComponentBase
 
 
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
-        <link rel="stylesheet" href="http://cadizturismo.jekyllme.com/plugins/rainlab/pages/assets/css/style-comarcas.css"/>
-        <link rel="stylesheet" href="http://cadizturismo.jekyllme.com/plugins/rainlab/pages/assets/css/style-village.css"/>
         <link rel="stylesheet" href="http://cadizturismo.jekyllme.com/plugins/rainlab/pages/assets/css/style-event.css"/>
-        <link rel="stylesheet" href="http://cadizturismo.jekyllme.com/plugins/rainlab/pages/assets/css/style.css"/>
         <style>
                 .section-txt, .section-img, .header-event {
 
