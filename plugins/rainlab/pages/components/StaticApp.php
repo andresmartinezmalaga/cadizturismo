@@ -426,7 +426,7 @@ class StaticApp extends ComponentBase
           }
 
         .header-txt, .txt {
-          text-align: center;
+          text-align: center !important;
         }
 
           .brush {
@@ -493,6 +493,7 @@ class StaticApp extends ComponentBase
 
                 .section-txt .txt-container .municipios a  {
                   margin-top: 10px !important;
+                  margin-bottom: 0px !important;
                 }
 
         </style>
