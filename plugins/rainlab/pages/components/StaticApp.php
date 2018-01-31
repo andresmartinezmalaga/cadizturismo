@@ -419,6 +419,9 @@ class StaticApp extends ComponentBase
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
         <link rel="stylesheet" href="http://cadizturismo.jekyllme.com/plugins/rainlab/pages/assets/css/style-event.css"/>
         <style>
+          .background-image {
+            position: absolute;
+          }
                 .section-txt, .section-img, .header-event {
 
                     display:block!important;
@@ -426,10 +429,16 @@ class StaticApp extends ComponentBase
 
                 }
 
-                .section-txt .big-number-container, .section-txt .txt-container, .section-txt .big-number-container span, .section-txt .txt-container p {
-                     border: solid 1px white!important;
-                    display:block!important;
+                .section-txt .big-number-container span, .section-txt .txt-container p {
+                     border: solid 1px red!important;
+                     display:block!important;
                 }
+
+                .section-txt .big-number-container, .section-txt .txt-container, .section-txt .big-number-container span, .section-txt .txt-container p {
+                     border: solid 1px red!important;
+                    display: inline-block!important;
+                }
+
                 .section-txt .txt-container {
                     margin: 40px auto 0px auto;
                 }
