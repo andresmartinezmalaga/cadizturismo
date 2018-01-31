@@ -424,16 +424,25 @@ class StaticApp extends ComponentBase
             height: 1000px !important;
           }
                 .section-txt, .section-img, .header-event {
-
                     display:block!important;
                     border: solid 1px white!important;
 
                 }
 
-                 .section-txt .txt-container p {
+                 .section-txt .txt-container .desc {
                      display: block!important;
-                     font-size: 30px !important;
+                     font-size: 20px !important;
                 }
+
+                .section-txt .txt-container .desc {
+                    display: block!important;
+                    font-size: 20px !important;
+               }
+
+                .section-txt .txt-container .title {
+                    display: block!important;
+                    font-size: 40px !important;
+               }
 
                 .section-txt .big-number-container, .section-txt .txt-container, .section-txt .big-number-container span, .section-txt .txt-container p {
                     display: inline-block!important;
