@@ -421,7 +421,7 @@ class StaticApp extends ComponentBase
         <style>
           .background-image {
             position: absolute !important;
-            height: 900px !important;
+            height: 1000px !important;
           }
                 .section-txt, .section-img, .header-event {
 
@@ -446,6 +446,7 @@ class StaticApp extends ComponentBase
 
                 .section-txt .txt-container {
                     margin: 40px auto 0px auto;
+                    width: 100% !important;
                 }
 
 
