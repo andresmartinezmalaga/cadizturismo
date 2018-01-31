@@ -63,7 +63,9 @@ class Page extends ContentBase
         'media',
         'date',
         'idioma',
-        'idiomas'
+        'idiomas',
+        'urlExternaZip',
+        'urlExternaVideo'
     ];
 
     /**
