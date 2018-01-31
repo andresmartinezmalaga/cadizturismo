@@ -472,6 +472,10 @@ class StaticApp extends ComponentBase
                   display: inline-block !important;
                 }
 
+                .section-txt .txt-container .municipios {
+                  margin-top: 50px !important;
+                }
+
         </style>
         ';
 
