@@ -27,12 +27,12 @@ use Twig;
  */
 class StaticApp extends ComponentBase
 {
-    
+
 
     /**
      * @var \RainLab\Pages\Classes\Page A reference to the static page object
      */
-  
+
     public function componentDetails()
     {
         return [
@@ -40,7 +40,7 @@ class StaticApp extends ComponentBase
             'description' => 'StaticApp description'
         ];
     }
-    
+
     public function defineProperties()
     {
         return [
@@ -72,12 +72,12 @@ class StaticApp extends ComponentBase
     }
 
     public function getRutasCategories(){
-      return [           
+      return [
            'cultura' => 'Cultura',
            'deporte' => 'Deporte',
            'gastronomía' => 'Gastronomía',
-           'naturaleza' => 'Naturaleza',         
-           'ocio' => 'Ocio',         
+           'naturaleza' => 'Naturaleza',
+           'ocio' => 'Ocio',
       ];
     }
 
@@ -149,23 +149,23 @@ class StaticApp extends ComponentBase
         $theme = Theme::getActiveTheme();
         $pagesList = Page::listInTheme($theme, false);
         $pages =  new \Illuminate\Support\Collection($pagesList);
-        
+
         $eventsVip = $pages->where("is_hidden",0)->where("template","eventos")->where('is_top',1)->values();
         $eventsNormal = $pages->where("is_hidden",0)->where("template","eventos")->where('is_top',0)->values();
-      
+
         $resultVip = collect();
         $resultNormal = collect();
 
         $events = collect();
 
         $count = 0;
-        
+
         foreach ($eventsVip as $event) {
 
             if( (new DateTime($event->date_start))->format('Y-m-d') > $now && $count < 7){
                 $resultVip->push($event);
                 $count = $count+1;
-            
+
             } elseif( (new DateTime($event->date_start))->format('Y-m-d') > $now && $count > 6){
                 $resultNormal->push($event);
                 $count = $count+1;
@@ -174,13 +174,13 @@ class StaticApp extends ComponentBase
         }
 
         foreach ($eventsNormal as $event) {
-     
+
             if( (new DateTime($event->date_start))->format('Y-m-d') > $now){
                 $resultNormal->push($event);
                 $count = $count+1;
-            }            
+            }
         }
-  
+
         foreach ($resultVip as  $event) {
             $event->date_start_ppretty = (new DateTime($event->date_start))->format('d');
             $event->date = (new DateTime($event->date_start));
@@ -191,7 +191,7 @@ class StaticApp extends ComponentBase
             $event->date_start_pretty_num = (new DateTime($event->date_start))->format('d.m.y');
             $event->date_start_pretty_numf = (new DateTime($event->date_start))->format('d/m');
             $event->date_end_pretty_num = (new DateTime($event->date_end))->format('d.m.y');
-            
+
         }
 
         $eventsVipOrder = $resultVip->sortBy('date');
@@ -206,7 +206,7 @@ class StaticApp extends ComponentBase
             $event->date_start_pretty_num = (new DateTime($event->date_start))->format('d.m.y');
             $event->date_start_pretty_numf = (new DateTime($event->date_start))->format('d/m');
             $event->date_end_pretty_num = (new DateTime($event->date_end))->format('d.m.y');
-            
+
         }
 
         $eventsNormalOrder = $resultNormal->sortBy('date');
@@ -228,23 +228,23 @@ class StaticApp extends ComponentBase
         $theme = Theme::getActiveTheme();
         $pagesList = Page::listInTheme($theme, false);
         $pages =  new \Illuminate\Support\Collection($pagesList);
-        
+
         $rutasVip = $pages->where("is_hidden",0)->where("template","rutas")->where('is_top',1)->values();
         $rutasNormal = $pages->where("is_hidden",0)->where("template","rutas")->where('is_top',0)->values();
-      
+
         $resultVip = collect();
         $resultNormal = collect();
 
         $rutas = collect();
 
         $count = 0;
-        
+
         foreach ($rutasVip as $ruta) {
 
             if( $count < 7){
                 $resultVip->push($ruta);
                 $count = $count+1;
-            
+
             } elseif( $count > 6){
                 $resultNormal->push($ruta);
                 $count = $count+1;
@@ -253,12 +253,12 @@ class StaticApp extends ComponentBase
         }
 
         foreach ($rutasNormal as $ruta) {
-     
+
             $resultNormal->push($ruta);
             $count = $count+1;
-                     
+
         }
-      
+
 
         foreach ($resultVip as $ruta) {
            $rutas->push($ruta);
@@ -276,15 +276,15 @@ class StaticApp extends ComponentBase
         $theme = Theme::getActiveTheme();
         $pages = Page::listInTheme($theme, false);
         $events =  new \Illuminate\Support\Collection($pages);
-        
+
         $validEvents = collect();
 
         $preEvents = $events->where("is_hidden",0)->where('template','eventos')->where('category',$category)->where('location',$location)->values();
-        
-       
+
+
         foreach ($preEvents as $i) {
-        
-            $eventDateStart = (new DateTime($i->date_start))->format('d-m-Y');           
+
+            $eventDateStart = (new DateTime($i->date_start))->format('d-m-Y');
             $eventDateEnd = (new DateTime($i->date_end))->format('d-m-Y');
 
             $bs = new Carbon($date_start);
@@ -296,7 +296,7 @@ class StaticApp extends ComponentBase
             $diffStart = $bs->diffInDays($es,false);
             $diffEnd = $be->diffInDays($ee,false);
 
-          
+
            if($diffStart>=0  && $diffEnd<1 ) {
             $validEvents->push($i);
            }
@@ -315,10 +315,10 @@ class StaticApp extends ComponentBase
 
         $event = $pages->where("is_hidden",0)->where("url",$url)->values();
 
-       
+
         $event[0]->date_start_pretty_num = (new DateTime($event[0]->date_start))->format('d.m.y');
         $event[0]->date_end_pretty_num = (new DateTime($event[0]->date_end))->format('d.m.y');
-       
+
         return $event;
     }
 
@@ -327,10 +327,10 @@ class StaticApp extends ComponentBase
         $theme = Theme::getActiveTheme();
         $pagesList = Page::listInTheme($theme, false);
         $pages =  new \Illuminate\Support\Collection($pagesList);
-        
+
         $events = $pages->where("is_hidden",0)->where("template","eventos");
 
-        foreach ($events as $event) {         
+        foreach ($events as $event) {
             $event->date_start_ppretty = (new DateTime($event->date_start))->format('d');
             $mes = intval( (new DateTime($event->date_start))->format('m') )-1;
             $mesString = ['ENE','FEB','MAR','ABR','MAY','JUN','JUL','AGO','SEP','OCT','NOV','DIC',];
@@ -341,7 +341,7 @@ class StaticApp extends ComponentBase
 
         return $events;
 
-    } 
+    }
 
 
     public function municipalitiesList()
@@ -349,9 +349,9 @@ class StaticApp extends ComponentBase
         $theme = Theme::getActiveTheme();
         $pages = Page::listInTheme($theme, false);
         $events =  new \Illuminate\Support\Collection($pages);
-        
+
         $result = $events->where("is_hidden",0)->where("subtemplate","municipios")->values();
-        
+
         return $result;
     }
 
@@ -360,9 +360,9 @@ class StaticApp extends ComponentBase
         $theme = Theme::getActiveTheme();
         $pages = Page::listInTheme($theme, false);
         $experiences =  new \Illuminate\Support\Collection($pages);
-        
+
         $result = $experiences->where("is_hidden",0)->where("template","experiences");
-        
+
         return $result;
     }
 
@@ -371,10 +371,10 @@ class StaticApp extends ComponentBase
         $theme = Theme::getActiveTheme();
         $pages = Page::listInTheme($theme, false);
         $experiences =  new \Illuminate\Support\Collection($pages);
-        
-       
+
+
         $result = $experiences->where("is_hidden",0)->where('template','experiences')->where('days',$days)->where('interest',$interest)->where('tvisit',$tvisit)->values();
-       
+
         return $result;
     }
 
@@ -383,10 +383,10 @@ class StaticApp extends ComponentBase
         $theme = Theme::getActiveTheme();
         $pages = Page::listInTheme($theme, false);
         $rutas =  new \Illuminate\Support\Collection($pages);
-        
-       
+
+
         $result = $rutas->where("is_hidden",0)->where('template','rutas')->where('category',$category)->where('days',$days)->where('location',$location)->values();
-       
+
         return $result;
     }
 
@@ -397,10 +397,10 @@ class StaticApp extends ComponentBase
         $pages =  new \Illuminate\Support\Collection($pagesList);
 
         $event = $pages->where("is_hidden",0)->where("url",$url)->values();
-      
+
         //$event[0]->date_start_pretty_num = (new DateTime($event[0]->date_start))->format('d.m.y');
         //$event[0]->date_end_pretty_num = (new DateTime($event[0]->date_end))->format('d.m.y');
-       
+
         return $event;
     }
 
@@ -414,16 +414,16 @@ class StaticApp extends ComponentBase
 
         $baseHtml = '
         <meta charset="utf-8"/>
-       
-       
+
+
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
         <link rel="stylesheet" href="http://cadizturismo.jekyllme.com/plugins/rainlab/pages/assets/css/style-comarcas.css"/>
         <link rel="stylesheet" href="http://cadizturismo.jekyllme.com/plugins/rainlab/pages/assets/css/style-village.css"/>
         <link rel="stylesheet" href="http://cadizturismo.jekyllme.com/plugins/rainlab/pages/assets/css/style-event.css"/>
-        <link rel="stylesheet" href="http://cadizturismo.jekyllme.com/plugins/rainlab/pages/assets/css/style.css"/> 
+        <link rel="stylesheet" href="http://cadizturismo.jekyllme.com/plugins/rainlab/pages/assets/css/style.css"/>
         <style>
                 .section-txt, .section-img, .header-event {
-                    
+
                     display:block!important;
                     border: solid 1px white!important;
 
@@ -441,36 +441,36 @@ class StaticApp extends ComponentBase
 
         </style>
         ';
-        
+
         $preexperiencemarkup = $baseHtml.$experience[0]['markup'];
-        
+
         $preexperiencemarkup2 = str_replace('.svg', '.png', $preexperiencemarkup);
 
         $preexperiencemarkup3 = str_replace('</p>', '</p><br/><br/>', $preexperiencemarkup2);
-        
+
         $experiencemarkup = str_replace('/storage/', 'http://cadizturismo.jekyllme.com/storage/', $preexperiencemarkup3);
 
         //dd(1);
         //
-        
+
         //$experiencemarkup = '<p>Hola</p><p>Adios</p>';
 
         /*$interest1 = explode(' y ', $experience )[0];
         $interest2 = explode(' y ', $experience )[1];*/
 
         $data = array('experiencemarkup' => $experiencemarkup );
-       
-        
+
+
         //$pdf = PDFS::loadView('pdf.experience', compact('data'))->setOption('page-size', 'A4')->setOption('dpi',300);
         //$pdf_data = $pdf->output();
-        
+
         //$pdf = PDFS::generateFromHtml($experiencemarkup,  '/tmp/experience3.pdf');
         //
         //$pdf = PDFS::generate('http://google.com', '/tmp/experience343.pdf');
 
         //$pdf_data = $pdf;
         //
-        
+
         // Load the template
         //$template = File::get(themes_path('default/content/static-pages/pdftest.htm'));
 
@@ -492,30 +492,30 @@ class StaticApp extends ComponentBase
             'Content-Type'        => 'application/pdf',
             'Content-Disposition' => "filename.pdf",
         ]);*/
-               
+
         //$renderedHtml = Twig::parse($template);
         //
         //
         //
-        
+
         //$nombre = 'Andres';
         //$template = '<h1>Hola</h1>';
         //$renderedHtml = Twig::parse($template);
-        
+
         $pdf_data = PDFS::loadHTML($experiencemarkup)
-           
-          
+
+
             ->setPaper('a4')
             ->output();
 
         //$pdf_data = PDFS::getOutput('http://cadizturismo.jekyllme.com/es/experiencias/cinco');
-        
+
         $experience = 'experiencia';
 
         $dataemail = array('experience' => 'experience');
 
         Mail::send('mails.experience', $dataemail, function($message) use ($pdf_data, $contactName, $sendContact, $sendTo)
-        {   
+        {
 
             $message->from($sendContact, $contactName);
             $message->to($sendTo);
@@ -534,11 +534,11 @@ class StaticApp extends ComponentBase
         $theme = Theme::getActiveTheme();
         $pages = Page::listInTheme($theme, false);
         $publications =  new \Illuminate\Support\Collection($pages);
-        
+
         $result = $publications->where("is_hidden",0)->where("subtemplate","publicaciones");
-        
+
         return $result;
     }
 
-   
+
 }
