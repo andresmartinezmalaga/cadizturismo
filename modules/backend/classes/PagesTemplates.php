@@ -181,7 +181,7 @@ class PagesTemplates
   <div class="section-txt-village">
     <div class="txt-container">
 
-      <p class="title">TITULAR</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+      <h3 class="title">TITULAR</h3><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
 
       <p class="desc">Escribe aquí el contenido a desarrollar y agrega una imagen adicional si lo necesitas. </p>
     </div>
@@ -200,8 +200,8 @@ class PagesTemplates
   <div class="section-txt-village">
     <div class="txt-container">
 
-      <p class="title">MUNICIPIOS DE
-        <br>(COMARCA)</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+      <h3 class="title">MUNICIPIOS DE
+        <br>(COMARCA)</h3><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
     </div>
   </div>
   <div class="all-exps">
