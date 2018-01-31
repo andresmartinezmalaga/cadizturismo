@@ -429,6 +429,15 @@ class StaticApp extends ComponentBase
           text-align: center !important;
         }
 
+        .header-event {
+          display: table !important;
+        }
+
+        .header-txt {
+          display: table-cell !important;
+          text-align: center !important;
+        }
+
           .brush {
             display: none !important;
           }
