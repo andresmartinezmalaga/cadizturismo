@@ -432,7 +432,7 @@ class StaticApp extends ComponentBase
 
                 .section-txt .big-number-container span, .section-txt .txt-container p {
                      border: solid 1px red!important;
-                     display:block!important;
+                     display: block!important;
                 }
 
                 .section-txt .big-number-container, .section-txt .txt-container, .section-txt .big-number-container span, .section-txt .txt-container p {
@@ -445,9 +445,9 @@ class StaticApp extends ComponentBase
                 }
 
                 .section-txt .txt-container {
-                    margin: 40px auto 0px auto;
+                    margin: 40px 0px !important;
                     width: 100% !important;
-                    max-width: auto !important;
+                    max-width: none !important;
                 }
 
 
