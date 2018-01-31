@@ -498,6 +498,10 @@ class StaticApp extends ComponentBase
                   margin-bottom: 0px !important;
                 }
 
+                .section-txt .txt-container .municipios img  {
+                  display: none !important;
+                }
+
         </style>
         ';
 
