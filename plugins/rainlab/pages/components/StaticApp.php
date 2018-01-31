@@ -573,4 +573,15 @@ class StaticApp extends ComponentBase
     }
 
 
+    public function newList()
+    {
+        $theme = Theme::getActiveTheme();
+        $pages = Page::listInTheme($theme, false);
+        $news =  new \Illuminate\Support\Collection($pages);
+        
+        $result = $news->where("is_hidden",0)->where("subtemplate","noticias");
+        
+        return $result;
+    }
+   
 }

@@ -120,8 +120,6 @@ class Page extends ContentBase
 
     public $pageTempl;
 
-
-
     /**
      * Creates an instance of the object and associates it with a CMS theme.
      * @param array $attributes
@@ -137,6 +135,33 @@ class Page extends ContentBase
 
         $this->pageTempl = New PagesTemplates();
         
+    }
+    
+
+    public function getNewsIdiomasOptions(){
+        return [
+            'ALEMÁN' => 'ALEMÁN',
+            'CHECO' => 'CHECO',
+            'CHINO' => 'CHINO',
+            'DANÉS' => 'DANÉS',
+            'HISPANOAMÉRICA' => 'HISPANOAMÉRICA',
+            'ESTONIO' => 'ESTONIO',
+            'FINLANDÉS' => 'FINLANDÉS',
+            'FLAMENCO' => 'FLAMENCO',
+            'FRANCÉS' => 'FRANCÉS',
+            'HEBREO' => 'HEBREO',
+            'HOLANDÉS' => 'HOLANDÉS',
+            'HÚNGARO' => 'HÚNGARO',
+            'INGLÉS' => 'INGLÉS',
+            'ITALIANO' => 'ITALIANO',
+            'JAPONÉS' => 'JAPONÉS',
+            'NORUEGO' => 'NORUEGO',
+            'POLACO' => 'POLACO',
+            'PORTUGUÉS' => 'PORTUGUÉS',
+            'RUSO' => 'RUSO',
+            'SUECO' => 'SUECO',
+            'UCRANIANO' => 'UCRANIANO'
+        ];
     }
 
     public function getPublicationsType(){
