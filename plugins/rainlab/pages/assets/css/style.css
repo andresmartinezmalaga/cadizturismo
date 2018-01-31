@@ -2184,7 +2184,7 @@ html, body {
     text-align: center; }
   .section-txt .big-number-container, .section-txt-comarca .big-number-container {
     margin-right: 0px !important; }
-  .section-txt .title, .section-txt .desc, .section-txt-comarca .title, .section-txt-comarca .desc {
+  .section-txt .title, .section-txt-comarca .title {
     text-align: center !important; }
   .section-txt .municipios, .section-txt-comarca .municipios {
     justify-content: center !important; }
