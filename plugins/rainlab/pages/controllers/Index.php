@@ -263,11 +263,11 @@ class Index extends Controller
                 $object['markup'] = PagesTemplates::getTPublicaciones();
             }
 
-            if($pageFileName == 'prensa-nacional.htm' && $templateMarkup ==''){
+            if($pageFileName == 'sala-prensa-prensa.htm' && $templateMarkup ==''){
                 $object['markup'] = PagesTemplates::getTPrensa();
             }
 
-            if($pageFileName == 'reportaje.htm' && $templateMarkup ==''){
+            if($pageFileName == 'sala-prensa-reportajes.htm' && $templateMarkup ==''){
                 $object['markup'] = PagesTemplates::getTReportaje();
             }
 
@@ -394,7 +394,6 @@ class Index extends Controller
             $object->setDefaultLayout($parentPage);
         }
 
-
         // Andrés Martínez : add subtype to pages type, when we need change fields.yaml
         if($parent == 'playas') {
 
@@ -404,8 +403,18 @@ class Index extends Controller
 
             $widget = $this->makeObjectFormWidget($type, $object,null,'publicaciones');
 
+        } elseif($parent == 'sala-prensa-prensa' ){
+
+            $widget = $this->makeObjectFormWidget($type, $object,null,'noticias');
+
+        } elseif($parent == 'sala-prensa-reportajes'){
+
+            $widget = $this->makeObjectFormWidget($type, $object,null,'reportajes');
+
         } else {
+           
            $widget = $this->makeObjectFormWidget($type, $object);
+        
         }
 
         $this->vars['objectPath'] = '';
@@ -654,6 +663,14 @@ class Index extends Controller
            $pageFieldsYaml = '~/plugins/rainlab/pages/classes/page/publicacionesfields.yaml';
         }
 
+        if($subtype == 'noticias'){
+           $pageFieldsYaml = '~/plugins/rainlab/pages/classes/page/noticiasfields.yaml';
+        }
+
+        if($subtype == 'reportajes'){
+           $pageFieldsYaml = '~/plugins/rainlab/pages/classes/page/reportajesfields.yaml';
+        }
+
         $formConfigs = [
             'page'          => $pageFieldsYaml,
             'experience'    => '~/plugins/rainlab/pages/classes/experience/fields.yaml',
@@ -881,16 +898,20 @@ class Index extends Controller
                 }
             }
 
-
-
-
         // Andrés Martínez : change $formWidget that will be save
         if($filterSubTemplate == 'playas'){
             $formWidget = $this->makeObjectFormWidget($type, $object,null,'playas');
-        
+
         } elseif($filterSubTemplate == 'publicaciones'){
             $formWidget = $this->makeObjectFormWidget($type, $object,null,'publicaciones');
         
+        } elseif($filterSubTemplate == 'sala-prensa-prensa'){
+            $formWidget = $this->makeObjectFormWidget($type, $object,null,'noticias');
+
+        
+        } elseif($filterSubTemplate == 'sala-prensa-reportajes'){
+            $formWidget = $this->makeObjectFormWidget($type, $object,null,'reportajes');
+
         } else {
             $formWidget = $this->makeObjectFormWidget($type, $object);
         }
@@ -942,10 +963,10 @@ class Index extends Controller
 
             $objectData['placeholders'] = $placeholders;
 
-            // Andrés Martínez : set layout default to new pages except municipios - rutas - playas - publicaciones
+            // Andrés Martínez : set layout default to new pages except municipios - rutas - playas - publicaciones - sala-prensa
             $getFileName = $object['fileName'];
 
-            if($getFileName != 'municipios.htm' && $getFileName != 'rutas.htm' && $getFileName != 'playas.htm' && $getFileName != 'publicaciones.htm'){
+            if($getFileName != 'municipios.htm' && $getFileName != 'rutas.htm' && $getFileName != 'playas.htm' && $getFileName != 'publicaciones.htm' && $getFileName != 'sala-prensa.htm'){
                 $objectData['settings']['viewBag']['layout'] = 'default';
             }
 
@@ -966,6 +987,13 @@ class Index extends Controller
 
                 $objectData['settings']['viewBag']['layout'] = 'publicacion';
             }
+
+            if($getFileName == 'sala-prensa.htm' ){
+
+                $objectData['settings']['viewBag']['layout'] = 'prensa';
+            }
+
+
 
             // Andrés Martínez : add cover url
             if($filterSubTemplate == 'playas' || $filterSubTemplate == 'municipios'){
@@ -1104,6 +1132,12 @@ class Index extends Controller
         
         }elseif($object->subtemplate == 'publicaciones'){
             $widget = $this->makeObjectFormWidget($type, $object, null, 'publicaciones');
+        
+        } elseif($object->subtemplate == 'sala-prensa-prensa'){
+            $widget = $this->makeObjectFormWidget($type, $object, null, 'noticias');
+        
+        } elseif($object->subtemplate == 'sala-prensa-reportajes'){
+            $widget = $this->makeObjectFormWidget($type, $object, null, 'reportajes');
         
         } else {
             $widget = $this->makeObjectFormWidget($type, $object);

@@ -4,7 +4,7 @@
 
 fields:
     viewBag[title]:
-        span: left
+        span: full
         label: rainlab.pages::lang.editor.title
         placeholder: rainlab.pages::lang.editor.new_title
         attributes:
@@ -20,21 +20,14 @@ fields:
             prefixInput: input[data-parent-url]
         cssClass: ocl
 
-    viewBag[media]:
-        span: right
-        label: 'Media'
+    viewBag[descrptn]:
+        span: full
+        label: 'Descripción (max 120 caracteres)'
 
-    viewBag[date]:
-        label: 'Fecha de publicación'
-        type: datepicker
-        mode: date 
-   
-    viewBag[idioma]:
-        span: right
-        label: 'Idioma'
-        placeholder: 'categoría'
-        type: dropdown
-        options: getNewsIdiomasOptions
+    viewBag[urlExternaZip]:
+        span: left
+        placeholder: /
+        label: 'URL para descargar el zip'
 
     toolbar:
         type: partial
@@ -48,7 +41,7 @@ fields:
 
     viewBag[subtemplate]:
         label: 'template'
-        default: 'noticias'
+        default: 'reportajes'
         cssClass: ocl
 
     viewBag[cover]:
