@@ -165,7 +165,7 @@ class Experience extends ContentBase
           </div>
 
           <div class="txt-container">
-            <p class="title">TITULAR 1</p>
+            <h3 class="title">TITULAR 1</h3>
             <p class="desc">Escribe aquí el contenido a desarrollar y agrega una imagen adicional si lo necesitas.</p>
           </div>
         </div>
@@ -180,7 +180,7 @@ class Experience extends ContentBase
             <span class="step">2</span>
           </div>
           <div class="txt-container">
-            <p class="title">TITULAR 2</p>
+            <h3 class="title">TITULAR 2</h3>
             <p class="desc">Escribe aquí el contenido a desarrollar y agrega una imagen adicional si lo necesitas.</p>
           </div>
         </div>
@@ -196,7 +196,7 @@ class Experience extends ContentBase
           </div>
 
           <div class="txt-container">
-            <p class="title">TITULAR 3</p>
+            <h3 class="title">TITULAR 3</h3>
             <p class="desc">Escribe aquí el contenido a desarrollar y agrega una imagen adicional si lo necesitas.</p>
           </div>
         </div>
@@ -211,7 +211,7 @@ class Experience extends ContentBase
           </div>
 
           <div class="txt-container">
-            <p class="title">TITULAR 4</p>
+            <h3 class="title">TITULAR 4</h3>
             <p class="desc">Escribe aquí el contenido a desarrollar y agrega una imagen adicional si lo necesitas.</p>
             <div class="municipios">
                 <div class="municipio">
