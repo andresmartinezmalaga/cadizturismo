@@ -76,6 +76,12 @@
     transform: $value;
     }
 
+.section-txt, .section-txt-village p {
+  color: #9B9B9B;
+  font-size: 18px;
+  line-height: 33px;
+  margin-bottom: 30px;
+}
 
   @media (max-width: 725px) {
     .slidemenu {

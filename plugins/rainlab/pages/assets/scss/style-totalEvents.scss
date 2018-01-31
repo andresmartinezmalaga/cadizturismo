@@ -479,3 +479,12 @@ form, .inputs-container {
     text-align: center;
     z-index: 100;
     margin-bottom: 50px; }
+
+#todos-eventos {
+  .icons {
+    flex-wrap: nowrap !important;
+    .icon-pair {
+      justify-content: flex-start;
+    }
+  }
+}
