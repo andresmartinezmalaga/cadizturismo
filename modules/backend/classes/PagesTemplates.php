@@ -285,7 +285,7 @@ class PagesTemplates
   <div class="section-txt-village">
     <div class="txt-container">
 
-      <p class="title">TITULAR</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+      <h3 class="title">TITULAR</h3><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
 
       <p class="desc">Escribe aquí el contenido a desarrollar y agrega una imagen adicional si lo necesitas.</p>
     </div>
@@ -305,8 +305,8 @@ class PagesTemplates
   <div class="section-txt-village">
     <div class="txt-container">
 
-      <p class="title">EXPERIENCIAS
-        <br>EN (MUNICIPIO)</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+      <h3 class="title">EXPERIENCIAS
+        <br>EN (MUNICIPIO)</h3><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
     </div>
   </div>
   <div class="all-exps">
@@ -418,9 +418,9 @@ class PagesTemplates
   <div class="section-txt-comarca">
     <!-- NUEVO DIV -->
     <div class="txt-container">
-      <p class="title">PLAYAS
+      <h3 class="title">PLAYAS
         <br>LLENAS
-        <br>DE LUZ</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+        <br>DE LUZ</h3><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
 
       <p class="desc"><strong>La provincia reúne 260 kilómetros de costa y 138 kilómetros de playas: calas, ensenadas, arenales de varios kilómetros.</strong> Hay playas con historia como la de Trafalgar, frente a la que se libró la famosa batalla y playas de película como la de La Caleta donde se grabaron escenas del 007. Hay playas pioneras en Europa como la Victoria, en conseguir la certificación de gestión medioambiental de la UE y playas de colores como las de Tarifa, con el vértigo de los fly-surf y sus cometas. Playas ideales para la práctica del windsurf; igualmente la pesca submarina goza de numerosos adeptos entre las transparentes aguas de sus numerosas playas: Los Lances, Bolonia, y Valdevaqueros entre otras. En total, 83 playas distintas.</p>
 
@@ -449,7 +449,7 @@ class PagesTemplates
   <div class="section-txt-village">
     <div class="txt-container">
 
-      <p class="title">TITULAR 1</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+      <h3 class="title">TITULAR 1</h3><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
 
       <p class="desc">Escribe aquí el contenido a desarrollar y agrega una imagen adicional si lo necesitas. </p>
     </div>
@@ -468,9 +468,9 @@ class PagesTemplates
   <div class="section-txt-village">
     <div class="txt-container">
 
-      <p class="title">QUÉ
+      <h3 class="title">QUÉ
         <br>HACER EN LA PLAYA
-        <br>DE (NOMBRE)</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
+        <br>DE (NOMBRE)</h3><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
   </div>
   <div class="all-exps" id="exps-playa">
     <div class="all-events-container">
@@ -570,8 +570,8 @@ class PagesTemplates
   <div class="section-txt-comarca">
     <!-- NUEVO DIV -->
     <div class="txt-container">
-      <p class="title">CÁDIZ ES
-        <br>NATURALEZA</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+      <h3 class="title">CÁDIZ ES
+        <br>NATURALEZA</h3><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
 
       <p class="desc">Conoce una de las provincias con mayor diversidad de España. 6 parques naturales que descubrir por tierra o mar, todos ellos escenarios perfectos para disfrutar de la experiencia que necesitas.</p>
     </div>
@@ -628,8 +628,8 @@ class PagesTemplates
   <div class="section-txt-village">
     <div class="txt-container">
 
-      <p class="title">EL ENCANTO
-        <br>DE LA RUTA</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+      <h3 class="title">EL ENCANTO
+        <br>DE LA RUTA</h3><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
 
       <p class="desc">La ruta de Vía Verde de la Sierra es una ruta natural que atraviesa una antigua estructura ferroviaria en desuso reconvertida ahora en trayecto turístico. Una enriquecedora excursión por plena naturaleza a través de las sierras Béticas andaluzas.</p>
 
@@ -655,9 +655,9 @@ class PagesTemplates
   <div class="section-txt-village">
     <div class="txt-container">
 
-      <p class="title">DISFRUTA LA
+      <h3 class="title">DISFRUTA LA
         <br>VÍA VERDE
-        <br>DE LA MANO DE...</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
+        <br>DE LA MANO DE...</h3><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
   </div>
   <div class="all-exps" id="exps-playa">
     <div class="all-events-container">
@@ -717,7 +717,7 @@ class PagesTemplates
     <!-- TXT-->
     <div class="section-txt-village">
       <div class="txt-container">
-              <p class="title">EL PARAÍSO DE <br> LAS AVES</p>
+              <h3 class="title">EL PARAÍSO DE <br> LAS AVES</h3>
               <img class="separator" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
               <p class="desc">Sé testigo de la mayor migración de aves de Europa entre dos mares y dos continentes. </p>
       </div>
@@ -738,7 +738,7 @@ class PagesTemplates
 
     <div class="section-txt-village">
       <div class="txt-container">
-              <p class="title">3 IDEAS PENSADAS <br> ESPECIALMENTE <br> PARA TI</p>
+              <h3 class="title">3 IDEAS PENSADAS <br> ESPECIALMENTE <br> PARA TI</h3>
               <img class="separator" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
       </div>
     </div>
@@ -797,7 +797,7 @@ class PagesTemplates
     </div>
     <div class="main-section-comarcas">
       <div class="main-txt">
-        <p class="title">ENCUENTRA UN <br> LUGAR MÁGICO</p>
+        <h3 class="title">ENCUENTRA UN <br> LUGAR MÁGICO</h3>
         <img class="separator" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
         <p class="desc">Encontrarás un lugar mágico que trasciende a las descripciones. Su paisaje montañoso y multicolor, sus recónditas sendas, la gracia y el embrujo de sus espacios naturales... te envolverán en un mundo tan especial que no podrás olvidar.</p>
         <p class="desc">El enclave natural de Cádiz conquista al visitante más atrevido, al que desea disfrutar activamente de las ventajas de su situación geográfica o al que prefiere deleitarse con sus rincones más escondidos. Te conquistará.</p>
@@ -894,7 +894,7 @@ class PagesTemplates
     <!-- TXT-->
     <div class="section-txt-village">
       <div class="txt-container">
-              <p class="title">TITULAR</p>
+              <h3 class="title">TITULAR</h3>
               <img class="separator" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
               <p class="desc">Escribe aquí el contenido a desarrollar y agrega una imagen adicional si lo necesitas.</p>
       </div>
@@ -914,7 +914,7 @@ class PagesTemplates
       </div>
     <div class="section-txt-village">
       <div class="txt-container">
-              <p class="title">3 RUTAS QUE <br> HACER EN <br> (ESPACIO NATURAL)</p>
+              <h3 class="title">3 RUTAS QUE <br> HACER EN <br> (ESPACIO NATURAL)</h3>
               <img class="separator" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
       </div>
     </div>
@@ -1006,8 +1006,8 @@ class PagesTemplates
     <div class="section-txt-comarca">
       <!-- NUEVO DIV -->
       <div class="txt-container">
-        <p class="title">CREA MOMENTOS
-          <br>INOLVIDABLES</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+        <h3 class="title">CREA MOMENTOS
+          <br>INOLVIDABLES</h3><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
 
         <p class="desc">En Cádiz el concepto del tiempo se desploma con la risa de su gente y los planes para disfrutar en todo momento. Atardeceres en la playa, el arte del tapeo en el casco antiguo o perderse en la Sierra de Grazalema, no esperes a que te lo cuenten.</p>
       </div>
@@ -1064,9 +1064,9 @@ class PagesTemplates
     <div class="section-txt-village">
       <div class="txt-container">
 
-        <p class="title">EXPERIENCIAS
+        <h3 class="title">EXPERIENCIAS
           <br>PARA TODOS
-          <br>LOS SENTIDOS</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+          <br>LOS SENTIDOS</h3><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
 
         <p class="desc">El aroma de sus mercados, el color de sus calles, la simpatía y amabilidad de sus gentes, el sabor de sus productos mediterráneos, sentir la brisa y el sol crean un entorno perfecto para realizar tus compras.</p>
       </div>
@@ -1085,9 +1085,9 @@ class PagesTemplates
     <div class="section-txt-village">
       <div class="txt-container">
 
-        <p class="title">3 LUGARES DONDE
+        <h3 class="title">3 LUGARES DONDE
           <br>CONSEGUIR LO
-          <br>QUE BUSCAS</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
+          <br>QUE BUSCAS</h3><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
     </div>
     <div class="all-exps" id="exps-playa">
       <div class="all-events-container">
@@ -1147,7 +1147,7 @@ class PagesTemplates
     <!-- TXT-->
     <div class="section-txt-village">
       <div class="txt-container">
-              <p class="title">VIVE COMO <br> UN GADITANO</p>
+              <h3 class="title">VIVE COMO <br> UN GADITANO</h3>
               <img class="separator" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
               <p class="desc">Conoce la provincia a través de los diferentes rincones en los que parar a disfrutar de la vida gaditana.</p>
       </div>
@@ -1168,7 +1168,7 @@ class PagesTemplates
 
     <div class="section-txt-village">
       <div class="txt-container">
-              <p class="title">3 PLANES QUE <br> SEGURO TE <br> INTERESAN</p>
+              <h3 class="title">3 PLANES QUE <br> SEGURO TE <br> INTERESAN</h3>
               <img class="separator" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
       </div>
     </div>
@@ -1228,7 +1228,7 @@ class PagesTemplates
     <!-- TXT-->
     <div class="section-txt-village">
       <div class="txt-container">
-              <p class="title">DIVERSIÓN <br> PARA TODOS</p>
+              <h3 class="title">DIVERSIÓN <br> PARA TODOS</h3>
               <img class="separator" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
               <p class="desc">Un sin fin de propuestas hechas para el máximo disfrute, atrévete a conocer la oferta y llévate el mejor recuerdo posible.</p>
       </div>
@@ -1249,7 +1249,7 @@ class PagesTemplates
 
     <div class="section-txt-village">
       <div class="txt-container">
-              <p class="title">3 IDEAS PENSADAS <br> ESPECIALMENTE <br> PARA TI</p>
+              <h3 class="title">3 IDEAS PENSADAS <br> ESPECIALMENTE <br> PARA TI</h3>
               <img class="separator" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
       </div>
     </div>
@@ -1307,7 +1307,7 @@ class PagesTemplates
     <div class="section-txt-comarca">
       <!-- NUEVO DIV -->
       <div class="txt-container">
-        <p class="title">CON MUCHO ARTE</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+        <h3 class="title">CON MUCHO ARTE</h3><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
         <p class="desc">El viento de levante y los atardeceres de Cádiz han sido testigo del paso de las diferentes civilizaciones por sus municipios. Prepárate para viajar en el tiempo y conoce el patrimonio cultural que ha dejado la esencia de la historia del mundo en la provincia.</p>
       </div>
     </div>
@@ -1374,7 +1374,7 @@ class PagesTemplates
     <!-- TXT-->
     <div class="section-txt-village">
       <div class="txt-container">
-              <p class="title">LA HISTORIA DEL <br> MUNDO PASA <br> POR CÁDIZ</p>
+              <h3 class="title">LA HISTORIA DEL <br> MUNDO PASA <br> POR CÁDIZ</h3>
               <img class="separator" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
               <p class="desc">Castillos, baluartes o teatros son algunos de los muchos monumentos que vas a descubrir en una  provincia repleta de episodios históricos.</p>
       </div>
@@ -1395,7 +1395,7 @@ class PagesTemplates
 
     <div class="section-txt-village">
       <div class="txt-container">
-              <p class="title">3 LUGARES <br> PARA DESCUBRIR <br> HISTORIA</p>
+              <h3 class="title">3 LUGARES <br> PARA DESCUBRIR <br> HISTORIA</h3>
               <img class="separator" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
       </div>
     </div>
@@ -1455,7 +1455,7 @@ class PagesTemplates
     <!-- TXT-->
     <div class="section-txt-village">
       <div class="txt-container">
-              <p class="title">EL AIRE DE <br> LA CALLE</p>
+              <h3 class="title">EL AIRE DE <br> LA CALLE</h3>
               <img class="separator" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
               <p class="desc">Conoce la variedad de actividades festivas que se celebran en Cádiz durante el año, entre ellas una de las más conocidas a nivel nacional: el Carnaval. </p>
       </div>
@@ -1476,7 +1476,7 @@ class PagesTemplates
 
     <div class="section-txt-village">
       <div class="txt-container">
-              <p class="title">3 IDEAS PENSADAS <br> ESPECIALMENTE <br> PARA TI</p>
+              <h3 class="title">3 IDEAS PENSADAS <br> ESPECIALMENTE <br> PARA TI</h3>
               <img class="separator" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
       </div>
     </div>
@@ -1537,9 +1537,9 @@ class PagesTemplates
     <div class="section-txt-village">
       <div class="txt-container">
 
-        <p class="title">TIERRA
+        <h3 class="title">TIERRA
           <br>FORJADA
-          <br>DE CANTES</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+          <br>DE CANTES</h3><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
 
         <p class="desc">Esta expresión artística es una de las pasiones de la provincia, que vio nacer a muchos de los profesionales más destacados como Camarón de la Isla, Sara Baras o Paco de Lucía.</p>
       </div>
@@ -1558,9 +1558,9 @@ class PagesTemplates
     <div class="section-txt-village">
       <div class="txt-container">
 
-        <p class="title">3 IDEAS PENSADAS
+        <h3 class="title">3 IDEAS PENSADAS
           <br>ESPECIALMENTE
-          <br>PARA TI</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
+          <br>PARA TI</h3><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
     </div>
     <div class="all-exps" id="exps-playa">
       <div class="all-events-container">
@@ -1620,7 +1620,7 @@ class PagesTemplates
     <!-- TXT-->
     <div class="section-txt-village">
       <div class="txt-container">
-              <p class="title">A RITMO DE <br> CHIRIGOTA</p>
+              <h3 class="title">A RITMO DE <br> CHIRIGOTA</h3>
               <img class="separator" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
               <p class="desc">Los teatros en Cádiz cuentan con una gran tradición e historia como refleja el Teatro Manuel Falla. Escenario de una de las fiestas más importantes de la provincia, el carnaval.</p>
       </div>
@@ -1641,7 +1641,7 @@ class PagesTemplates
 
     <div class="section-txt-village">
       <div class="txt-container">
-              <p class="title">3 IDEAS PENSADAS <br> ESPECIALMENTE <br> PARA TI</p>
+              <h3 class="title">3 IDEAS PENSADAS <br> ESPECIALMENTE <br> PARA TI</h3>
               <img class="separator" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
       </div>
     </div>
@@ -1699,8 +1699,8 @@ class PagesTemplates
     <div class="section-txt-comarca">
       <!-- NUEVO DIV -->
       <div class="txt-container">
-        <p class="title">NUESTRA
-          <br>GASTRONOMÍA</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+        <h3 class="title">NUESTRA
+          <br>GASTRONOMÍA</h3><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
 
         <p class="desc">Los fogones de la gastronomía gaditana contienen una rica variedad de fusiones que hacen de ella un sabor único y especial. Descubre la diversidad de platos que cada rincón de la provincia ofrece para degustar de un sin fin de sabores.</p>
       </div>
@@ -1758,7 +1758,7 @@ class PagesTemplates
     <!-- TXT-->
     <div class="section-txt-village">
       <div class="txt-container">
-              <p class="title">LOS FOGONES <br> DEL SUR</p>
+              <h3 class="title">LOS FOGONES <br> DEL SUR</h3>
               <img class="separator" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
               <p class="desc">Descubre la gran costumbre culinaria gaditana que destaca por su gran tradición marinera, fruto de platos conocidos como los cazones y freidurías de pescado. </p>
       </div>
@@ -1779,7 +1779,7 @@ class PagesTemplates
 
     <div class="section-txt-village">
       <div class="txt-container">
-              <p class="title">3 IDEAS PENSADAS <br> ESPECIALMENTE <br> PARA TI</p>
+              <h3 class="title">3 IDEAS PENSADAS <br> ESPECIALMENTE <br> PARA TI</h3>
               <img class="separator" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
       </div>
     </div>
@@ -1839,7 +1839,7 @@ class PagesTemplates
     <!-- TXT-->
     <div class="section-txt-village">
       <div class="txt-container">
-              <p class="title">TIERRA <br> DE VIÑAS</p>
+              <h3 class="title">TIERRA <br> DE VIÑAS</h3>
               <img class="separator" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
               <p class="desc">Bien es conocido la calidad y la dedicación al vino de la provincia de Cádiz. Diversos son los municipios en los que disfrutar de una  ruta por las bodegas y conocer aún más esta pasión.</p>
       </div>
@@ -1860,7 +1860,7 @@ class PagesTemplates
 
     <div class="section-txt-village">
       <div class="txt-container">
-              <p class="title">3 IDEAS PENSADAS <br> ESPECIALMENTE <br> PARA TI</p>
+              <h3 class="title">3 IDEAS PENSADAS <br> ESPECIALMENTE <br> PARA TI</h3>
               <img class="separator" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
       </div>
     </div>
@@ -1919,8 +1919,8 @@ class PagesTemplates
     <div class="section-txt-village">
       <div class="txt-container">
 
-        <p class="title">TERRITORIO
-          <br>GOURMET</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+        <h3 class="title">TERRITORIO
+          <br>GOURMET</h3><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
 
         <p class="desc">La gastronomía de Cádiz cuenta con una oferta Gourmet en productos como el pescado, el queso o la miel que la han convertido en una tendencia culinaria muy apreciada.</p>
       </div>
@@ -1940,9 +1940,9 @@ class PagesTemplates
     <div class="section-txt-village">
       <div class="txt-container">
 
-        <p class="title">3 IDEAS PENSADAS
+        <h3 class="title">3 IDEAS PENSADAS
           <br>ESPECIALMENTE
-          <br>PARA TI</p><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
+          <br>PARA TI</h3><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div>
     </div>
     <div class="all-exps" id="exps-playa">
       <div class="all-events-container">

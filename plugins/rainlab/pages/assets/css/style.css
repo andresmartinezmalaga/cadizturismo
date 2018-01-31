@@ -47,7 +47,7 @@
 input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0 30px #CECECE inset !important; }
 
-.section-txt, .section-txt-village p {
+.section-txt, .section-txt-village, .section-txt-comarca p {
   color: #9B9B9B;
   font-size: 18px;
   line-height: 33px;
