@@ -427,6 +427,7 @@ class StaticApp extends ComponentBase
 
         .header-txt, .txt, .header-container {
           text-align: center !important;
+          font-size: 120px !important;
         }
 
           .brush {
