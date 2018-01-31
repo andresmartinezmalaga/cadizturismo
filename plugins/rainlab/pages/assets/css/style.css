@@ -1969,6 +1969,9 @@ html, body {
 @media (max-width: 600px) {
   .con-encanto {
     font-size: 100px !important; }
+  .header-playa .txt {
+    font-size: 100px !important;
+    line-height: 130px !important; }
   .somos-txt-container p {
     width: 100% !important; }
   .all-exps .search-title-container, .all-events .search-title-container {

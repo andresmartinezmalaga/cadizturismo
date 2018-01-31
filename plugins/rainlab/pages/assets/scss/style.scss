@@ -98,6 +98,7 @@
 
 
   @media (max-width: 725px) {
+
     .slidemenu {
       display: none;
     }
@@ -2150,6 +2151,10 @@ html, body {
 @media (max-width: 600px) {
   .con-encanto {
     font-size: 100px !important;
+  }
+  .header-playa .txt {
+    font-size: 100px !important;
+    line-height: 130px !important;
   }
   .somos-txt-container p {
     width: 100% !important;
