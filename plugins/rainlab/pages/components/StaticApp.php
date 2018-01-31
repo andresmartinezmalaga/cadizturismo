@@ -430,13 +430,12 @@ class StaticApp extends ComponentBase
 
                 }
 
-                .section-txt .big-number-container span, .section-txt .txt-container p {
-                     border: solid 1px red!important;
+                 .section-txt .txt-container p {
                      display: block!important;
+                     font-size: 30px !important;
                 }
 
                 .section-txt .big-number-container, .section-txt .txt-container, .section-txt .big-number-container span, .section-txt .txt-container p {
-                     border: solid 1px red!important;
                     display: inline-block!important;
                 }
 
@@ -445,12 +444,18 @@ class StaticApp extends ComponentBase
                 }
 
                 .section-txt .txt-container {
-                    margin: 40px 0px !important;
+                    margin: 20px 0px !important;
                     width: 100% !important;
                     max-width: none !important;
                 }
 
+                .event-features::after {
+                  content: none !important;
+                }
 
+                .event-features .feature-exp {
+                  display: inline-block !important;
+                }
 
         </style>
         ';
