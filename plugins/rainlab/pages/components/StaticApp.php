@@ -422,7 +422,7 @@ class StaticApp extends ComponentBase
 
           .background-image {
             position: absolute !important;
-            object-fit: cover !important;
+            width: 100%;
             object-position: center !important;
             height: 980px !important;
             text-align: center !important;
