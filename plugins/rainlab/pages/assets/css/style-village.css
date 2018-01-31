@@ -536,7 +536,8 @@
               font-size: 16px;
               line-height: 22px;
               margin-left: 11px;
-              font-family: 'AvenirNext-DemiBold'; }
+              font-family: 'AvenirNext-DemiBold';
+              text-transform: capitalize; }
             .all-exps .all-events-container .event .txt-container .icons .icon-pair img {
               width: 23px;
               height: auto; }
