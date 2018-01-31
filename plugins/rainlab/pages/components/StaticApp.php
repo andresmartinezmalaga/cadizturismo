@@ -627,7 +627,7 @@ class StaticApp extends ComponentBase
         $pages = Page::listInTheme($theme, false);
         $reports =  new \Illuminate\Support\Collection($pages);
 
-        $result = $reports->where("is_hidden",0)->where("subtemplate","sala-prensa-reportaje")->values();
+        $result = $reports->where("is_hidden",0)->where("subtemplate","sala-prensa-reportajes")->values();
 
         return $result;
     }
