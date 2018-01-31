@@ -424,6 +424,10 @@ class StaticApp extends ComponentBase
             position: absolute !important;
             height: 980px !important;
           }
+
+          .brush {
+            display: none !important;
+          }
                 .section-txt, .section-img, .header-event {
                     display:block!important;
                     border: solid 1px white!important;
@@ -470,10 +474,13 @@ class StaticApp extends ComponentBase
 
                 .event-features {
                   background-color: black !important;
+                  display: inline-block !important;
+                  text-align: center !important;
                 }
 
                 .event-features .feature-exp {
                   display: inline-block !important;
+                  margin-top: 50px !important;
                 }
 
                 .section-txt .txt-container .municipios {
