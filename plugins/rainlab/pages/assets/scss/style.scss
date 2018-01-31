@@ -2366,14 +2366,12 @@ html, body {
       text-align: center; }
     .section-txt .big-number-container, .section-txt-comarca .big-number-container {
       margin-right: 0px !important; }
-    .section-txt .title, .section-txt-comarca .title {
-      text-align: center !important; }
     .section-txt .municipios, .section-txt-comarca .municipios {
       justify-content: center !important; }
     .section-txt .separator, .section-txt-comarca .separator {
       display: block;
-      margin-left: auto;
-      margin-right: auto; }
+      margin-left: 0;
+      margin-right: 0; }
   .section-txt-village .txt-container {
     width: 90% !important;
     margin: 0 auto !important; }
@@ -2663,8 +2661,7 @@ html, body {
   .section-txt-comarca .txt-container, .section-txt-village .txt-container {
     padding: 70px 0px 70px 0px !important; }
   .section-txt-comarca .separator, .section-txt-village .separator {
-    display: block;
-    margin: 0px auto 60px auto; }
+    display: block; }
   .main-section-comarcas .main-events-container {
     margin-top: 60px !important; }
   .header, .static-header, .ayuda-header, .about-header, .header-event, .header-village, .header-general, .header-ruta, .header-search {
