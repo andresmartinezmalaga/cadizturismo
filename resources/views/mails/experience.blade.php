@@ -153,7 +153,7 @@
             <table class="img-container" role="panel" width="600" height="353px" cellspacing="0" cellpadding="0" border="0" align="center" style="max-width:600px; width:100%; height: 353px;" bgcolor="#F6F6F6">
                 <tr>
                     <td class="img-td" align="center" valign="top" >
-                      <img src="email-palmar.jpg"/>
+                      <img src="http://cadizturismo.jekyllme.com/storage/app/media/uploaded-files/templates/caballos.jpg"/>
                     </td>
                 </tr>
             </table>
