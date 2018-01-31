@@ -174,7 +174,7 @@ class Page extends ContentBase
 
     public function getBeachCategoriesType(){
         return [
-            'urban' => 'Urban',
+            'urbana' => 'Urbana',
             'virgen' => 'Virgen'
         ];
     }
@@ -187,7 +187,7 @@ class Page extends ContentBase
             'nudista' => 'Nudista',            
             'camping' => 'Camping',
             'restauración' => 'Restauración',            
-            'instalaciones' => 'instalaciones'
+            'instalaciones' => 'Instalaciones'
         ];
     }
 
