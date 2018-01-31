@@ -61,7 +61,9 @@ class Page extends ContentBase
         'categoriea',
         'categorieb',
         'media',
-        'date'
+        'date',
+        'idioma',
+        'idiomas'
     ];
 
     /**
