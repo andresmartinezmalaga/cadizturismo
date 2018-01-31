@@ -432,6 +432,7 @@ class StaticApp extends ComponentBase
           text-align: center !important;
           font-size: 110px !important;
           font-weight: 500;
+          text-transform: uppercase;
         }
 
         .header-event {
@@ -566,7 +567,7 @@ class StaticApp extends ComponentBase
 
         //$renderedHtml = Twig::parse($template);
         //
-        
+
         //$nombre = 'Andres';
         //$template = '<h1>Hola</h1>';
         //$renderedHtml = Twig::parse($template);
