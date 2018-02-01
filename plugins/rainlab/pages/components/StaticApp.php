@@ -47,9 +47,9 @@ class StaticApp extends ComponentBase
         ];
     }
 
+    // sort ok
     public function getEventsCategories(){
       return [
-           'semana santa' => 'Semana Santa',
            'carnaval' => 'Carnaval',
            'congresos' => 'Congresos',
            'cultura' => 'Cultura',
@@ -66,11 +66,13 @@ class StaticApp extends ComponentBase
            'ocio' => 'Ocio',
            'romerías' => 'Romerías',
            'ruta' => 'Ruta',
+           'semana santa' => 'Semana Santa',
            'taller' => 'Taller',
            'teatro' => 'Teatro'
       ];
     }
 
+    // sort ok
     public function getRutasCategories(){
       return [
            'cultura' => 'Cultura',
@@ -81,6 +83,7 @@ class StaticApp extends ComponentBase
       ];
     }
 
+    // sort ok
     public function getMunicipalities(){
         return [
         'alcalá de los gazules' => 'Alcalá de los Gazules',
@@ -526,62 +529,14 @@ class StaticApp extends ComponentBase
 
         $preexperiencemarkup = $baseHtml.$experience[0]['markup'];
 
-         $preexperiencemarkup2 = str_replace('.svg', '.png', $preexperiencemarkup);
+        $preexperiencemarkup2 = str_replace('.svg', '.png', $preexperiencemarkup);
 
-        // $preexperiencemarkup2 = $preexperiencemarkup;
         $preexperiencemarkup3 = str_replace('</p>', '</p><br/><br/>', $preexperiencemarkup2);
 
         $experiencemarkup = str_replace('/storage/', 'http://cadizturismo.jekyllme.com/storage/', $preexperiencemarkup3);
 
-        //dd(1);
-        //
-
-        //$experiencemarkup = '<p>Hola</p><p>Adios</p>';
-
-        /*$interest1 = explode(' y ', $experience )[0];
-        $interest2 = explode(' y ', $experience )[1];*/
-
+        
         $data = array('experiencemarkup' => $experiencemarkup );
-
-
-        //$pdf = PDFS::loadView('pdf.experience', compact('data'))->setOption('page-size', 'A4')->setOption('dpi',300);
-        //$pdf_data = $pdf->output();
-
-        //$pdf = PDFS::generateFromHtml($experiencemarkup,  '/tmp/experience3.pdf');
-        //
-        //$pdf = PDFS::generate('http://google.com', '/tmp/experience343.pdf');
-
-        //$pdf_data = $pdf;
-        //
-
-        // Load the template
-        //$template = File::get(themes_path('default/content/static-pages/pdftest.htm'));
-
-        // Render the template
-        //$renderedHtml = Twig::parse($template);
-
-
-         // Render as a PDF
-        /*$pdf_data = PDFS::loadHTML($renderedHtml)
-            ->setOption('margin-top', 0)
-            ->setOption('margin-bottom', 0)
-            ->setOption('margin-left', 0)
-            ->setOption('margin-right', 0)
-            ->setPaper('letter')
-            ->output();*/
-
-
-        /*return Response::make($pdf, 200, [
-            'Content-Type'        => 'application/pdf',
-            'Content-Disposition' => "filename.pdf",
-        ]);*/
-
-        //$renderedHtml = Twig::parse($template);
-        //
-
-        //$nombre = 'Andres';
-        //$template = '<h1>Hola</h1>';
-        //$renderedHtml = Twig::parse($template);
 
         $pdf_data = PDFS::loadHTML($experiencemarkup)
 
@@ -589,11 +544,9 @@ class StaticApp extends ComponentBase
             ->setPaper('a4')
             ->output();
 
-        //$pdf_data = PDFS::getOutput('http://cadizturismo.jekyllme.com/es/experiencias/cinco');
+        $dataexperience = $experience[0;
 
-        $experience = 'experiencia';
-
-        $dataemail = array('experience' => 'experience');
+        $dataemail = array('experience' => $dataexperience);
 
         Mail::send('mails.experience', $dataemail, function($message) use ($pdf_data, $contactName, $sendContact, $sendTo)
         {

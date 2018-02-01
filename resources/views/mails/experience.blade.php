@@ -137,7 +137,7 @@
                             <tr>
                                 <td align="left" valign="top">
                                     <div class="logo">
-                                        <img class="element0" src="cadiz-logo.jpg" alt="">
+                                        <img class="element0" src="http://cadizturismo.jekyllme.com/storage/app/media/uploaded-files/templates/cadiz-logo.jpg" alt="">
                                     </div>
                                 </td>
                             </tr>
@@ -153,7 +153,7 @@
             <table class="img-container" role="panel" width="600" height="353px" cellspacing="0" cellpadding="0" border="0" align="center" style="max-width:600px; width:100%; height: 353px;" bgcolor="#F6F6F6">
                 <tr>
                     <td class="img-td" align="center" valign="top" >
-                      <img src="http://cadizturismo.jekyllme.com/storage/app/media/uploaded-files/templates/caballos.jpg"/>
+                      <img src="http://cadizturismo.jekyllme.com{{experience.cover}}"/>
                     </td>
                 </tr>
             </table>
@@ -168,7 +168,7 @@
                         <table role="panel" width="600" cellspacing="0" cellpadding="0" border="0" align="center" style="max-width:600px; width:100%;">
                             <tr>
                                 <td width="300" align="center" valign="top" style="padding:10px;">
-                                    <h2>Aquí tienes tu experiencia de “La magia de El Palmar”</h2>
+                                    <h2>Aquí tienes tu experiencia de “{{experience.title}}”</h2>
                                     <p style="max-width: 353px;">Te hemos adjuntado un pdf, descárgalo y lleva siempre contigo tu experiencia, te ayudará a planificar mejor tu viaje y a que descubras lo mejor de Cádiz.</p>
                                 </td>
                             </tr>
@@ -189,22 +189,22 @@
                                 <td width="300" align="center" valign="top" style="padding:10px;">
                                     <div class="social" style="display: inline-block;">
                                       <p style="display: inline-block;">
-                                          <a href="https://www.facebook.com/CadizTurismo"><img src="facebook-icon.jpg" alt="cadiz-facebook"></a>
+                                          <a href="https://www.facebook.com/CadizTurismo"><img src="http://cadizturismo.jekyllme.com/storage/app/media/uploaded-files/templates/facebook-icon.jpg" alt="cadiz-facebook"></a>
                                       </p>
                                         <p style="display: inline-block;">
-                                            <a href="https://twitter.com/CadizTurismo"><img src="twitter-icon.jpg" alt="cadiz-twitter"></a>
+                                            <a href="https://twitter.com/CadizTurismo"><img src="http://cadizturismo.jekyllme.com/storage/app/media/uploaded-files/templates/twitter-icon.jpg" alt="cadiz-twitter"></a>
                                         </p>
                                         <p style="display: inline-block;">
-                                            <a href="https://www.youtube.com/profile?gl=US&user=PatProvTurCadiz"><img src="youtube-icon.jpg"  alt="cadiz-youtube"></a>
+                                            <a href="https://www.youtube.com/profile?gl=US&user=PatProvTurCadiz"><img src="http://cadizturismo.jekyllme.com/storage/app/media/uploaded-files/templates/youtube-icon.jpg"  alt="cadiz-youtube"></a>
                                         </p>
                                         <p style="display: inline-block;">
-                                            <a href="https://www.instagram.com/cadizturismo/"><img src="instagram-icon.jpg"  alt="cadiz-instagram"></a>
+                                            <a href="https://www.instagram.com/cadizturismo/"><img src="http://cadizturismo.jekyllme.com/storage/app/media/uploaded-files/templates/instagram-icon.jpg"  alt="cadiz-instagram"></a>
                                         </p>
                                         <p style="display: inline-block;">
-                                            <a href="https://plus.google.com/+CadizTurismo_Provincia"><img src="google-plus-icon.jpg"  alt="cadiz-google"></a>
+                                            <a href="https://plus.google.com/+CadizTurismo_Provincia"><img src="http://cadizturismo.jekyllme.com/storage/app/media/uploaded-files/templates/google-plus-icon.jpg"  alt="cadiz-google"></a>
                                         </p>
                                         <p style="display: inline-block;">
-                                            <a href="https://www.pinterest.es/cadizturismo/"><img src="pinterest-icon.jpg"  alt="cadiz-pinterest"></a>
+                                            <a href="https://www.pinterest.es/cadizturismo/"><img src="http://cadizturismo.jekyllme.com/storage/app/media/uploaded-files/templates/pinterest-icon.jpg"  alt="cadiz-pinterest"></a>
                                         </p>
                                         <span class="ask" style="margin-bottom: 80px"> <a href="#"><b>¿Dudas o preguntas?</b></a></span>
                                     </div>
