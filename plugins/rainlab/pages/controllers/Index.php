@@ -368,6 +368,8 @@ class Index extends Controller
                 $parentPage = StaticPage::load($this->theme, $parent);
             }
 
+            echo strlen($parent);
+            dd(1);
             $object->setDefaultLayout($parentPage);
         }
 
