@@ -2293,6 +2293,7 @@ html, body {
     order: -1; }
   .languages {
     visibility: hidden;
+    font-size: 16px !important;
     line-height: 31px !important; }
   .show-lang {
     visibility: visible !important; }
