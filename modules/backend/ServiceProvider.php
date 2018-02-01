@@ -92,7 +92,7 @@ class ServiceProvider extends ModuleServiceProvider
         BackendMenu::registerCallback(function ($manager) {
             $manager->registerMenuItems('October.Backend', [
                 'dashboard' => [
-                    'label'       => 'backend::lang.dashboard.menu_label',
+                    'label'       => 'Dashboard',
                     'icon'        => 'icon-dashboard',
                     'iconSvg'     => 'modules/backend/assets/images/estadisticas.svg',
                     'url'         => Backend::url('backend'),
