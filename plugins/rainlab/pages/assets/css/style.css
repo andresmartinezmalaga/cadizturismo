@@ -2603,7 +2603,7 @@ html, body {
     width: 86%; }
   .section-txt .txt-container .desc, .section-txt-village .txt-container .desc {
     font-size: 18px !important;
-    width: 80%;
+    width: 86%;
     margin: 0 auto; }
   .section-txt .txt-container .municipios, .section-txt-village .txt-container .municipios {
     flex-direction: column;
