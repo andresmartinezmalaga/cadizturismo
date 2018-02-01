@@ -119,7 +119,9 @@
 
     </style>
 
-
+	<header>
+		header
+	</header>
     <div class="all-element">
         <div style="max-width: 640px; margin: auto;">
             <!--[if mso]>
@@ -168,7 +170,7 @@
                         <table role="panel" width="600" cellspacing="0" cellpadding="0" border="0" align="center" style="max-width:600px; width:100%;">
                             <tr>
                                 <td width="300" align="center" valign="top" style="padding:10px;">
-                                    <h2 style="text-align:center;">Aquí tienes tu experiencia de “{{experience.title}}”</h2>
+                                    <h2 style="text-align:center;">33Aquí tienes tu experiencia de “{{experience.title}}”</h2>
                                     <p style="max-width: 353px;text-align:center;">Te hemos adjuntado un pdf, descárgalo y lleva siempre contigo tu experiencia, te ayudará a planificar mejor tu viaje y a que descubras lo mejor de Cádiz.</p>
                                 </td>
                             </tr>
@@ -225,3 +227,5 @@
             <![endif]-->
         </div>
     </div>
+
+    <footer>footer</footer>
