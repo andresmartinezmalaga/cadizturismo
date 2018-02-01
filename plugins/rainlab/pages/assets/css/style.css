@@ -2982,7 +2982,9 @@ footer {
 .aviso-legal-container {
   width: auto;
   max-width: 80%;
-  margin: 170px auto 70px auto; }
+  margin: 0px auto;
+  padding-top: 170px;
+  padding-bottom: 70px; }
   .aviso-legal-container h1 {
     color: #464646;
     border-bottom: 2px solid #464646;
