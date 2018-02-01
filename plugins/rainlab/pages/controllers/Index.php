@@ -999,14 +999,11 @@ class Index extends Controller
 
             }    
 
-            echo $getFileName;
-            
-            dd(1);
             
             if(
-                $getFileName == 'naturaleza-via-verde' ||
+                $getFileName == 'naturaleza-via-verde.htm' ||
                 $getFileName == 'naturaleza/via-verde' ||
-                $getFileName == 'naturaleza-birdwatching' ||
+                $getFileName == 'naturaleza-birdwatching.htm' ||
                 $getFileName == 'naturaleza/birdwatching' ||
                 count($amunicipios) > 1 ||
                 count($acomarcas) > 1 ||
