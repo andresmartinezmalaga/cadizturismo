@@ -42,7 +42,7 @@ class MailBrandSetting extends Model
     const CACHE_KEY = 'system::mailbrand.custom_css';
 
     const WHITE_COLOR = '#fff';
-    const BODY_BG = '#f5f8fa';
+    const BODY_BG = '#fff';
     const PRIMARY_BG = '#3498db';
     const POSITIVE_BG = '#175DA3';
     const NEGATIVE_BG = '#ab2a1c';
