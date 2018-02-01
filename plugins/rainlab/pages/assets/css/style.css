@@ -63,6 +63,15 @@ input:-webkit-autofill {
 .section-txt .title, .section-txt-village .title, .section-txt-comarca .title {
   width: 58%; }
 
+.section-txt h3, .section-txt-village h3, .section-txt-comarca h3 {
+  font-family: 'AvenirNext-DemiBold';
+  font-size: 64px;
+  color: #4A4A4A;
+  line-height: 65px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  width: 58%; }
+
 .all-exps .all-events-container .event p {
   font-size: 18px;
   line-height: 20px;
