@@ -3050,3 +3050,7 @@ footer {
 .cc-btn:hover, .cc-btn:focus, .cc-btn:active {
   text-decoration: none !important;
   outline: none !important; }
+
+.cc-banner .cc-message {
+  font-size: 14px;
+  line-height: 20px; }
