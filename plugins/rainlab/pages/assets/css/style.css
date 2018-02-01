@@ -2285,12 +2285,18 @@ html, body {
     -webkit-mask-size: 200%; } }
 
 @media (max-width: 920px) and (min-width: 710px) {
-  .separator-menu, .separator-lang, .dis-item {
+  .separator-lang, .dis-item {
     display: none !important; }
   .active-lang {
     visibility: visible !important;
     opacity: 1 !important;
     order: -1; }
+  .languages {
+    visibility: hidden;
+    font-size: 16px !important;
+    line-height: 31px !important; }
+  .show-lang {
+    visibility: visible !important; }
   #search-event #event-category, #search-event #event-location {
     width: calc((100% - 244px)/ 2) !important;
     width: -webkit-calc((100% - 244px)/ 2) !important;
@@ -3046,3 +3052,11 @@ footer {
       padding: 10px; }
     .aviso-legal-container table .td-left {
       font-weight: 700; }
+
+.cc-btn:hover, .cc-btn:focus, .cc-btn:active {
+  text-decoration: none !important;
+  outline: none !important; }
+
+.cc-banner .cc-message {
+  font-size: 14px;
+  line-height: 20px; }
