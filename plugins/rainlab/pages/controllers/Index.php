@@ -660,9 +660,7 @@ class Index extends Controller
     protected function makeObjectFormWidget($type, $object, $alias = null, $subtype = null)
     {
 
-echo $type;
-        echo $subtype;
-        dd(1);
+       ;
         // Andrés Martínez : add subtype to pages
         $pageFieldsYaml = '~/plugins/rainlab/pages/classes/page/fields.yaml';
 
@@ -705,6 +703,11 @@ echo $type;
         $widget = $this->makeWidget('Backend\Widgets\Form', $widgetConfig);
 
         if ($type == 'page') {
+            
+            echo json_encode($object);
+            echo $subtype;
+            dd(1)
+
             $widget->bindEvent('form.extendFieldsBefore', function() use ($widget, $object) {
                 $this->checkContentField($widget, $object);
                 $this->addPagePlaceholders($widget, $object);
