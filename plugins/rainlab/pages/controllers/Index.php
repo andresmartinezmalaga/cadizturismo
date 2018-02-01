@@ -975,13 +975,13 @@ class Index extends Controller
 
             $getFileName = $object['fileName'];
             
-            $amunicipios = explode('/municipios/', $getFileName);
-            $acomarcas = explode('/comarcas/', $getFileName);
-            $acultura = explode('/cultura/', $getFileName);
-            $arutas = explode('/rutas/', $getFileName);
-            $aeventos = explode('/eventos/', $getFileName);
-            $agastronomia = explode('/gastronomia/', $getFileName);
-            $adiversion = explode('/diversion/', $getFileName);
+            $amunicipios = explode('municipios-', $getFileName);
+            $acomarcas = explode('comarcas-', $getFileName);
+            $acultura = explode('cultura-', $getFileName);
+            $arutas = explode('rutas-', $getFileName);
+            $aeventos = explode('eventos-', $getFileName);
+            $agastronomia = explode('gastronomia-', $getFileName);
+            $adiversion = explode('diversion-', $getFileName);
             
             if(
                 count($amunicipios) > 1 ||
