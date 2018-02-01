@@ -216,7 +216,7 @@
       left: -100%;
       top: 0;
       opacity: 0;
-      z-index: 999;
+      z-index: 9999;
       margin-top: 0;
       @include transition($slowly);
       .logo-container {
