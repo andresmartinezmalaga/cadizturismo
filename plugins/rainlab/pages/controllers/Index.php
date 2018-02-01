@@ -138,14 +138,14 @@ class Index extends Controller
         }
 
             if(
-                $pageFileName == 'comarcas-bahia-de-cadiz.htm' ||
+                ($pageFileName == 'comarcas-bahia-de-cadiz.htm' ||
                 $pageFileName == 'comarcas-campina-de-jerez.htm' ||
                 $pageFileName == 'comarcas-campo-de-gibraltar.htm' ||
                 $pageFileName == 'comarcas-costa-noroeste.htm' ||
                 $pageFileName == 'comarcas-la-janda.htm' ||
-                $pageFileName == 'comarcas-sierra-de-cadiz.htm' && $templateMarkup =='') {
+                $pageFileName == 'comarcas-sierra-de-cadiz.htm') && $templateMarkup =='') {
 
-                //$object['markup'] = PagesTemplates::getTComarca();
+                $object['markup'] = PagesTemplates::getTComarca();
             }
 
         if($pageFileName == 'municipios.htm' && $templateMarkup ==''){
