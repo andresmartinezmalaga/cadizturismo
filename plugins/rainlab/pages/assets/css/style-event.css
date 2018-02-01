@@ -234,7 +234,8 @@
       color: white;
       font-size: 16px;
       line-height: 22px;
-      margin-bottom: 0px; }
+      margin-bottom: 0px;
+      text-transform: capitalize; }
     .event-features .feature .feature-txt-mapa {
       color: rgba(255, 255, 255, 0.5);
       font-size: 13px;
