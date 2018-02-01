@@ -80,6 +80,24 @@
 
                 <?php endforeach ?>
 
+               <li class="<?= $isActive ? 'active' : null ?> svg-icon-container svg-active-effects">
+                    <a href="/backend/rainlab/translate/messages">
+                        <span class="nav-icon">
+                            <?php if ($item->iconSvg): ?>
+                                <img class="svg-icon" src="<?= URL::asset($item->iconSvg) ?>">
+                            <?php endif ?>
+
+                            <i class="<?= $item->iconSvg ? 'svg-replace' : null ?> <?= $item->icon ?>"></i>
+                        </span>
+
+                        <span class="nav-label">
+                            Traducciones
+                        </span>
+                    </a>
+                </li>
+
+               
+
             </ul>
         </div>
     </div>
