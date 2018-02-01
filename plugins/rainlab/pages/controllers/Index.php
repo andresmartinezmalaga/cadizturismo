@@ -974,9 +974,9 @@ class Index extends Controller
 
             $getFileName = $object['fileName'];
             
-            echo json_encode($objectData['settings']);
+            echo json_encode($objectData['settings']['url']);
             dd(1);
-            
+
             if($getFileName!=''){
                 
                 $amunicipios = explode('municipios-', $getFileName);
