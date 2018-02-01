@@ -291,9 +291,12 @@ class Index extends Controller
 
         $object = $this->fillObjectFromPost($type);
 
-        echo json_encode($object);
-        $object['settings']['viewBag']['layout'] = 'default';
+        $iUrl = $object->getViewBag()->property('url');
         
+        echo $iUrl;
+       
+        $object['settings']['viewBag']['layout'] = 'default';
+         dd(1);
 
         $object->save();
 
