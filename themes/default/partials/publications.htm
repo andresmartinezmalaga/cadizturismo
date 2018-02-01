@@ -18,7 +18,7 @@
 {% for publication in publications %}
 
     <div class="publicacion">
-      <img class="publi-icon" src="{{preurl}}/storage/app/media/uploaded-files/templates/{{publication.viewBag.type}}-icon.svg" alt="">
+      <img class="publi-icon" src="{{preurl}}/storage/app/media/uploaded-files/templates/{{str_slug(publication.viewBag.type)}}-icon.svg" alt="">
       <h6 class="publi-title">{{publication.viewBag.title}}</h6>
       <p class="publi-desc">{{publication.viewBag.descrptn}}</p>
       <p class="languages-publi"><span id="languages-title">{{'IDIOMAS DISPONIBLES:'|_ }}</span> {{publication.viewBag.idiomas}}</p>
