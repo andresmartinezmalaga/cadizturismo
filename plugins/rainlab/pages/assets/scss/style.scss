@@ -2253,7 +2253,8 @@ html, body {
   .header-parques, .header-flamenco, .header-teatro, .header-fiesta,
   .header-gourmet, .header-comida, .header-vino, .header-viaverde, .header-search, .header-rutas {
     background-position: center;
-    height: auto !important; }
+    height: auto !important;
+    background-attachment: initial !important;}
     .header-birdwatching .header-container, .header-alcornocales .header-container,
     .header-compras .header-container, .header-monumentos .header-container, .header-locales .header-container,
     .header-parques .header-container, .header-flamenco .header-container, .header-teatro .header-container, .header-fiesta .header-container,
@@ -2907,7 +2908,6 @@ html, body {
     }
   }
 }
-
 
 @media (max-width: 1200px) and (min-width: 726px) {
   .border {
