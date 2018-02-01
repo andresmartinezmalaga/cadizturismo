@@ -137,7 +137,7 @@
                             <tr>
                                 <td align="left" valign="top">
                                     <div class="logo">
-                                        <img class="element0" src="storage/app/media/uploaded-files/templates/cadiz-logo.jpg" alt="">
+                                        <img class="element0" src="{{'http://cadizturismo.jekyllme.com/storage/app/media/uploaded-files/templates/cadiz-logo.jpg'}}" alt="">
                                     </div>
                                 </td>
                             </tr>
@@ -168,8 +168,8 @@
                         <table role="panel" width="600" cellspacing="0" cellpadding="0" border="0" align="center" style="max-width:600px; width:100%;">
                             <tr>
                                 <td width="300" align="center" valign="top" style="padding:10px;">
-                                    <h2>Aquí tienes tu experiencia de “{{experience.title}}”</h2>
-                                    <p style="max-width: 353px;">Te hemos adjuntado un pdf, descárgalo y lleva siempre contigo tu experiencia, te ayudará a planificar mejor tu viaje y a que descubras lo mejor de Cádiz.</p>
+                                    <h2 style="text-align:center;">Aquí tienes tu experiencia de “{{experience.title}}”</h2>
+                                    <p style="max-width: 353px;text-align:center;">Te hemos adjuntado un pdf, descárgalo y lleva siempre contigo tu experiencia, te ayudará a planificar mejor tu viaje y a que descubras lo mejor de Cádiz.</p>
                                 </td>
                             </tr>
                         </table>
@@ -189,7 +189,7 @@
                                 <td width="300" align="center" valign="top" style="padding:10px;">
                                     <div class="social" style="display: inline-block;">
                                       <p style="display: inline-block;">
-                                          <a href="https://www.facebook.com/CadizTurismo"><img src="storage/app/media/uploaded-files/templates/facebook-icon.jpg" alt="cadiz-facebook"></a>
+                                          <a href="https://www.facebook.com/CadizTurismo"><img src="/storage/app/media/uploaded-files/templates/facebook-icon.jpg" alt="cadiz-facebook"></a>
                                       </p>
                                         <p style="display: inline-block;">
                                             <a href="https://twitter.com/CadizTurismo"><img src="http://cadizturismo.jekyllme.com/storage/app/media/uploaded-files/templates/twitter-icon.jpg" alt="cadiz-twitter"></a>
