@@ -1996,6 +1996,8 @@ html, body {
     font-size: 100px !important; }
   .img-village {
     height: 650px !important; }
+  .featured-element {
+    height: 700px !important; }
   .section-txt p, .section-txt-village p, .section-txt-comarca p {
     width: 86% !important; }
   .header-playa .txt {
