@@ -67,6 +67,15 @@
     }
   }
 
+  .mini-logo-container:has(+ .full-legal-container) {
+    img {
+      -webkit-filter: invert(0.6);
+      -moz-filter: invert(0.6);
+      filter: invert(0.6);
+
+    }
+  }
+
   .close-modal {
     position: absolute;
     padding-top: 0px !important;
