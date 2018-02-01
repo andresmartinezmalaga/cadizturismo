@@ -78,8 +78,9 @@ function onStart()
             <a href="https://twitter.com/home?status={{url('/')}}/{{lang}}{{urlPage}}" target="_blank" >Twitter&nbsp;</a>
         </div>
     </div>
-
-    {% if this.page.subtemplate == "municipios" %}
+    {% set urlmun = this.page.url|split('/municipios/') %}
+   
+    {% if urlmun|length > 0 %}
     <script>
         var address = "{{this.page.title}}";
     </script>
