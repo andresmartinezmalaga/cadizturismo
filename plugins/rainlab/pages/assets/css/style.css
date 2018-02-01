@@ -2995,7 +2995,8 @@ footer {
 .full-legal-container {
   width: 100%;
   height: auto;
-  background-color: #F6F6F6; }
+  background-color: #F6F6F6;
+  margin-top: 4px; }
 
 .aviso-legal-container {
   width: auto;
