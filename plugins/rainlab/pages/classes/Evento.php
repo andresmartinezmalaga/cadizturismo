@@ -233,9 +233,10 @@ class Evento extends ContentBase
     // CMS Object
     //
 
+    // sort ok
     public function getEventsCategories(){
       return [
-           'semana santa' => 'Semana Santa',
+          
            'carnaval' => 'Carnaval',
            'congresos' => 'Congresos',
            'cultura' => 'Cultura',
@@ -252,11 +253,13 @@ class Evento extends ContentBase
            'ocio' => 'Ocio',
            'romerías' => 'Romerías',
            'ruta' => 'Ruta',
+           'semana santa' => 'Semana Santa',
            'taller' => 'Taller',
            'teatro' => 'Teatro'
       ];
     }
 
+    // sort ok
     public function getEventsTPlantillas(){
       return [
         'null' => 'Seleccione un tipo de evento',
@@ -265,7 +268,9 @@ class Evento extends ContentBase
       ];
     }
 
-     public function getMunicipalities(){
+
+    // sort ok
+    public function getMunicipalities(){
         return [
         'alcalá de los gazules' => 'Alcalá de los Gazules',
         'alcalá del valle' => 'Alcalá del Valle',
@@ -314,14 +319,30 @@ class Evento extends ContentBase
         ];
     }
 
+    // sort ok
     public function getInterestsOptions() {
 
-        return['playa y gastronomía' => 'Playa y gastronomía', 'cultura y gastronomía' => 'Cultura y gastronomía', 'fiesta y cultura' => 'Fiesta y cultura', 'gastronomía y naturaleza' => 'Gastronomía y naturaleza', 'naturaleza y aventura' => 'Naturaleza y aventura', 'playa y naturaleza' => 'Playa y naturaleza', 'vino y tradición' => 'Vino y tradición', 'aventura y tradición' => 'Aventura y tradición'] ;
+        return[
+        'aventura y tradición' => 'Aventura y tradición',
+        'cultura y gastronomía' => 'Cultura y gastronomía', 
+        'fiesta y cultura' => 'Fiesta y cultura', 
+        'gastronomía y naturaleza' => 'Gastronomía y naturaleza', 
+        'naturaleza y aventura' => 'Naturaleza y aventura', 
+        'playa y gastronomía' => 'Playa y gastronomía', 
+        'playa y naturaleza' => 'Playa y naturaleza', 
+        'vino y tradición' => 'Vino y tradición', 
+        ] ;
     }
 
+    // sort ok
     public function getVisitsOptions() {
 
-        return['cádiz oculta' => 'Cádiz oculta', 'cádiz auténtica' => 'Cádiz auténtica', 'cádiz relax' => 'Cádiz relax', 'cádiz urbano' => 'Cádiz urbano'] ;
+        return[
+          'cádiz auténtica' => 'Cádiz auténtica'
+          'cádiz oculta' => 'Cádiz oculta',        
+          'cádiz relax' => 'Cádiz relax'
+          'cádiz urbano' => 'Cádiz urbano'
+        ] ;
     }
 
     public function getDaysOptions() {
