@@ -973,10 +973,8 @@ class Index extends Controller
             $objectData['settings']['viewBag']['layout'] = 'defaultnc';
 
             $getFileName = $object['fileName'];
-            
-            echo json_encode($objectData['settings']['viewBag']['url']);
-            dd(1);
 
+            // Andrés Martínez : compartir
             if($getFileName!=''){
                 
                 $amunicipios = explode('municipios-', $getFileName);
@@ -986,21 +984,35 @@ class Index extends Controller
                 $aeventos = explode('eventos-', $getFileName);
                 $agastronomia = explode('gastronomia-', $getFileName);
                 $adiversion = explode('diversion-', $getFileName);
-                
-                if(
-                    count($amunicipios) > 1 ||
-                    count($acomarcas) > 1 ||
-                    count($acultura) > 1 ||
-                    count($arutas) > 1 ||
-                    count($aeventos) > 1 ||
-                    count($agastronomia) > 1 ||
-                    count($adiversion) > 1
-                )
-                {
-                     $objectData['settings']['viewBag']['layout'] = 'default';
-                }
+            
+            } else {
 
+                $getFileName = $objectData['settings']['viewBag']['url'];
+
+                $amunicipios = explode('/municipios/', $getFileName);
+                $acomarcas = explode('/comarcas/', $getFileName);
+                $acultura = explode('/cultura/', $getFileName);
+                $arutas = explode('/rutas/', $getFileName);
+                $aeventos = explode('/eventos/', $getFileName);
+                $agastronomia = explode('/gastronomia/', $getFileName);
+                $adiversion = explode('/diversion/', $getFileName);
+
+            }    
+            
+            if(
+                count($amunicipios) > 1 ||
+                count($acomarcas) > 1 ||
+                count($acultura) > 1 ||
+                count($arutas) > 1 ||
+                count($aeventos) > 1 ||
+                count($agastronomia) > 1 ||
+                count($adiversion) > 1
+            )
+            {
+                $objectData['settings']['viewBag']['layout'] = 'default';
             }
+
+            
             
 
             if($getFileName == 'municipios.htm'){
