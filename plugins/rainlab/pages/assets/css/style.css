@@ -2368,7 +2368,6 @@ html, body {
     margin: 0 auto !important; }
   .more-popular .main-txt, .all-events .main-txt, .all-exps .main-txt, .main-section-comarcas .main-txt {
     margin: 0px auto !important;
-    text-align: center;
     width: 85%; } }
 
 @media (max-width: 709px) {
