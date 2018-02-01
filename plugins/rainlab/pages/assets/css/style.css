@@ -1994,6 +1994,8 @@ html, body {
 @media (max-width: 600px) {
   .con-encanto {
     font-size: 100px !important; }
+  .section-txt p, .section-txt-village p, .section-txt-comarca p {
+    width: 86% !important; }
   .header-playa .txt {
     font-size: 100px !important;
     line-height: 130px !important; }
@@ -2076,7 +2078,7 @@ html, body {
   .header-event .send-info {
     margin-top: 80px !important; }
   .header-event .txt {
-    font-size: 110px !important;
+    font-size: 100px !important;
     max-width: 79% !important; }
   .header-event .send-info {
     width: 80% !important;
