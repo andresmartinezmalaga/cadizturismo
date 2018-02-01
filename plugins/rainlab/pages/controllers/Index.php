@@ -1000,6 +1000,10 @@ class Index extends Controller
             }    
             
             if(
+                $getFileName == 'naturaleza-via-verde' ||
+                $getFileName == 'naturaleza/via-verde' ||
+                $getFileName == 'naturaleza-birdwatching' ||
+                $getFileName == 'naturaleza/birdwatching' ||
                 count($amunicipios) > 1 ||
                 count($acomarcas) > 1 ||
                 count($acultura) > 1 ||
