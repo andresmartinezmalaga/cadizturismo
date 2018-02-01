@@ -148,7 +148,7 @@
       top: 24px;
       left: 20px;
       cursor: pointer;
-      z-index: 1000;
+      z-index: 9999;
       padding: 10px 0px;
 
       span {
@@ -216,7 +216,7 @@
       left: -100%;
       top: 0;
       opacity: 0;
-      z-index: 9999;
+      z-index: 9998;
       margin-top: 0;
       @include transition($slowly);
       .logo-container {
