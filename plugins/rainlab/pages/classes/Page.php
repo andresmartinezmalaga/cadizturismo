@@ -143,20 +143,20 @@ class Page extends ContentBase
         
     }
     
-
+    // sort ok
     public function getNewsIdiomasOptions(){
         return [
-            'espanol' => 'ESPAÑOL',
             'aleman' => 'ALEMÁN',
             'checo' => 'CHECO',
             'chino' => 'CHINO',
             'danes' => 'DANÉS',
-            'hispanoamerica' => 'HISPANOAMÉRICA',
+            'espanol' => 'ESPAÑOL',
             'estonio' => 'ESTONIO',
             'finlandes' => 'FINLANDÉS',
             'flamenco' => 'FLAMENCO',
             'frances' => 'FRANCÉS',
             'hebreo' => 'HEBREO',
+            'hispanoamerica' => 'HISPANOAMÉRICA',
             'holandes' => 'HOLANDÉS',
             'hungaro' => 'HÚNGARO',
             'ingles' => 'INGLÉS',
@@ -171,14 +171,17 @@ class Page extends ContentBase
         ];
     }
 
+    // sort ok
     public function getPublicationsType(){
         return [
             'guía' => 'Guía',
-            'vídeo' => 'Vídeo',
-            'publicación' => 'Publicación'
+            'publicación' => 'Publicación',
+            'vídeo' => 'Vídeo'
+            
         ];
     }
 
+    // sort ok
     public function getBeachCategoriesType(){
         return [
             'urbana' => 'Urbana',
@@ -186,15 +189,17 @@ class Page extends ContentBase
         ];
     }
 
+    // sort ok
     public function getBeachCategoriesOptions(){
         return [
-            'deporte' => 'Deporte',
-            'naturaleza' => 'Naturaleza',
             'animales' => 'Animales',
-            'nudista' => 'Nudista',            
             'camping' => 'Camping',
-            'restauración' => 'Restauración',            
-            'instalaciones' => 'Instalaciones'
+            'deporte' => 'Deporte',
+            'instalaciones' => 'Instalaciones',
+            'naturaleza' => 'Naturaleza',
+            'nudista' => 'Nudista',            
+            'restauración' => 'Restauración'           
+            
         ];
     }
 
