@@ -49,7 +49,7 @@ input:-webkit-autofill {
 
 .close-modal {
   position: absolute;
-  padding: 0px;
+  padding-top: 0px !important;
   top: 20px;
   right: 20px; }
 
