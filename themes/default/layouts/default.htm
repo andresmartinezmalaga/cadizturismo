@@ -17,7 +17,7 @@ code = "mi-estancia"
 code = "que-hacer"
 
 [staticMenu staticMenu5]
-code = "pie"
+code = "footer"
 
 [staticMenu staticMenu6]
 code = "redes-sociales"
@@ -78,8 +78,8 @@ function onStart()
             <a href="https://twitter.com/home?status={{url('/')}}/{{lang}}{{urlPage}}" target="_blank" >Twitter&nbsp;</a>
         </div>
     </div>
+
     {% set urlmun = this.page.url|split('/municipios/') %}
-   
     {% if urlmun|length > 1 %}
     <script>
         var address = "{{this.page.title}}";
