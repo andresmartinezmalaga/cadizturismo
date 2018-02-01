@@ -79,7 +79,8 @@ function onStart()
         </div>
     </div>
 
-    {% if this.page.subtemplate == "municipios" %}
+    {% set urlmun = this.page.url|split('/municipios/') %}
+    {% if urlmun|length > 1 %}
     <script>
         var address = "{{this.page.title}}";
     </script>
