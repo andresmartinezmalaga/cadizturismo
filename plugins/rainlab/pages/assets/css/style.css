@@ -2761,6 +2761,8 @@ html, body {
     width: auto !important; }
     .language-container .languages {
       flex-direction: column !important; }
+      .language-container .languages a {
+        margin-bottom: 10px; }
       .language-container .languages .separator {
         display: none !important; } }
 

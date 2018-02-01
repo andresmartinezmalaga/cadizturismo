@@ -3014,6 +3014,9 @@ html, body {
         width: auto !important;
         .languages {
           flex-direction: column !important;
+          a {
+            margin-bottom: 10px;
+          }
           .separator {
             display: none !important;
           }
