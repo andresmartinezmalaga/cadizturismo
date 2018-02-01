@@ -293,7 +293,7 @@ class Index extends Controller
 
         echo json_encode($object);
         $object['settings']['viewBag']['layout'] = 'default';
-            dd(1);
+        
 
         $object->save();
 
