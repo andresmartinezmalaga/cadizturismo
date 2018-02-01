@@ -949,11 +949,7 @@ class Index extends Controller
 
         if ($type == 'page') {
 
-            echo "pre-save";
-            dd(1);
             $placeholders = array_get($saveData, 'placeholders');
-
-            $objectData['settings']['viewBag']['layout'] = 'default';
 
             // Andrés Set Subtemplate to pages.
             // Create
@@ -985,6 +981,10 @@ class Index extends Controller
             $aeventos = explode('eventos-', $getFileName);
             $agastronomia = explode('gastronomia-', $getFileName);
             $adiversion = explode('diversion-', $getFileName);
+            
+            echo "pre-save";
+            echo count($amunicipios);
+            dd(1);
             
             if(
                 count($amunicipios) > 1 ||
