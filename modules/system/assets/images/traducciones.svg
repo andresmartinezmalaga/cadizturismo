@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="42px" height="37px" viewBox="0 0 42 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Páginas-publicaciones" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-407.000000, -22.000000)" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Group-10" transform="translate(408.000000, 23.000000)" stroke="#FFFFFF" stroke-width="2">
+            <g id="Page-1">
+                <path d="M0,35 L1.81202035,35 C3.80385192,35 5.43407417,33.3421372 5.43407417,31.3165339 L5.43407417,30.5093234 C5.43407417,29.870829 5.09134006,29.2838587 4.53998518,28.9777451 L1.44941759,27.2633068 C0.181798094,26.5268156 0.181798094,24.6850826 1.44941759,23.9475811 L4.42872078,22.570575 C5.04166845,22.2876977 5.43407417,21.666378 5.43407417,20.9824212 L5.43407417,18.4213717 L9.60052885,17.3161298 C11.0499464,16.9473791 11.4115558,15.2895162 10.506539,14.1842743 L5.43407417,9.21068583 L5.43407417,0" id="Stroke-1"></path>
+                <path d="M13,26 L18.3998026,18.6670018 L18.3998026,7.66700183 C18.3998026,5.65 20.0197433,4 22,4 L36.3998026,4 C38.3790721,4 40,5.65 40,7.66700183 L40,22.3340037 C40,24.35 38.3790721,26 36.3998026,26 L23.7996051,26 L13,26 Z" id="Stroke-3"></path>
+                <path d="M26,11 L33,11" id="Stroke-5"></path>
+                <path d="M26,18 L30,18" id="Stroke-7"></path>
+            </g>
+        </g>
+    </g>
+</svg>

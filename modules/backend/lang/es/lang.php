@@ -50,7 +50,7 @@ return [
         'ok' => 'OK'
     ],
     'dashboard' => [
-        'menu_label' => 'Escritorio',
+        'menu_label' => 'Estadísticas',
         'widget_label' => 'Módulo',
         'widget_width' => 'Ancho',
         'full_width' => 'ancho completo',

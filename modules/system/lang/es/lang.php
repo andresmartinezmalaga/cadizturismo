@@ -309,7 +309,7 @@ return [
         'manage_other_administrators' => 'Gestionar otros administradores',
         'manage_preferences' => 'Gestionar preferencias back-end',
         'manage_editor' => 'Gestionar preferencias editor código',
-        'view_the_dashboard' => 'Ver el Escritorio',
+        'view_the_dashboard' => 'Ver las Estadísticas',
         'manage_branding' => 'Perzonalizar el back-end'
     ],
     'media' => [

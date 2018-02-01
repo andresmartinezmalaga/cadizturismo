@@ -94,7 +94,7 @@ class ServiceProvider extends ModuleServiceProvider
                 'dashboard' => [
                     'label'       => 'backend::lang.dashboard.menu_label',
                     'icon'        => 'icon-dashboard',
-                    'iconSvg'     => 'modules/backend/assets/images/dashboard-icon.svg',
+                    'iconSvg'     => 'modules/backend/assets/images/estadisticas.svg',
                     'url'         => Backend::url('backend'),
                     'permissions' => ['backend.access_dashboard'],
                     'order'       => 10
