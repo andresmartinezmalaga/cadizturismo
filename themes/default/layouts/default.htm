@@ -80,7 +80,7 @@ function onStart()
     </div>
     {% set urlmun = this.page.url|split('/municipios/') %}
    
-    {% if urlmun|length > 0 %}
+    {% if urlmun|length > 1 %}
     <script>
         var address = "{{this.page.title}}";
     </script>
