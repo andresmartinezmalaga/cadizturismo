@@ -117,6 +117,9 @@
             display: inline-block;
         }
 
+		.td {
+			border:solid 1px red!important;
+		}
 
     </style>
 
