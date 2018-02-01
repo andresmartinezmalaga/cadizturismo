@@ -80,7 +80,10 @@ function onStart()
     </div>
 
     {% set urlmun = this.page.url|split('/municipios/') %}
-    {% if urlmun|length > 1 %}
+    {% set urlply = this.page.url|split('/playas/') %}
+    {% set urlen = this.page.url|split('/espacios-naturales/') %}
+   
+    {% if urlmun|length > 1 ||  urlply|length > 1 || urlen|length > 1 %}
     <script>
         var address = "{{this.page.title}}";
     </script>

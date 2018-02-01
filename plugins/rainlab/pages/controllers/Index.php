@@ -103,7 +103,6 @@ class Index extends Controller
         $this->addCss('/plugins/rainlab/pages/assets/css/style-comarcas.css');
         $this->addCss('/plugins/rainlab/pages/assets/css/style-event.css');
         $this->addCss('/plugins/rainlab/pages/assets/css/style-home.css');
-        //$this->addCss('/plugins/rainlab/pages/assets/css/style-search.css');
         $this->addCss('/plugins/rainlab/pages/assets/css/style-village.css');
         $this->addCss('/plugins/rainlab/pages/assets/css/style.css');
 
