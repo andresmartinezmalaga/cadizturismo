@@ -2326,7 +2326,8 @@ html, body {
       .small-features .small-feature:last-child {
         margin-bottom: 0px !important; }
   .more-popular, .main-section-comarcas {
-    margin-top: 90px !important; }
+    //margin-top: 90px !important;
+  }
     .more-popular .title-search, .all-events .title-search, .all-exps .title-search, .main-section-comarcas .title-search {
       text-align: center;
       width: 80%; }
@@ -2561,7 +2562,6 @@ html, body {
     margin: 0 auto !important; }
   .more-popular .main-txt, .all-events .main-txt, .all-exps .main-txt, .main-section-comarcas .main-txt {
     margin: 0px auto !important;
-    text-align: center;
     width: 85%; } }
 
 @media (max-width: 709px) {
@@ -2597,7 +2597,8 @@ html, body {
     }
   .header-comarcas .header-txt .txt {
     font-size: 100px !important;
-    line-height: 385px !important; }
+    //line-height: 385px !important;
+   }
   .header-container {
     width: 100% !important; }
   .inputs-container {
