@@ -566,8 +566,6 @@
             .all-exps .all-events-container .event .txt-container .button-container a:hover, .all-exps .all-events-container .event .txt-container .button-container a:focus, .all-exps .all-events-container .event .txt-container .button-container a:active {
               text-decoration: none;
               color: #D0860C; }
-      .all-exps .all-events-container .event:last-child .rec-img {
-        object-position: left; }
     .all-exps .all-events-container .event-playa .subtitle {
       font-size: 18px;
       line-height: 20px;
