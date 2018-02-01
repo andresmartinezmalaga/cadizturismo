@@ -2342,9 +2342,7 @@ html, body {
     width: 85%;
     margin: 0 auto; }
   .section-txt iframe {
-    width: 80%;
-    height: auto;
-    min-height: 500px; }
+    max-width: 100%; }
   .more-content {
     flex-direction: column;
     align-items: center;
@@ -2485,9 +2483,7 @@ html, body {
     width: 85%;
     margin: 0 auto; }
   .section-txt iframe {
-    width: 80%;
-    height: auto;
-    min-height: 500px; }
+    max-width: 100%; }
   .main-section-comarcas .main-txt {
     margin: 0px auto !important;
     width: 85%; }
