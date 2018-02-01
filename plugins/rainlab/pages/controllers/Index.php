@@ -291,6 +291,10 @@ class Index extends Controller
 
         $object = $this->fillObjectFromPost($type);
 
+         echo json_encode($object);
+            
+            dd(1);
+
         $object->save();
 
         /*
@@ -703,10 +707,6 @@ class Index extends Controller
         $widget = $this->makeWidget('Backend\Widgets\Form', $widgetConfig);
 
         if ($type == 'page') {
-            
-            echo json_encode($object);
-            echo $subtype;
-            dd(1);
 
             $widget->bindEvent('form.extendFieldsBefore', function() use ($widget, $object) {
                 $this->checkContentField($widget, $object);
