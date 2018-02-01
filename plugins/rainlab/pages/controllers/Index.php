@@ -370,9 +370,9 @@ class Index extends Controller
             
             $object->setDefaultLayout($parentPage);
 
-           
+
             if($parent == 'municipios'){
-                $object['settings']['viewBag']['layout'] = 'default' 
+                $object['settings']['viewBag']['layout'] = 'default';
             }
 
         }
