@@ -58,6 +58,13 @@
     -webkit-box-shadow: 0 0 0 30px #CECECE inset !important;
 }
 
+  .close-modal {
+    position: absolute;
+    padding: 0px;
+    top: 20px;
+    right: 20px;
+  }
+
       // variables
     $slowly: all .2s ease;
 
