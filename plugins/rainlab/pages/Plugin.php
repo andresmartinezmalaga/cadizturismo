@@ -148,6 +148,13 @@ class Plugin extends PluginBase
         ];
     }
 
+    public function registerMailTemplates()
+    {
+        return [
+            'rainlab.pages::mail.experience' => 'Experience mail sent to users.',
+        ];
+    }
+
     public function boot()
     {
         Event::listen('cms.router.beforeRoute', function($url) {
