@@ -1927,6 +1927,20 @@ html, body {
   background-color: white;
 }
 
+.mock-space-prensa {
+  height: 200px;
+  background-color: white;
+  @include flexbox();
+  align-items: center;
+  justify-content: center;
+  p {
+    color: #818181;
+    font-size: 14px;
+    line-height: 33px;
+    margin: 0px;
+  }
+}
+
 #out-features {
   top: 820px;
   .feature {

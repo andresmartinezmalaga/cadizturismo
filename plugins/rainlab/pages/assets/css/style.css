@@ -1814,6 +1814,22 @@ html, body {
 #prtlSearch {
   background-color: white; }
 
+.mock-space-prensa {
+  height: 200px;
+  background-color: white;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .mock-space-prensa p {
+    color: #818181;
+    font-size: 14px;
+    line-height: 33px;
+    margin: 0px; }
+
 #out-features {
   top: 820px; }
   #out-features .feature {
