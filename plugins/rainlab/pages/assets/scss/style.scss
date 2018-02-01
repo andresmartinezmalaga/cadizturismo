@@ -2310,7 +2310,7 @@ html, body {
     line-height: 38px !important; }
   .img-village .desc {
     font-size: 16px !important;
-    line-height: 16px !important;
+    line-height: 24px !important;
     width: 80% !important; }
   .small-features {
     padding-bottom: 30px;
@@ -2653,7 +2653,11 @@ html, body {
     align-items: center !important;
     justify-content: center !important;
     text-align: center;
-    padding-top: 30px !important; }
+    //padding-top: 30px !important;
+  }
+  #exps-playa + .icons-row > .i-container {
+    padding-top: 20px !important;
+  }
     .i-container .also-feature {
       margin: 0px auto 10px auto !important; }
       .i-container .main-feature {
@@ -2813,7 +2817,7 @@ html, body {
       width: 86%; }
     .section-txt .txt-container .desc, .section-txt-village .txt-container .desc {
       font-size: 18px !important;
-      width: 80%;
+      width: 86%;
       margin: 0 auto; }
     .section-txt .txt-container .municipios, .section-txt-village .txt-container .municipios {
       flex-direction: column;
