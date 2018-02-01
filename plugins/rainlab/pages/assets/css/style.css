@@ -1994,6 +1994,8 @@ html, body {
 @media (max-width: 600px) {
   .con-encanto {
     font-size: 100px !important; }
+  .img-village {
+    height: 650px !important; }
   .section-txt p, .section-txt-village p, .section-txt-comarca p {
     width: 86% !important; }
   .header-playa .txt {
