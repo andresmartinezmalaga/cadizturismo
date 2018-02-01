@@ -370,11 +370,6 @@ class Index extends Controller
             
             $object->setDefaultLayout($parentPage);
 
-
-            if($parent == 'municipios'){
-                $object['settings']['viewBag']['layout'] = 'default';
-            }
-
         }
 
         // Andrés Martínez : parentPage setDefaultLayout Experiences
@@ -665,6 +660,8 @@ class Index extends Controller
     protected function makeObjectFormWidget($type, $object, $alias = null, $subtype = null)
     {
 
+        echo $subtype;
+        dd(1);
         // Andrés Martínez : add subtype to pages
         $pageFieldsYaml = '~/plugins/rainlab/pages/classes/page/fields.yaml';
 
