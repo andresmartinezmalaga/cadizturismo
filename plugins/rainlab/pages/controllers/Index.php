@@ -368,9 +368,13 @@ class Index extends Controller
                 $parentPage = StaticPage::load($this->theme, $parent);
             }
 
-            echo ($parent);
-            dd(1);
+
             $object->setDefaultLayout($parentPage);
+
+            if($parent == 'municipios'){
+                $object->setDefaultLayout('default'); 
+            }
+
         }
 
         // Andrés Martínez : parentPage setDefaultLayout Experiences
