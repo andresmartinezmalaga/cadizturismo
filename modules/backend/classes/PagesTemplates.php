@@ -2217,9 +2217,6 @@ class PagesTemplates
             <a href="#">Contactar<img src="***_preurl_***/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""></a>
         </div>
       </div>
-    </section>
-    <section class="map-container">
-      <img src="***_preurl_***/storage/app/media/uploaded-files/templates/map.jpg" alt="">
     </section>';
 
     static function getTAyuda(){
