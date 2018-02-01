@@ -974,6 +974,7 @@ class Index extends Controller
 
             $getFileName = $object['fileName'];
 
+           
             // Andrés Martínez : compartir
             if($getFileName!=''){
                 
@@ -984,6 +985,7 @@ class Index extends Controller
                 $aeventos = explode('eventos-', $getFileName);
                 $agastronomia = explode('gastronomia-', $getFileName);
                 $adiversion = explode('diversion-', $getFileName);
+                $aen =  explode('naturaleza-espacios-naturales', $getFileName);
             
             } else {
 
@@ -996,7 +998,7 @@ class Index extends Controller
                 $aeventos = explode('/eventos/', $getFileName);
                 $agastronomia = explode('/gastronomia/', $getFileName);
                 $adiversion = explode('/diversion/', $getFileName);
-
+                $aen =  explode('/naturaleza/espacios-naturales', $getFileName);
             }    
 
             
@@ -1005,6 +1007,7 @@ class Index extends Controller
                 $getFileName == 'naturaleza/via-verde' ||
                 $getFileName == 'naturaleza-birdwatching.htm' ||
                 $getFileName == 'naturaleza/birdwatching' ||
+                count($aen) > 1 ||
                 count($amunicipios) > 1 ||
                 count($acomarcas) > 1 ||
                 count($acultura) > 1 ||
