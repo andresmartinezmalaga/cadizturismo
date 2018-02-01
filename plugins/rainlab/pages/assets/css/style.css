@@ -2727,6 +2727,8 @@ html, body {
     z-index: 98; } }
 
 @media (max-width: 920px) and (min-width: 601px) {
+  .section-txt p, .section-txt-village p, .section-txt-comarca p {
+    width: 86% !important; }
   .header-search {
     height: auto !important;
     padding-top: 100px;
