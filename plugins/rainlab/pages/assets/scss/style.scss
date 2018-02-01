@@ -883,6 +883,9 @@ html, body {
       content: none !important;
     }
   }
+  .made-up-space {
+    display: none !important;
+  }
   .somos-section {
     .tagline-container {
       bottom: 40px !important;
@@ -3313,7 +3316,7 @@ footer {
   width: auto;
   max-width: 80%;
   margin: 0px auto;
-  padding-top: 170px;
+  padding-top: 70px;
   padding-bottom: 70px;
   h1 {
     color: #464646;
