@@ -22,7 +22,7 @@ fields:
 
     viewBag[descrptn]:
         span: full
-        label: 'Descripción (max 120 caracteres)'
+        label: 'Descripción (max. 120 caracteres)'
 
     viewBag[urlExternaZip]:
         span: left
