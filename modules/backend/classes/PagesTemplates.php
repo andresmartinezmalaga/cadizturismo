@@ -2445,4 +2445,44 @@ static function getTCookies(){
   return $cookies;
 }
 
+static $legal = '<div class="full-legal-container">
+<div class="aviso-legal-container">
+  <h1 class="legal">Política de Privacidad y Ley de Protección de datos de Carácter Personal LOPD.</h1>
+  <p>Los Datos serán incorporados a un fichero responsabilidad del <b>Patronato Provincial de Turismo
+     de Cádiz,</b> debidamente inscrito en el Registro General de la Agencia Española de Protección de Datos. Informamos que los datos de carácter personal que facilite con ocasión de su alta en el Sitio Web, así como aquellos que facilite como consecuencia del uso del Portal serán tratados con la finalidad de facilitarle los servicios.</p>
+  <p>La Empresa gestora del sitio web tiene implantadas las medidas de índole técnica y organizativas necesarias que garanticen la seguridad de sus datos y eviten su alteración, pérdida o tratamiento, habida cuenta del estado de la tecnología, la naturaleza de los datos almacenados y los riesgos a que están expuestos, todo ello en cumplimiento de los dispuesto en el Título VIII del Real Decreto 1720/2007, de 21 de diciembre, por el que se aprueba el Reglamento de desarrollo de la LOPD.</p>
+  <p>Por otra parte, le informamos de que el <b>Patronato Provincial de Turismo de Cádiz</b> no solicita, en ningún caso, datos especialmente protegidos para la participación en el Sitio Web.</p>
+
+  <h3>Interacción con otras redes sociales</h3>
+  <p>El Portal ofrece la posibilidad de interactuar con otras redes sociales mediante la utilización de funcionalidades, sindicar y agregar entradas de texto, comentarios, recomendaciones, enlaces; referenciar imágenes y vídeos;
+    emitir recomendaciones y valoraciones sobre los recursos turísticos del Sitio Web  y
+     en general todo aquello que los servicios de interoperabilidad e integraciones que estas Redes Sociales permitan,
+     siempre bajo la supervisión de sus propietarios y con la debida autorización que se
+     realizará mediante formularios de autenticación en los que se le solicitará su nombre de usuario y
+     contraseña de éstas Redes Sociales o portales de servicio. Las citadas redes sociales están
+     sometidas a sus propias condiciones de uso y Política de Privacidad, por lo que se recomienda
+     al usuario consultar su contenido antes de proceder a utilizar dichas herramientas.</p>
+     <p>En cualquier caso, el <b>Patronato Provincial de Turismo de Cádiz</b> no se hace responsable de posibles errores, fallos, daños y/o perjuicios que traigan causa en el uso indebido de las citadas funcionalidades o en problemas en el servicio de las otras redes sociales.</p>
+
+     <h3>Terminación de los Servicios</h3>
+
+     <p>El <b>Patronato Provincial de Turismo de Cádiz</b> podrá, en cualquier momento, suspender o dar por terminada la Red Social. </p>
+
+     <h3>Nulidad de cláusulas</h3>
+     <p>En caso de que alguna de las disposiciones contenidas en las presentes Condiciones sea declarada nula, se procederá a la retirada o sustitución de la misma. En cualquier caso, dicha declaración de nulidad no afectará a la validez del resto de disposiciones recogidas en estas Condiciones de Uso.</p>
+
+     <h3>Legislación aplicable</h3>
+     <ul>
+       <li> <p>Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSI).</p> </li>
+       <li> <p>Ley Orgánica 15/1999, de 13 de diciembre Ley de Protección de Datos de Carácter Personal (LOPD).</p> </li>
+       <li> <p>Real Decreto 1720/2007, de 21 de diciembre, por el que se aprueba el Reglamento de desarrollo de la LOPD.</p> </li>
+     </ul>
+     </div></div>';
+  static function getTLegal(){
+  $legal = PagesTemplates::getFinalTemplate(PagesTemplates::$legal);
+  return $legal;
+}
+
+
+
 }
