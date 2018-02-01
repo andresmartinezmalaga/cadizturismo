@@ -367,12 +367,13 @@ class Index extends Controller
             if (strlen($parent)) {
                 $parentPage = StaticPage::load($this->theme, $parent);
             }
-
-
+            
             $object->setDefaultLayout($parentPage);
 
+            echo json_encode($object);
+            dd(1);
             if($parent == 'municipios'){
-                $object->setDefaultLayout('default'); 
+                //['settings']['viewBag']['layout'] = 'default' 
             }
 
         }
