@@ -63,6 +63,7 @@
     padding-top: 0px !important;
     top: 20px;
     right: 20px;
+    display: none;
   }
 
       // variables
@@ -88,6 +89,10 @@
   font-size: 18px;
   line-height: 33px;
   margin-bottom: 30px;
+}
+
+.section-txt .title, .section-txt-village .title, .section-txt-comarca .title {
+  width: 58%;
 }
 
 .all-exps .all-events-container .event {
@@ -2186,6 +2191,9 @@ html, body {
   .con-encanto {
     font-size: 100px !important;
   }
+  .close-modal {
+    display: block !important;
+  }
   .img-village {
     height: 650px !important;
   }
@@ -2468,6 +2476,13 @@ html, body {
 
 @media (max-width: 920px) and (min-width: 710px) {
 
+  .separator-menu, .separator-lang, .dis-item {
+   display: none !important; }
+   .active-lang {
+     visibility: visible !important;
+     opacity: 1 !important;
+     order: -1;
+   }
   #search-event {
     #event-category, #event-location {
       width: calc((100% - 244px)/ 2) !important;
