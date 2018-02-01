@@ -535,7 +535,7 @@ class StaticApp extends ComponentBase
 
         $experiencemarkup = str_replace('/storage/', 'http://cadizturismo.jekyllme.com/storage/', $preexperiencemarkup3);
 
-        
+
         $data = array('experiencemarkup' => $experiencemarkup );
 
         $pdf_data = PDFS::loadHTML($experiencemarkup)
@@ -544,7 +544,7 @@ class StaticApp extends ComponentBase
             ->setPaper('a4')
             ->output();
 
-        $dataexperience = $experience[0;
+        $dataexperience = $experience[0];
 
         $dataemail = array('experience' => $dataexperience);
 
