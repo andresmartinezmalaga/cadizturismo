@@ -706,7 +706,7 @@ class Index extends Controller
             
             echo json_encode($object);
             echo $subtype;
-            dd(1)
+            dd(1);
 
             $widget->bindEvent('form.extendFieldsBefore', function() use ($widget, $object) {
                 $this->checkContentField($widget, $object);
