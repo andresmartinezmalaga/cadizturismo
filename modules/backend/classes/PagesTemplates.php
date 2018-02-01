@@ -2379,7 +2379,7 @@ class PagesTemplates
       return $reportaje;
     }
 
-    static $cookies = '<div class="aviso-legal-container">
+    static $cookies = '<div class="full-legal-container"><div class="aviso-legal-container">
   <h1>Política de uso de cookies</h1>
   <p>En cumplimiento del artículo 22.2 de la Ley 34/2002, de Servicios de la Sociedad de la Información, informamos a los usuarios de nuestro
   sitio web de nuestra Política de uso de Cookies.</p>
@@ -2438,7 +2438,7 @@ class PagesTemplates
   <h4>Información de contacto</h4>
   <p>Cualquier duda o consulta sobre esta política de uso de cookies nos la puede hacer llegar por escrito a la siguiente
   dirección de correo electrónico: info@cadizturismo.com</p>
-</div>';
+</div></div>';
 
 static function getTCookies(){
   $cookies = PagesTemplates::getFinalTemplate(PagesTemplates::$cookies);
