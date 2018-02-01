@@ -1042,6 +1042,8 @@ class Index extends Controller
 
             // Andrés Martínez : add cover url
             if($filterSubTemplate == 'playas' || $filterSubTemplate == 'municipios'){
+                
+                $objectData['settings']['viewBag']['layout'] = 'default';
 
                 $presrc1 = explode('value="cover"', $objectData['markup']);
                 if(count($presrc1)>1){
@@ -1050,9 +1052,6 @@ class Index extends Controller
                     $coverurl = str_replace('"', '', $presrc3[1]);
 
                     $objectData['settings']['viewBag']['cover'] = $coverurl;
-                    $objectData['settings']['viewBag']['layout'] = 'default';
-
-
                 }
             }
 
