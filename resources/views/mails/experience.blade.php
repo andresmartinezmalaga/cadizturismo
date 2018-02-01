@@ -117,10 +117,6 @@
             display: inline-block;
         }
 
-      	#\3a ov > div:nth-child(2) > table > tbody > tr:nth-child(1){
-      		display: none!important;
-      		background-color: white!important;
-      	}
 
     </style>
 
