@@ -2379,7 +2379,7 @@ class PagesTemplates
       return $reportaje;
     }
 
-    static $cookies = '<div class="full-legal-container"><div class="aviso-legal-container">
+    static $cookies = '<div class="full-legal-container"><div class="made-up-space"></div><div class="aviso-legal-container">
   <h1>Política de uso de cookies</h1>
   <p>En cumplimiento del artículo 22.2 de la Ley 34/2002, de Servicios de la Sociedad de la Información, informamos a los usuarios de nuestro
   sitio web de nuestra Política de uso de Cookies.</p>
@@ -2445,7 +2445,7 @@ static function getTCookies(){
   return $cookies;
 }
 
-static $legal = '<div class="full-legal-container">
+static $legal = '<div class="full-legal-container"><div class="made-up-space"></div>
 <div class="aviso-legal-container">
   <h1 class="legal">Política de Privacidad y Ley de Protección de datos de Carácter Personal LOPD.</h1>
   <p>Los Datos serán incorporados a un fichero responsabilidad del <b>Patronato Provincial de Turismo
