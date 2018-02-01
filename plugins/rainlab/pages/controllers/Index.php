@@ -271,6 +271,10 @@ class Index extends Controller
                 $object['markup'] = PagesTemplates::getTReportaje();
             }
 
+            if($pageFileName == 'politica-de-cookies.htm' && $templateMarkup ==''){
+                $object['markup'] = PagesTemplates::getTCookies();
+            }
+
         return $this->pushObjectForm($type, $object);
 
 
@@ -412,9 +416,9 @@ class Index extends Controller
             $widget = $this->makeObjectFormWidget($type, $object,null,'reportajes');
 
         } else {
-           
+
            $widget = $this->makeObjectFormWidget($type, $object);
-        
+
         }
 
         $this->vars['objectPath'] = '';
@@ -904,11 +908,11 @@ class Index extends Controller
 
         } elseif($filterSubTemplate == 'publicaciones'){
             $formWidget = $this->makeObjectFormWidget($type, $object,null,'publicaciones');
-        
+
         } elseif($filterSubTemplate == 'sala-prensa-prensa'){
             $formWidget = $this->makeObjectFormWidget($type, $object,null,'noticias');
 
-        
+
         } elseif($filterSubTemplate == 'sala-prensa-reportajes'){
             $formWidget = $this->makeObjectFormWidget($type, $object,null,'reportajes');
 
@@ -1129,16 +1133,16 @@ class Index extends Controller
         // Andrés Martínez : get subtype formWidget
         if($object->subtemplate == 'playas'){
             $widget = $this->makeObjectFormWidget($type, $object, null, 'playas');
-        
+
         }elseif($object->subtemplate == 'publicaciones'){
             $widget = $this->makeObjectFormWidget($type, $object, null, 'publicaciones');
-        
+
         } elseif($object->subtemplate == 'sala-prensa-prensa'){
             $widget = $this->makeObjectFormWidget($type, $object, null, 'noticias');
-        
+
         } elseif($object->subtemplate == 'sala-prensa-reportajes'){
             $widget = $this->makeObjectFormWidget($type, $object, null, 'reportajes');
-        
+
         } else {
             $widget = $this->makeObjectFormWidget($type, $object);
         }
