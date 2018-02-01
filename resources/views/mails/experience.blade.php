@@ -119,7 +119,9 @@
 
     </style>
 
-
+	<header>
+		header
+	</header>
     <div class="all-element">
         <div style="max-width: 640px; margin: auto;">
             <!--[if mso]>
@@ -225,3 +227,5 @@
             <![endif]-->
         </div>
     </div>
+
+    <footer>footer</footer>
