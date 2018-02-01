@@ -13,7 +13,7 @@
 ?>
 
 ==
-
+{% if news|length > 0 %}
 <div id="container-sala-prensa" class="publis">
 	{% for new in news %}
 		<div class="prensa">
@@ -28,3 +28,9 @@
 		</div>
 	{% endfor %}
 </div>
+{% else %}
+
+	
+
+
+{% endif %}
