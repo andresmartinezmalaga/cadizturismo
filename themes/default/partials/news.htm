@@ -23,14 +23,14 @@
 			{%set date = new.viewBag.date|split(' ') %}
 			<p class="publi-source">{{new.viewBag.media}} | {{date[0]}}</p>
 			<div class="links-container">
-				<a class="download-link" href="{{new.viewBag.urlExternaZip}}">{{'Descargar pdf'|_}} <img src="/{{preurl}}/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt="" class="fr-fic fr-dii">&nbsp;</a>
+				<a class="download-link" href="{{new.viewBag.urlExternaZip}}">{{'Descargar pdf'|_}} <img src="{{preurl}}/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt="" class="fr-fic fr-dii">&nbsp;</a>
 			</div>
 		</div>
 	{% endfor %}
 </div>
 {% else %}
 
-	
+
 
 
 {% endif %}
