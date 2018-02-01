@@ -291,13 +291,6 @@ class Index extends Controller
 
         $object = $this->fillObjectFromPost($type);
 
-        $iUrl = $object->getViewBag()->property('url');
-        
-        echo $iUrl;
-       
-        $object['settings']['viewBag']['layout'] = 'default';
-         dd(1);
-
         $object->save();
 
         /*
@@ -893,8 +886,6 @@ class Index extends Controller
     protected function fillObjectFromPost($type)
     {
 
-
-
         $objectPath = trim(Request::input('objectPath'));
         $object = $objectPath ? $this->loadObject($type, $objectPath) : $this->createObject($type);
 
@@ -934,8 +925,6 @@ class Index extends Controller
         }
 
 
-
-
         $saveData = $formWidget->getSaveData();
 
         $postData = post();
@@ -960,7 +949,11 @@ class Index extends Controller
 
         if ($type == 'page') {
 
+            echo "pre-save";
+            dd(1);
             $placeholders = array_get($saveData, 'placeholders');
+
+            $objectData['settings']['viewBag']['layout'] = 'default';
 
             // Andrés Set Subtemplate to pages.
             // Create
