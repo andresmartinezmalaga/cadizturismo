@@ -558,7 +558,7 @@ class StaticApp extends ComponentBase
 
         });*/
 
-        Mail::send('backend::mail.experience', $dataemail, function ($message) use ($pdf_data, $contactName, $sendContact, $sendTo) {
+        Mail::send('rainlab.pages::mail.experience', $dataemail, function ($message) use ($pdf_data, $contactName, $sendContact, $sendTo) {
                 $message->from($sendContact, $contactName);
                 $message->to($sendTo);
         });
