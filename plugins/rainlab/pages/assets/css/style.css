@@ -1571,7 +1571,8 @@ html, body {
   grid-template-columns: repeat(3, 400px);
   -ms-grid-template-columns: repeat(3, 400px);
   grid-row-gap: 30px;
-  -ms-grid-row-gap: 30px; }
+  -ms-grid-row-gap: 30px;
+  margin-bottom: 90px; }
   .publis .publicacion {
     border-bottom: 1px solid #CECECE;
     min-height: 525px;
