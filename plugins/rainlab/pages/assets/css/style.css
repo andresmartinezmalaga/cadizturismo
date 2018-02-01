@@ -500,7 +500,7 @@ html, body {
   margin-bottom: 0px; }
 
 .language-container a {
-  color: red; }
+  color: white; }
 
 .language-container a:hover, .language-container a:focus, .language-container a:active {
   text-decoration: none; }
