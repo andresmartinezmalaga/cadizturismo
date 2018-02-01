@@ -22,14 +22,14 @@ fields:
     viewBag[categoriea]:
         span: left
         label: 'Tipo'
-        placeholder: 'categoría'
+        placeholder: 'Tipo de playa'
         type: dropdown
         options: getBeachCategoriesType
 
     viewBag[categorieb]:
         span: right
         label: 'Categoría'
-        placeholder: 'categoría'
+        placeholder: 'Categoría'
         type: dropdown
         options: getBeachCategoriesOptions
 
@@ -51,7 +51,7 @@ fields:
     viewBag[cover]:
         label: 'cover'
         default: 'default.jpg'
-        cssClass: ocl     
+        cssClass: ocl
 
 tabs:
     fields:
