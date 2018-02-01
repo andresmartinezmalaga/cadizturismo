@@ -384,13 +384,13 @@ class Page extends ContentBase
         if ($parentPage) {
 
             // Andrés Martínez : Load parents template municipios, comarcas, playas on markup
-            if($parentPage->fileName == 'municipios.htm'){
+            /*if($parentPage->fileName == 'municipios.htm'){
                 $this->markup = PagesTemplates::getTMunicipio();
             } elseif ($parentPage->fileName == 'comarcas.htm') {
                 $this->markup = PagesTemplates::getTComarca();
             } elseif ($parentPage->fileName == 'playas.htm') {
                 $this->markup = PagesTemplates::getTPlaya();
-            }
+            }*/
             
             $layout = Layout::load($this->theme, $parentPage->layout);
             $component = $layout ? $layout->getComponent('staticPage') : null;
