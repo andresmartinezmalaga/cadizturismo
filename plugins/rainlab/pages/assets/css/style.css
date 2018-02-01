@@ -3047,6 +3047,6 @@ footer {
     .aviso-legal-container table .td-left {
       font-weight: 700; }
 
-.cc-btnhover, .cc-btn:focus, .cc-btn:active {
+.cc-btn:hover, .cc-btn:focus, .cc-btn:active {
   text-decoration: none !important;
   outline: none !important; }
