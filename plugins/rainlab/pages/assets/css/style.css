@@ -124,7 +124,8 @@ input:-webkit-autofill {
       .hamburger .bars:after {
         bottom: 6px; }
   .open .hamburger {
-    left: 265px !important; }
+    left: 282px !important;
+    position: fixed; }
     .open .hamburger .bars:before, .open .hamburger .bars:after {
       -webkit-transition: all 0.2s ease;
       -moz-transition: all 0.2s ease;
