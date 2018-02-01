@@ -139,7 +139,6 @@
 
     .show-lang {
       visibility: visible !important;
-
     }
 
     .stop-click {
@@ -2488,10 +2487,21 @@ html, body {
 
   .separator-menu, .separator-lang, .dis-item {
    display: none !important; }
+
    .active-lang {
      visibility: visible !important;
      opacity: 1 !important;
      order: -1;
+   }
+
+   .languages {
+     visibility: hidden;
+     font-size: 18px !important;
+     line-height: 31px !important;
+   }
+
+   .show-lang {
+     visibility: visible !important;
    }
   #search-event {
     #event-category, #event-location {

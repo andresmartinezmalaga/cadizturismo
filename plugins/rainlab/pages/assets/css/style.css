@@ -2291,6 +2291,12 @@ html, body {
     visibility: visible !important;
     opacity: 1 !important;
     order: -1; }
+  .languages {
+    visibility: hidden;
+    font-size: 18px !important;
+    line-height: 31px !important; }
+  .show-lang {
+    visibility: visible !important; }
   #search-event #event-category, #search-event #event-location {
     width: calc((100% - 244px)/ 2) !important;
     width: -webkit-calc((100% - 244px)/ 2) !important;
