@@ -37,7 +37,8 @@
                         <!-- *********************************************************************************************************** -->
                         <!-- Andrés Martínez : Filter button config only sudo ********************************************************** -->
                         <!-- *********************************************************************************************************** -->
-                        <?php if( $item->iconSvg == 'modules/system/assets/images/cog-icon.svg' and $this->user->is_superuser == 1){ ?>
+                        <!-- and $this->user->is_superuser == 1 -->
+                        <?php if( $item->iconSvg == 'modules/system/assets/images/cog-icon.svg' ){ ?>
 
                         <li class="<?= $isActive ? 'active' : null ?> svg-icon-container svg-active-effects">
                             <a href="<?= $item->url ?>">
