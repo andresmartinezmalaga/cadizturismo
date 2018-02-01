@@ -2270,6 +2270,10 @@ html, body {
     -webkit-mask-size: 200%; } }
 
 @media (max-width: 920px) and (min-width: 710px) {
+  #search-event #event-category, #search-event #event-location {
+    width: calc((100% - 244px)/ 2) !important;
+    width: -webkit-calc((100% - 244px)/ 2) !important;
+    width: -moz-calc((100% - 244px)/ 2) !important; }
   .header-txt .txt {
     max-width: 90%;
     text-align: center; }
