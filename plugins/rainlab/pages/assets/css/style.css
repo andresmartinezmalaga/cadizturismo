@@ -3046,3 +3046,7 @@ footer {
       padding: 10px; }
     .aviso-legal-container table .td-left {
       font-weight: 700; }
+
+.cc-btnhover, .cc-btn:focus, .cc-btn:active {
+  text-decoration: none !important;
+  outline: none !important; }

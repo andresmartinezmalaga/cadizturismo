@@ -3381,3 +3381,10 @@ footer {
     }
   }
 }
+
+.cc-btn {
+  &hover, &:focus, &:active {
+    text-decoration: none !important;
+    outline: none!important;
+  }
+}
