@@ -974,7 +974,7 @@ class Index extends Controller
 
             $getFileName = $object['fileName'];
             
-            echo json_encode($objectData['settings']['url']);
+            echo json_encode($objectData['settings']['viewBag']['url']);
             dd(1);
 
             if($getFileName!=''){
