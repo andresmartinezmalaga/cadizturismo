@@ -182,6 +182,7 @@
     .open .hamburger {
       left: 282px !important;
       position: fixed;
+      top: 27px !important;
       .bars {
         &:before, &:after {
             @include transition($slowly);
