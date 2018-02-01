@@ -1649,6 +1649,7 @@ html, body {
   -ms-grid-template-columns: repeat(3, 400px);
   grid-row-gap: 30px;
   -ms-grid-row-gap: 30px;
+  margin-bottom: 90px;
   .publicacion {
     border-bottom: 1px solid #CECECE;
     min-height: 525px;
@@ -1914,6 +1915,29 @@ html, body {
     font-size: 16px;
     line-height: 33px;
     width: 68%;
+  }
+}
+
+#container-sala-prensa {
+  margin: 0px auto;
+  padding: 40px 0px 90px 0px;
+}
+
+#prtlSearch {
+  background-color: white;
+}
+
+.mock-space-prensa {
+  height: 200px;
+  background-color: white;
+  @include flexbox();
+  align-items: center;
+  justify-content: center;
+  p {
+    color: #818181;
+    font-size: 14px;
+    line-height: 33px;
+    margin: 0px;
   }
 }
 

@@ -1,5 +1,5 @@
 ==
-<?php 
+<?php
 
 	function onStart()
 	{
@@ -10,11 +10,11 @@
 	    }
 	}
 
-?>	
+?>
 
 ==
-
-<div class="publis">
+{% if news|length > 0 %}
+<div id="container-sala-prensa" class="publis">
 	{% for new in news %}
 		<div class="prensa">
 
@@ -23,8 +23,16 @@
 			{%set date = new.viewBag.date|split(' ') %}
 			<p class="publi-source">{{new.viewBag.media}} | {{date[0]}}</p>
 			<div class="links-container">
-				<a class="download-link" href="{{new.viewBag.urlExternaZip}}">{{'Descargar pdf'|_}} <img src="/{{preurl}}/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt="" class="fr-fic fr-dii">&nbsp;</a>
+				<a class="download-link" href="{{new.viewBag.urlExternaZip}}">{{'Descargar pdf'|_}} <img src="{{preurl}}/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt="" class="fr-fic fr-dii">&nbsp;</a>
 			</div>
 		</div>
-	{% endfor %}	
+	{% endfor %}
 </div>
+{% else %}
+
+<div class="mock-space-prensa">
+	<p>Vuelve más tarde, tendremos un montón de noticias para ti.</p>
+</div>
+
+
+{% endif %}
