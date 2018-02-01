@@ -2450,6 +2450,8 @@ html, body {
     align-items: center !important;
     justify-content: center !important;
     text-align: center; }
+  #exps-playa + .icons-row > .i-container {
+    padding-top: 30px !important; }
   .i-container .also-feature {
     margin: 0px auto 10px auto !important; }
   .i-container .main-feature {
