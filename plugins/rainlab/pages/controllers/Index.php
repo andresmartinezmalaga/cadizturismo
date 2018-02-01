@@ -275,6 +275,10 @@ class Index extends Controller
                 $object['markup'] = PagesTemplates::getTCookies();
             }
 
+            if($pageFileName == 'legal.htm' && $templateMarkup ==''){
+                $object['markup'] = PagesTemplates::getTLegal();
+            }
+
         return $this->pushObjectForm($type, $object);
 
 
