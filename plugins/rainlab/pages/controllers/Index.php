@@ -998,6 +998,10 @@ class Index extends Controller
                 $adiversion = explode('/diversion/', $getFileName);
 
             }    
+
+            echo $getFileName;
+            
+            dd(1);
             
             if(
                 $getFileName == 'naturaleza-via-verde' ||
