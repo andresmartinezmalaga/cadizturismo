@@ -2374,7 +2374,8 @@ html, body {
     font-size: 55px !important;
     line-height: 55px !important; }
   .more-popular .event, .all-events .event, .all-exps .event, .main-section-comarcas .event {
-    width: 50% !important; }
+    width: 50% !important;
+    margin-top: 0px !important; }
   .more-popular .main-txt, .all-events .main-txt, .all-exps .main-txt, .main-section-comarcas .main-txt {
     margin: 0px auto !important;
     width: 85%; } }
