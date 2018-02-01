@@ -1807,6 +1807,10 @@ html, body {
     line-height: 33px;
     width: 68%; }
 
+#container-sala-prensa {
+  margin: 0px auto;
+  padding: 40px 0px 90px 0px; }
+
 #out-features {
   top: 820px; }
   #out-features .feature {
