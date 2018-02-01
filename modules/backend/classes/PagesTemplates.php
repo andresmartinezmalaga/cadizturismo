@@ -2293,7 +2293,7 @@ class PagesTemplates
              | <a href="/sala-prensa/prensa/ruso">RUSO</a>
              | <a href="/sala-prensa/prensa/sueco">SUECO</a>
              | <a href="/sala-prensa/prensa/ucraniano">UCRANIANO</a>
-            
+
             </p>
           </div>
           </div>
@@ -2378,5 +2378,71 @@ class PagesTemplates
       $reportaje = PagesTemplates::getFinalTemplate(PagesTemplates::$reportaje);
       return $reportaje;
     }
+
+    static $cookies = '<div class="aviso-legal-container">
+  <h1>Política de uso de cookies</h1>
+  <p>En cumplimiento del artículo 22.2 de la Ley 34/2002, de Servicios de la Sociedad de la Información, informamos a los usuarios de nuestro
+  sitio web de nuestra Política de uso de Cookies.</p>
+  <h4>¿Qué es una Cookie?</h4>
+  <p>Las cookies son archivos que contienen pequeñas cantidades de información que se descargan en el dispositivo del
+  usuario que se utiliza cuando visitas nuestro sitio web. Su finalidad principal es reconocer al usuario
+  (mediante identificadores que no permiten identificarlo con persona física alguna) cada vez que accede al sitio web y nos permite, además, mejorar la calidad
+  y la usabilidad de nuestros sitios web. Las cookies son esenciales para el funcionamiento de Internet; no pueden dañar el equipo/dispositivo del usuario y,
+  si se encuentran activadas en la configuración de tu navegador, nos ayudan a identificar y resolver posibles errores de funcionamiento de nuestro sitio web.</p>
+
+
+
+  <h4>Tipo de cookies:</h4>
+  <p>Hay diferentes tipos de cookies. Todos ellos trabajan de la misma manera, pero tienen pequeñas diferencias:</p>
+  <ul>
+    <li>
+      <p><b>Cookies de Sesión:</b> las cookies de sesión duran solamente por la duración de la visita y se borran cuando el usuario cierra el navegador. Su finalidad principal es identificar el tipo de dispositivo, apoyar la seguridad sitio web o su funcionalidad básica. No contienen información personal que permita identificar a una persona.</p>
+    </li>
+    <li>
+      <p><b>Cookies Persistentes o Permanentes:</b> Se almacenan en el disco duro del dispositivo y el sitio web las lee cada vez que el usuario realiza una nueva visita al sitio web; poseen una fecha de caducidad o expiración determinada, cumplida la cual la cookie deja de funcionar. Permiten identificar las acciones y preferencias del usuario; analizar las visitas y ayudan a comprender cómo llegan los usuarios al sitio web y mejorar los servicios ofrecidos por el mismo.</p>
+    </li>
+    <li>
+      <p><b>Cookies de Funcionalidad:</b> Permiten recordar decisiones adoptadas por el usuario, como su login o identificador. La información de estas cookies es anónima (es decir, no contiene nombre, dirección, u otros datos personales).</p>
+    </li>
+    <li>
+      <p><b>Cookies de Terceros:</b> Las cookies de terceros son las cookies que instala un sitio web que no es el que el usuario está visitando; por ejemplo, las usadas por redes sociales (como Facebook) o por complementos externos de contenido (como Google Maps).</p>
+    </li>
+    <li>
+      <p><b>Cookies Analíticas: </b> Son cookies que tienen por finalidad el mantenimiento periódico y garantizar el mejor funcionamiento y servicio al usuario; recopilando datos de su actividad.</p>
+    </li>
+  </ul>
+
+  <h4>Uso de Cookies por parte de CADIZ TURISMO</h4>
+  <p>Mediante el acceso a nuestro sitio web, el usuario acepta de manera expresa que podamos usar este tipo de cookies en sus dispositivos. No obstante, si desactiva las cookies, no afectará a la navegación en nuestros sitios web.</p>
+
+  <h4>Configuración del usuario para evitar Cookies</h4>
+  <p>Al navegar y continuar en nuestro sitio web estará consintiendo el uso de las cookies en las condiciones contenidas en la presente "Política de cookies".
+  CADIZ TURISMO proporciona acceso a esta "Política de cookies" en el momento del acceso por primera vez, con el objetivo de que el usuario esté informado, y
+  sin perjuicio de que éste pueda ejercer su derecho a bloquear, eliminar y rechazar el uso de cookies en todo momento.</p>
+  <p>En cualquier caso, informamos de que las cookies que no son necesarias para el uso de nuestro sitio web, pueden ser bloquearlas o deshabilitarlas
+  activando la configuración de su navegador, que permite rechazar la instalación de todas las cookies o de algunas de ellas. La mayoría de los navegadores permiten
+  advertir de la presencia de cookies o rechazarlas automáticamente. Si las rechaza podrá seguir usando nuestro Sitio Web, aunque el uso de algunos de sus servicios podrá ser limitado y por tanto su experiencia en nuestro sitio web menos satisfactoria.</p>
+  <p>La siguiente información facilita al usuario la forma de configurar su navegador o navegadores de Internet para mantener su privacidad y
+  seguridad en relación a las cookies. Para ello, facilitamos la información y enlaces a los sitos de soporte oficiales de los principales navegadores.
+  Con dichas ayudas, el usuario puede  bloquear las cookies a través de las herramientas de configuración del navegador o bien configurarlo para que
+  le avise cuando un servidor quiera guardar una cookie.</p>
+
+  <ul>
+    <li><a href="https://support.microsoft.com/en-us/help/17442/windows-internet-explorer-delete-manage-cookies ">Internet Explorer™</a></li>
+    <li><a href="https://support.apple.com/es-es/HT201265">Safari™</a></li>
+    <li><a href="https://support.google.com/chrome/answer/95647?hl=es&hlrm=en">Chrome™</a></li>
+    <li><a href="http://support.mozilla.org/es/kb/cookies-informacion-que-los-sitios-web-guardan-en-?redirectlocale=en-US&redirectslug=Cookies">Firefox™</a></li>
+    <li><a href="http://help.opera.com/Windows/11.50/es-ES/cookies.html">Opera™</a></li>
+  </ul>
+
+  <h4>Información de contacto</h4>
+  <p>Cualquier duda o consulta sobre esta política de uso de cookies nos la puede hacer llegar por escrito a la siguiente
+  dirección de correo electrónico: info@cadizturismo.com</p>
+</div>';
+
+static function getTCookies(){
+  $cookies = PagesTemplates::getFinalTemplate(PagesTemplates::$cookies);
+  return $cookies;
+}
 
 }
