@@ -2378,7 +2378,7 @@ html, body {
   .more-popular .event, .all-events .event, .all-exps .event, .main-section-comarcas .event {
     width: 50% !important;
     margin-top: 0px !important; }
-  .all-events .event, .all-exps .event {
+  .all-exps .event {
     width: 100% !important;
     margin-top: 0px !important; }
   .more-popular .main-txt, .all-events .main-txt, .all-exps .main-txt, .main-section-comarcas .main-txt {
