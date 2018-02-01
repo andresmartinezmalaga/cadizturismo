@@ -2449,8 +2449,7 @@ html, body {
     flex-direction: column !important;
     align-items: center !important;
     justify-content: center !important;
-    text-align: center;
-    padding-top: 30px !important; }
+    text-align: center; }
   .i-container .also-feature {
     margin: 0px auto 10px auto !important; }
   .i-container .main-feature {
