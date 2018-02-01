@@ -148,7 +148,7 @@
       top: 24px;
       left: 20px;
       cursor: pointer;
-      z-index: 1000;
+      z-index: 9999;
       padding: 10px 0px;
 
       span {
@@ -216,7 +216,7 @@
       left: -100%;
       top: 0;
       opacity: 0;
-      z-index: 999;
+      z-index: 9998;
       margin-top: 0;
       @include transition($slowly);
       .logo-container {
@@ -3045,7 +3045,7 @@ html, body {
       @media (max-width: 400px) {
         .header-event .header-txt {
           margin-bottom: 10px !important;
-          margin-top: 30px !important;
+          margin-top: 80px !important;
           min-height: 570px !important;
         }
         .send-info-container {
