@@ -2801,7 +2801,7 @@ html, body {
         .send-info-container .send-info .button-send-info a {
           font-size: 15px !important; }
   .send-info-container .send-info {
-    bottom: -20px !important; } }
+    bottom: 20px !important; } }
 
 @media (max-width: 1079px) and (min-width: 737px) {
   /* FOOTER */
