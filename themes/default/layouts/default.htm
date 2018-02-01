@@ -68,17 +68,6 @@ function onStart()
     {% component 'staticPage' %}
 
 
-
-    <div class="vertical-share">
-        <p class="also-title">{{'COMPARTIR'|_}}</p><img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-sep.svg" class="fr-fil fr-dib">
-        <div class="links-container"><a href="https://www.facebook.com/sharer/sharer.php?u={{url('/')}}/{{lang}}{{urlPage}}" target="_blank">Facebook&nbsp;</a>
-                <span>·</span>
-            <a data-action="share/whatsapp/share" href="whatsapp://send?text={{url('/')}}/{{lang}}{{urlPage}}">Whatsapp&nbsp;</a>
-            <span>·</span>
-            <a href="https://twitter.com/home?status={{url('/')}}/{{lang}}{{urlPage}}" target="_blank" >Twitter&nbsp;</a>
-        </div>
-    </div>
-
     {% set urlmun = this.page.url|split('/municipios/') %}
     {% set urlply = this.page.url|split('/playas/') %}
     {% set urlen = this.page.url|split('/espacios-naturales/') %}
@@ -92,6 +81,17 @@ function onStart()
         <br>
     </div>
     {% endif %}
+
+
+        <div class="vertical-share">
+            <p class="also-title">{{'COMPARTIR'|_}}</p><img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-sep.svg" class="fr-fil fr-dib">
+            <div class="links-container"><a href="https://www.facebook.com/sharer/sharer.php?u={{url('/')}}/{{lang}}{{urlPage}}" target="_blank">Facebook&nbsp;</a>
+                    <span>·</span>
+                <a data-action="share/whatsapp/share" href="whatsapp://send?text={{url('/')}}/{{lang}}{{urlPage}}">Whatsapp&nbsp;</a>
+                <span>·</span>
+                <a href="https://twitter.com/home?status={{url('/')}}/{{lang}}{{urlPage}}" target="_blank" >Twitter&nbsp;</a>
+            </div>
+        </div>
 
     {% partial 'site/footer' %}
 
