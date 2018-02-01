@@ -1,5 +1,5 @@
 ==
-<?php 
+<?php
 
 	function onStart()
 	{
@@ -10,11 +10,11 @@
 	    }
 	}
 
-?>	
+?>
 
 ==
 
-<div class="publis">
+<div id="container-sala-prensa" class="publis">
 	{% for new in news %}
 		<div class="prensa">
 
@@ -26,5 +26,5 @@
 				<a class="download-link" href="{{new.viewBag.urlExternaZip}}">{{'Descargar pdf'|_}} <img src="/{{preurl}}/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt="" class="fr-fic fr-dii">&nbsp;</a>
 			</div>
 		</div>
-	{% endfor %}	
+	{% endfor %}
 </div>
