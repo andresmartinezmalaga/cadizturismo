@@ -2064,7 +2064,8 @@ html, body {
   .header-parques, .header-flamenco, .header-teatro, .header-fiesta,
   .header-gourmet, .header-comida, .header-vino, .header-viaverde, .header-search, .header-rutas {
     background-position: center;
-    height: auto !important; }
+    height: auto !important;
+    background-attachment: initial !important; }
   .header-birdwatching .header-container, .header-alcornocales .header-container,
   .header-compras .header-container, .header-monumentos .header-container, .header-locales .header-container,
   .header-parques .header-container, .header-flamenco .header-container, .header-teatro .header-container, .header-fiesta .header-container,
@@ -2342,9 +2343,7 @@ html, body {
     width: 85%;
     margin: 0 auto; }
   .section-txt iframe {
-    width: 80%;
-    height: auto;
-    min-height: 500px; }
+    max-width: 100%; }
   .more-content {
     flex-direction: column;
     align-items: center;
@@ -2485,9 +2484,7 @@ html, body {
     width: 85%;
     margin: 0 auto; }
   .section-txt iframe {
-    width: 80%;
-    height: auto;
-    min-height: 500px; }
+    max-width: 100%; }
   .main-section-comarcas .main-txt {
     margin: 0px auto !important;
     width: 85%; }
@@ -2731,6 +2728,8 @@ html, body {
     z-index: 98; } }
 
 @media (max-width: 920px) and (min-width: 601px) {
+  .section-txt p, .section-txt-village p, .section-txt-comarca p {
+    width: 86% !important; }
   .header-search {
     height: auto !important;
     padding-top: 100px;
@@ -2765,6 +2764,8 @@ html, body {
     width: auto !important; }
     .language-container .languages {
       flex-direction: column !important; }
+      .language-container .languages a {
+        margin-bottom: 10px; }
       .language-container .languages .separator {
         display: none !important; } }
 
