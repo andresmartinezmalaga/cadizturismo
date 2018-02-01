@@ -660,6 +660,7 @@ class Index extends Controller
     protected function makeObjectFormWidget($type, $object, $alias = null, $subtype = null)
     {
 
+echo $type;
         echo $subtype;
         dd(1);
         // Andrés Martínez : add subtype to pages
