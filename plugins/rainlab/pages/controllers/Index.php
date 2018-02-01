@@ -982,10 +982,11 @@ class Index extends Controller
             $agastronomia = explode('gastronomia-', $getFileName);
             $adiversion = explode('diversion-', $getFileName);
             
-            echo "pre-save";
-            echo count($amunicipios);
+            echo "pre-save->";
+            echo $getFileName;
+            echo ' : '.count($amunicipios);
             dd(1);
-            
+
             if(
                 count($amunicipios) > 1 ||
                 count($acomarcas) > 1 ||
