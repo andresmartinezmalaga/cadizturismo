@@ -338,9 +338,9 @@ class Evento extends ContentBase
     public function getVisitsOptions() {
 
         return[
-          'cádiz auténtica' => 'Cádiz auténtica'
+          'cádiz auténtica' => 'Cádiz auténtica',
           'cádiz oculta' => 'Cádiz oculta',        
-          'cádiz relax' => 'Cádiz relax'
+          'cádiz relax' => 'Cádiz relax',
           'cádiz urbano' => 'Cádiz urbano'
         ] ;
     }
