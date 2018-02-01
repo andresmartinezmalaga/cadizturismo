@@ -32,7 +32,7 @@
 <div id="modal-exp"> <!-- data-iziModal-fullscreen="true"  data-iziModal-title="Welcome"  data-iziModal-subtitle="Subtitle"  data-iziModal-icon="icon-home" -->
     <!-- Modal content -->
     <div class="modal-container">
-      <img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/modal-icon.svg">
+      <img data-izimodal-close="#modal-exp" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/modal-icon.svg">
       <img class="close-modal" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/close-modal.svg">
       <h3>{{'¿Quieres recibir esta experiencia en tu email?'|_}}</h3>
       <p>{{'Escribe tu email y en unos segundos tendrás la experiencia en tu móvil para que puedas verla siempre que quieras.'|_}}</p>
@@ -47,7 +47,7 @@
     <!-- Modal content -->
     <div class="modal-container">
       <img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/sent-icon.svg">
-      <img class="close-modal" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/close-modal.svg">
+      <img data-izimodal-close="#modal-success" class="close-modal" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/close-modal.svg">
       <h3>{{'Tu experiencia ya ha llegado a tu correo'|_}}</h3>
       <p>{{'Te hemos enviado la experiencia a tu correo, disfruta de Cádiz como nunca antes.'|_}}</p>
       <a href="#" data-izimodal-close="#modal-success" data-izimodal-open="#modal-exp" data-izimodal-transitionin="fadeInDown">{{'¿No recibes tu experiencia?'|_}}</a>
