@@ -134,7 +134,7 @@ class Index extends Controller
 
 
         if($pageFileName == 'comarcas.htm' && $templateMarkup ==''){
-            ////$object['markup'] = PagesTemplates::getTComarcas();
+            $object['markup'] = PagesTemplates::getTComarcas();
         }
 
             if(
@@ -145,7 +145,7 @@ class Index extends Controller
                 $pageFileName == 'comarcas-la-janda.htm' ||
                 $pageFileName == 'comarcas-sierra-de-cadiz.htm' && $templateMarkup =='') {
 
-                $object['markup'] = PagesTemplates::getTComarca();
+                //$object['markup'] = PagesTemplates::getTComarca();
             }
 
         if($pageFileName == 'municipios.htm' && $templateMarkup ==''){
