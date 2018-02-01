@@ -1050,6 +1050,8 @@ class Index extends Controller
                     $coverurl = str_replace('"', '', $presrc3[1]);
 
                     $objectData['settings']['viewBag']['cover'] = $coverurl;
+                    $objectData['settings']['viewBag']['layout'] = 'default';
+
 
                 }
             }
