@@ -128,6 +128,10 @@ class Index extends Controller
         $type = Request::input('type');
         $object = $this->loadObject($type, Request::input('path'));
 
+        echo $object['markup'];
+        
+        dd(1);
+
         // Andrés Martínez : load Static-Parents templates and sons fixeds
         $pageFileName = $object['fileName'];
         $templateMarkup = $object['markup'];
