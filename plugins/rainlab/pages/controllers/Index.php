@@ -974,32 +974,34 @@ class Index extends Controller
 
             $getFileName = $object['fileName'];
             
-            $amunicipios = explode('municipios-', $getFileName);
-            $acomarcas = explode('comarcas-', $getFileName);
-            $acultura = explode('cultura-', $getFileName);
-            $arutas = explode('rutas-', $getFileName);
-            $aeventos = explode('eventos-', $getFileName);
-            $agastronomia = explode('gastronomia-', $getFileName);
-            $adiversion = explode('diversion-', $getFileName);
-            
-            echo "pre-save->";
-            echo $getFileName;
-            echo ' : '.count($amunicipios);
+            echo json_encode($objectData['settings']);
             dd(1);
+            
+            if($getFileName!=''){
+                
+                $amunicipios = explode('municipios-', $getFileName);
+                $acomarcas = explode('comarcas-', $getFileName);
+                $acultura = explode('cultura-', $getFileName);
+                $arutas = explode('rutas-', $getFileName);
+                $aeventos = explode('eventos-', $getFileName);
+                $agastronomia = explode('gastronomia-', $getFileName);
+                $adiversion = explode('diversion-', $getFileName);
+                
+                if(
+                    count($amunicipios) > 1 ||
+                    count($acomarcas) > 1 ||
+                    count($acultura) > 1 ||
+                    count($arutas) > 1 ||
+                    count($aeventos) > 1 ||
+                    count($agastronomia) > 1 ||
+                    count($adiversion) > 1
+                )
+                {
+                     $objectData['settings']['viewBag']['layout'] = 'default';
+                }
 
-            if(
-                count($amunicipios) > 1 ||
-                count($acomarcas) > 1 ||
-                count($acultura) > 1 ||
-                count($arutas) > 1 ||
-                count($aeventos) > 1 ||
-                count($agastronomia) > 1 ||
-                count($adiversion) > 1
-            )
-            {
-                 $objectData['settings']['viewBag']['layout'] = 'default';
             }
-
+            
 
             if($getFileName == 'municipios.htm'){
                 $objectData['settings']['viewBag']['layout'] = 'municipio';
