@@ -331,7 +331,7 @@ class Index extends Controller
             'page' => 'rainlab.pages::lang.page.saved',
             'experience' => 'rainlab.pages::lang.experience.saved',
             'evento' => 'rainlab.pages::lang.event.saved',
-            'ruta' => 'rainlab.pages::lang.event.saved',
+            'ruta' => 'rainlab.pages::lang.ruta.saved',
             'menu' => 'rainlab.pages::lang.menu.saved'
         ];
 

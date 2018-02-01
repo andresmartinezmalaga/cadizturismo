@@ -14,6 +14,7 @@
 
 ==
 <!--  DENTRO DE DESTE DIV DEBEN SALIR LOS SEIS PRIMEROS-->
+
 {% if events|length > 0 %}
   <div class="more-popular">
     	<div class="title-container">
@@ -21,36 +22,39 @@
         <img class="separator" src="{{preurl}}/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
     	</div>
    	<div class="main-events-container">
-  	{% for event in events %}
-  	    <!--  MÁS POPULARES -->
+  	  {% for i in 0..5 %}
+      {% if events[i]|length > 0 %}
+        <!--  MÁS POPULARES -->
           <div class="event">
             <div class="overlay-img"></div>
-            <img class="rec-img" src="{{event.viewBag.cover}}">
+            <img class="rec-img" src="{{events[i].viewBag.cover}}">
             <div class="txt-container">
-              <p class="date">{{event.date_start_pretty_day}} {{event.date_start_pretty_month|_}}</p>
-              <p class="name">{{event.viewBag.title}}</p>
+              <p class="date">{{events[i].date_start_pretty_day}} {{events[i].date_start_pretty_month|_}}</p>
+              <p class="name">{{events[i].viewBag.title}}</p>
               <img class="separator" src="{{preurl}}/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
               <div class="icons">
                 <div class="icon-pair">
-                  <img src="{{preurl}}/storage/app/media/uploaded-files/templates/{{str_slug(event.viewBag.category)}}.svg">
-                  <p class="icon-txt">{{event.viewBag.category}}</p>
+                  <img src="{{preurl}}/storage/app/media/uploaded-files/templates/{{str_slug(events[i].viewBag.category)}}.svg">
+                  <p class="icon-txt">{{events[i].viewBag.category}}</p>
                 </div>
                 <div class="icon-pair">
                   <img src="{{preurl}}/storage/app/media/uploaded-files/templates/loc-events.svg">
-                  <p class="icon-txt">{{event.location}}</p>
+                  <p class="icon-txt">{{events[i].location}}</p>
                 </div>
               </div>
               <div class="button-container">
-                <a class="see-event" href="{{url('/')}}/{{lang}}{{event.viewBag.url}}">{{'Ver evento'|_}} <img src="{{preurl}}/storage/app/media/uploaded-files/templates/link-icon.svg"></a>
+                <a class="see-event" href="{{url('/')}}/{{lang}}{{events[i].viewBag.url}}">{{'Ver evento'|_}} <img src="{{preurl}}/storage/app/media/uploaded-files/templates/link-icon.svg"></a>
               </div>
             </div>
           </div>
-
+        
+        {%endif%}
   	{% endfor %}
   	</div>
   </div>
 {% endif %}
 
+{% if events|length > 6 %}
 <!-- Y DENTRO DE ESTE LOS DEMÁS -->
 <div id="todos-eventos" class="all-events">
 	<div class="title-container">
@@ -58,31 +62,31 @@
 			<img class="separator" src="{{preurl}}/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
 	</div>
 	<div class="all-events-container">
-		{% for event in events %}
+		 {% for i in 6..(events|length -1) %}
   	    <!--  MÁS POPULARES -->
           <div class="event">
             <div class="overlay-img"></div>
-            <img class="rec-img" src="{{event.viewBag.cover}}">
+            <img class="rec-img" src="{{events[i].viewBag.cover}}">
             <div class="txt-container">
-              <p class="date">{{event.date_start_pretty_day}} {{event.date_start_pretty_month|_}}</p>
-              <p class="name">{{event.viewBag.title}}</p>
+              <p class="date">{{events[i].date_start_pretty_day}} {{events[i].date_start_pretty_month|_}}</p>
+              <p class="name">{{events[i].viewBag.title}}</p>
               <img class="separator" src="{{preurl}}/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
               <div class="icons">
                 <div class="icon-pair">
-                  <img src="{{preurl}}/storage/app/media/uploaded-files/templates/{{str_slug(event.viewBag.category)}}.svg">
-                  <p class="icon-txt">{{event.viewBag.category}}</p>
+                  <img src="{{preurl}}/storage/app/media/uploaded-files/templates/{{str_slug(events[i].viewBag.category)}}.svg">
+                  <p class="icon-txt">{{events[i].viewBag.category}}</p>
                 </div>
                 <div class="icon-pair">
                   <img src="{{preurl}}/storage/app/media/uploaded-files/templates/loc-events.svg">
-                  <p class="icon-txt">{{event.location}}</p>
+                  <p class="icon-txt">{{events[i].location}}</p>
                 </div>
               </div>
               <div class="button-container">
-                <a class="see-event" href="{{url('/')}}/{{lang}}{{event.viewBag.url}}">{{'Ver evento'|_}} <img src="{{preurl}}/storage/app/media/uploaded-files/templates/link-icon.svg"></a>
+                <a class="see-event" href="{{url('/')}}/{{lang}}{{events[i].viewBag.url}}">{{'Ver evento'|_}} <img src="{{preurl}}/storage/app/media/uploaded-files/templates/link-icon.svg"></a>
               </div>
             </div>
           </div>
-
   	{% endfor %}
 	</div>
 </div>
+{%endif%}

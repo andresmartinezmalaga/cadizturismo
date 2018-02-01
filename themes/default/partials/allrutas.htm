@@ -13,41 +13,47 @@
 ?>
 
 ==
+
+
 {% if rutas|length > 0 %}
     	<div class="main-txt">
       <p class="title">MÁS POPULARES <br> EN CÁDIZ </p>
         <img class="separator" src="{{preurl}}/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
     	</div>
 			<!-- AQUÍ LAS SEIS PRIMERAS RUTAS -->
+
 <div id="container-rutas" class="main-events-container">
-  	{% for ruta in rutas %}
-  	    <!--  MÁS POPULARES -->
+
+  	{% for i in 0..5 %}
+    {% if rutas[i]|length > 0 %}    
+        <!--  MÁS POPULARES -->
           <div class="event">
             <div class="overlay-img"></div>
-            <img class="rec-img" src="{{ruta.viewBag.cover}}">
+            <img class="rec-img" src="{{rutas[i].viewBag.cover}}">
             <div class="txt-container">
-              <p class="name">{{ruta.viewBag.title}}</p>
+              <p class="name">{{rutas[i].viewBag.title}}</p>
               <img class="separator" src="{{preurl}}/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
               <div class="icons">
                 <div class="icon-pair">
-                  <img src="{{preurl}}/storage/app/media/uploaded-files/templates/{{str_slug(ruta.viewBag.category)}}.svg">
-                  <p class="icon-txt">{{ruta.viewBag.category}}</p>
+                  <img src="{{preurl}}/storage/app/media/uploaded-files/templates/{{str_slug(rutas[i].viewBag.category)}}.svg">
+                  <p class="icon-txt">{{rutas[i].viewBag.category}}</p>
                 </div>
                 <div class="icon-pair">
                   <img src="{{preurl}}/storage/app/media/uploaded-files/templates/loc-events.svg">
-                  <p class="icon-txt">{{ruta.location}}</p>
+                  <p class="icon-txt">{{rutas[i].location}}</p>
                 </div>
               </div>
               <div class="button-container">
-                <a class="see-event" href="{{url('/')}}/{{lang}}{{ruta.viewBag.url}}">{{'Ver ruta'|_}} <img src="{{preurl}}/storage/app/media/uploaded-files/templates/link-icon.svg"></a>
+                <a class="see-event" href="{{url('/')}}/{{lang}}{{rutas[i].viewBag.url}}">{{'Ver ruta'|_}} <img src="{{preurl}}/storage/app/media/uploaded-files/templates/link-icon.svg"></a>
               </div>
             </div>
           </div>
-
+    {% endif %}
   	{% endfor %}
   	</div>
 {% endif %}
 
+{% if rutas|length > 6 %}
 <!-- AQUÍ LAS DEMÁS -->
 <div class="all-events">
 	<div class="title-container">
@@ -55,30 +61,34 @@
 			<img class="separator" src="{{preurl}}/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
 	</div>
 	<div class="all-events-container">
-		{% for ruta in rutas %}
-  	    <!--  MÁS POPULARES -->
+		
+       {% for i in 6..(rutas|length -1) %}
+  	     
+        <!--  MÁS POPULARES -->
           <div class="event">
             <div class="overlay-img"></div>
-            <img class="rec-img" src="{{ruta.viewBag.cover}}">
+            <img class="rec-img" src="{{rutas[i].viewBag.cover}}">
             <div class="txt-container">
-              <p class="name">{{ruta.viewBag.title}}</p>
+              <p class="name">{{rutas[i].viewBag.title}}</p>
               <img class="separator" src="{{preurl}}/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
               <div class="icons">
                 <div class="icon-pair">
-                  <img src="{{preurl}}/storage/app/media/uploaded-files/templates/{{str_slug(ruta.viewBag.category)}}.svg">
-                  <p class="icon-txt">{{ruta.viewBag.category}}</p>
+                  <img src="{{preurl}}/storage/app/media/uploaded-files/templates/{{str_slug(rutas[i].viewBag.category)}}.svg">
+                  <p class="icon-txt">{{rutas[i].viewBag.category}}</p>
                 </div>
                 <div class="icon-pair">
                   <img src="{{preurl}}/storage/app/media/uploaded-files/templates/loc-events.svg">
-                  <p class="icon-txt">{{ruta.location}}</p>
+                  <p class="icon-txt">{{rutas[i].location}}</p>
                 </div>
               </div>
               <div class="button-container">
-                <a class="see-event" href="{{url('/')}}/{{lang}}{{ruta.viewBag.url}}">{{'Ver ruta'|_}} <img src="{{preurl}}/storage/app/media/uploaded-files/templates/link-icon.svg"></a>
+                <a class="see-event" href="{{url('/')}}/{{lang}}{{rutas[i].viewBag.url}}">{{'Ver ruta'|_}} <img src="{{preurl}}/storage/app/media/uploaded-files/templates/link-icon.svg"></a>
               </div>
             </div>
           </div>
-
+          {% set count = count +1 %}  
+    
   	{% endfor %}
 	</div>
 </div>
+{% endif %}

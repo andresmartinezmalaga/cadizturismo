@@ -2,7 +2,7 @@
 
 return [
     'app' => [
-        'name' => 'October CMS',
+        'name' => 'Cádiz Sudo',
         'tagline' => 'Volviendo a lo básico'
     ],
     'directory' => [
