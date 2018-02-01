@@ -134,7 +134,7 @@ class Index extends Controller
 
 
         if($pageFileName == 'comarcas.htm' && $templateMarkup ==''){
-            $object['markup'] = PagesTemplates::getTComarcas();
+            //$object['markup'] = PagesTemplates::getTComarcas();
         }
 
             if(
