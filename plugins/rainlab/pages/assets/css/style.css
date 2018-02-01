@@ -2784,7 +2784,7 @@ html, body {
 @media (max-width: 400px) {
   .header-event .header-txt {
     margin-bottom: 10px !important;
-    margin-top: 30px !important;
+    margin-top: 80px !important;
     min-height: 570px !important; }
   .send-info-container {
     height: auto !important;
