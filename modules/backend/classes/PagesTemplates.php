@@ -2161,7 +2161,7 @@ class PagesTemplates
       alt="">
       <div class="header-container">
     		<div class="header-txt-comollegar">
-    			<h1 class="txt">Necesitas ayuda</h1>
+    			<h1 class="txt">Contacto</h1>
           <img class="brush" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg"
           alt="necesitas ayuda">
         </div>
@@ -2204,7 +2204,7 @@ class PagesTemplates
             <img class="icon" src="***_preurl_***/storage/app/media/uploaded-files/templates/info-turistica-icon.svg" alt="">
             <p class="icon-txt">INFORMACIÓN TURÍSTICA</p>
           </div>
-          <a href="#">Contactar<img src="***_preurl_***/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""></a>
+          <a class="typeform-widget" data-url="https://doctorjekyll.typeform.com/to/rGoiiJ">Contactar<img src="***_preurl_***/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""></a>
         </div>
       </div>
       <div class="way">
@@ -2214,7 +2214,7 @@ class PagesTemplates
             <img class="icon" src="***_preurl_***/storage/app/media/uploaded-files/templates/prensa-icon.svg" alt="">
             <p class="icon-txt">PRENSA Y EMPRESAS</p>
           </div>
-            <a href="#">Contactar<img src="***_preurl_***/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""></a>
+            <a class="typeform-widget" data-url="https://doctorjekyll.typeform.com/to/A4AqJg">Contactar<img src="***_preurl_***/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""></a>
         </div>
       </div>
     </section>';
