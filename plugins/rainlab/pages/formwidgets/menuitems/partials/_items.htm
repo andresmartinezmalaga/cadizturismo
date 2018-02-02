@@ -1,5 +1,5 @@
 <span class="infoLimit">
-	{{'Solo aparecerán los cinco primeros apartados en el menú, además del apartado de todos los eventos.'|_}}
+	Solo aparecerán los cinco primeros apartados en el menú, además del apartado de "Todos los eventos".
 </span>
 <ol>
     <?= $this->makePartial('itemlist', ['items' => $items]) ?>
@@ -19,5 +19,5 @@
 <?php if ( $this->model->code =='que-vivir' &&  count($items) == 6 ) { ?>
 	
 	<div class="barraLimit"></div>
-	
+
 <?php }  ?>
