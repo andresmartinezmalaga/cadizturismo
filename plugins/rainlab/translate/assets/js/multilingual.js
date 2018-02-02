@@ -93,8 +93,7 @@
                 hijoActual = ($(padre).children().children().children().prev().find('.fr-wrapper').find('.fr-element'));
             } 
          
-            //hijoActual.html(padreTemplate)
-
+           
             var selectedLocale = $(this).data('switch-locale')
             self.setLocale(selectedLocale)
 
@@ -106,7 +105,6 @@
             }
 
             // Andrés Martínez :  add template to multilingual markups & insert template at markups when empty
-            //var padre = ($(event.target).parent().parent().parent().parent().parent().parent());
             if(hijoActual.html()=='<p><br></p>' || hijoActual.html()=='<p></p>' || hijoActual.html()==''){
                 hijoActual.html(padreTemplate);
             }
