@@ -196,7 +196,7 @@
       transition: opacity 0.3s ease; }
       .secret-routes .txt-container .events-link img {
         position: relative;
-        left: 4px; }
+        left: 9px; }
       .secret-routes .txt-container .events-link:hover, .secret-routes .txt-container .events-link:active, .secret-routes .txt-container .events-link:focus {
         text-decoration: none;
         outline: none;

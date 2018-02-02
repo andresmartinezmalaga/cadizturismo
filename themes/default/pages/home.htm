@@ -71,8 +71,8 @@ is_hidden = 0
       <div class="left-txt">
         <p class="title">{{ 'QUÉ SE CUECE HOY EN CÁDIZ'|_ }}</p>
           <img class="separator" src="{{preurl}}/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
-         
-         
+
+
           {% for i in 4..5 %}
              {% if events[i] %}
                <div class="event">
@@ -83,15 +83,15 @@ is_hidden = 0
               {% endif %}
           {% endfor %}
 
-          
+
 
             <a class="events-link" href="{{lang}}/todos-los-eventos">{{ 'Todos los eventos'|_ }}&nbsp;&nbsp;<img src="{{preurl}}/storage/app/media/uploaded-files/templates/link-arrow-yellow.svg" alt=""> </a>
       </div>
 
-    
+
       <div class="right-photos">
         <!-- DIRECCIÓN 1º ARRIBA-ABAJO 2º IZQUIERDA-DERECHA -->
-        
+
         {% if events[0] %}
         <a href="{{url('/')}}/{{lang}}{{events[0]['url']}}">
           <div id="element1" class="element">
@@ -149,7 +149,7 @@ is_hidden = 0
       </div>
       {% endif %}
     </div>
-    
+
     <!--  RUTAS -->
     <div class="secret-routes">
       <div class="txt-container">

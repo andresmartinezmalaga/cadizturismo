@@ -437,20 +437,22 @@ class StaticApp extends ComponentBase
           .background-image {
             position: absolute !important;
             width: 100%;
+            object-fit: cover !important;
             object-position: center !important;
-            height: 980px !important;
+            height: 700px !important;
             text-align: center !important;
           }
 
         .header-txt, .txt, .header-container {
           text-align: center !important;
-          font-size: 110px !important;
+          font-size: 100px !important;
           font-weight: 500;
           text-transform: uppercase;
         }
 
         .header-event {
           text-align: center !important;
+          height: 700px;
         }
 
           .brush {
@@ -479,7 +481,7 @@ class StaticApp extends ComponentBase
                     font-size: 46px !important;
                     font-weight: 700 !important;
                     line-height: 50px !important;
-                    margin-bottom: 0px !important;
+                    margin-bottom: 10px !important;
                }
 
                 .section-txt .big-number-container, .section-txt .txt-container, .section-txt .big-number-container span, .section-txt .txt-container p {
@@ -554,7 +556,7 @@ class StaticApp extends ComponentBase
             $message->to($sendTo);
             $message->subject('Tu experiencia en Cadiz Turismo');
             $message->attachData($pdf_data, 'Experience.pdf');
-            
+
 
         });
 
