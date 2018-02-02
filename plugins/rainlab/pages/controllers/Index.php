@@ -694,13 +694,14 @@ class Index extends Controller
         }
 
 
-
         $widgetConfig = $this->makeConfig($formConfigs[$type]);
         $widgetConfig->model = $object;
         $widgetConfig->alias = $alias ?: 'form'.studly_case($type).md5($object->getFileName()).uniqid();
         $widgetConfig->context = !$object->exists ? 'create' : 'update';
 
         $widget = $this->makeWidget('Backend\Widgets\Form', $widgetConfig);
+
+        
 
         if ($type == 'page') {
 
@@ -710,6 +711,8 @@ class Index extends Controller
                 $this->addPageSyntaxFields($widget, $object);
             });
         }
+
+      
 
         if ($type == 'experience') {
 
@@ -1045,8 +1048,6 @@ class Index extends Controller
 
                 $objectData['settings']['viewBag']['layout'] = 'prensa';
             }
-
-
 
             // Andrés Martínez : add cover url
             if($filterSubTemplate == 'playas' || $filterSubTemplate == 'municipios'){

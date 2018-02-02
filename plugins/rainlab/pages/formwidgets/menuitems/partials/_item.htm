@@ -1,6 +1,7 @@
 <?php
     $groupStatus = true;
 ?>
+
 <li
     class="<?= $item->items ? 'has-subitems' : null ?>"
     data-status="<?= $groupStatus || !$item->items ? 'expanded' : 'collapsed' ?>"
@@ -29,7 +30,6 @@
             </li>
         </ul>
     </div>
-
     <ol>
         <?php if ($subItems = $item->items): ?>
             <?= $this->makePartial('itemlist', ['items' => $subItems]) ?>

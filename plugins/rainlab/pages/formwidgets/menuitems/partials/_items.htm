@@ -2,6 +2,9 @@
     <?= $this->makePartial('itemlist', ['items' => $items]) ?>
 </ol>
 
+
+<?php //if ( $this->model->code =='que-vivir' &&  count($items)>=6 ){} else { ?>
+
 <a href="javascript:;"
     data-hotkey="ctrl+i, cmd+i"
     data-control="add-item"
@@ -9,3 +12,5 @@
     >
     <i class="icon-plus"></i><?= trans('rainlab.pages::lang.menuitem.add_item') ?>
 </a>
+
+<?php //}  ?>
