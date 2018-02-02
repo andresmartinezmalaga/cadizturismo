@@ -1,5 +1,5 @@
 <?php if ( $this->model->code =='que-vivir' ) { ?>
-	
+
 	<span class="infoLimit">
 		Solo aparecerán los cinco primeros apartados en el menú, además del apartado de "Todos los eventos".
 	</span>
@@ -11,7 +11,11 @@
     <?= $this->makePartial('itemlist', ['items' => $items]) ?>
 </ol>
 
+<?php if ( $this->model->code =='que-vivir' &&  count($items) == 6 ) { ?>
 
+	<div class="barraLimit"></div>
+
+<?php }  ?>
 
 
 <a href="javascript:;"
@@ -21,9 +25,3 @@
     >
     <i class="icon-plus"></i><?= trans('rainlab.pages::lang.menuitem.add_item') ?>
 </a>
-
-<?php if ( $this->model->code =='que-vivir' &&  count($items) == 6 ) { ?>
-	
-	<div class="barraLimit"></div>
-
-<?php }  ?>
