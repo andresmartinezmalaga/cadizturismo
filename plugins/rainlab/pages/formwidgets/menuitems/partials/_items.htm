@@ -1,6 +1,12 @@
-<span class="infoLimit">
-	Solo aparecerán los cinco primeros apartados en el menú, además del apartado de "Todos los eventos".
-</span>
+<?php if ( $this->model->code =='que-vivir' ) { ?>
+	
+	<span class="infoLimit">
+		Solo aparecerán los cinco primeros apartados en el menú, además del apartado de "Todos los eventos".
+	</span>
+
+<?php }  ?>
+
+
 <ol>
     <?= $this->makePartial('itemlist', ['items' => $items]) ?>
 </ol>
