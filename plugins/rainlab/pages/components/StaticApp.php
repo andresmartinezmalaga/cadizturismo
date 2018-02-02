@@ -439,7 +439,7 @@ class StaticApp extends ComponentBase
             width: 100%;
             object-fit: cover !important;
             object-position: center !important;
-            height: 980px !important;
+            height: 600px !important;
             text-align: center !important;
           }
 
@@ -452,6 +452,7 @@ class StaticApp extends ComponentBase
 
         .header-event {
           text-align: center !important;
+          height: 600px;
         }
 
           .brush {
@@ -480,7 +481,7 @@ class StaticApp extends ComponentBase
                     font-size: 46px !important;
                     font-weight: 700 !important;
                     line-height: 50px !important;
-                    margin-bottom: 0px !important;
+                    margin-bottom: 10px !important;
                }
 
                 .section-txt .big-number-container, .section-txt .txt-container, .section-txt .big-number-container span, .section-txt .txt-container p {
