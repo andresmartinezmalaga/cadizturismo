@@ -59,9 +59,11 @@
         <img class="separator separator-menu" src="{{preurl}}/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
         <img class="separator-tiny" src="{{preurl}}/storage/app/media/uploaded-files/templates/tiny-separator.svg">
         <ul class="menu-ul">
-          {% for item in staticMenu2.menuItems %}
-            {% set tt = '.'~item.title %}             
-            <li class="menu-item"><a href="{{ item.url }}">{{ tt|_ }}</a></li>
+          {% for i in 0..4 %}         
+            {% if staticMenu2.menuItems[i].title != '' %}
+              {% set tt = '.'~staticMenu2.menuItems[i].title %}             
+              <li class="menu-item"><a href="{{ staticMenu2.menuItems[i].url }}">{{ tt|_ }}</a></li>
+            {%endif%}
           {% endfor %} 
             <li class="menu-item"><a href="{{url('/')}}/{{lang}}/todos-los-eventos">{{ 'Todos los eventos'|_ }}</a></li>              
         </ul>
