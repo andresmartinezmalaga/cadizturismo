@@ -439,7 +439,7 @@ class StaticApp extends ComponentBase
             width: 100%;
             object-fit: cover !important;
             object-position: center !important;
-            height: 600px !important;
+            height: 700px !important;
             text-align: center !important;
           }
 
@@ -452,7 +452,7 @@ class StaticApp extends ComponentBase
 
         .header-event {
           text-align: center !important;
-          height: 600px;
+          height: 700px;
         }
 
           .brush {
