@@ -223,10 +223,10 @@ class EventoList extends WidgetBase
         $events = collect();
         foreach ($pages as $i) {
            if($i->page->template == 'eventos'){
-                $i->date_start = (new DateTime($i->page->date_start))->format('Y-m-d');
+                $i->date_end = (new DateTime($i->page->date_end))->format('Y-m-d');
                 $i->date_start_pretty_num = (new DateTime($i->page->date_start))->format('d.m.y');
                 
-                if($i->date_start < $now){
+                if($i->date_end > $now){
                     $events->push($i);
                 }
            }
