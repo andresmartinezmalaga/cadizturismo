@@ -437,6 +437,7 @@ class StaticApp extends ComponentBase
           .background-image {
             position: absolute !important;
             width: 100%;
+            object-fit: cover !important;
             object-position: center !important;
             height: 980px !important;
             text-align: center !important;
@@ -554,7 +555,7 @@ class StaticApp extends ComponentBase
             $message->to($sendTo);
             $message->subject('Tu experiencia en Cadiz Turismo');
             $message->attachData($pdf_data, 'Experience.pdf');
-            
+
 
         });
 
