@@ -81,13 +81,19 @@
             var padreTemplate;
             var padre;
 
-            console.log('boton pulsado');
-
             if( idioma == 'es' || padreTemplate  === undefined || padreTemplate === null){
                 padre = ($(event.target).parent().parent().parent().parent().parent().parent());
                 padreTemplate = ($(padre).find('textarea').prev().find('.fr-wrapper').html());
             }
 
+            var hijoActual = ($(padre).find('textarea').prev().find('.fr-wrapper').find('.fr-element'));
+            
+            if(hijoActual.length<1){
+                padreTemplate = $(event.target).parent().parent().parent().parent().parent().find('textarea[name="markup"]').text();
+                hijoActual = ($(padre).children().children().children().prev().find('.fr-wrapper').find('.fr-element'));
+            } 
+         
+           
             var selectedLocale = $(this).data('switch-locale')
             self.setLocale(selectedLocale)
 
@@ -99,10 +105,7 @@
             }
 
             // Andrés Martínez :  add template to multilingual markups & insert template at markups when empty
-            //var padre = ($(event.target).parent().parent().parent().parent().parent().parent());
-            var hijoActual = ($(padre).find('textarea').prev().find('.fr-wrapper').find('.fr-element'));
             if(hijoActual.html()=='<p><br></p>' || hijoActual.html()=='<p></p>' || hijoActual.html()==''){
-                console.log('insertando plantilla');
                 hijoActual.html(padreTemplate);
             }
 

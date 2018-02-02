@@ -1,9 +1,12 @@
+<span class="infoLimit">
+	{{'Solo aparecerán los cinco primeros apartados en el menú, además del apartado de todos los eventos.'|_}}
+</span>
 <ol>
     <?= $this->makePartial('itemlist', ['items' => $items]) ?>
 </ol>
 
 
-<?php //if ( $this->model->code =='que-vivir' &&  count($items)>=6 ){} else { ?>
+
 
 <a href="javascript:;"
     data-hotkey="ctrl+i, cmd+i"
@@ -13,4 +16,8 @@
     <i class="icon-plus"></i><?= trans('rainlab.pages::lang.menuitem.add_item') ?>
 </a>
 
-<?php //}  ?>
+<?php if ( $this->model->code =='que-vivir' &&  count($items) == 6 ) { ?>
+	
+	<div class="barraLimit"></div>
+	
+<?php }  ?>
