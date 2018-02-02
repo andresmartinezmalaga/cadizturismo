@@ -31,12 +31,14 @@ fields:
         label: 'Fecha Inicio'
         type: datepicker
         mode: date 
+        firstDay: 1  
 
     viewBag[date_end]:
         cssClass: size33
         label: 'Fecha Fin'
         type: datepicker
-        mode: date    
+        mode: date 
+        firstDay: 1   
 
     viewBag[category]:
        label: 'Categoría'
