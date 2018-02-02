@@ -1,5 +1,16 @@
 <?php if ($items): ?>
+  <?php $count = 0  ?>
     <?php foreach ($items as $item): ?>
+
         <?= $this->makePartial('item', ['item' => $item]) ?>
+
+        <?php
+          $count = $count+1;
+          if($count == 5){ ?>
+            <!-- <div class="barraLimit"></div> -->
+        <?php  }
+
+        ?>
+
     <?php endforeach ?>
 <?php endif ?>

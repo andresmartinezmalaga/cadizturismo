@@ -11,13 +11,6 @@
     <?= $this->makePartial('itemlist', ['items' => $items]) ?>
 </ol>
 
-<?php if ( $this->model->code =='que-vivir' &&  count($items) == 6 ) { ?>
-
-	<div class="barraLimit"></div>
-
-<?php }  ?>
-
-
 <a href="javascript:;"
     data-hotkey="ctrl+i, cmd+i"
     data-control="add-item"
