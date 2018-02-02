@@ -511,27 +511,10 @@ class PagesTemplates
   </div>
   <div class="icons-row">
     <div class="i-container">
-      <div class="also-feature main-feature" style="border-right: none">
-        <!-- El icono de la urbana se llama urban-beach.svg -->
-        <img src="***_preurl_***/storage/app/media/uploaded-files/templates/virgin-beach.svg" class="fr-fil fr-dib">
-        <p class="also-desc">Playa virgen</p>
-      </div>
       <div class="also-feature main-feature">
         <!-- El icono de la urbana se llama urban-beach.svg -->
         <img src="***_preurl_***/storage/app/media/uploaded-files/templates/urban-beach.svg" class="fr-fil fr-dib">
         <p class="also-desc">Playa urbana</p>
-      </div>
-      <div class="also-feature"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/natu-grey.svg" class="fr-fil fr-dib">
-
-        <p class="also-desc">Naturaleza</p>
-      </div>
-      <div class="also-feature"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/deporte-grey.svg" class="fr-fil fr-dib">
-
-        <p class="also-desc">Deporte</p>
-      </div>
-      <div class="also-feature"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/animalesg.svg" class="fr-fil fr-dib">
-
-        <p class="also-desc">Animales</p>
       </div>
       <div class="also-feature"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/campingg.svg" class="fr-fil fr-dib">
 
@@ -541,13 +524,9 @@ class PagesTemplates
 
         <p class="also-desc">Instalaciones</p>
       </div>
-      <div class="also-feature"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/nudistag.svg" class="fr-fil fr-dib">
+      <div class="also-feature"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/animalesg.svg" class="fr-fil fr-dib">
 
-        <p class="also-desc">Nudista</p>
-      </div>
-      <div class="also-feature"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/restauraciong.svg" class="fr-fil fr-dib">
-
-        <p class="also-desc">Restauración</p>
+        <p class="also-desc">Animales</p>
       </div>
     </div>
   </div>';
