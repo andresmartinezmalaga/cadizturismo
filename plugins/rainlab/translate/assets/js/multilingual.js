@@ -81,6 +81,8 @@
             var padreTemplate;
             var padre;
 
+            console.log('boton pulsado');
+
             if( idioma == 'es' || padreTemplate  === undefined || padreTemplate === null){
                 padre = ($(event.target).parent().parent().parent().parent().parent().parent());
                 padreTemplate = ($(padre).find('textarea').prev().find('.fr-wrapper').html());
@@ -100,6 +102,7 @@
             //var padre = ($(event.target).parent().parent().parent().parent().parent().parent());
             var hijoActual = ($(padre).find('textarea').prev().find('.fr-wrapper').find('.fr-element'));
             if(hijoActual.html()=='<p><br></p>' || hijoActual.html()=='<p></p>' || hijoActual.html()==''){
+                console.log('insertando plantilla');
                 hijoActual.html(padreTemplate);
             }
 
