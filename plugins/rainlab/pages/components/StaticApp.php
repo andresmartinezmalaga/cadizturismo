@@ -445,7 +445,7 @@ class StaticApp extends ComponentBase
 
         .header-txt, .txt, .header-container {
           text-align: center !important;
-          font-size: 110px !important;
+          font-size: 100px !important;
           font-weight: 500;
           text-transform: uppercase;
         }
