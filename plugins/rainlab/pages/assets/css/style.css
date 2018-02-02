@@ -2744,7 +2744,7 @@ html, body {
     line-height: 55px !important; }
   .more-popular .event, .all-events .event, .all-exps .event {
     width: 50% !important;
-    margin: 0 auto !important; } }
+    margin-top: 0px !important; } }
 
 @media (max-width: 1290px) and (min-width: 726px) {
   #structure-cultura {
