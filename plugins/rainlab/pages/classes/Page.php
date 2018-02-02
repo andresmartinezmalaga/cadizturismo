@@ -213,6 +213,8 @@ class Page extends ContentBase
      */
     public function fill(array $attributes)
     {
+        
+
         parent::fill($attributes);
 
         /*
@@ -223,6 +225,7 @@ class Page extends ContentBase
             $this->getViewBag()->setProperties($attributes['settings']['viewBag']);
             $this->fillViewBagArray();
         }
+
     }
 
     /**
@@ -271,6 +274,7 @@ class Page extends ContentBase
      */
     public function afterCreate()
     {
+      
         $this->appendToMeta();
     }
 
@@ -380,17 +384,16 @@ class Page extends ContentBase
      */
     public function setDefaultLayout($parentPage)
     {
+
         // Check parent page for a defined child layout
         if ($parentPage) {
 
-            // Andrés Martínez : Load parents template municipios, comarcas, playas on markup
-            /*if($parentPage->fileName == 'municipios.htm'){
+            // Andrés Martínez : Load parents template municipios, playas on markup        
+            if($parentPage->fileName == 'municipios.htm'){
                 $this->markup = PagesTemplates::getTMunicipio();
-            } elseif ($parentPage->fileName == 'comarcas.htm') {
-                $this->markup = PagesTemplates::getTComarca();
-            } elseif ($parentPage->fileName == 'playas.htm') {
+            }elseif ($parentPage->fileName == 'playas.htm') {
                 $this->markup = PagesTemplates::getTPlaya();
-            }*/
+            }
             
             $layout = Layout::load($this->theme, $parentPage->layout);
             $component = $layout ? $layout->getComponent('staticPage') : null;
@@ -398,6 +401,7 @@ class Page extends ContentBase
             if ($childLayoutName) {
                 $this->getViewBag()->setProperty('layout', $childLayoutName);
                 $this->fillViewBagArray();
+
                 return;
             }
         }
@@ -667,6 +671,9 @@ class Page extends ContentBase
 
         $this->attributes['code'] = trim($result);
         $this->attributes['placeholders'] = $placeholders;
+
+
+        
     }
 
     public function getProcessedMarkup()
@@ -691,6 +698,7 @@ class Page extends ContentBase
         if (!empty($globalVars)) {
             $markup = TextParser::parse($markup, $globalVars);
         }
+
 
         return $this->processedMarkupCache = $markup;
     }
@@ -718,6 +726,8 @@ class Page extends ContentBase
             $markup = TextParser::parse($markup, $globalVars);
         }
 
+        
+
         return $this->processedBlockMarkupCache[$placeholderName] = $markup;
     }
 
@@ -735,6 +745,7 @@ class Page extends ContentBase
             $this->theme,
             $this->markup.$this->code
         );
+
 
         $componentManager = ComponentManager::instance();
         foreach ($snippetComponents as $componentInfo) {
