@@ -33,6 +33,11 @@ fields:
         type: dropdown
         options: getBeachCategoriesOptions
 
+    viewBag[address]:
+        span: full
+        label: 'Dirección'
+        placeholder: 'Dirección'
+
     toolbar:
         type: partial
         path: page_toolbar
