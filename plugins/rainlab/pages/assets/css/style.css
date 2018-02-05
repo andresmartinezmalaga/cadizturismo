@@ -952,6 +952,9 @@ html, body {
 .field-richeditor .pic-way:before, .field-richeditor .static-header:before, .field-richeditor .somos-section:before, .field-richeditor .ayuda-header:before, .field-richeditor .about-header:before {
   content: none !important; }
 
+.field-richeditor .featured-element .img-destacada {
+  mask-size: none !important; }
+
 .field-richeditor .made-up-space {
   display: none !important; }
 

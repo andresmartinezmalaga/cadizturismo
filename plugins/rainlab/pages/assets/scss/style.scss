@@ -987,11 +987,15 @@ html, body {
 .field-richeditor .overlay-img {
   display: none !important; }
 
+
 .field-richeditor {
   .pic-way, .static-header, .somos-section, .ayuda-header, .about-header {
     &:before {
       content: none !important;
     }
+  }
+  .featured-element .img-destacada {
+    mask-size: none !important;
   }
   .made-up-space {
     display: none !important;
