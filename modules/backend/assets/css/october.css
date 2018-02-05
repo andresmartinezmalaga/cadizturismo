@@ -5541,5 +5541,6 @@ div[data-control="media-manager"] .media-list.tiles li.selected .icon-container 
 [id*='imageAlign'] {
   display: none; }
 
-#imageAlign-1, #imageDisplay-1, #imageStyle-1, #imageAlt-1, #imageSize-1 {
-  display: none; }
+[data-cmd=imageAlign], [data-cmd=imageDisplay], [data-cmd=imageStyle],
+[data-cmd=imageAlt], [data-cmd=imageSize] {
+  display: none !important; }
