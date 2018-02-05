@@ -1,5 +1,5 @@
 ==
-<?php 
+<?php
 
 	function onStart()
 	{
@@ -10,10 +10,10 @@
 	    }
 	}
 
-?>	
+?>
 
 ==
-
+{% if news|length > 0 %}
 <div class="publis">
 {% for publication in publications %}
 
@@ -30,5 +30,13 @@
 
 {% endfor %}
 
- 
 </div>
+
+{% else %}
+
+<div class="mock-space-prensa">
+	<p>Vuelve más tarde, tendremos un montón de publicaciones para ti.</p>
+</div>
+
+
+{% endif %}
