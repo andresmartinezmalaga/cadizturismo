@@ -298,7 +298,10 @@ html, body {
   margin-top: 0px;
   margin-bottom: 0px; }
   .pagination form {
-    width: auto; }
+    width: auto;
+    margin-left: 10px; }
+    .pagination form:last-child {
+      margin-left: 10px; }
   .pagination .btnNumPag {
     background-color: transparent;
     outline: none;
