@@ -381,6 +381,10 @@ html, body {
     font-size: 16px;
     color: #CECECE;
   }
+  .active {
+    color: #4A4A4A;
+    border-bottom: 1px solid #4A4A4A;
+  }
 }
 
 /* NAVBAR TOGGLE & SLIDE-MENU */
