@@ -1156,7 +1156,9 @@ html, body {
     line-height: 26px;
     z-index: 10;
     text-align: center;
-    margin: 0px; }
+    margin: 0px;
+    transform: translate(-50%, 0);
+    position: absolute; }
 
 .ayuda-header {
   width: 100%;
@@ -1228,7 +1230,9 @@ html, body {
     line-height: 26px;
     z-index: 10;
     text-align: center;
-    margin: 0px; }
+    margin: 0px;
+    transform: translate(-50%, 0);
+    position: absolute; }
 
 .somos-section {
   width: 100%;
