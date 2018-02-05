@@ -1748,14 +1748,15 @@ html, body {
 }
 .publis {
   width: 1200px;
-  margin: 40px auto 0px auto;
+  margin: 0 auto;
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(3, 400px);
   -ms-grid-template-columns: repeat(3, 400px);
   grid-row-gap: 30px;
   -ms-grid-row-gap: 30px;
-  margin-bottom: 90px;
+  padding-bottom: 90px;
+  padding-top: 40px;
   .publicacion {
     border-bottom: 1px solid #CECECE;
     min-height: 525px;
