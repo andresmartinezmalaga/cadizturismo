@@ -31,12 +31,20 @@ function onStart()
         if($this['lang']==''){
             $this['lang']='es';
         }
-                $this['urlPage'] = $this->page->url;
+        
+        $this['urlPage'] = $this->page->url;
 
         if($this->page->apiBag)
             if(isset($this->page->apiBag["staticPage"]->attributes["viewBag"]["cover"])){
                 $this['metaImg'] = $this->page->apiBag["staticPage"]->attributes["viewBag"]["cover"];
             }
+        }
+
+        $is_playa = explode('/playas/',  $this['urlPage']);
+
+        if (count( $is_playa )>1){
+            $playa = $this->staticApp->beachFindByUrl($this['urlPage']);
+            $this['addrplaya'] = $playa->address;
         }
 ?>
 ==
@@ -83,8 +91,8 @@ function onStart()
     {% elseif urlply|length > 1 %}
         <script>
             console.log('entrandooooooooooo');
-            var address = "{{this.page.address}}";
-            console.log(address);
+            var address = "{{addrplaya}}";
+            console.log(addrplaya);
         </script>
         <div id="map" style="height: 500px">
             <br>
