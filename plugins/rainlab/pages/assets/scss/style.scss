@@ -383,6 +383,13 @@ html, body {
    .middle-bar {
      display: none;
    }
+   .top-bar {
+     transform: rotate(45deg);
+     top: 12px;
+   }
+   .bottom-bar {
+     transform: rotate(-45deg);
+   }
  }
 
 .mobile-toggle .top-bar, .mobile-toggle .middle-bar, .mobile-toggle .bottom-bar {
