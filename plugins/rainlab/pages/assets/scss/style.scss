@@ -368,7 +368,8 @@ html, body {
   @include flexbox();
   align-items: center;
   justify-content: center;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
+  margin-top: 0px;
   .btnNumPag {
     background-color: transparent;
     outline: none;
