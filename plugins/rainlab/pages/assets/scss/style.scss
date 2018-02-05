@@ -392,6 +392,7 @@ html, body {
      height: 2px;
      background-color: black;
      @include transition($slowly);
+     left: 0px;
    }
    &:before {
      top: 6px;
@@ -400,19 +401,9 @@ html, body {
      bottom: 6px;
    }
  }
- .open .hamburger {
-   left: 282px !important;
-   position: fixed;
-   top: 27px !important;
-   .bars {
-     &:before, &:after {
-         @include transition($slowly);
-         background-color: black !important;
-     }
-   }
- }
 
- .open .hamburger .bars {
+
+ .open .bars {
    background-color: transparent;
    @include transition($slowly);
 
