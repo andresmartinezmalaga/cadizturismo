@@ -1102,6 +1102,7 @@ html, body {
     height: 100%;
     position: absolute;
     top: 4px;
+    left: 0px;
     object-fit: cover;
     z-index: -1; }
   .about-header .header-container {
@@ -1252,6 +1253,7 @@ html, body {
     height: 100%;
     position: absolute;
     top: 0;
+    left: 0px;
     object-fit: cover;
     z-index: -1; }
   .somos-section .header-container {
