@@ -306,7 +306,7 @@ html, body {
 
 .transform-bars .top-bar {
   transform: rotate(45deg);
-  top: 12px; }
+  top: 12px !important; }
 
 .transform-bars .bottom-bar {
   transform: rotate(-45deg); }
