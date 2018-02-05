@@ -297,8 +297,7 @@ html, body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  width: 20px;
-  height: 15px; }
+  padding: 10px 0px; }
 
 .bars {
   display: block;
