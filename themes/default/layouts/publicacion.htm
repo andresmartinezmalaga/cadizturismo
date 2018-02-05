@@ -27,15 +27,15 @@ code = "redes-sociales"
 ==
 
 <?php
-    
-  
+
+
     function onStart()
     {
         $this['lang']=\App::getLocale();
         if($this['lang']==''){
             $this['lang']='es';
         }
-      
+
         //$this['publications'] = $this->staticApp->publicationList();
         $this['numberReg'] = 2;
         $this['numPag'] = ceil($this->staticApp->publicationListCount()/$this['numberReg']);
@@ -52,7 +52,7 @@ code = "redes-sociales"
     }
 
     function onPaginate(){
-        
+
         $pag = $_POST['ipag'];
         $numberReg = $_POST['inumberReg'];
 
@@ -97,16 +97,16 @@ code = "redes-sociales"
         {% partial "publications" %}
         </div>
     </div>
-    
+
     <!-- Pagination -->
     {% for i in 1..numPag %}
-        <form data-request="onPaginate">
+        <form class="pagination" data-request="onPaginate">
             <input type="hidden" name = "ipag" value="{{i}}">
             <input type="hidden" name = "inumberReg" value="{{numberReg}}">
-            <button id="numPag{{i}}" class="btnNumPag" type="submit">{{i}}</button>           
+            <button id="numPag{{i}}" class="btnNumPag" type="submit">{{i}}</button>
         </form>
     {% endfor %}
-    
+
 
     {% partial 'site/footer' %}
 
@@ -117,8 +117,8 @@ code = "redes-sociales"
     <script type="text/javascript" src="{{url('/')}}/plugins/rainlab/pages/assets/iziModal/js/iziModal.js"></script>
     <script src="{{ 'assets/js/app.js'|theme }}"></script>
     <script type="text/javascript" src="{{url('/')}}/plugins/rainlab/pages/assets/js/style.js"></script>
-    
+
     {% framework %}
-  
+
   </body>
 </html>
