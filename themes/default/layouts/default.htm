@@ -73,21 +73,22 @@ function onStart()
     {% set urlen = this.page.url|split('/espacios-naturales/') %}
 
     {% if urlmun|length > 1 or urlen|length > 1 %}
-    <script>
-        var address = "{{this.page.title}}";
-    </script>
+        <script>
+            var address = "{{this.page.title}}";
+        </script>
 
-    <div id="map" style="height: 500px">
-        <br>
-    </div>
+        <div id="map" style="height: 500px">
+            <br>
+        </div>
     {% elseif urlply|length > 1 %}
-    <script>
-        var address = "{{this.page.address}}";
-        console.log(address);
-    </script>
-    <div id="map" style="height: 500px">
-        <br>
-    </div>
+        <script>
+            console.log('entrandooooooooooo');
+            var address = "{{this.page.address}}";
+            console.log(address);
+        </script>
+        <div id="map" style="height: 500px">
+            <br>
+        </div>
     {% endif %}
 
 
