@@ -44,7 +44,7 @@ class Plugin extends PluginBase
                 'context' => 'dashboard'
             ],
             'RainLab\GoogleAnalytics\ReportWidgets\Browsers'=>[
-                'label'   => 'Google Analytics browsers33',
+                'label'   => 'Google Analytics browsers',
                 'context' => 'dashboard'
             ],
             'RainLab\GoogleAnalytics\ReportWidgets\TrafficGoal'=>[
