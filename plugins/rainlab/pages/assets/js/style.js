@@ -36,7 +36,7 @@ $(".normal").click(function(){
       $(this).css('justify-content','center');
     }
   });
-  $('.mobile-toggle').toggleClass('transform-bars');
+  $('.mobile-toggle').toggleClass('open');
   $(".elements").toggleClass('elements-show');
 });
 
@@ -47,7 +47,7 @@ $(".mobile").click(function(){
       $(this).css('justify-content','center');
     }
   });
-  $('.mobile-toggle').toggleClass('transform-bars');
+  $('.mobile-toggle').toggleClass('open');
   $(".elements").toggleClass('elements-show');
 });
 

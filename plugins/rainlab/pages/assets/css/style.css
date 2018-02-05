@@ -318,7 +318,8 @@ html, body {
     -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
     -ms-transition: all 0.2s ease;
-    transition: all 0.2s ease; }
+    transition: all 0.2s ease;
+    left: 0px; }
   .bars:before {
     top: 6px; }
   .bars:after {

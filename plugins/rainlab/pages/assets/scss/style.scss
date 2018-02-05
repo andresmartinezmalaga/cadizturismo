@@ -392,6 +392,7 @@ html, body {
      height: 2px;
      background-color: black;
      @include transition($slowly);
+     left: 0px;
    }
    &:before {
      top: 6px;
