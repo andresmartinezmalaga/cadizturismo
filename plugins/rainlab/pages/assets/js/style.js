@@ -36,6 +36,7 @@ $(".normal").click(function(){
       $(this).css('justify-content','center');
     }
   });
+  $('.mobile-toggle').toggleClass('transform-bars');
   $(".elements").toggleClass('elements-show');
 });
 
@@ -46,6 +47,7 @@ $(".mobile").click(function(){
       $(this).css('justify-content','center');
     }
   });
+  $('.mobile-toggle').toggleClass('transform-bars');
   $(".elements").toggleClass('elements-show');
 });
 
