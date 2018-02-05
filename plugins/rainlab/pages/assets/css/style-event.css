@@ -373,7 +373,7 @@
         text-decoration: none; }
     .section-txt .txt-container .title {
       color: #4A4A4A;
-      font-family: 'AvenirNext-DemiBold';
+      font-family: 'AvenirNext-DemiBold', sans-serif;
       font-size: 64px;
       line-height: 65px;
       text-align: left;
@@ -456,7 +456,7 @@
   position: relative;
   z-index: 100; }
   .more-content .also-title {
-    font-family: 'AvenirNext-DemiBold';
+    font-family: 'AvenirNext-DemiBold', sans-serif;
     color: #4A4A4A;
     font-size: 32px; }
   .more-content .also-content {
@@ -525,7 +525,7 @@
   background-color: white;
   z-index: 100; }
   .share .also-title {
-    font-family: 'AvenirNext-DemiBold';
+    font-family: 'AvenirNext-DemiBold', sans-serif;
     color: #4A4A4A;
     font-size: 32px; }
   .share .also-content {
@@ -641,7 +641,7 @@
       padding-top: 75px; }
     #modal-exp .modal-container h3 {
       text-align: center;
-      font-family: 'AvenirNext-DemiBold';
+      font-family: 'AvenirNext-DemiBold', sans-serif;
       color: #4A4A4A;
       font-size: 30px;
       line-height: 35px;
@@ -676,7 +676,7 @@
           outline: none; }
       #modal-exp .modal-container form input[type="submit"] {
         background-color: #F5A623;
-        font-family: 'AvenirNext-DemiBold';
+        font-family: 'AvenirNext-DemiBold', sans-serif;
         color: white;
         font-size: 16px;
         box-shadow: none;
@@ -715,7 +715,7 @@
       padding-top: 160px; }
     #modal-success .modal-container h3 {
       text-align: center;
-      font-family: 'AvenirNext-DemiBold';
+      font-family: 'AvenirNext-DemiBold', sans-serif;
       color: #4A4A4A;
       font-size: 30px;
       line-height: 35px;
@@ -751,7 +751,7 @@
           outline: none; }
       #modal-success .modal-container form input[type="submit"] {
         background-color: #F5A623;
-        font-family: 'AvenirNext-DemiBold';
+        font-family: 'AvenirNext-DemiBold', sans-serif;
         color: white;
         font-size: 16px;
         box-shadow: none;

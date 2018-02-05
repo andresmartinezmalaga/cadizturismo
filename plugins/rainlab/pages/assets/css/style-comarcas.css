@@ -116,7 +116,7 @@
     margin: 0 auto;
     max-width: 1145px; }
   .section-txt-comarca .title {
-    font-family: 'AvenirNext-DemiBold';
+    font-family: 'AvenirNext-DemiBold', sans-serif;
     font-size: 64px;
     color: #4A4A4A;
     line-height: 65px;
@@ -180,7 +180,7 @@
   padding-top: 190px; }
 
 .main-section-comarcas .main-txt .title {
-  font-family: 'AvenirNext-DemiBold';
+  font-family: 'AvenirNext-DemiBold', sans-serif;
   font-size: 64px;
   color: #4A4A4A;
   line-height: 65px;
@@ -253,7 +253,7 @@
 .main-section-comarcas .main-events-container .event .txt-container .name {
   font-size: 39px;
   color: white;
-  font-family: 'AvenirNext-DemiBold';
+  font-family: 'AvenirNext-DemiBold', sans-serif;
   line-height: 48px;
   max-width: 321px;
   text-transform: uppercase; }
@@ -388,7 +388,7 @@
       .static-structure .page .txt-container .name {
         font-size: 39px;
         color: white;
-        font-family: 'AvenirNext-DemiBold';
+        font-family: 'AvenirNext-DemiBold', sans-serif;
         line-height: 48px;
         max-width: 321px;
         text-transform: uppercase; }
@@ -442,7 +442,7 @@
       .static-structure .page-cultura .txt-container .name {
         font-size: 39px;
         color: white;
-        font-family: 'AvenirNext-DemiBold';
+        font-family: 'AvenirNext-DemiBold', sans-serif;
         line-height: 48px;
         max-width: 321px;
         text-transform: uppercase; }
@@ -478,7 +478,7 @@
     align-items: center;
     flex-direction: column; }
     .all-events .title-container .title {
-      font-family: 'AvenirNext-DemiBold';
+      font-family: 'AvenirNext-DemiBold', sans-serif;
       font-size: 64px;
       color: #4A4A4A;
       line-height: 65px;
@@ -546,7 +546,7 @@
         .all-events .all-events-container .event .txt-container .name {
           font-size: 39px;
           color: white;
-          font-family: 'AvenirNext-DemiBold';
+          font-family: 'AvenirNext-DemiBold', sans-serif;
           line-height: 48px;
           max-width: 355px;
           text-transform: uppercase; }
@@ -629,7 +629,7 @@
   margin-top: 100px;
   margin-bottom: 100px; }
   .share .also-title {
-    font-family: 'AvenirNext-DemiBold';
+    font-family: 'AvenirNext-DemiBold', sans-serif;
     color: #4A4A4A;
     font-size: 32px; }
   .share .also-content {

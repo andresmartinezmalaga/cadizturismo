@@ -183,7 +183,7 @@ transform: $value;
     .title {
       color: white;
       font-size: 94px;
-      font-family: 'AvenirNext-DemiBold';
+      font-family: 'AvenirNext-DemiBold', sans-serif;
       line-height: 90px;
       text-transform: uppercase;
       margin-bottom: 20px;
@@ -256,7 +256,7 @@ transform: $value;
     .title {
       color: white;
       font-size: 94px;
-      font-family: 'AvenirNext-DemiBold';
+      font-family: 'AvenirNext-DemiBold', sans-serif;
       line-height: 90px;
       text-transform: uppercase;
       margin-bottom: 20px;
@@ -370,7 +370,7 @@ transform: $value;
     max-width: 1145px;
   }
   .title {
-    font-family: 'AvenirNext-DemiBold';
+    font-family: 'AvenirNext-DemiBold', sans-serif;
     font-size: 64px;
     color: #4A4A4A;
     line-height: 65px;
@@ -433,7 +433,7 @@ transform: $value;
   justify-content: center;
   margin-top: 180px;
   .also-title {
-    font-family: 'AvenirNext-DemiBold';
+    font-family: 'AvenirNext-DemiBold', sans-serif;
     color: #4A4A4A;
     font-size: 32px;
   }
@@ -545,7 +545,7 @@ transform: $value;
         .name {
           font-size: 39px;
           color: white;
-          font-family: 'AvenirNext-DemiBold';
+          font-family: 'AvenirNext-DemiBold', sans-serif;
           line-height: 48px;
           max-width: 256px;
           text-transform: uppercase;
@@ -609,7 +609,7 @@ transform: $value;
               font-size: 16px;
               line-height: 22px;
               margin-left: 11px;
-              font-family: 'AvenirNext-DemiBold';
+              font-family: 'AvenirNext-DemiBold', sans-serif;
               text-transform: capitalize;
             }
             img {
