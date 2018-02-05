@@ -298,8 +298,7 @@ html, body {
   margin-top: 0px;
   margin-bottom: 0px; }
   .pagination form {
-    width: auto;
-    direction: rtl; }
+    width: auto; }
   .pagination .btnNumPag {
     background-color: transparent;
     outline: none;
