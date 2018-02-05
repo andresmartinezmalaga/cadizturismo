@@ -25,7 +25,8 @@ code = "redes-sociales"
 [staticApp]
 ==
 <?php
-function onStart()
+    
+    function onStart()
     {
         $this['lang']=\App::getLocale();
         if($this['lang']==''){
@@ -34,7 +35,7 @@ function onStart()
         
         $this['urlPage'] = $this->page->url;
 
-        if($this->page->apiBag)
+        if($this->page->apiBag){
             if(isset($this->page->apiBag["staticPage"]->attributes["viewBag"]["cover"])){
                 $this['metaImg'] = $this->page->apiBag["staticPage"]->attributes["viewBag"]["cover"];
             }
@@ -42,10 +43,13 @@ function onStart()
 
         $is_playa = explode('/playas/',  $this['urlPage']);
 
+
         if (count( $is_playa )>1){
             $playa = $this->staticApp->beachFindByUrl($this['urlPage']);
-            $this['addrplaya'] = $playa->address;
+            $this['addrplaya'] = $playa[0]->address;
         }
+    }
+
 ?>
 ==
 <!DOCTYPE html>
