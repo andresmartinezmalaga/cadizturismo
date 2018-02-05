@@ -35,6 +35,7 @@ is_hidden = 0
         $idm = $_POST['iidm'];
 
         $this['startPag'] = $_POST['ipag'];
+        $this['idm'] = $_POST['iidm'];
         $this['numberReg'] = 1;
 
        	$this['numPag'] = ceil($this->staticApp->newListCount($this->param('idm'))/$this['numberReg']);
