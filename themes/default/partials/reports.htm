@@ -13,7 +13,7 @@
 ?>
 
 ==
-
+{% if reports|length > 0 %}
 <div class="publis">
 	{% for report in reports %}
 		<div class="reportaje">
@@ -28,3 +28,12 @@
 		</div>
 	{% endfor %}
 </div>
+
+{% else %}
+
+<div class="mock-space-prensa">
+	<p>Vuelve más tarde, tendremos un montón de reportajes para ti.</p>
+</div>
+
+
+{% endif %}
