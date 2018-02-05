@@ -2230,7 +2230,7 @@ class PagesTemplates
           <img class="background-way" src="***_preurl_***/storage/app/media/uploaded-files/templates/reportaje.jpg" alt="reportaje">
           <div class="icon-press-container">
             <img class="icon" src="***_preurl_***/storage/app/media/uploaded-files/templates/reportaje-icon.svg" alt="">
-            <p class="icon-txt">REPORTAJE</p>
+            <p class="icon-txt">REPORTAJES</p>
             <a class="see-link" href="/sala-prensa/reportajes">Saber más <img src="***_preurl_***/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""></a>
           </div>
         </div>
