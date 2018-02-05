@@ -58,6 +58,7 @@ $(".mobile-toggle").click(function(){
       $(this).css('justify-content','center');
     }
   });
+  $('.mobile-toggle').toggleClass('open');
   $(".elements").toggleClass('elements-show');
 });
 
