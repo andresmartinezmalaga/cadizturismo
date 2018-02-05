@@ -30,7 +30,8 @@
     position: fixed;
     top: 4px;
     object-fit: cover;
-    z-index: -1; }
+    z-index: -1;
+    left: 0px; }
   .header-event .header-txt {
     color: white;
     display: -webkit-box;
@@ -174,6 +175,7 @@
     height: 100%;
     position: fixed;
     top: 4px;
+    left: 0px;
     object-fit: cover;
     z-index: -1; }
   .header-ruta .header-txt {

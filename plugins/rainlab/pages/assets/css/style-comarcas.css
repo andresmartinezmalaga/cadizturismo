@@ -29,6 +29,7 @@
     height: 100%;
     position: fixed;
     top: 4px;
+    left: 0px;
     object-fit: cover;
     z-index: 1; }
   .header-general .header-container {
