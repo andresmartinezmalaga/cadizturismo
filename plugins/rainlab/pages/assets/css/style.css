@@ -300,6 +300,18 @@ html, body {
   user-select: none;
   width: 20px;
   height: 15px; }
+  .mobile-toggle::before {
+    top: 0;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg); }
+  .mobile-toggle::after {
+    bottom: 0;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg); }
 
 .mobile-toggle .top-bar, .mobile-toggle .middle-bar, .mobile-toggle .bottom-bar {
   width: 20px;
