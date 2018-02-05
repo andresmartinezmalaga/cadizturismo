@@ -36,7 +36,7 @@ code = "redes-sociales"
         }
 
         //$this['reports'] = $this->staticApp->reportList();
-        
+
         $this['numberReg'] = 2;
         $this['numPag'] = ceil($this->staticApp->reportListCount()/$this['numberReg']);
         $this['reports'] = $this->staticApp->reportListPag(1,$this['numberReg']);
@@ -52,7 +52,7 @@ code = "redes-sociales"
     }
 
     function onPaginate(){
-        
+
         $pag = $_POST['ipag'];
         $numberReg = $_POST['inumberReg'];
 
@@ -100,10 +100,10 @@ code = "redes-sociales"
 
      <!-- Pagination -->
     {% for i in 1..numPag %}
-        <form data-request="onPaginate">
+        <form class="pagination" data-request="onPaginate">
             <input type="hidden" name = "ipag" value="{{i}}">
             <input type="hidden" name = "inumberReg" value="{{numberReg}}">
-            <button id="numPag{{i}}" class="btnNumPag" type="submit">{{i}}</button>           
+            <button id="numPag{{i}}" class="btnNumPag" type="submit">{{i}}</button>
         </form>
     {% endfor %}
 

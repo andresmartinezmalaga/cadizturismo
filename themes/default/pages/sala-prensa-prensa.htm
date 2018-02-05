@@ -17,7 +17,7 @@ is_hidden = 0
 	    } else {
 	        $this['preurl'] = '';
 	    }
-	   	
+
 	    $this['idm'] = $this->param('idm');
 	   	$this['numberReg'] = 2;
         $this['numPag'] = ceil($this->staticApp->newListCount($this->param('idm'))/$this['numberReg']);
@@ -27,7 +27,7 @@ is_hidden = 0
 	}
 
 	function onPaginate(){
-        
+
         $pag = $_POST['ipag'];
         $numberReg = $_POST['inumberReg'];
         $idm = $_POST['iidm'];
@@ -65,10 +65,10 @@ is_hidden = 0
 
 
 {% for i in 1..numPag %}
-    <form data-request="onPaginate">
+    <form class="pagination" data-request="onPaginate">
         <input type="hidden" name = "ipag" value="{{i}}">
         <input type="hidden" name = "inumberReg" value="{{numberReg}}">
         <input type="hidden" name = "iidm" value="{{idm}}">
-        <button id="numPag{{i}}" class="btnNumPag" type="submit">{{i}}</button>          
+        <button id="numPag{{i}}" class="btnNumPag" type="submit">{{i}}</button>
     </form>
 {% endfor %}
