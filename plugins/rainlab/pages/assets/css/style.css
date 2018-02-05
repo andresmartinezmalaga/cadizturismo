@@ -303,7 +303,9 @@ html, body {
     border-top: none;
     border-right: none;
     border-left: none;
-    border-bottom: 1px solid #CECECE; }
+    border-bottom: 1px solid #CECECE;
+    font-size: 16px;
+    color: #CECECE; }
 
 /* NAVBAR TOGGLE & SLIDE-MENU */
 .mobile-toggle {
