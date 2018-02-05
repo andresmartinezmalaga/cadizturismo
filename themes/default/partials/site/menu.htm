@@ -22,7 +22,7 @@
       <a href="{{url('/')}}/{{lang}}"><img src="{{preurl}}/storage/app/media/uploaded-files/templates/cadiz-menu.svg" alt=""></a>
     </div>
     <div class="menus">
-      
+
       <div class="menu-list">
         <p class="menu-title">{{ 'Dónde ir'|_ }}</p>
         <img class="separator separator-menu" src="{{preurl}}/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
@@ -38,7 +38,7 @@
           <li class="menu-item"><a href="{{url('/')}}/{{lang}}/municipios">{{ 'Munucipios'|_ }}</a></li>
         </ul>
       </div>
-      
+
       <div class="menu-list">
         <p class="menu-title">{{ 'Qué Hacer'|_ }}</p>
         <img class="separator separator-menu" src="{{preurl}}/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
@@ -53,22 +53,22 @@
           {% endfor %}
         </ul>
       </div>
-      
+
       <div class="menu-list">
         <p class="menu-title">{{ 'Qué Vivir'|_ }}</p>
         <img class="separator separator-menu" src="{{preurl}}/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
         <img class="separator-tiny" src="{{preurl}}/storage/app/media/uploaded-files/templates/tiny-separator.svg">
         <ul class="menu-ul">
-          {% for i in 0..4 %}         
+          {% for i in 0..4 %}
             {% if staticMenu2.menuItems[i].title != '' %}
-              {% set tt = '.'~staticMenu2.menuItems[i].title %}             
+              {% set tt = '.'~staticMenu2.menuItems[i].title %}
               <li class="menu-item"><a href="{{ staticMenu2.menuItems[i].url }}">{{ tt|_ }}</a></li>
             {%endif%}
-          {% endfor %} 
-            <li class="menu-item"><a href="{{url('/')}}/{{lang}}/todos-los-eventos">{{ 'Todos los eventos'|_ }}</a></li>              
+          {% endfor %}
+            <li class="menu-item"><a href="{{url('/')}}/{{lang}}/todos-los-eventos">{{ 'Todos los eventos'|_ }}</a></li>
         </ul>
       </div>
-     
+
       <div class="menu-list">
         <p class="menu-title">{{ 'Mi estancia'|_ }}</p>
         <img class="separator separator-menu" src="{{preurl}}/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
@@ -84,9 +84,10 @@
   </div>
   <div class="border">
     <label class="mobile-toggle" for="nav-toggle">
-      <div class="top-bar"></div>
+      <!-- <div class="top-bar"></div>
       <div class="middle-bar"></div>
-      <div class="bottom-bar"></div>
+      <div class="bottom-bar"></div> -->
+      <span class="bars"></span>
     </label>
     <img class="normal" src="{{preurl}}/storage/app/media/uploaded-files/templates/top-menu.svg">
     <img class="mobile" src="{{preurl}}/storage/app/media/uploaded-files/templates/top-mobile.svg">
@@ -122,8 +123,8 @@
           <img class="separator separator-menu" src="{{preurl}}/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
           <img class="separator-tiny" src="{{preurl}}/storage/app/media/uploaded-files/templates/tiny-separator.svg">
           <ul class="menu-ul donde-ul where-ul">
-            {% for item in staticMenu.menuItems %}   
-              {% set tt = '.'~item.title %}           
+            {% for item in staticMenu.menuItems %}
+              {% set tt = '.'~item.title %}
               <li class="menu-item"><a href="{{ item.url }}">{{ tt|_ }}</a></li>
             {% endfor %}
           </ul>
@@ -134,7 +135,7 @@
           <img class="separator-tiny" src="{{preurl}}/storage/app/media/uploaded-files/templates/tiny-separator.svg">
           <ul class="menu-ul do-ul">
             {% for item in staticMenu4.menuItems %}
-              {% set tt = '.'~item.title %}              
+              {% set tt = '.'~item.title %}
               <li class="menu-item"><a href="{{ item.url }}">{{ tt|_ }}</a></li>
             {% endfor %}
           </ul>
@@ -145,7 +146,7 @@
           <img class="separator-tiny" src="{{preurl}}/storage/app/media/uploaded-files/templates/tiny-separator.svg">
           <ul class="menu-ul live-ul">
             {% for item in staticMenu2.menuItems %}
-              {% set tt = '.'~item.title %} 
+              {% set tt = '.'~item.title %}
               <li class="menu-item"><a href="{{ item.url }}">{{tt|_}}</a></li>
             {% endfor %}
               <li class="menu-item"><a href="{{url('/')}}/{{lang}}/todos-los-eventos">{{ 'Todos los eventos'|_ }}</a></li>
@@ -157,7 +158,7 @@
           <img class="separator-tiny" src="{{preurl}}/storage/app/media/uploaded-files/templates/tiny-separator.svg">
           <ul class="menu-ul stance-ul">
             {% for item in staticMenu3.menuItems %}
-              {% set tt = '.'~item.title %} 
+              {% set tt = '.'~item.title %}
               <li class="menu-item"><a href="{{ item.url }}">{{ tt|_ }}</a></li>
             {% endfor %}
           </ul>
