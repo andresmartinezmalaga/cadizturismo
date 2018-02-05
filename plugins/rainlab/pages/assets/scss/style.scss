@@ -388,6 +388,14 @@ html, body {
     font-size: 16px;
     color: #CECECE;
   }
+  span {
+    height: 26px;
+    line-height: 43px;
+    font-size: 16px;
+    color: #CECECE;
+    margin-left: 10px;
+    letter-spacing: 1px;
+  }
   .active {
     color: #4A4A4A;
     border-bottom: 1px solid #4A4A4A;
@@ -979,11 +987,16 @@ html, body {
 .field-richeditor .overlay-img {
   display: none !important; }
 
+
 .field-richeditor {
   .pic-way, .static-header, .somos-section, .ayuda-header, .about-header {
     &:before {
       content: none !important;
     }
+  }
+  .featured-element .img-destacada {
+  -webkit-mask-image: none !important;
+  mask-image: none !important;
   }
   .made-up-space {
     display: none !important;

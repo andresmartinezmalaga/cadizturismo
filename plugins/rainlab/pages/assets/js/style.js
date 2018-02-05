@@ -9,8 +9,8 @@ jQuery(function($)
         e.preventDefault();
     });
     $("#international-press").click(function(e) {
-        $('.press-languages').toggleClass("show-international");
-        $(this).children('.arrow').toggleClass("rotate-arrow");
+        //$('.press-languages').toggleClass("show-international");
+        //$(this).children('.arrow').toggleClass("rotate-arrow");
         e.preventDefault();
     });
 

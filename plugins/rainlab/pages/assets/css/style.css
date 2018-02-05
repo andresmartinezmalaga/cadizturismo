@@ -311,6 +311,13 @@ html, body {
     border-bottom: 1px solid #CECECE;
     font-size: 16px;
     color: #CECECE; }
+  .pagination span {
+    height: 26px;
+    line-height: 43px;
+    font-size: 16px;
+    color: #CECECE;
+    margin-left: 10px;
+    letter-spacing: 1px; }
   .pagination .active {
     color: #4A4A4A;
     border-bottom: 1px solid #4A4A4A; }
@@ -944,6 +951,10 @@ html, body {
 
 .field-richeditor .pic-way:before, .field-richeditor .static-header:before, .field-richeditor .somos-section:before, .field-richeditor .ayuda-header:before, .field-richeditor .about-header:before {
   content: none !important; }
+
+.field-richeditor .featured-element .img-destacada {
+  -webkit-mask-image: none !important;
+  mask-image: none !important; }
 
 .field-richeditor .made-up-space {
   display: none !important; }

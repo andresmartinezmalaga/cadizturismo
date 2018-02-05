@@ -2206,3 +2206,8 @@ div[data-control="media-manager"] .media-list.tiles li.selected .icon-container 
   [id*='select2-dest'] + .select2-selection__arrow {
   top: 0px !important;
 }
+
+[data-cmd=imageAlign], [data-cmd=imageDisplay], [data-cmd=imageStyle],
+[data-cmd=imageAlt], [data-cmd=imageSize] {
+    display: none !important;
+}
