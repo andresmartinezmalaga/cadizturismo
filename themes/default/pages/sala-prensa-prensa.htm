@@ -63,14 +63,13 @@ is_hidden = 0
   {% partial "news" %}
 </div>
 
-
-{% for i in 1..numPag %}
 <div class="pagination">
+	{% for i in 1..numPag %}
 	<form data-request="onPaginate">
 			<input type="hidden" name = "ipag" value="{{i}}">
 			<input type="hidden" name = "inumberReg" value="{{numberReg}}">
 			<input type="hidden" name = "iidm" value="{{idm}}">
 			<button id="numPag{{i}}" class="btnNumPag" type="submit">{{i}}</button>
 	</form>
-</div>
 {% endfor %}
+</div>
