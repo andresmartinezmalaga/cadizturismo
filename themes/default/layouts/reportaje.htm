@@ -35,8 +35,6 @@ code = "redes-sociales"
             $this['lang']='es';
         }
 
-        //$this['reports'] = $this->staticApp->reportList();
-
         $this['numberReg'] = 2;
         $this['numPag'] = ceil($this->staticApp->reportListCount()/$this['numberReg']);
         $this['reports'] = $this->staticApp->reportListPag(1,$this['numberReg']);
