@@ -371,6 +371,10 @@ html, body {
   padding-bottom: 70px;
   margin-top: 0px;
   margin-bottom: 0px;
+  form {
+    width: auto;
+    direction: rtl;
+  }
   .btnNumPag {
     background-color: transparent;
     outline: none;
