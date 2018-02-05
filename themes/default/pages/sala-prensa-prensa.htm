@@ -18,8 +18,10 @@ is_hidden = 0
 	        $this['preurl'] = '';
 	    }
 
+	    $this['startPag'] = 1;
 	    $this['idm'] = $this->param('idm');
-	   	$this['numberReg'] = 2;
+	   	$this['numberReg'] = 1;
+
         $this['numPag'] = ceil($this->staticApp->newListCount($this->param('idm'))/$this['numberReg']);
 
         $this['news'] = $this->staticApp->newListPag($this['idm'],1,$this['numberReg']);
@@ -32,9 +34,14 @@ is_hidden = 0
         $numberReg = $_POST['inumberReg'];
         $idm = $_POST['iidm'];
 
+        $this['startPag'] = $_POST['ipag'];
+        $this['numberReg'] = 1;
+
+       	$this['numPag'] = ceil($this->staticApp->newListCount($this->param('idm'))/$this['numberReg']);
         $this['news'] = $this->staticApp->newListPag($idm,$pag,$numberReg);
 
         return [
+        	'#prtlPagination' => $this->renderPartial('pagination'),
             '#prtlSearch' => $this->renderPartial('news')
         ];
     }
@@ -63,19 +70,6 @@ is_hidden = 0
   {% partial "news" %}
 </div>
 
-{% if numPag > 0 %}
-<div class="pagination">
-	{% for i in 1..numPag %}
-	<form data-request="onPaginate">
-			<input type="hidden" name = "ipag" value="{{i}}">
-			<input type="hidden" name = "inumberReg" value="{{numberReg}}">
-			<input type="hidden" name = "iidm" value="{{idm}}">
-			{% if i == 1 %}
-			<button id="numPag{{i}}" class="btnNumPag active" type="submit">{{i}}</button>
-			{% else %}
-			<button id="numPag{{i}}" class="btnNumPag" type="submit">{{i}}</button>
-			{% endif %}
-	</form>
-{% endfor %}
+<div id='prtlPagination'>       
+	{% partial "pagination" %}
 </div>
-{% endif %}

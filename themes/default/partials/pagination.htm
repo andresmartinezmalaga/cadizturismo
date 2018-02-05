@@ -1,0 +1,40 @@
+ {% if numPag > 0 %}
+    <!-- Pagination -->
+    <div class="pagination">
+      
+     {% if startPag > 2 %}
+          <form data-request="onPaginate">
+              <input type="hidden" name = "ipag" value="1">
+              <input type="hidden" name = "inumberReg" value="{{numberReg}}">
+              <button id="numPag1" class="btnNumPag" type="submit">1</button>
+          </form>
+          <span>...</span>
+      {% endif %}
+
+      {% for i in (startPag-1)..numPag %}
+       
+          {% if (i == startPag-1 and startPag-1>0 ) or i == startPag or i == startPag+1 %}
+            <form data-request="onPaginate">
+                <input type="hidden" name = "ipag" value="{{i}}">
+                <input type="hidden" name = "inumberReg" value="{{numberReg}}">
+                {% if i == startPag %}
+          			<button id="numPag{{i}}" class="btnNumPag active" type="submit">{{i}}</button>
+          			{% else %}
+          			<button id="numPag{{i}}" class="btnNumPag" type="submit">{{i}}</button>
+          			{% endif %}
+            </form>
+          {%endif%}
+      
+      {% endfor %}
+
+      {% if startPag < numPag-2 %}
+          <span>...</span>
+          <form data-request="onPaginate">
+              <input type="hidden" name = "ipag" value="{{numPag}}">
+              <input type="hidden" name = "inumberReg" value="{{numberReg}}">
+              <button id="numPag{{numPag}}" class="btnNumPag" type="submit">{{numPag}}</button>
+          </form>          
+      {% endif %}
+
+    </div>
+{% endif %}    
