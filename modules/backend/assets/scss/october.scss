@@ -1364,6 +1364,9 @@ nav#layout-mainmenu.navbar-mode-inline ul.mainmenu-nav li:first-child {
 .control-treeview ol > li.dragged div, .control-treeview ol > li > div:hover {
   background-color: #818181 !important;
   border-bottom: 1px solid #818181 !important;
+  .link-prensa {
+    color: #ffffff;
+  }
 }
 
 .control-treeview.treeview-light ol > li > div > ul.submenu li {
