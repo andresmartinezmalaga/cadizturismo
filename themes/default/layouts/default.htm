@@ -43,6 +43,7 @@ code = "redes-sociales"
 
         $is_playa = explode('/playas/',  $this['urlPage']);
 
+
         if (count( $is_playa )>1){
             $playa = $this->staticApp->beachFindByUrl($this['urlPage']);
             $this['addrplaya'] = $playa[0]->address;
