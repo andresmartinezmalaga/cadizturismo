@@ -83,7 +83,7 @@ return [
         'new_title' => 'Título del la nueva ruta'
     ],
     'menu' => [
-        'menu_label' => 'Menus',
+        'menu_label' => 'Menú',
         'delete_confirmation' => 'Estas seguro de querer borrar los menus seleccionados?',
         'no_records' => 'No se han encontrado menus.',
         'new' => 'Nuevo menu',
