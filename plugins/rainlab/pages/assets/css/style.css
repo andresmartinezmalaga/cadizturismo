@@ -2677,7 +2677,8 @@ html, body {
   .header .event-features .feature .feature-txt-mapa, .event-features .feature .feature-txt-mapa, .header .event-features .feature-exp .feature-txt-mapa, .header-event .event-features .feature .feature-txt-mapa, .header-event .event-features .feature-exp .feature-txt-mapa, .header-village .event-features .feature .feature-txt-mapa, .header-village .event-features .feature-exp .feature-txt-mapa, .header-general .event-features .feature .feature-txt-mapa, .header-general .event-features .feature-exp .feature-txt-mapa, .header-ruta .event-features .feature .feature-txt-mapa, .header-ruta .event-features .feature-exp .feature-txt-mapa, .header-search .event-features .feature .feature-txt-mapa, .header-search .event-features .feature-exp .feature-txt-mapa {
     top: 91px; }
   .header-event {
-    height: auto !important; }
+    height: auto !important;
+    max-height: 700px !important; }
   .header-txt .txt {
     max-width: 86%;
     line-height: 100px !important; }
