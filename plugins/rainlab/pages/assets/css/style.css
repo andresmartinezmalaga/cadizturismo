@@ -312,6 +312,13 @@ html, body {
     color: #4A4A4A;
     border-bottom: 1px solid #4A4A4A; }
 
+.link-prensa {
+  padding-top: 16px;
+  color: #818181;
+  font-size: 14px; }
+  .link-prensa p {
+    margin-top: -4px; }
+
 /* NAVBAR TOGGLE & SLIDE-MENU */
 .mobile-toggle {
   display: inline-block;
