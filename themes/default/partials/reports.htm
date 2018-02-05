@@ -1,5 +1,5 @@
 ==
-<?php 
+<?php
 
 	function onStart()
 	{
@@ -10,7 +10,7 @@
 	    }
 	}
 
-?>	
+?>
 
 ==
 
@@ -21,11 +21,10 @@
 			<h6 class="publi-title">{{report.viewBag.title}}</h6>
 
 			<p class="publi-desc">{{report.viewBag.descrptn}}</p>
-			
+
 			<div class="links-container">
-				<a class="download-link" href="{{report.viewBag.urlExternaZip}}">{{'Descargar pdf'|_}} <img src="/{{preurl}}/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt="" class="fr-fic fr-dii">&nbsp;</a>
+				<a class="download-link" href="{{report.viewBag.urlExternaZip}}">{{'Descargar pdf'|_}} <img src="{{preurl}}/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt="" class="fr-fic fr-dii">&nbsp;</a>
 			</div>
 		</div>
-	{% endfor %}	
+	{% endfor %}
 </div>
-
