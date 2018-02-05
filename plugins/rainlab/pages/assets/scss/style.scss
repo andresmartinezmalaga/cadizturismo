@@ -995,7 +995,8 @@ html, body {
     }
   }
   .featured-element .img-destacada {
-    mask-size: none !important;
+  -webkit-mask-image: none !important;
+  mask-image: none !important;
   }
   .made-up-space {
     display: none !important;

@@ -953,7 +953,8 @@ html, body {
   content: none !important; }
 
 .field-richeditor .featured-element .img-destacada {
-  mask-size: none !important; }
+  -webkit-mask-image: none !important;
+  mask-image: none !important; }
 
 .field-richeditor .made-up-space {
   display: none !important; }
