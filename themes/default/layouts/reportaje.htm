@@ -41,6 +41,10 @@ code = "redes-sociales"
         $this['numPag'] = ceil($this->staticApp->reportListCount()/$this['numberReg']);
         $this['reports'] = $this->staticApp->reportListPag(1,$this['numberReg']);
 
+        echo ($this['numPag']);
+        echo ($this['reports']);
+        dd(1);
+
         $this['urlPage'] = $this->page->url;
 
         if($this->page->apiBag){
