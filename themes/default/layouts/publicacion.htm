@@ -27,15 +27,20 @@ code = "redes-sociales"
 ==
 
 <?php
-
+    
+  
     function onStart()
     {
         $this['lang']=\App::getLocale();
         if($this['lang']==''){
             $this['lang']='es';
         }
+      
+        //$this['publications'] = $this->staticApp->publicationList();
+        $this['numberReg'] = 2;
+        $this['numPag'] = ceil($this->staticApp->publicationListCount()/$this['numberReg']);
 
-        $this['publications'] = $this->staticApp->publicationList();
+        $this['publications'] = $this->staticApp->publicationListPag(1,$this['numberReg']);
 
         $this['urlPage'] = $this->page->url;
 
@@ -44,7 +49,17 @@ code = "redes-sociales"
                 $this['metaImg'] = $this->page->apiBag["staticPage"]->attributes["viewBag"]["cover"];
             }
         }
+    }
 
+    function onPaginate(){
+        
+        $pag = $_POST['ipag'];
+        $numberReg = $_POST['inumberReg'];
+
+        $this['publications'] = $this->staticApp->publicationListPag($pag,$numberReg);
+        return [
+            '#prtlPublications' => $this->renderPartial('publications')
+        ];
     }
 
 ?>
@@ -82,6 +97,16 @@ code = "redes-sociales"
         {% partial "publications" %}
         </div>
     </div>
+    
+    <!-- Pagination -->
+    {% for i in 1..numPag %}
+        <form data-request="onPaginate">
+            <input type="hidden" name = "ipag" value="{{i}}">
+            <input type="hidden" name = "inumberReg" value="{{numberReg}}">
+            <button id="numPag{{i}}" class="btnNumPag" type="submit">{{i}}</button>           
+        </form>
+    {% endfor %}
+    
 
     {% partial 'site/footer' %}
 
@@ -89,9 +114,11 @@ code = "redes-sociales"
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.full.min.js"></script>
     <script type="text/javascript" src="{{url('/')}}/plugins/rainlab/pages/assets/js/script-select2.js"></script>
-<script type="text/javascript" src="{{url('/')}}/plugins/rainlab/pages/assets/iziModal/js/iziModal.js"></script>
-
+    <script type="text/javascript" src="{{url('/')}}/plugins/rainlab/pages/assets/iziModal/js/iziModal.js"></script>
+    <script src="{{ 'assets/js/app.js'|theme }}"></script>
     <script type="text/javascript" src="{{url('/')}}/plugins/rainlab/pages/assets/js/style.js"></script>
-
+    
+    {% framework %}
+  
   </body>
 </html>

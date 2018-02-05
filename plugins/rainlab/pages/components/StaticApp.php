@@ -165,11 +165,11 @@ class StaticApp extends ComponentBase
 
         foreach ($eventsVip as $event) {
 
-            if( (new DateTime($event->date_start))->format('Y-m-d') > $now && $count < 7){
+            if( (new DateTime($event->date_end))->format('Y-m-d') > $now && $count < 7){
                 $resultVip->push($event);
                 $count = $count+1;
 
-            } elseif( (new DateTime($event->date_start))->format('Y-m-d') > $now && $count > 6){
+            } elseif( (new DateTime($event->date_end))->format('Y-m-d') > $now && $count > 6){
                 $resultNormal->push($event);
                 $count = $count+1;
             }
@@ -178,7 +178,7 @@ class StaticApp extends ComponentBase
 
         foreach ($eventsNormal as $event) {
 
-            if( (new DateTime($event->date_start))->format('Y-m-d') > $now){
+            if( (new DateTime($event->date_end))->format('Y-m-d') > $now){
                 $resultNormal->push($event);
                 $count = $count+1;
             }
@@ -557,11 +557,8 @@ class StaticApp extends ComponentBase
             $message->subject('Tu experiencia en Cadiz Turismo');
             $message->attachData($pdf_data, 'Experience.pdf');
 
-
         });
-
     }
-
 
     public function publicationList()
     {
@@ -573,6 +570,25 @@ class StaticApp extends ComponentBase
 
         return $result;
     }
+    
+    public function publicationListCount(){
+        return count($this->publicationList());
+    }
+
+    public function publicationListPag($pag = 1, $number = 1)
+    {
+        $theme = Theme::getActiveTheme();
+        $pages = Page::listInTheme($theme, false);
+        $publications =  new \Illuminate\Support\Collection($pages);
+
+        $result = $publications->where("is_hidden",0)->where("subtemplate","publicaciones")->values();
+
+        $pagination = $result->slice((($pag-1)*$number),$number);
+
+        return $pagination;
+    }
+
+
 
     public function newList($idm)
     {
@@ -585,6 +601,24 @@ class StaticApp extends ComponentBase
         return $result;
     }
 
+    public function newListCount($idm){
+        return count($this->newList($idm));
+    }
+
+    public function newListPag($idm, $pag = 1, $number = 1)
+    {
+        $theme = Theme::getActiveTheme();
+        $pages = Page::listInTheme($theme, false);
+        $news =  new \Illuminate\Support\Collection($pages);
+
+        $result = $news->where("is_hidden",0)->where("subtemplate","sala-prensa-prensa")->where("idioma",$idm)->values();
+
+        $pagination = $result->slice((($pag-1)*$number),$number);
+
+        return $pagination;
+    }
+
+
     public function reportList()
     {
         $theme = Theme::getActiveTheme();
@@ -594,6 +628,23 @@ class StaticApp extends ComponentBase
         $result = $reports->where("is_hidden",0)->where("subtemplate","sala-prensa-reportajes")->values();
 
         return $result;
+    }
+
+    public function reportListCount(){
+        return count($this->reportList());
+    }
+
+    public function reportListPag($pag = 1, $number = 1)
+    {
+        $theme = Theme::getActiveTheme();
+        $pages = Page::listInTheme($theme, false);
+        $reports =  new \Illuminate\Support\Collection($pages);
+
+        $result = $reports->where("is_hidden",0)->where("subtemplate","sala-prensa-reportajes")->values();
+
+        $pagination = $result->slice((($pag-1)*$number),$number);
+
+        return $pagination;
     }
 
 

@@ -13,14 +13,31 @@ is_hidden = 0
 	{
 
 	    if (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false) {
-	          $this['preurl'] = '/cadizturismo';
+	        $this['preurl'] = '/cadizturismo';
 	    } else {
 	        $this['preurl'] = '';
 	    }
+	   	
+	    $this['idm'] = $this->param('idm');
+	   	$this['numberReg'] = 2;
+        $this['numPag'] = ceil($this->staticApp->newListCount($this->param('idm'))/$this['numberReg']);
 
-	   	$this['news'] = $this->staticApp->newList($this->param('idm'));
+        $this['news'] = $this->staticApp->newListPag($this['idm'],1,$this['numberReg']);
 
 	}
+
+	function onPaginate(){
+        
+        $pag = $_POST['ipag'];
+        $numberReg = $_POST['inumberReg'];
+        $idm = $_POST['iidm'];
+
+        $this['news'] = $this->staticApp->newListPag($idm,$pag,$numberReg);
+
+        return [
+            '#prtlSearch' => $this->renderPartial('news')
+        ];
+    }
 
 
 
@@ -45,3 +62,13 @@ is_hidden = 0
 <div id='prtlSearch' class="search-prensa">
   {% partial "news" %}
 </div>
+
+
+{% for i in 1..numPag %}
+    <form data-request="onPaginate">
+        <input type="hidden" name = "ipag" value="{{i}}">
+        <input type="hidden" name = "inumberReg" value="{{numberReg}}">
+        <input type="hidden" name = "iidm" value="{{idm}}">
+        <button id="numPag{{i}}" class="btnNumPag" type="submit">{{i}}</button>          
+    </form>
+{% endfor %}
