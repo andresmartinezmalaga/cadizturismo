@@ -2168,7 +2168,7 @@ class PagesTemplates
               <img src="***_preurl_***/storage/app/media/uploaded-files/templates/address-icon.svg" alt="">
           </div>
           <div class="info-cont">
-            <p class="info">DIRECCIÓN: Plaza de Madrid s/n</p>
+            <p class="info">PATRONATO PROVINCIAL TURISMO DE CÁDIZ: Plaza de Madrid s/n</p>
             <p class="info">Estadio Ramón de Carranza (Fondo Sur) 4º Planta</p>
           </div>
         </div>
