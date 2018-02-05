@@ -65,10 +65,12 @@ is_hidden = 0
 
 
 {% for i in 1..numPag %}
-    <form class="pagination" data-request="onPaginate">
-        <input type="" name = "ipag" value="{{i}}">
-        <input type="hidden" name = "inumberReg" value="{{numberReg}}">
-        <input type="hidden" name = "iidm" value="{{idm}}">
-        <button id="numPag{{i}}" class="btnNumPag" type="submit">{{i}}</button>
-    </form>
+<div class="pagination">
+	<form data-request="onPaginate">
+			<input type="hidden" name = "ipag" value="{{i}}">
+			<input type="hidden" name = "inumberReg" value="{{numberReg}}">
+			<input type="hidden" name = "iidm" value="{{idm}}">
+			<button id="numPag{{i}}" class="btnNumPag" type="submit">{{i}}</button>
+	</form>
+</div>
 {% endfor %}
