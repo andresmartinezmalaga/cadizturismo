@@ -2207,10 +2207,6 @@ div[data-control="media-manager"] .media-list.tiles li.selected .icon-container 
   top: 0px !important;
 }
 
-[id*='imageAlign'] {
-  display: none;
-}
-
 [data-cmd=imageAlign], [data-cmd=imageDisplay], [data-cmd=imageStyle],
 [data-cmd=imageAlt], [data-cmd=imageSize] {
     display: none !important;
