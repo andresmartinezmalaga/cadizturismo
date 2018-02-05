@@ -105,7 +105,11 @@ code = "redes-sociales"
           <form data-request="onPaginate">
               <input type="hidden" name = "ipag" value="{{i}}">
               <input type="hidden" name = "inumberReg" value="{{numberReg}}">
-              <button id="numPag{{i}}" class="btnNumPag" type="submit">{{i}}</button>
+              {% if i == 1 %}
+        			<button id="numPag{{i}}" class="btnNumPag active" type="submit">{{i}}</button>
+        			{% else %}
+        			<button id="numPag{{i}}" class="btnNumPag" type="submit">{{i}}</button>
+        			{% endif %}
           </form>
       {% endfor %}
     </div>
