@@ -376,7 +376,14 @@ html, body {
   -ms-user-select: none;
   user-select: none;
   width: 20px;
-  height: 15px; }
+  height: 15px;
+ }
+
+ .transform-bars {
+   .middle-bar {
+     display: none;
+   }
+ }
 
 .mobile-toggle .top-bar, .mobile-toggle .middle-bar, .mobile-toggle .bottom-bar {
   width: 20px;
@@ -389,7 +396,9 @@ html, body {
   transition: transform .3s 0s ease-in-out,top .3s .3s ease-in-out;
   -webkit-transform-origin: 50% 50%;
   -ms-transform-origin: 50% 50%;
-  transform-origin: 50% 50%; }
+  transform-origin: 50% 50%;
+}
+
 
 .mobile-toggle .middle-bar {
   top: 6px;
@@ -774,7 +783,7 @@ html, body {
     align-items: center;
     justify-content: center;
     z-index: 100;
-    border-bottom: 1px solid #979797; }
+  }
   .icons-row .also-feature {
     display: -webkit-box;
     display: -moz-box;

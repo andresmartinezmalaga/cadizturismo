@@ -301,6 +301,9 @@ html, body {
   width: 20px;
   height: 15px; }
 
+.transform-bars .middle-bar {
+  display: none; }
+
 .mobile-toggle .top-bar, .mobile-toggle .middle-bar, .mobile-toggle .bottom-bar {
   width: 20px;
   height: 2px;
@@ -733,8 +736,7 @@ html, body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  z-index: 100;
-  border-bottom: 1px solid #979797; }
+  z-index: 100; }
 
 .icons-row .also-feature {
   display: -webkit-box;
