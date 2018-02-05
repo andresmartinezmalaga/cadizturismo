@@ -1351,6 +1351,7 @@ html, body {
         position: absolute;
         width: 100%;
         height: 100%;
+        left: 0;
         object-fit: cover; }
       .ways .way .pic-way:before {
         content: '';
@@ -1607,7 +1608,8 @@ html, body {
         position: absolute;
         width: 100%;
         height: 100%;
-        object-fit: cover; }
+        object-fit: cover;
+        left: 0px; }
       .contact-ways .way .pic-way:before {
         content: '';
         position: absolute;
