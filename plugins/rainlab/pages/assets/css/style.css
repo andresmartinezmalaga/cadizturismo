@@ -304,6 +304,13 @@ html, body {
 .transform-bars .middle-bar {
   display: none; }
 
+.transform-bars .top-bar {
+  transform: rotate(40deg);
+  top: 12px; }
+
+.transform-bars .bottom-bar {
+  transform: rotate(-40deg); }
+
 .mobile-toggle .top-bar, .mobile-toggle .middle-bar, .mobile-toggle .bottom-bar {
   width: 20px;
   height: 2px;
