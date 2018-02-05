@@ -16,7 +16,8 @@
           {% if (i == startPag-1 and startPag-1>0 ) or i == startPag or i == startPag+1 %}
             <form data-request="onPaginate">
                 <input type="hidden" name = "ipag" value="{{i}}">
-                <input type="hidden" name = "inumberReg" value="{{numberReg}}">
+                <input type="hidden" name = "inumberReg" value="{{numberReg}}">                
+                <input type="hidden" name = "iidm" value="{{iidm}}">
                 {% if i == startPag %}
           			<button id="numPag{{i}}" class="btnNumPag active" type="submit">{{i}}</button>
           			{% else %}
