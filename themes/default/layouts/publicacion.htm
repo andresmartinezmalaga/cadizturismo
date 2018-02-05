@@ -99,13 +99,15 @@ code = "redes-sociales"
     </div>
 
     <!-- Pagination -->
-    {% for i in 1..numPag %}
-        <form class="pagination" data-request="onPaginate">
-            <input type="hidden" name = "ipag" value="{{i}}">
-            <input type="hidden" name = "inumberReg" value="{{numberReg}}">
-            <button id="numPag{{i}}" class="btnNumPag" type="submit">{{i}}</button>
-        </form>
-    {% endfor %}
+    <div class="pagination">
+      {% for i in 1..numPag %}
+          <form data-request="onPaginate">
+              <input type="hidden" name = "ipag" value="{{i}}">
+              <input type="hidden" name = "inumberReg" value="{{numberReg}}">
+              <button id="numPag{{i}}" class="btnNumPag" type="submit">{{i}}</button>
+          </form>
+      {% endfor %}
+    </div>
 
 
     {% partial 'site/footer' %}
