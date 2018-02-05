@@ -449,6 +449,9 @@ html, body {
    }
  }
 
+.mobile-toggle.open {
+  top: 95% !important;
+}
 
  .open .bars {
    background-color: transparent;
@@ -463,6 +466,7 @@ html, body {
      @include transform(rotate(45deg));
    }
  }
+
 
 .mobile-toggle .top-bar, .mobile-toggle .middle-bar, .mobile-toggle .bottom-bar {
   width: 20px;

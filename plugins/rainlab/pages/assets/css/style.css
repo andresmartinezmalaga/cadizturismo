@@ -368,6 +368,9 @@ html, body {
   .bars:after {
     bottom: 6px; }
 
+.mobile-toggle.open {
+  top: 95% !important; }
+
 .open .bars {
   background-color: transparent;
   -webkit-transition: all 0.2s ease;
