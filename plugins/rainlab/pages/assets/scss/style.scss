@@ -1222,6 +1222,8 @@ html, body {
       z-index: 10;
       text-align: center;
       margin: 0px;
+      transform: translate(-50%,0);
+      left: 50%;
   }
 }
 .ayuda-header {
@@ -1299,6 +1301,8 @@ html, body {
       z-index: 10;
       text-align: center;
       margin: 0px;
+      left: 50%;
+      transform: translate(-50%,0);
   }
 }
 .somos-section {
@@ -1386,6 +1390,8 @@ html, body {
       z-index: 10;
       text-align: center;
       margin: 0px;
+      left: 50%;
+      transform: translate(-50%,0);
   }
 }
 .ways {
