@@ -6,7 +6,7 @@
           <form data-request="onPaginate">
               <input type="hidden" name = "ipag" value="1">
               <input type="hidden" name = "inumberReg" value="{{numberReg}}">
-              <input type="hidden" name = "iidm" value="{{idm}}">
+              <input type="text" name = "iidm" value="{{idm}}">
               <button id="numPag1" class="btnNumPag" type="submit">1</button>
           </form>
           <span>...</span>
@@ -34,7 +34,7 @@
           <form data-request="onPaginate">
               <input type="hidden" name = "ipag" value="{{numPag}}">
               <input type="hidden" name = "inumberReg" value="{{numberReg}}">
-              <input type="hidden" name = "iidm" value="{{idm}}">
+              <input type="text" name = "iidm" value="{{idm}}">
               <button id="numPag{{numPag}}" class="btnNumPag" type="submit">{{numPag}}</button>
           </form>          
       {% endif %}
