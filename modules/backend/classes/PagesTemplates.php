@@ -2337,7 +2337,7 @@ class PagesTemplates
       alt="">
       <div class="header-container">
     		<div class="header-txt-comollegar">
-    			<h1 class="txt">Reportaje</h1>
+    			<h1 class="txt">Reportajes</h1>
           <img class="brush" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg"
           alt="necesitas ayuda">
         </div>
