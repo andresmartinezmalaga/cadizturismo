@@ -159,7 +159,8 @@
 .section-img-comarca {
   width: 100%;
   z-index: 50;
-  position: relative; }
+  position: relative;
+  background-color: white; }
   .section-img-comarca img {
     width: 100%;
     height: auto;

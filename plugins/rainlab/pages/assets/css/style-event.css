@@ -777,7 +777,8 @@
   width: 100%;
   height: auto;
   position: relative;
-  z-index: 100; }
+  z-index: 100;
+  background-color: white; }
   .section-img img {
     width: 100%;
     height: auto; }
