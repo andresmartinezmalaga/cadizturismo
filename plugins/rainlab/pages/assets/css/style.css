@@ -295,7 +295,8 @@ html, body {
   align-items: center;
   justify-content: center;
   padding-bottom: 50px;
-  margin-top: 0px; }
+  margin-top: 0px;
+  margin-bottom: 0px; }
   .pagination .btnNumPag {
     background-color: transparent;
     outline: none;
