@@ -37,7 +37,8 @@ code = "redes-sociales"
         }
 
         //$this['publications'] = $this->staticApp->publicationList();
-        $this['numberReg'] = 2;
+        $this['startPag'] = 1;
+        $this['numberReg'] = 1;
         $this['numPag'] = ceil($this->staticApp->publicationListCount()/$this['numberReg']);
 
         $this['publications'] = $this->staticApp->publicationListPag(1,$this['numberReg']);
@@ -55,9 +56,15 @@ code = "redes-sociales"
 
         $pag = $_POST['ipag'];
         $numberReg = $_POST['inumberReg'];
-
+        
+        $this['startPag'] = $_POST['ipag'];
+        $this['numberReg'] = 1;
+        
+        $this['numPag'] = ceil($this->staticApp->publicationListCount()/$this['numberReg']);
         $this['publications'] = $this->staticApp->publicationListPag($pag,$numberReg);
+        
         return [
+            '#prtlPagination' => $this->renderPartial('pagination'),
             '#prtlPublications' => $this->renderPartial('publications')
         ];
     }
@@ -98,22 +105,14 @@ code = "redes-sociales"
         </div>
     </div>
 
-    {% if numPag > 0 %}
-    <!-- Pagination -->
-    <div class="pagination">
-      {% for i in 1..numPag %}
-          <form data-request="onPaginate">
-              <input type="hidden" name = "ipag" value="{{i}}">
-              <input type="hidden" name = "inumberReg" value="{{numberReg}}">
-              {% if i == 1 %}
-        			<button id="numPag{{i}}" class="btnNumPag active" type="submit">{{i}}</button>
-        			{% else %}
-        			<button id="numPag{{i}}" class="btnNumPag" type="submit">{{i}}</button>
-        			{% endif %}
-          </form>
-      {% endfor %}
+    <div id='prtlPagination'>       
+        {% partial "pagination" %}
     </div>
-    {% endif %}
+
+   
+    
+
+
 
     {% partial 'site/footer' %}
 
