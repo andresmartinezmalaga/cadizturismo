@@ -34,6 +34,14 @@ class Plugin extends PluginBase
         ];
     }
 
+    public function registerPageSnippets()
+    {
+        return [
+           '\RainLab\Pages\Components\addArticle' => 'addArticle'
+        ];
+    }
+
+
     public function registerPermissions()
     {
         return [
@@ -155,7 +163,7 @@ class Plugin extends PluginBase
         ];
     }
 
-
+   
     public function boot()
     {
         Event::listen('cms.router.beforeRoute', function($url) {
