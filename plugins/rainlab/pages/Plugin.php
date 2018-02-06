@@ -158,7 +158,7 @@ class Plugin extends PluginBase
      public function registerPageSnippets()
     {
         return [
-           '\themes\default\partials\addArticle' => 'addArticle'
+           '\RainLab\Pages\Components' => 'addArticle'
         ];
     }
 
