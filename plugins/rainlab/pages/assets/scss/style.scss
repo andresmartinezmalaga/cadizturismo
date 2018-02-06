@@ -49,7 +49,7 @@
   font-style: normal; }
 
 
-  .send-info:has(a) {
+  .send-info:not(a) {
     display: none !important;
   }
 
