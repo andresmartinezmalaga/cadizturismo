@@ -1377,6 +1377,7 @@ html, body {
         position: absolute;
         width: 100%;
         height: 100%;
+        top: 0px;
         left: 0;
         object-fit: cover; }
       .ways .way .pic-way:before {
@@ -1384,6 +1385,8 @@ html, body {
         position: absolute;
         width: 100%;
         height: 100%;
+        top: 0px;
+        left: 0px;
         background: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.68) 100%);
         z-index: 1; }
       .ways .way .pic-way .icon-container {
