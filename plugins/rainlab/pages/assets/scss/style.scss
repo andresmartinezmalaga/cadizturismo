@@ -3401,6 +3401,7 @@ footer {
       height: 100%;
       @include flexbox();
       flex-direction: row;
+      align-items: center;
     }
     .links-container {
       height: 100%;

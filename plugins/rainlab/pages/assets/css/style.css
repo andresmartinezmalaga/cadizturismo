@@ -3080,7 +3080,8 @@ footer {
       display: -ms-flexbox;
       display: -webkit-flex;
       display: flex;
-      flex-direction: row; }
+      flex-direction: row;
+      align-items: center; }
     footer .footer-container .links-container {
       height: 100%;
       display: -webkit-box;
