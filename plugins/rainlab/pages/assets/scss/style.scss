@@ -1715,6 +1715,7 @@ html, body {
         height: 100%;
         object-fit: cover;
         left: 0px;
+        top: 0px;
       }
       &:before {
         content: '';
@@ -1723,6 +1724,8 @@ html, body {
         height: 100%;
         background: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.68) 100%);
         z-index: 1;
+        top: 0px;
+        left: 0px;
       }
       .icon-container {
         z-index: 80;
