@@ -397,7 +397,8 @@
       max-height: 100px;
       max-width: 100px;
       object-fit: cover;
-
+      left: 50%;
+      transform: translate(-50%, 0);
     }
     .txt-container {
       position: absolute;

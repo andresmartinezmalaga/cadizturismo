@@ -379,7 +379,9 @@
       top: 235px;
       max-height: 100px;
       max-width: 100px;
-      object-fit: cover; }
+      object-fit: cover;
+      left: 50%;
+      transform: translate(-50%, 0); }
     .static-structure .page .txt-container {
       position: absolute;
       width: 81%;
