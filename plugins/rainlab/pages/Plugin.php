@@ -37,7 +37,7 @@ class Plugin extends PluginBase
     public function registerPageSnippets()
     {
         return [
-           '\RainLab\Pages\Components\addArticle' => 'addArticle'
+           '\RainLab\Pages\Components\AddArticle' => 'addArticle'
         ];
     }
 
