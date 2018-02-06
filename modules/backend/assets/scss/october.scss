@@ -2211,3 +2211,7 @@ div[data-control="media-manager"] .media-list.tiles li.selected .icon-container 
 [data-cmd=imageAlt], [data-cmd=imageSize] {
     display: none !important;
 }
+
+#ReportContainer-container-toolbar {
+  display: none;
+}
