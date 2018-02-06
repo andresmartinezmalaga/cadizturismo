@@ -1728,6 +1728,7 @@ html, body {
   width: 1200px;
   margin: 0 auto;
   display: grid;
+  display: -ms-grid;
   justify-content: center;
   grid-template-columns: repeat(3, 400px);
   -ms-grid-template-columns: repeat(3, 400px);
