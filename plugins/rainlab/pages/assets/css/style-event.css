@@ -207,6 +207,7 @@
   background: linear-gradient(180deg, transparent 50%, #FFFFFF 50%);
   position: absolute;
   bottom: -13%;
+  left: 0px;
   z-index: 999;
   display: -webkit-box;
   display: -moz-box;

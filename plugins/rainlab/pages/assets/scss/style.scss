@@ -49,6 +49,11 @@
   font-style: normal; }
 
 
+  .send-info:has(a) {
+    display: none !important;
+  }
+
+
   //modal mobile
   .navigation {
     display: none;
@@ -1086,6 +1091,7 @@ html, body {
     background: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.68) 100%);
     z-index: 5;
     left: 0px;
+    top: 0px;
   }
   .img-header {
       width: 100%;
@@ -1446,6 +1452,7 @@ html, body {
         position: absolute;
         width: 100%;
         height: 100%;
+        top: 0px;
         left: 0;
         object-fit: cover;
       }
@@ -1454,6 +1461,8 @@ html, body {
         position: absolute;
         width: 100%;
         height: 100%;
+        top: 0px;
+        left: 0px;
         background: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.68) 100%);
         z-index: 1;
       }
@@ -1712,6 +1721,7 @@ html, body {
         height: 100%;
         object-fit: cover;
         left: 0px;
+        top: 0px;
       }
       &:before {
         content: '';
@@ -1720,6 +1730,8 @@ html, body {
         height: 100%;
         background: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.68) 100%);
         z-index: 1;
+        top: 0px;
+        left: 0px;
       }
       .icon-container {
         z-index: 80;
@@ -1810,6 +1822,7 @@ html, body {
   width: 1200px;
   margin: 0 auto;
   display: grid;
+  display: -ms-grid;
   justify-content: center;
   grid-template-columns: repeat(3, 400px);
   -ms-grid-template-columns: repeat(3, 400px);
@@ -3393,6 +3406,7 @@ footer {
       height: 100%;
       @include flexbox();
       flex-direction: row;
+      align-items: center;
     }
     .links-container {
       height: 100%;

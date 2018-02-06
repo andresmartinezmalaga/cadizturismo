@@ -306,6 +306,7 @@
             justify-content: center;
             img {
               max-width: 23px;
+              max-height: 23px;
             }
           }
           .con-encanto {
@@ -322,6 +323,7 @@
             justify-content: center;
             img {
               max-width: 23px;
+              max-height: 23px;
             }
           }
             .main-section-comarcas .main-events-container .event .txt-container .icons .icon-pair p {
@@ -397,7 +399,8 @@
       max-height: 100px;
       max-width: 100px;
       object-fit: cover;
-
+      left: 50%;
+      transform: translate(-50%, 0);
     }
     .txt-container {
       position: absolute;

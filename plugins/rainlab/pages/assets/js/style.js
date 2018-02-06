@@ -68,9 +68,7 @@ $("span.download").click(function(){
 
 
  $(".search-bar").click(function() {
-
        if($(".dropdown-days.select2-dropdown--below").length) {
-
            $(".days-container").addClass('downwards');
            $(".search-bar").addClass('downwards');
        } else {
@@ -90,6 +88,8 @@ $("span.download").click(function(){
    $(".search-bar").on("select2:selecting", function() {
            $('.days-container').removeClass('downwards');
            $('.days-container').removeClass('upwards');
+           $(".search-bar").removeClass('upwards');
+           $(".search-bar").removeClass('downwards');
    });
 
 
