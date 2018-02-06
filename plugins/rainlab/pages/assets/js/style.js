@@ -1,6 +1,9 @@
 
 jQuery(function($)
 {
+
+    $(".send-info:not(:has(>a))").css('display','none');
+
     $(".hamburger").click(function() {
         $(".navigation").toggleClass("open");
     });
