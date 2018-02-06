@@ -92,13 +92,6 @@ $("span.download").click(function(){
            $(".search-bar").removeClass('downwards');
    });
 
-   $(".header-home").click(function() {
-     $('.days-container').removeClass('downwards');
-     $('.days-container').removeClass('upwards');
-     $(".search-bar").removeClass('upwards');
-     $(".search-bar").removeClass('downwards');
-    });
-
 
    $("#modal-exp").iziModal();
    $("#modal-success").iziModal();
