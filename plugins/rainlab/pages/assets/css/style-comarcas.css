@@ -285,7 +285,8 @@
   align-items: center;
   justify-content: center; }
   .main-section-comarcas .main-events-container .event .txt-container .icons .icon-pair img {
-    max-width: 23px; }
+    max-width: 23px;
+    max-height: 23px; }
 
 .con-encanto {
   font-size: 121px; }
@@ -300,7 +301,8 @@
   align-items: center;
   justify-content: center; }
   .main-events-container .event .txt-container .icons .icon-pair img {
-    max-width: 23px; }
+    max-width: 23px;
+    max-height: 23px; }
 
 .main-section-comarcas .main-events-container .event .txt-container .icons .icon-pair p {
   margin-bottom: 0px;
