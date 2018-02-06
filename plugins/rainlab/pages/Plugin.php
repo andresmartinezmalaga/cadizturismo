@@ -155,6 +155,13 @@ class Plugin extends PluginBase
         ];
     }
 
+     public function registerPageSnippets()
+    {
+        return [
+           '\themes\default\partials\addArticle' => 'addArticle'
+        ];
+    }
+
     public function boot()
     {
         Event::listen('cms.router.beforeRoute', function($url) {
