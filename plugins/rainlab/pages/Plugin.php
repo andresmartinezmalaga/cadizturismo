@@ -155,12 +155,6 @@ class Plugin extends PluginBase
         ];
     }
 
-     public function registerPageSnippets()
-    {
-        return [
-           'rainlab.pages.components' => 'addArticle'
-        ];
-    }
 
     public function boot()
     {
