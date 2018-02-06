@@ -49,6 +49,11 @@
   font-style: normal; }
 
 
+  .send-info > .button-send-info > :not(a) {
+    display: none !important;
+  }
+
+
   //modal mobile
   .navigation {
     display: none;

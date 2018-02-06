@@ -41,6 +41,9 @@
   font-weight: normal;
   font-style: normal; }
 
+.send-info > .button-send-info > :not(a) {
+  display: none !important; }
+
 .navigation {
   display: none; }
 
