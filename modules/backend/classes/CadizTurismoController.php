@@ -128,18 +128,23 @@ class CadizTurismoController extends ControllerBase
     public function statics() {
 
     	$result = collect();
+    	$naturaleza_grupo = collect();
     	$naturaleza = collect();
     	$espacios_naturales = collect();
     	$diversion = collect();
     	$cultura = collect();
     	$gastronomia = collect();
 
+    	$naturaleza_grupo->put('naturaleza',$naturaleza);
+    	$naturaleza_grupo->put('espacios_naturales',$espacios_naturales);
+
+
     	$iPages = $this->StaticApp->staticsFindByUrl('/naturaleza');
     	foreach ($iPages as $value) {
     		if (strpos($value->url, '/naturaleza/espacios-naturales') !== false) {
-                $espacios_naturales->push($value);
+                $espacios_naturales->push('espacios_naturales',$value);
             } else {
-            	$naturaleza->push($value);
+            	$naturaleza->push('naturaleza',$value);
             }
     	}
     	
@@ -152,10 +157,10 @@ class CadizTurismoController extends ControllerBase
     	$iPages = $this->StaticApp->staticsFindByUrl('/gastronomia');
     	$gastronomia->push($iPages);
 
-    	$result->push($naturaleza);
-    	$result->push($diversion);
-    	$result->push($cultura);
-    	$result->push($gastronomia);
+    	$result->put('naturaleza',$naturaleza);
+    	$result->put('diversion',$diversion);
+    	$result->put('cultura',$cultura);
+    	$result->put('gastronomia',$gastronomia);
 
     	// /naturaleza /naturaleza/via-verde /naturaleza/birdwatching /naturaleza/espacios-naturales la-brena-y-marismas-de-barbate
     	// /diversion
