@@ -53,14 +53,12 @@ class CadizTurismoController extends ControllerBase
     	
     	$daystart = (new Date($date_start))->format('d-m-Y');
     	$dayend = (new Date($date_end))->format('d-m-Y');
-    	
-    	//echo $daystart;
-        //dd(1);
 
     	$lowCategory = strtolower($category);
     	$lowLocation = strtolower($location);
 
-    	$event = $this->StaticApp->rutaFind($lowCategory, $daystart, $dayend, $lowLocation);
+
+    	$event = $this->StaticApp->eventFind($lowCategory, $daystart, $dayend, $lowLocation);
     	return new JsonResponse(['data'=>$event], 200);
     }
 
