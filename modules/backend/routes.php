@@ -1,9 +1,12 @@
 <?php
 
+Route::get('/municipios', 'Backend\Controllers\cadizController@municipiosList');
+
 /**
  * Register Backend routes before all user routes.
  */
 App::before(function ($request) {
+    
     /*
      * Extensibility
      */
@@ -19,6 +22,7 @@ App::before(function ($request) {
             Route::any('{slug}', 'Backend\Classes\BackendController@run')->where('slug', '(.*)?');
         })
     ;
+
 
     /*
      * Entry point

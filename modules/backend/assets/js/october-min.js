@@ -905,10 +905,10 @@ return this}
 $(document).ready(function(){$('[data-control=filelist]').fileList()})}(window.jQuery);(function($){var OctoberLayout=function(){this.$accountMenuOverlay=null}
 // Andrés Martínez : No set title page
 OctoberLayout.prototype.setPageTitle=function(title){
-//var $title=$('title')
-//if(this.pageTitleTemplate===undefined)
-//this.pageTitleTemplate=$title.data('titleTemplate')
-//$title.text(this.pageTitleTemplate.replace('%s',title))
+var $title=$('title')
+if(this.pageTitleTemplate===undefined)
+this.pageTitleTemplate=$title.data('titleTemplate')
+$title.text(this.pageTitleTemplate.replace('%s',title))
 }
 OctoberLayout.prototype.updateLayout=function(title){var $children,$el,fixedWidth,margin
 $('[data-calculate-width]').each(function(){$children=$(this).children()

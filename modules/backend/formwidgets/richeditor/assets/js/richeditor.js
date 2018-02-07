@@ -258,6 +258,7 @@
             $toolbar = $('.fr-toolbar', this.$el),
             $box = $('.fr-box', this.$el)
 
+            
 
         if (!$editor.length) {
             return

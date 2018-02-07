@@ -79,6 +79,7 @@ trait MLControl
      */
     public function loadLocaleAssets()
     {
+        $this->addJs('/plugins/rainlab/translate/assets/js/ams.js', 'RainLab.Translate');
         $this->addJs('/plugins/rainlab/translate/assets/js/multilingual.js', 'RainLab.Translate');
         $this->addCss('/plugins/rainlab/translate/assets/css/multilingual.css', 'RainLab.Translate');
     }
