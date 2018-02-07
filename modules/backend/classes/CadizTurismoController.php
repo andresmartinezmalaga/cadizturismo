@@ -65,6 +65,10 @@ class CadizTurismoController extends ControllerBase
     	return new JsonResponse(['data'=>$rutasList], 200);
     }
 
+    public function rutasCategories() {
+    	return new JsonResponse(['data'=> $this->StaticApp->getRutasCategories()],200);
+    }
+
     public function rutaFind($category, $days, $location){
     	
     	$lowCategory = strtolower($category);
@@ -73,6 +77,10 @@ class CadizTurismoController extends ControllerBase
 
     	$ruta = $this->StaticApp->rutaFind($lowCategory, $lowDays, $lowLocation);
     	return new JsonResponse(['data'=>$ruta], 200);
+    }
+
+    public function eventsCategories() {
+    	return new JsonResponse(['data'=> $this->StaticApp->getEventsCategories()],200);
     }
 
     // date format : 07-02-2018
