@@ -13,6 +13,7 @@ Route::get('/api/playas', 'Backend\Classes\CadizTurismoController@beachesIndex')
 Route::get('/api/playas/{name}', 'Backend\Classes\CadizTurismoController@beachByName');
 
 // Andrés Martínez : routes rutas
+Route::get('/api/rutas', 'Backend\Classes\CadizTurismoController@rutasIndex');
 Route::get('/api/rutas/{category}/{days}/{location}', 'Backend\Classes\CadizTurismoController@rutaFind');
 Route::get('/api/rutas/opciones/ubicacion', 'Backend\Classes\CadizTurismoController@municipalitiesList');
 
