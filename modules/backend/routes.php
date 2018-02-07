@@ -1,7 +1,7 @@
 <?php
 
 // Andrés Martínez : routes municipalities
-Route::get('/api/municipios', 'Backend\Classes\CadizTurismoController@municipalitiesList');
+Route::get('/api/municipios', 'Backend\Classes\CadizTurismoController@municipalitiesIndex');
 Route::get('/api/municipios/{name}', 'Backend\Classes\CadizTurismoController@municipalityByName');
 
 // Andrés Martínez : routes regions
@@ -12,9 +12,11 @@ Route::get('/api/playas/{name}', 'Backend\Classes\CadizTurismoController@beachBy
 
 // Andrés Martínez : routes rutas
 Route::get('/api/rutas/{category}/{days}/{location}', 'Backend\Classes\CadizTurismoController@rutaFind');
+Route::get('/api/rutas/opciones/ubicacion', 'Backend\Classes\CadizTurismoController@municipalitiesList');
 
 // Andrés Martínez : eventos rutas
 Route::get('/api/eventos/{category}/{date_start}/{date_end}/{location}', 'Backend\Classes\CadizTurismoController@eventFind');
+Route::get('/api/eventos/opciones/ubicacion', 'Backend\Classes\CadizTurismoController@municipalitiesList');
 
 // Andrés Martínez : experiencias rutas
 Route::get('/api/experiencias/opciones/intereses', 'Backend\Classes\CadizTurismoController@experienceInterests');
