@@ -5,6 +5,7 @@ use Backend;
 use Backend\Classes\Controller;
 use Illuminate\Http\JsonResponse;
 use RainLab\Pages\Components\StaticApp;
+use Date;
 
 class CadizTurismoController extends ControllerBase
 {
