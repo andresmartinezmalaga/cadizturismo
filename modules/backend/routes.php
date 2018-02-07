@@ -9,6 +9,7 @@ Route::get('/api/comarcas', 'Backend\Classes\CadizTurismoController@regionsIndex
 Route::get('/api/comarcas/{name}', 'Backend\Classes\CadizTurismoController@regionByName');
 
 // Andrés Martínez : routes beaches
+Route::get('/api/playas', 'Backend\Classes\CadizTurismoController@beachesIndex');
 Route::get('/api/playas/{name}', 'Backend\Classes\CadizTurismoController@beachByName');
 
 // Andrés Martínez : routes rutas

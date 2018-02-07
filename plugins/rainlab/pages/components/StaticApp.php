@@ -430,6 +430,17 @@ class StaticApp extends ComponentBase
         return $result;
     }
 
+    public function beachesList()
+    {
+        $theme = Theme::getActiveTheme();
+        $pages = Page::listInTheme($theme, false);
+        $list =  new \Illuminate\Support\Collection($pages);
+
+        $result = $list->where("is_hidden",0)->where("subtemplate","playas")->sortBy('title')->values();
+
+        return $result;
+    }
+
     public function beachByName($name)
     {
         $theme = Theme::getActiveTheme();

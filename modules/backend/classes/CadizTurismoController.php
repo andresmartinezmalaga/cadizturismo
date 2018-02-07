@@ -47,6 +47,13 @@ class CadizTurismoController extends ControllerBase
     	return new JsonResponse(['data'=>$region], 200);
     }
 
+    public function beachesIndex()
+    {    	
+    	$beachesIndex =  $this->StaticApp->beachesIndex();
+    	return new JsonResponse(['data'=>$beachesIndex], 200);
+    }
+
+
     public function beachByName($name){
     	$slugname = str_slug($name);
     	$beach = $this->StaticApp->beachByName($slugname);
