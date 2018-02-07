@@ -750,7 +750,7 @@ class StaticApp extends ComponentBase
         $staticPages = collect();
 
 
-        foreach ($list as $value) {
+        foreach ($staticPages as $value) {
             if (strpos($value->url, $url) !== false) {
                 $staticPages->push($value);
             }
