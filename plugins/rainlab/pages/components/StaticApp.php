@@ -317,8 +317,8 @@ class StaticApp extends ComponentBase
             $diffEndStart = $be->diffInDays($es,false);
 
 
-            //echo($diffStartEnd.'-'.$diffStart);
-            //dd(1);
+            echo($diffEndStart.'-'.$diffEnd);
+            dd(1);
 
             if($diffStart>=0  && $diffEnd<1 ) {
             
