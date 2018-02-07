@@ -49,7 +49,7 @@ class CadizTurismoController extends ControllerBase
 
     public function beachesIndex()
     {    	
-    	$beachesIndex =  $this->StaticApp->beachesIndex();
+    	$beachesIndex =  $this->StaticApp->beachesList();
     	return new JsonResponse(['data'=>$beachesIndex], 200);
     }
 
