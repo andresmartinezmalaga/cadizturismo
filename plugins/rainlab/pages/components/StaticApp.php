@@ -324,7 +324,7 @@ class StaticApp extends ComponentBase
             
                 $validEvents->push($i);
            
-            } elseif ($diffStartEnd <=0 && $diffStart >=0 ){
+            } elseif ($bs ){
 
                 $validEvents->push($i);
            
