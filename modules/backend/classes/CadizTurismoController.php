@@ -50,6 +50,9 @@ class CadizTurismoController extends ControllerBase
     // date format : 07-02-2018
     public function eventFind($category, $date_start, $date_end, $location){
     	
+    	echo $date_start;
+        dd(1);
+
     	$lowCategory = strtolower($category);
     	$lowLocation = strtolower($location);
 
