@@ -5,7 +5,7 @@ use Backend;
 use Backend\Classes\Controller;
 use Illuminate\Http\JsonResponse;
 
-class Auth extends ControllerBase
+class CadizController extends ControllerBase
 {
 	public function municipiosList()
     {
