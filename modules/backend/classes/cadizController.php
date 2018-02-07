@@ -16,6 +16,6 @@ class CadizController extends ControllerBase
 	public function municipiosList()
     {
     	$mnps =  $this->StaticApp->getMunicipalities();
-    	return new JsonResponse(['data'=>'HOLA'], 200);
+    	return new JsonResponse(['data'=>$mnps], 200);
     }
 }
