@@ -409,7 +409,7 @@ class StaticApp extends ComponentBase
         $pages = Page::listInTheme($theme, false);
         $list =  new \Illuminate\Support\Collection($pages);
 
-        $result = $list->where("is_hidden",0)->where('url', 'like','/comarcas/')->values();
+        $result = $list->where("is_hidden",0)->where('url', 'like','%/comarcas/%')->values();
 
         return $result;
     }
