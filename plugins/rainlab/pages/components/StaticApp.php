@@ -287,6 +287,7 @@ class StaticApp extends ComponentBase
 
     public function eventFind($category, $date_start, $date_end, $location)
     {
+        
         $theme = Theme::getActiveTheme();
         $pages = Page::listInTheme($theme, false);
         $events =  new \Illuminate\Support\Collection($pages);
@@ -308,12 +309,23 @@ class StaticApp extends ComponentBase
             $ee = new Carbon($eventDateEnd);
 
             $diffStart = $bs->diffInDays($es,false);
+            $diffStartEnd = $bs->diffInDays($ee,false);
+            
             $diffEnd = $be->diffInDays($ee,false);
+            $diffEndStart = $be->diffInDays($es,false);
 
+            if($diffStart>=0  && $diffEnd<1 ) {
+            
+                $validEvents->push($i);
+           
+            } elseif ($diffStartEnd >= 0 && $diffStart <= 0){
 
-           if($diffStart>=0  && $diffEnd<1 ) {
-            $validEvents->push($i);
-           }
+                $validEvents->push($i);
+           
+            } elseif ($diffEndStart <= 0 && $diffEnd >=0 ){
+
+                $validEvents->push($i);
+            }
 
         }
 
@@ -373,9 +385,42 @@ class StaticApp extends ComponentBase
     {
         $theme = Theme::getActiveTheme();
         $pages = Page::listInTheme($theme, false);
-        $events =  new \Illuminate\Support\Collection($pages);
+        $list =  new \Illuminate\Support\Collection($pages);
 
-        $result = $events->where("is_hidden",0)->where("subtemplate","municipios")->sortBy('title')->values();
+        $result = $list->where("is_hidden",0)->where("subtemplate","municipios")->sortBy('title')->values();
+
+        return $result;
+    }
+
+    public function municipalityByName($name)
+    {
+        $theme = Theme::getActiveTheme();
+        $pages = Page::listInTheme($theme, false);
+        $list =  new \Illuminate\Support\Collection($pages);
+
+        $result = $list->where("is_hidden",0)->where("subtemplate","municipios")->where('url', '/municipios/'.$name)->values();
+
+        return $result;
+    }
+
+    public function regionByName($name)
+    {
+        $theme = Theme::getActiveTheme();
+        $pages = Page::listInTheme($theme, false);
+        $list =  new \Illuminate\Support\Collection($pages);
+
+        $result = $list->where("is_hidden",0)->where('url', '/comarcas/'.$name)->values();
+
+        return $result;
+    }
+
+    public function beachByName($name)
+    {
+        $theme = Theme::getActiveTheme();
+        $pages = Page::listInTheme($theme, false);
+        $list =  new \Illuminate\Support\Collection($pages);
+
+        $result = $list->where("is_hidden",0)->where("subtemplate","playas")->where('url', '/playas/'.$name)->values();
 
         return $result;
     }

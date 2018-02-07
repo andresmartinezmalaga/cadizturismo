@@ -34,6 +34,14 @@ class Plugin extends PluginBase
         ];
     }
 
+    public function registerPageSnippets()
+    {
+        return [
+           '\RainLab\Pages\Components\AddArticle' => 'addArticle'
+        ];
+    }
+
+
     public function registerPermissions()
     {
         return [
@@ -66,12 +74,7 @@ class Plugin extends PluginBase
                 'tab'   => 'rainlab.pages::lang.page.tab',
                 'order' => 200,
                 'label' => 'rainlab.pages::lang.page.manage_content'
-            ],
-            'rainlab.pages.access_snippets' => [
-                'tab'   => 'rainlab.pages::lang.page.tab',
-                'order' => 200,
-                'label' => 'rainlab.pages::lang.page.access_snippets'
-            ]
+                ],
         ];
     }
 
@@ -122,7 +125,7 @@ class Plugin extends PluginBase
                         'permissions' => ['rainlab.pages.manage_rutas']
                     ],
                     // Andrés Martínez : delete content & snippets menus
-                    'content' => [
+                    /*'content' => [
                         'label'       => 'rainlab.pages::lang.content.menu_label',
                         'icon'        => 'icon-file-text-o',
                         'url'         => 'javascript:;',
@@ -135,7 +138,7 @@ class Plugin extends PluginBase
                         'url'         => 'javascript:;',
                         'attributes'  => ['data-menu-item'=>'snippet'],
                         'permissions' => ['rainlab.pages.access_snippets']
-                    ]
+                    ]*/
                 ]
             ]
         ];
@@ -155,6 +158,7 @@ class Plugin extends PluginBase
         ];
     }
 
+   
     public function boot()
     {
         Event::listen('cms.router.beforeRoute', function($url) {

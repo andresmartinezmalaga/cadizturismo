@@ -903,10 +903,13 @@ $.fn.fileList.Constructor=FileList
 $.fn.fileList.noConflict=function(){$.fn.fileList=old
 return this}
 $(document).ready(function(){$('[data-control=filelist]').fileList()})}(window.jQuery);(function($){var OctoberLayout=function(){this.$accountMenuOverlay=null}
-OctoberLayout.prototype.setPageTitle=function(title){var $title=$('title')
+// Andrés Martínez : No set title page
+OctoberLayout.prototype.setPageTitle=function(title){
+var $title=$('title')
 if(this.pageTitleTemplate===undefined)
 this.pageTitleTemplate=$title.data('titleTemplate')
-$title.text(this.pageTitleTemplate.replace('%s',title))}
+$title.text(this.pageTitleTemplate.replace('%s',title))
+}
 OctoberLayout.prototype.updateLayout=function(title){var $children,$el,fixedWidth,margin
 $('[data-calculate-width]').each(function(){$children=$(this).children()
 if($children.length>0){fixedWidth=0

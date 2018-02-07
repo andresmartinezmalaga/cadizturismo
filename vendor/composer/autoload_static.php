@@ -113,7 +113,12 @@ class ComposerStaticInitc541f6b08440555bb0b657f35b92c195
         'B' => 
         array (
             'Barryvdh\\Snappy\\' => 16,
+            'Barryvdh\\Cors\\' => 14,
             'Backend\\' => 8,
+        ),
+        'A' => 
+        array (
+            'Asm89\\Stack\\' => 12,
         ),
     );
 
@@ -298,9 +303,17 @@ class ComposerStaticInitc541f6b08440555bb0b657f35b92c195
         array (
             0 => __DIR__ . '/..' . '/barryvdh/laravel-snappy/src',
         ),
+        'Barryvdh\\Cors\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/barryvdh/laravel-cors/src',
+        ),
         'Backend\\' => 
         array (
             0 => __DIR__ . '/../..' . '/modules/backend',
+        ),
+        'Asm89\\Stack\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/asm89/stack-cors/src/Asm89/Stack',
         ),
     );
 
