@@ -1,10 +1,11 @@
-<?php namespace Backend\Controllers;
+<?php namespace Backend\Classes;
 
+use Illuminate\Routing\Controller as ControllerBase;
 use Backend;
 use Backend\Classes\Controller;
 use Illuminate\Http\JsonResponse;
 
-class Auth extends Controller
+class Auth extends ControllerBase
 {
 	public function municipiosList()
     {
