@@ -24,13 +24,7 @@ class CadizTurismoController extends ControllerBase
     	$municipality = $this->StaticApp->municipalityByName($slugname);
     	return new JsonResponse(['data'=>$municipality], 200);
     }
-
-    public function municipalityByName($name){
-    	$slugname = str_slug($name);
-    	$municipality = $this->StaticApp->municipalityByName($slugname);
-    	return new JsonResponse(['data'=>$municipality], 200);
-    }
-
+   
     public function regionByName($name){
     	$slugname = str_slug($name);
     	$region = $this->StaticApp->regiontyByName($slugname);
