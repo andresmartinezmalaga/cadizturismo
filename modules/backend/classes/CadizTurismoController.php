@@ -47,6 +47,16 @@ class CadizTurismoController extends ControllerBase
     	return new JsonResponse(['data'=>$ruta], 200);
     }
 
+    // date format : 07-02-2018
+    public function eventFind($category, $date_start, $date_end, $location){
+    	
+    	$lowCategory = strtolower($category);
+    	$lowLocation = strtolower($location);
+
+    	$event = $this->StaticApp->rutaFind($lowCategory, $date_start, $date_end, $lowLocation);
+    	return new JsonResponse(['data'=>$event], 200);
+    }
+
 
     
 
