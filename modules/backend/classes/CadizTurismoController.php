@@ -157,10 +157,10 @@ class CadizTurismoController extends ControllerBase
     	$iPages = $this->StaticApp->staticsFindByUrl('/gastronomia');
     	$gastronomia->push($iPages);
 
-    	$result->put('naturaleza',$naturaleza);
-    	$result->put('diversion',$diversion);
-    	$result->put('cultura',$cultura);
-    	$result->put('gastronomia',$gastronomia);
+    	$result->put('naturaleza',$naturaleza_grupo[0]);
+    	$result->put('diversion',$diversion[0]);
+    	$result->put('cultura',$cultura[0]);
+    	$result->put('gastronomia',$gastronomia[0]);
 
     	// /naturaleza /naturaleza/via-verde /naturaleza/birdwatching /naturaleza/espacios-naturales la-brena-y-marismas-de-barbate
     	// /diversion
