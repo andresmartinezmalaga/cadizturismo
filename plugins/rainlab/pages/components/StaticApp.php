@@ -373,9 +373,9 @@ class StaticApp extends ComponentBase
     {
         $theme = Theme::getActiveTheme();
         $pages = Page::listInTheme($theme, false);
-        $events =  new \Illuminate\Support\Collection($pages);
+        $list =  new \Illuminate\Support\Collection($pages);
 
-        $result = $events->where("is_hidden",0)->where("subtemplate","municipios")->sortBy('title')->values();
+        $result = $list->where("is_hidden",0)->where("subtemplate","municipios")->sortBy('title')->values();
 
         return $result;
     }
@@ -384,9 +384,9 @@ class StaticApp extends ComponentBase
     {
         $theme = Theme::getActiveTheme();
         $pages = Page::listInTheme($theme, false);
-        $events =  new \Illuminate\Support\Collection($pages);
+        $list =  new \Illuminate\Support\Collection($pages);
 
-        $result = $events->where("is_hidden",0)->where("subtemplate","municipios")->where('url', '/municipios/'.$name)->values();
+        $result = $list->where("is_hidden",0)->where("subtemplate","municipios")->where('url', '/municipios/'.$name)->values();
 
         return $result;
     }
@@ -395,9 +395,20 @@ class StaticApp extends ComponentBase
     {
         $theme = Theme::getActiveTheme();
         $pages = Page::listInTheme($theme, false);
-        $events =  new \Illuminate\Support\Collection($pages);
+        $list =  new \Illuminate\Support\Collection($pages);
 
-        $result = $events->where("is_hidden",0)->where('url', '/comarcas/'.$name)->values();
+        $result = $list->where("is_hidden",0)->where('url', '/comarcas/'.$name)->values();
+
+        return $result;
+    }
+
+    public function beachByName($name)
+    {
+        $theme = Theme::getActiveTheme();
+        $pages = Page::listInTheme($theme, false);
+        $list =  new \Illuminate\Support\Collection($pages);
+
+        $result = $list->where("is_hidden",0)->where("subtemplate","playas")->where('url', '/playas/'.$name)->values();
 
         return $result;
     }

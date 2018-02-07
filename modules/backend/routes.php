@@ -7,6 +7,9 @@ Route::get('/api/municipios/{name}', 'Backend\Classes\CadizTurismoController@mun
 // Andrés Martínez : routes regions
 Route::get('/api/comarcas/{name}', 'Backend\Classes\CadizTurismoController@regionByName');
 
+// Andrés Martínez : routes beaches
+Route::get('/api/playas/{name}', 'Backend\Classes\CadizTurismoController@beachByName');
+
 /**
  * Register Backend routes before all user routes.
  */
