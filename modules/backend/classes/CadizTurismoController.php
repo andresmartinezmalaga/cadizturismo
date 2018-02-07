@@ -13,10 +13,14 @@ class CadizTurismoController extends ControllerBase
     	 $this->StaticApp = new StaticApp; 
     }
 
-	public function municipiosList()
-    {
-    	//
-    	$mnps =  $this->StaticApp->getMunicipalities();
-    	return new JsonResponse(['data'=>$mnps], 200);
+	public function municipalitiesList()
+    {    	
+    	$municipalitiesList =  $this->StaticApp->getMunicipalities();
+    	return new JsonResponse(['data'=>$municipalitiesList], 200);
+    }
+
+    public function municipalityByName($name){
+    	$municipality = $this->StaticApp->municipalityByName($name);
+    	return new JsonResponse(['data'=>$municipality], 200);
     }
 }
