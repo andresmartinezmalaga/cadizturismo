@@ -57,7 +57,6 @@ class CadizTurismoController extends ControllerBase
     	$lowCategory = strtolower($category);
     	$lowLocation = strtolower($location);
 
-
     	$event = $this->StaticApp->eventFind($lowCategory, $daystart, $dayend, $lowLocation);
     	return new JsonResponse(['data'=>$event], 200);
     }
