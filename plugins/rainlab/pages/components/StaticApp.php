@@ -391,6 +391,17 @@ class StaticApp extends ComponentBase
         return $result;
     }
 
+    public function regionByName($name)
+    {
+        $theme = Theme::getActiveTheme();
+        $pages = Page::listInTheme($theme, false);
+        $events =  new \Illuminate\Support\Collection($pages);
+
+        $result = $events->where("is_hidden",0)->where('url', '/comarcas/'.$name)->values();
+
+        return $result;
+    }
+
     public function experienceList()
     {
         $theme = Theme::getActiveTheme();
