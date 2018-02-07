@@ -50,13 +50,16 @@ class CadizTurismoController extends ControllerBase
     // date format : 07-02-2018
     public function eventFind($category, $date_start, $date_end, $location){
     	
-    	echo $date_start;
+    	$daystart = (new Date($date_start))->format('d-m-Y');
+    	$dayend = (new Date($date_end))->format('d-m-Y');
+    	
+    	echo $daystart;
         dd(1);
 
     	$lowCategory = strtolower($category);
     	$lowLocation = strtolower($location);
 
-    	$event = $this->StaticApp->rutaFind($lowCategory, $date_start, $date_end, $lowLocation);
+    	$event = $this->StaticApp->rutaFind($lowCategory, $daystart, $dayend, $lowLocation);
     	return new JsonResponse(['data'=>$event], 200);
     }
 
