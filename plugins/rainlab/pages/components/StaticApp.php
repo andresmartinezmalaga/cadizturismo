@@ -311,7 +311,7 @@ class StaticApp extends ComponentBase
             $ee = new Carbon($eventDateEnd);
 
             $diffStart = $bs->diffInDays($es,false);
-            $difStartEnd = $bs->diffInDays($ee,false);
+            $diffStartEnd = $bs->diffInDays($ee,false);
             
             $diffEnd = $be->diffInDays($ee,false);
             $diffEndStart = $be->diffInDays($es,false);
