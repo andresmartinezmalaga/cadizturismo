@@ -135,18 +135,17 @@ class CadizTurismoController extends ControllerBase
     	$cultura = collect();
     	$gastronomia = collect();
 
-    	$naturaleza_grupo->put('naturaleza',$naturaleza);
-    	$naturaleza_grupo->put('espacios_naturales',$espacios_naturales);
-
-
     	$iPages = $this->StaticApp->staticsFindByUrl('/naturaleza');
     	foreach ($iPages as $value) {
     		if (strpos($value->url, '/naturaleza/espacios-naturales') !== false) {
-                $espacios_naturales->push('espacios_naturales',$value);
+                $espacios_naturales->push($value);
             } else {
-            	$naturaleza->push('naturaleza',$value);
+            	$naturaleza->push($value);
             }
     	}
+
+    	$naturaleza_grupo->put('naturaleza',$naturaleza);
+    	$naturaleza_grupo->put('espacios_naturales',$espacios_naturales);
     	
     	$iPages = $this->StaticApp->staticsFindByUrl('/diversion');
     	$diversion->push($iPages);
