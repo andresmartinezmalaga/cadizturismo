@@ -409,9 +409,13 @@ class StaticApp extends ComponentBase
         $pages = Page::listInTheme($theme, false);
         $list =  new \Illuminate\Support\Collection($pages);
 
-        $result = $list->where("is_hidden",0)->where('url','%'.'municipios'.'%')->values();
-        echo json_encode($result);
-        dd(1);
+        $result = collect();
+        foreach ($list as $value) {
+            if (strpos($value->url, '/comarcas/') !== false) {
+                $result->push($value);
+            }
+        }
+       
         return $result;
     }
 
