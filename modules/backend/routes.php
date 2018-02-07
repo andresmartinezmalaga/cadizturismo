@@ -16,6 +16,9 @@ Route::get('/api/rutas/{category}/{days}/{location}', 'Backend\Classes\CadizTuri
 // Andrés Martínez : eventos rutas
 Route::get('/api/eventos/{category}/{date_start}/{date_end}/{location}', 'Backend\Classes\CadizTurismoController@eventFind');
 
+// Andrés Martínez : experiencias rutas
+Route::get('/api/experiencias/{days}/{interest}/{tvisit}', 'Backend\Classes\CadizTurismoController@experienceFind');
+
 /**
  * Register Backend routes before all user routes.
  */

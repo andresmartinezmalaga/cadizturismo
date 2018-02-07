@@ -62,6 +62,16 @@ class CadizTurismoController extends ControllerBase
     }
 
 
+    public function experienceFind($days,$interest,$tvisit) {
+
+    	$lowInterest = strtolower($interest);
+    	$lowTvisit = strtolower($tvisit);
+
+    	$experience = $this->StaticApp->experienceFind($days,$lowInterest,$lowTvisit);
+    	return new JsonResponse(['data'=>$experience], 200);
+    }
+
+
     
 
 }
