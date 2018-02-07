@@ -1,6 +1,6 @@
 <?php
 
-Route::get('/municipios', 'Backend\Controllers\cadizController@municipiosList');
+Route::get('/api/municipios', 'Backend\Controllers\cadizController@municipiosList');
 
 /**
  * Register Backend routes before all user routes.
