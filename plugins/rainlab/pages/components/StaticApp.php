@@ -316,6 +316,10 @@ class StaticApp extends ComponentBase
             $diffEnd = $be->diffInDays($ee,false);
             $diffEndStart = $be->diffInDays($es,false);
 
+
+            echo($diffStartEnd.'-'.$diffStart);
+            dd(1);
+
             if($diffStart>=0  && $diffEnd<1 ) {
             
                 $validEvents->push($i);
