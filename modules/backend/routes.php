@@ -5,6 +5,7 @@ Route::get('/api/municipios', 'Backend\Classes\CadizTurismoController@municipali
 Route::get('/api/municipios/{name}', 'Backend\Classes\CadizTurismoController@municipalityByName');
 
 // Andrés Martínez : routes regions
+Route::get('/api/comarcas', 'Backend\Classes\CadizTurismoController@regionsIndex');
 Route::get('/api/comarcas/{name}', 'Backend\Classes\CadizTurismoController@regionByName');
 
 // Andrés Martínez : routes beaches
