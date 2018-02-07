@@ -157,7 +157,7 @@ class CadizTurismoController extends ControllerBase
     	$iPages = $this->StaticApp->staticsFindByUrl('/gastronomia');
     	$gastronomia->push($iPages);
 
-    	$result->put('naturaleza',$naturaleza_grupo[0]);
+    	$result->put('naturaleza',$naturaleza_grupo);
     	$result->put('diversion',$diversion[0]);
     	$result->put('cultura',$cultura[0]);
     	$result->put('gastronomia',$gastronomia[0]);
