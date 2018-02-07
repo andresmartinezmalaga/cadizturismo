@@ -83,6 +83,12 @@ class CadizTurismoController extends ControllerBase
     	return new JsonResponse(['data'=> $this->StaticApp->getEventsCategories()],200);
     }
 
+    public function eventsIndex()
+    {    	
+    	$eventsList =  $this->StaticApp->eventAll();
+    	return new JsonResponse(['data'=>$eventsList], 200);
+    }
+
     // date format : 07-02-2018
     public function eventFind($category, $date_start, $date_end, $location){
     	
@@ -96,6 +102,8 @@ class CadizTurismoController extends ControllerBase
     	return new JsonResponse(['data'=>$event], 200);
     }
 
+
+   
 
     public function experienceFind($days,$interest,$tvisit) {
 
