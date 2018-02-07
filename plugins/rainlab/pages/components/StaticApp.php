@@ -288,8 +288,8 @@ class StaticApp extends ComponentBase
     public function eventFind($category, $date_start, $date_end, $location)
     {
         echo $date_start;
-        
-        dd(1):
+
+        dd(1);
         $theme = Theme::getActiveTheme();
         $pages = Page::listInTheme($theme, false);
         $events =  new \Illuminate\Support\Collection($pages);
