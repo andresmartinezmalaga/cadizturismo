@@ -311,22 +311,23 @@ class StaticApp extends ComponentBase
             $ee = new Carbon($eventDateEnd);
 
             $diffStart = $bs->diffInDays($es,false);
+            $difStartEnd = $bs->diffInDays($ee,false);
+            
             $diffEnd = $be->diffInDays($ee,false);
+            $diffEndStart = $be->diffInDays($es,false);
 
-            echo $diffStart.'-'.$diffEnd;
-            dd(1);
             if($diffStart>=0  && $diffEnd<1 ) {
             
                 $validEvents->push($i);
            
-           } elseif ($diffStart>=0 && $diffEnd >=0){
+            } elseif ($diffStartEnd <=0 && $diffStart >=0 ){
 
                 $validEvents->push($i);
            
-           } elseif ($diffStart <1 && $diffEnd <1){
+            } elseif ($diffEndStart >=0 && $diffEnd <=0){
 
                 $validEvents->push($i);
-           }
+            }
 
         }
 
