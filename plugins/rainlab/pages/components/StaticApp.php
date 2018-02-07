@@ -703,6 +703,4 @@ class StaticApp extends ComponentBase
         return $pagination;
     }
 
-
-
 }

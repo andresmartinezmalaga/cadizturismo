@@ -17,6 +17,8 @@ Route::get('/api/rutas/{category}/{days}/{location}', 'Backend\Classes\CadizTuri
 Route::get('/api/eventos/{category}/{date_start}/{date_end}/{location}', 'Backend\Classes\CadizTurismoController@eventFind');
 
 // Andrés Martínez : experiencias rutas
+Route::get('/api/experiencias/opciones/intereses', 'Backend\Classes\CadizTurismoController@experienceInterests');
+Route::get('/api/experiencias/opciones/tipo-visita', 'Backend\Classes\CadizTurismoController@experienceTVisit');
 Route::get('/api/experiencias/{days}/{interest}/{tvisit}', 'Backend\Classes\CadizTurismoController@experienceFind');
 
 /**

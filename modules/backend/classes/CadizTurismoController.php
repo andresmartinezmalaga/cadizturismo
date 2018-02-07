@@ -6,12 +6,15 @@ use Backend\Classes\Controller;
 use Illuminate\Http\JsonResponse;
 use RainLab\Pages\Components\StaticApp;
 use Date;
+use RainLab\Pages\class_exists\Experience;
+
 
 class CadizTurismoController extends ControllerBase
 {
 	public function __construct() 
     {
     	 $this->StaticApp = new StaticApp; 
+    	 $this->Experience = new Experience;
     }
 
 	public function municipalitiesList()
@@ -72,6 +75,15 @@ class CadizTurismoController extends ControllerBase
     }
 
 
+    public function experienceInterests(){
+
+    	return new JsonResponse(['data'=> $this->Experience->getInterestsOptions()],200);
+    }
+
+    public function experienceTVisit(){
+
+    	return new JsonResponse(['data'=> $this->Experience->getVisitsOptions()],200);
+    }
     
 
 }
