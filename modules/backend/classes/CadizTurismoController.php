@@ -38,7 +38,12 @@ class CadizTurismoController extends ControllerBase
     }
 
     public function rutaFind($category, $days, $location){
-    	$ruta = $this->StaticApp->rutaFind($category, $days, $location);
+    	
+    	$lowCategory = strtolower($category);
+    	$lowDays = strtolower($days);
+    	$lowLocation = strtolower($location);
+
+    	$ruta = $this->StaticApp->rutaFind($lowCategory, $lowDays, $lowLocation);
     	return new JsonResponse(['data'=>$ruta], 200);
     }
 
