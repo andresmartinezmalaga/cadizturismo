@@ -287,8 +287,8 @@ class StaticApp extends ComponentBase
 
     public function eventFind($category, $date_start, $date_end, $location)
     {
-        //echo $date_start;
-        //dd(1);
+        echo $date_start;
+        dd(1);
         
         $theme = Theme::getActiveTheme();
         $pages = Page::listInTheme($theme, false);
@@ -315,10 +315,6 @@ class StaticApp extends ComponentBase
             
             $diffEnd = $be->diffInDays($ee,false);
             $diffEndStart = $be->diffInDays($es,false);
-
-
-            //echo($diffEndStart.'-'.$diffEnd);
-            //dd(1);
 
             if($diffStart>=0  && $diffEnd<1 ) {
             
