@@ -386,7 +386,7 @@ class StaticApp extends ComponentBase
         $pages = Page::listInTheme($theme, false);
         $events =  new \Illuminate\Support\Collection($pages);
 
-        $result = $events->where("is_hidden",0)->where("subtemplate","municipios")->where('title','ilike', $name)->values();
+        $result = $events->where("is_hidden",0)->where("subtemplate","municipios")->where('url', '/municipios/'.$name)->values();
 
         return $result;
     }
