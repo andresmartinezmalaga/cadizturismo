@@ -124,6 +124,45 @@ class CadizTurismoController extends ControllerBase
 
     	return new JsonResponse(['data'=> $this->Experience->getVisitsOptions()],200);
     }
+
+    public function statics() {
+
+    	$result = collect();
+    	$naturaleza = collect();
+    	$espacios_naturales = collect();
+    	$diversion = collect();
+    	$cultura = collect();
+    	$gastronomia = collect();
+
+    	$iPages = $this->StaticApp->staticsFindByUrl('/naturaleza');
+    	foreach ($iPages as $value) {
+    		if (strpos($value->url, '/naturaleza/espacios-naturales') !== false) {
+                $espacios_naturales->push($value);
+            } else {
+            	$naturaleza->push($value);
+            }
+    	}
+    	
+    	$iPages = $this->StaticApp->staticsFindByUrl('/diversion');
+    	$diversion->push($iPages);
+
+		$iPages = $this->StaticApp->staticsFindByUrl('/cultura');
+    	$cultura->push($iPages);
+
+    	$iPages = $this->StaticApp->staticsFindByUrl('/gastronomia');
+    	$gastronomia->push($iPages);
+
+    	$result->push($naturaleza);
+    	$result->push($diversion);
+    	$result->push($cultura);
+    	$result->push($gastronomia);
+
+    	// /naturaleza /naturaleza/via-verde /naturaleza/birdwatching /naturaleza/espacios-naturales la-brena-y-marismas-de-barbate
+    	// /diversion
+    	// /cultura 
+    	
+    	return new JsonResponse(['data'=>$result], 200);
+    }
     
 
 }

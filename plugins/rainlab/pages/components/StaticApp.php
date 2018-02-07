@@ -150,9 +150,9 @@ class StaticApp extends ComponentBase
         $pagesList = Page::listInTheme($theme, false);
         $pages =  new \Illuminate\Support\Collection($pagesList);
 
-        $ruta = $pages->where("is_hidden",0)->where("url",$url)->values();
+        $beach = $pages->where("is_hidden",0)->where("url",$url)->values();
 
-        return $ruta;
+        return $beach;
     }
 
     public function eventAll()
@@ -739,6 +739,24 @@ class StaticApp extends ComponentBase
         $pagination = $result->slice((($pag-1)*$number),$number);
 
         return $pagination;
+    }
+
+    public function staticsFindByUrl($url)
+    {
+        $theme = Theme::getActiveTheme();
+        $pagesList = Page::listInTheme($theme, false);
+        $pages =  new \Illuminate\Support\Collection($pagesList);
+
+        $staticPages = collect();
+
+
+        foreach ($list as $value) {
+            if (strpos($value->url, $url) !== false) {
+                $staticPages->push($value);
+            }
+        }
+
+        return $staticPages;
     }
 
 }
