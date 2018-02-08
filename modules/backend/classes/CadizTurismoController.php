@@ -178,6 +178,8 @@ class CadizTurismoController extends ControllerBase
     	$iPages = $this->StaticApp->staticsFindByUrl('/naturaleza');
     	foreach ($iPages as $value) {
     		if (strpos($value->url, '/naturaleza/espacios-naturales') !== false) {
+                echo json_encode($value);
+                dd(1);
                 $mlPages = $this->createObjectPagesMultl($value);
                 $espacios_naturales->push($mlPages);
             } else {
