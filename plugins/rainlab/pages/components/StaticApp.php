@@ -520,8 +520,25 @@ class StaticApp extends ComponentBase
         $pages = Page::listInTheme($theme, false);
         $rutas =  new \Illuminate\Support\Collection($pages);
 
+        $categoryOperator = '=';
+        if($category == 'all'){
+            $category = null;
+            $categoryOperator = '!=';
+        }
+        
+        $daysOperator = '=';
+        if($days == 'all'){
+            $days = '0';
+            $daysOperator = '>';
+        }
 
-        $result = $rutas->where("is_hidden",0)->where('template','rutas')->where('category',$category)->where('days',$days)->where('location',$location)->values();
+        $locationOperator = '=';
+        if($location == 'all'){
+            $location = null;
+            $locationOperator = '!=';
+        }
+
+        $result = $rutas->where("is_hidden",0)->where('template','rutas')->where('category',$categoryOperator,$category)->where('days',$daysOperator,$days)->where('location',$locationOperator,$location)->values();
 
         return $result;
     }
