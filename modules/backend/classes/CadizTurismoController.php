@@ -79,7 +79,10 @@ class CadizTurismoController extends ControllerBase
     public function beachByName($name){
     	$slugname = str_slug($name);
     	$beach = $this->StaticApp->beachByName($slugname);
-    	return new JsonResponse(['data'=>$beach], 200);
+    	
+    	$mlPages = $this->createObjectPagesMultl($beach);
+
+		return new JsonResponse(['data'=>$mlPages], 200); 
     }
 
     public function rutasIndex()
