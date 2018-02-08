@@ -1160,7 +1160,7 @@ class Index extends Controller
         // Andrés Martínez : multlng url force
         if(isset($objectData['settings']['viewBag'])){
 
-            echo json_encode($object);
+            echo json_encode($object->localeUrl);
             
             dd(1);
 
