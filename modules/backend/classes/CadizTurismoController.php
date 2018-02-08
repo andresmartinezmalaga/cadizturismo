@@ -46,8 +46,12 @@ class CadizTurismoController extends ControllerBase
     public function regionByName($name){
     	$slugname = str_slug($name);
     	$region = $this->StaticApp->regionByName($slugname);
+    	echo json_encode($region);
+    	dd(1);
     	$locale = 'en';
     	$region->theme = Theme::getActiveTheme();
+    	$region->fileName = '';
+
     	$pagei = MLCmsObject::findLocale($locale, $region);
     	
     	return new JsonResponse(['data'=>$region], 200);
