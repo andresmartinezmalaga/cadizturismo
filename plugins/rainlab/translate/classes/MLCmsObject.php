@@ -40,7 +40,7 @@ class MLCmsObject extends CmsCompoundObject
         $pages = PageBase::listInTheme($theme, false);
         $list =  new \Illuminate\Support\Collection($pages);
 
-        $locale = 'en'
+        $locale = 'en';
         $page = $list->where("is_hidden",0)->where('url','/comarcas/la-janda')->values();
 
         echo json_encode(static::forLocale($locale, $page)->find($page->fileName));
