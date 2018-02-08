@@ -59,7 +59,7 @@ class CadizTurismoController extends ControllerBase
     	//$rr = $region[0]->localeUrl;
     	//$lnglocales = collect();
     	//foreach ($rr as $key => $value) {
-    		$//lnglocales->push($key);
+    	//$lnglocales->push($key);
     	//}
     	//return new JsonResponse(['data'=>$lnglocales], 200);
     }
