@@ -1159,9 +1159,9 @@ class Index extends Controller
 
         // Andrés Martínez : multlng url force
         echo '-------';
-        echo($objectData['settings']['viewBag']['url'];);
+        echo($objectData['settings']['viewBag']['url']);
         echo '-------';
-        
+
         die(1);
         if(isset($objectData['settings']['viewBag'])){
             $objectData['settings']['viewBag']['localeUrl[en]'] = $objectData['settings']['viewBag']['url'];
