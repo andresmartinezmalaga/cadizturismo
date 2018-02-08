@@ -217,6 +217,7 @@ class CadizTurismoController extends ControllerBase
     	foreach ($pages as $iPage) {
 
     		$pagesML = collect();
+    		
     		if(isset($iPage->title)){
     			$result->put(str_slug($iPage->title),$pagesML);
     		} elseif(isset($iPage->url)) {
@@ -224,10 +225,12 @@ class CadizTurismoController extends ControllerBase
     		} else{
     			$result->push($pagesML);
     		}
-    		    		
-    		$markupFullUrl = str_replace('/storage/',config('app.urlApp').'storage/',$iPage->markup);
-    		$pagesML->put('es',['markup'=>$markupFullUrl,'viewBag'=>$iPage->viewBag]);
 
+    		if(isset($iPage->markup)) {
+    			$markupFullUrl = str_replace('/storage/',config('app.urlApp').'storage/',$iPage->markup);
+    			$pagesML->put('es',['markup'=>$markupFullUrl,'viewBag'=>$iPage->viewBag]);
+			}   		
+    		
     		foreach ($iPage->localeUrl as $key => $value) {
     			
     			$locale = $key;
