@@ -74,7 +74,7 @@ class CadizTurismoController extends ControllerBase
     		$pagesML = collect();
     		$result->put($iPage->title,$pagesML);
     		
-    		//$pagesML->put('es',[$iPage->murkup,$iPage->viewBag]);
+    		$pagesML->put('es',[$iPage->markup,$iPage->viewBag]);
 
     		foreach ($iPage->localeUrl as $key => $value) {
     			
