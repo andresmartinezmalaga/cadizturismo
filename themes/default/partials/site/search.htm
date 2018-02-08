@@ -29,6 +29,7 @@
 		            * <option value="{{ i }}">{{ i }} {{ 'días'|_}}</option>
               {% endif %}
             {% endfor %}
+                  <option value="all" selected>{{ 'Déjate llevar'|_ }}</option>
           </select>
           <span class="select-title">{{ 'TU ESTANCIA'|_ }}</span>
         </div>
@@ -43,6 +44,7 @@
             <option value="playa y naturaleza">{{'Playa y naturaleza'|_ }}</option>
             <option value="vino y tradición">{{'Vino y tradición'|_ }}</option>
             <option value="aventura y tradición">{{'Aventura y tradición'|_ }}</option>
+            <option value="all" selected=>{{'Todos los intereses'|_ }}</option>
           </select>
           <span class="select-title">{{ 'INTERESES'|_ }}</span>
         </div>
@@ -53,6 +55,7 @@
             <option value="cádiz auténtica">{{ 'Cádiz auténtica'|_ }}</option>
             <option value="cádiz relax">{{ 'Cádiz relax'|_ }}</option>
             <option value="cádiz urbano">{{ 'Cádiz urbano'|_ }}</option>
+            <option value="all" selected>{{ 'Todo Cádiz'|_ }}</option>
           </select>
           <span class="select-title">{{ 'TIPO DE VISITA'|_ }}</span>
         </div>

@@ -469,8 +469,9 @@ class StaticApp extends ComponentBase
         $pages = Page::listInTheme($theme, false);
         $experiences =  new \Illuminate\Support\Collection($pages);
 
+        $daysOperator = '=';
 
-        $result = $experiences->where("is_hidden",0)->where('template','experiences')->where('days',$days)->where('interest',$interest)->where('tvisit',$tvisit)->values();
+        $result = $experiences->where("is_hidden",0)->where('template','experiences')->where('days',$daysOperator,$days)->where('interest',$interest)->where('tvisit',$tvisit)->values();
 
         return $result;
     }
