@@ -217,7 +217,12 @@ class CadizTurismoController extends ControllerBase
     	foreach ($pages as $iPage) {
 
     		$pagesML = collect();
-    		$result->put(str_slug($iPage->title),$pagesML);
+    		if(isset($iPage->title)){
+    			$result->put(str_slug($iPage->title),$pagesML);
+    		} else {
+    			$result->put(str_slug($iPage->url),$pagesML);
+    		}
+    		
     		
     		$markupFullUrl = str_replace('/storage/',config('app.urlApp').'storage/',$iPage->markup);
     		$pagesML->put('es',['markup'=>$markupFullUrl,'viewBag'=>$iPage->viewBag]);
