@@ -81,7 +81,7 @@ class CadizTurismoController extends ControllerBase
     			$locale = $key;
     			$iPage->theme = Theme::getActiveTheme();
     			$imlPage = MLCmsObject::findLocale($locale, $iPage);
-    			$pagesML->put($key,'markup'=>$imlPage->markup);
+    			$pagesML->put($key,['markup'=>$imlPage->markup]);
     		}    		
     	}
 
