@@ -46,25 +46,43 @@ class CadizTurismoController extends ControllerBase
     public function regionByName($name){
     	
     	$slugname = str_slug($name);
-    	$region = $this->StaticApp->regionByName($slugname);    	
+    	$region = $this->StaticApp->regionByName($slugname);
+
+    	$mlPages = $this->createObjectPagesMultl($region);
+
+    	return new JsonResponse(['data'=>$mlPages], 200);    	
     	//$locale = 'en';
     	//$region->theme = Theme::getActiveTheme();
     	//$pagei = MLCmsObject::findLocale($locale, $region);
     	
     	//return new JsonResponse(['data'=>$pagei], 200);
-    	$rr = $region[0]->localeUrl;
-    	$lnglocales = collect();
-    	foreach ($rr as $key => $value) {
-    		$lnglocales->push($key);
-    	}
-    	return new JsonResponse(['data'=>$lnglocales], 200);
+    	//$rr = $region[0]->localeUrl;
+    	//$lnglocales = collect();
+    	//foreach ($rr as $key => $value) {
+    		$//lnglocales->push($key);
+    	//}
+    	//return new JsonResponse(['data'=>$lnglocales], 200);
     }
 
     public function createObjectPagesMultl($pages){
 
+    	$result = collect();
+
     	foreach ($pages as $iPage) {
+
+    		$pagesML = collect();
+    		$result->put($iPage->title,$pagesML);
     		
+    		foreach ($iPage->localeUrl as $key => $value) {
+    			
+    			$locale = $key;
+    			$iPage->theme = Theme::getActiveTheme();
+    			$imlPage = MLCmsObject::findLocale($locale, $iPage);
+    			$pagesML->put($key,$imlPage);
+    		}    		
     	}
+
+    	return $result;
     }
 
     public function beachesIndex()
