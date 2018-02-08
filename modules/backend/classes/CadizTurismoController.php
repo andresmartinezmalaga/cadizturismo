@@ -50,7 +50,8 @@ class CadizTurismoController extends ControllerBase
 
     	$mlPages = $this->createObjectPagesMultl($region);
 
-    	return new JsonResponse(['data'=>$mlPages], 200);    	
+
+    	return new JsonResponse(['data'=>$region], 200);    	
     	//$locale = 'en';
     	//$region->theme = Theme::getActiveTheme();
     	//$pagei = MLCmsObject::findLocale($locale, $region);
@@ -81,6 +82,8 @@ class CadizTurismoController extends ControllerBase
     			$pagesML->put($key,$imlPage);
     		}    		
     	}
+
+    	
 
     	return $result;
     }
