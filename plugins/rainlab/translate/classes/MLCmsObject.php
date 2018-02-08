@@ -29,9 +29,9 @@ class MLCmsObject extends CmsCompoundObject
 
     public static function forLocale($locale, $page)
     {
-        echo $page->theme;
+        echo json_encode($page->theme);
         dd(1);
-        
+
         static::setContext($locale, $page);
 
         return static::inTheme($page->theme);
