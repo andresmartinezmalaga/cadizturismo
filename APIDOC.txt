@@ -3,8 +3,12 @@ API DOC
 	Todos los municipios : 
 
 		url : http://cadizturismo/api/municipios
-	
-	Un municipio :
+
+		response : [municipios]
+						[lenguajes] ('es','en'...)
+							['es'] ['markup'] : html
+							['es'] ['viewBag'] : parametros, variables
+	Un municipio :		
 
 		url : http://cadizturismo/api/municipios/{municipio}
 		params:
