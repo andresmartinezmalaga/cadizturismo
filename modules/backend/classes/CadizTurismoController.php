@@ -10,6 +10,7 @@ use RainLab\Pages\Classes\Experience;
 
 use RainLab\Translate\Classes\MLCmsObject;
 use Cms\Classes\Theme;
+use Config;
 
 class CadizTurismoController extends ControllerBase
 {
@@ -74,14 +75,16 @@ class CadizTurismoController extends ControllerBase
     		$pagesML = collect();
     		$result->put($iPage->title,$pagesML);
     		
-    		$pagesML->put('es',['markup'=>$iPage->markup,'viewBag'=>$iPage->viewBag]);
+    		$markupFullUrl = str_replace('/storage/',config('app.url').'storage/',$iPage->markup);
+    		$pagesML->put('es',['markup'=>$markupFullUrl,'viewBag'=>$iPage->viewBag]);
 
     		foreach ($iPage->localeUrl as $key => $value) {
     			
     			$locale = $key;
     			$iPage->theme = Theme::getActiveTheme();
     			$imlPage = MLCmsObject::findLocale($locale, $iPage);
-    			$pagesML->put($key,['markup'=>$imlPage->markup]);
+    			$markupFullUrl = str_replace('/storage/',config('app.url').'storage/',$imlPage->markup);
+    			$pagesML->put($key,['markup'=>$markupFullUrl]);
     		}    		
     	}
 
