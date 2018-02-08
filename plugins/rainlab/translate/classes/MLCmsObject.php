@@ -36,8 +36,8 @@ class MLCmsObject extends CmsCompoundObject
 
     public static function findLocale($locale, $page)
     {
-        /*$theme = Theme::getActiveTheme();
-        $pages = PageBase::listInTheme($theme, false);
+        $theme = Theme::getActiveTheme();
+        /*$pages = PageBase::listInTheme($theme, false);
         $list =  new \Illuminate\Support\Collection($pages);*/
 
         //$locale = 'en';
