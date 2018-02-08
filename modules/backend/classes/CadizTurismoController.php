@@ -118,7 +118,12 @@ class CadizTurismoController extends ControllerBase
     public function eventsIndex()
     {    	
     	$eventsList =  $this->StaticApp->eventAll();
-    	return new JsonResponse(['data'=>$eventsList], 200);
+    	
+    	$mlPages = $this->createObjectPagesMultl($eventsList);
+
+		return new JsonResponse(['data'=>$mlPages], 200);    
+
+    	
     }
 
     // date format : 07-02-2018
