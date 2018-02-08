@@ -231,17 +231,21 @@ class CadizTurismoController extends ControllerBase
     			$pagesML->put('es',['markup'=>$markupFullUrl,'viewBag'=>$iPage->viewBag]);
 			}   		
     		
-    		foreach ($iPage->localeUrl as $key => $value) {
-    			
-    			$locale = $key;
-    			$iPage->theme = Theme::getActiveTheme();
-    			$imlPage = MLCmsObject::findLocale($locale, $iPage);
-    			$markupFullUrl = '';
-    			if(isset($imlPage->markup)){
-	    			$markupFullUrl = str_replace('/storage/',config('app.urlApp').'storage/',$imlPage->markup);
-    			}
-	    		$pagesML->put($key,['markup'=>$markupFullUrl]);
-    		}    		
+    		if(isset($iPage->localeUrl)){
+
+	    		foreach ($iPage->localeUrl as $key => $value) {
+	    			
+	    			$locale = $key;
+	    			$iPage->theme = Theme::getActiveTheme();
+	    			$imlPage = MLCmsObject::findLocale($locale, $iPage);
+	    			$markupFullUrl = '';
+	    			if(isset($imlPage->markup)){
+		    			$markupFullUrl = str_replace('/storage/',config('app.urlApp').'storage/',$imlPage->markup);
+	    			}
+		    		$pagesML->put($key,['markup'=>$markupFullUrl]);
+	    		}   
+	    	}
+
     	}
     	return $result;
     }
