@@ -178,19 +178,17 @@ class CadizTurismoController extends ControllerBase
     	$iPages = $this->StaticApp->staticsFindByUrl('/naturaleza');
     	$mlPages = [$this->createObjectPagesMultl($iPages)];
 
-    	return new JsonResponse(['data'=>$mlPages], 200);
+    	//return new JsonResponse(['data'=>$mlPages], 200);
     	
-    	/*foreach ($iPages as $value) {
-    		if ($iPages($value->url, '/naturaleza/espacios-naturales') !== false) {               
-                $mlPages = [$this->createObjectPagesMultl($value)];
-                echo json_encode($mlPages);
-                dd(1);
-                $espacios_naturales->push($value);
+    	foreach ($mlPages as $iPage) {
+    		if ($iPage->es->viewBag->url, '/naturaleza/espacios-naturales') !== false) {               
+               
+                $espacios_naturales->push($iPage);
             } else {
-            	//$mlPages = [$this->createObjectPagesMultl($value)];
-            	$naturaleza->push($value);
+            	
+            	$naturaleza->push($iPage);
             }
-    	}*/
+    	}
 
 
 
