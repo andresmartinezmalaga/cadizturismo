@@ -18,7 +18,6 @@ Route::get('/api/rutas/opciones/categorias', 'Backend\Classes\CadizTurismoContro
 Route::get('/api/rutas/opciones/ubicacion', 'Backend\Classes\CadizTurismoController@municipalitiesList');
 Route::get('/api/rutas/{category}/{days}/{location}', 'Backend\Classes\CadizTurismoController@rutaFind');
 
-
 // Andrés Martínez : routes eventos
 Route::get('/api/eventos', 'Backend\Classes\CadizTurismoController@eventsIndex');
 Route::get('/api/eventos/opciones/categorias', 'Backend\Classes\CadizTurismoController@eventsCategories');
