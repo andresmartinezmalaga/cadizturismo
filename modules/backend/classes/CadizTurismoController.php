@@ -75,7 +75,7 @@ class CadizTurismoController extends ControllerBase
     		$pagesML = collect();
     		$result->put($iPage->title,$pagesML);
     		
-    		$markupFullUrl = str_replace('/storage/',config('app.url').'storage/',$iPage->markup);
+    		$markupFullUrl = str_replace('/storage/',config('app.urlApp').'storage/',$iPage->markup);
     		$pagesML->put('es',['markup'=>$markupFullUrl,'viewBag'=>$iPage->viewBag]);
 
     		foreach ($iPage->localeUrl as $key => $value) {
@@ -83,7 +83,7 @@ class CadizTurismoController extends ControllerBase
     			$locale = $key;
     			$iPage->theme = Theme::getActiveTheme();
     			$imlPage = MLCmsObject::findLocale($locale, $iPage);
-    			$markupFullUrl = str_replace('/storage/',config('app.url').'storage/',$imlPage->markup);
+    			$markupFullUrl = str_replace('/storage/',config('app.urlApp').'storage/',$imlPage->markup);
     			$pagesML->put($key,['markup'=>$markupFullUrl]);
     		}    		
     	}
