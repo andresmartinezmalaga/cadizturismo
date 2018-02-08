@@ -1160,14 +1160,16 @@ class Index extends Controller
         // Andrés Martínez : multlng url force
         if(isset($objectData['settings']['viewBag'])){
 
-            echo json_encode($object->localeUrl);
+            $alangs = $object->localeUrl;
             
-            dd(1);
+            foreach ($alangs as $key => $value) {
+               $objectData['settings']['viewBag']['localeUrl['.$key.']'] = $objectData['settings']['viewBag']['url'];
+            }
 
-            $objectData['settings']['viewBag']['localeUrl[en]'] = $objectData['settings']['viewBag']['url'];
+            /*$objectData['settings']['viewBag']['localeUrl[en]'] = $objectData['settings']['viewBag']['url'];
             $objectData['settings']['viewBag']['localeUrl[fr]'] = $objectData['settings']['viewBag']['url'];
             $objectData['settings']['viewBag']['localeUrl[de]'] = $objectData['settings']['viewBag']['url'];
-            $objectData['settings']['viewBag']['localeUrl[ru]'] = $objectData['settings']['viewBag']['url'];
+            $objectData['settings']['viewBag']['localeUrl[ru]'] = $objectData['settings']['viewBag']['url'];*/
         }
 
         $object->fill($objectData);
