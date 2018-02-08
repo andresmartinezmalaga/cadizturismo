@@ -180,10 +180,9 @@ class CadizTurismoController extends ControllerBase
 
     	//return new JsonResponse(['data'=>$mlPages], 200);
     	
-    	foreach ($mlPages as $iPage) {
-    			echo json_encode($iPage);
-    			dd(1);
-    		if (strpos($iPage[0]['es']['viewBag']['url'], '/naturaleza/espacios-naturales') !== false) {               
+    	foreach ($mlPages as $key => $iPage) {
+    			
+    		if (strpos($iPage->es->viewBag->url, '/naturaleza/espacios-naturales') !== false) {               
                
                 $espacios_naturales->push($iPage);
             } else {
