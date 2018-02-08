@@ -224,8 +224,7 @@ class CadizTurismoController extends ControllerBase
     		} else{
     			$result->push($pagesML);
     		}
-    		
-    		
+    		    		
     		$markupFullUrl = str_replace('/storage/',config('app.urlApp').'storage/',$iPage->markup);
     		$pagesML->put('es',['markup'=>$markupFullUrl,'viewBag'=>$iPage->viewBag]);
 
