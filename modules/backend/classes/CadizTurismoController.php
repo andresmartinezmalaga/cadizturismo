@@ -37,6 +37,7 @@ class CadizTurismoController extends ControllerBase
     }
 
     public function municipalityByName($name){
+    	
     	$slugname = str_slug($name);
     	$municipality = $this->StaticApp->municipalityByName($slugname);
     	
@@ -44,12 +45,15 @@ class CadizTurismoController extends ControllerBase
     	
     	return new JsonResponse(['data'=>$mlPages], 200);
     }
-    
+
    
    	public function regionsIndex()
     {    	
     	$regionsList =  $this->StaticApp->regionsList();
-    	return new JsonResponse(['data'=>$regionsList], 200);
+    	
+    	$mlPages = $this->createObjectPagesMultl($regionsList);
+
+		return new JsonResponse(['data'=>$mlPages], 200); 
     }
 
     public function regionByName($name){
