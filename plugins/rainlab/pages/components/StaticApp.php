@@ -409,8 +409,6 @@ class StaticApp extends ComponentBase
         $pages = Page::listInTheme($theme, false);
         $list =  new \Illuminate\Support\Collection($pages);
 
-        echo 'kuku';
-        dd(1);
         $result = collect();
         foreach ($list as $value) {
             if (strpos($value->url, '/comarcas/') !== false) {
@@ -426,6 +424,9 @@ class StaticApp extends ComponentBase
         $theme = Theme::getActiveTheme();
         $pages = Page::listInTheme($theme, false);
         $list =  new \Illuminate\Support\Collection($pages);
+
+        echo json_encode($pages[0]);
+        dd(1);
 
         $result = $list->where("is_hidden",0)->where('url', '/comarcas/'.$name)->values();
 
