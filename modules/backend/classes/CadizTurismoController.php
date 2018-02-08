@@ -30,7 +30,7 @@ class CadizTurismoController extends ControllerBase
     {    	
     	$municipalitiesList =  $this->StaticApp->municipalitiesList();
 
-    	$mlPages = $this->createObjectPagesMultl($region);
+    	$mlPages = $this->createObjectPagesMultl($municipalitiesList);
     	
     	return new JsonResponse(['data'=>$mlPages], 200);
 
