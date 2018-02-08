@@ -52,7 +52,8 @@ class CadizTurismoController extends ControllerBase
     	//$pagei = MLCmsObject::findLocale($locale, $region);
     	
     	//return new JsonResponse(['data'=>$pagei], 200);
-    	return new JsonResponse(['data'=>$region[0]->localeUrl->keys()], 200);
+    	$rr = $region[0]->localeUrl;
+    	return new JsonResponse(['data'=>$rr->keys()], 200);
     }
 
     public function createObjectPagesMultl($pages){
