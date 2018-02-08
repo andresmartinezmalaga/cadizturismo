@@ -44,14 +44,22 @@ class CadizTurismoController extends ControllerBase
     }
 
     public function regionByName($name){
-    	$slugname = str_slug($name);
-    	$region = $this->StaticApp->regionByName($slugname)[0];    	
-    	$locale = 'en';
-    	$region->theme = Theme::getActiveTheme();
-    	$pagei = MLCmsObject::findLocale($locale, $region);
     	
-    	return new JsonResponse(['data'=>$pagei], 200);
-    	//return new JsonResponse(['data'=>$region], 200);
+    	$slugname = str_slug($name);
+    	$region = $this->StaticApp->regionByName($slugname);    	
+    	//$locale = 'en';
+    	//$region->theme = Theme::getActiveTheme();
+    	//$pagei = MLCmsObject::findLocale($locale, $region);
+    	
+    	//return new JsonResponse(['data'=>$pagei], 200);
+    	return new JsonResponse(['data'=>$region], 200);
+    }
+
+    public function createObjectPagesMultl($pages){
+
+    	foreach ($pages as $iPage) {
+    		
+    	}
     }
 
     public function beachesIndex()
