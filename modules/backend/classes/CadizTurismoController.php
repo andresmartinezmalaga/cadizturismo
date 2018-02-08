@@ -105,7 +105,10 @@ class CadizTurismoController extends ControllerBase
     	$lowLocation = strtolower($location);
 
     	$ruta = $this->StaticApp->rutaFind($lowCategory, $lowDays, $lowLocation);
-    	return new JsonResponse(['data'=>$ruta], 200);
+    	
+    	$mlPages = $this->createObjectPagesMultl($ruta);
+
+		return new JsonResponse(['data'=>$mlPages], 200);   
     }
 
     public function eventsCategories() {
