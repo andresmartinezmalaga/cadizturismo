@@ -475,7 +475,13 @@ class StaticApp extends ComponentBase
             $daysOperator = '>';
         }
 
-        $result = $experiences->where("is_hidden",0)->where('template','experiences')->where('days',$daysOperator,$days)->where('interest',$interest)->where('tvisit',$tvisit)->values();
+        $interestOperator = '=';
+        if($interest == 'all'){
+            $interest = null;
+            $daysOperator = '!=';
+        }
+
+        $result = $experiences->where("is_hidden",0)->where('template','experiences')->where('days',$daysOperator,$days)->where('interest',$interestOperator,$interest)->where('tvisit',$tvisit)->values();
 
         return $result;
     }
