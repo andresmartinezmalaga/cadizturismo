@@ -409,6 +409,8 @@ class StaticApp extends ComponentBase
         $pages = Page::listInTheme($theme, false);
         $list =  new \Illuminate\Support\Collection($pages);
 
+        echo json_encode($list[0]);
+        dd(1);
         $result = collect();
         foreach ($list as $value) {
             if (strpos($value->url, '/comarcas/') !== false) {
