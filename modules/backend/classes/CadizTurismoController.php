@@ -70,7 +70,10 @@ class CadizTurismoController extends ControllerBase
     public function beachesIndex()
     {    	
     	$beachesIndex =  $this->StaticApp->beachesList();
-    	return new JsonResponse(['data'=>$beachesIndex], 200);
+    	
+    	$mlPages = $this->createObjectPagesMultl($beachesIndex);
+
+		return new JsonResponse(['data'=>$mlPages], 200); 
     }
 
     public function beachByName($name){
