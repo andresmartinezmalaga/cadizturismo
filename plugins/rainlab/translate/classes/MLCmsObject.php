@@ -35,7 +35,7 @@ class MLCmsObject extends CmsCompoundObject
 
     public static function findLocale($locale, $page)
     {
-        echo json_encode($page);
+        echo json_encode(static::forLocale($locale, $page)->find($page->fileName));
         die(1);
         return static::forLocale($locale, $page)->find($page->fileName);
     }
