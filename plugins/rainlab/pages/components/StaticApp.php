@@ -471,7 +471,7 @@ class StaticApp extends ComponentBase
 
         $daysOperator = '=';
         if($days == 'all'){
-            $days = '%';
+            $days = '%_%';
             $daysOperator = 'LIKE';
         }
 
