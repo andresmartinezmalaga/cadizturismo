@@ -45,8 +45,7 @@ class CadizTurismoController extends ControllerBase
 
     public function regionByName($name){
     	$slugname = str_slug($name);
-    	$region = $this->StaticApp->regionByName($slugname);
-    	
+    	$region = $this->StaticApp->regionByName($slugname)[0];    	
     	$locale = 'en';
     	$region->theme = Theme::getActiveTheme();
     	$pagei = MLCmsObject::findLocale($locale, $region);
