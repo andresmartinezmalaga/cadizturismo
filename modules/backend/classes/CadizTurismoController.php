@@ -148,9 +148,7 @@ class CadizTurismoController extends ControllerBase
     	$lowTvisit = strtolower($tvisit);
 
     	$experience = $this->StaticApp->experienceFind($days,$lowInterest,$lowTvisit);
-    	
-    	return $experience;
-    	
+
     	$mlPages = $this->createObjectPagesMultl($experience);
 
 		return new JsonResponse(['data'=>$mlPages], 200);   
