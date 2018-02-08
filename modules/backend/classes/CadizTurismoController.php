@@ -178,9 +178,11 @@ class CadizTurismoController extends ControllerBase
     	$iPages = $this->StaticApp->staticsFindByUrl('/naturaleza');
     	foreach ($iPages as $value) {
     		if (strpos($value->url, '/naturaleza/espacios-naturales') !== false) {
-                $espacios_naturales->push($value);
+                $mlPages = $this->createObjectPagesMultl($value);
+                $espacios_naturales->push($mlPages);
             } else {
-            	$naturaleza->push($value);
+            	$mlPages = $this->createObjectPagesMultl($value);
+            	$naturaleza->push($mlPages);
             }
     	}
 
@@ -188,23 +190,22 @@ class CadizTurismoController extends ControllerBase
     	$naturaleza_grupo->put('espacios_naturales',$espacios_naturales);
     	
     	$iPages = $this->StaticApp->staticsFindByUrl('/diversion');
-    	$diversion->push($iPages);
+    	$mlPages = $this->createObjectPagesMultl($iPages);
+    	$diversion->push($mlPages);
 
 		$iPages = $this->StaticApp->staticsFindByUrl('/cultura');
-    	$cultura->push($iPages);
+		$mlPages = $this->createObjectPagesMultl($iPages);
+    	$cultura->push($mlPages);
 
     	$iPages = $this->StaticApp->staticsFindByUrl('/gastronomia');
-    	$gastronomia->push($iPages);
+    	$mlPages = $this->createObjectPagesMultl($iPages);
+    	$gastronomia->push($mlPages);
 
     	$result->put('naturaleza',$naturaleza_grupo);
     	$result->put('diversion',$diversion[0]);
     	$result->put('cultura',$cultura[0]);
     	$result->put('gastronomia',$gastronomia[0]);
 
-    	// /naturaleza /naturaleza/via-verde /naturaleza/birdwatching /naturaleza/espacios-naturales la-brena-y-marismas-de-barbate
-    	// /diversion
-    	// /cultura 
-    	
     	return new JsonResponse(['data'=>$result], 200);
     }
 
