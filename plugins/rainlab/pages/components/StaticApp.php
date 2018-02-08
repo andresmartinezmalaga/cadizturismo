@@ -286,15 +286,26 @@ class StaticApp extends ComponentBase
     }
 
     public function eventFind($category, $date_start, $date_end, $location)
-    {
-        
+    {        
         $theme = Theme::getActiveTheme();
         $pages = Page::listInTheme($theme, false);
         $events =  new \Illuminate\Support\Collection($pages);
 
         $validEvents = collect();
 
-        $preEvents = $events->where("is_hidden",0)->where('template','eventos')->where('category',$category)->where('location',$location)->values();
+        $categoryOperator = '=';
+        if($category == 'all'){
+            $category = null;
+            $categoryOperator = '!=';
+        }
+
+        $locationOperator = '=';
+        if($location == 'all'){
+            $location = null;
+            $locationOperator = '!=';
+        }
+
+        $preEvents = $events->where("is_hidden",0)->where('template','eventos')->where('category',$categoryOperator,$category)->where('location',$locationOperator,$location)->values();
 
 
         foreach ($preEvents as $i) {
