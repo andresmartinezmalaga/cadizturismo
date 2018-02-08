@@ -196,8 +196,11 @@ class CadizTurismoController extends ControllerBase
     			$locale = $key;
     			$iPage->theme = Theme::getActiveTheme();
     			$imlPage = MLCmsObject::findLocale($locale, $iPage);
-    			$markupFullUrl = str_replace('/storage/',config('app.urlApp').'storage/',$imlPage->markup);
-    			$pagesML->put($key,['markup'=>$markupFullUrl]);
+    			$markupFullUrl = '';
+    			if(isset($imlPage->markup)){
+	    			$markupFullUrl = str_replace('/storage/',config('app.urlApp').'storage/',$imlPage->markup);
+    			}
+	    		$pagesML->put($key,['markup'=>$markupFullUrl]);
     		}    		
     	}
     	return $result;
