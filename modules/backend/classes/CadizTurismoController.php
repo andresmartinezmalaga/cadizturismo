@@ -46,8 +46,9 @@ class CadizTurismoController extends ControllerBase
     	$slugname = str_slug($name);
     	$region = $this->StaticApp->regionByName($slugname);
     	$locale = 'en';
-    	MLCmsObject::findLocale($locale, $region)
-    	return new JsonResponse(['data'=>$region], 200);
+    	$pagei = MLCmsObject::findLocale($locale, $region);
+    	return new JsonResponse(['data'=>$pagei], 200);
+    	//return new JsonResponse(['data'=>$region], 200);
     }
 
     public function beachesIndex()
