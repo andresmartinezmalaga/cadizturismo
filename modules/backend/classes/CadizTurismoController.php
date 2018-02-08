@@ -53,7 +53,11 @@ class CadizTurismoController extends ControllerBase
     	
     	//return new JsonResponse(['data'=>$pagei], 200);
     	$rr = $region[0]->localeUrl;
-    	return new JsonResponse(['data'=>$rr->keys()], 200);
+    	$lnglocales = collect();
+    	foreach ($rr as $key => $value) {
+    		$lnglocales->push($key);
+    	}
+    	return new JsonResponse(['data'=>$lnglocales], 200);
     }
 
     public function createObjectPagesMultl($pages){
