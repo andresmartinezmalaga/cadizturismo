@@ -36,15 +36,6 @@ class MLCmsObject extends CmsCompoundObject
 
     public static function findLocale($locale, $page)
     {
-        $theme = Theme::getActiveTheme();
-        $pages = PageBase::listInTheme($theme, false);
-        /*$list =  new \Illuminate\Support\Collection($pages);*/
-
-        //$locale = 'en';
-        //$page = $list->where("is_hidden",0)->where('url','/comarcas/la-janda')->values();
-
-        echo json_encode(static::forLocale($locale, $page)->find($page->fileName));
-        die(1);
         return static::forLocale($locale, $page)->find($page->fileName);
     }
 

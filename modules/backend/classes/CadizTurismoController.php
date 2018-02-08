@@ -8,6 +8,7 @@ use RainLab\Pages\Components\StaticApp;
 use Date;
 use RainLab\Pages\Classes\Experience;
 
+use RainLab\Translate\Classes\MLCmsObject;
 
 class CadizTurismoController extends ControllerBase
 {
@@ -44,6 +45,8 @@ class CadizTurismoController extends ControllerBase
     public function regionByName($name){
     	$slugname = str_slug($name);
     	$region = $this->StaticApp->regionByName($slugname);
+    	$locale = 'en';
+    	MLCmsObject::findLocale($locale, $region)
     	return new JsonResponse(['data'=>$region], 200);
     }
 
