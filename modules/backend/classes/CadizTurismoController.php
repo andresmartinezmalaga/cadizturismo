@@ -122,7 +122,6 @@ class CadizTurismoController extends ControllerBase
     	$mlPages = $this->createObjectPagesMultl($eventsList);
 
 		return new JsonResponse(['data'=>$mlPages], 200);    
-
     	
     }
 
@@ -136,7 +135,11 @@ class CadizTurismoController extends ControllerBase
     	$lowLocation = strtolower($location);
 
     	$event = $this->StaticApp->eventFind($lowCategory, $daystart, $dayend, $lowLocation);
-    	return new JsonResponse(['data'=>$event], 200);
+    	
+    	$mlPages = $this->createObjectPagesMultl($event);
+
+		return new JsonResponse(['data'=>$mlPages], 200);    
+
     }
 
     public function experienceFind($days,$interest,$tvisit) {
