@@ -88,7 +88,10 @@ class CadizTurismoController extends ControllerBase
     public function rutasIndex()
     {    	
     	$rutasList =  $this->StaticApp->rutasList();
-    	return new JsonResponse(['data'=>$rutasList], 200);
+    	
+    	$mlPages = $this->createObjectPagesMultl($rutasList);
+
+		return new JsonResponse(['data'=>$mlPages], 200); 
     }
 
     public function rutasCategories() {
