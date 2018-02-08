@@ -219,8 +219,10 @@ class CadizTurismoController extends ControllerBase
     		$pagesML = collect();
     		if(isset($iPage->title)){
     			$result->put(str_slug($iPage->title),$pagesML);
-    		} else {
+    		} elseif(isset($iPage->url)) {
     			$result->put(str_slug($iPage->url),$pagesML);
+    		} else{
+    			$result->push($pagesML);
     		}
     		
     		
