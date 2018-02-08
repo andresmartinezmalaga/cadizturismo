@@ -29,7 +29,12 @@ class CadizTurismoController extends ControllerBase
     public function municipalitiesIndex()
     {    	
     	$municipalitiesList =  $this->StaticApp->municipalitiesList();
-    	return new JsonResponse(['data'=>$municipalitiesList], 200);
+
+    	$mlPages = $this->createObjectPagesMultl($region);
+    	
+    	return new JsonResponse(['data'=>$mlPages], 200);
+
+    	//return new JsonResponse(['data'=>$municipalitiesList], 200);
     }
 
     public function municipalityByName($name){
@@ -51,46 +56,8 @@ class CadizTurismoController extends ControllerBase
 
     	$mlPages = $this->createObjectPagesMultl($region);
 
-
     	return new JsonResponse(['data'=>$mlPages], 200);    	
-    	//$locale = 'en';
-    	//$region->theme = Theme::getActiveTheme();
-    	//$pagei = MLCmsObject::findLocale($locale, $region);
     	
-    	//return new JsonResponse(['data'=>$pagei], 200);
-    	//$rr = $region[0]->localeUrl;
-    	//$lnglocales = collect();
-    	//foreach ($rr as $key => $value) {
-    	//$lnglocales->push($key);
-    	//}
-    	//return new JsonResponse(['data'=>$lnglocales], 200);
-    }
-
-    public function createObjectPagesMultl($pages){
-
-    	$result = collect();
-
-    	foreach ($pages as $iPage) {
-
-    		$pagesML = collect();
-    		$result->put($iPage->title,$pagesML);
-    		
-    		$markupFullUrl = str_replace('/storage/',config('app.urlApp').'storage/',$iPage->markup);
-    		$pagesML->put('es',['markup'=>$markupFullUrl,'viewBag'=>$iPage->viewBag]);
-
-    		foreach ($iPage->localeUrl as $key => $value) {
-    			
-    			$locale = $key;
-    			$iPage->theme = Theme::getActiveTheme();
-    			$imlPage = MLCmsObject::findLocale($locale, $iPage);
-    			$markupFullUrl = str_replace('/storage/',config('app.urlApp').'storage/',$imlPage->markup);
-    			$pagesML->put($key,['markup'=>$markupFullUrl]);
-    		}    		
-    	}
-
-
-
-    	return $result;
     }
 
     public function beachesIndex()
@@ -147,9 +114,6 @@ class CadizTurismoController extends ControllerBase
     	$event = $this->StaticApp->eventFind($lowCategory, $daystart, $dayend, $lowLocation);
     	return new JsonResponse(['data'=>$event], 200);
     }
-
-
-   
 
     public function experienceFind($days,$interest,$tvisit) {
 
@@ -212,6 +176,31 @@ class CadizTurismoController extends ControllerBase
     	// /cultura 
     	
     	return new JsonResponse(['data'=>$result], 200);
+    }
+
+
+    public function createObjectPagesMultl($pages){
+
+    	$result = collect();
+
+    	foreach ($pages as $iPage) {
+
+    		$pagesML = collect();
+    		$result->put($iPage->title,$pagesML);
+    		
+    		$markupFullUrl = str_replace('/storage/',config('app.urlApp').'storage/',$iPage->markup);
+    		$pagesML->put('es',['markup'=>$markupFullUrl,'viewBag'=>$iPage->viewBag]);
+
+    		foreach ($iPage->localeUrl as $key => $value) {
+    			
+    			$locale = $key;
+    			$iPage->theme = Theme::getActiveTheme();
+    			$imlPage = MLCmsObject::findLocale($locale, $iPage);
+    			$markupFullUrl = str_replace('/storage/',config('app.urlApp').'storage/',$imlPage->markup);
+    			$pagesML->put($key,['markup'=>$markupFullUrl]);
+    		}    		
+    	}
+    	return $result;
     }
     
 
