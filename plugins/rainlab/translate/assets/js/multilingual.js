@@ -32,7 +32,7 @@
         
         // Andrés Martínez : Declare ams object
         this.ams = new ams();       
-        
+
         // Andrés Martínez : Enable eventSelectTemplate
         this.ams.eventSelectTemplate();
 

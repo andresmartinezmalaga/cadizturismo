@@ -94,6 +94,7 @@ class Index extends Controller
     public function index()
     {
         $this->addJs('/modules/backend/assets/js/october.treeview.js', 'core');
+        $this->addJs('/plugins/rainlab/translate/assets/js/ams.js');
         $this->addJs('/plugins/rainlab/pages/assets/js/pages-page.js');
         $this->addJs('/plugins/rainlab/pages/assets/js/pages-snippets.js');
         $this->addCss('/plugins/rainlab/pages/assets/css/pages.css');
@@ -1160,11 +1161,15 @@ class Index extends Controller
         // Andrés Martínez : multlng url force
         if(isset($objectData['settings']['viewBag'])){
 
-            $alangs = $object->localeUrl;
-            
-            foreach ($alangs as $key => $value) {
-               $objectData['settings']['viewBag']['localeUrl['.$key.']'] = $objectData['settings']['viewBag']['url'];
+            if(isset($object->localeUrl)){
+                
+                $alangs = $object->localeUrl;
+                
+                foreach ($alangs as $key => $value) {
+                   $objectData['settings']['viewBag']['localeUrl['.$key.']'] = $objectData['settings']['viewBag']['url'];
+                }
             }
+            
 
             /*$objectData['settings']['viewBag']['localeUrl[en]'] = $objectData['settings']['viewBag']['url'];
             $objectData['settings']['viewBag']['localeUrl[fr]'] = $objectData['settings']['viewBag']['url'];

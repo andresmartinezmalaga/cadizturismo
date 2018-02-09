@@ -14,7 +14,9 @@
         <?php if ($searchMode): ?>data-no-drag-mode<?php endif ?>
         data-id="<?= e($dataId) ?>"
     >
+    <a class='duplicate' data-request='onCopyEvent' data-request-data="fileNamePost: '<?= e($fileName) ?>' , fileUrlPost: '<?= $pageObj->page->getViewBag()->property('url') ?>', fileTitlePost: '<?= $pageObj->page->getViewBag()->property('title') ?>'">duplicar</a>
         <div>
+
             <a href="#">
                 <div>
                     <?= e($pageObj->page->getViewBag()->property('title')) ?>                    

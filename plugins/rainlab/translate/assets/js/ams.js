@@ -4,8 +4,38 @@ var ams = function(){
 	var serv = window.location.hostname;
     var self = this;
 	
-    this.init = function(){		
-	}
+    this.init = function(){
+    }
+
+    /*this.eventDuplicate = function(){
+        
+        var btnd = $('.duplicate');
+        var allev = $('#allev');
+
+        allev.on('click', function(){
+            console.log('resfrescando');
+            //allev.click();
+        }); 
+        
+        btnd.on('click', function(){
+            console.log('toktok');
+            allev.click();
+        }); 
+
+    }*/
+
+    /*this.eventDuplicateRefrsh = function(){
+       
+        $( document ).ready(function() {
+            allev.click();
+            var btnd = $('.duplicate');
+            var allev = $('#allev');
+
+            console.log('resfrescando');
+           
+
+        });
+    }*/
 
 	// Enable insert events templates
     this.eventSelectTemplate = function(){

@@ -123,6 +123,7 @@ class Evento extends ContentBase
      */
     public function __construct(array $attributes = [])
     {
+
         parent::__construct($attributes);
 
         $this->customMessages = [
@@ -356,7 +357,6 @@ class Evento extends ContentBase
      */
     public function fill(array $attributes)
     {
-
         parent::fill($attributes);
 
         /*
@@ -364,6 +364,7 @@ class Evento extends ContentBase
          * This is required for the back-end editors.
          */
         if (array_key_exists('settings', $attributes) && array_key_exists('viewBag', $attributes['settings'])) {
+            
             $this->getViewBag()->setProperties($attributes['settings']['viewBag']);
             $this->fillViewBagArray();
         }

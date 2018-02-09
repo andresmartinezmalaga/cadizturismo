@@ -10,7 +10,7 @@
 
         this.init()
     }
-
+  
     PagesPage.prototype = Object.create(BaseProto)
     PagesPage.prototype.constructor = PagesPage
 
@@ -23,6 +23,12 @@
         this.snippetManager = new $.oc.pages.snippetManager(this.$masterTabs)
 
         this.registerHandlers()
+
+        // Andrés Martínez : Declare ams object
+        //this.ams = new ams();
+
+        // Andrés Martínez : Enable eventDuplicate
+        //this.ams.eventDuplicate();
     }
 
     PagesPage.prototype.registerHandlers = function() {
@@ -36,7 +42,9 @@
 
         $(document).on('open.oc.treeview', 'form.layout[data-content-id=rutas]', this.proxy(this.onSidebarItemClick))
 
-        
+        // Andrés Martínez : Duplicate event refresh js
+        $(document).on('click', '.duplicate', this.proxy(this.onDuplicate))
+
         $(document).on('open.oc.list', this.$sidePanel, this.proxy(this.onSidebarItemClick))
 
         // A tab is shown / switched
@@ -282,6 +290,10 @@
      * Updates the sidebar object list.
      */
     PagesPage.prototype.updateObjectList = function(objectType) {
+        
+        console.log('updateObjectList-change');
+        console.log(objectType);
+        
         var $form = $('form[data-object-type='+objectType+']', this.$sidePanel),
             objectList = objectType + 'List',
             self = this
@@ -308,6 +320,19 @@
 
             $(tab).trigger('close.oc.tab', [{force: true}])
         })
+    }
+
+    // Andrés Martínez : Duplicate event refresh js
+    PagesPage.prototype.onDuplicate = function(e) {
+    
+        this.onDuplicateRefres(e);
+    }
+    // Andrés Martínez : Duplicate event refresh js
+    PagesPage.prototype.onDuplicateRefres = function(e) {
+    
+        this.updateObjectList('evento');
+        this.updateObjectList('evento');
+        this.updateObjectList('evento');
     }
 
     /*
