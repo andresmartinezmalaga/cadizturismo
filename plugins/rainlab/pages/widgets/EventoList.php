@@ -366,7 +366,16 @@ class EventoList extends WidgetBase
 
         }
 
+        // Get Event
+        $theme = Theme::getActiveTheme();
+        $pagesList = Page::listInTheme($theme, false);
+        $pages =  new \Illuminate\Support\Collection($pagesList);
+
+        $iEvento = $pages->where("url",$url)->values();
+
         echo $iEvento;
+        echo "\n\n";
+        echo $iEvento->localeUrl;
         dd(1);
 
         // Copy Mtlng
