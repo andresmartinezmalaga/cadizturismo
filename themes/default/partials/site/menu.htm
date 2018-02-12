@@ -139,6 +139,9 @@
             {% for item in staticMenu4.menuItems %}
               {% set tt = '.'~item.title %}
               <li class="menu-item"><a href="{{ item.url }}">{{ tt|_ }}</a></li>
+              {% if item.title == 'Playas' %}
+              <li class="menu-item"><a href="{{url('/')}}/{{lang}}/todas-las-rutas">{{'Rutas'|_ }}</a></li>
+              {% endif %}
             {% endfor %}
           </ul>
         </div>
