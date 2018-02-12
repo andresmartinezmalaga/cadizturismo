@@ -400,7 +400,8 @@ class EventoList extends WidgetBase
                         file_put_contents($destinationPath, $content);
                     }  
                 }
-        }
+            }
         
+        }
     }
 }
