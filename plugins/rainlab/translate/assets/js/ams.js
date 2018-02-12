@@ -298,6 +298,8 @@ var ams = function(){
     }
 
     this.removePEmpty = function(element){
-        $(element).find('p:empty').remove();
+    $('#plantillaMunicipio').parent().find('p').each(function( key, value ) {
+        console.log($(this).length);
+    });
     }
 };
