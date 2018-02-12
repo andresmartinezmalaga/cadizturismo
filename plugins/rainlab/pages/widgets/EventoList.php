@@ -366,6 +366,9 @@ class EventoList extends WidgetBase
 
         }
 
+        echo $iEvento;
+        dd(1);
+
         // Copy Mtlng
         if(isset($iEvento->localeUrl)){
 
