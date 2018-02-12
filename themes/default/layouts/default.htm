@@ -25,14 +25,14 @@ code = "redes-sociales"
 [staticApp]
 ==
 <?php
-    
+
     function onStart()
     {
         $this['lang']=\App::getLocale();
         if($this['lang']==''){
             $this['lang']='es';
         }
-        
+
         $this['urlPage'] = $this->page->url;
 
         if($this->page->apiBag){

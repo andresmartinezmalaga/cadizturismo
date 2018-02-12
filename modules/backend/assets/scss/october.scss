@@ -2262,3 +2262,9 @@ div[data-control="media-manager"] .media-list.tiles li.selected .icon-container 
     background: #dddddd;
   }
 }
+/* PANTALLA COMPLETA */
+.fr-fullscreen {
+  .fr-element.fr-view {
+    margin-bottom: 200px !important;
+  }
+}
