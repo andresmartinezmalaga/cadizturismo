@@ -3248,7 +3248,6 @@ footer {
   color: #818181;
   font-size: 14px;
   text-align: center;
-  margin-top: 10px; }
-  .field-richeditor .mock-insert img {
-    width: 100%;
-    object-fit: cover; }
+  margin-top: 10px;
+  background-image: url("/storage/app/media/uploaded-files/templates/insert-svg.svg");
+  background-size: cover; }
