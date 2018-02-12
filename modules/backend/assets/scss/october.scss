@@ -2268,6 +2268,10 @@ div[data-control="media-manager"] .media-list.tiles li.selected .icon-container 
     margin-bottom: 200px !important;
   }
   .ml-btn {
-    z-index: 100;
+    top: -409px !important;
+    z-index: 999 !important;
+  }
+  .ml-dropdown-menu {
+    top: -376px !important;
   }
 }
