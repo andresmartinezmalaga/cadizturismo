@@ -300,9 +300,11 @@ var ams = function(){
     this.removePEmpty = function(element){
     $('#plantillaMunicipio').parent().find('p').each(function( key, value ) {
        //if($(this).is(':empty')){
-        console.log('--------');
+        console.log('a--------');
         console.log($(this).html());
-        console.log('--------');
+        console.log('c--------');
+        console.log('\n\n');
+         console.log('\n\n');
        //}
     });
     }
