@@ -132,6 +132,30 @@
   height: auto !important;
 }
 
+.two-images {
+  width: 100%;
+  height: auto;
+  @include flexbox();
+  flex-direction: row;
+  flex-wrap: wrap;
+  .event-left {
+    height: 640px;
+    position: relative;
+    width: calc(100% / 3);
+    width: -moz-calc(100% / 3);
+    width: -ms-calc(100% / 3);
+    width: -webkit-calc(100% / 3);
+  }
+  .event-right {
+    height: 640px;
+    position: relative;
+    width: calc((100% / 3) * 2);
+    width: -webkit-calc((100% / 3) * 2);
+    width: -moz-calc((100% / 3) * 2);
+    width: -ms-calc((100% / 3) * 2);
+  }
+}
+
 
   @media (max-width: 725px) {
 

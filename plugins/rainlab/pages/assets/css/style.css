@@ -91,6 +91,31 @@ input:-webkit-autofill {
   max-width: 100%;
   height: auto !important; }
 
+.two-images {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  .two-images .event-left {
+    height: 640px;
+    position: relative;
+    width: calc(100% / 3);
+    width: -moz-calc(100% / 3);
+    width: -ms-calc(100% / 3);
+    width: -webkit-calc(100% / 3); }
+  .two-images .event-right {
+    height: 640px;
+    position: relative;
+    width: calc((100% / 3) * 2);
+    width: -webkit-calc((100% / 3) * 2);
+    width: -moz-calc((100% / 3) * 2);
+    width: -ms-calc((100% / 3) * 2); }
+
 @media (max-width: 725px) {
   .slidemenu {
     display: none; }
