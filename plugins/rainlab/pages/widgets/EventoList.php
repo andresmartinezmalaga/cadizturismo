@@ -381,7 +381,7 @@ class EventoList extends WidgetBase
         // Copy Mtlng
         if(isset($iEvento->localeUrl)){
 
-            $alangs = $object->localeUrl;
+            $alangs = $iEvento->localeUrl;
                 
             foreach ($alangs as $key => $value) {
                 
