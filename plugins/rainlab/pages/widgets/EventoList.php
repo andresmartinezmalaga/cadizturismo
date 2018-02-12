@@ -137,7 +137,7 @@ class EventoList extends WidgetBase
            }
         }
        
-        $pages = $events->values();
+        $pages = $events->values()->sortBy('title');
 
         $searchTerm = Str::lower($this->getSearchTerm());
 
