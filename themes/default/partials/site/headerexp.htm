@@ -40,15 +40,15 @@
   {% set cat = experience[0].interest|split(' y ')%}
   <div class="feature-exp">
     <img src="{{preurl}}/storage/app/media/uploaded-files/templates/{{str_slug(cat[0])}}.svg">
-    <p class="feature-txt">{{cat[0]}}</p>
+    <p class="feature-txt">{{cat[0]|capitalize}}</p>
   </div>
   <div class="feature-exp">
     <img src="{{preurl}}/storage/app/media/uploaded-files/templates/{{str_slug(cat[1])}}.svg">
-    <p class="feature-txt">{{cat[1]}}</p>
+    <p class="feature-txt">{{cat[1]|capitalize}}</p>
   </div>
   <div class="feature-exp">
     <img src="{{preurl}}/storage/app/media/uploaded-files/templates/cultura-event.svg">
-    <p class="feature-txt">{{experience[0].tvisit}}</p>
+    <p class="feature-txt">{{experience[0].tvisit|capitalize}}</p>
   </div>
 </div>
 
