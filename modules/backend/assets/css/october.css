@@ -5589,5 +5589,5 @@ div[data-control="media-manager"] .media-list.tiles li.selected .icon-container 
 .fr-fullscreen .ml-btn {
   z-index: 100; }
 
-.field-richeditor:not(:not( > .fr-fullscreen)) + .ml-btn {
+.field-richeditor:not( > .fr-fullscreen) + .ml-btn {
   top: -200px !important; }
