@@ -298,6 +298,6 @@ var ams = function(){
     }
 
     this.removePEmpty = function(element){
-        $(element+" p:empty").remove();
+        $(element).find('p:empty').remove();
     }
 };
