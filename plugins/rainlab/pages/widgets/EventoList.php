@@ -388,7 +388,7 @@ class EventoList extends WidgetBase
                 $destinationPath = $content_path.$flnm.'-copy-'.$preU.'.htm';
                 
                 
-                if (File::exists($sourceFilePath))
+                if (\File::exists($sourceFilePath))
                 {
                     if(! \File::copy($sourceFilePath,$destinationPath)){
                         die("Couldn't copy file");        
