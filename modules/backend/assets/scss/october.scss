@@ -2223,4 +2223,10 @@ div[data-control="media-manager"] .media-list.tiles li.selected .icon-container 
 .duplicate {
   position: absolute;
   z-index: 10;
+  top: 29px;
+  right: 8px;
+  img {
+    width: 16px;
+    height: auto;
+  }
 }
