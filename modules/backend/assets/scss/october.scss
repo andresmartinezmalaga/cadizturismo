@@ -2267,6 +2267,9 @@ div[data-control="media-manager"] .media-list.tiles li.selected .icon-container 
   .fr-element.fr-view {
     margin-bottom: 200px !important;
   }
+  div[href*="MLRichEditor-formEvento"] + .ml-btn {
+    top: -609px !important;
+  }
   .ml-btn {
     top: -409px !important;
     z-index: 999 !important;
