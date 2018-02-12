@@ -2271,10 +2271,3 @@ div[data-control="media-manager"] .media-list.tiles li.selected .icon-container 
     z-index: 100;
   }
 }
-
-$var: '.field-richeditor > fr-fullscreen';
-.ml-btn {
-  @if $var {
-    top: -200px !important;
-  }
-}
