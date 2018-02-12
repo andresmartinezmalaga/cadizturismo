@@ -188,16 +188,35 @@ var ams = function(){
     this.createButtonsWysiwyg = function(){
 
         var toolbar = $('.fr-toolbar');
+               
+        if ( $('#plantillaMunicipios').length > 0 ||
+             $('#plantillaMunicipio').length > 0 ||
+             $('#plantillaComarcas').length > 0 ||
+             $('#plantillaComarca').length > 0 ||
+             $('#plantillaPlayas').length > 0 ||
+             $('#plantillaPlaya').length > 0 ||
+             $('#plantillaRuta').length > 0 ||
+             $('#plantillaEvento').length > 0 ||
+             $('#plantillaExperiencia').length > 0) {
 
-        toolbar.append('<span class="custom-wysiwyg" id="titleDesc"> <img src="/storage/app/media/uploaded-files/templates/parrafo.svg"/></span>');
-        toolbar.append('<span class="custom-wysiwyg" id="destacado"> <img src="/storage/app/media/uploaded-files/templates/destacado.svg"/></span>');
-        toolbar.append('<span class="custom-wysiwyg" id="fullImage"> <img src="/storage/app/media/uploaded-files/templates/destacado.svg"/></span>');
-        toolbar.append('<span class="custom-wysiwyg" id="threeImages"> <img src="/storage/app/media/uploaded-files/templates/galeriatres.svg"/></span>');
-        toolbar.append('<span class="custom-wysiwyg" id="twoImages"> <img src="/storage/app/media/uploaded-files/templates/galeriados.svg"/></span>');
-        toolbar.append('<span class="custom-wysiwyg" id="numberSection"> <img src="/storage/app/media/uploaded-files/templates/parrafonumerado.svg"/></span>');
-        toolbar.append('<span class="custom-wysiwyg" id="moreInfo"> <img src="/storage/app/media/uploaded-files/templates/masinfo.svg"/></span>');
-        toolbar.append('<span class="custom-wysiwyg" id="locations"> <img src="/storage/app/media/uploaded-files/templates/ubicacion.svg"/></span>');
+                toolbar.append('<span class="custom-wysiwyg" id="titleDesc"> <img src="/storage/app/media/uploaded-files/templates/parrafo.svg"/></span>');
+                toolbar.append('<span class="custom-wysiwyg" id="destacado"> <img src="/storage/app/media/uploaded-files/templates/destacado.svg"/></span>');
+                toolbar.append('<span class="custom-wysiwyg" id="fullImage"> <img src="/storage/app/media/uploaded-files/templates/destacado.svg"/></span>');
+                toolbar.append('<span class="custom-wysiwyg" id="threeImages"> <img src="/storage/app/media/uploaded-files/templates/galeriatres.svg"/></span>');
+                toolbar.append('<span class="custom-wysiwyg" id="twoImages"> <img src="/storage/app/media/uploaded-files/templates/galeriados.svg"/></span>');
+                toolbar.append('<span class="custom-wysiwyg" id="moreInfo"> <img src="/storage/app/media/uploaded-files/templates/masinfo.svg"/></span>');
+                toolbar.append('<span class="custom-wysiwyg" id="locations"> <img src="/storage/app/media/uploaded-files/templates/ubicacion.svg"/></span>');
+        }
 
+        if ( $('#plantillaRuta').length > 0 ||
+             $('#plantillaEvento').length > 0 ||
+             $('#plantillaExperiencia').length > 0) {
+
+                toolbar.append('<span class="custom-wysiwyg" id="numberSection"> <img src="/storage/app/media/uploaded-files/templates/parrafonumerado.svg"/></span>');                
+        }
+
+        
+        
         $('#titleDesc').on('click',function(){
             self.pasteHtmlAtCaret(titleDesc);
         })
