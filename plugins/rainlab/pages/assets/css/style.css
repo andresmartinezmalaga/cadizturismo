@@ -2114,7 +2114,15 @@ html, body {
   .reportajes .publi-container, .publicaciones .publi-container {
     width: 80%;
     font-size: 48px;
-    margin-left: 50px !important; } }
+    margin-left: 50px !important; }
+  .static-header .header-txt-comollegar, .somos-section .header-txt-comollegar, .ayuda-header .header-txt-comollegar, .about-header .header-txt-comollegar {
+    margin-top: -170px; }
+    .static-header .header-txt-comollegar .txt, .somos-section .header-txt-comollegar .txt, .ayuda-header .header-txt-comollegar .txt, .about-header .header-txt-comollegar .txt {
+      font-size: 170px !important;
+      line-height: 112px !important;
+      transform: none !important; }
+    .static-header .header-txt-comollegar .brush, .somos-section .header-txt-comollegar .brush, .ayuda-header .header-txt-comollegar .brush, .about-header .header-txt-comollegar .brush {
+      bottom: -55px !important; } }
 
 @media (max-width: 1100px) {
   .ways .way {

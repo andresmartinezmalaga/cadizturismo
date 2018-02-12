@@ -2285,7 +2285,6 @@ html, body {
       }
     }
   }
-
   .reportajes, .publicaciones {
     .publi-container {
       width: 80%;
@@ -2293,7 +2292,20 @@ html, body {
       margin-left: 50px !important;
     }
   }
-
+  .static-header, .somos-section, .ayuda-header, .about-header {
+    .header-txt-comollegar {
+      margin-top: -170px;
+      .txt {
+        font-size: 170px !important;
+        line-height: 112px !important;
+        transform: none !important;
+      }
+      .brush {
+        //display: none !important;
+        bottom: -55px !important;
+      }
+    }
+  }
 }
 
 @media (max-width: 1100px) {
