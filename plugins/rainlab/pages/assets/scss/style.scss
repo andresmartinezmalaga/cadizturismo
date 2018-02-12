@@ -2306,7 +2306,7 @@ html, body {
     .header-txt-comollegar {
       .txt {
         font-size: 170px !important;
-        line-height: 170px !important;
+        line-height: 112px !important;
         transform: none !important;
       }
       .brush {
@@ -3166,7 +3166,14 @@ html, body {
     flex-direction: column !important;
     align-items: center !important; }
     .more-content .also .also-content .also-feature {
-      margin: 0px !important; } }
+      margin: 0px !important; }
+
+    .static-header {
+      .header-container {
+
+      }
+    }
+}
 
 @media (max-width: 709px) and (min-width: 601px) {
   .more-popular .title-container, .all-events .title-container, .all-exps .title-container {
