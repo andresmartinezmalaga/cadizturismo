@@ -3234,3 +3234,14 @@ footer {
 .cc-banner .cc-message {
   font-size: 14px;
   line-height: 20px; }
+
+/* MOCK-SPACE */
+.mock-insert {
+  display: none; }
+
+.field-richeditor .mock-insert {
+  width: 100%;
+  background-color: #CECECE;
+  color: #818181;
+  font-size: 14px;
+  text-align: left; }
