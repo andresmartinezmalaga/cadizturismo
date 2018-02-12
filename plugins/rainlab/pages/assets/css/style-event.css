@@ -91,6 +91,98 @@
       .header-event .send-info .button-send-info:hover {
         background-color: #D0860C; }
 
+.header-experience {
+  padding: 0;
+  box-sizing: border-box;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 969px;
+  background-color: transparent;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-top: 4px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-attachment: fixed; }
+  .header-experience .header-container {
+    margin-top: 90px; }
+  .header-experience .background-image {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 4px;
+    object-fit: cover;
+    z-index: -1;
+    left: 0px; }
+  .header-experience .header-txt {
+    color: white;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 50px; }
+    .header-experience .header-txt .brush {
+      margin-top: -14px;
+      margin-bottom: 150px; }
+    .header-experience .header-txt .txt {
+      font-size: 144px;
+      transform: rotate(-9deg);
+      text-align: center;
+      font-family: Ryssa; }
+  .header-experience .send-info {
+    width: 391px;
+    height: 105px;
+    margin-top: 150px;
+    background-color: rgba(0, 0, 0, 0.18);
+    border-radius: 5px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .header-experience .send-info .button-send-info {
+      width: 348px;
+      height: 70px;
+      background-color: #F5A623;
+      border-radius: 4px;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: background-color 0.3s ease; }
+      .header-experience .send-info .button-send-info a {
+        color: white;
+        font-weight: 300;
+        font-size: 19px;
+        line-height: 27px;
+        padding: 22px 20px; }
+        .header-experience .send-info .button-send-info a:hover, .header-experience .send-info .button-send-info a:focus, .header-experience .send-info .button-send-info a:active {
+          text-decoration: none;
+          outline: none;
+          background-color: transparent; }
+      .header-experience .send-info .button-send-info:hover {
+        background-color: #D0860C; }
+
 #header-event-fr .brush {
   margin-bottom: 0px; }
 
@@ -317,7 +409,7 @@
   z-index: -1; }
 
 /* TXT SECTION - EVENTS */
-.header-event + .section-txt, .header-ruta + .section-txt {
+.header-event + .section-txt, .header-ruta + .section-txt, .header-experience + .section-txt {
   margin-top: 125px; }
 
 .section-txt {
