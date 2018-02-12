@@ -2119,7 +2119,7 @@ html, body {
     margin-top: -170px; }
     .static-header .header-txt-comollegar .txt, .somos-section .header-txt-comollegar .txt, .ayuda-header .header-txt-comollegar .txt, .about-header .header-txt-comollegar .txt {
       font-size: 170px !important;
-      line-height: 112px !important;
+      line-height: 130px !important;
       transform: none !important; }
     .static-header .header-txt-comollegar .brush, .somos-section .header-txt-comollegar .brush, .ayuda-header .header-txt-comollegar .brush, .about-header .header-txt-comollegar .brush {
       bottom: -55px !important; } }
