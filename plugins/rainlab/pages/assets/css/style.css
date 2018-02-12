@@ -3251,4 +3251,5 @@ footer {
   text-align: center;
   margin-top: 10px;
   background-image: url("/storage/app/media/uploaded-files/templates/insert-svg.svg");
-  background-size: cover; }
+  background-size: cover;
+  background-position: center; }
