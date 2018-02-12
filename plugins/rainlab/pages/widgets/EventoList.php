@@ -348,8 +348,7 @@ class EventoList extends WidgetBase
         
         // Copy File
         if(! \File::copy($sourceFilePath,$destinationPath)){
-              die("Couldn't copy file");
-        
+              die("Couldn't copy file");        
         } else {
             
             // Change values : url and title
@@ -365,6 +364,42 @@ class EventoList extends WidgetBase
             $content = str_replace($search,$replace,$content);
             file_put_contents($destinationPath, $content);
 
+        }
+
+        // Copy Mtlng
+        if(isset($iEvento->localeUrl)){
+
+            $alangs = $object->localeUrl;
+                
+            foreach ($alangs as $key => $value) {
+                
+                // Get content_path
+                $content_path = themes_path().'/default/content/static-pages-'.$key.'/';
+
+                // Source and destination file
+                $sourceFilePath = $content_path.$flnm.'.htm';
+                $destinationPath = $content_path.$flnm.'-copy-'.$preU.'.htm';
+
+                if (File::exists($sourceFilePath))
+                {
+                    if(! \File::copy($sourceFilePath,$destinationPath)){
+                        die("Couldn't copy file");        
+                    } else {
+                    
+                        // Change values : url and title
+                        $content = file_get_contents($destinationPath);
+                        $search =  $url;
+                        $replace = $url.'-copy-'.$preU;
+                        $content = str_replace($search,$replace,$content);
+                        file_put_contents($destinationPath, $content);
+
+                        $content = file_get_contents($destinationPath);
+                        $search =  $title;
+                        $replace = $title.'-copy-'.$preU;
+                        $content = str_replace($search,$replace,$content);
+                        file_put_contents($destinationPath, $content);
+                    }  
+                }
         }
         
     }
