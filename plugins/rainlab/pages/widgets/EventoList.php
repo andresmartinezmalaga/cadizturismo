@@ -379,7 +379,10 @@ class EventoList extends WidgetBase
                 // Source and destination file
                 $sourceFilePath = $content_path.$flnm.'.htm';
                 $destinationPath = $content_path.$flnm.'-copy-'.$preU.'.htm';
-
+                
+                echo $sourceFilePath;
+                dd(1);
+                
                 if (File::exists($sourceFilePath))
                 {
                     if(! \File::copy($sourceFilePath,$destinationPath)){
