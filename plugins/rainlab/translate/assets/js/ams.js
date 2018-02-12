@@ -167,5 +167,20 @@ var ams = function(){
 		//console.log(toolbar);
 
 	}
-
+	//Título + descripción
+	var titleDesc = '<div class="section-txt-village"><div class="txt-container"><h3 class="title">TITULAR</h3><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"><p class="desc">Escribe aquí el contenido a desarrollar y agrega una imagen adicional si lo necesitas.</p></div></div>';
+	//Sección destacada
+	var destacado = '<div class="img-village"><div class="txt-container"><p class="title">Título del destacado</p><p class="desc">Puedes destacar una ruta, una playa o un evento. Escribe una breve descripción sobre el enlace que vas a sugerir.</p><a class="events-link" href="rutas.html">Conocer <img src="***_preurl_***/storage/app/media/uploaded-files/templates/link-arrow-yellow.svg" alt="" class="fr-fic fr-dii">&nbsp;</a><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div><img class="img-destacada" src="***_preurl_***/storage/app/media/uploaded-files/templates/marismas-barbate.jpg" alt=""></div>';
+	//Imagen al 100%
+	var fullImage = '<div class="section-img"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/caballos2.jpg" alt=""></div>';
+	//Galería de 3 imágenes
+	var threeImages = '<div class="all-exps"><div class="all-events-container"><div class="event"><div class="overlay-img"><br></div><img class="rec-img fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/atun.jpg"></div><div class="event"><div class="overlay-img"><br></div><img class="rec-img fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/faro.jpg"></div><div class="event"><div class="overlay-img"><br></div><img class="rec-img fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/brena.jpg"></div></div></div>';
+	//Galería de 2 imágenes
+	var twoImages = '<div class="all-events"><div class="all-events-container"><div class="event"><div class="overlay-img"><br></div><img class="rec-img fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/barbate1.jpg"></div><div class="event"><div class="overlay-img"><br></div><img class="rec-img fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/shutterstock_398451547.jpg"></div></div></div>';
+	//Enumeración
+	var numberSection = '<div class="section-txt"><div class="big-number-container"><span class="step">1</span></div><div class="txt-container"><p class="title">TITULAR 1</p><p class="desc">Escribe aquí el contenido a desarrollar y agrega una imagen adicional si lo necesitas.</p></div></div>';
+	//Más info
+	var moreInfo = '<div class="section-txt"><div class="txt-container"><h3>¿más info?</h3><img src="http://cadizturismo.jekyllme.com/storage/app/media/uploaded-files/templates/big-yellow-separator.svg" class="fr-fic fr-dii"><p><a href="#" rel="noopener noreferrer" target="_blank">Enlace 1</a></p><p><a href="#" rel="noopener noreferrer" target="_blank">Enlace 2</a></p></div></div>';
+	//Ubicaciones
+	var locations = '<div class="section-txt"><div class="txt-container"><div class="municipios"><div class="municipio"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/location-municipio.svg" class="fr-fil fr-dib"><a href="#" target="_blank"><p class="municipio-txt">Ubicación 1</p></a></div><div class="municipio"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/location-municipio.svg" class="fr-fil fr-dib"><a href="#" target="_blank"><p class="municipio-txt">Ubicación 2</p></a></div><div class="municipio"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/location-municipio.svg" class="fr-fil fr-dib"><a href="#" target="_blank"><p class="municipio-txt">Ubicación 3</p></a></div></div></div></div>';
 };
