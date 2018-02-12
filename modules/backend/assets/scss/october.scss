@@ -2247,8 +2247,14 @@ div[data-control="media-manager"] .media-list.tiles li.selected .icon-container 
 
 /* CUSTOM EDITOR TOOLBAR */
 .custom-wysiwyg {
+  width: auto;
+  height: 38px;
+  cursor: pointer;
+  padding: 0px;
   img {
     height: 14px;
     width: auto;
+    margin: 12px 12px;
+    text-align: center;
   }
 }
