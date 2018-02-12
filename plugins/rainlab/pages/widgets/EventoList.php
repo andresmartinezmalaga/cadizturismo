@@ -373,11 +373,6 @@ class EventoList extends WidgetBase
 
         $iEvento = ($pages->where("url",$url)->values())[0];
 
-        /*echo $iEvento;
-        echo "\n\n";
-        echo $iEvento->localeUrl;
-        dd(1);*/
-
         // Copy Mtlng
         if(isset($iEvento->localeUrl)){
 
@@ -392,8 +387,6 @@ class EventoList extends WidgetBase
                 $sourceFilePath = $content_path.$flnm.'.htm';
                 $destinationPath = $content_path.$flnm.'-copy-'.$preU.'.htm';
                 
-                echo $sourceFilePath;
-                dd(1);
                 
                 if (File::exists($sourceFilePath))
                 {
@@ -415,8 +408,7 @@ class EventoList extends WidgetBase
                         file_put_contents($destinationPath, $content);
                     }  
                 }
-            }
-        
+            }        
         }
     }
 }
