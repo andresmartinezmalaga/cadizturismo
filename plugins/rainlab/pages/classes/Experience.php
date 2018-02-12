@@ -124,7 +124,7 @@ class Experience extends ContentBase
 
         $template = '
         <!-- HEADER -->
-        <div class="header-event main-exp">
+        <div id="plantillaExperiencia" class="header-event main-exp">
           <div class="header-container">
             <div class="header-txt">
               <h1 class="txt">Título</h1>
@@ -169,12 +169,12 @@ class Experience extends ContentBase
             <p class="desc">Escribe aquí el contenido a desarrollar y agrega una imagen adicional si lo necesitas.</p>
           </div>
         </div>
-
+        <p class="mock-insert">Haz click aquí para insertar una nueva sección<br></p>
         <!-- SECTION IMG -->
         <div class="section-img">
           <img src="***_preurl_***/storage/app/media/uploaded-files/templates/palmar2.jpg" alt="">
         </div>
-
+        <p class="mock-insert">Haz click aquí para insertar una nueva sección<br></p>
         <div class="section-txt">
           <div class="big-number-container">
             <span class="step">2</span>
@@ -184,11 +184,11 @@ class Experience extends ContentBase
             <p class="desc">Escribe aquí el contenido a desarrollar y agrega una imagen adicional si lo necesitas.</p>
           </div>
         </div>
-
+        <p class="mock-insert">Haz click aquí para insertar una nueva sección<br></p>
         <div class="section-img">
           <img src="***_preurl_***/storage/app/media/uploaded-files/templates/surf3.jpg" alt="">
         </div>
-
+        <p class="mock-insert">Haz click aquí para insertar una nueva sección<br></p>
         <div class="section-txt">
 
           <div class="big-number-container">
@@ -200,11 +200,11 @@ class Experience extends ContentBase
             <p class="desc">Escribe aquí el contenido a desarrollar y agrega una imagen adicional si lo necesitas.</p>
           </div>
         </div>
-
+        <p class="mock-insert">Haz click aquí para insertar una nueva sección<br></p>
         <div class="section-img">
           <img src="***_preurl_***/storage/app/media/uploaded-files/templates/palmar4.jpg" alt="">
         </div>
-
+        <p class="mock-insert">Haz click aquí para insertar una nueva sección<br></p>
         <div class="section-txt">
           <div class="big-number-container">
             <span class="step">4</span>
@@ -235,6 +235,7 @@ class Experience extends ContentBase
             </div>
         </div>
         </div>
+        <p class="mock-insert">Haz click aquí para insertar una nueva sección<br></p>
         <div class="section-img">
           <img src="***_preurl_***/storage/app/media/uploaded-files/templates/palmar5.jpg" alt="">
         </div>';

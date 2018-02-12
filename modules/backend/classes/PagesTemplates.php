@@ -16,7 +16,7 @@ class PagesTemplates
 
   static $comarcas = '
   <!-- HEADER -->
-  <div class="header-general header-comarcas">
+  <div id="plantillaComarcas" class="header-general header-comarcas">
     <div class="header-container">
       <div class="header-txt">
         <h1 class="txt">Comarcas</h1>
@@ -110,7 +110,7 @@ class PagesTemplates
       </div>
     </div>
   </div>
-
+  <p class="mock-insert">Haz click aquí para insertar una nueva sección<br></p>
   <div class="section-txt-comarca">
     <div class="txt-container">
 
@@ -124,8 +124,9 @@ class PagesTemplates
 
       <p class="desc">En cuanto a muestras pictóricas, pueden encontrarse magníficos <strong>lienzos de El Greco, Murillo, Zurbarán y Goya</strong>, repartidos en diferentes iglesias y museos de la provincia.</p><a class="download" href="/es/cultura">Descubre toda la cultura de Cádiz <img src="***_preurl_***/storage/app/media/uploaded-files/templates/yellow-arrow.svg" alt="" class="fr-fic fr-dii">&nbsp;</a></div>
   </div>
-
+  <p class="mock-insert">Haz click aquí para insertar una nueva sección<br></p>
   <div class="section-img-comarca"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/comarcas2.jpg" alt="" class="fr-fic fr-dii"></div>
+  <p class="mock-insert">Haz click aquí para insertar una nueva sección<br></p>
   <div class="section-txt-comarca">
     <div class="txt-container">
 
@@ -140,9 +141,11 @@ class PagesTemplates
 
       <p class="desc"><strong>Quienes llegan a esta provincia no deben dejar de visitar alguna de las impresionantes Bodegas de Jerez, El Puerto de Santa María, Sanlúcar, o Chiclana donde se crían y envejecen exquisitos vinos como el fino, la manzanilla, el moscatel, y el jerez o “sherry”, embajador de España en el mundo entero.&nbsp;</strong></p><a class="download" href="/es/gastronomia">Descubre toda la gastronomía de Cádiz <img src="***_preurl_***/storage/app/media/uploaded-files/templates/yellow-arrow.svg" alt="" class="fr-fic fr-dii">&nbsp;</a></div>
   </div>
+  <p class="mock-insert">Haz click aquí para insertar una nueva sección<br></p>
   <div class="section-img-comarca">
     <img src="***_preurl_***/storage/app/media/uploaded-files/templates/comarcas3.jpg" alt="" class="fr-fic fr-dii">
     </div>
+  <p class="mock-insert">Haz click aquí para insertar una nueva sección<br></p>
   <div class="section-txt-comarca">
     <div class="txt-container">
 
@@ -158,6 +161,7 @@ class PagesTemplates
 
       <p class="desc">Muchas de ellas obtienen anualmente el distintivo de la Bandera Azul de los mares limpios de Europa. En total 138 Kms de playas.</p><a class="download" href="/es/naturaleza">Descubre toda la naturaleza de Cádiz <img src="***_preurl_***/storage/app/media/uploaded-files/templates/yellow-arrow.svg" alt="" class="fr-fic fr-dii">&nbsp;</a></div>
   </div>
+  <p class="mock-insert">Haz click aquí para insertar una nueva sección<br></p>
   <div class="section-img-comarca">
     <img src="***_preurl_***/storage/app/media/uploaded-files/templates/comarcas4.jpg" alt="" class="fr-fic fr-dii">
   </div>
@@ -170,7 +174,7 @@ class PagesTemplates
 
   static $comarca = '
   <!-- HEADER -->
-  <div class="header header-comarca">
+  <div id="plantillaComarca" class="header header-comarca">
     <div class="header-container header-village-container">
       <div class="header-txt header-txt-village">
         <h1 class="txt">Nombre de la comarca</h1><img class="brush fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
@@ -186,6 +190,7 @@ class PagesTemplates
       <p class="desc">Escribe aquí el contenido a desarrollar y agrega una imagen adicional si lo necesitas. </p>
     </div>
   </div>
+  <p class="mock-insert">Haz click aquí para insertar una nueva sección<br></p>
   <!-- IMAGEN -->
   <div class="img-village">
     <div class="txt-container">
@@ -197,6 +202,7 @@ class PagesTemplates
       <!-- NUEVA FOTO -->
       <img class="img-destacada" src="***_preurl_***/storage/app/media/uploaded-files/templates/marismas-barbate.jpg" alt="">
   </div>
+  <p class="mock-insert">Haz click aquí para insertar una nueva sección<br></p>
   <div class="section-txt-village">
     <div class="txt-container">
 
@@ -247,7 +253,7 @@ class PagesTemplates
 
   static $municipios = '
   <!-- HEADER -->
-  <div class="header-general header-municipios">
+  <div id="plantillaMunicipios" class="header-general header-municipios">
     <div class="header-container">
       <div class="header-txt">
         <h1 class="txt">Municipios</h1><img class="brush fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
@@ -264,7 +270,8 @@ class PagesTemplates
 
       <p class="desc">Una provincia que destaca por sus contrastes, 3000 años de historia y 44 municipios que esconden rincones increíbles en su gran variedad de paisajes y culturas.</p>
     </div>
-  </div>';
+  </div>
+  <p class="mock-insert">Haz click aquí para insertar una nueva sección<br></p>';
 
   static function getTMunicipios(){
     $municipios = PagesTemplates::getFinalTemplate(PagesTemplates::$municipios);
@@ -273,7 +280,7 @@ class PagesTemplates
 
   static $municipio = '
   <!-- HEADER -->
-  <div class="header header-village">
+  <div id="plantillaMunicipio" class="header header-village">
     <div class="header-container header-village-container">
       <div class="header-txt header-txt-village">
         <h1 class="txt">Nombre del municipio</h1><img class="brush fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
@@ -304,6 +311,7 @@ class PagesTemplates
       <!-- NUEVA FOTO -->
       <img class="img-destacada" src="***_preurl_***/storage/app/media/uploaded-files/templates/marismas-barbate.jpg" alt="">
   </div>
+  <p class="mock-insert">Haz click aquí para insertar una nueva sección<br></p>
   <div class="section-txt-village">
     <div class="txt-container">
 
@@ -408,7 +416,7 @@ class PagesTemplates
 
   static $playas = '
   <!-- HEADER -->
-  <div class="header-general header-playas">
+  <div id="plantillaPlayas" class="header-general header-playas">
     <div class="header-container">
       <div class="header-txt">
         <h1 class="txt">Playas</h1><img class="brush fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
@@ -430,7 +438,8 @@ class PagesTemplates
 
       <p class="desc">En Cádiz es muy frecuente que el mar se encuentre con la montaña, con paisajes de pinares, bosques y marismas. Punta Candor en Rota y la playa del Castillo de San Fernando, son playas muy naturales, pero cada una a su manera: si en una destacan los macizos rocosos, en otras sólo se puede acceder a nado o a pie.</p>
     </div>
-  </div>';
+  </div>
+  <p class="mock-insert">Haz click aquí para insertar una nueva sección<br></p>';
 
   static function getTPlayas(){
     $playas = PagesTemplates::getFinalTemplate(PagesTemplates::$playas);
@@ -439,7 +448,7 @@ class PagesTemplates
 
   static $playa = '
   <!-- HEADER -->
-  <div class="header header-playa">
+  <div id="plantillaPlaya" class="header header-playa">
     <div class="header-container header-village-container">
       <div class="header-txt header-txt-village">
         <h1 class="txt">Nombre de la playa</h1><img class="brush fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
@@ -456,6 +465,7 @@ class PagesTemplates
       <p class="desc">Escribe aquí el contenido a desarrollar y agrega una imagen adicional si lo necesitas. </p>
     </div>
   </div>
+  <p class="mock-insert">Haz click aquí para insertar una nueva sección<br></p>
   <!-- IMAGEN -->
   <div class="img-village">
     <div class="txt-container">
@@ -467,6 +477,7 @@ class PagesTemplates
       <!-- NUEVA FOTO -->
       <img class="img-destacada" src="***_preurl_***/storage/app/media/uploaded-files/templates/marismas-barbate.jpg" alt="">
   </div>
+  <p class="mock-insert">Haz click aquí para insertar una nueva sección<br></p>
   <div class="section-txt-village">
     <div class="txt-container">
 
