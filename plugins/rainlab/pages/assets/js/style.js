@@ -2,6 +2,10 @@
 jQuery(function($)
 {
 
+  $("#fullscreen-1").click(function() {
+      alert('Hola caracola');
+  });
+
     $(".send-info:not(:has(.button-send-info>a))").css('display','none');
 
     $(".hamburger").click(function() {
