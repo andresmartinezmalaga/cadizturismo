@@ -157,7 +157,7 @@ var ams = function(){
     this.createButtonsWysiwyg = function(){
 
 		var toolbar = $('.fr-toolbar');
-		toolbar.append('<span id="insertP"> <img src="/storage/app/media/uploaded-files/templates/destacado.svg"/></span>')
+		toolbar.append('<span class="custom-wysiwyg" id="insertP"> <img src="/storage/app/media/uploaded-files/templates/destacado.svg"/></span>')
 
 		$('#insertP').on('click',function(){
            console.log('saludando');
