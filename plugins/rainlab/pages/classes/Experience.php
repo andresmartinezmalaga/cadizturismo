@@ -124,7 +124,7 @@ class Experience extends ContentBase
 
         $template = '
         <!-- HEADER -->
-        <div id="plantillaExperiencia" class="header-event main-exp">
+        <div id="plantillaExperiencia" class="header-experience main-exp">
           <div class="header-container">
             <div class="header-txt">
               <h1 class="txt">Título</h1>

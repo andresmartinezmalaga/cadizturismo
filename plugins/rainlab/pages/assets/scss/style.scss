@@ -1010,6 +1010,7 @@ html, body {
 .field-richeditor .header-general .background-image,
 .field-richeditor .header .background-image,
 .field-richeditor .header-event .background-image,
+.field-richeditor .header-experience .background-image,
 .field-richeditor .static-header .img-header,
 .field-richeditor .ayuda-header .img-header,
 .field-richeditor .about-header .img-header {
@@ -1079,7 +1080,7 @@ html, body {
   display: none;
 }
 
-.field-richeditor .header-event .brush {
+.field-richeditor .header-event .brush, .field-richeditor .header-experience .brush {
   margin-bottom: 150px;
 }
 
@@ -2476,20 +2477,20 @@ html, body {
       margin-top: 20px !important; }
   .header-comment {
     width: auto !important; }
-  .header-event {
+  .header-event, .header-experience {
     background-position: center;
     height: auto !important; }
-    .header-event .send-info {
+    .header-event .send-info,  .header-experience .send-info {
       margin-top: 80px !important; }
-    .header-event .txt {
+    .header-event .txt,  .header-experience .txt {
       font-size: 100px !important;
       max-width: 79% !important; }
-    .header-event .send-info {
+    .header-event .send-info,  .header-experience .send-info {
       width: 80% !important;
       max-width: 348px; }
-      .header-event .send-info .button-send-info {
+      .header-event .send-info .button-send-info,  .header-experience .send-info .button-send-info {
         width: 90% !important; }
-        .header-event .send-info .button-send-info a {
+        .header-event .send-info .button-send-info a, .header-experience .send-info .button-send-info a {
           font-size: 16px !important;
           text-align: center;
           padding: 22px 7px !important; }
@@ -2952,7 +2953,7 @@ html, body {
   .background-image {
     top: 0px !important;
   }
-  .header-event + .section-txt {
+  .header-event + .section-txt, .header-experience + .section-txt {
     margin-top: 0px; }
   .section-txt-comarca .txt-container, .section-txt-village .txt-container {
     padding: 70px 0px 70px 0px !important; }
@@ -2960,7 +2961,7 @@ html, body {
     display: block; }
   .main-section-comarcas .main-events-container {
     margin-top: 60px !important; }
-  .header, .static-header, .ayuda-header, .about-header, .header-event, .header-village, .header-general, .header-ruta, .header-search {
+  .header, .static-header, .ayuda-header, .about-header, .header-event, .header-experience, .header-village, .header-general, .header-ruta, .header-search {
     margin-top: 0px !important;
     min-height: 650px; }
     .ayuda-header, .static-header, .about-header {
@@ -2968,25 +2969,25 @@ html, body {
         top: 0px !important;
       }
     }
-    .header .mini-logo-container, .header-event .mini-logo-container, .header-village .mini-logo-container, .header-general .mini-logo-container, .header-ruta .mini-logo-container, .header-search .mini-logo-container {
+    .header .mini-logo-container, .header-event .mini-logo-container, .header-experience .mini-logo-container, .header-village .mini-logo-container, .header-general .mini-logo-container, .header-ruta .mini-logo-container, .header-search .mini-logo-container {
       top: 59px !important; }
-    .header .language-container, .header-event .language-container, .header-village .language-container, .header-general .language-container, .header-ruta .language-container, .header-search .language-container {
+    .header .language-container, .header-event .language-container, .header-experience .language-container, .header-village .language-container, .header-general .language-container, .header-ruta .language-container, .header-search .language-container {
       width: 18px !important;
       height: 90px !important;
       right: 20px !important; }
-      .header .language-container .languages, .header-event .language-container .languages, .header-village .language-container .languages, .header-general .language-container .languages, .header-ruta .language-container .languages, .header-search .language-container .languages {
+      .header .language-container .languages, .header-event .language-container .languages, .header-experience .language-container .languages, .header-village .language-container .languages, .header-general .language-container .languages, .header-ruta .language-container .languages, .header-search .language-container .languages {
         flex-direction: column !important; }
-    .header .event-features, .header-event .event-features, .event-features, .header-village .event-features, .header-general .event-features, .header-ruta .event-features, .header-search .event-features {
+    .header .event-features, .header-event .event-features, .header-experience .event-features, .event-features, .header-village .event-features, .header-general .event-features, .header-ruta .event-features, .header-search .event-features {
       flex-direction: column;
       height: auto;
       padding-top: 30px;
       padding-bottom: 30px;
       position: relative; }
-      .header .event-features .feature, .header .event-features .feature-exp, #out-features .feature, .event-features .feature-exp, .header-event .event-features .feature, .header-event .event-features .feature-exp, .header-village .event-features .feature, .header-village .event-features .feature-exp, .header-general .event-features .feature, .header-general .event-features .feature-exp, .header-ruta .event-features .feature, .header-ruta .event-features .feature-exp, .header-search .event-features .feature, .header-search .event-features .feature-exp {
+      .header .event-features .feature, .header .event-features .feature-exp, #out-features .feature, .event-features .feature-exp, .header-event .event-features .feature, .header-experience .event-features .feature, .header-event .event-features .feature-exp, .header-experience .event-features .feature-exp, .header-village .event-features .feature, .header-village .event-features .feature-exp, .header-general .event-features .feature, .header-general .event-features .feature-exp, .header-ruta .event-features .feature, .header-ruta .event-features .feature-exp, .header-search .event-features .feature, .header-search .event-features .feature-exp {
         margin: 0px !important;
         padding-top: 20px;
         padding-bottom: 20px; }
-        .header .event-features .feature .feature-txt-mapa, .event-features .feature .feature-txt-mapa, .header .event-features .feature-exp .feature-txt-mapa, .header-event .event-features .feature .feature-txt-mapa, .header-event .event-features .feature-exp .feature-txt-mapa, .header-village .event-features .feature .feature-txt-mapa, .header-village .event-features .feature-exp .feature-txt-mapa, .header-general .event-features .feature .feature-txt-mapa, .header-general .event-features .feature-exp .feature-txt-mapa, .header-ruta .event-features .feature .feature-txt-mapa, .header-ruta .event-features .feature-exp .feature-txt-mapa, .header-search .event-features .feature .feature-txt-mapa, .header-search .event-features .feature-exp .feature-txt-mapa {
+        .header .event-features .feature .feature-txt-mapa, .event-features .feature .feature-txt-mapa, .header .event-features .feature-exp .feature-txt-mapa, .header-event .event-features .feature .feature-txt-mapa, .header-event .event-features .feature-exp .feature-txt-mapa, .header-experience .event-features .feature-exp .feature-txt-mapa, .header-village .event-features .feature .feature-txt-mapa, .header-village .event-features .feature-exp .feature-txt-mapa, .header-general .event-features .feature .feature-txt-mapa, .header-general .event-features .feature-exp .feature-txt-mapa, .header-ruta .event-features .feature .feature-txt-mapa, .header-ruta .event-features .feature-exp .feature-txt-mapa, .header-search .event-features .feature .feature-txt-mapa, .header-search .event-features .feature-exp .feature-txt-mapa {
           top: 91px; }
   .header-event {
     height: auto !important;
@@ -3204,11 +3205,11 @@ html, body {
 @media (max-width: 768px) {
   .header-general .header-txt .brush {
     margin-top: 0px; }
-  .header, .header-event, .header-ruta, .header-village, .header-general, .img-village, .featured-element, .secret-routes {
+  .header, .header-event, .header-experience, .header-ruta, .header-village, .header-general, .img-village, .featured-element, .secret-routes {
     background-attachment: initial !important; }
-    .header .mini-logo-container, .header .language-container, .header-event .mini-logo-container, .header-event .language-container, .header-ruta .mini-logo-container, .header-ruta .language-container, .header-village .mini-logo-container, .header-village .language-container, .header-general .mini-logo-container, .header-general .language-container, .img-village .mini-logo-container, .img-village .language-container, .featured-element .mini-logo-container, .featured-element .language-container, .secret-routes .mini-logo-container, .secret-routes .language-container {
+    .header .mini-logo-container, .header .language-container, .header-event .mini-logo-container, .header-event .language-container, .header-experience .language-container, .header-ruta .mini-logo-container, .header-ruta .language-container, .header-village .mini-logo-container, .header-village .language-container, .header-general .mini-logo-container, .header-general .language-container, .img-village .mini-logo-container, .img-village .language-container, .featured-element .mini-logo-container, .featured-element .language-container, .secret-routes .mini-logo-container, .secret-routes .language-container {
       z-index: 99; }
-    .header .header-container, .header-event .header-container, .header-ruta .header-container, .header-village .header-container, .header-general .header-container, .img-village .header-container, .featured-element .header-container, .secret-routes .header-container {
+    .header .header-container, .header-event .header-container,.header-experience .header-container, .header-ruta .header-container, .header-village .header-container, .header-general .header-container, .img-village .header-container, .featured-element .header-container, .secret-routes .header-container {
       z-index: 98; } }
 
 @media (max-width: 920px) and (min-width: 601px) {
@@ -3276,7 +3277,7 @@ html, body {
       }
 
       @media (max-width: 720px) and (min-width: 400px) {
-        .header-event .header-txt {
+        .header-event .header-txt, .header-experience .header-txt {
           margin-bottom: 140px !important;
           margin-top: 50px !important;
           min-height: 470px !important;
@@ -3301,7 +3302,7 @@ html, body {
       }
 
       @media (max-width: 400px) {
-        .header-event .header-txt {
+        .header-event .header-txt, .header-experience .header-txt {
           margin-bottom: 10px !important;
           margin-top: 80px !important;
           min-height: 570px !important;
