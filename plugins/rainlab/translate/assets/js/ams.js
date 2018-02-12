@@ -108,11 +108,11 @@ var ams = function(){
 
 	this.pasteHtmlAtCaret = function(html) {
 
-        console.log('entra');
+        //console.log('entra');
         var sel, range;
 
         if (window.getSelection) {
-             console.log('entra2');
+             //console.log('entra2');
             // IE9 and non-IE
             sel = window.getSelection();
 
@@ -138,8 +138,8 @@ var ams = function(){
 
                 // Preserve the selection
                 if (lastNode) {
-                      console.log('lastNode');
-                      console.log(lastNode);
+                      //console.log('lastNode');
+                      //console.log(lastNode);
 
                     range = range.cloneRange();
                     range.setStartAfter(lastNode);
@@ -299,9 +299,9 @@ var ams = function(){
 
     this.removePEmpty = function(element){
     $('#plantillaMunicipio').parent().find('p').each(function( key, value ) {
-       if($(this).is(':empty')){
-        console.log($(this));
-       }
+       //if($(this).is(':empty')){
+        console.log($(this).html());
+       //}
     });
     }
 };
