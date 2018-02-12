@@ -43,6 +43,8 @@ code = "redes-sociales"
             }
         }
 
+        $this['experience'] = $this->staticApp->experienceFindByUrl($this->page->url);
+
     }
 
     function onMailExperience(){

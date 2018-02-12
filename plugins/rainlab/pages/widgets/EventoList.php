@@ -133,12 +133,16 @@ class EventoList extends WidgetBase
            if($i->page->template == 'eventos'){
                 $i->date_start = (new DateTime($i->page->date_start))->format('Y-m-d');
                 $i->date_start_pretty_num = (new DateTime($i->page->date_start))->format('d.m.y');
+                $i->title = $i->page->title;
                 $events->push($i);
+                
            }
         }
        
-        $pages = $events->values()->sortBy('title');
+        $ppages = $events->values();
 
+        $pages = $ppages->sortBy('title');
+      
         $searchTerm = Str::lower($this->getSearchTerm());
 
         if (strlen($searchTerm)) {
@@ -180,6 +184,7 @@ class EventoList extends WidgetBase
            if($i->page->template == 'eventos'){
                 $i->date_end = (new DateTime($i->page->date_end))->format('Y-m-d');
                 $i->date_start_pretty_num = (new DateTime($i->page->date_start))->format('d.m.y');
+                $i->title = $i->page->title;
                 
                 if($i->date_end >= $now){
                     $events->push($i);
@@ -188,7 +193,8 @@ class EventoList extends WidgetBase
            }
         }
        
-        $pages = $events->values();
+        $ppages = $events->values();
+        $pages = $ppages->sortBy('title');
 
         $searchTerm = Str::lower($this->getSearchTerm());
 
@@ -231,6 +237,7 @@ class EventoList extends WidgetBase
            if($i->page->template == 'eventos'){
                 $i->date_end = (new DateTime($i->page->date_end))->format('Y-m-d');
                 $i->date_start_pretty_num = (new DateTime($i->page->date_start))->format('d.m.y');
+                $i->title = $i->page->title;
                 
                 if($i->date_end < $now){
                     $events->push($i);
@@ -238,7 +245,8 @@ class EventoList extends WidgetBase
            }
         }
        
-        $pages = $events->values();
+        $ppages = $events->values();
+        $pages = $ppages->sortBy('title');
 
         $searchTerm = Str::lower($this->getSearchTerm());
 
