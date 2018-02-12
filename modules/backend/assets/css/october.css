@@ -5553,7 +5553,7 @@ div[data-control="media-manager"] .media-list.tiles li.selected .icon-container 
 /* Botón duplicar */
 .control-treeview ol > li {
   position: relative; }
-  .control-treeview ol > li div > div {
+  .control-treeview ol > li div > a > div {
     width: 80%; }
 
 .duplicate {
