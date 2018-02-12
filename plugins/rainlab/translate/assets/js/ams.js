@@ -108,11 +108,11 @@ var ams = function(){
 
 	this.pasteHtmlAtCaret = function(html) {
 
-        console.log('entra');
+        //console.log('entra');
         var sel, range;
 
         if (window.getSelection) {
-             console.log('entra2');
+             //console.log('entra2');
             // IE9 and non-IE
             sel = window.getSelection();
 
@@ -138,8 +138,8 @@ var ams = function(){
 
                 // Preserve the selection
                 if (lastNode) {
-                      console.log('lastNode');
-                      console.log(lastNode);
+                      //console.log('lastNode');
+                      //console.log(lastNode);
 
                     range = range.cloneRange();
                     range.setStartAfter(lastNode);
@@ -257,47 +257,35 @@ var ams = function(){
 
         $('#titleDesc').on('click',function(){
             self.pasteHtmlAtCaret(titleDesc);
-            self.removePEmpty(element);
         })
 
         $('#destacado').on('click',function(){
             self.pasteHtmlAtCaret(destacado);
-            self.removePEmpty(element);
         })
 
         $('#fullImage').on('click',function(){
             self.pasteHtmlAtCaret(fullImage);
-            self.removePEmpty(element);
         })
 
         $('#threeImages').on('click',function(){
             self.pasteHtmlAtCaret(threeImages);
-            self.removePEmpty(element);
         })
 
         $('#twoImages').on('click',function(){
             self.pasteHtmlAtCaret(twoImages);
-            self.removePEmpty(element);
         })
 
         $('#numberSection').on('click',function(){
             self.pasteHtmlAtCaret(numberSection);
-            self.removePEmpty(element);
         })
 
         $('#moreInfo').on('click',function(){
             self.pasteHtmlAtCaret(moreInfo);
-            self.removePEmpty(element);
         })
 
         $('#locations').on('click',function(){
             self.pasteHtmlAtCaret(locations);
-            self.removePEmpty(element);
         })
 
-    }
-
-    this.removePEmpty = function(element){
-        $(element).find('p:empty').remove();
     }
 };
