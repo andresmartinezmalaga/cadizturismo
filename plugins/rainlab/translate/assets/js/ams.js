@@ -257,55 +257,35 @@ var ams = function(){
 
         $('#titleDesc').on('click',function(){
             self.pasteHtmlAtCaret(titleDesc);
-            self.removePEmpty(element);
         })
 
         $('#destacado').on('click',function(){
             self.pasteHtmlAtCaret(destacado);
-            self.removePEmpty(element);
         })
 
         $('#fullImage').on('click',function(){
             self.pasteHtmlAtCaret(fullImage);
-            self.removePEmpty(element);
         })
 
         $('#threeImages').on('click',function(){
             self.pasteHtmlAtCaret(threeImages);
-            self.removePEmpty(element);
         })
 
         $('#twoImages').on('click',function(){
             self.pasteHtmlAtCaret(twoImages);
-            self.removePEmpty(element);
         })
 
         $('#numberSection').on('click',function(){
             self.pasteHtmlAtCaret(numberSection);
-            self.removePEmpty(element);
         })
 
         $('#moreInfo').on('click',function(){
             self.pasteHtmlAtCaret(moreInfo);
-            self.removePEmpty(element);
         })
 
         $('#locations').on('click',function(){
             self.pasteHtmlAtCaret(locations);
-            self.removePEmpty(element);
         })
 
-    }
-
-    this.removePEmpty = function(element){
-    $('#plantillaMunicipio').parent().find('p').each(function( key, value ) {
-       //if($(this).is(':empty')){
-        console.log('a--------');
-        console.log($(this).html());
-        console.log('c--------');
-        console.log('\n\n');
-         console.log('\n\n');
-       //}
-    });
     }
 };
