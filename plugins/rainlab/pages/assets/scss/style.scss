@@ -2295,15 +2295,6 @@ html, body {
   .static-header, .somos-section, .ayuda-header, .about-header {
     .header-txt-comollegar {
       margin-top: -170px;
-      .txt {
-        font-size: 170px !important;
-        line-height: 130px !important;
-        transform: none !important;
-      }
-      .brush {
-        //display: none !important;
-        bottom: -55px !important;
-      }
     }
   }
 }
@@ -2318,7 +2309,7 @@ html, body {
     .header-txt-comollegar {
       .txt {
         font-size: 170px !important;
-        line-height: 112px !important;
+        line-height: 130px !important;
         transform: none !important;
       }
       .brush {
