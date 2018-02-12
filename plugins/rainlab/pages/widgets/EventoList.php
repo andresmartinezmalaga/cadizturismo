@@ -373,10 +373,10 @@ class EventoList extends WidgetBase
 
         $iEvento = ($pages->where("url",$url)->values())[0];
 
-        echo $iEvento;
+        /*echo $iEvento;
         echo "\n\n";
         echo $iEvento->localeUrl;
-        dd(1);
+        dd(1);*/
 
         // Copy Mtlng
         if(isset($iEvento->localeUrl)){
