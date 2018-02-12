@@ -299,7 +299,7 @@ var ams = function(){
 
     this.removePEmpty = function(element){
     $('#plantillaMunicipio').parent().find('p').each(function( key, value ) {
-        console.log($(this).length);
+        console.log($(this).children().length);
     });
     }
 };
