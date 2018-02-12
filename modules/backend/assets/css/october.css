@@ -5560,7 +5560,8 @@ div[data-control="media-manager"] .media-list.tiles li.selected .icon-container 
   position: absolute;
   z-index: 10;
   top: 6px;
-  right: 32px; }
+  right: 32px;
+  cursor: pointer; }
   .duplicate img {
     width: 19px;
     height: auto; }
