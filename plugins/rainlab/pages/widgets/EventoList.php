@@ -371,7 +371,7 @@ class EventoList extends WidgetBase
         $pagesList = Page::listInTheme($theme, false);
         $pages =  new \Illuminate\Support\Collection($pagesList);
 
-        $iEvento = $pages->where("url",$url)->values();
+        $iEvento = ($pages->where("url",$url)->values())[0];
 
         echo $iEvento;
         echo "\n\n";
