@@ -5586,7 +5586,7 @@ div[data-control="media-manager"] .media-list.tiles li.selected .icon-container 
 .fr-fullscreen .fr-element.fr-view {
   margin-bottom: 200px !important; }
 
-.fr-fullscreen div[href*="MLRichEditor-formEvento"] + .ml-btn {
+.fr-fullscreen div[id*="MLRichEditor-formEvento"] + .ml-btn {
   top: -609px !important; }
 
 .fr-fullscreen .ml-btn {
