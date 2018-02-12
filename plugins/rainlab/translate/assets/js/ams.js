@@ -188,32 +188,42 @@ var ams = function(){
     this.createButtonsWysiwyg = function(){
 
         var toolbar; 
+        var element;
         
         if ( $('#plantillaMunicipios').length > 0 ){
+            element = $('#plantillaMunicipios');
             toolbar = $('#plantillaMunicipios').parent().parent().prev();
         }
         if ( $('#plantillaMunicipio').length > 0 ){
+            element = $('#plantillaMunicipio');
             toolbar = $('#plantillaMunicipio').parent().parent().prev();
         }
         if ( $('#plantillaComarcas').length > 0 ){
+            element = $('#plantillaComarcas');
             toolbar = $('#plantillaComarcas').parent().parent().prev();
         }
         if ( $('#plantillaComarca').length > 0 ){
+            element = $('#plantillaComarca');
             toolbar = $('#plantillaComarca').parent().parent().prev();
         }
         if ( $('#plantillaPlayas').length > 0 ){
+            element = $('#plantillaPlayas');
             toolbar = $('#plantillaPlayas').parent().parent().prev();
         }
         if ( $('#plantillaPlaya').length > 0 ){
+            element = $('#plantillaPlaya');
             toolbar = $('#plantillaPlaya').parent().parent().prev();
         }
         if ( $('#plantillaRuta').length > 0 ){
+            element = $('#plantillaRuta');
             toolbar = $('#plantillaRuta').parent().parent().prev();
         }
         if ( $('#plantillaEvento').length > 0 ){
+            element = $('#plantillaEvento');
             toolbar = $('#plantillaEvento').parent().parent().prev();
         }
         if ( $('#plantillaExperiencia').length > 0 ){
+            element = $('#plantillaExperiencia');
             toolbar = $('#plantillaExperiencia').parent().parent().prev();
         }
       
@@ -247,35 +257,47 @@ var ams = function(){
 
         $('#titleDesc').on('click',function(){
             self.pasteHtmlAtCaret(titleDesc);
+            self.removePEmpty(element);
         })
 
         $('#destacado').on('click',function(){
             self.pasteHtmlAtCaret(destacado);
+            self.removePEmpty(element);
         })
 
         $('#fullImage').on('click',function(){
             self.pasteHtmlAtCaret(fullImage);
+            self.removePEmpty(element);
         })
 
         $('#threeImages').on('click',function(){
             self.pasteHtmlAtCaret(threeImages);
+            self.removePEmpty(element);
         })
 
         $('#twoImages').on('click',function(){
             self.pasteHtmlAtCaret(twoImages);
+            self.removePEmpty(element);
         })
 
         $('#numberSection').on('click',function(){
             self.pasteHtmlAtCaret(numberSection);
+            self.removePEmpty(element);
         })
 
         $('#moreInfo').on('click',function(){
             self.pasteHtmlAtCaret(moreInfo);
+            self.removePEmpty(element);
         })
 
         $('#locations').on('click',function(){
             self.pasteHtmlAtCaret(locations);
+            self.removePEmpty(element);
         })
 
+    }
+
+    this.removePEmpty = function(element){
+        $(element "p:empty").remove();
     }
 };
