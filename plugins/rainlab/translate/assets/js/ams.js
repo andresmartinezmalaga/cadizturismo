@@ -1,38 +1,38 @@
 // Andrés Martinez : ams.js
 var ams = function(){
-	
+
 	var serv = window.location.hostname;
     var self = this;
-	
+
     this.init = function(){
     }
 
     /*this.eventDuplicate = function(){
-        
+
         var btnd = $('.duplicate');
         var allev = $('#allev');
 
         allev.on('click', function(){
             console.log('resfrescando');
             //allev.click();
-        }); 
-        
+        });
+
         btnd.on('click', function(){
             console.log('toktok');
             allev.click();
-        }); 
+        });
 
     }*/
 
     /*this.eventDuplicateRefrsh = function(){
-       
+
         $( document ).ready(function() {
             allev.click();
             var btnd = $('.duplicate');
             var allev = $('#allev');
 
             console.log('resfrescando');
-           
+
 
         });
     }*/
@@ -41,7 +41,7 @@ var ams = function(){
     this.eventSelectTemplate = function(){
 
 		var selectEventTemplate = $('.custom-select');
-		
+
 		selectEventTemplate.on('change', function(event){
 
             var valor = $('#'+event.target.id).val();
@@ -73,7 +73,7 @@ var ams = function(){
                 $(atextarea).html(tpmx)
             }
         })
-	
+
 	}
 
 	this.multilingualGetWysiwygElements = function(event){
@@ -89,11 +89,11 @@ var ams = function(){
         }
 
         var hijoActual = ($(padre).find('textarea').prev().find('.fr-wrapper').find('.fr-element'));
-        
+
         if(hijoActual.length<1){
             padreTemplate = $(event.target).parent().parent().parent().parent().parent().find('textarea[name="markup"]').text();
             hijoActual = ($(padre).children().children().children().prev().find('.fr-wrapper').find('.fr-element'));
-        } 
+        }
 
         return [padreTemplate,hijoActual];
 
@@ -105,19 +105,19 @@ var ams = function(){
         	hijoActual.html(padreTemplate);
         }
 	}
-	
+
 	this.pasteHtmlAtCaret = function(html) {
-        
+
         console.log('entra');
         var sel, range;
-        
+
         if (window.getSelection) {
              console.log('entra2');
             // IE9 and non-IE
             sel = window.getSelection();
 
             if (sel.getRangeAt && sel.rangeCount) {
-                
+
                 range = sel.getRangeAt(0);
                 range.deleteContents();
 
@@ -129,13 +129,13 @@ var ams = function(){
                 el.innerHTML = html;
 
                 var frag = document.createDocumentFragment(), node, lastNode;
-               
+
                 while ( (node = el.firstChild) ) {
                     lastNode = frag.appendChild(node);
                 }
-               
+
                 range.insertNode(frag);
-                
+
                 // Preserve the selection
                 if (lastNode) {
                       console.log('lastNode');
@@ -157,12 +157,12 @@ var ams = function(){
     this.createButtonsWysiwyg = function(){
 
 		var toolbar = $('.fr-toolbar');
-		toolbar.append('<span id="insertP">insert p</span>')
+		toolbar.append('<span id="insertP"> <img src="/storage/app/media/uploaded-files/templates/destacado.svg"/></span>')
 
 		$('#insertP').on('click',function(){
            console.log('saludando');
            self.pasteHtmlAtCaret('<p>Despidiendose</p>');
-        }) 
+        })
 
 		//console.log(toolbar);
 
