@@ -2215,3 +2215,12 @@ div[data-control="media-manager"] .media-list.tiles li.selected .icon-container 
 #ReportContainer-container-toolbar {
   display: none;
 }
+
+/* Botón duplicar */
+.control-treeview ol > li {
+  position: relative;
+}
+.duplicate {
+  position: absolute;
+  z-index: 10;
+}
