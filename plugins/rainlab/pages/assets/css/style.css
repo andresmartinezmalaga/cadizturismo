@@ -3244,6 +3244,7 @@ footer {
 
 .field-richeditor .mock-insert {
   width: 100%;
+  height: 40px;
   display: block !important;
   color: #818181;
   font-size: 14px;

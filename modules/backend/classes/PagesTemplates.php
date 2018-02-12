@@ -311,7 +311,7 @@ class PagesTemplates
       <!-- NUEVA FOTO -->
       <img class="img-destacada" src="***_preurl_***/storage/app/media/uploaded-files/templates/marismas-barbate.jpg" alt="">
   </div>
-  <p class="mock-insert">Inserta aquí una nueva sección<br></p>
+  <p class="mock-insert">Inserta aquí una nueva sección</p>
   <div class="section-txt-village">
     <div class="txt-container">
 
