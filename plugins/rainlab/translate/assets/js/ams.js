@@ -187,8 +187,36 @@ var ams = function(){
 
     this.createButtonsWysiwyg = function(){
 
-        var toolbar = $('.fr-toolbar');
-
+        var toolbar; 
+        
+        if ( $('#plantillaMunicipios').length > 0 ){
+            toolbar = $('#plantillaMunicipios').parent().parent().prev();
+        }
+        if ( $('#plantillaMunicipio').length > 0 ){
+            toolbar = $('#plantillaMunicipio').parent().parent().prev();
+        }
+        if ( $('#plantillaComarcas').length > 0 ){
+            toolbar = $('#plantillaComarcas').parent().parent().prev();
+        }
+        if ( $('#plantillaComarca').length > 0 ){
+            toolbar = $('#plantillaComarca').parent().parent().prev();
+        }
+        if ( $('#plantillaPlayas').length > 0 ){
+            toolbar = $('#plantillaPlayas').parent().parent().prev();
+        }
+        if ( $('#plantillaPlaya').length > 0 ){
+            toolbar = $('#plantillaPlaya').parent().parent().prev();
+        }
+        if ( $('#plantillaRuta').length > 0 ){
+            toolbar = $('#plantillaRuta').parent().parent().prev();
+        }
+        if ( $('#plantillaEvento').length > 0 ){
+            toolbar = $('#plantillaEvento').parent().parent().prev();
+        }
+        if ( $('#plantillaExperiencia').length > 0 ){
+            toolbar = $('#plantillaExperiencia').parent().parent().prev();
+        }
+      
         if ( $('#plantillaMunicipios').length > 0 ||
              $('#plantillaMunicipio').length > 0 ||
              $('#plantillaComarcas').length > 0 ||
@@ -248,8 +276,6 @@ var ams = function(){
         $('#locations').on('click',function(){
             self.pasteHtmlAtCaret(locations);
         })
-
-        //console.log(toolbar);
 
     }
 };
