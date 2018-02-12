@@ -4931,6 +4931,11 @@ nav#layout-mainmenu.navbar-mode-inline ul.mainmenu-nav li:first-child {
   .control-treeview ol > li.dragged div .link-prensa, .control-treeview ol > li > div:hover .link-prensa {
     color: #ffffff; }
 
+.control-treeview ol > li.dragged div + .duplicate img, .control-treeview ol > li > div:hover + .duplicate img {
+  -webkit-filter: brightness(10);
+  filter: brightness(10);
+  -moz-filter: brightness(10); }
+
 .control-treeview.treeview-light ol > li > div > ul.submenu li {
   background-color: #175DA3;
   border-right: 1px solid #175DA3; }
