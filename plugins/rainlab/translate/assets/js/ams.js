@@ -154,19 +154,7 @@ var ams = function(){
         }
     }
 
-    this.createButtonsWysiwyg = function(){
-
-		var toolbar = $('.fr-toolbar');
-		toolbar.append('<span class="custom-wysiwyg" id="insertP"> <img src="/storage/app/media/uploaded-files/templates/destacado.svg"/></span>')
-
-		$('#insertP').on('click',function(){
-           console.log('saludando');
-           self.pasteHtmlAtCaret('<p>Despidiendose</p>');
-        })
-
-		//console.log(toolbar);
-
-	}
+    
 
 	/* RUTAS ICONOS:
 			*** titleDesc: /storage/app/media/uploaded-files/templates/parrafo.svg
@@ -196,4 +184,53 @@ var ams = function(){
 	var moreInfo = '<div class="section-txt"><div class="txt-container"><h3>¿más info?</h3><img src="http://cadizturismo.jekyllme.com/storage/app/media/uploaded-files/templates/big-yellow-separator.svg" class="fr-fic fr-dii"><p><a href="#" rel="noopener noreferrer" target="_blank">Enlace 1</a></p><p><a href="#" rel="noopener noreferrer" target="_blank">Enlace 2</a></p></div></div>';
 	//Ubicaciones
 	var locations = '<div class="section-txt"><div class="txt-container"><div class="municipios"><div class="municipio"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/location-municipio.svg" class="fr-fil fr-dib"><a href="#" target="_blank"><p class="municipio-txt">Ubicación 1</p></a></div><div class="municipio"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/location-municipio.svg" class="fr-fil fr-dib"><a href="#" target="_blank"><p class="municipio-txt">Ubicación 2</p></a></div><div class="municipio"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/location-municipio.svg" class="fr-fil fr-dib"><a href="#" target="_blank"><p class="municipio-txt">Ubicación 3</p></a></div></div></div></div>';
+
+    this.createButtonsWysiwyg = function(){
+
+        var toolbar = $('.fr-toolbar');
+        
+        toolbar.append('<span class="custom-wysiwyg" id="titleDesc"> <img src="/storage/app/media/uploaded-files/templates/parrafo.svg"/></span>');
+        toolbar.append('<span class="custom-wysiwyg" id="destacado"> <img src="/storage/app/media/uploaded-files/templates/destacado.svg"/></span>');
+        toolbar.append('<span class="custom-wysiwyg" id="fullImage"> <img src="/storage/app/media/uploaded-files/templates/destacado.svg"/></span>');
+        toolbar.append('<span class="custom-wysiwyg" id="threeImages"> <img src="/storage/app/media/uploaded-files/templates/galeriatres.svg"/></span>');
+        toolbar.append('<span class="custom-wysiwyg" id="twoImages"> <img src="/storage/app/media/uploaded-files/templates/galeriados.svg"/></span>');
+        toolbar.append('<span class="custom-wysiwyg" id="numberSection"> <img src="/storage/app/media/uploaded-files/templates/parrafonumerado.svg"/></span>');
+        toolbar.append('<span class="custom-wysiwyg" id="moreInfo"> <img src="/storage/app/media/uploaded-files/templates/masinfo.svg"/></span>');
+        toolbar.append('<span class="custom-wysiwyg" id="locations"> <img src="/storage/app/media/uploaded-files/templates/ubicacion.svg"/></span>');
+      
+        $('#titleDesc').on('click',function(){
+            self.pasteHtmlAtCaret(titleDesc);
+        })
+
+        $('#destacado').on('click',function(){
+            self.pasteHtmlAtCaret(destacado);
+        })
+
+        $('#fullImage').on('click',function(){
+            self.pasteHtmlAtCaret(fullImage);
+        })
+
+        $('#threeImages').on('click',function(){
+            self.pasteHtmlAtCaret(threeImages);
+        })
+
+        $('#twoImages').on('click',function(){
+            self.pasteHtmlAtCaret(twoImages);
+        })
+
+        $('#numberSection').on('click',function(){
+            self.pasteHtmlAtCaret(numberSection);
+        })
+
+        $('#moreInfo').on('click',function(){
+            self.pasteHtmlAtCaret(moreInfo);
+        })
+
+        $('#locations').on('click',function(){
+            self.pasteHtmlAtCaret(locations);
+        })
+
+        //console.log(toolbar);
+
+    }
 };
