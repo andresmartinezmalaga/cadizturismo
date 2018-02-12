@@ -137,26 +137,9 @@ class Experience extends ContentBase
           <img class="background-image" value="cover" src="***_preurl_***/storage/app/media/uploaded-files/templates/palmar1.jpg" alt="">
 
           <!-- FEATURES -->
-          <div class="event-features">
-            <div class="feature-exp">
-              <img src="***_preurl_***/storage/app/media/uploaded-files/templates/calendar-exp.svg">
-              <p class="feature-txt">Nº días</p>
-            </div>
-            <div class="feature-exp">
-              <img src="***_preurl_***/storage/app/media/uploaded-files/templates/beach-exp.svg">
-              <p class="feature-txt">Categoría 1</p>
-            </div>
-            <div class="feature-exp">
-              <img src="***_preurl_***/storage/app/media/uploaded-files/templates/natu-exp.svg">
-              <p class="feature-txt">Categoría 2</p>
-            </div>
-            <div class="feature-exp">
-              <img src="***_preurl_***/storage/app/media/uploaded-files/templates/cultura-event.svg">
-              <p class="feature-txt">Tipo de visita</p>
-            </div>
-          </div>
-        </div>
 
+        </div>
+        <div id="phantom-div"></div>
         <!-- SECTION TXT-->
         <div class="section-txt">
 

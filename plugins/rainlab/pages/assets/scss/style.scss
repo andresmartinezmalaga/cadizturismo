@@ -2950,6 +2950,10 @@ html, body {
     line-height: 130px !important;
   }
 
+  .header-experience .header-container {
+    margin-top: 90px !important;
+  }
+
   .background-image {
     top: 0px !important;
   }
@@ -2989,7 +2993,7 @@ html, body {
         padding-bottom: 20px; }
         .header .event-features .feature .feature-txt-mapa, .event-features .feature .feature-txt-mapa, .header .event-features .feature-exp .feature-txt-mapa, .header-event .event-features .feature .feature-txt-mapa, .header-event .event-features .feature-exp .feature-txt-mapa, .header-experience .event-features .feature-exp .feature-txt-mapa, .header-village .event-features .feature .feature-txt-mapa, .header-village .event-features .feature-exp .feature-txt-mapa, .header-general .event-features .feature .feature-txt-mapa, .header-general .event-features .feature-exp .feature-txt-mapa, .header-ruta .event-features .feature .feature-txt-mapa, .header-ruta .event-features .feature-exp .feature-txt-mapa, .header-search .event-features .feature .feature-txt-mapa, .header-search .event-features .feature-exp .feature-txt-mapa {
           top: 91px; }
-  .header-event {
+  .header-event, .header-experience {
     height: auto !important;
   max-height: 698px !important;}
   .header-txt .txt {
