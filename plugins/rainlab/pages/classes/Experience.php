@@ -137,9 +137,9 @@ class Experience extends ContentBase
           <img class="background-image" value="cover" src="***_preurl_***/storage/app/media/uploaded-files/templates/palmar1.jpg" alt="">
 
           <!-- FEATURES -->
-          
-        </div>
 
+        </div>
+        <div id="phantom-div"></div>
         <!-- SECTION TXT-->
         <div class="section-txt">
 
