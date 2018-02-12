@@ -2706,6 +2706,8 @@ html, body {
   .header-playa .txt {
     font-size: 130px !important;
     line-height: 130px !important; }
+  #out-features .feature-exp:first-child {
+    padding-top: 0px !important; }
   .header-experience .header-container {
     margin-top: 90px !important; }
   .background-image {
