@@ -167,6 +167,19 @@ var ams = function(){
 		//console.log(toolbar);
 
 	}
+
+	/* RUTAS ICONOS:
+			*** titleDesc: /storage/app/media/uploaded-files/templates/parrafo.svg
+			*** destacado: /storage/app/media/uploaded-files/templates/destacado.svg
+			*** threeImages: /storage/app/media/uploaded-files/templates/galeriatres.svg
+			*** twoImages: /storage/app/media/uploaded-files/templates/galeriados.svg
+			*** numberSection: /storage/app/media/uploaded-files/templates/parrafonumerado.svg
+			*** moreInfo: /storage/app/media/uploaded-files/templates/masinfo.svg
+			*** locations: /storage/app/media/uploaded-files/templates/ubicacion.svg
+	 */
+
+	/* SECCIONES */
+
 	//Título + descripción
 	var titleDesc = '<div class="section-txt-village"><div class="txt-container"><h3 class="title">TITULAR</h3><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"><p class="desc">Escribe aquí el contenido a desarrollar y agrega una imagen adicional si lo necesitas.</p></div></div>';
 	//Sección destacada
