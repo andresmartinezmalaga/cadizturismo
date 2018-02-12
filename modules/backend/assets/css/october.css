@@ -5569,7 +5569,8 @@ div[data-control="media-manager"] .media-list.tiles li.selected .icon-container 
 
 /* CUSTOM EDITOR TOOLBAR */
 .custom-wysiwyg {
-  width: auto;
+  width: 38px;
+  display: block;
   height: 38px;
   cursor: pointer;
   padding: 0px; }
@@ -5578,3 +5579,5 @@ div[data-control="media-manager"] .media-list.tiles li.selected .icon-container 
     width: auto;
     margin: 12px 12px;
     text-align: center; }
+  .custom-wysiwyg:hover {
+    background: #dddddd; }
