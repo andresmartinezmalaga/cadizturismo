@@ -3605,11 +3605,13 @@ footer {
 }
 .field-richeditor .mock-insert {
   width: 100%;
+  height: 40px;
   display: block !important;
-  background-color: #CECECE;
   color: #818181;
   font-size: 14px;
   text-align: center;
   margin-top: 10px;
-  padding: 10px 3px 10px 15px;
+  background-image: url('/storage/app/media/uploaded-files/templates/insert-svg.svg');
+  background-size: cover;
+  background-position: center;
 }
