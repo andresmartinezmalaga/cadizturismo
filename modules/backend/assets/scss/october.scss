@@ -2228,14 +2228,17 @@ div[data-control="media-manager"] .media-list.tiles li.selected .icon-container 
 /* Botón duplicar */
 .control-treeview ol > li {
   position: relative;
+  div > div {
+    width: 80%;
+  }
 }
 .duplicate {
   position: absolute;
   z-index: 10;
-  top: 29px;
-  right: 8px;
+  top: 6px;
+  right: 32px;
   img {
-    width: 16px;
+    width: 21px;
     height: auto;
   }
 }
