@@ -689,12 +689,12 @@ class StaticApp extends ComponentBase
 
         $dataemail = array('experience' => $dataexperience);
 
-        Mail::send('rainlab.pages::mail.experience', $dataemail, function($message) use ($pdf_data, $contactName, $sendContact, $sendTo)
+        Mail::send('rainlab.pages::mail.experience', $dataemail, function($message) use ($pdf_data, $contactName, $sendContact, $sendTo, $dataexperience)
         {
             $message->from($sendContact, $contactName);
             $message->to($sendTo);
             $message->subject('Tu experiencia en Cadiz Turismo');
-            $message->attachData($pdf_data, 'Experience.pdf');
+            $message->attachData($pdf_data, $dataexperience['title']);
 
         });
     }
