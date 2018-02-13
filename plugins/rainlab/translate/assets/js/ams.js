@@ -184,7 +184,8 @@ var ams = function(){
 
         $('.btwtitleDesc').on('click',function(){
             self.pasteHtmlAtCaret(titleDesc);
-            console.log(frElement);
+            console.log(frElement.html());
+             console.log(frElement.find('textarea').text());
         })
 
         $('.btwdestacado').on('click',function(){
