@@ -16,7 +16,7 @@ class PagesTemplates
 
   static $comarcas = '
   <!-- HEADER -->
-  <div id="plantillaComarcas" class="header-general header-comarcas">
+  <div class="plantillaComarcas header-general header-comarcas">
     <div class="header-container">
       <div class="header-txt">
         <h1 class="txt">Comarcas</h1>
@@ -174,7 +174,7 @@ class PagesTemplates
 
   static $comarca = '
   <!-- HEADER -->
-  <div id="plantillaComarca" class="header header-comarca">
+  <div class="plantillaComarca header header-comarca">
     <div class="header-container header-village-container">
       <div class="header-txt header-txt-village">
         <h1 class="txt">Nombre de la comarca</h1><img class="brush fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
@@ -253,7 +253,7 @@ class PagesTemplates
 
   static $municipios = '
   <!-- HEADER -->
-  <div id="plantillaMunicipios" class="header-general header-municipios">
+  <div class="plantillaMunicipios header-general header-municipios">
     <div class="header-container">
       <div class="header-txt">
         <h1 class="txt">Municipios</h1><img class="brush fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
@@ -280,7 +280,7 @@ class PagesTemplates
 
   static $municipio = '
   <!-- HEADER -->
-  <div id="plantillaMunicipio" class="header header-village">
+  <div class="plantillaMunicipio header header-village">
     <div class="header-container header-village-container">
       <div class="header-txt header-txt-village">
         <h1 class="txt">Nombre del municipio</h1><img class="brush fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
@@ -416,7 +416,7 @@ class PagesTemplates
 
   static $playas = '
   <!-- HEADER -->
-  <div id="plantillaPlayas" class="header-general header-playas">
+  <div class="plantillaPlayas header-general header-playas">
     <div class="header-container">
       <div class="header-txt">
         <h1 class="txt">Playas</h1><img class="brush fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
@@ -448,7 +448,7 @@ class PagesTemplates
 
   static $playa = '
   <!-- HEADER -->
-  <div id="plantillaPlaya" class="header header-playa">
+  <div class="plantillaPlaya header header-playa">
     <div class="header-container header-village-container">
       <div class="header-txt header-txt-village">
         <h1 class="txt">Nombre de la playa</h1><img class="brush fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>

@@ -37,7 +37,10 @@
         this.ams.eventSelectTemplate();
 
         // Andrés Martínez : Add template "buttons" to Wysiwyg
-        this.ams.createButtonsWysiwyg();
+        this.ams.createButtonsWysiwyg($(element));
+
+        // Andrés Martínez : Add reload template "button" to Wysiwyg
+        this.ams.createButtonReloadTemplateWysiwyg($(element));        
         
         this.$dropdown.on('click', '[data-switch-locale]', function(event){
 

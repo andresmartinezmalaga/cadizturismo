@@ -128,7 +128,7 @@ class Ruta extends ContentBase
         // Andrés Martínez : Load rutas template on markup
         $template = '
         <!-- HEADER -->
-        <div id="plantillaRuta" class="header-event main-exp">
+        <div class="plantillaRuta header-event main-exp">
           <div class="header-container">
             <div class="header-txt">
               <h1 class="txt">Nombre de la ruta</h1>
