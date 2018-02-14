@@ -5573,11 +5573,12 @@ div[data-control="media-manager"] .media-list.tiles li.selected .icon-container 
   display: inline-block;
   height: 38px;
   cursor: pointer;
-  padding: 0px; }
+  padding: 0px;
+  text-align: center; }
   .custom-wysiwyg img {
     height: 14px;
     width: auto;
-    margin: 12px 12px;
+    margin: 12px auto;
     text-align: center; }
   .custom-wysiwyg:hover {
     background: #dddddd; }
