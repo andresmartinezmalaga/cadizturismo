@@ -145,7 +145,7 @@ abstract class ExportModel extends Model
         $csvName = uniqid('oc');
         $csvPath = temp_path().'/'.$csvName;
         $output = $csv->__toString();
-
+           
         File::put($csvPath, $output);
 
         return $csvName;
