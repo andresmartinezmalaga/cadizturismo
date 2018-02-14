@@ -269,6 +269,8 @@ class Page extends ContentBase
         $mm = str_replace(array("\r\n","\r","\n","\t"), "",$this->markup);
         $mm = str_replace("<p><br></p>", "", $mm);
         $mm = str_replace("<p></p>", "", $mm);
+        $mm = str_replace("<p>&nbsp;</p>", "", $mm);
+       
         $this->markup = $mm;
        
         $this->fileName = $this->generateFilenameFromCode();

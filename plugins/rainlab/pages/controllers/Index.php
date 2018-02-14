@@ -381,6 +381,7 @@ class Index extends Controller
             $strHtml = str_replace(array("\r\n","\r","\n","\t"), "",$strHtml);
             $strHtml = str_replace("<p><br></p>", "", $strHtml);
             $strHtml = str_replace("<p></p>", "", $strHtml);
+            $strHtml = str_replace("<p>&nbsp;</p>", "", $strHtml);
 
             $strFinal = explode("==", $str)[0]."==\n".$strHtml;
 
@@ -1334,6 +1335,7 @@ class Index extends Controller
         $markup = str_replace(array("\r\n","\r","\n","\t"), "",$markup);
         $markup = str_replace("<p><br></p>", "", $markup);
         $markup = str_replace("<p></p>", "", $markup);
+        $markup = str_replace("<p>&nbsp;</p>", "", $markup);
 
         return $markup;
     }
