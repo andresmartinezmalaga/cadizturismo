@@ -168,7 +168,7 @@ var ams = function(){
              toolbar.append('<span data-toggle="tooltip" data-placement="bottom" data-delay="200" title="Galería 3" class="btwthreeImages custom-wysiwyg"> <img src="/storage/app/media/uploaded-files/templates/galeriatres.svg"/></span>');
              toolbar.append('<span data-toggle="tooltip" data-placement="bottom" data-delay="200" title="Galería 2" class="btwtwoImages custom-wysiwyg"> <img src="/storage/app/media/uploaded-files/templates/galeriados.svg"/></span>');
              toolbar.append('<span data-toggle="tooltip" data-placement="bottom" data-delay="200" title="Info" class="btwmoreInfo custom-wysiwyg"> <img src="/storage/app/media/uploaded-files/templates/masinfo.svg"/></span>');
-             toolbar.append('<span data-toggle="tooltip" data-placement="bottom" data-delay="200" title="Ubicación" class="btwlocations custom-wysiwyg"> <img src="/storage/app/media/uploaded-files/templates/ubicacion.svg"/></span>');
+             toolbar.append('<span data-popup="true" class="btwlocations custom-wysiwyg"> <img src="/storage/app/media/uploaded-files/templates/ubicacion.svg"/><span class="fr-sr-only">Ubicación</span></span>');
 
         }
 
