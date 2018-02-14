@@ -102,7 +102,7 @@ var ams = function(){
 
                 // Preserve the selection
                 if (lastNode) {
-                    
+
                     range = range.cloneRange();
                     range.setStartAfter(lastNode);
                     range.collapse(true);
@@ -146,12 +146,12 @@ var ams = function(){
 	var locations = '<div class="section-txt"><div class="txt-container"><div class="municipios"><div class="municipio"><img src="/storage/app/media/uploaded-files/templates/location-municipio.svg" class="fr-fil fr-dib"><a href="#" target="_blank"><p class="municipio-txt">Ubicación 1</p></a></div><div class="municipio"><img src="/storage/app/media/uploaded-files/templates/location-municipio.svg" class="fr-fil fr-dib"><a href="#" target="_blank"><p class="municipio-txt">Ubicación 2</p></a></div><div class="municipio"><img src="/storage/app/media/uploaded-files/templates/location-municipio.svg" class="fr-fil fr-dib"><a href="#" target="_blank"><p class="municipio-txt">Ubicación 3</p></a></div></div></div></div>';
 
     this.createButtonsWysiwyg = function(element){
-       
+
         var ptid = $(element)[0].id;
         var pt = $('#'+ptid);
         var toolbar = pt.find('.fr-toolbar');
         var frElement = pt.find('.fr-element');
-        
+
         if ( pt.find('.plantillaMunicipios').length > 0 ||
              pt.find('.plantillaMunicipio').length > 0 ||
              pt.find('.plantillaComarcas').length > 0 ||
@@ -161,24 +161,24 @@ var ams = function(){
              pt.find('.plantillaRuta').length > 0 ||
              pt.find('.plantillaEvento').length > 0 ||
              pt.find('.plantillaExperiencia').length > 0) {
-            
-             toolbar.append('- <span class="btwtitleDesc custom-wysiwyg"> <img src="/storage/app/media/uploaded-files/templates/parrafo.svg"/></span>');
-             toolbar.append('<span class="btwdestacado custom-wysiwyg"> <img src="/storage/app/media/uploaded-files/templates/destacado.svg"/></span>');
-             toolbar.append('<span class="btwfullImage custom-wysiwyg"> <img src="/storage/app/media/uploaded-files/templates/destacado.svg"/></span>');
-             toolbar.append('<span class="btwthreeImages custom-wysiwyg"> <img src="/storage/app/media/uploaded-files/templates/galeriatres.svg"/></span>');
-             toolbar.append('<span class="btwtwoImages custom-wysiwyg"> <img src="/storage/app/media/uploaded-files/templates/galeriados.svg"/></span>');
-             toolbar.append('<span class="btwmoreInfo custom-wysiwyg"> <img src="/storage/app/media/uploaded-files/templates/masinfo.svg"/></span>');
-             toolbar.append('<span class="btwlocations custom-wysiwyg"> <img src="/storage/app/media/uploaded-files/templates/ubicacion.svg"/></span>');          
-                
+
+             toolbar.append('- <span data-toggle="tooltip" data-placement="bottom" data-delay="200" title="Título + descripción" class="btwtitleDesc custom-wysiwyg"> <img src="/storage/app/media/uploaded-files/templates/parrafo.svg"/></span>');
+             toolbar.append('<span data-toggle="tooltip" data-placement="bottom" data-delay="200" title="Sección destacada" class="btwdestacado custom-wysiwyg"> <img src="/storage/app/media/uploaded-files/templates/destacado.svg"/></span>');
+             toolbar.append('<span data-toggle="tooltip" data-placement="bottom" data-delay="200" title="Imagen" class="btwfullImage custom-wysiwyg"> <img src="/storage/app/media/uploaded-files/templates/destacado.svg"/></span>');
+             toolbar.append('<span data-toggle="tooltip" data-placement="bottom" data-delay="200" title="Galería 3" class="btwthreeImages custom-wysiwyg"> <img src="/storage/app/media/uploaded-files/templates/galeriatres.svg"/></span>');
+             toolbar.append('<span data-toggle="tooltip" data-placement="bottom" data-delay="200" title="Galería 2" class="btwtwoImages custom-wysiwyg"> <img src="/storage/app/media/uploaded-files/templates/galeriados.svg"/></span>');
+             toolbar.append('<span data-toggle="tooltip" data-placement="bottom" data-delay="200" title="Info" class="btwmoreInfo custom-wysiwyg"> <img src="/storage/app/media/uploaded-files/templates/masinfo.svg"/></span>');
+             toolbar.append('<span data-toggle="tooltip" data-placement="bottom" data-delay="200" title="Ubicación" class="btwlocations custom-wysiwyg"> <img src="/storage/app/media/uploaded-files/templates/ubicacion.svg"/></span>');
+
         }
 
         if ( pt.find('.plantillaRuta').length > 0 ||
              pt.find('.plantillaMiniEvento').length > 0 ||
              pt.find('.plantillaMaxiEvento').length > 0 ||
              pt.find('.plantillaExperiencia').length > 0) {
-             
-             toolbar.append('<span class="btwnumberSection custom-wysiwyg"> <img src="/storage/app/media/uploaded-files/templates/parrafonumerado.svg"/></span>');
-               
+
+             toolbar.append('<span data-toggle="tooltip" data-placement="bottom" data-delay="200" title="Enumeración" class="btwnumberSection custom-wysiwyg"> <img src="/storage/app/media/uploaded-files/templates/parrafonumerado.svg"/></span>');
+
         }
 
 
@@ -220,11 +220,11 @@ var ams = function(){
     }
 
     this.createButtonReloadTemplateWysiwyg = function(element){
-        
+
         var ptid = $(element)[0].id;
         var pt = $('#'+ptid);
         var toolbar = pt.find('.fr-toolbar');
-        
+
         toolbar.append('- <span class="custom-wysiwyg reloadTemplate"> <img class="reloadTemplateImage" src="/storage/app/media/uploaded-files/templates/destacado.svg"/></span>');
 
         $('.reloadTemplate').on('click',function(e){
@@ -235,7 +235,7 @@ var ams = function(){
     this.reloadTemplate = function(e){
         //var element = ($('#'+e.target.id).parent().parent().parent().find('.fr-wrapper').find('.fr-element'));
         var element = ($(e.target).parent().parent().parent().find('.fr-wrapper').find('.fr-element'));
-        console.log(element);       
+        console.log(element);
         element.html('hola');
     }
 

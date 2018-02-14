@@ -2252,10 +2252,11 @@ div[data-control="media-manager"] .media-list.tiles li.selected .icon-container 
   height: 38px;
   cursor: pointer;
   padding: 0px;
+  text-align: center;
   img {
     height: 14px;
     width: auto;
-    margin: 12px 12px;
+    margin: 12px auto;
     text-align: center;
   }
   &:hover {
@@ -2267,9 +2268,30 @@ div[data-control="media-manager"] .media-list.tiles li.selected .icon-container 
   .fr-element.fr-view {
     margin-bottom: 200px !important;
   }
-  // div[id*="MLRichEditor-formEvento"] + .ml-btn {
-  //   top: -509px !important;
-  // }
+  /* EXPERIENCIAS */
+  div[id*="MLRichEditor-formExperience"] + .ml-btn {
+    top: -506px !important;
+  }
+  div[id*="MLRichEditor-formExperience"] ~ .ml-dropdown-menu {
+    top: -478px !important;
+  }
+
+  /* EVENTOS */
+  div[id*="MLRichEditor-formEvento"] + .ml-btn {
+    top: -694px !important;
+  }
+  div[id*="MLRichEditor-formEvento"] ~ .ml-dropdown-menu {
+    top: -669px !important;
+  }
+
+  /* RUTAS */
+  div[id*="MLRichEditor-formRuta"] + .ml-btn {
+    top: -598px !important;
+  }
+  div[id*="MLRichEditor-formRuta"] ~ .ml-dropdown-menu {
+    top: -573px !important;
+  }
+
   .ml-btn {
     top: -409px !important;
     z-index: 999 !important;
