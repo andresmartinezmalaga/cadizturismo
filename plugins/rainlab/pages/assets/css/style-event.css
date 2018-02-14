@@ -543,7 +543,7 @@
   display: -webkit-flex;
   display: flex;
   align-items: start;
-  justify-content: left;
+  justify-content: center;
   padding-top: 10px;
   padding-bottom: 10px;
   width: 100%;
@@ -561,8 +561,6 @@
     margin-right: 64px; }
     .municipios-snippet .municipio:last-child {
       margin-right: 0px; }
-    .municipios-snippet .municipio:first-child {
-      padding-left: 160px; }
     .municipios-snippet .municipio img {
       position: relative;
       top: 5px;

@@ -555,7 +555,7 @@
 .municipios-snippet {
   @include flexbox();
   align-items: start;
-  justify-content: left;
+  justify-content: center;
   padding-top: 10px;
   padding-bottom: 10px;
   width: 100%;
@@ -569,9 +569,6 @@
     margin-right: 64px;
     &:last-child {
       margin-right: 0px;
-    }
-    &:first-child {
-      padding-left: 160px;
     }
     img {
       position: relative;
