@@ -40,7 +40,7 @@ var ams = function(){
             }
 
             self.createButtonsWysiwyg(element);
-            
+
         })
 	}
 
@@ -225,7 +225,7 @@ var ams = function(){
         var pt = $('#'+ptid);
         var toolbar = pt.find('.fr-toolbar');
 
-        toolbar.append('- <span class="custom-wysiwyg reloadTemplate"> <img class="reloadTemplateImage" src="/storage/app/media/uploaded-files/templates/destacado.svg"/></span>');
+        toolbar.append('- <span data-toggle="tooltip" data-placement="bottom" data-delay="200" title="Recargar plantilla" class="custom-wysiwyg reloadTemplate"> <img class="reloadTemplateImage" src="/storage/app/media/uploaded-files/templates/reload.svg"/></span>');
 
         $('.reloadTemplate').on('click',function(e){
             self.reloadTemplate(e);
