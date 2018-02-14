@@ -547,7 +547,6 @@
   padding-top: 10px;
   padding-bottom: 10px;
   width: 100%;
-  padding-left: 160px;
   position: relative;
   z-index: 10;
   background-color: white; }
@@ -562,6 +561,8 @@
     margin-right: 64px; }
     .municipios-snippet .municipio:last-child {
       margin-right: 0px; }
+    .municipios-snippet .municipio:first-child {
+      padding-left: 160px; }
     .municipios-snippet .municipio img {
       position: relative;
       top: 5px;
