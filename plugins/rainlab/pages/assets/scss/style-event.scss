@@ -555,8 +555,13 @@
 .municipios-snippet {
   @include flexbox();
   align-items: start;
-  justify-content: left;
-  margin-top: 20px;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+  background-color: white;
   .municipio {
     @include flexbox();
     align-items: baseline;
