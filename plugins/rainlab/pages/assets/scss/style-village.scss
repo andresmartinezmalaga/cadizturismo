@@ -153,7 +153,8 @@ transform: $value;
   background-size: cover;
   background-attachment: fixed;
   z-index: 10;
-  border-top: 100px solid white;
+  border-top: 80px solid white;
+  border-bottom: 80px solid white;
   background-color: white;
   .img-destacada {
     mask-image: url('../svg/mask4.svg');
