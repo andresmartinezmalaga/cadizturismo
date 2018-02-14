@@ -551,7 +551,7 @@ class PagesTemplates
 
   static $naturaleza = '
   <!-- HEADER -->
-  <div class="header-general header-naturaleza">
+  <div class="plantillaNaturaleza header-general header-naturaleza">
     <div class="header-container">
       <div class="header-txt">
         <h1 class="txt">Naturaleza</h1><img class="brush fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
@@ -608,7 +608,7 @@ class PagesTemplates
 
   static $viaVerde = '
   <!-- HEADER -->
-  <div class="header header-viaverde" id="#ruta-viaverde">
+  <div class="plantillaViaVerde header header-viaverde" id="#ruta-viaverde">
   <div class="header-container header-village-container">
     <div class="header-txt header-txt-village">
       <h1 class="txt" id="natu-via">Vía Verde de la Sierra</h1><img class="brush fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
@@ -696,7 +696,7 @@ class PagesTemplates
 
     static $birdwatching = '
     <!-- HEADER -->
-    <div class="header header-birdwatching">
+    <div class="plantillaBirdWatching header header-birdwatching">
       <div class="header-container header-village-container">
         <div class="header-txt header-txt-village">
           <h1 id="natu-via" class="txt">Birdwatching</h1>
@@ -777,7 +777,7 @@ class PagesTemplates
 
     static $espaciosnaturales = '
     <!-- HEADER -->
-    <div class="header-general header-espacios">
+    <div class="plantillaEspaciosNaturales header-general header-espacios">
       <div class="header-container">
         <div class="header-txt">
           <h1 id="espacios" class="txt">Espacios naturales</h1>
@@ -873,7 +873,7 @@ class PagesTemplates
 
     static $espacionatural = '
     <!-- HEADER -->
-    <div class="header header-alcornocales">
+    <div class="plantillaEspacioNatural header header-alcornocales">
       <div class="header-container header-village-container">
         <div class="header-txt header-txt-village">
           <h1 id="natu-via" class="txt">Nombre del espacio</h1>
@@ -986,7 +986,7 @@ class PagesTemplates
 
     static $diversion = '
     <!-- HEADER -->
-    <div class="header-general header-ocio">
+    <div class="plantillaDiversion header-general header-ocio">
       <div class="header-container">
         <div class="header-txt">
           <h1 class="txt">Diversión</h1><img class="brush fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt="">
@@ -1044,7 +1044,7 @@ class PagesTemplates
 
     static $compras = '
     <!-- HEADER -->
-    <div class="header header-compras">
+    <div class="plantillaCompras header header-compras">
       <div class="header-container header-village-container">
         <div class="header-txt header-txt-village">
           <h1 class="txt" id="natu-via">Compras</h1><img class="brush fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
@@ -1126,7 +1126,7 @@ class PagesTemplates
 
     static $localesOcio = '
     <!-- HEADER -->
-    <div class="header header-locales">
+    <div class="plantillaLocalesOcio header header-locales">
       <div class="header-container header-village-container">
         <div class="header-txt header-txt-village">
           <h1 id="natu-via" class="txt">Locales de ocio</h1>
@@ -1207,7 +1207,7 @@ class PagesTemplates
 
     static $parquesOcio = '
     <!-- HEADER -->
-    <div class="header header-parques">
+    <div class="plantillaParquesOcio header header-parques">
       <div class="header-container header-village-container">
         <div class="header-txt header-txt-village">
           <h1 id="natu-via" class="txt">Parques de ocio</h1>
@@ -1288,7 +1288,7 @@ class PagesTemplates
 
     static $cultura = '
     <!-- HEADER -->
-    <div class="header-general header-cultura">
+    <div class="plantillaCultura header-general header-cultura">
       <div class="header-container">
         <div class="header-txt">
           <h1 class="txt">Cultura</h1><img class="brush fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
@@ -1353,7 +1353,7 @@ class PagesTemplates
 
     static $monumento = '
     <!-- HEADER -->
-    <div class="header header-monumentos">
+    <div class="plantillaMonumento header header-monumentos">
       <div class="header-container header-village-container">
         <div class="header-txt header-txt-village">
           <h1 id="natu-via" class="txt">Monumentos</h1>
@@ -1434,7 +1434,7 @@ class PagesTemplates
 
     static $fiesta = '
     <!-- HEADER -->
-    <div class="header header-fiesta">
+    <div class="plantillaFiesta header header-fiesta">
       <div class="header-container header-village-container">
         <div class="header-txt header-txt-village">
           <h1 id="natu-via" class="txt">Fiesta</h1>
@@ -1516,7 +1516,7 @@ class PagesTemplates
 
     static $flamenco = '
     <!-- HEADER -->
-    <div class="header header-flamenco">
+    <div class="plantillaFlamenco header header-flamenco">
       <div class="header-container header-village-container">
         <div class="header-txt header-txt-village">
 
@@ -1599,7 +1599,7 @@ class PagesTemplates
 
     static $teatro = '
     <!-- HEADER -->
-    <div class="header header-teatro">
+    <div class="plantillaTeatro header header-teatro">
       <div class="header-container header-village-container">
         <div class="header-txt header-txt-village">
           <h1 id="natu-via" class="txt">Teatro</h1>
@@ -1680,7 +1680,7 @@ class PagesTemplates
 
     static $gastronomia = '
     <!-- HEADER -->
-    <div class="header-general header-cocina">
+    <div class="plantillaGastronomia header-general header-cocina">
       <div class="header-container">
         <div class="header-txt">
           <h1 class="txt">Gastronomía</h1><img class="brush fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
@@ -1737,7 +1737,7 @@ class PagesTemplates
 
     static $comida = '
     <!-- HEADER -->
-    <div class="header header-comida">
+    <div class="plantillaComida header header-comida">
       <div class="header-container header-village-container">
         <div class="header-txt header-txt-village">
           <h1 id="natu-via" class="txt">Comida tradicional</h1>
@@ -1818,7 +1818,7 @@ class PagesTemplates
 
     static $vino = '
     <!-- HEADER -->
-    <div class="header header-vino">
+    <div class="plantillaVino header header-vino">
       <div class="header-container header-village-container">
         <div class="header-txt header-txt-village">
           <h1 id="natu-via" class="txt">El vino</h1>
@@ -1899,7 +1899,7 @@ class PagesTemplates
 
     static $gourmet = '
     <!-- HEADER -->
-    <div class="header header-gourmet">
+    <div class="plantillaGourmet header header-gourmet">
       <div class="header-container header-village-container">
         <div class="header-txt header-txt-village">
           <h1 class="txt" id="natu-via">Gourmet</h1><img class="brush fr-fil fr-dib" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt=""></div>
@@ -1979,7 +1979,8 @@ class PagesTemplates
       return $gourmet;
     }
 
-    static $llegar = '<div class="static-header como-llegar-header">
+    static $llegar = '
+    <div class="plantillaLlegar static-header como-llegar-header">
       <img class="img-header"
       src="***_preurl_***/storage/app/media/uploaded-files/templates/como-llegar-header.jpg"
       alt="">
@@ -2076,7 +2077,8 @@ class PagesTemplates
       return $llegar;
     }
 
-    static $somos = '<div class="static-header about-header">
+    static $somos = '
+    <div class="plantillaSomos static-header about-header">
       <img class="img-header"
       src="***_preurl_***/storage/app/media/uploaded-files/templates/cultura.jpg"
       alt="">
@@ -2147,7 +2149,8 @@ class PagesTemplates
       return $somos;
     }
 
-    static $ayuda = '<div id="ayuda-header" class="ayuda-header">
+    static $ayuda = '
+    <div id="ayuda-header" class="plantillaAyuda ayuda-header">
       <img class="img-header"
       src="***_preurl_***/storage/app/media/uploaded-files/templates/ayuda-header.jpg"
       alt="">
@@ -2216,7 +2219,8 @@ class PagesTemplates
       return $ayuda;
     }
 
-    static $sala = '<div class="static-header about-header">
+    static $sala = '
+    <div class="plantillaSala static-header about-header">
       <img class="img-header"
       src="***_preurl_***/storage/app/media/uploaded-files/templates/sala-prensa.jpg"
       alt="">
@@ -2296,7 +2300,8 @@ class PagesTemplates
     }
 
 
-    static $publicaciones = '<div id="ayuda-header" class="ayuda-header">
+    static $publicaciones = '
+    <div id="ayuda-header" class="plantillaPublicaciones ayuda-header">
       <img class="img-header"
       src="***_preurl_***/storage/app/media/uploaded-files/templates/publicaciones.jpg"
       alt="publicaciones">
@@ -2320,7 +2325,8 @@ class PagesTemplates
       return $publicaciones;
     }
 
-    static $prensa = '<div id="ayuda-header" class="ayuda-header">
+    static $prensa = '
+    <div id="ayuda-header" class="plantillaPrensa ayuda-header">
       <img class="img-header"
       src="***_preurl_***/storage/app/media/uploaded-files/templates/prensa-header.jpg"
       alt="">
@@ -2344,7 +2350,8 @@ class PagesTemplates
       return $prensa;
     }
 
-    static $reportaje = '<div id="ayuda-header" class="ayuda-header">
+    static $reportaje = '
+    <div id="ayuda-header" class="plantillaReportaje ayuda-header">
       <img class="img-header"
       src="***_preurl_***/storage/app/media/uploaded-files/templates/reportaje-header.jpg"
       alt="">
@@ -2368,7 +2375,8 @@ class PagesTemplates
       return $reportaje;
     }
 
-    static $cookies = '<div class="full-legal-container"><div class="made-up-space"></div><div class="aviso-legal-container">
+    static $cookies = '
+    <div class="plantillaCookies full-legal-container"><div class="made-up-space"></div><div class="aviso-legal-container">
   <h1>Política de uso de cookies</h1>
   <p>En cumplimiento del artículo 22.2 de la Ley 34/2002, de Servicios de la Sociedad de la Información, informamos a los usuarios de nuestro
   sitio web de nuestra Política de uso de Cookies.</p>
@@ -2434,7 +2442,8 @@ static function getTCookies(){
   return $cookies;
 }
 
-static $legal = '<div class="full-legal-container"><div class="made-up-space"></div>
+static $legal = '
+<div class="plantillaLegal full-legal-container"><div class="made-up-space"></div>
 <div class="aviso-legal-container">
   <h1 class="legal">Política de Privacidad y Ley de Protección de datos de Carácter Personal LOPD.</h1>
   <p>Los Datos serán incorporados a un fichero responsabilidad del <b>Patronato Provincial de Turismo
