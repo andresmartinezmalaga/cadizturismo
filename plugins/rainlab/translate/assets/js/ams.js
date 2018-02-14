@@ -40,6 +40,7 @@ var ams = function(){
             }
 
             self.createButtonsWysiwyg(element);
+            
         })
 	}
 
