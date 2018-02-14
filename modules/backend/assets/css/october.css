@@ -5598,9 +5598,9 @@ div[data-control="media-manager"] .media-list.tiles li.selected .icon-container 
   .fr-fullscreen div[id*="MLRichEditor-formEvento"] ~ .ml-dropdown-menu {
     top: -669px !important; }
   .fr-fullscreen div[id*="MLRichEditor-formRuta"] + .ml-btn {
-    top: -619px !important; }
+    top: -598px !important; }
   .fr-fullscreen div[id*="MLRichEditor-formRuta"] ~ .ml-dropdown-menu {
-    top: -590px !important; }
+    top: -573px !important; }
   .fr-fullscreen .ml-btn {
     top: -409px !important;
     z-index: 999 !important; }
