@@ -41,6 +41,8 @@ use Exception;
 // Andrés Martinez use PagesTemplates
 use Backend\Classes\PagesTemplates;
 
+use RainLab\Translate\Models\Locale;
+
 /**
  * Pages and Menus index
  *
@@ -286,6 +288,8 @@ class Index extends Controller
 
     public function onSave()
     {
+        
+
         $this->validateRequestTheme();
 
         $type = Request::input('objectType');
@@ -349,7 +353,41 @@ class Index extends Controller
 
         Flash::success(Lang::get($successMessage));
 
+        // Andrés Martínez : Clean html        
+        $this->cleanHtml('',$object->fileName); 
+        $MLocale = new Locale();
+        foreach ($MLocale->listAvailable() as $key => $value) {            
+            $this->cleanHtml('-'.$key,$object->fileName);            
+        }
+
         return $result;
+    }
+
+    // Andrés Martínez : Clean html  
+    public function cleanHtml($key,$objFilename)
+    {
+        // Get content_path
+        $content_path = themes_path().'/default/content/static-pages'.$key.'/'; 
+
+        // Source file
+        $sourceFilePath = $content_path.$objFilename;
+      
+        if (\File::exists($sourceFilePath))
+        {
+            $str=file_get_contents($sourceFilePath);
+
+            $strHtml = explode("==", $str)[1];
+
+            $strHtml = str_replace(array("\r\n","\r","\n","\t"), "",$strHtml);
+            $strHtml = str_replace("<p><br></p>", "", $strHtml);
+            $strHtml = str_replace("<p></p>", "", $strHtml);
+
+            $strFinal = explode("==", $str)[0]."==\n".$strHtml;
+
+            if(!file_put_contents($sourceFilePath, $strFinal)){
+                 die("Couldn't edit file"); 
+            }              
+        }        
     }
 
     public function onCreateObject()
@@ -889,7 +927,6 @@ class Index extends Controller
 
     protected function fillObjectFromPost($type)
     {
-
         $objectPath = trim(Request::input('objectPath'));
         $object = $objectPath ? $this->loadObject($type, $objectPath) : $this->createObject($type);
 
@@ -1162,19 +1199,14 @@ class Index extends Controller
         if(isset($objectData['settings']['viewBag'])){
 
             if(isset($object->localeUrl)){
-                
+
                 $alangs = $object->localeUrl;
                 
                 foreach ($alangs as $key => $value) {
-                   $objectData['settings']['viewBag']['localeUrl['.$key.']'] = $objectData['settings']['viewBag']['url'];
+                    $objectData['settings']['viewBag']['localeUrl['.$key.']'] = $objectData['settings']['viewBag']['url'];
+                    
                 }
             }
-            
-
-            /*$objectData['settings']['viewBag']['localeUrl[en]'] = $objectData['settings']['viewBag']['url'];
-            $objectData['settings']['viewBag']['localeUrl[fr]'] = $objectData['settings']['viewBag']['url'];
-            $objectData['settings']['viewBag']['localeUrl[de]'] = $objectData['settings']['viewBag']['url'];
-            $objectData['settings']['viewBag']['localeUrl[ru]'] = $objectData['settings']['viewBag']['url'];*/
         }
 
         $object->fill($objectData);
@@ -1185,8 +1217,6 @@ class Index extends Controller
         if ($object instanceof CmsCompoundObject && is_array($viewBag)) {
             $object->viewBag = $viewBag + $object->viewBag;
         }
-
-
 
         return $object;
     }
@@ -1297,9 +1327,13 @@ class Index extends Controller
      */
     protected function convertLineEndings($markup)
     {
+
         $markup = str_replace("\r\n", "\n", $markup);
         $markup = str_replace("\r", "\n", $markup);
 
+        $markup = str_replace(array("\r\n","\r","\n","\t"), "",$markup);
+        $markup = str_replace("<p><br></p>", "", $markup);
+        $markup = str_replace("<p></p>", "", $markup);
 
         return $markup;
     }

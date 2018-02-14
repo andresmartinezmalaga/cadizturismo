@@ -151,6 +151,8 @@ class Themes extends Controller
             throw new ValidationException(['dir_name' => trans('cms::lang.theme.dir_name_taken')]);
         }
 
+      
+        
         File::makeDirectory($destinationPath);
         File::makeDirectory($destinationPath.'/assets');
         File::makeDirectory($destinationPath.'/content');

@@ -185,7 +185,8 @@ class Asset extends Extendable
                 ));
             }
         }
-
+     
+        
         $newFullPath = $fullPath;
         if (@File::put($fullPath, $this->content) === false) {
             throw new ApplicationException(Lang::get(

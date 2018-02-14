@@ -957,9 +957,9 @@ class MediaManager extends WidgetBase
             $library = MediaLibrary::instance();
             $tempFilePath = $this->getLocalTempFilePath($path);
 
-            if (!@File::put($tempFilePath, $library->get($path))) {
-                throw new SystemException('Error saving remote file to a temporary location');
-            }
+            //if (!@File::put($tempFilePath, $library->get($path))) {
+                //throw new SystemException('Error saving remote file to a temporary location');
+            //}
 
             /*
              * Resize the thumbnail and save to the thumbnails directory

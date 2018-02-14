@@ -214,8 +214,7 @@ class Page extends ContentBase
      */
     public function fill(array $attributes)
     {
-        
-
+       
         parent::fill($attributes);
 
         /*
@@ -266,7 +265,12 @@ class Page extends ContentBase
      * Triggered before a new object is saved.
      */
     public function beforeCreate()
-    {
+    {   
+        $mm = str_replace(array("\r\n","\r","\n","\t"), "",$this->markup);
+        $mm = str_replace("<p><br></p>", "", $mm);
+        $mm = str_replace("<p></p>", "", $mm);
+        $this->markup = $mm;
+       
         $this->fileName = $this->generateFilenameFromCode();
     }
 
@@ -385,6 +389,7 @@ class Page extends ContentBase
      */
     public function setDefaultLayout($parentPage)
     {
+
 
         // Check parent page for a defined child layout
         if ($parentPage) {
@@ -700,7 +705,6 @@ class Page extends ContentBase
             $markup = TextParser::parse($markup, $globalVars);
         }
 
-
         return $this->processedMarkupCache = $markup;
     }
 
@@ -741,6 +745,8 @@ class Page extends ContentBase
      */
     public function initCmsComponents($cmsController)
     {
+       
+
         $snippetComponents = Snippet::listPageComponents(
             $this->getFileName(),
             $this->theme,
@@ -911,6 +917,7 @@ class Page extends ContentBase
      */
     public static function getRichEditorTypeInfo($type)
     {   
+
         if ($type == 'static-page') {
 
             $pages = self::listStaticPageMenuOptions();
