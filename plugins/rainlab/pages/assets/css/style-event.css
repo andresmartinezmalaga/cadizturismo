@@ -544,7 +544,9 @@
   display: flex;
   align-items: start;
   justify-content: left;
-  margin-top: 20px; }
+  margin-top: 20px;
+  width: 90%;
+  padding-left: 160px; }
   .municipios-snippet .municipio {
     display: -webkit-box;
     display: -moz-box;
