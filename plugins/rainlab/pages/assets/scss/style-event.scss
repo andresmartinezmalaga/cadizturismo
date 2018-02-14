@@ -552,6 +552,38 @@
   }
 }
 
+.municipios-snippet {
+  @include flexbox();
+  align-items: start;
+  justify-content: left;
+  margin-top: 20px;
+  .municipio {
+    @include flexbox();
+    align-items: baseline;
+    justify-content: center;
+    margin-right: 64px;
+    &:last-child {
+      margin-right: 0px;
+    }
+    img {
+      position: relative;
+      top: 5px;
+      margin-right: 13px;
+    }
+    a {
+      color: #4A4A4A;
+      font-size: 18px;
+      line-height: 33px;
+      font-weight: 300;
+      &:hover, &:focus, &:active {
+        text-decoration: none;
+        outline: none;
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
 .more-content {
   width: 100%;
   @include flexbox();
