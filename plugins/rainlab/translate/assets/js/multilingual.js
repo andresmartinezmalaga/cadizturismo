@@ -34,7 +34,7 @@
         this.ams = new ams();       
 
         // Andrés Martínez : Enable eventSelectTemplate
-        this.ams.eventSelectTemplate();
+        this.ams.eventSelectTemplate($(element));
 
         // Andrés Martínez : Add template "buttons" to Wysiwyg
         this.ams.createButtonsWysiwyg($(element));

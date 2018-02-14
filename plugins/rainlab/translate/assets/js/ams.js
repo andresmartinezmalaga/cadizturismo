@@ -8,7 +8,7 @@ var ams = function(){
     }
 
 	// Enable insert events templates
-    this.eventSelectTemplate = function(){
+    this.eventSelectTemplate = function(element){
 
 		var selectEventTemplate = $('.custom-select');
 
@@ -38,8 +38,9 @@ var ams = function(){
             if(atextarea.html()=='<p><br></p>' || atextarea.html()=='<p></p>' || atextarea.html()==''){
                 $(atextarea).html(tpmx)
             }
-        })
 
+            self.createButtonsWysiwyg(element);
+        })
 	}
 
 	this.multilingualGetWysiwygElements = function(event){
@@ -146,6 +147,7 @@ var ams = function(){
 
     this.createButtonsWysiwyg = function(element){
 
+        console.log('entra al crear btns');
         var ptid = $(element)[0].id;
         var pt = $('#'+ptid);
         var toolbar = pt.find('.fr-toolbar');
