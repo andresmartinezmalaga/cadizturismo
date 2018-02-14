@@ -559,6 +559,9 @@
   margin-top: 20px;
   width: 100%;
   padding-left: 160px;
+  position: relative;
+  z-index: 10;
+  background-color: white;
   .municipio {
     @include flexbox();
     align-items: baseline;
