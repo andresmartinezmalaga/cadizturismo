@@ -162,13 +162,13 @@ var ams = function(){
              pt.find('.plantillaEvento').length > 0 ||
              pt.find('.plantillaExperiencia').length > 0) {
 
-             toolbar.append('- <span class="btwtitleDesc custom-wysiwyg"> <img src="/storage/app/media/uploaded-files/templates/parrafo.svg"/></span>');
-             toolbar.append('<span class="btwdestacado custom-wysiwyg"> <img src="/storage/app/media/uploaded-files/templates/destacado.svg"/></span>');
-             toolbar.append('<span class="btwfullImage custom-wysiwyg"> <img src="/storage/app/media/uploaded-files/templates/destacado.svg"/></span>');
-             toolbar.append('<span class="btwthreeImages custom-wysiwyg"> <img src="/storage/app/media/uploaded-files/templates/galeriatres.svg"/></span>');
-             toolbar.append('<span class="btwtwoImages custom-wysiwyg"> <img src="/storage/app/media/uploaded-files/templates/galeriados.svg"/></span>');
-             toolbar.append('<span data-toggle="tooltip" data-placement="bottom" data-delay="200" title="Más info" class="btwmoreInfo custom-wysiwyg"> <img src="/storage/app/media/uploaded-files/templates/masinfo.svg"/></span>');
-             toolbar.append('<span class="btwlocations custom-wysiwyg"> <img src="/storage/app/media/uploaded-files/templates/ubicacion.svg"/></span>');
+             toolbar.append('- <span data-toggle="tooltip" data-placement="bottom" data-delay="200" title="Título + descripción" class="btwtitleDesc custom-wysiwyg"> <img src="/storage/app/media/uploaded-files/templates/parrafo.svg"/></span>');
+             toolbar.append('<span data-toggle="tooltip" data-placement="bottom" data-delay="200" title="Sección destacada" class="btwdestacado custom-wysiwyg"> <img src="/storage/app/media/uploaded-files/templates/destacado.svg"/></span>');
+             toolbar.append('<span data-toggle="tooltip" data-placement="bottom" data-delay="200" title="Imagen" class="btwfullImage custom-wysiwyg"> <img src="/storage/app/media/uploaded-files/templates/destacado.svg"/></span>');
+             toolbar.append('<span data-toggle="tooltip" data-placement="bottom" data-delay="200" title="Galería 3" class="btwthreeImages custom-wysiwyg"> <img src="/storage/app/media/uploaded-files/templates/galeriatres.svg"/></span>');
+             toolbar.append('<span data-toggle="tooltip" data-placement="bottom" data-delay="200" title="Galería 2" class="btwtwoImages custom-wysiwyg"> <img src="/storage/app/media/uploaded-files/templates/galeriados.svg"/></span>');
+             toolbar.append('<span data-toggle="tooltip" data-placement="bottom" data-delay="200" title="Info" class="btwmoreInfo custom-wysiwyg"> <img src="/storage/app/media/uploaded-files/templates/masinfo.svg"/></span>');
+             toolbar.append('<span data-toggle="tooltip" data-placement="bottom" data-delay="200" title="Ubicación" class="btwlocations custom-wysiwyg"> <img src="/storage/app/media/uploaded-files/templates/ubicacion.svg"/></span>');
 
         }
 
@@ -177,7 +177,7 @@ var ams = function(){
              pt.find('.plantillaMaxiEvento').length > 0 ||
              pt.find('.plantillaExperiencia').length > 0) {
 
-             toolbar.append('<span class="btwnumberSection custom-wysiwyg"> <img src="/storage/app/media/uploaded-files/templates/parrafonumerado.svg"/></span>');
+             toolbar.append('<span data-toggle="tooltip" data-placement="bottom" data-delay="200" title="Enumeración" class="btwnumberSection custom-wysiwyg"> <img src="/storage/app/media/uploaded-files/templates/parrafonumerado.svg"/></span>');
 
         }
 
