@@ -5588,9 +5588,9 @@ div[data-control="media-manager"] .media-list.tiles li.selected .icon-container 
   .fr-fullscreen .fr-element.fr-view {
     margin-bottom: 200px !important; }
   .fr-fullscreen div[id*="MLRichEditor-formExperience"] + .ml-btn {
-    top: -506px !important; }
+    top: -524px !important; }
   .fr-fullscreen div[id*="MLRichEditor-formExperience"] ~ .ml-dropdown-menu {
-    top: -478px !important; }
+    top: -494px !important; }
   .fr-fullscreen .ml-btn {
     top: -409px !important;
     z-index: 999 !important; }
