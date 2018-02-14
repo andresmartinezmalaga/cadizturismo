@@ -5584,13 +5584,18 @@ div[data-control="media-manager"] .media-list.tiles li.selected .icon-container 
 
 /* PANTALLA COMPLETA */
 .fr-fullscreen {
-  /* EXPERIENCIAS */ }
+  /* EXPERIENCIAS */
+  /* EVENTOS */ }
   .fr-fullscreen .fr-element.fr-view {
     margin-bottom: 200px !important; }
   .fr-fullscreen div[id*="MLRichEditor-formExperience"] + .ml-btn {
     top: -506px !important; }
   .fr-fullscreen div[id*="MLRichEditor-formExperience"] ~ .ml-dropdown-menu {
     top: -478px !important; }
+  .fr-fullscreen div[id*="MLRichEditor-formEvento"] + .ml-btn {
+    top: -694px !important; }
+  .fr-fullscreen div[id*="MLRichEditor-formEvento"] ~ .ml-dropdown-menu {
+    top: -669px !important; }
   .fr-fullscreen .ml-btn {
     top: -409px !important;
     z-index: 999 !important; }

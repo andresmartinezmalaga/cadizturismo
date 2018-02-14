@@ -2274,6 +2274,15 @@ div[data-control="media-manager"] .media-list.tiles li.selected .icon-container 
   div[id*="MLRichEditor-formExperience"] ~ .ml-dropdown-menu {
     top: -478px !important;
   }
+
+  /* EVENTOS */
+  div[id*="MLRichEditor-formEvento"] + .ml-btn {
+    top: -694px !important;
+  }
+  div[id*="MLRichEditor-formEvento"] ~ .ml-dropdown-menu {
+    top: -669px !important;
+  }
+
   .ml-btn {
     top: -409px !important;
     z-index: 999 !important;
