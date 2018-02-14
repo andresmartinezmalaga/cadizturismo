@@ -2587,6 +2587,11 @@ html, body {
     width: 85%; } }
 
 @media (max-width: 709px) {
+  .municipios-snippet {
+    flex-direction: column;
+    align-items: center !important; }
+    .municipios-snippet .municipio {
+      margin-right: 0px !important; }
   .static-header, .somos-section, .ayuda-header, .about-header {
     max-height: 800px !important; }
     .static-header .tagline-container, .somos-section .tagline-container, .ayuda-header .tagline-container, .about-header .tagline-container {

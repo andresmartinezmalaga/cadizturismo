@@ -2814,6 +2814,15 @@ html, body {
 
 @media (max-width: 709px) {
 
+  .municipios-snippet {
+    flex-direction: column;
+    align-items: center !important;
+    .municipio {
+      margin-right: 0px !important;
+    }
+  }
+
+
   .static-header, .somos-section, .ayuda-header, .about-header {
     max-height: 800px !important;
     .tagline-container {
