@@ -2283,6 +2283,14 @@ div[data-control="media-manager"] .media-list.tiles li.selected .icon-container 
     top: -669px !important;
   }
 
+  /* RUTAS */
+  div[id*="MLRichEditor-formRuta"] + .ml-btn {
+    top: -619px !important;
+  }
+  div[id*="MLRichEditor-formRuta"] ~ .ml-dropdown-menu {
+    top: -590px !important;
+  }
+
   .ml-btn {
     top: -409px !important;
     z-index: 999 !important;
