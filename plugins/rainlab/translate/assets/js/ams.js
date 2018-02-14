@@ -167,7 +167,7 @@ var ams = function(){
              toolbar.append('<span class="btwfullImage custom-wysiwyg"> <img src="/storage/app/media/uploaded-files/templates/destacado.svg"/></span>');
              toolbar.append('<span class="btwthreeImages custom-wysiwyg"> <img src="/storage/app/media/uploaded-files/templates/galeriatres.svg"/></span>');
              toolbar.append('<span class="btwtwoImages custom-wysiwyg"> <img src="/storage/app/media/uploaded-files/templates/galeriados.svg"/></span>');
-             toolbar.append('<span class="btwmoreInfo custom-wysiwyg"> <img data-toggle="tooltip" data-placement="bottom" data-delay="200" title="Más info" src="/storage/app/media/uploaded-files/templates/masinfo.svg"/></span>');
+             toolbar.append('<span data-toggle="tooltip" data-placement="bottom" data-delay="200" title="Más info" class="btwmoreInfo custom-wysiwyg"> <img src="/storage/app/media/uploaded-files/templates/masinfo.svg"/></span>');
              toolbar.append('<span class="btwlocations custom-wysiwyg"> <img src="/storage/app/media/uploaded-files/templates/ubicacion.svg"/></span>');
 
         }
