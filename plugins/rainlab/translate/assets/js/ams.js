@@ -74,7 +74,6 @@ var ams = function(){
 
 	this.pasteHtmlAtCaret = function(html) {
 
-        //console.log('entra');
         var sel, range;
 
         if (window.getSelection) {
@@ -159,7 +158,8 @@ var ams = function(){
              pt.find('.plantillaPlayas').length > 0 ||
              pt.find('.plantillaPlaya').length > 0 ||
              pt.find('.plantillaRuta').length > 0 ||
-             pt.find('.plantillaEvento').length > 0 ||
+             pt.find('.plantillaMiniEvento').length > 0 ||
+             pt.find('.plantillaMaxiEvento').length > 0 ||
              pt.find('.plantillaExperiencia').length > 0) {
 
              toolbar.append('- <span data-toggle="tooltip" data-placement="bottom" data-delay="200" title="Título + descripción" class="btwtitleDesc custom-wysiwyg"> <img src="/storage/app/media/uploaded-files/templates/parrafo.svg"/></span>');
@@ -184,9 +184,6 @@ var ams = function(){
 
         $('.btwtitleDesc').on('click',function(){
             self.pasteHtmlAtCaret(titleDesc);
-            console.log(frElement);
-            console.log('************');
-            console.log($('.ace_content'));
         })
 
         $('.btwdestacado').on('click',function(){
