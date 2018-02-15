@@ -75,6 +75,11 @@ class Plugin extends PluginBase
                 'order' => 200,
                 'label' => 'rainlab.pages::lang.page.manage_content'
                 ],
+            'rainlab.pages.manage_home' => [
+                'tab'   => 'rainlab.pages::lang.home.tab',
+                'order' => 200,
+                'label' => 'rainlab.pages::lang.page.manage_content'
+                ],
         ];
     }
 
@@ -123,7 +128,7 @@ class Plugin extends PluginBase
                         'url'         => 'javascript:;',
                         'attributes'  => ['data-menu-item'=>'rutas'],
                         'permissions' => ['rainlab.pages.manage_rutas']
-                    ],
+                    ],                    
                     // Andrés Martínez : delete content & snippets menus
                     /*'content' => [
                         'label'       => 'rainlab.pages::lang.content.menu_label',

@@ -1,0 +1,9 @@
+# ===================================
+#  Column Definitions
+# ===================================
+
+columns:
+
+    titulo:
+        label: Titulo
+        searchable: true    
