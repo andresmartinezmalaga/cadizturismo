@@ -3641,12 +3641,12 @@ footer {
 .mock-insert {
   display: none;
 }
-.mock-selected {
-  &:before {
-    transition: background-image 0.3s ease;
-    background-image: url('/storage/app/media/uploaded-files/templates/insert-selected.svg') !important;
-  }
-}
+// .mock-selected {
+//   &:before {
+//     transition: background-image 0.3s ease;
+//     background-image: url('/storage/app/media/uploaded-files/templates/insert-selected.svg') !important;
+//   }
+// }
 .field-richeditor .mock-insert {
   width: 100%;
   height: auto;
@@ -3663,18 +3663,18 @@ footer {
     height: auto;
     margin-bottom: 10px;
   }
-  &:before {
-    content: '';
-    cursor: pointer;
-    position: absolute;
-    left: 0px;
-    width: 100%;
-    height: 40px;
-    background-image: url('/storage/app/media/uploaded-files/templates/insert-svg.svg');
-    background-size: cover;
-    background-position: center;
-    transition: background-image 0.3s ease;
-  }
+  // &:before {
+  //   content: '';
+  //   cursor: pointer;
+  //   position: absolute;
+  //   left: 0px;
+  //   width: 100%;
+  //   height: 40px;
+  //   background-image: url('/storage/app/media/uploaded-files/templates/insert-svg.svg');
+  //   background-size: cover;
+  //   background-position: center;
+  //   transition: background-image 0.3s ease;
+  // }
 }
 .section-txt-village + br, .img-village + br, .section-img + br, .all-exps + br, .all-events + br,
 .section-txt + br, .municipios-snippet + br {
