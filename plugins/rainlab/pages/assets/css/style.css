@@ -3278,8 +3278,6 @@ footer {
   color: #818181;
   font-size: 14px;
   margin-top: 10px; }
-  .field-richeditor .mock-insert br {
-    display: none; }
   .field-richeditor .mock-insert .back {
     width: 100%;
     height: auto;
@@ -3299,3 +3297,6 @@ footer {
 .section-txt-village + br, .img-village + br, .section-img + br, .all-exps + br, .all-events + br,
 .section-txt + br, .municipios-snippet + br {
   display: none !important; }
+
+br {
+  display: none; }
