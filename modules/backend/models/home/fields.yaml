@@ -6,11 +6,11 @@ fields:
     
     titulo:
         span: left
-        label: Titulo de la home
+        label: Título de la home
 
     subtitulo:
         span: right
-        label: Subtitulo de la home
+        label: Subtítulo de la home
 
     parrafo:
         span: full
@@ -18,11 +18,11 @@ fields:
 
     enlace_titulo:
         span: left
-        label: Titulo del enlace
+        label: Título del enlace
 
     enlace:
         span: right
-        label: Titulo del enlace
+        label: URL del enlace
 
     avatar:
         label: Imagen

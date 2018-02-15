@@ -116,13 +116,6 @@ class ServiceProvider extends ModuleServiceProvider
                      // Andrés Martínez : Change menu position. Pages before media.
                     'order'       => 190
                 ],
-                'home' => [
-                    'label'       => 'home',
-                    'icon'        => 'icon-users',
-                    'url'         => Backend::url('backend/home/update/1'),
-                    'permissions' => ['backend.access_home'],
-                    'order'       => 181,
-                ],
             ]);
         });
     }
@@ -170,7 +163,11 @@ class ServiceProvider extends ModuleServiceProvider
                 'media.manage_media' => [
                     'label' => 'backend::lang.permissions.manage_media',
                     'tab' => 'system::lang.permissions.name',
-                ]
+                ],
+                'backend.manage_home' => [
+                    'label' => 'Home',
+                    'tab'   => 'system::lang.permissions.name'
+                ],
             ]);
         });
     }

@@ -38,6 +38,27 @@
                         <!-- Andrés Martínez : Filter button config only sudo ********************************************************** -->
                         <!-- *********************************************************************************************************** -->
                         <!-- and $this->user->is_superuser == 1 -->
+                        
+                        <?php if( trim(trans($item->label)) == 'Contenido' ){ ?>
+                            
+                            <li class="<?= $isActive ? 'active' : null ?> svg-icon-container svg-active-effects">
+                                <a href="/backend/backend/home">
+                                    <span class="nav-icon">
+                                        <?php if ($item->iconSvg): ?>
+                                            <img class="svg-icon" src="http://cadizturismo.jekyllme.com/modules/system/assets/images/home.svg">
+                                        <?php endif ?>
+
+                                        <i class="<?= $item->iconSvg ? 'svg-replace' : null ?> <?= $item->icon ?>"></i>
+                                    </span>
+
+                                    <span class="nav-label">
+                                        Home
+                                    </span>
+                                </a>
+                            </li>
+
+                        <?php } ?>
+
                         <?php if( $item->iconSvg == 'modules/system/assets/images/cog-icon.svg' and $this->user->is_superuser == 1 ){ ?>
 
                         <li class="<?= $isActive ? 'active' : null ?> svg-icon-container svg-active-effects">
@@ -95,6 +116,9 @@
                         </span>
                     </a>
                 </li>
+
+
+
 
                
 
