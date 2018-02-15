@@ -114,7 +114,15 @@ class ServiceProvider extends ModuleServiceProvider
                     'iconSvg'     => 'plugins/rainlab/pages/assets/images/content-icon.svg',
                     'permissions' => ['rainlab.pages.*'],
                      // Andrés Martínez : Change menu position. Pages before media.
-                    'order'       => 190],
+                    'order'       => 190
+                ],
+                'home' => [
+                    'label'       => 'home',
+                    'icon'        => 'icon-users',
+                    'url'         => Backend::url('backend/home/update/1'),
+                    'permissions' => ['backend.access_home'],
+                    'order'       => 181,
+                ],
             ]);
         });
     }

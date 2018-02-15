@@ -340,8 +340,7 @@
      * If the item is already opened, activate its tab in the editor.
      */
     PagesPage.prototype.onSidebarItemClick = function(e) {
-       
- 
+        
         var self = this,
             $item = $(e.relatedTarget),
             $form = $item.closest('form'),

@@ -66,7 +66,6 @@
      */
     MenuItemsEditor.prototype.onItemClick = function(item, newItemMode) {
         
-
         var $item = $(item),
             $container = $('> div', $item),
             self = this
