@@ -400,6 +400,8 @@ var ams = function(){
 
     }
 
-
+		$(".mock-insert").click(function(e) {
+				$(this).toggleClass("mock-selected");
+		});
 
 };
