@@ -5611,6 +5611,9 @@ div[data-control="media-manager"] .media-list.tiles li.selected .icon-container 
 /* HOME */
 #Form-field-Home-avatar-group {
   position: absolute;
-  right: 19px;
+  right: 20px;
   width: 260px;
   z-index: 100; }
+
+.control-scrollpanel {
+  background: #F6F6F6 !important; }
