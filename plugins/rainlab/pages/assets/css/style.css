@@ -3280,6 +3280,10 @@ footer {
   margin-top: 10px; }
   .field-richeditor .mock-insert br {
     display: none; }
+  .field-richeditor .mock-insert .back {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px; }
   .field-richeditor .mock-insert:before {
     content: '';
     cursor: pointer;

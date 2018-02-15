@@ -310,7 +310,7 @@ class PagesTemplates
       <!-- NUEVA FOTO -->
       <img class="img-destacada" src="***_preurl_***/storage/app/media/uploaded-files/templates/marismas-barbate.jpg" alt="">
   </div>
-  <p class="mock-insert"><br></p>
+  <div class="mock-insert"><img class="back" src="***_preurl_***/storage/app/media/uploaded-files/templates/insert-svg.svg" alt=""><br></div>
   <div class="section-txt-village">
     <div class="txt-container">
 

@@ -3658,6 +3658,11 @@ footer {
   br {
     display: none;
   }
+  .back {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
   &:before {
     content: '';
     cursor: pointer;
