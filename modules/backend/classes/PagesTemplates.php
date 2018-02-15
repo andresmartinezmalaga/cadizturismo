@@ -288,7 +288,6 @@ class PagesTemplates
     <!-- NUEVA FOTO -->
     <img class="background-image" value="cover" src="***_preurl_***/storage/app/media/uploaded-files/templates/barbate1.jpg" alt="">
   </div>
-  <p class="mock"></p>
   <!-- TXT-->
   <div class="section-txt-village">
     <div class="txt-container">
@@ -298,7 +297,7 @@ class PagesTemplates
       <p class="desc">Escribe aquí el contenido a desarrollar y agrega una imagen adicional si lo necesitas.</p>
     </div>
   </div>
-  <p class="mock-insert"><br></p>
+  <p class="mock-insert"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/mock-insert.svg"><br></p>
   <!-- IMAGEN -->
   <div class="img-village">
     <div class="txt-container">
