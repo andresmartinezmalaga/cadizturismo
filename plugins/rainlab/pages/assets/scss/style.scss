@@ -3649,6 +3649,9 @@ footer {
   color: #818181;
   font-size: 14px;
   margin-top: 10px;
+  br {
+    display: none;
+  }
   &:before {
     content: '';
     position: absolute;

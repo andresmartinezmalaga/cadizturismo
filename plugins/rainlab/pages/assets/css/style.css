@@ -3274,6 +3274,8 @@ footer {
   color: #818181;
   font-size: 14px;
   margin-top: 10px; }
+  .field-richeditor .mock-insert br {
+    display: none; }
   .field-richeditor .mock-insert:before {
     content: '';
     position: absolute;
