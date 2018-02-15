@@ -5623,3 +5623,7 @@ div[data-control="media-manager"] .media-list.tiles li.selected .icon-container 
 
 .field-fileupload.style-image-single .upload-button:hover .upload-button-icon:before {
   color: #175DA3 !important; }
+
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {
+  background: #175DA3 !important;
+  border-color: #175DA3 !important; }
