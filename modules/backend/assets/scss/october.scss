@@ -2323,3 +2323,9 @@ div[data-control="media-manager"] .media-list.tiles li.selected .icon-container 
   background: #175DA3 !important;
   border-color: #175DA3 !important;
 }
+.btn-text a {
+  text-decoration: none !important;
+}
+.btn-text a:hover {
+  color: #175DA3 !important;
+}

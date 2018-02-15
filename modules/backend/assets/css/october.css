@@ -5627,3 +5627,9 @@ div[data-control="media-manager"] .media-list.tiles li.selected .icon-container 
 .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {
   background: #175DA3 !important;
   border-color: #175DA3 !important; }
+
+.btn-text a {
+  text-decoration: none !important; }
+
+.btn-text a:hover {
+  color: #175DA3 !important; }
