@@ -3664,3 +3664,7 @@ footer {
     background-position: center;
   }
 }
+.section-txt-village + br, .img-village + br, .section-img + br, .all-exps + br, .all-events + br,
+.section-txt + br, .municipios-snippet + br {
+  display: none !important;
+}
