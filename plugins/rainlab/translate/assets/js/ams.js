@@ -404,7 +404,7 @@ var ams = function(){
 				$(this).toggleClass("mock-selected");
 		});
 		$(".custom-wysiwyg").click(function(e) {
-				(".mock-insert").toggleClass("mock-selected");
+				(".mock-insert").removeClass("mock-selected");
 		});
 
 };
