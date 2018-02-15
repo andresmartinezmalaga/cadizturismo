@@ -288,7 +288,6 @@ class PagesTemplates
     <!-- NUEVA FOTO -->
     <img class="background-image" value="cover" src="***_preurl_***/storage/app/media/uploaded-files/templates/barbate1.jpg" alt="">
   </div>
-  <p class="mock"></p>
   <!-- TXT-->
   <div class="section-txt-village">
     <div class="txt-container">
