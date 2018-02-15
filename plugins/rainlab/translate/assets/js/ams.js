@@ -142,7 +142,7 @@ var ams = function(){
 	//Enumeración
 	var numberSection = '<div class="section-txt"><div class="big-number-container"><span class="step">1</span></div><div class="txt-container"><p class="title">TITULAR 1</p><p class="desc">Escribe aquí el contenido a desarrollar y agrega una imagen adicional si lo necesitas.</p></div></div>';
 	//Más info
-	var moreInfo = '<div class="section-txt"><div class="more-info"><div class="txt-container"><h3>¿más info?</h3><img src="http://cadizturismo.jekyllme.com/storage/app/media/uploaded-files/templates/big-yellow-separator.svg" class="fr-fic fr-dii"><p><a href="#" rel="noopener noreferrer" target="_blank">Enlace 1</a></p><p><a href="#" rel="noopener noreferrer" target="_blank">Enlace 2</a></p></div></div></div>';
+	var moreInfo = '<div class="section-txt section-info"><div class="more-info"><div class="txt-container"><h3>¿más info?</h3><img src="http://cadizturismo.jekyllme.com/storage/app/media/uploaded-files/templates/big-yellow-separator.svg" class="fr-fic fr-dii"><p><a href="#" rel="noopener noreferrer" target="_blank">Enlace 1</a></p><p><a href="#" rel="noopener noreferrer" target="_blank">Enlace 2</a></p></div></div></div>';
 	//Ubicaciones
 	var locations = '<div class="municipios-snippet"><div class="municipio"><img src="/storage/app/media/uploaded-files/templates/location-municipio.svg" class="fr-fil fr-dib"><a href="#" target="_blank">Ubicación 1</a></div><div class="municipio"><img src="/storage/app/media/uploaded-files/templates/location-municipio.svg" class="fr-fil fr-dib"><a href="#" target="_blank">Ubicación 2</a></div><div class="municipio"><img src="/storage/app/media/uploaded-files/templates/location-municipio.svg" class="fr-fil fr-dib"><a href="#" target="_blank">Ubicación 3</a></div></div>';
 
