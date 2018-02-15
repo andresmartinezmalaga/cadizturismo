@@ -116,6 +116,10 @@ input:-webkit-autofill {
     width: -moz-calc((100% / 3) * 2);
     width: -ms-calc((100% / 3) * 2); }
 
+.section-txt .more-info {
+  width: 90%;
+  max-width: 1145px; }
+
 @media (max-width: 725px) {
   .slidemenu {
     display: none; }
