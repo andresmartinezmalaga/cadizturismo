@@ -3642,7 +3642,7 @@ footer {
   display: none;
 }
 .mock-selected {
-  &:after {
+  &:before {
     background-image: url('/storage/app/media/uploaded-files/templates/insert-selected.svg') !important;
   }
 }
@@ -3657,7 +3657,7 @@ footer {
   br {
     display: none;
   }
-  &:after {
+  &:before {
     content: '';
     cursor: pointer;
     position: absolute;

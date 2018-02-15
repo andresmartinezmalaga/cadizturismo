@@ -3266,7 +3266,7 @@ footer {
 .mock-insert {
   display: none; }
 
-.mock-selected:after {
+.mock-selected:before {
   background-image: url("/storage/app/media/uploaded-files/templates/insert-selected.svg") !important; }
 
 .field-richeditor .mock-insert {
@@ -3279,7 +3279,7 @@ footer {
   margin-top: 10px; }
   .field-richeditor .mock-insert br {
     display: none; }
-  .field-richeditor .mock-insert:after {
+  .field-richeditor .mock-insert:before {
     content: '';
     cursor: pointer;
     position: absolute;
