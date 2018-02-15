@@ -2,6 +2,7 @@
 jQuery(function($)
 {
     $(".send-info:not(:has(.button-send-info>a))").css('display','none');
+    $("br").css('display','none');
 
     $(".hamburger").click(function() {
         $(".navigation").toggleClass("open");
