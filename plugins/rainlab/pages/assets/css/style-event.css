@@ -846,7 +846,7 @@
     justify-content: center;
     flex-direction: column; }
     #modal-success .modal-container img {
-      padding-top: 160px; }
+      padding-top: 55px; }
     #modal-success .modal-container h3 {
       text-align: center;
       font-family: 'AvenirNext-DemiBold', sans-serif;
@@ -899,7 +899,7 @@
     #modal-success .modal-container a {
       color: #F5A623;
       font-size: 14px;
-      margin-bottom: 160px; }
+      margin-bottom: 70px; }
       #modal-success .modal-container a:focus, #modal-success .modal-container a:active, #modal-success .modal-container a:hover {
         outline: none;
         color: #D0860C;
