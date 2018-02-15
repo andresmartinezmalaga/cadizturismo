@@ -119,6 +119,8 @@ input:-webkit-autofill {
 .section-txt .more-info {
   width: 90%;
   max-width: 1145px; }
+  .section-txt .more-info .txt-container {
+    min-height: 0px !important; }
   .section-txt .more-info h3 {
     margin-bottom: 30px !important; }
   .section-txt .more-info p {

@@ -159,6 +159,9 @@
 .section-txt .more-info {
   width: 90%;
   max-width: 1145px;
+  .txt-container {
+    min-height: 0px !important;
+  }
   h3 {
     margin-bottom: 30px !important;
   }
