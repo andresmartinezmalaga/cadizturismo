@@ -297,7 +297,7 @@ class PagesTemplates
       <p class="desc">Escribe aquí el contenido a desarrollar y agrega una imagen adicional si lo necesitas.</p>
     </div>
   </div>
-  <p class="mock-insert"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/mock-insert.svg"><br></p>
+  <p class="mock-insert"><img src="***_preurl_***/storage/app/media/uploaded-files/templates/insert-svg.svg"><br></p>
   <!-- IMAGEN -->
   <div class="img-village">
     <div class="txt-container">
