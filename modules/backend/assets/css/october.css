@@ -5607,3 +5607,10 @@ div[data-control="media-manager"] .media-list.tiles li.selected .icon-container 
     z-index: 999 !important; }
   .fr-fullscreen .ml-dropdown-menu {
     top: -376px !important; }
+
+/* HOME */
+#Form-field-Home-avatar-group {
+  position: absolute;
+  right: 19px;
+  width: 260px;
+  z-index: 100; }
