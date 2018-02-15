@@ -19,6 +19,8 @@ use Response;
 use File;
 use Twig;
 
+use Backend\Models\Home;
+
 /**
  * The static page component.
  *
@@ -45,6 +47,13 @@ class StaticApp extends ComponentBase
     {
         return [
         ];
+    }
+
+    public function getHomeVars (){
+        $home = Home::find(1);
+        $image = $home->avatar->getPath();
+        $home->image = $image;
+        return $home;
     }
 
     // sort ok
