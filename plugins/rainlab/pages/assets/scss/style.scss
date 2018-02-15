@@ -3667,6 +3667,7 @@ footer {
     background-image: url('/storage/app/media/uploaded-files/templates/insert-svg.svg');
     background-size: cover;
     background-position: center;
+    transition: background-image 0.3s ease;
   }
 }
 .section-txt-village + br, .img-village + br, .section-img + br, .all-exps + br, .all-events + br,
