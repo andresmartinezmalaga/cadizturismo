@@ -437,15 +437,6 @@ class ServiceProvider extends ModuleServiceProvider
                     'permissions' => ['backend.manage_users'],
                     'order'       => 400
                 ],
-                'administratorsb' => [
-                    'label'       => 'backend::lang.user.menu_label',
-                    'description' => 'backend::lang.user.menu_description',
-                    'category'    => SettingsManager::CATEGORY_SYSTEM,
-                    'icon'        => 'icon-users',
-                    'url'         => Backend::url('backend/busers'),
-                    'permissions' => ['backend.manage_users'],
-                    'order'       => 400
-                ],
                 'mail_templates' => [
                     'label'       => 'system::lang.mail_templates.menu_label',
                     'description' => 'system::lang.mail_templates.menu_description',
