@@ -2313,10 +2313,10 @@ div[data-control="media-manager"] .media-list.tiles li.selected .icon-container 
   background: #F6F6F6 !important;
 }
 
-.field-fileupload.style-image-single .upload-button:hover {
+.field-fileupload.style-image-single .upload-button:hover, .field-fileupload.style-image-single .upload-button:focus {
   border: 2px dashed #175DA3 !important;
 }
-.field-fileupload.style-image-single .upload-button:hover .upload-button-icon:before {
+.field-fileupload.style-image-single .upload-button:hover .upload-button-icon:before, .field-fileupload.style-image-single .upload-button:focus .upload-button-icon:before {
   color: #175DA3 !important;
 }
 .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {
