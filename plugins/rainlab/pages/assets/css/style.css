@@ -3278,6 +3278,7 @@ footer {
     display: none; }
   .field-richeditor .mock-insert:before {
     content: '';
+    cursor: pointer;
     position: absolute;
     left: 0px;
     width: 100%;

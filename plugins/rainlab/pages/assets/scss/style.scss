@@ -3654,6 +3654,7 @@ footer {
   }
   &:before {
     content: '';
+    cursor: pointer;
     position: absolute;
     left: 0px;
     width: 100%;
