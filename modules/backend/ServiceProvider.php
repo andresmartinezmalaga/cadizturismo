@@ -115,7 +115,7 @@ class ServiceProvider extends ModuleServiceProvider
                     'permissions' => ['rainlab.pages.*'],
                      // Andrés Martínez : Change menu position. Pages before media.
                     'order'       => 190
-                ]
+                ],
             ]);
         });
     }
@@ -163,6 +163,10 @@ class ServiceProvider extends ModuleServiceProvider
                 'media.manage_media' => [
                     'label' => 'backend::lang.permissions.manage_media',
                     'tab' => 'system::lang.permissions.name',
+                ],
+                'backend.manage_home' => [
+                    'label' => 'Home',
+                    'tab'   => 'system::lang.permissions.name'
                 ],
             ]);
         });
