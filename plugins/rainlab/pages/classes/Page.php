@@ -270,6 +270,7 @@ class Page extends ContentBase
         $mm = str_replace("<p><br></p>", "", $mm);
         $mm = str_replace("<p></p>", "", $mm);
         $mm = str_replace("<p>&nbsp;</p>", "", $mm);
+        $mm = str_replace("<br>", "", $mm);
        
         $this->markup = $mm;
        
