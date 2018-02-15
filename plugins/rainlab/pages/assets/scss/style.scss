@@ -159,6 +159,10 @@
 .section-txt .more-info {
   width: 90%;
   max-width: 1145px;
+  p {
+    margin-bottom: 0px !important;
+    margin-top: 10px !important;
+  }
 }
 
   @media (max-width: 725px) {
