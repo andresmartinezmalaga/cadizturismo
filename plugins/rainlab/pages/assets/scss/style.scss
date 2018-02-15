@@ -3641,6 +3641,11 @@ footer {
 .mock-insert {
   display: none;
 }
+.mock-selected {
+  &:before {
+    background-image: url('/storage/app/media/uploaded-files/templates/insert-selected.svg') !important;
+  }
+}
 .field-richeditor .mock-insert {
   width: 100%;
   height: auto;

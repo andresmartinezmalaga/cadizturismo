@@ -1,7 +1,9 @@
 
 jQuery(function($)
 {
-
+  $(".mock-insert").click(function(e) {
+      $(this).toggleClass("mock-selected");
+  });
     $(".send-info:not(:has(.button-send-info>a))").css('display','none');
 
     $(".hamburger").click(function() {
