@@ -5619,4 +5619,7 @@ div[data-control="media-manager"] .media-list.tiles li.selected .icon-container 
   background: #F6F6F6 !important; }
 
 .field-fileupload.style-image-single .upload-button:hover {
-  border: 2px dashed #175DA3; }
+  border: 2px dashed #175DA3 !important; }
+
+.field-fileupload.style-image-single .upload-button:hover .upload-button-icon:before {
+  color: #175DA3 !important; }
