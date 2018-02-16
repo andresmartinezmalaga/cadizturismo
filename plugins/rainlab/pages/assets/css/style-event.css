@@ -91,6 +91,99 @@
       .header-event .send-info .button-send-info:hover {
         background-color: #D0860C; }
 
+.header-experience {
+  padding: 0;
+  box-sizing: border-box;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 969px;
+  background-color: transparent;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-top: 4px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-attachment: fixed; }
+  .header-experience .header-container {
+    margin-top: -30px; }
+  .header-experience .background-image {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 4px;
+    object-fit: cover;
+    z-index: -1;
+    left: 0px; }
+  .header-experience .header-txt {
+    color: white;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 50px; }
+    .header-experience .header-txt .brush {
+      margin-top: -14px;
+      margin-bottom: 150px; }
+    .header-experience .header-txt .txt {
+      font-size: 144px;
+      transform: rotate(-9deg);
+      text-align: center;
+      font-family: Ryssa;
+      z-index: 10; }
+  .header-experience .send-info {
+    width: 391px;
+    height: 105px;
+    margin-top: 150px;
+    background-color: rgba(0, 0, 0, 0.18);
+    border-radius: 5px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .header-experience .send-info .button-send-info {
+      width: 348px;
+      height: 70px;
+      background-color: #F5A623;
+      border-radius: 4px;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: background-color 0.3s ease; }
+      .header-experience .send-info .button-send-info a {
+        color: white;
+        font-weight: 300;
+        font-size: 19px;
+        line-height: 27px;
+        padding: 22px 20px; }
+        .header-experience .send-info .button-send-info a:hover, .header-experience .send-info .button-send-info a:focus, .header-experience .send-info .button-send-info a:active {
+          text-decoration: none;
+          outline: none;
+          background-color: transparent; }
+      .header-experience .send-info .button-send-info:hover {
+        background-color: #D0860C; }
+
 #header-event-fr .brush {
   margin-bottom: 0px; }
 
@@ -118,7 +211,7 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-    bottom: 200px;
+    bottom: 250px;
     z-index: 999; }
     .send-info-container .send-info .button-send-info {
       width: 348px;
@@ -208,7 +301,7 @@
   position: absolute;
   bottom: -13%;
   left: 0px;
-  z-index: 999;
+  z-index: 996;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -317,7 +410,7 @@
   z-index: -1; }
 
 /* TXT SECTION - EVENTS */
-.header-event + .section-txt, .header-ruta + .section-txt {
+.header-event + .section-txt, .header-ruta + .section-txt, .header-experience + .section-txt {
   margin-top: 125px; }
 
 .section-txt {
@@ -442,6 +535,45 @@
     max-width: 100%;
     margin-bottom: 75px;
     margin-top: 35px; }
+
+.municipios-snippet {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+  background-color: white; }
+  .municipios-snippet .municipio {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    margin-right: 64px; }
+    .municipios-snippet .municipio:last-child {
+      margin-right: 0px; }
+    .municipios-snippet .municipio img {
+      position: relative;
+      top: 5px;
+      margin-right: 13px; }
+    .municipios-snippet .municipio a {
+      color: #4A4A4A;
+      font-size: 18px;
+      line-height: 33px;
+      font-weight: 300; }
+      .municipios-snippet .municipio a:hover, .municipios-snippet .municipio a:focus, .municipios-snippet .municipio a:active {
+        text-decoration: none;
+        outline: none;
+        opacity: 0.7; }
 
 .more-content {
   width: 100%;
@@ -640,7 +772,7 @@
     justify-content: center;
     flex-direction: column; }
     #modal-exp .modal-container img {
-      padding-top: 75px; }
+      padding-top: 55px; }
     #modal-exp .modal-container h3 {
       text-align: center;
       font-family: 'AvenirNext-DemiBold', sans-serif;
@@ -685,7 +817,7 @@
         border: none;
         border-radius: 4px;
         transition: background-color 0.3s ease;
-        margin-bottom: 93px; }
+        margin-bottom: 70px; }
         #modal-exp .modal-container form input[type="submit"]:focus, #modal-exp .modal-container form input[type="submit"]:active, #modal-exp .modal-container form input[type="submit"]:hover {
           outline: none;
           background-color: #D0860C; }
@@ -714,7 +846,7 @@
     justify-content: center;
     flex-direction: column; }
     #modal-success .modal-container img {
-      padding-top: 160px; }
+      padding-top: 55px; }
     #modal-success .modal-container h3 {
       text-align: center;
       font-family: 'AvenirNext-DemiBold', sans-serif;
@@ -767,7 +899,7 @@
     #modal-success .modal-container a {
       color: #F5A623;
       font-size: 14px;
-      margin-bottom: 160px; }
+      margin-bottom: 70px; }
       #modal-success .modal-container a:focus, #modal-success .modal-container a:active, #modal-success .modal-container a:hover {
         outline: none;
         color: #D0860C;

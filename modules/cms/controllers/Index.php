@@ -507,6 +507,12 @@ class Index extends Controller
         $markup = str_replace("\r\n", "\n", $markup);
         $markup = str_replace("\r", "\n", $markup);
 
+        $markup = str_replace(array("\r\n","\r","\n","\t"), "",$markup);
+        $markup = str_replace("<p><br></p>", "", $markup);
+        $markup = str_replace("<p></p>", "", $markup);
+        $markup = str_replace("<p>&nbsp;</p>", "", $markup);
+       
+
         return $markup;
     }
 }

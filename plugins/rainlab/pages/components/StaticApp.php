@@ -19,6 +19,8 @@ use Response;
 use File;
 use Twig;
 
+use Backend\Models\Home;
+
 /**
  * The static page component.
  *
@@ -45,6 +47,13 @@ class StaticApp extends ComponentBase
     {
         return [
         ];
+    }
+
+    public function getHomeVars (){
+        $home = Home::find(1);
+        $image = $home->avatar->getPath();
+        $home->image = $image;
+        return $home;
     }
 
     // sort ok
@@ -150,9 +159,9 @@ class StaticApp extends ComponentBase
         $pagesList = Page::listInTheme($theme, false);
         $pages =  new \Illuminate\Support\Collection($pagesList);
 
-        $ruta = $pages->where("is_hidden",0)->where("url",$url)->values();
+        $beach = $pages->where("is_hidden",0)->where("url",$url)->values();
 
-        return $ruta;
+        return $beach;
     }
 
     public function eventAll()
@@ -286,14 +295,26 @@ class StaticApp extends ComponentBase
     }
 
     public function eventFind($category, $date_start, $date_end, $location)
-    {
+    {        
         $theme = Theme::getActiveTheme();
         $pages = Page::listInTheme($theme, false);
         $events =  new \Illuminate\Support\Collection($pages);
 
         $validEvents = collect();
 
-        $preEvents = $events->where("is_hidden",0)->where('template','eventos')->where('category',$category)->where('location',$location)->values();
+        $categoryOperator = '=';
+        if($category == 'all'){
+            $category = null;
+            $categoryOperator = '!=';
+        }
+
+        $locationOperator = '=';
+        if($location == 'all'){
+            $location = null;
+            $locationOperator = '!=';
+        }
+
+        $preEvents = $events->where("is_hidden",0)->where('template','eventos')->where('category',$categoryOperator,$category)->where('location',$locationOperator,$location)->values();
 
 
         foreach ($preEvents as $i) {
@@ -308,12 +329,23 @@ class StaticApp extends ComponentBase
             $ee = new Carbon($eventDateEnd);
 
             $diffStart = $bs->diffInDays($es,false);
+            $diffStartEnd = $bs->diffInDays($ee,false);
+            
             $diffEnd = $be->diffInDays($ee,false);
+            $diffEndStart = $be->diffInDays($es,false);
 
+            if($diffStart>=0  && $diffEnd<1 ) {
+            
+                $validEvents->push($i);
+           
+            } elseif ($diffStartEnd >= 0 && $diffStart <= 0){
 
-           if($diffStart>=0  && $diffEnd<1 ) {
-            $validEvents->push($i);
-           }
+                $validEvents->push($i);
+           
+            } elseif ($diffEndStart <= 0 && $diffEnd >=0 ){
+
+                $validEvents->push($i);
+            }
 
         }
 
@@ -373,9 +405,69 @@ class StaticApp extends ComponentBase
     {
         $theme = Theme::getActiveTheme();
         $pages = Page::listInTheme($theme, false);
-        $events =  new \Illuminate\Support\Collection($pages);
+        $list =  new \Illuminate\Support\Collection($pages);
 
-        $result = $events->where("is_hidden",0)->where("subtemplate","municipios")->sortBy('title')->values();
+        $result = $list->where("is_hidden",0)->where("subtemplate","municipios")->sortBy('title')->values();
+
+        return $result;
+    }
+
+    public function municipalityByName($name)
+    {
+        $theme = Theme::getActiveTheme();
+        $pages = Page::listInTheme($theme, false);
+        $list =  new \Illuminate\Support\Collection($pages);
+
+        $result = $list->where("is_hidden",0)->where("subtemplate","municipios")->where('url', '/municipios/'.$name)->values();
+
+        return $result;
+    }
+
+    public function regionsList()
+    {
+        $theme = Theme::getActiveTheme();
+        $pages = Page::listInTheme($theme, false);
+        $list =  new \Illuminate\Support\Collection($pages);
+
+        $result = collect();
+        foreach ($list as $value) {
+            if (strpos($value->url, '/comarcas/') !== false) {
+                $result->push($value);
+            }
+        }
+       
+        return $result;
+    }
+
+    public function regionByName($name)
+    {
+        $theme = Theme::getActiveTheme();
+        $pages = Page::listInTheme($theme, false);
+        $list =  new \Illuminate\Support\Collection($pages);
+
+        $result = $list->where("is_hidden",0)->where('url','/comarcas/'.$name)->values();
+
+        return $result;
+    }
+
+    public function beachesList()
+    {
+        $theme = Theme::getActiveTheme();
+        $pages = Page::listInTheme($theme, false);
+        $list =  new \Illuminate\Support\Collection($pages);
+
+        $result = $list->where("is_hidden",0)->where("subtemplate","playas")->sortBy('title')->values();
+
+        return $result;
+    }
+
+    public function beachByName($name)
+    {
+        $theme = Theme::getActiveTheme();
+        $pages = Page::listInTheme($theme, false);
+        $list =  new \Illuminate\Support\Collection($pages);
+
+        $result = $list->where("is_hidden",0)->where("subtemplate","playas")->where('url', '/playas/'.$name)->values();
 
         return $result;
     }
@@ -391,14 +483,53 @@ class StaticApp extends ComponentBase
         return $result;
     }
 
+     public function experienceFindByUrl($url)
+    {
+        $theme = Theme::getActiveTheme();
+        $pagesList = Page::listInTheme($theme, false);
+        $pages =  new \Illuminate\Support\Collection($pagesList);
+
+        $experience = $pages->where("is_hidden",0)->where("url",$url)->values();
+
+        return $experience;
+    }
+
     public function experienceFind($days,$interest,$tvisit)
     {
         $theme = Theme::getActiveTheme();
         $pages = Page::listInTheme($theme, false);
         $experiences =  new \Illuminate\Support\Collection($pages);
 
+        $daysOperator = '=';
+        if($days == 'all'){
+            $days = '0';
+            $daysOperator = '>';
+        }
 
-        $result = $experiences->where("is_hidden",0)->where('template','experiences')->where('days',$days)->where('interest',$interest)->where('tvisit',$tvisit)->values();
+        $interestOperator = '=';
+        if($interest == 'all'){
+            $interest = null;
+            $interestOperator = '!=';
+        }
+
+        $tvisitOperator = '=';
+        if($tvisit == 'all'){
+            $tvisit = null;
+            $tvisitOperator = '!=';
+        }
+
+        $result = $experiences->where("is_hidden",0)->where('template','experiences')->where('days',$daysOperator,$days)->where('interest',$interestOperator,$interest)->where('tvisit',$tvisitOperator,$tvisit)->values();
+
+        return $result;
+    }
+
+    public function rutasList()
+    {
+        $theme = Theme::getActiveTheme();
+        $pages = Page::listInTheme($theme, false);
+        $list =  new \Illuminate\Support\Collection($pages);
+
+        $result = $list->where("is_hidden",0)->where("template","rutas")->sortBy('title')->values();
 
         return $result;
     }
@@ -409,25 +540,30 @@ class StaticApp extends ComponentBase
         $pages = Page::listInTheme($theme, false);
         $rutas =  new \Illuminate\Support\Collection($pages);
 
+        $categoryOperator = '=';
+        if($category == 'all'){
+            $category = null;
+            $categoryOperator = '!=';
+        }
+        
+        $daysOperator = '=';
+        if($days == 'all'){
+            $days = '0';
+            $daysOperator = '>';
+        }
 
-        $result = $rutas->where("is_hidden",0)->where('template','rutas')->where('category',$category)->where('days',$days)->where('location',$location)->values();
+        $locationOperator = '=';
+        if($location == 'all'){
+            $location = null;
+            $locationOperator = '!=';
+        }
+
+        $result = $rutas->where("is_hidden",0)->where('template','rutas')->where('category',$categoryOperator,$category)->where('days',$daysOperator,$days)->where('location',$locationOperator,$location)->values();
 
         return $result;
     }
 
-    public function experienceFindByUrl($url)
-    {
-        $theme = Theme::getActiveTheme();
-        $pagesList = Page::listInTheme($theme, false);
-        $pages =  new \Illuminate\Support\Collection($pagesList);
-
-        $event = $pages->where("is_hidden",0)->where("url",$url)->values();
-
-        //$event[0]->date_start_pretty_num = (new DateTime($event[0]->date_start))->format('d.m.y');
-        //$event[0]->date_end_pretty_num = (new DateTime($event[0]->date_end))->format('d.m.y');
-
-        return $event;
-    }
+   
 
     public function sendMailExperience($mail, $url) {
 
@@ -561,12 +697,12 @@ class StaticApp extends ComponentBase
 
         $dataemail = array('experience' => $dataexperience);
 
-        Mail::send('rainlab.pages::mail.experience', $dataemail, function($message) use ($pdf_data, $contactName, $sendContact, $sendTo)
+        Mail::send('rainlab.pages::mail.experience', $dataemail, function($message) use ($pdf_data, $contactName, $sendContact, $sendTo, $dataexperience)
         {
             $message->from($sendContact, $contactName);
             $message->to($sendTo);
             $message->subject('Tu experiencia en Cadiz Turismo');
-            $message->attachData($pdf_data, 'Experience.pdf');
+            $message->attachData($pdf_data, $dataexperience['title']);
 
         });
     }
@@ -658,6 +794,22 @@ class StaticApp extends ComponentBase
         return $pagination;
     }
 
+    public function staticsFindByUrl($url)
+    {
+        $theme = Theme::getActiveTheme();
+        $pagesList = Page::listInTheme($theme, false);
+        $pages =  new \Illuminate\Support\Collection($pagesList);
 
+        $staticPages = collect();
+
+
+        foreach ($pages as $value) {
+            if (strpos($value->url, $url) !== false) {
+                $staticPages->push($value);
+            }
+        }
+
+        return $staticPages;
+    }
 
 }

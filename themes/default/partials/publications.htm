@@ -23,8 +23,15 @@
       <p class="publi-desc">{{publication.viewBag.descrptn}}</p>
       <p class="languages-publi"><span id="languages-title">{{'IDIOMAS DISPONIBLES:'|_ }}</span> {{publication.viewBag.idiomas}}</p>
       <div class="links-container">
-        <a class="see-link" href="{{publication.viewBag.urlExternaVideo}}">{{'Ver'|_}} {{publication.viewBag.type|_}} <img src="{{preurl}}/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""> </a>
-        <a class="download-link" href="{{publication.viewBag.urlExternaZip}}">{{'Descargar'|_}} {{publication.viewBag.type|_}} <img src="{{preurl}}/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""> </a>
+        
+        {% if publications.viewBag.urlExternaVideo|length > 0 %}
+          <a class="see-link" href="{{publication.viewBag.urlExternaVideo}}">{{'Ver'|_}} {{publication.viewBag.type|_}} <img src="{{preurl}}/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""> </a>
+        {% endif %}
+        
+        {% if publications.viewBag.urlExternaZip|length > 0 %}
+          <a class="download-link" href="{{publication.viewBag.urlExternaZip}}">{{'Descargar'|_}} {{publication.viewBag.type|_}} <img src="{{preurl}}/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""> </a>
+        {% endif %}
+
       </div>
     </div>
 

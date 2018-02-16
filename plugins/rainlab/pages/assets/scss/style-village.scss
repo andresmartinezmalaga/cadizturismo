@@ -146,13 +146,15 @@ transform: $value;
 .img-village {
   //padding: 60px 0;
   position: relative;
-  height: 830px;
+  height: 930px;
   //background: linear-gradient(rgba(0,0,0,0.00) 0%, rgba(0,0,0,0.68) 100%), url("../img/marismas-barbate.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
   z-index: 10;
+  border-top: 80px solid white;
+  border-bottom: 80px solid white;
   background-color: white;
   .img-destacada {
     mask-image: url('../svg/mask4.svg');

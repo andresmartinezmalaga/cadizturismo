@@ -1,6 +1,6 @@
 /* BUSCADOR */
 .search-bar-container {
-  width: 870px;
+  width: 895px;
   height: 105px;
   border-radius: 5px;
   background-color: rgba(0, 0, 0, 0.18);
@@ -13,7 +13,7 @@
   justify-content: center;
   margin-top: -16px; }
   .search-bar-container .search-bar {
-    width: 824px;
+    width: 849px;
     height: 70px;
     background-color: white;
     border-radius: 4px;
@@ -25,8 +25,8 @@
     flex-direction: row;
     flex-wrap: wrap; }
     .search-bar-container .search-bar .days-container {
-      width: 169px;
-      min-width: 169px;
+      width: 194px;
+      min-width: 194px;
       height: 100%;
       border-right: 1px solid #DDDDDD;
       border-top-left-radius: 4px;

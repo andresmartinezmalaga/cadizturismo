@@ -124,7 +124,7 @@ class Experience extends ContentBase
 
         $template = '
         <!-- HEADER -->
-        <div class="header-event main-exp">
+        <div class="plantillaExperiencia header-experience main-exp">
           <div class="header-container">
             <div class="header-txt">
               <h1 class="txt">Título</h1>
@@ -137,26 +137,9 @@ class Experience extends ContentBase
           <img class="background-image" value="cover" src="***_preurl_***/storage/app/media/uploaded-files/templates/palmar1.jpg" alt="">
 
           <!-- FEATURES -->
-          <div class="event-features">
-            <div class="feature-exp">
-              <img src="***_preurl_***/storage/app/media/uploaded-files/templates/calendar-exp.svg">
-              <p class="feature-txt">Nº días</p>
-            </div>
-            <div class="feature-exp">
-              <img src="***_preurl_***/storage/app/media/uploaded-files/templates/beach-exp.svg">
-              <p class="feature-txt">Categoría 1</p>
-            </div>
-            <div class="feature-exp">
-              <img src="***_preurl_***/storage/app/media/uploaded-files/templates/natu-exp.svg">
-              <p class="feature-txt">Categoría 2</p>
-            </div>
-            <div class="feature-exp">
-              <img src="***_preurl_***/storage/app/media/uploaded-files/templates/cultura-event.svg">
-              <p class="feature-txt">Tipo de visita</p>
-            </div>
-          </div>
-        </div>
 
+        </div>
+        <div id="phantom-div"></div>
         <!-- SECTION TXT-->
         <div class="section-txt">
 
@@ -169,12 +152,12 @@ class Experience extends ContentBase
             <p class="desc">Escribe aquí el contenido a desarrollar y agrega una imagen adicional si lo necesitas.</p>
           </div>
         </div>
-
+        <p class="mock-insert"><br></p>
         <!-- SECTION IMG -->
         <div class="section-img">
           <img src="***_preurl_***/storage/app/media/uploaded-files/templates/palmar2.jpg" alt="">
         </div>
-
+        <p class="mock-insert">Inserta aquí una nueva sección<br></p>
         <div class="section-txt">
           <div class="big-number-container">
             <span class="step">2</span>
@@ -184,11 +167,11 @@ class Experience extends ContentBase
             <p class="desc">Escribe aquí el contenido a desarrollar y agrega una imagen adicional si lo necesitas.</p>
           </div>
         </div>
-
+        <p class="mock-insert"><br></p>
         <div class="section-img">
           <img src="***_preurl_***/storage/app/media/uploaded-files/templates/surf3.jpg" alt="">
         </div>
-
+        <p class="mock-insert"><br></p>
         <div class="section-txt">
 
           <div class="big-number-container">
@@ -200,11 +183,11 @@ class Experience extends ContentBase
             <p class="desc">Escribe aquí el contenido a desarrollar y agrega una imagen adicional si lo necesitas.</p>
           </div>
         </div>
-
+        <p class="mock-insert"><br></p>
         <div class="section-img">
           <img src="***_preurl_***/storage/app/media/uploaded-files/templates/palmar4.jpg" alt="">
         </div>
-
+        <p class="mock-insert"><br></p>
         <div class="section-txt">
           <div class="big-number-container">
             <span class="step">4</span>
@@ -235,6 +218,7 @@ class Experience extends ContentBase
             </div>
         </div>
         </div>
+        <p class="mock-insert"><br></p>
         <div class="section-img">
           <img src="***_preurl_***/storage/app/media/uploaded-files/templates/palmar5.jpg" alt="">
         </div>';

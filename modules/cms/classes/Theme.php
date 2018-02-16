@@ -373,7 +373,7 @@ class Theme
         if (!File::exists($path)) {
             throw new ApplicationException('Path does not exist: '.$path);
         }
-
+      
         $contents = Yaml::render($values);
         File::put($path, $contents);
         $this->configCache = $values;

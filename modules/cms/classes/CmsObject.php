@@ -263,7 +263,7 @@ class CmsObject extends HalcyonModel implements CmsObjectContract
         if ($pos === false) {
             return $this->fileName;
         }
-
+        
         return substr($this->fileName, 0, $pos);
     }
 

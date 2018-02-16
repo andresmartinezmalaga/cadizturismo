@@ -1,0 +1,97 @@
+API DOC
+
+	Todos los municipios : 
+
+		url : http://cadizturismo/api/municipios
+
+		response : [municipios]
+						[lenguajes] ('es','en'...)
+							['es'] ['markup'] : html
+							['es'] ['viewBag'] : parametros, variables
+	Un municipio :		
+
+		url : http://cadizturismo/api/municipios/{municipio}
+		params:
+			{municipio} string (nombre del mismo en la url, de la peticion anterior, todos los municipios ejemplo : /municipios/barbate, sería barbate)
+
+	Todas las comarcas :
+
+		url : http://cadizturismo/api/comarcas
+	
+	Una comarca :
+
+		url : http://cadizturismo/api/comarcas/{comarca}
+		params:
+			{comarca} string (nombre de la misma en la url, de la peticion anterior, todas las comarcas, ejemplo : /comarcas/la-janda, sería la-janda )
+
+	Todas las playas
+
+		url : http://cadizturismo/api/api/playas
+
+	Una playa :
+
+		url : http://cadizturismo/api/playas/{playa}
+		params:
+			{playa} string (nombre de la misma en la url, de la peticion anterior, todas las comarcas, ejemplo : /playas/los-lances, sería los-lances )
+
+	
+	Todas las rutas
+
+		url : http://cadizturismo/api/api/rutas
+				
+	Opciones rutas
+
+		Categorias
+			url : http://cadizturismo/api/api/rutas/opciones/categorias
+		Ubicación
+			url : http://cadizturismo/api/api/rutas/opciones/ubicacion
+
+	Una ruta
+	
+		url : http://cadizturismo/api/rutas/{category}/{days}/{location}
+		params:
+			{category} string (value de las opciones categorias de rutas )
+			{days} integer (numero de días)
+			{location} string (value de las opciones ubicacion de rutas )
+
+
+	Todas los eventos
+
+		url : http://cadizturismo/api/api/eventos
+				
+	Opciones eventos
+
+		Categorias
+			url : http://cadizturismo/api/api/eventos/opciones/categorias
+		Ubicación
+			url : http://cadizturismo/api/api/eventos/opciones/ubicacion
+
+	Buscar un evento
+
+		url : http://cadizturismo/api/eventos/{category}/{date_start}/{date_end}/{location}
+		params:
+			{category} string (value de las opciones categorias de eventos )
+			{date_start} string (un string con el sig. formato :  07-02-2018 dia, mes, año)
+			{date_end} string (un string con el sig. formato :  07-02-2018 dia, mes, año)
+			{location} string (value de las opciones ubicacion de eventos )
+
+
+	Opciones experiencias
+
+		Intereses
+			url : http://cadizturismo/api/experiencias/opciones/intereses
+		Tipo de visita
+			url : http://cadizturismo/api/experiencias/opciones/tipo-visita
+
+	Buscar una experiencia
+
+			url : http://cadizturismo/api/experiencias/{days}/{interest}/{tvisit}
+			params :
+				{days} integer (numero de días)
+				{interest} string (value de las opciones intereses de experiencias )
+				{tvisit} string (value de las opciones tipo de visita de experiencias )
+
+
+	Páginas estaticas
+
+			url : http://cadizturismo/api/estaticas

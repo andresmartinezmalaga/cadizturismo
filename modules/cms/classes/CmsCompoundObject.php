@@ -386,7 +386,8 @@ class CmsCompoundObject extends CmsObject
     protected function fillViewBagArray()
     {
         $viewBag = $this->getViewBag();
-       
+        
+
         foreach ($viewBag->getProperties() as $name => $value) {
             $this->viewBag[$name] = $value;
         }

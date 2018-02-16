@@ -1,0 +1,41 @@
+# ===================================
+#  Field Definitions
+# ===================================
+
+fields:
+    
+    titulo:
+        span: left
+        label: Título de la home
+
+    subtitulo:
+        span: right
+        label: Subtítulo de la home
+
+    parrafo:
+        span: full
+        label: Párrafo
+
+    enlace_titulo:
+        span: left
+        label: Título del enlace
+
+    enlace:
+        span: right
+        label: URL del enlace
+
+    avatar:
+        label: Imagen
+        type: fileupload
+        mode: image
+        imageHeight: 260
+        imageWidth: 260
+        thumbOptions:
+            mode: crop
+            offset:
+                - 0
+                - 0
+            quality: 90
+            sharpen: 0
+            interlace: false
+            extension: auto

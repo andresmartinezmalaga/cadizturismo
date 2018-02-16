@@ -128,7 +128,7 @@ class Ruta extends ContentBase
         // Andrés Martínez : Load rutas template on markup
         $template = '
         <!-- HEADER -->
-        <div class="header-event main-exp">
+        <div class="plantillaRuta header-event main-exp">
           <div class="header-container">
             <div class="header-txt">
               <h1 class="txt">Nombre de la ruta</h1>
@@ -150,10 +150,12 @@ class Ruta extends ContentBase
             <p class="desc">Escribe aquí el contenido a desarrollar y agrega una imagen adicional si lo necesitas.</p>
           </div>
         </div>
+        <p class="mock-insert"><br></p>
         <!-- SECTION IMG -->
         <div class="section-img">
           <img src="***_preurl_***/storage/app/media/uploaded-files/templates/viaverde2.jpg" alt="">
         </div>
+        <p class="mock-insert"><br></p>
         <div class="section-txt">
           <div class="big-number-container">
             <span class="step">2</span>
@@ -177,9 +179,11 @@ class Ruta extends ContentBase
             </div> -->
           </div>
         </div>
+        <p class="mock-insert"><br></p>
         <div class="section-img">
           <img src="***_preurl_***/storage/app/media/uploaded-files/templates/viaverde3.jpg" alt="">
         </div>
+        <p class="mock-insert"><br></p>
         <div class="section-txt">
           <div class="big-number-container">
             <span class="step">3</span>
@@ -189,9 +193,11 @@ class Ruta extends ContentBase
             <p class="desc">Escribe aquí el contenido a desarrollar y agrega una imagen adicional si lo necesitas.</p>
           </div>
         </div>
+        <p class="mock-insert"><br></p>
         <div class="section-img">
           <img src="***_preurl_***/storage/app/media/uploaded-files/templates/viaverde4.jpg" alt="">
         </div>
+        <p class="mock-insert"><br></p>
         <div class="section-txt">
           <div class="big-number-container">
             <span class="step">4</span>
@@ -201,6 +207,7 @@ class Ruta extends ContentBase
             <p class="desc">Escribe aquí el contenido a desarrollar y agrega una imagen adicional si lo necesitas.</p>
           </div>
         </div>
+        <p class="mock-insert"><br></p>
         <div class="section-img">
           <img src="***_preurl_***/storage/app/media/uploaded-files/templates/viaverde5.jpg" alt="">
         </div>';

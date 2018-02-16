@@ -184,8 +184,10 @@ class EventoList
 
         if (!strlen($parent)) {
             $structure[$page->getBaseFileName()] = [];
+           
         }
         else {
+          
             $iterator = function(&$configPages) use (&$iterator, $parent, $page) {
                 foreach ($configPages as $fileName => &$subpages) {
                     if ($fileName == $parent) {
@@ -201,6 +203,7 @@ class EventoList
 
             $iterator($structure);
         }
+
 
         $this->updateStructure($structure);
     }

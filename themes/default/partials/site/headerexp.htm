@@ -26,6 +26,31 @@
   </div>
 </div>
 
+<div id="out-features" class="event-features">
+  <div class="feature-exp">
+    
+    <img src="{{preurl}}/storage/app/media/uploaded-files/templates/calendar-exp.svg">
+    {%if experience[0].days < 2%}
+    <p class="feature-txt">{{experience[0].days}} día</p>
+    {% else %}
+     <p class="feature-txt">{{experience[0].days}} días</p>
+    {%endif%}
+  
+  </div>
+  {% set cat = experience[0].interest|split(' y ')%}
+  <div class="feature-exp">
+    <img src="{{preurl}}/storage/app/media/uploaded-files/templates/{{str_slug(cat[0])}}.svg">
+    <p class="feature-txt">{{cat[0]|capitalize}}</p>
+  </div>
+  <div class="feature-exp">
+    <img src="{{preurl}}/storage/app/media/uploaded-files/templates/{{str_slug(cat[1])}}.svg">
+    <p class="feature-txt">{{cat[1]|capitalize}}</p>
+  </div>
+  <div class="feature-exp">
+    <img src="{{preurl}}/storage/app/media/uploaded-files/templates/cultura-event.svg">
+    <p class="feature-txt">{{experience[0].tvisit|capitalize}}</p>
+  </div>
+</div>
 
 <div id="modal-exp"> <!-- data-iziModal-fullscreen="true"  data-iziModal-title="Welcome"  data-iziModal-subtitle="Subtitle"  data-iziModal-icon="icon-home" -->
     <!-- Modal content -->

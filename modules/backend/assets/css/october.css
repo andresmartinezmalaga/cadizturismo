@@ -4931,6 +4931,12 @@ nav#layout-mainmenu.navbar-mode-inline ul.mainmenu-nav li:first-child {
   .control-treeview ol > li.dragged div .link-prensa, .control-treeview ol > li > div:hover .link-prensa {
     color: #ffffff; }
 
+.control-treeview ol > li.dragged div + .duplicate img, .control-treeview ol > li > div:hover + .duplicate img,
+.control-treeview ol > li.active > div + .duplicate img {
+  -webkit-filter: brightness(10);
+  filter: brightness(10);
+  -moz-filter: brightness(10); }
+
 .control-treeview.treeview-light ol > li > div > ul.submenu li {
   background-color: #175DA3;
   border-right: 1px solid #175DA3; }
@@ -5544,3 +5550,82 @@ div[data-control="media-manager"] .media-list.tiles li.selected .icon-container 
 
 #ReportContainer-container-toolbar {
   display: none; }
+
+/* Botón duplicar */
+.control-treeview ol > li {
+  position: relative; }
+  .control-treeview ol > li div > a > div {
+    width: 80%; }
+
+.duplicate {
+  position: absolute;
+  z-index: 10;
+  top: 6px;
+  right: 35px;
+  cursor: pointer; }
+  .duplicate img {
+    width: 17px;
+    height: auto; }
+
+/* CUSTOM EDITOR TOOLBAR */
+.custom-wysiwyg {
+  width: 38px;
+  display: inline-block;
+  height: 38px;
+  cursor: pointer;
+  padding: 0px;
+  text-align: center; }
+  .custom-wysiwyg img {
+    height: 14px;
+    width: auto;
+    margin: 12px auto;
+    text-align: center; }
+  .custom-wysiwyg:hover {
+    background: #dddddd; }
+
+/* PANTALLA COMPLETA */
+.fr-fullscreen {
+  /* EXPERIENCIAS */
+  /* EVENTOS */
+  /* RUTAS */ }
+  .fr-fullscreen .fr-element.fr-view {
+    margin-bottom: 200px !important; }
+  .fr-fullscreen div[id*="MLRichEditor-formExperience"] + .ml-btn {
+    top: -506px !important; }
+  .fr-fullscreen div[id*="MLRichEditor-formExperience"] ~ .ml-dropdown-menu {
+    top: -478px !important; }
+  .fr-fullscreen div[id*="MLRichEditor-formEvento"] + .ml-btn {
+    top: -694px !important; }
+  .fr-fullscreen div[id*="MLRichEditor-formEvento"] ~ .ml-dropdown-menu {
+    top: -669px !important; }
+  .fr-fullscreen div[id*="MLRichEditor-formRuta"] + .ml-btn {
+    top: -598px !important; }
+  .fr-fullscreen div[id*="MLRichEditor-formRuta"] ~ .ml-dropdown-menu {
+    top: -573px !important; }
+  .fr-fullscreen .ml-btn {
+    top: -409px !important;
+    z-index: 999 !important; }
+  .fr-fullscreen .ml-dropdown-menu {
+    top: -376px !important; }
+
+/* HOME */
+#Form-field-Home-avatar-group {
+  position: absolute;
+  right: 20px;
+  width: 260px;
+  z-index: 100; }
+
+.control-scrollpanel {
+  background: #F6F6F6 !important; }
+
+.field-fileupload.style-image-single .upload-button:hover, .field-fileupload.style-image-single .upload-button:focus {
+  border: 2px dashed #175DA3 !important; }
+
+.field-fileupload.style-image-single .upload-button:hover .upload-button-icon:before, .field-fileupload.style-image-single .upload-button:focus .upload-button-icon:before {
+  color: #175DA3 !important; }
+
+.btn-text a {
+  text-decoration: none !important; }
+
+.btn-text a:hover {
+  color: #175DA3 !important; }

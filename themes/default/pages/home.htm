@@ -12,6 +12,8 @@ is_hidden = 0
 	function onStart()
 	{
 
+    $this['home'] = $this->staticApp->getHomeVars();
+   
     if (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false) {
           $this['preurl'] = '/cadizturismo';
     } else {
@@ -44,12 +46,12 @@ is_hidden = 0
 ==
 
 	<!-- HEADER -->
-    <div class="header header-home">
+    <div class="header header-home" style="background-image: url({{home.image}})">
       <div class="header-container">
         <div class="header-txt">
           <h1 class="txt txt-home"><span class="first-word">
-           {{ 'Playas'|_ }}
-            </span>{{ 'que te llenan de luz'|_ }}</h1>
+           {{ home.titulo|_ }}
+            </span>{{ home.subtitulo|_ }}</h1>
           <img class="brush" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/brush-header.svg" alt="">
         </div>
 
@@ -59,8 +61,8 @@ is_hidden = 0
         </div>
 
         <div class="header-comment">
-          <p class="comment">{{ '138km de playas, calas y ensenadas que invitan a perderse'|_ }}</p>
-          <a class="header-link" href="{{url('/')}}/{{lang}}/playas">{{ 'Conoce nuestras playas'|_ }} &nbsp;<img src="{{preurl}}/storage/app/media/uploaded-files/templates/link-arrow.svg" alt=""> </a>
+          <p class="comment">{{ home.parrafo|_ }}</p>
+          <a class="header-link" href="{{url('/')}}/{{lang}}/home.enlace">{{ home.enlace_titulo|_ }} &nbsp;<img src="{{preurl}}/storage/app/media/uploaded-files/templates/link-arrow.svg" alt=""> </a>
         </div>
       </div>
     </div>

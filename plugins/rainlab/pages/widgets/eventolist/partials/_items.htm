@@ -1,7 +1,7 @@
 
 <div class="order-container">
   <!-- añadir la clase active-a cuando esté activo -->
-  <a class="order-event <?php if($this->activeMenuFilter == 'all'){echo 'active-a';} ?>" href="" data-request='onAllEvents'>Todos</a>
+  <a id="allev" class="order-event <?php if($this->activeMenuFilter == 'all'){echo 'active-a';} ?>" href="" data-request='onAllEvents'>Todos</a>
   <a class="order-event <?php if($this->activeMenuFilter == 'open'){echo 'active-a';} ?>" href="" data-request='onOpenEvents'>Próximos</a>
   <a class="order-event <?php if($this->activeMenuFilter == 'closed'){echo 'active-a';} ?>" href="" data-request='onClosedEvents'>Finalizados</a>
 </div>

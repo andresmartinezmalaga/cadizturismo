@@ -123,6 +123,7 @@ class Evento extends ContentBase
      */
     public function __construct(array $attributes = [])
     {
+
         parent::__construct($attributes);
 
         $this->customMessages = [
@@ -236,7 +237,7 @@ class Evento extends ContentBase
     // sort ok
     public function getEventsCategories(){
       return [
-          
+
            'carnaval' => 'Carnaval',
            'congresos' => 'Congresos',
            'cultura' => 'Cultura',
@@ -324,13 +325,13 @@ class Evento extends ContentBase
 
         return[
         'aventura y tradición' => 'Aventura y tradición',
-        'cultura y gastronomía' => 'Cultura y gastronomía', 
-        'fiesta y cultura' => 'Fiesta y cultura', 
-        'gastronomía y naturaleza' => 'Gastronomía y naturaleza', 
-        'naturaleza y aventura' => 'Naturaleza y aventura', 
-        'playa y gastronomía' => 'Playa y gastronomía', 
-        'playa y naturaleza' => 'Playa y naturaleza', 
-        'vino y tradición' => 'Vino y tradición', 
+        'cultura y gastronomía' => 'Cultura y gastronomía',
+        'fiesta y cultura' => 'Fiesta y cultura',
+        'gastronomía y naturaleza' => 'Gastronomía y naturaleza',
+        'naturaleza y aventura' => 'Naturaleza y aventura',
+        'playa y gastronomía' => 'Playa y gastronomía',
+        'playa y naturaleza' => 'Playa y naturaleza',
+        'vino y tradición' => 'Vino y tradición',
         ] ;
     }
 
@@ -339,7 +340,7 @@ class Evento extends ContentBase
 
         return[
           'cádiz auténtica' => 'Cádiz auténtica',
-          'cádiz oculta' => 'Cádiz oculta',        
+          'cádiz oculta' => 'Cádiz oculta',
           'cádiz relax' => 'Cádiz relax',
           'cádiz urbano' => 'Cádiz urbano'
         ] ;
@@ -356,7 +357,6 @@ class Evento extends ContentBase
      */
     public function fill(array $attributes)
     {
-
         parent::fill($attributes);
 
         /*
@@ -364,6 +364,7 @@ class Evento extends ContentBase
          * This is required for the back-end editors.
          */
         if (array_key_exists('settings', $attributes) && array_key_exists('viewBag', $attributes['settings'])) {
+
             $this->getViewBag()->setProperties($attributes['settings']['viewBag']);
             $this->fillViewBagArray();
         }

@@ -2,6 +2,7 @@
 
 use Cms\Classes\CmsCompoundObject;
 use RainLab\Pages\Classes\Page as PageBase;
+use Cms\Classes\Theme;
 
 /**
  * Represents a multi-lingual CMS compound object.
@@ -27,7 +28,8 @@ class MLCmsObject extends CmsCompoundObject
     }
 
     public static function forLocale($locale, $page)
-    {
+    {        
+        
         static::setContext($locale, $page);
 
         return static::inTheme($page->theme);

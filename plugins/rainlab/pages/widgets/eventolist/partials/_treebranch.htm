@@ -1,4 +1,4 @@
-<?php foreach ($items as $pageObj): ?>    
+<?php foreach ($items as $pageObj): ?>
     <?php
         $fileName = $pageObj->page->getBaseFileName();
         $groupStatus = $this->getCollapseStatus($fileName);
@@ -7,7 +7,7 @@
         $cbId = 'cb'.md5($fileName);
     ?>
     <li
-        class="<?= $pageObj->subpages ? 'has-subitems' : null ?>" 
+        class="<?= $pageObj->subpages ? 'has-subitems' : null ?>"
         data-status="<?= $groupStatus || !$pageObj->subpages ? 'expanded' : 'collapsed' ?>"
         data-group-id="<?= e($fileName) ?>"
         data-item-path="<?= e($fileName) ?>"
@@ -15,9 +15,10 @@
         data-id="<?= e($dataId) ?>"
     >
         <div>
+
             <a href="#">
                 <div>
-                    <?= e($pageObj->page->getViewBag()->property('title')) ?>                    
+                    <?= e($pageObj->page->getViewBag()->property('title')) ?>
                     <p><span class="comment date_start_pretty_num"><?= e($pageObj->date_start_pretty_num) ?></span></p>
                     <?php if ($pageObj->page->getViewBag()->property('is_hidden') == 1): ?>
                         <p><span class="comment borrador">BORRADOR</span></p>
@@ -36,6 +37,12 @@
                 <label for="<?= $cbId ?>"></label>
             </div>
         </div>
+        <a class='duplicate' data-request='onCopyEvent' data-request-data="fileNamePost: '<?= e($fileName) ?>' , fileUrlPost: '<?= $pageObj->page->getViewBag()->property('url') ?>', fileTitlePost: '<?= $pageObj->page->getViewBag()->property('title') ?>'">
+          <img data-toggle="tooltip"
+          data-placement="bottom"
+          data-delay="200"
+          title="Duplicar evento" src="/storage/app/media/uploaded-files/templates/duplicate.svg">
+        </a>
         <ol>
             <?php if ($subpages = $pageObj->subpages): ?>
                 <?= $this->makePartial('treebranch', ['items' => $subpages]) ?>
@@ -43,4 +50,3 @@
         </ol>
     </li>
 <?php endforeach ?>
-     

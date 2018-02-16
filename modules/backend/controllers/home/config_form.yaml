@@ -1,0 +1,16 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+name: backend::lang.user.name
+form: ~/modules/backend/models/home/fields.yaml
+modelClass: Backend\Models\Home
+defaultRedirect: backend/home
+
+create:
+    redirect: backend/homes/update/:id
+    redirectClose: backend/home
+
+update:
+    redirect: backend/homes
+    redirectClose: backend/home

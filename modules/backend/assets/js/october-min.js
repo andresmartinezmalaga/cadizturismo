@@ -1,4 +1,3 @@
-
 (function($){$.fn.touchwipe=function(settings){var config={min_move_x:20,min_move_y:20,wipeLeft:function(){},wipeRight:function(){},wipeUp:function(){},wipeDown:function(){},preventDefaultEvents:true};if(settings)$.extend(config,settings);this.each(function(){var startX;var startY;var isMoving=false;function cancelTouch(){this.removeEventListener('touchmove',onTouchMove);startX=null;isMoving=false;}
 function onTouchMove(e){if(config.preventDefaultEvents){e.preventDefault();}
 if(isMoving){var x=e.touches[0].pageX;var y=e.touches[0].pageY;var dx=startX-x;var dy=startY-y;if(Math.abs(dx)>=config.min_move_x){cancelTouch();if(dx>0){config.wipeLeft();}
@@ -903,10 +902,13 @@ $.fn.fileList.Constructor=FileList
 $.fn.fileList.noConflict=function(){$.fn.fileList=old
 return this}
 $(document).ready(function(){$('[data-control=filelist]').fileList()})}(window.jQuery);(function($){var OctoberLayout=function(){this.$accountMenuOverlay=null}
-OctoberLayout.prototype.setPageTitle=function(title){var $title=$('title')
+// Andrés Martínez : No set title page
+OctoberLayout.prototype.setPageTitle=function(title){
+var $title=$('title')
 if(this.pageTitleTemplate===undefined)
 this.pageTitleTemplate=$title.data('titleTemplate')
-$title.text(this.pageTitleTemplate.replace('%s',title))}
+$title.text(this.pageTitleTemplate.replace('%s',title))
+}
 OctoberLayout.prototype.updateLayout=function(title){var $children,$el,fixedWidth,margin
 $('[data-calculate-width]').each(function(){$children=$(this).children()
 if($children.length>0){fixedWidth=0
@@ -932,12 +934,23 @@ $parent.removeClass('highlight')})}}
 if($.oc===undefined)
 $.oc={}
 $.oc.layout=new OctoberLayout()
+
 $(document).ready(function(){$.oc.layout.updateLayout()
 window.setTimeout($.oc.layout.updateLayout,100)})
 $(window).on('resize',function(){$.oc.layout.updateLayout()})
-$(window).on('oc.updateUi',function(){$.oc.layout.updateLayout()})})(jQuery);+function($){"use strict";var SidePanelTab=function(element,options){this.options=options
-this.$el=$(element)
-this.init()}
+$(window).on('oc.updateUi',function(){$.oc.layout.updateLayout()})})(jQuery);+function($){
+"use strict";
+
+
+var SidePanelTab=function(element,options){
+
+	this.options=options
+	this.$el=$(element)
+	this.init()
+
+
+}
+
 SidePanelTab.prototype.init=function(){var self=this
 this.tabOpenDelay=200
 this.tabOpenTimeout=undefined
@@ -953,12 +966,23 @@ this.$fixButton=$('<a href="#" class="fix-button"><i class="icon-thumb-tack"></i
 this.$fixButton.click(function(){self.fixPanel()
 return false})
 $('.fix-button-container',this.$el).append(this.$fixButton)
-this.$sideNavItems.click(function(){if($(this).data('no-side-panel')){return}
-if(Modernizr.touch&&$(window).width()<self.options.breakpoint){if($(this).data('menu-item')==self.visibleItemId&&self.panelVisible){self.hideSidePanel()
-return}
-else{self.displaySidePanel()}}
-self.displayTab(this)
-return false})
+
+this.$sideNavItems.click(function(){
+	
+	if($(this).data('no-side-panel'))
+		{return}
+	
+	if(Modernizr.touch&&$(window).width()<self.options.breakpoint)
+		{if($(this).data('menu-item')==self.visibleItemId&&self.panelVisible)
+			{self.hideSidePanel()
+			return}
+	
+	else{self.displaySidePanel()}}
+	self.displayTab(this)
+	return false})
+
+
+
 if(!Modernizr.touch){self.$sideNav.mouseleave(function(){clearTimeout(self.panelOpenTimeout)})
 self.$el.mouseleave(function(){self.hideSidePanel()})
 self.$sideNavItems.mouseenter(function(){if($(window).width()<self.options.breakpoint||!self.panelFixed()){if($(this).data('no-side-panel')){self.hideSidePanel()
@@ -972,19 +996,35 @@ self.updateActiveTab()})}
 else{$('#layout-body').click(function(){if(self.panelVisible){self.hideSidePanel()
 return false}})
 self.$el.on('close.oc.sidePanel',function(){self.hideSidePanel()})}
+
+
 this.updateActiveTab()}
-SidePanelTab.prototype.displayTab=function(menuItem){var menuItemId=$(menuItem).data('menu-item')
-this.visibleItemId=menuItemId
-$.oc.sideNav.setActiveItem(menuItemId)
-this.$sidePanelItems.each(function(){var $el=$(this)
-$el.toggleClass('hide',$el.data('content-id')!=menuItemId)})
-$(window).trigger('resize')}
+
+SidePanelTab.prototype.displayTab=function(menuItem){
+	var menuItemId=$(menuItem).data('menu-item')
+	this.visibleItemId=menuItemId
+	$.oc.sideNav.setActiveItem(menuItemId)
+
+	this.$sidePanelItems.each(function(){var $el=$(this)
+		console.log($el);
+		$el.toggleClass('hide',$el.data('content-id')!=menuItemId)
+	})
+
+	$(window).trigger('resize')
+}
+
+
+
 SidePanelTab.prototype.displaySidePanel=function(){$(document.body).addClass('display-side-panel')
 this.$el.appendTo('#layout-canvas')
 this.panelVisible=true
 this.$el.css({left:this.sideNavWidth,top:this.mainNavHeight})
 this.updatePanelPosition()
 $(window).trigger('resize')}
+
+
+
+
 SidePanelTab.prototype.hideSidePanel=function(){$(document.body).removeClass('display-side-panel')
 if(this.$el.next('#layout-body').length==0){$('#layout-body').before(this.$el)}
 this.panelVisible=false

@@ -41,6 +41,9 @@
   font-weight: normal;
   font-style: normal; }
 
+.send-info:not(:has(a)) {
+  display: none !important; }
+
 .navigation {
   display: none; }
 
@@ -87,6 +90,46 @@ input:-webkit-autofill {
 .section-txt img, .section-txt-village img, .section-txt-comarca img {
   max-width: 100%;
   height: auto !important; }
+
+.two-images {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  .two-images .event-left {
+    height: 640px;
+    position: relative;
+    width: calc(100% / 3);
+    width: -moz-calc(100% / 3);
+    width: -ms-calc(100% / 3);
+    width: -webkit-calc(100% / 3); }
+  .two-images .event-right {
+    height: 640px;
+    position: relative;
+    width: calc((100% / 3) * 2);
+    width: -webkit-calc((100% / 3) * 2);
+    width: -moz-calc((100% / 3) * 2);
+    width: -ms-calc((100% / 3) * 2); }
+
+.section-txt .more-info {
+  width: 90%;
+  max-width: 1145px; }
+  .section-txt .more-info .txt-container {
+    min-height: 0px !important; }
+  .section-txt .more-info h3 {
+    margin-bottom: 30px !important; }
+  .section-txt .more-info p {
+    margin-bottom: 0px !important;
+    margin-top: 20px !important; }
+
+.section-info {
+  padding-top: 100px !important;
+  padding-bottom: 100px !important; }
 
 @media (max-width: 725px) {
   .slidemenu {
@@ -942,6 +985,7 @@ html, body {
 .field-richeditor .header-general .background-image,
 .field-richeditor .header .background-image,
 .field-richeditor .header-event .background-image,
+.field-richeditor .header-experience .background-image,
 .field-richeditor .static-header .img-header,
 .field-richeditor .ayuda-header .img-header,
 .field-richeditor .about-header .img-header {
@@ -995,7 +1039,7 @@ html, body {
 .field-richeditor .featured-element .overlay {
   display: none; }
 
-.field-richeditor .header-event .brush {
+.field-richeditor .header-event .brush, .field-richeditor .header-experience .brush {
   margin-bottom: 150px; }
 
 .fr-box.fr-basic .fr-element {
@@ -2086,14 +2130,16 @@ html, body {
   .reportajes .publi-container, .publicaciones .publi-container {
     width: 80%;
     font-size: 48px;
-    margin-left: 50px !important; } }
+    margin-left: 50px !important; }
+  .static-header .header-txt-comollegar, .somos-section .header-txt-comollegar, .ayuda-header .header-txt-comollegar, .about-header .header-txt-comollegar {
+    margin-top: -170px; } }
 
 @media (max-width: 1100px) {
   .ways .way {
     width: 100%; }
   .static-header .header-txt-comollegar .txt, .somos-section .header-txt-comollegar .txt, .ayuda-header .header-txt-comollegar .txt, .about-header .header-txt-comollegar .txt {
     font-size: 170px !important;
-    line-height: 170px !important;
+    line-height: 130px !important;
     transform: none !important; }
   .static-header .header-txt-comollegar .brush, .somos-section .header-txt-comollegar .brush, .ayuda-header .header-txt-comollegar .brush, .about-header .header-txt-comollegar .brush {
     bottom: -55px !important; }
@@ -2161,7 +2207,7 @@ html, body {
   .close-modal {
     display: block !important; }
   .img-village {
-    height: 650px !important; }
+    height: 750px !important; }
   .featured-element {
     height: 700px !important; }
   .section-txt p, .section-txt-village p, .section-txt-comarca p {
@@ -2243,20 +2289,20 @@ html, body {
     margin-top: 20px !important; }
   .header-comment {
     width: auto !important; }
-  .header-event {
+  .header-event, .header-experience {
     background-position: center;
     height: auto !important; }
-  .header-event .send-info {
+  .header-event .send-info, .header-experience .send-info {
     margin-top: 80px !important; }
-  .header-event .txt {
+  .header-event .txt, .header-experience .txt {
     font-size: 100px !important;
     max-width: 79% !important; }
-  .header-event .send-info {
+  .header-event .send-info, .header-experience .send-info {
     width: 80% !important;
     max-width: 348px; }
-  .header-event .send-info .button-send-info {
+  .header-event .send-info .button-send-info, .header-experience .send-info .button-send-info {
     width: 90% !important; }
-  .header-event .send-info .button-send-info a {
+  .header-event .send-info .button-send-info a, .header-experience .send-info .button-send-info a {
     font-size: 16px !important;
     text-align: center;
     padding: 22px 7px !important; }
@@ -2556,6 +2602,11 @@ html, body {
     width: 85%; } }
 
 @media (max-width: 709px) {
+  .municipios-snippet {
+    flex-direction: column;
+    align-items: center !important; }
+    .municipios-snippet .municipio {
+      margin-right: 0px !important; }
   .static-header, .somos-section, .ayuda-header, .about-header {
     max-height: 800px !important; }
     .static-header .tagline-container, .somos-section .tagline-container, .ayuda-header .tagline-container, .about-header .tagline-container {
@@ -2675,9 +2726,13 @@ html, body {
   .header-playa .txt {
     font-size: 130px !important;
     line-height: 130px !important; }
+  #out-features .feature-exp:first-child {
+    padding-top: 0px !important; }
+  .header-experience .header-container {
+    margin-top: 90px !important; }
   .background-image {
     top: 0px !important; }
-  .header-event + .section-txt {
+  .header-event + .section-txt, .header-experience + .section-txt {
     margin-top: 0px; }
   .section-txt-comarca .txt-container, .section-txt-village .txt-container {
     padding: 70px 0px 70px 0px !important; }
@@ -2685,32 +2740,32 @@ html, body {
     display: block; }
   .main-section-comarcas .main-events-container {
     margin-top: 60px !important; }
-  .header, .static-header, .ayuda-header, .about-header, .header-event, .header-village, .header-general, .header-ruta, .header-search {
+  .header, .static-header, .ayuda-header, .about-header, .header-event, .header-experience, .header-village, .header-general, .header-ruta, .header-search {
     margin-top: 0px !important;
     min-height: 650px; }
   .ayuda-header .img-header, .static-header .img-header, .about-header .img-header {
     top: 0px !important; }
-  .header .mini-logo-container, .header-event .mini-logo-container, .header-village .mini-logo-container, .header-general .mini-logo-container, .header-ruta .mini-logo-container, .header-search .mini-logo-container {
+  .header .mini-logo-container, .header-event .mini-logo-container, .header-experience .mini-logo-container, .header-village .mini-logo-container, .header-general .mini-logo-container, .header-ruta .mini-logo-container, .header-search .mini-logo-container {
     top: 59px !important; }
-  .header .language-container, .header-event .language-container, .header-village .language-container, .header-general .language-container, .header-ruta .language-container, .header-search .language-container {
+  .header .language-container, .header-event .language-container, .header-experience .language-container, .header-village .language-container, .header-general .language-container, .header-ruta .language-container, .header-search .language-container {
     width: 18px !important;
     height: 90px !important;
     right: 20px !important; }
-  .header .language-container .languages, .header-event .language-container .languages, .header-village .language-container .languages, .header-general .language-container .languages, .header-ruta .language-container .languages, .header-search .language-container .languages {
+  .header .language-container .languages, .header-event .language-container .languages, .header-experience .language-container .languages, .header-village .language-container .languages, .header-general .language-container .languages, .header-ruta .language-container .languages, .header-search .language-container .languages {
     flex-direction: column !important; }
-  .header .event-features, .header-event .event-features, .event-features, .header-village .event-features, .header-general .event-features, .header-ruta .event-features, .header-search .event-features {
+  .header .event-features, .header-event .event-features, .header-experience .event-features, .event-features, .header-village .event-features, .header-general .event-features, .header-ruta .event-features, .header-search .event-features {
     flex-direction: column;
     height: auto;
     padding-top: 30px;
     padding-bottom: 30px;
     position: relative; }
-  .header .event-features .feature, .header .event-features .feature-exp, #out-features .feature, .event-features .feature-exp, .header-event .event-features .feature, .header-event .event-features .feature-exp, .header-village .event-features .feature, .header-village .event-features .feature-exp, .header-general .event-features .feature, .header-general .event-features .feature-exp, .header-ruta .event-features .feature, .header-ruta .event-features .feature-exp, .header-search .event-features .feature, .header-search .event-features .feature-exp {
+  .header .event-features .feature, .header .event-features .feature-exp, #out-features .feature, .event-features .feature-exp, .header-event .event-features .feature, .header-experience .event-features .feature, .header-event .event-features .feature-exp, .header-experience .event-features .feature-exp, .header-village .event-features .feature, .header-village .event-features .feature-exp, .header-general .event-features .feature, .header-general .event-features .feature-exp, .header-ruta .event-features .feature, .header-ruta .event-features .feature-exp, .header-search .event-features .feature, .header-search .event-features .feature-exp {
     margin: 0px !important;
     padding-top: 20px;
     padding-bottom: 20px; }
-  .header .event-features .feature .feature-txt-mapa, .event-features .feature .feature-txt-mapa, .header .event-features .feature-exp .feature-txt-mapa, .header-event .event-features .feature .feature-txt-mapa, .header-event .event-features .feature-exp .feature-txt-mapa, .header-village .event-features .feature .feature-txt-mapa, .header-village .event-features .feature-exp .feature-txt-mapa, .header-general .event-features .feature .feature-txt-mapa, .header-general .event-features .feature-exp .feature-txt-mapa, .header-ruta .event-features .feature .feature-txt-mapa, .header-ruta .event-features .feature-exp .feature-txt-mapa, .header-search .event-features .feature .feature-txt-mapa, .header-search .event-features .feature-exp .feature-txt-mapa {
+  .header .event-features .feature .feature-txt-mapa, .event-features .feature .feature-txt-mapa, .header .event-features .feature-exp .feature-txt-mapa, .header-event .event-features .feature .feature-txt-mapa, .header-event .event-features .feature-exp .feature-txt-mapa, .header-experience .event-features .feature-exp .feature-txt-mapa, .header-village .event-features .feature .feature-txt-mapa, .header-village .event-features .feature-exp .feature-txt-mapa, .header-general .event-features .feature .feature-txt-mapa, .header-general .event-features .feature-exp .feature-txt-mapa, .header-ruta .event-features .feature .feature-txt-mapa, .header-ruta .event-features .feature-exp .feature-txt-mapa, .header-search .event-features .feature .feature-txt-mapa, .header-search .event-features .feature-exp .feature-txt-mapa {
     top: 91px; }
-  .header-event {
+  .header-event, .header-experience {
     height: auto !important;
     max-height: 698px !important; }
   .header-txt .txt {
@@ -2895,11 +2950,11 @@ html, body {
 @media (max-width: 768px) {
   .header-general .header-txt .brush {
     margin-top: 0px; }
-  .header, .header-event, .header-ruta, .header-village, .header-general, .img-village, .featured-element, .secret-routes {
+  .header, .header-event, .header-experience, .header-ruta, .header-village, .header-general, .img-village, .featured-element, .secret-routes {
     background-attachment: initial !important; }
-  .header .mini-logo-container, .header .language-container, .header-event .mini-logo-container, .header-event .language-container, .header-ruta .mini-logo-container, .header-ruta .language-container, .header-village .mini-logo-container, .header-village .language-container, .header-general .mini-logo-container, .header-general .language-container, .img-village .mini-logo-container, .img-village .language-container, .featured-element .mini-logo-container, .featured-element .language-container, .secret-routes .mini-logo-container, .secret-routes .language-container {
+  .header .mini-logo-container, .header .language-container, .header-event .mini-logo-container, .header-event .language-container, .header-experience .language-container, .header-ruta .mini-logo-container, .header-ruta .language-container, .header-village .mini-logo-container, .header-village .language-container, .header-general .mini-logo-container, .header-general .language-container, .img-village .mini-logo-container, .img-village .language-container, .featured-element .mini-logo-container, .featured-element .language-container, .secret-routes .mini-logo-container, .secret-routes .language-container {
     z-index: 99; }
-  .header .header-container, .header-event .header-container, .header-ruta .header-container, .header-village .header-container, .header-general .header-container, .img-village .header-container, .featured-element .header-container, .secret-routes .header-container {
+  .header .header-container, .header-event .header-container, .header-experience .header-container, .header-ruta .header-container, .header-village .header-container, .header-general .header-container, .img-village .header-container, .featured-element .header-container, .secret-routes .header-container {
     z-index: 98; } }
 
 @media (max-width: 920px) and (min-width: 601px) {
@@ -2950,7 +3005,7 @@ html, body {
     bottom: 100px !important; } }
 
 @media (max-width: 720px) and (min-width: 400px) {
-  .header-event .header-txt {
+  .header-event .header-txt, .header-experience .header-txt {
     margin-bottom: 140px !important;
     margin-top: 50px !important;
     min-height: 470px !important; }
@@ -2966,7 +3021,7 @@ html, body {
           font-size: 15px !important; } }
 
 @media (max-width: 400px) {
-  .header-event .header-txt {
+  .header-event .header-txt, .header-experience .header-txt {
     margin-bottom: 10px !important;
     margin-top: 80px !important;
     min-height: 570px !important; }
@@ -3206,3 +3261,39 @@ footer {
 .cc-banner .cc-message {
   font-size: 14px;
   line-height: 20px; }
+
+/* MOCK-SPACE */
+.mock-insert {
+  display: none; }
+
+.mock-selected:before {
+  transition: background-image 0.3s ease;
+  background-image: url("/storage/app/media/uploaded-files/templates/insert-selected.svg") !important; }
+
+.field-richeditor .mock-insert {
+  width: 100%;
+  height: auto;
+  min-height: 40px;
+  display: block !important;
+  color: #818181;
+  font-size: 14px;
+  margin-top: 10px; }
+  .field-richeditor .mock-insert .back {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px; }
+  .field-richeditor .mock-insert:before {
+    content: '';
+    cursor: pointer;
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 40px;
+    background-image: url("/storage/app/media/uploaded-files/templates/insert-svg.svg");
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.3s ease; }
+
+.section-txt-village + br, .img-village + br, .section-img + br, .all-exps + br, .all-events + br,
+.section-txt + br, .municipios-snippet + br {
+  display: none !important; }

@@ -12,6 +12,11 @@ use DateTime;
 use Carbon\Carbon;
 use Carbon\CarbonInterval;
 
+use RainLab\Pages\Classes\Page;
+use RainLab\Pages\Classes\EventoList as MEventoList;
+
+use RainLab\Pages\Classes\Evento;
+use Flash;
 /**
  * Static page list widget.
  *
@@ -52,6 +57,7 @@ class EventoList extends WidgetBase
         parent::__construct($controller, []);
         $this->bindToController();
         $this->tpe = 1;
+  
     }
 
     /**
@@ -127,12 +133,16 @@ class EventoList extends WidgetBase
            if($i->page->template == 'eventos'){
                 $i->date_start = (new DateTime($i->page->date_start))->format('Y-m-d');
                 $i->date_start_pretty_num = (new DateTime($i->page->date_start))->format('d.m.y');
+                $i->title = $i->page->title;
                 $events->push($i);
+                
            }
         }
        
-        $pages = $events->values();
+        $ppages = $events->values();
 
+        $pages = $ppages->sortBy('title');
+      
         $searchTerm = Str::lower($this->getSearchTerm());
 
         if (strlen($searchTerm)) {
@@ -174,6 +184,7 @@ class EventoList extends WidgetBase
            if($i->page->template == 'eventos'){
                 $i->date_end = (new DateTime($i->page->date_end))->format('Y-m-d');
                 $i->date_start_pretty_num = (new DateTime($i->page->date_start))->format('d.m.y');
+                $i->title = $i->page->title;
                 
                 if($i->date_end >= $now){
                     $events->push($i);
@@ -182,7 +193,8 @@ class EventoList extends WidgetBase
            }
         }
        
-        $pages = $events->values();
+        $ppages = $events->values();
+        $pages = $ppages->sortBy('title');
 
         $searchTerm = Str::lower($this->getSearchTerm());
 
@@ -225,6 +237,7 @@ class EventoList extends WidgetBase
            if($i->page->template == 'eventos'){
                 $i->date_end = (new DateTime($i->page->date_end))->format('Y-m-d');
                 $i->date_start_pretty_num = (new DateTime($i->page->date_start))->format('d.m.y');
+                $i->title = $i->page->title;
                 
                 if($i->date_end < $now){
                     $events->push($i);
@@ -232,7 +245,8 @@ class EventoList extends WidgetBase
            }
         }
        
-        $pages = $events->values();
+        $ppages = $events->values();
+        $pages = $ppages->sortBy('title');
 
         $searchTerm = Str::lower($this->getSearchTerm());
 
@@ -305,5 +319,104 @@ class EventoList extends WidgetBase
     protected function putSession($key, $value)
     {
         return parent::putSession($this->getThemeSessionKey($key), $value);
+    }
+
+    // Andrés Martínez : Duplicate Event
+    public function onCopyEvent(){
+        
+        // Define Theme
+        $theme = Theme::getActiveTheme();
+
+        // Get fileName of event to duplicate
+        $flnm =  post('fileNamePost');
+
+        // Get Url of event to duplicate
+        $url =  post('fileUrlPost');
+
+        // Get Title of event to duplicate
+        $title =  post('fileTitlePost');
+
+        // Prefix unique
+        $preU= Carbon::parse(Carbon::now())->timestamp;
+        
+        // Get content_path
+        $content_path = themes_path().'/default/content/static-pages/';
+        
+        // Source and destination file
+        $sourceFilePath = $content_path.$flnm.'.htm';
+        $destinationPath=$content_path.$flnm.'-copy-'.$preU.'.htm';
+
+        // Create Empty Event
+        $iEvento = new Evento();
+        $iEvento->fileName = $flnm.'-copy-'.$preU;
+
+        // Append Event to Meta yaml
+        $MEventoList = new MEventoList($theme);
+        $MEventoList->appendPage($iEvento);
+        
+        // Copy File
+        if(! \File::copy($sourceFilePath,$destinationPath)){
+              die("Couldn't copy file");        
+        } else {
+            
+            // Change values : url and title
+            $content = file_get_contents($destinationPath);
+            $search =  $url;
+            $replace = $url.'-copy-'.$preU;
+            $content = str_replace($search,$replace,$content);
+            file_put_contents($destinationPath, $content);
+
+            $content = file_get_contents($destinationPath);
+            $search =  $title;
+            $replace = $title.'-copy-'.$preU;
+            $content = str_replace($search,$replace,$content);
+            file_put_contents($destinationPath, $content);
+
+        }
+
+        // Get Event
+        $theme = Theme::getActiveTheme();
+        $pagesList = Page::listInTheme($theme, false);
+        $pages =  new \Illuminate\Support\Collection($pagesList);
+
+        $iEvento = ($pages->where("url",$url)->values())[0];
+
+        // Copy Mtlng
+        if(isset($iEvento->localeUrl)){
+
+            $alangs = $iEvento->localeUrl;
+                
+            foreach ($alangs as $key => $value) {
+                
+                // Get content_path
+                $content_path = themes_path().'/default/content/static-pages-'.$key.'/';
+
+                // Source and destination file
+                $sourceFilePath = $content_path.$flnm.'.htm';
+                $destinationPath = $content_path.$flnm.'-copy-'.$preU.'.htm';
+                
+                
+                if (\File::exists($sourceFilePath))
+                {
+                    if(! \File::copy($sourceFilePath,$destinationPath)){
+                        die("Couldn't copy file");        
+                    } else {
+                    
+                        // Change values : url and title
+                        $content = file_get_contents($destinationPath);
+                        $search =  $url;
+                        $replace = $url.'-copy-'.$preU;
+                        $content = str_replace($search,$replace,$content);
+                        file_put_contents($destinationPath, $content);
+
+                        $content = file_get_contents($destinationPath);
+                        $search =  $title;
+                        $replace = $title.'-copy-'.$preU;
+                        $content = str_replace($search,$replace,$content);
+                        file_put_contents($destinationPath, $content);
+                    }  
+                }
+            }        
+        }
     }
 }

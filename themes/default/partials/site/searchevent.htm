@@ -52,6 +52,7 @@
                     {% for key,value in categories %}
                         <option value="{{key}}">{{ value |_ }}</option>
                     {% endfor %}
+                    <option value="all" selected=>{{'Todas las categorías'|_ }}</option>
                   </select>
                   <span class="select-title">{{ 'CATEGORÍA'|_ }}</span>
                 </div>
@@ -65,6 +66,7 @@
                     {% for key,value in municipalities %}
                         <option value="{{key}}">{{value}}</option>
                     {% endfor %}
+                    <option value="all" selected=>{{'Todos los municipios'|_ }}</option>
                   </select>
                   <span class="select-title">{{ 'UBICACIÓN'|_ }}</span>
                 </div>
