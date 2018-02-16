@@ -1278,13 +1278,10 @@ jsElement.setAttribute('src',source)
 jsElement.addEventListener('load',function(){o.loadJavaScript(sources,callback)},false)
 
 if(typeof jsElement!='undefined'){
-	console.log(document.getElementsByTagName('head')[0]);
-	console.log(jsElement);
-	try {
+	
+	
 		document.getElementsByTagName('head')[0].appendChild(jsElement)
-	} catch(err) {
-		console.log(err);
-	}
+
 }
 },loadImage:function(sources,callback){if(sources.length<=0)
 return callback()
