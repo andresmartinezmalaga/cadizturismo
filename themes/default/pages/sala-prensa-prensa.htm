@@ -20,7 +20,7 @@ is_hidden = 0
 
 	    $this['startPag'] = 1;
 	    $this['idm'] = $this->param('idm');
-	   	$this['numberReg'] = 1;
+	   	$this['numberReg'] = 9;
 
         $this['numPag'] = ceil($this->staticApp->newListCount($this->param('idm'))/$this['numberReg']);
 
@@ -36,7 +36,7 @@ is_hidden = 0
 
         $this['startPag'] = $_POST['ipag'];
         $this['idm'] = $_POST['iidm'];
-        $this['numberReg'] = 1;
+        $this['numberReg'] = 9;
 
        	$this['numPag'] = ceil($this->staticApp->newListCount($this->param('idm'))/$this['numberReg']);
         $this['news'] = $this->staticApp->newListPag($idm,$pag,$numberReg);

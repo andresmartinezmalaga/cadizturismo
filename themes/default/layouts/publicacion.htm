@@ -38,7 +38,7 @@ code = "redes-sociales"
 
         //$this['publications'] = $this->staticApp->publicationList();
         $this['startPag'] = 1;
-        $this['numberReg'] = 1;
+        $this['numberReg'] = 9;
         $this['numPag'] = ceil($this->staticApp->publicationListCount()/$this['numberReg']);
 
         $this['publications'] = $this->staticApp->publicationListPag(1,$this['numberReg']);
@@ -58,7 +58,7 @@ code = "redes-sociales"
         $numberReg = $_POST['inumberReg'];
         
         $this['startPag'] = $_POST['ipag'];
-        $this['numberReg'] = 1;
+        $this['numberReg'] = 9;
         
         $this['numPag'] = ceil($this->staticApp->publicationListCount()/$this['numberReg']);
         $this['publications'] = $this->staticApp->publicationListPag($pag,$numberReg);
