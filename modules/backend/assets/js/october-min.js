@@ -1276,8 +1276,19 @@ return callback()
 var source=sources.shift(),jsElement=document.createElement('script');jsElement.setAttribute('type','text/javascript')
 jsElement.setAttribute('src',source)
 jsElement.addEventListener('load',function(){o.loadJavaScript(sources,callback)},false)
-if(typeof jsElement!='undefined'){console.log(document.getElementsByTagName('head')[0]);document.getElementsByTagName('head')[0].appendChild(jsElement)}},loadImage:function(sources,callback){if(sources.length<=0)
+
+if(typeof jsElement!='undefined'){
+	console.log(document.getElementsByTagName('head')[0]);
+	console.log(jsElement);
+	try {
+		document.getElementsByTagName('head')[0].appendChild(jsElement)
+	} catch(err) {
+		console.log(err);
+	}
+}
+},loadImage:function(sources,callback){if(sources.length<=0)
 return callback()
+
 var loaded=0
 $.each(sources,function(index,source){var img=new Image()
 img.onload=function(){if(++loaded==sources.length&&callback)

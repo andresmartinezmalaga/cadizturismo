@@ -72,8 +72,8 @@ class Plugin extends PluginBase
             $widget->addJs('/plugins/rainlab/pages/assets/js/pages-snippets.js');
 
             // Adds custom javascript
-            $widget->addJs('/toughdeveloper/snippets/list.js');
-            $widget->addJs('/plugins/toughdeveloper/richeditorsnippets/assets/js/froala.snippets.plugin.js');
+            //$widget->addJs('/plugins/toughdeveloper/snippets/list.js');
+            //$widget->addJs('/plugins/toughdeveloper/richeditorsnippets/assets/js/froala.snippets.plugin.js');
         });
 
 
