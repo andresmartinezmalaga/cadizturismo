@@ -288,7 +288,7 @@ class Index extends Controller
 
     public function onSave()
     {
-        
+
 
         $this->validateRequestTheme();
 
@@ -353,25 +353,25 @@ class Index extends Controller
 
         Flash::success(Lang::get($successMessage));
 
-        // Andrés Martínez : Clean html        
-        $this->cleanHtml('',$object->fileName); 
+        // Andrés Martínez : Clean html
+        $this->cleanHtml('',$object->fileName);
         $MLocale = new Locale();
-        foreach ($MLocale->listAvailable() as $key => $value) {            
-            $this->cleanHtml('-'.$key,$object->fileName);            
+        foreach ($MLocale->listAvailable() as $key => $value) {
+            $this->cleanHtml('-'.$key,$object->fileName);
         }
 
         return $result;
     }
 
-    // Andrés Martínez : Clean html  
+    // Andrés Martínez : Clean html
     public function cleanHtml($key,$objFilename)
     {
         // Get content_path
-        $content_path = themes_path().'/default/content/static-pages'.$key.'/'; 
+        $content_path = themes_path().'/default/content/static-pages'.$key.'/';
 
         // Source file
         $sourceFilePath = $content_path.$objFilename;
-      
+
         if (\File::exists($sourceFilePath))
         {
             $str=file_get_contents($sourceFilePath);
@@ -383,13 +383,14 @@ class Index extends Controller
             $strHtml = str_replace("<p></p>", "", $strHtml);
             $strHtml = str_replace("<p>&nbsp;</p>", "", $strHtml);
             $strHtml = str_replace("<br>", "", $strHtml);
+            $strHtml = str_replace("&nbsp;", "", $strHtml);
 
             $strFinal = explode("==", $str)[0]."==\n".$strHtml;
 
             if(!file_put_contents($sourceFilePath, $strFinal)){
-                 die("Couldn't edit file"); 
-            }              
-        }        
+                 die("Couldn't edit file");
+            }
+        }
     }
 
     public function onCreateObject()
@@ -408,7 +409,7 @@ class Index extends Controller
             if (strlen($parent)) {
                 $parentPage = StaticPage::load($this->theme, $parent);
             }
-            
+
             $object->setDefaultLayout($parentPage);
 
         }
@@ -742,7 +743,7 @@ class Index extends Controller
 
         $widget = $this->makeWidget('Backend\Widgets\Form', $widgetConfig);
 
-        
+
 
         if ($type == 'page') {
 
@@ -753,7 +754,7 @@ class Index extends Controller
             });
         }
 
-      
+
 
         if ($type == 'experience') {
 
@@ -1017,10 +1018,10 @@ class Index extends Controller
 
             $getFileName = $object['fileName'];
 
-           
+
             // Andrés Martínez : compartir
             if($getFileName!=''){
-                
+
                 $amunicipios = explode('municipios-', $getFileName);
                 $acomarcas = explode('comarcas-', $getFileName);
                 $acultura = explode('cultura-', $getFileName);
@@ -1029,7 +1030,7 @@ class Index extends Controller
                 $agastronomia = explode('gastronomia-', $getFileName);
                 $adiversion = explode('diversion-', $getFileName);
                 $aen =  explode('naturaleza-espacios-naturales', $getFileName);
-            
+
             } else {
 
                 $getFileName = $objectData['settings']['viewBag']['url'];
@@ -1042,9 +1043,9 @@ class Index extends Controller
                 $agastronomia = explode('/gastronomia/', $getFileName);
                 $adiversion = explode('/diversion/', $getFileName);
                 $aen =  explode('/naturaleza/espacios-naturales', $getFileName);
-            }    
+            }
 
-            
+
             if(
                 $getFileName == 'naturaleza-via-verde.htm' ||
                 $getFileName == 'naturaleza/via-verde' ||
@@ -1063,8 +1064,8 @@ class Index extends Controller
                 $objectData['settings']['viewBag']['layout'] = 'default';
             }
 
-            
-            
+
+
 
             if($getFileName == 'municipios.htm'){
                 $objectData['settings']['viewBag']['layout'] = 'municipio';
@@ -1091,7 +1092,7 @@ class Index extends Controller
 
             // Andrés Martínez : add cover url
             if($filterSubTemplate == 'playas' || $filterSubTemplate == 'municipios'){
-                
+
                 $objectData['settings']['viewBag']['layout'] = 'default';
 
                 $presrc1 = explode('value="cover"', $objectData['markup']);
@@ -1203,10 +1204,10 @@ class Index extends Controller
             if(isset($object->localeUrl)){
 
                 $alangs = $object->localeUrl;
-                
+
                 foreach ($alangs as $key => $value) {
                     $objectData['settings']['viewBag']['localeUrl['.$key.']'] = $objectData['settings']['viewBag']['url'];
-                    
+
                 }
             }
         }
@@ -1338,6 +1339,7 @@ class Index extends Controller
         $markup = str_replace("<p></p>", "", $markup);
         $markup = str_replace("<p>&nbsp;</p>", "", $markup);
         $markup = str_replace("<br>", "", $markup);
+        $markup = str_replace("&nbsp;", "", $markup);
 
         return $markup;
     }

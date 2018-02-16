@@ -141,9 +141,9 @@ class Page extends ContentBase
         ];
 
         $this->pageTempl = New PagesTemplates();
-        
+
     }
-    
+
     // sort ok
     public function getNewsIdiomasOptions(){
         return [
@@ -178,7 +178,7 @@ class Page extends ContentBase
             'guía' => 'Guía',
             'publicación' => 'Publicación',
             'vídeo' => 'Vídeo'
-            
+
         ];
     }
 
@@ -198,9 +198,9 @@ class Page extends ContentBase
             'deporte' => 'Deporte',
             'instalaciones' => 'Instalaciones',
             'naturaleza' => 'Naturaleza',
-            'nudista' => 'Nudista',            
-            'restauración' => 'Restauración'           
-            
+            'nudista' => 'Nudista',
+            'restauración' => 'Restauración'
+
         ];
     }
 
@@ -214,7 +214,7 @@ class Page extends ContentBase
      */
     public function fill(array $attributes)
     {
-       
+
         parent::fill($attributes);
 
         /*
@@ -265,15 +265,17 @@ class Page extends ContentBase
      * Triggered before a new object is saved.
      */
     public function beforeCreate()
-    {   
+    {
         $mm = str_replace(array("\r\n","\r","\n","\t"), "",$this->markup);
         $mm = str_replace("<p><br></p>", "", $mm);
         $mm = str_replace("<p></p>", "", $mm);
         $mm = str_replace("<p>&nbsp;</p>", "", $mm);
         $mm = str_replace("<br>", "", $mm);
-       
+        $mm = str_replace("&nbsp;", "", $mm);
+
+
         $this->markup = $mm;
-       
+
         $this->fileName = $this->generateFilenameFromCode();
     }
 
@@ -282,7 +284,7 @@ class Page extends ContentBase
      */
     public function afterCreate()
     {
-      
+
         $this->appendToMeta();
     }
 
@@ -385,7 +387,7 @@ class Page extends ContentBase
 
         return Cms::url($url);
     }
-    
+
     /**
      * Determine the default layout for a new page
      * @param \RainLab\Pages\Classes\Page $parentPage
@@ -397,13 +399,13 @@ class Page extends ContentBase
         // Check parent page for a defined child layout
         if ($parentPage) {
 
-            // Andrés Martínez : Load parents template municipios, playas on markup        
+            // Andrés Martínez : Load parents template municipios, playas on markup
             if($parentPage->fileName == 'municipios.htm'){
                 $this->markup = PagesTemplates::getTMunicipio();
             }elseif ($parentPage->fileName == 'playas.htm') {
                 $this->markup = PagesTemplates::getTPlaya();
             }
-            
+
             $layout = Layout::load($this->theme, $parentPage->layout);
             $component = $layout ? $layout->getComponent('staticPage') : null;
             $childLayoutName = $component ? $component->property('childLayout', null) : null;
@@ -414,7 +416,7 @@ class Page extends ContentBase
                 return;
             }
         }
-        
+
         // Check theme layouts for one marked as the default
         foreach (Layout::listInTheme($this->theme) as $layout) {
             $component = $layout->getComponent('staticPage');
@@ -501,7 +503,7 @@ class Page extends ContentBase
         return $result;
     }
 
-   
+
     /**
      * Looks up the Layout Cms object for this page.
      * @return Cms\Classes\Layout
@@ -682,7 +684,7 @@ class Page extends ContentBase
         $this->attributes['placeholders'] = $placeholders;
 
 
-        
+
     }
 
     public function getProcessedMarkup()
@@ -734,7 +736,7 @@ class Page extends ContentBase
             $markup = TextParser::parse($markup, $globalVars);
         }
 
-        
+
 
         return $this->processedBlockMarkupCache[$placeholderName] = $markup;
     }
@@ -748,7 +750,7 @@ class Page extends ContentBase
      */
     public function initCmsComponents($cmsController)
     {
-       
+
 
         $snippetComponents = Snippet::listPageComponents(
             $this->getFileName(),
@@ -819,7 +821,7 @@ class Page extends ContentBase
      *   false if omitted.
      * - dynamicItems - Boolean value indicating whether the item type could generate new menu items.
      *   Optional, false if omitted.
-     * - cmsPages - a list of CMS pages (objects of the Cms\Classes\Page class), if the item type requires a CMS page reference to 
+     * - cmsPages - a list of CMS pages (objects of the Cms\Classes\Page class), if the item type requires a CMS page reference to
      *   resolve the item URL.
      * @param string $type Specifies the menu item type
      * @return array Returns an array
@@ -848,9 +850,9 @@ class Page extends ContentBase
      * - url - the menu item URL. Not required for menu item types that return all available records.
      *   The URL should be returned relative to the website root and include the subdirectory, if any.
      *   Use the Cms::url() helper to generate the URLs.
-     * - isActive - determines whether the menu item is active. Not required for menu item types that 
+     * - isActive - determines whether the menu item is active. Not required for menu item types that
      *   return all available records.
-     * - items - an array of arrays with the same keys (url, isActive, items) + the title key. 
+     * - items - an array of arrays with the same keys (url, isActive, items) + the title key.
      *   The items array should be added only if the $item's $nesting property value is TRUE.
      * @param \RainLab\Pages\Classes\MenuItem $item Specifies the menu item.
      * @param \Cms\Classes\Theme $theme Specifies the current theme.
@@ -919,7 +921,7 @@ class Page extends ContentBase
      * @return array
      */
     public static function getRichEditorTypeInfo($type)
-    {   
+    {
 
         if ($type == 'static-page') {
 
