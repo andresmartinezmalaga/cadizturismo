@@ -24,11 +24,11 @@
       <p class="languages-publi"><span id="languages-title">{{'IDIOMAS DISPONIBLES:'|_ }}</span> {{publication.viewBag.idiomas}}</p>
       <div class="links-container">
         
-        {% if publications.viewBag.urlExternaVideo !='' %}
+        {% if publication.viewBag.urlExternaVideo !='' %}
           <a class="see-link" href="{{publication.viewBag.urlExternaVideo}}">{{'Ver'|_}} {{publication.viewBag.type|_}} <img src="{{preurl}}/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""> </a>
         {% endif %}
         
-        {% if publications.viewBag.urlExternaZip !='' %}
+        {% if publication.viewBag.urlExternaZip !='' %}
           <a class="download-link" href="{{publication.viewBag.urlExternaZip}}">{{'Descargar'|_}} {{publication.viewBag.type|_}} <img src="{{preurl}}/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""> </a>
         {% endif %}
 
