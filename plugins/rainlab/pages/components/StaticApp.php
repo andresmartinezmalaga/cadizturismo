@@ -688,6 +688,7 @@ class StaticApp extends ComponentBase
 
         $experiencemarkup = str_replace('/storage/', config('app.urlApp').'storage/', $preexperiencemarkup3);
 
+        $urlApp = config('app.urlApp');
 
         $data = array('experiencemarkup' => $experiencemarkup );
 
@@ -695,6 +696,8 @@ class StaticApp extends ComponentBase
             ->setPaper('a4')
             ->output();
 
+        $experience[0]['urlApp'] = $urlApp;
+        
         $dataexperience = $experience[0];
 
         $dataemail = array('experience' => $dataexperience);
