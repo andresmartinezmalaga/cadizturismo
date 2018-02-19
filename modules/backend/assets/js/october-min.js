@@ -1006,7 +1006,6 @@ SidePanelTab.prototype.displayTab=function(menuItem){
 	$.oc.sideNav.setActiveItem(menuItemId)
 
 	this.$sidePanelItems.each(function(){var $el=$(this)
-		console.log($el);
 		$el.toggleClass('hide',$el.data('content-id')!=menuItemId)
 	})
 

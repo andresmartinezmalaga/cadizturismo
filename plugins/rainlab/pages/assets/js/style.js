@@ -12,19 +12,8 @@ jQuery(function($)
         e.preventDefault();
     });
     $("#international-press").click(function(e) {
-        //$('.press-languages').toggleClass("show-international");
-        //$(this).children('.arrow').toggleClass("rotate-arrow");
         e.preventDefault();
     });
-
-    // $('.i-container').children('.also-feature').each(function () {
-    //   if ($(this).children('.also-desc').html().indexOf('br')) {
-    //     $(this).hide();
-    //     console.log('oculto');
-    //   } else {
-    //     console.log('mostrar');
-    //   }
-    // });
 
 });
 

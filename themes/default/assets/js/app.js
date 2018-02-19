@@ -1,6 +1,5 @@
 $( document ).ready(function() {
 
-	console.log('entra');
 	$('#modalMailExperience').on('submit', function(){
 	    $('#modal-exp').iziModal('close');
 	    $('#modal-success').iziModal('open');

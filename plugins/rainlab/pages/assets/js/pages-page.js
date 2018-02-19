@@ -291,9 +291,6 @@
      */
     PagesPage.prototype.updateObjectList = function(objectType) {
         
-        console.log('updateObjectList-change');
-        console.log(objectType);
-        
         var $form = $('form[data-object-type='+objectType+']', this.$sidePanel),
             objectList = objectType + 'List',
             self = this

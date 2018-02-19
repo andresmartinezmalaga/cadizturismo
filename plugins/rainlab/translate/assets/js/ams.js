@@ -79,7 +79,6 @@ var ams = function(){
         var sel, range;
 
         if (window.getSelection) {
-             //console.log('entra2');
             // IE9 and non-IE
             sel = window.getSelection();
 
