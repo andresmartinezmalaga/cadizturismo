@@ -43,6 +43,21 @@ code = "redes-sociales"
             if(isset($this->page->apiBag["staticPage"]->attributes["viewBag"]["cover"])){
                 $this['metaImg'] = $this->page->apiBag["staticPage"]->attributes["viewBag"]["cover"];
             }
+if($this->page->settings["meta_title"]==null)
+$this['metaTitle'] = $this->page->apiBag["staticPage"]->attributes["viewBag"]["title"];
+else
+$this['metaTitle'] = $this->page->settings["meta_title"];
+
+if($this->page->settings["meta_description"]==null){
+$this['metaDescription'] = $this->page->apiBag["staticPage"]->attributes["content"];
+if(explode('<p class="desc">',$this['metaDescription'])[1])
+$this['metaDescription'] = explode('</p>',explode('<p class="desc">',$this['metaDescription'])[1])[0];
+
+    if(strlen($this['metaDescription'])>225)
+    $this['metaDescription'] = substr($this['metaDescription'], 0, 225).'...';
+
+    }else
+    $this['metaDescription'] = $this->page->settings["meta_description"];
         }
 
 
@@ -59,6 +74,8 @@ code = "redes-sociales"
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <meta name="google-site-verification" content="KZtyPnD_0KXDnRTpmvwxNoBcvj3Osx_VKrXoJaucHrE" />
     <meta property="og:image" content="{{ metaImg }}">
+    <meta property="og:title" content="{{ metaTitle }}">
+    <meta property="og:description" content="{{ metaDescription }}">
     <title>Cádiz te hace libre</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
