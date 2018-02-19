@@ -3,6 +3,7 @@
     $mySettings = System\Classes\SettingsManager::instance()->listItems('mysettings');
     $navbarMode = Backend\Models\BrandSetting::get('menu_mode', 'inline');
 ?>
+
 <nav class="navbar control-toolbar navbar-mode-<?= $navbarMode ?>" id="layout-mainmenu" role="navigation">
     <div class="toolbar-item toolbar-primary">
         <div data-control="toolbar" data-use-native-drag="true">
@@ -45,7 +46,7 @@
                                 <a href="/backend/backend/home/update/1">
                                     <span class="nav-icon">
                                         <?php if ($item->iconSvg): ?>
-                                            <img class="svg-icon" src="http://cadizturismo.jekyllme.com/modules/system/assets/images/home.svg">
+                                            <img class="svg-icon" src="<?= config('app.urlApp') ?>modules/system/assets/images/home.svg">
                                         <?php endif ?>
 
                                         <i class="<?= $item->iconSvg ? 'svg-replace' : null ?> <?= $item->icon ?>"></i>
@@ -105,7 +106,7 @@
                     <a href="/backend/rainlab/translate/messages">
                         <span class="nav-icon">
                             <?php if ($item->iconSvg): ?>
-                                <img class="svg-icon" src="http://cadizturismo.jekyllme.com/modules/system/assets/images/traducciones.svg">
+                                <img class="svg-icon" src="<?= config('app.urlApp') ?>modules/system/assets/images/traducciones.svg">
                             <?php endif ?>
 
                             <i class="<?= $item->iconSvg ? 'svg-replace' : null ?> <?= $item->icon ?>"></i>
@@ -116,12 +117,6 @@
                         </span>
                     </a>
                 </li>
-
-
-
-
-               
-
             </ul>
         </div>
     </div>
