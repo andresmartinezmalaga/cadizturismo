@@ -25,7 +25,7 @@
       <div class="links-container">
         
         {% if publication.viewBag.urlExternaVideo !='' %}
-          <a class="see-link" href="{{publication.viewBag.urlExternaVideo}}">{{'Ver'|_}} {{publication.viewBag.type|_}} <img src="{{preurl}}/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""> </a>
+          <a class="see-link" target="_blank" href="{{publication.viewBag.urlExternaVideo}}">{{'Ver'|_}} {{publication.viewBag.type|_}} <img src="{{preurl}}/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""> </a>
         {% endif %}
         
         {% if publication.viewBag.urlExternaZip !='' %}
