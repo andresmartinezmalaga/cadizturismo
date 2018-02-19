@@ -24,6 +24,8 @@ code = "redes-sociales"
 
     function onStart()
     {
+        $this['urlApp'] = config('app.urlApp');
+
         $this['lang']=\App::getLocale();
         if($this['lang']==''){
             $this['lang']='es';
@@ -100,7 +102,7 @@ code = "redes-sociales"
         "message": "Este sitio web utiliza cookies, tanto propias como de terceros, para recopilar información estadística sobre su navegación. Si continúa navegando, consideramos que acepta nuestra",
         "dismiss": "Entendido",
         "link": "política de cookies.",
-        "href": "http://cadizturismo.jekyllme.com/politica-de-cookies"
+        "href": "{{urlApp}}politica-de-cookies"
       }
     })});
     </script>
