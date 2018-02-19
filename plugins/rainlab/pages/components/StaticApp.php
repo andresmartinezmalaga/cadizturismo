@@ -575,12 +575,14 @@ class StaticApp extends ComponentBase
 
         $experience = $this->experienceFindByUrl($url);
 
+        //.config('app.urlApp').
+        //
         $baseHtml = '
         <meta charset="utf-8"/>
 
 
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
-        <link rel="stylesheet" href="'.config('app.urlApp').'plugins/rainlab/pages/assets/css/style-event.css"/>
+        <link rel="stylesheet" href="http://cadizturismodev.jekyllme.com/lugins/rainlab/pages/assets/css/style-event.css"/>
         <style>
 
           .background-image {
