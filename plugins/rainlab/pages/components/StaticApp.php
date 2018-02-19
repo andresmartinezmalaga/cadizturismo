@@ -19,6 +19,8 @@ use Response;
 use File;
 use Twig;
 
+use Config;
+
 use Backend\Models\Home;
 
 /**
@@ -578,7 +580,7 @@ class StaticApp extends ComponentBase
 
 
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
-        <link rel="stylesheet" href="http://cadizturismo.jekyllme.com/plugins/rainlab/pages/assets/css/style-event.css"/>
+        <link rel="stylesheet" href="'.config('app.urlApp').'plugins/rainlab/pages/assets/css/style-event.css"/>
         <style>
 
           .background-image {
@@ -682,14 +684,12 @@ class StaticApp extends ComponentBase
 
         $preexperiencemarkup3 = str_replace('</p>', '</p><br/><br/>', $preexperiencemarkup2);
 
-        $experiencemarkup = str_replace('/storage/', 'http://cadizturismo.jekyllme.com/storage/', $preexperiencemarkup3);
+        $experiencemarkup = str_replace('/storage/', config('app.urlApp').'storage/', $preexperiencemarkup3);
 
 
         $data = array('experiencemarkup' => $experiencemarkup );
 
         $pdf_data = PDFS::loadHTML($experiencemarkup)
-
-
             ->setPaper('a4')
             ->output();
 
