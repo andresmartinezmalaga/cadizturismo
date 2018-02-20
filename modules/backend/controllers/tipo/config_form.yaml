@@ -1,0 +1,16 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+name: backend::lang.user.name
+form: ~/modules/backend/models/tipo/fields.yaml
+modelClass: Backend\Models\Tipo
+defaultRedirect: backend/tipo
+
+create:
+    redirect: backend/tipos/update/:id
+    redirectClose: backend/tipo
+
+update:
+    redirect: backend/homes
+    redirectClose: backend/tipo

@@ -36,7 +36,7 @@ code = "redes-sociales"
         }
                 $this['urlPage'] = $this->page->url;
 
-        if($this->page->apiBag)
+        if($this->page->apiBag){
             
             if(isset($this->page->apiBag["staticPage"]->attributes["viewBag"]["cover"])){
                 $this['metaImg'] = $this->page->apiBag["staticPage"]->attributes["viewBag"]["cover"];
@@ -60,7 +60,7 @@ code = "redes-sociales"
                     }
                 }
             
-             } else {
+            } else {
                $this['metaDescription'] = $this->page->settings["meta_description"];                
             }
         }

@@ -1,0 +1,9 @@
+# ===================================
+#  Column Definitions
+# ===================================
+
+columns:
+
+    nombre:
+        label: Nombre
+        searchable: true    

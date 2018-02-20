@@ -1,0 +1,9 @@
+# ===================================
+#  Field Definitions
+# ===================================
+
+fields:
+    
+    nombre:
+        span: left
+        label: Nombre del tipo de empresa

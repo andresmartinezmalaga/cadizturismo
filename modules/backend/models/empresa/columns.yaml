@@ -1,0 +1,17 @@
+# ===================================
+#  Column Definitions
+# ===================================
+
+columns:
+
+    nombre:
+        label: Nombre
+        searchable: true
+
+    municipio:
+        label: Municipio
+        searchable: true
+
+    telefono:
+        label: Telefono
+        searchable: true       

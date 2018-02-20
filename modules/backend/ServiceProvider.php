@@ -168,6 +168,10 @@ class ServiceProvider extends ModuleServiceProvider
                     'label' => 'Home',
                     'tab'   => 'system::lang.permissions.name'
                 ],
+                'backend.manage_empresas' => [
+                    'label' => 'Empresas',
+                    'tab'   => 'system::lang.permissions.name'
+                ],
             ]);
         });
     }

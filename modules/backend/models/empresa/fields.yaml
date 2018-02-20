@@ -1,0 +1,59 @@
+# ===================================
+#  Field Definitions
+# ===================================
+
+fields:
+    
+    nombre:
+        span: left
+        label: Nombre
+
+    tipo:
+        span: right
+        label: Tipo
+        type: dropdown
+        options: getTiposEmpresas
+
+    telefono:
+        span: left
+        label: Telefono
+
+    site:
+        span: right
+        label: URL del enlace
+
+    direccion:
+        span: full
+        label: Dirección
+
+    municipio:
+        span: left
+        label: Municipio
+        type: dropdown
+        options: getMunicipalities
+
+    url_map:
+        span: right
+        label: Url del mapa de google
+
+    descripcion:
+        span: full
+        label: Descripción
+        type: textarea
+        size: large
+
+    avatar:
+        label: Imagen
+        type: fileupload
+        mode: image
+        imageHeight: 260
+        imageWidth: 260
+        thumbOptions:
+            mode: crop
+            offset:
+                - 0
+                - 0
+            quality: 90
+            sharpen: 0
+            interlace: false
+            extension: auto

@@ -10,7 +10,7 @@ use Backend\Classes\Controller;
  * @author Andrés Martínez
  *
  */
-class Home extends Controller
+class Tipo extends Controller
 {
     /**
      * @var array Extensions implemented by this controller.
@@ -44,18 +44,16 @@ class Home extends Controller
      * Constructor.
      */
     public function __construct()
-    {
-        parent::__construct();       
+    {        
+        parent::__construct();
     }
 
-    
     /**
      * Update controller
      */
     public function update($recordId, $context = null)
-    {  
+    {
         return $this->asExtension('FormController')->update($recordId, $context);
     }
 
-   
 }

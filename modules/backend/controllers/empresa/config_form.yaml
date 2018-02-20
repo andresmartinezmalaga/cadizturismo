@@ -1,0 +1,16 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+name: backend::lang.user.name
+form: ~/modules/backend/models/empresa/fields.yaml
+modelClass: Backend\Models\Empresa
+defaultRedirect: backend/empresa
+
+create:
+    redirect: backend/empresas/update/:id
+    redirectClose: backend/empresa
+
+update:
+    redirect: backend/empresas
+    redirectClose: backend/empresa
