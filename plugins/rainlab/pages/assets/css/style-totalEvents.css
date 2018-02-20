@@ -1,6 +1,7 @@
 /* HEADER */
 .header-events {
   background-image: url("../img/events-header.jpg");
+  transform: rotate(0deg);
   background-attachment: fixed; }
 
 #searchbar-events .mini-logo-container {

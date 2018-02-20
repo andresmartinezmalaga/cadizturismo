@@ -655,6 +655,7 @@ html, body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  transform: rotate(0deg);
   background-attachment: fixed; }
   .header .header-container {
     margin-top: 40px;
@@ -789,6 +790,7 @@ html, body {
   background-color: transparent;
   background-size: cover;
   background-repeat: no-repeat;
+  transform: rotate(0deg);
   background-attachment: fixed; }
   .header-search .header-txt {
     color: white;
@@ -846,6 +848,7 @@ html, body {
 
 .search-exp {
   background: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.68) 100%), url("../img/search-exp.jpg");
+  transform: rotate(0deg);
   background-attachment: fixed;
   background-size: cover;
   }

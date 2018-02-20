@@ -25,6 +25,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  transform: rotate(0deg);
   background-attachment: fixed;
   .header-container {
     margin-top: 90px;
@@ -112,6 +113,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  transform: rotate(0deg);
   background-attachment: fixed;
   .header-container {
     margin-top: -30px;
@@ -254,6 +256,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  transform: rotate(0deg);
   background-attachment: fixed;
   .background-image {
     width: 100%;

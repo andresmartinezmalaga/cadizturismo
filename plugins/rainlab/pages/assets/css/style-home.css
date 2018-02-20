@@ -132,6 +132,7 @@
   background: linear-gradient(transparent -6%, rgba(0, 0, 0, 0.61) 0%), url("../img/secret-route.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  transform: rotate(0deg);
   background-attachment: fixed;
   background-size: cover;
   mask-image: url("../svg/mask.svg");

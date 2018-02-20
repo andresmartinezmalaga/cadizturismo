@@ -151,6 +151,7 @@ transform: $value;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  transform: rotate(0deg);
   background-attachment: fixed;
   z-index: 10;
   border-top: 80px solid white;
@@ -224,6 +225,7 @@ transform: $value;
   background-repeat: no-repeat !important;
   background-position: center !important;
   background-size: cover !important;
+  transform: rotate(0deg);
   background-attachment: fixed !important;
   z-index: 100;
   background-color: white;
@@ -307,6 +309,7 @@ transform: $value;
 }
 
 .featured-flamenco {
+  transform: rotate(0deg);
   background-attachment: fixed;
   .txt-container {
     width: 77%;

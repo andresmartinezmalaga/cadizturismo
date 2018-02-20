@@ -1,5 +1,6 @@
 .header-rutas {
   background-image: url("../img/rutas.jpg");
+  transform: rotate(0deg);
   background-attachment: fixed; }
 
 .header-general {
@@ -23,6 +24,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  transform: rotate(0deg);
   background-attachment: fixed; }
   .header-general .background-image {
     width: 100%;
