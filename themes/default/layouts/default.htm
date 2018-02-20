@@ -37,11 +37,11 @@ code = "redes-sociales"
         $this['urlPage'] = $this->page->url;
 
         if($this->page->apiBag){
+            
             if(isset($this->page->apiBag["staticPage"]->attributes["viewBag"]["cover"])){
                 $this['metaImg'] = $this->page->apiBag["staticPage"]->attributes["viewBag"]["cover"];
-
-
             }
+
             if($this->page->settings["meta_title"]==null)
                 $this['metaTitle'] = $this->page->apiBag["staticPage"]->attributes["viewBag"]["title"];
             else
@@ -49,14 +49,17 @@ code = "redes-sociales"
 
             if($this->page->settings["meta_description"]==null){
                 $this['metaDescription'] = $this->page->apiBag["staticPage"]->attributes["content"];
-            if(explode('<p class="desc">',$this['metaDescription'])[1])
+            
+            if(isset(explode('<p class="desc">',$this['metaDescription'])[1])){
+                
                 $this['metaDescription'] = explode('</p>',explode('<p class="desc">',$this['metaDescription'])[1])[0];
 
                 if(strlen($this['metaDescription'])>225)
                     $this['metaDescription'] = substr($this['metaDescription'], 0, 225).'...';
-
-            }else
-                $this['metaDescription'] = $this->page->settings["meta_description"];
+                }else
+                    $this['metaDescription'] = $this->page->settings["meta_description"];
+            
+            }          
         }
 
         $is_playa = explode('/playas/',  $this['urlPage']);
