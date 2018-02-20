@@ -51,18 +51,21 @@ code = "redes-sociales"
             $this['metaTitle'] = $this->page->settings["meta_title"];
 
             if($this->page->settings["meta_description"]==null){
-            $this['metaDescription'] = $this->page->apiBag["staticPage"]->attributes["content"];
-            
-            if(isset(explode('<p class="desc">',$this['metaDescription'])[1])){
                 
-                $this['metaDescription'] = explode('</p>',explode('<p class="desc">',$this['metaDescription'])[1])[0];
-
-                if(strlen($this['metaDescription'])>225)
-                    $this['metaDescription'] = substr($this['metaDescription'], 0, 225).'...';
-                }else
-                    $this['metaDescription'] = $this->page->settings["meta_description"];
+                $this['metaDescription'] = $this->page->apiBag["staticPage"]->attributes["content"];
             
-            }
+                if(isset(explode('<p class="desc">',$this['metaDescription'])[1])){
+                    
+                    $this['metaDescription'] = explode('</p>',explode('<p class="desc">',$this['metaDescription'])[1])[0];
+
+                    if(strlen($this['metaDescription'])>225){
+                        $this['metaDescription'] = substr($this['metaDescription'], 0, 225).'...';
+                    }
+                }
+            
+            }else
+               $this['metaDescription'] = $this->page->settings["meta_description"];                
+            }    
             
         }
     }
