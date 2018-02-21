@@ -1,0 +1,26 @@
+{% if empresas|length > 0 %}
+	<ul>
+	{% for empresa in empresas %}
+	
+		<li>
+			{{empresa.name}}
+			{{empresa.image}}
+			{{empresa.description}}
+			{{empresa.municipality}}
+			
+			<a href="{{url('/')}}/{{lang}}/empresa/{{empresa.slug}}">{{'Saber mas'|_}}</a>
+
+
+
+
+		</li>	
+		
+	{% endfor %}
+	</ul>
+{% else %}
+
+	<div class="search-title-container">
+	     <p class="title-search"> {{ 'No hemos encontrado resultados que se adapten a tus criterios.'|_ }}</p>
+	</div>
+
+{% endif %}

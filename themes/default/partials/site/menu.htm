@@ -9,6 +9,13 @@
      } else {
         $this['preurl'] = '';
      }
+
+     if($this->param('slug')){
+        $this['slug'] = $this->param('slug');
+        $pgUrl = $this->page->url ;
+        $this->page->url = str_replace(':slug', $this['slug'], $pgUrl);
+        
+      }
   }
 
 ?>

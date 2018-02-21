@@ -1,0 +1,60 @@
+==
+
+<?php
+
+    function onStart()
+    {
+        if (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false) {
+          $this['preurl'] = '/cadizturismo';
+        } else {
+          $this['preurl'] = '';
+        }
+
+        $this['lang']=\App::getLocale();
+
+        if($this['lang']==''){
+          $this['lang']='es';
+        }
+
+        $this['municipalities'] = $this->staticApp->getMunicipalities();
+        $this['types'] = $this->staticApp->getTiposEmpresas();
+
+
+    }
+?>
+
+==
+
+<div id="search-event" class="search-bar-container">
+          <div class="search-bar">
+            <form data-request="onFindEmpresa">
+              <div class="inputs-container">
+                <div id="empresa-category" class="days-container">
+                  <select class="custom-select select-days" name="type">
+                    {% for key,value in types %}
+                        <option value="{{key}}">{{ value |_ }}</option>
+                    {% endfor %}
+                    <option value="all" selected=>{{'Todos los tipos'|_ }}</option>
+                  </select>
+                  <span class="select-title">{{ 'TIPO DE EMPRESA'|_ }}</span>
+                </div>
+               
+                <div id="empresa-location" class="type-container">
+                  <select class="custom-select select-type" name="location">
+                    {% for key,value in municipalities %}
+                        <option value="{{key}}">{{value}}</option>
+                    {% endfor %}
+                    <option value="all" selected=>{{'Todos los municipios'|_ }}</option>
+                  </select>
+                  <span class="select-title">{{ 'UBICACIÓN'|_ }}</span>
+                </div>
+              </div>
+              <div class="button-container">
+                <input type="submit" value="{{ 'Buscar empresa'|_ }}">
+              </div>
+            </form>
+          </div>
+        </div>
+       
+      </div>
+    </div>

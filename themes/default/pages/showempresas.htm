@@ -1,0 +1,65 @@
+title = "empresas"
+url = "/empresa/:slug"
+layout = "dinamic"
+is_hidden = 0
+
+[staticApp]
+
+==
+<?php  
+	
+	function onStart()
+	{	    
+    
+    $slug = $this->param('slug');
+
+    if (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false) {
+          $this['preurl'] = '/cadizturismo';
+    } else {
+        $this['preurl'] = '';
+    }
+
+    $this['lang']=\App::getLocale();
+		if($this['lang']==''){
+			$this['lang']='es';
+		}
+
+    $this['empresa'] =  $this->staticApp->empresasFindBySlug($slug);
+    
+	}
+	
+
+?>
+==
+
+<!-- HEADER -->
+<div class="header-search search-exp">
+  
+  <div class="header-container big-div">
+    <div id="exp-header" class="header-txt">
+      <p class="txt"><span id="exp" class="first-word">{{empresa.name}}</span></p>
+        <img class="brush" src="{{preurl}}/storage/app/media/uploaded-files/templates/brush-header.svg" alt="">
+    </div>
+    
+  
+    <ul>
+      
+      <li>{{empresa.image}}</li>
+      <li>{{empresa.tlf}}</li>
+      <li>{{empresa.email}}</li>
+      <li>{{empresa.site}}</li>
+      <li>{{empresa.municipality}}</li>
+      <li>{{empresa.url_map}}</li>
+   
+      <li>{{empresa.title}}</li>
+      <li>{{empresa.description}}</li>
+      <li>{{empresa.info}}</li>
+    </ul>
+    
+    
+    
+   
+   
+
+  </div>
+</div>

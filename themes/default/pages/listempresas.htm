@@ -1,0 +1,72 @@
+title = "allEvents"
+url = "/listado-de-empresas"
+layout = "dinamic"
+is_hidden = 0
+
+[staticApp]
+
+==
+<?php  
+	
+	function onStart()
+	{	    
+    
+    if (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false) {
+          $this['preurl'] = '/cadizturismo';
+    } else {
+        $this['preurl'] = '';
+    }
+
+    $this['lang']=\App::getLocale();
+		if($this['lang']==''){
+			$this['lang']='es';
+		}
+    
+    if(Session::has('data')){
+      Session::put('reciveData',Session::get('data'));     
+    }
+
+    if(Session::has('reciveData')){
+      $this['empresas'] = json_decode(Session::get('reciveData'));     
+    }
+
+	}
+
+	function onFindEmpresa(){
+
+    $type = $_POST['type'];
+    $ubicacion = $_POST['location'];
+      
+    $this['empresas'] = $this->staticApp->empresasFind($type,$ubicacion);
+
+    return [
+        '#prtlEmpresasl' => $this->renderPartial('empresas')
+    ];
+    
+  }
+
+?>
+==
+
+<!-- HEADER -->
+<div class="header-search search-exp">
+  
+  <div class="header-container big-div">
+    <div id="exp-header" class="header-txt">
+      <p class="txt"><span id="exp" class="first-word">{{'Empresas del sector'|_}}</span></p>
+        <img class="brush" src="{{preurl}}/storage/app/media/uploaded-files/templates/brush-header.svg" alt="">
+    </div>
+    
+    <p class="txt text-center"><span>{{'¿Qué necesitas de cadiz?'|_}}</span></p>
+    
+    <!-- SEARCH -->
+    <div id='prtlSearch'>
+      {% partial "site/searchempresa" %}
+    </div>
+
+  </div>
+</div>
+
+<div id='prtlEmpresasl' class="all-exps">
+  {% partial "empresas" %}
+</div>

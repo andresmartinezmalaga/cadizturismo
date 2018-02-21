@@ -23,6 +23,9 @@ use Config;
 
 use Backend\Models\Home;
 
+use \Backend\Models\Tipo;
+use \Backend\Models\Empresa;
+
 /**
  * The static page component.
  *
@@ -142,6 +145,20 @@ class StaticApp extends ComponentBase
         'villamartín' => 'Villamartín',
         'zahara de la sierra' => 'Zahara de la Sierra',
         ];
+    }
+
+    public function getTiposEmpresas() {
+
+        $rtipos = collect() ;
+
+        $tipos = Tipo::all();
+       
+        foreach ($tipos as $key => $value) {            
+            $rtipos->put($value->id,$value->name);
+        }
+       
+        return $rtipos;
+
     }
 
     public function beachList()
@@ -368,6 +385,76 @@ class StaticApp extends ComponentBase
         $event[0]->date_end_pretty_num = (new DateTime($event[0]->date_end))->format('d.m.y');
 
         return $event;
+    }
+
+    public function empresasFind($type, $location){
+        $typeOperator = '=';
+        if($type == 'all'){
+            $type = null;
+            $typeOperator = '!=';
+        }
+
+        $locationOperator = '=';
+        if($location == 'all'){
+            $location = null;
+            $locationOperator = '!=';
+        }
+
+        $empresas = Empresa::where('type_id',$typeOperator,$type)->where('municipality',$locationOperator,$location)->get();
+
+        foreach ($empresas as $empresa) {
+            
+            if(isset($empresa->avatar)){
+                $image = $empresa->avatar->getPath();
+                $empresa->image = $image;
+            }
+        }
+
+        return $empresas;
+    }
+
+    public function empresasFindBySlug($slug){
+        
+        $empresa = Empresa::where('slug',$slug)->first();
+        
+        if(isset($empresa->avatar)){
+            $image = $empresa->avatar->getPath();
+            $empresa->image = $image;
+        }
+        
+        return $empresa;
+    }
+
+    public function empresasListTypesHomeIndex(){
+        
+        $result = collect();
+        $cat1 = collect();
+        $cat2 = collect();
+        $cat3 = collect();
+        $result->put('cat1',$cat1);
+        $result->put('cat2',$cat2);
+        $result->put('cat3',$cat3);
+
+        $types = Tipo::all();
+        
+        foreach ($types as $type) {
+
+            if(isset($type->avatar)){
+                $image = $type->avatar->getPath();
+                $type->image = $image;
+            }
+            
+            if($type->category == 'Planificar mi viaje'){
+                $cat1->push($type);
+            } else if($type->category == 'Planes de ocio'){
+                $cat2->push($type);
+            } else if($type->category == 'Otros intereses'){
+                $cat3->push($type);
+            }
+        }
+        
+        
+        return $result;
     }
 
     public function rutaFindByUrl($url)

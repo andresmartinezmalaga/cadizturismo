@@ -19,6 +19,8 @@ class Empresa extends Model
      */
     protected $table = 'empresas';
 
+    protected $fillable = ['slug'];
+
     public $translatable = [
         'title',
         'description',
@@ -158,6 +160,8 @@ class Empresa extends Model
      */
     public function afterCreate()
     {
+        $this->slug = str_slug($this->name);
+        $this->save();
     }
 
 }

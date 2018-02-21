@@ -51,4 +51,9 @@ class Empresa extends Controller
         return $this->asExtension('FormController')->update($recordId, $context);
     }
 
+    public function formAfterSave($model)
+    {
+        $model->update(['slug' => str_slug($model->name)]);
+    } 
+
 }
