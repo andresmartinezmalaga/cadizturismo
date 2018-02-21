@@ -8,7 +8,7 @@ fields:
         span: left
         label: Nombre
 
-    phone:
+    tlf:
         span: right
         label: Telefono
 

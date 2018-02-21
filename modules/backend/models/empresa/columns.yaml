@@ -12,12 +12,14 @@ columns:
         label: Municipio
         searchable: true
 
-    phone:
+    tlf:
         label: Telefono
         searchable: true      
 
     type_id:
         label: Tipo
+        relation: type
+        select: name
         searchable: true
 
     category:
