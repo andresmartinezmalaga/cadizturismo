@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="43px" height="41px" viewBox="0 0 43 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Home-secundaria" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-514.000000, -17.000000)" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Page-1" transform="translate(515.000000, 17.000000)" stroke="#FFFFFF" stroke-width="2">
+            <path d="M23.1458,16.4978 L24.7988,14.6588" id="Stroke-1"></path>
+            <path d="M16.9207,16.4978 L18.5737,14.6588" id="Stroke-2"></path>
+            <path d="M23.1458,22.6302 L24.7988,20.7912" id="Stroke-3"></path>
+            <path d="M16.9207,22.6302 L18.5737,20.7912" id="Stroke-4"></path>
+            <path d="M23.1458,28.7625 L24.7988,26.9235" id="Stroke-5"></path>
+            <path d="M16.9207,28.7625 L18.5737,26.9235" id="Stroke-6"></path>
+            <path d="M23.1458,34.8948 L24.7988,33.0558" id="Stroke-7"></path>
+            <path d="M16.9207,34.8948 L18.5737,33.0558" id="Stroke-8"></path>
+            <g id="Group-15" transform="translate(0.000000, 14.715100)">
+                <polyline id="Stroke-9" points="28.821 9.437 39.715 9.437 39.715 25"></polyline>
+                <polyline id="Stroke-11" points="13.2581 0.0992 0.8081 4.4372 0.8081 25.0002"></polyline>
+                <path d="M0.8079,7.5362 L13.2579,7.5362" id="Stroke-13"></path>
+            </g>
+            <polyline id="Stroke-16" points="28.821 17.927 35.046 17.927 35.046 24.152"></polyline>
+            <polyline id="Stroke-17" points="28.821 39.7151 28.821 10.1451 13.258 10.1451 13.258 39.7151"></polyline>
+            <polygon id="Stroke-19" points="17.927 10.1451 24.152 10.1451 24.152 5.4761 17.927 5.4761"></polygon>
+            <g id="Group-24" transform="translate(0.000000, 0.715100)">
+                <path d="M21.0398,4.7613 L21.0398,0.2843" id="Stroke-20"></path>
+                <path d="M0.0002,39 L40.5222,39" id="Stroke-22"></path>
+            </g>
+        </g>
+    </g>
+</svg>

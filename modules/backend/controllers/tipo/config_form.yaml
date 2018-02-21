@@ -8,9 +8,9 @@ modelClass: Backend\Models\Tipo
 defaultRedirect: backend/tipo
 
 create:
-    redirect: backend/tipos/update/:id
+    redirect: backend/tipo/update/:id
     redirectClose: backend/tipo
 
 update:
-    redirect: backend/homes
+    redirect: backend/tipo
     redirectClose: backend/tipo

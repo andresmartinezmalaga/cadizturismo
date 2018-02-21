@@ -31,11 +31,6 @@ class Tipo extends Controller
     public $listConfig = 'config_list.yaml';
 
     /**
-     * @var array Permissions required to view this page.
-     */
-    //public $requiredPermissions = ['backend.manage_users'];
-
-    /**
      * @var string HTML body tag class
      */
     public $bodyClass = 'compact-container';

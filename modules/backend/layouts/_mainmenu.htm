@@ -58,11 +58,14 @@
                                 </a>
                             </li>
 
+                        <?php } ?>
+                        
+                        <?php if( trim(trans($item->label)) == 'Media' ){ ?>
                             <li class="<?= $isActive ? 'active' : null ?> svg-icon-container svg-active-effects">
                                 <a href="/backend/backend/empresas">
                                     <span class="nav-icon">
                                         <?php if ($item->iconSvg): ?>
-                                            <img class="svg-icon" src="<?= config('app.urlApp') ?>modules/system/assets/images/home.svg">
+                                            <img class="svg-icon" src="<?= config('app.urlApp') ?>modules/system/assets/images/empresas.svg">
                                         <?php endif ?>
 
                                         <i class="<?= $item->iconSvg ? 'svg-replace' : null ?> <?= $item->icon ?>"></i>

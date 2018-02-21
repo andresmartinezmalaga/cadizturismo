@@ -4,6 +4,6 @@
 
 fields:
     
-    nombre:
+    name:
         span: left
         label: Nombre del tipo de empresa

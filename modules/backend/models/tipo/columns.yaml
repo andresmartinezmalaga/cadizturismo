@@ -4,6 +4,6 @@
 
 columns:
 
-    nombre:
+    name:
         label: Nombre
         searchable: true    

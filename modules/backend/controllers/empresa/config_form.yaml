@@ -8,9 +8,9 @@ modelClass: Backend\Models\Empresa
 defaultRedirect: backend/empresa
 
 create:
-    redirect: backend/empresas/update/:id
+    redirect: backend/empresa/update/:id
     redirectClose: backend/empresa
 
 update:
-    redirect: backend/empresas
+    redirect: backend/empresa
     redirectClose: backend/empresa

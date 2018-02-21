@@ -4,14 +4,22 @@
 
 columns:
 
-    nombre:
+    name:
         label: Nombre
         searchable: true
 
-    municipio:
+    municipality:
         label: Municipio
         searchable: true
 
-    telefono:
+    phone:
         label: Telefono
-        searchable: true       
+        searchable: true      
+
+    type_id:
+        label: Tipo
+        searchable: true
+
+    category:
+        label: Categoría
+        searchable: true

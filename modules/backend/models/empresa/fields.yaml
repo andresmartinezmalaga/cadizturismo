@@ -4,29 +4,35 @@
 
 fields:
     
-    nombre:
+    name:
         span: left
         label: Nombre
 
-    tipo:
+    phone:
         span: right
+        label: Telefono
+
+    type_id:
+        span: left
         label: Tipo
         type: dropdown
         options: getTiposEmpresas
 
-    telefono:
-        span: left
-        label: Telefono
+    category:
+        span: right
+        label: Categoría
+        type: dropdown
+        options: getCategoriasEmpresas
 
     site:
-        span: right
+        span: left
         label: URL del enlace
 
-    direccion:
+    address:
         span: full
         label: Dirección
 
-    municipio:
+    municipality:
         span: left
         label: Municipio
         type: dropdown
@@ -36,7 +42,7 @@ fields:
         span: right
         label: Url del mapa de google
 
-    descripcion:
+    description:
         span: full
         label: Descripción
         type: textarea
