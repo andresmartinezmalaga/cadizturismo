@@ -94,13 +94,11 @@ class Empresa extends Model
 
         $tipos = Tipo::all();
        
-        foreach ($tipos as $key => $value) {
-            
-            $rtipos->put("0".$value->id,$value->nombre);
+        foreach ($tipos as $key => $value) {            
+            $rtipos->put($value->id,$value->nombre);
         }
        
         return $rtipos;
-
 
     }
 
