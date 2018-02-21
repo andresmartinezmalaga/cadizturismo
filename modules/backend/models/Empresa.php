@@ -106,9 +106,9 @@ class Empresa extends Model
 
     public function getCategoriasEmpresas(){
         return [
-        'planificar mi viaje' => 'Planificar mi viaje',
-        'planes de ocio' => 'Planes de ocio',
-        'otros intereses' => 'Otros intereses'
+        'Planificar mi viaje' => 'Planificar mi viaje',
+        'Planes de ocio' => 'Planes de ocio',
+        'Otros intereses' => 'Otros intereses'
         ];
     }
 
