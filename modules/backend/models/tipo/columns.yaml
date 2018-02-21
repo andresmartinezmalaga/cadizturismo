@@ -7,3 +7,7 @@ columns:
     name:
         label: Nombre
         searchable: true    
+
+    category:
+        span: right
+        label: Categoría

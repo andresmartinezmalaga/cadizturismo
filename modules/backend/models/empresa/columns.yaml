@@ -5,23 +5,15 @@
 columns:
 
     name:
-        label: Nombre
+        label: Nombre de la empresa
         searchable: true
-
-    municipality:
-        label: Municipio
-        searchable: true
-
-    tlf:
-        label: Telefono
-        searchable: true      
-
+        
     type_id:
-        label: Tipo
+        label: Tipo de empresa
         relation: type
         select: name
         searchable: true
 
-    category:
-        label: Categoría
+    municipality:
+        label: Ubicación
         searchable: true

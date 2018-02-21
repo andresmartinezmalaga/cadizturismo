@@ -7,3 +7,9 @@ fields:
     name:
         span: left
         label: Nombre del tipo de empresa
+
+    category:
+        span: right
+        label: Categoría
+        type: dropdown
+        options: getCategoriasEmpresas

@@ -20,8 +20,9 @@ class Empresa extends Model
     protected $table = 'empresas';
 
     public $translatable = [
+        'title',
         'description',
-        'title'
+        'info'
     ];
 
     public static function boot()
@@ -95,19 +96,11 @@ class Empresa extends Model
         $tipos = Tipo::all();
        
         foreach ($tipos as $key => $value) {            
-            $rtipos->put($value->id,$value->nombre);
+            $rtipos->put($value->id,$value->name);
         }
        
         return $rtipos;
 
-    }
-
-    public function getCategoriasEmpresas(){
-        return [
-        'Planificar mi viaje' => 'Planificar mi viaje',
-        'Planes de ocio' => 'Planes de ocio',
-        'Otros intereses' => 'Otros intereses'
-        ];
     }
 
     public function getMunicipalities(){

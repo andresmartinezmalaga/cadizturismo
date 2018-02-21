@@ -6,11 +6,11 @@ fields:
     
     name:
         span: left
-        label: Nombre
+        label: Nombre de la empresa
 
     tlf:
         span: right
-        label: Telefono
+        label: Teléfono
 
     type_id:
         span: left
@@ -18,15 +18,13 @@ fields:
         type: dropdown
         options: getTiposEmpresas
 
-    category:
+    email:
         span: right
-        label: Categoría
-        type: dropdown
-        options: getCategoriasEmpresas
+        label: Email
 
     site:
         span: left
-        label: URL del enlace
+        label: Web
 
     address:
         span: full
@@ -40,16 +38,10 @@ fields:
 
     url_map:
         span: right
-        label: Url del mapa de google
-
-    description:
-        span: full
-        label: Descripción
-        type: textarea
-        size: large
-
+        label: Url de google maps
+    
     avatar:
-        label: Imagen
+        label: Foto de portada
         type: fileupload
         mode: image
         imageHeight: 260
@@ -63,3 +55,19 @@ fields:
             sharpen: 0
             interlace: false
             extension: auto
+
+    title:
+        span: left
+        label: Título
+
+    description:
+        span: full
+        label: Descripción (max. 120 caracteres)
+        type: textarea
+        size: large
+
+    info:
+        span: full
+        label: Escribe aquí si necesitas incluir mas información como horario, precios, etc.
+        type: textarea
+        size: large

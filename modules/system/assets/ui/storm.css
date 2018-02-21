@@ -2374,7 +2374,7 @@ html.cssanimations .cursor-loading-indicator.hide{display:none}
 .select2-container--default .select2-selection--single .select2-selection__arrow{position:absolute;bottom:0;right:13px;top:0;width:4px}
 .select2-container--default .select2-selection--single .select2-selection__arrow b{position:absolute;top:50%;height:9px;width:8px;right:3px;margin-top:-5px;line-height:9px}
 .select2-container--default .select2-selection--single .select2-selection__arrow b:before{font-family:FontAwesome;font-weight:normal;font-style:normal;text-decoration:inherit;-webkit-font-smoothing:antialiased;*margin-right:.3em;content:"\f107";display:inline-block}
-.select2-container--default .select2-selection--single .select2-selection__rendered{color:#385487;padding:0}
+.select2-container--default .select2-selection--single .select2-selection__rendered{color:#385487!important;padding:0}
 .select2-container--default .select2-selection--single .select2-selection__placeholder{color:#cccccc}
 .select2-container--default .select2-selection--multiple{min-height:38px}
 .select2-container--default .select2-selection--multiple .select2-selection__rendered{box-sizing:border-box;display:block;line-height:1.42857143;list-style:none;margin:0;overflow:hidden;padding:0;width:100%;text-overflow:ellipsis;white-space:nowrap}
@@ -3066,3 +3066,4 @@ ul.autocomplete.dropdown-menu.inspector-autocomplete li a{padding:5px 12px;white
 .clockpicker-hours .clockpicker-tick{font-size:12px}
 .clockpicker-hours .clockpicker-tick.tick-inner{font-size:16px}
 .clockpicker-minutes .clockpicker-tick{font-size:16px}
+

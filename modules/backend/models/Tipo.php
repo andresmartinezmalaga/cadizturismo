@@ -57,6 +57,14 @@ class Tipo extends Model
     public $attachOne = [
     ];
 
+    public function getCategoriasEmpresas(){
+        return [
+        'Planificar mi viaje' => 'Planificar mi viaje',
+        'Planes de ocio' => 'Planes de ocio',
+        'Otros intereses' => 'Otros intereses'
+        ];
+    }
+
     /**
      * Returns the public image file path to this user's avatar.
      */

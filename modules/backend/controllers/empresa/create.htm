@@ -8,8 +8,15 @@
 <?php echo $this->fatalError ?>
 
 <?php if (!$this->fatalError): ?>
+    
+
 
     <?php Block::put('form-contents') ?>
+
+        <div>
+           <?= $this->makePartial('menu') ?>
+        </div>
+        
         <div class="layout">
 
             <div class="layout-row">
@@ -37,7 +44,7 @@
                         <?= e(trans('backend::lang.form.create_and_close')) ?>
                     </button>
                     <span class="btn-text">
-                        <?= e(trans('backend::lang.form.or')) ?> <a href="<?= Backend::url('backend/empresa') ?>"><?= e(trans('backend::lang.form.cancel')) ?></a>
+                        <?= e(trans('backend::lang.form.or')) ?> <a href="<?= Backend::url('backend/empresa') ?>">Volver</a>
                     </span>
                 </div>
             </div>
