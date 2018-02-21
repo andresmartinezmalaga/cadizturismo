@@ -55,6 +55,7 @@ class Tipo extends Model
     ];
 
     public $attachOne = [
+        'avatar' => \System\Models\File::class
     ];
 
     public function getCategoriasEmpresas(){

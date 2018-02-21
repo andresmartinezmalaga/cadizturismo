@@ -26,18 +26,14 @@ fields:
         span: left
         label: Web
 
-    address:
-        span: full
-        label: Dirección
-
     municipality:
-        span: left
+        span: right
         label: Municipio
         type: dropdown
         options: getMunicipalities
 
     url_map:
-        span: right
+        span: left
         label: Url de google maps
     
     avatar:
@@ -62,7 +58,7 @@ fields:
 
     description:
         span: full
-        label: Descripción (max. 120 caracteres)
+        label: Descripción
         type: textarea
         size: large
 
