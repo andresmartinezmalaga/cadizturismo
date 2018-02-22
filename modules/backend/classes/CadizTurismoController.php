@@ -266,7 +266,20 @@ class CadizTurismoController extends ControllerBase
         return new JsonResponse(['data'=>$empresasList], 200);
     }
 
-    empresasFindByTypePag
+    public function empresasListByType ($typeslug) {
+        $empresasList =  $this->StaticApp->empresasFindByType($typeslug);
+        return new JsonResponse(['data'=>$empresasList], 200);
+    }
+
+    public function empresasListByTypePag ($typeslug, $pag, $number) {
+        $empresasList =  $this->StaticApp->empresasFindByTypePag($typeslug, $pag, $number);
+        return new JsonResponse(['data'=>$empresasList], 200);
+    }
+
+    public function empresaShowByNameSlug ($nameslug) {
+        $empresasList =  $this->StaticApp->empresasFindBySlug($nameslug);
+        return new JsonResponse(['data'=>$empresasList], 200);
+    }
     
 
 }
