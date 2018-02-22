@@ -16,6 +16,15 @@
         $this->page->url = str_replace(':slug', $this['slug'], $pgUrl);
         
       }
+
+      if($this->param('type') && $this->param('location')){
+        $this['type'] = $this->param('type');
+        $this['location'] = $this->param('location');
+        $pgUrl = $this->page->url ;
+        $pageurl = str_replace(':type', $this['type'], $pgUrl);
+        $this->page->url = str_replace(':location', $this['location'], $pageurl);
+        
+      }
   }
 
 ?>
