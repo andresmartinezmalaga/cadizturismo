@@ -283,9 +283,9 @@ class CadizTurismoController extends ControllerBase
         $empresaes =  $this->StaticApp->empresasFindBySlug($nameslug);
         $result->put('empresa-es',$empresaes);
         
-        $empresaen =  $this->StaticApp->empresasFindBySlug($nameslug);
-        $empresaen->translateContext('en');
-        $result->put('empresa-en',$empresaen);
+        //$empresaen =  $this->StaticApp->empresasFindBySlug($nameslug);
+        //$empresaen->translateContext('en');
+        $result->put('empresa-en',$this->StaticApp->empresasFindBySlug($nameslug)->translateContext('en'));
 
         return new JsonResponse(['data'=>$result], 200);
     }
