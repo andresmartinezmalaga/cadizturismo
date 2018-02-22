@@ -30,27 +30,27 @@
             <form data-request="onFindEmpresa">
               <div class="inputs-container">
                 <div id="empresa-category" class="days-container">
-                  <select class="custom-select select-days" name="type">
+                  <select id="sltType" class="custom-select select-days" name="type">
                     {% for key,value in types %}
                         <option value="{{str_slug(value)}}">{{ value |_ }}</option>
                     {% endfor %}
-                    <option value="all" selected=>{{'Todos los tipos'|_ }}</option>
+                    <option value="todos-los-tipos" selected=>{{'Todos los tipos'|_ }}</option>
                   </select>
                   <span class="select-title">{{ 'TIPO DE EMPRESA'|_ }}</span>
                 </div>
                
                 <div id="empresa-location" class="type-container">
-                  <select class="custom-select select-type" name="location">
+                  <select id="sltLocation" class="custom-select select-type" name="location">
                     {% for key,value in municipalities %}
                         <option value="{{str_slug(value)}}">{{value}}</option>
                     {% endfor %}
-                    <option value="all" selected=>{{'Todos los municipios'|_ }}</option>
+                    <option value="todos-los-municipios" selected=>{{'Todos los municipios'|_ }}</option>
                   </select>
                   <span class="select-title">{{ 'UBICACIÓN'|_ }}</span>
                 </div>
               </div>
               <div class="button-container">
-                <input type="submit" value="{{ 'Buscar empresa'|_ }}">
+                <input id="bscEmpresa" type="submit" value="{{ 'Buscar empresa'|_ }}">
               </div>
             </form>
           </div>

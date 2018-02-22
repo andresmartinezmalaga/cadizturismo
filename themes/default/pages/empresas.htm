@@ -45,64 +45,75 @@ is_hidden = 0
 ==
 
 <!-- HEADER -->
-<div class="header-search search-exp">
-  
-  <div class="header-container big-div">
-    <div id="exp-header" class="header-txt">
-      <p class="txt"><span id="exp" class="first-word">{{'Empresas del sector'|_}}</span></p>
-        <img class="brush" src="{{preurl}}/storage/app/media/uploaded-files/templates/brush-header.svg" alt="">
-    </div>
-    
-    <p class="txt text-center"><span>{{'¿Qué necesitas de cadiz?'|_}}</span></p>
-    
-    <!-- SEARCH -->
-    <div id='prtlSearch'>
-      {% partial "site/searchempresa" %}
+<div class="header-search search-exp bussinesPage">
+
+    <div class="header-container big-div">
+        <div id="exp-header" class="header-txt">
+            <p class="txt"><span id="exp" class="first-word">{{'Empresas del sector'|_}}</span></p>
+            <img class="brush" src="{{preurl}}/storage/app/media/uploaded-files/templates/brush-header.svg" alt="">
+        </div>
+
+        <p class="txt text-center whatDoYouNeedCadiz"><span>{{'¿Qué necesitas de cadiz?'|_}}</span></p>
+
+        <!-- SEARCH -->
+        <div id='prtlSearch'>
+            {% partial "site/searchempresa" %}
+
+        </div>
+
+        <ul class="content bussinesPage">
+
+            <li>
+                <img src="{{'assets/img/travel.svg'|theme}}" alt="">
+                <ul>
+                    <p>PLANIFICAR MI VIAJE</p>
+                    {% for type in typeIndex['cat1']%}
+
+                    <li>
+
+                        <a href="{{url('/')}}/{{lang}}/empresas-por-sector/{{type.slug}}">{{type.name}} <img src="{{'assets/img/arrow.svg'|theme}}"
+                                                                                                             alt=""></a>
+
+                    </li>
+
+                    {% endfor %}
+                </ul>
+            </li>
+            <li>
+                <img src="{{'assets/img/direcction.svg'|theme}}" alt="">
+                <ul>
+                    <p>PLANES DE OCIO</p>
+                    {% for type in typeIndex['cat2']%}
+
+                    <li>
+
+                        <a href="{{url('/')}}/{{lang}}/empresas-por-sector/{{type.slug}}">{{type.name}} <img src="{{'assets/img/arrow.svg'|theme}}"
+                                                                                                             alt=""></a>
+
+                    </li>
+
+                    {% endfor %}
+                </ul>
+            </li>
+
+            <li>
+                <img src="{{'assets/img/search.svg'|theme}}" alt="" style="left: -22px;">
+                <ul>
+                    <p>OTROS INTERESES</p>
+                    {% for type in typeIndex['cat3']%}
+
+                    <li>
+
+                        <a href="{{url('/')}}/{{lang}}/empresas-por-sector/{{type.slug}}">{{type.name}} <img src="{{'assets/img/arrow.svg'|theme}}"
+                                                                                                             alt=""></a>
+
+                    </li>
+
+                    {% endfor %}
+                </ul>
+            </li>
+
+        </ul>
 
     </div>
-    
-    <div style="margin-top: 350px; margin-bottom: 200px;"">
-   
-    <ul style="float: left; margin-right: 300px;">
-       <p>PANIFICAR MI VIAJE</p>
-    {% for type in typeIndex['cat1']%}
-  
-      <li>
-                 
-         <a href="{{url('/')}}/{{lang}}/empresas-por-sector/{{type.slug}}">{{type.name}}</a>
-
-      </li> 
-    
-    {% endfor %}
-    </ul>
-    
-    <ul  style="float: left; margin-right: 300px;">   
-     <p>PLANES DE OCIO</p> 
-    {% for type in typeIndex['cat2']%}
-  
-      <li>
-                 
-        <a href="{{url('/')}}/{{lang}}/empresas-por-sector/{{type.slug}}">{{type.name}}</a>
-
-      </li> 
-    
-    {% endfor %}
-    </ul>
-
-     <ul> 
-      <p>OTROS INTERESES</p>   
-    {% for type in typeIndex['cat3']%}
-  
-      <li>
-                 
-         <a href="{{url('/')}}/{{lang}}/empresas-por-sector/{{type.slug}}">{{type.name}}</a>
-
-      </li> 
-    
-    {% endfor %}
-    </ul>
-
-    </div>
-
-  </div>
 </div>

@@ -64,6 +64,6 @@ fields:
 
     info:
         span: full
-        label: Escribe aquí si necesitas incluir mas información como horario, precios, etc.
+        label: Escribe aquí si necesitas incluir más información como horario, precios, etc.
         type: textarea
         size: large

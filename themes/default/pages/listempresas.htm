@@ -43,7 +43,7 @@ is_hidden = 0
     $type = $_POST['type'];
     $ubicacion = $_POST['location'];
       
-    $this['empresas'] = $this->staticApp->empresasFind($type,$ubicacion,1,$this['numberReg']);
+    $this['empresas'] = $this->staticApp->empresasFindPag($type,$ubicacion,1,$this['numberReg']);
 
     return [
         '#prtlEmpresasl' => $this->renderPartial('empresas')

@@ -387,20 +387,26 @@ class StaticApp extends ComponentBase
         return $event;
     }
 
-    public function empresasFind($type, $location){
+    public function empresasFind($typeslug, $locationslug){
         $typeOperator = '=';
-        if($type == 'all'){
-            $type = null;
+        
+        $gtype = Tipo::where('slug',$typeslug)->first();
+        if(count($gtype)>0){
+            $type_id = $gtype->id;
+        }
+            
+        if($typeslug == 'todos-los-tipos'){
+            $type_id = null;
             $typeOperator = '!=';
         }
 
         $locationOperator = '=';
-        if($location == 'all'){
-            $location = null;
+        if($locationslug == 'todos-los-municipios'){
+            $locationslug = null;
             $locationOperator = '!=';
         }
 
-        $empresas = Empresa::where('type_id',$typeOperator,$type)->where('municipality',$locationOperator,$location)->get();
+        $empresas = Empresa::where('type_id',$typeOperator,$type_id)->where('mslug',$locationOperator,$locationslug)->get();
 
         foreach ($empresas as $empresa) {
             
@@ -409,24 +415,31 @@ class StaticApp extends ComponentBase
                 $empresa->image = $image;
             }
         }
-     
+
         return $empresas;
     }
 
-    public function empresasFindPag($type, $location, $pag = 1, $number = 1){
+    public function empresasFindPag($typeslug, $locationslug, $pag = 1, $number = 1){
+        
         $typeOperator = '=';
-        if($type == 'all'){
-            $type = null;
+        
+        $gtype = Tipo::where('slug',$typeslug)->first();
+        if(count($gtype)>0){
+            $type_id = $gtype->id;
+        }
+            
+        if($typeslug == 'todos-los-tipos'){
+            $type_id = null;
             $typeOperator = '!=';
         }
 
         $locationOperator = '=';
-        if($location == 'all'){
-            $location = null;
+        if($locationslug == 'todos-los-municipios'){
+            $locationslug = null;
             $locationOperator = '!=';
         }
 
-        $empresas = Empresa::where('type_id',$typeOperator,$type)->where('municipality',$locationOperator,$location)->get();
+        $empresas = Empresa::where('type_id',$typeOperator,$type_id)->where('mslug',$locationOperator,$locationslug)->get();
 
         foreach ($empresas as $empresa) {
             
@@ -441,8 +454,8 @@ class StaticApp extends ComponentBase
         return $pagination;
     }
 
-    public function empresasFindCount($type, $location){
-        return count($this->empresasFind($type, $location));
+    public function empresasFindCount($typeslug, $locationslug){
+        return count($this->empresasFind($typeslug, $locationslug));
     }
 
     public function empresasFindByType($typeslug){

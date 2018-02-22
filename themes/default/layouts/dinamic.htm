@@ -169,5 +169,28 @@ code = "redes-sociales"
 
     {% framework %}
 
+    <script>
+      
+      $('#bscEmpresa').on('click', function(){
+
+        var location = $('#sltLocation');
+        var type = $('#sltType');
+        var url = window.location.href
+
+        var arr = url.split('/');
+        var total = arr.length;
+        
+        var itype = arr[total-2];
+        var ilocation = arr[total-1];
+        
+        var nurl = url.replace( itype, type.val()); 
+        nurl = nurl.replace( ilocation, location.val()); 
+
+        console.log(nurl);
+
+      });
+     
+    </script>
+
   </body>
 </html>
