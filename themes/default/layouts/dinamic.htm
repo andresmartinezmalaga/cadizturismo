@@ -171,7 +171,7 @@ code = "redes-sociales"
 
     <script>
       
-      $('#bscEmpresa').on('click', function(){
+      $('#listEmp #bscEmpresa').on('click', function(){
 
         var location = $('#sltLocation');
         var type = $('#sltType');
@@ -186,7 +186,7 @@ code = "redes-sociales"
         var nurl = url.replace( itype, type.val()); 
         nurl = nurl.replace( ilocation, location.val()); 
 
-        console.log(nurl);
+        history.pushState(null, "", nurl);
 
       });
      
