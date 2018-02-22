@@ -452,8 +452,8 @@ html, body {
   position: absolute;
   top: 0;
   right: 0;
-  transition: -webkit-transform .3s 0s ease-in-out,top .3s .3s ease-in-out;
-  transition: transform .3s 0s ease-in-out,top .3s .3s ease-in-out;
+  transition: -webkit-transform .3s 0s ease-in-out, top .3s .3s ease-in-out;
+  transition: transform .3s 0s ease-in-out, top .3s .3s ease-in-out;
   -webkit-transform-origin: 50% 50%;
   -ms-transform-origin: 50% 50%;
   transform-origin: 50% 50%; }
@@ -2493,9 +2493,9 @@ html, body {
   .show-lang {
     visibility: visible !important; }
   #search-event #event-category, #search-event #event-location {
-    width: calc((100% - 244px)/ 2) !important;
-    width: -webkit-calc((100% - 244px)/ 2) !important;
-    width: -moz-calc((100% - 244px)/ 2) !important; }
+    width: calc((100% - 244px) / 2) !important;
+    width: -webkit-calc((100% - 244px) / 2) !important;
+    width: -moz-calc((100% - 244px) / 2) !important; }
   .header-txt .txt {
     max-width: 90%;
     text-align: center; }
@@ -3433,3 +3433,39 @@ ul.content.bussinesPage {
         float: right;
         right: 41px;
         position: relative; }
+
+.bussinesPage.sxxx:before {
+  content: none; }
+
+.bussinesPage.llls #out-features {
+  top: 631px; }
+  .bussinesPage.llls #out-features a {
+    text-align: center; }
+  .bussinesPage.llls #out-features a:hover {
+    text-decoration: none; }
+  .bussinesPage.llls #out-features a.linkMapss {
+    /* Jeres de la Frontera: */
+    font-family: AvenirNext-Medium;
+    font-size: 16px;
+    color: #FFFFFF;
+    opacity: 0.5; }
+
+.bussinesPage.llls section {
+  max-width: 60%;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  .bussinesPage.llls section h3 {
+    font-family: AvenirNext-DemiBold;
+    font-size: 64px;
+    color: #4A4A4A;
+    line-height: 65px; }
+  .bussinesPage.llls section p {
+    /* Andalusia Tour Trave: */
+    font-family: AvenirNext-Medium;
+    font-size: 18px;
+    color: #9B9B9B;
+    line-height: 33px; }
+
+.bussinesPage.llls section.desc {
+  margin-top: 130px; }

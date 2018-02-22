@@ -10,56 +10,100 @@ is_hidden = 0
 	
 	function onStart()
 	{	    
-    
-    $slug = $this->param('slug');
+            $this['urlPage'] = $this->page->url;
 
-    if (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false) {
-          $this['preurl'] = '/cadizturismo';
-    } else {
-        $this['preurl'] = '';
-    }
+$slug = $this->param('slug');
+$this['slugg'] = $slug;
+if (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false) {
+$this['preurl'] = '/cadizturismo';
+} else {
+$this['preurl'] = '';
+}
 
-    $this['lang']=\App::getLocale();
-		if($this['lang']==''){
-			$this['lang']='es';
-		}
+$this['lang']=\App::getLocale();
+if($this['lang']==''){
+$this['lang']='es';
+}
 
-    $this['empresa'] =  $this->staticApp->empresasFindBySlug($slug);
-    
-	}
-	
+$this['empresa'] =  $this->staticApp->empresasFindBySlug($slug);
+
+$this['metaTitle'] = $this['empresa']->name;
+$this['metaDescription'] = (strlen($this['empresa']->description) > 250) ? substr($this['empresa']->description,0,250).'...' : $this['empresa']->description;
+$this['metaImg'] = $this['empresa']->image;
+
+}
+
+
 
 ?>
 ==
 
 <!-- HEADER -->
-<div class="header-search search-exp">
-  
-  <div class="header-container big-div">
-    <div id="exp-header" class="header-txt">
-      <p class="txt"><span id="exp" class="first-word">{{empresa.name}}</span></p>
-        <img class="brush" src="{{preurl}}/storage/app/media/uploaded-files/templates/brush-header.svg" alt="">
-    </div>
-    
-  
-    <ul>
-      
-      <li>{{empresa.image}}</li>
-      <li>{{empresa.tlf}}</li>
-      <li>{{empresa.email}}</li>
-      <li>{{empresa.site}}</li>
-      <li>{{empresa.municipality}}</li>
-      <li>{{empresa.url_map}}</li>
-   
-      <li>{{empresa.title}}</li>
-      <li>{{empresa.description}}</li>
-      <li>{{empresa.info}}</li>
-    </ul>
-    
-    
-    
-   
-   
+<div class="header-search search-exp bussinesPage sxxx">
 
-  </div>
+    <div class="header-container big-div">
+        <div id="exp-header" class="header-txt">
+            <p class="txt"><span id="exp" class="first-word">{{empresa.name}}</span></p>
+            <img class="brush" src="{{empresa.image}}" alt="">
+        </div>
+    </div>
+
+</div>
+<div class="bussinesPage llls">
+    <div id="out-features" class="event-features">
+        <div class="feature-exp">
+
+            <img src="{{'assets/img/mobile.svg'|theme}}">
+            <p class="feature-txt">{{empresa.tlf}}</p>
+
+        </div>
+        <div class="feature-exp">
+
+            <img src="{{'assets/img/email.svg'|theme}}">
+            <p class="feature-txt">{{empresa.email}}</p>
+
+        </div>
+        <div class="feature-exp">
+            <a href="{{empresa.site}}">
+                <img src="{{'assets/img/web.svg'|theme}}">
+                <p class="feature-txt">{{empresa.site | replace({'http://': '', 'https://': ''})}}</p>
+            </a>
+
+        </div>
+        <div class="feature-exp">
+
+            <img src="{{'assets/img/site2.svg'|theme}}">
+            <p class="feature-txt">{{empresa.municipality | capitalize}}</p>
+            <a class="linkMapss" href="{{empresa.url_map}}" target="_blank">Ver mapa</a>
+        </div>
+    </div>
+    <section class="desc">
+        <h3>
+            {{empresa.title}}
+        </h3>
+        <img class="separator fr-fic fr-dii" src="{{'assets/img/big-yellow-separator.svg'|theme}}">
+        <p>
+            {{empresa.description}}
+        </p>
+    </section>
+    {% if empresa.info %}
+        <section class="info">
+            <h3>
+                ¿MÁS INFO?
+            </h3>
+            <img class="separator fr-fic fr-dii" src="{{'assets/img/big-yellow-separator.svg'|theme}}">
+            <p>
+                {{empresa.info}}
+            </p>
+        </section>
+    {% endif %}
+    <div class="vertical-share">
+        <p class="also-title">{{'COMPARTIR'|_}}</p><img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tiny-sep.svg" class="fr-fil fr-dib">
+        <div class="links-container"><a href="https://www.facebook.com/sharer/sharer.php?u={{url('/')}}/{{lang}}{{urlPage|replace({':slug': slugg})}}" target="_blank">Facebook&nbsp;</a>
+            <span>·</span>
+            <a data-action="share/whatsapp/share" href="whatsapp://send?text={{url('/')}}/{{lang}}{{urlPage|replace({':slug': slugg})}}">Whatsapp&nbsp;</a>
+            <span>·</span>
+            <a href="https://twitter.com/home?status={{url('/')}}/{{lang}}{{urlPage|replace({':slug': slugg})}}" target="_blank" >Twitter&nbsp;</a>
+        </div>
+    </div>
 </div>
