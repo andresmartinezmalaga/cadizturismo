@@ -3,16 +3,17 @@
 	{% for empresa in empresas %}
 	
 		<li>
-			{{empresa.name}}
-			{{empresa.image}}
-			{{empresa.description}}
-			{{empresa.municipality}}
-			
-			<a href="{{url('/')}}/{{lang}}/empresa/{{empresa.slug}}">{{'Saber mas'|_}}</a>
-
-
-
-
+			<h3 style="text-transform: uppercase">
+				{{str_limit(empresa.name,18) | capitalize}}
+			</h3>
+			<!--{{empresa.image}}-->
+			<p>
+				{{str_limit(empresa.description,117) | capitalize}}
+			</p>
+			<span>
+				<p><img src="{{'assets/img/map.svg'|theme}}" alt="">{{empresa.municipality | capitalize}}</p>
+				<a href="{{url('/')}}/{{lang}}/empresa/{{empresa.slug}}">{{'Saber mas'|_}}</a>
+			</span>
 		</li>	
 		
 	{% endfor %}
