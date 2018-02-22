@@ -387,7 +387,7 @@ class StaticApp extends ComponentBase
         return $event;
     }
 
-    public function empresasFind($type, $location){
+    public function empresasFind($type, $location, $pag = 1, $number = 1){
         $typeOperator = '=';
         if($type == 'all'){
             $type = null;
@@ -410,8 +410,30 @@ class StaticApp extends ComponentBase
             }
         }
 
-        return $empresas;
+        $pagination = $empresas->slice((($pag-1)*$number),$number);
+
+        return $pagination;
     }
+
+    public function empresasFindByType($typeslug, $pag = 1, $number = 1){
+        
+        $type = Tipo::where('slug',$typeslug)->first();
+
+        $empresas = Empresa::where('type_id',$type->id)->get();
+
+        foreach ($empresas as $empresa) {
+            
+            if(isset($empresa->avatar)){
+                $image = $empresa->avatar->getPath();
+                $empresa->image = $image;
+            }
+        }
+
+        $pagination = $empresas->slice((($pag-1)*$number),$number);
+        
+        return $pagination;
+    }
+
 
     public function empresasFindBySlug($slug){
         
