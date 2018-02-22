@@ -31,7 +31,7 @@ code = "redes-sociales"
     function onStart()
     {
 
-$this['lang']=\App::getLocale();
+        $this['lang']=\App::getLocale();
         if($this['lang']==''){
             $this['lang']='es';
         }
@@ -62,10 +62,14 @@ $this['lang']=\App::getLocale();
                     if(strlen($this['metaDescription'])>225){
                         $this['metaDescription'] = substr($this['metaDescription'], 0, 225).'...';
                     }
+                
+                } else {
+                    
+                     $this['metaDescription'] = '';
                 }
             
-             } else {
-               $this['metaDescription'] = $this->page->settings["meta_description"];                
+            } else {
+               $this['metaDescription'] = $this->page->settings["meta_description"];   
             }
         }
     }

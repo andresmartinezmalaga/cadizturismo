@@ -32,7 +32,7 @@
                 <div id="empresa-category" class="days-container">
                   <select class="custom-select select-days" name="type">
                     {% for key,value in types %}
-                        <option value="{{key}}">{{ value |_ }}</option>
+                        <option value="{{str_slug(value)}}">{{ value |_ }}</option>
                     {% endfor %}
                     <option value="all" selected=>{{'Todos los tipos'|_ }}</option>
                   </select>
@@ -42,7 +42,7 @@
                 <div id="empresa-location" class="type-container">
                   <select class="custom-select select-type" name="location">
                     {% for key,value in municipalities %}
-                        <option value="{{key}}">{{value}}</option>
+                        <option value="{{str_slug(value)}}">{{value}}</option>
                     {% endfor %}
                     <option value="all" selected=>{{'Todos los municipios'|_ }}</option>
                   </select>
