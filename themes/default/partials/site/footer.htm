@@ -6,6 +6,9 @@
           {% for item in staticMenu5.menuItems %}
             {% set tt = '.'~item.title %}
             <a href="{{ item.url }}">{{ tt|_ }}</a>
+            {% if item.title == 'Publicaciones' %} 
+               <a href="{{url('/')}}/{{lang}}/empresas">{{'Empresas'|_ }}</a>
+            {% endif %}
           {% endfor %}
         </div>
       </div>
