@@ -387,7 +387,33 @@ class StaticApp extends ComponentBase
         return $event;
     }
 
-    public function empresasFind($type, $location, $pag = 1, $number = 1){
+    public function empresasFind($type, $location){
+        $typeOperator = '=';
+        if($type == 'all'){
+            $type = null;
+            $typeOperator = '!=';
+        }
+
+        $locationOperator = '=';
+        if($location == 'all'){
+            $location = null;
+            $locationOperator = '!=';
+        }
+
+        $empresas = Empresa::where('type_id',$typeOperator,$type)->where('municipality',$locationOperator,$location)->get();
+
+        foreach ($empresas as $empresa) {
+            
+            if(isset($empresa->avatar)){
+                $image = $empresa->avatar->getPath();
+                $empresa->image = $image;
+            }
+        }
+     
+        return $empresas;
+    }
+
+    public function empresasFindPag($type, $location, $pag = 1, $number = 1){
         $typeOperator = '=';
         if($type == 'all'){
             $type = null;
@@ -415,7 +441,28 @@ class StaticApp extends ComponentBase
         return $pagination;
     }
 
-    public function empresasFindByType($typeslug, $pag = 1, $number = 1){
+    public function empresasFindCount($type, $location){
+        return count($this->empresasFind($type, $location));
+    }
+
+    public function empresasFindByType($typeslug){
+        
+        $type = Tipo::where('slug',$typeslug)->first();
+
+        $empresas = Empresa::where('type_id',$type->id)->get();
+
+        foreach ($empresas as $empresa) {
+            
+            if(isset($empresa->avatar)){
+                $image = $empresa->avatar->getPath();
+                $empresa->image = $image;
+            }
+        }
+        
+        return $empresas;
+    }
+
+    public function empresasFindByTypePag($typeslug, $pag = 1, $number = 1){
         
         $type = Tipo::where('slug',$typeslug)->first();
 
@@ -433,6 +480,11 @@ class StaticApp extends ComponentBase
         
         return $pagination;
     }
+
+    public function empresasFindTypeCount($typeslug){
+        return count($this->empresasFindByType($typeslug));
+    }
+
 
 
     public function empresasFindBySlug($slug){

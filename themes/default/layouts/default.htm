@@ -59,6 +59,10 @@ code = "redes-sociales"
                     if(strlen($this['metaDescription'])>225){
                         $this['metaDescription'] = substr($this['metaDescription'], 0, 225).'...';
                     }
+                
+                } else {
+                    
+                     $this['metaDescription'] = '';
                 }
             
             } else {

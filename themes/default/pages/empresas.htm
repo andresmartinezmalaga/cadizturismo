@@ -34,10 +34,10 @@ is_hidden = 0
 		$type = $_POST['type'];
     $ubicacion = $_POST['location'];
     	
-  	$empresas = $this->staticApp->empresasFind($type,$ubicacion);
+  	$empresas = $this->staticApp->empresasFindPag($type,$ubicacion,1,1);
    	Session::put('data',json_encode($empresas));
  
-  	return Redirect::to($aLang.'/listado-de-empresas')->with( ['data' => json_encode($empresas)] );
+  	return Redirect::to($aLang.'/listado-de-empresas/'.$type.'/'.$ubicacion)->with( ['data' => json_encode($empresas)] );
  
   }
 
