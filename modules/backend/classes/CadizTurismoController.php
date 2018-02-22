@@ -283,7 +283,7 @@ class CadizTurismoController extends ControllerBase
         $empresaes =  $this->StaticApp->empresasFindBySlug($nameslug);
         $result->put('empresa-es',$empresa);
         
-        $lang ='en'
+        $lang ='en';
         $empresa[$lang] =  $this->StaticApp->empresasFindBySlug($nameslug);
         $empresa[$lang]->translateContext('en');
         $result->put('empresa-en',$empresa[$lang]);
