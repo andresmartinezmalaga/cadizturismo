@@ -17,6 +17,12 @@
         
       }
 
+      if($this->param('type') && !$this->param('location')){       
+        $this['type'] = $this->param('type');
+        $pgUrl = $this->page->url ;
+        $this->page->url = str_replace(':type', $this['type'], $pgUrl);       
+      }
+
       if($this->param('type') && $this->param('location')){
         $this['type'] = $this->param('type');
         $this['location'] = $this->param('location');
