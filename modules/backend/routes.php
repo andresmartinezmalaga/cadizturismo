@@ -33,9 +33,23 @@ Route::get('/api/experiencias/{days}/{interest}/{tvisit}', 'Backend\Classes\Cadi
 // Andrés Martínez : routes experiencias
 Route::get('/api/estaticas', 'Backend\Classes\CadizTurismoController@statics');
 
-// Andrés Martínez : routes empresas
-Route::get('/api/empresas/tipos', 'Backend\Classes\CadizTurismoController@getTiposEmpresas');
+// Andrés Martínez : routes empresas //todos-los-tipos/todos-los-municipios = All
+    
+    // Show empreas types
+Route::get('/api/empresas/opciones/tipos', 'Backend\Classes\CadizTurismoController@getTiposEmpresas');
+    
+    // Find by type_slug and municipality_slug no pagination, show all   
 Route::get('/api/empresas/{type_slug}/{municipality_slug}', 'Backend\Classes\CadizTurismoController@empresasList');
+   // Find by type_slug and municipality_slug with pagination  
+Route::get('/api/empresas/{type_slug}/{municipality_slug}/{page}/{number}', 'Backend\Classes\CadizTurismoController@empresasListPag');    
+    
+    // Find by type_slug no pagination, show all   
+Route::get('/api/empresas/por/sector/{type_slug}', 'Backend\Classes\CadizTurismoController@empresasListByType');
+   // Find by type_slug with pagination   
+Route::get('/api/empresas/por/sector/{type_slug}/{page}/{number}', 'Backend\Classes\CadizTurismoController@empresasListByTypePag');
+
+    // Show empresa by name_slug
+Route::get('/api/empresas/{name_slug}', 'Backend\Classes\CadizTurismoController@empresaShowByNameSlug');
 
 /**
  * Register Backend routes before all user routes.
