@@ -1,4 +1,4 @@
-title = "allEvents"
+title = "listEmpresa"
 url = "/listado-de-empresas/:type/:location"
 layout = "dinamic"
 is_hidden = 0
@@ -24,10 +24,10 @@ is_hidden = 0
     
     $this['startPag'] = 1;
     $this['idm'] = \App::getLocale();
-    $this['numberReg'] = 1;
-    
-    $this['numPag'] = ceil($this->staticApp->empresasFindCount($this->param('type'),$this->param('location'))/$this['numberReg']);
+    $this['numberReg'] = 9;
 
+    $this['numPag'] = ceil($this->staticApp->empresasFindCount($this->param('type'),$this->param('location'))/$this['numberReg']);
+    
     if(Session::has('data')){
       Session::put('reciveData',Session::get('data'));     
     }
@@ -43,13 +43,35 @@ is_hidden = 0
     $type = $_POST['type'];
     $ubicacion = $_POST['location'];
       
-    $this['empresas'] = $this->staticApp->empresasFind($type,$ubicacion,1,$this['numberReg']);
+    $this['startPag'] = 1;
+    $this['numberReg'] = 9;
 
+    $this['empresas'] = $this->staticApp->empresasFindPag($type,$ubicacion, $this['startPag'],$this['numberReg']);
+
+    $this['numPag'] = ceil($this->staticApp->empresasFindCount($type,$ubicacion)/$this['numberReg']);
+ 
     return [
-        '#prtlEmpresasl' => $this->renderPartial('empresas')
+        '#prtlEmpresasl' => $this->renderPartial('empresas'),
+        '#prtlPagination' => $this->renderPartial('pagination')
     ];
     
   }
+
+  function onPaginate(){
+
+       
+      
+        $this['startPag'] = $_POST['ipag'];
+        $this['numberReg'] = 1;
+
+        $this['numPag'] = ceil($this->staticApp->empresasFindCount($this->param('type'),$this->param('location'))/$this['numberReg']);
+        $this['empresas'] = $this->staticApp->empresasFindPag($this->param('type'),$this->param('location'), $this['startPag'],$this['numberReg']);
+
+        return [
+            '#prtlEmpresasl' => $this->renderPartial('empresas'),
+            '#prtlPagination' => $this->renderPartial('pagination')
+        ];
+    }
 
 ?>
 ==
@@ -67,7 +89,9 @@ is_hidden = 0
     
     <!-- SEARCH -->
     <div id='prtlSearch'>
-      {% partial "site/searchempresa" %}
+      <div id ="listEmp">
+        {% partial "site/searchempresa" %}
+      </div>
     </div>
 
   </div>
@@ -77,6 +101,6 @@ is_hidden = 0
   {% partial "empresas" %}
 </div>
 
-<div id='prtlPagination'>       
+<div id='prtlPagination'>     
   {% partial "pagination" %}
 </div>

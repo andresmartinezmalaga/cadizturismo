@@ -1,0 +1,74 @@
+title = "allEvents"
+url = "/empresas-por-sector/:type/"
+layout = "dinamic"
+is_hidden = 0
+
+[staticApp]
+
+==
+<?php  
+	
+	function onStart()
+	{	    
+    
+    if (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false) {
+          $this['preurl'] = '/cadizturismo';
+    } else {
+        $this['preurl'] = '';
+    }
+
+    $this['lang']=\App::getLocale();
+		if($this['lang']==''){
+			$this['lang']='es';
+		}
+    
+    $this['startPag'] = 1;
+    $this['idm'] = \App::getLocale();
+    $this['numberReg'] = 9;
+
+    $this['numPag'] = ceil($this->staticApp->empresasFindTypeCount($this->param('type'))/$this['numberReg']);
+    $this['empresas'] = $this->staticApp->empresasFindByTypePag($this->param('type'), $this['startPag'],$this['numberReg']);
+
+    $this['type'] = $this->staticApp->getTipoBySlug($this->param('type'));
+
+	}
+
+  function onPaginate(){
+      
+        $this['startPag'] = $_POST['ipag'];
+        $this['numberReg'] = 9;
+
+        $this['numPag'] = ceil($this->staticApp->empresasFindTypeCount($this->param('type'))/$this['numberReg']);
+        $this['empresas'] = $this->staticApp->empresasFindByTypePag($this->param('type'), $this['startPag'],$this['numberReg']);
+
+        return [
+            '#prtlEmpresasl' => $this->renderPartial('empresas'),
+            '#prtlPagination' => $this->renderPartial('pagination')
+        ];
+    }
+
+?>
+==
+
+<!-- HEADER -->
+<div class="header-search search-exp bussinesPage">
+  
+  <div class="header-container big-div">
+    <div id="exp-header" class="header-txt">
+      <p class="txt"><span id="exp" class="first-word">{{type.name}}</span></p>
+
+        <img class="brush" src="{{preurl}}/storage/app/media/uploaded-files/templates/brush-header.svg" alt="">
+    </div>
+    
+    <p class="txt text-center whatDoYouNeedCadiz"><span>{{type.image}}</span></p>
+    
+  </div>
+</div>
+
+<div id='prtlEmpresasl' class="all-exps bussinesPage">
+  {% partial "empresas" %}
+</div>
+
+<div id='prtlPagination'>     
+  {% partial "pagination" %}
+</div>
