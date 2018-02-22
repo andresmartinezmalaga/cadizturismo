@@ -797,8 +797,8 @@ html, body {
 
 .search-exp {
   background: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.68) 100%), url("../img/search-exp.jpg");
-  background-attachment: fixed;
   transform: rotate(0deg);
+  background-attachment: fixed;
   background-size: cover; }
 
 #searchbar-events {
@@ -3306,3 +3306,66 @@ footer {
 
 #title-events {
   width: 75%; }
+
+.bussinesPage .whatDoYouNeedCadiz {
+  font-family: AvenirNext-Medium;
+  font-size: 23px;
+  color: #FFFFFF;
+  line-height: 33px;
+  margin-bottom: 86px; }
+
+.bussinesPage #search-event {
+  width: 863px; }
+  .bussinesPage #search-event .search-bar {
+    width: 825px; }
+    .bussinesPage #search-event .search-bar #empresa-category {
+      width: 340px; }
+
+ul.content.bussinesPage {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+  margin: auto;
+  margin-top: 212px;
+  margin-bottom: 60px;
+  display: table;
+  width: 100%; }
+  ul.content.bussinesPage > li {
+    vertical-align: top;
+    border-right: 1px solid #CECECE;
+    display: table-cell;
+    margin: 0em;
+    padding: 1em;
+    height: auto; }
+    ul.content.bussinesPage > li:last-child {
+      border-right: 0; }
+    ul.content.bussinesPage > li > img {
+      position: relative;
+      display: block;
+      top: -50px;
+      margin: auto;
+      margin-top: -7px; }
+    ul.content.bussinesPage > li ul {
+      list-style-type: none;
+      text-align: left;
+      padding: 0;
+      display: inline-block; }
+      ul.content.bussinesPage > li ul p {
+        font-family: AvenirNext-DemiBold;
+        font-size: 39px;
+        color: #4A4A4A;
+        line-height: 42px;
+        max-width: 237px;
+        text-align: center;
+        margin-bottom: 58px; }
+      ul.content.bussinesPage > li ul > li a {
+        font-family: AvenirNext-Medium;
+        font-size: 16px;
+        color: #9B9B9B;
+        line-height: 33px;
+        transition: all 0.3s; }
+        ul.content.bussinesPage > li ul > li a:hover {
+          opacity: 0.5;
+          text-decoration: none; }
+        ul.content.bussinesPage > li ul > li a img {
+          margin-left: 22px; }

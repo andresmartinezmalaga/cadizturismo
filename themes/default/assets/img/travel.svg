@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="67px" height="61px" viewBox="0 0 67 61" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Empresas-del-sector" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-207.000000, -1000.000000)" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Page-1" transform="translate(209.000000, 1002.000000)" stroke="#4A4A4A" stroke-width="4">
+            <path d="M57.1378,56.5912 L5.4148,56.5912 C2.4438,56.5912 0.0358,54.1832 0.0358,51.2132 L0.0358,14.1922 C0.0358,11.2222 2.4438,8.8142 5.4148,8.8142 L57.1378,8.8142 C60.1088,8.8142 62.5168,11.2222 62.5168,14.1922 L62.5168,51.2132 C62.5168,54.1832 60.1088,56.5912 57.1378,56.5912 Z" id="Stroke-1"></path>
+            <path d="M39.5202,-0.0001 L23.0322,-0.0001 C20.8632,-0.0001 19.1052,1.7579 19.1052,3.9279 L19.1052,8.8139 L43.4472,8.8139 L43.4472,3.9279 C43.4472,1.7579 41.6892,-0.0001 39.5202,-0.0001 Z" id="Stroke-3"></path>
+            <path d="M14.8219,8.8139 L-0.0001,23.6359" id="Stroke-5"></path>
+            <path d="M47.6945,8.8139 L62.5165,23.6359" id="Stroke-7"></path>
+            <path d="M47.6945,56.5912 L62.5165,41.7692" id="Stroke-9"></path>
+            <path d="M14.8219,56.5912 L-0.0001,41.7692" id="Stroke-11"></path>
+        </g>
+    </g>
+</svg>
