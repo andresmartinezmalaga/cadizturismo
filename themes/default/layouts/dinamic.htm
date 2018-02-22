@@ -32,7 +32,6 @@ code = "redes-sociales"
         }
 
         if($this->page->apiBag){
-            
             if(isset($this->page->apiBag["staticPage"]->attributes["viewBag"]["cover"])){
                 $this['metaImg'] = $this->page->apiBag["staticPage"]->attributes["viewBag"]["cover"];
             }
