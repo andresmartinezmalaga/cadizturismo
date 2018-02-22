@@ -33,6 +33,10 @@ Route::get('/api/experiencias/{days}/{interest}/{tvisit}', 'Backend\Classes\Cadi
 // Andrés Martínez : routes experiencias
 Route::get('/api/estaticas', 'Backend\Classes\CadizTurismoController@statics');
 
+// Andrés Martínez : routes empresas
+Route::get('/api/empresas/tipos', 'Backend\Classes\CadizTurismoController@getTiposEmpresas');
+Route::get('/api/empresas/{type_slug}/{municipality_slug}', 'Backend\Classes\CadizTurismoController@empresasList');
+
 /**
  * Register Backend routes before all user routes.
  */
