@@ -3326,7 +3326,7 @@ ul.content.bussinesPage {
   text-align: center;
   padding: 0;
   margin: auto;
-  margin-top: 212px;
+  margin-top: 14%;
   margin-bottom: 60px;
   display: table;
   width: 100%; }
@@ -3373,7 +3373,7 @@ ul.content.bussinesPage {
 #prtlEmpresasl.bussinesPage ul {
   padding: 0;
   margin: auto;
-  margin-top: 212px;
+  margin-top: 14%;
   margin-bottom: 60px;
   display: block;
   width: 65%;
@@ -3385,7 +3385,7 @@ ul.content.bussinesPage {
     margin-right: -4px;
     margin: 0em;
     padding: 1em;
-    height: 280px;
+    height: 343px;
     width: 367px;
     position: relative;
     padding: 20px; }
@@ -3395,7 +3395,7 @@ ul.content.bussinesPage {
       position: absolute;
       top: 40px;
       right: 0px;
-      height: 76.7%;
+      height: 81.7%;
       background-color: #CECECE; }
     #prtlEmpresasl.bussinesPage ul > li > h3 {
       /* ANDALUSIA TOUR TRAVE Copy 6: */
@@ -3459,8 +3459,10 @@ ul.content.bussinesPage {
     font-family: AvenirNext-DemiBold;
     font-size: 64px;
     color: #4A4A4A;
-    line-height: 65px; }
+    line-height: 65px;
+    margin-bottom: 54px; }
   .bussinesPage.llls section p {
+    margin-top: 64px;
     /* Andalusia Tour Trave: */
     font-family: AvenirNext-Medium;
     font-size: 18px;
