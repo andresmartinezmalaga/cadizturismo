@@ -18,6 +18,8 @@ class Tipo extends Model
      */
     protected $table = 'tipos';
 
+    protected $fillable = ['slug'];
+
     public $translatable = [
         'name'
     ];
@@ -98,7 +100,8 @@ class Tipo extends Model
      */
     public function afterCreate()
     {
-
+        $this->slug = str_slug($this->name);
+        $this->save();
     }
 
 }
