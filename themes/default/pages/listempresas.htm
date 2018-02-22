@@ -1,4 +1,4 @@
-title = "allEvents"
+title = "listEmpresa"
 url = "/listado-de-empresas/:type/:location"
 layout = "dinamic"
 is_hidden = 0
@@ -24,7 +24,7 @@ is_hidden = 0
     
     $this['startPag'] = 1;
     $this['idm'] = \App::getLocale();
-    $this['numberReg'] = 1;
+    $this['numberReg'] = 9;
 
     $this['numPag'] = ceil($this->staticApp->empresasFindCount($this->param('type'),$this->param('location'))/$this['numberReg']);
     
@@ -44,7 +44,7 @@ is_hidden = 0
     $ubicacion = $_POST['location'];
       
     $this['startPag'] = 1;
-    $this['numberReg'] = 1;
+    $this['numberReg'] = 9;
 
     $this['empresas'] = $this->staticApp->empresasFindPag($type,$ubicacion, $this['startPag'],$this['numberReg']);
 

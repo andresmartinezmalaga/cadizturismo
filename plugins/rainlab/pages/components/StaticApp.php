@@ -161,6 +161,19 @@ class StaticApp extends ComponentBase
 
     }
 
+    public function getTipoBySlug($slug) {
+  
+        $tipo = Tipo::where('slug',$slug)->first();
+
+        if(isset($tipo->avatar)){
+            $image = $tipo->avatar->getPath();
+            $tipo->image = $image;
+        }
+       
+        return $tipo;
+
+    }
+
     public function beachList()
     {
         $theme = Theme::getActiveTheme();
