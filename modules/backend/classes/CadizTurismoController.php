@@ -247,9 +247,19 @@ class CadizTurismoController extends ControllerBase
 		    		$pagesML->put($key,['markup'=>$markupFullUrl]);
 	    		}   
 	    	}
-
     	}
     	return $result;
+    }
+
+    public function getTiposEmpresas() {
+        $types = $this->StaticApp->getTiposEmpresas();
+        return new JsonResponse(['data'=>$types], 200);
+    }
+
+
+    public function empresasList($typeslug, $municipalityslug) {
+        $empresasList =  $this->StaticApp->empresasFind($typeslug, $municipalityslug);
+        return new JsonResponse(['data'=>$empresasList], 200);
     }
     
 
