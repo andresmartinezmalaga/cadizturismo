@@ -49,7 +49,7 @@ Route::get('/api/empresas/por/sector/{type_slug}', 'Backend\Classes\CadizTurismo
 Route::get('/api/empresas/por/sector/{type_slug}/{page}/{number}', 'Backend\Classes\CadizTurismoController@empresasListByTypePag');
 
     // Show empresa by name_slug
-Route::get('/api/empresas/{name_slug}', 'Backend\Classes\CadizTurismoController@empresaShowByNameSlug');
+Route::get('/api/empresas/{name_slug}/{lang}', 'Backend\Classes\CadizTurismoController@empresaShowByNameSlug');
 
 /**
  * Register Backend routes before all user routes.
