@@ -1,4 +1,37 @@
-<div>
+<style>
+	.floatJuan{
+		display: table-cell;
+		vertical-align: top;
+	}
+	.floatJuan.left{
+		width: 100px;
+		max-width: 100px;
+		background: #175DA3;
+	}
+	.floatJuan.left [data-control="toolbar"]{
+		white-space: normal;
+	}
+	.floatJuan.left a{
+		display: block;
+		text-align: center;
+		font-family: AvenirNext-Medium;
+		font-size: 11px;
+		color: #FFFFFF;
+		letter-spacing: 0;
+		margin-bottom: 45px;
+	}
+	.floatJuan.left a img{
+		display: block;
+		margin: auto;
+		margin-bottom: 15px;
+	}
+	.floatJuan.right{
+		width: 80%;
+	}
+</style>
+<div class="floatJuan left">
 	<?= $this->makePartial('menu') ?>
 </div>
-<?= $this->listRender() ?>
+<div class="floatJuan right">
+	<?= $this->listRender() ?>
+</div>
