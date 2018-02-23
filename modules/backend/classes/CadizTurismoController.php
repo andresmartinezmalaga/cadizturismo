@@ -251,6 +251,8 @@ class CadizTurismoController extends ControllerBase
     	return $result;
     }
 
+    // EMPRESAS 
+    
     public function getTiposEmpresas() {
         $types = $this->StaticApp->getTiposEmpresas();
         return new JsonResponse(['data'=>$types], 200);
@@ -282,6 +284,16 @@ class CadizTurismoController extends ControllerBase
         $empresa->translateContext($lang);
         
         return new JsonResponse(['data'=>$empresa], 200);
+    }
+
+    // PUBLICACIONES
+    public function publicationListPag ($pag, $number) {
+
+        $publications = $this->StaticApp->publicationListPag($pag, $number);
+
+        $mlPages = $this->createObjectPagesMultl($publications);
+
+        return new JsonResponse(['data'=>$mlPages], 200);   
     }
     
 
