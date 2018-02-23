@@ -292,6 +292,7 @@ class CadizTurismoController extends ControllerBase
         $publications = $this->StaticApp->publicationListPag($pag, $number);
 
         $result = $publications[0];
+         $result->translateContext('en');
         return new JsonResponse(['data'=>$result], 200); 
 
         //$mlPages = $this->createObjectPagesMultl($publications);
