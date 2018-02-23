@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87ff11be-c4c2-4ca5-8374-8a1952dec0dc" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/backend/controllers/empresa/index.htm" afterPath="$PROJECT_DIR$/modules/backend/controllers/empresa/index.htm" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/backend/controllers/tipo/index.htm" afterPath="$PROJECT_DIR$/modules/backend/controllers/tipo/index.htm" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,21 +30,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.htm" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.htm" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/modules/backend/controllers/empresa/index.htm">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="36" selection-end-column="6" />
+            <state relative-caret-position="540">
+              <caret line="36" column="6" lean-forward="false" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.htm" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.htm" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/backend/controllers/tipo/index.htm">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="540">
-              <caret line="36" column="6" lean-forward="false" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
+              <caret line="36" column="6" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="36" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -119,10 +120,10 @@
         <option value="$PROJECT_DIR$/themes/default/pages/listempresassector.htm" />
         <option value="$PROJECT_DIR$/themes/default/pages/showempresas.htm" />
         <option value="$PROJECT_DIR$/themes/default/partials/empresas.htm" />
-        <option value="$PROJECT_DIR$/modules/backend/controllers/empresa/index.htm" />
         <option value="$PROJECT_DIR$/modules/backend/controllers/tipo/_menu.htm" />
         <option value="$PROJECT_DIR$/modules/backend/controllers/empresa/_menu.htm" />
         <option value="$PROJECT_DIR$/modules/backend/controllers/tipo/index.htm" />
+        <option value="$PROJECT_DIR$/modules/backend/controllers/empresa/index.htm" />
       </list>
     </option>
   </component>
@@ -517,12 +518,12 @@
       <workItem from="1519036570259" duration="1643000" />
       <workItem from="1519055702205" duration="3856000" />
       <workItem from="1519288869768" duration="18671000" />
-      <workItem from="1519382123867" duration="2387000" />
+      <workItem from="1519382123867" duration="2448000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48544000" />
+    <option name="totallyTimeSpent" value="48605000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="774" extended-state="0" />
@@ -925,15 +926,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/backend/controllers/empresa/index.htm">
+    <entry file="file://$PROJECT_DIR$/modules/backend/controllers/tipo/index.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="36" selection-end-column="6" />
+        <state relative-caret-position="540">
+          <caret line="36" column="6" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="36" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/backend/controllers/tipo/index.htm">
+    <entry file="file://$PROJECT_DIR$/modules/backend/controllers/empresa/index.htm">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="36" column="6" lean-forward="false" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
