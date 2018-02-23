@@ -1,6 +1,21 @@
-<div class="floatJuan">
+<style>
+    .floatJuan{
+        display: inline-block;
+    }
+    .floatJuan.left{
+        width: 30%;
+        background: #175DA3;
+    }
+    .floatJuan.left a{
+        display: inline-block;
+    }
+    .floatJuan.right{
+        width: 70%;
+    }
+</style>
+<div class="floatJuan left">
     <?= $this->makePartial('menu') ?>
 </div>
-<div class="floatJuan">
+<div class="floatJuan right">
     <?= $this->listRender() ?>
 </div>
