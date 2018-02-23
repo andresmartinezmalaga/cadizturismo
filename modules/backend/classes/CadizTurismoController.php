@@ -292,10 +292,16 @@ class CadizTurismoController extends ControllerBase
         $publications = $this->StaticApp->publicationListPag($pag, $number);
 
         $result = $publications[0];
-         $result->translateContext('en');
+
+        
+        $iPage->theme = Theme::getActiveTheme();
+        $imlPage = MLCmsObject::findLocale('en', $result);
+
+
+         //$result->translateContext('en');
          dump($result);
          dd(1);
-        return new JsonResponse(['data'=>$result], 200); 
+        return new JsonResponse(['data'=>$imlPage], 200); 
 
         //$mlPages = $this->createObjectPagesMultl($publications);
          //$mlPages->translateContext
