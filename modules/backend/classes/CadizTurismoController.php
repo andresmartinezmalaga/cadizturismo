@@ -294,7 +294,7 @@ class CadizTurismoController extends ControllerBase
         $result = $publications[0];
 
         
-        $iPage->theme = Theme::getActiveTheme();
+        $result->theme = Theme::getActiveTheme();
         $imlPage = MLCmsObject::findLocale('en', $result);
 
 
