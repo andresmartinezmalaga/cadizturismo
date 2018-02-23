@@ -299,7 +299,7 @@ class CadizTurismoController extends ControllerBase
 
 
          //$result->translateContext('en');
-         dump($result);
+         dump($imlPage);
          dd(1);
         return new JsonResponse(['data'=>$imlPage], 200); 
 
