@@ -53,7 +53,7 @@ Route::get('/api/empresa/{name_slug}/{lang}', 'Backend\Classes\CadizTurismoContr
 
 
 // Andrés Martínez : routes Publicaciones
-Route::get('/api/publicaciones/{page}/{number}', 'Backend\Classes\CadizTurismoController@publicationListPag');
+Route::get('/api/publicaciones/{lang}/{page}/{number}', 'Backend\Classes\CadizTurismoController@publicationListPag');
 
 /**
  * Register Backend routes before all user routes.

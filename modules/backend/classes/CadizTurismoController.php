@@ -287,7 +287,7 @@ class CadizTurismoController extends ControllerBase
     }
 
     // PUBLICACIONES
-    public function publicationListPag ($pag, $number) {
+    public function publicationListPag ($lang, $pag, $number) {
 
         $publications = $this->StaticApp->publicationListPag($pag, $number);
 
@@ -295,7 +295,7 @@ class CadizTurismoController extends ControllerBase
 
         
         $result->theme = Theme::getActiveTheme();
-        $imlPage = MLCmsObject::findLocale('en', $result);
+        $imlPage = MLCmsObject::findLocale($lang, $result);
 
 
          //$result->translateContext('en');
