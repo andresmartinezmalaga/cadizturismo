@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="87ff11be-c4c2-4ca5-8374-8a1952dec0dc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/backend/controllers/empresa/_menu.htm" afterPath="$PROJECT_DIR$/modules/backend/controllers/empresa/_menu.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/backend/controllers/empresa/create.htm" afterPath="$PROJECT_DIR$/modules/backend/controllers/empresa/create.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/backend/controllers/empresa/update.htm" afterPath="$PROJECT_DIR$/modules/backend/controllers/empresa/update.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/backend/controllers/tipo/create.htm" afterPath="$PROJECT_DIR$/modules/backend/controllers/tipo/create.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/backend/controllers/tipo/_menu.htm" afterPath="$PROJECT_DIR$/modules/backend/controllers/tipo/_menu.htm" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/backend/controllers/tipo/update.htm" afterPath="$PROJECT_DIR$/modules/backend/controllers/tipo/update.htm" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,7 +23,7 @@
         <entry file="file://$PROJECT_DIR$/modules/backend/controllers/empresa/_menu.htm">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="570">
-              <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="41" selection-end-column="5" />
+              <caret line="39" column="20" lean-forward="false" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
               <folding>
                 <element signature="n#style#0;n#a#1;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -33,11 +31,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="update.htm" pinned="false" current-in-tab="true">
+      <file leaf-file-name="update.htm" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/backend/controllers/tipo/update.htm">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="38" column="5" lean-forward="false" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+            <state relative-caret-position="210">
+              <caret line="35" column="5" lean-forward="false" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -73,11 +71,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_menu.htm" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_menu.htm" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/modules/backend/controllers/tipo/_menu.htm">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+            <state relative-caret-position="480">
+              <caret line="38" column="5" lean-forward="false" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
               <folding>
                 <element signature="n#style#0;n#a#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -145,12 +143,12 @@
         <option value="$PROJECT_DIR$/themes/default/partials/empresas.htm" />
         <option value="$PROJECT_DIR$/modules/backend/controllers/tipo/index.htm" />
         <option value="$PROJECT_DIR$/modules/backend/controllers/empresa/index.htm" />
-        <option value="$PROJECT_DIR$/modules/backend/controllers/tipo/_menu.htm" />
         <option value="$PROJECT_DIR$/modules/backend/controllers/tipo/create.htm" />
         <option value="$PROJECT_DIR$/modules/backend/controllers/empresa/update.htm" />
         <option value="$PROJECT_DIR$/modules/backend/controllers/empresa/create.htm" />
         <option value="$PROJECT_DIR$/modules/backend/controllers/empresa/_menu.htm" />
         <option value="$PROJECT_DIR$/modules/backend/controllers/tipo/update.htm" />
+        <option value="$PROJECT_DIR$/modules/backend/controllers/tipo/_menu.htm" />
       </list>
     </option>
   </component>
@@ -545,12 +543,12 @@
       <workItem from="1519036570259" duration="1643000" />
       <workItem from="1519055702205" duration="3856000" />
       <workItem from="1519288869768" duration="18671000" />
-      <workItem from="1519382123867" duration="4074000" />
+      <workItem from="1519382123867" duration="4137000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50231000" />
+    <option name="totallyTimeSpent" value="50294000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="774" extended-state="0" />
@@ -929,16 +927,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/backend/controllers/tipo/_menu.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/backend/controllers/tipo/create.htm">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -963,21 +951,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/modules/backend/controllers/tipo/update.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="35" column="5" lean-forward="false" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/modules/backend/controllers/empresa/_menu.htm">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
-          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="41" selection-end-column="5" />
+          <caret line="39" column="20" lean-forward="false" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
           <folding>
             <element signature="n#style#0;n#a#1;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/backend/controllers/tipo/update.htm">
+    <entry file="file://$PROJECT_DIR$/modules/backend/controllers/tipo/_menu.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
+        <state relative-caret-position="480">
           <caret line="38" column="5" lean-forward="false" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
