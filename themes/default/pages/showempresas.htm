@@ -27,9 +27,11 @@ $this['lang']='es';
 
 $this['empresa'] =  $this->staticApp->empresasFindBySlug($slug);
 
-$this['metaTitle'] = $this['empresa']->name;
-$this['metaDescription'] = (strlen($this['empresa']->description) > 250) ? substr($this['empresa']->description,0,250).'...' : $this['empresa']->description;
-$this['metaImg'] = $this['empresa']->image;
+if($this['empresa']){
+    $this['metaTitle'] = $this['empresa']->name;
+    $this['metaDescription'] = (strlen($this['empresa']->description) > 250) ? substr($this['empresa']->description,0,250).'...' : $this['empresa']->description;
+    $this['metaImg'] = $this['empresa']->image;
+}
 
 }
 
