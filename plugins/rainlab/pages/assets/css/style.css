@@ -3471,3 +3471,6 @@ ul.content.bussinesPage {
 
 .bussinesPage.llls section.desc {
   margin-top: 130px; }
+
+.header-search .header-txt .txt .first-word {
+  line-height: 165px; }
