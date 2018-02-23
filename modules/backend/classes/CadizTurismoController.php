@@ -293,6 +293,8 @@ class CadizTurismoController extends ControllerBase
 
         $result = $publications[0];
          $result->translateContext('en');
+         dump($result);
+         dd(1);
         return new JsonResponse(['data'=>$result], 200); 
 
         //$mlPages = $this->createObjectPagesMultl($publications);
