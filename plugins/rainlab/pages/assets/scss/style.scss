@@ -4129,19 +4129,6 @@ footer {
     }
   }
 }
-.emp {
-  width: 100%;
-  max-width: 1300px;
-  @include flexbox();
-  flex-direction: row;
-  align-items: center;
-  .empresas-container {
-    width: calc(100% / 3);
-    width: -webkit-calc(100% / 3);
-    width: -moz-calc(100% / 3);
-    width: -ms-calc(100% / 3);
-  }
-}
 ul.content.bussinesPage {
   list-style-type: none;
   text-align: center;
@@ -4203,7 +4190,19 @@ ul.content.bussinesPage {
   }
 
 }
-
+.emp {
+  width: 100%;
+  max-width: 1300px;
+  @include flexbox();
+  flex-direction: row;
+  align-items: center;
+  .empresas-container {
+    width: calc(100% / 3);
+    width: -webkit-calc(100% / 3);
+    width: -moz-calc(100% / 3);
+    width: -ms-calc(100% / 3);
+  }
+}
 #prtlEmpresasl.bussinesPage {
   ul {
     padding: 0;
