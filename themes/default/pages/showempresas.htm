@@ -39,7 +39,33 @@ if($this['empresa']){
 
 ?>
 ==
+<div id="out-features" class="event-features">
+		<div class="feature-exp">
 
+				<img src="{{'assets/img/mobile.svg'|theme}}">
+				<p class="feature-txt">{{empresa.tlf}}</p>
+
+		</div>
+		<div class="feature-exp">
+
+				<img src="{{'assets/img/email.svg'|theme}}">
+				<p class="feature-txt">{{empresa.email}}</p>
+
+		</div>
+		<div class="feature-exp">
+				<a class="link-exp" href="{{empresa.site}}">
+						<img src="{{'assets/img/web.svg'|theme}}">
+						<p class="feature-txt">{{empresa.site | replace({'http://': '', 'https://': ''})}}</p>
+				</a>
+
+		</div>
+		<div class="feature-exp">
+
+				<img src="{{'assets/img/site2.svg'|theme}}">
+				<p class="feature-txt">{{empresa.municipality | capitalize}}</p>
+				<a class="linkMapss" href="{{empresa.url_map}}" target="_blank">Ver mapa</a>
+		</div>
+</div>
 <!-- HEADER -->
 <div class="header-event bussinesPage sxxx" style="background-image: url({{empresa.image}})">
 
@@ -49,33 +75,6 @@ if($this['empresa']){
             <img class="brush" src="{{preurl}}/storage/app/media/uploaded-files/templates/brush-header.svg" alt="">
         </div>
     </div>
-		<div id="out-features" class="event-features">
-				<div class="feature-exp">
-
-						<img src="{{'assets/img/mobile.svg'|theme}}">
-						<p class="feature-txt">{{empresa.tlf}}</p>
-
-				</div>
-				<div class="feature-exp">
-
-						<img src="{{'assets/img/email.svg'|theme}}">
-						<p class="feature-txt">{{empresa.email}}</p>
-
-				</div>
-				<div class="feature-exp">
-						<a class="link-exp" href="{{empresa.site}}">
-								<img src="{{'assets/img/web.svg'|theme}}">
-								<p class="feature-txt">{{empresa.site | replace({'http://': '', 'https://': ''})}}</p>
-						</a>
-
-				</div>
-				<div class="feature-exp">
-
-						<img src="{{'assets/img/site2.svg'|theme}}">
-						<p class="feature-txt">{{empresa.municipality | capitalize}}</p>
-						<a class="linkMapss" href="{{empresa.url_map}}" target="_blank">Ver mapa</a>
-				</div>
-		</div>
 </div>
 <div id="phantom-div"></div>
 <div class="bussinesPage llls">
