@@ -4167,11 +4167,11 @@ footer {
 }
 .emp {
   width: 100%;
-  max-width: 1300px;
+  //max-width: 1300px;
   @include flexbox();
   flex-direction: row;
   justify-content: center;
-  margin: 225px auto 0px auto;
+  margin: 225px auto 70px auto;
   .empresas-container {
     width: calc(100% / 3);
     width: -webkit-calc(100% / 3);

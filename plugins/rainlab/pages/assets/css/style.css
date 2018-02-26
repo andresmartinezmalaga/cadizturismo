@@ -3373,7 +3373,6 @@ footer {
 
 .emp {
   width: 100%;
-  max-width: 1300px;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -3381,7 +3380,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 225px auto 0px auto; }
+  margin: 225px auto 70px auto; }
   .emp .empresas-container {
     width: calc(100% / 3);
     width: -webkit-calc(100% / 3);
