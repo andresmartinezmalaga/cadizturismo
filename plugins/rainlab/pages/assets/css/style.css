@@ -2992,7 +2992,9 @@ html, body {
     flex-direction: column !important; }
     .emp .empresas-container {
       width: 100% !important;
-      margin-bottom: 60px; } }
+      margin-bottom: 60px; }
+      .emp .empresas-container ul > li {
+        padding-left: 40px !important; } }
 
 @media (max-width: 920px) and (min-width: 601px) {
   .section-txt p, .section-txt-village p, .section-txt-comarca p {

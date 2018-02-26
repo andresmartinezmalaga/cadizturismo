@@ -3671,6 +3671,9 @@ html, body {
     .empresas-container {
       width: 100% !important;
       margin-bottom: 60px;
+      ul > li {
+        padding-left: 40px !important;
+      }
     }
   }
 }
