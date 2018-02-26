@@ -3385,7 +3385,8 @@ footer {
   display: -webkit-flex;
   display: flex;
   flex-direction: row;
-  align-items: center; }
+  align-items: center;
+  margin-top: 200px; }
   .emp .empresas-container {
     width: calc(100% / 3);
     width: -webkit-calc(100% / 3);
