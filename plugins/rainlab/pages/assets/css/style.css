@@ -3402,6 +3402,8 @@ footer {
         margin-top: -3px; }
         .bussinesPage #search-event .search-bar #empresa-search input:focus {
           outline: none; }
+    .bussinesPage #search-event .search-bar .empresa-search {
+      background-image: url("../svg/minilupa.svg") !important; }
 
 .emp .empresas-container ul {
   list-style-type: none;
