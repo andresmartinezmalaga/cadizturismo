@@ -2499,7 +2499,8 @@ html, body {
 
 @media (max-width: 970px) {
   .header-empresa {
-    height: auto !important; } }
+    height: auto !important;
+    min-height: 800px !important; } }
 
 @media (max-width: 910px) {
   .header-empresa .event-features {
