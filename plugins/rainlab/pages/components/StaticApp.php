@@ -400,7 +400,7 @@ class StaticApp extends ComponentBase
         return $event;
     }
 
-    public function empresasFind($typeslug, $locationslug){
+    public function empresasFind($typeslug, $locationslug, $searchString){
         $typeOperator = '=';
         
         $gtype = Tipo::where('slug',$typeslug)->first();
@@ -413,13 +413,65 @@ class StaticApp extends ComponentBase
             $typeOperator = '!=';
         }
 
-        $locationOperator = '=';
-        if($locationslug == 'todos-los-municipios'){
-            $locationslug = null;
-            $locationOperator = '!=';
+        $fempresas = Empresa::where('type_id',$typeOperator,$type_id)->get();
+        $pempresas = collect();
+
+        if($locationslug != 'todos-los-municipios'){
+           
+            $locations = explode('_', $locationslug);
+            $count = 0;
+            foreach ($locations as $iLocation) {
+               foreach ($fempresas as $iEmpresa) {
+                   if($iEmpresa->mslug == $iLocation){
+                        $count = $count+1;
+                   }
+               }
+               if($count>0){
+                $pempresas->push($iEmpresa);
+               }               
+            }
+        } else {
+
+           $pempresas = $fempresas;
         }
 
-        $empresas = Empresa::where('type_id',$typeOperator,$type_id)->where('mslug',$locationOperator,$locationslug)->get();
+        if($searchString != 'todas-las-empresas'){  
+            
+            $ovalores = explode(' ', $searchString);
+            $valores = collect();
+            
+            $sempresas = collect();
+
+            foreach ($ovalores as $valor) {
+               if(strlen($valor)>=3){
+                $valores->push($valor);
+               }
+            }
+
+            foreach ($pempresas as $iEmpresa) {
+                
+                foreach ($valores as $valor) {
+                    $contador = 0;
+                    if(strpos($iEmpresa->name, $valor) !== false) {
+                        $contador = $contador+1;
+                    }                    
+                }
+
+                if($contador>0){
+                    $iEmpresa->contador = $contador;
+                    $sempresas->push($iEmpresa);
+                }               
+            }
+
+            if(count($sempresas)>0){
+                $empresas = $sempresas->sortBy('contador');
+            } else {
+                $empresas = [];
+            }
+
+        } else {
+            $empresas = $pempresas;
+        }
 
         foreach ($empresas as $empresa) {
             
@@ -440,7 +492,7 @@ class StaticApp extends ComponentBase
         return $empresas;
     }
 
-    public function empresasFindPag($typeslug, $locationslug, $pag = 1, $number = 1){
+    public function empresasFindPag($typeslug, $locationslug, $searchString, $pag = 1, $number = 1){
         
         $typeOperator = '=';
         
@@ -454,13 +506,65 @@ class StaticApp extends ComponentBase
             $typeOperator = '!=';
         }
 
-        $locationOperator = '=';
-        if($locationslug == 'todos-los-municipios'){
-            $locationslug = null;
-            $locationOperator = '!=';
+        $fempresas = Empresa::where('type_id',$typeOperator,$type_id)->get();
+        $pempresas = collect();
+
+        if($locationslug != 'todos-los-municipios'){
+           
+            $locations = explode('_', $locationslug);
+            $count = 0;
+            foreach ($locations as $iLocation) {
+               foreach ($fempresas as $iEmpresa) {
+                   if($iEmpresa->mslug == $iLocation){
+                        $count = $count+1;
+                   }
+               }
+               if($count>0){
+                $pempresas->push($iEmpresa);
+               }               
+            }
+        } else {
+
+           $pempresas = $fempresas;
         }
 
-        $empresas = Empresa::where('type_id',$typeOperator,$type_id)->where('mslug',$locationOperator,$locationslug)->get();
+        if($searchString != 'todas-las-empresas'){  
+            
+            $ovalores = explode(' ', $searchString);
+            $valores = collect();
+            
+            $sempresas = collect();
+
+            foreach ($ovalores as $valor) {
+               if(strlen($valor)>=3){
+                $valores->push($valor);
+               }
+            }
+
+            foreach ($pempresas as $iEmpresa) {
+                
+                foreach ($valores as $valor) {
+                    $contador = 0;
+                    if(strpos($iEmpresa->name, $valor) !== false) {
+                        $contador = $contador+1;
+                    }                    
+                }
+
+                if($contador>0){
+                    $iEmpresa->contador = $contador;
+                    $sempresas->push($iEmpresa);
+                }               
+            }
+
+            if(count($sempresas)>0){
+                $empresas = $sempresas->sortBy('contador');
+            } else {
+                $empresas = [];
+            }
+
+        } else {
+            $empresas = $pempresas;
+        }
 
         foreach ($empresas as $empresa) {
             

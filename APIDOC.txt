@@ -95,3 +95,53 @@ API DOC
 	Páginas estaticas
 
 			url : http://cadizturismo/api/estaticas
+
+
+	Empresas 
+
+		Tipos de empresas
+			url : http://cadizturismo/api/empresas/opciones/tipos
+			response : [tipos]
+
+		Bucar empresas filtradas por tipo, municipios y cadana a buscar, sin paginación
+
+			url : http://cadizturismo/api/empresas/{type_slug}/{municipalitiesSlugsString}/{searchString}
+			
+			params :
+				{type_slug} String, example : alquiler-de-vehiculos
+				{municipalitiesSlugsString} String, example: barbate_alcala-de-los-gazules_algar
+				{searchString}: String, busca un string en el nombre y descripción de la empresa
+				
+			response : [empresas]
+
+		Bucar empresas filtradas por tipo, municipios y cadana a buscar, con paginación
+
+			url : http://cadizturismo/api/empresas/{type_slug}/{municipalitiesSlugsString}/{searchString}/{page}/{number}
+			
+			params :
+				{type_slug} String, example : alquiler-de-vehiculos
+				{municipalitiesSlugsString} String, example: barbate_alcala-de-los-gazules_algar
+				{searchString}: String, busca un string en el nombre y descripción de la empresa
+				{page} Number: número de pagína a mostrar
+				{number} Number: número de items a mostrar por pagína
+
+			response : [empresas]
+
+		Bucar empresas filtradas por tipo
+
+			url : http://cadizturismo/api/empresas/por/tipo/{type_slug}
+			
+			params :
+				{type_slug} String, example : alquiler-de-vehiculos
+				
+			response : [empresas]
+
+		Una empresa por su nombre (name_slug)
+
+			url : http://cadizturismo/api/empresa/{name_slug}/{lang}
+
+			params :
+				{name_slug} String, example : andalusia-tour-travel
+				{lang} String, example : en
+
+
