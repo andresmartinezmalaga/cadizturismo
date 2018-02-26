@@ -4446,6 +4446,9 @@ footer {
         width: 95% !important;
         height: 140px !important;
         margin: 0 auto !important;
+        form {
+          flex-direction: column !important;
+        }
         .button-container {
           width: 100% !important;
           height: 50% !important;
