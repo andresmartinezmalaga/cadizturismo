@@ -5643,7 +5643,9 @@ div[data-control="media-manager"] .media-list.tiles li.selected .icon-container 
   height: 50px !important;
   border: none !important;
   background-color: #f6f6f6 !important;
-  color: #818181 !important; }
+  color: #818181 !important;
+  border-radius: 0px !important;
+  box-shadow: none !important; }
 
 .floatJuan .layout-row #Form-outsideContainer, .floatJuan .layout-row #Form-primaryContainer {
   width: 76%;
