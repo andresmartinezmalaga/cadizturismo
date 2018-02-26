@@ -101,6 +101,9 @@
 #search-empresas .brush {
   margin-top: -86px; }
 
+#search-empresas .txt {
+  line-height: 145px; }
+
 .header-general:before {
   z-index: 2;
   content: '';
