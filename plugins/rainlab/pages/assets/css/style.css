@@ -2515,7 +2515,7 @@ html, body {
     .header-empresa .event-features .feature-txt-empresa {
       position: relative !important;
       top: 0px !important; }
-  .bussinesPage.llls section.desc {
+  .bussinesPage section.desc {
     max-width: 80% !important;
     margin-top: 70px !important; } }
 
