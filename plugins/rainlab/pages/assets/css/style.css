@@ -3588,6 +3588,9 @@ footer {
 #all-empresas {
   margin-bottom: 50px; }
 
+#input-empresa:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px rgba(255, 255, 255, 0) inset !important; }
+
 @media (min-width: 710px) and (max-width: 1100px) {
   .bussinesPage #search-event {
     width: 94% !important;
