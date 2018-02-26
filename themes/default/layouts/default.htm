@@ -29,6 +29,7 @@ code = "redes-sociales"
     function onStart()
     {
 
+
         $this['lang']=\App::getLocale();
         
         if($this['lang']==''){
@@ -43,10 +44,14 @@ code = "redes-sociales"
                 $this['metaImg'] = $this->page->apiBag["staticPage"]->attributes["viewBag"]["cover"];
             }
 
-            if($this->page->settings["meta_title"]==null)
+            if($this->page->settings["meta_title"]==null){
                 $this['metaTitle'] = $this->page->apiBag["staticPage"]->attributes["viewBag"]["title"];
-            else
+                $this['title'] = $this->page->apiBag["staticPage"]->attributes["viewBag"]["title"];
+            
+            } else {
                 $this['metaTitle'] = $this->page->settings["meta_title"];
+                $this['title'] = $this->page->settings["meta_title"];
+            }
 
             if($this->page->settings["meta_description"]==null){
                 
