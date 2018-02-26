@@ -104,14 +104,16 @@ if($this['empresa']){
             <a class="linkMapss" href="{{empresa.url_map}}" target="_blank">Ver mapa</a>
         </div>
     </div> -->
-    <section class="desc">
-        <h3>
-            {{empresa.title}}
-        </h3>
-        <img class="separator fr-fic fr-dii" src="{{'assets/img/big-yellow-separator.svg'|theme}}">
-        <p>
-            {{empresa.description}}
-        </p>
+    <section class="section-txt-village">
+			<div class="txt-container">
+				<h3>
+						{{empresa.title}}
+				</h3>
+				<img class="separator fr-fic fr-dii" src="{{'assets/img/big-yellow-separator.svg'|theme}}">
+				<p>
+						{{empresa.description}}
+				</p>
+			</div>
     </section>
     {% if empresa.info %}
         <section class="info">
