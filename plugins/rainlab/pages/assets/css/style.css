@@ -3625,7 +3625,7 @@ footer {
 
 @media (min-width: 710px) and (max-width: 920px) {
   .search-empresas .header-container {
-    margin-top: 180px !important; }
+    margin-top: 140px !important; }
   .bussinesPage #search-event {
     width: 90% !important;
     height: 253px !important;
