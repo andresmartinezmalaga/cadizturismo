@@ -67,3 +67,19 @@ fields:
         label: Escribe aquí si necesitas incluir más información como horario, precios, etc.
         type: textarea
         size: large
+
+    photos:
+        label: Fotos de la descripción
+        type: fileupload
+        mode: image
+        imageHeight: 260
+        imageWidth: 260
+        thumbOptions:
+            mode: crop
+            offset:
+                - 0
+                - 0
+            quality: 90
+            sharpen: 0
+            interlace: false
+            extension: auto
