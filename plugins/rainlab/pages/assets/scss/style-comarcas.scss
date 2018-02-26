@@ -119,7 +119,11 @@
     }
   }
 }
-
+  #search-empresas {
+    .brush {
+      margin-top: -86px;
+    }
+  }
 .header-general:before {
    z-index: 2;
    content: '';
