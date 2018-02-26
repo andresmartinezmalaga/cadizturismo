@@ -44,15 +44,11 @@ code = "redes-sociales"
                 $this['metaImg'] = $this->page->apiBag["staticPage"]->attributes["viewBag"]["cover"];
             }
 
-            if($this->page->settings["meta_title"]==null){
-                echo 'test';
-                dd(1);
+            if($this->page->settings["meta_title"]==null){              
                 $this['metaTitle'] = 'Cádiz | '.$this->page->apiBag["staticPage"]->attributes["viewBag"]["title"];
                 $this['title'] = 'Cádiz | '.$this->page->apiBag["staticPage"]->attributes["viewBag"]["title"];
             
-            } else {
-                echo 'test.1.2';
-                dd(1);
+            } else {                
                 $this['metaTitle'] = 'Cádiz | '.$this->page->settings["meta_title"];
                 $this['title'] = 'Cádiz | '.$this->page->settings["meta_title"];
             }

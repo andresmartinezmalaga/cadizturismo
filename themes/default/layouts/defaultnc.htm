@@ -46,11 +46,9 @@ code = "redes-sociales"
                 
                 $this['metaTitle'] = 'Cádiz | '.$this->page->apiBag["staticPage"]->attributes["viewBag"]["title"];
                 $this['title'] = 'Cádiz | '.$this->page->apiBag["staticPage"]->attributes["viewBag"]["title"];
-                echo 'test: '. $this['title'];
-                dd(1);
+                
             } else {
-                echo 'test.1.2';
-                dd(1);
+               
                 $this['metaTitle'] = 'Cádiz | '.$this->page->settings["meta_title"];
                 $this['title'] = 'Cádiz | '.$this->page->settings["meta_title"];
             }
@@ -76,6 +74,9 @@ code = "redes-sociales"
                $this['metaDescription'] = $this->page->settings["meta_description"];   
             }
         }
+
+        echo 'test: '. $this['title'];
+        dd(2);
     }
 
 ?>
