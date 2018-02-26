@@ -45,12 +45,12 @@ code = "redes-sociales"
             }
 
             if($this->page->settings["meta_title"]==null){
-                $this['metaTitle'] = $this->page->apiBag["staticPage"]->attributes["viewBag"]["title"];
-                $this['title'] = $this->page->apiBag["staticPage"]->attributes["viewBag"]["title"];
+                $this['metaTitle'] = 'Cádiz | '.$this->page->apiBag["staticPage"]->attributes["viewBag"]["title"];
+                $this['title'] = 'Cádiz | '.$this->page->apiBag["staticPage"]->attributes["viewBag"]["title"];
             
             } else {
-                $this['metaTitle'] = $this->page->settings["meta_title"];
-                $this['title'] = $this->page->settings["meta_title"];
+                $this['metaTitle'] = 'Cádiz | '.$this->page->settings["meta_title"];
+                $this['title'] = 'Cádiz | '.$this->page->settings["meta_title"];
             }
 
             if($this->page->settings["meta_description"]==null){
@@ -97,7 +97,7 @@ code = "redes-sociales"
     <meta property="og:image" content="{{ metaImg }}">
     <meta property="og:title" content="{{ metaTitle }}">
     <meta property="og:description" content="{{ metaDescription }}">
-    <title>Cádiz | {{title}}</title>
+    <title>{{title}}</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="{{url('/')}}/plugins/rainlab/pages/assets/css/style-comarcas.css"/>
