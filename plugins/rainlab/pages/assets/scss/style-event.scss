@@ -365,6 +365,9 @@
       font-size: 16px;
       line-height: 22px;
       margin-bottom: 0px;
+      &:hover {
+        text-decoration: none;
+      }
     }
 
     .feature-txt-mapa {
@@ -374,6 +377,10 @@
       text-decoration: none;
       position: absolute;
       top: 70px;
+    }
+    .link-exp {
+      @include flexbox();
+      flex-direction: column;
     }
   }
   .feature-ruta {

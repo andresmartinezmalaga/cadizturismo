@@ -2948,6 +2948,12 @@ html, body {
   }
 }
 
+@media (max-width: 970px) {
+  .header-empresa {
+    height: auto !important;
+  }
+}
+
 @media (max-width: 920px) and (min-width: 710px) {
 
   .separator-lang, .dis-item {
