@@ -2329,7 +2329,9 @@ div[data-control="media-manager"] .media-list.tiles li.selected .icon-container 
 .float-right-photos {
   width: 20%;
   height: 100%;
-  display: inline-block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
   float: right;
   background-color: #F6F6F6;
 }
