@@ -4207,9 +4207,21 @@ footer {
             outline: none;
           }
         }
-        input::-webkit-input-placeholder {
-          opacity: 1 !important;
-      }
+        ::-webkit-input-placeholder {
+            opacity: 1 !important; /* for older chrome versions. may no longer apply. */
+          }
+
+          :-moz-placeholder { /* Firefox 18- */
+              opacity: 1 !important;
+          }
+
+          ::-moz-placeholder {  /* Firefox 19+ */
+              opacity: 1 !important;
+          }
+
+          :-ms-input-placeholder {
+             opacity: 1 !important;
+          }
       }
       .empresa-search {
         background-image: url('../svg/minilupa.svg') !important;
