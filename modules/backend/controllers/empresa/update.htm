@@ -29,7 +29,12 @@
         margin-bottom: 15px;
     }
     .floatJuan.right{
-        width: 80%;
+        width: 60%;
+    }
+    .float-right-photos {
+      width: 20%;
+      height: 100%;
+      background-color: #F6F6F6;
     }
     .toolbar-widget.list-header{
         margin-top: 23px!important;
@@ -38,7 +43,7 @@
 <?php if (!$this->fatalError): ?>
 
     <?php Block::put('form-contents') ?>
-        
+
         <div class="floatJuan left">
             <?= $this->makePartial('menu') ?>
         </div>
@@ -105,5 +110,8 @@
             <p><a href="<?= Backend::url('backend/empresa') ?>" class="btn btn-default"><?= e(trans('backend::lang.user.return')) ?></a></p>
         </div>
     <?php endif ?>
+
+        </div>
+        <div class="floatJuan float-right-photos">
 
         </div>
