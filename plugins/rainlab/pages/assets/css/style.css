@@ -2987,7 +2987,11 @@ html, body {
   .header .mini-logo-container, .header .language-container, .header-event .mini-logo-container, .header-event .language-container, .header-experience .language-container, .header-ruta .mini-logo-container, .header-ruta .language-container, .header-village .mini-logo-container, .header-village .language-container, .header-general .mini-logo-container, .header-general .language-container, .img-village .mini-logo-container, .img-village .language-container, .featured-element .mini-logo-container, .featured-element .language-container, .secret-routes .mini-logo-container, .secret-routes .language-container {
     z-index: 99; }
   .header .header-container, .header-event .header-container, .header-experience .header-container, .header-ruta .header-container, .header-village .header-container, .header-general .header-container, .img-village .header-container, .featured-element .header-container, .secret-routes .header-container {
-    z-index: 98; } }
+    z-index: 98; }
+  .emp {
+    flex-direction: column !important; }
+    .emp .empresas-container {
+      width: 100% !important; } }
 
 @media (max-width: 920px) and (min-width: 601px) {
   .section-txt p, .section-txt-village p, .section-txt-comarca p {

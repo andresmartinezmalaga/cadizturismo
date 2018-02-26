@@ -3666,6 +3666,12 @@ html, body {
   .header .header-container, .header-event .header-container, .header-experience .header-container, .header-ruta .header-container, .header-village .header-container, .header-general .header-container, .img-village .header-container, .featured-element .header-container, .secret-routes .header-container {
     z-index: 98;
   }
+  .emp {
+    flex-direction: column !important;
+    .empresas-container {
+      width: 100% !important;
+    }
+  }
 }
 
 @media (max-width: 920px) and (min-width: 601px) {
