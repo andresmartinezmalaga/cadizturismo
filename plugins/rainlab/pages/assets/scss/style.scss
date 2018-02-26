@@ -2326,6 +2326,12 @@ html, body {
   .feature {
     min-width: 60px;
   }
+  .feature-exp {
+    .link-exp {
+      @include flexbox();
+      flex-direction: column;
+    }
+  }
 }
 
 #header-event-fr {
