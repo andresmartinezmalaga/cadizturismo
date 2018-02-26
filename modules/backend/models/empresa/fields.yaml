@@ -3,7 +3,7 @@
 # ===================================
 
 fields:
-    
+
     name:
         span: left
         label: Nombre de la empresa
@@ -35,7 +35,7 @@ fields:
     url_map:
         span: left
         label: Url de google maps
-    
+
     avatar:
         label: Foto de portada
         type: fileupload
@@ -53,7 +53,7 @@ fields:
             extension: auto
 
     title:
-        span: left
+        span: right
         label: Título
 
     description:

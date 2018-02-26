@@ -38,7 +38,7 @@
 <?php echo $this->fatalError ?>
 
 <?php if (!$this->fatalError): ?>
-    
+
 
 
     <?php Block::put('form-contents') ?>
@@ -52,6 +52,8 @@
                 <div class="layout-row">
                     <?= $this->formRenderOutsideFields() ?>
                     <?= $this->formRenderPrimaryTabs() ?>
+                    <div class="float-right-photos">
+                    </div>
                 </div>
 
                 <div class="form-buttons">

@@ -2337,6 +2337,20 @@ div[data-control="media-manager"] .media-list.tiles li.selected .icon-container 
 }
 
 .floatJuan {
+  #Form-field-Empresa-avatar-group, #Form-field-Tipo-avatar-group {
+    position: absolute;
+    right: 19px;
+    width: 260px;
+    z-index: 100;
+    top: 54px;
+  }
+  .field-textarea.size-large {
+    border: none !important;
+    background-color: #F6F6F6 !important;
+    color: #818181 !important;
+    border-radius: 0px !important;
+    padding: 20px 30px 20px 15px !important;
+  }
   .select2-container--default .select2-selection--single {
     height: 50px !important;
     border: none !important;
@@ -2351,11 +2365,20 @@ div[data-control="media-manager"] .media-list.tiles li.selected .icon-container 
       display: inline-block !important;
     }
   }
-#select2-Form-field-Empresa-type_id-container, #select2-Form-field-Empresa-municipality-container {
+#select2-Form-field-Empresa-type_id-container, #select2-Form-field-Empresa-municipality-container, #select2-Form-field-Tipo-category-container {
     color: #818181 !important;
     padding-top: 6px !important;
   }
 }
 .layout {
   margin-bottom: 0px;
+}
+.modal-content {
+  textarea {
+    border: none !important;
+    background-color: #F6F6F6 !important;
+    color: #818181 !important;
+    border-radius: 0px !important;
+    padding: 20px 30px 20px 15px !important;
+  }
 }
