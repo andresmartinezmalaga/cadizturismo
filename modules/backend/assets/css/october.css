@@ -5629,3 +5629,8 @@ div[data-control="media-manager"] .media-list.tiles li.selected .icon-container 
 
 .btn-text a:hover {
   color: #175DA3 !important; }
+
+.float-right-photos {
+  width: 20%;
+  height: 100%;
+  background-color: #F6F6F6; }
