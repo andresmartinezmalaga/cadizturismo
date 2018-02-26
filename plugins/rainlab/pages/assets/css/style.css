@@ -3633,6 +3633,8 @@ footer {
       height: 210px !important; }
       .bussinesPage #search-event .search-bar .inputs-container {
         flex-wrap: wrap !important; }
+      .bussinesPage #search-event .search-bar #empresa-inputs-container {
+        height: 140px !important; }
       .bussinesPage #search-event .search-bar form {
         flex-direction: column !important; }
       .bussinesPage #search-event .search-bar #empresa-category {
