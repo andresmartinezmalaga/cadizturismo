@@ -4249,7 +4249,8 @@ footer {
         margin: 0px auto 58px auto;
       }
       & > li {
-        padding-left: 90px;
+        max-width: 337px;
+        margin: 0 auto;
         a {
           font-family: AvenirNext-Medium;
           font-size: 16px;
