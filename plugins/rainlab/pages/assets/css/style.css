@@ -2777,7 +2777,9 @@ html, body {
   .icons {
     width: 100% !important; }
   #empresa-location {
-    border-top: none !important; } }
+    border-top: none !important; }
+  .bussinesPage .select2-container--default .select2-selection--multiple .select2-selection__choice {
+    font-size: 11px !important; } }
 
 @media (max-width: 725px) {
   .header-playa .txt {
