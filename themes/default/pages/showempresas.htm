@@ -10,28 +10,29 @@ is_hidden = 0
 
 	function onStart()
 	{
-            $this['urlPage'] = $this->page->url;
+        $this['urlPage'] = $this->page->url;
 
-$slug = $this->param('slug');
-$this['slugg'] = $slug;
-if (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false) {
-$this['preurl'] = '/cadizturismo';
-} else {
-$this['preurl'] = '';
-}
+        $slug = $this->param('slug');
+        $this['slugg'] = $slug;
+        if (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false) {
+        $this['preurl'] = '/cadizturismo';
+        } else {
+        $this['preurl'] = '';
+        }
 
-$this['lang']=\App::getLocale();
-if($this['lang']==''){
-$this['lang']='es';
-}
+        $this['lang']=\App::getLocale();
+        if($this['lang']==''){
+        $this['lang']='es';
+        }
 
-$this['empresa'] =  $this->staticApp->empresasFindBySlug($slug);
+        $this['empresa'] =  $this->staticApp->empresasFindBySlug($slug);
 
-if($this['empresa']){
-    $this['metaTitle'] = $this['empresa']->name;
-    $this['metaDescription'] = (strlen($this['empresa']->description) > 250) ? substr($this['empresa']->description,0,250).'...' : $this['empresa']->description;
-    $this['metaImg'] = $this['empresa']->image;
-}
+        if($this['empresa']){
+            $this['metaTitle'] = 'Cádiz | '.$this['empresa']->name;
+            $this['ptitle'] = 'Cádiz | '.$this['empresa']->name;
+            $this['metaDescription'] = (strlen($this['empresa']->description) > 250) ? substr($this['empresa']->description,0,250).'...' : $this['empresa']->description;
+            $this['metaImg'] = $this['empresa']->image;
+        }
 
 }
 

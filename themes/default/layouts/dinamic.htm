@@ -38,15 +38,18 @@ code = "redes-sociales"
             
             if($this->page->settings["meta_title"]==null){
                 
-                $this['metaTitle'] = 'Cádiz | '.$this->page->apiBag["staticPage"]->attributes["viewBag"]["title"];
+                if($this['metaTitle'] == ''){
+                    $this['metaTitle'] = 'Cádiz | '.$this->page->apiBag["staticPage"]->attributes["viewBag"]["title"];
+                }
                 if($this['ptitle'] == ''){
                      $this['ptitle'] = 'Cádiz | '.$this->page->apiBag["staticPage"]->attributes["viewBag"]["title"];
                 }
                
                 
             } else {
-                
-                $this['metaTitle'] = 'Cádiz | '.$this->page->settings["meta_title"];
+                if($this['metaTitle'] == ''){
+                    $this['metaTitle'] = 'Cádiz | '.$this->page->settings["meta_title"];
+                }
                 if($this['ptitle'] == ''){
                     $this['ptitle'] = 'Cádiz | '.$this->page->settings["meta_title"];
                 }
