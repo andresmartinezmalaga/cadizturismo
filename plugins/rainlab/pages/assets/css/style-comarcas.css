@@ -55,6 +55,8 @@
       transform: rotate(-9deg);
       text-align: center;
       font-family: Ryssa; }
+    .header-general .header-txt .txt > #exp {
+      font-size: 200px; }
     .header-general .header-txt .txt-rutas {
       font-size: 121px;
       transform: rotate(-9deg);
