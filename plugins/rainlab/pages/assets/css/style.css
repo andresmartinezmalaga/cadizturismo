@@ -802,7 +802,7 @@ html, body {
   background-size: cover; }
 
 .search-empresas {
-  background: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.68) 100%), url("../img/search-exp.jpg");
+  background: url("../img/back-empresas.jpg");
   transform: rotate(0deg);
   background-attachment: fixed;
   background-size: cover; }
