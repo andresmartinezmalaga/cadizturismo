@@ -3388,6 +3388,8 @@ footer {
     width: 825px; }
     .bussinesPage #search-event .search-bar #empresa-category {
       width: 340px; }
+    .bussinesPage #search-event .search-bar #empresa-search {
+      width: 232px; }
 
 .emp .empresas-container ul {
   list-style-type: none;
