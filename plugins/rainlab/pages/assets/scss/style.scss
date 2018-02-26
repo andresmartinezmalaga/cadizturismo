@@ -4177,7 +4177,7 @@ footer {
   @include flexbox();
   flex-direction: row;
   justify-content: center;
-  margin-top: 225px;
+  margin: 225px auto 0px auto;
   .empresas-container {
     width: calc(100% / 3);
     width: -webkit-calc(100% / 3);
