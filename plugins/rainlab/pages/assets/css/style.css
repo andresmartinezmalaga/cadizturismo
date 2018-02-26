@@ -2219,8 +2219,8 @@ html, body {
   .header-general .txt {
     font-size: 200px !important;
     line-height: 200px !important; }
-  #search-empresas #exp-header .txt {
-    font-size: 180px !important;
+  #search-empresas #exp-header .txt, .header-general .header-txt .txt > #exp {
+    font-size: 170px !important;
     line-height: 145px !important; } }
 
 @media (max-width: 600px) {
@@ -2942,7 +2942,10 @@ html, body {
   .menu-list .menu-title {
     font-size: 26px !important; }
   .menu-list:last-child {
-    margin-right: 0px !important; } }
+    margin-right: 0px !important; }
+  /* Empresas */
+  .emp .empresas-container ul > li {
+    padding-left: 40px !important; } }
 
 @media (max-width: 500px) {
   .section-txt .download {
