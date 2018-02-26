@@ -485,22 +485,6 @@
   .static-structure .page-compras .rec-img, .static-structure .page-comida .rec-img {
     object-position: left !important; }
 
-.search-title-container {
-  width: 100%;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: -77px; }
-  .search-title-container .title-search {
-    font-size: 16px;
-    color: #9B9B9B;
-    line-height: 33px; }
-
 /*  TODOS LOS EVENTOS */
 .all-events {
   width: 100%;

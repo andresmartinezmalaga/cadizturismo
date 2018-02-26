@@ -96,13 +96,6 @@ is_hidden = 0
 
   </div>
 </div>
-<div id="st-empresas" class="search-title-container">
-	{% if empresas|length > 1 %}
-	<p class="title-search"> {{ 'Hemos encontrado'|_ }} {{empresas|length}} {{ 'empresas que se adaptan ti'|_ }}.</p>
-	{% else %}
-	 <p class="title-search"> {{ 'Hemos encontrado'|_ }} {{empresas|length}} {{ 'empresas que se adaptan ti'|_ }}.</p>
-	{% endif %}
-</div>
 <div id='prtlEmpresasl' class="all-events bussinesPage">
   {% partial "empresas" %}
 </div>
