@@ -44,9 +44,11 @@ is_hidden = 0
 	function onFindEmpresa(){
 
     $type = $_POST['type'];
-    $ubicacion = $_POST['location'];
+    $pubicacion = $_POST['location'];
     $psearch = $_POST['search'];
 
+    $ubicacion = implode('_', $pubicacion);
+    
     if($psearch == ''){
         $search = 'todas-las-empresas';
     } else {

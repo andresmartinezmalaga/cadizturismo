@@ -188,15 +188,22 @@ code = "redes-sociales"
 
         var search = $('#inpSearch');
         var searchMlt = 'todas-las-empresas';
+
       
         if(search.val()!='Todas las empresas' && search.val()!=''){
              var searchMlt = search.val().replace( ' ', '_');
         }
 
         var location = $('#sltLocation');
+        var locationMlt = 'todas-las-empresas';
+
+        var plocation = location.val() + "";
+        if(plocation !='Todas las empresas' && plocation !=''){
+             var locationMlt = plocation.replace( ',', '_');
+        }
+
         var type = $('#sltType');
         var url = window.location.href
-
 
         var arr = url.split('/');
         var total = arr.length;
@@ -204,9 +211,10 @@ code = "redes-sociales"
         var itype = arr[total-3];
         var ilocation = arr[total-2];
         var isearch = arr[total-1];
-        
+
+                
         var nurl = url.replace( itype, type.val()); 
-        nurl = nurl.replace( ilocation, location.val()); 
+        nurl = nurl.replace( ilocation, locationMlt); 
         nurl = nurl.replace( isearch, searchMlt); 
 
         history.pushState(null, "", nurl);
