@@ -2991,7 +2991,8 @@ html, body {
   .emp {
     flex-direction: column !important; }
     .emp .empresas-container {
-      width: 100% !important; } }
+      width: 100% !important;
+      margin-bottom: 60px; } }
 
 @media (max-width: 920px) and (min-width: 601px) {
   .section-txt p, .section-txt-village p, .section-txt-comarca p {
