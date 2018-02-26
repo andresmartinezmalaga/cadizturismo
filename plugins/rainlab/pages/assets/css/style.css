@@ -2785,7 +2785,7 @@ html, body {
   .header-playa .txt {
     font-size: 130px !important;
     line-height: 130px !important; }
-  section.desc h3 {
+  section.desc h3, section.info h3 {
     font-size: 44px !important;
     line-height: 50px !important; }
   #out-features .feature-exp:first-child {
