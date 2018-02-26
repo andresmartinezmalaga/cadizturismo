@@ -1,5 +1,5 @@
 title = "listEmpresa"
-url = "/listado-de-empresas/:type/:location"
+url = "/listado-de-empresas/:type/:location/:search"
 layout = "dinamic"
 is_hidden = 0
 
@@ -26,7 +26,7 @@ is_hidden = 0
     $this['idm'] = \App::getLocale();
     $this['numberReg'] = 9;
 
-    $this['numPag'] = ceil($this->staticApp->empresasFindCount($this->param('type'),$this->param('location'))/$this['numberReg']);
+    $this['numPag'] = ceil($this->staticApp->empresasFindCount($this->param('type'),$this->param('location'),$this->param('search'))/$this['numberReg']);
 
     if(Session::has('data')){
       Session::put('reciveData',Session::get('data'));
@@ -45,13 +45,20 @@ is_hidden = 0
 
     $type = $_POST['type'];
     $ubicacion = $_POST['location'];
+    $psearch = $_POST['search'];
+
+    if($psearch == ''){
+        $search = 'todas-las-empresas';
+    } else {
+        $search = str_replace(' ','_',$psearch);
+    }
 
     $this['startPag'] = 1;
     $this['numberReg'] = 9;
 
-    $this['empresas'] = $this->staticApp->empresasFindPag($type,$ubicacion, $this['startPag'],$this['numberReg']);
+    $this['empresas'] = $this->staticApp->empresasFindPag($type,$ubicacion,$search,$this['startPag'],$this['numberReg']);
 
-    $this['numPag'] = ceil($this->staticApp->empresasFindCount($type,$ubicacion)/$this['numberReg']);
+    $this['numPag'] = ceil($this->staticApp->empresasFindCount($type,$ubicacion,$search)/$this['numberReg']);
 
     return [
         '#prtlEmpresasl' => $this->renderPartial('empresas'),
@@ -62,13 +69,11 @@ is_hidden = 0
 
   function onPaginate(){
 
-
-
         $this['startPag'] = $_POST['ipag'];
         $this['numberReg'] = 1;
 
-        $this['numPag'] = ceil($this->staticApp->empresasFindCount($this->param('type'),$this->param('location'))/$this['numberReg']);
-        $this['empresas'] = $this->staticApp->empresasFindPag($this->param('type'),$this->param('location'), $this['startPag'],$this['numberReg']);
+        $this['numPag'] = ceil($this->staticApp->empresasFindCount($this->param('type'),$this->param('location'),$this->param('search'))/$this['numberReg']);
+        $this['empresas'] = $this->staticApp->empresasFindPag($this->param('type'),$this->param('location'),$this->param('search'), $this['startPag'],$this['numberReg']);
 
         return [
             '#prtlEmpresasl' => $this->renderPartial('empresas'),

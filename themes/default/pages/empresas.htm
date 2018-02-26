@@ -32,17 +32,24 @@ is_hidden = 0
 
 	function onFindEmpresa(){
 
-    $aLang = App::getLocale();
+        $aLang = App::getLocale();
 
-		$type = $_POST['type'];
-    $ubicacion = $_POST['location'];
+    	$type = $_POST['type'];
+        $ubicacion = $_POST['location'];
+        $psearch = $_POST['search'];
 
-  	$empresas = $this->staticApp->empresasFindPag($type,$ubicacion,1,9);
-   	Session::put('data',json_encode($empresas));
+        if($psearch == ''){
+            $search = 'todas-las-empresas';
+        } else {
+            $search = str_replace(' ','_',$psearch);
+        }
 
-  	return Redirect::to($aLang.'/listado-de-empresas/'.$type.'/'.$ubicacion)->with( ['data' => json_encode($empresas)] );
+      	$empresas = $this->staticApp->empresasFindPag($type,$ubicacion,$search,1,9);
+       	Session::put('data',json_encode($empresas));
 
-  }
+      	return Redirect::to($aLang.'/listado-de-empresas/'.$type.'/'.$ubicacion.'/'.$search)->with( ['data' => json_encode($empresas)] );
+
+    }
 
 ?>
 ==
