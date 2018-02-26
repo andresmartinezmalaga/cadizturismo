@@ -60,10 +60,12 @@ is_hidden = 0
             {% partial "site/searchempresa" %}
 
         </div>
+    </div>
+</div>
 
-        <ul class="content bussinesPage">
+<div class="emp content bussinesPage">
 
-            <li>
+            <div class="empresas-container">
                 <img src="{{'assets/img/travel.svg'|theme}}" alt="">
                 <ul>
                     <p>PLANIFICAR MI VIAJE</p>
@@ -78,8 +80,8 @@ is_hidden = 0
 
                     {% endfor %}
                 </ul>
-            </li>
-            <li>
+            </div>
+            <div class="empresas-container">
                 <img src="{{'assets/img/direcction.svg'|theme}}" alt="">
                 <ul>
                     <p>PLANES DE OCIO</p>
@@ -94,9 +96,9 @@ is_hidden = 0
 
                     {% endfor %}
                 </ul>
-            </li>
+            </div>
 
-            <li>
+            <div class="empresas-container">
                 <img src="{{'assets/img/search.svg'|theme}}" alt="" style="left: -22px;">
                 <ul>
                     <p>OTROS INTERESES</p>
@@ -111,9 +113,6 @@ is_hidden = 0
 
                     {% endfor %}
                 </ul>
-            </li>
+            </div>
 
-        </ul>
-
-    </div>
-</div>
+        </div>
