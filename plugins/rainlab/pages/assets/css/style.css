@@ -3403,7 +3403,7 @@ footer {
         .bussinesPage #search-event .search-bar #empresa-search input:focus {
           outline: none; }
       .bussinesPage #search-event .search-bar #empresa-search input::-webkit-input-placeholder {
-        opacity: 1; }
+        opacity: 1 !important; }
     .bussinesPage #search-event .search-bar .empresa-search {
       background-image: url("../svg/minilupa.svg") !important; }
 
