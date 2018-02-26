@@ -127,8 +127,10 @@
 
   @media (max-width: 1160px) {
     #search-empresas {
-      .txt {
-        line-height: 136px;
+      #exp-header {
+        .txt {
+          line-height: 136px;
+        }
       }
       .brush {
         margin-top: -10px;
