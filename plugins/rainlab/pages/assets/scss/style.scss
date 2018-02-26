@@ -4202,6 +4202,9 @@ footer {
           color: #4A4A4A;
           font-size: 15.72px;
           line-height: 22px;
+          &:focus {
+            outline: none;
+          }
         }
       }
     }

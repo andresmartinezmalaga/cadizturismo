@@ -3399,6 +3399,8 @@ footer {
         color: #4A4A4A;
         font-size: 15.72px;
         line-height: 22px; }
+        .bussinesPage #search-event .search-bar #empresa-search input:focus {
+          outline: none; }
 
 .emp .empresas-container ul {
   list-style-type: none;
