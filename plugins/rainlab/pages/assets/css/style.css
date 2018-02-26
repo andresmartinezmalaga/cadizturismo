@@ -3337,7 +3337,8 @@ footer {
   margin-bottom: 73px; }
 
 .bussinesPage #search-event {
-  width: 863px; }
+  width: 863px;
+  margin-bottom: 100px; }
   .bussinesPage #search-event .search-bar {
     width: 825px; }
     .bussinesPage #search-event .search-bar #empresa-category {
