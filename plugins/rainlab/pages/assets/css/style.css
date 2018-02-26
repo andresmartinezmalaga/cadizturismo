@@ -3344,45 +3344,37 @@ footer {
     .bussinesPage #search-event .search-bar #empresa-category {
       width: 340px; }
 
-.emp .empresas-container li {
-  vertical-align: top;
-  border-right: 1px solid #CECECE;
-  display: table-cell;
-  margin: 0em;
-  padding: 1em;
-  height: auto; }
-  .emp .empresas-container li:last-child {
-    border-right: 0; }
-  .emp .empresas-container li img {
-    position: relative;
-    display: block;
-    top: -50px;
-    margin: auto;
-    margin-top: -7px; }
-  .emp .empresas-container li ul {
-    list-style-type: none;
-    text-align: left;
-    padding: 0;
-    display: inline-block; }
-    .emp .empresas-container li ul p {
-      font-family: AvenirNext-DemiBold;
-      font-size: 39px;
-      color: #4A4A4A;
-      line-height: 42px;
-      max-width: 237px;
-      text-align: center;
-      margin-bottom: 58px; }
-    .emp .empresas-container li ul > li a {
-      font-family: AvenirNext-Medium;
-      font-size: 16px;
-      color: #9B9B9B;
-      line-height: 33px;
-      transition: all 0.3s; }
-      .emp .empresas-container li ul > li a:hover {
-        opacity: 0.5;
-        text-decoration: none; }
-      .emp .empresas-container li ul > li a img {
-        margin-left: 22px; }
+.emp .empresas-container img {
+  position: relative;
+  display: block;
+  top: -50px;
+  margin: auto;
+  margin-top: -7px; }
+
+.emp .empresas-container ul {
+  list-style-type: none;
+  text-align: left;
+  padding: 0;
+  display: inline-block; }
+  .emp .empresas-container ul p {
+    font-family: AvenirNext-DemiBold;
+    font-size: 39px;
+    color: #4A4A4A;
+    line-height: 42px;
+    max-width: 237px;
+    text-align: center;
+    margin-bottom: 58px; }
+  .emp .empresas-container ul > li a {
+    font-family: AvenirNext-Medium;
+    font-size: 16px;
+    color: #9B9B9B;
+    line-height: 33px;
+    transition: all 0.3s; }
+    .emp .empresas-container ul > li a:hover {
+      opacity: 0.5;
+      text-decoration: none; }
+    .emp .empresas-container ul > li a img {
+      margin-left: 22px; }
 
 .emp {
   width: 100%;

@@ -4130,16 +4130,6 @@ footer {
   }
 }
 .emp .empresas-container {
-  li {
-    vertical-align: top;
-    border-right: 1px solid #CECECE;
-    display: table-cell;
-    margin: 0em;
-    padding: 1em;
-    height: auto;
-    &:last-child {
-      border-right: 0;
-    }
     img {
       position: relative;
       display: block;
@@ -4179,7 +4169,6 @@ footer {
       }
 
     }
-  }
 
 }
 .emp {
