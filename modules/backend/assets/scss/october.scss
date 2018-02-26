@@ -2329,13 +2329,14 @@ div[data-control="media-manager"] .media-list.tiles li.selected .icon-container 
 .float-right-photos {
   width: 20%;
   height: 100%;
+  display: inline-block;
   float: right;
   background-color: #F6F6F6;
 }
 
 .floatJuan {
   .layout-row {
-    div {
+    #Form-outsideContainer, #Form-primaryContainer {
       width: 80%;
       display: inline-block !important;
     }
