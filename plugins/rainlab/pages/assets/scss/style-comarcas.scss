@@ -124,6 +124,18 @@
       margin-top: -86px;
     }
   }
+
+  @media (max-width: 1160px) {
+    #search-empresas {
+      .txt {
+        line-height: 136px;
+      }
+      .brush {
+        margin-top: -10px;
+      }
+    }
+  }
+
 .header-general:before {
    z-index: 2;
    content: '';
