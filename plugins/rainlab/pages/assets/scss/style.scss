@@ -4130,7 +4130,7 @@ footer {
   }
 }
 .emp .empresas-container {
-  & > li {
+  li {
     vertical-align: top;
     border-right: 1px solid #CECECE;
     display: table-cell;
@@ -4140,7 +4140,7 @@ footer {
     &:last-child {
       border-right: 0;
     }
-    & > img {
+    img {
       position: relative;
       display: block;
       top: -50px;
