@@ -3625,31 +3625,31 @@ footer {
 
 @media (min-width: 710px) and (max-width: 920px) {
   .bussinesPage #search-event {
-    width: 90%;
-    height: 253px;
+    width: 90% !important;
+    height: 253px !important;
     margin-bottom: 100px !important; }
     .bussinesPage #search-event .search-bar {
-      width: 94%;
-      height: 210px; }
+      width: 94% !important;
+      height: 210px !important; }
       .bussinesPage #search-event .search-bar .inputs-container {
-        flex-wrap: wrap; }
+        flex-wrap: wrap !important; }
       .bussinesPage #search-event .search-bar form {
-        flex-direction: column; }
+        flex-direction: column !important; }
       .bussinesPage #search-event .search-bar #empresa-category {
-        width: 50%;
-        height: 70px;
-        border-top-right-radius: 4px;
+        width: 50% !important;
+        height: 70px !important;
+        border-top-right-radius: 4px !important;
         border-right: none !important; }
       .bussinesPage #search-event .search-bar #empresa-location {
-        width: 100%;
-        height: 70px;
-        border-top: 1px solid #CECECE; }
+        width: 100% !important;
+        height: 70px !important;
+        border-top: 1px solid #CECECE !important; }
       .bussinesPage #search-event .search-bar .button-container {
-        width: 100%;
-        height: 70px;
+        width: 100% !important;
+        height: 70px !important;
         border-top-right-radius: 0px !important; }
       .bussinesPage #search-event .search-bar #empresa-search {
-        width: 50%;
-        height: 70px; }
+        width: 50% !important;
+        height: 70px !important; }
       .bussinesPage #search-event .search-bar .empresa-search {
         background-image: url("../svg/minilupa.svg") !important; } }

@@ -4488,40 +4488,40 @@ footer {
 @media (min-width: 710px) and (max-width: 920px) {
 .bussinesPage {
   #search-event {
-      width: 90%;
-      height: 253px;
+      width: 90% !important;
+      height: 253px !important;
       margin-bottom: 100px !important;
       .search-bar {
-        width: 94%;
-        height: 210px;
+        width: 94% !important;
+        height: 210px !important;
         .inputs-container {
-          flex-wrap: wrap;
+          flex-wrap: wrap !important;
         }
         form {
-          flex-direction: column;
+          flex-direction: column !important;
         }
         #empresa-category {
           //width: 330px;
-          width: 50%;
-          height: 70px;
-          border-top-right-radius: 4px;
+          width: 50% !important;
+          height: 70px !important;
+          border-top-right-radius: 4px !important;
           border-right: none !important;
         }
         #empresa-location {
           //width: 330px;
-          width: 100%;
-          height: 70px;
-          border-top: 1px solid #CECECE;
+          width: 100% !important;
+          height: 70px !important;
+          border-top: 1px solid #CECECE !important;
         }
         .button-container {
-          width: 100%;
-          height: 70px;
+          width: 100% !important;
+          height: 70px !important;
           border-top-right-radius: 0px !important;
         }
         #empresa-search {
           //width: 242px;
-          width: 50%;
-          height: 70px;
+          width: 50% !important;
+          height: 70px !important;
         }
         .empresa-search {
           background-image: url('../svg/minilupa.svg') !important;
