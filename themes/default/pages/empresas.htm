@@ -31,12 +31,19 @@ is_hidden = 0
 
 
 	function onFindEmpresa(){
+        
+        use Illuminate\Support\Facades\Request;
 
         $aLang = App::getLocale();
 
     	$type = $_POST['type'];
         $ubicacion = $_POST['location'];
         $psearch = $_POST['search'];
+
+        echo json_encode(Request::all());
+
+        dd(1);
+
 
         if($psearch == ''){
             $search = 'todas-las-empresas';
