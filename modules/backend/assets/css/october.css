@@ -5641,7 +5641,7 @@ div[data-control="media-manager"] .media-list.tiles li.selected .icon-container 
 
 .floatJuan #Form-field-Empresa-avatar-group, .floatJuan #Form-field-Tipo-avatar-group {
   position: absolute;
-  right: 20px;
+  right: 19px;
   width: 260px;
   z-index: 100;
   top: 54px; }
