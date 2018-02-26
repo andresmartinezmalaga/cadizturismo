@@ -2640,6 +2640,9 @@ html, body {
   .header-txt .txt .first-word, .header-village .header-txt .txt, .header-comarca .header-txt .txt {
     font-size: 120px !important;
     line-height: 120px !important; }
+  #search-empresas .txt, .header-general .header-txt .txt > #exp {
+    font-size: 80px !important;
+    line-height: 80px !important; }
   .header-txt {
     margin-top: 80px !important; }
   .more-content {
