@@ -3794,7 +3794,7 @@ html, body {
 @media (max-width: 736px) {
   /* FOOTER */
   footer {
-    height: 420px !important;
+    height: 487px !important;
   }
   .footer-container {
     flex-direction: column !important;
@@ -3806,19 +3806,26 @@ html, body {
       width: 100%;
       flex-direction: column !important;
       justify-content: center;
-      height: 250px !important;
+      height: 312px !important;
       margin-bottom: 40px;
       .mini-logo {
         margin-right: 0px !important;
       }
-      a {
-        margin-right: 0px !important;
-        margin-bottom: 13px !important;
-        &:last-child {
-          margin-bottom: 0px !important;
+      .footer-link {
+        img {
+          margin: 0px !important;
         }
-        &:first-child {
-          margin-top: 32px !important;
+      }
+      .social {
+        a {
+          margin-right: 0px !important;
+          margin-bottom: 13px !important;
+          &:last-child {
+            margin-bottom: 0px !important;
+          }
+          &:first-child {
+            margin-top: 32px !important;
+          }
         }
       }
       .links-container {
