@@ -44,7 +44,7 @@
                 </div>
 
                 <div id="empresa-location" class="type-container">
-                  <select id="sltLocation" class="custom-select select-type" name="location" multiple="multiple">
+                  <select id="sltLocation" class="custom-select select-type" name="location">
                     {% for key,value in municipalities %}
                         <option value="{{str_slug(value)}}">{{value}}</option>
                     {% endfor %}
