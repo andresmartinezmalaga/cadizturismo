@@ -566,6 +566,16 @@
       line-height: 33px;
     }
   }
+  #all-empresas {
+    .event {
+      &:nth-child(2), &:nth-child(6), &:nth-child(12), &:nth-child(16), &:nth-child(22),
+      &:nth-child(26), &:nth-child(32), &:nth-child(36), &:nth-child(42), &:nth-child(43) {
+        width: calc((100% / 3));
+        width: -webkit-calc((100% / 3));
+        width: -moz-calc((100% / 3));
+      }
+    }
+  }
   .all-events-container {
     width: 100%;
     height: auto;
