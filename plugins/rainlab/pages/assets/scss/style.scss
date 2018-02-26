@@ -4176,13 +4176,14 @@ footer {
   max-width: 1300px;
   @include flexbox();
   flex-direction: row;
-  align-items: center;
+  justify-content: center;
   margin-top: 200px;
   .empresas-container {
     width: calc(100% / 3);
     width: -webkit-calc(100% / 3);
     width: -moz-calc(100% / 3);
     width: -ms-calc(100% / 3);
+    height: auto;
   }
 }
 #prtlEmpresasl.bussinesPage {
