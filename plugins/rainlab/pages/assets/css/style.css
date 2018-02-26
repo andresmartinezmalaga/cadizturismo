@@ -3075,7 +3075,7 @@ html, body {
 @media (max-width: 720px) and (min-width: 400px) {
   .header-event .header-txt, .header-experience .header-txt {
     margin-bottom: 140px !important;
-    margin-top: 20px !important;
+    margin-top: 50px !important;
     min-height: 470px !important; }
   #header-event-fr .header-container {
     margin-top: 100px; }
@@ -3091,7 +3091,7 @@ html, body {
 @media (max-width: 400px) {
   .header-event .header-txt, .header-experience .header-txt {
     margin-bottom: 10px !important;
-    margin-top: 80px !important;
+    margin-top: 20px !important;
     min-height: 570px !important; }
   .main-exp .header-txt {
     margin-bottom: 10px !important;
