@@ -4192,12 +4192,20 @@ footer {
     margin-bottom: 100px !important;
     .search-bar {
       width: 1052px;
-
+      .inputs-container {
+        flex-wrap: wrap;
+      }
       #empresa-category {
-        width: 330px;
+        //width: 330px;
+        width: 50%;
+      }
+      #empresa-location {
+        //width: 330px;
+        width: 100%;
       }
       #empresa-search {
-        width: 242px;
+        //width: 242px;
+        width: 50%;
         input {
           width: 100%;
           height: 100%;
