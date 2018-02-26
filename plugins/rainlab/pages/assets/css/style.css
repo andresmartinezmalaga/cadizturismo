@@ -3344,7 +3344,7 @@ footer {
     .bussinesPage #search-event .search-bar #empresa-category {
       width: 340px; }
 
-.bussinesPage .emp {
+.emp {
   width: 100%;
   max-width: 1300px;
   display: -webkit-box;
@@ -3354,7 +3354,7 @@ footer {
   display: flex;
   flex-direction: row;
   align-items: center; }
-  .bussinesPage .emp .empresas-container {
+  .emp .empresas-container {
     width: calc(100% / 3);
     width: -webkit-calc(100% / 3);
     width: -moz-calc(100% / 3);
