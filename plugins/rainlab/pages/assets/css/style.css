@@ -3645,7 +3645,8 @@ footer {
       .bussinesPage #search-event .search-bar #empresa-location {
         width: 100% !important;
         height: 70px !important;
-        border-top: 1px solid #CECECE !important; }
+        border-top: 1px solid #CECECE !important;
+        border-top-right-radius: 0px; }
       .bussinesPage #search-event .search-bar .button-container {
         width: 100% !important;
         height: 70px !important;
