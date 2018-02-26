@@ -1,13 +1,12 @@
 
 {% if empresas|length > 0 %}
-	<ul>
+	<!-- <ul>
 	{% for empresa in empresas %}
-	
+
 		<li>
 			<h3 style="text-transform: uppercase">
 				{{str_limit(empresa.name,18) | capitalize}}
 			</h3>
-			<!--{{empresa.image}}-->
 			<p>
 				{{str_limit(empresa.description,117) | capitalize}}
 			</p>
@@ -15,10 +14,35 @@
 				<p><img src="{{'assets/img/map.svg'|theme}}" alt="">{{empresa.municipality | capitalize}}</p>
 				<a href="{{url('/')}}/{{lang}}/empresa/{{empresa.slug}}">{{'Saber más'|_}}</a>
 			</span>
-		</li>	
-		
+		</li>
+
 	{% endfor %}
-	</ul>
+	</ul> -->
+	<div class="al-events-container">
+		{% for empresa in empresas %}
+
+			<div class="event">
+				<div class="overlay-img">
+					<br>
+				</div><img class="rec-img fr-fic fr-dii" src="{{empresa.image}}">
+				<div class="txt-container">
+
+					<p class="name">{{str_limit(empresa.name,18) | capitalize}}</p><img class="separator fr-fic fr-dii" src="{{preurl}}/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+					<div class="icons">
+						<div class="icon-pair">
+							<img src="{{preurl}}/storage/app/media/uploaded-files/templates/loc-events.svg" class="fr-fil fr-dib">
+
+							<p class="icon-txt">
+		              			{{empresa.municipality | capitalize}}
+							</p>
+						</div>
+					</div>
+					<div class="button-container"><a class="see-event" href="{{url('/')}}/{{lang}}{{beach.viewBag.url}}">{{'Ver empresa'|_}} <img src="{{preurl}}/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
+				</div>
+			</div>
+
+		{% endfor %}
+	</div>
 {% else %}
 
 	<div class="search-title-container" style="display: block; text-align: center; position: relative;">
