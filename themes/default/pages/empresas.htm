@@ -11,18 +11,21 @@ is_hidden = 0
 	function onStart()
 	{
 
-    if (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false) {
-          $this['preurl'] = '/cadizturismo';
-    } else {
-        $this['preurl'] = '';
-    }
+        if (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false) {
+              $this['preurl'] = '/cadizturismo';
+        } else {
+            $this['preurl'] = '';
+        }
 
-    $this['lang']=\App::getLocale();
-		if($this['lang']==''){
-			$this['lang']='es';
-		}
+        $this['lang']=\App::getLocale();
+    		if($this['lang']==''){
+    			$this['lang']='es';
+    		}
 
-    $this['typeIndex'] = $this->staticApp->empresasListTypesHomeIndex();
+        $this['typeIndex'] = $this->staticApp->empresasListTypesHomeIndex();
+
+        $this['ptitle'] = 'Cádiz | Empresas';
+        $this['metaTitle'] = 'Cádiz | Empresas';
 
 	}
 
