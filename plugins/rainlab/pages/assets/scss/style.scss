@@ -4207,6 +4207,9 @@ footer {
             outline: none;
           }
         }
+        input::-webkit-input-placeholder {
+          opacity: 1;
+      }
       }
       .empresa-search {
         background-image: url('../svg/minilupa.svg') !important;
