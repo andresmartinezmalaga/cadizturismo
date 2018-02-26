@@ -2987,7 +2987,7 @@ html, body {
       top: 0px !important;
     }
   }
-  .bussinesPage section.desc {
+  .bussinesPage section.desc, .bussinesPage section.info {
     max-width: 80% !important;
     margin-top: 70px !important;
   }
@@ -3403,6 +3403,9 @@ html, body {
   .header, .static-header, .ayuda-header, .about-header, .header-event, .header-experience, .header-village, .header-general, .header-ruta, .header-search {
     margin-top: 0px !important;
     min-height: 650px;
+  }
+  .header-empresa {
+    margin-top: 0px !important;
   }
   .ayuda-header, .static-header, .about-header {
     .img-header {
