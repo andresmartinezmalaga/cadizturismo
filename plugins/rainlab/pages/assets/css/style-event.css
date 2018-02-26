@@ -1,5 +1,5 @@
 /* HEADER EVENTOS */
-.header-event {
+.header-event, .header-empresa {
   padding: 0;
   box-sizing: border-box;
   z-index: 10;
@@ -23,9 +23,9 @@
   flex-direction: column;
   transform: rotate(0deg);
   background-attachment: fixed; }
-  .header-event .header-container {
+  .header-event .header-container, .header-empresa .header-container {
     margin-top: 90px; }
-  .header-event .background-image {
+  .header-event .background-image, .header-empresa .background-image {
     width: 100%;
     height: 100%;
     position: fixed;
@@ -33,7 +33,7 @@
     object-fit: cover;
     z-index: -1;
     left: 0px; }
-  .header-event .header-txt {
+  .header-event .header-txt, .header-empresa .header-txt {
     color: white;
     display: -webkit-box;
     display: -moz-box;
@@ -44,15 +44,15 @@
     justify-content: center;
     flex-direction: column;
     margin-bottom: 50px; }
-    .header-event .header-txt .brush {
+    .header-event .header-txt .brush, .header-empresa .header-txt .brush {
       margin-top: -14px;
       margin-bottom: 150px; }
-    .header-event .header-txt .txt {
+    .header-event .header-txt .txt, .header-empresa .header-txt .txt {
       font-size: 144px;
       transform: rotate(-9deg);
       text-align: center;
       font-family: Ryssa; }
-  .header-event .send-info {
+  .header-event .send-info, .header-empresa .send-info {
     width: 391px;
     height: 105px;
     margin-top: 150px;
@@ -65,7 +65,7 @@
     display: flex;
     align-items: center;
     justify-content: center; }
-    .header-event .send-info .button-send-info {
+    .header-event .send-info .button-send-info, .header-empresa .send-info .button-send-info {
       width: 348px;
       height: 70px;
       background-color: #F5A623;
@@ -79,17 +79,17 @@
       justify-content: center;
       cursor: pointer;
       transition: background-color 0.3s ease; }
-      .header-event .send-info .button-send-info a {
+      .header-event .send-info .button-send-info a, .header-empresa .send-info .button-send-info a {
         color: white;
         font-weight: 300;
         font-size: 19px;
         line-height: 27px;
         padding: 22px 20px; }
-        .header-event .send-info .button-send-info a:hover, .header-event .send-info .button-send-info a:focus, .header-event .send-info .button-send-info a:active {
+        .header-event .send-info .button-send-info a:hover, .header-event .send-info .button-send-info a:focus, .header-event .send-info .button-send-info a:active, .header-empresa .send-info .button-send-info a:hover, .header-empresa .send-info .button-send-info a:focus, .header-empresa .send-info .button-send-info a:active {
           text-decoration: none;
           outline: none;
           background-color: transparent; }
-      .header-event .send-info .button-send-info:hover {
+      .header-event .send-info .button-send-info:hover, .header-empresa .send-info .button-send-info:hover {
         background-color: #D0860C; }
 
 .header-experience {
