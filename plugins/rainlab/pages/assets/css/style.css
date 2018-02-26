@@ -3385,6 +3385,11 @@ footer {
   line-height: 33px;
   margin-bottom: 73px; }
 
+.bussinesPage .select2-container--default .select2-selection--multiple {
+  border: none !important;
+  height: 100%;
+  background-color: transparent; }
+
 .bussinesPage #search-event {
   width: 841px;
   height: 253px;
