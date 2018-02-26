@@ -3392,6 +3392,10 @@ footer {
     display: -webkit-flex;
     display: flex;
     flex-direction: column; }
+  .emp .main-emp {
+    margin-bottom: 50px; }
+  .emp .empresas1, .emp .empresas2 {
+    border-right: 1px solid #CECECE; }
 
 #prtlEmpresasl.bussinesPage ul {
   padding: 0;

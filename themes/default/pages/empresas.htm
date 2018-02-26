@@ -68,8 +68,8 @@ is_hidden = 0
 
 <div class="emp content bussinesPage">
 
-            <div class="empresas-container">
-                <img src="{{'assets/img/travel.svg'|theme}}" alt="">
+            <div class="empresas-container empresas1">
+                <img class="main-emp" src="{{'assets/img/travel.svg'|theme}}" alt="">
                 <ul>
                     <p>PLANIFICAR MI VIAJE</p>
                     {% for type in typeIndex['cat1']%}
@@ -84,8 +84,8 @@ is_hidden = 0
                     {% endfor %}
                 </ul>
             </div>
-            <div class="empresas-container">
-                <img src="{{'assets/img/direcction.svg'|theme}}" alt="">
+            <div class="empresas-container empresas2">
+                <img class="main-emp" src="{{'assets/img/direcction.svg'|theme}}" alt="">
                 <ul>
                     <p>PLANES DE OCIO</p>
                     {% for type in typeIndex['cat2']%}
@@ -101,8 +101,8 @@ is_hidden = 0
                 </ul>
             </div>
 
-            <div class="empresas-container">
-                <img src="{{'assets/img/search.svg'|theme}}" alt="" style="left: -22px;">
+            <div class="empresas-container empresas3">
+                <img class="main-emp" src="{{'assets/img/search.svg'|theme}}" alt="" style="left: -22px;">
                 <ul>
                     <p>OTROS INTERESES</p>
                     {% for type in typeIndex['cat3']%}
