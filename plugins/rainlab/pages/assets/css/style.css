@@ -2642,7 +2642,8 @@ html, body {
     line-height: 120px !important; }
   #search-empresas .txt, .header-general .header-txt .txt > #exp {
     font-size: 80px !important;
-    line-height: 80px !important; }
+    line-height: 80px !important;
+    margin-top: 50px; }
   .bussinesPage .whatDoYouNeedCadiz {
     margin-bottom: 23px !important; }
   .header-txt {
