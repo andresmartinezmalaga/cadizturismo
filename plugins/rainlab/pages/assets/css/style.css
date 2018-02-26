@@ -3586,4 +3586,8 @@ footer {
 @media (min-width: 710px) and (max-width: 1100px) {
   .bussinesPage #search-event {
     width: 90% !important;
-    height: 177px !important; } }
+    height: 177px !important; }
+    .bussinesPage #search-event .search-bar-container {
+      width: 95% !important;
+      height: 140px !important;
+      margin: 0 auto !important; } }

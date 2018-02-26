@@ -4442,6 +4442,11 @@ footer {
     #search-event {
       width: 90% !important;
       height: 177px !important;
+      .search-bar-container {
+        width: 95% !important;
+        height: 140px !important;
+        margin: 0 auto !important;
+      }
     }
   }
 }
