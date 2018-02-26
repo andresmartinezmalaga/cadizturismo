@@ -375,6 +375,10 @@
       position: absolute;
       top: 70px;
     }
+    .link-exp {
+      @include flexbox();
+      flex-direction: column;
+    }
   }
   .feature-ruta {
     margin-right: 114px;
