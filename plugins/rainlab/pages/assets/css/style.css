@@ -3390,6 +3390,15 @@ footer {
       width: 340px; }
     .bussinesPage #search-event .search-bar #empresa-search {
       width: 232px; }
+      .bussinesPage #search-event .search-bar #empresa-search input {
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        border: none;
+        padding-left: 55px;
+        color: #4A4A4A;
+        font-size: 15.72px;
+        line-height: 22px; }
 
 .emp .empresas-container ul {
   list-style-type: none;
