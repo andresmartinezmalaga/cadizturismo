@@ -2937,7 +2937,8 @@ html, body {
   #out-features {
     position: absolute !important;
     min-height: 360px;
-    justify-content: flex-start !important; }
+    justify-content: flex-start !important;
+    top: 700px !important; }
     #out-features .feature {
       padding-top: 0px; } }
 
