@@ -3362,6 +3362,10 @@ html, body {
     line-height: 130px !important;
   }
 
+  div[class^="header"] {
+    margin-top: 0px !important;
+  }
+
   section.desc h3 {
     font-size: 44px !important;
     line-height: 50px !important;
