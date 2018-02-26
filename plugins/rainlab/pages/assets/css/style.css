@@ -3403,15 +3403,19 @@ footer {
         .bussinesPage #search-event .search-bar #empresa-search input:focus {
           outline: none; }
       .bussinesPage #search-event .search-bar #empresa-search ::-webkit-input-placeholder {
+        color: #4A4A4A;
         opacity: 1 !important;
         /* for older chrome versions. may no longer apply. */ }
       .bussinesPage #search-event .search-bar #empresa-search :-moz-placeholder {
         /* Firefox 18- */
+        color: #4A4A4A;
         opacity: 1 !important; }
       .bussinesPage #search-event .search-bar #empresa-search ::-moz-placeholder {
         /* Firefox 19+ */
+        color: #4A4A4A;
         opacity: 1 !important; }
       .bussinesPage #search-event .search-bar #empresa-search :-ms-input-placeholder {
+        color: #4A4A4A;
         opacity: 1 !important; }
     .bussinesPage #search-event .search-bar .empresa-search {
       background-image: url("../svg/minilupa.svg") !important; }
