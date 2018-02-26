@@ -29,6 +29,10 @@
           <div class="search-bar">
             <form data-request="onFindEmpresa">
               <div class="inputs-container">
+                <div id="empresa-search" class="days-container empresa-search">
+                  <input type="text" name="search" placeholder="¿Qué estás buscando?" value="">
+                  <span class="select-title">{{ 'NOMBRE DE EMPRESA'|_ }}</span>
+                </div>
                 <div id="empresa-category" class="days-container">
                   <select id="sltType" class="custom-select select-days" name="type">
                     {% for key,value in types %}
@@ -38,7 +42,7 @@
                   </select>
                   <span class="select-title">{{ 'TIPO DE EMPRESA'|_ }}</span>
                 </div>
-               
+
                 <div id="empresa-location" class="type-container">
                   <select id="sltLocation" class="custom-select select-type" name="location">
                     {% for key,value in municipalities %}
@@ -55,6 +59,6 @@
             </form>
           </div>
         </div>
-       
+
       </div>
     </div>

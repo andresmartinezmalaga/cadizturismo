@@ -38,18 +38,19 @@
 <?php if (!$this->fatalError): ?>
 
     <?php Block::put('form-contents') ?>
-        
+
         <div class="floatJuan left">
             <?= $this->makePartial('menu') ?>
         </div>
-        <div class="floatJuan right paddsix">
+        <div id="custom-float" class="floatJuan right paddsix">
             <div class="layout">
 
                 <div class="layout-row">
                     <?= $this->formRenderOutsideFields() ?>
                     <?= $this->formRenderPrimaryTabs() ?>
+                    <div class="float-right-photos">
+                    </div>
                 </div>
-
                 <div class="form-buttons">
                     <div class="loading-indicator-container">
                         <button
@@ -82,7 +83,6 @@
                         </button>
                     </div>
                 </div>
-
             </div>
         <?php Block::endPut() ?>
 
@@ -95,7 +95,6 @@
                 <?= $this->makeLayout('form-with-sidebar') ?>
             <?= Form::close() ?>
         <?php Block::endPut() ?>
-
     <?php else: ?>
         <div class="control-breadcrumb">
             <?= Block::placeholder('breadcrumb') ?>
@@ -105,5 +104,4 @@
             <p><a href="<?= Backend::url('backend/empresa') ?>" class="btn btn-default"><?= e(trans('backend::lang.user.return')) ?></a></p>
         </div>
     <?php endif ?>
-
         </div>

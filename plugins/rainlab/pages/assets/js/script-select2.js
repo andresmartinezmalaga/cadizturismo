@@ -10,4 +10,3 @@ $('.select-interests').select2({
 $('.select-type').select2({
   minimumResultsForSearch: Infinity
 });
-
