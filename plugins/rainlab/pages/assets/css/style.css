@@ -3075,7 +3075,7 @@ html, body {
 @media (max-width: 736px) {
   /* FOOTER */
   footer {
-    height: 420px !important; }
+    height: 487px !important; }
   .footer-container {
     flex-direction: column !important;
     justify-content: center !important;
@@ -3086,16 +3086,18 @@ html, body {
       width: 100%;
       flex-direction: column !important;
       justify-content: center;
-      height: 250px !important;
-      margin-bottom: 40px; }
+      height: 312px !important;
+      margin-bottom: 20px; }
       .footer-container .left-container .mini-logo {
         margin-right: 0px !important; }
-      .footer-container .left-container a {
+      .footer-container .left-container .footer-link img {
+        margin: 0px !important; }
+      .footer-container .left-container .links-container a {
         margin-right: 0px !important;
         margin-bottom: 13px !important; }
-        .footer-container .left-container a:last-child {
+        .footer-container .left-container .links-container a:last-child {
           margin-bottom: 0px !important; }
-        .footer-container .left-container a:first-child {
+        .footer-container .left-container .links-container a:first-child {
           margin-top: 32px !important; }
       .footer-container .left-container .links-container {
         flex-direction: column !important; }
