@@ -5639,6 +5639,13 @@ div[data-control="media-manager"] .media-list.tiles li.selected .icon-container 
   float: right;
   background-color: #F6F6F6; }
 
+.floatJuan #Form-field-Empresa-avatar-group {
+  position: absolute;
+  right: 79px;
+  width: 200px;
+  z-index: 100;
+  top: 54px; }
+
 .floatJuan .select2-container--default .select2-selection--single {
   height: 50px !important;
   border: none !important;
