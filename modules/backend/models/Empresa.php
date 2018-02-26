@@ -63,6 +63,10 @@ class Empresa extends Model
     public $attachOne = [
         'avatar' => \System\Models\File::class
     ];
+
+    public $attachMany = [
+        'photos' => \System\Models\File::class
+    ];
     
 
     /**
