@@ -378,7 +378,8 @@
       line-height: 22px;
       text-decoration: none;
       position: absolute;
-      top: 70px; }
+      top: 70px;
+      min-width: 58px; }
     .event-features .feature-exp .link-exp {
       display: -webkit-box;
       display: -moz-box;

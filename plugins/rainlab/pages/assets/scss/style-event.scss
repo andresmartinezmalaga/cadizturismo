@@ -385,6 +385,7 @@
       text-decoration: none;
       position: absolute;
       top: 70px;
+      min-width: 58px;
     }
     .link-exp {
       @include flexbox();
