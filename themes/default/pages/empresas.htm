@@ -6,11 +6,11 @@ is_hidden = 0
 [staticApp]
 
 ==
-<?php  
-	
+<?php
+
 	function onStart()
-	{	    
-    
+	{
+
     if (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false) {
           $this['preurl'] = '/cadizturismo';
     } else {
@@ -23,29 +23,29 @@ is_hidden = 0
 		}
 
     $this['typeIndex'] = $this->staticApp->empresasListTypesHomeIndex();
-    
+
 	}
 
 
 	function onFindEmpresa(){
-		
+
     $aLang = App::getLocale();
 
 		$type = $_POST['type'];
     $ubicacion = $_POST['location'];
-    	
+
   	$empresas = $this->staticApp->empresasFindPag($type,$ubicacion,1,9);
    	Session::put('data',json_encode($empresas));
- 
+
   	return Redirect::to($aLang.'/listado-de-empresas/'.$type.'/'.$ubicacion)->with( ['data' => json_encode($empresas)] );
- 
+
   }
 
 ?>
 ==
 
 <!-- HEADER -->
-<div class="header-search search-exp bussinesPage">
+<div class="header-general search-empresas bussinesPage">
 
     <div class="header-container big-div">
         <div id="exp-header" class="header-txt">

@@ -945,6 +945,13 @@ html, body {
   background-size: cover;
 }
 
+.search-empresas {
+  background: url("../img/back-empresas.jpg");
+  transform: rotate(0deg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 #searchbar-events {
   background-image: url("../img/events-header.jpg");
 }
@@ -3308,6 +3315,11 @@ html, body {
     line-height: 130px !important;
   }
 
+  section.desc h3 {
+    font-size: 44px !important;
+    line-height: 50px !important;
+  }
+
   #out-features {
     .feature-exp {
       &:first-child {
@@ -4295,7 +4307,7 @@ ul.content.bussinesPage {
     margin: auto;
     padding-top: 50px;
     padding-bottom: 50px;
-    h3{
+    h3 {
       font-family: AvenirNext-DemiBold;
       font-size: 64px;
       color: #4A4A4A;
@@ -4313,7 +4325,7 @@ ul.content.bussinesPage {
     }
   }
   section.desc {
-    margin-top: 130px;
+    margin-top: 220px;
   }
 }
 

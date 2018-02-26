@@ -801,6 +801,12 @@ html, body {
   background-attachment: fixed;
   background-size: cover; }
 
+.search-empresas {
+  background: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.68) 100%), url("../img/search-exp.jpg");
+  transform: rotate(0deg);
+  background-attachment: fixed;
+  background-size: cover; }
+
 #searchbar-events {
   background-image: url("../img/events-header.jpg"); }
 
@@ -2743,6 +2749,9 @@ html, body {
   .header-playa .txt {
     font-size: 130px !important;
     line-height: 130px !important; }
+  section.desc h3 {
+    font-size: 44px !important;
+    line-height: 50px !important; }
   #out-features .feature-exp:first-child {
     padding-top: 0px !important; }
   .header-experience .header-container {
@@ -3484,7 +3493,7 @@ ul.content.bussinesPage {
     line-height: 33px; }
 
 .bussinesPage.llls section.desc {
-  margin-top: 130px; }
+  margin-top: 220px; }
 
 .header-search .header-txt .txt .first-word {
   line-height: 165px; }
