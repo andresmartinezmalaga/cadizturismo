@@ -2514,7 +2514,9 @@ html, body {
       padding-bottom: 20px; }
     .header-empresa .event-features .feature-txt-empresa {
       position: relative !important;
-      top: 0px !important; } }
+      top: 0px !important; }
+  .bussinesPage.llls section {
+    max-width: 80% !important; } }
 
 @media (max-width: 920px) and (min-width: 710px) {
   .separator-lang, .dis-item {
