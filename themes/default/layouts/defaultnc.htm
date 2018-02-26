@@ -53,9 +53,6 @@ code = "redes-sociales"
                 $this['title'] = 'Cádiz | '.$this->page->settings["meta_title"];
             }
 
-            echo 'test: '. $this['title'];
-                dd(1);
-
             if($this->page->settings["meta_description"]==null){
                 
                 $this['metaDescription'] = $this->page->apiBag["staticPage"]->attributes["content"];
@@ -77,6 +74,9 @@ code = "redes-sociales"
                $this['metaDescription'] = $this->page->settings["meta_description"];   
             }
         }
+
+        echo 'test: '. $this['title'];
+        dd(2);
     }
 
 ?>
