@@ -945,6 +945,13 @@ html, body {
   background-size: cover;
 }
 
+.search-empresas {
+  background: url("../img/back-empresas.jpg");
+  transform: rotate(0deg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 #searchbar-events {
   background-image: url("../img/events-header.jpg");
 }
