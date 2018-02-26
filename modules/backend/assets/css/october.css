@@ -5642,3 +5642,6 @@ div[data-control="media-manager"] .media-list.tiles li.selected .icon-container 
 .floatJuan .layout-row #Form-outsideContainer, .floatJuan .layout-row #Form-primaryContainer {
   width: 80%;
   display: inline-block !important; }
+
+.layout {
+  margin-bottom: 0px; }
