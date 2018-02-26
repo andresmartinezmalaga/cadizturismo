@@ -6,11 +6,11 @@ is_hidden = 0
 [staticApp]
 
 ==
-<?php  
-	
+<?php
+
 	function onStart()
-	{	    
-    
+	{
+
     if (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false) {
           $this['preurl'] = '/cadizturismo';
     } else {
@@ -21,7 +21,7 @@ is_hidden = 0
 		if($this['lang']==''){
 			$this['lang']='es';
 		}
-    
+
     $this['startPag'] = 1;
     $this['idm'] = \App::getLocale();
     $this['numberReg'] = 9;
@@ -37,7 +37,7 @@ is_hidden = 0
 	}
 
   function onPaginate(){
-      
+
         $this['startPag'] = $_POST['ipag'];
         $this['numberReg'] = 9;
 
@@ -55,7 +55,7 @@ is_hidden = 0
 
 <!-- HEADER -->
 <div class="header-search search-exp bussinesPage" style="background-image: url({{type.image}})">
-  
+
   <div class="header-container big-div">
     <div id="exp-header" class="header-txt">
       <p class="txt"><span id="exp" class="first-word">{{type.name}}</span></p>
@@ -66,10 +66,10 @@ is_hidden = 0
   </div>
 </div>
 
-<div id='prtlEmpresasl' class="all-exps bussinesPage">
+<div id='prtlEmpresasl' class="all-events bussinesPage">
   {% partial "empresas" %}
 </div>
 
-<div id='prtlPagination'>     
+<div id='prtlPagination'>
   {% partial "pagination" %}
 </div>
