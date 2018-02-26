@@ -3025,11 +3025,12 @@ html, body {
     .emp .empresas-container {
       width: 100% !important;
       margin-bottom: 60px;
-      border-bottom: 1px solid #CECECE;
       padding-bottom: 50px;
       border-right: none !important; }
       .emp .empresas-container ul > li {
-        padding-left: 40px !important; } }
+        padding-left: 40px !important; }
+    .emp .empresas1, .emp .empresas2 {
+      border-bottom: 1px solid #CECECE; } }
 
 @media (max-width: 920px) and (min-width: 601px) {
   .section-txt p, .section-txt-village p, .section-txt-comarca p {

@@ -3718,12 +3718,14 @@ html, body {
     .empresas-container {
       width: 100% !important;
       margin-bottom: 60px;
-      border-bottom: 1px solid #CECECE;
       padding-bottom: 50px;
       border-right: none !important;
       ul > li {
         padding-left: 40px !important;
       }
+    }
+    .empresas1, .empresas2 {
+      border-bottom: 1px solid #CECECE;
     }
   }
 }
