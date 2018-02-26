@@ -3584,6 +3584,6 @@ footer {
   margin-bottom: 50px; }
 
 @media (min-width: 710px) and (max-width: 1100px) {
-  .businessPage #search-event {
+  .businessPage > #search-event {
     width: 90% !important;
     height: 177px !important; } }
