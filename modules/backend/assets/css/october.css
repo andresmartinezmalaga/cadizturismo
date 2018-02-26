@@ -5648,8 +5648,11 @@ div[data-control="media-manager"] .media-list.tiles li.selected .icon-container 
   box-shadow: none !important; }
 
 .floatJuan .layout-row #Form-outsideContainer, .floatJuan .layout-row #Form-primaryContainer {
-  width: 76%;
+  width: 70%;
   display: inline-block !important; }
+
+.floatJuan #custom-float .form-tabless-fields .select2-selection__rendered {
+  color: #818181 !important; }
 
 .layout {
   margin-bottom: 0px; }
