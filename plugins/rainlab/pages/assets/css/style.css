@@ -2317,7 +2317,7 @@ html, body {
     background-position: center;
     height: auto !important; }
   .header-event .send-info, .header-experience .send-info {
-    margin-top: 80px !important; }
+    margin-top: 20px !important; }
   .header-event .txt, .header-experience .txt {
     font-size: 100px !important;
     max-width: 79% !important; }
