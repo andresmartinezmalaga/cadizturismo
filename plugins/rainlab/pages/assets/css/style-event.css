@@ -372,6 +372,11 @@
       text-decoration: none;
       position: absolute;
       top: 70px; }
+    .event-features .feature-exp .feature-txt-empresa {
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 13px;
+      line-height: 22px;
+      text-decoration: none; }
     .event-features .feature-exp .link-exp {
       display: -webkit-box;
       display: -moz-box;

@@ -378,6 +378,12 @@
       position: absolute;
       top: 70px;
     }
+    .feature-txt-empresa {
+      color: rgba(255,255,255,0.5);
+      font-size: 13px;
+      line-height: 22px;
+      text-decoration: none;
+    }
     .link-exp {
       @include flexbox();
       flex-direction: column;
