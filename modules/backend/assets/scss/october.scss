@@ -2337,6 +2337,12 @@ div[data-control="media-manager"] .media-list.tiles li.selected .icon-container 
 }
 
 .floatJuan {
+  .select2-container--default .select2-selection--single {
+    height: 50px !important;
+    border: none !important;
+    background-color: #f6f6f6 !important;
+    color: #818181 !important;
+  }
   .layout-row {
     #Form-outsideContainer, #Form-primaryContainer {
       width: 76%;

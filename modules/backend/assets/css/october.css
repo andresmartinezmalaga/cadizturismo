@@ -5639,6 +5639,12 @@ div[data-control="media-manager"] .media-list.tiles li.selected .icon-container 
   float: right;
   background-color: #F6F6F6; }
 
+.floatJuan .select2-container--default .select2-selection--single {
+  height: 50px !important;
+  border: none !important;
+  background-color: #f6f6f6 !important;
+  color: #818181 !important; }
+
 .floatJuan .layout-row #Form-outsideContainer, .floatJuan .layout-row #Form-primaryContainer {
   width: 76%;
   display: inline-block !important; }
