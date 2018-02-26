@@ -3390,6 +3390,10 @@ footer {
   height: 100%;
   background-color: transparent; }
 
+.bussinesPage .select2-container--default .select2-selection--multiple .select2-selection__choice {
+  font-size: 15.72px;
+  color: #4A4A4A; }
+
 .bussinesPage #search-event {
   width: 841px;
   height: 253px;
