@@ -2968,6 +2968,22 @@ html, body {
   }
 }
 
+@media (max-width: 910px) {
+  .header-empresa .event-features {
+    flex-direction: column;
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: relative;
+    .feature-txt {
+      margin: 0px !important;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+}
+
+
 @media (max-width: 920px) and (min-width: 710px) {
 
   .separator-lang, .dis-item {
