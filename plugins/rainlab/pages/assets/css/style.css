@@ -3092,12 +3092,12 @@ html, body {
         margin-right: 0px !important; }
       .footer-container .left-container .footer-link img {
         margin: 0px !important; }
-      .footer-container .left-container .social a {
+      .footer-container .left-container .links-container a {
         margin-right: 0px !important;
         margin-bottom: 13px !important; }
-        .footer-container .left-container .social a:last-child {
+        .footer-container .left-container .links-container a:last-child {
           margin-bottom: 0px !important; }
-        .footer-container .left-container .social a:first-child {
+        .footer-container .left-container .links-container a:first-child {
           margin-top: 32px !important; }
       .footer-container .left-container .links-container {
         flex-direction: column !important; }
