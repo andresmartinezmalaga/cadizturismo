@@ -2950,7 +2950,7 @@ html, body {
     justify-content: flex-start !important; }
     #out-features .feature {
       padding-top: 0px; }
-  #out-features.ruta-features {
+  #out-features.ruta-features, #out-features.experiencia-features {
     top: 668px !important; } }
 
 @media (max-width: 1200px) and (min-width: 726px) {
