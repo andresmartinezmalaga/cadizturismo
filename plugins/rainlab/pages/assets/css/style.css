@@ -2516,7 +2516,8 @@ html, body {
       position: relative !important;
       top: 0px !important; }
   .bussinesPage.llls section.desc {
-    max-width: 80% !important; } }
+    max-width: 80% !important;
+    margin-top: 70px !important; } }
 
 @media (max-width: 920px) and (min-width: 710px) {
   .separator-lang, .dis-item {
