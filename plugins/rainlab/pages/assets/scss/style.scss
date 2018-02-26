@@ -4453,6 +4453,12 @@ footer {
           width: 100%;
           height: 50% !important;
           flex-wrap: wrap;
+          #empresa-category, #empresa-location {
+            width: 35% !important;
+          }
+          #empresa-search {
+            width: 30% !important;
+          }
         }
         .button-container {
           width: 100% !important;
