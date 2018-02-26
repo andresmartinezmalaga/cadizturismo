@@ -437,7 +437,7 @@ class StaticApp extends ComponentBase
 
         if($searchString != 'todas-las-empresas'){  
             
-            $ovalores = explode(' ', $searchString);
+            $ovalores = explode('_', $searchString);
             $valores = collect();
             
             $sempresas = collect();
@@ -448,11 +448,12 @@ class StaticApp extends ComponentBase
                }
             }
 
+            $contador = 0;
             foreach ($pempresas as $iEmpresa) {
                 
                 foreach ($valores as $valor) {
                     $contador = 0;
-                    if(strpos($iEmpresa->name, $valor) !== false) {
+                    if(strpos(strtolower($iEmpresa->name), strtolower($valor)) !== false) {
                         $contador = $contador+1;
                     }                    
                 }
@@ -494,6 +495,7 @@ class StaticApp extends ComponentBase
 
     public function empresasFindPag($typeslug, $locationslug, $searchString, $pag = 1, $number = 1){
         
+
         $typeOperator = '=';
         
         $gtype = Tipo::where('slug',$typeslug)->first();
@@ -530,7 +532,7 @@ class StaticApp extends ComponentBase
 
         if($searchString != 'todas-las-empresas'){  
             
-            $ovalores = explode(' ', $searchString);
+            $ovalores = explode('_', $searchString);
             $valores = collect();
             
             $sempresas = collect();
@@ -541,11 +543,12 @@ class StaticApp extends ComponentBase
                }
             }
 
+            $contador = 0;
             foreach ($pempresas as $iEmpresa) {
                 
                 foreach ($valores as $valor) {
                     $contador = 0;
-                    if(strpos($iEmpresa->name, $valor) !== false) {
+                    if(strpos(strtolower($iEmpresa->name), strtolower($valor)) !== false) {
                         $contador = $contador+1;
                     }                    
                 }
@@ -582,13 +585,18 @@ class StaticApp extends ComponentBase
             }
         }
 
-        $pagination = $empresas->slice((($pag-1)*$number),$number);
+        if(count($empresas)>0){
+            $pagination = $empresas->slice((($pag-1)*$number),$number);
+        } else {
+            $pagination = $empresas;
+        }
+       
 
         return $pagination;
     }
 
-    public function empresasFindCount($typeslug, $locationslug){
-        return count($this->empresasFind($typeslug, $locationslug));
+    public function empresasFindCount($typeslug, $locationslug, $searchString){
+        return count($this->empresasFind($typeslug, $locationslug, $searchString));
     }
 
     public function empresasFindByType($typeslug){
