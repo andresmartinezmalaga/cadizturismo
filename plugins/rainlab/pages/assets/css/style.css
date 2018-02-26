@@ -3334,10 +3334,11 @@ footer {
   font-size: 23px;
   color: #FFFFFF;
   line-height: 33px;
-  margin-bottom: 86px; }
+  margin-bottom: 73px; }
 
 .bussinesPage #search-event {
-  width: 863px; }
+  width: 863px;
+  margin-bottom: 100px !important; }
   .bussinesPage #search-event .search-bar {
     width: 825px; }
     .bussinesPage #search-event .search-bar #empresa-category {
