@@ -365,6 +365,9 @@
       font-size: 16px;
       line-height: 22px;
       margin-bottom: 0px;
+      &:hover {
+        text-decoration: none;
+      }
     }
 
     .feature-txt-mapa {
