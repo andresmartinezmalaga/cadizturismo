@@ -2775,7 +2775,9 @@ html, body {
     font-size: 27px !important;
     line-height: 30px !important; }
   .icons {
-    width: 100% !important; } }
+    width: 100% !important; }
+  #empresa-search {
+    border-bottom: 1px solid #CECECE; } }
 
 @media (max-width: 725px) {
   .header-playa .txt {
