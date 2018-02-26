@@ -2218,7 +2218,10 @@ html, body {
     width: auto !important; }
   .header-general .txt {
     font-size: 200px !important;
-    line-height: 200px !important; } }
+    line-height: 200px !important; }
+  #search-empresas #exp-header .txt, .header-general .header-txt .txt > #exp {
+    font-size: 154px !important;
+    line-height: 114px !important; } }
 
 @media (max-width: 600px) {
   .con-encanto {
@@ -2238,6 +2241,8 @@ html, body {
     width: 100% !important; }
   .all-exps .search-title-container, .all-events .search-title-container {
     top: -65px !important; }
+  #st-empresas {
+    top: -122px !important; }
   .all-exps .search-title-container .title-search, .all-events .search-title-container .title-search {
     line-height: 20px !important; }
   .more-popular .main-events-container .event .txt-container .name {
@@ -2637,6 +2642,12 @@ html, body {
   .header-txt .txt .first-word, .header-village .header-txt .txt, .header-comarca .header-txt .txt {
     font-size: 120px !important;
     line-height: 120px !important; }
+  #search-empresas .txt, .header-general .header-txt .txt > #exp {
+    font-size: 80px !important;
+    line-height: 80px !important;
+    margin-top: 50px; }
+  .bussinesPage .whatDoYouNeedCadiz {
+    margin-bottom: 23px !important; }
   .header-txt {
     margin-top: 80px !important; }
   .more-content {
@@ -2939,7 +2950,10 @@ html, body {
   .menu-list .menu-title {
     font-size: 26px !important; }
   .menu-list:last-child {
-    margin-right: 0px !important; } }
+    margin-right: 0px !important; }
+  /* Empresas */
+  .emp .empresas-container ul > li {
+    padding-left: 40px !important; } }
 
 @media (max-width: 500px) {
   .section-txt .download {
@@ -2981,7 +2995,14 @@ html, body {
   .header .mini-logo-container, .header .language-container, .header-event .mini-logo-container, .header-event .language-container, .header-experience .language-container, .header-ruta .mini-logo-container, .header-ruta .language-container, .header-village .mini-logo-container, .header-village .language-container, .header-general .mini-logo-container, .header-general .language-container, .img-village .mini-logo-container, .img-village .language-container, .featured-element .mini-logo-container, .featured-element .language-container, .secret-routes .mini-logo-container, .secret-routes .language-container {
     z-index: 99; }
   .header .header-container, .header-event .header-container, .header-experience .header-container, .header-ruta .header-container, .header-village .header-container, .header-general .header-container, .img-village .header-container, .featured-element .header-container, .secret-routes .header-container {
-    z-index: 98; } }
+    z-index: 98; }
+  .emp {
+    flex-direction: column !important; }
+    .emp .empresas-container {
+      width: 100% !important;
+      margin-bottom: 60px; }
+      .emp .empresas-container ul > li {
+        padding-left: 40px !important; } }
 
 @media (max-width: 920px) and (min-width: 601px) {
   .section-txt p, .section-txt-village p, .section-txt-comarca p {
@@ -3365,11 +3386,11 @@ footer {
       color: #9B9B9B;
       line-height: 33px;
       transition: all 0.3s; }
-      .emp .empresas-container ul > li a:hover {
+      .emp .empresas-container ul > li a:hover, .emp .empresas-container ul > li a:focus, .emp .empresas-container ul > li a:active {
         opacity: 0.5;
         text-decoration: none; }
       .emp .empresas-container ul > li a img {
-        margin-left: 22px; }
+        margin-left: 16px; }
 
 .emp {
   width: 100%;
@@ -3503,3 +3524,6 @@ footer {
 
 .header-search .header-txt .txt .first-word {
   line-height: 165px; }
+
+#all-empresas {
+  margin-bottom: 50px; }

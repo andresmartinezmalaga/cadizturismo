@@ -125,6 +125,16 @@
     }
   }
 
+  #listEmp {
+    #search-event {
+      margin-bottom: 0px !important;
+    }
+  }
+
+  #st-empresas {
+    top: -140px;
+  }
+
   @media (max-width: 1160px) {
     #search-empresas {
       #exp-header {
@@ -525,7 +535,6 @@
     }
   }
 }
-
 /*  TODOS LOS EVENTOS */
 .all-events {
   width: 100%;
@@ -558,6 +567,16 @@
       font-size: 16px;
       color: #9B9B9B;
       line-height: 33px;
+    }
+  }
+  #all-empresas {
+    .event {
+      &:nth-child(2), &:nth-child(6), &:nth-child(12), &:nth-child(16), &:nth-child(22),
+      &:nth-child(26), &:nth-child(32), &:nth-child(36), &:nth-child(42), &:nth-child(43) {
+        width: calc((100% / 3));
+        width: -webkit-calc((100% / 3));
+        width: -moz-calc((100% / 3));
+      }
     }
   }
   .all-events-container {

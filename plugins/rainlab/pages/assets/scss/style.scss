@@ -2589,6 +2589,10 @@ html, body {
     font-size: 200px !important;
     line-height: 200px !important;
   }
+  #search-empresas #exp-header .txt, .header-general .header-txt .txt > #exp {
+    font-size: 154px !important;
+    line-height: 114px !important;
+  }
 }
 
 @media (max-width: 600px) {
@@ -2616,6 +2620,9 @@ html, body {
   }
   .all-exps .search-title-container, .all-events .search-title-container {
     top: -65px !important;
+  }
+  #st-empresas {
+    top: -122px !important;
   }
   .all-exps .search-title-container .title-search, .all-events .search-title-container .title-search {
     line-height: 20px !important;
@@ -3162,6 +3169,16 @@ html, body {
     line-height: 120px !important;
   }
 
+  #search-empresas .txt, .header-general .header-txt .txt > #exp {
+    font-size: 80px !important;
+    line-height: 80px !important;
+    margin-top: 50px;
+  }
+
+  .bussinesPage .whatDoYouNeedCadiz {
+    margin-bottom: 23px !important;
+  }
+
   .header-txt {
     margin-top: 80px !important;
   }
@@ -3592,6 +3609,11 @@ html, body {
   .menu-list:last-child {
     margin-right: 0px !important;
   }
+
+  /* Empresas */
+  .emp .empresas-container ul > li {
+    padding-left: 40px !important;
+  }
 }
 
 @media (max-width: 500px) {
@@ -3656,6 +3678,16 @@ html, body {
   }
   .header .header-container, .header-event .header-container, .header-experience .header-container, .header-ruta .header-container, .header-village .header-container, .header-general .header-container, .img-village .header-container, .featured-element .header-container, .secret-routes .header-container {
     z-index: 98;
+  }
+  .emp {
+    flex-direction: column !important;
+    .empresas-container {
+      width: 100% !important;
+      margin-bottom: 60px;
+      ul > li {
+        padding-left: 40px !important;
+      }
+    }
   }
 }
 
@@ -4152,12 +4184,12 @@ footer {
           color: #9B9B9B;
           line-height: 33px;
           transition: all 0.3s;
-          &:hover {
+          &:hover, &:focus, &:active {
             opacity: 0.5;
             text-decoration: none;
           }
           img {
-            margin-left: 22px;
+            margin-left: 16px;
           }
         }
       }
@@ -4329,5 +4361,6 @@ footer {
   line-height: 165px;
 }
 
-.header-empresa {
+#all-empresas {
+  margin-bottom: 50px;
 }

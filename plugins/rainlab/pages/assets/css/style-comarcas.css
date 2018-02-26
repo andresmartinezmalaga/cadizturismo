@@ -101,6 +101,12 @@
 #search-empresas .brush {
   margin-top: -86px; }
 
+#listEmp #search-event {
+  margin-bottom: 0px !important; }
+
+#st-empresas {
+  top: -140px; }
+
 @media (max-width: 1160px) {
   #search-empresas #exp-header .txt {
     line-height: 136px; }
@@ -517,6 +523,10 @@
       font-size: 16px;
       color: #9B9B9B;
       line-height: 33px; }
+  .all-events #all-empresas .event:nth-child(2), .all-events #all-empresas .event:nth-child(6), .all-events #all-empresas .event:nth-child(12), .all-events #all-empresas .event:nth-child(16), .all-events #all-empresas .event:nth-child(22), .all-events #all-empresas .event:nth-child(26), .all-events #all-empresas .event:nth-child(32), .all-events #all-empresas .event:nth-child(36), .all-events #all-empresas .event:nth-child(42), .all-events #all-empresas .event:nth-child(43) {
+    width: calc((100% / 3));
+    width: -webkit-calc((100% / 3));
+    width: -moz-calc((100% / 3)); }
   .all-events .all-events-container {
     width: 100%;
     height: auto;

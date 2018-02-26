@@ -6,11 +6,11 @@ is_hidden = 0
 [staticApp]
 
 ==
-<?php  
-	
+<?php
+
 	function onStart()
-	{	    
-    
+	{
+
     if (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false) {
           $this['preurl'] = '/cadizturismo';
     } else {
@@ -21,19 +21,19 @@ is_hidden = 0
 		if($this['lang']==''){
 			$this['lang']='es';
 		}
-    
+
     $this['startPag'] = 1;
     $this['idm'] = \App::getLocale();
     $this['numberReg'] = 9;
 
     $this['numPag'] = ceil($this->staticApp->empresasFindCount($this->param('type'),$this->param('location'))/$this['numberReg']);
-    
+
     if(Session::has('data')){
-      Session::put('reciveData',Session::get('data'));     
+      Session::put('reciveData',Session::get('data'));
     }
 
     if(Session::has('reciveData')){
-      $this['empresas'] = json_decode(Session::get('reciveData'));     
+      $this['empresas'] = json_decode(Session::get('reciveData'));
     }
 
     $this['ptitle'] = 'Cádiz | Empresas';
@@ -45,25 +45,25 @@ is_hidden = 0
 
     $type = $_POST['type'];
     $ubicacion = $_POST['location'];
-      
+
     $this['startPag'] = 1;
     $this['numberReg'] = 9;
 
     $this['empresas'] = $this->staticApp->empresasFindPag($type,$ubicacion, $this['startPag'],$this['numberReg']);
 
     $this['numPag'] = ceil($this->staticApp->empresasFindCount($type,$ubicacion)/$this['numberReg']);
- 
+
     return [
         '#prtlEmpresasl' => $this->renderPartial('empresas'),
         '#prtlPagination' => $this->renderPartial('pagination')
     ];
-    
+
   }
 
   function onPaginate(){
 
-       
-      
+
+
         $this['startPag'] = $_POST['ipag'];
         $this['numberReg'] = 1;
 
@@ -80,16 +80,13 @@ is_hidden = 0
 ==
 
 <!-- HEADER -->
-<div class="header-search search-exp bussinesPage">
-  
+<div class="header-search search-empresas bussinesPage">
+
   <div class="header-container big-div">
     <div id="exp-header" class="header-txt">
-      <p class="txt"><span id="exp" class="first-word">{{'Empresas del sector'|_}}</span></p>
+      <p class="txt"><span id="exp" class="first-word">{{'Directorio de empresas'|_}}</span></p>
         <img class="brush" src="{{preurl}}/storage/app/media/uploaded-files/templates/brush-header.svg" alt="">
     </div>
-    
-    <p class="txt text-center whatDoYouNeedCadiz"><span>{{'¿Qué necesitas de Cádiz?'|_}}</span></p>
-    
     <!-- SEARCH -->
     <div id='prtlSearch'>
       <div id ="listEmp">
@@ -99,11 +96,10 @@ is_hidden = 0
 
   </div>
 </div>
-
-<div id='prtlEmpresasl' class="all-exps bussinesPage">
+<div id='prtlEmpresasl' class="all-events bussinesPage">
   {% partial "empresas" %}
 </div>
 
-<div id='prtlPagination'>     
+<div id='prtlPagination'>
   {% partial "pagination" %}
 </div>

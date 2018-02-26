@@ -116,6 +116,13 @@ is_hidden = 0
             {{empresa.description}}
         </p>
     </section>
+
+		{% for image in empresa.images %}
+			<div class="section-img">
+				<p>{{image}}</p>
+			</div>
+		{% endfor %}
+
     {% if empresa.info %}
         <section class="info">
             <h3>
