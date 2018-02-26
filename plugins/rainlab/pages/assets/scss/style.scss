@@ -4449,6 +4449,11 @@ footer {
         form {
           flex-direction: column !important;
         }
+        .inputs-container {
+          width: 100%;
+          height: 50% !important;
+          flex-wrap: wrap;
+        }
         .button-container {
           width: 100% !important;
           height: 50% !important;
