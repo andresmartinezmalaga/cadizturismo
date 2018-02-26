@@ -2329,5 +2329,15 @@ div[data-control="media-manager"] .media-list.tiles li.selected .icon-container 
 .float-right-photos {
   width: 20%;
   height: 100%;
+  float: right;
   background-color: #F6F6F6;
+}
+
+.floatJuan {
+  .layout-row {
+    div {
+      width: 80%;
+      display: inline-block !important;
+    }
+  }
 }
