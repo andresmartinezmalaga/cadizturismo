@@ -3344,13 +3344,6 @@ footer {
     .bussinesPage #search-event .search-bar #empresa-category {
       width: 340px; }
 
-.emp .empresas-container img {
-  position: relative;
-  display: block;
-  top: -50px;
-  margin: auto;
-  margin-top: -7px; }
-
 .emp .empresas-container ul {
   list-style-type: none;
   text-align: left;
@@ -3392,7 +3385,13 @@ footer {
     width: -webkit-calc(100% / 3);
     width: -moz-calc(100% / 3);
     width: -ms-calc(100% / 3);
-    height: auto; }
+    height: auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column; }
 
 #prtlEmpresasl.bussinesPage ul {
   padding: 0;

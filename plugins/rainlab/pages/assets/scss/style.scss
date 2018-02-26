@@ -4130,13 +4130,6 @@ footer {
   }
 }
 .emp .empresas-container {
-    img {
-      position: relative;
-      display: block;
-      top: -50px;
-      margin: auto;
-      margin-top: -7px;
-    }
     ul {
       list-style-type: none;
       text-align: left;
@@ -4184,6 +4177,8 @@ footer {
     width: -moz-calc(100% / 3);
     width: -ms-calc(100% / 3);
     height: auto;
+    @include flexbox();
+    flex-direction: column;
   }
 }
 #prtlEmpresasl.bussinesPage {
