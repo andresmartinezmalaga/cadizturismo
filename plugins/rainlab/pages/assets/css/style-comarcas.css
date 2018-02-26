@@ -98,6 +98,9 @@
       .header-general .header-comment .header-link:hover, .header-general .header-comment .header-link:active, .header-general .header-comment .header-link:focus {
         text-decoration: none; }
 
+#search-empresas .brush {
+  margin-top: -86px; }
+
 .header-general:before {
   z-index: 2;
   content: '';
