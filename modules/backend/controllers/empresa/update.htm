@@ -29,7 +29,7 @@
         margin-bottom: 15px;
     }
     .floatJuan.right{
-        width: 60%;
+        width: 80%;
     }
     .toolbar-widget.list-header{
         margin-top: 23px!important;
@@ -84,8 +84,6 @@
                 </div>
 
             </div>
-            <div class="floatJuan float-right-photos">
-            </div>
         <?php Block::endPut() ?>
 
         <?php Block::put('form-sidebar') ?>
@@ -97,7 +95,8 @@
                 <?= $this->makeLayout('form-with-sidebar') ?>
             <?= Form::close() ?>
         <?php Block::endPut() ?>
-
+        <div class="floatJuan float-right-photos">
+        </div>
     <?php else: ?>
         <div class="control-breadcrumb">
             <?= Block::placeholder('breadcrumb') ?>
