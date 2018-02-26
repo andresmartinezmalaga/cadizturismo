@@ -3473,7 +3473,8 @@ ul.content.bussinesPage {
     font-size: 64px;
     color: #4A4A4A;
     line-height: 65px;
-    margin-bottom: 54px; }
+    margin-bottom: 54px;
+    text-transform: uppercase; }
   .bussinesPage.llls section p {
     margin-top: 64px;
     /* Andalusia Tour Trave: */
