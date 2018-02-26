@@ -2241,6 +2241,8 @@ html, body {
     width: 100% !important; }
   .all-exps .search-title-container, .all-events .search-title-container {
     top: -65px !important; }
+  #st-empresas {
+    top: -122px !important; }
   .all-exps .search-title-container .title-search, .all-events .search-title-container .title-search {
     line-height: 20px !important; }
   .more-popular .main-events-container .event .txt-container .name {
