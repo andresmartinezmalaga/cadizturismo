@@ -3391,7 +3391,8 @@ footer {
   .bussinesPage #search-event .search-bar {
     width: 1052px; }
     .bussinesPage #search-event .search-bar .inputs-container {
-      flex-wrap: wrap;
+      flex-wrap: wrap; }
+    .bussinesPage #search-event .search-bar form {
       flex-direction: column; }
     .bussinesPage #search-event .search-bar #empresa-category {
       width: 50%; }

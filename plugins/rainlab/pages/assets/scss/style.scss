@@ -4194,6 +4194,8 @@ footer {
       width: 1052px;
       .inputs-container {
         flex-wrap: wrap;
+      }
+      form {
         flex-direction: column;
       }
       #empresa-category {
