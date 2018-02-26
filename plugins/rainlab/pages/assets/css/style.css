@@ -2218,7 +2218,10 @@ html, body {
     width: auto !important; }
   .header-general .txt {
     font-size: 200px !important;
-    line-height: 200px !important; } }
+    line-height: 200px !important; }
+  #search-empresas .txt {
+    font-size: 180px !important;
+    line-height: 145px !important; } }
 
 @media (max-width: 600px) {
   .con-encanto {
