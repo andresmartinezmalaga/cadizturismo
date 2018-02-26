@@ -3597,7 +3597,9 @@ footer {
         width: 100%;
         height: 50% !important;
         flex-wrap: wrap; }
-        .bussinesPage #search-event .search-bar .inputs-container #empresa-category, .bussinesPage #search-event .search-bar .inputs-container #empresa-location {
+        .bussinesPage #search-event .search-bar .inputs-container #empresa-category {
+          width: 34.5% !important; }
+        .bussinesPage #search-event .search-bar .inputs-container #empresa-location {
           width: 35% !important; }
         .bussinesPage #search-event .search-bar .inputs-container #empresa-search {
           width: 30% !important; }
