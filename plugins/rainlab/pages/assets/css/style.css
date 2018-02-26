@@ -3344,54 +3344,59 @@ footer {
     .bussinesPage #search-event .search-bar #empresa-category {
       width: 340px; }
 
-ul.content.bussinesPage {
+.emp .empresas-container ul {
   list-style-type: none;
-  text-align: center;
+  text-align: left;
   padding: 0;
-  margin: auto;
-  margin-top: 14%;
-  margin-bottom: 60px;
-  display: table;
-  width: 100%; }
-  ul.content.bussinesPage > li {
-    vertical-align: top;
-    border-right: 1px solid #CECECE;
-    display: table-cell;
-    margin: 0em;
-    padding: 1em;
-    height: auto; }
-    ul.content.bussinesPage > li:last-child {
-      border-right: 0; }
-    ul.content.bussinesPage > li > img {
-      position: relative;
-      display: block;
-      top: -50px;
-      margin: auto;
-      margin-top: -7px; }
-    ul.content.bussinesPage > li ul {
-      list-style-type: none;
-      text-align: left;
-      padding: 0;
-      display: inline-block; }
-      ul.content.bussinesPage > li ul p {
-        font-family: AvenirNext-DemiBold;
-        font-size: 39px;
-        color: #4A4A4A;
-        line-height: 42px;
-        max-width: 237px;
-        text-align: center;
-        margin-bottom: 58px; }
-      ul.content.bussinesPage > li ul > li a {
-        font-family: AvenirNext-Medium;
-        font-size: 16px;
-        color: #9B9B9B;
-        line-height: 33px;
-        transition: all 0.3s; }
-        ul.content.bussinesPage > li ul > li a:hover {
-          opacity: 0.5;
-          text-decoration: none; }
-        ul.content.bussinesPage > li ul > li a img {
-          margin-left: 22px; }
+  display: inline-block; }
+  .emp .empresas-container ul p {
+    font-family: AvenirNext-DemiBold;
+    font-size: 39px;
+    color: #4A4A4A;
+    line-height: 42px;
+    max-width: 237px;
+    text-align: center;
+    margin: 0px auto 58px auto; }
+  .emp .empresas-container ul > li {
+    padding-left: 90px; }
+    .emp .empresas-container ul > li a {
+      font-family: AvenirNext-Medium;
+      font-size: 16px;
+      color: #9B9B9B;
+      line-height: 33px;
+      transition: all 0.3s; }
+      .emp .empresas-container ul > li a:hover {
+        opacity: 0.5;
+        text-decoration: none; }
+      .emp .empresas-container ul > li a img {
+        margin-left: 22px; }
+
+.emp {
+  width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 225px auto 70px auto; }
+  .emp .empresas-container {
+    width: calc(100% / 3);
+    width: -webkit-calc(100% / 3);
+    width: -moz-calc(100% / 3);
+    width: -ms-calc(100% / 3);
+    height: auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column; }
+  .emp .main-emp {
+    margin-bottom: 32px; }
+  .emp .empresas1, .emp .empresas2 {
+    border-right: 1px solid #CECECE; }
 
 #prtlEmpresasl.bussinesPage ul {
   padding: 0;

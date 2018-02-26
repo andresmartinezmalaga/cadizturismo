@@ -56,18 +56,20 @@ is_hidden = 0
             <img class="brush" src="{{preurl}}/storage/app/media/uploaded-files/templates/brush-header.svg" alt="">
         </div>
 
-        <p class="txt text-center whatDoYouNeedCadiz"><span>{{'¿Qué necesitas de Cádiz?'|_}}</span></p>
+        <p class="text-center whatDoYouNeedCadiz"><span>{{'¿Qué necesitas de Cádiz?'|_}}</span></p>
 
         <!-- SEARCH -->
         <div id='prtlSearch'>
             {% partial "site/searchempresa" %}
 
         </div>
+    </div>
+</div>
 
-        <ul class="content bussinesPage">
+<div class="emp content bussinesPage">
 
-            <li>
-                <img src="{{'assets/img/travel.svg'|theme}}" alt="">
+            <div class="empresas-container empresas1">
+                <img class="main-emp" src="{{'assets/img/travel.svg'|theme}}" alt="">
                 <ul>
                     <p>PLANIFICAR MI VIAJE</p>
                     {% for type in typeIndex['cat1']%}
@@ -81,9 +83,9 @@ is_hidden = 0
 
                     {% endfor %}
                 </ul>
-            </li>
-            <li>
-                <img src="{{'assets/img/direcction.svg'|theme}}" alt="">
+            </div>
+            <div class="empresas-container empresas2">
+                <img class="main-emp" src="{{'assets/img/direcction.svg'|theme}}" alt="">
                 <ul>
                     <p>PLANES DE OCIO</p>
                     {% for type in typeIndex['cat2']%}
@@ -97,10 +99,10 @@ is_hidden = 0
 
                     {% endfor %}
                 </ul>
-            </li>
+            </div>
 
-            <li>
-                <img src="{{'assets/img/search.svg'|theme}}" alt="" style="left: -22px;">
+            <div class="empresas-container empresas3">
+                <img class="main-emp" src="{{'assets/img/search.svg'|theme}}" alt="" style="left: -22px;">
                 <ul>
                     <p>OTROS INTERESES</p>
                     {% for type in typeIndex['cat3']%}
@@ -114,9 +116,6 @@ is_hidden = 0
 
                     {% endfor %}
                 </ul>
-            </li>
+            </div>
 
-        </ul>
-
-    </div>
-</div>
+        </div>
