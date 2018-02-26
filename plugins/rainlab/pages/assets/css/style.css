@@ -3396,14 +3396,17 @@ footer {
     .bussinesPage #search-event .search-bar form {
       flex-direction: column; }
     .bussinesPage #search-event .search-bar #empresa-category {
-      width: 50%; }
+      width: 50%;
+      height: 70px; }
     .bussinesPage #search-event .search-bar #empresa-location {
-      width: 100%; }
+      width: 100%;
+      height: 70px; }
     .bussinesPage #search-event .search-bar .button-container {
       width: 100%;
       height: 70px; }
     .bussinesPage #search-event .search-bar #empresa-search {
-      width: 50%; }
+      width: 50%;
+      height: 70px; }
       .bussinesPage #search-event .search-bar #empresa-search input {
         width: 100%;
         height: 100%;
