@@ -427,6 +427,14 @@ class StaticApp extends ComponentBase
                 $image = $empresa->avatar->getPath();
                 $empresa->image = $image;
             }
+
+            if(isset($empresa->photos)){
+                $cphotos = collect();
+                foreach ($empresa->photos as $photo) {
+                    $cphotos->push($photo->getPath());
+                }
+                $empresa->images = $cphotos;
+            }
         }
 
         return $empresas;
@@ -460,6 +468,14 @@ class StaticApp extends ComponentBase
                 $image = $empresa->avatar->getPath();
                 $empresa->image = $image;
             }
+
+            if(isset($empresa->photos)){
+                $cphotos = collect();
+                foreach ($empresa->photos as $photo) {
+                    $cphotos->push($photo->getPath());
+                }
+                $empresa->images = $cphotos;
+            }
         }
 
         $pagination = $empresas->slice((($pag-1)*$number),$number);
@@ -483,6 +499,14 @@ class StaticApp extends ComponentBase
                 $image = $empresa->avatar->getPath();
                 $empresa->image = $image;
             }
+
+            if(isset($empresa->photos)){
+                $cphotos = collect();
+                foreach ($empresa->photos as $photo) {
+                    $cphotos->push($photo->getPath());
+                }
+                $empresa->images = $cphotos;
+            }
         }
         
         return $empresas;
@@ -499,6 +523,14 @@ class StaticApp extends ComponentBase
             if(isset($empresa->avatar)){
                 $image = $empresa->avatar->getPath();
                 $empresa->image = $image;
+            }
+
+            if(isset($empresa->photos)){
+                $cphotos = collect();
+                foreach ($empresa->photos as $photo) {
+                    $cphotos->push($photo->getPath());
+                }
+                $empresa->images = $cphotos;
             }
         }
 
@@ -520,6 +552,14 @@ class StaticApp extends ComponentBase
         if(isset($empresa->avatar)){
             $image = $empresa->avatar->getPath();
             $empresa->image = $image;
+        }
+
+        if(isset($empresa->photos)){
+            $cphotos = collect();
+            foreach ($empresa->photos as $photo) {
+                $cphotos->push($photo->getPath());
+            }
+            $empresa->images = $cphotos;
         }
         
         return $empresa;
