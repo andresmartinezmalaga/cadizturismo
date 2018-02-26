@@ -2513,7 +2513,8 @@ html, body {
       padding-top: 20px;
       padding-bottom: 20px; }
     .header-empresa .event-features .feature-txt-empresa {
-      position: relative !important; } }
+      position: relative !important;
+      top: 0px !important; } }
 
 @media (max-width: 920px) and (min-width: 710px) {
   .separator-lang, .dis-item {
