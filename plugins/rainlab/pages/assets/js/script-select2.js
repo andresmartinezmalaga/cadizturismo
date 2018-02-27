@@ -25,8 +25,8 @@ $('#sltLocation').select2({
 });
 
 
-  $("#sltLocation").on("select2:unselecting", function(e) {
-    if ($('.select2-selection__choice').length == 0) {
-      return false;
-    }
-  });
+  // $("#sltLocation").on("select2:unselecting", function(e) {
+  //   if ($('.select2-selection__choice').length == 0) {
+  //     return false;
+  //   }
+  // });
