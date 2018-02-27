@@ -3430,6 +3430,8 @@ footer {
       height: 70px;
       border-top-right-radius: 0px !important;
       border-bottom-left-radius: 4px !important; }
+      .bussinesPage #search-event .search-bar .button-container input[type="submit"] {
+        border-bottom-left-radius: 4px !important; }
     .bussinesPage #search-event .search-bar #empresa-search {
       width: 50%;
       height: 70px; }
