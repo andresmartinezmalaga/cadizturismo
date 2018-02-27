@@ -37,7 +37,10 @@ is_hidden = 0
         $aLang = App::getLocale();
 
     	$type = $_POST['type'];
-        $pubicacion = $_POST['location'];
+        if (isset($_POST['location'])){
+            $pubicacion = $_POST['location'];
+        }
+        
         $psearch = $_POST['search'];
 
         if($pubicacion[0]){
