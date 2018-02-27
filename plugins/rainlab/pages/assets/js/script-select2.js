@@ -30,5 +30,7 @@ $('#sltLocation').select2({
       console.log('hola');
       $('#sltLocation').val('todos-los-municipios');
       //return false;
+    } else if($('.select2-selection__choice').length == 0) {
+      return false;
     }
   });
