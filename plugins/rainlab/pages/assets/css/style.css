@@ -2953,7 +2953,7 @@ html, body {
 
 @media (max-width: 400px) {
   #out-features {
-    top: 700px;
+    top: 677px;
     position: absolute !important;
     min-height: 360px;
     justify-content: flex-start !important; }
