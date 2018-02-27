@@ -419,16 +419,13 @@ class StaticApp extends ComponentBase
         if($locationslug != 'todos-los-municipios'){
            
             $locations = explode('_', $locationslug);
-            $count = 0;
             foreach ($locations as $iLocation) {
                foreach ($fempresas as $iEmpresa) {
                    if($iEmpresa->mslug == $iLocation){
-                        $count = $count+1;
+                       $pempresas->push($iEmpresa);
                    }
                }
-               if($count>0){
-                $pempresas->push($iEmpresa);
-               }               
+                           
             }
         } else {
 
@@ -514,16 +511,14 @@ class StaticApp extends ComponentBase
         if($locationslug != 'todos-los-municipios'){
            
             $locations = explode('_', $locationslug);
-            $count = 0;
+            
             foreach ($locations as $iLocation) {
                foreach ($fempresas as $iEmpresa) {
                    if($iEmpresa->mslug == $iLocation){
-                        $count = $count+1;
+                       $pempresas->push($iEmpresa);
                    }
                }
-               if($count>0){
-                $pempresas->push($iEmpresa);
-               }               
+              
             }
         } else {
 

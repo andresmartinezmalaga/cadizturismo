@@ -37,13 +37,10 @@ is_hidden = 0
         $aLang = App::getLocale();
 
     	$type = $_POST['type'];
-        $ubicacion = $_POST['location'];
+        $pubicacion = $_POST['location'];
         $psearch = $_POST['search'];
 
-        echo json_encode(Request::all());
-
-        dd(1);
-
+        $ubicacion = implode('_', $pubicacion);
 
         if($psearch == ''){
             $search = 'todas-las-empresas';
