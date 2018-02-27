@@ -12,7 +12,7 @@ $('.select-type').select2({
 });
 
 $('#sltLocation').select2({
-  maximumSelectionLength: 8,
+  maximumSelectionLength: 6,
   language: {
         // You can find all of the options in the language files provided in the
         // build. They all must be functions that return the string that should be
