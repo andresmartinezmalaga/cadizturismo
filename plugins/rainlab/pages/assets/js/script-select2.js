@@ -29,6 +29,6 @@ $('#sltLocation').select2({
     if ($('.select2-selection__choice').length == 1) {
       console.log('hola');
       $('#sltLocation').val('todos-los-municipios');
-      return false;
+      //return false;
     }
   });
