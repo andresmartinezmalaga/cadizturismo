@@ -21,4 +21,5 @@ $('#sltLocation').select2({
             var t = "Sólo puedes seleccionar " + e.maximum + " municipios";
             return t;
         }
+    }
 });
