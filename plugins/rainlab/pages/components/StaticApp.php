@@ -448,8 +448,9 @@ class StaticApp extends ComponentBase
             $contador = 0;
             foreach ($pempresas as $iEmpresa) {
                 
+                $contador = 0;
                 foreach ($valores as $valor) {
-                    $contador = 0;
+                    
                     if(strpos(strtolower($iEmpresa->name), strtolower($valor)) !== false) {
                         $contador = $contador+1;
                     }                    
@@ -462,7 +463,7 @@ class StaticApp extends ComponentBase
             }
 
             if(count($sempresas)>0){
-                $empresas = $sempresas->sortBy('contador');
+                $empresas = $sempresas->sortByDesc('contador');
             } else {
                 $empresas = [];
             }
@@ -541,8 +542,8 @@ class StaticApp extends ComponentBase
             $contador = 0;
             foreach ($pempresas as $iEmpresa) {
                 
+                $contador = 0;
                 foreach ($valores as $valor) {
-                    $contador = 0;
                     if(strpos(strtolower($iEmpresa->name), strtolower($valor)) !== false) {
                         $contador = $contador+1;
                     }                    
@@ -555,7 +556,7 @@ class StaticApp extends ComponentBase
             }
 
             if(count($sempresas)>0){
-                $empresas = $sempresas->sortBy('contador');
+                $empresas = $sempresas->sortByDesc('contador');
             } else {
                 $empresas = [];
             }
@@ -563,6 +564,7 @@ class StaticApp extends ComponentBase
         } else {
             $empresas = $pempresas;
         }
+
 
         foreach ($empresas as $empresa) {
             

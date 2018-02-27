@@ -40,7 +40,11 @@ is_hidden = 0
         $pubicacion = $_POST['location'];
         $psearch = $_POST['search'];
 
-        $ubicacion = implode('_', $pubicacion);
+        if($pubicacion[0]){
+          $ubicacion = implode('_', $pubicacion);
+        } else {
+          $ubicacion = 'todos-los-municipios';
+        }
 
         if($psearch == ''){
             $search = 'todas-las-empresas';
