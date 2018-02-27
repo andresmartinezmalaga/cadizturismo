@@ -1160,6 +1160,7 @@ html, body {
 /* SEARCH */
 .upwards {
   border-top-left-radius: 0px !important;
+  border-top-right-radius: 0px !important;
 }
 
 .downwards {
@@ -2596,6 +2597,11 @@ html, body {
 }
 
 @media (max-width: 600px) {
+  #prtlSearch > #listEmp {
+    #search-event {
+      margin-bottom: 50px !important;
+    }
+  }
   .con-encanto {
     font-size: 100px !important;
   }
@@ -2992,7 +2998,6 @@ html, body {
     margin-top: 70px !important;
   }
 }
-
 
 @media (max-width: 920px) and (min-width: 710px) {
 
@@ -3402,7 +3407,7 @@ html, body {
   }
   .header, .static-header, .ayuda-header, .about-header, .header-event, .header-experience, .header-village, .header-general, .header-ruta, .header-search {
     margin-top: 0px !important;
-    min-height: 650px;
+    min-height: 680px;
   }
   .header-empresa {
     margin-top: 0px !important;
@@ -3609,7 +3614,7 @@ html, body {
 
 @media (max-width: 400px) {
   #out-features {
-    top: 700px;
+    top: 677px;
     position: absolute !important;
     min-height: 360px;
     justify-content: flex-start !important;
@@ -3713,7 +3718,7 @@ html, body {
   .header-general .header-txt .brush {
     margin-top: 0px;
   }
-  .header, .header-event, .header-experience, .header-ruta, .header-village, .header-general, .img-village, .featured-element, .secret-routes {
+  .header, .header-empresa, .header-event, .header-experience, .header-ruta, .header-village, .header-general, .img-village, .featured-element, .secret-routes {
     background-attachment: initial !important;
   }
   .header .mini-logo-container, .header .language-container, .header-event .mini-logo-container, .header-event .language-container, .header-experience .language-container, .header-ruta .mini-logo-container, .header-ruta .language-container, .header-village .mini-logo-container, .header-village .language-container, .header-general .mini-logo-container, .header-general .language-container, .img-village .mini-logo-container, .img-village .language-container, .featured-element .mini-logo-container, .featured-element .language-container, .secret-routes .mini-logo-container, .secret-routes .language-container {
@@ -4238,6 +4243,10 @@ footer {
         width: 100%;
         height: 70px;
         border-top-right-radius: 0px !important;
+        border-bottom-left-radius: 4px !important;
+        input[type="submit"] {
+            border-bottom-left-radius: 4px !important;
+        }
       }
       #empresa-search {
         //width: 242px;
@@ -4454,7 +4463,7 @@ footer {
     }
   }
   section{
-    max-width: 60%;
+    max-width: 80%;
     margin: auto;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -4546,5 +4555,5 @@ footer {
         }
       }
     }
-}
+  }
 }
