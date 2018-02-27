@@ -463,7 +463,7 @@ class StaticApp extends ComponentBase
             }
 
             if(count($sempresas)>0){
-                $empresas = $sempresas->sortBy('contador');
+                $empresas = $sempresas->sortByDesc('contador');
             } else {
                 $empresas = [];
             }
@@ -556,7 +556,7 @@ class StaticApp extends ComponentBase
             }
 
             if(count($sempresas)>0){
-                $empresas = $sempresas->sortBy('contador');
+                $empresas = $sempresas->sortByDesc('contador');
             } else {
                 $empresas = [];
             }
@@ -564,6 +564,7 @@ class StaticApp extends ComponentBase
         } else {
             $empresas = $pempresas;
         }
+
 
         foreach ($empresas as $empresa) {
             
