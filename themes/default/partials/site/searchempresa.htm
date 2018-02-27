@@ -48,7 +48,7 @@
                     {% for key,value in municipalities %}
                         <option value="{{str_slug(value)}}">{{value}}</option>
                     {% endfor %}
-                    <option value="todos-los-municipios" selected=>{{'Todos los municipios'|_ }}</option>
+                    <option class="all-municipios" value="todos-los-municipios" selected=>{{'Todos los municipios'|_ }}</option>
                   </select>
                   <span class="select-title">{{ 'UBICACIÓN'|_ }}</span>
                 </div>
