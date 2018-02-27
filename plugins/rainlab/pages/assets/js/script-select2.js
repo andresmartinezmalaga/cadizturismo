@@ -26,14 +26,10 @@ $('#sltLocation').select2({
 
 
   $("#sltLocation").on("select2:unselecting", function(e) {
-    if ($('#sltLocation').val() == 'todos-los-municipios') {
-      console.log('jeje');
-      return false;
-    }
     if ($('.select2-selection__choice').length == 1) {
       console.log('hola');
       $('#sltLocation').val('todos-los-municipios');
+      $('#select2-sltLocation-result-wddy-todos-los-municipios').attr('aria-selected', 'true');
       //return false;
-      console.log('valgo ' + $('#sltLocation').val());
     }
   });
