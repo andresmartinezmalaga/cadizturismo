@@ -3426,6 +3426,8 @@ footer {
       width: 100%;
       height: 70px;
       border-top: 1px solid #CECECE; }
+      .bussinesPage #search-event .search-bar #empresa-location .select2-container .select2-search--inline {
+        margin-top: -11px; }
     .bussinesPage #search-event .search-bar .button-container {
       width: 100%;
       height: 70px;
