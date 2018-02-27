@@ -30,5 +30,6 @@ $('#sltLocation').select2({
       console.log('hola');
       $('#sltLocation').val('todos-los-municipios');
       //return false;
+      console.log('valgo ' + $('#sltLocation').val());
     }
   });
