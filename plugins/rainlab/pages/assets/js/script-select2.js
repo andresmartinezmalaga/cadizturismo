@@ -29,7 +29,7 @@ $('#sltLocation').select2({
     if ($('.select2-selection__choice').length == 1) {
       console.log('hola');
       $('#sltLocation').val('todos-los-municipios');
-      $('#select2-sltLocation-result-wddy-todos-los-municipios').attr('aria-selected', 'true');
+      $("div[id*='todos-los-municipios']").attr('aria-selected', 'true');
       //return false;
     }
   });
