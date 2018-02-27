@@ -2596,6 +2596,11 @@ html, body {
 }
 
 @media (max-width: 600px) {
+  #prtlSearch > #listEmp {
+    #search-event {
+      margin-bottom: 50px !important;
+    }
+  }
   .con-encanto {
     font-size: 100px !important;
   }
@@ -2992,7 +2997,6 @@ html, body {
     margin-top: 70px !important;
   }
 }
-
 
 @media (max-width: 920px) and (min-width: 710px) {
 

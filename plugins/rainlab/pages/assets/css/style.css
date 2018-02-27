@@ -2224,6 +2224,8 @@ html, body {
     line-height: 114px !important; } }
 
 @media (max-width: 600px) {
+  #prtlSearch > #listEmp #search-event {
+    margin-bottom: 50px !important; }
   .con-encanto {
     font-size: 100px !important; }
   .close-modal {
