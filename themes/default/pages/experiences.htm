@@ -1,5 +1,5 @@
 title = "experiences"
-url = "/experiencias"
+url = "/experiencias/:days/:interest/:tvisit"
 layout = "dinamic"
 is_hidden = 0
 
@@ -30,11 +30,84 @@ is_hidden = 0
       $this['experiences'] = json_decode(Session::get('reciveData'));     
     }
 
+    $days = $this->param('days');
+    if($days == 'dejate-llevar'){
+      $days = 'all';
+    }
+    
+    $interest = $this->getStringSlugInterest($this->param('interest'));
+    $tvisit = $this->getStringSlugTvisit($this->param('tvisit'));
+
+    $experiences = $this->staticApp->experienceFind($days,$interest,$tvisit);
+    $this['experiences'] = $experiences;
+    
     $this['ptitle'] = 'Cádiz | Experiencias';
     $this['metaTitle'] = 'Cádiz | Experiencias';
 
 	}
 
+  function getStringSlugInterest($value){
+
+    switch ($value) {
+      case 'playa-gastronomia':
+        $interest = 'playa y gastronomía';
+        break;
+      case 'cultura-gastronomia':
+        $interest = 'cultura y gastronomía';
+        break;
+      case 'fiesta-cultura':
+        $interest = 'fiesta y cultura';
+        break;
+      case 'gastronomia-naturaleza':
+        $interest = 'gastronomía y naturaleza';
+        break;
+      case 'naturaleza-aventura':
+        $interest = 'naturaleza y aventura';
+        break;
+      case 'playa-naturaleza':
+        $interest = 'playa y naturaleza';
+        break;
+      case 'vino-tradicion':
+        $interest = 'vino y tradición';
+        break;
+      case 'aventura-tradicion':
+        $interest = 'aventura y tradición';
+        break;
+      
+      default:
+        $interest = 'all';
+        break;
+    }
+
+    return $interest;
+
+  } 
+
+  function getStringSlugTvisit($value){
+
+    switch ($value) {
+      case 'cadiz-oculta':
+        $interest = 'cádiz oculta';
+        break;
+      case 'cadiz-autentica':
+        $interest = 'cádiz auténtica';
+        break;
+      case 'cadiz-relax':
+        $interest = 'cádiz relax';
+        break;
+      case 'cadiz-urbano':
+        $interest = 'cádiz urbano';
+        break;
+      
+      default:
+        $interest = 'all';
+        break;
+    }
+
+    return $interest;
+
+  } 
+       
 
 	function onFindExperience(){
 
@@ -66,7 +139,7 @@ is_hidden = 0
     </div>
    
     <!-- SEARCH -->
-    <div id='prtlSearch'>
+    <div id='prtlSearchExperiences'>
       {% partial "site/search" %}
     </div>
 

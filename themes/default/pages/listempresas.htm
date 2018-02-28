@@ -30,14 +30,6 @@ is_hidden = 0
 
     $this['empresas'] = $this->staticApp->empresasFindPag($this->param('type'),$this->param('location'),$this->param('search'), $this['startPag'],$this['numberReg']);
 
-    /*if(Session::has('data')){
-      Session::put('reciveData',Session::get('data'));
-    }
-
-    if(Session::has('reciveData')){
-      $this['empresas'] = json_decode(Session::get('reciveData'));
-    }*/
-
     $this['ptitle'] = 'Cádiz | Empresas';
     $this['metaTitle'] = 'Cádiz | Empresas';
 
