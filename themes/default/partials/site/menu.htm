@@ -31,6 +31,36 @@
         $this->page->url = str_replace(':location', $this['location'], $pageurl);
         
       }
+
+      if($this->param('search')){
+        $this['search'] = $this->param('search');
+        $pgUrl = $this->page->url ;
+        $this->page->url = str_replace(':search', $this['search'], $pgUrl);
+      }
+      
+
+      if($this->param('days')){
+        $this['days'] = $this->param('days');
+        $pgUrl = $this->page->url ;
+        $this->page->url = str_replace(':days', $this['days'], $pgUrl);
+        
+      }
+
+      if($this->param('interest')){
+        $this['interest'] = $this->param('interest');
+        $pgUrl = $this->page->url ;
+        $this->page->url = str_replace(':interest', $this['interest'], $pgUrl);
+        
+      }
+
+      if($this->param('tvisit')){
+        $this['tvisit'] = $this->param('tvisit');
+        $pgUrl = $this->page->url ;
+        $this->page->url = str_replace(':tvisit', $this['tvisit'], $pgUrl);
+        
+      }
+
+      
   }
 
 ?>
