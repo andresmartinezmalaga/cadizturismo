@@ -12,7 +12,7 @@ is_hidden = 0
 	{
 
         if (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false) {
-              $this['preurl'] = '/cadizturismo';
+            $this['preurl'] = '/cadizturismo';
         } else {
             $this['preurl'] = '';
         }
@@ -56,7 +56,7 @@ is_hidden = 0
         }
 
       	$empresas = $this->staticApp->empresasFindPag($type,$ubicacion,$search,1,9);
-       	Session::put('data',json_encode($empresas));
+       	//Session::put('data',json_encode($empresas));
 
       	return Redirect::to($aLang.'/listado-de-empresas/'.$type.'/'.$ubicacion.'/'.$search)->with( ['data' => json_encode($empresas)] );
 
