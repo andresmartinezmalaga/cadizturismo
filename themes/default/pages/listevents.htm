@@ -23,8 +23,6 @@ is_hidden = 0
 		}
     
     $category = $this->getCategroia($this->param('category'));
-    //$location = $this->getLocation($this->param('location'));
-
     $location = $this->staticApp->getMunicipalitiesBySlug($this->param('location'));
     
     $this['events'] = $this->staticApp->eventFind($category,$this->param('daystart'),$this->param('dayend'),$location);
@@ -61,59 +59,7 @@ is_hidden = 0
     
   }
 
-  public function getLocation($value){
-
-    switch ($value) {      
-        
-        case 'alcala-de-los-gazules':
-        $location = 'alcalá de los gazules';
-        break;
-
-        case 'alcala-del-valle':
-        $location = 'alcalá del valle';
-        break;
-
-        case 'cadiz':
-        $location = 'cádiz';
-        break;
-
-        case 'el-puerto-de-santa-maria':
-        $location = 'el puerto de santa maría';
-        break;
-
-        case 'la-linea-de-la-concepcion':
-        $location = 'la línea de la concepción';
-        break;
-
-        case 'san-jose-del-valle':
-        $location = 'san josé del valle';
-        break;
-
-        case 'sanlucar-de-barrameda':
-        $location = 'sanlúcar de barrameda';
-        break;
-
-        case 'torre-alhaquime':
-        $location = 'torre alháquime';
-        break;
-
-        case 'villamartin':
-        $location = 'villamartín';
-        break;
-
-        case 'todos-los-municipios':
-        $location = 'all';
-        break;
-       
-      default:
-        $plocation = ucfirst($this->param('location'));
-        $location = str_replace('-', ' ', $plocation);
-        break;
-    }
-
-
-    return $location;
-  }
+  
 
   public function getCategroia($value){
 
