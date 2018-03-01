@@ -3684,7 +3684,11 @@ footer {
     margin-top: 0px !important; }
 
 /* Características de texto */
-.not-found {
+/* 404 */
+.not-found-container {
+  height: 100vh;
+  width: 100%;
+  background-color: #363636;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -3699,31 +3703,51 @@ footer {
   -ms-justify-content: center;
   justify-content: center;
   -ms-flex-pack: center;
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column; }
-  .not-found h1 {
-    color: white;
-    font-size: 300px;
-    line-height: 360px;
-    font-weight: 100;
-    margin: 0px; }
-  .not-found p {
-    color: white;
-    font-size: 20px;
-    line-height: 27px;
-    font-weight: 300;
-    margin-top: 0px;
-    margin-bottom: 6px; }
-  .not-found a {
-    color: white;
-    font-size: 12px;
-    line-height: 16px;
-    font-weight: 300;
-    text-decoration: none; }
-    .not-found a img {
-      margin-left: 16px; }
-    .not-found a:hover, .not-found a:focus, .not-found a:active {
-      opacity: 0.5;
+  position: relative; }
+  .not-found-container .logo {
+    position: absolute;
+    top: 30px;
+    left: 30px; }
+  .not-found-container .not-found {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .not-found-container .not-found h1 {
+      color: white;
+      font-size: 300px;
+      line-height: 360px;
+      font-weight: 100;
+      margin: 0px; }
+    .not-found-container .not-found p {
+      color: white;
+      font-size: 20px;
+      line-height: 27px;
+      font-weight: 300;
+      margin-top: 0px;
+      margin-bottom: 6px; }
+    .not-found-container .not-found a {
+      color: white;
+      font-size: 12px;
+      line-height: 16px;
+      font-weight: 300;
       text-decoration: none; }
+      .not-found-container .not-found a img {
+        margin-left: 16px; }
+      .not-found-container .not-found a:hover, .not-found-container .not-found a:focus, .not-found-container .not-found a:active {
+        opacity: 0.5;
+        text-decoration: none; }

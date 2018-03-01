@@ -4614,32 +4614,47 @@ footer {
   line-height: $line;
 }
 
-.not-found {
+/* 404 */
+.not-found-container {
+  height: 100vh;
+  width: 100%;
+  background-color: #363636;
   @include flexbox();
   @include align-items(center);
   @include justify-content(center);
-  @include flex-direction(column);
-  h1 {
-    @include text-prop(white, 300px, 360px);
-    font-weight: 100;
-    margin: 0px;
+  position: relative;
+  .logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
   }
-  p {
-    @include text-prop(white, 20px, 27px);
-    font-weight: 300;
-    margin-top: 0px;
-    margin-bottom: 6px;
-  }
-  a {
-    @include text-prop(white, 12px, 16px);
-    font-weight: 300;
-    text-decoration: none;
-    img {
-      margin-left: 16px;
+  .not-found {
+    @include flexbox();
+    @include align-items(center);
+    @include justify-content(center);
+    @include flex-direction(column);
+    h1 {
+      @include text-prop(white, 300px, 360px);
+      font-weight: 100;
+      margin: 0px;
     }
-    &:hover, &:focus, &:active {
-      opacity: 0.5;
+    p {
+      @include text-prop(white, 20px, 27px);
+      font-weight: 300;
+      margin-top: 0px;
+      margin-bottom: 6px;
+    }
+    a {
+      @include text-prop(white, 12px, 16px);
+      font-weight: 300;
       text-decoration: none;
+      img {
+        margin-left: 16px;
+      }
+      &:hover, &:focus, &:active {
+        opacity: 0.5;
+        text-decoration: none;
+      }
     }
   }
 }
