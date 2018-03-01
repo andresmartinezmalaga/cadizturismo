@@ -1,5 +1,5 @@
 title = "allRutas"
-url = "/listado-de-rutas"
+url = "/listado-de-rutas/:category/:days/:location"
 layout = "dinamic"
 is_hidden = 0
 
@@ -10,7 +10,6 @@ is_hidden = 0
 
 	function onStart()
 	{
-
 
     if (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false) {
           $this['preurl'] = '/cadizturismo';
@@ -23,13 +22,15 @@ is_hidden = 0
 			$this['lang']='es';
 		}
 
-    if(Session::has('data')){
-      Session::put('reciveData',Session::get('data'));
-    }
-
-    if(Session::has('reciveData')){
-      $this['rutas'] = json_decode(Session::get('reciveData'));
-    }
+    $category = $this->getCategroia($this->param('category'));
+    $location = $this->getLocation($this->param('location'));
+    
+    $days = $this->param('days');
+    if($days == 'dejate-llevar'){
+      $days = 'all';
+    } 
+    
+    $this['rutas'] = $this->staticApp->rutaFind($category,$days,$location);
 
     $this['ptitle'] = 'Cádiz | Rutas';
     $this['metaTitle'] = 'Cádiz | Rutas';
@@ -42,12 +43,113 @@ is_hidden = 0
     $category = $_POST['category'];
     $days = $_POST['days'];
     $location = $_POST['location'];
+    
+    if($category == 'todas-las-categorias'){
+      $category = 'all';
+    }
+
+    if($days == 'dejate-llevar'){
+      $days = 'all';
+    }
+
+    if($location == 'todos-los-municipios'){
+      $location = 'all';
+    }
 
     $this['rutas'] = $this->staticApp->rutaFind($category,$days,$location);
 
     return [
         '#prtlRutasl' => $this->renderPartial('rutas')
     ];
+
+  }
+
+  public function getLocation($value){
+
+    switch ($value) {      
+        
+        case 'alcala-de-los-gazules':
+        $location = 'alcalá de los gazules';
+        break;
+
+        case 'alcala-del-valle':
+        $location = 'alcalá del valle';
+        break;
+
+        case 'cadiz':
+        $location = 'cádiz';
+        break;
+
+        case 'el-puerto-de-santa-maria':
+        $location = 'el puerto de santa maría';
+        break;
+
+        case 'la-linea-de-la-concepcion':
+        $location = 'la línea de la concepción';
+        break;
+
+        case 'san-jose-del-valle':
+        $location = 'san josé del valle';
+        break;
+
+        case 'sanlucar-de-barrameda':
+        $location = 'sanlúcar de barrameda';
+        break;
+
+        case 'torre-alhaquime':
+        $location = 'torre alháquime';
+        break;
+
+        case 'villamartin':
+        $location = 'villamartín';
+        break;
+
+        case 'todos-los-municipios':
+        $location = 'all';
+        break;
+       
+      default:
+        $location = ucfirst($this->param('location'));
+        break;
+    }
+
+    return $location;
+  }
+
+  public function getCategroia($value){
+
+     switch ($value) {
+      
+        case 'cultura':
+        $category = 'Cultura';
+        break;
+
+        case 'deporte':
+        $category = 'Deporte';
+        break;
+
+        case 'gastronomia':
+        $category = 'Gastronomía';
+        break;
+
+        case 'naturaleza':
+        $category = 'Naturaleza';
+        break;
+
+        case 'ocio':
+        $category = 'Ocio';
+        break;
+      
+        case 'todas-las-categorias':
+        $category = 'all';
+        break;
+            
+      default:
+        $category = 'all';
+        break;
+    }
+
+    return $category;
 
   }
 
@@ -63,7 +165,7 @@ is_hidden = 0
       </div>
 
     <!-- SEARCH -->
-    <div id='prtlSearch'>
+    <div id='prtlSearchRutas'>
       {% partial "site/searchruta" %}
     </div>
   </div>

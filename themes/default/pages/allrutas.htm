@@ -44,7 +44,10 @@ is_hidden = 0
   	$aLang = App::getLocale();
     $rutas = $this->staticApp->rutaFind($category,$days,$location);
 
-    return Redirect::to($aLang.'/listado-de-rutas')->with( ['data' => json_encode($rutas)] );
+    //return Redirect::to($aLang.'/listado-de-rutas')->with( ['data' => json_encode($rutas)] );
+
+    return Redirect::to($aLang.'/listado-de-rutas'.'/'.str_slug($category).'/'.$days.'/'.str_slug($location));
+
 
   }
 
