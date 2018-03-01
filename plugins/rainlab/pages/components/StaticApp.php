@@ -416,7 +416,7 @@ class StaticApp extends ComponentBase
         if(count($gtype)>0){
             $type_id = $gtype->id;
         }
-            
+
         if($typeslug == 'todos-los-tipos'){
             $type_id = null;
             $typeOperator = '!=';
@@ -440,6 +440,7 @@ class StaticApp extends ComponentBase
 
            $pempresas = $fempresas;
         }
+
 
         if($searchString != 'todas-las-empresas'){  
             

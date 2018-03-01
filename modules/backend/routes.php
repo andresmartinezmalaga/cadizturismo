@@ -40,15 +40,18 @@ Route::get('/api/empresas/opciones/tipos', 'Backend\Classes\CadizTurismoControll
     // Show empreas municipalities
 Route::get('/api/empresas/opciones/ubicacion', 'Backend\Classes\CadizTurismoController@municipalitiesList');
     
+     // Find by type_slug no pagination, show all   
+Route::get('/api/empresas/por/tipo/{type_slug}', 'Backend\Classes\CadizTurismoController@empresasListByType');
+     // Find by type_slug with pagination   
+Route::get('/api/empresas/por/tipo/{type_slug}/{page}/{number}', 'Backend\Classes\CadizTurismoController@empresasListByTypePag');
+
     // Find by type_slug and municipality_slug no pagination, show all   
 Route::get('/api/empresas/{type_slug}/{municipality_slug}/{searchString}', 'Backend\Classes\CadizTurismoController@empresasList');
    // Find by type_slug and municipality_slug with pagination  
 Route::get('/api/empresas/{type_slug}/{municipality_slug}/{searchString}/{page}/{number}', 'Backend\Classes\CadizTurismoController@empresasListPag');    
     
-    // Find by type_slug no pagination, show all   
-Route::get('/api/empresas/por/tipo/{type_slug}', 'Backend\Classes\CadizTurismoController@empresasListByType');
-   // Find by type_slug with pagination   
-Route::get('/api/empresas/por/tipo/{type_slug}/{page}/{number}', 'Backend\Classes\CadizTurismoController@empresasListByTypePag');
+   
+  
 
     // Show empresa by name_slug
 Route::get('/api/empresa/{name_slug}/{lang}', 'Backend\Classes\CadizTurismoController@empresaShowByNameSlug');
