@@ -33,3 +33,16 @@ $('#sltLocation').select2({
       }
     }
   });
+
+  $("#sltLocation").on("select2:selecting", function(e) {
+    var $select = $('#sltLocation');
+    var idToRemove = 'todos-los-municipios';
+    var values = $select.val();
+    if (values) {
+      var i = values.indexOf(idToRemove);
+      if (i >= 0) {
+        values.splice(i, 1);
+        $select.val(values).change();
+      }
+    }
+  });
