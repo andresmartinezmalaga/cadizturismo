@@ -144,7 +144,7 @@ class CadizTurismoController extends ControllerBase
     	
     }
 
-     public function eventByName($name){
+    public function eventByName($name){
         $slugname = str_slug($name);
         $event = $this->StaticApp->eventByName($slugname);
         
@@ -180,6 +180,15 @@ class CadizTurismoController extends ControllerBase
     	$mlPages = $this->createObjectPagesMultl($experience);
 
 		return new JsonResponse(['data'=>$mlPages], 200);   
+    }
+
+    public function experienceByName($name){
+        $slugname = str_slug($name);
+        $experience = $this->StaticApp->experienceByName($slugname);
+        
+        $mlPages = $this->createObjectPagesMultl($experience);
+
+        return new JsonResponse(['data'=>$mlPages], 200); 
     }
 
 

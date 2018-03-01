@@ -22,7 +22,7 @@ API DOC
 
 		url : http://cadizturismo/api/comarcas/{comarca}
 		params:
-			{comarca} string (nombre de la misma en la url, de la peticion anterior, todas las comarcas, ejemplo : /comarcas/La janda)
+			{comarca} string (title obtenido en la peticion anterior, todas las comarcas, ejemplo : /comarcas/La janda)
 
 	Todas las playas
 
@@ -32,7 +32,7 @@ API DOC
 
 		url : http://cadizturismo/api/playas/{playa}
 		params:
-			{playa} string (nombre de la misma en la url, de la peticion anterior, todas las playas, ejemplo : /playas/Los lances )
+			{playa} string (title obtenido en la peticion anterior, todas las playas, ejemplo : /playas/Los lances )
 
 	
 	Todas las rutas
@@ -43,7 +43,7 @@ API DOC
 
 		url : http://cadizturismo/api/rutas/{ruta}
 		params:
-			{ruta} string (nombre de la misma en la url, de la peticion anterior, todas las rutas, ejemplo : /rutas/Ruta de los pueblos blancos)
+			{ruta} string (title obtenido en la peticion anterior, todas las rutas, ejemplo : /rutas/Ruta de los pueblos blancos)
 
 	Opciones rutas
 
@@ -64,7 +64,13 @@ API DOC
 	Todas los eventos
 
 		url : http://cadizturismo/api/api/eventos
-				
+	
+	Un Evento:
+
+		url : http://cadizturismo/api/eventos/{evento}
+		params:
+			{evento} string (title obtenido en la peticion anterior, todas los eventos, ejemplo : /eventos/XX Jornadas micológicas)
+
 	Opciones eventos
 
 		Categorias
@@ -88,6 +94,12 @@ API DOC
 			url : http://cadizturismo/api/experiencias/opciones/intereses
 		Tipo de visita
 			url : http://cadizturismo/api/experiencias/opciones/tipo-visita
+
+	Una Experiencia:
+
+		url : http://cadizturismo/api/experiencias/{experiencia}
+		params:
+			{experiencia} string (title obtenido en la peticion anterior, todas la experienciass, ejemplo : /experiencias/Rutas del vino de Cádiz)
 
 	Buscar una experiencia
 
