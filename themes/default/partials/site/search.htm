@@ -21,7 +21,7 @@
       <div class="inputs-container">
 
         <div class="days-container">
-          <select class="custom-select select-days" name="days">
+          <select id="sltDays" class="custom-select select-days" name="days">
             {% for i in 1..7 %}
               {% if i<2 %}
               	* <option value="{{ i }}">{{ i }} {{'día'|_}}</option>
@@ -35,7 +35,7 @@
         </div>
 
         <div class="interests-container">
-          <select class="custom-select select-interests" name="interest">
+          <select id="sltInterest" class="custom-select select-interests" name="interest">
             <option value="playa y gastronomía">{{'Playa y gastronomía'|_ }}</option>
             <option value="cultura y gastronomía">{{'Cultura y gastronomía'|_ }}</option>
             <option value="fiesta y cultura">{{'Fiesta y cultura'|_ }}</option>
@@ -50,7 +50,7 @@
         </div>
 
         <div class="type-container">
-          <select class="custom-select select-type" name="tvisit">
+          <select id="sltTvisit" class="custom-select select-type" name="tvisit">
             <option value="cádiz oculta">{{ 'Cádiz oculta'|_ }}</option>
             <option value="cádiz auténtica">{{ 'Cádiz auténtica'|_ }}</option>
             <option value="cádiz relax">{{ 'Cádiz relax'|_ }}</option>
@@ -62,7 +62,7 @@
       </div>
 
       <div class="button-container">
-        <input type="submit" value="{{ 'Ven a Cádiz'|_ }}">
+        <input id="bscExperience" type="submit" value="{{ 'Ven a Cádiz'|_ }}">
       </div>
     </form>
   </div>

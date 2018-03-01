@@ -38,11 +38,24 @@ is_hidden = 0
 		$interest = $_POST['interest'];
 		$tvisit = $_POST['tvisit'];
 
-      $aLang = App::getLocale();
-
-    	$experiences = $this->staticApp->experienceFind($days,$interest,$tvisit);
-      return Redirect::to($aLang.'/experiencias')->with( ['data' => json_encode($experiences)] );
+    if($days == 'all'){
+      $days = 'dejate-llevar';
     }
+
+    if($interest == 'all'){
+      $interest ='todos los intereses';
+    }
+
+    if($tvisit == 'all'){
+      $tvisit ='todo cadiz';
+    }
+
+    $aLang = App::getLocale();
+
+    //$experiences = $this->staticApp->experienceFind($days,$interest,$tvisit);
+    return Redirect::to($aLang.'/experiencias'.'/'.$days.'/'.str_slug($interest).'/'.str_slug($tvisit));
+
+  }
 
 ?>
 
