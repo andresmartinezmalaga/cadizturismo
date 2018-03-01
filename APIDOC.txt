@@ -12,7 +12,7 @@ API DOC
 
 		url : http://cadizturismo/api/municipios/{municipio}
 		params:
-			{municipio} string (nombre del mismo en la url, de la peticion anterior, todos los municipios ejemplo : /municipios/barbate, sería barbate)
+			{municipio} string (nombre del mismo en la url, de la peticion anterior, todos los municipios ejemplo : /municipios/barbate)
 
 	Todas las comarcas :
 
@@ -22,7 +22,7 @@ API DOC
 
 		url : http://cadizturismo/api/comarcas/{comarca}
 		params:
-			{comarca} string (nombre de la misma en la url, de la peticion anterior, todas las comarcas, ejemplo : /comarcas/la-janda, sería la-janda )
+			{comarca} string (nombre de la misma en la url, de la peticion anterior, todas las comarcas, ejemplo : /comarcas/La janda)
 
 	Todas las playas
 
@@ -32,13 +32,19 @@ API DOC
 
 		url : http://cadizturismo/api/playas/{playa}
 		params:
-			{playa} string (nombre de la misma en la url, de la peticion anterior, todas las comarcas, ejemplo : /playas/los-lances, sería los-lances )
+			{playa} string (nombre de la misma en la url, de la peticion anterior, todas las playas, ejemplo : /playas/Los lances )
 
 	
 	Todas las rutas
 
 		url : http://cadizturismo/api/api/rutas
-				
+	
+	Una Ruta :
+
+		url : http://cadizturismo/api/rutas/{ruta}
+		params:
+			{ruta} string (nombre de la misma en la url, de la peticion anterior, todas las rutas, ejemplo : /rutas/Ruta de los pueblos blancos)
+
 	Opciones rutas
 
 		Categorias

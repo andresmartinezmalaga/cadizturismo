@@ -286,6 +286,17 @@ class StaticApp extends ComponentBase
         return $events;
     }
 
+    public function eventByName($name)
+    {
+        $theme = Theme::getActiveTheme();
+        $pages = Page::listInTheme($theme, false);
+        $list =  new \Illuminate\Support\Collection($pages);
+
+        $result = $list->where("is_hidden",0)->where("template","eventos")->where('url', '/rutas/'.$name)->values();
+
+        return $result;
+    }
+
     public function rutaAll()
     {
 
