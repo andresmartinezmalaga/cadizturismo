@@ -164,6 +164,8 @@ class Empresa extends Model
      */
     public function afterCreate()
     {
+        $this->update(['slug' => str_slug($this->name)]);
+        $this->update(['mslug' => str_slug($this->municipality)]);
         /*$this->slug = str_slug($this->name);
         $this->mslug = str_slug($this->municipality);
         $this->save();*/
