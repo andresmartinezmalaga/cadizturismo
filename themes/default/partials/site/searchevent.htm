@@ -18,7 +18,6 @@
         $this['municipalities'] = $this->staticApp->getMunicipalities();
         $this['categories'] = $this->staticApp->getEventsCategories();
 
-
     }
 ?>
 
@@ -52,7 +51,7 @@
                     {% for key,value in categories %}
                         <option value="{{key}}">{{ value |_ }}</option>
                     {% endfor %}
-                    <option value="all" selected=>{{'Todas las categorías'|_ }}</option>
+                    <option value="todas-las-categorias" selected=>{{'Todas las categorías'|_ }}</option>
                   </select>
                   <span class="select-title">{{ 'CATEGORÍA'|_ }}</span>
                 </div>
@@ -66,7 +65,7 @@
                     {% for key,value in municipalities %}
                         <option value="{{key}}">{{value}}</option>
                     {% endfor %}
-                    <option value="all" selected=>{{'Todos los municipios'|_ }}</option>
+                    <option value="todos-los-municipios" selected=>{{'Todos los municipios'|_ }}</option>
                   </select>
                   <span class="select-title">{{ 'UBICACIÓN'|_ }}</span>
                 </div>

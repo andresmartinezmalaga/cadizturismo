@@ -22,13 +22,13 @@ is_hidden = 0
 			$this['lang']='es';
 		}
     
-		if(Session::has('data')){
+		/*if(Session::has('data')){
 			Session::put('reciveData',Session::get('data'));     
 		}
     
     if(Session::has('reciveData')){
       $this['experiences'] = json_decode(Session::get('reciveData'));     
-    }
+    }*/
 
     $days = $this->param('days');
     if($days == 'dejate-llevar'){
