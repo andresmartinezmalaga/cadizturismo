@@ -4353,7 +4353,9 @@ footer {
     flex-direction: column;
   }
   .main-emp {
-    margin-bottom: 32px;
+    margin: 0px auto 32px auto;
+    width: 61px;
+    height: auto;
   }
   .empresas1, .empresas2 {
     border-right: 1px solid #CECECE;
@@ -4703,7 +4705,11 @@ footer {
       display: none;
     }
   }
-  header, main, nav, #layout-content, footer {
+  header, main, nav, #layout-content, footer, div[class^="header"], .all-events, .all-exps, .section-txt,
+  .section-txt-village, .section-img, .more-popular, .section-txt-comarca, .static-structure, .header,
+  .header-empresa, .header-event, .header-experience, .header-ruta, .header-village, .header-general,
+  .img-village, .featured-element, .secret-routes, .vertical-share, #out-features, .send-info-container, .icons-row, #map,
+  .static-header, .somos-section, .somos-txt-container, .ways, .ayuda-header, .publicaciones, .contact, .contact-ways, .full-legal-container {
     display: none !important;
   }
 }
@@ -4740,7 +4746,11 @@ footer {
       display: none;
     }
   }
-  header, nav, #layout-content, footer {
+  header, main, nav, #layout-content, footer, div[class^="header"], .all-events, .all-exps, .section-txt,
+  .section-txt-village, .section-img, .more-popular, .section-txt-comarca, .static-structure, .header,
+  .header-empresa, .header-event, .header-experience, .header-ruta, .header-village, .header-general,
+  .img-village, .featured-element, .secret-routes, .vertical-share, #out-features, .send-info-container, .icons-row, #map,
+  .static-header, .somos-section, .somos-txt-container, .ways, .ayuda-header, .publicaciones, .contact, .contact-ways, .full-legal-container {
     display: none !important;
   }
 }
