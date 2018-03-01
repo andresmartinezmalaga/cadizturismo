@@ -104,6 +104,15 @@ class CadizTurismoController extends ControllerBase
 		return new JsonResponse(['data'=>$mlPages], 200); 
     }
 
+    public function rutaByName($name){
+        $slugname = str_slug($name);
+        $ruta = $this->StaticApp->rutaByName($slugname);
+        
+        $mlPages = $this->createObjectPagesMultl($ruta);
+
+        return new JsonResponse(['data'=>$mlPages], 200); 
+    }
+
     public function rutasCategories() {
     	return new JsonResponse(['data'=> $this->StaticApp->getRutasCategories()],200);
     }
@@ -135,6 +144,15 @@ class CadizTurismoController extends ControllerBase
     	
     }
 
+    public function eventByName($name){
+        $slugname = str_slug($name);
+        $event = $this->StaticApp->eventByName($slugname);
+        
+        $mlPages = $this->createObjectPagesMultl($event);
+
+        return new JsonResponse(['data'=>$mlPages], 200); 
+    }
+
     // date format : 07-02-2018
     public function eventFind($category, $date_start, $date_end, $location){
     	
@@ -162,6 +180,15 @@ class CadizTurismoController extends ControllerBase
     	$mlPages = $this->createObjectPagesMultl($experience);
 
 		return new JsonResponse(['data'=>$mlPages], 200);   
+    }
+
+    public function experienceByName($name){
+        $slugname = str_slug($name);
+        $experience = $this->StaticApp->experienceByName($slugname);
+        
+        $mlPages = $this->createObjectPagesMultl($experience);
+
+        return new JsonResponse(['data'=>$mlPages], 200); 
     }
 
 

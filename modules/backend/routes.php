@@ -14,18 +14,21 @@ Route::get('/api/playas/{name}', 'Backend\Classes\CadizTurismoController@beachBy
 
 // Andrés Martínez : routes rutas
 Route::get('/api/rutas', 'Backend\Classes\CadizTurismoController@rutasIndex');
+Route::get('/api/rutas/{name}', 'Backend\Classes\CadizTurismoController@rutaByName');
 Route::get('/api/rutas/opciones/categorias', 'Backend\Classes\CadizTurismoController@rutasCategories');
 Route::get('/api/rutas/opciones/ubicacion', 'Backend\Classes\CadizTurismoController@municipalitiesList');
 Route::get('/api/rutas/{category}/{days}/{location}', 'Backend\Classes\CadizTurismoController@rutaFind');
 
 // Andrés Martínez : routes eventos
 Route::get('/api/eventos', 'Backend\Classes\CadizTurismoController@eventsIndex');
+Route::get('/api/eventos/{name}', 'Backend\Classes\CadizTurismoController@eventByName');
 Route::get('/api/eventos/opciones/categorias', 'Backend\Classes\CadizTurismoController@eventsCategories');
 Route::get('/api/eventos/opciones/ubicacion', 'Backend\Classes\CadizTurismoController@municipalitiesList');
 Route::get('/api/eventos/{category}/{date_start}/{date_end}/{location}', 'Backend\Classes\CadizTurismoController@eventFind');
 
 
 // Andrés Martínez : routes experiencias
+Route::get('/api/experiencias/{name}', 'Backend\Classes\CadizTurismoController@experienceByName');
 Route::get('/api/experiencias/opciones/intereses', 'Backend\Classes\CadizTurismoController@experienceInterests');
 Route::get('/api/experiencias/opciones/tipo-visita', 'Backend\Classes\CadizTurismoController@experienceTVisit');
 Route::get('/api/experiencias/{days}/{interest}/{tvisit}', 'Backend\Classes\CadizTurismoController@experienceFind');
