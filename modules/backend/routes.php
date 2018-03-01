@@ -49,10 +49,7 @@ Route::get('/api/empresas/por/tipo/{type_slug}/{page}/{number}', 'Backend\Classe
 Route::get('/api/empresas/{type_slug}/{municipality_slug}/{searchString}', 'Backend\Classes\CadizTurismoController@empresasList');
    // Find by type_slug and municipality_slug with pagination  
 Route::get('/api/empresas/{type_slug}/{municipality_slug}/{searchString}/{page}/{number}', 'Backend\Classes\CadizTurismoController@empresasListPag');    
-    
    
-  
-
     // Show empresa by name_slug
 Route::get('/api/empresa/{name_slug}/{lang}', 'Backend\Classes\CadizTurismoController@empresaShowByNameSlug');
 
