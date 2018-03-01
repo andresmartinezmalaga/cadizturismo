@@ -5678,3 +5678,6 @@ div[data-control="media-manager"] .media-list.tiles li.selected .icon-container 
   color: #818181 !important;
   border-radius: 0px !important;
   padding: 20px 30px 20px 15px !important; }
+
+.select-hide-search .select2-search.select2-search--dropdown {
+  display: none; }

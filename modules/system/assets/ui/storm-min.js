@@ -3408,7 +3408,7 @@ if(selectAttribute.indexOf('Empresa') != -1) {
   extraOptions.dropdownCssClass+=' select-marina'
 }
 if(selectAttribute.indexOf('Tipo') != -1) {
-  extraOptions.dropdownCssClass+=' select-marina'
+  extraOptions.dropdownCssClass+=' select-marina select-hide-search'
 }
 // if($element.hasClass('select-no-search')){extraOptions.minimumResultsForSearch=Infinity, extraOptions.dropdownCssClass+='select-marina'}
 if($element.hasClass('select-no-dropdown')){extraOptions.dropdownCssClass+=' select-no-dropdown'

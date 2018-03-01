@@ -2382,3 +2382,9 @@ div[data-control="media-manager"] .media-list.tiles li.selected .icon-container 
     padding: 20px 30px 20px 15px !important;
   }
 }
+
+.select-hide-search {
+  .select2-search.select2-search--dropdown {
+    display: none;
+  }
+}
