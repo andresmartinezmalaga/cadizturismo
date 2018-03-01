@@ -4353,7 +4353,9 @@ footer {
     flex-direction: column;
   }
   .main-emp {
-    margin-bottom: 32px;
+    margin: 0px auto 32px auto;
+    width: 61px;
+    height: auto;
   }
   .empresas1, .empresas2 {
     border-right: 1px solid #CECECE;

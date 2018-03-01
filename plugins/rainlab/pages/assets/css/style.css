@@ -3522,7 +3522,9 @@ footer {
     display: flex;
     flex-direction: column; }
   .emp .main-emp {
-    margin-bottom: 32px; }
+    margin: 0px auto 32px auto;
+    width: 61px;
+    height: auto; }
   .emp .empresas1, .emp .empresas2 {
     border-right: 1px solid #CECECE; }
 
