@@ -53,8 +53,8 @@ class Empresa extends Controller
 
     public function formAfterSave($model)
     {
-        $model->update(['slug' => str_slug($model->name)]);
-        $model->update(['mslug' => str_slug($model->municipality)]);
+        /*$model->update(['slug' => str_slug($model->name)]);
+        $model->update(['mslug' => str_slug($model->municipality)]);*/
     } 
 
 }
