@@ -41,41 +41,41 @@ code = "redes-sociales"
         $this['urlPage'] = $this->page->url;
 
         if($this->page->apiBag){
-            
+
             if(isset($this->page->apiBag["staticPage"]->attributes["viewBag"]["cover"])){
                 $this['metaImg'] = $this->page->apiBag["staticPage"]->attributes["viewBag"]["cover"];
             }
-            
+
             if($this->page->settings["meta_title"]==null){
-                
+
                 $this['metaTitle'] = 'Cádiz | '.$this->page->apiBag["staticPage"]->attributes["viewBag"]["title"];
                 $this['ptitle'] = 'Cádiz | '.$this->page->apiBag["staticPage"]->attributes["viewBag"]["title"];
-                
+
             } else {
-               
+
                 $this['metaTitle'] = 'Cádiz | '.$this->page->settings["meta_title"];
                 $this['ptitle'] = 'Cádiz | '.$this->page->settings["meta_title"];
             }
 
             if($this->page->settings["meta_description"]==null){
-                
+
                 $this['metaDescription'] = $this->page->apiBag["staticPage"]->attributes["content"];
-            
+
                 if(isset(explode('<p class="desc">',$this['metaDescription'])[1])){
-                    
+
                     $this['metaDescription'] = explode('</p>',explode('<p class="desc">',$this['metaDescription'])[1])[0];
 
                     if(strlen($this['metaDescription'])>225){
                         $this['metaDescription'] = substr($this['metaDescription'], 0, 225).'...';
                     }
-                
+
                 } else {
-                    
+
                      $this['metaDescription'] = '';
                 }
-            
+
             } else {
-               $this['metaDescription'] = $this->page->settings["meta_description"];   
+               $this['metaDescription'] = $this->page->settings["meta_description"];
             }
         }
     }
@@ -107,7 +107,7 @@ code = "redes-sociales"
     <link rel="mask-icon" href="{{url('/')}}/plugins/rainlab/pages/assets/img/favicons/safari-pinned-tab.svg" color="#175DA3">
     <meta name="theme-color" content="#175DA3">
 </head>
-
+    {% partial 'device-rotate' %}
     {% partial 'site/header' %}
 
     {% component 'staticPage' %}
