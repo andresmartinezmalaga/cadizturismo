@@ -3795,7 +3795,7 @@ footer {
       margin-bottom: 40px; }
     .device-rotation .tablet-info {
       display: none; }
-  header, main, footer {
+  header, main, nav, #layout-content, footer {
     display: none !important; } }
 
 @media (max-device-width: 1024px) and (min-device-width: 813px) and (orientation: landscape) {
@@ -3830,5 +3830,5 @@ footer {
       margin-bottom: 50px; }
     .device-rotation .movil-info {
       display: none; }
-  header, main, footer {
+  header, nav, #layout-content, footer {
     display: none !important; } }

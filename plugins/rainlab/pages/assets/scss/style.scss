@@ -4703,7 +4703,7 @@ footer {
       display: none;
     }
   }
-  header, main, footer {
+  header, main, nav, #layout-content, footer {
     display: none !important;
   }
 }
@@ -4740,7 +4740,7 @@ footer {
       display: none;
     }
   }
-  header, main, footer {
+  header, nav, #layout-content, footer {
     display: none !important;
   }
 }
