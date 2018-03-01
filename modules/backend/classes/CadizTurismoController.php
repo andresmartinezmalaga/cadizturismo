@@ -268,12 +268,12 @@ class CadizTurismoController extends ControllerBase
     }
 
     public function empresasList($typeslug, $municipalityslug, $searchString) {
-        $empresasList =  $this->StaticApp->empresasFind($typeslug, $municipalityslug);
+        $empresasList =  $this->StaticApp->empresasFind($typeslug, $municipalityslug, $searchString);
         return new JsonResponse(['data'=>$empresasList], 200);
     }
 
     public function empresasListPag($typeslug, $municipalityslug, $searchString, $pag, $number) {
-        $empresasList =  $this->StaticApp->empresasFindPag($typeslug, $municipalityslug, $pag, $number);
+        $empresasList =  $this->StaticApp->empresasFindPag($typeslug, $municipalityslug, $searchString, $pag, $number);
         return new JsonResponse(['data'=>$empresasList], 200);
     }
 
