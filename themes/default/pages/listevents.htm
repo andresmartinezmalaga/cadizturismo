@@ -26,7 +26,8 @@ is_hidden = 0
     //$location = $this->getLocation($this->param('location'));
 
     $location = $this->staticApp->getMunicipalitiesBySlug($this->param('location'));
-    
+    echo $location;
+    dd(1);
     $this['events'] = $this->staticApp->eventFind($category,$this->param('daystart'),$this->param('dayend'),$location);
 
     $this['ptitle'] = 'Cádiz | Eventos';
