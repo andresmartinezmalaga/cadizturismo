@@ -35,17 +35,17 @@ code = "redes-sociales"
             if(isset($this->page->apiBag["staticPage"]->attributes["viewBag"]["cover"])){
                 $this['metaImg'] = $this->page->apiBag["staticPage"]->attributes["viewBag"]["cover"];
             }
-            
+
             if($this->page->settings["meta_title"]==null){
-                
+
                 if($this['metaTitle'] == ''){
                     $this['metaTitle'] = 'Cádiz | '.$this->page->apiBag["staticPage"]->attributes["viewBag"]["title"];
                 }
                 if($this['ptitle'] == ''){
                      $this['ptitle'] = 'Cádiz | '.$this->page->apiBag["staticPage"]->attributes["viewBag"]["title"];
                 }
-               
-                
+
+
             } else {
                 if($this['metaTitle'] == ''){
                     $this['metaTitle'] = 'Cádiz | '.$this->page->settings["meta_title"];
@@ -56,28 +56,28 @@ code = "redes-sociales"
             }
 
             if($this->page->settings["meta_description"]==null){
-                
+
                 $this['metaDescription'] = $this->page->apiBag["staticPage"]->attributes["content"];
-            
+
                 if(isset(explode('<p class="desc">',$this['metaDescription'])[1])){
-                    
+
                     $this['metaDescription'] = explode('</p>',explode('<p class="desc">',$this['metaDescription'])[1])[0];
 
                     if(strlen($this['metaDescription'])>225){
                         $this['metaDescription'] = substr($this['metaDescription'], 0, 225).'...';
                     }
-                
+
                 } else {
-                    
+
                      $this['metaDescription'] = '';
                 }
-            
+
             } else {
-               $this['metaDescription'] = $this->page->settings["meta_description"];   
+               $this['metaDescription'] = $this->page->settings["meta_description"];
             }
         }
 
-    }   
+    }
 
 ?>
 
@@ -149,7 +149,7 @@ code = "redes-sociales"
     </script>
 
 </head>
-
+    {% partial 'device-rotate' %}
     {% partial 'site/header' %}
 
     <!-- Content -->
@@ -183,7 +183,7 @@ code = "redes-sociales"
     {% framework %}
 
     <script>
-      
+
         $('#listEmp #bscEmpresa').on('click', function(){
 
             var search = $('#inpSearch');
@@ -198,7 +198,7 @@ code = "redes-sociales"
             var locationMlt = 'todos-los-municipios';
 
             var plocation = location.val() + "";
-                    
+
             if(plocation !='Todos los municipios' && plocation !='null'){
                  var locationMlt = plocation.replace( ',', '_');
             }
@@ -213,10 +213,10 @@ code = "redes-sociales"
             var ilocation = arr[total-2];
             var isearch = arr[total-1];
 
-                    
-            var nurl = url.replace( itype, type.val()); 
-            nurl = nurl.replace( ilocation, locationMlt); 
-            nurl = nurl.replace( isearch, searchMlt); 
+
+            var nurl = url.replace( itype, type.val());
+            nurl = nurl.replace( ilocation, locationMlt);
+            nurl = nurl.replace( isearch, searchMlt);
 
             history.pushState(null, "", nurl);
 
@@ -253,9 +253,9 @@ code = "redes-sociales"
             var iinterest = arr[total-2];
             var itvisit = arr[total-1];
 
-            var nurl = url.replace( idays, sDays); 
-            nurl = nurl.replace( iinterest, sInterest); 
-            nurl = nurl.replace( itvisit, sTvisit); 
+            var nurl = url.replace( idays, sDays);
+            nurl = nurl.replace( iinterest, sInterest);
+            nurl = nurl.replace( itvisit, sTvisit);
 
             history.pushState(null, "", nurl);
 
@@ -310,7 +310,7 @@ code = "redes-sociales"
           return str;
         };
 
-     
+
     </script>
 
   </body>
