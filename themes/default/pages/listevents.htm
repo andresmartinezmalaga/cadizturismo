@@ -113,82 +113,87 @@ is_hidden = 0
 
   public function getCategroia($value){
 
-     switch ($value) {
+      //$lv = strtolower($value);
+
+      //echo $lv;
+
+      
+      switch ($value) {
       
         case 'carnaval':
-        $category = 'Carnaval';
+        $category = 'carnaval';
         break;
 
         case 'congresos':
-        $category = 'Congresos';
+        $category = 'congresos';
         break;
 
         case 'cultura':
-        $category = 'Cultura';
+        $category = 'cultura';
         break;
 
         case 'danza':
-        $category = 'Danza';
+        $category = 'danza';
         break;
 
         case 'deporte':
-        $category = 'Deporte';
+        $category = 'deporte';
         break;
       
         case 'espectaculos':
-        $category = 'Espectáculos';
+        $category = 'espectáculos';
         break;
 
         case 'exposiciones':
-        $category = 'Exposiciones';
+        $category = 'exposiciones';
         break;
 
         case 'ferias':
-        $category = 'Ferias';
+        $category = 'ferias';
         break;
 
         case 'fiesta':
-        $category = 'Fiesta';
+        $category = 'fiesta';
         break;
 
         case 'flamenco':
-        $category = 'Flamenco';
+        $category = 'flamenco';
         break;
 
         case 'gastronomia':
-        $category = 'Gastronomía';
+        $category = 'gastronomía';
         break;
 
         case 'naturaleza':
-        $category = 'Naturaleza';
+        $category = 'naturaleza';
         break;
 
         case 'navidad':
-        $category = 'Navidad';
+        $category = 'navidad';
         break;
 
         case 'ocio':
-        $category = 'Ocio';
+        $category = 'ocio';
         break;
 
         case 'romerias':
-        $category = 'Romerías';
+        $category = 'romerías';
         break;
 
         case 'ruta':
-        $category = 'Ruta';
+        $category = 'ruta';
         break;
 
         case 'semana-santa':
-        $category = 'Semana Santa';
+        $category = 'semana Santa';
         break;
 
         case 'taller':
-        $category = 'Taller';
+        $category = 'taller';
         break;
 
         case 'teatro':
-        $category = 'Teatro';
+        $category = 'teatro';
         break;
 
         case 'todas-las-categorias':
@@ -219,7 +224,7 @@ is_hidden = 0
       </div>
    
     <!-- SEARCH -->
-    <div id='prtlSearch'>
+    <div id='prtlSearchEventos'>
       {% partial "site/searchevent" %}
     </div>
 

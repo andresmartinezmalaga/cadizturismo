@@ -291,6 +291,44 @@ code = "redes-sociales"
         });
 
 
+        $('#prtlSearchEventos #bscEvento').on('click', function(){
+
+            var category = $('#sltCategory');
+            var days = $('#inpDate');
+            var location = $('#sltLocationEvent');
+
+            var sCategory = slugIn(category.val());
+            var sDays = days.val();
+            var sLocation = slugIn(location.val());
+
+            var dayss = sDays.split(' - ');
+            var dstart = dayss[0].replace( '.', '-');
+            dstart = dstart.replace( '.', '-20');  
+            var dend = dayss[1].replace( '.', '-');
+            dend = dend.replace( '.', '-20');
+           
+
+            var url = window.location.href
+
+            var arr = url.split('/');
+            var total = arr.length;
+
+            var icategory = arr[total-4];
+            var idstart = arr[total-3];
+            var idend = arr[total-2];
+            var ilocation = arr[total-1];
+
+            var nurl = url.replace( icategory, sCategory); 
+            nurl = nurl.replace( idstart, dstart); 
+            nurl = nurl.replace( idend, dend);
+            nurl = nurl.replace( ilocation, sLocation); 
+
+            history.pushState(null, "", nurl);
+
+
+        });
+
+
         var slugIn = function(str) {
           str = str.replace(/^\s+|\s+$/g, ''); // trim
           str = str.toLowerCase();
