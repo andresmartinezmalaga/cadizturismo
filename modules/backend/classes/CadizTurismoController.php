@@ -12,6 +12,8 @@ use RainLab\Translate\Classes\MLCmsObject;
 use Cms\Classes\Theme;
 use Config;
 
+use RainLab\Translate\Models\Locale;
+
 class CadizTurismoController extends ControllerBase
 {
 	public function __construct() 
@@ -268,23 +270,29 @@ class CadizTurismoController extends ControllerBase
     }
 
     public function empresasList($typeslug, $municipalityslug, $searchString) {
+        
         $empresasList =  $this->StaticApp->empresasFind($typeslug, $municipalityslug, $searchString);
-        return new JsonResponse(['data'=>$empresasList], 200);
+        $result = $this->empresasGetMltg($empresasList);
+        return new JsonResponse(['data'=>$result], 200);
+    
     }
 
     public function empresasListPag($typeslug, $municipalityslug, $searchString, $pag, $number) {
         $empresasList =  $this->StaticApp->empresasFindPag($typeslug, $municipalityslug, $searchString, $pag, $number);
-        return new JsonResponse(['data'=>$empresasList], 200);
+        $result = $this->empresasGetMltg($empresasList);
+        return new JsonResponse(['data'=>$result], 200);
     }
 
     public function empresasListByType ($typeslug) {
         $empresasList =  $this->StaticApp->empresasFindByType($typeslug);
-        return new JsonResponse(['data'=>$empresasList], 200);
+        $result = $this->empresasGetMltg($empresasList);
+        return new JsonResponse(['data'=>$result], 200);
     }
 
     public function empresasListByTypePag ($typeslug, $pag, $number) {
         $empresasList =  $this->StaticApp->empresasFindByTypePag($typeslug, $pag, $number);
-        return new JsonResponse(['data'=>$empresasList], 200);
+        $result = $this->empresasGetMltg($empresasList);
+        return new JsonResponse(['data'=>$result], 200);
     }
 
     public function empresaShowByNameSlug ($nameslug,$lang) {
@@ -293,6 +301,38 @@ class CadizTurismoController extends ControllerBase
         $empresa->translateContext($lang);
         
         return new JsonResponse(['data'=>$empresa], 200);
+    }
+
+
+    public function empresasGetMltg($empresasList) {
+
+        $MLocale = new Locale();
+        $result = collect();
+                                
+        foreach ($empresasList as $iEmpresa) {
+            
+            $cempresa = collect();
+
+            foreach ($MLocale->listAvailable() as $key => $value) {
+                
+                if($key != 'es'){
+
+                    $iEmpresa->translateContext($key);
+                    $cempresa->put($key,['title'=>$iEmpresa->title,'description'=>$iEmpresa->description,'info'=>$iEmpresa->info]);                   
+                    
+                } else {
+                    $iEmpresa->translateContext('es');
+                    $cempresa->put($key,$iEmpresa); 
+                }
+                
+            }
+           
+            $result->put($cempresa['es']->name,$cempresa);
+
+        }
+
+        return $result;
+    
     }
 
     // PUBLICACIONES
