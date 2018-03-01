@@ -4560,3 +4560,19 @@ footer {
     }
   }
 }
+
+#header-sector {
+  &:before {
+    content: none !important;
+  }
+}
+
+#header-sector + .all-events {
+  margin-top: 0px !important;
+  #st-empresas {
+    display: none !important;
+  }
+  #all-empresas {
+    margin-top: 0px !important;
+  }
+}

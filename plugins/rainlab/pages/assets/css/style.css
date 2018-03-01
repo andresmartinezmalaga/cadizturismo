@@ -3672,3 +3672,13 @@ footer {
         height: 70px !important; }
       .bussinesPage #search-event .search-bar .empresa-search {
         background-image: url("../svg/minilupa.svg") !important; } }
+
+#header-sector:before {
+  content: none !important; }
+
+#header-sector + .all-events {
+  margin-top: 0px !important; }
+  #header-sector + .all-events #st-empresas {
+    display: none !important; }
+  #header-sector + .all-events #all-empresas {
+    margin-top: 0px !important; }
