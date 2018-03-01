@@ -35,8 +35,10 @@ is_hidden = 0
 	function onFindExperience(){
 
 		$days = $_POST['days'];
-		$interest = $_POST['interest'];
+		$pinterest = $_POST['interest'];
 		$tvisit = $_POST['tvisit'];
+
+    $interest = str_replace(' y ', ' ', $pinterest);
 
     if($days == 'all'){
       $days = 'dejate-llevar';
@@ -49,6 +51,7 @@ is_hidden = 0
     if($tvisit == 'all'){
       $tvisit ='todo cadiz';
     }
+
 
     $aLang = App::getLocale();
 

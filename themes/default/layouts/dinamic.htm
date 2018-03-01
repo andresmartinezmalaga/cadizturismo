@@ -204,9 +204,13 @@ code = "redes-sociales"
             }
 
             var type = $('#sltType');
-            var url = window.location.href
-
+            
+            var chgUrl = window.location.href
+            var purl = chgUrl.split('cadizturismo/');
+            var baseUrl = purl[0]+'cadizturismo/';
+            var url = purl[1];
             var arr = url.split('/');
+
             var total = arr.length;
 
             var itype = arr[total-3];
@@ -218,7 +222,7 @@ code = "redes-sociales"
             nurl = nurl.replace( ilocation, locationMlt);
             nurl = nurl.replace( isearch, searchMlt);
 
-            history.pushState(null, "", nurl);
+            history.pushState(null, "", baseUrl+nurl);
 
         });
 
@@ -244,9 +248,12 @@ code = "redes-sociales"
               sTvisit ='todo-cadiz';
             }
 
-            var url = window.location.href
-
+            var chgUrl = window.location.href
+            var purl = chgUrl.split('cadizturismo/');
+            var baseUrl = purl[0]+'cadizturismo/';
+            var url = purl[1];
             var arr = url.split('/');
+            
             var total = arr.length;
 
             var idays = arr[total-3];
@@ -257,7 +264,7 @@ code = "redes-sociales"
             nurl = nurl.replace( iinterest, sInterest);
             nurl = nurl.replace( itvisit, sTvisit);
 
-            history.pushState(null, "", nurl);
+            history.pushState(null, "", baseUrl+nurl);
 
 
         });
@@ -272,9 +279,12 @@ code = "redes-sociales"
             var sDays = slugIn(days.val());
             var sLocation = slugIn(location.val());
            
-            var url = window.location.href
-
+            var chgUrl = window.location.href
+            var purl = chgUrl.split('cadizturismo/');
+            var baseUrl = purl[0]+'cadizturismo/';
+            var url = purl[1];
             var arr = url.split('/');
+            
             var total = arr.length;
 
             var icategory = arr[total-3];
@@ -285,7 +295,7 @@ code = "redes-sociales"
             nurl = nurl.replace( idays, sDays); 
             nurl = nurl.replace( ilocation, sLocation); 
 
-            history.pushState(null, "", nurl);
+            history.pushState(null, "", baseUrl+nurl);
 
 
         });
@@ -308,9 +318,12 @@ code = "redes-sociales"
             dend = dend.replace( '.', '-20');
            
 
-            var url = window.location.href
-
+            var chgUrl = window.location.href
+            var purl = chgUrl.split('cadizturismo/');
+            var baseUrl = purl[0]+'cadizturismo/';
+            var url = purl[1];
             var arr = url.split('/');
+            
             var total = arr.length;
 
             var icategory = arr[total-4];
@@ -323,7 +336,7 @@ code = "redes-sociales"
             nurl = nurl.replace( idend, dend);
             nurl = nurl.replace( ilocation, sLocation); 
 
-            history.pushState(null, "", nurl);
+            history.pushState(null, "", baseUrl+nurl);
 
 
         });
