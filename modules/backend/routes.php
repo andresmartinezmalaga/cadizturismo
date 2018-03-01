@@ -30,7 +30,7 @@ Route::get('/api/experiencias/opciones/intereses', 'Backend\Classes\CadizTurismo
 Route::get('/api/experiencias/opciones/tipo-visita', 'Backend\Classes\CadizTurismoController@experienceTVisit');
 Route::get('/api/experiencias/{days}/{interest}/{tvisit}', 'Backend\Classes\CadizTurismoController@experienceFind');
 
-// Andrés Martínez : routes experiencias
+// Andrés Martínez : routes statics
 Route::get('/api/estaticas', 'Backend\Classes\CadizTurismoController@statics');
 
 // Andrés Martínez : routes empresas //todos-los-tipos/todos-los-municipios = All
