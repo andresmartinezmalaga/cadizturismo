@@ -161,6 +161,15 @@ class StaticApp extends ComponentBase
 
     }
 
+    public function getTiposEmpresasFull() {
+       
+        $tipos = Tipo::all();
+       
+        return $tipos;
+
+    }
+
+
     public function getTipoBySlug($slug) {
   
         $tipo = Tipo::where('slug',$slug)->first();

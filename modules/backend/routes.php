@@ -37,6 +37,8 @@ Route::get('/api/estaticas', 'Backend\Classes\CadizTurismoController@statics');
     
     // Show empreas types
 Route::get('/api/empresas/opciones/tipos', 'Backend\Classes\CadizTurismoController@getTiposEmpresas');
+    // Show empreas municipalities
+Route::get('/api/empresas/opciones/ubicacion', 'Backend\Classes\CadizTurismoController@municipalitiesList');
     
     // Find by type_slug and municipality_slug no pagination, show all   
 Route::get('/api/empresas/{type_slug}/{municipality_slug}/{searchString}', 'Backend\Classes\CadizTurismoController@empresasList');
