@@ -2,7 +2,7 @@
 #  Form Behavior Config
 # ===================================
 
-name: backend::lang.user.name
+name: Tipo de empresa
 form: ~/modules/backend/models/tipo/fields.yaml
 modelClass: Backend\Models\Tipo
 defaultRedirect: backend/tipo
