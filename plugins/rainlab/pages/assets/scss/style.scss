@@ -2436,6 +2436,10 @@ html, body {
 }
 
 @media (max-width: 660px) {
+  .not-found-container .not-found h1 {
+    font-size: 150px !important;
+    line-height: 160px !important;
+  }
   .publicaciones-title {
     font-size: 34px !important;
   }
@@ -4507,7 +4511,7 @@ footer {
 }
 
 @media (min-width: 710px) and (max-width: 920px) {
-.search-empresas {
+  .search-empresas {
   .header-container {
     margin-top: 140px !important;
   }
@@ -4653,6 +4657,7 @@ footer {
       text-decoration: none;
       img {
         margin-left: 16px;
+        margin-top: -3px;
       }
       &:hover, &:focus, &:active {
         opacity: 0.5;

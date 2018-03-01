@@ -2121,6 +2121,9 @@ html, body {
     margin-left: 50px !important; } }
 
 @media (max-width: 660px) {
+  .not-found-container .not-found h1 {
+    font-size: 150px !important;
+    line-height: 160px !important; }
   .publicaciones-title {
     font-size: 34px !important; }
   .publis {
@@ -3750,7 +3753,8 @@ footer {
       font-weight: 300;
       text-decoration: none; }
       .not-found-container .not-found a img {
-        margin-left: 16px; }
+        margin-left: 16px;
+        margin-top: -3px; }
       .not-found-container .not-found a:hover, .not-found-container .not-found a:focus, .not-found-container .not-found a:active {
         opacity: 0.5;
         text-decoration: none; }
