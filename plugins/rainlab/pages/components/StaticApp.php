@@ -882,6 +882,17 @@ class StaticApp extends ComponentBase
         return $result;
     }
 
+    public function rutaByName($name)
+    {
+        $theme = Theme::getActiveTheme();
+        $pages = Page::listInTheme($theme, false);
+        $list =  new \Illuminate\Support\Collection($pages);
+
+        $result = $list->where("is_hidden",0)->where("template","rutas")->where('url', '/rutas/'.$name)->values();
+
+        return $result;
+    }
+
     public function rutaFind($category, $days, $location)
     {
         $theme = Theme::getActiveTheme();
