@@ -262,6 +262,35 @@ code = "redes-sociales"
 
         });
 
+        $('#prtlSearchRutas #bscRuta').on('click', function(){
+
+            var category = $('#sltCategory');
+            var days = $('#sltDays');
+            var location = $('#sltLocationRutas');
+
+            var sCategory = slugIn(category.val());
+            var sDays = slugIn(days.val());
+            var sLocation = slugIn(location.val());
+           
+            var url = window.location.href
+
+            var arr = url.split('/');
+            var total = arr.length;
+
+            var icategory = arr[total-3];
+            var idays = arr[total-2];
+            var ilocation = arr[total-1];
+
+            var nurl = url.replace( icategory, sCategory); 
+            nurl = nurl.replace( idays, sDays); 
+            nurl = nurl.replace( ilocation, sLocation); 
+
+            history.pushState(null, "", nurl);
+
+
+        });
+
+
         var slugIn = function(str) {
           str = str.replace(/^\s+|\s+$/g, ''); // trim
           str = str.toLowerCase();

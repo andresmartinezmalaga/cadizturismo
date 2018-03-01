@@ -60,6 +60,20 @@
         
       }
 
+      if($this->param('category')){
+        $this['category'] = $this->param('category');
+        $pgUrl = $this->page->url ;
+        $this->page->url = str_replace(':category', $this['category'], $pgUrl);
+        
+      }
+
+      if($this->param('location')){
+        $this['location'] = $this->param('location');
+        $pgUrl = $this->page->url ;
+        $this->page->url = str_replace(':location', $this['location'], $pgUrl);
+        
+      }
+
       
   }
 

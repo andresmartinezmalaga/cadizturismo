@@ -24,17 +24,17 @@
       <div class="inputs-container">
 
         <div id="event-category" class="days-container">
-          <select class="custom-select select-days" name="category">
+          <select id="sltCategory" class="custom-select select-days" name="category">
             {% for key,value in categories %}
                 <option value="{{key}}">{{ value |_ }}</option>
             {% endfor %}
-            <option value="all" selected=>{{'Todas las categorías'|_ }}</option>
+            <option value="todas-las-categorias" selected=>{{'Todas las categorías'|_ }}</option>
           </select>
           <span class="select-title">{{ 'CATEGORÍA'|_ }}</span>
         </div>
 
         <div id="interests-ruta" class="interests-container">
-          <select class="custom-select select-days" name="days">
+          <select id="sltDays" class="custom-select select-days" name="days">
             {% for i in 1..7 %}
               {% if i<2 %}
               	* <option value="{{ i }}">{{ i }} {{'día'|_}}</option>
@@ -42,23 +42,23 @@
 		            * <option value="{{ i }}">{{ i }} {{ 'días'|_}}</option>
               {% endif %}
             {% endfor %}
-            <option value="all" selected>{{ 'Déjate llevar'|_ }}</option>
+            <option value="dejate-llevar" selected>{{ 'Déjate llevar'|_ }}</option>
           </select>
           <span class="select-title">{{ 'TU ESTANCIA'|_ }}</span>
         </div>
 
         <div id="event-location" class="type-container">
-          <select class="custom-select select-type" name="location">
+          <select id="sltLocationRutas" class="custom-select select-type" name="location">
             {% for key,value in municipalities %}
                 <option value="{{key}}">{{value}}</option>
             {% endfor %}
-            <option value="all" selected=>{{'Todos los municipios'|_ }}</option>
+            <option value="todos-los-municipios" selected=>{{'Todos los municipios'|_ }}</option>
           </select>
           <span class="select-title">{{ 'UBICACIÓN'|_ }}</span>
         </div>
 
       <div class="button-container">
-        <input type="submit" value="{{ 'Ver rutas'|_ }}">
+        <input id="bscRuta" type="submit" value="{{ 'Ver rutas'|_ }}">
       </div>
     </form>
   </div>
