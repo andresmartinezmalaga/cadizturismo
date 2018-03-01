@@ -161,6 +161,15 @@ class StaticApp extends ComponentBase
 
     }
 
+    public function getTiposEmpresasFull() {
+       
+        $tipos = Tipo::all();
+       
+        return $tipos;
+
+    }
+
+
     public function getTipoBySlug($slug) {
   
         $tipo = Tipo::where('slug',$slug)->first();
@@ -407,7 +416,7 @@ class StaticApp extends ComponentBase
         if(count($gtype)>0){
             $type_id = $gtype->id;
         }
-            
+
         if($typeslug == 'todos-los-tipos'){
             $type_id = null;
             $typeOperator = '!=';
@@ -431,6 +440,7 @@ class StaticApp extends ComponentBase
 
            $pempresas = $fempresas;
         }
+
 
         if($searchString != 'todas-las-empresas'){  
             

@@ -23,7 +23,15 @@ class CadizTurismoController extends ControllerBase
 	public function municipalitiesList()
     {    	
     	$municipalitiesList =  $this->StaticApp->getMunicipalities();
-    	return new JsonResponse(['data'=>$municipalitiesList], 200);
+       
+        $result = collect();
+        
+        foreach ($municipalitiesList as $key => $value) {
+           $result->put($key,['name'=>$value,'slug'=>str_slug($value)]);
+        }
+    	
+        //return new JsonResponse(['data'=>$municipalitiesList], 200);
+        return new JsonResponse(['data'=>$result], 200);
     }
 
     public function municipalitiesIndex()
@@ -254,17 +262,18 @@ class CadizTurismoController extends ControllerBase
     // EMPRESAS 
     
     public function getTiposEmpresas() {
-        $types = $this->StaticApp->getTiposEmpresas();
+        //$types = $this->StaticApp->getTiposEmpresas();
+        $types = $this->StaticApp->getTiposEmpresasFull();
         return new JsonResponse(['data'=>$types], 200);
     }
 
-    public function empresasList($typeslug, $municipalityslug) {
-        $empresasList =  $this->StaticApp->empresasFind($typeslug, $municipalityslug);
+    public function empresasList($typeslug, $municipalityslug, $searchString) {
+        $empresasList =  $this->StaticApp->empresasFind($typeslug, $municipalityslug, $searchString);
         return new JsonResponse(['data'=>$empresasList], 200);
     }
 
-    public function empresasListPag($typeslug, $municipalityslug, $pag, $number) {
-        $empresasList =  $this->StaticApp->empresasFindPag($typeslug, $municipalityslug, $pag, $number);
+    public function empresasListPag($typeslug, $municipalityslug, $searchString, $pag, $number) {
+        $empresasList =  $this->StaticApp->empresasFindPag($typeslug, $municipalityslug, $searchString, $pag, $number);
         return new JsonResponse(['data'=>$empresasList], 200);
     }
 
