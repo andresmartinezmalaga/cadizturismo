@@ -105,6 +105,7 @@ is_hidden = 0
        
       default:
         $location = ucfirst($this->param('location'));
+        $location = str_replace('-', ' ', $location);
         break;
     }
 
