@@ -107,7 +107,7 @@ class StaticApp extends ComponentBase
         'algodonales' => 'Algodonales',
         'arcos de la frontera' => 'Arcos de la Frontera',
         'barbate' => 'Barbate',
-        'benalup-casas viejas' => 'Benalup-Casas Viejas',
+        'benalup casas viejas' => 'Benalup Casas Viejas',
         'benaocaz' => 'Benaocaz',
         'bornos' => 'Bornos',
         'cádiz' => 'Cádiz',
@@ -145,6 +145,63 @@ class StaticApp extends ComponentBase
         'villamartín' => 'Villamartín',
         'zahara de la sierra' => 'Zahara de la Sierra',
         ];
+    }
+
+    public function getMunicipalitiesBySlug($slug){
+        
+        $municipios =  [
+        'alcala-de-los-gazules' => 'alcalá de los gazules',
+        'alcala-del-valle' => 'alcalá del valle',
+        'algar' => 'algar',
+        'algeciras' => 'algeciras',
+        'algodonales' => 'algodonales',
+        'arcos-de-la-frontera' => 'arcos de la frontera',
+        'barbate' => 'barbate',
+        'benalup-casas-viejas' => 'benalup casas viejas',
+        'benaocaz' => 'benaocaz',
+        'bornos' => 'bornos',
+        'cadiz' => 'cádiz',
+        'castellar-de-la-frontera' => 'castellar de la frontera',
+        'chiclana-de-la-frontera' => 'chiclana de la frontera',
+        'chipiona' => 'chipiona',
+        'conil-de-la-frontera' => 'conil de la frontera',
+        'el-bosque' => 'el bosque',
+        'el-gastor' => 'el gastor',
+        'el-puerto-de-santa-maria' => 'el puerto de santa maría',
+        'espera' => 'espera',
+        'grazalema' => 'grazalema',
+        'jerez-de-la-frontera' => 'jerez de la frontera',
+        'jimena-de-la-frontera' => 'jimena de la frontera',
+        'la-linea-de-la-concepcion' => 'la línea de la concepción',
+        'los-barrios' => 'los barrios',
+        'medina-sidonia' => 'medina sidonia',
+        'olvera' => 'olvera',
+        'paterna-de-rivera' => 'paterna de rivera',
+        'prado-del-rey' => 'prado del rey',
+        'puerto-real' => 'puerto real',
+        'puerto-serrano' => 'puerto serrano',
+        'rota' => 'rota',
+        'san-fernando' => 'san fernando',
+        'san-jose-del-valle' => 'san josé del valle',
+        'sanlucar-de-barrameda' => 'sanlúcar de barrameda',
+        'san-roque' => 'san roque',
+        'setenil-de-las-bodegas' => 'setenil de las bodegas',
+        'tarifa' => 'tarifa',
+        'torre-alhaquime' => 'torre alháquime',
+        'trebujena' => 'trebujena',
+        'ubrique' => 'ubrique',
+        'vejer-de-la-frontera' => 'vejer de la frontera',
+        'villaluenga-del-rosario' => 'villaluenga del rosario',
+        'villamartin' => 'villamartín',
+        'zahara-de-la-sierra' => 'zahara de la sierra',
+        ];
+
+        if(isset($municipios[$slug])){
+            return $municipios[$slug];
+        } else {
+            return 'all';
+        }
+       
     }
 
     public function getTiposEmpresas() {
@@ -347,7 +404,9 @@ class StaticApp extends ComponentBase
     }
 
     public function eventFind($category, $date_start, $date_end, $location)
-    {        
+    {   
+
+
         $theme = Theme::getActiveTheme();
         $pages = Page::listInTheme($theme, false);
         $events =  new \Illuminate\Support\Collection($pages);

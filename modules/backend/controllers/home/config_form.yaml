@@ -2,7 +2,7 @@
 #  Form Behavior Config
 # ===================================
 
-name: backend::lang.user.name
+name: Home
 form: ~/modules/backend/models/home/fields.yaml
 modelClass: Backend\Models\Home
 defaultRedirect: backend/home

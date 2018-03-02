@@ -118,7 +118,7 @@ class Empresa extends Model
         'algodonales' => 'Algodonales',
         'arcos de la frontera' => 'Arcos de la Frontera',
         'barbate' => 'Barbate',
-        'benalup-casas viejas' => 'Benalup-Casas Viejas',
+        'benalup casas viejas' => 'Benalup Casas Viejas',
         'benaocaz' => 'Benaocaz',
         'bornos' => 'Bornos',
         'cádiz' => 'Cádiz',
@@ -164,9 +164,6 @@ class Empresa extends Model
      */
     public function afterCreate()
     {
-        $this->slug = str_slug($this->name);
-        $this->mslug = str_slug($this->municipality);
-        $this->save();
     }
 
 }

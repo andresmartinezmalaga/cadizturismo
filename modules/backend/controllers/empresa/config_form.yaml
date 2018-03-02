@@ -2,7 +2,7 @@
 #  Form Behavior Config
 # ===================================
 
-name: backend::lang.user.name
+name: Registro de empresa
 form: ~/modules/backend/models/empresa/fields.yaml
 modelClass: Backend\Models\Empresa
 defaultRedirect: backend/empresa

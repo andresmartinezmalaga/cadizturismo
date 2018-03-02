@@ -1,5 +1,5 @@
 title = "allEvents"
-url = "/listado-de-eventos"
+url = "/listado-de-eventos/:category/:daystart/:dayend/:location"
 layout = "dinamic"
 is_hidden = 0
 
@@ -22,20 +22,16 @@ is_hidden = 0
 			$this['lang']='es';
 		}
     
-    if(Session::has('data')){
-      Session::put('reciveData',Session::get('data'));     
-    }
-
-    if(Session::has('reciveData')){
-      $this['events'] = json_decode(Session::get('reciveData'));     
-    }
+    $category = $this->getCategroia($this->param('category'));
+    $location = $this->staticApp->getMunicipalitiesBySlug($this->param('location'));
+    
+    $this['events'] = $this->staticApp->eventFind($category,$this->param('daystart'),$this->param('dayend'),$location);
 
     $this['ptitle'] = 'Cádiz | Eventos';
     $this['metaTitle'] = 'Cádiz | Eventos';
 	}
 
 	function onFindEvent(){
-
 
     $category = $_POST['category'];
     $location = $_POST['location'];
@@ -47,6 +43,14 @@ is_hidden = 0
     $daystart = (new Date(intval($edaystart[2]).'-'.intval($edaystart[1]).'-'.intval($edaystart[0])))->format('d-m-Y');
     $dayend = (new Date(intval($edayend[2]).'-'.intval($edayend[1]).'-'.intval($edayend[0])))->format('d-m-Y');
 
+    if($category == 'todas-las-categorias'){
+      $category = 'all';
+    }
+
+    if($location == 'todos-los-municipios'){
+      $location = 'all';
+    }
+      
     $this['events'] = $this->staticApp->eventFind($category,$daystart,$dayend,$location);
 
     return [
@@ -55,6 +59,107 @@ is_hidden = 0
     
   }
 
+  
+
+  public function getCategroia($value){
+
+      //$lv = strtolower($value);
+
+      //echo $lv;
+
+      
+      switch ($value) {
+      
+        case 'carnaval':
+        $category = 'carnaval';
+        break;
+
+        case 'congresos':
+        $category = 'congresos';
+        break;
+
+        case 'cultura':
+        $category = 'cultura';
+        break;
+
+        case 'danza':
+        $category = 'danza';
+        break;
+
+        case 'deporte':
+        $category = 'deporte';
+        break;
+      
+        case 'espectaculos':
+        $category = 'espectáculos';
+        break;
+
+        case 'exposiciones':
+        $category = 'exposiciones';
+        break;
+
+        case 'ferias':
+        $category = 'ferias';
+        break;
+
+        case 'fiesta':
+        $category = 'fiesta';
+        break;
+
+        case 'flamenco':
+        $category = 'flamenco';
+        break;
+
+        case 'gastronomia':
+        $category = 'gastronomía';
+        break;
+
+        case 'naturaleza':
+        $category = 'naturaleza';
+        break;
+
+        case 'navidad':
+        $category = 'navidad';
+        break;
+
+        case 'ocio':
+        $category = 'ocio';
+        break;
+
+        case 'romerias':
+        $category = 'romerías';
+        break;
+
+        case 'ruta':
+        $category = 'ruta';
+        break;
+
+        case 'semana-santa':
+        $category = 'semana Santa';
+        break;
+
+        case 'taller':
+        $category = 'taller';
+        break;
+
+        case 'teatro':
+        $category = 'teatro';
+        break;
+
+        case 'todas-las-categorias':
+        $category = 'all';
+        break;
+            
+      default:
+        $category = 'all';
+        break;
+    }
+
+    return $category;
+
+  }
+
+ 
 ?>
 ==
 
@@ -69,7 +174,7 @@ is_hidden = 0
       </div>
    
     <!-- SEARCH -->
-    <div id='prtlSearch'>
+    <div id='prtlSearchEventos'>
       {% partial "site/searchevent" %}
     </div>
 

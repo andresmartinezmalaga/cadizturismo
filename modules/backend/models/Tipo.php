@@ -100,8 +100,7 @@ class Tipo extends Model
      */
     public function afterCreate()
     {
-        $this->slug = str_slug($this->name);
-        $this->save();
+        
     }
 
 }

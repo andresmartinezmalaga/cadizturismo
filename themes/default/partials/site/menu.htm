@@ -74,6 +74,27 @@
         
       }
 
+      if($this->param('location')){
+        $this['location'] = $this->param('location');
+        $pgUrl = $this->page->url ;
+        $this->page->url = str_replace(':location', $this['location'], $pgUrl);
+        
+      }
+
+      if($this->param('daystart')){
+        $this['daystart'] = $this->param('daystart');
+        $pgUrl = $this->page->url ;
+        $this->page->url = str_replace(':daystart', $this['daystart'], $pgUrl);
+        
+      }
+
+      if($this->param('dayend')){
+        $this['dayend'] = $this->param('dayend');
+        $pgUrl = $this->page->url ;
+        $this->page->url = str_replace(':dayend', $this['dayend'], $pgUrl);
+        
+      }
+
       
   }
 
