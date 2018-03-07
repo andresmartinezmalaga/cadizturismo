@@ -3809,6 +3809,7 @@ iframe {
   margin-top: 35px; }
 
 video {
+  width: auto;
   max-width: 90%;
-  margin-bottom: 30px;
-  margin-top: 30px; }
+  margin: 20px auto;
+  display: table; }
