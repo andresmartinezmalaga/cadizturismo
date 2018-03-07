@@ -3067,6 +3067,6 @@ ul.autocomplete.dropdown-menu.inspector-autocomplete li a{padding:5px 12px;white
 .clockpicker-hours .clockpicker-tick.tick-inner{font-size:16px}
 .clockpicker-minutes .clockpicker-tick{font-size:16px}
 
-.list-cell-name-municipality{
+.list-cell-name-municipality::first-letter{
   text-transform: capitalize!important;
 }
