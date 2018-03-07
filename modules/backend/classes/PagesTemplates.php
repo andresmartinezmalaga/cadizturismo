@@ -314,8 +314,7 @@ class PagesTemplates
   <div class="section-txt-village">
     <div class="txt-container">
 
-      <h3 class="title">EXPERIENCIAS
-        <br>EN (MUNICIPIO)</h3><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
+      <h3 class="title">EXPERIENCIAS EN (MUNICIPIO)</h3><img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
     </div>
   </div>
   <div class="all-exps">
