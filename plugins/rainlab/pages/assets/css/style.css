@@ -3807,3 +3807,8 @@ iframe {
   max-width: 100%;
   margin-bottom: 75px;
   margin-top: 35px; }
+
+video {
+  max-width: 90%;
+  margin-bottom: 30px;
+  margin-top: 30px; }
