@@ -3803,3 +3803,7 @@ footer {
     display: none !important; } }
 
 /* TABLAS */
+iframe {
+  max-width: 100%;
+  margin-bottom: 75px;
+  margin-top: 35px; }
