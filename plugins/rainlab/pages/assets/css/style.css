@@ -3803,19 +3803,3 @@ footer {
     display: none !important; } }
 
 /* TABLAS */
-table {
-  margin-top: 50px;
-  margin-bottom: 50px; }
-  table tr {
-    border-bottom: 1px solid #CECECE; }
-    table tr td {
-      font-size: 18px;
-      line-height: 33px;
-      font-weight: 300;
-      color: #232323;
-      padding-right: 11px;
-      padding-left: 5px; }
-    table tr th {
-      font-size: 18px;
-      background-color: #CECECE;
-      padding: 5px 11px 5px 5px; }
