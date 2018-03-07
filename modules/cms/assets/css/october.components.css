@@ -360,3 +360,7 @@ body.drag div.control-componentlist div.components div.layout-cell > div:active:
   text-shadow: 0 0 1px #475354 !important;
   color: #ffffff !important;
 }
+
+.list-cell-name-municipality{
+  text-transform: capitalize!important;
+}
