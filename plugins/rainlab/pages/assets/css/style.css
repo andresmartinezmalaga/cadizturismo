@@ -3801,3 +3801,15 @@ footer {
   .img-village, .featured-element, .secret-routes, .vertical-share, #out-features, .send-info-container, .icons-row, #map,
   .static-header, .somos-section, .somos-txt-container, .ways, .ayuda-header, .publicaciones, .contact, .contact-ways, .full-legal-container {
     display: none !important; } }
+
+/* TABLAS */
+table {
+  margin-top: 50px;
+  margin-bottom: 50px; }
+  table tr {
+    border-bottom: 1px solid #CECECE; }
+    table tr td {
+      font-size: 18px;
+      line-height: 33px;
+      font-weight: 300;
+      color: #232323; }

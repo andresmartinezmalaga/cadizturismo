@@ -4710,3 +4710,19 @@ footer {
     display: none !important;
   }
 }
+
+
+/* TABLAS */
+table {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  tr {
+    border-bottom: 1px solid #CECECE;
+    td {
+      font-size: 18px;
+      line-height: 33px;
+      font-weight: 300;
+      color: #232323;
+    }
+  }
+}
