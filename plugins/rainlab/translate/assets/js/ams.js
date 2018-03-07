@@ -175,7 +175,7 @@ var ams = function(){
                 toolbar.append('<span data-toggle="tooltip" data-placement="bottom" data-delay="200" title="Info" class="btwmoreInfo custom-wysiwyg"> <img src="/storage/app/media/uploaded-files/templates/masinfo.svg"/></span>');
                 toolbar.append('<span data-toggle="tooltip" data-placement="bottom" data-delay="200" title="Ubicación" class="btwlocations custom-wysiwyg"> <img src="/storage/app/media/uploaded-files/templates/ubicacion.svg"/></span>');
             }
-             
+
         }
 
         if ( pt.find('.plantillaRuta').length > 0 ||
@@ -409,6 +409,7 @@ var ams = function(){
 		$(".mock-insert").click(function(e) {
 				$(this).toggleClass("mock-selected");
 				$(this).children('.mock-insert').toggleClass("mock-selected");
+				console.log('clickado');
 		});
 		$(".custom-wysiwyg").click(function(e) {
 				(".mock-insert").removeClass("mock-selected");
