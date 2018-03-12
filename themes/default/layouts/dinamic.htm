@@ -224,6 +224,10 @@ code = "redes-sociales"
 
             history.pushState(null, "", baseUrl+nurl);
 
+            $('html, body').animate({
+                  scrollTop: $(".search-title-container").offset().top
+              }, 2000);
+
         });
 
         $('#prtlSearchExperiences #bscExperience').on('click', function(){
