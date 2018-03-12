@@ -12,6 +12,10 @@ fields:
         span: right
         label: Teléfono
 
+    extract:
+        span: full
+        label: Extract
+
     type_id:
         span: left
         label: Tipo
