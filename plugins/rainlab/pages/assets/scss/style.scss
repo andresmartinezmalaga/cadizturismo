@@ -4713,7 +4713,10 @@ footer {
 
 
 /* TABLAS */
-table:not(.pika-table){
+
+.section-txt > table, .section-txt + table,
+.section-img + table, .section-txt-village > table,
+.section-txt-village + table {
   margin-top: 50px;
   margin-bottom: 50px;
   tr {

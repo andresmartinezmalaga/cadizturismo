@@ -3803,19 +3803,27 @@ footer {
     display: none !important; } }
 
 /* TABLAS */
-table:not(.pika-table) {
+.section-txt > table, .section-txt + table,
+.section-img + table, .section-txt-village > table,
+.section-txt-village + table {
   margin-top: 50px;
   margin-bottom: 50px; }
-  table:not(.pika-table) tr {
+  .section-txt > table tr, .section-txt + table tr,
+  .section-img + table tr, .section-txt-village > table tr,
+  .section-txt-village + table tr {
     border-bottom: 1px solid #CECECE; }
-    table:not(.pika-table) tr td {
+    .section-txt > table tr td, .section-txt + table tr td,
+    .section-img + table tr td, .section-txt-village > table tr td,
+    .section-txt-village + table tr td {
       font-size: 18px;
       line-height: 33px;
       font-weight: 300;
       color: #232323;
       padding-right: 11px;
       padding-left: 5px; }
-    table:not(.pika-table) tr th {
+    .section-txt > table tr th, .section-txt + table tr th,
+    .section-img + table tr th, .section-txt-village > table tr th,
+    .section-txt-village + table tr th {
       font-size: 18px;
       background-color: #CECECE;
       padding: 5px 11px 5px 5px; }
