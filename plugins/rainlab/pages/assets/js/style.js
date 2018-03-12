@@ -21,6 +21,13 @@ $(".menu-title").click(function(){
   $(this).siblings('.menu-ul').toggleClass('open-menu-mobile');
 });
 
+
+$("#bscEmpresa").click(function(){
+  $('html, body').animate({
+        scrollTop: $("#all-empresas").offset().top
+    }, 2000);
+});
+
 $(".normal").click(function(){
   $(".elements").slideToggle(function() {
     if ($(this).is(':visible')) {
