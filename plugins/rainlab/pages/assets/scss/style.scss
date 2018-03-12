@@ -4713,7 +4713,7 @@ footer {
 
 
 /* TABLAS */
-table:not(.pika-table) {
+table:not(.pika-table), table:not(.table-condensed) {
   margin-top: 50px;
   margin-bottom: 50px;
   tr {
