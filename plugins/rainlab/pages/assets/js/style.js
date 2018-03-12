@@ -24,7 +24,7 @@ $(".menu-title").click(function(){
 
 $("#bscEmpresa").click(function(){
   $('html, body').animate({
-        scrollTop: $("#all-empresas").offset().top
+        scrollTop: $("#st-empresas").offset().top
     }, 2000);
 });
 
