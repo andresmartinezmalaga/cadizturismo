@@ -223,11 +223,6 @@ code = "redes-sociales"
             nurl = nurl.replace( isearch, searchMlt);
 
             history.pushState(null, "", baseUrl+nurl);
-
-            $('html, body').animate({
-                  scrollTop: $(".search-title-container").offset().top
-              }, 2000);
-
         });
 
         $('#prtlSearchExperiences #bscExperience').on('click', function(){
