@@ -1,0 +1,16 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+name: Tipo de interes de expereincias
+form: ~/modules/backend/models/intereses/fields.yaml
+modelClass: Backend\Models\Intereses
+defaultRedirect: backend/intereses
+
+create:
+    redirect: backend/intereses/update/:id
+    redirectClose: backend/intereses
+
+update:
+    redirect: backend/intereses
+    redirectClose: backend/intereses

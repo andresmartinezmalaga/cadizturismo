@@ -1,0 +1,65 @@
+<style>
+    .layout-cell{
+        padding-top: 0!important;
+    }
+    .floatJuan{
+        display: table-cell;
+        vertical-align: top;
+    }
+    .floatJuan.left{
+        width: 100px;
+        max-width: 100px;
+        background: #175DA3;
+    }
+    .floatJuan.left [data-control="toolbar"]{
+        white-space: normal;
+    }
+    .floatJuan.left a{
+        display: block;
+        text-align: center;
+        font-family: AvenirNext-Medium;
+        font-size: 11px;
+        color: #FFFFFF;
+        letter-spacing: 0;
+    }
+    .floatJuan.left a img{
+        display: block;
+        margin: auto;
+        margin-top: 45px;
+        margin-bottom: 15px;
+    }
+    .floatJuan.right{
+        width: 80%;
+    }
+    .toolbar-widget.list-header{
+        margin-top: 23px!important;
+    }
+    .padded-container.layout{
+        padding: 0!important;
+    }
+    .floatJuan.right.paddsix{
+        padding: 60px;
+    }
+</style>
+<div data-control="toolbar">
+    <a href="<?= Backend::url('backend/intereses') ?>" style="opacity: 0.5">
+        <img src="/modules/backend/assets/images/intereses.svg" alt="">
+        Intereses de experiencias
+    </a>
+
+    <a href="<?= Backend::url('backend/tiposvisitas') ?>" >
+        <img src="/modules/backend/assets/images/tvisitas.svg" alt="">
+        Tipo de visita de experiencias
+    </a>
+
+    <a href="<?= Backend::url('backend/catgeventos') ?>" >
+        <img src="/modules/backend/assets/images/catgeventos.svg" alt="">
+        Categorías de eventos
+    </a>
+
+    <a href="<?= Backend::url('backend/catgrutas') ?>" >
+        <img src="/modules/backend/assets/images/catgrutas.svg" alt="">
+        Categorías de rutas
+    </a>
+
+</div>

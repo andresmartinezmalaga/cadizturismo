@@ -1,0 +1,16 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+name: Categoria de rutas
+form: ~/modules/backend/models/catgrutas/fields.yaml
+modelClass: Backend\Models\Catgrutas
+defaultRedirect: backend/catgrutas
+
+create:
+    redirect: backend/catgrutas/update/:id
+    redirectClose: backend/catgrutas
+
+update:
+    redirect: backend/catgrutas
+    redirectClose: backend/catgrutas

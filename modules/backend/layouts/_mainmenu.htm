@@ -61,6 +61,25 @@
                         <?php } ?>
                         
                         <?php if( trim(trans($item->label)) == 'Media' ){ ?>
+                            
+                            <?php if( $this->user->is_superuser == 1 ){ ?>
+                                <li class="<?= $isActive ? 'active' : null ?> svg-icon-container svg-active-effects">
+                                    <a href="/backend/backend/intereses">
+                                        <span class="nav-icon">
+                                            <?php if ($item->iconSvg): ?>
+                                                <img class="svg-icon" src="<?= config('app.urlApp') ?>modules/system/assets/images/menucatg.svg">
+                                            <?php endif ?>
+
+                                            <i class="<?= $item->iconSvg ? 'svg-replace' : null ?> <?= $item->icon ?>"></i>
+                                        </span>
+
+                                        <span class="nav-label">
+                                           Categorias
+                                        </span>
+                                    </a>
+                                </li>
+                            <?php } ?>
+
                             <li class="<?= $isActive ? 'active' : null ?> svg-icon-container svg-active-effects">
                                 <a href="/backend/backend/empresa">
                                     <span class="nav-icon">

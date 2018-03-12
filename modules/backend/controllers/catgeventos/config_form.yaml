@@ -1,0 +1,16 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+name: Categoría de eventos
+form: ~/modules/backend/models/catgeventos/fields.yaml
+modelClass: Backend\Models\Catgeventos
+defaultRedirect: backend/catgeventos
+
+create:
+    redirect: backend/catgeventos/update/:id
+    redirectClose: backend/catgeventos
+
+update:
+    redirect: backend/catgeventos
+    redirectClose: backend/catgeventos

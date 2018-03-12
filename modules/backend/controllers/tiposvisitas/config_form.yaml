@@ -1,0 +1,16 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+name: Tipo de visita de expereincias
+form: ~/modules/backend/models/tiposvisitas/fields.yaml
+modelClass: Backend\Models\Tiposvisitas
+defaultRedirect: backend/tiposvisitas
+
+create:
+    redirect: backend/tiposvisitas/update/:id
+    redirectClose: backend/tiposvisitas
+
+update:
+    redirect: backend/tiposvisitas
+    redirectClose: backend/tiposvisitas

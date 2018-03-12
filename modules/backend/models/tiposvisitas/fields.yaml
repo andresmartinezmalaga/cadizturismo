@@ -1,0 +1,9 @@
+# ===================================
+#  Field Definitions
+# ===================================
+
+fields:
+    
+    name:
+        span: left
+        label: Nombre de tipo de visita
