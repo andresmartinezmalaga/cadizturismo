@@ -224,10 +224,6 @@ code = "redes-sociales"
 
             history.pushState(null, "", baseUrl+nurl);
 
-            $('html, body').animate({
-                  scrollTop: $("#st-empresas").offset().top
-              }, 2000);
-
         });
 
         $('#prtlSearchExperiences #bscExperience').on('click', function(){
@@ -269,6 +265,8 @@ code = "redes-sociales"
             nurl = nurl.replace( itvisit, sTvisit);
 
             history.pushState(null, "", baseUrl+nurl);
+
+
         });
 
         $('#prtlSearchRutas #bscRuta').on('click', function(){
