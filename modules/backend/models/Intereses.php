@@ -18,7 +18,7 @@ class Intereses extends Model
      */
     protected $table = 'intereses';
 
-    protected $fillable = [];
+    protected $fillable = ['slug'];
 
     public $translatable = [
         'name'

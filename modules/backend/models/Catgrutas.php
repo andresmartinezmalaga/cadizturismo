@@ -18,7 +18,7 @@ class Catgrutas extends Model
      */
     protected $table = 'catgrutas';
 
-    protected $fillable = [];
+    protected $fillable = ['slug'];
 
     public $translatable = [
         'name'

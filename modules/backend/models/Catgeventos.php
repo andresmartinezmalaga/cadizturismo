@@ -18,7 +18,7 @@ class Catgeventos extends Model
      */
     protected $table = 'catgeventos';
 
-    protected $fillable = [];
+    protected $fillable = ['slug'];
 
     public $translatable = [
         'name'

@@ -52,9 +52,9 @@ class Tiposvisitas extends Controller
     }
 
     
-    /*public function formAfterSave($model)
+    public function formAfterSave($model)
     {
         $model->update(['slug' => str_slug($model->name)]);
-    }*/ 
+    }
 
 }

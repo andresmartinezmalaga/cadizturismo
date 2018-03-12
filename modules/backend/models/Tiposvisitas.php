@@ -18,7 +18,7 @@ class Tiposvisitas extends Model
      */
     protected $table = 'tiposvisitas';
 
-    protected $fillable = [];
+    protected $fillable = ['slug'];
 
     public $translatable = [
         'name'
