@@ -13,8 +13,6 @@
 
         $items = $CItems->sortBy('name');
 
-        //dump($items);
-        //dd(1);
     }
 ?>
   
@@ -51,7 +49,7 @@
             
             <?php if ($subtemplate == 'playas') { ?>
 
-                <a style = "border: solid 1px red; height: 15px; width: 15px;" class='duplicate' data-type='playa' data-request='onCopyPage' data-request-data="fileNamePost: '<?= e($fileName) ?>' , fileUrlPost: '<?= $pageObj->page->getViewBag()->property('url') ?>', fileTitlePost: '<?= $pageObj->page->getViewBag()->property('title') ?>'">
+                <a class='duplicate' data-type='playa' data-request='onCopyPage' data-request-data="fileNamePost: '<?= e($fileName) ?>' , fileUrlPost: '<?= $pageObj->page->getViewBag()->property('url') ?>', fileTitlePost: '<?= $pageObj->page->getViewBag()->property('title') ?>'">
                  
                   <img data-toggle="tooltip"
                   data-placement="bottom"
