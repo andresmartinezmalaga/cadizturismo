@@ -351,10 +351,10 @@ $( document ).ready(function() {
     // Andrés Martínez : Duplicate event refresh js
     PagesPage.prototype.onDuplicate = function(e) {
         
-         console.log("-----");
-         console.log($(e.target).parent());
+        console.log("-----");
+        console.log($(e.target).parent()[0]);
 
-        this.onDuplicateRefres($(e.target).parent());
+        this.onDuplicateRefres($(e.target).parent()[0]);
 
     }
     // Andrés Martínez : Duplicate && refresh Events and Pages
