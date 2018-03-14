@@ -354,7 +354,7 @@ $( document ).ready(function() {
          console.log("-----");
          console.log($(e.target).parent());
 
-        this.onDuplicateRefres(e);
+        this.onDuplicateRefres($(e.target).parent());
 
     }
     // Andrés Martínez : Duplicate && refresh Events and Pages
