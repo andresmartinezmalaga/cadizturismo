@@ -352,7 +352,7 @@ $( document ).ready(function() {
     PagesPage.prototype.onDuplicate = function(e) {
         
          console.log("-----");
-         console.log(e.parent());
+         console.log($(e.target).parent());
 
         this.onDuplicateRefres(e);
 
