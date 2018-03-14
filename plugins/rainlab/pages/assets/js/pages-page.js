@@ -362,6 +362,8 @@ $( document ).ready(function() {
     
        var type = ($(e.target).data("type"));
 
+       console.log("----->>>");
+       console.log(type);
         if(type == 'evento'){
             this.updateObjectList('evento');
             this.updateObjectList('evento');
