@@ -360,9 +360,9 @@ $( document ).ready(function() {
     // Andrés Martínez : Duplicate && refresh Events and Pages
     PagesPage.prototype.onDuplicateRefres = function(e) {
         
-       var type = ($(e.target).data("type"));
+       var type = ($(e).data("type"));
         console.log("----->>>");
-console.log($(e.target).parent()[0]);
+console.log($(e));
        console.log("----->>>");
        console.log(type);
         if(type == 'evento'){
