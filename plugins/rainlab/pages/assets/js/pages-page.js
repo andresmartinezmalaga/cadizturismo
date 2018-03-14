@@ -350,8 +350,12 @@ $( document ).ready(function() {
 
     // Andrés Martínez : Duplicate event refresh js
     PagesPage.prototype.onDuplicate = function(e) {
-    
+        
+         console.log("-----");
+         console.log(e.parent());
+
         this.onDuplicateRefres(e);
+
     }
     // Andrés Martínez : Duplicate && refresh Events and Pages
     PagesPage.prototype.onDuplicateRefres = function(e) {
