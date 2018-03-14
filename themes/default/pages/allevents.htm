@@ -30,14 +30,24 @@ is_hidden = 0
 
     $this['ptitle'] = 'Cádiz | Eventos';
     $this['metaTitle'] = 'Cádiz | Eventos';
+
 	}
 
 	function onFindEvent(){
-
-    $category = $_POST['category'];
+    
     $location = $_POST['location'];
     $datepicker = explode('-', $_POST['datepicker']);
 		
+    $pcategory = $_POST['category'];
+    $category = $this->staticApp->getEventsCategoriesById($pcategory);
+    if(count($category)<1){
+      $category = 'all';
+    }
+
+    if($category == 'all'){
+      $category = 'todas-las-categorias';
+    }
+
     $edaystart = explode('.', $datepicker[0]);
     $edayend = explode('.', $datepicker[1]);
 
@@ -47,8 +57,6 @@ is_hidden = 0
   	$aLang = App::getLocale();
     $events = $this->staticApp->eventFind($category,$daystart,$dayend,$location);
     
-    //return Redirect::to($aLang.'/listado-de-eventos')->with( ['data' => json_encode($events)] );
-
     return Redirect::to($aLang.'/listado-de-eventos'.'/'.str_slug($category).'/'.$daystart.'/'.$dayend.'/'.str_slug($location));
  
   }

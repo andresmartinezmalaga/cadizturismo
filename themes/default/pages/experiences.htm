@@ -27,8 +27,17 @@ is_hidden = 0
       $days = 'all';
     }
     
-    $interest = $this->getStringSlugInterest($this->param('interest'));
-    $tvisit = $this->getStringSlugTvisit($this->param('tvisit'));
+    if($this->param('interest')!='todos-los-intereses'){
+      $interest = $this->staticApp->getInteresesId($this->param('interest'));
+    } else{
+      $interest = 'all';
+    }
+    
+    if($this->param('tvisit')!='todo-cadiz'){
+      $tvisit = $this->staticApp->getTvisitaId($this->param('tvisit'));
+    } else{
+      $tvisit = 'all';
+    }
 
     $experiences = $this->staticApp->experienceFind($days,$interest,$tvisit);
     $this['experiences'] = $experiences;
@@ -36,77 +45,20 @@ is_hidden = 0
     $this['ptitle'] = 'Cádiz | Experiencias';
     $this['metaTitle'] = 'Cádiz | Experiencias';
 
+    $this['opinterest'] = $this->staticApp->getInterestsOptions();
+    $this['optvst'] = $this->staticApp->getVisitsOptions();
+
 	}
-
-  function getStringSlugInterest($value){
-
-    switch ($value) {
-      case 'playa-gastronomia':
-        $interest = 'playa y gastronomía';
-        break;
-      case 'cultura-gastronomia':
-        $interest = 'cultura y gastronomía';
-        break;
-      case 'fiesta-cultura':
-        $interest = 'fiesta y cultura';
-        break;
-      case 'gastronomia-naturaleza':
-        $interest = 'gastronomía y naturaleza';
-        break;
-      case 'naturaleza-aventura':
-        $interest = 'naturaleza y aventura';
-        break;
-      case 'playa-naturaleza':
-        $interest = 'playa y naturaleza';
-        break;
-      case 'vino-tradicion':
-        $interest = 'vino y tradición';
-        break;
-      case 'aventura-tradicion':
-        $interest = 'aventura y tradición';
-        break;
       
-      default:
-        $interest = 'all';
-        break;
-    }
-
-    return $interest;
-
-  } 
-
-  function getStringSlugTvisit($value){
-
-    switch ($value) {
-      case 'cadiz-oculta':
-        $interest = 'cádiz oculta';
-        break;
-      case 'cadiz-autentica':
-        $interest = 'cádiz auténtica';
-        break;
-      case 'cadiz-relax':
-        $interest = 'cádiz relax';
-        break;
-      case 'cadiz-urbano':
-        $interest = 'cádiz urbano';
-        break;
-      
-      default:
-        $interest = 'all';
-        break;
-    }
-
-    return $interest;
-
-  } 
-       
 
 	function onFindExperience(){
 
 		$days = $_POST['days'];
 		$interest = $_POST['interest'];
 		$tvisit = $_POST['tvisit'];
-    	
+    
+   
+
     	$experiences = $this->staticApp->experienceFind($days,$interest,$tvisit);
     	Session::put('data',json_encode($experiences));
 

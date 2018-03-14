@@ -22,6 +22,8 @@ use October\Rain\Parse\Bracket as TextParser;
 use October\Rain\Parse\Syntax\Parser as SyntaxParser;
 use ApplicationException;
 
+use Backend\Models\Catgrutas;
+
 /**
  * Represents a static page.
  *
@@ -227,13 +229,16 @@ class Ruta extends ContentBase
     //
 
     public function getCategories(){
-      return [
-           'cultura' => 'Cultura',
-           'deporte' => 'Deporte',
-           'gastronomía' => 'Gastronomía',
-           'naturaleza' => 'Naturaleza',
-           'ocio' => 'Ocio',
-      ];
+      
+      $catgrutas = Catgrutas::all();
+
+      $result = collect();
+
+      foreach ($catgrutas as $icatg) {
+        $result->put($icatg->id, ucwords($icatg->name));  
+      }
+
+      return $result;
     }
 
 

@@ -9,6 +9,8 @@
      } else {
         $this['preurl'] = '';
      }
+
+    
   }
 
 ?>
@@ -37,18 +39,18 @@
     {%endif%}
 
   </div>
-  {% set cat = experience[0].interest|split(' y ')%}
+
   <div class="feature-exp">
-    <img src="{{preurl}}/storage/app/media/uploaded-files/templates/{{str_slug(cat[0])}}.svg">
-    <p class="feature-txt">{{cat[0]|capitalize}}</p>
+    <img src="{{preurl}}/storage/app/media/uploaded-files/templates/{{str_slug(intrs1)}}.svg">
+    <p class="feature-txt">{{intrs1|capitalize}}</p>
   </div>
   <div class="feature-exp">
-    <img src="{{preurl}}/storage/app/media/uploaded-files/templates/{{str_slug(cat[1])}}.svg">
-    <p class="feature-txt">{{cat[1]|capitalize}}</p>
+    <img src="{{preurl}}/storage/app/media/uploaded-files/templates/{{str_slug(intrs2)}}.svg">
+    <p class="feature-txt">{{intrs2|capitalize}}</p>
   </div>
   <div class="feature-exp">
-    <img src="{{preurl}}/storage/app/media/uploaded-files/templates/cultura-event.svg">
-    <p class="feature-txt">{{experience[0].tvisit|capitalize}}</p>
+    <img src="{{preurl}}/storage/app/media/uploaded-files/templates/{{str_slug(stvisit)}}.svg">
+    <p class="feature-txt">{{stvisit|capitalize}}</p>
   </div>
 </div>
 

@@ -39,6 +39,8 @@ code = "redes-sociales"
 
         $this['ruta'] = $this->staticApp->rutaFindByUrl($this->page->url);
 
+        $this['scatg'] =  $this->staticApp->getRutasCategoriesById($this['ruta'][0]['category']);
+
         if($this->page->apiBag){
 
             if(isset($this->page->apiBag["staticPage"]->attributes["viewBag"]["cover"])){

@@ -37,6 +37,8 @@ code = "redes-sociales"
 
         $this['event'] = $this->staticApp->eventFindByUrl($this->page->url);
 
+        $this['scatg'] =  $this->staticApp->getEventsCategoriesById($this['event'][0]['category']);
+
         $this['urlPage'] = $this->page->url;
 
         if($this->page->apiBag){

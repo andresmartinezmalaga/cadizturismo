@@ -26,6 +26,11 @@ use Backend\Models\Home;
 use \Backend\Models\Tipo;
 use \Backend\Models\Empresa;
 
+use Backend\Models\Intereses;
+use Backend\Models\Tiposvisitas;
+use Backend\Models\Catgeventos;
+use Backend\Models\Catgrutas;
+
 /**
  * The static page component.
  *
@@ -63,38 +68,75 @@ class StaticApp extends ComponentBase
 
     // sort ok
     public function getEventsCategories(){
-      return [
-           'carnaval' => 'Carnaval',
-           'congresos' => 'Congresos',
-           'cultura' => 'Cultura',
-           'danza' => 'Danza',
-           'deporte' => 'Deporte',
-           'espectáculos' => 'Espectáculos',
-           'exposiciones' => 'Exposiciones',
-           'ferias' => 'Ferias',
-           'fiesta' => 'Fiesta',
-           'flamenco' => 'Flamenco',
-           'gastronomía' => 'Gastronomía',
-           'naturaleza' => 'Naturaleza',
-           'navidad' => 'Navidad',
-           'ocio' => 'Ocio',
-           'romerías' => 'Romerías',
-           'ruta' => 'Ruta',
-           'semana santa' => 'Semana Santa',
-           'taller' => 'Taller',
-           'teatro' => 'Teatro'
-      ];
+      
+      $catgeventos = Catgeventos::all();
+
+      $result = collect();
+
+      foreach ($catgeventos as $icatg) {
+        $result->put($icatg->id, ucwords($icatg->name));  
+      }
+
+      return $result;
+
+    }
+
+     public function getEventCategoriyId($slug) {
+
+       $catgevento = Catgeventos::where('slug',$slug)->first();
+       
+        if(count($catgevento)>0){
+            return $catgevento->id;
+        }else {
+            return null;
+        }
+    }
+
+    public function getEventsCategoriesById($id) {
+
+        $catgs = Catgeventos::find($id);
+        if(count($catgs)>0){
+            return $catgs->name;
+        } else {
+            return [];
+        }       
+
     }
 
     // sort ok
     public function getRutasCategories(){
-      return [
-           'cultura' => 'Cultura',
-           'deporte' => 'Deporte',
-           'gastronomía' => 'Gastronomía',
-           'naturaleza' => 'Naturaleza',
-           'ocio' => 'Ocio',
-      ];
+      
+      $catgrutas = Catgrutas::all();
+
+      $result = collect();
+
+      foreach ($catgrutas as $icatg) {
+        $result->put($icatg->id, ucwords($icatg->name));  
+      }
+
+      return $result;
+    }
+
+    public function getRutaCategoriyId($slug) {
+
+       $catgruta = Catgrutas::where('slug',$slug)->first();
+       
+        if(count($catgruta)>0){
+            return $catgruta->id;
+        }else {
+            return null;
+        }
+    }
+    
+    public function getRutasCategoriesById($id) {
+
+        $catgs = Catgrutas::find($id);
+        if(count($catgs)>0){
+            return $catgs->name;
+        } else {
+            return [];
+        }       
+
     }
 
     // sort ok
@@ -204,6 +246,100 @@ class StaticApp extends ComponentBase
        
     }
 
+     public function getInterestsOptions() {
+
+      $intereses = Intereses::all();
+
+      $result = collect();
+
+      foreach ($intereses as $iintrs) {
+        $result->put($iintrs->id, ucwords($iintrs->name));  
+      }
+
+      return $result;
+
+    }
+
+    public function getStringSlugInterest($slug){
+       $i = Intereses::where('slug',$slug)->first();
+       if(count($i)>0){
+            return $i->name;
+        } else {
+            return null;
+        }
+    }
+
+
+    public function getVisitsOptions() {
+
+      $tvisitas = Tiposvisitas::all();
+
+      $result = collect();
+
+      foreach ($tvisitas as $itvs) {
+        $result->put($itvs->id, ucwords($itvs->name));  
+      }
+
+      return $result;
+    
+    }
+
+    public function getStringSlugTvisit($slug){
+        $i = Tiposvisitas::where('slug',$slug)->first();
+        if(count($i)>0){
+            return $i->name;
+        } else {
+            return null;
+        }
+       
+    }
+
+    public function getInteresesById($id) {
+
+       $intereses = Intereses::find($id);
+       
+        if(count($intereses)>0){
+            return explode(' y ', $intereses->name);
+        }else {
+            return[];
+        }
+    }
+
+    public function getInteresesId($slug) {
+
+       $intereses = Intereses::where('slug',$slug)->first();
+       
+        if(count($intereses)>0){
+            return $intereses->id;
+        }else {
+            return null;
+        }
+    }
+
+     public function getTvisitaId($slug) {
+
+       $tvista = Tiposvisitas::where('slug',$slug)->first();
+       
+        if(count($tvista)>0){
+            return $tvista->id;
+        }else {
+            return null;
+        }
+    }
+
+    public function getTvisitaById($id) {
+
+        $tvisita = Tiposvisitas::find($id);
+
+        if(count($tvisita)>0){
+            return $tvisita->name;
+        } else {
+            return [];
+        }
+      
+
+    }
+
     public function getTiposEmpresas() {
 
         $rtipos = collect() ;
@@ -283,6 +419,8 @@ class StaticApp extends ComponentBase
 
         foreach ($eventsVip as $event) {
 
+            $event->scatg = $this->getEventsCategoriesById($event->category);
+
             if( (new DateTime($event->date_end))->format('Y-m-d') > $now && $count < 7){
                 $resultVip->push($event);
                 $count = $count+1;
@@ -295,6 +433,8 @@ class StaticApp extends ComponentBase
         }
 
         foreach ($eventsNormal as $event) {
+
+            $event->scatg = $this->getEventsCategoriesById($event->category);
 
             if( (new DateTime($event->date_end))->format('Y-m-d') > $now){
                 $resultNormal->push($event);
@@ -373,6 +513,8 @@ class StaticApp extends ComponentBase
 
         foreach ($rutasVip as $ruta) {
 
+            $ruta->scatg = $this->getRutasCategoriesById($ruta->category);
+
             if( $count < 7){
                 $resultVip->push($ruta);
                 $count = $count+1;
@@ -385,6 +527,8 @@ class StaticApp extends ComponentBase
         }
 
         foreach ($rutasNormal as $ruta) {
+            
+            $ruta->scatg = $this->getRutasCategoriesById($ruta->category);
 
             $resultNormal->push($ruta);
             $count = $count+1;
@@ -405,7 +549,6 @@ class StaticApp extends ComponentBase
 
     public function eventFind($category, $date_start, $date_end, $location)
     {   
-
 
         $theme = Theme::getActiveTheme();
         $pages = Page::listInTheme($theme, false);
@@ -429,6 +572,8 @@ class StaticApp extends ComponentBase
 
 
         foreach ($preEvents as $i) {
+
+            $i->scatg = $this->getEventsCategoriesById($i->category);
 
             $eventDateStart = (new DateTime($i->date_start))->format('d-m-Y');
             $eventDateEnd = (new DateTime($i->date_end))->format('d-m-Y');
@@ -949,6 +1094,20 @@ class StaticApp extends ComponentBase
 
         $result = $experiences->where("is_hidden",0)->where('template','experiences')->where('days',$daysOperator,$days)->where('interest',$interestOperator,$interest)->where('tvisit',$tvisitOperator,$tvisit)->values();
 
+        foreach ($result as $i) {
+          
+            $iintrst = $this->getInteresesById($i->interest);
+            if(count($iintrst)>0){
+                $i->sintrst1 = $iintrst[0];
+                $i->sintrst2 = $iintrst[1];
+            }
+
+            $itvisit = $this->getTvisitaById($i->tvisit);
+            if(count($itvisit)>0){
+                $i->stvisit = $itvisit;               
+            }          
+        }
+
         return $result;
     }
 
@@ -999,6 +1158,10 @@ class StaticApp extends ComponentBase
         }
 
         $result = $rutas->where("is_hidden",0)->where('template','rutas')->where('category',$categoryOperator,$category)->where('days',$daysOperator,$days)->where('location',$locationOperator,$location)->values();
+
+        foreach ($result as $i) {
+           $i->scatg = $this->getRutasCategoriesById($i->category);
+        }
 
         return $result;
     }

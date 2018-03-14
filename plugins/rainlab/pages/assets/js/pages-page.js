@@ -1,3 +1,5 @@
+$( document ).ready(function() {
+ 
 /*
  * Handles the Pages main page.
  */
@@ -30,6 +32,7 @@
         // Andrés Martínez : Enable eventDuplicate
         //this.ams.eventDuplicate();
     }
+   
 
     PagesPage.prototype.registerHandlers = function() {
 
@@ -236,7 +239,7 @@
      * Handles successful AJAX request in the master tab forms. Updates the UI elements and resets the mtime value.
      */
     PagesPage.prototype.onAjaxSuccess = function(event, context, data) {
-        
+       
         var $form = $(event.currentTarget),
             $tabPane = $form.closest('.tab-pane')
 
@@ -289,20 +292,44 @@
     /*
      * Updates the sidebar object list.
      */
-    PagesPage.prototype.updateObjectList = function(objectType) {
+    PagesPage.prototype.updateObjectList = function(objectType, pass = 0) {
         
+        // Andrés Martinez : Get type and set objectType
+        var type = '';         
+        if (objectType == 'playa'){
+            objectType = 'page';
+            type = 'playa';
+        }
+ 
         var $form = $('form[data-object-type='+objectType+']', this.$sidePanel),
             objectList = objectType + 'List',
             self = this
 
         $.oc.stripeLoadIndicator.show()
+       
         $form.request(objectList + '::onUpdate', {
+            
             complete: function(data) {
-                $('button[data-control=delete-object], button[data-control=delete-template]', $form).trigger('oc.triggerOn.update')
+
+                $.when($('button[data-control=delete-object], button[data-control=delete-template]', $form).trigger('oc.triggerOn.update')).done(function(){
+
+                    // Andrés Martinez : Open Li                 
+                    if(type == 'playa' && pass == 1){
+                        setTimeout(function(){                         
+                            $("li[data-item-path='playas']>div>span").click();
+                            $("#MModal").fadeOut();
+                        }, 3000);
+                    }
+
+                })
             }
+
         }).always(function(){
+            
             $.oc.stripeLoadIndicator.hide()
         })
+
+        
     }
 
     /*
@@ -324,12 +351,32 @@
     
         this.onDuplicateRefres(e);
     }
-    // Andrés Martínez : Duplicate event refresh js
+    // Andrés Martínez : Duplicate && refresh Events and Pages
     PagesPage.prototype.onDuplicateRefres = function(e) {
     
-        this.updateObjectList('evento');
-        this.updateObjectList('evento');
-        this.updateObjectList('evento');
+       var type = ($(e.target).data("type"));
+
+        if(type == 'evento'){
+            this.updateObjectList('evento');
+            this.updateObjectList('evento');
+            this.updateObjectList('evento');
+           this.updateObjectList('evento');
+        }
+      
+        if(type == 'playa'){
+
+            $("#MModal").html('<span>Duplicando Playa</span>');
+            $("#MModal").fadeIn();
+            //$("#MModal").hide();
+
+            this.updateObjectList('playa'); 
+            this.updateObjectList('playa');
+            this.updateObjectList('playa'); 
+            this.updateObjectList('playa');
+            this.updateObjectList('playa',1);
+            
+        }
+       
     }
 
     /*
@@ -428,6 +475,7 @@
      * Triggered when an item is clicked in the sidebar submenu
      */
     PagesPage.prototype.onSidebarSubmenuItemClick = function(e) {
+        
         if ($(e.clickEvent.target).data('control') == 'create-object')
             this.onCreateObject(e.clickEvent)
 
@@ -690,3 +738,5 @@
     })
 
 }(window.jQuery);
+
+});

@@ -1,10 +1,32 @@
+  <!-- Andrés Martínez : Get template & filter pages show
+    -->
+<?php 
+    $subtemplate = $items[0]->page->getViewBag()->property('subtemplate');
+
+    if($subtemplate == 'playas') {
+
+        $CItems = collect();
+        foreach ($items as $iItem) {
+            $iItem->name = $iItem->page->fileName;
+            $CItems->push($iItem);
+        }
+
+        $items = $CItems->sortBy('name');
+
+        //dump($items);
+        //dd(1);
+    }
+?>
+  
 <?php foreach ($items as $pageObj): ?>
-    
+   
     <!-- Andrés Martínez : Get template & filter pages show
     -->
     <?php 
         $template = $pageObj->page->getViewBag()->property('template');
     ?>
+
+     
     
     <?php if ($template == 'pages') : ?>
     
@@ -15,19 +37,30 @@
             $searchMode = strlen($this->getSearchTerm()) > 0;
             $cbId = 'cb'.md5($fileName);
         ?>
-
+        
 
         <li           
+            id="<?='sc-'.$pageObj->page->getBaseFileName() ?>"
             class="<?= $pageObj->subpages ? 'has-subitems' : null ?>" 
             data-status="collapsed"
             data-status="<?= $groupStatus || !$pageObj->subpages ? 'expanded' : 'collapsed' ?>"
             data-item-path="<?= e($fileName) ?>"
             <?php if ($searchMode): ?>data-no-drag-mode<?php endif ?>
             data-id="<?= e($dataId) ?>"          
-
         >
-            <div>
-                
+            
+            <?php if ($subtemplate == 'playas') { ?>
+
+                <a style = "border: solid 1px red; height: 15px; width: 15px;" class='duplicate' data-type='playa' data-request='onCopyPage' data-request-data="fileNamePost: '<?= e($fileName) ?>' , fileUrlPost: '<?= $pageObj->page->getViewBag()->property('url') ?>', fileTitlePost: '<?= $pageObj->page->getViewBag()->property('title') ?>'">
+                 
+                  <img data-toggle="tooltip"
+                  data-placement="bottom"
+                  data-delay="200"
+                  title="Duplicar playa" src="/storage/app/media/uploaded-files/templates/duplicate.svg">
+                </a>                    
+            <?php } ?>
+
+            <div>                       
                 <?php if (                    
                     $fileName != 'sala-prensa-prensa' ) { ?>
                     <a href="#">
@@ -96,6 +129,7 @@
                     $fileName != 'sala-prensa-prensa'
                 ) : ?>
                     <div class="checkbox custom-checkbox nolabel">
+                      
                         <input
                             id="<?= $cbId ?>"
                             type="checkbox"
@@ -105,7 +139,10 @@
                             value="1">
                         <label for="<?= $cbId ?>">Select</label>
                     </div>
+
                 <?php endif ?>
+
+
                 
                  <!-- Andrés Martínez : Hidden add subpage. Only for Parents
                 -->

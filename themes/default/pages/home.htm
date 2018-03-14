@@ -30,16 +30,31 @@ is_hidden = 0
     $this['ptitle'] = 'Cádiz | Te hace libre';
     $this['metaTitle'] = 'Cádiz | Te hace libre';
 
+    $this['opinterest'] = $this->staticApp->getInterestsOptions();
+    $this['optvst'] = $this->staticApp->getVisitsOptions();
+    
+
 	}
 
 	function onFindExperience(){
 
 		$days = $_POST['days'];
 		$pinterest = $_POST['interest'];
-		$tvisit = $_POST['tvisit'];
+		$ptvisit = $_POST['tvisit'];
 
-    $interest = str_replace(' y ', ' ', $pinterest);
+    $ainterest = $this->staticApp->getInteresesById($pinterest);
+    if(isset($ainterest[0])){
+       $interest = $ainterest[0].' y '.$ainterest[1];
+     } else {
+      $interest ='all';
+     }
+   
+    $tvisit = $this->staticApp->getTvisitaById($ptvisit);
+    if(count($tvisit)<1){
+      $tvisit = 'all';
+    }
 
+    
     if($days == 'all'){
       $days = 'dejate-llevar';
     }

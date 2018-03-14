@@ -35,15 +35,11 @@
         </div>
 
         <div class="interests-container">
+        
           <select id="sltInterest" class="custom-select select-interests" name="interest">
-            <option value="playa y gastronomía">{{'Playa y gastronomía'|_ }}</option>
-            <option value="cultura y gastronomía">{{'Cultura y gastronomía'|_ }}</option>
-            <option value="fiesta y cultura">{{'Fiesta y cultura'|_ }}</option>
-            <option value="gastronomía y naturaleza">{{'Gastronomía y naturaleza'|_ }}</option>
-            <option value="naturaleza y aventura">{{'Naturaleza y aventura'|_ }}</option>
-            <option value="playa y naturaleza">{{'Playa y naturaleza'|_ }}</option>
-            <option value="vino y tradición">{{'Vino y tradición'|_ }}</option>
-            <option value="aventura y tradición">{{'Aventura y tradición'|_ }}</option>
+            {% for key,val in opinterest %}
+                <option value={{key}}>{{val}}</option>
+            {% endfor %}
             <option value="all" selected>{{'Todos los intereses'|_ }}</option>
           </select>
           <span class="select-title">{{ 'INTERESES'|_ }}</span>
@@ -51,10 +47,9 @@
 
         <div class="type-container">
           <select id="sltTvisit" class="custom-select select-type" name="tvisit">
-            <option value="cádiz oculta">{{ 'Cádiz oculta'|_ }}</option>
-            <option value="cádiz auténtica">{{ 'Cádiz auténtica'|_ }}</option>
-            <option value="cádiz relax">{{ 'Cádiz relax'|_ }}</option>
-            <option value="cádiz urbano">{{ 'Cádiz urbano'|_ }}</option>
+             {% for key,val in optvst %}
+                <option value={{key}}>{{val}}</option>
+            {% endfor %}
             <option value="all" selected>{{ 'Todo Cádiz'|_ }}</option>
           </select>
           <span class="select-title">{{ 'TIPO DE VISITA'|_ }}</span>

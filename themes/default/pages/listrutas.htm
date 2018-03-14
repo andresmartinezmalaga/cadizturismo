@@ -21,8 +21,13 @@ is_hidden = 0
 		if($this['lang']==''){
 			$this['lang']='es';
 		}
+    
+    if($this->param('category')!='todas-las-categorias'){
+         $category =  $this->staticApp->getRutaCategoriyId($this->param('category'));
+    } else {
+         $category = 'all';
+    }
 
-    $category = $this->getCategroia($this->param('category'));
     $location = $this->staticApp->getMunicipalitiesBySlug($this->param('location'));
 
     $days = $this->param('days');

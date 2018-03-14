@@ -33,7 +33,7 @@
 		      <div class="overlay-img"></div>
 		      <img class="rec-img" src="{{experience.viewBag.cover}}">
 		      <div class="txt-container">
-		        <p class="name">{{experience.viewBag.title}}</p>
+		        <p class="name">{{experience.viewBag.title}}-{{experience.saludo}}-</p>
 		        <img class="separator" src="{{preurl}}/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
 		        <div class="icons">
 		          <div class="icon-pair">
@@ -49,16 +49,16 @@
 		            <p class="icon-txt">{{experience.viewBag.days}} {{ d|_ }}</p>
 		          </div>          
 		          <div class="icon-pair">
-		            <img src="{{preurl}}/storage/app/media/uploaded-files/templates/{{str_slug(interest[0])}}.svg">
-		            	<p class="icon-txt">{{interest[0]|_}}</p>
+		            <img src="{{preurl}}/storage/app/media/uploaded-files/templates/{{str_slug(experience.sintrst1)}}.svg">
+		            	<p class="icon-txt">{{experience.sintrst1}}</p>
 		          </div>
 		          <div class="icon-pair">
-		            <img src="{{preurl}}/storage/app/media/uploaded-files/templates/{{str_slug(interest[1])}}.svg">
-		            <p class="icon-txt">{{interest[1]|_}}</p>
+		            <img src="{{preurl}}/storage/app/media/uploaded-files/templates/{{str_slug(experience.sintrst2)}}.svg">
+		            <p class="icon-txt">{{experience.sintrst2}}</p>
 		          </div>
 		          <div class="icon-pair">
-		            <img src="{{preurl}}/storage/app/media/uploaded-files/templates/{{str_slug(experience.viewBag.tvisit)}}.svg">
-		            <p class="icon-txt">{{experience.viewBag.tvisit|_}}</p>
+		            <img src="{{preurl}}/storage/app/media/uploaded-files/templates/{{str_slug(experience.stvisit)}}.svg">
+		            <p class="icon-txt">{{experience.stvisit}}</p>
 		          </div>
 		        </div>
 		        <div class="button-container">

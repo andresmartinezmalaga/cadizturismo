@@ -22,6 +22,8 @@ use October\Rain\Parse\Bracket as TextParser;
 use October\Rain\Parse\Syntax\Parser as SyntaxParser;
 use ApplicationException;
 
+use Backend\Models\Catgeventos;
+
 /**
  * Represents a static page.
  *
@@ -236,28 +238,16 @@ class Evento extends ContentBase
 
     // sort ok
     public function getEventsCategories(){
-      return [
+      
+      $catgeventos = Catgeventos::all();
 
-           'carnaval' => 'Carnaval',
-           'congresos' => 'Congresos',
-           'cultura' => 'Cultura',
-           'danza' => 'Danza',
-           'deporte' => 'Deporte',
-           'espectáculos' => 'Espectáculos',
-           'exposiciones' => 'Exposiciones',
-           'ferias' => 'Ferias',
-           'fiesta' => 'Fiesta',
-           'flamenco' => 'Flamenco',
-           'gastronomía' => 'Gastronomía',
-           'naturaleza' => 'Naturaleza',
-           'navidad' => 'Navidad',
-           'ocio' => 'Ocio',
-           'romerías' => 'Romerías',
-           'ruta' => 'Ruta',
-           'semana santa' => 'Semana Santa',
-           'taller' => 'Taller',
-           'teatro' => 'Teatro'
-      ];
+      $result = collect();
+
+      foreach ($catgeventos as $icatg) {
+        $result->put($icatg->id, ucwords($icatg->name));  
+      }
+
+      return $result;
     }
 
     // sort ok
@@ -321,7 +311,7 @@ class Evento extends ContentBase
     }
 
     // sort ok
-    public function getInterestsOptions() {
+    /*public function getInterestsOptions() {
 
         return[
         'aventura y tradición' => 'Aventura y tradición',
@@ -349,7 +339,7 @@ class Evento extends ContentBase
     public function getDaysOptions() {
 
         return['1' => '1 día', '2' => '2 días', '3' => '3 días', '4' => '4 días', '5' => '5 días', '6' => '6 días', '7' => '7 días'] ;
-    }
+    }*/
 
     /**
      * Sets the object attributes.

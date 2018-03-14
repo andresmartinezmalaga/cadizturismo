@@ -226,14 +226,15 @@ code = "redes-sociales"
         });
 
         $('#prtlSearchExperiences #bscExperience').on('click', function(){
-
-            var days = $('#sltDays');
-            var interest = $('#sltInterest');
-            var tvisit = $('#sltTvisit');
+          
+            var days = $('#sltDays');           
+            var interest = $('#select2-sltInterest-container');           
+            var tvisit = $('#select2-sltTvisit-container');
 
             var sDays = slugIn(days.val());
-            var sInterest = slugIn(interest.val());
-            var sTvisit = slugIn(tvisit.val());
+            var sInterest = slugIn(interest.text());
+
+            var sTvisit = slugIn(tvisit.text());
 
             if(sDays == 'all'){
               sDays = 'dejate-llevar';
@@ -259,6 +260,9 @@ code = "redes-sociales"
             var iinterest = arr[total-2];
             var itvisit = arr[total-1];
 
+
+
+
             var nurl = url.replace( idays, sDays);
             nurl = nurl.replace( iinterest, sInterest);
             nurl = nurl.replace( itvisit, sTvisit);
@@ -271,10 +275,12 @@ code = "redes-sociales"
         $('#prtlSearchRutas #bscRuta').on('click', function(){
 
             var category = $('#sltCategory');
+            var category = $('#select2-sltCategory-container');
             var days = $('#sltDays');
             var location = $('#sltLocationRutas');
 
             var sCategory = slugIn(category.val());
+            var sCategory = slugIn(category.text());
             var sDays = slugIn(days.val());
             var sLocation = slugIn(location.val());
 
@@ -301,12 +307,12 @@ code = "redes-sociales"
 
 
         $('#prtlSearchEventos #bscEvento').on('click', function(){
-
-            var category = $('#sltCategory');
+            
+            var category = $('#select2-sltCategory-container');
             var days = $('#inpDate');
             var location = $('#sltLocationEvent');
 
-            var sCategory = slugIn(category.val());
+            var sCategory = slugIn(category.text());
             var sDays = days.val();
             var sLocation = slugIn(location.val());
 
@@ -315,7 +321,6 @@ code = "redes-sociales"
             dstart = dstart.replace( '.', '-20');
             var dend = dayss[1].replace( '.', '-');
             dend = dend.replace( '.', '-20');
-
 
             var chgUrl = window.location.href
             var purl = chgUrl.split('cadizturismo');
@@ -354,8 +359,8 @@ code = "redes-sociales"
 
           str = str.replace(/[^a-z0-9 -]/g, '') // remove invalid chars
             .replace(/\s+/g, '-') // collapse whitespace and replace by -
-            .replace(/-+/g, '-')
-            .replace('-y-','-'); // collapse dashes
+            .replace(/-+/g, '-');
+            //.replace('-y-','-'); // collapse dashes
 
           return str;
         };

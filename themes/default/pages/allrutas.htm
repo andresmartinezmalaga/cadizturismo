@@ -35,8 +35,16 @@ is_hidden = 0
 
 	function onFindRuta(){
 
+    $pcategory = $_POST['category'];
+    $category = $this->staticApp->getRutasCategoriesById($pcategory);
+    if(count($category)<1){
+      $category = 'all';
+    }
 
-    $category = $_POST['category'];
+    if($category == 'all'){
+      $category = 'todas-las-categorias';
+    }
+
     $days = $_POST['days'];
     $location = $_POST['location'];
 
@@ -44,10 +52,7 @@ is_hidden = 0
   	$aLang = App::getLocale();
     $rutas = $this->staticApp->rutaFind($category,$days,$location);
 
-    //return Redirect::to($aLang.'/listado-de-rutas')->with( ['data' => json_encode($rutas)] );
-
     return Redirect::to($aLang.'/listado-de-rutas'.'/'.str_slug($category).'/'.$days.'/'.str_slug($location));
-
 
   }
 
