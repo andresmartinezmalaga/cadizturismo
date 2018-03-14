@@ -350,10 +350,7 @@ $( document ).ready(function() {
 
     // Andrés Martínez : Duplicate event refresh js
     PagesPage.prototype.onDuplicate = function(e) {
-        
-        console.log("-----");
-        console.log($(e.target).parent()[0]);
-
+      
         this.onDuplicateRefres($(e.target).parent()[0]);
 
     }
@@ -361,10 +358,7 @@ $( document ).ready(function() {
     PagesPage.prototype.onDuplicateRefres = function(e) {
         
        var type = ($(e).data("type"));
-        console.log("----->>>");
-console.log($(e));
-       console.log("----->>>");
-       console.log(type);
+      
         if(type == 'evento'){
             this.updateObjectList('evento');
             this.updateObjectList('evento');
