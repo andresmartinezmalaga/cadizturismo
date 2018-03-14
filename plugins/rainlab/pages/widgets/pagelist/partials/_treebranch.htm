@@ -51,10 +51,12 @@
 
                 <a style = "border: solid 1px red; height: 15px; width: 15px;" class='duplicate' data-type='playa' data-request='onCopyPage' data-request-data="fileNamePost: '<?= e($fileName) ?>' , fileUrlPost: '<?= $pageObj->page->getViewBag()->property('url') ?>', fileTitlePost: '<?= $pageObj->page->getViewBag()->property('title') ?>'">
                  
-                  <img data-toggle="tooltip"
+                 <!-- Andrés Martínez : Con tooltip no funciona abrir el li ni mostrar la modal, es decir otras acciones de js
+                    <img data-toggle="tooltip"-->
+                  <img
                   data-placement="bottom"
                   data-delay="200"
-                  title="Duplicar playa" src="/storage/app/media/uploaded-files/templates/1duplicate.svg">
+                  title="Duplicar playa" src="/storage/app/media/uploaded-files/templates/duplicate.svg">
                 </a>                    
             <?php } ?>
 
