@@ -315,9 +315,11 @@ $( document ).ready(function() {
 
                     // Andrés Martinez : Open Li                 
                     if(type == 'playa' && pass == 1){
+                        console.log('upd2');
                         setTimeout(function(){                         
                             $("li[data-item-path='playas']>div>span").click();
                             $("#MModal").fadeOut();
+                            console.log('upd3');
                         }, 3000);
                     }
 
@@ -364,11 +366,12 @@ $( document ).ready(function() {
         }
       
         if(type == 'playa'){
-
+             console.log('upd1');
             $("#MModal").html('<span>Duplicando Playa</span>');
             $("#MModal").fadeIn();
             //$("#MModal").hide();
 
+            console.log('upd1b');
             this.updateObjectList('playa'); 
             this.updateObjectList('playa');
             this.updateObjectList('playa'); 
