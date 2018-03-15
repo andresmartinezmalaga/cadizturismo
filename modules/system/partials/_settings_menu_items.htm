@@ -6,10 +6,28 @@
     );
 
 ?>
+
+<!-- 
+
+system::lang.system.categories.cms
+system::lang.system.categories.system
+rainlab.translate::lang.plugin.name
+system::lang.system.categories.misc
+system::lang.system.categories.mail
+system::lang.system.categories.logs
+
+-->
+<?php
+    $url_actual = $_SERVER['REQUEST_URI'];
+    $furl_actual = strpos ($url_actual, '/translate/messages');
+?>
+
 <ul class="top-level">
     <?php foreach ($items as $category => $items):
         $collapsed = in_array($category, $collapsedGroups);
     ?>
+   
+        <?php if($this->user->id == 1 && !$furl_actual && $category != 'rainlab.translate::lang.plugin.name')  { ?>
         <li data-group-code="<?= e($category) ?>" <?= $collapsed ? 'data-status="collapsed"' : null ?>>
             <div class="group">
                 <h3><?= e(trans($category)) ?></h3>
@@ -27,5 +45,59 @@
                 <?php endforeach ?>
             </ul>
         </li>
+        <?php } ?>
+
+        
+        <?php if($this->user->id != 1 &&  !$furl_actual) { ?>
+            <?php if($category != 'system::lang.system.categories.cms' && $category != 'system::lang.system.categories.mail' && $category != 'system::lang.system.categories.logs' && $category != 'rainlab.translate::lang.plugin.name') { ?>                
+                <li data-group-code="<?= e($category) ?>" <?= $collapsed ? 'data-status="collapsed"' : null ?>>
+                    <div class="group">                       
+                        <h3><?= e(trans($category)) ?></h3>
+                    </div>
+
+                    <ul>
+                        <?php foreach ($items as $item): ?>
+                            <?php if( $item->label !='system::lang.updates.menu_label' &&  $item->label !='backend::lang.editor.menu_label' &&  $item->label !='backend::lang.branding.menu_label' ) { ?>
+                                <li class="<?= strtolower($item->owner) == $context->owner && strtolower($item->code) == $context->itemCode ? 'active' : false ?>" data-keywords="<?= e(trans($item->keywords)) ?>">
+                                    <a href="<?= $item->url ?>" ontouchstart="">
+                                        <i class="<?= $item->icon ?>"></i>
+                                        <span class="header"><?= e(trans($item->label)) ?></span>
+                                        <span class="description"><?= e(trans($item->description)) ?></span>
+                                    </a>
+                                </li>
+                            <?php } ?>
+                        <?php endforeach ?>
+                    </ul>
+                </li>
+            <?php } ?>
+        <?php } ?>
+
+        <?php if($furl_actual && $category == 'rainlab.translate::lang.plugin.name' ) { ?>
+                        
+                <li data-group-code="<?= e($category) ?>" <?= $collapsed ? 'data-status="collapsed"' : null ?>>
+                    <div class="group">                       
+                        <h3><?= e(trans($category)) ?></h3>
+                    </div>
+
+                    <ul>
+                        <?php foreach ($items as $item): ?>
+                            <?php if( $item->label !='system::lang.updates.menu_label' &&  $item->label !='backend::lang.editor.menu_label' &&  $item->label !='backend::lang.branding.menu_label' ) { ?>
+                                <li class="<?= strtolower($item->owner) == $context->owner && strtolower($item->code) == $context->itemCode ? 'active' : false ?>" data-keywords="<?= e(trans($item->keywords)) ?>">
+                                    <a href="<?= $item->url ?>" ontouchstart="">
+                                        <i class="<?= $item->icon ?>"></i>
+                                        <span class="header"><?= e(trans($item->label)) ?></span>
+                                        <span class="description"><?= e(trans($item->description)) ?></span>
+                                    </a>
+                                </li>
+                            <?php } ?>
+                        <?php endforeach ?>
+                    </ul>
+                </li>
+            
+        <?php } ?>
+   
+   
+   
+
     <?php endforeach ?>
 </ul>

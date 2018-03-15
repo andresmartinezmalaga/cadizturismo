@@ -8,14 +8,19 @@
     ?>
     <?php if ($sideMenuItems): ?>
         <div class="layout-cell layout-sidenav-container">
+
             <div class="layout-relative">
                 <nav
                     id="layout-sidenav"
                     class="layout-sidenav bg-p"
                     data-active-class="active"
                     data-control="sidenav">
+
+       
+
                     <ul class="nav">
                         <?php foreach ($sideMenuItems as $sideItemCode => $item): ?>
+                          
                             <li
                                 class="<?= BackendMenu::isSideMenuItemActive($item) ? 'active' : null ?>"
                                 <?= Html::attributes($item->attributes) ?>
