@@ -36,7 +36,7 @@ is_hidden = 0
 	}
 
 	function onFindEmpresa(){
-  
+
 
     $type = $_POST['type'];
     if (isset($_POST['location'])){
@@ -51,8 +51,8 @@ is_hidden = 0
       $ubicacion = 'todos-los-municipios';
     }
 
-    
-    
+
+
 
     if($psearch == ''){
         $search = 'todas-las-empresas';
@@ -115,3 +115,11 @@ is_hidden = 0
 <div id='prtlPagination'>
   {% partial "pagination" %}
 </div>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('html, body').animate({
+				scrollTop: $(".search-title-container").offset().top
+		}, 2000);
+});
+</script>
