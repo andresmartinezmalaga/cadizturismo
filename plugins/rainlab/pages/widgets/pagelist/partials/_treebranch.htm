@@ -61,6 +61,20 @@
                 </a>                    
             <?php } ?>
 
+            <?php if ($subtemplate == 'municipios') { ?>
+
+                <a  class='duplicate' data-type='muicipio' data-request='onCopyPage' data-request-data="fileNamePost: '<?= e($fileName) ?>' , fileUrlPost: '<?= $pageObj->page->getViewBag()->property('url') ?>', fileTitlePost: '<?= $pageObj->page->getViewBag()->property('title') ?>'">
+                 
+                
+                    <img data-toggle="tooltip                 
+                   data-placement="bottom"
+                  data-delay="200"
+                  title="Duplicar municipio" src="/storage/app/media/uploaded-files/templates/duplicate.svg">
+
+
+                </a>                    
+            <?php } ?>
+
             <div>                       
                 <?php if (                    
                     $fileName != 'sala-prensa-prensa' ) { ?>
