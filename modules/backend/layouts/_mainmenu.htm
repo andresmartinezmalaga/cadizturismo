@@ -33,8 +33,8 @@
                         $isActive = BackendMenu::isMainMenuItemActive($item);
                     ?>
                     
-                    <?php if($item->label) :?>
-
+                    <?php if($item->label && $item->label !='CMS') :?>
+                      
                         <!-- *********************************************************************************************************** -->
                         <!-- Andrés Martínez : Filter button config only sudo ********************************************************** -->
                         <!-- *********************************************************************************************************** -->
@@ -115,7 +115,7 @@
                             </a>
                         </li>
 
-                        <?php }elseif ( $item->iconSvg != 'modules/system/assets/images/cog-icon.svg'){?>
+                        <?php }elseif ( $item->iconSvg != 'modules/system/assets/images/cog-icon.svg' && $item->iconSvg != 'modules/cms/assets/images/cms-icon.svg'){?>
 
                         <li class="<?= $isActive ? 'active' : null ?> svg-icon-container svg-active-effects">
                             <a href="<?= $item->url ?>">
