@@ -35,6 +35,13 @@
   font-style: normal; }
 
 @font-face {
+  font-family: 'Avenir-Medium';
+  src: url("../fonts/avenir/AvenirLTStd-Medium.eot");
+  src: url("../fonts/avenirnext/AvenirLTStd-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/avenir/AvenirLTStd-Medium.woff2") format("woff2"), url("../fonts/avenir/AvenirLTStd-Medium.woff") format("woff"), url("../fonts/avenir/AvenirLTStd-Medium.ttf") format("truetype"), url("../fonts/avenir/AvenirLTStd-Medium.svg#AvenirLTStd-Medium") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
   font-family: 'avenir-next-bold';
   src: url("../fonts/avenirnext/avenir-next-bold.eot");
   src: url("../fonts/avenirnext/avenir-next-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/avenirnext/avenir-next-bold.woff") format("woff"), url("../fonts/avenirnext/avenir-next-bold.ttf") format("truetype");
