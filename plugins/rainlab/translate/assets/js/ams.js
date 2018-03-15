@@ -40,8 +40,8 @@ var ams = function(){
             }
 
             $(".mock-insert").click(function(e) {
-                $(this).toggleClass("mock-selected");
-                $(this).children('.mock-insert').toggleClass("mock-selected");
+                $(e.target).toggleClass("mock-selected");
+                $(e.target).children('.mock-insert').toggleClass("mock-selected");
                 console.log('clickado');
             
             });
