@@ -8,6 +8,7 @@ use Response;
 use Backend\Classes\WidgetBase;
 use RainLab\Pages\Classes\EventoList as StaticPageList;
 use Cms\Classes\Theme;
+
 use DateTime;
 use Carbon\Carbon;
 use Carbon\CarbonInterval;

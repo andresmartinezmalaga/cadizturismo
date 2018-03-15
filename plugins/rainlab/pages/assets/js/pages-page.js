@@ -375,6 +375,13 @@ $( document ).ready(function() {
             this.updateObjectList('evento');
             this.updateObjectList('evento');
         }
+
+        if(type == 'experience'){
+            this.updateObjectList('experience');
+            this.updateObjectList('experience');
+            this.updateObjectList('experience');
+            this.updateObjectList('experience');
+        }
       
         if(type == 'playa'){
              

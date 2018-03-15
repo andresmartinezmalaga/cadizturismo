@@ -1,79 +1,74 @@
-<?php foreach ($items as $pageObj): ?>
+<?php foreach ($items as $pageObj): ?>   
 
-    <!-- Andrés Martínez : Get template & filter pages show
-    -->
     <?php
-        $template = $pageObj->page->getViewBag()->property('template');
+        $fileName = $pageObj->page->getBaseFileName();
+        $groupStatus = $this->getCollapseStatus($fileName);
+        $dataId = $this->dataIdPrefix.'-'.$fileName;
+        $searchMode = strlen($this->getSearchTerm()) > 0;
+        $cbId = 'cb'.md5($fileName);
     ?>
 
-    <?php if ($template == 'experiences') : ?>
-
-        <?php
-            $fileName = $pageObj->page->getBaseFileName();
-            $groupStatus = $this->getCollapseStatus($fileName);
-            $dataId = $this->dataIdPrefix.'-'.$fileName;
-            $searchMode = strlen($this->getSearchTerm()) > 0;
-            $cbId = 'cb'.md5($fileName);
-        ?>
 
 
+    <li
+        class="<?= $pageObj->subpages ? 'has-subitems' : null ?>"
+        data-status="<?= $groupStatus || !$pageObj->subpages ? 'expanded' : 'collapsed' ?>"
+        data-group-id="<?= e($fileName) ?>"
+        data-item-path="<?= e($fileName) ?>"
+        <?php if ($searchMode): ?>data-no-drag-mode<?php endif ?>
+        data-id="<?= e($dataId) ?>"
+    >
+        <div>
+            <a href="#">
+                <div>
+                    <?= e($pageObj->page->getViewBag()->property('title')) ?>
+                    
+                        <span class="comment"><?= e($pageObj->page->getViewBag()->property('url')) ?></span>
 
-        <li
-            class="<?= $pageObj->subpages ? 'has-subitems' : null ?>"
-            data-status="<?= $groupStatus || !$pageObj->subpages ? 'expanded' : 'collapsed' ?>"
-            data-group-id="<?= e($fileName) ?>"
-            data-item-path="<?= e($fileName) ?>"
-            <?php if ($searchMode): ?>data-no-drag-mode<?php endif ?>
-            data-id="<?= e($dataId) ?>"
-        >
-            <div>
-                <a href="#">
-                    <div>
-                        <?= e($pageObj->page->getViewBag()->property('title')) ?>
-                        
-                            <span class="comment"><?= e($pageObj->page->getViewBag()->property('url')) ?></span>
-
-                        <?php if ($pageObj->page->getViewBag()->property('is_hidden') == 1): ?>
-                            <p><span class="comment borrador">BORRADOR</span></p>
-                        <?php endif ?>
-                    </div>
-                </a>
-
-                <input type="hidden" name="object[<?= e($fileName) ?>]" value="0"/>
-                <div class="checkbox custom-checkbox nolabel">
-                    <input
-                        id="<?= $cbId ?>"
-                        type="checkbox"
-                        name="object[<?= e($fileName) ?>]"
-                        <?= $this->isItemSelected($fileName) ? 'checked' : null ?>
-                        data-request="<?= $this->getEventHandler('onSelect') ?>"
-                        value="1">
-                    <label for="<?= $cbId ?>">Select</label>
+                    <?php if ($pageObj->page->getViewBag()->property('is_hidden') == 1): ?>
+                        <p><span class="comment borrador">BORRADOR</span></p>
+                    <?php endif ?>
                 </div>
+            </a>
 
-                <!-- Andrés Martínez : Hidden addSubpag button
-                -->
-                <!--<ul class="submenu">
-                    <li>
-                        <a
-                            href="#"
-                            data-control="create-object"
-                            data-parent="<?= $fileName ?>"
-                        >
-                            <i class="icon-plus"></i>
-                            <?= e(trans($this->addSubpageLabel)) ?>
-                        </a>
-                    </li>
-                </ul>-->
+            <input type="hidden" name="object[<?= e($fileName) ?>]" value="0"/>
+            <div class="checkbox custom-checkbox nolabel">
+                <input
+                    id="<?= $cbId ?>"
+                    type="checkbox"
+                    name="object[<?= e($fileName) ?>]"
+                    <?= $this->isItemSelected($fileName) ? 'checked' : null ?>
+                    data-request="<?= $this->getEventHandler('onSelect') ?>"
+                    value="1">
+                <label for="<?= $cbId ?>">Select</label>
             </div>
 
-            <ol>
-                <?php if ($subpages = $pageObj->subpages): ?>
-                    <?= $this->makePartial('treebranch', ['items' => $subpages]) ?>
-                <?php endif ?>
-            </ol>
-        </li>
-
-    <?php endif ?>
+            <!-- Andrés Martínez : Hidden addSubpag button
+            -->
+            <!--<ul class="submenu">
+                <li>
+                    <a
+                        href="#"
+                        data-control="create-object"
+                        data-parent="<?= $fileName ?>"
+                    >
+                        <i class="icon-plus"></i>
+                        <?= e(trans($this->addSubpageLabel)) ?>
+                    </a>
+                </li>
+            </ul>-->
+        </div>
+        <a class='duplicate' data-type='experience' data-request='onCopyExperience' data-request-data="fileNamePost: '<?= e($fileName) ?>' , fileUrlPost: '<?= $pageObj->page->getViewBag()->property('url') ?>', fileTitlePost: '<?= $pageObj->page->getViewBag()->property('title') ?>'">
+              <img data-toggle="tooltip"
+              data-placement="bottom"
+              data-delay="200"
+              title="Duplicar evento" src="/storage/app/media/uploaded-files/templates/duplicate.svg">
+        </a>
+        <ol>
+            <?php if ($subpages = $pageObj->subpages): ?>
+                <?= $this->makePartial('treebranch', ['items' => $subpages]) ?>
+            <?php endif ?>
+        </ol>
+    </li>  
 
 <?php endforeach ?>

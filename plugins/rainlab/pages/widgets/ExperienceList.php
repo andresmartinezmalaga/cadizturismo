@@ -9,6 +9,17 @@ use Backend\Classes\WidgetBase;
 use RainLab\Pages\Classes\ExperienceList as StaticPageList;
 use Cms\Classes\Theme;
 
+use DateTime;
+use Carbon\Carbon;
+use Carbon\CarbonInterval;
+
+use RainLab\Pages\Classes\Page;
+use RainLab\Pages\Classes\ExperienceList as MExperienceList;
+
+use RainLab\Pages\Classes\Experience;
+
+use Flash;
+
 /**
  * Static page list widget.
  *
@@ -96,6 +107,19 @@ class ExperienceList extends WidgetBase
         $pageList = new StaticPageList($this->theme);
         $pages = $pageList->getPageTree(true);
 
+        // Andrés Martínez : get only experiences pages to list at treebranch
+        $experiences = collect();
+        foreach ($pages as $i) {
+           if($i->page->template == 'experiences'){                
+                $i->title = $i->page->title;
+                $experiences->push($i);                
+           }
+        }
+
+        $ppages = $experiences->values();
+
+        $pages = $ppages->sortBy('title');
+
         $searchTerm = Str::lower($this->getSearchTerm());
 
         if (strlen($searchTerm)) {
@@ -165,5 +189,104 @@ class ExperienceList extends WidgetBase
     protected function putSession($key, $value)
     {
         return parent::putSession($this->getThemeSessionKey($key), $value);
+    }
+
+    // Andrés Martínez : Duplicate Experience
+    public function onCopyExperience(){
+        
+        // Define Theme
+        $theme = Theme::getActiveTheme();
+
+        // Get fileName of event to duplicate
+        $flnm =  post('fileNamePost');
+
+        // Get Url of event to duplicate
+        $url =  post('fileUrlPost');
+
+        // Get Title of event to duplicate
+        $title =  post('fileTitlePost');
+
+        // Prefix unique
+        $preU= Carbon::parse(Carbon::now())->timestamp;
+        
+        // Get content_path
+        $content_path = themes_path().'/default/content/static-pages/';
+        
+        // Source and destination file
+        $sourceFilePath = $content_path.$flnm.'.htm';
+        $destinationPath=$content_path.$flnm.'-copy-'.$preU.'.htm';
+
+        // Create Empty Event
+        $iEvento = new Experience();
+        $iEvento->fileName = $flnm.'-copy-'.$preU;
+
+        // Append Event to Meta yaml
+        $MEventoList = new MEventoList($theme);
+        $MEventoList->appendPage($iEvento);
+        
+        // Copy File
+        if(! \File::copy($sourceFilePath,$destinationPath)){
+              die("Couldn't copy file");        
+        } else {
+            
+            // Change values : url and title
+            $content = file_get_contents($destinationPath);
+            $search =  $url;
+            $replace = $url.'-copy-'.$preU;
+            $content = str_replace($search,$replace,$content);
+            file_put_contents($destinationPath, $content);
+
+            $content = file_get_contents($destinationPath);
+            $search =  $title;
+            $replace = $title.'-copy-'.$preU;
+            $content = str_replace($search,$replace,$content);
+            file_put_contents($destinationPath, $content);
+
+        }
+
+        // Get Event
+        $theme = Theme::getActiveTheme();
+        $pagesList = Page::listInTheme($theme, false);
+        $pages =  new \Illuminate\Support\Collection($pagesList);
+
+        $iEvento = ($pages->where("url",$url)->values())[0];
+
+        // Copy Mtlng
+        if(isset($iEvento->localeUrl)){
+
+            $alangs = $iEvento->localeUrl;
+                
+            foreach ($alangs as $key => $value) {
+                
+                // Get content_path
+                $content_path = themes_path().'/default/content/static-pages-'.$key.'/';
+
+                // Source and destination file
+                $sourceFilePath = $content_path.$flnm.'.htm';
+                $destinationPath = $content_path.$flnm.'-copy-'.$preU.'.htm';
+                
+                
+                if (\File::exists($sourceFilePath))
+                {
+                    if(! \File::copy($sourceFilePath,$destinationPath)){
+                        die("Couldn't copy file");        
+                    } else {
+                    
+                        // Change values : url and title
+                        $content = file_get_contents($destinationPath);
+                        $search =  $url;
+                        $replace = $url.'-copy-'.$preU;
+                        $content = str_replace($search,$replace,$content);
+                        file_put_contents($destinationPath, $content);
+
+                        $content = file_get_contents($destinationPath);
+                        $search =  $title;
+                        $replace = $title.'-copy-'.$preU;
+                        $content = str_replace($search,$replace,$content);
+                        file_put_contents($destinationPath, $content);
+                    }  
+                }
+            }        
+        }
     }
 }
