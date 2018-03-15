@@ -44,18 +44,6 @@ var ams = function(){
                     $(e.target).toggleClass("mock-selected");
                     $(e.target).children('.mock-insert').toggleClass("mock-selected");
 
-                    /*if($(e.target).hasClass( "mock-selected" ) ){
-                        $(e.target).removeClass("mock-selected");
-                        $(e.target).addClass("mock-insert");  
-                        console.log('1');                  
-                    
-                    } else if($(e.target).hasClass( "mock-insert" ) ){
-                        $(e.target).removeClass("mock-insert");
-                        $(e.target).addClass("mock-selected");
-                        console.log('2');                     
-                    }*/
-
-                    console.log('tttt');
                  });
             }    
                  
