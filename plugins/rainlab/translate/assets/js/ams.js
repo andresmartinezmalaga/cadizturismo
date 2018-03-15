@@ -45,6 +45,7 @@ var ams = function(){
                 console.log('clickado');
                 console.log($(e.target));
                  //console.log(e.target);
+                 
             
             });
 
