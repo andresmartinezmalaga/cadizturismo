@@ -43,7 +43,7 @@ var ams = function(){
                 $(self).toggleClass("mock-selected");
                 $(self).children('.mock-insert').toggleClass("mock-selected");
                 console.log('clickado');
-                console.log($(e.target);
+                console.log($(e.target));
                  console.log(e.target);
             
             });
