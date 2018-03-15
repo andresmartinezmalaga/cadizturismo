@@ -39,6 +39,12 @@ var ams = function(){
                 $(atextarea).html(tpmx)
             }
 
+            $(".mock-insert").click(function(e) {
+                $(this).toggleClass("mock-selected");
+                $(this).children('.mock-insert').toggleClass("mock-selected");
+                console.log('clickado');
+            });
+
             self.createButtonsWysiwyg(element);
 
         })
@@ -411,6 +417,7 @@ var ams = function(){
 				$(this).children('.mock-insert').toggleClass("mock-selected");
 				console.log('clickado');
 		});
+
 		$(".custom-wysiwyg").click(function(e) {
 				(".mock-insert").removeClass("mock-selected");
 		});
