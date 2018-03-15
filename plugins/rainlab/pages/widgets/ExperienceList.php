@@ -216,11 +216,11 @@ class ExperienceList extends WidgetBase
         $sourceFilePath = $content_path.$flnm.'.htm';
         $destinationPath=$content_path.$flnm.'-copy-'.$preU.'.htm';
 
-        // Create Empty Event
+        // Create Empty Experience
         $iExperience = new Experience();
         $iExperience->fileName = $flnm.'-copy-'.$preU;
 
-        // Append Event to Meta yaml
+        // Append Experience to Meta yaml
         $MExperienceList = new MExperienceList($theme);
         $MExperienceList->appendPage($iExperience);
         

@@ -382,6 +382,13 @@ $( document ).ready(function() {
             this.updateObjectList('experience');
             this.updateObjectList('experience');
         }
+
+        if(type == 'rutas'){
+            this.updateObjectList('rutas');
+            this.updateObjectList('rutas');
+            this.updateObjectList('rutas');
+            this.updateObjectList('rutas');
+        }
       
         if(type == 'playa'){
              

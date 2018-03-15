@@ -8,9 +8,18 @@ use Response;
 use Backend\Classes\WidgetBase;
 use RainLab\Pages\Classes\RutaList as StaticPageList;
 use Cms\Classes\Theme;
+
 use DateTime;
 use Carbon\Carbon;
 use Carbon\CarbonInterval;
+
+
+use RainLab\Pages\Classes\Page;
+use RainLab\Pages\Classes\RutaList as MRutaList;
+
+use RainLab\Pages\Classes\Ruta;
+
+use Flash;
 
 /**
  * Static page list widget.
@@ -125,11 +134,14 @@ class RutaList extends WidgetBase
            if($i->page->template == 'rutas'){
                 $i->date_start = (new DateTime($i->page->date_start))->format('Y-m-d');
                 $i->date_start_pretty_num = (new DateTime($i->page->date_start))->format('d.m.y');
+                $i->title = $i->page->title;
                 $events->push($i);
            }
         }
        
-        $pages = $events->values();
+        $ppages = $events->values();
+        
+        $pages = $ppages->sortBy('title');
 
         $searchTerm = Str::lower($this->getSearchTerm());
 
@@ -299,5 +311,104 @@ class RutaList extends WidgetBase
     protected function putSession($key, $value)
     {
         return parent::putSession($this->getThemeSessionKey($key), $value);
+    }
+
+    // Andrés Martínez : Duplicate Experience
+    public function onCopyRuta(){
+        
+        // Define Theme
+        $theme = Theme::getActiveTheme();
+
+        // Get fileName of event to duplicate
+        $flnm =  post('fileNamePost');
+
+        // Get Url of event to duplicate
+        $url =  post('fileUrlPost');
+
+        // Get Title of event to duplicate
+        $title =  post('fileTitlePost');
+
+        // Prefix unique
+        $preU= Carbon::parse(Carbon::now())->timestamp;
+        
+        // Get content_path
+        $content_path = themes_path().'/default/content/static-pages/';
+        
+        // Source and destination file
+        $sourceFilePath = $content_path.$flnm.'.htm';
+        $destinationPath=$content_path.$flnm.'-copy-'.$preU.'.htm';
+
+        // Create Empty Ruta
+        $iRuta = new Ruta();
+        $iRuta->fileName = $flnm.'-copy-'.$preU;
+
+        // Append Ruta to Meta yaml
+        $MRutaList = new MRutaList($theme);
+        $MRutaList->appendPage($iRuta);
+        
+        // Copy File
+        if(! \File::copy($sourceFilePath,$destinationPath)){
+              die("Couldn't copy file");        
+        } else {
+            
+            // Change values : url and title
+            $content = file_get_contents($destinationPath);
+            $search =  $url;
+            $replace = $url.'-copy-'.$preU;
+            $content = str_replace($search,$replace,$content);
+            file_put_contents($destinationPath, $content);
+
+            $content = file_get_contents($destinationPath);
+            $search =  $title;
+            $replace = $title.'-copy-'.$preU;
+            $content = str_replace($search,$replace,$content);
+            file_put_contents($destinationPath, $content);
+
+        }
+
+        // Get Ruta
+        $theme = Theme::getActiveTheme();
+        $pagesList = Page::listInTheme($theme, false);
+        $pages =  new \Illuminate\Support\Collection($pagesList);
+
+        $iRuta = ($pages->where("url",$url)->values())[0];
+
+        // Copy Mtlng
+        if(isset($iRuta->localeUrl)){
+
+            $alangs = $iExperience->localeUrl;
+                
+            foreach ($alangs as $key => $value) {
+                
+                // Get content_path
+                $content_path = themes_path().'/default/content/static-pages-'.$key.'/';
+
+                // Source and destination file
+                $sourceFilePath = $content_path.$flnm.'.htm';
+                $destinationPath = $content_path.$flnm.'-copy-'.$preU.'.htm';
+                
+                
+                if (\File::exists($sourceFilePath))
+                {
+                    if(! \File::copy($sourceFilePath,$destinationPath)){
+                        die("Couldn't copy file");        
+                    } else {
+                    
+                        // Change values : url and title
+                        $content = file_get_contents($destinationPath);
+                        $search =  $url;
+                        $replace = $url.'-copy-'.$preU;
+                        $content = str_replace($search,$replace,$content);
+                        file_put_contents($destinationPath, $content);
+
+                        $content = file_get_contents($destinationPath);
+                        $search =  $title;
+                        $replace = $title.'-copy-'.$preU;
+                        $content = str_replace($search,$replace,$content);
+                        file_put_contents($destinationPath, $content);
+                    }  
+                }
+            }        
+        }
     }
 }
