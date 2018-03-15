@@ -217,12 +217,12 @@ class ExperienceList extends WidgetBase
         $destinationPath=$content_path.$flnm.'-copy-'.$preU.'.htm';
 
         // Create Empty Event
-        $iEvento = new Experience();
-        $iEvento->fileName = $flnm.'-copy-'.$preU;
+        $iExperience = new Experience();
+        $iExperience->fileName = $flnm.'-copy-'.$preU;
 
         // Append Event to Meta yaml
-        $MEventoList = new MEventoList($theme);
-        $MEventoList->appendPage($iEvento);
+        $MExperienceList = new MExperienceList($theme);
+        $MExperienceList->appendPage($iExperience);
         
         // Copy File
         if(! \File::copy($sourceFilePath,$destinationPath)){
@@ -244,17 +244,17 @@ class ExperienceList extends WidgetBase
 
         }
 
-        // Get Event
+        // Get Experience
         $theme = Theme::getActiveTheme();
         $pagesList = Page::listInTheme($theme, false);
         $pages =  new \Illuminate\Support\Collection($pagesList);
 
-        $iEvento = ($pages->where("url",$url)->values())[0];
+        $iExperience = ($pages->where("url",$url)->values())[0];
 
         // Copy Mtlng
-        if(isset($iEvento->localeUrl)){
+        if(isset($iExperience->localeUrl)){
 
-            $alangs = $iEvento->localeUrl;
+            $alangs = $iExperience->localeUrl;
                 
             foreach ($alangs as $key => $value) {
                 
