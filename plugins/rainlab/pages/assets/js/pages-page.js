@@ -388,15 +388,15 @@ $( document ).ready(function() {
             
         }
 
-        if(type == '22muicipio'){
+        if(type == 'muicipio'){
              
             $("#MModal").html('<span>Duplicando Muicipio</span>');
             $("#MModal").fadeIn();
-            this.updateObjectList('muicipio'); 
+            /*this.updateObjectList('muicipio'); 
             this.updateObjectList('muicipio');
             this.updateObjectList('muicipio'); 
             this.updateObjectList('muicipio');
-            this.updateObjectList('muicipio',1);
+            this.updateObjectList('muicipio',1);*/
             
         }
        
