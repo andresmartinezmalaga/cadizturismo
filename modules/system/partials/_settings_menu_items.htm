@@ -20,6 +20,9 @@ system::lang.system.categories.logs
 <?php
     $url_actual = $_SERVER['REQUEST_URI'];
     $furl_actual = strpos ($url_actual, '/translate/messages');
+
+    $url_actual2 = $_SERVER['REQUEST_URI'];
+    $furl_actual2 = strpos ($url_actual, '/translate/locales');
 ?>
 
 <ul class="top-level">
@@ -27,7 +30,7 @@ system::lang.system.categories.logs
         $collapsed = in_array($category, $collapsedGroups);
     ?>
    
-        <?php if($this->user->id == 1 && !$furl_actual && $category != 'rainlab.translate::lang.plugin.name')  { ?>
+        <?php if($this->user->id == 1 && !$furl_actual && !$furl_actual2 && $category != 'rainlab.translate::lang.plugin.name')  { ?>
         <li data-group-code="<?= e($category) ?>" <?= $collapsed ? 'data-status="collapsed"' : null ?>>
             <div class="group">
                 <h3><?= e(trans($category)) ?></h3>
@@ -48,7 +51,7 @@ system::lang.system.categories.logs
         <?php } ?>
 
         
-        <?php if($this->user->id != 1 &&  !$furl_actual) { ?>
+        <?php if($this->user->id != 1 &&  !$furl_actual && !$furl_actual2) { ?>
             <?php if($category != 'system::lang.system.categories.cms' && $category != 'system::lang.system.categories.mail' && $category != 'system::lang.system.categories.logs' && $category != 'rainlab.translate::lang.plugin.name') { ?>                
                 <li data-group-code="<?= e($category) ?>" <?= $collapsed ? 'data-status="collapsed"' : null ?>>
                     <div class="group">                       
@@ -72,7 +75,7 @@ system::lang.system.categories.logs
             <?php } ?>
         <?php } ?>
 
-        <?php if($furl_actual && $category == 'rainlab.translate::lang.plugin.name' ) { ?>
+        <?php if( ($furl_actual && $category == 'rainlab.translate::lang.plugin.name') || ($furl_actual2 && $category == 'rainlab.locale::lang.plugin.name')) { ?>
                         
                 <li data-group-code="<?= e($category) ?>" <?= $collapsed ? 'data-status="collapsed"' : null ?>>
                     <div class="group">                       
