@@ -392,7 +392,7 @@ $( document ).ready(function() {
       
         if(type == 'playa'){
              
-            //$("#MModal").html('<span>Duplicando Playa</span>');
+            $("#MModal").html('<span>Duplicando Playa</span>');
             $("#MModal").fadeIn();
             this.updateObjectList('playa'); 
             this.updateObjectList('playa');
@@ -404,7 +404,7 @@ $( document ).ready(function() {
 
         if(type == 'municipio'){
              
-            //$("#MModal").html('<span>Duplicando Municipio</span>');
+            $("#MModal").html('<span>Duplicando Municipio</span>');
             $("#MModal").fadeIn();
             this.updateObjectList('municipio'); 
             this.updateObjectList('municipio');
