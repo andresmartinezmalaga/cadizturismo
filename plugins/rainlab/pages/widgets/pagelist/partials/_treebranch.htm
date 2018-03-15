@@ -3,7 +3,7 @@
 <?php 
     $subtemplate = $items[0]->page->getViewBag()->property('subtemplate');
 
-    if($subtemplate == 'playas') {
+    if($subtemplate == 'playas' || $subtemplate == 'municipios' ) {
 
         $CItems = collect();
         foreach ($items as $iItem) {
