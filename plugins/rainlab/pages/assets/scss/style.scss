@@ -25,7 +25,9 @@
 @font-face {
   font-family: 'avenir-next-thin';
   src: url("../fonts/avenirnext/avenir-next-thin.eot");
-  src: url("../fonts/avenirnext/avenir-next-thin.eot?#iefix") format("embedded-opentype"), url("../fonts/avenirnext/avenir-next-thin.woff") format("woff"), url("../fonts/avenirnext/avenir-next-thin.ttf") format("truetype");
+  src: url("../fonts/avenirnext/avenir-next-thin.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/avenirnext/avenir-next-thin.woff") format("woff"),
+  url("../fonts/avenirnext/avenir-next-thin.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -33,7 +35,9 @@
 @font-face {
   font-family: 'avenir-next-regular';
   src: url("../fonts/avenirnext/avenir-next-regular.eot");
-  src: url("../fonts/avenirnext/avenir-next-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/avenirnext/avenir-next-regular.woff") format("woff"), url("../fonts/avenirnext/avenir-next-regular.ttf") format("truetype");
+  src: url("../fonts/avenirnext/avenir-next-regular.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/avenirnext/avenir-next-regular.woff") format("woff"),
+  url("../fonts/avenirnext/avenir-next-regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -41,7 +45,11 @@
 @font-face {
   font-family: 'AvenirNext-DemiBold';
   src: url("../fonts/avenirnext/AvenirNext-DemiBold.eot");
-  src: url("../fonts/avenirnext/AvenirNext-DemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/avenirnext/AvenirNext-DemiBold.woff") format("woff"), url("../fonts/avenirnext/AvenirNext-DemiBold.ttf") format("truetype");
+  src: url("../fonts/avenirnext/AvenirNext-DemiBold.eot?#iefix") format("embedded-opentype"),
+  url('../fonts/avenirnext/AvenirNext-DemiBold.woff2') format('woff2'),
+  url("../fonts/avenirnext/AvenirNext-DemiBold.woff") format("woff"),
+  url("../fonts/avenirnext/AvenirNext-DemiBold.ttf") format("truetype"),
+  url("../fonts/avenirnext/AvenirNext-DemiBold.svg#AvenirNext-DemiBold") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -49,7 +57,9 @@
 @font-face {
   font-family: 'avenir-next-bold';
   src: url("../fonts/avenirnext/avenir-next-bold.eot");
-  src: url("../fonts/avenirnext/avenir-next-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/avenirnext/avenir-next-bold.woff") format("woff"), url("../fonts/avenirnext/avenir-next-bold.ttf") format("truetype");
+  src: url("../fonts/avenirnext/avenir-next-bold.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/avenirnext/avenir-next-bold.woff") format("woff"),
+  url("../fonts/avenirnext/avenir-next-bold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
