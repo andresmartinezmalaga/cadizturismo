@@ -79,7 +79,7 @@ system::lang.system.categories.logs
                         
                 <li data-group-code="<?= e($category) ?>" <?= $collapsed ? 'data-status="collapsed"' : null ?>>
                     <div class="group">                       
-                        <h3>$category<?= e(trans($category)) ?></h3>
+                        <h3><?php echo $category?><?= e(trans($category)) ?></h3>
                     </div>
 
                     <ul>
