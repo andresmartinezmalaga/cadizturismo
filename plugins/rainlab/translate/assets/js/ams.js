@@ -40,9 +40,10 @@ var ams = function(){
             }
 
             $(".mock-insert").click(function(e) {
-                $(e.target).toggleClass("mock-selected");
-                $(e.target).children('.mock-insert').toggleClass("mock-selected");
+                $(self).toggleClass("mock-selected");
+                $(self).children('.mock-insert').toggleClass("mock-selected");
                 console.log('clickado');
+                console.log($(self));
             
             });
 
@@ -418,6 +419,7 @@ var ams = function(){
 				$(this).toggleClass("mock-selected");
 				$(this).children('.mock-insert').toggleClass("mock-selected");
 				console.log('clickado');
+                console.log($(this));
 		});
 
 		$(".custom-wysiwyg").click(function(e) {
