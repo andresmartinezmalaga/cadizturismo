@@ -383,11 +383,11 @@ $( document ).ready(function() {
             this.updateObjectList('experience');
         }
 
-        if(type == 'rutas'){
-            this.updateObjectList('rutas');
-            this.updateObjectList('rutas');
-            this.updateObjectList('rutas');
-            this.updateObjectList('rutas');
+        if(type == 'ruta'){
+            this.updateObjectList('ruta');
+            this.updateObjectList('ruta');
+            this.updateObjectList('ruta');
+            this.updateObjectList('ruta');
         }
       
         if(type == 'playa'){
