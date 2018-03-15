@@ -42,7 +42,7 @@
                         
                         <?php if( trim(trans($item->label)) == 'Contenido' ){ ?>
                             
-                            <li class="<?= $isActive ? 'active' : null ?> svg-icon-container svg-active-effects">
+                            <li class="svg-icon-container svg-active-effects">
                                 <a href="/backend/backend/home/update/1">
                                     <span class="nav-icon">
                                         <?php if ($item->iconSvg): ?>
@@ -100,7 +100,7 @@
 
                         <?php if( $item->iconSvg == 'modules/system/assets/images/cog-icon.svg' and $this->user->is_superuser == 1 ){ ?>
 
-                        <li class="<?= $isActive ? 'active' : null ?> svg-icon-container svg-active-effects">
+                        <li class="svg-icon-container svg-active-effects">
                             <a href="<?= $item->url ?>">
                                 <span class="nav-icon">
                                     <?php if ($item->iconSvg): ?>
@@ -117,7 +117,7 @@
 
                         <?php }elseif ( $item->iconSvg != 'modules/system/assets/images/cog-icon.svg' && $item->iconSvg != 'modules/cms/assets/images/cms-icon.svg'){?>
 
-                        <li class="<?= $isActive ? 'active' : null ?> svg-icon-container svg-active-effects">
+                        <li class="svg-icon-container svg-active-effects">
                             <a href="<?= $item->url ?>">
                                 <span class="nav-icon">
                                     <?php if ($item->iconSvg): ?>
@@ -140,7 +140,7 @@
 
                 <?php endforeach ?>
 
-               <li class="<?= $isActive ? 'active' : null ?> svg-icon-container svg-active-effects">
+               <li class="svg-icon-container svg-active-effects">
                     <a href="/backend/rainlab/translate/messages">
                         <span class="nav-icon">
                             <?php if ($item->iconSvg): ?>
