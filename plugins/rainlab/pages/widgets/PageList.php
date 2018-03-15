@@ -179,13 +179,16 @@ class PageList extends WidgetBase
         // Define Theme
         $theme = Theme::getActiveTheme();
 
-        // Get fileName of event to duplicate
+        // Get type of page to duplicate
+        $ptype =  post('fileType');
+
+        // Get fileName of page to duplicate
         $flnm =  post('fileNamePost');
 
-        // Get Url of event to duplicate
+        // Get Url of page to duplicate
         $url =  post('fileUrlPost');
 
-        // Get Title of event to duplicate
+        // Get Title of page to duplicate
         $title =  post('fileTitlePost');
 
         // Prefix unique
@@ -201,7 +204,14 @@ class PageList extends WidgetBase
         // Create Empty Page
         $iPage = new Page();
         $iPage->fileName = $flnm.'-copy-'.$preU;
-        $iPage->parentFileName = 'playas';
+        
+        if($ptype == 'playa'){
+            $iPage->parentFileName = 'playas';
+        
+        } else if($ptype == 'municipio'){
+            $iPage->parentFileName = 'municipios';
+        }
+       
         
         // Append Page to Meta yaml
         $MPageList = new MPageList($theme);
