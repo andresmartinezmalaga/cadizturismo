@@ -1551,7 +1551,7 @@ html, body {
     font-weight: 700;
     font-size: 15px;
     line-height: 27px;
-    font-family: 'AvenirNext-Medium'; }
+    font-family: 'Avenir-Medium'; }
     .ways .download-link img {
       margin-left: 8px; }
     .ways .download-link:hover, .ways .download-link:focus, .ways .download-link:active {
@@ -1568,7 +1568,7 @@ html, body {
     font-weight: 700;
     font-size: 15px;
     line-height: 27px;
-    font-family: 'AvenirNext-Medium'; }
+    font-family: 'Avenir-Medium'; }
     .ways .see-link img {
       margin-left: 8px; }
     .ways .see-link:hover {
@@ -3398,7 +3398,7 @@ footer {
   width: 75%; }
 
 .bussinesPage .whatDoYouNeedCadiz {
-  font-family: AvenirNext-Medium;
+  font-family: 'Avenir-Medium';
   font-size: 23px;
   color: #FFFFFF;
   line-height: 33px;
@@ -3495,7 +3495,7 @@ footer {
     max-width: 237px;
     margin: 0 auto; }
     .emp .empresas-container ul > li a {
-      font-family: AvenirNext-Medium;
+      font-family: 'Avenir-Medium';
       font-size: 16px;
       color: #9B9B9B;
       line-height: 33px;
