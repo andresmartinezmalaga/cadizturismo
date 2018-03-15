@@ -388,7 +388,7 @@ $( document ).ready(function() {
             
         }
 
-        if(type == 'muicipio'){
+        if(type == '22muicipio'){
              
             $("#MModal").html('<span>Duplicando Muicipio</span>');
             $("#MModal").fadeIn();
