@@ -43,7 +43,9 @@ var ams = function(){
                 $(this).toggleClass("mock-selected");
                 $(this).children('.mock-insert').toggleClass("mock-selected");
                 console.log('clickado');
+            
             });
+
 
             self.createButtonsWysiwyg(element);
 
