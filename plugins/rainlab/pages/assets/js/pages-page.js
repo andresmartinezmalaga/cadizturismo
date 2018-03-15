@@ -325,7 +325,7 @@ $( document ).ready(function() {
                             $("#MModal").fadeOut();                           
                         }, 3000);
                     
-                    } else if(type == 'municipio' && pass == 1){
+                    } else if(type == '44municipio' && pass == 1){
                        
                         setTimeout(function(){                         
                             $("li[data-item-path='municipios']>div>span").click();
@@ -392,11 +392,11 @@ $( document ).ready(function() {
              
             $("#MModal").html('<span>Duplicando Muicipio</span>');
             $("#MModal").fadeIn();
-            /*this.updateObjectList('muicipio'); 
+            this.updateObjectList('muicipio'); 
             this.updateObjectList('muicipio');
             this.updateObjectList('muicipio'); 
             this.updateObjectList('muicipio');
-            this.updateObjectList('muicipio',1);*/
+            this.updateObjectList('muicipio',1);
             
         }
        
