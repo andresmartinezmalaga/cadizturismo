@@ -74,12 +74,12 @@ system::lang.system.categories.logs
                 </li>
             <?php } ?>
         <?php } ?>
-
+        <?php echo $category?>
         <?php if( ($furl_actual && $category == 'rainlab.translate::lang.plugin.name') || ($furl_actual2 && $category == 'rainlab.locale::lang.plugin.name')) { ?>
                         
                 <li data-group-code="<?= e($category) ?>" <?= $collapsed ? 'data-status="collapsed"' : null ?>>
                     <div class="group">                       
-                        <h3><?php echo $category?><?= e(trans($category)) ?></h3>
+                        <h3><?= e(trans($category)) ?></h3>
                     </div>
 
                     <ul>
