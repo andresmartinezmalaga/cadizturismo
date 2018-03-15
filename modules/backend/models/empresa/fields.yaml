@@ -5,26 +5,42 @@
 fields:
 
     name:
-        span: left
+        span: full
         label: Nombre de la empresa
 
     tlf:
-        span: right
+        span: left
         label: Teléfono
+
+    tlf2:
+        span: right
+        label: Teléfono 2
 
     extract:
         span: full
         label: Extract
 
     type_id:
-        span: left
+        span: full
         label: Tipo
         type: dropdown
         options: getTiposEmpresas
 
     email:
-        span: right
+        span: left
         label: Email
+
+    email2:
+        span: right
+        label: Email 2
+
+    fax:
+        span: left
+        label: Fax
+
+    cp:
+        span: right
+        label: Código Postal
 
     site:
         span: left
