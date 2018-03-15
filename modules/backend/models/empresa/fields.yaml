@@ -18,7 +18,7 @@ fields:
 
     extract:
         span: full
-        label: Extract
+        label: Destacado
 
     type_id:
         span: full
