@@ -49,18 +49,22 @@ tabs:
         facebook:
             span: left
             label: Facebook
+            tab: Redes Sociales
 
         twitter:
             span: right
             label: Twitter
+            tab: Redes Sociales
         
         youtube:
             span: left
             label: YouTube
+            tab: Redes Sociales
 
         instagram:
             span: right
             label: Instagram
+            tab: Redes Sociales
 
         role:
             context: [create, update]
