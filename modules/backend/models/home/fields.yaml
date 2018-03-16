@@ -14,7 +14,7 @@ fields:
 
     parrafo:
         span: full
-        label: Párrafo
+        label: Entradilla
 
     enlace_titulo:
         span: left
