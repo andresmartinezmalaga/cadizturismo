@@ -46,6 +46,22 @@ tabs:
             span: right
             label: backend::lang.user.password_confirmation
 
+        facebook:
+            span: left
+            label: Facebook
+
+        twitter:
+            span: right
+            label: Twitter
+        
+        youtube:
+            span: left
+            label: YouTube
+
+        instagram:
+            span: right
+            label: Instagram
+
         role:
             context: [create, update]
             label: backend::lang.user.role_field

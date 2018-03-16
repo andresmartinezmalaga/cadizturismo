@@ -1,10 +1,24 @@
+==
+
+<?php
+
+  function onStart()
+  {
+    $this['home'] = $this->staticApp->getHomeVars();
+  }
+
+?>
+
+==
+
 <footer>
     <div class="footer-container">
       <div class="left-container">
         <a class="footer-link" href="{{url('/')}}/{{lang}}"><img style="margin-right: 30px;" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/mini-logo.svg" alt="logo cádiz"> </a>
         <div class="links-container">
           {% for item in staticMenu5.menuItems %}
-            {% set tt = '.'~item.title %}
+              {% set tb = 'x'~item.title %}
+              {% set tt = tb|slice(1, 100) %}
             <a href="{{ item.url }}">{{ tt|_ }}</a>
             {% if item.title == 'Publicaciones' %}
                <a href="{{url('/')}}/{{lang}}/empresas">{{'Empresas'|_ }}</a>
@@ -14,11 +28,11 @@
       </div>
       <div class="copy-social-container">
         <p class="date">&copy; {{ "now"|date("Y") }} Cádiz Turismo</p>
-        <div class="social">
-          <a href="https://www.facebook.com/CadizTurismo"><img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/fb-icon.svg" alt="facebook"></a>
-          <a href="https://twitter.com/CadizTurismo"><img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tw-icon.svg" alt="twitter"></a>
-          <a href="https://www.youtube.com/profile?gl=US&user=PatProvTurCadiz"><img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/yb-icon.svg" alt="youtube"></a>
-          <a href="https://www.instagram.com/cadizturismo/"><img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/insta-icon.svg" alt="instagram"></a>
+        <div class="social">          
+          <a href="{{home.facebook}}"><img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/fb-icon.svg" alt="facebook"></a>
+          <a href="{{home.twitter}}"><img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/tw-icon.svg" alt="twitter"></a>
+          <a href="{{home.youtube}}"><img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/yb-icon.svg" alt="youtube"></a>
+          <a href="{{home.instagram}}"><img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/insta-icon.svg" alt="instagram"></a>
         </div>
       </div>
     </div>

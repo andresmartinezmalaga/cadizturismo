@@ -31,6 +31,8 @@ use Backend\Models\Tiposvisitas;
 use Backend\Models\Catgeventos;
 use Backend\Models\Catgrutas;
 
+use Backend\Models\User;
+
 /**
  * The static page component.
  *
@@ -61,8 +63,14 @@ class StaticApp extends ComponentBase
 
     public function getHomeVars (){
         $home = Home::find(1);
+        $urs = User::find(4);
         $image = $home->avatar->getPath();
         $home->image = $image;
+        $home->facebook = $urs->facebook;
+        $home->twitter = $urs->twitter;
+        $home->youtube = $urs->youtube;
+        $home->instagram = $urs->instagram;
+
         return $home;
     }
 
