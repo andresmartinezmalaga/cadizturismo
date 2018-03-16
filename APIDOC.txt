@@ -143,7 +143,22 @@ API DOC
 				{page} Number: número de pagína a mostrar
 				{number} Number: número de items a mostrar por pagína
 
+
+
+
 			response : [empresas]
+
+				********************************************
+				********************************************
+				********************************************
+				LYDIA
+				********************************************
+				********************************************
+				********************************************
+				{tlf2} String
+				{email2} String
+				{fax} String
+				{cp} String
 
 		Bucar empresas filtradas por tipo
 
@@ -162,4 +177,70 @@ API DOC
 				{name_slug} String, example : andalusia-tour-travel
 				{lang} String, example : en
 
+
+
+
+
+************EMPRESA
+
+response : [empresas]
+
+				********************************************
+				********************************************
+				********************************************
+				LYDIA
+				********************************************
+				********************************************
+				********************************************
+				{tlf2} String
+				{email2} String
+				{fax} String
+				{cp} String
+
+************EXPERIENCIA
+
+Interes de experiencia por id
+
+url : http://cadizturismo/api/experiencia/interes/{id}
+
+params :
+	{id} integer
+	
+response : [Interes]
+
+
+
+Tipo de visita de experiencia por id
+
+url : http://cadizturismo/api/experiencia/tvisita/{id}
+
+params :
+	{id} integer
+	
+response : [Tipo de visita]
+
+
+************EVENTOS
+
+Categoria de evento por id
+
+url : http://cadizturismo/api/eventos/categoria/{id}
+
+params :
+	{id} integer
+	
+response : [Categoria de evento]
+
+
+
+************RUTAS
+
+Categoria de ruta por id
+
+url : http://cadizturismo/api/rutas/categoria/{id}
+
+params :
+	{id} integer
+	
+response : [Categoria de rutas]
 

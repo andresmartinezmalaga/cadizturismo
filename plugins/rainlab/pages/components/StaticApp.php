@@ -1426,4 +1426,6 @@ class StaticApp extends ComponentBase
         return $staticPages;
     }
 
+   
+
 }
