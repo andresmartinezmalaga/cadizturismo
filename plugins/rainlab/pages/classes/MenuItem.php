@@ -5,6 +5,7 @@ use Validator;
 use Lang;
 use Event;
 
+
 /**
  * Represents a menu item.
  * This class is used in the back-end for managing the menu items.
@@ -14,8 +15,8 @@ use Event;
  * @package rainlab\pages
  * @author Alexey Bobkov, Samuel Georges
  */
-class MenuItem
-{
+class MenuItem 
+{    
     /**
      * @var string Specifies the menu title
      */
@@ -85,6 +86,8 @@ class MenuItem
         //'replace',
         'viewBag'
     ];
+
+       
 
     /**
      * @var array Contains the view bag properties.
@@ -210,6 +213,7 @@ class MenuItem
             $result[$property] = $this->$property;
         }
 
+       
         return $result;
     }
 }
