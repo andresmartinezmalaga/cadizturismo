@@ -76,6 +76,13 @@
   font-style: normal;
 }
 
+.header_categroy {
+  margin-bottom: 40px;
+  h1 {
+    font-size: 30px;
+  }
+}
+
 .send-info:not(:has(a)) {
   display: none !important;
 }
