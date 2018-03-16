@@ -48,9 +48,29 @@
                                 <div class="layout">
                                     <?php if ($breadcrumbContent = Block::placeholder('breadcrumb')): ?>
                                         <!-- Breadcrumb -->
-                                        <div class="control-breadcrumb">
-                                            <?= $breadcrumbContent ?>
-                                        </div>
+                                        <!-- Andrés Martínez: Filter Breadcrumb -->
+                                        <?php 
+
+                                            $url_actual = $_SERVER['REQUEST_URI'];
+                                            $furl_actual = strpos ($url_actual, '/translate/messages');
+
+                                            $url_actual2 = $_SERVER['REQUEST_URI'];
+                                            $furl_actual2 = strpos ($url_actual, '/translate/locales');
+
+                                        ?>
+
+                                        <?php if($this->user->id == 1) { ?>
+                                            <div class="control-breadcrumb">                                               
+                                                <?= $breadcrumbContent ?>
+                                            </div>
+                                        <?php } ?>
+
+                                        <?php if($this->user->id != 1 &&  !$furl_actual && !$furl_actual2) { ?>
+                                            <div class="control-breadcrumb">                                               
+                                                <?= $breadcrumbContent ?>
+                                            </div>
+                                        <?php } ?>
+                                    
                                     <?php endif ?>
 
                                     <!-- Content -->

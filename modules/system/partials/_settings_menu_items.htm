@@ -7,16 +7,7 @@
 
 ?>
 
-<!-- 
-
-system::lang.system.categories.cms
-system::lang.system.categories.system
-rainlab.translate::lang.plugin.name
-system::lang.system.categories.misc
-system::lang.system.categories.mail
-system::lang.system.categories.logs
-
--->
+<!-- Andrés Martínez: Filter admin October options -->
 <?php
     $url_actual = $_SERVER['REQUEST_URI'];
     $furl_actual = strpos ($url_actual, '/translate/messages');
@@ -29,7 +20,7 @@ system::lang.system.categories.logs
     <?php foreach ($items as $category => $items):
         $collapsed = in_array($category, $collapsedGroups);
     ?>
-   
+        <!-- Andrés Martínez: Filter admin October options -->
         <?php if($this->user->id == 1 && !$furl_actual && !$furl_actual2 && $category != 'rainlab.translate::lang.plugin.name')  { ?>
         <li data-group-code="<?= e($category) ?>" <?= $collapsed ? 'data-status="collapsed"' : null ?>>
             <div class="group">
@@ -50,7 +41,7 @@ system::lang.system.categories.logs
         </li>
         <?php } ?>
 
-        
+        <!-- Andrés Martínez: Filter admin October options -->
         <?php if($this->user->id != 1 &&  !$furl_actual && !$furl_actual2) { ?>
             <?php if($category != 'system::lang.system.categories.cms' && $category != 'system::lang.system.categories.mail' && $category != 'system::lang.system.categories.logs' && $category != 'rainlab.translate::lang.plugin.name') { ?>                
                 <li data-group-code="<?= e($category) ?>" <?= $collapsed ? 'data-status="collapsed"' : null ?>>
@@ -75,6 +66,7 @@ system::lang.system.categories.logs
             <?php } ?>
         <?php } ?>
       
+        <!-- Andrés Martínez: Filter admin October options -->
         <?php if( ($furl_actual && $category == 'rainlab.translate::lang.plugin.name') || ($furl_actual2 && $category == 'rainlab.translate::lang.plugin.name')) { ?>
                         
                 <li data-group-code="<?= e($category) ?>" <?= $collapsed ? 'data-status="collapsed"' : null ?>>
