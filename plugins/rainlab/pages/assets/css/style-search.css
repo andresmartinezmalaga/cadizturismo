@@ -93,14 +93,19 @@ form, .inputs-container {
 }
 
 .days-container {
-  background-image: url("../svg/calendar.svg");
+  background-image: url("../svg/dias.svg");
   background-repeat: no-repeat;
-  background-position: 21px 50%; }
+  background-position: 21px 50%;
+  background-size: 23px;
+
+}
 
 .interests-container {
-  background-image: url("../svg/interests.svg");
+  background-image: url("../svg/interes.svg");
   background-repeat: no-repeat;
-  background-position: 21px 50%; }
+  background-position: 21px 50%;
+  background-size: 26px;
+}
 
 .type-container {
   background-image: url("../svg/type.svg");
