@@ -12,6 +12,11 @@ use RainLab\Translate\Classes\MLCmsObject;
 use Cms\Classes\Theme;
 use Config;
 
+use Backend\Models\Intereses;
+use Backend\Models\Tiposvisitas;
+use Backend\Models\Catgeventos;
+use Backend\Models\Catgrutas;
+
 use RainLab\Translate\Models\Locale;
 
 class CadizTurismoController extends ControllerBase
@@ -100,6 +105,8 @@ class CadizTurismoController extends ControllerBase
     	$rutasList =  $this->StaticApp->rutasList();
     	
     	$mlPages = $this->createObjectPagesMultl($rutasList);
+
+        
 
 		return new JsonResponse(['data'=>$mlPages], 200); 
     }
@@ -388,5 +395,21 @@ class CadizTurismoController extends ControllerBase
        
     }
     
+
+    public function rutaCategoriaById($id){
+        return new JsonResponse(['data'=> Catgrutas::find($id)], 200);  
+    }
+
+    public function eventoCategoriaById($id){
+        return new JsonResponse(['data'=> Catgeventos::find($id)], 200);  
+    }
+
+    public function expInteresById($id){
+        return new JsonResponse(['data'=> Intereses::find($id)], 200);  
+    }
+
+     public function expTVisitaById($id){
+        return new JsonResponse(['data'=> Tiposvisitas::find($id)], 200);  
+    }
 
 }
