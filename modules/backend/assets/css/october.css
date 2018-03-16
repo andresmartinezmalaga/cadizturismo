@@ -4932,7 +4932,8 @@ nav#layout-mainmenu.navbar-mode-inline ul.mainmenu-nav li:first-child {
     color: #ffffff; }
 
 .control-treeview ol > li.dragged div + .duplicate img, .control-treeview ol > li > div:hover + .duplicate img,
-.control-treeview ol > li.active > div + .duplicate img {
+.control-treeview ol > li.active > div + .duplicate img, .control-treeview ol > li.dragged div + .duplicate-page img, .control-treeview ol > li > div:hover + .duplicate-page img,
+.control-treeview ol > li.active > div + .duplicate-page img {
   -webkit-filter: brightness(10);
   filter: brightness(10);
   -moz-filter: brightness(10); }
