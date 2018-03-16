@@ -5681,3 +5681,8 @@ div[data-control="media-manager"] .media-list.tiles li.selected .icon-container 
 
 .select-hide-search .select2-search.select2-search--dropdown {
   display: none; }
+
+.header_categroy {
+  margin-bottom: 40px; }
+  .header_categroy h1 {
+    font-size: 30px; }
