@@ -2245,6 +2245,18 @@ div[data-control="media-manager"] .media-list.tiles li.selected .icon-container 
   }
 }
 
+.duplicate-page {
+  position: absolute;
+  z-index: 10;
+  top: 11px;
+  right: 18px;
+  cursor: pointer;
+  img {
+    width: 17px;
+    height: auto;
+  }
+}
+
 /* CUSTOM EDITOR TOOLBAR */
 .custom-wysiwyg {
   width: 38px;
