@@ -48,6 +48,8 @@ $( document ).ready(function() {
         // Andrés Martínez : Duplicate event refresh js
         $(document).on('click', '.duplicate', this.proxy(this.onDuplicate))
 
+        $(document).on('click', '.duplicate-page', this.proxy(this.onDuplicate))
+
         $(document).on('open.oc.list', this.$sidePanel, this.proxy(this.onSidebarItemClick))
 
         // A tab is shown / switched
@@ -360,13 +362,17 @@ $( document ).ready(function() {
 
     // Andrés Martínez : Duplicate event refresh js
     PagesPage.prototype.onDuplicate = function(e) {
-      
+        
+        console.log('entrandoooooo111111');
         this.onDuplicateRefres($(e.target).parent()[0]);
 
     }
     // Andrés Martínez : Duplicate && refresh Events and Pages
     PagesPage.prototype.onDuplicateRefres = function(e) {
         
+    console.log('entrandoooooo22222222');
+
+
        var type = ($(e).data("type"));
       
         if(type == 'evento'){
