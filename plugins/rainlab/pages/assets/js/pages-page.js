@@ -1,5 +1,5 @@
 $( document ).ready(function() {
- 
+
 /*
  * Handles the Pages main page.
  */
@@ -12,12 +12,12 @@ $( document ).ready(function() {
 
         this.init()
     }
-  
+
     PagesPage.prototype = Object.create(BaseProto)
     PagesPage.prototype.constructor = PagesPage
 
     PagesPage.prototype.init = function() {
-        
+
         this.$masterTabs = $('#pages-master-tabs')
         this.$sidePanel = $('#pages-side-panel')
         this.$pageTree = $('[data-control=treeview]', this.$sidePanel)
@@ -32,7 +32,7 @@ $( document ).ready(function() {
         // Andrés Martínez : Enable eventDuplicate
         //this.ams.eventDuplicate();
     }
-   
+
 
     PagesPage.prototype.registerHandlers = function() {
 
@@ -93,7 +93,7 @@ $( document ).ready(function() {
         $(document).on('submenu.oc.treeview', 'form.layout[data-content-id=pages]', this.proxy(this.onSidebarSubmenuItemClick))
 
         // The Delete Object button click
-        $(document).on('click', '#pages-side-panel form button[data-control=delete-object], #pages-side-panel form button[data-control=delete-template]', 
+        $(document).on('click', '#pages-side-panel form button[data-control=delete-object], #pages-side-panel form button[data-control=delete-template]',
             this.proxy(this.onDeleteObject))
 
         // A new tab is added to the editor
@@ -187,7 +187,7 @@ $( document ).ready(function() {
      */
     PagesPage.prototype.onTabShown = function(e) {
 
-       
+
 
         var $tabControl = $(e.target).closest('[data-control=tab]')
 
@@ -241,7 +241,7 @@ $( document ).ready(function() {
      * Handles successful AJAX request in the master tab forms. Updates the UI elements and resets the mtime value.
      */
     PagesPage.prototype.onAjaxSuccess = function(event, context, data) {
-       
+
         var $form = $(event.currentTarget),
             $tabPane = $form.closest('.tab-pane')
 
@@ -295,43 +295,43 @@ $( document ).ready(function() {
      * Updates the sidebar object list.
      */
     PagesPage.prototype.updateObjectList = function(objectType, pass = 0) {
-        
+
         // Andrés Martinez : Get type and set objectType
-        var type = '';         
+        var type = '';
         if (objectType == 'playa'){
             objectType = 'page';
             type = 'playa';
-        
+
         } else if (objectType == 'municipio'){
             objectType = 'page';
             type = 'municipio';
         }
- 
+
         var $form = $('form[data-object-type='+objectType+']', this.$sidePanel),
             objectList = objectType + 'List',
             self = this
 
         $.oc.stripeLoadIndicator.show()
-       
+
         $form.request(objectList + '::onUpdate', {
-            
+
             complete: function(data) {
 
                 $.when($('button[data-control=delete-object], button[data-control=delete-template]', $form).trigger('oc.triggerOn.update')).done(function(){
 
-                    // Andrés Martinez : Open Li                 
+                    // Andrés Martinez : Open Li
                     if(type == 'playa' && pass == 1){
-                       
-                        setTimeout(function(){                         
+
+                        setTimeout(function(){
                             $("li[data-item-path='playas']>div>span").click();
-                            $("#MModal").fadeOut();                           
+                            $("#MModal").fadeOut();
                         }, 3000);
-                    
+
                     } else if(type == 'municipio' && pass == 1){
-                       
-                        setTimeout(function(){                         
+
+                        setTimeout(function(){
                             $("li[data-item-path='municipios']>div>span").click();
-                            $("#MModal").fadeOut();                           
+                            $("#MModal").fadeOut();
                         }, 3000);
                     }
 
@@ -339,11 +339,11 @@ $( document ).ready(function() {
             }
 
         }).always(function(){
-            
+
             $.oc.stripeLoadIndicator.hide()
         })
 
-        
+
     }
 
     /*
@@ -362,19 +362,17 @@ $( document ).ready(function() {
 
     // Andrés Martínez : Duplicate event refresh js
     PagesPage.prototype.onDuplicate = function(e) {
-        
-        console.log('entrandoooooo111111');
+
+
         this.onDuplicateRefres($(e.target).parent()[0]);
 
     }
     // Andrés Martínez : Duplicate && refresh Events and Pages
     PagesPage.prototype.onDuplicateRefres = function(e) {
         
-    console.log('entrandoooooo22222222');
-
 
        var type = ($(e).data("type"));
-      
+
         if(type == 'evento'){
             this.updateObjectList('evento');
             this.updateObjectList('evento');
@@ -395,31 +393,31 @@ $( document ).ready(function() {
             this.updateObjectList('ruta');
             this.updateObjectList('ruta');
         }
-      
+
         if(type == 'playa'){
-             
-            $("#MModal").html('<span>Duplicando Playa</span>');
+
+            $("#MModal").append('<span>Duplicando Playa</span>');
             $("#MModal").fadeIn();
-            this.updateObjectList('playa'); 
             this.updateObjectList('playa');
-            this.updateObjectList('playa'); 
+            this.updateObjectList('playa');
+            this.updateObjectList('playa');
             this.updateObjectList('playa');
             this.updateObjectList('playa',1);
-            
+
         }
 
         if(type == 'municipio'){
-             
-            $("#MModal").html('<span>Duplicando Municipio</span>');
+
+            $("#MModal").append('<span>Duplicando Municipio</span>');
             $("#MModal").fadeIn();
-            this.updateObjectList('municipio'); 
             this.updateObjectList('municipio');
-            this.updateObjectList('municipio'); 
+            this.updateObjectList('municipio');
+            this.updateObjectList('municipio');
             this.updateObjectList('municipio');
             this.updateObjectList('municipio',1);
-            
+
         }
-       
+
     }
 
     /*
@@ -427,7 +425,7 @@ $( document ).ready(function() {
      * If the item is already opened, activate its tab in the editor.
      */
     PagesPage.prototype.onSidebarItemClick = function(e) {
-        
+
         var self = this,
             $item = $(e.relatedTarget),
             $form = $item.closest('form'),
@@ -443,8 +441,8 @@ $( document ).ready(function() {
             /*if(data.path == 'comarcas'){
                 return false;
             }*/
-        
-          
+
+
 
         if ($item.data('type') == 'snippet') {
             this.snippetManager.onSidebarSnippetClick($item)
@@ -452,7 +450,7 @@ $( document ).ready(function() {
             return
         }
 
-       
+
         /*
          * Find if the tab is already opened
          */
@@ -466,22 +464,22 @@ $( document ).ready(function() {
          */
 
        $.oc.stripeLoadIndicator.show()
-       
-              
+
+
 
         $form.request('onOpen', {
-            
+
             data: data
         }).done(function(data) {
 
-            
+
             self.$masterTabs.ocTab('addTab', data.tabTitle, data.tab, tabId, $form.data('type-icon'))
 
         }).always(function() {
             $.oc.stripeLoadIndicator.hide()
         })
 
-        return false         
+        return false
     }
 
     /*
@@ -518,7 +516,7 @@ $( document ).ready(function() {
      * Triggered when an item is clicked in the sidebar submenu
      */
     PagesPage.prototype.onSidebarSubmenuItemClick = function(e) {
-        
+
         if ($(e.clickEvent.target).data('control') == 'create-object')
             this.onCreateObject(e.clickEvent)
 
@@ -705,7 +703,7 @@ $( document ).ready(function() {
      * Updates the content editor to correspond the conten file extension
      */
     PagesPage.prototype.updateContentEditorMode = function(pane, initialization) {
-        
+
 
 
         if ($('[data-toolbar-type]', pane).data('toolbar-type') !== 'content')
