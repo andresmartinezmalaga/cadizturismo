@@ -397,19 +397,87 @@ class CadizTurismoController extends ControllerBase
     
 
     public function rutaCategoriaById($id){
-        return new JsonResponse(['data'=> Catgrutas::find($id)], 200);  
+
+        $MLocale = new Locale();
+
+        $ccat = collect();
+
+        $cat = Catgrutas::find($id);
+
+        foreach ($MLocale->listAvailable() as $key => $value) {
+            if($key != 'es'){
+                $cat->translateContext($key);
+                $ccat->put($key,['id'=>$cat->id,'name'=>$cat->name]); 
+            } else {
+                $cat->translateContext('es');
+                $ccat->put($key,$cat); 
+            }
+        }
+
+        return new JsonResponse(['data'=> $ccat], 200);  
     }
 
     public function eventoCategoriaById($id){
-        return new JsonResponse(['data'=> Catgeventos::find($id)], 200);  
+
+        $MLocale = new Locale();
+
+        $ccat = collect();
+
+        $cat = Catgeventos::find($id);
+
+        foreach ($MLocale->listAvailable() as $key => $value) {
+            if($key != 'es'){
+                $cat->translateContext($key);
+                $ccat->put($key,['id'=>$cat->id,'name'=>$cat->name]); 
+            } else {
+                $cat->translateContext('es');
+                $ccat->put($key,$cat); 
+            }
+        }
+
+        return new JsonResponse(['data'=> $ccat], 200);  
     }
 
     public function expInteresById($id){
-        return new JsonResponse(['data'=> Intereses::find($id)], 200);  
+        
+        $MLocale = new Locale();
+
+        $cintrs = collect();
+
+        $intrs = Intereses::find($id);
+
+        foreach ($MLocale->listAvailable() as $key => $value) {
+            if($key != 'es'){
+                $intrs->translateContext($key);
+                $cintrs->put($key,['id'=>$intrs->id,'name'=>$intrs->name]); 
+            } else {
+                $intrs->translateContext('es');
+                $cintrs->put($key,$intrs); 
+            }
+        }
+
+        return new JsonResponse(['data'=> $cintrs], 200);  
     }
 
-     public function expTVisitaById($id){
-        return new JsonResponse(['data'=> Tiposvisitas::find($id)], 200);  
+    public function expTVisitaById($id){
+
+        $MLocale = new Locale();
+
+        $ctvs = collect();
+
+        $itvs = Tiposvisitas::find($id);
+
+        foreach ($MLocale->listAvailable() as $key => $value) {
+            if($key != 'es'){
+                $itvs->translateContext($key);
+                $ctvs->put($key,['id'=>$itvs->id,'name'=>$itvs->name]); 
+            } else {
+                $itvs->translateContext('es');
+                $ctvs->put($key,$itvs); 
+            }
+        }
+
+        return new JsonResponse(['data'=> $ctvs], 200);  
     }
 
 }
