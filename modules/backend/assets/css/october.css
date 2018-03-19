@@ -5697,3 +5697,6 @@ div[data-control="media-manager"] .media-list.tiles li.selected .icon-container 
   margin-bottom: 40px; }
   .header_categroy h1 {
     font-size: 30px; }
+
+.btn.oc-icon-plus, .floatJuan.left a {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"; }
