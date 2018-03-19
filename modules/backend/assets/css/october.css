@@ -5697,3 +5697,13 @@ div[data-control="media-manager"] .media-list.tiles li.selected .icon-container 
   margin-bottom: 40px; }
   .header_categroy h1 {
     font-size: 30px; }
+
+.btn.oc-icon-plus, .floatJuan.left a {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol" !important; }
+
+.control-pagination .select2-container {
+  height: 30px !important;
+  background-color: #F9F9F9 !important;
+  color: #98a7a8 !important; }
+  .control-pagination .select2-container .select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #98a7a8 !important; }
