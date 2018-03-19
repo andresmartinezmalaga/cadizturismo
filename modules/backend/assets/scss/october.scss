@@ -2412,3 +2412,9 @@ div[data-control="media-manager"] .media-list.tiles li.selected .icon-container 
 .btn.oc-icon-plus, .floatJuan.left a {
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol" !important;
 }
+
+.list-footer > .list-pagination {
+  .select2 .select2-container .select2-container--default .select2-container--above .select2-container--focus {
+    height: 30px !important;
+  }
+}
