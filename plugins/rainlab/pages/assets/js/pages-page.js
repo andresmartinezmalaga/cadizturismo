@@ -369,7 +369,7 @@ $( document ).ready(function() {
     }
     // Andrés Martínez : Duplicate && refresh Events and Pages
     PagesPage.prototype.onDuplicateRefres = function(e) {
-        
+
 
        var type = ($(e).data("type"));
 
@@ -396,7 +396,7 @@ $( document ).ready(function() {
 
         if(type == 'playa'){
 
-            $("#MModal").append('<span>Duplicando Playa</span>');
+            $("#MModal > div > .span-container").html('<span>Duplicando Playa</span>');
             $("#MModal").fadeIn();
             this.updateObjectList('playa');
             this.updateObjectList('playa');
@@ -408,7 +408,7 @@ $( document ).ready(function() {
 
         if(type == 'municipio'){
 
-            $("#MModal").append('<span>Duplicando Municipio</span>');
+            $("#MModal > div > .span-container").html('<span>Duplicando Municipio</span>');
             $("#MModal").fadeIn();
             this.updateObjectList('municipio');
             this.updateObjectList('municipio');

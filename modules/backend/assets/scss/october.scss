@@ -2424,6 +2424,19 @@ div[data-control="media-manager"] .media-list.tiles li.selected .icon-container 
 
   /*  Modal loading */
   #MModal {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    .centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
     img {
       width: 35px;
       height: 35px;
