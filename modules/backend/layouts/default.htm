@@ -39,17 +39,15 @@
                         <!-- Content Body -->
                         <div class="layout-cell layout-container" id="layout-body">
 
-                            <div id="MModal" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); z-index: 999; display: none;">                                
-                                <img src="/modules/backend/assets/images/dualring.svg" alt="">
-                            </div>
-
                             <div class="layout-relative">
-
+                              <div id="MModal" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); z-index: 999; display: none;">
+                                  <img src="/modules/backend/assets/images/dualring.svg" alt="">
+                              </div>
                                 <div class="layout">
                                     <?php if ($breadcrumbContent = Block::placeholder('breadcrumb')): ?>
                                         <!-- Breadcrumb -->
                                         <!-- Andrés Martínez: Filter Breadcrumb -->
-                                        <?php 
+                                        <?php
 
                                             $url_actual = $_SERVER['REQUEST_URI'];
                                             $furl_actual = strpos ($url_actual, '/translate/messages');
@@ -60,17 +58,17 @@
                                         ?>
 
                                         <?php if($this->user->id == 1) { ?>
-                                            <div class="control-breadcrumb">                                               
+                                            <div class="control-breadcrumb">
                                                 <?= $breadcrumbContent ?>
                                             </div>
                                         <?php } ?>
 
                                         <?php if($this->user->id != 1 &&  !$furl_actual && !$furl_actual2) { ?>
-                                            <div class="control-breadcrumb">                                               
+                                            <div class="control-breadcrumb">
                                                 <?= $breadcrumbContent ?>
                                             </div>
                                         <?php } ?>
-                                    
+
                                     <?php endif ?>
 
                                     <!-- Content -->
