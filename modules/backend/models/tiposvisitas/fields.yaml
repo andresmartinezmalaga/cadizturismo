@@ -6,4 +6,4 @@ fields:
     
     name:
         span: left
-        label: Nombre de tipo de visita
+        label: Nombre del tipo de visita
