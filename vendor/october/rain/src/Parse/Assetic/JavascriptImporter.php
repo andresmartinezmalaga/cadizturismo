@@ -18,7 +18,7 @@ use Exception;
  * console.log(#FOO);
  *
  * @package october/parse
- * @author Alexey Bobkov, Samuel Georges
+ *
  */
 class JavascriptImporter implements FilterInterface
 {

@@ -8,7 +8,7 @@ class Str extends Facade
      * Get the registered name of the component.
      * 
      * Resolves to:
-     * - October\Rain\Support\Str
+     *\Rain\Support\Str
      * 
      * @return string
      */

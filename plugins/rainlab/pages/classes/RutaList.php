@@ -12,7 +12,7 @@ use DirectoryIterator;
  * The page list class reads and manages the static page hierarchy.
  *
  * @package rainlab\pages
- * @author Alexey Bobkov, Samuel Georges
+ *
  */
 class RutaList
 {

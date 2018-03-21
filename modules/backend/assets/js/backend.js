@@ -1,6 +1,3 @@
-/*
- * October General Utilities
- */
 
 /*
  * Ensure the CSRF token is added to all AJAX requests.

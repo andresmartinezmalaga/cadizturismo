@@ -17,8 +17,8 @@ use Exception;
 /**
  * Mail templates controller
  *
- * @package october\system
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class MailTemplates extends Controller
 {

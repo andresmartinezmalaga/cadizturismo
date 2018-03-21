@@ -22,8 +22,8 @@ use Exception;
  * - upload-label: Add file
  * - empty-label: No file uploaded
  *
- * @package october\backend
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class FileUpload extends FormWidgetBase
 {

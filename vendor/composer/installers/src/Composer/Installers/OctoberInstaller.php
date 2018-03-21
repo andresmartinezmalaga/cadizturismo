@@ -12,9 +12,9 @@ class OctoberInstaller extends BaseInstaller
     /**
      * Format package name.
      *
-     * For package type october-plugin, cut off a trailing '-plugin' if present.
+     * For package type, cut off a trailing '-plugin' if present.
      *
-     * For package type october-theme, cut off a trailing '-theme' if present.
+     * For package type , cut off a trailing '-theme' if present.
      *
      */
     public function inflectPackageVars($vars)

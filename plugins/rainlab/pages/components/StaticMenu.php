@@ -10,7 +10,7 @@ use RainLab\Pages\Classes\Menu as PagesMenu;
  * The menu component.
  *
  * @package rainlab\pages
- * @author Alexey Bobkov, Samuel Georges
+ *
  */
 class StaticMenu extends ComponentBase
 {

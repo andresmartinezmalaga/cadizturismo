@@ -14,8 +14,8 @@ use Exception;
 /**
  * System status report widget.
  *
- * @package october\system
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class Status extends ReportWidgetBase
 {

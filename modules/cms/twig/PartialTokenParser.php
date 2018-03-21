@@ -14,8 +14,8 @@ use Twig_Error_Syntax;
  *
  *     {% partial "sidebar" name='John', year=2013 %}
  *
- * @package october\cms
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class PartialTokenParser extends Twig_TokenParser
 {

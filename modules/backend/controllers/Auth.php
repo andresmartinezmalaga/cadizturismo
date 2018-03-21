@@ -15,8 +15,8 @@ use Exception;
 /**
  * Authentication controller
  *
- * @package october\backend
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  *
  */
 class Auth extends Controller

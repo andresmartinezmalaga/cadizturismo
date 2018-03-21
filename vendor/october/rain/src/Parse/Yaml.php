@@ -6,8 +6,8 @@ use Symfony\Component\Yaml\Parser;
 /**
  * Yaml helper class
  *
- * @package october\parse
- * @author Alexey Bobkov, Samuel Georges
+ * \parse
+ *
  */
 class Yaml
 {

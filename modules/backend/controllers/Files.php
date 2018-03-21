@@ -13,8 +13,8 @@ use Exception;
  * Used for delivering protected system files, and generating URLs
  * for accessing them.
  *
- * @package october\backend
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  *
  */
 class Files extends Controller

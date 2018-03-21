@@ -12,8 +12,8 @@ use System\Classes\MarkupManager;
 /**
  * The System Twig extension class implements common Twig functions and filters.
  *
- * @package october\system
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class Extension extends Twig_Extension
 {

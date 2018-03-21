@@ -9,7 +9,7 @@ use Exception;
  * Google Analytics top pages widget.
  *
  * @package backend
- * @author Alexey Bobkov, Samuel Georges
+ *
  */
 class TopPages extends ReportWidgetBase
 {

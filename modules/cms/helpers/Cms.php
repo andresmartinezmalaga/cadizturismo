@@ -6,9 +6,9 @@ use Route;
 /**
  * CMS Helper
  *
- * @package october\cms
+ *
  * @see \Cms\Facades\Cms
- * @author Alexey Bobkov, Samuel Georges
+ *
  */
 class Cms
 {

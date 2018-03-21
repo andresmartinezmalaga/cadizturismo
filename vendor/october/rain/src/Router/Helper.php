@@ -3,8 +3,8 @@
 /**
  * Methods that may be useful for processing routing activity
  *
- * @package october\router
- * @author Alexey Bobkov, Samuel Georges
+ * \router
+ *
  */
 class Helper
 {

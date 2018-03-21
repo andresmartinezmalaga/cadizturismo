@@ -14,8 +14,8 @@ use ApplicationException;
  * Filter Widget
  * Renders a container used for filtering things.
  *
- * @package october\backend
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class Filter extends WidgetBase
 {

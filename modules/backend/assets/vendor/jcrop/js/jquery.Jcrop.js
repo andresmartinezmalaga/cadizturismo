@@ -1084,7 +1084,7 @@
       //}}}
 
       // This is a hack for iOS5 to support drag/move touch functionality
-      // Hack OctoberCMS - the event handler was moved to the Touch module.
+      // Hack CMS - the event handler was moved to the Touch module.
       // The closure used before was handling a reference to the target object,
       // preventing it from removing from DOM after the control is destroyed.
       $(document).bind('touchstart.jcrop-ios', Touch.fixTouchSupport);

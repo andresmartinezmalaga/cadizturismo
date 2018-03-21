@@ -3,8 +3,8 @@
 /**
  * The CMS layout class.
  *
- * @package october\cms
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class Layout extends CmsCompoundObject
 {

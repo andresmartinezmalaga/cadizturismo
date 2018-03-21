@@ -23,7 +23,7 @@ return [
     Laravel\Tinker\TinkerServiceProvider::class,
 
     /*
-     * October Rain providers
+     * Rain providers
      */
     October\Rain\Database\DatabaseServiceProvider::class,
     October\Rain\Halcyon\HalcyonServiceProvider::class,

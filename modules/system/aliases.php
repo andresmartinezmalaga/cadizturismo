@@ -34,7 +34,7 @@ return [
     'View'      => Illuminate\Support\Facades\View::class,
 
     /*
-     * October aliases
+     * aliases
      */
     'Model'           => October\Rain\Database\Model::class,
     'Block'           => October\Rain\Support\Facades\Block::class,

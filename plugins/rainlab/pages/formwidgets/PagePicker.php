@@ -7,8 +7,8 @@ use RainLab\Pages\Classes\Page;
 /**
  * Static page picker widget
  *
- * @package october\backend
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class PagePicker extends FormWidgetBase
 {

@@ -12,7 +12,7 @@ use System\Models\MailTemplate;
  * Theme scanner class
  *
  * @package rainlab\translate
- * @author Alexey Bobkov, Samuel Georges
+ *
  */
 class ThemeScanner
 {

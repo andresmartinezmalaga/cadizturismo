@@ -36,8 +36,8 @@ use Illuminate\Http\RedirectResponse;
  * The CMS controller class.
  * The controller finds and serves requested pages.
  *
- * @package october\cms
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class Controller
 {

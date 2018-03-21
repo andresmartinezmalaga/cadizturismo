@@ -1,5 +1,5 @@
 /*
- * October JavaScript foundation library.
+ * JavaScript foundation library.
  * 
  * Light-weight utility functions for working with DOM elements. The functions
  * work with elements directly, without jQuery, using the native JavaScript and DOM

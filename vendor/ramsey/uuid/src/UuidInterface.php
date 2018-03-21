@@ -202,7 +202,7 @@ interface UuidInterface extends \JsonSerializable, \Serializable
      * The 60 bit timestamp value is constructed from the time_low,
      * time_mid, and time_hi fields of this UUID. The resulting
      * timestamp is measured in 100-nanosecond units since midnight,
-     * October 15, 1582 UTC.
+     * 15, 1582 UTC.
      *
      * The timestamp value is only meaningful in a time-based UUID, which
      * has version type 1. If this UUID is not a time-based UUID then

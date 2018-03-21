@@ -9,8 +9,8 @@ use Backend;
 /**
  * Plugin base class
  *
- * @package october\system
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class PluginBase extends ServiceProviderBase
 {

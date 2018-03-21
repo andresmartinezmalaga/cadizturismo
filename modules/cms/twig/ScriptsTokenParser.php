@@ -8,8 +8,8 @@ use Twig_TokenParser;
  *
  *     {% scripts %}
  *
- * @package october\cms
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class ScriptsTokenParser extends Twig_TokenParser
 {

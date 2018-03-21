@@ -13,7 +13,7 @@ use Assetic\Filter\FilterInterface;
  * Class used to compiled stylesheet less files, not using leafo!
  *
  * @package october/parse
- * @author Alexey Bobkov, Samuel Georges
+ *
  */
 class ScssCompiler extends ScssphpFilter implements HashableInterface, DependencyExtractorInterface
 {

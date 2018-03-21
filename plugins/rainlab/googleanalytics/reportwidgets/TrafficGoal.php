@@ -9,7 +9,7 @@ use Exception;
  * Google Analytics traffic goal widget.
  *
  * @package backend
- * @author Alexey Bobkov, Samuel Georges
+ *
  */
 class TrafficGoal extends ReportWidgetBase
 {

@@ -3,8 +3,8 @@
 /**
  * Zip helper
  *
- * @package october\filesystem
- * @author Alexey Bobkov, Samuel Georges
+ * \filesystem
+ *
  *
  * Usage:
  * 

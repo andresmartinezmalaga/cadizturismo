@@ -11,8 +11,8 @@ use Twig_TokenParser;
  *         {% default %}
  *     {% endput %}
  *
- * @package october\cms
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class DefaultTokenParser extends Twig_TokenParser
 {

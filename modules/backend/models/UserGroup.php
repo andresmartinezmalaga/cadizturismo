@@ -5,8 +5,8 @@ use October\Rain\Auth\Models\Group as GroupBase;
 /**
  * Administrator group
  *
- * @package october\backend
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class UserGroup extends GroupBase
 {

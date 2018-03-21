@@ -2042,12 +2042,10 @@
                     "email": "daftspunky@gmail.com"
                 }
             ],
-            "description": "Backend module for October CMS",
-            "homepage": "http://octobercms.com",
+            "description": "Backend module",
+            "homepage": "http://.com",
             "keywords": [
-                "backend",
-                "october",
-                "october cms"
+                "backend"                
             ],
             "time": "2017-11-12 00:36:55"
         },
@@ -2194,7 +2192,7 @@
                     "email": "daftspunky@gmail.com"
                 }
             ],
-            "description": "October Rain Library",
+            "description": "Rain Library",
             "homepage": "http://octobercms.com",
             "keywords": [
                 "cms",
@@ -2247,11 +2245,9 @@
                     "email": "daftspunky@gmail.com"
                 }
             ],
-            "description": "System module for October CMS",
+            "description": "System module ",
             "homepage": "http://octobercms.com",
-            "keywords": [
-                "october",
-                "october cms",
+            "keywords": [                
                 "system"
             ],
             "time": "2017-11-12 00:36:55"

@@ -11,8 +11,8 @@ use Backend\FormWidgets\MediaFinder as BackendMediaFinder;
  *        type: media
  *        prompt: Click the %s button to find a user
  *
- * @package october\cms
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  * @deprecated Use Backend\FormWidgets\MediaFinder. Remove if year >= 2020.
  */
 class MediaFinder extends BackendMediaFinder

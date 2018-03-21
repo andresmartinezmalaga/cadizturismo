@@ -26,8 +26,8 @@ use Exception;
 /**
  * CMS asset list widget.
  *
- * @package october\cms
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class AssetList extends WidgetBase
 {

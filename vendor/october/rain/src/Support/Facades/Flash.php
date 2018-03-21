@@ -8,7 +8,7 @@ class Flash extends Facade
      * Get the registered name of the component.
      * 
      * Resolves to:
-     * - October\Rain\Support\FlashBag
+     *\Rain\Support\FlashBag
      * 
      * @return string
      */

@@ -12,7 +12,7 @@ use Url;
  * The static breadcrumbs component.
  *
  * @package rainlab\pages
- * @author Alexey Bobkov, Samuel Georges
+ *
  */
 class StaticBreadcrumbs extends ComponentBase
 {

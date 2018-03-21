@@ -5,10 +5,10 @@ use ArrayAccess;
 use Illuminate\Contracts\Config\Repository as RepositoryContract;
 
 /**
- * October config repository class.
+ * config repository class.
  *
  * @package config
- * @author Alexey Bobkov, Samuel Georges
+ *
  */
 class Repository implements ArrayAccess, RepositoryContract
 {

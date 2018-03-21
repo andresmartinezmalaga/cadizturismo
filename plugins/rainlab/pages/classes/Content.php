@@ -6,7 +6,7 @@ use Cms\Classes\Content as ContentBase;
  * Represents a content template.
  *
  * @package rainlab\pages
- * @author Alexey Bobkov, Samuel Georges
+ *
  */
 class Content extends ContentBase
 {

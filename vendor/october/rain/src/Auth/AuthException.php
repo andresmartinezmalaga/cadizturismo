@@ -7,8 +7,8 @@ use Exception;
 /**
  * Used when user authentication fails. Implements a softer error message.
  *
- * @package october\auth
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class AuthException extends ApplicationException
 {

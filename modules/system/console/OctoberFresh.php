@@ -12,8 +12,8 @@ use Symfony\Component\Console\Input\InputOption;
  *
  * This removes the demo theme and plugin. A great way to start a fresh project!
  *
- * @package october\system
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class OctoberFresh extends Command
 {

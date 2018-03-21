@@ -5,8 +5,8 @@
  * These are considered "smart errors" and will send http code 406,
  * so they can pass response contents.
  *
- * @package october\exception
- * @author Alexey Bobkov, Samuel Georges
+ * \exception
+ *
  */
 class AjaxException extends ExceptionBase
 {

@@ -8,7 +8,7 @@ use Model;
 /**
  * Administrator user model
  *
- * @package october\backend
+ *
  * @author Andrés Martínez
  */
 class Tiposvisitas extends Model

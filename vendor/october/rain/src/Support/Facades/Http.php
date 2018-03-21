@@ -5,8 +5,8 @@ use October\Rain\Support\Facade;
 /**
  * Network Http Facade
  *
- * @package october\support
- * @author Alexey Bobkov, Samuel Georges
+ * \support
+ *
  */
 class Http extends Facade
 {
@@ -14,7 +14,7 @@ class Http extends Facade
      * Get the registered name of the component.
      * 
      * Resolves to:
-     * - October\Rain\Network\Http
+     *\Rain\Network\Http
      * 
      * @return string
      */

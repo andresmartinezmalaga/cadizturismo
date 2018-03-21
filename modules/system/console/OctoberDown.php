@@ -10,8 +10,8 @@ use Symfony\Component\Console\Input\InputArgument;
  *
  * This destroys all database tables that are registered for October and all plugins.
  *
- * @package october\system
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class OctoberDown extends Command
 {

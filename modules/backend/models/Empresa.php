@@ -9,8 +9,8 @@ use Illuminate\Http\JsonResponse;
 /**
  * Administrator user model
  *
- * @package october\backend
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class Empresa extends Model
 {

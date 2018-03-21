@@ -14,8 +14,8 @@ use Symfony\Component\Filesystem\Filesystem;
  * This command will create symbolic links to files and directories
  * that are commonly required to be publicly available.
  *
- * @package october\system
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class OctoberMirror extends Command
 {

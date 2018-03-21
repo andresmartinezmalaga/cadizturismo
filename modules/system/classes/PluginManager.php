@@ -13,8 +13,8 @@ use ApplicationException;
 /**
  * Plugin manager
  *
- * @package october\system
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class PluginManager
 {

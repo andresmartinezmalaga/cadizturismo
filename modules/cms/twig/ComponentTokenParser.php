@@ -10,8 +10,8 @@ use Twig_Error_Syntax;
  *
  *     {% component "pluginComponent" %}
  *
- * @package october\cms
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class ComponentTokenParser extends Twig_TokenParser
 {

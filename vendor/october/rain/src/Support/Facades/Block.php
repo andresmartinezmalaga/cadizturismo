@@ -5,8 +5,8 @@ use October\Rain\Support\Facade;
 /**
  * Http Block Facade
  *
- * @package october\support
- * @author Alexey Bobkov, Samuel Georges
+ * \support
+ *
  */
 class Block extends Facade
 {
@@ -14,7 +14,7 @@ class Block extends Facade
      * Get the registered name of the component.
      * 
      * Resolves to:
-     * - October\Rain\Html\BlockBuilder
+     *\Rain\Html\BlockBuilder
      * 
      * @return string
      */

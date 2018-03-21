@@ -25,7 +25,7 @@ use Exception;
  * Represents a front-end menu.
  *
  * @package rainlab\pages
- * @author Alexey Bobkov, Samuel Georges
+ *
  */
 class Menu extends CmsObject
 {

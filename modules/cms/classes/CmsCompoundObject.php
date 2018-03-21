@@ -18,8 +18,8 @@ use ApplicationException;
  * The class implements functionality for the compound object file parsing. It also provides a way
  * to access parameters defined in the INI settings section as the object properties.
  *
- * @package october\cms
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class CmsCompoundObject extends CmsObject
 {

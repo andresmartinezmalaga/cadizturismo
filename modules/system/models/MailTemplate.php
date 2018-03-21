@@ -10,8 +10,8 @@ use File as FileHelper;
 /**
  * Mail template
  *
- * @package october\system
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class MailTemplate extends Model
 {

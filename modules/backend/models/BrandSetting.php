@@ -13,8 +13,8 @@ use Exception;
 /**
  * Brand settings that affect all users
  *
- * @package october\backend
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class BrandSetting extends Model
 {

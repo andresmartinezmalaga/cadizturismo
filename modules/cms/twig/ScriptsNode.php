@@ -6,8 +6,8 @@ use Twig_Compiler;
 /**
  * Represents a "scripts" node
  *
- * @package october\cms
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class ScriptsNode extends Twig_Node
 {

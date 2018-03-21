@@ -8,7 +8,7 @@ class Form extends Facade
      * Get the registered name of the component.
      * 
      * Resolves to:
-     * - October\Rain\Html\FormBuilder
+     *\Rain\Html\FormBuilder
      * 
      * @return string
      */

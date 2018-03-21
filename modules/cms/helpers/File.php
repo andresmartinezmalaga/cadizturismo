@@ -3,8 +3,8 @@
 /**
  * Defines some file-system helpers for the CMS system.
  *
- * @package october\system
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class File
 {

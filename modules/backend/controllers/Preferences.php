@@ -11,8 +11,8 @@ use Backend\Models\Preference as PreferenceModel;
 /**
  * Editor Settings controller
  *
- * @package october\backend
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  *
  */
 class Preferences extends Controller

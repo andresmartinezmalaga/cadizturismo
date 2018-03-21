@@ -71,7 +71,7 @@
             }
 
             /*
-             * October AJAX
+             * AJAX
              */
             var source = $element.data('handler');
             if (source) {

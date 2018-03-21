@@ -6,8 +6,8 @@ use Twig_Compiler;
 /**
  * Represents a put node
  *
- * @package october\cms
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class PutNode extends Twig_Node
 {

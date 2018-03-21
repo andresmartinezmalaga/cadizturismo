@@ -12,8 +12,8 @@ use October\Rain\Database\Updater;
  *
  * Manages the versions and database updates for plugins.
  *
- * @package october\system
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class VersionManager
 {

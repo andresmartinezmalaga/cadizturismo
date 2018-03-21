@@ -11,8 +11,8 @@ use October\Rain\Exception\ApplicationException;
 /**
  * System Error Handler, this class handles application exception events.
  *
- * @package october\exception
- * @author Alexey Bobkov, Samuel Georges
+ * \exception
+ *
  */
 class ErrorHandler
 {

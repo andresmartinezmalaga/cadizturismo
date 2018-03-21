@@ -61,7 +61,7 @@ class Manager
 
     /**
      * Extend the query used for finding the user.
-     * @param \October\Rain\Database\Builder $query
+     *
      * @return void
      */
     public function extendUserQuery($query)

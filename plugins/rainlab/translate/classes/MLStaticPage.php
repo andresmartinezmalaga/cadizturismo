@@ -4,7 +4,7 @@
  * Represents a multi-lingual Static Page object.
  *
  * @package rainlab\translate
- * @author Alexey Bobkov, Samuel Georges
+ *
  */
 class MLStaticPage extends MLCmsObject
 {

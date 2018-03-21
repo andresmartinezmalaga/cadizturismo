@@ -21,8 +21,8 @@ use Exception;
 /**
  * Theme selector controller
  *
- * @package october\backend
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  *
  */
 class Themes extends Controller

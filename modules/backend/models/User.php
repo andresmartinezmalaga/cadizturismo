@@ -8,8 +8,8 @@ use October\Rain\Auth\Models\User as UserBase;
 /**
  * Administrator user model
  *
- * @package october\backend
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class User extends UserBase
 {

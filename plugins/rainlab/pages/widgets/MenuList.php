@@ -13,7 +13,7 @@ use Cms\Classes\Theme;
  * Menu list widget.
  *
  * @package rainlab\pages
- * @author Alexey Bobkov, Samuel Georges
+ *
  */
 class MenuList extends WidgetBase
 {

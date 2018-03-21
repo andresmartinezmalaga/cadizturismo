@@ -37,7 +37,7 @@ use Backend\Models\User;
  * The static page component.
  *
  * @package rainlab\pages
- * @author Alexey Bobkov, Samuel Georges
+ *
  */
 class StaticApp extends ComponentBase
 {

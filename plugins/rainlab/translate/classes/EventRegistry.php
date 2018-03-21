@@ -13,8 +13,8 @@ use Exception;
 /**
  * Registrant class for bootstrapping events
  *
- * @package october\system
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class EventRegistry
 {

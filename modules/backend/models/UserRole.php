@@ -6,8 +6,8 @@ use October\Rain\Auth\Models\Role as RoleBase;
 /**
  * Administrator role
  *
- * @package october\backend
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class UserRole extends RoleBase
 {

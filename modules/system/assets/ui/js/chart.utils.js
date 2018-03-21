@@ -1,5 +1,5 @@
 /*
- * October charting utilities.
+ * charting utilities.
  */
 
 +function ($) { "use strict";

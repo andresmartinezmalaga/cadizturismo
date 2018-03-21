@@ -10,8 +10,8 @@ use Exception;
 /**
  * Active theme report widget.
  *
- * @package october\backend
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class ActiveTheme extends ReportWidgetBase
 {

@@ -8,8 +8,8 @@ use October\Rain\Html\Helper as HtmlHelper;
  * Form Field definition
  * A translation of the form field configuration
  *
- * @package october\backend
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class FormField
 {

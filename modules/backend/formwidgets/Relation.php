@@ -12,8 +12,8 @@ use Illuminate\Database\Eloquent\Relations\Relation as RelationBase;
  * Form Relationship
  * Renders a field prepopulated with a belongsTo and belongsToHasMany relation.
  *
- * @package october\backend
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class Relation extends FormWidgetBase
 {

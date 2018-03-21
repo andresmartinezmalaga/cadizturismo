@@ -11,7 +11,7 @@ use RainLab\Translate\Models\Locale;
  * Translate class
  *
  * @package rainlab\translate
- * @author Alexey Bobkov, Samuel Georges
+ *
  */
 class Translator
 {

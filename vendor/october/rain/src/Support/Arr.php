@@ -5,8 +5,8 @@ use Illuminate\Support\Arr as ArrHelper;
 /**
  * Array helper
  *
- * @package october\support
- * @author Alexey Bobkov, Samuel Georges
+ * \support
+ *
  */
 class Arr extends ArrHelper
 {

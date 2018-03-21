@@ -16,8 +16,8 @@ use Twig_Error_Syntax;
  *         <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"/>
  *     {% endshowblock %}
  *
- * @package october\cms
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class PlaceholderTokenParser extends Twig_TokenParser
 {

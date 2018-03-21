@@ -8,8 +8,8 @@ use October\Rain\Support\Str as StrHelper;
  *
  * Extension of illuminate/html, injects a session key to each form opening.
  *
- * @package october\html
- * @author Alexey Bobkov, Samuel Georges
+ * \html
+ *
  */
 class HtmlBuilder
 {

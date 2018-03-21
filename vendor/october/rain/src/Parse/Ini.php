@@ -7,8 +7,8 @@
  * - Parsing supports infinite array nesting
  * - Ability to render INI from a PHP array
  *
- * @package october\parse
- * @author Alexey Bobkov, Samuel Georges
+ * \parse
+ *
  */
 class Ini
 {

@@ -17,8 +17,8 @@ use Backend\Classes\FormWidgetBase;
  *        nameFrom: name
  *        descriptionFrom: email
  *
- * @package october\backend
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class RecordFinder extends FormWidgetBase
 {

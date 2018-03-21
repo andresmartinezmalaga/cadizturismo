@@ -6,8 +6,8 @@ use Twig_Compiler;
 /**
  * Represents a content node
  *
- * @package october\cms
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class ContentNode extends Twig_Node
 {

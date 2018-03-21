@@ -11,8 +11,8 @@ use BadMethodCallException;
 /**
  * Component base class
  *
- * @package october\cms
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 abstract class ComponentBase extends Extendable
 {

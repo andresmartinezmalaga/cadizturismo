@@ -163,7 +163,7 @@ class BelongsToMany extends BelongsToManyBase
     public function newPivot(array $attributes = [], $exists = false)
     {
         /*
-         * October looks to the relationship parent
+         * looks to the relationship parent
          */
         $pivot = $this->parent->newRelationPivot($this->relationName, $this->parent, $attributes, $this->table, $exists);
 

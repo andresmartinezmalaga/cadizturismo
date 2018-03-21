@@ -7,8 +7,8 @@ use October\Rain\Support\ServiceProvider;
 /**
  * Service provider
  *
- * @package october\halcyon
- * @author Alexey Bobkov, Samuel Georges
+ * \halcyon
+ *
  */
 class HalcyonServiceProvider extends ServiceProvider
 {

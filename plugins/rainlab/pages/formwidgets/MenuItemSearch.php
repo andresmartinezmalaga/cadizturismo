@@ -12,8 +12,8 @@ use RainLab\Pages\Classes\MenuItem;
 /**
  * Menu item reference search.
  *
- * @package october\backend
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class MenuItemSearch extends FormWidgetBase
 {

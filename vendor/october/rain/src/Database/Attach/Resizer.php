@@ -21,8 +21,8 @@ use Exception;
  *      Resizer::open('path/to/image.jpg')
  *          ->save('path/to/new_image.jpg', 60);
  *
- * @package october\database
- * @author Alexey Bobkov, Samuel Georges
+ * 
+ *
  */
 class Resizer
 {

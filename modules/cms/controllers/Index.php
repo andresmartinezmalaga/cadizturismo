@@ -28,8 +28,8 @@ use ApplicationException;
 /**
  * CMS index
  *
- * @package october\cms
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class Index extends Controller
 {

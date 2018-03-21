@@ -1,5 +1,5 @@
 /*
- * October JavaScript foundation library.
+ * JavaScript foundation library.
  * 
  * Utility functions for working back-end client-side UI controls.
  *

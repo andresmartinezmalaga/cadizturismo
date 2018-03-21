@@ -14,8 +14,8 @@ use ApplicationException;
  * Report Container Widget
  * Creates an area hosting report widgets.
  *
- * @package october\backend
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class ReportContainer extends WidgetBase
 {

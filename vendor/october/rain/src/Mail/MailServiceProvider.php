@@ -19,7 +19,7 @@ class MailServiceProvider extends MailServiceProviderBase
             $config = $app->make('config')->get('mail');
 
             /*
-             * October mailer
+             * mailer
              */
             $mailer = new Mailer(
                 $app['view'], $app['swift.mailer'], $app['events']

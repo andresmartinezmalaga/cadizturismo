@@ -10,8 +10,8 @@ use System\Classes\SettingsManager;
 /**
  * Backend user groups controller
  *
- * @package october\backend
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  *
  */
 class UserRoles extends Controller

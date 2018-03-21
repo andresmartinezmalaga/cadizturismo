@@ -14,8 +14,8 @@ use File as FileHelper;
 /**
  * Mail brand settings
  *
- * @package october\system
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class MailBrandSetting extends Model
 {

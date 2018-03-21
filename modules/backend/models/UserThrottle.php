@@ -5,8 +5,8 @@ use October\Rain\Auth\Models\Throttle as ThrottleBase;
 /**
  * Administrator throttling model
  *
- * @package october\backend
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class UserThrottle extends ThrottleBase
 {

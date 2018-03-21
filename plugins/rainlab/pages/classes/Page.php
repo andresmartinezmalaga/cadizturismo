@@ -29,7 +29,7 @@ use Backend\Classes\PagesTemplates;
  * Represents a static page.
  *
  * @package rainlab\pages
- * @author Alexey Bobkov, Samuel Georges
+ *
  */
 class Page extends ContentBase
 {

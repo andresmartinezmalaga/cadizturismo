@@ -6,8 +6,8 @@ use October\Rain\Extension\Extendable;
 /**
  * Parent class for PHP classes created for layout and page code sections.
  *
- * @package october\cms
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class CodeBase extends Extendable implements ArrayAccess
 {

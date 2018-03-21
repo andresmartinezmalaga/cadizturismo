@@ -7,8 +7,8 @@ use Twig_Node_Expression;
 /**
  * Represents a flash node
  *
- * @package october\cms
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class FlashNode extends Twig_Node
 {

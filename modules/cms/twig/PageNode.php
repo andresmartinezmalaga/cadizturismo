@@ -6,8 +6,8 @@ use Twig_Compiler;
 /**
  * Represents a page node
  *
- * @package october\cms
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class PageNode extends Twig_Node
 {

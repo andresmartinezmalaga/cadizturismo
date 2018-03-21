@@ -14,8 +14,8 @@ use Exception;
  * This is a base class for all CMS objects - content files, pages, partials and layouts.
  * The class implements basic operations with file-based templates.
  *
- * @package october\cms
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class CmsObject extends HalcyonModel implements CmsObjectContract
 {

@@ -14,7 +14,7 @@ use Lang;
  * Snippet list widget.
  *
  * @package rainlab\pages
- * @author Alexey Bobkov, Samuel Georges
+ *
  */
 class SnippetList extends WidgetBase
 {

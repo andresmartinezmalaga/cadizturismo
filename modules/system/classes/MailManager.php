@@ -14,8 +14,8 @@ use TijsVerkoyen\CssToInlineStyles\CssToInlineStyles;
 /**
  * This class manages Mail sending functions
  *
- * @package october\system
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class MailManager
 {

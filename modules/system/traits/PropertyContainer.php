@@ -6,8 +6,8 @@
  * Adds properties and methods for classes that could define properties,
  * like components or report widgets.
  *
- * @package october\system
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 
 trait PropertyContainer

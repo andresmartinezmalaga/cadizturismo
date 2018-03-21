@@ -5,8 +5,8 @@ use October\Rain\Extension\ExtensionBase;
 /**
  * Base class for model behaviors.
  *
- * @package october\database
- * @author Alexey Bobkov, Samuel Georges
+ * \database
+ *
  */
 class ModelBehavior extends ExtensionBase
 {

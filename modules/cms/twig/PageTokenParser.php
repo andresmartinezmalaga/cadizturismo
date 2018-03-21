@@ -8,8 +8,8 @@ use Twig_TokenParser;
  *
  *     {% page %}
  *
- * @package october\cms
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class PageTokenParser extends Twig_TokenParser
 {

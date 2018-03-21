@@ -6,8 +6,8 @@ use Str;
  * Searchable Widget Trait
  * Adds search features to back-end widgets
  *
- * @package october\backend
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 
 trait SearchableWidget

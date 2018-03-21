@@ -29,7 +29,7 @@ use Backend\Models\Tiposvisitas;
  * Represents a static page.
  *
  * @package rainlab\pages
- * @author Alexey Bobkov, Samuel Georges
+ *
  */
 class Experience extends ContentBase
 {

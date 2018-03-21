@@ -9,8 +9,8 @@ use October\Rain\Auth\Models\Preferences as PreferencesBase;
 /**
  * All preferences for the backend user
  *
- * @package october\backend
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class UserPreference extends PreferencesBase
 {

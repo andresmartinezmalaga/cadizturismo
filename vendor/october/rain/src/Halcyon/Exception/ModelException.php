@@ -6,8 +6,8 @@ use October\Rain\Exception\ValidationException;
 /**
  * Used when validation fails. Contains the invalid model for easy analysis.
  *
- * @package october\database
- * @author Alexey Bobkov, Samuel Georges
+ * \database
+ *
  */
 class ModelException extends ValidationException
 {

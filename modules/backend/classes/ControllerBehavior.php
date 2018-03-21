@@ -9,8 +9,8 @@ use October\Rain\Html\Helper as HtmlHelper;
 /**
  * Controller Behavior base class
  *
- * @package october\backend
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class ControllerBehavior extends ExtensionBase
 {

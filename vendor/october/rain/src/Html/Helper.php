@@ -3,8 +3,8 @@
 /**
  * Methods that may be useful for processing HTML tasks
  *
- * @package october\html
- * @author Alexey Bobkov, Samuel Georges
+ * \html
+ *
  */
 class Helper
 {

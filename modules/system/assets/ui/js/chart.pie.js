@@ -11,7 +11,7 @@
  *
  * Dependences:
  * - Raphaël (raphael-min.js)
- * - October chart utilities (chart.utils.js)
+ * chart utilities (chart.utils.js)
  */
 +function ($) { "use strict";
 

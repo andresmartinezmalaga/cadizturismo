@@ -14,8 +14,8 @@ use ApplicationException;
 /**
  * The CMS Twig extension class implements the basic CMS Twig functions and filters.
  *
- * @package october\cms
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class Extension extends Twig_Extension
 {

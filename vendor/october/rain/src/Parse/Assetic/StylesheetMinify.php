@@ -8,7 +8,7 @@ use Assetic\Filter\FilterInterface;
  * Class used to compress stylesheet css files.
  *
  * @package october/parse
- * @author Alexey Bobkov, Samuel Georges
+ *
  */
 class StylesheetMinify implements FilterInterface
 {

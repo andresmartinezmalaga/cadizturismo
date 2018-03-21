@@ -5,8 +5,8 @@ use Illuminate\Mail\Mailable as MailableBase;
 /**
  * Generic mailable class.
  *
- * @package october\mail
- * @author Alexey Bobkov, Samuel Georges
+ * \mail
+ *
  */
 class Mailable extends MailableBase
 {

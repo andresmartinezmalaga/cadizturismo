@@ -19,8 +19,8 @@ use Exception;
 /**
  * Mail brand customization controller
  *
- * @package october\backend
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  *
  */
 class MailBrandSettings extends Controller

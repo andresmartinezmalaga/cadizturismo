@@ -9,8 +9,8 @@ use Exception;
 /**
  * User welcome report widget.
  *
- * @package october\backend
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class Welcome extends ReportWidgetBase
 {

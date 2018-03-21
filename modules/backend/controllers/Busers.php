@@ -10,8 +10,8 @@ use System\Classes\SettingsManager;
 /**
  * Backend user controller
  *
- * @package october\backend
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  *
  */
 class Busers extends Controller

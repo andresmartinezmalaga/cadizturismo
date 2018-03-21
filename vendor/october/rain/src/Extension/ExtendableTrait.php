@@ -11,8 +11,8 @@ use Exception;
  * framework (Laravel). It is currently used by the Controller and
  * Model classes.
  *
- * @package october\extension
- * @author Alexey Bobkov, Samuel Georges
+ * \extension
+ *
  */
 
 trait ExtendableTrait

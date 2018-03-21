@@ -6,8 +6,8 @@ use October\Rain\Auth\Manager as RainAuthManager;
 /**
  * Back-end authentication manager.
  *
- * @package october\backend
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class AuthManager extends RainAuthManager
 {

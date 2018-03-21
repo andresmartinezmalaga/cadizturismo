@@ -7,8 +7,8 @@ use October\Rain\Html\Helper as HtmlHelper;
 /**
  * Base class for model behaviors.
  *
- * @package october\translate
- * @author Alexey Bobkov, Samuel Georges
+ * \translate
+ *
  */
 abstract class TranslatableBehavior extends ExtensionBase
 {

@@ -5,8 +5,8 @@
  * of their components. Partial "objects" store the components
  * used by that partial for deferred retrieval.
  *
- * @package october\cms
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class PartialStack
 {

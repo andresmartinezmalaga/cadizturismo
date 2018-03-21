@@ -14,8 +14,8 @@ use Twig_Error_Syntax;
  *
  *     {% content "intro/txt" name='John', year=2013 %}
  *
- * @package october\cms
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class ContentTokenParser extends Twig_TokenParser
 {

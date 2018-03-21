@@ -9,7 +9,7 @@ use Exception;
  * Google Analytics browsers overview widget.
  *
  * @package backend
- * @author Alexey Bobkov, Samuel Georges
+ *
  */
 class Browsers extends ReportWidgetBase
 {

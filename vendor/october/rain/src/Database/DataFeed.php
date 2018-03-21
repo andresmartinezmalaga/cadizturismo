@@ -11,8 +11,8 @@ use Exception;
  *
  * Combine various models in to a single feed.
  *
- * @package october\database
- * @author Alexey Bobkov, Samuel Georges
+ * \database
+ *
  */
 class DataFeed
 {

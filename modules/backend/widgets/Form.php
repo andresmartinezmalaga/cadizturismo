@@ -16,8 +16,8 @@ use Exception;
  * Form Widget
  * Used for building back end forms and renders a form.
  *
- * @package october\backend
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class Form extends WidgetBase
 {

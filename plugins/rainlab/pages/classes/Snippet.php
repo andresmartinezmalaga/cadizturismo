@@ -15,7 +15,7 @@ use DOMDocument;
  * Represents a static page snippet.
  *
  * @package rainlab\pages
- * @author Alexey Bobkov, Samuel Georges
+ *
  */
 class Snippet
 {

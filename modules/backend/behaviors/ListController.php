@@ -22,8 +22,6 @@ use Backend\Classes\ControllerBehavior;
  * values as either a YAML file, located in the controller view directory,
  * or directly as a PHP array.
  *
- * @package october\backend
- * @author Alexey Bobkov, Samuel Georges
  */
 class ListController extends ControllerBehavior
 {
@@ -480,7 +478,7 @@ class ListController extends ControllerBehavior
     /**
      * Controller override: Extend the query used for populating the list
      * before the default query is processed.
-     * @param \October\Rain\Database\Builder $query
+     *
      */
     public function listExtendQueryBefore($query, $definition = null)
     {
@@ -489,7 +487,7 @@ class ListController extends ControllerBehavior
     /**
      * Controller override: Extend the query used for populating the list
      * after the default query is processed.
-     * @param \October\Rain\Database\Builder $query
+     *
      */
     public function listExtendQuery($query, $definition = null)
     {
@@ -507,7 +505,7 @@ class ListController extends ControllerBehavior
     /**
      * Controller override: Extend the query used for populating the filter
      * options before the default query is processed.
-     * @param \October\Rain\Database\Builder $query
+     *
      * @param array $scope
      */
     public function listFilterExtendQuery($query, $scope)

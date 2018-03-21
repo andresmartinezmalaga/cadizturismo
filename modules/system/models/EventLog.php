@@ -8,8 +8,8 @@ use Exception;
 /**
  * Model for logging system errors and debug trace messages
  *
- * @package october\system
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class EventLog extends Model
 {

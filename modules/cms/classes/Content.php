@@ -6,8 +6,8 @@ use Markdown;
 /**
  * The CMS content file class.
  *
- * @package october\cms
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class Content extends CmsCompoundObject
 {

@@ -6,8 +6,8 @@ use Twig_Compiler;
 /**
  * Represents a "default" node
  *
- * @package october\cms
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class DefaultNode extends Twig_Node
 {

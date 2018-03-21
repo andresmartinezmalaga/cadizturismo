@@ -9,8 +9,8 @@ use SystemException;
 /**
  * Manages the system settings.
  *
- * @package october\system
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class SettingsManager
 {

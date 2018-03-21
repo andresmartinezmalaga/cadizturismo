@@ -6,8 +6,8 @@ use Model;
 /**
  * Mail settings
  *
- * @package october\system
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class MailSetting extends Model
 {

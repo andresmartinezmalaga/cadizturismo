@@ -8,7 +8,7 @@ class File extends Facade
      * Get the registered name of the component.
      * 
      * Resolves to:
-     * - October\Rain\Filesystem\Filesystem
+     *\Rain\Filesystem\Filesystem
      * 
      * @return string
      */

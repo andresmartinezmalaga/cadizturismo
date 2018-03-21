@@ -8,7 +8,7 @@ class Yaml extends Facade
      * Get the registered name of the component.
      * 
      * Resolves to:
-     * - October\Rain\Parse\Yaml
+     *\Rain\Parse\Yaml
      * 
      * @return string
      */

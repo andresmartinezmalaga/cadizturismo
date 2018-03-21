@@ -25,8 +25,8 @@ use Exception;
  * configuration items, including application URL and database config, and then
  * perform a database migration.
  *
- * @package october\system
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class OctoberInstall extends Command
 {

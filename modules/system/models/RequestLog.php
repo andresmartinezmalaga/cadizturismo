@@ -7,8 +7,8 @@ use Request;
 /**
  * Model for logging 404 errors
  *
- * @package october\system
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class RequestLog extends Model
 {

@@ -6,8 +6,8 @@ use Backend\Classes\FormWidgetBase;
  * Color picker
  * Renders a color picker field.
  *
- * @package october\backend
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class ColorPicker extends FormWidgetBase
 {

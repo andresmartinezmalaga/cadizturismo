@@ -5,10 +5,10 @@ use Symfony\Component\Translation\MessageSelector;
 use Illuminate\Contracts\Translation\Translator as TranslatorContract;
 
 /**
- * October translator class.
+*
  *
  * @package translation
- * @author Alexey Bobkov, Samuel Georges
+ *
  */
 class Translator implements TranslatorContract
 {

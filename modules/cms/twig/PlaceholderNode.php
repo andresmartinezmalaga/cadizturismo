@@ -6,8 +6,8 @@ use Twig_Compiler;
 /**
  * Represents a placeholder node
  *
- * @package october\cms
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class PlaceholderNode extends Twig_Node
 {

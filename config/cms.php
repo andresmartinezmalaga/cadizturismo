@@ -18,10 +18,6 @@ return [
     | Bleeding edge updates
     |--------------------------------------------------------------------------
     |
-    | If you are developing with October, it is important to have the latest
-    | code base. Set this value to 'true' to tell the platform to download
-    | and use the development copies of core files and plugins.
-    |
     */
 
     'edgeUpdates' => false,
@@ -275,7 +271,7 @@ return [
     | Convert Line Endings
     |--------------------------------------------------------------------------
     |
-    | Determines if October should convert line endings from the windows style
+    | Determines if should convert line endings from the windows style
     | \r\n to the unix style \n.
     |
     */

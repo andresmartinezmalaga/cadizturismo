@@ -8,7 +8,7 @@ class DbDongle extends Facade
      * Get the registered name of the component.
      * 
      * Resolves to:
-     * - October\Rain\Database\Dongle
+     *\Rain\Database\Dongle
      * 
      * @return string
      */

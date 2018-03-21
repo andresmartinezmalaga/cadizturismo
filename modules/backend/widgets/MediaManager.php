@@ -21,8 +21,8 @@ use Form as FormHelper;
 /**
  * Media Manager widget.
  *
- * @package october\backend
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class MediaManager extends WidgetBase
 {

@@ -6,8 +6,8 @@ use Illuminate\Routing\UrlGenerator as UrlGeneratorBase;
 /**
  * Form builder
  *
- * @package october\html
- * @author Alexey Bobkov, Samuel Georges
+ * \html
+ *
  */
 class FormBuilder
 {

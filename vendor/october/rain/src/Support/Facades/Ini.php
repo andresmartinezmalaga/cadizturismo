@@ -8,7 +8,7 @@ class Ini extends Facade
      * Get the registered name of the component.
      * 
      * Resolves to:
-     * - October\Rain\Parse\Ini
+     *\Rain\Parse\Ini
      * 
      * @return string
      */

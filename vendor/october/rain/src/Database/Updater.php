@@ -10,8 +10,8 @@ use Exception;
  *
  * Executes database migration and seed scripts based on their filename.
  *
- * @package october\database
- * @author Alexey Bobkov, Samuel Georges
+ * \database
+ *
  */
 class Updater
 {

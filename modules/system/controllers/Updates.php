@@ -25,8 +25,8 @@ use Exception;
 /**
  * Updates controller
  *
- * @package october\system
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  *
  */
 class Updates extends Controller

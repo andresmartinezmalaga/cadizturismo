@@ -25,7 +25,7 @@ use Flash;
  * Static page list widget.
  *
  * @package rainlab\pages
- * @author Alexey Bobkov, Samuel Georges
+ *
  */
 class RutaList extends WidgetBase
 {

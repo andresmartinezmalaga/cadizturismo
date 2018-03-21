@@ -6,8 +6,8 @@ use Twig_Compiler;
 /**
  * Represents a partial node
  *
- * @package october\cms
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class MailPartialNode extends Twig_Node
 {

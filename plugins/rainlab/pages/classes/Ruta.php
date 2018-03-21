@@ -28,7 +28,7 @@ use Backend\Models\Catgrutas;
  * Represents a static page.
  *
  * @package rainlab\pages
- * @author Alexey Bobkov, Samuel Georges
+ *
  */
 class Ruta extends ContentBase
 {

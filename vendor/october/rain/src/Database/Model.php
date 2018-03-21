@@ -16,8 +16,8 @@ use Exception;
  *
  * Extends Eloquent with added extendability and deferred bindings.
  *
- * @package october\database
- * @author Alexey Bobkov, Samuel Georges
+ * \database
+ *
  */
 class Model extends EloquentModel
 {

@@ -9,8 +9,8 @@ use League\Csv\Reader as CsvReader;
 /**
  * Model used for importing data
  *
- * @package october\backend
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 abstract class ImportModel extends Model
 {

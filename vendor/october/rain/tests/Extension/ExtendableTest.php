@@ -267,7 +267,7 @@ class ExtendableTest_ExampleClass
 {
     public static function getName()
     {
-        return 'october';
+        return 'cms';
     }
 }
 

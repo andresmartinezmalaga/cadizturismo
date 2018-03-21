@@ -14,8 +14,8 @@ use Carbon\Carbon;
 /**
  * Backend preferences for the backend user
  *
- * @package october\backend
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class Preference extends Model
 {

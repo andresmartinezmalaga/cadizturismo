@@ -13,8 +13,8 @@ use Symfony\Component\Console\Input\InputArgument;
  * This completely deletes an existing plugin, including database tables, files
  * and directories.
  *
- * @package october\system
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class PluginRemove extends Command
 {

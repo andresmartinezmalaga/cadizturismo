@@ -15,8 +15,8 @@ use Exception;
 /**
  * Mail layouts controller
  *
- * @package october\system
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class MailLayouts extends Controller
 {

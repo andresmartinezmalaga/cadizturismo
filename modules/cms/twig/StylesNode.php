@@ -6,8 +6,8 @@ use Twig_Compiler;
 /**
  * Represents a "styles" node
  *
- * @package october\cms
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class StylesNode extends Twig_Node
 {

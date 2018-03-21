@@ -6,8 +6,8 @@
  * Allows a simple interface for treating a class as a singleton.
  * Usage: myObject::instance()
  *
- * @package october\support
- * @author Alexey Bobkov, Samuel Georges
+ * \support
+ *
  */
 trait Singleton
 {

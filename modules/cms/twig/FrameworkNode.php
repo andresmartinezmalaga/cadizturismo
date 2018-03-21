@@ -6,8 +6,8 @@ use Twig_Compiler;
 /**
  * Represents a "framework" node
  *
- * @package october\cms
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class FrameworkNode extends Twig_Node
 {

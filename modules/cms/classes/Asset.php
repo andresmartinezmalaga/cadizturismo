@@ -12,8 +12,8 @@ use ValidationException;
 /**
  * The CMS theme asset file class.
  *
- * @package october\cms
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class Asset extends Extendable
 {

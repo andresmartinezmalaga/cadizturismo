@@ -6,7 +6,7 @@ use Backend\Classes\Controller;
 /**
  * Backend user controller
  *
- * @package october\backend
+ *
  * @author Andrés Martínez
  *
  */

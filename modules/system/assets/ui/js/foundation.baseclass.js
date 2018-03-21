@@ -1,5 +1,5 @@
 /*
- * October JavaScript foundation library.
+ * JavaScript foundation library.
  * 
  * Base class for OctoberCMS back-end classes.
  *

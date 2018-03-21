@@ -11,8 +11,8 @@ use Exception;
  * Component Builder
  * Builds a collection of Cms components and configures them.
  *
- * @package october\cms
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class Components extends FormWidgetBase
 {

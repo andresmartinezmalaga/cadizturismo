@@ -12,8 +12,8 @@ use Exception;
 /**
  * Theme export model
  *
- * @package october\cms
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class ThemeExport extends Model
 {

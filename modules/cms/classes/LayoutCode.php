@@ -3,8 +3,8 @@
 /**
  * Parent class for PHP classes created for layout PHP sections.
  *
- * @package october\cms
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class LayoutCode extends CodeBase
 {

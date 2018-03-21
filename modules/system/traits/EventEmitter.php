@@ -5,8 +5,8 @@ use Event;
 /**
  * Adds system event related features to any class.
  *
- * @package october\system
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 
 trait EventEmitter

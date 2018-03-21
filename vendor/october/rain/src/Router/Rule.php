@@ -5,8 +5,8 @@ use InvalidArgumentException;
 /**
  * Router Rule Object
  *
- * @package october\router
- * @author Alexey Bobkov, Samuel Georges
+ * \router
+ *
  */
 class Rule
 {

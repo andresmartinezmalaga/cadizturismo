@@ -12,7 +12,7 @@ use Exception;
  * Represents a static page controller.
  *
  * @package rainlab\pages
- * @author Alexey Bobkov, Samuel Georges
+ *
  */
 class Controller
 {

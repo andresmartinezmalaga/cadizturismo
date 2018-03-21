@@ -9,8 +9,8 @@ use stdClass;
 /**
  * Widget base class.
  *
- * @package october\backend
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 abstract class WidgetBase extends Extendable
 {

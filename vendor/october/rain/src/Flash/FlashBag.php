@@ -6,8 +6,8 @@ use Illuminate\Support\MessageBag;
 /**
  * Simple flash bag
  *
- * @package october\support
- * @author Alexey Bobkov, Samuel Georges
+ * \support
+ *
  */
 class FlashBag extends MessageBag
 {

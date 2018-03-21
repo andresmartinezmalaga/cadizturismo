@@ -9,8 +9,8 @@ use Exception;
 /**
  * Customization data used by a theme
  *
- * @package october\cms
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class ThemeData extends Model
 {

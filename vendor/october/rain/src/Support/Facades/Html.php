@@ -8,7 +8,7 @@ class Html extends Facade
      * Get the registered name of the component.
      * 
      * Resolves to:
-     * - October\Rain\Html\HtmlBuilder
+     *\Rain\Html\HtmlBuilder
      * 
      * @return string
      */

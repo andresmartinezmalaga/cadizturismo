@@ -47,7 +47,7 @@ use RainLab\Translate\Models\Locale;
  * Pages and Menus index
  *
  * @package rainlab\pages
- * @author Alexey Bobkov, Samuel Georges
+ *
  */
 class Index extends Controller
 {

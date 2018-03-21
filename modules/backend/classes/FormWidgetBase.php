@@ -6,8 +6,8 @@ use October\Rain\Html\Helper as HtmlHelper;
  * Form Widget base class
  * Widgets used specifically for forms
  *
- * @package october\backend
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 abstract class FormWidgetBase extends WidgetBase
 {

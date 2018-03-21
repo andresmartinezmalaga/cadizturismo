@@ -7,8 +7,8 @@ use RainLab\Pages\Classes\MenuItem;
 /**
  * Menu items widget.
  *
- * @package october\backend
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class MenuItems extends FormWidgetBase
 {

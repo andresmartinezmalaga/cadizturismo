@@ -6,8 +6,8 @@
  * Resolves key strings into namespace, group and item.
  * Example: namespace::group.item
  *
- * @package october\support
- * @author Alexey Bobkov, Samuel Georges
+ * \support
+ *
  */
 trait KeyParser
 {

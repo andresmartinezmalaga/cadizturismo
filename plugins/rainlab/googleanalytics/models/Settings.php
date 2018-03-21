@@ -6,7 +6,7 @@ use October\Rain\Database\Model;
  * Google Analytics settings model
  *
  * @package system
- * @author Alexey Bobkov, Samuel Georges
+ *
  *
  */
 class Settings extends Model

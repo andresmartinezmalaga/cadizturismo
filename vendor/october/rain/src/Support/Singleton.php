@@ -8,8 +8,8 @@ use App; // @todo Allow external binding
  * A self binding, self contained single class that supports IoC.
  * Usage: myObject::instance()
  *
- * @package october\support
- * @author Alexey Bobkov, Samuel Georges
+ * \support
+ *
  */
 class Singleton
 {

@@ -5,8 +5,8 @@
  *
  * Used as a cURL wrapper for the HTTP protocol.
  *
- * @package october\network
- * @author Alexey Bobkov, Samuel Georges
+ * \network
+ *
  *
  * Usage:
  * 

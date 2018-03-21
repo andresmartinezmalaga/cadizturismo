@@ -10,8 +10,8 @@ use File as FileHelper;
 /**
  * Mail layout
  *
- * @package october\system
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class MailLayout extends Model
 {

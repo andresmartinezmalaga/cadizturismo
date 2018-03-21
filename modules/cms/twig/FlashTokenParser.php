@@ -8,8 +8,8 @@ use Twig_TokenParser;
 /**
  * Parser for the {% flash %} Twig tag.
  *
- * @package october\cms
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class FlashTokenParser extends Twig_TokenParser
 {

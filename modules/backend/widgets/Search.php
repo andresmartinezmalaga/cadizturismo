@@ -7,8 +7,8 @@ use Backend\Classes\WidgetBase;
  * Search Widget
  * Used for building a toolbar, Renders a search container.
  *
- * @package october\backend
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class Search extends WidgetBase
 {

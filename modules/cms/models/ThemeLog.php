@@ -11,8 +11,8 @@ use Exception;
 /**
  * Model for changes made to the theme
  *
- * @package october\cms
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class ThemeLog extends Model
 {

@@ -5,8 +5,8 @@ use October\Rain\Database\Models\Revision as RevisionBase;
 /**
  * Revision history model
  *
- * @package october\system
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class Revision extends RevisionBase
 {

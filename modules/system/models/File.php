@@ -7,8 +7,8 @@ use October\Rain\Database\Attach\File as FileBase;
 /**
  * File attachment model
  *
- * @package october\system
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class File extends FileBase
 {

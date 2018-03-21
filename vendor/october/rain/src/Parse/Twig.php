@@ -5,8 +5,8 @@ use App;
 /**
  * Twig helper class
  *
- * @package october\parse
- * @author Alexey Bobkov, Samuel Georges
+ * \parse
+ *
  */
 class Twig
 {

@@ -13,7 +13,7 @@ use RainLab\Pages\Classes\Snippet;
  * Returns information about snippets based on partials and components.
  *
  * @package rainlab\pages
- * @author Alexey Bobkov, Samuel Georges
+ *
  */
 class SnippetManager
 {

@@ -9,8 +9,8 @@ use Exception;
 /**
  * This class implements a Twig template loader for the core system and backend.
  *
- * @package october\system
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class Loader implements Twig_LoaderInterface
 {

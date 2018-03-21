@@ -10,7 +10,7 @@ use October\Rain\Html\Helper as HtmlHelper;
  * Renders a multi-lingual control.
  *
  * @package rainlab\translate
- * @author Alexey Bobkov, Samuel Georges
+ *
  */
 trait MLControl
 {

@@ -8,8 +8,8 @@ use Exception;
 /**
  * Deferred Binding Model
  *
- * @package october\database
- * @author Alexey Bobkov, Samuel Georges
+ * \database
+ *
  */
 class DeferredBinding extends Model
 {

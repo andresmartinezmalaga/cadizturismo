@@ -8,7 +8,7 @@ use RainLab\Translate\Models\Locale;
  * Renders a multi-lingual Markdown editor.
  *
  * @package rainlab\translate
- * @author Alexey Bobkov, Samuel Georges
+ *
  */
 class MLMarkdownEditor extends MarkdownEditor
 {

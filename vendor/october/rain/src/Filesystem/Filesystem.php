@@ -7,8 +7,8 @@ use FilesystemIterator;
 /**
  * File helper
  *
- * @package october\filesystem
- * @author Alexey Bobkov, Samuel Georges
+ * \filesystem
+ *
  */
 class Filesystem extends FilesystemBase
 {

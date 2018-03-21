@@ -11,8 +11,8 @@ use SplTempFileObject;
 /**
  * Model used for exporting data
  *
- * @package october\backend
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 abstract class ExportModel extends Model
 {

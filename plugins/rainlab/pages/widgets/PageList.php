@@ -20,7 +20,7 @@ use RainLab\Pages\Classes\PageList as MPageList;
  * Static page list widget.
  *
  * @package rainlab\pages
- * @author Alexey Bobkov, Samuel Georges
+ *
  */
 class PageList extends WidgetBase
 {

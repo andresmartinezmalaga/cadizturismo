@@ -28,7 +28,7 @@ use Backend\Models\Catgeventos;
  * Represents a static page.
  *
  * @package rainlab\pages
- * @author Alexey Bobkov, Samuel Georges
+ *
  */
 class Evento extends ContentBase
 {

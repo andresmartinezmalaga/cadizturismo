@@ -3,8 +3,8 @@
 /**
  * Provides a simple request-level cache for models.
  *
- * @package october\halcyon
- * @author Alexey Bobkov, Samuel Georges
+ * \halcyon
+ *
  */
 class MemoryCache
 {

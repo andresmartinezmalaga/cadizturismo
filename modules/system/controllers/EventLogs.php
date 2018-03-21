@@ -17,8 +17,8 @@ use Exception;
 /**
  * Event Logs controller
  *
- * @package october\system
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class EventLogs extends Controller
 {

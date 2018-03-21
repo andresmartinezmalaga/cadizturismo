@@ -9,8 +9,8 @@ use Backend\Widgets\ReportContainer;
 /**
  * Dashboard controller
  *
- * @package october\backend
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  *
  */
 class Index extends Controller

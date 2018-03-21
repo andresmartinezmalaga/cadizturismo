@@ -11,8 +11,8 @@ use SystemException;
  *
  * Represents an editable tabular control.
  *
- * @package october\backend
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class Table extends WidgetBase
 {

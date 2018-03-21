@@ -10,8 +10,8 @@ use October\Rain\Database\Model as DatabaseModel;
  * filling the model attributes and attributes of any related models. This is a
  * customized, safer and simplified version of `$model->push()`.
  *
- * @package october\backend
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 trait FormModelSaver
 {

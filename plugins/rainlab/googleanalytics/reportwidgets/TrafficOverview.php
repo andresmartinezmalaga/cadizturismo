@@ -9,7 +9,7 @@ use Exception;
  * Google Analytics traffic overview widget.
  *
  * @package backend
- * @author Alexey Bobkov, Samuel Georges
+ *
  */
 class TrafficOverview extends ReportWidgetBase
 {

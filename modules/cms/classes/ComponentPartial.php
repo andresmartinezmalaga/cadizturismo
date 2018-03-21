@@ -10,8 +10,8 @@ use ApplicationException;
 /**
  * The CMS component partial class. These objects are read-only.
  *
- * @package october\cms
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class ComponentPartial extends Extendable implements CmsObjectContract
 {

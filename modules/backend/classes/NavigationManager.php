@@ -7,8 +7,8 @@ use System\Classes\PluginManager;
 /**
  * Manages the backend navigation.
  *
- * @package october\backend
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class NavigationManager
 {

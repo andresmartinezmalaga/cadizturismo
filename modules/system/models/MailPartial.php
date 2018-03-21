@@ -13,8 +13,8 @@ use File as FileHelper;
 /**
  * Mail partial
  *
- * @package october\system
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class MailPartial extends Model
 {

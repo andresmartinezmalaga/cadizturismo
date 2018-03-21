@@ -8,8 +8,8 @@ use Cms\Classes\Theme as CmsTheme;
 /**
  * Theme manager
  *
- * @package october\cms
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class ThemeManager
 {

@@ -12,7 +12,7 @@ use Event;
  * \RainLab\Pages\Classes\MenuItem objects.
  *
  * @package rainlab\pages
- * @author Alexey Bobkov, Samuel Georges
+ *
  */
 class MenuItemReference
 {

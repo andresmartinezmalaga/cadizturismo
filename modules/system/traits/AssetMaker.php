@@ -10,8 +10,8 @@ use System\Classes\CombineAssets;
  * Asset Maker Trait
  * Adds asset based methods to a class
  *
- * @package october\system
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 trait AssetMaker
 {

@@ -13,8 +13,8 @@ use Exception;
 /**
  * Theme customization controller
  *
- * @package october\backend
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  *
  */
 class ThemeOptions extends Controller

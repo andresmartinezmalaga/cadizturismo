@@ -6,8 +6,8 @@ use ApplicationException;
 /**
  * System log settings
  *
- * @package october\system
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class LogSetting extends Model
 {

@@ -5,8 +5,8 @@ use Lang;
 /**
  * Defines some component helpers for the CMS UI.
  *
- * @package october\system
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class ComponentHelpers
 {

@@ -14,8 +14,8 @@ use SystemException;
  * Provides abstraction level for the Media Library operations.
  * Implements the library caching features and security checks.
  *
- * @package october\system
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class MediaLibrary
 {

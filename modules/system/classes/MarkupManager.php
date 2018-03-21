@@ -10,8 +10,8 @@ use System\Classes\PluginManager;
 /**
  * This class manages Twig functions, token parsers and filters.
  *
- * @package october\system
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class MarkupManager
 {

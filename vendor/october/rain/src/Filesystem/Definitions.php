@@ -7,8 +7,8 @@ use Exception;
  * File definitions helper.
  * Contains file extensions for common use cases.
  *
- * @package october\filesystem
- * @author Alexey Bobkov, Samuel Georges
+ * \filesystem
+ *
  */
 class Definitions
 {

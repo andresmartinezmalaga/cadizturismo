@@ -12,8 +12,8 @@ use Backend\Models\EditorSetting;
  * Rich Editor
  * Renders a rich content editor field.
  *
- * @package october\backend
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class RichEditor extends FormWidgetBase
 {

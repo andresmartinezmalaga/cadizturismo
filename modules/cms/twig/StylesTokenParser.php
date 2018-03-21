@@ -8,8 +8,8 @@ use Twig_TokenParser;
  *
  *     {% styles %}
  *
- * @package october\cms
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class StylesTokenParser extends Twig_TokenParser
 {

@@ -8,8 +8,8 @@ use Twig_TokenParser;
  *
  *     {% framework %}
  *
- * @package october\cms
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class FrameworkTokenParser extends Twig_TokenParser
 {

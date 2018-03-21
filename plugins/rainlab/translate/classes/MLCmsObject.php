@@ -8,7 +8,7 @@ use Cms\Classes\Theme;
  * Represents a multi-lingual CMS compound object.
  *
  * @package rainlab\translate
- * @author Alexey Bobkov, Samuel Georges
+ *
  */
 class MLCmsObject extends CmsCompoundObject
 {

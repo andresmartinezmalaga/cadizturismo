@@ -9,7 +9,7 @@ use Exception;
  * Google Analytics traffic sources widget.
  *
  * @package backend
- * @author Alexey Bobkov, Samuel Georges
+ *
  */
 class TrafficSources extends ReportWidgetBase
 {

@@ -8,7 +8,7 @@ use October\Rain\Database\TreeCollection;
  * Simple Tree model trait
  *
  * Simple tree implementation, for advanced implementation see:
- * October\Rain\Database\Traits\NestedTree
+ *\Rain\Database\Traits\NestedTree
  *
  * SimpleTree is the bare minimum needed for tree functionality, the
  * methods defined here should be implemented by all "tree" traits.

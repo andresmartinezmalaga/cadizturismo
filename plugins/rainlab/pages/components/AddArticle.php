@@ -23,7 +23,7 @@ use Twig;
  * The static page component.
  *
  * @package rainlab\pages
- * @author Alexey Bobkov, Samuel Georges
+ *
  */
 class AddArticle extends ComponentBase
 {

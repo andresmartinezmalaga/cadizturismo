@@ -6,8 +6,8 @@ use October\Rain\Html\Helper as HtmlHelper;
  * Filter scope definition
  * A translation of the filter scope configuration
  *
- * @package october\backend
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class FilterScope
 {

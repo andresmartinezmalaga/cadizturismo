@@ -10,8 +10,8 @@ use October\Rain\Support\Facades\DbDongle;
  *
  * Extends Eloquent builder class.
  *
- * @package october\database
- * @author Alexey Bobkov, Samuel Georges
+ * 
+ *
  */
 class Builder extends BuilderModel
 {

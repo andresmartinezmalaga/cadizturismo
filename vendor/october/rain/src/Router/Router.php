@@ -5,8 +5,8 @@
  *
  * Used in October CMS for managing page routes.
  *
- * @package october\router
- * @author Alexey Bobkov, Samuel Georges
+ * \router
+ *
  */
 class Router
 {

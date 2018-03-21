@@ -13,8 +13,8 @@ use Exception;
 /**
  * Settings controller
  *
- * @package october\system
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  *
  */
 class Settings extends Controller

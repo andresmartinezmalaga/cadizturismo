@@ -5,8 +5,8 @@
  * to and from the markdown.beforeParse and markdown.parse
  * event handlers
  *
- * @package october\support
- * @author Alexey Bobkov, Samuel Georges
+ * \support
+ *
  */
 class MarkdownData
 {

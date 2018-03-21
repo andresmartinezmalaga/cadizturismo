@@ -8,7 +8,7 @@ use RainLab\Translate\Models\Locale;
  * Renders a multi-lingual textarea field.
  *
  * @package rainlab\translate
- * @author Alexey Bobkov, Samuel Georges
+ *
  */
 class MLTextarea extends FormWidgetBase
 {

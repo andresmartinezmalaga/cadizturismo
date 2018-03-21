@@ -6,8 +6,8 @@ use October\Rain\Database\Model;
 /**
  * Revision Model
  *
- * @package october\database
- * @author Alexey Bobkov, Samuel Georges
+ * \database
+ *
  */
 class Revision extends Model
 {

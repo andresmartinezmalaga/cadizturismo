@@ -6,8 +6,8 @@ use Backend\Classes\WidgetBase;
  * Toolbar Widget
  * Used for building a toolbar, renders a toolbar.
  *
- * @package october\backend
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class Toolbar extends WidgetBase
 {

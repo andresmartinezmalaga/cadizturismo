@@ -6,8 +6,8 @@ use October\Rain\Support\Collection as CollectionBase;
 /**
  * This class represents a collection of Cms Objects.
  *
- * @package october\cms
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class CmsObjectCollection extends CollectionBase
 {

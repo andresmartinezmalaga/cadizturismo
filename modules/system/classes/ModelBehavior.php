@@ -7,8 +7,8 @@ use October\Rain\Database\ModelBehavior as ModelBehaviorBase;
 /**
  * Base class for model behaviors.
  *
- * @package october\system
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class ModelBehavior extends ModelBehaviorBase
 {
@@ -19,7 +19,7 @@ class ModelBehavior extends ModelBehaviorBase
 
     /**
      * Constructor
-     * @param October\Rain\Database\Model $model The extended model.
+     * The extended model.
      */
     public function __construct($model)
     {

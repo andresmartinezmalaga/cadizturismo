@@ -12,8 +12,8 @@ use Exception;
  *
  * This completely deletes an existing theme, including all files and directories.
  *
- * @package october\system
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class ThemeRemove extends Command
 {

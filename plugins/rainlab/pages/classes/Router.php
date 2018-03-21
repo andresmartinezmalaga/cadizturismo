@@ -13,7 +13,7 @@ use October\Rain\Router\Helper as RouterHelper;
  * A router for static pages.
  *
  * @package rainlab\pages
- * @author Alexey Bobkov, Samuel Georges
+ *
  */
 class Router
 {

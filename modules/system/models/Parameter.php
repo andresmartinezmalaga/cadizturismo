@@ -8,8 +8,8 @@ use Exception;
  * Parameters model
  * Used for storing internal application parameters.
  *
- * @package october\system
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class Parameter extends Model
 {

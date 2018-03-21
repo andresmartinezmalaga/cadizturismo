@@ -7,8 +7,8 @@ use BackendAuth;
  * User/group permission editor
  * This widget is used by the system internally on the System / Administrators pages.
  *
- * @package october\backend
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class PermissionEditor extends FormWidgetBase
 {

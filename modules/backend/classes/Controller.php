@@ -27,8 +27,8 @@ use Illuminate\Http\RedirectResponse;
  * The Backend base controller class, used by Backend controllers.
  * The base controller services back end pages.
  *
- * @package october\backend
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class Controller extends Extendable
 {

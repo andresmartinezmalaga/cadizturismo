@@ -9,8 +9,8 @@ use SystemException;
 /**
  * Parses the PHP code section of CMS objects.
  *
- * @package october\cms
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class CodeParser
 {

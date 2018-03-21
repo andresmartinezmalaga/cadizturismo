@@ -5,8 +5,8 @@ use Illuminate\Support\Str as StrHelper;
 /**
  * String helper
  *
- * @package october\support
- * @author Alexey Bobkov, Samuel Georges
+ * \support
+ *
  */
 class Str extends StrHelper
 {

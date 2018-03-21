@@ -28,8 +28,8 @@ use Exception;
  * - compile lang: Compile registered Language files only.
  * - set build: Pull the latest stable build number from the update gateway and set it as the current build number.
  *
- * @package october\system
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class OctoberUtil extends Command
 {
@@ -127,7 +127,7 @@ class OctoberUtil extends Command
 
         try {
             $build = UpdateManager::instance()->setBuildNumberManually();
-            $this->comment('*** October sets build: '.$build);
+            $this->comment('*** sets build: '.$build);
         }
         catch (Exception $ex) {
             $this->comment('*** You were kicked from #october by Ex: ('.$ex->getMessage().')');

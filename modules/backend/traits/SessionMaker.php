@@ -10,8 +10,8 @@ use SystemException;
  * Adds session management based methods to a controller class, or a class
  * that contains a `$controller` property referencing a controller.
  *
- * @package october\backend
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 trait SessionMaker
 {

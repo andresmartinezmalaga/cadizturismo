@@ -31,8 +31,8 @@ use October\Rain\Router\Helper as RouterHelper;
  * /blog/:post_id|^[0-9]+$ - this will match /blog/post/3
  * /blog/:post_name?|^[a-z0-9\-]+$ - this will match /blog/my-blog-post</pre>
  *
- * @package october\cms
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class Router
 {
@@ -57,7 +57,7 @@ class Router
     protected $urlMap = [];
 
     /**
-     * October\Rain\Router\Router Router object with routes preloaded.
+     *\Rain\Router\Router Router object with routes preloaded.
      */
     protected $routerObj;
 

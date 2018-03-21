@@ -9,8 +9,8 @@ use Illuminate\Support\Collection;
 /**
  * Mailer class for sending mail.
  *
- * @package october\mail
- * @author Alexey Bobkov, Samuel Georges
+ * \mail
+ *
  */
 class Mailer extends MailerBase
 {

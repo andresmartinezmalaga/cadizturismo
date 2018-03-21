@@ -9,8 +9,8 @@ use October\Rain\Filesystem\Definitions as FileDefinitions;
 /**
  * The CMS page class.
  *
- * @package october\cms
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class Page extends CmsCompoundObject
 {

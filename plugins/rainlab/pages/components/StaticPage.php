@@ -9,7 +9,7 @@ use RainLab\Pages\Classes\Router;
  * The static page component.
  *
  * @package rainlab\pages
- * @author Alexey Bobkov, Samuel Georges
+ *
  */
 class StaticPage extends ComponentBase
 {

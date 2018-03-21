@@ -10,8 +10,8 @@ use Symfony\Component\Console\Input\InputArgument;
  *
  * This switches the active theme to another one, saved to the database.
  *
- * @package october\system
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class ThemeUse extends Command
 {

@@ -3,8 +3,8 @@
 /**
  * Bracket parser
  *
- * @package october\parse
- * @author Alexey Bobkov, Samuel Georges
+ * \parse
+ *
  */
 class Bracket
 {

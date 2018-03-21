@@ -11,8 +11,8 @@ use BadMethodCallException;
 /**
  * Query builder
  *
- * @package october\halcyon
- * @author Alexey Bobkov, Samuel Georges
+ * \halcyon
+ *
  */
 class Builder
 {

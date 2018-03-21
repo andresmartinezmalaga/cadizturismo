@@ -11,8 +11,8 @@ use System\Classes\PluginManager;
  *
  * This adds a new plugin by requesting it from the October marketplace.
  *
- * @package october\system
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class PluginInstall extends Command
 {

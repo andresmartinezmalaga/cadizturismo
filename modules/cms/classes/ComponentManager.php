@@ -8,8 +8,8 @@ use Illuminate\Support\Facades\App;
 /**
  * Component manager
  *
- * @package october\cms
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class ComponentManager
 {

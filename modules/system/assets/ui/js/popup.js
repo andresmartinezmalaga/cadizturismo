@@ -69,7 +69,7 @@
         }
 
         /*
-         * October AJAX
+         * AJAX
          */
         if (this.options.handler) {
 

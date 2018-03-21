@@ -5,8 +5,8 @@
  *
  * Stores query results in memory to avoid running duplicate queries
  *
- * @package october\database
- * @author Alexey Bobkov, Samuel Georges
+ * \database
+ *
  */
 class MemoryCache
 {

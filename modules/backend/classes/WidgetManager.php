@@ -7,8 +7,8 @@ use Event;
 /**
  * Widget manager
  *
- * @package october\backend
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class WidgetManager
 {

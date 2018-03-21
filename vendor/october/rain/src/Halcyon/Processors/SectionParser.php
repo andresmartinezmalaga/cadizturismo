@@ -7,8 +7,8 @@ use October\Rain\Support\Str;
  * This class parses CMS object files (pages, partials and layouts).
  * Returns the structured file information.
  *
- * @package october\halcyon
- * @author Alexey Bobkov, Samuel Georges
+ * \halcyon
+ *
  */
 class SectionParser
 {

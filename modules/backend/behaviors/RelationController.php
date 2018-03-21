@@ -24,8 +24,8 @@ use ApplicationException;
  * values as either a YAML file, located in the controller view directory,
  * or directly as a PHP array.
  *
- * @package october\backend
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class RelationController extends ControllerBehavior
 {
@@ -1298,7 +1298,7 @@ class RelationController extends ControllerBehavior
      * Provides an opportunity to manipulate the field configuration.
      * @param object $config
      * @param string $field
-     * @param October\Rain\Database\Model $model
+     *
      */
     public function relationExtendConfig($config, $field, $model)
     {
@@ -1308,7 +1308,7 @@ class RelationController extends ControllerBehavior
      * Provides an opportunity to manipulate the view widget.
      * @param Backend\Classes\WidgetBase $widget
      * @param string $field
-     * @param October\Rain\Database\Model $model
+     *
      */
     public function relationExtendViewWidget($widget, $field, $model)
     {
@@ -1318,7 +1318,7 @@ class RelationController extends ControllerBehavior
      * Provides an opportunity to manipulate the manage widget.
      * @param Backend\Classes\WidgetBase $widget
      * @param string $field
-     * @param October\Rain\Database\Model $model
+     *
      */
     public function relationExtendManageWidget($widget, $field, $model)
     {
@@ -1328,7 +1328,7 @@ class RelationController extends ControllerBehavior
      * Provides an opportunity to manipulate the pivot widget.
      * @param Backend\Classes\WidgetBase $widget
      * @param string $field
-     * @param October\Rain\Database\Model $model
+     *
      */
     public function relationExtendPivotWidget($widget, $field, $model)
     {

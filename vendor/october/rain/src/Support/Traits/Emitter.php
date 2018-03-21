@@ -3,8 +3,8 @@
 /**
  * Adds event related features to any class.
  *
- * @package october\support
- * @author Alexey Bobkov, Samuel Georges
+ * \support
+ *
  */
 trait Emitter
 {

@@ -9,7 +9,7 @@ use RuntimeException;
  * Inherits the base logic except new files have permissions set.
  *
  * @package october/parse
- * @author Alexey Bobkov, Samuel Georges
+ *
  */
 class FilesystemCache implements CacheInterface
 {

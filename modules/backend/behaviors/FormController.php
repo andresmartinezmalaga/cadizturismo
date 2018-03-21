@@ -33,10 +33,7 @@ use Exception;
  * The `$formConfig` property makes reference to the form configuration
  * values as either a YAML file, located in the controller view directory,
  * or directly as a PHP array.
- *
- * @see http://octobercms.com/docs/backend/forms Back-end form documentation
- * @package october\backend
- * @author Alexey Bobkov, Samuel Georges
+ * 
  */
 class FormController extends ControllerBehavior
 {
@@ -112,7 +109,7 @@ class FormController extends ControllerBehavior
      * to this behavior via this method as the first argument.
      *
      * @see Backend\Widgets\Form
-     * @param October\Rain\Database\Model $model
+     *
      * @param string $context Form context
      * @return void
      */
@@ -175,7 +172,7 @@ class FormController extends ControllerBehavior
 
     /**
      * Prepares commonly used view data.
-     * @param October\Rain\Database\Model $model
+     *
      */
     protected function prepareVars($model)
     {

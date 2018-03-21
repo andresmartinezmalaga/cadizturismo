@@ -8,8 +8,8 @@ use Exception;
 /**
  * Validation exception class.
  *
- * @package october\exception
- * @author Alexey Bobkov, Samuel Georges
+ * \exception
+ *
  */
 class ValidationException extends Exception
 {

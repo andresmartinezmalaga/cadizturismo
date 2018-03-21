@@ -8,7 +8,7 @@ class Twig extends Facade
      * Get the registered name of the component.
      * 
      * Resolves to:
-     * - October\Rain\Parse\Twig
+     *\Rain\Parse\Twig
      * 
      * @return string
      */

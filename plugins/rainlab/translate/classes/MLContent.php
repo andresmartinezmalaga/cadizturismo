@@ -4,7 +4,7 @@
  * Represents a multi-lingual Static Content object.
  *
  * @package rainlab\translate
- * @author Alexey Bobkov, Samuel Georges
+ *
  */
 class MLContent extends MLCmsObject
 {

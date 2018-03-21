@@ -8,8 +8,8 @@ use ArrayAccess;
  * Form Tabs definition
  * A translation of the form field tab configuration
  *
- * @package october\backend
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class FormTabs implements IteratorAggregate, ArrayAccess
 {

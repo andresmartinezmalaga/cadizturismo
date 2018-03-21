@@ -8,8 +8,8 @@ use ApplicationException;
 /**
  * Maintenance mode settings
  *
- * @package october\cms
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class MaintenanceSetting extends Model
 {

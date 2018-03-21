@@ -22,8 +22,8 @@ use DateTime;
  * List Widget
  * Used for building back end lists, renders a list of model objects
  *
- * @package october\backend
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class Lists extends WidgetBase
 {

@@ -12,8 +12,8 @@ use Backend\Classes\WidgetBase;
  * Template list widget.
  * This widget displays templates of different types.
  *
- * @package october\cms
- * @author Alexey Bobkov, Samuel Georges
+ *
+ *
  */
 class TemplateList extends WidgetBase
 {

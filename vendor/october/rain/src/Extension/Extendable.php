@@ -11,8 +11,8 @@
  *
  * See the `ExtensionBase` class for creating extension classes.
  *
- * @package october\extension
- * @author Alexey Bobkov, Samuel Georges
+ * \extension
+ *
  */
 class Extendable
 {

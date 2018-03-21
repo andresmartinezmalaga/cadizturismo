@@ -11,8 +11,8 @@ use Exception;
 /**
  * File attachment model
  *
- * @package october\database
- * @author Alexey Bobkov, Samuel Georges
+ * 
+ *
  */
 class File extends Model
 {

@@ -5,8 +5,8 @@ use Exception;
 /**
  * Block manager
  *
- * @package october\html
- * @author Alexey Bobkov, Samuel Georges
+ * \html
+ *
  */
 class BlockBuilder
 {

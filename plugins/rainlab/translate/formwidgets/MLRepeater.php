@@ -10,7 +10,7 @@ use ApplicationException;
  * Renders a multi-lingual repeater field.
  *
  * @package rainlab\translate
- * @author Alexey Bobkov, Samuel Georges
+ *
  */
 class MLRepeater extends Repeater
 {
