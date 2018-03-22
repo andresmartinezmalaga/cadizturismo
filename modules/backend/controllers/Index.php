@@ -77,8 +77,8 @@ class Index extends Controller
             if ($first = array_first(BackendMenu::listMainMenuItems(), $true)) {
                 return Redirect::intended($first->url);
             }*/
-
-            return Redirect::intended(Backend::url('/rainlab/pages'));
+            // Andrés Martínez : redirect to contenido whe no super admin
+            return Redirect::intended(Backend::url('rainlab/pages'));
         }
     }
 }
