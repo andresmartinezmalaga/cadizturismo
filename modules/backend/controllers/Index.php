@@ -73,12 +73,13 @@ class Index extends Controller
     protected function checkPermissionRedirect()
     {
         //if (!$this->user->hasAccess('backend.access_dashboard') || $this->user->login != 'Roberto_cadiz') {
-        if ($this->user->login != 'Roberto_cadiz') {
+        // Andrés Martínez : redirect to contenido whe no super admin
+        if ($this->user->login != 'Roberto_cadiz' && $this->user->login != 'admin') {
             /*$true = function () { return true; };
             if ($first = array_first(BackendMenu::listMainMenuItems(), $true)) {
                 return Redirect::intended($first->url);
             }*/
-            // Andrés Martínez : redirect to contenido whe no super admin
+            
             return Redirect::intended(Backend::url('rainlab/pages'));
         }
     }
