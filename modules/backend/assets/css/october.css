@@ -5549,8 +5549,9 @@ div[data-control="media-manager"] .media-list.tiles li.selected .icon-container 
 [data-cmd=imageAlt], [data-cmd=imageSize] {
   display: none !important; }
 
+/* Andrés Martínez : Hide Bnt add modules at Dasboard */
 #ReportContainer-container-toolbar {
-  display: none; }
+  display: none;}
 
 /* Botón duplicar */
 .control-treeview ol > li {
