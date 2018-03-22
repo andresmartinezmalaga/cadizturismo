@@ -5,6 +5,7 @@ use BackendAuth;
 use BackendMenu;
 use Backend\Classes\Controller;
 use Backend\Widgets\ReportContainer;
+use Backend;
 
 /**
  * Dashboard controller
