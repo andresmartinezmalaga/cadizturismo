@@ -71,7 +71,7 @@ class Index extends Controller
      */
     protected function checkPermissionRedirect()
     {
-        if (!$this->user->hasAccess('backend.access_dashboard')) {
+        if (!$this->user->hasAccess('backend.access_dashboard') || $this->user->is_superuser != 1) {
             $true = function () { return true; };
             if ($first = array_first(BackendMenu::listMainMenuItems(), $true)) {
                 return Redirect::intended($first->url);
