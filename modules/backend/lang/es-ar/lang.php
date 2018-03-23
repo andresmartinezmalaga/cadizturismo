@@ -70,7 +70,7 @@ return [
         'menu_label' => 'Administradores',
         'menu_description' => 'Gestionar back-end de administrador de usuarios, grupos y permisos.',
         'list_title' => 'Gestionar Administradores',
-        'new' => 'Nuevo Administrador',
+        'new' => 'Nuevo Usuario',
         'login' => "Acceso",
         'first_name' => "Nombre",
         'last_name' => "Apellido",

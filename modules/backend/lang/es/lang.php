@@ -101,7 +101,7 @@ return [
         'menu_label' => 'Administradores',
         'menu_description' => 'Gestionar usuarios, grupos y permisos para el back-end.',
         'list_title' => 'Gestionar administradores',
-        'new' => 'Nuevo Administrador',
+        'new' => 'Nuevo Usuario',
         'login' => 'Entrar',
         'first_name' => 'Nombres',
         'last_name' => 'Apellidos',
