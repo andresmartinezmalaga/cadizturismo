@@ -52,7 +52,10 @@ Route::get('/api/experiencia/tvisita/{id}', 'Backend\Classes\CadizTurismoControl
 Route::get('/api/estaticas', 'Backend\Classes\CadizTurismoController@statics');
 
 // Andrés Martínez : routes empresas //todos-los-tipos/todos-los-municipios = All
-    
+
+   // Find empresas by update_at en adelante de dada fecha
+Route::get('/api/empresas/fecha/modificacion/{date}', 'Backend\Classes\CadizTurismoController@empresasListByUpdated');
+
     // Show empreas types
 Route::get('/api/empresas/opciones/tipos', 'Backend\Classes\CadizTurismoController@getTiposEmpresas');
     // Show empreas municipalities
