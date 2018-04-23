@@ -72,10 +72,10 @@ class Empresa extends Controller
 
     public function beforeDelete()
     {
-       
+       return $this;
        //$this->image->delete();
-       $sEmpresa = new Empresad();
-       $sEmpresa->slug = 'slug';
+       //$sEmpresa = new Empresad();
+       //$sEmpresa->slug = 'slug';
        /*$sEmpresa->type_id = $this->type_id;
        $sEmpresa->name = $this->name;
        $sEmpresa->tlf = $this->tlf;
@@ -94,6 +94,6 @@ class Empresa extends Controller
        $sEmpresa->site = $this->site;
        $sEmpresa->direccion = $this->direccion;
        $sEmpresa->movil = $this->movil;*/
-       $sEmpresa->save();
+       //$sEmpresa->save();
     }
 }
