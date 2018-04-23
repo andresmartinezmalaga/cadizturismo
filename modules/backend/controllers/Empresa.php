@@ -75,8 +75,8 @@ class Empresa extends Controller
        
        //$this->image->delete();
        $sEmpresa = new Empresad();
-       $sEmpresa->slug = $this->slug;
-       $sEmpresa->type_id = $this->type_id;
+       $sEmpresa->slug = 'slug';
+       /*$sEmpresa->type_id = $this->type_id;
        $sEmpresa->name = $this->name;
        $sEmpresa->tlf = $this->tlf;
        $sEmpresa->tlf2 = $this->tlf2;
@@ -93,7 +93,7 @@ class Empresa extends Controller
        $sEmpresa->extract = $this->extract;
        $sEmpresa->site = $this->site;
        $sEmpresa->direccion = $this->direccion;
-       $sEmpresa->movil = $this->movil;
+       $sEmpresa->movil = $this->movil;*/
        $sEmpresa->save();
     }
 }
