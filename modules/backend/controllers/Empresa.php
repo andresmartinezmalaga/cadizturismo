@@ -1,7 +1,6 @@
 <?php namespace Backend\Controllers;
 
 use Backend\Classes\Controller;
-use Backend\Classes\Empresad;
 
 /**
  * Backend user controller
@@ -70,5 +69,5 @@ class Empresa extends Controller
         }
     }
 
-    
+
 }

@@ -6,6 +6,7 @@ use Backend;
 use Model;
 use \Backend\Models\Tipo;
 use Illuminate\Http\JsonResponse;
+use Backend\Classes\Empresad;
 /**
  * Administrator user model
  *
@@ -167,13 +168,11 @@ class Empresa extends Model
     }
 
     public function beforeDelete()
-    {
-        die("borrando before entra");
-       //return $this;
+    {       
        //$this->image->delete();
-       //$sEmpresa = new Empresad();
-       //$sEmpresa->slug = 'slug';
-       /*$sEmpresa->type_id = $this->type_id;
+       $sEmpresa = new Empresad();
+       $sEmpresa->slug = $this->slug;
+       $sEmpresa->type_id = $this->type_id;
        $sEmpresa->name = $this->name;
        $sEmpresa->tlf = $this->tlf;
        $sEmpresa->tlf2 = $this->tlf2;
@@ -190,8 +189,8 @@ class Empresa extends Model
        $sEmpresa->extract = $this->extract;
        $sEmpresa->site = $this->site;
        $sEmpresa->direccion = $this->direccion;
-       $sEmpresa->movil = $this->movil;*/
-       //$sEmpresa->save();
+       $sEmpresa->movil = $this->movil;
+       $sEmpresa->save();
     }
 
 }
