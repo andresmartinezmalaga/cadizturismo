@@ -347,6 +347,10 @@ class CadizTurismoController extends ControllerBase
         return new JsonResponse(['data'=>$result], 200);
     }
 
+    public function empresasDeleteList(){
+         return Empresad::All();
+    }
+
     public function empresaShowByNameSlug ($nameslug,$lang) {
         
         $empresa =  $this->StaticApp->empresasFindBySlug($nameslug);      
