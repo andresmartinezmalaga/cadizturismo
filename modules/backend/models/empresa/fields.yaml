@@ -18,7 +18,7 @@ fields:
 
     movil:
         span: right
-        label: Movil
+        label: Móvil
 
     extract:
         span: full
