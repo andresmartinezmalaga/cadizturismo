@@ -338,7 +338,7 @@ class CadizTurismoController extends ControllerBase
         $upDate = Carbon::parse($date);
         foreach ($empresas as $empresa) {
              $diff = $empresa->updated_at->diffInDays($upDate,false);
-             if($diff>0){
+             if($diff<1){
                   $rEmpresas->push($empresa);
              }
         }
