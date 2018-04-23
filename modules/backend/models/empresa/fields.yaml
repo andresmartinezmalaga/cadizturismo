@@ -5,20 +5,20 @@
 fields:
 
     name:
-        span: full
+        span: left
         label: Nombre de la empresa
 
     tlf:
-        span: left
+        span: right
         label: Teléfono
 
     tlf2:
-        span: right
+        span: left
         label: Teléfono 2
 
     movil:
         span: right
-        label: Teléfono 2
+        label: Movil
 
     extract:
         span: full
