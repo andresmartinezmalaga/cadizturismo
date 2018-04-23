@@ -6,7 +6,7 @@ use Backend;
 use Model;
 use \Backend\Models\Tipo;
 use Illuminate\Http\JsonResponse;
-use Backend\Classes\Empresad;
+use \Backend\Models\Empresad;
 /**
  * Administrator user model
  *
