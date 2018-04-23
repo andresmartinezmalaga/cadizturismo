@@ -72,7 +72,8 @@ class Empresa extends Controller
 
     public function beforeDelete()
     {
-       return $this;
+        die("borrando before entra");
+       //return $this;
        //$this->image->delete();
        //$sEmpresa = new Empresad();
        //$sEmpresa->slug = 'slug';
