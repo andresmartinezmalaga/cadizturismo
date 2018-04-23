@@ -63,7 +63,7 @@ class Empresa extends Controller
             if($model->cp!=''){
                 $cp = $model->cp.',+';
             }
-            $baseUrl3 = $baseUrl2+$cp;
+            $baseUrl3 = $baseUrl2.$cp;
             $muni = str_replace(' ','+',$model->municipality);
             $baseUrl4 = $baseUrl3.$muni;
             $model->update(['url_map' => $baseUrl4]);
