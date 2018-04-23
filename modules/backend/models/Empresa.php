@@ -19,7 +19,7 @@ class Empresa extends Model
      */
     protected $table = 'empresas';
 
-    protected $fillable = ['slug','mslug'];
+    protected $fillable = ['slug','mslug','url_map'];
 
     public $translatable = [
         'title',

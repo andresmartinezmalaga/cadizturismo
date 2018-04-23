@@ -55,7 +55,7 @@ class Empresa extends Controller
     {
         $model->update(['slug' => str_slug($model->name)]);
         $model->update(['mslug' => str_slug($model->municipality)]);
-        //if($model->url_map == ''){
+        if($model->url_map == ''){
             $baseUrl = 'https://www.google.es/maps/place/';
             $direcc = str_replace(' ','+',$model->direccion);
             $baseUrl2 = $baseUrl.$direcc.',+';
@@ -67,6 +67,6 @@ class Empresa extends Controller
             $muni = str_replace(' ','+',$model->municipality);
             $baseUrl4 = $baseUrl3.$muni;
             $model->update(['url_map' => $baseUrl4]);
-        //}
+        }
     }
 }
