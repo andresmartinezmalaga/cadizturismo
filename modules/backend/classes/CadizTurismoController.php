@@ -17,6 +17,7 @@ use Backend\Models\Tiposvisitas;
 use Backend\Models\Catgeventos;
 use Backend\Models\Catgrutas;
 use Backend\Models\Empresa;
+use Backend\Models\Empresad;
 
 use RainLab\Translate\Models\Locale;
 

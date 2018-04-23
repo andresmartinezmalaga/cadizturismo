@@ -1,7 +1,7 @@
 <?php namespace Backend\Controllers;
 
 use Backend\Classes\Controller;
-
+use Backend\Classes\Empresad;
 
 /**
  * Backend user controller
@@ -68,5 +68,32 @@ class Empresa extends Controller
             $baseUrl4 = $baseUrl3.$muni;
             $model->update(['url_map' => $baseUrl4]);
         }
+    }
+
+    public function beforeDelete()
+    {
+       
+       //$this->image->delete();
+       $sEmpresa = new Empresad();
+       $sEmpresa->slug = $this->slug;
+       $sEmpresa->type_id = $this->type_id;
+       $sEmpresa->name = $this->name;
+       $sEmpresa->tlf = $this->tlf;
+       $sEmpresa->tlf2 = $this->tlf2;
+       $sEmpresa->fax = $this->fax;
+       $sEmpresa->cp = $this->cp;
+       $sEmpresa->email = $this->email;
+       $sEmpresa->email2 = $this->email2;
+       $sEmpresa->municipality = $this->municipality;
+       $sEmpresa->mslug = $this->mslug;
+       $sEmpresa->url_map = $this->url_map;
+       $sEmpresa->title = $this->title;
+       $sEmpresa->description = $this->description;
+       $sEmpresa->info = $this->info;
+       $sEmpresa->extract = $this->extract;
+       $sEmpresa->site = $this->site;
+       $sEmpresa->direccion = $this->direccion;
+       $sEmpresa->movil = $this->movil;
+       $sEmpresa->save();
     }
 }
