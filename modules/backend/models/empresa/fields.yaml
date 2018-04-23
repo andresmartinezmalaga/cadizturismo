@@ -16,6 +16,10 @@ fields:
         span: right
         label: Teléfono 2
 
+    movil:
+        span: right
+        label: Teléfono 2
+
     extract:
         span: full
         label: Destacado
@@ -38,19 +42,23 @@ fields:
         span: left
         label: Fax
 
-    cp:
-        span: right
-        label: Código Postal
-
     site:
-        span: left
+        span: right
         label: Web
 
     municipality:
-        span: right
+        span: left
         label: Municipio
         type: dropdown
         options: getMunicipalities
+
+    cp:
+        span: right
+        label: Código Postal  
+
+    direccion:
+        span: full
+        label: Dirección
 
     url_map:
         span: left
