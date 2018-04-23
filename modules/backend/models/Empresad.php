@@ -81,4 +81,6 @@ class Empresad extends Model
     public $attachMany = [        
     ];
 
+    
+
 }
