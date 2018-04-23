@@ -4702,7 +4702,7 @@ footer {
 .device-rotation {
   display: none;
 }
-@media (max-device-width: 1024px) and (orientation: landscape) {
+@media (max-device-width: 812px) and (orientation: landscape) {
   .device-rotation {
     position: absolute;
     @include flexbox();
