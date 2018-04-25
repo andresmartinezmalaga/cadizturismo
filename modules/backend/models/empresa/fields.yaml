@@ -5,16 +5,20 @@
 fields:
 
     name:
-        span: full
+        span: left
         label: Nombre de la empresa
 
     tlf:
-        span: left
+        span: right
         label: Teléfono
 
     tlf2:
-        span: right
+        span: left
         label: Teléfono 2
+
+    movil:
+        span: right
+        label: Móvil
 
     extract:
         span: full
@@ -38,19 +42,23 @@ fields:
         span: left
         label: Fax
 
-    cp:
-        span: right
-        label: Código Postal
-
     site:
-        span: left
+        span: right
         label: Web
 
     municipality:
-        span: right
+        span: left
         label: Municipio
         type: dropdown
         options: getMunicipalities
+
+    cp:
+        span: right
+        label: Código Postal  
+
+    direccion:
+        span: full
+        label: Dirección
 
     url_map:
         span: left

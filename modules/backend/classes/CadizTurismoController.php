@@ -16,8 +16,12 @@ use Backend\Models\Intereses;
 use Backend\Models\Tiposvisitas;
 use Backend\Models\Catgeventos;
 use Backend\Models\Catgrutas;
+use Backend\Models\Empresa;
+use Backend\Models\Empresad;
 
 use RainLab\Translate\Models\Locale;
+
+use Carbon\Carbon;
 
 class CadizTurismoController extends ControllerBase
 {
@@ -327,6 +331,24 @@ class CadizTurismoController extends ControllerBase
         $empresasList =  $this->StaticApp->empresasFindByTypePag($typeslug, $pag, $number);
         $result = $this->empresasGetMltg($empresasList);
         return new JsonResponse(['data'=>$result], 200);
+    }
+
+    public function empresasListByUpdated($date){
+        $empresas = Empresa::All();
+        $rEmpresas = collect();
+        $upDate = Carbon::parse($date);
+        foreach ($empresas as $empresa) {
+             $diff = $empresa->updated_at->diffInDays($upDate,false);
+             if($diff<1){
+                  $rEmpresas->push($empresa);
+             }
+        }
+        $result = $this->empresasGetMltg($rEmpresas);
+        return new JsonResponse(['data'=>$result], 200);
+    }
+
+    public function empresasDeleteList(){
+         return Empresad::All();
     }
 
     public function empresaShowByNameSlug ($nameslug,$lang) {

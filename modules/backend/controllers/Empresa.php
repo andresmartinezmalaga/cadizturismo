@@ -2,7 +2,6 @@
 
 use Backend\Classes\Controller;
 
-
 /**
  * Backend user controller
  *
@@ -55,6 +54,20 @@ class Empresa extends Controller
     {
         $model->update(['slug' => str_slug($model->name)]);
         $model->update(['mslug' => str_slug($model->municipality)]);
-    } 
+        if($model->url_map == ''){
+            $baseUrl = 'https://www.google.es/maps/place/';
+            $direcc = str_replace(' ','+',$model->direccion);
+            $baseUrl2 = $baseUrl.$direcc.',+';
+            $cp = '';
+            if($model->cp!=''){
+                $cp = $model->cp.',+';
+            }
+            $baseUrl3 = $baseUrl2.$cp;
+            $muni = str_replace(' ','+',$model->municipality);
+            $baseUrl4 = $baseUrl3.$muni;
+            $model->update(['url_map' => $baseUrl4]);
+        }
+    }
+
 
 }
