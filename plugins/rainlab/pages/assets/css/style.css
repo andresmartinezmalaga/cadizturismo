@@ -3777,7 +3777,7 @@ footer {
 .device-rotation {
   display: none; }
 
-@media (max-device-width: 812px) and (orientation: landscape) {
+@media (max-device-width: 640px) and (orientation: landscape) {
   .device-rotation {
     position: absolute;
     display: -webkit-box;

@@ -25,29 +25,29 @@
 	</div>
 
 	<div class="all-events-container">
-		
+
 		{% for experience in experiences %}
 		    {% set interest = experience.viewBag.interest|split(' y ') %}
-	   	
+
 		    <div class="event">
 		      <div class="overlay-img"></div>
 		      <img class="rec-img" src="{{experience.viewBag.cover}}">
 		      <div class="txt-container">
-		        <p class="name">{{experience.viewBag.title}}-{{experience.saludo}}-</p>
+		        <p class="name">{{experience.viewBag.title}}</p>
 		        <img class="separator" src="{{preurl}}/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
 		        <div class="icons">
 		          <div class="icon-pair">
 		            <img src="{{preurl}}/storage/app/media/uploaded-files/templates/calendar-exp.svg">
-		            	
+
 		            	{% if experience.viewBag.days < 2 %}
 		              		{% set d = "día" %}
 		              	{% else %}
 		              		{% set d = "días" %}
 		              	{% endif %}
-	              		
+
 
 		            <p class="icon-txt">{{experience.viewBag.days}} {{ d|_ }}</p>
-		          </div>          
+		          </div>
 		          <div class="icon-pair">
 		            <img src="{{preurl}}/storage/app/media/uploaded-files/templates/{{str_slug(experience.sintrst1)}}.svg">
 		            	<p class="icon-txt">{{experience.sintrst1}}</p>
