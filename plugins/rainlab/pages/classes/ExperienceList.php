@@ -262,6 +262,6 @@ class ExperienceList
      */
     protected function getConfigFilePath()
     {
-        return $this->theme->getPath().'/meta/static-pages.yaml';
+        return $this->theme->getPath().'/meta/static-experiences.yaml';
     }
 }
