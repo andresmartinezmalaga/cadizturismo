@@ -2147,7 +2147,7 @@ html, body {
     .publis .publicacion .links-container, .publis .prensa .links-container {
       margin-bottom: 22px;
       max-width: 98% !important;
-      padding-left: 6px !important; }
+      padding-left: 10px !important; }
     .publis .publicacion .publi-title, .publis .prensa .publi-title {
       font-size: 33px;
       line-height: 36px; }
