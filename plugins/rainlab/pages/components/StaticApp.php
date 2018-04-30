@@ -76,13 +76,13 @@ class StaticApp extends ComponentBase
 
     // sort ok
     public function getEventsCategories(){
-      
+
       $catgeventos = Catgeventos::all();
 
       $result = collect();
 
       foreach ($catgeventos as $icatg) {
-        $result->put($icatg->id, ucwords($icatg->name));  
+        $result->put($icatg->id, ucwords($icatg->name));
       }
 
       return $result;
@@ -92,7 +92,7 @@ class StaticApp extends ComponentBase
      public function getEventCategoriyId($slug) {
 
        $catgevento = Catgeventos::where('slug',$slug)->first();
-       
+
         if(count($catgevento)>0){
             return $catgevento->id;
         }else {
@@ -107,19 +107,19 @@ class StaticApp extends ComponentBase
             return $catgs->name;
         } else {
             return [];
-        }       
+        }
 
     }
 
     // sort ok
     public function getRutasCategories(){
-      
+
       $catgrutas = Catgrutas::all();
 
       $result = collect();
 
       foreach ($catgrutas as $icatg) {
-        $result->put($icatg->id, ucwords($icatg->name));  
+        $result->put($icatg->id, ucwords($icatg->name));
       }
 
       return $result;
@@ -128,14 +128,14 @@ class StaticApp extends ComponentBase
     public function getRutaCategoriyId($slug) {
 
        $catgruta = Catgrutas::where('slug',$slug)->first();
-       
+
         if(count($catgruta)>0){
             return $catgruta->id;
         }else {
             return null;
         }
     }
-    
+
     public function getRutasCategoriesById($id) {
 
         $catgs = Catgrutas::find($id);
@@ -143,7 +143,7 @@ class StaticApp extends ComponentBase
             return $catgs->name;
         } else {
             return [];
-        }       
+        }
 
     }
 
@@ -198,7 +198,7 @@ class StaticApp extends ComponentBase
     }
 
     public function getMunicipalitiesBySlug($slug){
-        
+
         $municipios =  [
         'alcala-de-los-gazules' => 'alcalá de los gazules',
         'alcala-del-valle' => 'alcalá del valle',
@@ -251,7 +251,7 @@ class StaticApp extends ComponentBase
         } else {
             return 'all';
         }
-       
+
     }
 
      public function getInterestsOptions() {
@@ -261,7 +261,8 @@ class StaticApp extends ComponentBase
       $result = collect();
 
       foreach ($intereses as $iintrs) {
-        $result->put($iintrs->id, ucwords($iintrs->name));  
+        //$result->put($iintrs->id, ucwords($iintrs->name));
+        $result->put($iintrs->id, $iintrs->name);  
       }
 
       return $result;
@@ -285,11 +286,11 @@ class StaticApp extends ComponentBase
       $result = collect();
 
       foreach ($tvisitas as $itvs) {
-        $result->put($itvs->id, ucwords($itvs->name));  
+        $result->put($itvs->id, ucwords($itvs->name));
       }
 
       return $result;
-    
+
     }
 
     public function getStringSlugTvisit($slug){
@@ -299,13 +300,13 @@ class StaticApp extends ComponentBase
         } else {
             return null;
         }
-       
+
     }
 
     public function getInteresesById($id) {
 
        $intereses = Intereses::find($id);
-       
+
         if(count($intereses)>0){
             return explode(' y ', $intereses->name);
         }else {
@@ -316,7 +317,7 @@ class StaticApp extends ComponentBase
     public function getInteresesId($slug) {
 
        $intereses = Intereses::where('slug',$slug)->first();
-       
+
         if(count($intereses)>0){
             return $intereses->id;
         }else {
@@ -327,7 +328,7 @@ class StaticApp extends ComponentBase
      public function getTvisitaId($slug) {
 
        $tvista = Tiposvisitas::where('slug',$slug)->first();
-       
+
         if(count($tvista)>0){
             return $tvista->id;
         }else {
@@ -344,7 +345,7 @@ class StaticApp extends ComponentBase
         } else {
             return [];
         }
-      
+
 
     }
 
@@ -353,33 +354,33 @@ class StaticApp extends ComponentBase
         $rtipos = collect() ;
 
         $tipos = Tipo::all();
-       
-        foreach ($tipos as $key => $value) {            
+
+        foreach ($tipos as $key => $value) {
             $rtipos->put($value->id,$value->name);
         }
-       
+
         return $rtipos;
 
     }
 
     public function getTiposEmpresasFull() {
-       
+
         $tipos = Tipo::all();
-       
+
         return $tipos;
 
     }
 
 
     public function getTipoBySlug($slug) {
-  
+
         $tipo = Tipo::where('slug',$slug)->first();
 
         if(isset($tipo->avatar)){
             $image = $tipo->avatar->getPath();
             $tipo->image = $image;
         }
-       
+
         return $tipo;
 
     }
@@ -535,7 +536,7 @@ class StaticApp extends ComponentBase
         }
 
         foreach ($rutasNormal as $ruta) {
-            
+
             $ruta->scatg = $this->getRutasCategoriesById($ruta->category);
 
             $resultNormal->push($ruta);
@@ -556,7 +557,7 @@ class StaticApp extends ComponentBase
     }
 
     public function eventFind($category, $date_start, $date_end, $location)
-    {   
+    {
 
         $theme = Theme::getActiveTheme();
         $pages = Page::listInTheme($theme, false);
@@ -594,18 +595,18 @@ class StaticApp extends ComponentBase
 
             $diffStart = $bs->diffInDays($es,false);
             $diffStartEnd = $bs->diffInDays($ee,false);
-            
+
             $diffEnd = $be->diffInDays($ee,false);
             $diffEndStart = $be->diffInDays($es,false);
 
             if($diffStart>=0  && $diffEnd<1 ) {
-            
+
                 $validEvents->push($i);
-           
+
             } elseif ($diffStartEnd >= 0 && $diffStart <= 0){
 
                 $validEvents->push($i);
-           
+
             } elseif ($diffEndStart <= 0 && $diffEnd >=0 ){
 
                 $validEvents->push($i);
@@ -634,7 +635,7 @@ class StaticApp extends ComponentBase
 
     public function empresasFind($typeslug, $locationslug, $searchString){
         $typeOperator = '=';
-        
+
         $gtype = Tipo::where('slug',$typeslug)->first();
         if(count($gtype)>0){
             $type_id = $gtype->id;
@@ -649,7 +650,7 @@ class StaticApp extends ComponentBase
         $pempresas = collect();
 
         if($locationslug != 'todos-los-municipios'){
-           
+
             $locations = explode('_', $locationslug);
             foreach ($locations as $iLocation) {
                foreach ($fempresas as $iEmpresa) {
@@ -657,7 +658,7 @@ class StaticApp extends ComponentBase
                        $pempresas->push($iEmpresa);
                    }
                }
-                           
+
             }
         } else {
 
@@ -665,11 +666,11 @@ class StaticApp extends ComponentBase
         }
 
 
-        if($searchString != 'todas-las-empresas'){  
-            
+        if($searchString != 'todas-las-empresas'){
+
             $ovalores = explode('_', $searchString);
             $valores = collect();
-            
+
             $sempresas = collect();
 
             foreach ($ovalores as $valor) {
@@ -680,19 +681,19 @@ class StaticApp extends ComponentBase
 
             $contador = 0;
             foreach ($pempresas as $iEmpresa) {
-                
+
                 $contador = 0;
                 foreach ($valores as $valor) {
-                    
+
                     if(strpos(strtolower($iEmpresa->name), strtolower($valor)) !== false) {
                         $contador = $contador+1;
-                    }                    
+                    }
                 }
 
                 if($contador>0){
                     $iEmpresa->contador = $contador;
                     $sempresas->push($iEmpresa);
-                }               
+                }
             }
 
             if(count($sempresas)>0){
@@ -706,7 +707,7 @@ class StaticApp extends ComponentBase
         }
 
         foreach ($empresas as $empresa) {
-            
+
             if(isset($empresa->avatar)){
                 $image = $empresa->avatar->getPath();
                 $empresa->image = $image;
@@ -725,15 +726,15 @@ class StaticApp extends ComponentBase
     }
 
     public function empresasFindPag($typeslug, $locationslug, $searchString, $pag = 1, $number = 1){
-        
+
 
         $typeOperator = '=';
-        
+
         $gtype = Tipo::where('slug',$typeslug)->first();
         if(count($gtype)>0){
             $type_id = $gtype->id;
         }
-            
+
         if($typeslug == 'todos-los-tipos'){
             $type_id = null;
             $typeOperator = '!=';
@@ -743,27 +744,27 @@ class StaticApp extends ComponentBase
         $pempresas = collect();
 
         if($locationslug != 'todos-los-municipios'){
-           
+
             $locations = explode('_', $locationslug);
-            
+
             foreach ($locations as $iLocation) {
                foreach ($fempresas as $iEmpresa) {
                    if($iEmpresa->mslug == $iLocation){
                        $pempresas->push($iEmpresa);
                    }
                }
-              
+
             }
         } else {
 
            $pempresas = $fempresas;
         }
 
-        if($searchString != 'todas-las-empresas'){  
-            
+        if($searchString != 'todas-las-empresas'){
+
             $ovalores = explode('_', $searchString);
             $valores = collect();
-            
+
             $sempresas = collect();
 
             foreach ($ovalores as $valor) {
@@ -774,18 +775,18 @@ class StaticApp extends ComponentBase
 
             $contador = 0;
             foreach ($pempresas as $iEmpresa) {
-                
+
                 $contador = 0;
                 foreach ($valores as $valor) {
                     if(strpos(strtolower($iEmpresa->name), strtolower($valor)) !== false) {
                         $contador = $contador+1;
-                    }                    
+                    }
                 }
 
                 if($contador>0){
                     $iEmpresa->contador = $contador;
                     $sempresas->push($iEmpresa);
-                }               
+                }
             }
 
             if(count($sempresas)>0){
@@ -800,7 +801,7 @@ class StaticApp extends ComponentBase
 
 
         foreach ($empresas as $empresa) {
-            
+
             if(isset($empresa->avatar)){
                 $image = $empresa->avatar->getPath();
                 $empresa->image = $image;
@@ -820,7 +821,7 @@ class StaticApp extends ComponentBase
         } else {
             $pagination = $empresas;
         }
-       
+
 
         return $pagination;
     }
@@ -830,13 +831,13 @@ class StaticApp extends ComponentBase
     }
 
     public function empresasFindByType($typeslug){
-        
+
         $type = Tipo::where('slug',$typeslug)->first();
 
         $empresas = Empresa::where('type_id',$type->id)->get();
 
         foreach ($empresas as $empresa) {
-            
+
             if(isset($empresa->avatar)){
                 $image = $empresa->avatar->getPath();
                 $empresa->image = $image;
@@ -850,18 +851,18 @@ class StaticApp extends ComponentBase
                 $empresa->images = $cphotos;
             }
         }
-        
+
         return $empresas;
     }
 
     public function empresasFindByTypePag($typeslug, $pag = 1, $number = 1){
-        
+
         $type = Tipo::where('slug',$typeslug)->first();
 
         $empresas = Empresa::where('type_id',$type->id)->get();
 
         foreach ($empresas as $empresa) {
-            
+
             if(isset($empresa->avatar)){
                 $image = $empresa->avatar->getPath();
                 $empresa->image = $image;
@@ -877,7 +878,7 @@ class StaticApp extends ComponentBase
         }
 
         $pagination = $empresas->slice((($pag-1)*$number),$number);
-        
+
         return $pagination;
     }
 
@@ -888,9 +889,9 @@ class StaticApp extends ComponentBase
 
 
     public function empresasFindBySlug($slug){
-        
+
         $empresa = Empresa::where('slug',$slug)->first();
-        
+
         if(isset($empresa->avatar)){
             $image = $empresa->avatar->getPath();
             $empresa->image = $image;
@@ -903,12 +904,12 @@ class StaticApp extends ComponentBase
             }
             $empresa->images = $cphotos;
         }
-        
+
         return $empresa;
     }
 
     public function empresasListTypesHomeIndex(){
-        
+
         $result = collect();
         $cat1 = collect();
         $cat2 = collect();
@@ -918,14 +919,14 @@ class StaticApp extends ComponentBase
         $result->put('cat3',$cat3);
 
         $types = Tipo::all();
-        
+
         foreach ($types as $type) {
 
             if(isset($type->avatar)){
                 $image = $type->avatar->getPath();
                 $type->image = $image;
             }
-            
+
             if($type->category == 'Planificar mi viaje'){
                 $cat1->push($type);
             } else if($type->category == 'Planes de ocio'){
@@ -934,8 +935,8 @@ class StaticApp extends ComponentBase
                 $cat3->push($type);
             }
         }
-        
-        
+
+
         return $result;
     }
 
@@ -1006,7 +1007,7 @@ class StaticApp extends ComponentBase
                 $result->push($value);
             }
         }
-       
+
         return $result;
     }
 
@@ -1103,7 +1104,7 @@ class StaticApp extends ComponentBase
         $result = $experiences->where("is_hidden",0)->where('template','experiences')->where('days',$daysOperator,$days)->where('interest',$interestOperator,$interest)->where('tvisit',$tvisitOperator,$tvisit)->values();
 
         foreach ($result as $i) {
-          
+
             $iintrst = $this->getInteresesById($i->interest);
             if(count($iintrst)>0){
                 $i->sintrst1 = $iintrst[0];
@@ -1112,8 +1113,8 @@ class StaticApp extends ComponentBase
 
             $itvisit = $this->getTvisitaById($i->tvisit);
             if(count($itvisit)>0){
-                $i->stvisit = $itvisit;               
-            }          
+                $i->stvisit = $itvisit;
+            }
         }
 
         return $result;
@@ -1152,7 +1153,7 @@ class StaticApp extends ComponentBase
             $category = null;
             $categoryOperator = '!=';
         }
-        
+
         $daysOperator = '=';
         if($days == 'all'){
             $days = '0';
@@ -1174,7 +1175,7 @@ class StaticApp extends ComponentBase
         return $result;
     }
 
-   
+
 
     public function sendMailExperience($mail, $url) {
 
@@ -1306,7 +1307,7 @@ class StaticApp extends ComponentBase
             ->output();
 
         $experience[0]['urlApp'] = $urlApp;
-        
+
         $dataexperience = $experience[0];
 
         $dataemail = array('experience' => $dataexperience);
@@ -1331,7 +1332,7 @@ class StaticApp extends ComponentBase
 
         return $result;
     }
-    
+
     public function publicationListCount(){
         return count($this->publicationList());
     }
@@ -1426,6 +1427,6 @@ class StaticApp extends ComponentBase
         return $staticPages;
     }
 
-   
+
 
 }
