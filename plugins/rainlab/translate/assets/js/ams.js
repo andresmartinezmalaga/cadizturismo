@@ -37,18 +37,18 @@ var ams = function(){
 
             if(atextarea.html()=='<p><br></p>' || atextarea.html()=='<p></p>' || atextarea.html()==''){
                 $(atextarea).html(tpmx)
-           
 
-                $(".mock-insert").click(function(e) {                
-                    
+
+                $(".mock-insert").click(function(e) {
+
                     $(e.target).toggleClass("mock-selected");
                     $(e.target).children('.mock-insert').toggleClass("mock-selected");
 
                  });
-            }    
-                 
-            
-           
+            }
+
+
+
 
 
             self.createButtonsWysiwyg(element);
@@ -147,7 +147,7 @@ var ams = function(){
 	//Imagen al 100%
 	var fullImage = '<div class="section-img"><img src="/storage/app/media/uploaded-files/templates/caballos2.jpg" alt=""></div><p class="mock-insert"><br></p>';
 	//Galería de 3 imágenes
-	var threeImages = '<div class="all-exps"><div class="all-events-container"><div class="event"><div class="overlay-img"><br></div><img class="rec-img fr-fic fr-dii" src="/storage/app/media/uploaded-files/templates/atun.jpg"></div><div class="event"><div class="overlay-img"><br></div><img class="rec-img fr-fic fr-dii" src="/storage/app/media/uploaded-files/templates/faro.jpg"></div><div class="event"><div class="overlay-img"><br></div><img class="rec-img fr-fic fr-dii" src="/storage/app/media/uploaded-files/templates/brena.jpg"></div></div></div><p class="mock-insert"><br></p>';
+	var threeImages = '<div class="all-exps"><div class="all-events-container"><div class="event"><img class="rec-img fr-fic fr-dii" src="/storage/app/media/uploaded-files/templates/atun.jpg"></div><div class="event"><div class="overlay-img"><br></div><img class="rec-img fr-fic fr-dii" src="/storage/app/media/uploaded-files/templates/faro.jpg"></div><div class="event"><div class="overlay-img"><br></div><img class="rec-img fr-fic fr-dii" src="/storage/app/media/uploaded-files/templates/brena.jpg"></div></div></div><p class="mock-insert"><br></p>';
 	//Galería de 2 imágenes
 	var twoImages = '<div class="all-events"><div class="all-events-container"><div class="event"><div class="overlay-img"><br></div><img class="rec-img fr-fic fr-dii" src="/storage/app/media/uploaded-files/templates/barbate1.jpg"></div><div class="event"><div class="overlay-img"><br></div><img class="rec-img fr-fic fr-dii" src="/storage/app/media/uploaded-files/shutterstock_398451547.jpg"></div></div></div><p class="mock-insert"><br></p>';
 	//Enumeración
@@ -421,7 +421,7 @@ var ams = function(){
 		$(".mock-insert").click(function(e) {
 				$(this).toggleClass("mock-selected");
 				$(this).children('.mock-insert').toggleClass("mock-selected");
-			
+
 		});
 
 		$(".custom-wysiwyg").click(function(e) {
