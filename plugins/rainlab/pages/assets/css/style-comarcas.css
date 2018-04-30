@@ -736,22 +736,22 @@
     flex-direction: row;
     flex-wrap: wrap; }
     #search-rutas .search-bar .days-container {
-      width: 204px;
-      min-width: 204px;
+      width: 238px;
+      min-width: 238px;
       height: 100%;
       border-right: 1px solid #DDDDDD; }
     #search-rutas .search-bar .interests-container {
-      width: 152px;
-      min-width: 152px;
+      width: 185px;
+      min-width: 185px;
       height: 100%;
       border-right: 1px solid #DDDDDD; }
     #search-rutas .search-bar .type-container {
-      width: 293px;
-      min-width: 293px;
+      width: 244px;
+      min-width: 244px;
       height: 100%; }
     #search-rutas .search-bar .button-container {
-      width: 190px;
-      min-width: 190px;
+      width: 170px;
+      min-width: 170px;
       height: 100%;
       background-color: #F5A623;
       border-top-right-radius: 4px;
