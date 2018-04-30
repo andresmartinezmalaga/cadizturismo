@@ -457,7 +457,7 @@
   background-color: white;
   z-index: 100;
   .cartel {
-    width: 100%;
+    width: 100% !important;
     height: auto;
     object-fit: cover;
     margin-top: 50px;
