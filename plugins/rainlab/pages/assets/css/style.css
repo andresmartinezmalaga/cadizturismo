@@ -2145,7 +2145,9 @@ html, body {
     .publis .publicacion:before, .publis .prensa:before {
       content: none; }
     .publis .publicacion .links-container, .publis .prensa .links-container {
-      margin-bottom: 30px; }
+      margin-bottom: 22px;
+      max-width: 98% !important;
+      padding-left: 6px !important; }
     .publis .publicacion .publi-title, .publis .prensa .publi-title {
       font-size: 33px;
       line-height: 36px; }
@@ -2153,6 +2155,8 @@ html, body {
       min-height: 231px; }
     .publis .publicacion a, .publis .prensa a {
       font-size: 12px; }
+    .publis .publicacion .publi-icon, .publis .publicacion .publi-title, .publis .publicacion .publi-desc, .publis .publicacion .languages-publi, .publis .publicacion .links.container {
+      padding-left: 10px !important; }
     .publis .reportaje:before {
       content: none; }
     .publis .reportaje .links-container {
@@ -2164,8 +2168,7 @@ html, body {
       font-size: 12px; }
   .reportajes .publi-container, .publicaciones .publi-container {
     width: 80%;
-    font-size: 48px;
-    margin-left: 50px !important; }
+    font-size: 48px; }
   .static-header .header-txt-comollegar, .somos-section .header-txt-comollegar, .ayuda-header .header-txt-comollegar, .about-header .header-txt-comollegar {
     margin-top: -170px; } }
 

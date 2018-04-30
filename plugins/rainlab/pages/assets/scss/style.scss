@@ -2481,7 +2481,9 @@ html, body {
         content: none;
       }
       .links-container {
-        margin-bottom: 30px;
+        margin-bottom: 22px;
+        max-width: 98% !important;
+        padding-left: 6px !important;
       }
       .publi-title {
         font-size: 33px;
@@ -2492,6 +2494,11 @@ html, body {
       }
       a {
         font-size: 12px;
+      }
+    }
+    .publicacion {
+      .publi-icon, .publi-title, .publi-desc, .languages-publi, .links.container {
+        padding-left: 10px !important;
       }
     }
     .reportaje {
@@ -2514,7 +2521,7 @@ html, body {
     .publi-container {
       width: 80%;
       font-size: 48px;
-      margin-left: 50px !important;
+      //margin-left: 50px !important;
     }
   }
   .static-header, .somos-section, .ayuda-header, .about-header {
