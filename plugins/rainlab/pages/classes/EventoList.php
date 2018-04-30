@@ -265,6 +265,6 @@ class EventoList
      */
     protected function getConfigFilePath()
     {
-        return $this->theme->getPath().'/meta/static-pages.yaml';
+        return $this->theme->getPath().'/meta/static-eventos.yaml';
     }
 }
