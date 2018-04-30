@@ -133,9 +133,9 @@ class CmsObject extends HalcyonModel implements CmsObjectContract
     {
         $result = [];
         $instance = static::inTheme($theme);
-
+       
         if ($skipCache) {
-            $result = $instance->get();
+            $result = $instance->get();            
         } else {
             $items = $instance->newQuery()->lists('fileName');
 
@@ -180,6 +180,8 @@ class CmsObject extends HalcyonModel implements CmsObjectContract
 
         return $result;
     }
+
+    
 
     /**
      * Prepares the theme datasource for the model.
