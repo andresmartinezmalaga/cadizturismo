@@ -337,7 +337,10 @@ class CadizTurismoController extends ControllerBase
         $empresas = Empresa::All();
         $rEmpresas = collect();
         $upDate = Carbon::parse($date);
-       
+        
+        $diff = Carbon::parse("2018-04-30 18:19:49")->diffInDays(Carbon::parse("2018-05-01"),false);
+        return new JsonResponse(['data'=>$diff], 200);
+        
         foreach ($empresas as $empresa) {
              
              $diff = Carbon::parse($empresa->updated_at)->diffInDays($upDate,false);
