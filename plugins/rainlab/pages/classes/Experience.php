@@ -241,7 +241,8 @@ class Experience extends ContentBase
 
     public function getInterestsOptions() {
 
-      $intereses = Intereses::all();
+      //$intereses = Intereses::all();
+      $intereses = Intereses::orderBy('name')->get();
 
       $result = collect();
 

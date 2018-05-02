@@ -179,21 +179,18 @@
     TreeView.prototype.sendReorderRequest = function() {
         if (this.options.reorderHandler === undefined)
             return
-
         var groups = {}
-
         function iterator($container, node) {
-            $('> li', $container).each(function(){
+            $('> li', $container).each(function(){               
                 var subnodes = {}
-                iterator($('> ol', this), subnodes)
-
-                node[$(this).data('groupId')] = subnodes
-            })
+                iterator($('> ol', this), subnodes)               
+                node[$(this).data('groupId')] = subnodes 
+             })
         }
 
         iterator($('> ol', this.$el), groups)
 
-        this.$el.request(this.options.reorderHandler, {data: {structure: JSON.stringify(groups)}})
+        this.$el.request(this.options.reorderHandler, {data: {structure: JSON.stringify(groups)}})       
     }
 
     TreeView.prototype.initSortable = function() {

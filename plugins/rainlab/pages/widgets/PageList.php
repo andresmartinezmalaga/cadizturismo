@@ -57,7 +57,7 @@ class PageList extends WidgetBase
      * @return string
      */
     public function render()
-    {
+    {        
         return $this->makePartial('body', [
             'data' => $this->getData()
         ]);
@@ -68,8 +68,9 @@ class PageList extends WidgetBase
      */
 
     public function onReorder()
-    {
+    {        
         $structure = json_decode(Input::get('structure'), true);
+       
         if (!$structure) {
             throw new SystemException('Invalid structure data posted.');
         }
@@ -80,6 +81,7 @@ class PageList extends WidgetBase
 
     public function onUpdate()
     {
+
         $this->extendSelection();
 
         return $this->updateList();
@@ -99,9 +101,10 @@ class PageList extends WidgetBase
 
     protected function getData()
     {
+       
         $pageList = new StaticPageList($this->theme);
         $pages = $pageList->getPageTree(true);
-
+       
         $searchTerm = Str::lower($this->getSearchTerm());
 
         if (strlen($searchTerm)) {
@@ -127,6 +130,8 @@ class PageList extends WidgetBase
 
         return $pages;
     }
+
+    
 
     protected function getThemeSessionKey($prefix)
     {

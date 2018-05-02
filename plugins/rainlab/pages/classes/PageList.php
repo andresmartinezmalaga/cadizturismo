@@ -37,8 +37,10 @@ class PageList
      */
     public function listPages($skipCache = false)
     {
-        return Page::listInTheme($this->theme, $skipCache);
+       return Page::listInTheme($this->theme, $skipCache);
+       
     }
+    
 
     /**
      * Returns a list of top-level pages with subpages.
@@ -73,6 +75,7 @@ class PageList
                     'page'     => $pageObject,
                     'subpages' => $iterator($subpages)
                 ];
+
             }
 
             return $result;
@@ -81,6 +84,7 @@ class PageList
         return $iterator($config['static-pages']);
     }
 
+    
     /**
      * Returns the parent name of the specified page.
      * @param \Cms\Classes\Page $page Specifies a page object.
@@ -154,11 +158,13 @@ class PageList
     {
         $originalData = $this->getPagesConfig();
         $originalData['static-pages'] = $structure;
-
+       
         $yamlData = Yaml::render($originalData);
 
         $filePath = $this->getConfigFilePath();
         $dirPath = dirname($filePath);
+
+
 
         if (!file_exists($dirPath) || !is_dir($dirPath)) {
             if (!File::makeDirectory($dirPath, 0777, true, true)) {
@@ -238,6 +244,7 @@ class PageList
      */
     protected function getPagesConfig()
     {
+       
         if (self::$configCache !== false) {
             return self::$configCache;
         }
@@ -249,11 +256,13 @@ class PageList
         }
 
         $config = Yaml::parse(File::get($filePath));
+        
         if (!array_key_exists('static-pages', $config)) {
             throw new SystemException('The content of the theme meta/static-pages.yaml file is invalid: the "static-pages" root element is not found.');
         }
 
         return self::$configCache = $config;
+        
     }
 
     /**

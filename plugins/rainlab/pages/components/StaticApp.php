@@ -256,8 +256,8 @@ class StaticApp extends ComponentBase
 
      public function getInterestsOptions() {
 
-      $intereses = Intereses::all();
-
+      //$intereses = Intereses::all();
+      $intereses = Intereses::orderBy('name')->get();
       $result = collect();
 
       foreach ($intereses as $iintrs) {
@@ -288,9 +288,7 @@ class StaticApp extends ComponentBase
       foreach ($tvisitas as $itvs) {
         $result->put($itvs->id, ucwords($itvs->name));
       }
-
       return $result;
-
     }
 
     public function getStringSlugTvisit($slug){
@@ -300,7 +298,6 @@ class StaticApp extends ComponentBase
         } else {
             return null;
         }
-
     }
 
     public function getInteresesById($id) {
