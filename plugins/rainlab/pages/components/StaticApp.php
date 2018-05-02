@@ -1314,7 +1314,7 @@ class StaticApp extends ComponentBase
             $message->from($sendContact, $contactName);
             $message->to($sendTo);
             $message->subject('Tu experiencia en Cadiz Turismo');
-            $message->attachData($pdf_data, $dataexperience['title']);
+            $message->attachData($pdf_data, $dataexperience['title'].'.pdf');
 
         });
     }
