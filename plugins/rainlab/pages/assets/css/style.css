@@ -2830,7 +2830,7 @@ html, body {
     margin-top: 0px !important; }
   .ayuda-header .img-header, .static-header .img-header, .about-header .img-header {
     top: 0px !important;
-    height: 100vh !important; }
+    min-height: 100vh !important; }
   .header .mini-logo-container, .header-event .mini-logo-container, .header-experience .mini-logo-container, .header-village .mini-logo-container, .header-general .mini-logo-container, .header-ruta .mini-logo-container, .header-search .mini-logo-container {
     top: 59px !important; }
   .header .language-container, .header-event .language-container, .header-experience .language-container, .header-village .language-container, .header-general .language-container, .header-ruta .language-container, .header-search .language-container {
