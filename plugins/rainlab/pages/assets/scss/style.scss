@@ -3233,7 +3233,7 @@ html, body {
   }
 
   .static-header, .somos-section, .ayuda-header, .about-header {
-    max-height: 800px !important;
+    max-height: 720px !important;
     .tagline-container {
       bottom: 20px !important;
     }
@@ -3455,6 +3455,7 @@ html, body {
   .ayuda-header, .static-header, .about-header {
     .img-header {
       top: 0px !important;
+      height: 100vh !important;
     }
   }
   .header .mini-logo-container, .header-event .mini-logo-container, .header-experience .mini-logo-container, .header-village .mini-logo-container, .header-general .mini-logo-container, .header-ruta .mini-logo-container, .header-search .mini-logo-container {

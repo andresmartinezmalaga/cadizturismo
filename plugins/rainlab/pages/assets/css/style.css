@@ -2678,7 +2678,7 @@ html, body {
     .municipios-snippet .municipio {
       margin-right: 0px !important; }
   .static-header, .somos-section, .ayuda-header, .about-header {
-    max-height: 800px !important; }
+    max-height: 720px !important; }
     .static-header .tagline-container, .somos-section .tagline-container, .ayuda-header .tagline-container, .about-header .tagline-container {
       bottom: 20px !important; }
   .header-txt .txt .first-word, .header-village .header-txt .txt, .header-comarca .header-txt .txt {
@@ -2829,7 +2829,8 @@ html, body {
   .header-empresa {
     margin-top: 0px !important; }
   .ayuda-header .img-header, .static-header .img-header, .about-header .img-header {
-    top: 0px !important; }
+    top: 0px !important;
+    height: 100vh !important; }
   .header .mini-logo-container, .header-event .mini-logo-container, .header-experience .mini-logo-container, .header-village .mini-logo-container, .header-general .mini-logo-container, .header-ruta .mini-logo-container, .header-search .mini-logo-container {
     top: 59px !important; }
   .header .language-container, .header-event .language-container, .header-experience .language-container, .header-village .language-container, .header-general .language-container, .header-ruta .language-container, .header-search .language-container {
