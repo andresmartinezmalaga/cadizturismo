@@ -340,7 +340,7 @@ class CadizTurismoController extends ControllerBase
        
         foreach ($empresas as $empresa) {
              
-             $diff = $empresa->updated_at->diffInDays($upDate,false);
+             $diff = Carbon::parse($empresa->updated_at)->diffInDays($upDate,false);
 
              if($diff<1){
                  return new JsonResponse(['data'=>['upDate'=>$upDate,'diff'=>$diff,'empresa'=>$empresa]], 200);
