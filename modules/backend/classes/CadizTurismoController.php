@@ -342,7 +342,7 @@ class CadizTurismoController extends ControllerBase
              
              $diff = $empresa->updated_at->diffInDays($upDate,false);
 
-             return new JsonResponse(['data'=>[$diff,$empresa->name,$empresa->updated_at], 200);
+             return new JsonResponse(['data'=>[$diff,$empresa->name,$empresa->updated_at]], 200);
 
              if($diff<1){
                   $rEmpresas->push($empresa);
