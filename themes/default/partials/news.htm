@@ -21,7 +21,8 @@
 			<h6 class="publi-title">{{new.viewBag.title}}</h6>
 
 			{%set date = new.viewBag.date|split(' ') %}
-			<p class="publi-source">{{new.viewBag.media}} | {{date[0]}}</p>
+			{%set ddate = date[0]|split('-') %}
+			<p class="publi-source">{{new.viewBag.media}} | {{ddate[2]}}.{{ddate[1]}}.{{ddate[0]|slice(2, 2)}}</p>
 			<div class="links-container">
 				<a class="download-link" href="{{new.viewBag.urlExternaZip}}">{{'Descargar pdf'|_}} <img src="{{preurl}}/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt="" class="fr-fic fr-dii">&nbsp;</a>
 			</div>
