@@ -369,8 +369,7 @@ class CadizTurismoController extends ControllerBase
              }
         }
        
-        $result = $this->empresasGetMltg($rEmpresas);
-        return new JsonResponse(['data'=>$result], 200);
+        return new JsonResponse(['data'=>$rEmpresas], 200);
     }
 
     public function empresaShowByNameSlug ($nameslug,$lang) {
