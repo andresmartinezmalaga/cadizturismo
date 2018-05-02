@@ -334,23 +334,17 @@ class CadizTurismoController extends ControllerBase
     }
 
     public function empresasListByUpdated($date){
+        
         $empresas = Empresa::All();
         $rEmpresas = collect();
         $upDate = Carbon::parse($date);
-        
-        //$diff = Carbon::parse("2018-04-30 18:19:49")->diffInDays(Carbon::parse("2018-05-01"),false);
-        //return new JsonResponse(['data'=>$diff], 200);
-
         foreach ($empresas as $empresa) {
-             
-             //$diff = Carbon::parse($empresa->updated_at)->diffInDays(Carbon::parse($upDate),false);
 
             $timeFirst  = strtotime(Carbon::parse($empresa->updated_at));
             $timeSecond = strtotime(Carbon::parse($upDate));            
             $diff = $timeSecond - $timeFirst;
-            
-             if($diff<0){
-                 //return new JsonResponse(['data'=>['upDate'=>$upDate,'diff'=>$diff,'empresa'=>$empresa]], 200);
+
+             if($diff<0){                
                   $rEmpresas->push($empresa);
              }
         }
@@ -359,8 +353,24 @@ class CadizTurismoController extends ControllerBase
         return new JsonResponse(['data'=>$result], 200);
     }
 
-    public function empresasDeleteList(){
-         return Empresad::All();
+    public function empresasDeleteList($date){
+
+        $empresas = Empresad::All();
+        $rEmpresas = collect();
+        $upDate = Carbon::parse($date);
+        foreach ($empresas as $empresa) {
+
+            $timeFirst  = strtotime(Carbon::parse($empresa->updated_at));
+            $timeSecond = strtotime(Carbon::parse($upDate));            
+            $diff = $timeSecond - $timeFirst;
+
+             if($diff<0){                
+                  $rEmpresas->push($empresa);
+             }
+        }
+       
+        $result = $this->empresasGetMltg($rEmpresas);
+        return new JsonResponse(['data'=>$result], 200);
     }
 
     public function empresaShowByNameSlug ($nameslug,$lang) {

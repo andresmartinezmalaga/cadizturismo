@@ -54,7 +54,7 @@ Route::get('/api/estaticas', 'Backend\Classes\CadizTurismoController@statics');
 // Andrés Martínez : routes empresas //todos-los-tipos/todos-los-municipios = All
 
 // Find empresas borradas
-Route::get('/api/empresas/borradas', 'Backend\Classes\CadizTurismoController@empresasDeleteList');
+Route::get('/api/empresas/borradas/{date}', 'Backend\Classes\CadizTurismoController@empresasDeleteList');
 
     // Find empresas by update_at en adelante de dada fecha
 Route::get('/api/empresas/fecha/modificacion/{date}', 'Backend\Classes\CadizTurismoController@empresasListByUpdated');
