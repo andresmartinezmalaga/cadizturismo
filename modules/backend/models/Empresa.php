@@ -5,7 +5,7 @@ use Event;
 use Backend;
 use Model;
 use \Backend\Models\Tipo;
-use \Backend\Models\CatAlminar:
+use \Backend\Models\CatAlminar;
 use Illuminate\Http\JsonResponse;
 use \Backend\Models\Empresad;
 /**
