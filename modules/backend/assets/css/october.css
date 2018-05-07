@@ -5678,6 +5678,7 @@ div[data-control="media-manager"] .media-list.tiles li.selected .icon-container 
   display: inline-block !important; }
 
 .floatJuan #select2-Form-field-Empresa-type_id-container, .floatJuan #select2-Form-field-Empresa-municipality-container, .floatJuan #select2-Form-field-Tipo-category-container, .floatJuan #select2-Form-field-Empresa-catAlminar-container {
+  text-transform: capitalize;
   color: #818181 !important;
   padding-top: 6px !important; }
 
