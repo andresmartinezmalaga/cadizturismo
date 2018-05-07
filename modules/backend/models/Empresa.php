@@ -60,7 +60,7 @@ class Empresa extends Model
 
     public $belongsTo = [
         'type' => \Backend\Models\Tipo::class,
-        'alminar' => \Backend\Models\CatAlminar::class
+        'alminar' => [\Backend\Models\CatAlminar::class,'key'=>'catAlminar']
     ];
 
     public $attachOne = [
