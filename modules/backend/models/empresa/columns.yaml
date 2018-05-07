@@ -14,6 +14,12 @@ columns:
         select: name
         searchable: true
 
+    catAlminar:
+        label: Tipo Alminar
+        relation: type
+        select: nivel2
+        searchable: true
+
     municipality:
         label: Ubicación
         searchable: true
