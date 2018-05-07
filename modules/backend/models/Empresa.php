@@ -101,7 +101,7 @@ class Empresa extends Model
 
         $rtipos = collect() ;
 
-        $tipos = CatAlminar::all();
+        $tipos = Tipos::all();
        
         foreach ($tipos as $key => $value) {            
             $rtipos->put($value->id,$value->name);
@@ -115,7 +115,7 @@ class Empresa extends Model
 
         $rtipos = collect() ;
 
-        $tipos = Tipo::all();
+        $tipos = CatAlminar::all();
        
         foreach ($tipos as $key => $value) {            
             $rtipos->put($value->id,$value->name);
