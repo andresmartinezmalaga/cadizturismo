@@ -125,8 +125,6 @@ class Empresa extends Model
 
     }
 
-    getCatAlminar
-
     public function getMunicipalities(){
         return [
         'alcalá de los gazules' => 'Alcalá de los Gazules',
