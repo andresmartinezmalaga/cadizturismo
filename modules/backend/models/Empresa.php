@@ -5,6 +5,7 @@ use Event;
 use Backend;
 use Model;
 use \Backend\Models\Tipo;
+use \Backend\Models\CatAlminar:
 use Illuminate\Http\JsonResponse;
 use \Backend\Models\Empresad;
 /**
@@ -100,6 +101,20 @@ class Empresa extends Model
 
         $rtipos = collect() ;
 
+        $tipos = CatAlminar::all();
+       
+        foreach ($tipos as $key => $value) {            
+            $rtipos->put($value->id,$value->name);
+        }
+       
+        return $rtipos;
+
+    }
+
+    public function getCatAlminar() {
+
+        $rtipos = collect() ;
+
         $tipos = Tipo::all();
        
         foreach ($tipos as $key => $value) {            
@@ -109,6 +124,8 @@ class Empresa extends Model
         return $rtipos;
 
     }
+
+    getCatAlminar
 
     public function getMunicipalities(){
         return [

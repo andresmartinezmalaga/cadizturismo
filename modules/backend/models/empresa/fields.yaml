@@ -25,10 +25,16 @@ fields:
         label: Destacado
 
     type_id:
-        span: full
+        span: left
         label: Tipo
         type: dropdown
         options: getTiposEmpresas
+
+    catAlminar:
+        span: right
+        label: Tipo
+        type: dropdown
+        options: getCatAlminar
 
     email:
         span: left
