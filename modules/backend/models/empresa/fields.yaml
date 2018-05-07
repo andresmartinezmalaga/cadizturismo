@@ -32,7 +32,7 @@ fields:
 
     catAlminar:
         span: right
-        label: Tipo
+        label: Tipo Alminar
         type: dropdown
         options: getCatAlminar
 
