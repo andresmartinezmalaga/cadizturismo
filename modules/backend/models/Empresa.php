@@ -59,7 +59,8 @@ class Empresa extends Model
     ];
 
     public $belongsTo = [
-        'type' => \Backend\Models\Tipo::class
+        'type' => \Backend\Models\Tipo::class,
+        'alminar' => \Backend\Models\CatAlminar::class
     ];
 
     public $attachOne = [

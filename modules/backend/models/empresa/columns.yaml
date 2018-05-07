@@ -16,7 +16,7 @@ columns:
 
     catAlminar:
         label: Tipo Alminar
-        relation: type
+        relation: alminar
         select: nivel2
         searchable: true
 
