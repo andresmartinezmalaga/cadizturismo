@@ -101,10 +101,10 @@ class Empresa extends Model
 
         $rtipos = collect() ;
 
-        $tipos = Tipos::all();
+        $tipos = Tipo::all();
        
         foreach ($tipos as $key => $value) {            
-            $rtipos->put($value->id,$value->name);
+            $rtipos->put($value->id,$value->nivel2);
         }
        
         return $rtipos;
