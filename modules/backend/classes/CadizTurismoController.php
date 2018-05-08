@@ -349,7 +349,7 @@ class CadizTurismoController extends ControllerBase
             if($diff<0){
                 $catalm = CatAlminar::where('id',$empresa->catAlminar)->first();
                 $tipo = Tipo::where('id',$empresa->type_id)->first();
-                $empresa->nivel2 = $catAlminar->nivel2;
+                $empresa->nivel2 = $catalm->nivel2;
                 $empresa->tipo = $tipo->name;
                 $rEmpresas->push($empresa);
              }
