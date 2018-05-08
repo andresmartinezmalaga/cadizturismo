@@ -528,7 +528,7 @@ class CadizTurismoController extends ControllerBase
         $empresas = Empresad::All();
         
         foreach ($empresas as $empresa) {
-            if($empresa->slug == '' ||  $empresa->slug == 'NULL'){
+            if($empresa->slug == '' ||  $empresa->slug == null){
                 $empresa->slug = str_slug($empresa->slug,'-');
                 $empresa->save();
             }       
