@@ -531,7 +531,11 @@ class CadizTurismoController extends ControllerBase
             if($empresa->slug == '' ||  $empresa->slug == NULL){
                 $empresa->slug = str_slug($empresa->name,'-');
                 $empresa->save();
-            }       
+            }
+            if($empresa->mslug == '' ||  $empresa->mslug == NULL){
+                $empresa->mslug = str_slug($empresa->municipality,'-');
+                $empresa->save();
+            }        
         }
 
         return new JsonResponse(['data'=>'sluging ok'], 200);  
