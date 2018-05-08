@@ -523,4 +523,17 @@ class CadizTurismoController extends ControllerBase
         return new JsonResponse(['data'=> $ctvs], 200);  
     }
 
+    public function sluging(){
+
+        $empresas = Empresad::All();
+        
+        foreach ($empresas as $empresa) {
+            if($empresa->slug == '' ||  $empresa->slug == NULL){
+                $empresa->slug = str_slug($empresa->slug,'-');
+                $empresa->save();
+            }       
+        }
+    }
+
+
 }
