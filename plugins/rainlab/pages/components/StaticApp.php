@@ -194,9 +194,7 @@ class StaticApp extends ComponentBase
         'villaluenga del rosario' => 'Villaluenga del Rosario',
         'villamartín' => 'Villamartín',
         'zahara de la sierra' => 'Zahara de la Sierra',
-        'zahara de los atunes (barbate)' => 'Zahara de los Atunes (Barbate)',
-        'zahara de los atunes (Tarifa)' => 'Zahara de los Atunes (Tarifa)',
-        'caños de meca' => 'Caños de Meca'
+        'zahara de los atunes' => 'Zahara de los Atunes'
         ];
     }
 
