@@ -82,6 +82,7 @@ is_hidden = 0
 
         $this['numPag'] = ceil($this->staticApp->empresasFindCount($this->param('type'),$this->param('location'),$this->param('search'))/$this['numberReg']);
         $this['empresas'] = $this->staticApp->empresasFindPag($this->param('type'),$this->param('location'),$this->param('search'), $this['startPag'],$this['numberReg']);
+        $this['empcount'] = $this->staticApp->empresasFindCount($this->param('type'),$this->param('location'),$this->param('search'));
 
         return [
             '#prtlEmpresasl' => $this->renderPartial('empresas'),
