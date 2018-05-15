@@ -63,8 +63,8 @@ is_hidden = 0
     $this['startPag'] = 1;
     $this['numberReg'] = 9;
 
-    $this['empresas'] = $this->staticApp->empresasFindPag($type,$ubicacion,$search,$this['startPag'],$this['numberReg']);
-
+    $this['empresas'] = $this->staticApp->empresasFindPag($type,$ubicacion,$search,$this['startPag'],$this['numberReg']);   
+    $this['empcount'] = $this->staticApp->empresasFindCount($type, $ubicacion, $search);
     $this['numPag'] = ceil($this->staticApp->empresasFindCount($type,$ubicacion,$search)/$this['numberReg']);
 
     return [
