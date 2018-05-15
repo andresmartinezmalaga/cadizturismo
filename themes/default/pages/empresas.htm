@@ -55,7 +55,7 @@ is_hidden = 0
             $search = str_replace(' ','_',$psearch);
         }
 
-        $empcount = $this->staticApp->empresasFindCount($type, $ubicacion, $search)
+        $empcount = $this->staticApp->empresasFindCount($type, $ubicacion, $search);
       	$empresas = $this->staticApp->empresasFindPag($type,$ubicacion,$search,1,9);
 
       	return Redirect::to($aLang.'/listado-de-empresas/'.$type.'/'.$ubicacion.'/'.$search);
