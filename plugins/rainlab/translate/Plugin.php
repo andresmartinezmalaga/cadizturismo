@@ -102,22 +102,22 @@ class Plugin extends PluginBase
 
     public function registerComponents()
     {
-        return [
-           'RainLab\Translate\Components\LocalePicker' => 'localePicker',
-           'RainLab\Translate\Components\AlternateHrefLangElements' => 'alternateHrefLangElements'
+        return [           
+           'RainLab\Translate\Components\AlternateHrefLangElements' => 'alternateHrefLangElements',
+           'RainLab\Translate\Components\LocalePicker' => 'localePicker'
         ];
     }
 
     public function registerPermissions()
     {
         return [
-            'rainlab.translate.manage_locales'  => [
-                'tab'   => 'rainlab.translate::lang.plugin.tab',
-                'label' => 'rainlab.translate::lang.plugin.manage_locales'
-            ],
             'rainlab.translate.manage_messages' => [
                 'tab'   => 'rainlab.translate::lang.plugin.tab',
                 'label' => 'rainlab.translate::lang.plugin.manage_messages'
+            ],
+             'rainlab.translate.manage_locales'  => [
+                'tab'   => 'rainlab.translate::lang.plugin.tab',
+                'label' => 'rainlab.translate::lang.plugin.manage_locales'
             ]
         ];
     }
@@ -125,15 +125,6 @@ class Plugin extends PluginBase
     public function registerSettings()
     {
         return [
-            'locales' => [
-                'label'       => 'rainlab.translate::lang.locale.title',
-                'description' => 'rainlab.translate::lang.plugin.description',
-                'icon'        => 'icon-language',
-                'url'         => Backend::url('rainlab/translate/locales'),
-                'order'       => 550,
-                'category'    => 'rainlab.translate::lang.plugin.name',
-                'permissions' => ['rainlab.translate.manage_locales']
-            ],
             'messages' => [
                 'label'       => 'rainlab.translate::lang.messages.title',
                 'description' => 'rainlab.translate::lang.messages.description',
@@ -142,6 +133,15 @@ class Plugin extends PluginBase
                 'order'       => 551,
                 'category'    => 'rainlab.translate::lang.plugin.name',
                 'permissions' => ['rainlab.translate.manage_messages']
+            ],
+            'locales' => [
+                'label'       => 'rainlab.translate::lang.locale.title',
+                'description' => 'rainlab.translate::lang.plugin.description',
+                'icon'        => 'icon-language',
+                'url'         => Backend::url('rainlab/translate/locales'),
+                'order'       => 550,
+                'category'    => 'rainlab.translate::lang.plugin.name',
+                'permissions' => ['rainlab.translate.manage_locales']
             ]
         ];
     }
