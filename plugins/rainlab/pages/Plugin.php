@@ -66,12 +66,12 @@ class Plugin extends PluginBase
                 'label' => 'rainlab.pages::lang.event.manage_pages'
                 ],
             'rainlab.pages.manage_rutas' => [
-                'tab'   => 'rainlab.pages::lang.event.tab',
+                'tab'   => 'rutas',
                 'order' => 200,
-                'label' => 'rainlab.pages::lang.event.manage_pages'
+                'label' => 'Administrar rutas'
                 ],
             'rainlab.pages.manage_content' => [
-                'tab'   => 'rainlab.pages::lang.page.tab',
+                'tab'   => 'Administrar contenido',
                 'order' => 200,
                 'label' => 'rainlab.pages::lang.page.manage_content'
                 ],

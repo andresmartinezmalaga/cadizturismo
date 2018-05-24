@@ -3,7 +3,8 @@
     $mySettings = System\Classes\SettingsManager::instance()->listItems('mysettings');
     $navbarMode = Backend\Models\BrandSetting::get('menu_mode', 'inline');
     use Backend\Models\UserRole as RoleBase;
-    $arole = RoleBase::findOrFail($this->user->role_id);
+    $prole = RoleBase::findOrFail($this->user->role_id);
+    $arole = $prole->code;
 ?>
 
 <nav class="navbar control-toolbar navbar-mode-<?= $navbarMode ?>" id="layout-mainmenu" role="navigation">
@@ -172,7 +173,7 @@
                         </span>
 
                         <span class="nav-label">
-                            Traducciones <?php echo $arole->code ?>
+                            Traducciones
                         </span>
                     </a>
                 </li>
