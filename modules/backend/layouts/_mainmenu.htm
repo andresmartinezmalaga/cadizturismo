@@ -2,6 +2,8 @@
     $activeItem = BackendMenu::getActiveMainMenuItem();
     $mySettings = System\Classes\SettingsManager::instance()->listItems('mysettings');
     $navbarMode = Backend\Models\BrandSetting::get('menu_mode', 'inline');
+    use October\Rain\Auth\Models\Role as RoleBase;
+    $arole = RoleBase::findOrFail(2);
 ?>
 
 <nav class="navbar control-toolbar navbar-mode-<?= $navbarMode ?>" id="layout-mainmenu" role="navigation">
@@ -170,7 +172,7 @@
                         </span>
 
                         <span class="nav-label">
-                            Traducciones <?php echo $this->user ?>
+                            Traducciones <?php echo $arole ?>
                         </span>
                     </a>
                 </li>
