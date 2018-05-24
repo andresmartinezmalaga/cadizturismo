@@ -45,21 +45,24 @@
                                                 
                         <?php if( trim(trans($item->label)) == 'Contenido' ){ ?>
                             
-                            <li class="svg-icon-container svg-active-effects">
-                                <a href="/backend/backend/home/update/1">
-                                    <span class="nav-icon">
-                                        <?php if ($item->iconSvg): ?>
-                                            <img class="svg-icon" src="<?= config('app.urlApp') ?>modules/system/assets/images/home.svg">
-                                        <?php endif ?>
+                            <?php } if ( $this->user->is_superuser == 1 || $arole =='publisher'){?>
+                                <li class="svg-icon-container svg-active-effects">
+                                    <a href="/backend/backend/home/update/1">
+                                        <span class="nav-icon">
+                                            <?php if ($item->iconSvg): ?>
+                                                <img class="svg-icon" src="<?= config('app.urlApp') ?>modules/system/assets/images/home.svg">
+                                            <?php endif ?>
 
-                                        <i class="<?= $item->iconSvg ? 'svg-replace' : null ?> <?= $item->icon ?>"></i>
-                                    </span>
+                                            <i class="<?= $item->iconSvg ? 'svg-replace' : null ?> <?= $item->icon ?>"></i>
+                                        </span>
 
-                                    <span class="nav-label">
-                                        Home                                       
-                                    </span>
-                                </a>
-                            </li>
+                                        <span class="nav-label">
+                                            Home                                       
+                                        </span>
+                                    </a>
+                                </li>
+
+                            <?php } ?>
 
                         <?php } ?>
                         
@@ -162,22 +165,24 @@
                      <?php endif ?>
 
                 <?php endforeach ?>
+                
+                <?php } if ( $this->user->is_superuser == 1 || $arole =='publisher'){?>
+                    <li class="svg-icon-container svg-active-effects">
+                        <a href="/backend/rainlab/translate/messages">
+                            <span class="nav-icon">
+                                <?php if ($item->iconSvg): ?>
+                                    <img class="svg-icon" src="<?= config('app.urlApp') ?>modules/system/assets/images/traducciones.svg">
+                                <?php endif ?>
 
-               <li class="svg-icon-container svg-active-effects">
-                    <a href="/backend/rainlab/translate/messages">
-                        <span class="nav-icon">
-                            <?php if ($item->iconSvg): ?>
-                                <img class="svg-icon" src="<?= config('app.urlApp') ?>modules/system/assets/images/traducciones.svg">
-                            <?php endif ?>
+                                <i class="<?= $item->iconSvg ? 'svg-replace' : null ?> <?= $item->icon ?>"></i>
+                            </span>
 
-                            <i class="<?= $item->iconSvg ? 'svg-replace' : null ?> <?= $item->icon ?>"></i>
-                        </span>
-
-                        <span class="nav-label">
-                            Traducciones
-                        </span>
-                    </a>
-                </li>
+                            <span class="nav-label">
+                                Traducciones
+                            </span>
+                        </a>
+                    </li>
+                <?php } ?>
             </ul>
         </div>
     </div>
