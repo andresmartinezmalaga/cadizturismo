@@ -6,7 +6,8 @@ use BackendMenu;
 use Backend\Classes\Controller;
 use Backend\Widgets\ReportContainer;
 use Backend;
-
+use Backend\Models\UserRole as RoleBase;
+   
 /**
  * Dashboard controller
  *
@@ -72,9 +73,12 @@ class Index extends Controller
      */
     protected function checkPermissionRedirect()
     {
+        $prole = RoleBase::findOrFail($this->user->role_id);
+        $arole = $prole->code;
+
         //if (!$this->user->hasAccess('backend.access_dashboard') || $this->user->login != 'Roberto_cadiz') {
         // Andrés Martínez : redirect to contenido whe no super admin
-        if ($this->user->login != 'Roberto_cadiz' && $this->user->login != 'admin') {
+        if ($this->user->login != 'Roberto_cadiz' && $this->user->login != 'admin' && $arole == 'publisher') {
             /*$true = function () { return true; };
             if ($first = array_first(BackendMenu::listMainMenuItems(), $true)) {
                 return Redirect::intended($first->url);
