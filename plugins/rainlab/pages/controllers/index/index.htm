@@ -1,10 +1,10 @@
-
+------------------------
 <?= Block::put('sidepanel') ?>
     <?php if (!$this->fatalError): ?>
         <?= $this->makePartial('sidepanel') ?>
     <?php endif ?>
 <?= Block::endPut() ?>
-
+------------------------
 <?= Block::put('body') ?>
     <?php if (!$this->fatalError): ?>
         <div
@@ -24,7 +24,8 @@
             </div>
             <div class="tab-content layout-row">
             </div>
-
+------------------------
+------------------------
         </div>
 
     <?php else: ?>
@@ -32,12 +33,15 @@
     <?php endif ?>
 <?= Block::endPut() ?>
 
-
+------------------------
+------------------------
 <script>
     $(document).ready(function() {
        
         console.log('entra aki 33');
         console.log($('.nav'));
+
+
 
         alert('kuku')
 
