@@ -56,17 +56,17 @@ class Plugin extends PluginBase
                 'label' => 'rainlab.pages::lang.page.manage_menus'
                 ],
             'rainlab.pages.manage_experiences' => [
-                'tab'   => 'rainlab.pages::lang.experience.tab',
+                'tab'   => 'Experiencias',
                 'order' => 200,
                 'label' => 'rainlab.pages::lang.experience.manage_pages'
                 ],
             'rainlab.pages.manage_eventos' => [
-                'tab'   => 'rainlab.pages::lang.event.tab',
+                'tab'   => 'Eventos',
                 'order' => 200,
                 'label' => 'rainlab.pages::lang.event.manage_pages'
                 ],
             'rainlab.pages.manage_rutas' => [
-                'tab'   => 'rutas',
+                'tab'   => 'Rutas',
                 'order' => 200,
                 'label' => 'Administrar rutas'
                 ],
@@ -76,9 +76,9 @@ class Plugin extends PluginBase
                 'label' => 'rainlab.pages::lang.page.manage_content'
                 ],
             'rainlab.pages.manage_home' => [
-                'tab'   => 'rainlab.pages::lang.home.tab',
+                'tab'   => 'Home',
                 'order' => 200,
-                'label' => 'rainlab.pages::lang.page.manage_content'
+                'label' => 'Administrar Home'
                 ],
         ];
     }
