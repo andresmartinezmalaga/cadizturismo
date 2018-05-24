@@ -44,7 +44,7 @@
                         <!-- and $this->user->is_superuser == 1 -->
                                                 
                         <?php if( trim(trans($item->label)) == 'Contenido' ){ ?>                            
-                            <?php } if ( $this->user->is_superuser == 1 || $arole =='publisher'){?>
+                            <?php if ( $this->user->is_superuser == 1 || $arole =='publisher'){?>
                                 <li class="svg-icon-container svg-active-effects">
                                     <a href="/backend/backend/home/update/1">
                                         <span class="nav-icon">
@@ -163,7 +163,7 @@
 
                 <?php endforeach ?>
                 
-                <?php } if ( $this->user->is_superuser == 1 || $arole =='publisher'){?>
+                <?php if ( $this->user->is_superuser == 1 || $arole =='publisher'){?>
                     <li class="svg-icon-container svg-active-effects">
                         <a href="/backend/rainlab/translate/messages">
                             <span class="nav-icon">
