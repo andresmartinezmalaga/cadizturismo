@@ -11,9 +11,9 @@
  * - Sortable (jquery-sortable.js)
  */
 +function ($) { "use strict";
- console.log('entra en el ultimo paso');
+
     var SimpleList = function (element, options) {
-         console.log('entra en el ultimo paso');
+
         var $el = this.$el = $(element)
 
         this.options = options || {}
@@ -53,7 +53,6 @@
     var old = $.fn.simplelist
 
     $.fn.simplelist = function (option) {
-         console.log('entra en el ultimo paso');
         return this.each(function () {
             var $this = $(this)
             var data  = $this.data('oc.simplelist')
@@ -68,7 +67,6 @@
     // =================
 
     $.fn.simplelist.noConflict = function () {
-         console.log('entra en el ultimo paso');
         $.fn.simplelist = old
         return this
     }
@@ -77,7 +75,6 @@
     // ===============
 
     $(document).render(function(){
-         console.log('entra en el ultimo paso');
         $('[data-control="simplelist"]').simplelist()
     })
 
