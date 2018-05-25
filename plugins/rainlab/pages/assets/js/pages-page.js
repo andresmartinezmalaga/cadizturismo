@@ -120,11 +120,11 @@ $( document ).ready(function() {
             //console.log(y);
              //console.log(w);
              
-        console.log('jq on $, ok334');
+        console.log('jq on $, ok336');
         
         
 
-        $(z).click(function() {
+        $(z).on('click',function() {
           console.log('toma ya');
         });
 
