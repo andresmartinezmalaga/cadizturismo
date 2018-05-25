@@ -49,8 +49,8 @@
 
         this.$el.one('dispose-control', this.proxy(this.dispose))
 
-        var z = $('.nav li a')[0];
-        $(z).click();
+        var zz = $('.nav li a')[0];
+        $(zz).click();
     }
 
     DateTimeConverter.prototype.initDefaults = function() {
