@@ -1297,4 +1297,7 @@ if(!!window.MSInputMethodContext&&!!document.documentMode){$(window).on('resize'
 fixSidebar()})
 function fixMediaManager(){var $el=$('div[data-control="media-manager"] .control-scrollpad')
 $el.height($el.parent().height())}
-function fixSidebar(){$('#layout-sidenav').height(Math.max($('#layout-body').innerHeight(),$(window).height()-$('#layout-mainmenu').height()))}}
+function fixSidebar(){$('#layout-sidenav').height(Math.max($('#layout-body').innerHeight(),$(window).height()-$('#layout-mainmenu').height()))}
+ console.log('entra en el ultimo paso KUKU');
+}
+ console.log('entra en el ultimo paso KUKU33');
