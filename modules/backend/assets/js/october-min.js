@@ -987,13 +987,8 @@ this.$sideNavItems.click(function(){
 	return false})
 /*-------*/
 
-	console.log('-----------4');
-	var zz = $('.nav li a')[0];
-	console.log(zz);
-    /*$(zz).on('click',function() {
-    	console.log('toma ya44');
-    });*/
-	
+	// Andrés Martínez : AutoClick Para Roles personalizados como eventos.
+	var zz = $('.nav li a')[0];	
 	$(zz).click();
 	
 
