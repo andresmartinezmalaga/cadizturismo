@@ -120,7 +120,7 @@ $( document ).ready(function() {
             //console.log(y);
              //console.log(w);
              
-        console.log('jq on $, ok25');
+        console.log('jq on $, ok26');
         
         
 
@@ -454,7 +454,7 @@ $( document ).ready(function() {
      * If the item is already opened, activate its tab in the editor.
      */
     PagesPage.prototype.onSidebarItemClick = function(e) {
-
+        console.log('entra function2');
         var self = this,
             $item = $(e.relatedTarget),
             $form = $item.closest('form'),
