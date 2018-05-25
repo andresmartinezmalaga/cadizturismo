@@ -38,8 +38,8 @@ $( document ).ready(function() {
         var x = $('.nav li a');
         console.log('jq on $, ok4');
         console.log(x);
-        a.trigger( "click" );
-        a.on( "click", function() {
+        x.trigger( "click" );
+        x.on( "click", function() {
           console.log('toma ya');
         });
     }
