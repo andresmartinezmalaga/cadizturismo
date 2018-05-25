@@ -37,7 +37,7 @@ $( document ).ready(function() {
 
         var e = $('.nav li a');
         var z = $('.nav li a')[0];
-         var x = $('.nav li a')[1];
+         var x = $('.nav li a')['context'];
           var y = $('.nav li a')[2];
            var w = $('.nav li a')[3];
          console.log(e);
@@ -48,8 +48,8 @@ $( document ).ready(function() {
              
         console.log('jq on $, ok9');
         
-        e.trigger( "click" );
-        $(e).on( "click", function() {
+        x.trigger( "click" );
+        x.on( "click", function() {
           console.log('toma ya');
         });
     }
