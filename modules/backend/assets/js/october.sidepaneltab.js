@@ -31,6 +31,7 @@
         $('.fix-button-container', this.$el).append(this.$fixButton)
 
         this.$sideNavItems.click(function() {
+            console.log('toka toka2');
             if ($(this).data('no-side-panel')) {
                 return
             }

@@ -48,6 +48,7 @@
 
         this.$list.on('click', function() {
             /* Do not handle menu item clicks while dragging */
+            console.log('toka toka1');
             if (self.$list.hasClass('drag')) {
                 return false
             }

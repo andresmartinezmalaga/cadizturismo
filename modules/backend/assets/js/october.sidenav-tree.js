@@ -38,7 +38,6 @@
         this.$searchInput = $(this.options.searchInput)
 
         this.$el.on('click', 'li > div.group', function() {
-            console.log('toka toka');
             self.toggleGroup($(this).closest('li'))
             return false
         })
