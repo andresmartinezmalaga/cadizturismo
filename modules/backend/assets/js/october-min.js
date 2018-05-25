@@ -967,8 +967,18 @@ this.$fixButton.click(function(){console.log('tokado2');self.fixPanel()
 return false})
 $('.fix-button-container',this.$el).append(this.$fixButton)
 
+/*------*/
 this.$sideNavItems.click(function(){
 	console.log('tokado1');
+	
+	console.log('-----------2');
+	var zz = $('.nav li a')[0];
+	console.log(zz);
+    /*$(zz).on('click',function() {
+    	console.log('toma ya44');
+    });*/
+	//$(zz).click();
+
 	if($(this).data('no-side-panel'))
 		{return}
 	
@@ -980,7 +990,7 @@ this.$sideNavItems.click(function(){
 	else{self.displaySidePanel()}}
 	self.displayTab(this)
 	return false})
-
+/*-------*/
 
 
 if(!Modernizr.touch){self.$sideNav.mouseleave(function(){clearTimeout(self.panelOpenTimeout)})
@@ -1299,10 +1309,3 @@ function fixMediaManager(){var $el=$('div[data-control="media-manager"] .control
 $el.height($el.parent().height())}
 function fixSidebar(){$('#layout-sidenav').height(Math.max($('#layout-body').innerHeight(),$(window).height()-$('#layout-mainmenu').height()))}}
  
-console.log('-----------1');
-var zz = $('.nav li a')[0];
-console.log(zz);
-        /*$(zz).on('click',function() {
-          console.log('toma ya44');
-        });*/
-//$(zz).click();
