@@ -27,6 +27,8 @@
  *
  */
 +function ($) { "use strict";
+    
+    
     var Base = $.oc.foundation.base,
         BaseProto = Base.prototype
 
@@ -43,6 +45,7 @@
     DateTimeConverter.prototype.constructor = DateTimeConverter
 
     DateTimeConverter.prototype.init = function() {
+        
         this.initDefaults()
 
         this.$el.text(this.getDateTimeValue())

@@ -30,7 +30,7 @@
 
     SidenavTree.prototype.init = function (){
         var self = this
-
+        
         $(document.body).addClass('has-sidenav-tree')
 
         this.statusCookieName = this.options.treeName + 'groupStatus'
