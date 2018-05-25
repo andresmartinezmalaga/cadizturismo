@@ -62,6 +62,7 @@
         })
 
         this.wrapper.click(function() {
+            console.log('toka tokaHHHHHH');
             if (self.body.hasClass(self.options.bodyMenuOpenClass)) {
                 closeMenu()
                 return false
