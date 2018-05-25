@@ -36,10 +36,10 @@ $( document ).ready(function() {
         console.log(this.masterTabsObj);
 
         var x = $('.nav li a');
-        console.log('jq on $, ok3');
+        console.log('jq on $, ok4');
         console.log(x);
-        $(x).trigger( "click" );
-        $(x).on( "click", function() {
+        a.trigger( "click" );
+        a.on( "click", function() {
           console.log('toma ya');
         });
     }
