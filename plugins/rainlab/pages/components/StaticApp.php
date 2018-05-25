@@ -1208,7 +1208,6 @@ class StaticApp extends ComponentBase
           font-weight: 500;
           text-transform: uppercase;
           width: 100% !important;
-          margin-top: 50px;
         }
 
         .header-event {
@@ -1219,6 +1218,7 @@ class StaticApp extends ComponentBase
         h1 {
           width: 100%;
           text-align: center;
+          margin-top: 70px;
         }
         .header-experience {
           width: 100%;
