@@ -1197,7 +1197,6 @@ class StaticApp extends ComponentBase
             width: 100%;
             object-fit: cover !important;
             object-position: center !important;
-            height: 700px !important;
             text-align: center !important;
           }
 
