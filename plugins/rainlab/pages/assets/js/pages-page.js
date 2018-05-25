@@ -39,7 +39,7 @@ $( document ).ready(function() {
         console.log('jq on $, ok6');
         console.log(x);
         $(x).click();
-        x.on( "click", function() {
+        $(x).on( "click", function() {
           console.log('toma ya');
         });
     }
