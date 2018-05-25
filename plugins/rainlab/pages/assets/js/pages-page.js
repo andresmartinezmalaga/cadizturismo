@@ -120,7 +120,7 @@ $( document ).ready(function() {
             //console.log(y);
              //console.log(w);
              
-        console.log('jq on $, ok24');
+        console.log('jq on $, ok25');
         
         
 
@@ -515,6 +515,7 @@ $( document ).ready(function() {
      * Triggered when the Add button is clicked on the sidebar
      */
     PagesPage.prototype.onCreateObject = function(e) {
+        console.log('esta funcion1');
         var self = this,
             $button = $(e.target),
             $form = $button.closest('form'),
