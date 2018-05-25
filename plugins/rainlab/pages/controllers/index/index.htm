@@ -31,3 +31,26 @@
         <p class="flash-message static error"><?= e(trans($this->fatalError)) ?></p>
     <?php endif ?>
 <?= Block::endPut() ?>
+
+
+<script>
+       
+    (function() {
+        console.log('prueba')
+        // Load the script
+        var sscript = document.createElement("SCRIPT");
+        //script.src = 'https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js';
+        sscript.type = 'text/javascript';
+        sscript.onload = function() {
+            var $jq = window.jQuery;
+            var x = $jq('li.active').find('a');
+            console.log('jq on $, ok');
+            console.log(x);
+        };
+        document.getElementsByTagName("head")[0].appendChild(sscript);
+    })();
+
+
+
+</script>
+
