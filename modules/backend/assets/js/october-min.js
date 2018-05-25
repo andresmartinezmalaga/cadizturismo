@@ -952,6 +952,7 @@ var SidePanelTab=function(element,options){
 }
 
 SidePanelTab.prototype.init=function(){var self=this
+
 this.tabOpenDelay=200
 this.tabOpenTimeout=undefined
 this.panelOpenTimeout=undefined
@@ -971,13 +972,7 @@ $('.fix-button-container',this.$el).append(this.$fixButton)
 this.$sideNavItems.click(function(){
 	console.log('tokado1');
 	
-	console.log('-----------2');
-	var zz = $('.nav li a')[0];
-	console.log(zz);
-    /*$(zz).on('click',function() {
-    	console.log('toma ya44');
-    });*/
-	//$(zz).click();
+	
 
 	if($(this).data('no-side-panel'))
 		{return}
@@ -992,6 +987,14 @@ this.$sideNavItems.click(function(){
 	return false})
 /*-------*/
 
+	console.log('-----------3');
+	var zz = $('.nav li a')[0];
+	console.log(zz);
+    /*$(zz).on('click',function() {
+    	console.log('toma ya44');
+    });*/
+	//$(zz).click();
+	
 
 if(!Modernizr.touch){self.$sideNav.mouseleave(function(){clearTimeout(self.panelOpenTimeout)})
 self.$el.mouseleave(function(){self.hideSidePanel()})
