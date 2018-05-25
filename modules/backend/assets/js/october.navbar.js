@@ -21,7 +21,7 @@
             nav.verticalMenu($('a.menu-toggle', navbar), {
                 breakpoint: collapseMode ? Infinity : 769
             })
-
+            console.log('toka toka ZZZZZ');
             $('li.with-tooltip:not(.active) > a', navbar).tooltip({
                 container: 'body',
                 placement: 'bottom',
