@@ -17,8 +17,7 @@ $( document ).ready(function() {
     PagesPage.prototype.constructor = PagesPage
 
     PagesPage.prototype.init = function() {
-        console.log('entra en el ultimo paso NOOOOOO');
-
+      
         this.$masterTabs = $('#pages-master-tabs')
         this.$sidePanel = $('#pages-side-panel')
         this.$pageTree = $('[data-control=treeview]', this.$sidePanel)
