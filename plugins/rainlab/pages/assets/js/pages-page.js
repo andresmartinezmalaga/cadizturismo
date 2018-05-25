@@ -34,9 +34,13 @@ $( document ).ready(function() {
         //
         //
  
-            var x = $('li.active').find('a');
-            console.log('jq on $, ok');
-            console.log(x);
+        var x = $('li.active').find('a').first();
+        console.log('jq on $, ok');
+        console.log(x);
+        $(x).trigger( "click" );
+        $(x).on( "click", function() {
+          console.log('toma ya');
+        });
     }
 
 
