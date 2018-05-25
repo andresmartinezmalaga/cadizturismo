@@ -1194,17 +1194,20 @@ class StaticApp extends ComponentBase
         <style>
 
           .background-image {
+            position: absolute !important;
             width: 100%;
             object-fit: cover !important;
             object-position: center !important;
+            height: 700px !important;
             text-align: center !important;
           }
 
         .header-txt, .txt, .header-container {
-          text-align: center;
+          text-align: center !important;
           font-size: 100px !important;
           font-weight: 500;
           text-transform: uppercase;
+          width: 100% !important;
         }
 
         .header-event {
