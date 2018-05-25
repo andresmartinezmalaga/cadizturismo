@@ -263,7 +263,7 @@ class StaticApp extends ComponentBase
 
       foreach ($intereses as $iintrs) {
         //$result->put($iintrs->id, ucwords($iintrs->name));
-        $result->put($iintrs->id, $iintrs->name);  
+        $result->put($iintrs->id, $iintrs->name);
       }
 
       return $result;
@@ -1228,19 +1228,23 @@ class StaticApp extends ComponentBase
                   padding-bottom: 40px !important;
                 }
 
-                .section-txt .txt-container .desc {
+                .section-txt .txt-container .desc, .section-txt .txt-container p {
                     display: block!important;
-                    font-size: 18px !important;
+                    font-size: 24px !important;
                     line-height: 30px !important;
                     margin-bottom: 20px !important;
                }
 
                 .section-txt .txt-container .title {
                     display: block!important;
-                    font-size: 46px !important;
+                    font-size: 60px !important;
                     font-weight: 700 !important;
-                    line-height: 50px !important;
+                    line-height: 60px !important;
                     margin-bottom: 10px !important;
+               }
+
+               .mock-insert {
+                 display: none;
                }
 
                 .section-txt .big-number-container, .section-txt .txt-container, .section-txt .big-number-container span, .section-txt .txt-container p {
