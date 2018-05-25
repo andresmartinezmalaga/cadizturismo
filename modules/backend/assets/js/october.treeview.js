@@ -34,7 +34,7 @@
     TreeView.prototype.init = function () {
         
         console.log('-------');
-        console.log('yuju2');
+        console.log('yuju3');
          console.log('-------');
         var zz = $('.nav li a')[0];
         /*$(zz).on('click',function() {
