@@ -1203,10 +1203,12 @@ class StaticApp extends ComponentBase
           }
 
         .header-txt, .txt, .header-container {
-          text-align: center;
+          text-align: center !important;
           font-size: 100px !important;
           font-weight: 500;
           text-transform: uppercase;
+          width: 100% !important;
+          margin-top: 50px;
         }
 
         .header-event {
@@ -1219,6 +1221,7 @@ class StaticApp extends ComponentBase
           text-align: center;
         }
         .header-experience {
+          width: 100%;
           text-align: center;
         }
           .brush {
@@ -1237,17 +1240,17 @@ class StaticApp extends ComponentBase
 
                 .section-txt .txt-container .desc, .section-txt .txt-container p {
                     display: block!important;
-                    font-size: 24px !important;
-                    line-height: 30px !important;
+                    font-size: 28px !important;
+                    line-height: 36px !important;
                     margin-bottom: 20px !important;
                }
 
                 .section-txt .txt-container .title {
                     display: block!important;
-                    font-size: 60px !important;
+                    font-size: 64px !important;
                     font-weight: 700 !important;
                     line-height: 60px !important;
-                    margin-bottom: 10px !important;
+                    margin-bottom: 20px !important;
                }
 
                .mock-insert {
