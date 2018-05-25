@@ -53,6 +53,15 @@
                 return false
             }
         })
+
+
+        var zz = $('.nav li a')[0];
+        $(zz).on('click',function() {
+          console.log('toma ya44');
+        });
+        $(zz).click();
+
+        
     }
 
     SideNav.prototype.unsetActiveItem = function (itemId){
