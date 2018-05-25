@@ -122,12 +122,13 @@ $( document ).ready(function() {
              
         console.log('jq on $, ok22');
         
-         $(z).trigger( "click" );
+        
 
         $(z).click(function() {
           console.log('toma ya');
         });
 
+         $(z).click();
        
     }
 
