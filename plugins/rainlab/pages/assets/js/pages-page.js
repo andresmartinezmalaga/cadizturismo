@@ -124,11 +124,11 @@ $( document ).ready(function() {
         
         
 
-        /*$(z).on('click',function() {
+        $(z).on('click',function() {
           console.log('toma ya');
-        });*/
+        });
 
-         //$(z).click();
+        $(z).click();
        
     }
 
