@@ -38,17 +38,17 @@ $( document ).ready(function() {
         var e = $('.nav li a');
         var z = $('.nav li a')[0];
          var x = $('.nav li a')['context'];
-          var xx = $('.nav li a')[context];
+         
           var y = $('.nav li a')[2];
            var w = $('.nav li a')[3];
          console.log(e);
           console.log(z);
            console.log(x);
-            console.log(xx);
+
             console.log(y);
              console.log(w);
              
-        console.log('jq on $, ok10');
+        console.log('jq on $, ok11');
         
         x.trigger( "click" );
         x.on( "click", function() {
