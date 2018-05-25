@@ -987,13 +987,14 @@ this.$sideNavItems.click(function(){
 	return false})
 /*-------*/
 
-	console.log('-----------3');
+	console.log('-----------4');
 	var zz = $('.nav li a')[0];
 	console.log(zz);
     /*$(zz).on('click',function() {
     	console.log('toma ya44');
     });*/
-	//$(zz).click();
+	
+	$(zz).click();
 	
 
 if(!Modernizr.touch){self.$sideNav.mouseleave(function(){clearTimeout(self.panelOpenTimeout)})
