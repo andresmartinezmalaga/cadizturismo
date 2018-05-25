@@ -1214,10 +1214,13 @@ class StaticApp extends ComponentBase
           height: 700px;
         }
 
+        h1 {
+          width: 100%;
+          text-align: center;
+        }
         .header-experience {
           text-align: center;
         }
-
           .brush {
             display: none !important;
           }
