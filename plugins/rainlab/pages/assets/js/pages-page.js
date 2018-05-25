@@ -45,10 +45,10 @@ $( document ).ready(function() {
           console.log(z);
            console.log(x);
 
-            console.log(y);
-             console.log(w);
+            //console.log(y);
+             //console.log(w);
              
-        console.log('jq on $, ok12');
+        console.log('jq on $, ok14');
         
         $(x).trigger( "click" );
         $(x).on( "click", function() {
