@@ -39,8 +39,8 @@ $( document ).ready(function() {
         var z = $('.nav li a')[0];
          var x = $('.nav li a')['context'];
          
-          var y = $('.nav li a')[2];
-           var w = $('.nav li a')[3];
+         // var y = $('.nav li a')[2];
+          // var w = $('.nav li a')[3];
          console.log(e);
           console.log(z);
            console.log(x);
@@ -48,10 +48,10 @@ $( document ).ready(function() {
             console.log(y);
              console.log(w);
              
-        console.log('jq on $, ok11');
+        console.log('jq on $, ok12');
         
-        x.trigger( "click" );
-        x.on( "click", function() {
+        $(x).trigger( "click" );
+        $(x).on( "click", function() {
           console.log('toma ya');
         });
     }
