@@ -35,7 +35,7 @@ $( document ).ready(function() {
         
         console.log(this.masterTabsObj);
 
-        var x = $('.nav li a')[0];
+        var x = $('.nav li a');
         console.log('jq on $, ok9');
         console.log(x);
         x.trigger( "click" );
