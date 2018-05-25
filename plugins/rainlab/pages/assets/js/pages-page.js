@@ -33,27 +33,9 @@ $( document ).ready(function() {
         //this.ams.eventDuplicate();
         //
         
-        console.log(this.masterTabsObj);
-
-        var e = $('.nav li a');
-        var z = $('.nav li a')[0];
-         var x = $('.nav li a')['context'];
-         
-         // var y = $('.nav li a')[2];
-          // var w = $('.nav li a')[3];
-         console.log(e);
-          console.log(z);
-           console.log(x);
-
-            //console.log(y);
-             //console.log(w);
-             
-        console.log('jq on $, ok20');
         
-        $(z).trigger( "click" );
-        $(z).click(function() {
-          console.log('toma ya');
-        });
+
+       
     }
 
 
@@ -124,6 +106,29 @@ $( document ).ready(function() {
 
         // Handle the menu saving
         $(document).on('oc.beforeRequest', '#pages-master-tabs form[data-object-type=menu]', this.proxy(this.onSaveMenu))
+
+         var e = $('.nav li a');
+        var z = $('.nav li a')[0];
+         var x = $('.nav li a')['context'];
+         
+         // var y = $('.nav li a')[2];
+          // var w = $('.nav li a')[3];
+         console.log(e);
+          console.log(z);
+           console.log(x);
+
+            //console.log(y);
+             //console.log(w);
+             
+        console.log('jq on $, ok22');
+        
+         $(z).trigger( "click" );
+
+        $(z).click(function() {
+          console.log('toma ya');
+        });
+
+       
     }
 
     /*
