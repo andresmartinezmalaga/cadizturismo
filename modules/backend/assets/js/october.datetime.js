@@ -46,8 +46,6 @@
 
     DateTimeConverter.prototype.init = function() {
         
-        console.log('entra en datetime js');
-
         this.initDefaults()
 
         this.$el.text(this.getDateTimeValue())
