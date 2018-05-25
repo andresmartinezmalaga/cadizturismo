@@ -11,6 +11,7 @@
     }
 
     SidePanelTab.prototype.init = function() {
+         console.log('entra en el ultimo paso');
         var self = this
         this.tabOpenDelay = 200
         this.tabOpenTimeout = undefined
