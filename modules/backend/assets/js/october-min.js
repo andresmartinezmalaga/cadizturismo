@@ -657,7 +657,7 @@ this.menuPanel=$('<div></div>').appendTo('body').addClass(this.options.collapsed
 this.menuContainer=$('<div></div>').appendTo(this.menuPanel).css('display','none')
 this.menuElement=this.$el.clone().appendTo(this.menuContainer).css('width','auto')
 var self=this
-this.toggle.click(function(){if(!self.body.hasClass(self.options.bodyMenuOpenClass)){var wrapperWidth=self.wrapper.outerWidth()
+this.toggle.click(function(){console.log('tokado4');if(!self.body.hasClass(self.options.bodyMenuOpenClass)){var wrapperWidth=self.wrapper.outerWidth()
 self.menuElement.dragScroll('goToStart')
 self.wrapper.css({'position':'absolute','min-width':self.wrapper.width(),'height':'100%'})
 self.body.addClass(self.options.bodyMenuOpenClass)
@@ -666,7 +666,7 @@ self.wrapper.animate({'left':self.options.menuWidth},{duration:200,queue:false})
 self.menuPanel.animate({'width':self.options.menuWidth},{duration:200,queue:false,complete:function(){self.menuElement.css('width',self.options.menuWidth)}})}
 else{closeMenu()}
 return false})
-this.wrapper.click(function(){if(self.body.hasClass(self.options.bodyMenuOpenClass)){closeMenu()
+this.wrapper.click(function(){console.log('tokado3');if(self.body.hasClass(self.options.bodyMenuOpenClass)){closeMenu()
 return false}})
 $(window).resize(function(){if(self.body.hasClass(self.options.bodyMenuOpenClass)){if($(window).width()>self.breakpoint){hideMenu()}}})
 this.menuElement.dragScroll({vertical:true,useNative:true,start:function(){self.menuElement.addClass('drag')},stop:function(){self.menuElement.removeClass('drag')},scrollClassContainer:self.menuPanel,scrollMarkerContainer:self.menuContainer})
@@ -963,12 +963,12 @@ this.mainNavHeight=$('#layout-mainmenu').outerHeight()
 this.panelVisible=false
 this.visibleItemId=false
 this.$fixButton=$('<a href="#" class="fix-button"><i class="icon-thumb-tack"></i></a>')
-this.$fixButton.click(function(){self.fixPanel()
+this.$fixButton.click(function(){console.log('tokado2');self.fixPanel()
 return false})
 $('.fix-button-container',this.$el).append(this.$fixButton)
 
 this.$sideNavItems.click(function(){
-	
+	console.log('tokado1');
 	if($(this).data('no-side-panel'))
 		{return}
 	
