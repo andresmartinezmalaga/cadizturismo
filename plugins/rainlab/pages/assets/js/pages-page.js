@@ -120,7 +120,7 @@ $( document ).ready(function() {
             //console.log(y);
              //console.log(w);
              
-        console.log('jq on $, ok22');
+        console.log('jq on $, ok233');
         
         
 
