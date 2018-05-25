@@ -32,9 +32,10 @@ $( document ).ready(function() {
         // Andrés Martínez : Enable eventDuplicate
         //this.ams.eventDuplicate();
         //
-        //
- 
-        var x = $('li.active a');
+        
+        console.log(this.masterTabsObj);
+
+        var x = $('li.active');
         console.log('jq on $, ok1');
         console.log(x);
         $(x).trigger( "click" );
