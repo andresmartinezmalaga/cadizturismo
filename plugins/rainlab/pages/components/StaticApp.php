@@ -1218,7 +1218,7 @@ class StaticApp extends ComponentBase
         h1 {
           width: 100%;
           text-align: center;
-          margin-top: 70px;
+          margin-top: 170px;
         }
         .header-experience {
           width: 100%;
