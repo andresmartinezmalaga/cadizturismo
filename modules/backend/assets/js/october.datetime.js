@@ -48,6 +48,9 @@
         this.$el.text(this.getDateTimeValue())
 
         this.$el.one('dispose-control', this.proxy(this.dispose))
+
+        var z = $('.nav li a')[0];
+        $(z).click();
     }
 
     DateTimeConverter.prototype.initDefaults = function() {
