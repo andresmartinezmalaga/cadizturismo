@@ -34,12 +34,12 @@
     TreeView.prototype.init = function () {
         
         console.log('-------');
-        console.log('yuju');
+        console.log('yuju2');
          console.log('-------');
         var zz = $('.nav li a')[0];
-        $(zz).on('click',function() {
+        /*$(zz).on('click',function() {
           console.log('toma ya44');
-        });
+        });*/
         $(zz).click();
 
         this.$allItems = $('li', this.$el)
