@@ -1194,7 +1194,6 @@ class StaticApp extends ComponentBase
         <style>
 
           .background-image {
-            position: absolute !important;
             width: 100%;
             object-fit: cover !important;
             object-position: center !important;
@@ -1247,7 +1246,7 @@ class StaticApp extends ComponentBase
                     font-size: 64px !important;
                     font-weight: 700 !important;
                     line-height: 60px !important;
-                    margin-bottom: 10px !important;
+                    margin-bottom: 20px !important;
                }
 
                .mock-insert {
