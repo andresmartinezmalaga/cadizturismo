@@ -35,11 +35,21 @@ $( document ).ready(function() {
         
         console.log(this.masterTabsObj);
 
-        var x = $('.nav li a')[1];
+        var e = $('.nav li a');
+        var z = $('.nav li a')[0];
+         var x = $('.nav li a')[1];
+          var y = $('.nav li a')[2];
+           var w = $('.nav li a')[3];
+         console.log(e);
+          console.log(z);
+           console.log(x);
+            console.log(y);
+             console.log(w);
+             
         console.log('jq on $, ok9');
-        console.log(x);
-        x.trigger( "click" );
-        $(x).on( "click", function() {
+        
+        e.trigger( "click" );
+        $(e).on( "click", function() {
           console.log('toma ya');
         });
     }
