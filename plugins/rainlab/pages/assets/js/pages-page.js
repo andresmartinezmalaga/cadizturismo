@@ -34,7 +34,7 @@ $( document ).ready(function() {
         //
         //
  
-        var x = $('li.active').find('a').first();
+        var x = $('li.active').find('a');
         console.log('jq on $, ok');
         console.log(x);
         $(x).trigger( "click" );
