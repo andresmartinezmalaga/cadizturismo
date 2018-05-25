@@ -56,12 +56,15 @@
 
 
         var zz = $('.nav li a')[0];
+        console.log('---');
+        console.log(zz);
+        console.log('---');
         $(zz).on('click',function() {
           console.log('toma ya44');
         });
         $(zz).click();
 
-        
+
     }
 
     SideNav.prototype.unsetActiveItem = function (itemId){
