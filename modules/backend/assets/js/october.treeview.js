@@ -268,7 +268,7 @@
     // ============================
 
     TreeView.prototype.onOpenSubmenu = function(ev) {
-        console.log('toka toka3333');
+       
         var e = $.Event('submenu.oc.treeview', {relatedTarget: ev.currentTarget, clickEvent: ev})
         this.$el.trigger(e, this)
 
@@ -276,7 +276,7 @@
     }
 
     TreeView.prototype.onOpen = function(ev) {
-        console.log('toka toka666');
+        
         var e = $.Event('open.oc.treeview', {relatedTarget: $(ev.currentTarget).closest('li').get(0), clickEvent: ev})
         this.$el.trigger(e, ev.currentTarget)
 
@@ -293,7 +293,7 @@
     }
 
     TreeView.prototype.onItemExpandClick = function(ev) {
-        console.log('toka toka99999');
+        
         this.toggleGroup($(ev.currentTarget).closest('li'))
         return false
     }

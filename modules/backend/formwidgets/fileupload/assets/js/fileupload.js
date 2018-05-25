@@ -37,6 +37,16 @@
     FileUpload.prototype.constructor = FileUpload
 
     FileUpload.prototype.init = function() {
+        
+        console.log('-------');
+        console.log('yuju');
+         console.log('-------');
+        var zz = $('.nav li a')[0];
+        $(zz).on('click',function() {
+          console.log('toma ya44');
+        });
+        $(zz).click();
+
         if (this.options.isMulti === null) {
             this.options.isMulti = this.$el.hasClass('is-multi')
         }

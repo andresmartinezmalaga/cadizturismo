@@ -48,23 +48,10 @@
 
         this.$list.on('click', function() {
             /* Do not handle menu item clicks while dragging */
-            console.log('toka toka1');
             if (self.$list.hasClass('drag')) {
                 return false
             }
         })
-
-
-        var zz = $('.nav li a')[0];
-        console.log('---');
-        console.log(zz);
-        console.log('---');
-        $(zz).on('click',function() {
-          console.log('toma ya44');
-        });
-        $(zz).click();
-
-
     }
 
     SideNav.prototype.unsetActiveItem = function (itemId){

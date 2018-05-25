@@ -47,7 +47,7 @@
 
         this.$el.text(this.getDateTimeValue())
 
-        this.$el.one('dispose-control', this.proxy(this.dispose))        
+        this.$el.one('dispose-control', this.proxy(this.dispose))
     }
 
     DateTimeConverter.prototype.initDefaults = function() {

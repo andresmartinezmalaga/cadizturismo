@@ -31,7 +31,6 @@
          * Handle the menu toggle click
          */
         this.toggle.click(function() {
-            console.log('toka toka5');
             if (!self.body.hasClass(self.options.bodyMenuOpenClass)) {
                 var wrapperWidth = self.wrapper.outerWidth()
 
@@ -62,7 +61,6 @@
         })
 
         this.wrapper.click(function() {
-            console.log('toka tokaHHHHHH');
             if (self.body.hasClass(self.options.bodyMenuOpenClass)) {
                 closeMenu()
                 return false
@@ -93,7 +91,6 @@
         })
 
         this.menuElement.on('click', function() {
-            console.log('toka toka4');
             // Do not handle menu item clicks while dragging
             if (self.menuElement.hasClass('drag'))
                 return false
