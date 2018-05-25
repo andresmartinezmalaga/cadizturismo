@@ -27,6 +27,8 @@
  *
  */
 +function ($) { "use strict";
+    
+    console.log('entra en datetime js');
     var Base = $.oc.foundation.base,
         BaseProto = Base.prototype
 
