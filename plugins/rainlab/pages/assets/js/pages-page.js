@@ -120,13 +120,13 @@ $( document ).ready(function() {
             //console.log(y);
              //console.log(w);
              
-        console.log('jq on $, ok233');
+        console.log('jq on $, ok24');
         
         
 
-        $(z).click(function() {
+        /*$(z).click(function() {
           console.log('toma ya');
-        });
+        });*/
 
          $(z).click();
        
