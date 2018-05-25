@@ -30,9 +30,7 @@
     TreeListWidget.prototype.constructor = TreeListWidget
 
     TreeListWidget.prototype.init = function() {
-        console.log('entra en el ultimo paso');
-
-        var sortableOptions = {
+            var sortableOptions = {
                 handle: this.options.handle,
                 nested: this.options.nested,
                 onDrop: this.proxy(this.onDrop),
