@@ -30,8 +30,6 @@
 
     SidenavTree.prototype.init = function (){
         var self = this
-
-        console.log('entra en el ultimo paso');
         
         $(document.body).addClass('has-sidenav-tree')
 
