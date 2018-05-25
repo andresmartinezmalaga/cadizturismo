@@ -1203,7 +1203,7 @@ class StaticApp extends ComponentBase
           }
 
         .header-txt, .txt, .header-container {
-          text-align: center !important;
+          text-align: center;
           font-size: 100px !important;
           font-weight: 500;
           text-transform: uppercase;
@@ -1212,6 +1212,10 @@ class StaticApp extends ComponentBase
         .header-event {
           text-align: center !important;
           height: 700px;
+        }
+
+        .header-experience {
+          text-align: center;
         }
 
           .brush {
