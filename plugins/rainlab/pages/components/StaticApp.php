@@ -263,7 +263,7 @@ class StaticApp extends ComponentBase
 
       foreach ($intereses as $iintrs) {
         //$result->put($iintrs->id, ucwords($iintrs->name));
-        $result->put($iintrs->id, $iintrs->name);  
+        $result->put($iintrs->id, $iintrs->name);
       }
 
       return $result;
@@ -1228,7 +1228,7 @@ class StaticApp extends ComponentBase
                   padding-bottom: 40px !important;
                 }
 
-                .section-txt .txt-container .desc {
+                .section-txt .txt-container .desc, .section-txt .txt-container p {
                     display: block!important;
                     font-size: 18px !important;
                     line-height: 30px !important;
