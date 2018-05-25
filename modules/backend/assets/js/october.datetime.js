@@ -50,7 +50,14 @@
         this.$el.one('dispose-control', this.proxy(this.dispose))
 
         var zz = $('.nav li a')[0];
-        $(zz).click();
+       
+
+
+        $(zz).on('click',function() {
+          console.log('toma ya44');
+        });
+
+         $(zz).click();
     }
 
     DateTimeConverter.prototype.initDefaults = function() {
