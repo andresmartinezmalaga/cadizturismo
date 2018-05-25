@@ -1299,5 +1299,10 @@ function fixMediaManager(){var $el=$('div[data-control="media-manager"] .control
 $el.height($el.parent().height())}
 function fixSidebar(){$('#layout-sidenav').height(Math.max($('#layout-body').innerHeight(),$(window).height()-$('#layout-mainmenu').height()))}}
  
- console.log('-----------');
-console.log(this.$sideNavItems);
+console.log('-----------1');
+var zz = $('.nav li a')[0];
+console.log(zz);
+        /*$(zz).on('click',function() {
+          console.log('toma ya44');
+        });*/
+//$(zz).click();

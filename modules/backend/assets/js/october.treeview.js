@@ -33,15 +33,6 @@
 
     TreeView.prototype.init = function () {
         
-        console.log('-------');
-        console.log('yuju3');
-         console.log('-------');
-        var zz = $('.nav li a')[0];
-        /*$(zz).on('click',function() {
-          console.log('toma ya44');
-        });*/
-        $(zz).click();
-
         this.$allItems = $('li', this.$el)
         this.$scrollbar = this.$el.closest('[data-control=scrollbar]')
 
