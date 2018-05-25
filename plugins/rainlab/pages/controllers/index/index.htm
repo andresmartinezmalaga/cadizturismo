@@ -1,4 +1,4 @@
-
+<div id='jql'></div>    
 <?= Block::put('sidepanel') ?>
     <?php if (!$this->fatalError): ?>
         <?= $this->makePartial('sidepanel') ?>
@@ -47,7 +47,7 @@
             console.log('jq on $, ok');
             console.log(x);
         };
-        document.getElementsByTagName("head")[0].appendChild(sscript);
+        document.getElementsByTagName("jql")[0].appendChild(sscript);
     })();
 
 
