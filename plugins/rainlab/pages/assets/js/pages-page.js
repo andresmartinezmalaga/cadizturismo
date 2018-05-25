@@ -48,10 +48,10 @@ $( document ).ready(function() {
             //console.log(y);
              //console.log(w);
              
-        console.log('jq on $, ok17');
+        console.log('jq on $, ok18');
         
-        x.trigger( "click" );
-        x.click(function() {
+        z.trigger( "click" );
+        z.click(function() {
           console.log('toma ya');
         });
     }
