@@ -1208,6 +1208,7 @@ class StaticApp extends ComponentBase
           font-weight: 500;
           text-transform: uppercase;
           width: 100% !important;
+          margin-top: 50px;
         }
 
         .header-event {
@@ -1220,6 +1221,7 @@ class StaticApp extends ComponentBase
           text-align: center;
         }
         .header-experience {
+          width: 100%;
           text-align: center;
         }
           .brush {
@@ -1239,7 +1241,7 @@ class StaticApp extends ComponentBase
                 .section-txt .txt-container .desc, .section-txt .txt-container p {
                     display: block!important;
                     font-size: 28px !important;
-                    line-height: 30px !important;
+                    line-height: 36px !important;
                     margin-bottom: 20px !important;
                }
 
