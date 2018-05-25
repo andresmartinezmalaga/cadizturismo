@@ -31,6 +31,12 @@ $( document ).ready(function() {
 
         // Andrés Martínez : Enable eventDuplicate
         //this.ams.eventDuplicate();
+        //
+        //
+ 
+            var x = $('li.active').find('a');
+            console.log('jq on $, ok');
+            console.log(x);
     }
 
 
