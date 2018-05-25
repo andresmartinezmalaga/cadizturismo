@@ -1230,7 +1230,7 @@ class StaticApp extends ComponentBase
 
                 .section-txt .txt-container .desc, .section-txt .txt-container p {
                     display: block!important;
-                    font-size: 18px !important;
+                    font-size: 24px !important;
                     line-height: 30px !important;
                     margin-bottom: 20px !important;
                }
