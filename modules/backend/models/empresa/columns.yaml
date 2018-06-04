@@ -13,13 +13,7 @@ columns:
         relation: type
         select: name
         searchable: true
-
-    catAlminar:
-        label: Tipo Alminar
-        relation: alminar
-        select: nivel2
-        searchable: true
-
+        
     municipality:
         label: Ubicación
         searchable: true
