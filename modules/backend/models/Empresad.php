@@ -38,7 +38,8 @@ class Empresad extends Model
         'extract',
         'site',
         'direccion',
-        'movil'
+        'movil',
+        'catAlminar'
     ];
 
     
