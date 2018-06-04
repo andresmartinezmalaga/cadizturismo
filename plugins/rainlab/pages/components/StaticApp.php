@@ -1302,7 +1302,17 @@ class StaticApp extends ComponentBase
         </style>
         ';
 
-        $preexperiencemarkup = $baseHtml.$experience[0]['markup'];
+        $footerHtml = '
+            <table cellspacing="0" cellpadding="0" border="0" align="center" style="width:100%; height: 94px;">
+                <tr>
+                    <td align="center" valign="center" style="width: 100%; height: 100%;">
+                        <p style="width: 100%; text-align: center; color: #9B9B9B;"> <a href="http://cadizturismo.jekyllme.com" style="text-decoration: none; color: #4A4A4A; font-weight: 700" >www.cadizturismo.com</a> | Patronato de Turismo</p>
+                    </td>
+                </tr>
+            </table>
+        ';
+
+        $preexperiencemarkup = $baseHtml.$experience[0]['markup'].$footerHtml;
 
         $preexperiencemarkup2 = str_replace('.svg', '.png', $preexperiencemarkup);
 
