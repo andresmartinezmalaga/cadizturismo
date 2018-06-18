@@ -1305,8 +1305,8 @@ class StaticApp extends ComponentBase
         $footerHtml = '
             <table cellspacing="0" cellpadding="0" border="0" align="center" style="width:100%; height: 94px;">
                 <tr>
-                    <td align="center" valign="center" style="width: 100%; height: 100%;">
-                        <p style="width: 100%; text-align: center; color: #9B9B9B;"> <a href="http://cadizturismo.jekyllme.com" style="text-decoration: none; color: #4A4A4A; font-weight: 700" >www.cadizturismo.com</a> | Patronato de Turismo</p>
+                    <td align="center" valign="middle" style="width: 100%; height: 100%;">
+                        <p style="width: 100%; text-align: center; color: #9B9B9B; font-size: 25px; margin-top: 54px;"> <a href="http://cadizturismo.jekyllme.com" style="text-decoration: none; color: #4A4A4A; font-weight: 700" >www.cadizturismo.com</a> | Patronato Provincial de Turismo de Cádiz</p>
                     </td>
                 </tr>
             </table>

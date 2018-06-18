@@ -5011,7 +5011,7 @@ nav#layout-mainmenu ul li .mainmenu-accountmenu li:first-child a:hover:after, na
   width: 296px;
   padding: 0px;
   box-shadow: none !important;
-  font-family: 'AvenirNext-Medium' !important;
+  font-family: 'Avenir-Medium', sans-serif !important;
   background-color: #175DA3; }
   .pika-single .is-today .pika-button {
     background: #0C5095 !important; }
@@ -5549,9 +5549,8 @@ div[data-control="media-manager"] .media-list.tiles li.selected .icon-container 
 [data-cmd=imageAlt], [data-cmd=imageSize] {
   display: none !important; }
 
-/* Andrés Martínez : Hide Bnt add modules at Dasboard */
 #ReportContainer-container-toolbar {
-  display: none;}
+  display: none; }
 
 /* Botón duplicar */
 .control-treeview ol > li {
@@ -5677,8 +5676,7 @@ div[data-control="media-manager"] .media-list.tiles li.selected .icon-container 
   width: 70%;
   display: inline-block !important; }
 
-.floatJuan #select2-Form-field-Empresa-type_id-container, .floatJuan #select2-Form-field-Empresa-municipality-container, .floatJuan #select2-Form-field-Tipo-category-container, .floatJuan #select2-Form-field-Empresa-catAlminar-container {
-  text-transform: capitalize;
+.floatJuan #select2-Form-field-Empresa-type_id-container, .floatJuan #select2-Form-field-Empresa-municipality-container, .floatJuan #select2-Form-field-Tipo-category-container {
   color: #818181 !important;
   padding-top: 6px !important; }
 
