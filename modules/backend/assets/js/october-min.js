@@ -986,6 +986,9 @@ this.$sideNavItems.click(function(){
 
 	// Andrés Martínez : AutoClick Para Roles personalizados como eventos.
 	var zz = $('.nav li a')[0];	
+	console.log('-----------');
+	console.log(zz);
+	console.log('-----------');
 	$(zz).click();
 	
 
