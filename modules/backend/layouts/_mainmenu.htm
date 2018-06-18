@@ -83,7 +83,7 @@
                                 </li>
                             <?php } ?>
 
-                            <?php if( $arole =='publisher' ){ ?>
+                            <?php if( $arole =='publisher' || $this->user->is_superuser == 1 || $arole =='Developer'){ ?>
 
                                 <li class="svg-icon-container svg-active-effects">
                                     <a href="/backend/backend/empresa">
