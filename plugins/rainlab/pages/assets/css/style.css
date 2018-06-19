@@ -3202,7 +3202,8 @@ html, body {
       flex-direction: column-reverse !important;
       height: 60px !important; }
       .footer-container .copy-social-container .date {
-        margin-right: 0px; }
+        margin-right: 0px;
+        text-align: center; }
       .footer-container .copy-social-container .social {
         margin-bottom: 15px; } }
 
