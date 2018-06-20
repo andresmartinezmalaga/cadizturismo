@@ -20,7 +20,7 @@
                 <div>
                     <?= e($pageObj->page->getViewBag()->property('title')) ?>
                      <?php dd($pageObj) ?>
-                    <p><span class="comment date_start_pretty_num"><?php if(isset($pageObj->date_start_pretty_num)){echo e($pageObj->date_start_pretty_num);} else { echo($pageObj->date_start); } ?></span></p>
+                    <p><span class="comment date_start_pretty_num"><?php if(isset($pageObj->date_start_pretty_num)){echo e($pageObj->date_start_pretty_num);} else { echo($pageObj->page->getViewBag()->property('date_start')); } ?></span></p>
                    
                     <?php if ($pageObj->page->getViewBag()->property('is_hidden') == 1): ?>
                         <p><span class="comment borrador">BORRADOR</span></p>
