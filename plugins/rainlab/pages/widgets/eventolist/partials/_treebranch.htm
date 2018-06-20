@@ -19,7 +19,7 @@
             <a href="#">
                 <div>
                     <?= e($pageObj->page->getViewBag()->property('title')) ?>
-                    <p><span class="comment date_start_pretty_num"><?php if(isset($pageObj->date_start_pretty_num){echo e($pageObj->date_start_pretty_num);} ?></span></p>
+                    <p><span class="comment date_start_pretty_num"><?php if(isset($pageObj->date_start_pretty_num)){echo e($pageObj->date_start_pretty_num);} ?></span></p>
                     <?php if ($pageObj->page->getViewBag()->property('is_hidden') == 1): ?>
                         <p><span class="comment borrador">BORRADOR</span></p>
                     <?php endif ?>
