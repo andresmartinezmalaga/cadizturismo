@@ -2083,6 +2083,16 @@ html, body {
 #phantom-div {
   display: none; }
 
+/* LISTAS  */
+.section-txt ol, .section-txt ul {
+  padding-left: 0px;
+  list-style-type: none; }
+  .section-txt ol li, .section-txt ul li {
+    color: #9b9b9b;
+    font-size: 18px;
+    line-height: 33px;
+    margin-bottom: 10px !important; }
+
 @media (max-width: 1250px) and (min-width: 840px) {
   .publis {
     width: auto;
