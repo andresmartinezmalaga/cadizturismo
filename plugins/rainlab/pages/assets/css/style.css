@@ -2091,7 +2091,7 @@ html, body {
     color: #9b9b9b;
     font-size: 18px;
     line-height: 33px;
-    margin-bottom: 10px !important; }
+    margin-bottom: 0px !important; }
 
 @media (max-width: 1250px) and (min-width: 840px) {
   .publis {
