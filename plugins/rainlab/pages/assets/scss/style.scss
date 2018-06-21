@@ -3802,7 +3802,7 @@ html, body {
 }
 
 @media (max-width: 920px) and (min-width: 601px) {
-  .section-txt p, .section-txt-village p, .section-txt-comarca p {
+  .section-txt p, .section-txt-village p, .section-txt-comarca p, .section-txt ol, .section-txt ul {
     width: 86% !important;
   }
   .header-search {
