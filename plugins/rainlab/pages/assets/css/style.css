@@ -2263,7 +2263,7 @@ html, body {
     height: 750px !important; }
   .featured-element {
     height: 700px !important; }
-  .section-txt p, .section-txt-village p, .section-txt-comarca p {
+  .section-txt p, .section-txt-village p, .section-txt-comarca p, .section-txt ol, .section-txt ul {
     width: 86% !important; }
   .header-playa .txt {
     font-size: 100px !important;
