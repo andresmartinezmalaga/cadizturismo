@@ -453,12 +453,20 @@ class StaticApp extends ComponentBase
             $event->date_start_ppretty = (new DateTime($event->date_start))->format('d');
             $event->date = (new DateTime($event->date_start));
             $mes = intval( (new DateTime($event->date_start))->format('m') )-1;
+            $mesend = intval( (new DateTime($event->date_end))->format('m') )-1;
             $mesString = ['ENE','FEB','MAR','ABR','MAY','JUN','JUL','AGO','SEP','OCT','NOV','DIC',];
+           
             $event->date_start_pretty_day = (new DateTime($event->date_start))->format('d');
             $event->date_start_pretty_month = $mesString[($mes)];
             $event->date_start_pretty_num = (new DateTime($event->date_start))->format('d.m.y');
             $event->date_start_pretty_numf = (new DateTime($event->date_start))->format('d/m');
             $event->date_end_pretty_num = (new DateTime($event->date_end))->format('d.m.y');
+
+            $event->date_end_pretty_day = (new DateTime($event->date_end))->format('d');
+            $event->date_end_pretty_month = $mesString[($mesend)];
+            $event->date_end_pretty_num = (new DateTime($event->date_end))->format('d.m.y');
+            $event->date_end_pretty_numf = (new DateTime($event->date_end))->format('d/m');
+            
 
         }
 
@@ -468,12 +476,19 @@ class StaticApp extends ComponentBase
             $event->date_start_ppretty = (new DateTime($event->date_start))->format('d');
             $event->date = (new DateTime($event->date_start));
             $mes = intval( (new DateTime($event->date_start))->format('m') )-1;
+            $mesend = intval( (new DateTime($event->date_end))->format('m') )-1;
             $mesString = ['ENE','FEB','MAR','ABR','MAY','JUN','JUL','AGO','SEP','OCT','NOV','DIC',];
+            
             $event->date_start_pretty_day = (new DateTime($event->date_start))->format('d');
             $event->date_start_pretty_month = $mesString[($mes)];
             $event->date_start_pretty_num = (new DateTime($event->date_start))->format('d.m.y');
             $event->date_start_pretty_numf = (new DateTime($event->date_start))->format('d/m');
             $event->date_end_pretty_num = (new DateTime($event->date_end))->format('d.m.y');
+
+            $event->date_end_pretty_day = (new DateTime($event->date_end))->format('d');
+            $event->date_end_pretty_month = $mesString[($mesend)];
+            $event->date_end_pretty_num = (new DateTime($event->date_end))->format('d.m.y');
+            $event->date_end_pretty_numf = (new DateTime($event->date_end))->format('d/m');
 
         }
 
