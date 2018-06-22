@@ -357,7 +357,8 @@ html, body {
   justify-content: center;
   padding-bottom: 70px;
   margin-top: 0px;
-  margin-bottom: 0px; }
+  margin-bottom: 0px;
+  border-radius: 0px !important; }
   .pagination form {
     width: auto;
     margin-left: 10px; }
