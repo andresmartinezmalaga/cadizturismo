@@ -4805,6 +4805,8 @@ video {
   display: table;
 }
 
-.section-txt .txt-container .desc {
-  min-width: 686px;
+@media (min-width: 800px) {
+  .section-txt .txt-container .desc {
+    min-width: 686px;
+  }
 }
