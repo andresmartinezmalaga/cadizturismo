@@ -382,7 +382,7 @@ class Index extends Controller
             $strHtml = str_replace("<p><br></p>", "", $strHtml);
             $strHtml = str_replace("<p></p>", "", $strHtml);
             $strHtml = str_replace("<p>&nbsp;</p>", "", $strHtml);
-            $strHtml = str_replace("<br>", "", $strHtml);
+            //$strHtml = str_replace("<br>", "", $strHtml);
             $strHtml = str_replace("&nbsp;", "", $strHtml);
 
             $strFinal = explode("==", $str)[0]."==\n".$strHtml;

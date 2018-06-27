@@ -3873,3 +3873,6 @@ video {
 
 #map iframe {
   margin-top: 0px; }
+
+p + br {
+  display: none; }
