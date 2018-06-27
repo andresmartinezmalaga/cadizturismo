@@ -3876,3 +3876,6 @@ video {
 
 p + br {
   display: none; }
+
+p > br {
+  display: block; }
