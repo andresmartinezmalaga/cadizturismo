@@ -3878,4 +3878,4 @@ p + br {
   display: none; }
 
 p > br {
-  display: block; }
+  display: block !important; }
