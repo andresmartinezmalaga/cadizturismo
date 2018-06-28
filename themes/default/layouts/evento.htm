@@ -178,6 +178,12 @@ code = "redes-sociales"
         htmlC = htmlC.replace(/&nbsp;/g,"");
         iconsC.html(htmlC);
 
+        var iconsT = $(".section-txt");
+        var htmlT = iconsT.html();
+        console.log(htmlT);
+        htmlT = htmlT.replace(/&nbsp;/g,"");
+        iconsT.html(htmlT);
+
 
         console.log(icons.html());
 
