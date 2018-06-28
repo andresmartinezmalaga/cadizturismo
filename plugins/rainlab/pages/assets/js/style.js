@@ -15,6 +15,11 @@ jQuery(function($)
         e.preventDefault();
     });
 
+    var icons = $(".icons-row");
+    var html = icons.html();
+    html = html.replace("&nbsp;","");
+    icons.html(html);
+
 });
 
 $(".menu-title").click(function(){
@@ -90,7 +95,6 @@ $("span.download").click(function(){
            $(".search-bar").removeClass('upwards');
            $(".search-bar").removeClass('downwards');
    });
-
 
    $("#modal-exp").iziModal();
    $("#modal-success").iziModal();
