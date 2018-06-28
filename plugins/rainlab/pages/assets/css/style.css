@@ -2085,14 +2085,20 @@ html, body {
   display: none; }
 
 /* LISTAS  */
-.section-txt ol, .section-txt ul {
+.section-txt ol {
   padding-left: 0px;
   list-style-type: none; }
-  .section-txt ol li, .section-txt ul li {
+  .section-txt ol li {
     color: #9b9b9b;
     font-size: 18px;
     line-height: 33px;
     margin-bottom: 0px !important; }
+
+.section-txt ul li {
+  color: #9b9b9b;
+  font-size: 18px;
+  line-height: 33px;
+  margin-bottom: 0px !important; }
 
 @media (max-width: 1250px) and (min-width: 840px) {
   .publis {

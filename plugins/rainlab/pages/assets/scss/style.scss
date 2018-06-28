@@ -2388,9 +2388,17 @@ html, body {
 
 /* LISTAS  */
 .section-txt {
-  ol, ul {
+  ol {
     padding-left: 0px;
     list-style-type: none;
+    li {
+      color: #9b9b9b;
+      font-size: 18px;
+      line-height: 33px;
+      margin-bottom: 0px !important;
+    }
+  }
+  ul {
     li {
       color: #9b9b9b;
       font-size: 18px;
