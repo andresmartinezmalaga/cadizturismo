@@ -155,14 +155,14 @@ code = "redes-sociales"
         $(".i-container > .also-feature").each(function(){
         	    var html = $(this).html();
               console.log(html);
-              html = html.replace("&nbsp;","");
+              html = html.replace(/&nbsp;/g,"");
               $(this).html(html);
               console.log($(this).html());
         });
 
         $(".icons-row > .i-container").each(function(){
               var html = $(this).html();
-              html = html.replace("&nbsp;","");
+              html = html.replace(/&nbsp;/g,"");
               console.log(html);
               $(this).html(html);
         });
@@ -170,12 +170,12 @@ code = "redes-sociales"
         var icons = $(".icons-row");
         var html = icons.html();
         console.log(html);
-        html = html.replace("&nbsp;","");
+        html = html.replace(/&nbsp;/g,"");
         icons.html(html);
 
         var iconsC = $(".i-container");
         var htmlC = iconsC.html();
-        htmlC = htmlC.replace("&nbsp;","");
+        htmlC = htmlC.replace(/&nbsp;/g,"");
         iconsC.html(htmlC);
 
 
