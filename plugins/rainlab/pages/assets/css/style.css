@@ -2935,7 +2935,7 @@ html, body {
   .menu-list:nth-of-type(4) {
     order: 4; }
   .section-txt, .section-txt-village {
-    padding-top: 92px !important;
+    padding-top: 70px !important;
     padding-bottom: 50px !important; }
   .section-txt.section-info {
     padding-top: 10px !important;
