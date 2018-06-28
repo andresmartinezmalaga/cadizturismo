@@ -171,6 +171,13 @@ code = "redes-sociales"
         console.log(html);
         html = html.replace("&nbsp;","");
         icons.html(html);
+
+        var iconsC = $(".i-container");
+        var htmlC = iconsC.html();
+        htmlC = htmlC.replace("&nbsp;","");
+        iconsC.html(htmlC);
+
+        
         console.log(icons.html());
 
     });
