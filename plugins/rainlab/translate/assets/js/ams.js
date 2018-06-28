@@ -87,7 +87,7 @@ var ams = function(){
 	}
 
 	this.pasteHtmlAtCaret = function(html) {
-
+        console.log('pulsando pasteHtmlAtCaret');
         var sel, range;
 
         if (window.getSelection) {
@@ -105,12 +105,16 @@ var ams = function(){
                 el.innerHTML = html;
 
                 var frag = document.createDocumentFragment(), node, lastNode;
-
+               
                 while ( (node = el.firstChild) ) {
-                    lastNode = frag.appendChild(node);
+                  lastNode = frag.appendChild(node);
                 }
 
-                range.insertNode(frag);
+                if(range.endOffset<1){                   
+                    range.insertNode(frag);
+                }
+                
+             
 
                 // Preserve the selection
                 if (lastNode) {
@@ -196,40 +200,48 @@ var ams = function(){
              pt.find('.plantillaExperiencia').length > 0) {
 
             if(btnwsyb.length<1){
-                toolbar.append('<span data-toggle="tooltip" data-placement="bottom" data-delay="200" title="Enumeración" class="btwnumberSection custom-wysiwyg"> <img src="/storage/app/media/uploaded-files/templates/parrafonumerado.svg"/></span>');
+                toolbar.append('<span data-toggle="tooltip" id="btj" data-placement="bottom" data-delay="200" title="Enumeración" class="btwnumberSection custom-wysiwyg"> <img src="/storage/app/media/uploaded-files/templates/parrafonumerado.svg"/></span>');
             }
         }
 
 
         $('.btwtitleDesc').on('click',function(){
+            
             self.pasteHtmlAtCaret(titleDesc);
         })
 
         $('.btwdestacado').on('click',function(){
+            
             self.pasteHtmlAtCaret(destacado);
         })
 
         $('.btwfullImage').on('click',function(){
+           
             self.pasteHtmlAtCaret(fullImage);
         })
 
         $('.btwthreeImages').on('click',function(){
+           
             self.pasteHtmlAtCaret(threeImages);
         })
 
         $('.btwtwoImages').on('click',function(){
+            
             self.pasteHtmlAtCaret(twoImages);
         })
 
-        $('.btwnumberSection').on('click',function(){
+        $('.btwnumberSection').on('click',function(event){
+        
             self.pasteHtmlAtCaret(numberSection);
         })
 
         $('.btwmoreInfo').on('click',function(){
+           
             self.pasteHtmlAtCaret(moreInfo);
         })
 
         $('.btwlocations').on('click',function(){
+           
             self.pasteHtmlAtCaret(locations);
         })
 
