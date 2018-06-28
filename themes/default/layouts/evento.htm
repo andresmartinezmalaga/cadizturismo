@@ -152,27 +152,24 @@ code = "redes-sociales"
             spandownl.hide();
         }
 
+        $(".icons-row > .also-feature").each(function(){
+        	    var html = this.html();
+              html = html.replace("&nbsp;","");
+              this.html(html);
+        });
+
+        $(".icons-row > .i-container").each(function(){
+              var html = this.html();
+              html = html.replace("&nbsp;","");
+              this.html(html);
+        });
 
         var icons = $(".icons-row");
-        var html1 = icons.html();
-        console.log(html1);
-        html1 = html1.replace("&nbsp;","");
-        icons.html(html1);
+        var html = icons.html();
+        console.log(html);
+        html = html.replace("&nbsp;","");
+        icons.html(html);
         console.log(icons.html());
-
-        var icons2 = $(".icons-row > .i-container");
-        var html2 = icons2.html();
-        console.log(html2);
-        html2 = html2.replace("&nbsp;","");
-        icons2.html(html2);
-        console.log(icons2.html());
-
-        var icons3 = $(".icons-row > .i-container > .also-feature");
-        var html3 = icons3.html();
-        console.log(html3);
-        html1 = html3.replace("&nbsp;","");
-        icons3.html(html3);
-        console.log(icons3.html());
 
     });
     </script>
