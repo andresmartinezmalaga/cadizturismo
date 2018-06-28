@@ -2364,7 +2364,8 @@ html, body {
     padding: 22px 7px !important; }
   .whats-on {
     height: auto !important;
-    margin-top: 40px !important; }
+    margin-top: 40px !important;
+    margin-bottom: 60px !important; }
   .whats-on .left-txt {
     text-align: center;
     width: 90% !important; }
