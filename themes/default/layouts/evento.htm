@@ -154,7 +154,7 @@ code = "redes-sociales"
 
         $(".icons-row > .i-container > .also-feature").each(function(){
         	    var html = $(this).html();
-              console.log('')
+              console.log(html);
               html = html.replace("&nbsp;","");
               $(this).html(html);
         });
@@ -162,6 +162,7 @@ code = "redes-sociales"
         $(".icons-row > .i-container").each(function(){
               var html = $(this).html();
               html = html.replace("&nbsp;","");
+              console.log(html);
               $(this).html(html);
         });
 
