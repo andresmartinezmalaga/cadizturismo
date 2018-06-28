@@ -152,8 +152,9 @@ code = "redes-sociales"
             spandownl.hide();
         }
 
-        $(".icons-row > .also-feature").each(function(){
+        $(".icons-row > .i-container > .also-feature").each(function(){
         	    var html = $(this).html();
+              console.log('')
               html = html.replace("&nbsp;","");
               $(this).html(html);
         });
