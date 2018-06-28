@@ -153,15 +153,15 @@ code = "redes-sociales"
         }
 
         $(".icons-row > .also-feature").each(function(){
-        	    var html = this.html();
+        	    var html = $(this).html();
               html = html.replace("&nbsp;","");
-              this.html(html);
+              $(this).html(html);
         });
 
         $(".icons-row > .i-container").each(function(){
-              var html = this.html();
+              var html = $(this).html();
               html = html.replace("&nbsp;","");
-              this.html(html);
+              $(this).html(html);
         });
 
         var icons = $(".icons-row");
