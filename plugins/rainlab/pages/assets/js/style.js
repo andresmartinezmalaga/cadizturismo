@@ -14,12 +14,6 @@ jQuery(function($)
     $("#international-press").click(function(e) {
         e.preventDefault();
     });
-
-    var icons = $(".icons-row");
-    var html = icons.html();
-    html = html.replace("&nbsp;","");
-    icons.html(html);
-
 });
 
 $(".menu-title").click(function(){

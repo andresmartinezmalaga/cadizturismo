@@ -136,10 +136,10 @@ code = "redes-sociales"
     <script type="text/javascript" src="{{url('/')}}/plugins/rainlab/pages/assets/js/style.js"></script>
 
 
-  
+
     <script type="text/javascript">
     $(document).ready(function() {
-       
+
         var divbtn = $(".send-info");
         var btnahref = $(".button-send-info a").attr("href");
         if(btnahref == '#'){
@@ -151,7 +151,14 @@ code = "redes-sociales"
         if(imgsrc == '/storage/app/media/uploaded-files/templates/cartel-caballos.jpg' || imgsrc == '/cadizturismo/storage/app/media/uploaded-files/templates/cartel-caballos.jpg' ){
             spandownl.hide();
         }
-        
+
+
+        var icons = $(".icons-row");
+        var html = icons.html();
+        console.log(html);
+        html = html.replace("&nbsp;","");
+        icons.html(html);
+
     });
     </script>
 
