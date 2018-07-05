@@ -535,19 +535,22 @@ class CadizTurismoController extends ControllerBase
     public function sluging(){
 
         $empresas = Empresa::All();
-        
+        $count1 = 0;
+        $count2 = 0;
         foreach ($empresas as $empresa) {
             if($empresa->slug == '' ||  $empresa->slug == NULL){
+                $count1 = $count1 +1;
                 $empresa->slug = str_slug($empresa->name,'-');
                 $empresa->save();
             }
             if($empresa->mslug == '' ||  $empresa->mslug == NULL){
+                $count2 = $count2 +1;
                 $empresa->mslug = str_slug($empresa->municipality,'-');
                 $empresa->save();
             }        
         }
 
-        return new JsonResponse(['data'=>'sluging ok'], 200);  
+        return new JsonResponse(['data'=>'sluging ok. count1='.$count1.' count2='.$count2], 200);  
     }
 
 
