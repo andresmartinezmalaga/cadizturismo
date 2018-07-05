@@ -2085,14 +2085,20 @@ html, body {
   display: none; }
 
 /* LISTAS  */
-.section-txt ol, .section-txt ul {
+.section-txt ol {
   padding-left: 0px;
   list-style-type: none; }
-  .section-txt ol li, .section-txt ul li {
+  .section-txt ol li {
     color: #9b9b9b;
     font-size: 18px;
     line-height: 33px;
     margin-bottom: 0px !important; }
+
+.section-txt ul li {
+  color: #9b9b9b;
+  font-size: 18px;
+  line-height: 33px;
+  margin-bottom: 0px !important; }
 
 @media (max-width: 1250px) and (min-width: 840px) {
   .publis {
@@ -2364,7 +2370,8 @@ html, body {
     padding: 22px 7px !important; }
   .whats-on {
     height: auto !important;
-    margin-top: 40px !important; }
+    margin-top: 40px !important;
+    margin-bottom: 60px !important; }
   .whats-on .left-txt {
     text-align: center;
     width: 90% !important; }
@@ -2377,13 +2384,13 @@ html, body {
     width: auto !important;
     text-align: center; }
   .whats-on .right-photos {
-    margin-top: 50px !important;
+    margin-top: 140px !important;
     width: 100% !important; }
   .whats-on .right-photos .element {
     position: relative !important;
     width: 100% !important; }
-  .whats-on .right-photos #element2, .whats-on .right-photos #element3, .whats-on .right-photos #element4 {
-    top: 73px !important;
+  .whats-on .right-photos #element1, .whats-on .right-photos #element2, .whats-on .right-photos #element3, .whats-on .right-photos #element4 {
+    top: 0px !important;
     background-size: cover !important; }
   .secret-routes .txt-container {
     width: 80% !important;
@@ -2928,8 +2935,11 @@ html, body {
   .menu-list:nth-of-type(4) {
     order: 4; }
   .section-txt, .section-txt-village {
-    padding-top: 92px !important;
+    padding-top: 70px !important;
     padding-bottom: 50px !important; }
+  .section-txt.section-info {
+    padding-top: 10px !important;
+    padding-bottom: 20px !important; }
   .section-txt .big-number-container, .section-txt-village .big-number-container {
     height: 175px !important; }
   .section-txt .big-number-container .step, .section-txt-village .big-number-container .step {

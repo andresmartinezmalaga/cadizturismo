@@ -14,7 +14,6 @@ jQuery(function($)
     $("#international-press").click(function(e) {
         e.preventDefault();
     });
-
 });
 
 $(".menu-title").click(function(){
@@ -90,7 +89,6 @@ $("span.download").click(function(){
            $(".search-bar").removeClass('upwards');
            $(".search-bar").removeClass('downwards');
    });
-
 
    $("#modal-exp").iziModal();
    $("#modal-success").iziModal();

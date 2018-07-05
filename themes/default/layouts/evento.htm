@@ -136,10 +136,10 @@ code = "redes-sociales"
     <script type="text/javascript" src="{{url('/')}}/plugins/rainlab/pages/assets/js/style.js"></script>
 
 
-  
+
     <script type="text/javascript">
     $(document).ready(function() {
-       
+
         var divbtn = $(".send-info");
         var btnahref = $(".button-send-info a").attr("href");
         if(btnahref == '#'){
@@ -151,7 +151,40 @@ code = "redes-sociales"
         if(imgsrc == '/storage/app/media/uploaded-files/templates/cartel-caballos.jpg' || imgsrc == '/cadizturismo/storage/app/media/uploaded-files/templates/cartel-caballos.jpg' ){
             spandownl.hide();
         }
-        
+
+        $(".i-container > .also-feature").each(function(){
+        	    var html = $(this).html();
+              console.log(html);
+              html = html.replace(/&nbsp;/g,"");
+              $(this).html(html);
+              console.log($(this).html());
+        });
+
+        $(".icons-row > .i-container").each(function(){
+              var html = $(this).html();
+              html = html.replace(/&nbsp;/g,"");
+              console.log(html);
+              $(this).html(html);
+        });
+
+        var icons = $(".icons-row");
+        var html = icons.html();
+        console.log(html);
+        html = html.replace(/&nbsp;/g,"");
+        icons.html(html);
+
+        var iconsC = $(".i-container");
+        var htmlC = iconsC.html();
+        htmlC = htmlC.replace(/&nbsp;/g,"");
+        iconsC.html(htmlC);
+
+        // var iconsT = $(".section-txt");
+        // var htmlT = iconsT.html();
+        // console.log(htmlT);
+        // htmlT = htmlT.replace(/&nbsp;/g,"");
+        // iconsT.html(htmlT);
+        // console.log(iconsT.html());
+
     });
     </script>
 
