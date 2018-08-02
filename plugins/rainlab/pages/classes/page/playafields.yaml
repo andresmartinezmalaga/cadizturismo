@@ -23,15 +23,23 @@ fields:
         span: left
         label: 'Tipo'
         placeholder: 'Tipo de playa'
-        type: dropdown
+        type: dropdown        
         options: getBeachCategoriesType
 
     viewBag[categorieb]:
         span: right
-        label: 'Categoría'
-        placeholder: 'Categoría'
-        type: dropdown
+        label: 'Características'
+        placeholder: 'Características'
+        type: taglist
+        attributes: {multiple:'multiple'}
         options: getBeachCategoriesOptions
+
+    viewBag[municipio]:
+        span: left
+        label: 'Municipio'
+        placeholder: 'Municipio'
+        type: dropdown        
+        options: getMunicipalities
 
     viewBag[address]:
         span: full

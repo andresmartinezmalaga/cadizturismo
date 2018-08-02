@@ -204,6 +204,55 @@ class Page extends ContentBase
         ];
     }
 
+    public function getMunicipalities(){
+        return [
+        'alcalá de los gazules' => 'Alcalá de los Gazules',
+        'alcalá del valle' => 'Alcalá del Valle',
+        'algar' => 'Algar',
+        'algeciras' => 'Algeciras',
+        'algodonales' => 'Algodonales',
+        'arcos de la frontera' => 'Arcos de la Frontera',
+        'barbate' => 'Barbate',
+        'benalup-casas viejas' => 'Benalup-Casas Viejas',
+        'benaocaz' => 'Benaocaz',
+        'bornos' => 'Bornos',
+        'cádiz' => 'Cádiz',
+        'castellar de la frontera' => 'Castellar de la Frontera',
+        'chiclana de la frontera' => 'Chiclana de la Frontera',
+        'chipiona' => 'Chipiona',
+        'conil de la frontera' => 'Conil de la Frontera',
+        'el bosque' => 'El Bosque',
+        'el gastor' => 'El Gastor',
+        'el puerto de santa maría' => 'El Puerto de Santa María',
+        'espera' => 'Espera',
+        'grazalema' => 'Grazalema',
+        'jerez de la frontera' => 'Jerez de la Frontera',
+        'jimena de la frontera' => 'Jimena de la Frontera',
+        'la línea de la concepción' => 'La Línea de la Concepción',
+        'los barrios' => 'Los Barrios',
+        'medina sidonia' => 'Medina Sidonia',
+        'olvera' => 'Olvera',
+        'paterna de rivera' => 'Paterna de Rivera',
+        'prado del rey' => 'Prado del Rey',
+        'puerto real' => 'Puerto Real',
+        'puerto serrano' => 'Puerto Serrano',
+        'rota' => 'Rota',
+        'san fernando' => 'San Fernando',
+        'san josé del valle' => 'San José del Valle',
+        'sanlúcar de barrameda' => 'Sanlúcar de Barrameda',
+        'san roque' => 'San Roque',
+        'setenil de las bodegas' => 'Setenil de las Bodegas',
+        'tarifa' => 'Tarifa',
+        'torre alháquime' => 'Torre Alháquime',
+        'trebujena' => 'Trebujena',
+        'ubrique' => 'Ubrique',
+        'vejer de la frontera' => 'Vejer de la Frontera',
+        'villaluenga del rosario' => 'Villaluenga del Rosario',
+        'villamartín' => 'Villamartín',
+        'zahara de la sierra' => 'Zahara de la Sierra',
+        ];
+    }
+
     //
     // CMS Object
     //
