@@ -80,6 +80,30 @@ code = "redes-sociales"
         }
     }
 
+    function onFindPlaya(){
+
+        $aLang = App::getLocale();
+
+        $type = $_POST['type'];
+        $location = $_POST['location'];
+
+        if (isset($_POST['category'])){
+            $pcategories = $_POST['category'];
+        }
+
+        if($pcategories[0]){
+          $categories = implode('_', $pcategories);
+        } else {
+          $categories = 'todas-las-caracteristicas';
+        }
+
+        $plycount = $this->staticApp->empresasFindCount($type, $categories, $location);
+        $playas = $this->staticApp->playaFind($type, $categories, $location);
+
+        return Redirect::to($aLang.'/listado-de-playas/'.$type.'/'.$categories.'/'.$location);
+
+    }
+
 ?>
 
 ==
@@ -110,11 +134,16 @@ code = "redes-sociales"
     {% partial 'device-rotate' %}
     {% partial 'site/header' %}
 
+    <!-- SEARCH -->     
+    <div id='prtlSearch'>
+      {% partial "site/searchplaya" %}
+    </div>
+    
     {% component 'staticPage' %}
 
-    <div id='prtlBeaches' class="all-events">
-        <div class="all-events-container">
-        {% partial "beaches" %}
+    <div id='prtlBeaches' class="all-events">       
+        <div class="all-events-container">            
+        <!--{% partial "beaches" %} -->
         </div>
     </div>
 
@@ -127,6 +156,8 @@ code = "redes-sociales"
     <script type="text/javascript" src="{{url('/')}}/plugins/rainlab/pages/assets/iziModal/js/iziModal.js"></script>
 
     <script type="text/javascript" src="{{url('/')}}/plugins/rainlab/pages/assets/js/style.js"></script>
+    
+    {% framework %}
 
   </body>
 </html>

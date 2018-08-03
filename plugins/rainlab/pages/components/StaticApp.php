@@ -255,6 +255,28 @@ class StaticApp extends ComponentBase
 
     }
 
+    // sort ok
+    public function getBeachCategoriesType(){
+        return [
+            'urbana' => 'Urbana',
+            'virgen' => 'Virgen'
+        ];
+    }
+
+    // sort ok
+    public function getBeachCategoriesOptions(){
+        return [
+            'animales' => 'Animales',
+            'camping' => 'Camping',
+            'deporte' => 'Deporte',
+            'instalaciones' => 'Instalaciones',
+            'naturaleza' => 'Naturaleza',
+            'nudista' => 'Nudista',
+            'restauración' => 'Restauración'
+
+        ];
+    }
+
      public function getInterestsOptions() {
 
       //$intereses = Intereses::all();
@@ -1183,6 +1205,49 @@ class StaticApp extends ComponentBase
 
         foreach ($result as $i) {
            $i->scatg = $this->getRutasCategoriesById($i->category);
+        }
+
+        return $result;
+    }
+
+    public function playaFind($type, $categories, $location)
+    {
+        $result = collect();
+        $theme = Theme::getActiveTheme();
+        $pages = Page::listInTheme($theme, false);
+        $playas =  new \Illuminate\Support\Collection($pages);
+
+        $typeOperator = '=';
+        if($type == 'all'){
+            $type = null;
+            $typeOperator = '!=';
+        }
+
+        $locationOperator = '=';
+        if($location == 'all'){
+            $location = null;
+            $locationOperator = '!=';
+        }
+
+        $preResult = $playas->where("is_hidden",0)->where('subtemplate','playas')->where('categoriea',$typeOperator,$type)->where('municipio',$locationOperator,$location)->values();
+
+        if($categories != 'all'){
+
+            $aCategories = explode("_", $categories);
+
+            foreach ($preResult as $i) {
+                $pass = true;
+                foreach ($aCategories as $category) {
+                    if($pass == true){
+                        if(strpos($i->categorieb, $category)!==false){
+                            $result->push($i);
+                            $pass = false;
+                        }
+                    }      
+                }   
+            }
+        } else {
+            $result = $preResult;
         }
 
         return $result;

@@ -193,13 +193,13 @@ class Page extends ContentBase
     // sort ok
     public function getBeachCategoriesOptions(){
         return [
-            'animales' => 'Animales',
-            'camping' => 'Camping',
-            'deporte' => 'Deporte',
-            'instalaciones' => 'Instalaciones',
-            'naturaleza' => 'Naturaleza',
-            'nudista' => 'Nudista',
-            'restauración' => 'Restauración'
+            'animales' => 'animales',
+            'camping' => 'camping',
+            'deporte' => 'deporte',
+            'instalaciones' => 'instalaciones',
+            'naturaleza' => 'naturaleza',
+            'nudista' => 'nudista',
+            'restauración' => 'restauración'
 
         ];
     }

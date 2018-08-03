@@ -1,0 +1,62 @@
+==
+
+<?php
+
+  function onStart()
+  {
+
+    $this['lang']=\App::getLocale();
+    if($this['lang']==''){
+      $this['lang']='es';
+    }
+
+    $this['municipalities'] = $this->staticApp->getMunicipalities();
+    $this['types'] = $this->staticApp->getBeachCategoriesType();
+    $this['categories'] = $this->staticApp->getBeachCategoriesOptions();
+  }
+
+?>
+
+==
+
+<div id="search-rutas" class="search-bar-container">
+  <div class="search-bar">
+    <form data-request="onFindPlaya">
+      <div class="inputs-container">
+
+        <div id="event-category" class="days-container">
+          <select id="sltType" class="custom-select select-days" name="type">
+            {% for key,value in types %}
+                <option value="{{key}}">{{ value |_ }}</option>
+            {% endfor %}
+            <option value="todos-los-tipos" selected=>{{'Todas'|_ }}</option>
+          </select>
+          <span class="select-title">{{ 'TIPO DE PLAYA'|_ }}</span>
+        </div>
+
+        <div id="playa-categories" class="type-container">
+          <select id="sltcategory" class="custom-select select-type" name="category[]" multiple="multiple">
+            {% for key,value in categories %}
+                <option value="{{key}}">{{value}}</option>
+            {% endfor %}
+            <option class="all-municipios" value="todas-las-caracteristicas" selected=>{{'Todas las características'|_ }}</option>
+          </select>
+          <span class="select-title">{{ 'CARACTERÍSTICAS'|_ }}</span>
+        </div>
+
+        <div id="event-location" class="type-container">
+          <select id="sltLocationPlayas" class="custom-select select-type" name="location">
+            {% for key,value in municipalities %}
+                <option value="{{key}}">{{value}}</option>
+            {% endfor %}
+            <option value="todos-los-municipios" selected=>{{'Todos los municipios'|_ }}</option>
+          </select>
+          <span class="select-title">{{ 'UBICACIÓN'|_ }}</span>
+        </div>
+
+      <div class="button-container">
+        <input id="bscRuta" type="submit" value="{{ 'Ver playas'|_ }}">
+      </div>
+    </form>
+  </div>
+</div>
