@@ -1,4 +1,4 @@
-title = "allRutas"
+title = "allPlayas"
 url = "/listado-de-playas/:type/:categories/:location"
 layout = "dinamic"
 is_hidden = 0
@@ -40,61 +40,63 @@ is_hidden = 0
          $type = 'all';
     }
     
-    $this['playas'] = $this->staticApp->playaFind($type,$categories,$location);
+    $this['beaches'] = $this->staticApp->playaFind($type,$categories,$location);
 
     $this['ptitle'] = 'Cádiz | Playas';
     $this['metaTitle'] = 'Cádiz | Playas';
-
-    die($this['playas']);
-
-
+    
 	}
 
   function onFindPlaya(){
 
-   /* $category = $_POST['category'];
-    $days = $_POST['days'];
+    $aLang = App::getLocale();
+
+    $type = $_POST['type'];
     $location = $_POST['location'];
-    
-    if($category == 'todas-las-categorias'){
-      $category = 'all';
-    }
-
-    if($days == 'dejate-llevar'){
-      $days = 'all';
-    }
-
+    $pcategories = $_POST['category'];
+   
     if($location == 'todos-los-municipios'){
       $location = 'all';
+    }   
+
+    if($pcategories[0]!='todas-las-caracteristicas'){
+      $categories = implode('_', $pcategories);
+    } else {
+      $categories = 'all';
     }
 
-    $this['rutas'] = $this->staticApp->rutaFind($category,$days,$location);
+    if($type == 'todos-los-tipos'){
+      $type = 'all';
+    }
+
+    $this['beaches'] = $this->staticApp->playaFind($type,$categories,$location);
 
     return [
-        '#prtlRutasl' => $this->renderPartial('rutas')
-    ];*/
+        '#prtlPlayasl' => $this->renderPartial('beaches')
+    ];
 
   }
 
 
 ?>
 ==
+<!-- ToMarina : meter por css background image a la class searchbar-playas la imagen de la playa igual que hicistes en rutas searchbar-rutas. Gracias.-->
 
 <!-- HEADER -->
-<div class="header-search" id="searchbar-rutas">
+<div class="header-search" id="searchbar-playas">
   <div class="header-container">
       <div id="exp-header" class="header-txt">
-        <p class="txt"><span class="first-word-event">{{ 'Rutas'|_ }}</span> {{ 'pensadas para ti'|_ }}</p>
+        <p class="txt"><span class="first-word-event">{{ 'Playas'|_ }}</span></p>
         <img class="brush" src="{{preurl}}/storage/app/media/uploaded-files/templates/brush-header.svg" alt="">
       </div>
 
     <!-- SEARCH -->
-    <div id='prtlSearchRutas'>
+    <div id='prtlSearchPlayas'>
       {% partial "site/searchplaya" %}
     </div>
   </div>
 </div>
 </div>
-<div id='prtlRutasl' class="all-exps">
+<div id='prtlPlayasl' class="all-exps">
 	{% partial "beaches" %}
 </div>

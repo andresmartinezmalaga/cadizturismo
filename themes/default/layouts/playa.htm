@@ -83,7 +83,6 @@ code = "redes-sociales"
     function onFindPlaya(){
 
         $aLang = App::getLocale();
-
         $type = $_POST['type'];
         $location = $_POST['location'];
 
@@ -91,13 +90,12 @@ code = "redes-sociales"
             $pcategories = $_POST['category'];
         }
 
-        if($pcategories[0]){
+        if($pcategories[0]!='todas-las-caracteristicas'){
           $categories = implode('_', $pcategories);
         } else {
           $categories = 'todas-las-caracteristicas';
         }
 
-        $plycount = $this->staticApp->empresasFindCount($type, $categories, $location);
         $playas = $this->staticApp->playaFind($type, $categories, $location);
 
         return Redirect::to($aLang.'/listado-de-playas/'.$type.'/'.$categories.'/'.$location);
