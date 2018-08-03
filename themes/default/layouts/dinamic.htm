@@ -305,6 +305,58 @@ code = "redes-sociales"
 
         });
 
+        $('#prtlSearchPlayas #bscPlaya').on('click', function(){
+
+            console.log("tititititi!");
+
+            var category = $('#sltcategory');
+            var categoryMlt = 'todas-las-caracteristicas';           
+            var pcategory = category.val() + "";
+            if(pcategory !='Todas las caracteristicas' && pcategory !='null'){
+                 var categoryMlt = pcategory.replace( ',', '_');
+            }
+
+            var type = $('#select2-sltType-container');
+            var location = $('#sltLocationPlayas');
+            var sType = slugIn(type.val());
+            var sType = slugIn(type.text());
+            
+            console.log('***********');
+            console.log(type.val());
+            console.log(type.text());
+            console.log('***********');
+
+            if(sType == 'todas'){
+                sType = 'todos-los-tipos';
+            }
+            var sLocation = slugIn(location.val());
+
+            var chgUrl = window.location.href
+            var purl = chgUrl.split('cadizturismo');
+            var baseUrl = purl[0]+'cadizturismo';
+            var url = purl[1];
+            var arr = url.split('/');
+
+            var total = arr.length;
+
+            var itype = arr[total-3];
+            var icategory = arr[total-2];
+            var ilocation = arr[total-1];
+
+           
+
+            var nurl = url.replace( icategory, categoryMlt);
+            nurl = nurl.replace( itype, sType);
+            nurl = nurl.replace( ilocation, sLocation);
+
+            history.pushState(null, "", baseUrl+nurl);
+
+             console.log('---------');
+            console.log(baseUrl+nurl);
+            console.log('---------');
+
+        });
+
 
         $('#prtlSearchEventos #bscEvento').on('click', function(){
             
