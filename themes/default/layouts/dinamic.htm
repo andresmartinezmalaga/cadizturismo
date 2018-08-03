@@ -307,8 +307,6 @@ code = "redes-sociales"
 
         $('#prtlSearchPlayas #bscPlaya').on('click', function(){
 
-            console.log("tititititi!");
-
             var category = $('#sltcategory');
             var categoryMlt = 'todas-las-caracteristicas';           
             var pcategory = category.val() + "";
@@ -320,11 +318,7 @@ code = "redes-sociales"
             var location = $('#sltLocationPlayas');
             var sType = slugIn(type.val());
             var sType = slugIn(type.text());
-            
-            console.log('***********');
-            console.log(type.val());
-            console.log(type.text());
-            console.log('***********');
+           
 
             if(sType == 'todas'){
                 sType = 'todos-los-tipos';
@@ -350,10 +344,7 @@ code = "redes-sociales"
             nurl = nurl.replace( ilocation, sLocation);
 
             history.pushState(null, "", baseUrl+nurl);
-
-             console.log('---------');
-            console.log(baseUrl+nurl);
-            console.log('---------');
+            
 
         });
 
