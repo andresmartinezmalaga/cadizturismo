@@ -16,10 +16,9 @@
   }
 
 ?>
-
 ==
 
-<div id="search-rutas" class="search-bar-container">
+<div id="search-rutas" class="search-playas search-bar-container">
   <div class="search-bar">
     <form data-request="onFindPlaya">
       <div class="inputs-container">
@@ -34,7 +33,7 @@
           <span class="select-title">{{ 'TIPO DE PLAYA'|_ }}</span>
         </div>
 
-        <div id="playa-categories" class="type-container">
+        <div id="playa-categories" class="type-container longslt">
           <select id="sltcategory" class="custom-select select-type" name="category[]" multiple="multiple">
             {% for key,value in categories %}
                 <option value="{{key}}">{{value}}</option>
@@ -43,6 +42,8 @@
           </select>
           <span class="select-title">{{ 'CARACTERÍSTICAS'|_ }}</span>
         </div>
+
+
 
         <div id="event-location" class="type-container">
           <select id="sltLocationPlayas" class="custom-select select-type" name="location">

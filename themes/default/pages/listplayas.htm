@@ -82,16 +82,14 @@ is_hidden = 0
 
 ?>
 ==
-<!-- ToMarina : meter por css background image a la class searchbar-playas la imagen de la playa igual que hicistes en rutas searchbar-rutas. Gracias.-->
 
 <!-- HEADER -->
-<div class="header-search" id="searchbar-playas">
+<div class="header-search header-playas" id="searchbar-playas">
   <div class="header-container">
       <div id="exp-header" class="header-txt">
         <p class="txt"><span class="first-word-event">{{ 'Playas'|_ }}</span></p>
         <img class="brush" src="{{preurl}}/storage/app/media/uploaded-files/templates/brush-header.svg" alt="">
       </div>
-
     <!-- SEARCH -->
     <div id='prtlSearchPlayas'>
       {% partial "site/searchplaya" %}

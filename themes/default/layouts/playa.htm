@@ -132,11 +132,31 @@ code = "redes-sociales"
     {% partial 'device-rotate' %}
     {% partial 'site/header' %}
 
-    <!-- SEARCH -->     
-    <div id='prtlSearch'>
-      {% partial "site/searchplaya" %}
+    <!-- HEADER -->
+<div class="header-general header-playas">
+
+    <div class="header-container">
+
+        <div class="header-txt">
+            <h1 class="txt-rutas"><span class="first-word-rutas">{{ "Playas"|_ }}</span><span class="con-encanto" style="display: block;"> &nbsp</span></h1>
+            <img class="brush" src="{{preurl}}/storage/app/media/uploaded-files/templates/brush-header.svg" alt="">
+        </div>
+
+        <!-- SEARCH -->
+        <div id='prtlSearch'>
+            {% partial "site/searchplaya" %}
+        </div>
+
+        <div class="header-comment">
+            <p class="comment">138km de playas, calas y ensenadas <br> que invitan a perderse</p>
+        </div>
+
     </div>
+</div>
+</div>
     
+    
+
     {% component 'staticPage' %}
 
     <div id='prtlBeaches' class="all-events">       
@@ -154,6 +174,8 @@ code = "redes-sociales"
     <script type="text/javascript" src="{{url('/')}}/plugins/rainlab/pages/assets/iziModal/js/iziModal.js"></script>
 
     <script type="text/javascript" src="{{url('/')}}/plugins/rainlab/pages/assets/js/style.js"></script>
+
+     <script type="text/javascript" src="{{url('/')}}/plugins/rainlab/pages/assets/js/mapcadiz.js"></script>
     
     {% framework %}
 

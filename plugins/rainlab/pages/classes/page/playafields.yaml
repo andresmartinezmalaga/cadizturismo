@@ -26,6 +26,7 @@ fields:
         type: dropdown        
         options: getBeachCategoriesType
 
+
     viewBag[categorieb]:
         span: right
         label: 'Características'
@@ -33,6 +34,7 @@ fields:
         type: taglist
         attributes: {multiple:'multiple'}
         options: getBeachCategoriesOptions
+        
 
     viewBag[municipio]:
         span: left

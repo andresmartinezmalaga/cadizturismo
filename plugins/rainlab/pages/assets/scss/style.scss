@@ -4837,3 +4837,239 @@ p + br {
 p > br {
   display: block !important;
 }
+
+
+
+/* **************************************************************************** */
+/* **************************************************************************** */
+/* **************************************************************************** */
+/* Andrés Martínez */
+/* **************************************************************************** */
+/* **************************************************************************** */
+/* **************************************************************************** */
+
+
+.header-playas {
+  background-image: url("../img/playas.jpg");
+  transform: rotate(0deg);
+  background-attachment: fixed;
+  
+  .search-bar{
+    margin-left: -163px;
+  }
+
+  .select2-selection--multiple{
+    border: none!important;
+  }
+
+  .longslt{
+    min-width: 350px!important;
+  }
+
+  .select2-selection--multiple{
+    background-color: transparent!important;
+  }
+
+  .days-container{
+      background-image: url("../svg/tipo-playa.svg")!important;
+      background-repeat: no-repeat;
+      background-position: 21px 50%;
+  }
+
+  .longslt{
+      background-image: url("../svg/caracteristicas.svg")!important;
+      background-repeat: no-repeat;
+      background-position: 21px 50%;
+  }
+}
+
+#playa-categories > span.select2.select2-container.select2-container--default > span.selection > span > ul{
+  margin-top: 10px!important;
+}
+
+.search-playas {
+  width: 1040px!important;
+}
+
+.map-content{  
+  background-color: #F5A623;
+  background-image: url("../svg/topradiusyellow.svg")!important;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: left top; 
+  .premap{
+    @include flexbox();
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    padding: 180px 0px 160px 0px;
+    margin: 0 auto;
+    max-width: 1145px;
+    .mapc{  
+      position: relative;
+      width: 616px;
+      img{
+        width: 616px;
+      }
+      
+      .pointmap{       
+        position: absolute;
+        background-image: url("../svg/ubicacion.svg")!important;
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        background-position: left top;
+        height: 19px;
+        width: 20px;
+        bottom: 0px;
+        left: 30px;
+        cursor: pointer;
+        z-index: 888888;
+      } 
+      .mapbox{ 
+        .enlaces{
+          background-color: #F4F4F4;
+          border-radius: 4px;
+          padding: 5px 20px;
+          z-index: 2;
+          width: 240px;
+        }
+          position: absolute;
+          width: 240px;
+          bottom: 12px;
+          left: -8px;
+          padding: 5px 0px;
+          visibility: hidden;
+         
+        img{    
+          margin-top: -10px;
+          margin-left: 35px;
+          height: 25px;
+          width: 25px;
+          z-index: -1;
+          position: relative;
+        }
+       
+        h1{
+          font-size: 16px!important;
+          color: #4A4A4A;
+          font-family: 'AvenirNext-DemiBold', sans-serif;
+          span{
+            display: block;
+          }
+          margin-bottom: 19px;
+        }
+        a{
+          font-size: 16px!important;
+          display: block;
+          color: #4A4A4A;
+          font-family: 'AvenirNext-Medium', sans-serif;
+          margin-bottom: 13px;
+          text-decoration: none;
+          span{
+            margin-left: 10px;
+          }
+          &:hover{
+            opacity:0.8;
+          }
+        }
+      }     
+      .gm{
+        position: absolute;        
+      }
+      .g1{       
+        bottom: 428px;
+        left: 23px;
+      }
+      .g2{       
+        bottom: 400px;
+        left: -20px;
+      }
+      .g3{     
+        bottom: 365px;
+        left: 1px;
+      }
+      .g4{       
+        bottom: 349px;
+        left: 60px;
+      }
+      .g5{       
+        bottom: 277px;
+        left: 115px;
+      }
+      .g6{       
+        bottom: 266px;
+        left: 38px;
+      }
+      .g7{       
+        bottom: 242px;
+        left: 68px;
+      }
+      .g8{       
+        bottom: 212px;
+        left: 110px;
+      }
+      .g9{       
+        bottom: 163px;
+        left: 118px;
+      }
+      .g10{       
+        bottom: 148px;
+        left: 180px;
+      }
+      .g11{       
+        bottom: 100px;
+        left: 200px;
+      }
+      .g12{       
+        bottom: 52px;
+        left: 302px;
+      }
+      .g13{       
+        bottom: 100px;
+        left: 356px;
+      }
+      .g14{       
+        bottom: 40px;
+        left: 385px;
+      }
+      .g15{       
+        bottom: 120px;
+        left: 440px;
+      }
+      .g16{       
+        bottom: 83px;
+        left: 453px;
+      }
+
+    }
+    .txt-container{
+      
+     
+      padding-left: 200px!important;
+      
+      p{
+        margin-bottom: 55px!important;
+        margin-top: 55px!important;
+      }
+    
+      .title{
+        font-size: 64px!important;
+        color: white;
+        font-family: 'AvenirNext-DemiBold', sans-serif;
+        line-height: 65px;
+        //max-width: 321px;
+        text-transform: uppercase;
+        color:white!important;
+        
+      }
+
+      .stitle{
+        opacity: 0.5;
+        font-size: 23px!important;
+        color: #4A4A4A;
+        font-family: 'AvenirNext', sans-serif;
+
+      }
+    }
+  }
+}

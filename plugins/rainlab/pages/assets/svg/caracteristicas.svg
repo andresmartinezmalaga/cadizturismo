@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 11</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Playas" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Playas-estado" transform="translate(-439.000000, -638.000000)" stroke="#484848">
+            <g id="Group-14" transform="translate(236.000000, 596.000000)">
+                <g id="Group-10">
+                    <g id="Group-11" transform="translate(204.000000, 42.000000)">
+                        <path d="M9.1899,21.1861 L2.7029,15.0091 L15.8039,1.8201 C17.5649,0.0601 20.4189,0.0601 22.1799,1.8201 C23.9399,3.5811 23.9399,6.4361 22.1799,8.1961 L9.1899,21.1861 Z" id="Stroke-1"></path>
+                        <polyline id="Stroke-3" points="2.7026 15.0093 0.4996 23.5003 9.1896 21.1863"></polyline>
+                        <path d="M15.8036,1.8204 L22.1796,8.1964" id="Stroke-5"></path>
+                        <path d="M1.5029,19.6339 L4.3379,22.5099" id="Stroke-7"></path>
+                        <path d="M19.0043,5.0211 L6.0143,18.0111" id="Stroke-9"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

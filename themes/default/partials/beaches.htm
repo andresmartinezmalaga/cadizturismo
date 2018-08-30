@@ -23,35 +23,55 @@
        {% endif %}
   	</div>
 
-	{% for beach in beaches %}
-		
-		<div class="event">
-			<div class="overlay-img">
-				<br>
-			</div><img class="rec-img fr-fic fr-dii" src="{{beach.viewBag.cover}}">
-			<div class="txt-container">
+  	 <div class="all-events-container">
 
-				<p class="name">{{beach.viewBag.title}}</p><img class="separator fr-fic fr-dii" src="{{preurl}}/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
-				<div class="icons">
-					<div class="icon-pair">
-						<img src="{{preurl}}/storage/app/media/uploaded-files/templates/{{str_slug(beach.viewBag.categoriea)}}.svg" class="fr-fil fr-dib">
+		{% for beach in beaches %}
+			
 
-						<p class="icon-txt">
-	              			{{beach.viewBag.categoriea|_}}
-						</p>
+			<div class="event">
+				<div class="overlay-img"></div>
+				<img class="rec-img" src="{{beach.viewBag.cover}}">
+				<div class="txt-container">
+					<p class="name">{{beach.viewBag.title}}</p>
+					<img class="separator fr-fic fr-dii" src="{{preurl}}/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
+					<div class="icons">
+						
+						<div class="icon-pair">
+							<img src="{{preurl}}/storage/app/media/uploaded-files/templates/{{str_slug(beach.viewBag.categoriea)}}.svg" class="fr-fil fr-dib">
+
+							<p class="icon-txt">
+		              			{{beach.viewBag.categoriea|_}}
+							</p>
+						</div>
+						<p>&nbsp;</p>
+						<div class="icon-pair">
+							{% set cb = beach.viewBag.categorieb|split(',') %}
+							<img src="{{preurl}}/storage/app/media/uploaded-files/templates/caracteristicas-blanco.svg" class="fr-fil fr-dib">
+							<p class="icon-txt">
+
+								{{cb[0]|_}}
+							</p>
+							{% if cb|length > 1 %}
+								{% for cbi in cb %}								
+								&nbsp;&nbsp;
+								{% if cbi != cb[0] %}
+								<p class="icon-txt">
+
+									{{cbi|_}}
+								</p>
+								{% endif %}
+								{% endfor %}
+							{% endif %}
+						</div>
 					</div>
-					<div class="icon-pair">
-						<img src="{{preurl}}/storage/app/media/uploaded-files/templates/{{str_slug(beach.viewBag.categorieb)}}.svg" class="fr-fil fr-dib">
-						<p class="icon-txt">
-							{{beach.viewBag.categorieb|_}}
-						</p>
-					</div>
+					<div class="button-container"><a class="see-event" href="{{url('/')}}/{{lang}}{{beach.viewBag.url}}">{{'Ver playa'|_}} <img src="{{preurl}}/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
 				</div>
-				<div class="button-container"><a class="see-event" href="{{url('/')}}/{{lang}}{{beach.viewBag.url}}">{{'Ver playa'|_}} <img src="{{preurl}}/storage/app/media/uploaded-files/templates/link-icon.svg" class="fr-fic fr-dii"></a></div>
 			</div>
-		</div>
-		
-	{% endfor %}
+			
+		{% endfor %}
+
+	  </div>
+
 
 {% else %}
 <div class="search-title-container">
