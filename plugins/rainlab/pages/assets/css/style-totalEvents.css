@@ -279,7 +279,7 @@ form input[type="submit"]:hover, form input[type="submit"]:focus, form input[typ
   left: 10%; }
 
 .more-popular .main-events-container .event .txt-container .date {
-  font-size: 69px;
+  font-size: 18px;
   color: white;
   font-weight: 100;
   line-height: 48px;
