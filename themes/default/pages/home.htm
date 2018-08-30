@@ -112,7 +112,7 @@ is_hidden = 0
           {% for i in 4..5 %}
              {% if events[i] %}
                <div class="event">
-                <p class="event-date">{{events[i]['date_start_pretty_numf']}}</p>
+                <p class="event-date">{{events[i]['date_start_pretty_numf']}} - {{events[i].date_end_pretty_day}} {{events[i].date_end_pretty_month|_}</p>
                 <p class="event-place">{{events[i]['location']}}</p>
                 <a href="{{url('/')}}/{{lang}}{{events[i]['url']}}" class="event-name">{{events[i]['title']}}</a>
               </div>
