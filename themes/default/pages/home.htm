@@ -112,7 +112,7 @@ is_hidden = 0
           {% for i in 4..5 %}
              {% if events[i] %}
                <div class="event">
-                <p class="event-date">{{events[i]['date_start_pretty_numf']}} - {{events[i].date_end_pretty_day}} {{events[i].date_end_pretty_month|_}}</p>
+                <p class="event-date">{{events[i]['date_start_pretty_numf']}} - {{events[i].date_end_pretty_numf}} {{events[i].date_end_pretty_numf|_}}</p>
                 <p class="event-place">{{events[i]['location']}}</p>
                 <a href="{{url('/')}}/{{lang}}{{events[i]['url']}}" class="event-name">{{events[i]['title']}}</a>
               </div>
@@ -132,7 +132,7 @@ is_hidden = 0
             <div class="overlay-img"></div>
             <img class="rec-img" src="{{events[0]['cover']}}">
             <div class="txt-container">
-              <p class="date">{{ events[0]['date_start_pretty_day'] }} {{events[0]['date_start_pretty_month']|_}}</p>
+              <p class="date">{{ events[0]['date_start_pretty_day'] }} {{events[0]['date_start_pretty_month']|_}} - {{events[0].date_end_pretty_day}} {{events[0].date_end_pretty_month|_}}</p>
               <p class="name">{{events[0]['title']}}</p>
               <img class="separator" src="{{preurl}}/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
             </div>
@@ -146,7 +146,7 @@ is_hidden = 0
             <div class="overlay-img"></div>
             <img class="rec-img" src="{{events[1]['cover']}}">
             <div class="txt-container">
-              <p class="date">{{ events[1]['date_start_pretty_day'] }} {{events[1]['date_start_pretty_month']|_}}</p>
+              <p class="date">{{ events[1]['date_start_pretty_day'] }} {{events[1]['date_start_pretty_month']|_}} - {{events[1].date_end_pretty_day}} {{events[1].date_end_pretty_month|_}}</p>
               <p class="name">{{events[1]['title']}}</p>
               <img class="separator" src="{{preurl}}/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
             </div>
@@ -160,7 +160,7 @@ is_hidden = 0
             <div class="overlay-img"></div>
             <img class="rec-img" src="{{events[2]['cover']}}">
             <div class="txt-container">
-              <p class="date">{{ events[2]['date_start_pretty_day'] }} {{events[2]['date_start_pretty_month']|_}}</p>
+              <p class="date">{{ events[2]['date_start_pretty_day'] }} {{events[2]['date_start_pretty_month']|_}} - {{events[2].date_end_pretty_day}} {{events[2].date_end_pretty_month|_}}</p>
               <p class="name">{{events[2]['title']}}</p>
               <img class="separator" src="{{preurl}}/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
             </div>
@@ -174,7 +174,7 @@ is_hidden = 0
             <div class="overlay-img"></div>
             <img class="rec-img" src="{{events[3]['cover']}}">
             <div class="txt-container">
-              <p class="date">{{ events[3]['date_start_pretty_day'] }} {{events[3]['date_start_pretty_month']|_}}</p>
+              <p class="date">{{ events[3]['date_start_pretty_day'] }} {{events[3]['date_start_pretty_month']|_}} - {{events[3].date_end_pretty_day}} {{events[3].date_end_pretty_month|_}}</p>
               <p class="name">{{events[3]['title']}}</p>
               <img class="separator" src="{{preurl}}/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
             </div>
