@@ -4082,3 +4082,6 @@ p > br {
         font-size: 23px !important;
         color: #4A4A4A;
         font-family: 'Avenir-Medium', sans-serif; }
+
+.lwc {
+  width: 90% !important; }
