@@ -4849,7 +4849,7 @@ p > br {
 /* **************************************************************************** */
 
 
-// HOME SEARCH
+// PLAYAS SEARCH
 
 .header-playas {
     
@@ -4911,7 +4911,12 @@ p > br {
   width: 1040px!important;
 }
 
-// HOME MAPA
+// Menos padding-bottom entre el mapa y el texto del txt-container
+.pbup {
+      padding-bottom: 100px!important;
+}
+
+// PLAYAS MAPA
 .map-content{  
   background-color: #F5A623;
   background-image: url("../svg/topradiusyellow.svg")!important;
@@ -5088,7 +5093,7 @@ p > br {
         opacity: 0.5;
         font-size: 23px!important;
         color: #4A4A4A;
-        font-family: 'AvenirNext', sans-serif;
+        font-family: 'Avenir-Medium', sans-serif;
 
       }
     }

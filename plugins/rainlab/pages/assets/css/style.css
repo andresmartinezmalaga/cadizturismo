@@ -3932,6 +3932,9 @@ p > br {
 .search-playas {
   width: 1040px !important; }
 
+.pbup {
+  padding-bottom: 100px !important; }
+
 .map-content {
   background-color: #F5A623;
   background-image: url("../svg/topradiusyellow.svg") !important;
@@ -4071,4 +4074,4 @@ p > br {
         opacity: 0.5;
         font-size: 23px !important;
         color: #4A4A4A;
-        font-family: 'AvenirNext', sans-serif; }
+        font-family: 'Avenir-Medium', sans-serif; }
