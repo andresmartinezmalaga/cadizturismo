@@ -4849,48 +4849,69 @@ p > br {
 /* **************************************************************************** */
 
 
+// HOME SEARCH
+
 .header-playas {
-  background-image: url("../img/playas.jpg");
-  transform: rotate(0deg);
-  background-attachment: fixed;
+    
+    background-image: url("../img/playas.jpg");
+    transform: rotate(0deg);
+    background-attachment: fixed;
   
-  .search-bar{
-    margin-left: -163px;
-  }
+    .brushTop {
+      margin-top: -140px!important;
+      
+    }
+    .search-bar{
+      margin-left: -163px;
+    }
 
-  .select2-selection--multiple{
-    border: none!important;
-  }
+    // Tamaño del tagList = las dos entradas mas grandes
+    .longslt{
+        min-width: 350px!important;
+        background-image: url("../svg/caracteristicas.svg")!important;
+        background-repeat: no-repeat;
+        background-position: 21px 50%;
+    }
 
-  .longslt{
-    min-width: 350px!important;
-  }
+    // Fondo trasparante tagList
+    .select2-selection--multiple{
+        border: none!important;
+        background-color: transparent!important;
+        border: none !important;
+    }
 
-  .select2-selection--multiple{
-    background-color: transparent!important;
-  }
+    .days-container{
+        background-image: url("../svg/tipo-playa.svg")!important;
+        background-repeat: no-repeat;
+        background-position: 21px 50%;
+    }
 
-  .days-container{
-      background-image: url("../svg/tipo-playa.svg")!important;
-      background-repeat: no-repeat;
-      background-position: 21px 50%;
-  }
+    // Flecha de los selects se cortaba en el pico.
+    .select2-selection__arrow{
+      height: 6px!important;
+    }
 
-  .longslt{
-      background-image: url("../svg/caracteristicas.svg")!important;
-      background-repeat: no-repeat;
-      background-position: 21px 50%;
-  }
+    // Eliminar border de las opciones del tagList
+    .select2-selection__choice{
+      border:none!important;
+    }
+
+    #playa-categories{
+      border-radius: 0;
+      border-right: 1px solid #DDDDDD;
+    }
 }
 
 #playa-categories > span.select2.select2-container.select2-container--default > span.selection > span > ul{
   margin-top: 10px!important;
+
 }
 
 .search-playas {
   width: 1040px!important;
 }
 
+// HOME MAPA
 .map-content{  
   background-color: #F5A623;
   background-image: url("../svg/topradiusyellow.svg")!important;

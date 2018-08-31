@@ -3901,22 +3901,30 @@ p > br {
   background-image: url("../img/playas.jpg");
   transform: rotate(0deg);
   background-attachment: fixed; }
+  .header-playas .brushTop {
+    margin-top: -140px !important; }
   .header-playas .search-bar {
     margin-left: -163px; }
-  .header-playas .select2-selection--multiple {
-    border: none !important; }
   .header-playas .longslt {
-    min-width: 350px !important; }
+    min-width: 350px !important;
+    background-image: url("../svg/caracteristicas.svg") !important;
+    background-repeat: no-repeat;
+    background-position: 21px 50%; }
   .header-playas .select2-selection--multiple {
-    background-color: transparent !important; }
+    border: none !important;
+    background-color: transparent !important;
+    border: none !important; }
   .header-playas .days-container {
     background-image: url("../svg/tipo-playa.svg") !important;
     background-repeat: no-repeat;
     background-position: 21px 50%; }
-  .header-playas .longslt {
-    background-image: url("../svg/caracteristicas.svg") !important;
-    background-repeat: no-repeat;
-    background-position: 21px 50%; }
+  .header-playas .select2-selection__arrow {
+    height: 6px !important; }
+  .header-playas .select2-selection__choice {
+    border: none !important; }
+  .header-playas #playa-categories {
+    border-radius: 0;
+    border-right: 1px solid #DDDDDD; }
 
 #playa-categories > span.select2.select2-container.select2-container--default > span.selection > span > ul {
   margin-top: 10px !important; }
