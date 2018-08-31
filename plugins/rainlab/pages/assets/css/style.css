@@ -3972,7 +3972,7 @@ p > br {
         z-index: 888888; }
       .map-content .premap .mapc .mapbox {
         position: absolute;
-        width: 240px;
+        width: 189px;
         bottom: 12px;
         left: -8px;
         padding: 5px 0px;
@@ -3980,9 +3980,11 @@ p > br {
         .map-content .premap .mapc .mapbox .enlaces {
           background-color: #F4F4F4;
           border-radius: 4px;
+          border: solid 1px #979797;
           padding: 5px 20px;
           z-index: 2;
-          width: 240px; }
+          width: 189px;
+          line-height: 15px; }
         .map-content .premap .mapc .mapbox img {
           margin-top: -10px;
           margin-left: 35px;
@@ -4004,8 +4006,13 @@ p > br {
           font-family: 'AvenirNext-Medium', sans-serif;
           margin-bottom: 13px;
           text-decoration: none; }
-          .map-content .premap .mapc .mapbox a span {
-            margin-left: 10px; }
+          .map-content .premap .mapc .mapbox a .flechaplayas {
+            background-image: url("../svg/flechaplayas.svg");
+            height: 9px;
+            width: 10px !important;
+            margin-left: 10px;
+            display: inline-block;
+            background-repeat: no-repeat; }
           .map-content .premap .mapc .mapbox a:hover {
             opacity: 0.8; }
       .map-content .premap .mapc .gm {
