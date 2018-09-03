@@ -3901,15 +3901,16 @@ p > br {
 /* **************************************************************************** */
 /* **************************************************************************** */
 /* **************************************************************************** */
-.more-info-beach h3 {
-  position: absolute;
-  left: 10%;
-  top: -80px; }
-
-.more-info-beach img {
-  position: absolute;
-  left: 10% !important;
-  top: 20px !important; }
+.more-info-beach {
+  margin-top: 117px !important; }
+  .more-info-beach h3 {
+    position: absolute;
+    left: 10%;
+    top: -80px; }
+  .more-info-beach img {
+    position: absolute;
+    left: 10% !important;
+    top: 20px !important; }
 
 .mimgt {
   position: absolute;
@@ -4125,14 +4126,16 @@ p > br {
     min-width: 48% !important; }
   #sltcategory .select2-results__option {
     height: 50px !important; }
-  .more-info-beach h3 {
-    position: absolute;
-    left: 10%;
-    top: -80px; }
-  .more-info-beach img {
-    position: absolute;
-    left: 10% !important;
-    top: 20px !important; }
+  .more-info-beach {
+    margin-top: 10px !important; }
+    .more-info-beach h3 {
+      position: absolute;
+      left: 10%;
+      top: -80px; }
+    .more-info-beach img {
+      position: absolute;
+      left: 10% !important;
+      top: 20px !important; }
   .mimgt {
     position: absolute;
     top: 60px !important;
@@ -4143,14 +4146,16 @@ p > br {
     margin-bottom: -80px !important; }
   .map-content {
     display: none; }
-  .more-info-beach h3 {
-    position: absolute;
-    left: 10%;
-    top: -80px; }
-  .more-info-beach img {
-    position: absolute;
-    left: 10% !important;
-    top: 20px !important; }
+  .more-info-beach {
+    margin-top: 10px !important; }
+    .more-info-beach h3 {
+      position: absolute;
+      left: 10%;
+      top: -80px; }
+    .more-info-beach img {
+      position: absolute;
+      left: 10% !important;
+      top: 20px !important; }
   .mimgt {
     position: absolute;
     top: 60px !important;
