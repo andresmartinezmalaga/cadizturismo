@@ -2709,7 +2709,7 @@ html, body {
     font-size: 80px !important;
     line-height: 80px !important;
   }
-  .header-search .first-word-rutas, .header-search .txt-rutas, .header-search .first-word-event, .header-rutas .first-word-rutas, .header-rutas .txt-rutas, .header-rutas .first-word-event {
+  .header-search .first-word-rutas, .header-search .txt-rutas, .header-search .first-word-event, .header-rutas .first-word-rutas, .header-rutas .txt-rutas, .header-rutas .first-word-event, .header-playas .header-txt .txt-rutas .first-word-rutas{
     font-size: 100px !important;
     line-height: 100px !important;
     margin-bottom: 0px !important;
@@ -3152,6 +3152,16 @@ html, body {
   .search-bar-container .search-bar #event-location {
     width: 37% !important;
   }
+  
+  // Andrés Martínez sear beach sizes
+  .search-bar-container .search-bar #event-category.sorttp{
+    width: 20% !important;    
+  }
+  .search-bar-container .search-bar #event-location.sortlc{
+    width: 32% !important;   
+  }
+  // ---------
+
   .search-bar-container .search-bar #event-location .select2-selection__arrow {
     right: 10px !important;
   }
@@ -4851,8 +4861,30 @@ p > br {
 
 // PLAYAS SEARCH
 
-.header-playas {
+.more-info-beach{
+      h3 {
+        position: absolute;
+        left: 10%;
+        top: -80px;
+      }
+      img {
+        position: absolute;
+        left: 10%!important;
+        top: 20px!important;
+      }   
+}
+
+.mimgt{
+  position: absolute;
+  top: 60px!important;
+  left: 8%!important;
+}
+
+
+
+.header-playas {    
     
+
     background-image: url("../img/playas.jpg");
     transform: rotate(0deg);
     background-attachment: fixed;
@@ -4861,10 +4893,7 @@ p > br {
       margin-top: -140px!important;
       
     }
-    .search-bar{
-      margin-left: -163px;
-    }
-
+    
     // Tamaño del tagList = las dos entradas mas grandes
     .longslt{
         min-width: 350px!important;
@@ -4900,15 +4929,18 @@ p > br {
       border-radius: 0;
       border-right: 1px solid #DDDDDD;
     }
+    
+    #search-rutas{
+      width: 1040px;
+    }
+    #search-rutas .search-bar{
+      width: 1002px;
+    }
 }
 
 #playa-categories > span.select2.select2-container.select2-container--default > span.selection > span > ul{
   margin-top: 10px!important;
 
-}
-
-.search-playas {
-  width: 1040px!important;
 }
 
 // Menos padding-bottom entre el mapa y el texto del txt-container
@@ -5109,4 +5141,98 @@ p > br {
 
 .lwc{
  width: 150%!important;
+}
+
+// MORE INFO PLAYAS
+.more-info-beach{
+  h3{
+    font-size: 32px!important;
+  }  
+}
+
+
+
+@media (max-width: 920px) and (min-width: 710px) {
+
+    .map-content .premap{
+      @include flexbox();
+      display: flex;
+      flex-direction: column-reverse!important;
+    
+      .txt-container{
+        padding-left: 0!important;
+      }
+      .mapc{
+        margin-top: 500px;
+      }
+    }
+
+
+  .search-bar-container .search-bar .type-container.longslt{
+    width: 48%!important;
+    min-width: 48%!important;
+  }
+  
+  #sltcategory {
+    .select2-results__option{
+      height: 50px!important;
+    }
+  }
+
+   
+  .more-info-beach{
+    h3 {
+      position: absolute;
+      left: 10%;
+      top: -80px;
+    }
+    img {
+      position: absolute;
+      left: 10%!important;
+      top: 20px!important;
+    }   
+  }
+
+  .mimgt{
+    position: absolute;
+    top: 60px!important;
+    left: 3%!important;
+  }
+
+}
+
+@media (max-width: 709px){
+    .header-playas {
+      .header-txt{
+        margin-bottom: -80px!important;
+      }
+    }
+    
+    .map-content{
+        display: none;
+    }
+
+  .more-info-beach{
+        h3 {
+          position: absolute;
+          left: 10%;
+          top: -80px;
+        }
+        img {
+          position: absolute;
+          left: 10%!important;
+          top: 20px!important;
+        }   
+  }
+
+  .mimgt{
+    position: absolute;
+    top: 60px!important;
+    left: 3%!important;
+  }
+
+  .mimgb{
+    margin-bottom: 70px;
+  }
+
 }

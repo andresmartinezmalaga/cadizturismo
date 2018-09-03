@@ -23,7 +23,7 @@
     <form data-request="onFindPlaya">
       <div class="inputs-container">
 
-        <div id="event-category" class="days-container">
+        <div id="event-category" class="days-container sorttp">
           <select id="sltType" class="custom-select select-days" name="type">
             {% for key,value in types %}
                 <option value="{{key}}">{{ value |_ }}</option>
@@ -45,7 +45,7 @@
 
 
 
-        <div id="event-location" class="type-container">
+        <div id="event-location" class="type-container sortlc">
           <select id="sltLocationPlayas" class="custom-select select-type" name="location">
             {% for key,value in municipalities %}
                 <option value="{{key}}">{{value}}</option>

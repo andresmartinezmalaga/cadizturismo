@@ -2291,7 +2291,7 @@ html, body {
   .header-search .txt, .header-search #exp, .header-rutas .txt, .header-rutas #exp {
     font-size: 80px !important;
     line-height: 80px !important; }
-  .header-search .first-word-rutas, .header-search .txt-rutas, .header-search .first-word-event, .header-rutas .first-word-rutas, .header-rutas .txt-rutas, .header-rutas .first-word-event {
+  .header-search .first-word-rutas, .header-search .txt-rutas, .header-search .first-word-event, .header-rutas .first-word-rutas, .header-rutas .txt-rutas, .header-rutas .first-word-event, .header-playas .header-txt .txt-rutas .first-word-rutas {
     font-size: 100px !important;
     line-height: 100px !important;
     margin-bottom: 0px !important; }
@@ -2617,6 +2617,10 @@ html, body {
     right: 10px !important; }
   .search-bar-container .search-bar #event-location {
     width: 37% !important; }
+  .search-bar-container .search-bar #event-category.sorttp {
+    width: 20% !important; }
+  .search-bar-container .search-bar #event-location.sortlc {
+    width: 32% !important; }
   .search-bar-container .search-bar #event-location .select2-selection__arrow {
     right: 10px !important; }
   .search-bar-container .search-bar .button-container {
@@ -3897,14 +3901,27 @@ p > br {
 /* **************************************************************************** */
 /* **************************************************************************** */
 /* **************************************************************************** */
+.more-info-beach h3 {
+  position: absolute;
+  left: 10%;
+  top: -80px; }
+
+.more-info-beach img {
+  position: absolute;
+  left: 10% !important;
+  top: 20px !important; }
+
+.mimgt {
+  position: absolute;
+  top: 60px !important;
+  left: 8% !important; }
+
 .header-playas {
   background-image: url("../img/playas.jpg");
   transform: rotate(0deg);
   background-attachment: fixed; }
   .header-playas .brushTop {
     margin-top: -140px !important; }
-  .header-playas .search-bar {
-    margin-left: -163px; }
   .header-playas .longslt {
     min-width: 350px !important;
     background-image: url("../svg/caracteristicas.svg") !important;
@@ -3925,12 +3942,13 @@ p > br {
   .header-playas #playa-categories {
     border-radius: 0;
     border-right: 1px solid #DDDDDD; }
+  .header-playas #search-rutas {
+    width: 1040px; }
+  .header-playas #search-rutas .search-bar {
+    width: 1002px; }
 
 #playa-categories > span.select2.select2-container.select2-container--default > span.selection > span > ul {
   margin-top: 10px !important; }
-
-.search-playas {
-  width: 1040px !important; }
 
 .pbup {
   padding-bottom: 100px !important; }
@@ -4085,3 +4103,57 @@ p > br {
 
 .lwc {
   width: 150% !important; }
+
+.more-info-beach h3 {
+  font-size: 32px !important; }
+
+@media (max-width: 920px) and (min-width: 710px) {
+  .map-content .premap {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    display: flex;
+    flex-direction: column-reverse !important; }
+    .map-content .premap .txt-container {
+      padding-left: 0 !important; }
+    .map-content .premap .mapc {
+      margin-top: 500px; }
+  .search-bar-container .search-bar .type-container.longslt {
+    width: 48% !important;
+    min-width: 48% !important; }
+  #sltcategory .select2-results__option {
+    height: 50px !important; }
+  .more-info-beach h3 {
+    position: absolute;
+    left: 10%;
+    top: -80px; }
+  .more-info-beach img {
+    position: absolute;
+    left: 10% !important;
+    top: 20px !important; }
+  .mimgt {
+    position: absolute;
+    top: 60px !important;
+    left: 3% !important; } }
+
+@media (max-width: 709px) {
+  .header-playas .header-txt {
+    margin-bottom: -80px !important; }
+  .map-content {
+    display: none; }
+  .more-info-beach h3 {
+    position: absolute;
+    left: 10%;
+    top: -80px; }
+  .more-info-beach img {
+    position: absolute;
+    left: 10% !important;
+    top: 20px !important; }
+  .mimgt {
+    position: absolute;
+    top: 60px !important;
+    left: 3% !important; }
+  .mimgb {
+    margin-bottom: 70px; } }
