@@ -3917,6 +3917,9 @@ p > br {
   top: 60px !important;
   left: 8% !important; }
 
+.mimgb {
+  margin-bottom: 117px; }
+
 .header-playas {
   background-image: url("../img/playas.jpg");
   transform: rotate(0deg);
@@ -4137,7 +4140,9 @@ p > br {
   .mimgt {
     position: absolute;
     top: 60px !important;
-    left: 3% !important; } }
+    left: 3% !important; }
+  .mimgb {
+    margin-bottom: 10px; } }
 
 @media (max-width: 709px) {
   .header-playas .header-txt {
