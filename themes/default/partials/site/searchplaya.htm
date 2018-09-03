@@ -36,7 +36,7 @@
         <div id="playa-categories" class="type-container longslt">
           <select id="sltcategory" class="custom-select select-type" name="category[]" multiple="multiple">
             {% for key,value in categories %}
-                <option value="{{key}}">{{value}}</option>
+                <option value="{{key}}">{{ value |_ }}</option>
             {% endfor %}
             <option class="all-municipios" value="todas-las-caracteristicas" selected=>{{'Todas las características'|_ }}</option>
           </select>
