@@ -2370,7 +2370,7 @@ html.cssanimations .cursor-loading-indicator.hide{display:none}
 .select2-container--default.select2-container--disabled .select2-selection__clear,.select2-container--default.select2-container--disabled .select2-selection--multiple .select2-selection__choice__remove{display:none}
 .select2-container--default .select2-dropdown{-webkit-box-shadow:0 3px 6px rgba(0,0,0,0.075);box-shadow:0 3px 6px rgba(0,0,0,0.075);border-color:#d1d6d9;overflow-x:hidden;margin-top:-1px}
 .select2-container--default .select2-dropdown--above{margin-top:1px;-webkit-box-shadow:0 -3px 6px rgba(0,0,0,0.075);box-shadow:0 -3px 6px rgba(0,0,0,0.075)}
-.select2-container--default .select2-results > .select2-results__options{font-size:14px;max-height:200px;overflow-y:auto}
+.select2-container--default .select2-results > .select2-results__options{text-transform: capitalize!important;font-size:14px;max-height:200px;overflow-y:auto}
 .select2-container--default .select2-dropdown.select-no-dropdown{display:none !important}
 .select2-container--default .select2-dropdown.select-hide-selected li[aria-selected=true]{display:none !important}
 .select2-container--default .select2-selection--single{height:38px;line-height:1.42857143;padding:8px 25px 8px 13px}
@@ -2382,7 +2382,7 @@ html.cssanimations .cursor-loading-indicator.hide{display:none}
 .select2-container--default .select2-selection--multiple{min-height:38px}
 .select2-container--default .select2-selection--multiple .select2-selection__rendered{box-sizing:border-box;display:block;line-height:1.42857143;list-style:none;margin:0;overflow:hidden;padding:0;width:100%;text-overflow:ellipsis;white-space:nowrap}
 .select2-container--default .select2-selection--multiple .select2-selection__placeholder{color:#cccccc;float:left;margin-top:5px}
-.select2-container--default .select2-selection--multiple .select2-selection__choice{color:#385487;background:#ffffff;border:1px solid #cccccc;border-radius:4px;cursor:default;float:left;margin:7px 0 0 6.5px;padding:0 8px}
+.select2-container--default .select2-selection--multiple .select2-selection__choice{text-transform: capitalize!important;color:#385487;background:#ffffff;border:1px solid #cccccc;border-radius:4px;cursor:default;float:left;margin:7px 0 0 6.5px;padding:0 8px}
 .select2-container--default .select2-selection--multiple .select2-search--inline .select2-search__field{background:transparent;padding:0 13px;height:36px;line-height:1.42857143;margin-top:0;min-width:5em}
 .select2-container--default .select2-selection--multiple .select2-selection__choice__remove{color:#999;cursor:pointer;display:inline-block;font-weight:bold;margin-right:4px}
 .select2-container--default .select2-selection--multiple .select2-selection__choice__remove:hover{color:#333}
