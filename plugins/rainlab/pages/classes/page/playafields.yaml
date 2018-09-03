@@ -41,7 +41,7 @@ fields:
         label: 'Municipio'
         placeholder: 'Municipio'
         type: dropdown        
-        options: getMunicipalities
+        options: getMunicipalitiesBeaches
 
     viewBag[address]:
         span: full

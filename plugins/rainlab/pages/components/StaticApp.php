@@ -198,6 +198,46 @@ class StaticApp extends ComponentBase
         ];
     }
 
+
+    /*Algeciras
+    Barbate
+    Chiclana de la Frontera
+    Chipiona
+    Conil de la Frontera
+    Cádiz
+    El Puerto de Santa María
+    La Línea de la Concepción
+    Los Barrios
+    Puerto Real
+    Rota
+    San Fernando
+    San Roque
+    Sanlúcar de Barrameda
+    Tarifa
+    Vejer de la Frontera*/
+
+    // sort ok
+    public function getMunicipalitiesBeaches(){
+        return [
+        'algeciras' => 'Algeciras',
+        'barbate' => 'Barbate',
+        'cádiz' => 'Cádiz',
+        'chiclana de la frontera' => 'Chiclana de la Frontera',
+        'chipiona' => 'Chipiona',
+        'conil de la frontera' => 'Conil de la Frontera',
+        'el puerto de santa maría' => 'El Puerto de Santa María',
+        'la línea de la concepción' => 'La Línea de la Concepción',
+        'los barrios' => 'Los Barrios',
+        'puerto real' => 'Puerto Real',
+        'rota' => 'Rota',
+        'san fernando' => 'San Fernando',
+        'sanlúcar de barrameda' => 'Sanlúcar de Barrameda',
+        'san roque' => 'San Roque',
+        'tarifa' => 'Tarifa',       
+        'vejer de la frontera' => 'Vejer de la Frontera'       
+        ];
+    }
+
     public function getMunicipalitiesBySlug($slug){
 
         $municipios =  [
