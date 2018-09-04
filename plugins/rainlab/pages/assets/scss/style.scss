@@ -5159,16 +5159,21 @@ p > br {
 // Tablet
 @media (max-width: 920px) and (min-width: 710px) {
 
-    .map-content .premap{
-      @include flexbox();
-      display: flex;
-      flex-direction: column-reverse!important;
-    
-      .txt-container{
-        padding-left: 0!important;
-      }
-      .mapc{
-        //margin-top: 500px;
+    .map-content{
+       .premap{
+        @include flexbox();
+        display: flex;
+        flex-direction: column-reverse!important;
+      
+        .txt-container{
+          padding-left: 0!important;
+          p{
+            margin-top: -90px!important;
+          }
+        }
+        .mapc{
+          //margin-top: 500px;
+        }
       }
     }
 
