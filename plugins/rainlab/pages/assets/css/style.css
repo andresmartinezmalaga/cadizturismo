@@ -4147,6 +4147,9 @@ p > br {
 @media (max-width: 709px) {
   .header-playas .header-txt {
     margin-bottom: -80px !important; }
+  .section-txt-comarca .pbup .title {
+    font-size: 45px !important;
+    line-height: 48px !important; }
   .map-content {
     display: none; }
   .more-info-beach {

@@ -5156,7 +5156,7 @@ p > br {
 }
 
 
-
+// Tablet
 @media (max-width: 920px) and (min-width: 710px) {
 
     .map-content .premap{
@@ -5211,13 +5211,23 @@ p > br {
 
 }
 
+// Movil
 @media (max-width: 709px){
+    
     .header-playas {
       .header-txt{
         margin-bottom: -80px!important;
       }
     }
     
+    .section-txt-comarca{
+      .pbup{  
+        .title{       
+          font-size: 45px!important;
+          line-height: 48px!important;
+        }
+      }
+    }
     .map-content{
         display: none;
     }
