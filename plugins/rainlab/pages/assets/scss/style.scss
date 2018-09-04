@@ -5258,7 +5258,7 @@ p > br {
 
 // Movil
 @media (max-width: 709px){
-    
+   
     .header-playas {
       .header-txt{
         margin-bottom: -80px!important;
@@ -5277,6 +5277,10 @@ p > br {
         border-bottom: solid 1px!important;
         border-bottom-color: #CECECE !important;
         border-radius: 0;
+      }
+
+      .select2-container--open .select2-dropdown--below{
+        border:none!important;
       }
 
       #event-location{

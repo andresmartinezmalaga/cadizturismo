@@ -4171,6 +4171,8 @@ p > br {
     margin-bottom: 10px; } }
 
 @media (max-width: 709px) {
+  .select2-container--open .select2-dropdown--below {
+    border: none !important; }
   .header-playas .header-txt {
     margin-bottom: -80px !important; }
   .header-playas .header-comment .comment {
@@ -4183,6 +4185,8 @@ p > br {
     border-bottom: solid 1px !important;
     border-bottom-color: #CECECE !important;
     border-radius: 0; }
+  .header-playas .select2-container--open .select2-dropdown--below {
+    border: none !important; }
   .header-playas #event-location .select2 {
     border: none !important; }
   .section-txt-comarca .pbup .title {
