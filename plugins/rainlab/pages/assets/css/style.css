@@ -4134,7 +4134,10 @@ p > br {
   #sltcategory .select2-results__option {
     height: 50px !important; }
   .more-info-beach {
-    margin-top: 10px !important; }
+    margin-top: 60px !important;
+    margin-bottom: 60px !important; }
+    .more-info-beach p {
+      margin-top: 0 !important; }
     .more-info-beach h3 {
       position: absolute;
       left: 10%;

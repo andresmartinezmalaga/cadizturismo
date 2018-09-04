@@ -5181,6 +5181,8 @@ p > br {
     }
 
 
+
+
   .search-bar-container .search-bar .type-container.longslt{
     width: 48%!important;
     min-width: 48%!important;
@@ -5194,7 +5196,12 @@ p > br {
 
    
   .more-info-beach{
-    margin-top: 10px!important;
+    margin-top: 60px!important;
+    margin-bottom: 60px!important;
+    
+    p{
+      margin-top: 0!important;
+    }
     h3 {
       position: absolute;
       left: 10%;
