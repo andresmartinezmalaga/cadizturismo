@@ -4057,6 +4057,8 @@ p > br {
       .map-content .premap .mapc .g6 {
         bottom: 266px;
         left: 38px; }
+        .map-content .premap .mapc .g6 .enlaces {
+          width: 210px !important; }
       .map-content .premap .mapc .g7 {
         bottom: 242px;
         left: 68px; }
@@ -4066,12 +4068,16 @@ p > br {
       .map-content .premap .mapc .g9 {
         bottom: 163px;
         left: 118px; }
+        .map-content .premap .mapc .g9 .enlaces {
+          width: 200px !important; }
       .map-content .premap .mapc .g10 {
         bottom: 148px;
         left: 180px; }
       .map-content .premap .mapc .g11 {
         bottom: 100px;
         left: 200px; }
+        .map-content .premap .mapc .g11 .enlaces {
+          width: 230px !important; }
       .map-content .premap .mapc .g12 {
         bottom: 52px;
         left: 302px; }
@@ -4084,6 +4090,8 @@ p > br {
       .map-content .premap .mapc .g15 {
         bottom: 120px;
         left: 440px; }
+        .map-content .premap .mapc .g15 .enlaces {
+          width: 205px !important; }
       .map-content .premap .mapc .g16 {
         bottom: 83px;
         left: 453px; }
