@@ -4123,6 +4123,11 @@ p > br {
     .map-content .premap .txt-container {
       padding-left: 0 !important;
       margin-top: -150px !important; }
+      .map-content .premap .txt-container .bdline {
+        display: block; }
+    .map-content .premap .mapc {
+      margin-left: auto;
+      margin-right: auto; }
   .search-bar-container .search-bar .type-container.longslt {
     width: 48% !important;
     min-width: 48% !important; }

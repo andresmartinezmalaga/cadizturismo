@@ -5168,10 +5168,14 @@ p > br {
         .txt-container{
           padding-left: 0!important;        
           margin-top: -150px!important;
-         
+         .bdline{
+            display: block;
+         }
         }
         .mapc{
           //margin-top: 500px;
+          margin-left: auto;
+          margin-right:  auto;
         }
       }
     }
