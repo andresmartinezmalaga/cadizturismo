@@ -4889,6 +4889,9 @@ p > br {
 
 .header-playas {    
     
+    .select-title{
+      z-index: 99;
+    }
 
     background-image: url("../img/playas.jpg");
     transform: rotate(0deg);
@@ -5259,6 +5262,14 @@ p > br {
     .header-playas {
       .header-txt{
         margin-bottom: -80px!important;
+      }
+      .header-comment .comment{
+        font-size: 19px!important;
+      }
+
+      .header-general .header-txt .brush {
+          margin-top: -155px!important;
+          margin-bottom: 120px;
       }
     }
     

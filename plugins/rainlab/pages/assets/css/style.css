@@ -3924,6 +3924,8 @@ p > br {
   background-image: url("../img/playas.jpg");
   transform: rotate(0deg);
   background-attachment: fixed; }
+  .header-playas .select-title {
+    z-index: 99; }
   .header-playas .brushTop {
     margin-top: -140px !important; }
   .header-playas .longslt {
@@ -4171,6 +4173,11 @@ p > br {
 @media (max-width: 709px) {
   .header-playas .header-txt {
     margin-bottom: -80px !important; }
+  .header-playas .header-comment .comment {
+    font-size: 19px !important; }
+  .header-playas .header-general .header-txt .brush {
+    margin-top: -155px !important;
+    margin-bottom: 120px; }
   .section-txt-comarca .pbup .title {
     font-size: 45px !important;
     line-height: 48px !important; }
