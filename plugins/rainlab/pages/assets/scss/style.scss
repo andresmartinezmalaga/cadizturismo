@@ -5271,6 +5271,19 @@ p > br {
           margin-top: -155px!important;
           margin-bottom: 120px;
       }
+
+       .select2{
+        border-bottom: solid 1px!important;
+        border-bottom-color: rgb(170, 170, 170)!important;
+        border-radius: 0;
+      }
+
+      #event-location{
+         .select2{
+            border:none!important;
+         }
+      } 
+
     }
     
     .section-txt-comarca{
