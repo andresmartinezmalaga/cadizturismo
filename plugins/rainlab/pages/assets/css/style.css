@@ -4121,9 +4121,8 @@ p > br {
     display: flex;
     flex-direction: column-reverse !important; }
     .map-content .premap .txt-container {
-      padding-left: 0 !important; }
-      .map-content .premap .txt-container p {
-        margin-top: -90px !important; }
+      padding-left: 0 !important;
+      margin-top: -150px !important; }
   .search-bar-container .search-bar .type-container.longslt {
     width: 48% !important;
     min-width: 48% !important; }
