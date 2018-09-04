@@ -4136,7 +4136,7 @@ p > br {
   .more-info-beach {
     margin-top: 60px !important;
     margin-bottom: 60px !important; }
-    .more-info-beach p {
+    .more-info-beach .more-info p {
       margin-top: 0 !important; }
     .more-info-beach h3 {
       position: absolute;
