@@ -5184,7 +5184,7 @@ p > br {
         flex-direction: column-reverse!important;
       
         .txt-container{
-          padding-left: 0!important;        
+          padding-left: 0!important;               
           margin-top: -150px!important;
          .bdline{
             display: block;
@@ -5199,11 +5199,20 @@ p > br {
     }
 
 
-
+    .pbup{
+       padding-top: 70px!important;  
+    }
 
   .search-bar-container .search-bar .type-container.longslt{
     width: 48%!important;
     min-width: 48%!important;
+  }
+
+  
+  #select2-sltLocationPlayas-results, #select2-sltcategory-results, #select2-sltType-results{
+    .select2-results__option{
+      font-size: 14px!important;
+    }
   }
   
   #sltcategory {
