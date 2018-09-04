@@ -4174,13 +4174,14 @@ p > br {
   .header-playas .header-txt {
     margin-bottom: -80px !important; }
   .header-playas .header-comment .comment {
-    font-size: 19px !important; }
+    font-size: 19px !important;
+    width: 90% !important; }
   .header-playas .header-txt .brush {
     margin-top: -155px !important;
     margin-bottom: 120px; }
   .header-playas .select2 {
     border-bottom: solid 1px !important;
-    border-bottom-color: #aaaaaa !important;
+    border-bottom-color: #CECECE !important;
     border-radius: 0; }
   .header-playas #event-location .select2 {
     border: none !important; }
