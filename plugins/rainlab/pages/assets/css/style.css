@@ -4050,7 +4050,7 @@ p > br {
   .search-bar form{
     background-color:transparent!important;
   }
-  .search-bar{
+  #search-publications .search-bar{
     border-top: solid 3px white;
     border-radius: 4px;
   }
