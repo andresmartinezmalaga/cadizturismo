@@ -24,29 +24,63 @@ $('#sltLocation').select2({
     }
 });
 
-
-  $("#sltLocation").on("select2:unselecting", function(e) {
-    if ($('.select2-selection__choice').length == 1) {
-      $('#sltLocation').val('todos-los-municipios');
-      if ($('.select2-selection__choice').attr('title') == 'Todos los municipios') {
-        e.preventDefault();
-      }
+$("#sltLocation").on("select2:unselecting", function(e) {
+  if ($('.select2-selection__choice').length == 1) {
+    $('#sltLocation').val('todos-los-municipios');
+    if ($('.select2-selection__choice').attr('title') == 'Todos los municipios') {
+      e.preventDefault();
     }
-  });
+  }
+});
 
-  $("#sltLocation").on("select2:selecting", function(e) {
-    var $select = $('#sltLocation');
-    var idToRemove = 'todos-los-municipios';
-    var values = $select.val();
-    if (values) {
-      var i = values.indexOf(idToRemove);
-      if (i >= 0) {
-        values.splice(i, 1);
-        $select.val(values).change();
-      }
+$("#sltLocation").on("select2:selecting", function(e) {
+  var $select = $('#sltLocation');
+  var idToRemove = 'todos-los-municipios';
+  var values = $select.val();
+  if (values) {
+    var i = values.indexOf(idToRemove);
+    if (i >= 0) {
+      values.splice(i, 1);
+      $select.val(values).change();
     }
-  });
+  }
+});
 
+
+$('#sltInterests').select2({
+maximumSelectionLength: 2,
+language: {
+      // You can find all of the options in the language files provided in the
+      // build. They all must be functions that return the string that should be
+      // displayed.
+      maximumSelected: function (e) {
+          var t = "Sólo puedes seleccionar " + e.maximum + " intereses";
+          return t;
+      }
+  }
+});
+
+$("#sltInterests").on("select2:unselecting", function(e) {
+  if ($('.select2-selection__choice').length == 1) {
+    $('#sltInterests').val('todos-los-intereses');
+    if ($('.select2-selection__choice').attr('title') == 'Todos los intereses') {
+      e.preventDefault();
+    }
+  }
+});
+
+$("#sltInterests").on("select2:selecting", function(e) {
+  var $select = $('#sltInterests');
+  var idToRemove = 'todos-los-intereses';
+  var values = $select.val();
+  if (values) {
+    var i = values.indexOf(idToRemove);
+    if (i >= 0) {
+      values.splice(i, 1);
+      $select.val(values).change();
+    }
+  }
+});
 
 $('#sltcategory').select2({
   maximumSelectionLength: 2,

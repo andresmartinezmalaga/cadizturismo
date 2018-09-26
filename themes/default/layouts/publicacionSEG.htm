@@ -36,8 +36,9 @@ code = "redes-sociales"
             $this['lang']='es';
         }
 
+        //$this['publications'] = $this->staticApp->publicationList();
         $this['startPag'] = 1;
-        $this['numberReg'] = 6;
+        $this['numberReg'] = 9;
         $this['numPag'] = ceil($this->staticApp->publicationListCount()/$this['numberReg']);
 
         $this['publications'] = $this->staticApp->publicationListPag(1,$this['numberReg']);
@@ -90,7 +91,7 @@ code = "redes-sociales"
         $numberReg = $_POST['inumberReg'];
 
         $this['startPag'] = $_POST['ipag'];
-        $this['numberReg'] = 6;
+        $this['numberReg'] = 9;
 
         $this['numPag'] = ceil($this->staticApp->publicationListCount()/$this['numberReg']);
         $this['publications'] = $this->staticApp->publicationListPag($pag,$numberReg);
@@ -99,28 +100,6 @@ code = "redes-sociales"
             '#prtlPagination' => $this->renderPartial('pagination'),
             '#prtlPublications' => $this->renderPartial('publications')
         ];
-    }
-
-    function onFindPublicacion(){
-              
-        $aLang = App::getLocale();
-
-        $psearch = $_POST['search'];
-        if($psearch == ''){
-            $search = 'todas-las-publicaciones';
-        } else {
-            $search = str_replace(' ','_',$psearch);
-        }
-        
-        $type = $_POST['type'];
-        $interests = implode('_',$_POST['interests']);
-        $lang = $_POST['lang'];
-
-        $pubcount = $this->staticApp->publicacionesFindCount($search,$type,$interests,$lang);
-        $publications = $this->staticApp->publicacionesFindPag($search,$type,$interests,$lang,1,6);
-
-        return Redirect::to($aLang.'/listado-de-publicaciones/'.$search.'/'.$type.'/'.$interests.'/'.$lang);
-
     }
 
 ?>
@@ -151,47 +130,45 @@ code = "redes-sociales"
     <meta name="theme-color" content="#175DA3">
 </head>
     {% partial 'device-rotate' %}
+     
     {% partial 'site/header' %}
-
-    <!-- HEADER -->
-    <div class="header-general header-publications">
-        <div class="header-container">
-            <div class="header-txt">
-                <h1 class="txt-rutas"><span class="first-word-rutas">{{ "Publicaciones"|_ }}</span><span class="con-encanto" style="display: block;"> &nbsp</span></h1>
-                <img class="brush brushTop" src="{{preurl}}/storage/app/media/uploaded-files/templates/brush-header.svg" alt="">
-            </div>
-            <!-- SEARCH -->
-            <div id='prtlSearch'>
-                {% partial "site/searchpub" %}
+        
+    <div id='headerPublications'>       
+        <div class="ayuda-header" id="ayuda-header"><img class="img-header fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/publicaciones.jpg" alt="publicaciones">
+            <div class="header-container">
+                <div class="header-txt-comollegar">
+                    <h1 class="txt">Publicaciones</h1><img class="brush fr-fil fr-dib" src="/cadizturismo/storage/app/media/uploaded-files/templates/brush-header.svg" alt="publicaciones">
+                </div> 
+                    <!-- SEARCH -->
+                    <div id='prtlSearch'>
+                        {% partial "site/searchempresa" %}
+                    </div>
             </div>
         </div>
     </div>
-    </div>
     
-    {% component 'staticPage' %}
-
-     <div id='prtlPublications' class="all-events">
+    <div id='prtlPublications' class="all-events">
         <div class="all-events-container">
-        {% partial "allpublications" %}
+        {% partial "publications" %}
         </div>
     </div>
 
     <div id='prtlPagination' class="prtlPaginationPub">
         {% partial "pagination" %}
     </div>
-    
-    {% partial 'site/footer' %}
 
-    <!-- SCRIPTS -->
+    
+        {% partial 'site/footer' %}
+   
+
+    <!-- SCRIPTS class="ayuda-header" -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.full.min.js"></script>
     <script type="text/javascript" src="{{url('/')}}/plugins/rainlab/pages/assets/js/script-select2.js"></script>
     <script type="text/javascript" src="{{url('/')}}/plugins/rainlab/pages/assets/iziModal/js/iziModal.js"></script>
-
+    <script src="{{ 'assets/js/app.js'|theme }}"></script>
     <script type="text/javascript" src="{{url('/')}}/plugins/rainlab/pages/assets/js/style.js"></script>
 
-     <script type="text/javascript" src="{{url('/')}}/plugins/rainlab/pages/assets/js/mapcadiz.js"></script>
-    
     {% framework %}
 
   </body>

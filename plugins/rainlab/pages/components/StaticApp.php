@@ -103,7 +103,8 @@ class StaticApp extends ComponentBase
     public function getEventsCategoriesById($id) {
 
         $catgs = Catgeventos::find($id);
-        if(count($catgs)>0){
+        //if(count($catgs)>0){
+        if($catgs){
             return $catgs->name;
         } else {
             return [];
@@ -139,7 +140,8 @@ class StaticApp extends ComponentBase
     public function getRutasCategoriesById($id) {
 
         $catgs = Catgrutas::find($id);
-        if(count($catgs)>0){
+        //if(count($catgs)>0){
+        if($catgs){
             return $catgs->name;
         } else {
             return [];
@@ -712,7 +714,8 @@ class StaticApp extends ComponentBase
         $typeOperator = '=';
 
         $gtype = Tipo::where('slug',$typeslug)->first();
-        if(count($gtype)>0){
+        //if(count($gtype)>0){
+        if($gtype){
             $type_id = $gtype->id;
         }
 
@@ -806,7 +809,8 @@ class StaticApp extends ComponentBase
         $typeOperator = '=';
 
         $gtype = Tipo::where('slug',$typeslug)->first();
-        if(count($gtype)>0){
+        //if(count($gtype)>0){
+        if($gtype){
             $type_id = $gtype->id;
         }
 
@@ -1569,6 +1573,218 @@ class StaticApp extends ComponentBase
         return $staticPages;
     }
 
+   // sort ok
+    public function getNewsIdiomasOptions(){
+        return [
+            'aleman' => 'ALEMÁN',
+            'checo' => 'CHECO',
+            'chino' => 'CHINO',
+            'danes' => 'DANÉS',
+            'espanol' => 'ESPAÑOL',
+            'estonio' => 'ESTONIO',
+            'finlandes' => 'FINLANDÉS',
+            'flamenco' => 'FLAMENCO',
+            'frances' => 'FRANCÉS',
+            'hebreo' => 'HEBREO',
+            'hispanoamerica' => 'HISPANOAMÉRICA',
+            'holandes' => 'HOLANDÉS',
+            'hungaro' => 'HÚNGARO',
+            'ingles' => 'INGLÉS',
+            'italiano' => 'ITALIANO',
+            'japones' => 'JAPONÉS',
+            'noruego' => 'NORUEGO',
+            'polaco' => 'POLACO',
+            'portugues' => 'PORTUGUÉS',
+            'ruso' => 'RUSO',
+            'sueco' => 'SUECO',
+            'ucraniano' => 'UCRANIANO'
+        ];
+    }
 
+    // sort ok
+    public function getPublicationsType(){
+        return [
+            'guía' => 'Guía',
+            'mapa' => 'Mapa',
+            'vídeo' => 'Vídeo'
+
+        ];
+    }
+
+    // sort ok
+    public function getPublicationsInterests(){
+        return [
+            'aventura' => 'Aventura',
+            'cultura' => 'Cultura',
+            'gastronomía' => 'Gastronomía',
+            'naturaleza' => 'Naturaleza',
+            'playa' => 'Playa',
+            'tradición' => 'Tradición'
+
+        ];
+    }
+
+    public function publicacionesFindPag($search, $type, $interests, $lang, $pag = 1, $number = 1){
+        
+        if($type == 'video'){
+            $type = 'vídeo';
+        }
+        if($type == 'guia'){
+            $type = 'guía';
+        }
+
+        $lang = strtoupper($lang);
+
+        if($lang == 'ALEMAN'){
+            $lang = 'ALEMÁN';
+        }   
+        if($lang == 'DANES'){
+            $lang = 'DANÉS';
+        }   
+        if($lang == 'FINLANDES'){
+            $lang = 'FINLANDÉS';
+        }   
+        if($lang == 'FRANCES'){
+            $lang = 'FRANCÉS';
+        }   
+        if($lang == 'HISPANOMERICA'){
+            $lang = 'HISPANOMÉRICA';
+        }   
+        if($lang == 'HOLANDES'){
+            $lang = 'HOLANDÉS';
+        }   
+        if($lang == 'HUNGARO'){
+            $lang = 'HÚNGARO';
+        }   
+        if($lang == 'INGLES'){
+            $lang = 'INGLÉS';
+        }   
+        if($lang == 'JAPONES'){
+            $lang = 'JAPONÉS';
+        }   
+        if($lang == 'PORTUGUES'){
+            $lang = 'PORTUGUÉS';
+        }
+
+        if($lang == 'TODOS-LOS-IDIOMAS'){
+            $lang = 'all';           
+        }
+
+        $theme = Theme::getActiveTheme();
+        $pages = Page::listInTheme($theme, false);
+        $publicaciones =  new \Illuminate\Support\Collection($pages);
+
+        $typeOperator = '=';
+        if($type == 'todos-los-tipos'){
+            $type = null;
+            $typeOperator = '!=';
+        }
+
+        $results = $publicaciones->where("is_hidden",0)->where('subtemplate','publicaciones')->where('type',$typeOperator,$type)->values();
+        
+        if($lang != 'all'){
+            foreach ($results as $key => $result) {
+                if(strpos($result->idiomas, $lang)!==false){
+                } else {
+                    $results->forget($key);
+                }
+            }
+        }
+
+        if($interests != 'todos-los-intereses'){
+            $aInterests = explode("_", $interests);
+            foreach ($results as $key => $result) {
+                $forget = true;
+                foreach ($aInterests as $interest) {
+                    if($forget == true){
+                        if(strpos($result->interests, $interest)!==false){                            
+                            $forget = false;
+                        }
+                    }      
+                }
+                if($forget == true){
+                    $results->forget($key);
+                }
+            }
+        }
+
+        if($search != 'todas-las-publicaciones'){
+            $aSearchs = explode("_", $search);
+            foreach ($aSearchs as $key => $value) {
+                if(strlen($value)<4){
+                    unset($aSearchs[$key]);
+                }
+            }
+            foreach ($results as $key => $result) {
+                $forget = true;
+                foreach ($aSearchs as $search) {
+                    if($forget == true){
+                        if(strpos($result->title, $search)!==false){                            
+                            $forget = false;
+                        }
+                        if(strpos($result->descrptn, $search)!==false){                            
+                            $forget = false;
+                        }
+                    }      
+                }
+                if($forget == true){
+                    $results->forget($key);
+                }
+            }
+        }
+        
+        if(count($results)>0){
+            $pagination = $results->slice((($pag-1)*$number),$number);
+        } else {
+            $pagination = $results;
+        }
+
+        return $pagination;
+    }
+
+     public function publicacionesFind($search, $type, $interests, $lang){
+
+        $result = collect();
+        $theme = Theme::getActiveTheme();
+        $pages = Page::listInTheme($theme, false);
+        $publicaciones =  new \Illuminate\Support\Collection($pages);
+
+        $typeOperator = '=';
+        if($type == 'todos-los-tipos'){
+            $type = null;
+            $typeOperator = '!=';
+        }
+
+        $langOperator = '=';
+        if($lang == 'todos-los-idiomas'){
+            $lang = null;
+            $langOperator = '!=';
+        }
+
+        $preResult = $publicaciones->where("is_hidden",0)->where('subtemplate','publicaciones')->where('type',$typeOperator,$type)->where('idiomas',$langOperator,$lang)->values();
+
+        if($interests != 'todos-los-intereses'){
+            $aInterests = explode("_", $interests);
+            foreach ($preResult as $i) {
+                $pass = true;
+                foreach ($aInterests as $interest) {
+                    if($pass == true){
+                        if(strpos($i->interests, $interest)!==false){
+                            $result->push($i);
+                            $pass = false;
+                        }
+                    }      
+                }   
+            }
+        } else {
+            $result = $preResult;
+        }      
+        
+        return $result;
+    }
+
+    public function publicacionesFindCount($search, $type, $interests, $lang){
+        return count($this->publicacionesFind($search, $type, $interests, $lang));
+    }
 
 }

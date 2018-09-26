@@ -40,8 +40,6 @@ is_hidden = 0
          $type = 'all';
     }
     
-    //dd($type.'-'.$categories.'-'.$location);
-
     $this['beaches'] = $this->staticApp->playaFind($type,$categories,$location);
 
     $this['ptitle'] = 'Cádiz | Playas';

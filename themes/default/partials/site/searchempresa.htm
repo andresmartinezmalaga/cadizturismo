@@ -28,11 +28,14 @@
 <div id="search-event" class="search-bar-container" style="margin: auto">
           <div class="search-bar">
             <form data-request="onFindEmpresa">
+              
               <div id="empresa-inputs-container" class="inputs-container">
+              
                 <div id="empresa-search" class="days-container empresa-search">
                   <input id="inpSearch" type="text" name="search" placeholder="¿Qué estás buscando?" value="">
                   <span class="select-title">{{ 'NOMBRE DE EMPRESA'|_ }}</span>
                 </div>
+              
                 <div id="empresa-category" class="days-container">
                   <select id="sltType" class="custom-select select-days" name="type">
                     {% for key,value in types %}
@@ -51,11 +54,14 @@
                     <option class="all-municipios" value="todos-los-municipios" selected=>{{'Todos los municipios'|_ }}</option>
                   </select>
                   <span class="select-title">{{ 'UBICACIÓN'|_ }}</span>
+              
                 </div>
               </div>
+              
               <div class="button-container">
                 <input id="bscEmpresa" type="submit" value="{{ 'Buscar empresa'|_ }}">
               </div>
+            
             </form>
           </div>
         </div>

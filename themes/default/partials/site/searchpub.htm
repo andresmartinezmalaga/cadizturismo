@@ -1,0 +1,71 @@
+==
+
+<?php
+
+  function onStart()
+  {
+
+    $this['lang']=\App::getLocale();
+    if($this['lang']==''){
+      $this['lang']='es';
+    }
+
+    $this['langs'] = $this->staticApp->getNewsIdiomasOptions();
+    $this['types'] = $this->staticApp->getPublicationsType();
+    $this['interests'] = $this->staticApp->getPublicationsInterests();
+  }
+
+?>
+==
+
+
+<div id="search-publications" class="">
+  <div class="search-bar">
+    <form data-request="onFindPublicacion">
+      
+
+        <div class="inputs-container">
+            <div id="publicacion-search" class="spanicons spsearch">
+              <input id="inpSearch" type="text" name="search" placeholder="¿Qué estás buscando?" value="">
+              <span class="select-title">{{ 'TAG, IDEA O NOMBRE'|_ }}</span>
+            </div>
+        </div>
+
+        <div class="inputs-container multp">
+            <div id="publicacion-type" class="spanicons sptipo">
+              <select id="sltType" class="select-days" name="type">
+                {% for key,value in types %}
+                  <option value="{{str_slug(value)}}">{{ value|_|capitalize}}</option>
+                {% endfor %}
+                <option value="todos-los-tipos" selected=>{{'Todos'|_ }}</option>
+              </select>
+              <span class="select-title">{{ 'TIPO DE PUBLICACIÓN'|_ }}</span>
+            </div>
+            <div id="publicacion-interests" class="spanicons spinterest">
+              <select id="sltInterests" class="select-days custom-select" name="interests[]" multiple="multiple">
+                {% for key,value in interests %}
+                  <option value="{{str_slug(value)}}">{{ value|_|capitalize}}</option>
+                {% endfor %}
+                <option value="todos-los-intereses" selected=>{{'Todos los intereses'|_ }}</option>
+              </select>
+              <span class="select-title">{{ 'INTERESES'|_ }}</span>
+            </div>
+            <div id="publicacion-langs" class="spanicons splang">
+              <select id="sltLangs" class="select-days" name="lang">
+                {% for key,value in langs %}
+                  <option value="{{str_slug(value)}}">{{ value|_|capitalize}}</option>
+                {% endfor %}
+                <option value="todos-los-idiomas" selected=>{{'Todos'|_ }}</option>
+              </select>
+              <span class="select-title">{{ 'IDIOMAS'|_ }}</span>
+            </div>
+        </div>
+
+        
+        <div class="button-container">
+          <input id="" type="submit" value="{{ 'Encontrar publicaciones'|_ }}">
+        </div>
+     
+    </form>
+  </div>
+</div>

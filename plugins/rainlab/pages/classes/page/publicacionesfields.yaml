@@ -17,6 +17,19 @@ fields:
         type: dropdown
         options: getPublicationsType
 
+    viewBag[interests]:
+        span: left
+        label: 'Intereses'
+        placeholder: 'Intereses'
+        type: taglist
+        attributes: {multiple:'multiple'}
+        options: getPublicationsInterests
+
+    viewBag[urlimage]:
+        span: right
+        placeholder: /
+        label: 'URL de la imagen'
+
     viewBag[url]:
         span: right
         placeholder: /
@@ -43,7 +56,10 @@ fields:
    
     viewBag[idiomas]:
         span: full
+        type: taglist
+        attributes: {multiple:'multiple'}
         label: 'Escribe los idiomas en los que estara disponible esta publicación para su descarga'
+        options: getNewsIdiomasOptions
 
     toolbar:
         type: partial

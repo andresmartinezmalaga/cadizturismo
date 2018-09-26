@@ -10,7 +10,7 @@ is_hidden = 0
 	
 	function onStart()
 	{	    
-    
+   
     if (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false) {
           $this['preurl'] = '/cadizturismo';
     } else {
@@ -25,11 +25,13 @@ is_hidden = 0
     if(Session::has('data')){
       Session::put('reciveData',Session::get('data'));     
     }
-
+ 
     $this['events'] = $this->staticApp->eventAll();
 
     $this['ptitle'] = 'Cádiz | Eventos';
     $this['metaTitle'] = 'Cádiz | Eventos';
+
+
 
 	}
 

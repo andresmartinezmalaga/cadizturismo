@@ -1762,8 +1762,25 @@ html, body {
     height: 100%;
     object-fit: cover; }
 
+.header-publications:before {
+    z-index: 2;
+    content: '';
+    top: 0;
+    bottom: -10.7vw;
+    right: 0;
+    left: 0;
+    position: absolute;
+    background: url(../svg/oval-pub.svg) no-repeat center bottom -1px;
+    background-size: contain;
+}
+#headerPublications h1 {
+  margin-top: -300px;
+}
+.prtlPaginationPub .pagination{
+  background-color: #F4F4F4;
+}
 .publicaciones {
-  background-color: white;
+  background-color: #F4F4F4;
   position: relative;
   z-index: 10;
   height: auto; }
@@ -1794,24 +1811,116 @@ html, body {
   .reportajes .separator {
     margin-top: 36px; }
 
+.all-events-container{
+  background-color: #F4F4F4;
+}
 .publis {
-  width: 1200px;
+  width: 1312px;
   margin: 0 auto;
+  margin-top: -160px;
   display: grid;
   display: -ms-grid;
   justify-content: center;
-  grid-template-columns: repeat(3, 400px);
-  -ms-grid-template-columns: repeat(3, 400px);
-  grid-row-gap: 30px;
-  -ms-grid-row-gap: 30px;
+  grid-template-columns: repeat(2, 656px);
+  -ms-grid-template-columns: repeat(2, 656px);
   padding-bottom: 90px;
   padding-top: 40px; }
+
+.pdown {
+  margin-top: -10px!important;
+}
+
+#prtlPublicationsl{
+  margin-top: 100px!important;
+}
+
+.header-publications-min{
+  height: 665px!important;
+}
+
+.header-publications-min h1 .first-word-rutas{
+  font-size: 180px!important;
+}
+
+  .contpbl{
+    display: grid;
+    display: -ms-grid;
+    grid-template-columns: 290px 351px;
+    -ms-grid-template-columns: 290px 351px;
+  }
+  .publis .bimage {     
+  }
+
+   .publis .download-link{
+    position: relative;
+    bottom: -315px;
+    margin:0 auto;
+    width: 80%;
+    display: block;
+    padding: 18px;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'AvenirNext-DemiBold';
+    color: white;
+    background-color: #F5A623;
+    border-radius: 4px; 
+   }
+
+   .publis .see-link{
+    position: relative;
+    bottom: -315px;
+    margin:0 auto;
+    width: 80%;
+    display: block;
+    padding: 18px;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'AvenirNext-DemiBold';
+    color: white;
+    opacity: 0.6;
+   }
+
   .publis .publicacion {
-    border-bottom: 1px solid #CECECE;
-    min-height: 525px;
-    position: relative; }
+    background-color: white;
+     height: 434px;
+     position: relative; 
+    }
+  .publis span {     
+    color:#CECECE;
+    font-family: 'AvenirNext-DemiBold';
+    font-size: 12px;
+    text-transform: uppercase;
+    position: relative;
+    top: -9px;
+    margin-left: 10px;    
+  }
+
+  .publis img.par {
+    margin-left: -20px; 
+  }
+  .contplangs{   
+    width: 80%;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 5px;
+    margin-left: 10px;
+  }   
+  .contplangs span {
+     margin-left: 0px!important;  
+  }
+
+  .publi-desc{
+    max-height: 80px;
+    position: absolute;
+    bottom: -10px;
+    max-width: 100%!important;
+    padding-left: 15px;
+    padding-right: 15px;
+
+  }
+
     .publis .publicacion:before {
-      content: '';
+      content: none;
       position: absolute;
       z-index: 10;
       right: 0;
@@ -1821,14 +1930,16 @@ html, body {
     .publis .publicacion:nth-child(3):before, .publis .publicacion:nth-child(6):before {
       content: none; }
     .publis .publicacion .publi-title {
-      font-size: 42px;
-      line-height: 51px;
+      font-size: 30px;      
       font-weight: 100;
-      color: #9B9B9B;
+      color: black;
+      font-family: 'AvenirNext-DemiBold';
+      padding-top: 0!important;
+      margin-top: 50px!important;
       margin-bottom: 2px;
-      max-width: 93%;
-      min-height: 102px;
+      max-width: 93%;    
       padding-left: 30px;
+      margin-bottom: 20px;
       text-transform: uppercase; }
     .publis .publicacion .publi-icon {
       margin-bottom: 23px;
@@ -3901,6 +4012,204 @@ p > br {
 /* **************************************************************************** */
 /* **************************************************************************** */
 /* **************************************************************************** */
+ 
+ .header-publications {
+  background-image: url("../img/publicaciones.jpg");
+  transform: rotate(0deg);
+  }
+  
+  
+  .header-publications h1{
+    margin-left: -110px;
+    margin-top: -200px!important;
+    margin-bottom: -40px!important;
+  }
+
+  .header-publications-min h1{
+    margin-left: 0px;
+    margin-top: -60px!important;
+    margin-bottom: -30px!important;
+  }
+
+
+  #search-publications{
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.18);
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 705px;
+    height: 257px;   
+  }
+  
+  .search-bar form{
+    background-color:transparent!important;
+  }
+  .search-bar{
+    border-top: solid 3px white;
+    border-radius: 4px;
+  }
+  #publicacion-search{
+    width: 656px;
+    height: 70px;
+    border-bottom: 1px solid #DDDDDD; 
+  }
+
+  #publicacion-type{
+    width: 170px;
+    height: 70px;
+    border-bottom: 1px solid #DDDDDD; 
+    border-right: 1px solid #DDDDDD; 
+    
+  }
+
+  #publicacion-interests{
+    width: 307px;
+    height: 70px;
+    border-bottom: 1px solid #DDDDDD; 
+    border-right: 1px solid #DDDDDD; 
+    
+  }
+  
+  #publicacion-langs{
+    width: 178px;
+    height: 70px;
+    border-bottom: 1px solid #DDDDDD; 
+  }
+
+
+  
+  .header-publications .select2-container--default .select2-selection--multiple {
+    border: none !important;
+    height: 100%;
+    background-color: transparent;
+    
+  }
+
+ .header-publications .select2-container--default .select2-selection--multiple .select2-selection__choice {
+    font-size: 15.72px;
+    color: #4A4A4A;    
+    border: none;
+    padding: 2px 7px !important;
+  }
+ 
+  .header-publications .select2-container--default .select2-selection--multiple .select2-selection__rendered {
+    margin-top: 8px !important;
+  }
+
+  #publicacion-search .select-title, #publicacion-type .select-title, #publicacion-interests .select-title, #publicacion-langs .select-title{
+    position: absolute;
+    color: #9B9B9B;
+    font-size: 8px;
+    line-height: 11px;
+    top: 42px;
+    left: 55px;
+  }
+
+  .multp{
+    display: grid;
+    display: -ms-grid;
+    grid-template-columns: 170px 307px 178px;
+    -ms-grid-template-columns: 170px 307px 178px;
+  }
+  
+  #publicacion-search input{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    padding-left: 55px;
+    color: #4A4A4A;
+    font-size: 15.72px;
+    line-height: 22px;
+    margin-top: -3px;   
+  }
+
+
+  #publicacion-search input:focus {
+      outline: none;
+  }
+
+  .header-publications .spanicons {
+    position: relative;
+    width: 1000px;
+      
+    background-size: 23px; 
+    background-repeat: no-repeat;
+    background-position: 21px 50%;
+  }
+
+  .spsearch{
+    background-image: url("../svg/minilupa.svg") !important;
+  }
+  .sptipo{
+    background-image: url("../svg/pb1.svg") !important;
+  }
+  .spinterest{
+    background-image: url("../svg/pb2.svg") !important;
+  }
+  .splang{
+    background-image: url("../svg/pb3.svg") !important;
+  }
+  
+  
+  #search-publications form, #search-publications .inputs-container {
+    color: #333;
+    background-color: #fff;
+    width: 100%;
+    @include flexbox();
+    flex-direction: row;
+  }
+
+  #search-publications input[type="submit"] {
+      width: 100%;
+      height: 100%;
+      background-color: #F5A623;
+      border: none!important;
+     
+      color: white;
+      font-size: 19.72px;
+      line-height: 27px;
+      transition: background-color 0.3s ease;
+      padding: 0!important;
+      height: 70px;
+      border-bottom: 4px solid  #F5A623;
+      border-bottom-left-radius: 4px;
+      border-bottom-right-radius: 4px;
+  }
+     
+  #search-publications input[type="submit"]:hover, #search-publications input[type="submit"]:focus, #search-publications input[type="submit"]:active {
+      background-color: #D0860C;
+      outline: none;
+  }
+
+  #search-rutas form, #search-rutas .inputs-container {
+  width: 100%;
+  @include flexbox();
+  flex-direction: row;
+  select {
+    display: none;
+  }
+  input[type="submit"] {
+    width: 100%;
+    height: 100%;
+    background-color: #F5A623;
+    border: none;
+    color: white;
+    font-size: 19.72px;
+    line-height: 27px;
+    transition: background-color 0.3s ease;
+    &:hover, &:focus, &:active {
+      background-color: #D0860C;
+      outline: none;
+    }
+  }
+}
+
 .more-info-beach {
   margin-top: 117px !important; }
   .more-info-beach h3 {

@@ -2298,25 +2298,7 @@ class PagesTemplates
     }
 
 
-    static $publicaciones = '
-    <div id="ayuda-header" class="plantillaPublicaciones ayuda-header">
-      <img class="img-header"
-      src="***_preurl_***/storage/app/media/uploaded-files/templates/publicaciones.jpg"
-      alt="publicaciones">
-      <div class="header-container">
-    		<div class="header-txt-comollegar">
-    			<h1 class="txt">Publicaciones</h1>
-          <img class="brush" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg"
-          alt="publicaciones">
-        </div>
-    	</div>
-    </div>
-    <section class="publicaciones">
-      <div class="publi-container">
-        <h3 class="publicaciones-title">DESCUBRE CÁDIZ CON NUESTRAS GUÍAS Y PUBLICACIONES</h3>
-        <img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
-      </div>
-    </section>';
+    static $publicaciones ='';
 
     static function getTPublicaciones(){
       $publicaciones = PagesTemplates::getFinalTemplate(PagesTemplates::$publicaciones);

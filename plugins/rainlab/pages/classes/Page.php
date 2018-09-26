@@ -176,8 +176,21 @@ class Page extends ContentBase
     public function getPublicationsType(){
         return [
             'guía' => 'Guía',
-            'publicación' => 'Publicación',
+            'mapa' => 'Mapa',
             'vídeo' => 'Vídeo'
+
+        ];
+    }
+
+    // sort ok
+    public function getPublicationsInterests(){
+        return [
+            'aventura' => 'Aventura',
+            'cultura' => 'Cultura',
+            'gastronomía' => 'Gastronomía',
+            'naturaleza' => 'Naturaleza',
+            'playa' => 'Playa',
+            'tradición' => 'Tradición'
 
         ];
     }

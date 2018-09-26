@@ -14,16 +14,7 @@
 
 ==
 {% if publications|length > 0 %}
-  
-<div class="search-title-container">
-  {% if publications|length > 1 %}
-    <p class="title-search"> {{ 'Hemos encontrado'|_ }} {{publications|length}} {{ 'publicaciones que se adapta tus criterios de búsqueda.'|_ }}</p>
-  {% else %}
-    <p class="title-search"> {{ 'Hemos encontrado'|_ }} {{publications|length}} {{ 'publicación que se adapta tus criterios de búsqueda.'|_ }}</p>
-  {% endif %}
-</div>
-
-<div class="publis pdown">
+<div class="publis">
 {% for publication in publications %}
     <div class='contpbl'>
       <div class="bimage" style="background-image:url({{publication.viewBag.urlimage}}); background-repeat: no-repeat; background-size: cover;">
