@@ -1847,6 +1847,7 @@ html, body {
     display: -ms-grid;
     grid-template-columns: 290px 351px;
     -ms-grid-template-columns: 290px 351px;
+    margin-bottom: 30px;
   }
   .publis .bimage {     
   }
