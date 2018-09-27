@@ -146,6 +146,8 @@ var ams = function(){
 
 	//Título + descripción
 	var titleDesc = '<div class="section-txt-village"><div class="txt-container"><h3 class="title">TITULAR</h3><img class="separator fr-fic fr-dii" src="/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"><p class="desc">Escribe aquí el contenido a desarrollar y agrega una imagen adicional si lo necesitas.</p></div></div><p class="mock-insert"><br></p>';
+    //Parrafo
+    var paragraph = '<div class="section-txt-village"><div class="txt-container"><p class="desc">Escribe aquí el contenido a desarrollar y agrega una imagen adicional si lo necesitas.</p></div></div><p class="mock-insert"><br></p>';
 	//Sección destacada
 	var destacado = '<div class="img-village"><div class="txt-container"><p class="title">Título del destacado</p><p class="desc">Puedes destacar una ruta, una playa o un evento. Escribe una breve descripción sobre el enlace que vas a sugerir.</p><a class="events-link" href="rutas.html">Conocer <img src="/storage/app/media/uploaded-files/templates/link-arrow-yellow.svg" alt="" class="fr-fic fr-dii">&nbsp;</a><img class="separator fr-fic fr-dii" src="/storage/app/media/uploaded-files/templates/big-yellow-separator.svg"></div><img class="img-destacada" src="/storage/app/media/uploaded-files/templates/marismas-barbate.jpg" alt=""></div><p class="mock-insert"><br></p>';
 	//Imagen al 100%
@@ -184,6 +186,7 @@ var ams = function(){
 
             if(btnwsya.length<1){
                 toolbar.append('<span data-toggle="tooltip" data-placement="bottom" data-delay="200" title="Título + descripción" class="btwtitleDesc custom-wysiwyg"> <img src="/storage/app/media/uploaded-files/templates/parrafo.svg"/></span>');
+                toolbar.append('<span data-toggle="tooltip" data-placement="bottom" data-delay="200" title="Parrafo" class="btwtitleParag custom-wysiwyg"> <img src="/storage/app/media/uploaded-files/templates/parrafo.svg"/></span>');
                 toolbar.append('<span data-toggle="tooltip" data-placement="bottom" data-delay="200" title="Sección destacada" class="btwdestacado custom-wysiwyg"> <img src="/storage/app/media/uploaded-files/templates/destacado.svg"/></span>');
                 toolbar.append('<span data-toggle="tooltip" data-placement="bottom" data-delay="200" title="Imagen" class="btwfullImage custom-wysiwyg"> <img src="/storage/app/media/uploaded-files/templates/galeria1.svg"/></span>');
                 toolbar.append('<span data-toggle="tooltip" data-placement="bottom" data-delay="200" title="Galería 2" class="btwtwoImages custom-wysiwyg"> <img src="/storage/app/media/uploaded-files/templates/galeriados.svg"/></span>');
@@ -208,6 +211,11 @@ var ams = function(){
         $('.btwtitleDesc').on('click',function(){
             
             self.pasteHtmlAtCaret(titleDesc);
+        })
+
+        $('.btwtitleParag').on('click',function(){
+            
+            self.pasteHtmlAtCaret(paragraph);
         })
 
         $('.btwdestacado').on('click',function(){

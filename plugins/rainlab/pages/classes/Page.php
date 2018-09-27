@@ -101,7 +101,7 @@ class Page extends ContentBase
         'viewBag[meta_title]',
         'viewBag[meta_description]',
         'viewBag[descrptn]',
-        'viewBag[urlExternaVideo]'
+        'viewBag[urlExternaVideo]',
     ];
 
     /**
@@ -489,6 +489,8 @@ class Page extends ContentBase
                 $this->markup = PagesTemplates::getTMunicipio();
             }elseif ($parentPage->fileName == 'playas.htm') {
                 $this->markup = PagesTemplates::getTPlaya();
+            }elseif ($parentPage->fileName == 'sala-prensa-reportajes.htm') {
+                $this->markup = PagesTemplates::getTReportaje();
             }
 
             $layout = Layout::load($this->theme, $parentPage->layout);

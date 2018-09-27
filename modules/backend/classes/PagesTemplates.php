@@ -2330,31 +2330,6 @@ class PagesTemplates
       return $prensa;
     }
 
-    static $reportaje = '
-    <div id="ayuda-header" class="plantillaReportaje ayuda-header">
-      <img class="img-header"
-      src="***_preurl_***/storage/app/media/uploaded-files/templates/reportaje-header.jpg"
-      alt="">
-      <div class="header-container">
-    		<div class="header-txt-comollegar">
-    			<h1 class="txt">Reportajes</h1>
-          <img class="brush" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg"
-          alt="necesitas ayuda">
-        </div>
-    	</div>
-    </div>
-    <section class="reportajes">
-      <div class="publi-container">
-        <h3 class="publicaciones-title">HISTORIAS PARA ENAMORARTE DE CÁDIZ</h3>
-        <img class="separator fr-fic fr-dii" src="***_preurl_***/storage/app/media/uploaded-files/templates/big-yellow-separator.svg">
-      </div>
-    </section>';
-
-    static function getTReportaje(){
-      $reportaje = PagesTemplates::getFinalTemplate(PagesTemplates::$reportaje);
-      return $reportaje;
-    }
-
     static $cookies = '
     <div class="plantillaCookies full-legal-container"><div class="made-up-space"></div><div class="aviso-legal-container">
   <h1>Política de uso de cookies</h1>
@@ -2456,11 +2431,34 @@ static $legal = '
        <li> <p>Real Decreto 1720/2007, de 21 de diciembre, por el que se aprueba el Reglamento de desarrollo de la LOPD.</p> </li>
      </ul>
      </div></div>';
-  static function getTLegal(){
+static function getTLegal(){
   $legal = PagesTemplates::getFinalTemplate(PagesTemplates::$legal);
   return $legal;
 }
 
+static $reportaje = '
+  <!-- HEADER -->
+  <div id="header-event-fr" class="header-event main-event">
+          <div class="header-container">
+            <div class="header-txt">
+              <h1 class="txt">Título</h1>
+              <img class="brush" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt="">
+              <div class="send-info">
+                <div class="button-send-info">
+                  <a href="#">Descargar este reportaje</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- NUEVA FOTO -->
+          <img class="background-image" value="cover" src="***_preurl_***/storage/app/media/uploaded-files/templates/reportexp.jpg" alt="">
+        </div>
+        <div id="phantom-div"></div>
+  <p class="mock-insert"><br></p>';
+static function getTReportaje(){
+  $reportaje = PagesTemplates::getFinalTemplate(PagesTemplates::$reportaje);
+  return $reportaje;
+}
 
 
 }
