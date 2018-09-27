@@ -2438,7 +2438,7 @@ static function getTLegal(){
 
 static $reportaje = '
   <!-- HEADER -->
-  <div id="header-event-fr" class="header-event main-event">
+  <div id="header-event-fr" class="plantillaReportajes header-event main-event">
           <div class="header-container">
             <div class="header-txt">
               <h1 class="txt">Título</h1>

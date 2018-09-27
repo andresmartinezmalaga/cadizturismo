@@ -182,7 +182,8 @@ var ams = function(){
              pt.find('.plantillaRuta').length > 0 ||
              pt.find('.plantillaMiniEvento').length > 0 ||
              pt.find('.plantillaMaxiEvento').length > 0 ||
-             pt.find('.plantillaExperiencia').length > 0) {
+             pt.find('.plantillaExperiencia').length > 0 ||
+             pt.find('.plantillaReportajes').length > 0) {
 
             if(btnwsya.length<1){
                 toolbar.append('<span data-toggle="tooltip" data-placement="bottom" data-delay="200" title="Título + descripción" class="btwtitleDesc custom-wysiwyg"> <img src="/storage/app/media/uploaded-files/templates/parrafo.svg"/></span>');
@@ -200,7 +201,7 @@ var ams = function(){
         if ( pt.find('.plantillaRuta').length > 0 ||
              pt.find('.plantillaMiniEvento').length > 0 ||
              pt.find('.plantillaMaxiEvento').length > 0 ||
-             pt.find('.plantillaExperiencia').length > 0) {
+             pt.find('.plantillaExperiencia').length > 0)  {
 
             if(btnwsyb.length<1){
                 toolbar.append('<span data-toggle="tooltip" id="btj" data-placement="bottom" data-delay="200" title="Enumeración" class="btwnumberSection custom-wysiwyg"> <img src="/storage/app/media/uploaded-files/templates/parrafonumerado.svg"/></span>');
