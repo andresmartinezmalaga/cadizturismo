@@ -42,7 +42,9 @@ fields:
 
     viewBag[descrptn]:
         span: full
+        type: textarea
         label: 'Descripción (max. 120 caracteres)'
+        size: tiny
        
     viewBag[urlExternaVideo]:
         span: right

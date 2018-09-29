@@ -2534,7 +2534,7 @@ html.cssanimations .cursor-loading-indicator.hide{display:none}
 .field-section.is-collapsible:hover{border-bottom:1px solid #b5bdc2}
 .field-section.is-collapsible:hover > h4:before{color:inherit}
 .form-group.section-field.collapsed .field-section.is-collapsible > h4:before{-webkit-transform:scale(1,-1);-moz-transform:scale(1,-1);-ms-transform:scale(1,-1);-o-transform:scale(1,-1);transform:scale(1,-1)}
-.field-textarea{resize:vertical}
+.field-textarea{resize:vertical; background-color:#175DA3; color:white; border:none!important;}
 .field-textarea.size-tiny{min-height:50px}
 .field-textarea.size-small{min-height:100px}
 .field-textarea.size-large{min-height:200px}
