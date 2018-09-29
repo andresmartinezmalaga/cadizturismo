@@ -54,19 +54,36 @@ is_hidden = 0
 	function onFindExperience(){
 
 		$days = $_POST['days'];
-		$interest = $_POST['interest'];
-		$tvisit = $_POST['tvisit'];
-    
-   
+		$pinterest = $_POST['interest'];
+		$ptvisit = $_POST['tvisit'];
 
-    	$experiences = $this->staticApp->experienceFind($days,$interest,$tvisit);
-    	Session::put('data',json_encode($experiences));
+    if($pinterest!='all'){
+      $ainterest = $this->staticApp->getInteresesId($pinterest*1);
+    } else {
+      $ainterest = 'all';
+    }
 
-    	$this['experiences'] = $experiences;
+    if(isset($ainterest)){
+       $interest = $ainterest[0].' y '.$ainterest[1];
+    }
+
+    if($ptvisit!='all'){
+      $tvisit = $this->staticApp->getTvisitaId($ptvisit*1);
+    } else {
+      $tvisit = 'all';
+    }
+
+    $aLang = App::getLocale();
+
+    $experiences = $this->staticApp->experienceFind($days,$ainterest,$tvisit);
+
+    Session::put('data',json_encode($experiences));
+
+    $this['experiences'] = $experiences;
     
-    	return [
+    return [
     		'#prtlExperiences' => $this->renderPartial('experiences')
-    	];
+    ];
  
   }
 

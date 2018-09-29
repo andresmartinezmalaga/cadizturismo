@@ -46,12 +46,18 @@ fields:
         cssClass: ocl
 
     viewBag[subtemplate]:
-        label: 'template'
+        label: 'subtemplate'
         default: 'reportajes'
         cssClass: ocl
 
     viewBag[cover]:
         label: 'cover'
+        default: 'default.jpg'
+        cssClass: ocl  
+
+
+    viewBag[reportUrl]:
+        label: 'reportUrl'
         default: 'default.jpg'
         cssClass: ocl     
 

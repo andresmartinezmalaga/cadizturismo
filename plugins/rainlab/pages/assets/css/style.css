@@ -4562,11 +4562,10 @@ p > br {
   padding-top:100px;
 }
 .cntreports .gr .rprtc1{
-  padding:15px;
-  height: 511px;
-  
+  height: 511px;  
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
 }
 .cntreports .gr .rprtc2{
   height: 594px;
@@ -4575,62 +4574,128 @@ p > br {
   height: 516px;
 }
 .cntreports .gr .rprtc4{
-  padding:15px;
-  height: 592px;
-  
+  height: 592px;  
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
 }
-.cntreports .gr .rprtc5{
-  padding:0 15px;
-  height: 300px;
-  
+.cntreports .gr .rprtc5{ 
+  height: 300px;  
 }
 .cntreports .rprtc6{
   height: 594px;
 }
 
-.cntreports .gr .rprtc2 .rpart1{
-  padding:15px;
-  
+.cntreports .gr .rprtc2 .rpart1{ 
   height: 370px;
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
 }
 .cntreports .gr .rprtc2 .rpart2{
-  color: #9B9B9B;
-  padding:15px;
-  
+  color: #9B9B9B;  
   height: 224px;
   background-color: white;
+  position: relative;
 }
 
 .cntreports .gr .rprtc3 .rpart1{
-  padding:15px;
-  
   height: 370px;
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
 }
 .cntreports .gr .rprtc3 .rpart2{
-  color: #9B9B9B;
-  padding:15px;
-  
+  color: #9B9B9B; 
   height: 146px;
   background-color: white;
+  position: relative;
 }
-
 .cntreports .gr .rprtc6 .rpart1{
-  padding:15px;
-  
   height: 370px;
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
 }
 .cntreports .gr .rprtc6 .rpart2{
-  color: #9B9B9B;
-  padding:15px;
-  
+  color: #9B9B9B;  
   height: 224px;
   background-color: white;
+  position: relative;
+}
+.cntreports .gr .rprInfCont{
+  position: absolute;
+  bottom: 33px;
+  left:0px;
+  padding:0 50px;
+}
+.cntreports .gr .reportDate {
+  display: block;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: 'Avenir-Medium';
+}
+.cntreports .gr .reportTitle {
+  display: block;
+  font-size: 39px;
+  line-height: 48px;
+  font-family: 'AvenirNext-DemiBold';
+  text-transform: uppercase;
+}
+.cntreports .gr img {
+  margin-top: 15px;
+}
+.cntreports .gr .reportDescrptn {
+  margin-top: 25px;
+  display: block;
+  font-size: 16px;
+  line-height: 26px;
+  font-family: 'Avenir-Medium';
+}
+
+.cntreports .gr .rprtc2 .reportDescrptn {
+  margin-top: -160px;
+}
+.cntreports .gr .rprtc3 .rpart2 .reportDescrptn {
+  margin-top: -80px;
+}
+.cntreports .gr .rprtc6 .rpart2 .reportDescrptn {
+  margin-top: -160px;
+}
+
+.reportInfo{
+  height: 179px;
+  width: 100%;
+  background: url(../svg/oval-report.svg) no-repeat center bottom -1px;
+  background-size: cover;
+  position: absolute;
+  z-index: 9999999;
+  top: 850px;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  padding-left: 250px;
+}
+
+.reportInfo .feature{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 130px;
+}
+
+.reportInfo .feature img{
+  margin-bottom: 10px;
+  height: 39px;
+  width: auto;
+  vertical-align: middle;
+}
+
+.reportInfo .feature .feature-txt, .reportInfo .feature a{
+    color: white;
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0 0 10px;
 }

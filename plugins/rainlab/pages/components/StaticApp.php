@@ -31,6 +31,11 @@ use Backend\Models\Tiposvisitas;
 use Backend\Models\Catgeventos;
 use Backend\Models\Catgrutas;
 
+
+use RainLab\Translate\Models\Locale;
+use RainLab\Translate\Classes\MLCmsObject;
+
+
 use Backend\Models\User;
 
 /**
@@ -93,7 +98,8 @@ class StaticApp extends ComponentBase
 
        $catgevento = Catgeventos::where('slug',$slug)->first();
 
-        if(count($catgevento)>0){
+        //if(count($catgevento)>0){
+        if($catgevento){
             return $catgevento->id;
         }else {
             return null;
@@ -336,7 +342,8 @@ class StaticApp extends ComponentBase
 
     public function getStringSlugInterest($slug){
        $i = Intereses::where('slug',$slug)->first();
-       if(count($i)>0){
+        //if(count($i)>0){
+        if($i){
             return $i->name;
         } else {
             return null;
@@ -358,7 +365,8 @@ class StaticApp extends ComponentBase
 
     public function getStringSlugTvisit($slug){
         $i = Tiposvisitas::where('slug',$slug)->first();
-        if(count($i)>0){
+        //if(count($i)>0){
+        if($i){    
             return $i->name;
         } else {
             return null;
@@ -367,45 +375,65 @@ class StaticApp extends ComponentBase
 
     public function getInteresesById($id) {
 
-       $intereses = Intereses::find($id);
-
-        if(count($intereses)>0){
+        if(is_int($id)){
+            $intereses = Intereses::find($id);
+        } else {
+             $intereses = Intereses::where('slug',$id)->first();        
+        }
+       
+        //if(count($intereses)>0){
+        if($intereses){
             return explode(' y ', $intereses->name);
         }else {
-            return[];
+            return null;
         }
     }
 
-    public function getInteresesId($slug) {
+    public function getInteresesId($id) {
 
-       $intereses = Intereses::where('slug',$slug)->first();
+        if(is_int($id)){
+             $intereses = Intereses::find($id);   
+        } else {
+             $intereses = Intereses::where('slug',$id)->first();  
+        }
 
-        if(count($intereses)>0){
+        //if(count($intereses)>0){
+        if($intereses){
             return $intereses->id;
         }else {
             return null;
         }
     }
 
-     public function getTvisitaId($slug) {
+     public function getTvisitaId($id) {
+      
+        if(is_int($id)){
+             $tvisita = Tiposvisitas::find($id);   
+        } else {
+             $tvisita = Tiposvisitas::where('slug',$id)->first();  
+        }
 
-       $tvista = Tiposvisitas::where('slug',$slug)->first();
-
-        if(count($tvista)>0){
-            return $tvista->id;
+        //if(count($tvisita)>0){
+        if($tvisita){
+            return $tvisita->id;
         }else {
             return null;
         }
     }
 
     public function getTvisitaById($id) {
+        
+        if(is_int($id)){
+             $tvisita = Tiposvisitas::find($id);   
+        } else {
+            $tvisita = Tiposvisitas::where('slug',$id)->first();       
+        }
 
-        $tvisita = Tiposvisitas::find($id);
-
-        if(count($tvisita)>0){
+        //if(count($tvisita)>0){
+        if($tvisita){
             return $tvisita->name;
         } else {
-            return [];
+            return null;
         }
 
 
@@ -1163,35 +1191,41 @@ class StaticApp extends ComponentBase
         $experiences =  new \Illuminate\Support\Collection($pages);
 
         $daysOperator = '=';
-        if($days == 'all'){
-            $days = '0';
+        if($days == 'all' || $days == 'dejate-llevar'){
+            $days = 0;
             $daysOperator = '>';
         }
 
         $interestOperator = '=';
-        if($interest == 'all'){
+        if($interest == 'all' || $interest == 'todos los intereses' ){
             $interest = null;
             $interestOperator = '!=';
         }
 
         $tvisitOperator = '=';
-        if($tvisit == 'all'){
+        if($tvisit == 'all' || $tvisit == 'todo cadiz'){
             $tvisit = null;
             $tvisitOperator = '!=';
         }
 
-        $result = $experiences->where("is_hidden",0)->where('template','experiences')->where('days',$daysOperator,$days)->where('interest',$interestOperator,$interest)->where('tvisit',$tvisitOperator,$tvisit)->values();
+        $result = $experiences->where("is_hidden",0)->where('template','experiences')->where('days',$daysOperator,$days)->where('interest',$interestOperator,strtolower($interest))->where('tvisit',$tvisitOperator,strtolower($tvisit))->values();
 
         foreach ($result as $i) {
 
-            $iintrst = $this->getInteresesById($i->interest);
+            $iintrst = $this->getInteresesById($i->interest*1);
+
             if(count($iintrst)>0){
+            //if($iintrst){
                 $i->sintrst1 = $iintrst[0];
                 $i->sintrst2 = $iintrst[1];
+            } else {
+                $i->sintrst1 = null;
+                $i->sintrst2 = null;
             }
 
-            $itvisit = $this->getTvisitaById($i->tvisit);
-            if(count($itvisit)>0){
+            $itvisit = $this->getTvisitaById($i->tvisit*1);
+            //if(count($itvisit)>0){
+            if($itvisit){    
                 $i->stvisit = $itvisit;
             }
         }
@@ -1542,15 +1576,29 @@ class StaticApp extends ComponentBase
         return count($this->reportList());
     }
 
-    public function reportListPag($pag = 1, $number = 1)
+    public function reportListPag($pag = 1, $number = 1, $lang)
     {
         $theme = Theme::getActiveTheme();
         $pages = Page::listInTheme($theme, false);
         $reports =  new \Illuminate\Support\Collection($pages);
 
-        $result = $reports->where("is_hidden",0)->where("subtemplate","sala-prensa-reportajes")->values();
+        $rreports = collect();
+        $results = $reports->where("is_hidden",0)->where("subtemplate","sala-prensa-reportajes")->sortByDesc('dateReportaje')->values();
+       
+        if($lang != 'es'){
+            foreach ($results as $key => $result) {
+                $vbo = $result->settings['components']['viewBag'];
+                $vb = $result->viewBag;
+               
+                if($vbo['title'] != $vb['title'] && $vbo['descrptn'] != $vb['descrptn']){
+                   $rreports->push($result);
+                }
+            }
+          
+            $results = $rreports;
+        } 
 
-        $pagination = $result->slice((($pag-1)*$number),$number);
+        $pagination = $results->slice((($pag-1)*$number),$number);
 
         return $pagination;
     }
@@ -1785,6 +1833,16 @@ class StaticApp extends ComponentBase
 
     public function publicacionesFindCount($search, $type, $interests, $lang){
         return count($this->publicacionesFind($search, $type, $interests, $lang));
+    }
+
+    public function reportFindByUrl($url)
+    {
+        $theme = Theme::getActiveTheme();
+        $pagesList = Page::listInTheme($theme, false);
+        $pages =  new \Illuminate\Support\Collection($pagesList);
+
+        $report = $pages->where("is_hidden",0)->where("url",$url)->values();
+        return $report;
     }
 
 }

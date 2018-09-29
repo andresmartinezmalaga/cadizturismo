@@ -39,7 +39,7 @@ code = "redes-sociales"
         $this['numberReg'] = 9;
 
         $this['numPag'] = ceil($this->staticApp->reportListCount()/$this['numberReg']);
-        $this['reports'] = $this->staticApp->reportListPag(1,$this['numberReg']);
+        $this['reports'] = $this->staticApp->reportListPag(1,$this['numberReg'],$this['lang']);
 
         $this['urlPage'] = $this->page->url;
 

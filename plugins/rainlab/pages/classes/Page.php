@@ -66,7 +66,8 @@ class Page extends ContentBase
         'idiomas',
         'urlExternaZip',
         'urlExternaVideo',
-        'address'
+        'address',
+        'cover',
     ];
 
     /**

@@ -2441,11 +2441,12 @@ static $reportaje = '
   <div id="header-event-fr" class="plantillaReportajes header-event main-event">
           <div class="header-container">
             <div class="header-txt">
-              <h1 class="txt">Título</h1>
+              <h1 class="txt">Titulo</h1>
+               <h1 class="txt">del reportaje</h1>
               <img class="brush" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt="">
               <div class="send-info">
                 <div class="button-send-info">
-                  <a href="#">Descargar este reportaje</a>
+                  <a class="urldonwload" href="#">Descargar este reportaje</a>
                 </div>
               </div>
             </div>

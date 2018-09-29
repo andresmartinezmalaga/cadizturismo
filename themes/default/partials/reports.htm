@@ -16,26 +16,94 @@
 == 
 
 <div class="cntreports">
-	<div class="gr gr1">
-		<div class="rprtc1" style="background-image: url(/cadizturismo/storage/app/media/uploaded-files/templates/reportexp.jpg);">1</div>
+	{% if(reports[0]) %}
+		<div class="gr gr1">
+		{% if(reports[0]) %}
+			<div class="rprtc1" style="background-image: url({{reports[0].viewBag.cover}});">
+				<div class="rprInfCont">
+					{% set dated = reports[0].viewBag.dateReportaje|split(' ')[0] %}
+					{% set datef = dated|split('-') %}
+					<span class='reportDate'>{{datef[2]}}.{{datef[1]}}.{{datef[0]|slice(2,2)}}</span>
+					<span class='reportTitle'>{{reports[0].viewBag.title}}</span>
+					<img src="/cadizturismo/storage/app/media/uploaded-files/templates/reportlineyellow.png" alt="">
+					<span class='reportDescrptn'>{{reports[0].viewBag.descrptn|length > 114 ? reports[0].viewBag.descrptn|slice(0, 115) ~ '...' : reports[0].viewBag.descrptn}}</span>
+				</div>
+			</div>
+		{% endif %}
+		{% if(reports[1]) %}
 		<div class="rprtc2">
-			<div class="rprtc2 rpart1" style="background-image: url(/cadizturismo/storage/app/media/uploaded-files/templates/reportexp.jpg);">2.1</div>
-			<div class="rprtc2 rpart2">2.2</div>
+			<div class="rprtc2 rpart1" style="background-image: url({{reports[1].viewBag.cover}});">
+				<div class="rprInfCont">
+					{% set dated = reports[1].viewBag.dateReportaje|split(' ')[0] %}
+					{% set datef = dated|split('-') %}
+					<span class='reportDate'>{{datef[2]}}.{{datef[1]}}.{{datef[0]|slice(2,2)}}</span>
+					<span class='reportTitle'>{{reports[1].viewBag.title}}</span>
+					<img src="/cadizturismo/storage/app/media/uploaded-files/templates/reportlineyellow.png" alt="">
+				</div>
+			</div>
+			<div class="rprtc2 rpart2">
+				<div class="rprInfCont">
+					<span class='reportDescrptn'>{{reports[1].viewBag.descrptn|length > 250 ? reports[1].viewBag.descrptn|slice(0, 251) ~ '...' : reports[1].viewBag.descrptn}}</span>
+				</div>
+			</div>
 		</div>
-	</div>
-	<div class="gr gr2">
-		<div class="rprtc3">
-			<div class="rprtc3 rpart1" style="background-image: url(/cadizturismo/storage/app/media/uploaded-files/templates/reportexp.jpg);">3.1</div>
-			<div class="rprtc3 rpart2">3.2</div>
+		{% endif %}
 		</div>
-		<div class="rprtc4" style="background-image: url(/cadizturismo/storage/app/media/uploaded-files/templates/reportexp.jpg);">4</div>
-	</div>
+	{% endif %}
+	{% if(reports[2]) %}
+		<div class="gr gr2">
+		{% if(reports[2]) %}
+			<div class="rprtc3">
+				<div class="rprtc3 rpart1" style="background-image: url({{reports[2].viewBag.cover}});">
+					<div class="rprInfCont">
+						{% set dated = reports[2].viewBag.dateReportaje|split(' ')[0] %}
+						{% set datef = dated|split('-') %}
+						<span class='reportDate'>{{datef[2]}}.{{datef[1]}}.{{datef[0]|slice(2,2)}}</span>
+						<span class='reportTitle'>{{reports[2].viewBag.title}}</span>
+						<img src="/cadizturismo/storage/app/media/uploaded-files/templates/reportlineyellow.png" alt="">
+					</div>
+				</div>
+				<div class="rprtc3 rpart2">
+					<div class="rprInfCont">
+						<span class='reportDescrptn'>{{reports[2].viewBag.descrptn|length > 105 ? reports[2].viewBag.descrptn|slice(0, 106) ~ '...' : reports[2].viewBag.descrptn}}</span>
+					</div>
+				</div>
+			</div>
+		{% endif %}
+		{% if(reports[3]) %}
+			<div class="rprtc4" style="background-image: url({{reports[3].viewBag.cover}});">
+				<div class="rprInfCont">
+					{% set dated = reports[3].viewBag.dateReportaje|split(' ')[0] %}
+					{% set datef = dated|split('-') %}
+					<span class='reportDate'>{{datef[2]}}.{{datef[1]}}.{{datef[0]|slice(2,2)}}</span>
+					<span class='reportTitle'>{{reports[3].viewBag.title}}</span>
+					<img src="/cadizturismo/storage/app/media/uploaded-files/templates/reportlineyellow.png" alt="">
+					<span class='reportDescrptn'>{{reports[3].viewBag.descrptn|length > 233 ? reports[3].viewBag.descrptn|slice(0, 234) ~ '...' : reports[3].viewBag.descrptn}}</span>
+				</div>
+			</div>
+		{% endif %}	
+		</div>
+	{% endif %}
 	<div class="gr gr3">
 		<div class="rprtc5">5</div>
+		{% if(reports[4]) %}
 		<div class="rprtc6">
-			<div class="rprtc6 rpart1" style="background-image: url(/cadizturismo/storage/app/media/uploaded-files/templates/reportexp.jpg);">6.1</div>
-			<div class="rprtc6 rpart2">6.2</div>
+			<div class="rprtc6 rpart1" style="background-image: url({{reports[4].viewBag.cover}});">
+				<div class="rprInfCont">
+					{% set dated = reports[4].viewBag.dateReportaje|split(' ')[0] %}
+					{% set datef = dated|split('-') %}
+					<span class='reportDate'>{{datef[2]}}.{{datef[1]}}.{{datef[0]|slice(2,2)}}</span>
+					<span class='reportTitle'>{{reports[4].viewBag.title}}</span>
+					<img src="/cadizturismo/storage/app/media/uploaded-files/templates/reportlineyellow.png" alt="">
+				</div>
+			</div>
+			<div class="rprtc6 rpart2">
+				<div class="rprInfCont">
+					<span class='reportDescrptn'>{{reports[4].viewBag.descrptn|length > 243 ? reports[4].viewBag.descrptn|slice(0, 244) ~ '...' : reports[4].viewBag.descrptn}}</span>
+				</div>
+			</div>
 		</div>
+		{% endif %}
 	</div>
 </div>
 

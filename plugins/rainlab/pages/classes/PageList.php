@@ -39,8 +39,7 @@ class PageList
     {
        return Page::listInTheme($this->theme, $skipCache);
        
-    }
-    
+    }    
 
     /**
      * Returns a list of top-level pages with subpages.
@@ -60,27 +59,26 @@ class PageList
 
             foreach ($configPages as $fileName => $subpages) {
                 $pageObject = null;
+                
                 foreach ($pages as $page) {
                     if ($page->getBaseFileName() == $fileName) {
                         $pageObject = $page;
                         break;
                     }
                 }
-
                 if ($pageObject === null) {
                     continue;
                 }
-
+                if(!$subpages){
+                    $subpages = [];
+                }
                 $result[] = (object)[
-                    'page'     => $pageObject,
+                    'page'     => $pageObject,                        
                     'subpages' => $iterator($subpages)
                 ];
-
             }
-
             return $result;
         };
-
         return $iterator($config['static-pages']);
     }
 

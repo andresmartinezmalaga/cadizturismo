@@ -42,19 +42,23 @@ is_hidden = 0
 		$pinterest = $_POST['interest'];
 		$ptvisit = $_POST['tvisit'];
 
-    $ainterest = $this->staticApp->getInteresesById($pinterest);
-    if(isset($ainterest[0])){
+    
+    if($pinterest!='all'){
+       $ainterest = $this->staticApp->getInteresesById($pinterest*1);
+    }
+    if(isset($ainterest)){
        $interest = $ainterest[0].' y '.$ainterest[1];
-     } else {
+    } else {
       $interest ='all';
-     }
-   
-    $tvisit = $this->staticApp->getTvisitaById($ptvisit);
-    if(count($tvisit)<1){
-      $tvisit = 'all';
     }
 
-    
+    if($ptvisit!='all'){
+      $tvisit = $this->staticApp->getTvisitaById($ptvisit*1);
+    } else {
+      $tvisit ='all';
+    }
+   
+
     if($days == 'all'){
       $days = 'dejate-llevar';
     }
@@ -67,11 +71,10 @@ is_hidden = 0
       $tvisit ='todo cadiz';
     }
 
-
     $aLang = App::getLocale();
 
     //$experiences = $this->staticApp->experienceFind($days,$interest,$tvisit);
-    return Redirect::to($aLang.'/experiencias'.'/'.$days.'/'.str_slug($interest).'/'.str_slug($tvisit));
+    return Redirect::to($aLang.'/experiencias'.'/'.$days.'/'.str_slug($interest,'-').'/'.str_slug($tvisit,'-'));
 
   }
 

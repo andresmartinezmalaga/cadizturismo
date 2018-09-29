@@ -1,0 +1,150 @@
+description = "ShowReportaje Layout"
+
+[staticPage]
+useContent = 1
+default = 0
+
+[staticMenu]
+code = "donde-ir"
+
+[staticMenu staticMenu2]
+code = "que-vivir"
+
+[staticMenu staticMenu3]
+code = "mi-estancia"
+
+[staticMenu staticMenu4]
+code = "que-hacer"
+
+[staticMenu staticMenu5]
+code = "footer"
+
+[staticMenu staticMenu6]
+code = "redes-sociales"
+
+[staticApp]
+==
+
+<?php
+
+    function onStart()
+    {
+        $this['lang']=\App::getLocale();
+        if($this['lang']==''){
+            $this['lang']='es';
+        }
+
+        $this['report'] = $this->staticApp->reportFindByUrl($this->page->url);
+        $this['rdate'] =  $this['report'][0]['viewBag']['dateReportaje'];
+        $this['rwebinfo'] =  $this['report'][0]['viewBag']['webInfo'];
+        
+        $this['urlPage'] = $this->page->url;
+
+        if($this->page->apiBag){
+
+            if(isset($this->page->apiBag["staticPage"]->attributes["viewBag"]["cover"])){
+                $this['metaImg'] = $this->page->apiBag["staticPage"]->attributes["viewBag"]["cover"];
+            }
+
+            if($this->page->settings["meta_title"]==null){
+
+                $this['metaTitle'] = 'Cádiz | '.$this->page->apiBag["staticPage"]->attributes["viewBag"]["title"];
+                $this['ptitle'] = 'Cádiz | '.$this->page->apiBag["staticPage"]->attributes["viewBag"]["title"];
+
+            } else {
+
+                $this['metaTitle'] = 'Cádiz | '.$this->page->settings["meta_title"];
+                $this['ptitle'] = 'Cádiz | '.$this->page->settings["meta_title"];
+            }
+
+            if($this->page->settings["meta_description"]==null){
+
+                $this['metaDescription'] = $this->page->apiBag["staticPage"]->attributes["content"];
+
+                if(isset(explode('<p class="desc">',$this['metaDescription'])[1])){
+
+                    $this['metaDescription'] = explode('</p>',explode('<p class="desc">',$this['metaDescription'])[1])[0];
+
+                    if(strlen($this['metaDescription'])>225){
+                        $this['metaDescription'] = substr($this['metaDescription'], 0, 225).'...';
+                    }
+
+                } else {
+
+                     $this['metaDescription'] = '';
+                }
+
+            } else {
+               $this['metaDescription'] = $this->page->settings["meta_description"];
+            }
+
+        }
+    }
+
+?>
+
+==
+
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+        <meta name="google-site-verification" content="KZtyPnD_0KXDnRTpmvwxNoBcvj3Osx_VKrXoJaucHrE" />
+        <meta property="og:image" content="{{ metaImg }}">
+        <meta property="og:title" content="{{ metaTitle }}">
+        <meta property="og:description" content="{{ metaDescription }}">
+        <title>{{ptitle}}</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="{{url('/')}}/plugins/rainlab/pages/assets/css/style-comarcas.css"/>
+        <link rel="stylesheet" href="{{url('/')}}/plugins/rainlab/pages/assets/css/style-village.css"/>
+        <link rel="stylesheet" href="{{url('/')}}/plugins/rainlab/pages/assets/css/style-event.css"/>
+        <link rel="stylesheet" href="{{url('/')}}/plugins/rainlab/pages/assets/css/style.css"/>
+        <link rel="stylesheet" href="{{url('/')}}/plugins/rainlab/pages/assets/css/hiddenp.css"/>
+        <link rel="apple-touch-icon" sizes="180x180" href="{{url('/')}}/plugins/rainlab/pages/assets/img/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="{{url('/')}}/plugins/rainlab/pages/assets/img/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="{{url('/')}}/plugins/rainlab/pages/assets/img/favicons/favicon-16x16.png">
+        <link rel="manifest" href="{{url('/')}}/plugins/rainlab/pages/assets/img/favicons/manifest.json">
+        <link rel="mask-icon" href="{{url('/')}}/plugins/rainlab/pages/assets/img/favicons/safari-pinned-tab.svg" color="#175DA3">
+        <meta name="theme-color" content="#175DA3">
+    </head>
+
+    {% partial 'device-rotate' %}
+    {% partial 'site/header' %}
+    {% component 'staticPage' %}
+    
+    <div class="reportInfo">
+        
+        <div class="feature">
+            <img src="/cadizturismo/storage/app/media/uploaded-files/templates/info-reportaje.svg" class="fr-fil fr-dib">
+            <p class="feature-txt">{{rwebinfo}}</p>
+        </div>
+        <div class="feature">
+            <img src="/cadizturismo/storage/app/media/uploaded-files/templates/calendar-event.svg" class="fr-fil fr-dib">
+            <p class="feature-txt">{{rdate}}</p>
+        </div>
+        <div class="feature">
+            <img src="/cadizturismo/storage/app/media/uploaded-files/templates/share-reportaje.svg" class="fr-fil fr-dib">
+            <p class="feature-txt"><a href="">Facebook</a> | <a href="">WhatsApp</a> | <a href="">Twitter</a></p>
+        </div>
+        
+    </div>
+    {% partial 'site/footer' %}
+
+
+
+    <!-- SCRIPTS -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.full.min.js"></script>
+    <script type="text/javascript" src="{{url('/')}}/plugins/rainlab/pages/assets/js/map.js"></script>
+    <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDDmzy36wKzsJB_flAMdhaLttNVU1SDqpg&callback=initMap' async defer></script>
+
+    <script type="text/javascript" src="{{url('/')}}/plugins/rainlab/pages/assets/js/script-select2.js"></script>
+    <script type="text/javascript" src="{{url('/')}}/plugins/rainlab/pages/assets/iziModal/js/iziModal.js"></script>
+
+    <script type="text/javascript" src="{{url('/')}}/plugins/rainlab/pages/assets/js/style.js"></script>
+
+</body>
+</html>

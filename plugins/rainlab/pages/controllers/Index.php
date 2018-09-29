@@ -968,13 +968,10 @@ class Index extends Controller
             $formWidget = $this->makeObjectFormWidget($type, $object);
         }
 
-
         $saveData = $formWidget->getSaveData();
 
         $postData = post();
         $objectData = [];
-
-
 
         if ($viewBag = array_get($saveData, 'viewBag')) {
             $objectData['settings'] = ['viewBag' => $viewBag];
@@ -1006,7 +1003,6 @@ class Index extends Controller
                 }
             }
 
-
             if (is_array($placeholders) && Config::get('cms.convertLineEndings', false) === true) {
                 $placeholders = array_map([$this, 'convertLineEndings'], $placeholders);
             }
@@ -1017,7 +1013,6 @@ class Index extends Controller
             $objectData['settings']['viewBag']['layout'] = 'defaultnc';
 
             $getFileName = $object['fileName'];
-
 
             // Andrés Martínez : compartir
             if($getFileName!=''){
@@ -1045,7 +1040,6 @@ class Index extends Controller
                 $aen =  explode('/naturaleza/espacios-naturales', $getFileName);
             }
 
-
             if(
                 $getFileName == 'naturaleza-via-verde.htm' ||
                 $getFileName == 'naturaleza/via-verde' ||
@@ -1063,8 +1057,6 @@ class Index extends Controller
             {
                 $objectData['settings']['viewBag']['layout'] = 'default';
             }
-
-
 
 
             if($getFileName == 'municipios.htm'){
@@ -1105,6 +1097,19 @@ class Index extends Controller
                 }
             }
 
+            if($filterSubTemplate == 'sala-prensa-reportajes'){
+
+                $objectData['settings']['viewBag']['layout'] = 'showReportaje';
+
+                $presrc1 = explode('value="cover"', $objectData['markup']);
+                if(count($presrc1)>1){
+                    $presrc2 = explode('alt', $presrc1[1]);
+                    $presrc3 = explode('src=', $presrc2[0]);
+                    $coverurl = str_replace('"', '', $presrc3[1]);
+
+                    $objectData['settings']['viewBag']['cover'] = $coverurl;
+                }
+            }
         }
 
         if ($type == 'experience') {
@@ -1125,9 +1130,7 @@ class Index extends Controller
 
                 $objectData['settings']['viewBag']['cover'] = $coverurl;
             }
-
         }
-
 
         if ($type == 'evento') {
             $placeholders = array_get($saveData, 'placeholders');
