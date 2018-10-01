@@ -19,7 +19,7 @@ fields:
 
     viewBag[interests]:
         span: left
-        label: 'Intereses'
+        label: 'Intereses (max. 2 intereses)'
         placeholder: 'Intereses'
         type: taglist
         attributes: {multiple:'multiple'}

@@ -1863,7 +1863,14 @@ html, body {
     -ms-grid-template-columns: 290px 351px;
     margin-bottom: 30px;
   }
-  .publis .bimage {     
+  .shr { 
+    z-index: 9;
+    position: relative;
+    left: 255px;
+    bottom: 60px;
+  }
+  .contpbl .bimage{
+    height: 434px;
   }
 
    .publis .download-link{
@@ -1917,7 +1924,7 @@ html, body {
     width: 80%;
     display: inline-block;
     vertical-align: top;
-    margin-top: 5px;
+    margin-top: 8px;
     margin-left: 10px;
   }   
   .contplangs span {
@@ -1925,9 +1932,9 @@ html, body {
   }
 
   .publi-desc{
-    max-height: 80px;
+    //max-height: 80px;
     position: absolute;
-    bottom: -10px;
+    //bottom: -10px;
     max-width: 100%!important;
     padding-left: 15px;
     padding-right: 15px;
@@ -1962,7 +1969,7 @@ html, body {
       max-height: 55px; }
     .publis .publicacion .publi-desc {
       font-size: 16px;
-      line-height: 33px;
+      line-height: 26px;
       color: #9B9B9B;
       max-width: 91%;
       min-height: 165px;
@@ -4043,6 +4050,10 @@ p > br {
   .header-publications .header-txt .brush{
      margin-top: -180px;
   }
+
+   .header-publications .select2-selection__arrow {
+    height: 15px!important;
+}
 
   .header-publications-min h1{
     margin-left: 0px;

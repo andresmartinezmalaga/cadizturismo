@@ -30,14 +30,14 @@
         <div class="links-container">          
                    
           {% if publication.viewBag.urlExternaZip !='' %}
-            <a class="download-link" href="{{publication.viewBag.urlExternaZip}}">{{'Descargar'|_}}<img src="{{preurl}}/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""> </a>
+            <a class="download-link" target="_blank" href="{{publication.viewBag.urlExternaZip}}">{{'Descargar'|_}}</a>
           {% endif %}
 
            {% if publication.viewBag.urlExternaVideo !='' %}
-            <a class="see-link" target="_blank" href="{{publication.viewBag.urlExternaVideo}}">{{'Ver'|_}} {{publication.viewBag.type|_}} <img src="{{preurl}}/storage/app/media/uploaded-files/templates/yellow-arrow2.svg" alt=""> </a>
+            <a class="see-link" target="_blank" href="{{publication.viewBag.urlExternaVideo}}">{{'Ver'|_}} {{publication.viewBag.type|_}}</a>
           {% endif %}
-          
-        </div>    
+        </div> 
+        <img class ="shr" src="{{preurl}}/storage/app/media/uploaded-files/templates/shr.svg" alt="">      
       </div>
       <div class="publicacion">
           <h6 class="publi-title">{{publication.viewBag.title}}</h6>
@@ -45,7 +45,8 @@
             <img class="publi-icon" src="{{preurl}}/storage/app/media/uploaded-files/templates/pb1-icon.svg" alt="">
             <span>{{publication.viewBag.type|_}}</span>
             <img class="publi-icon par" src="{{preurl}}/storage/app/media/uploaded-files/templates/pb2-icon.svg" alt="">
-            <span>{{publication.viewBag.interests|replace({ ',': ' Y '})|_}}</span>
+            {% set ints = publication.viewBag.interests|split(',') %}
+            <span>{{ints[0]|_}} Y {{ints[1]|_}}</span>
           </div>
           <img class="publi-icon" src="{{preurl}}/storage/app/media/uploaded-files/templates/pb3-icon.svg" alt="">
           <div class="contplangs">
