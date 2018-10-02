@@ -4578,6 +4578,19 @@ p > br {
     background: url(../svg/oval-pub.svg) no-repeat center bottom -1px;
     background-size: contain;
 }
+
+.header-reports:before {
+    z-index: 2;
+    content: '';
+    top: 0;
+    bottom: -10.7vw;
+    right: 0;
+    left: 0;
+    position: absolute;
+    background: url(../svg/oval-pub.svg) no-repeat center bottom -1px;
+    background-size: contain;
+}
+
 .cntreports{
   margin: 0 auto;
   width: 1440px;
@@ -4588,6 +4601,13 @@ p > br {
   -ms-grid-template-columns: repeat(3, 434px);
   color: white;
   font-size: 16px;
+}
+
+.cntreports .gr a{
+  text-decoration: none!important;
+  display: block;
+  height: 100%;
+  color: white;
 }
 .cntreports .gr div{
   width: 434px;
@@ -4614,7 +4634,11 @@ p > br {
   position: relative;
 }
 .cntreports .gr .rprtc5{ 
-  height: 300px;  
+  height: 300px; 
+  font-size: 64px;
+  line-height: 65px;
+  color:black;
+  padding-left: 80px; 
 }
 .cntreports .rprtc6{
   height: 594px;
@@ -4657,6 +4681,22 @@ p > br {
   background-color: white;
   position: relative;
 }
+.cntreports .gr .rprtc6 .rpart3{
+  margin-top: 35px;
+  text-align: right;
+  color: #D0860C;  
+  font-size: 15px;
+  height: 100px;
+}
+.cntreports .gr .rprtc6 .rpart3 a{
+  color: #D0860C; 
+  height: 15px; 
+}
+
+.cntreports .gr .rprtc6 .rpart3 img{
+ margin-left: 5px;
+ margin-top: 0px;
+}
 .cntreports .gr .rprInfCont{
   position: absolute;
   bottom: 33px;
@@ -4669,6 +4709,20 @@ p > br {
   line-height: 30px;
   font-family: 'Avenir-Medium';
 }
+
+.reportDatem {
+  margin-top: 45px;
+  display: block;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: 'Avenir-Medium';
+  margin-left: 30px!important;
+}
+
+.publis .publicacion .h6m{
+  margin-top: -10px!important;
+}
+
 .cntreports .gr .reportTitle {
   display: block;
   font-size: 39px;
@@ -4733,3 +4787,10 @@ p > br {
     line-height: 22px;
     margin: 0 0 10px;
 }
+
+
+
+ .header-reports {
+  background-image: url("../img/reportajes.jpg");
+  transform: rotate(0deg);
+  }

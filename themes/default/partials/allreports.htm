@@ -1,0 +1,50 @@
+==
+<?php
+
+	function onStart()
+	{
+	 	if (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false) {
+	      	$this['preurl'] = '/cadizturismo';
+	    } else {
+	     	$this['preurl'] = '';
+	    }
+	}
+
+?>
+==
+
+{% if reports|length > 0 %}
+  
+<div class="publis">
+{% for report in reports %}
+    <div class='contpbl'>
+      <div class="bimage" style="background-image:url({{report.viewBag.cover}}); background-repeat: no-repeat; background-size: cover;">
+        <div class="links-container">                  
+          {% if report.viewBag.reportUrl !='' %}
+            <a class="download-link" target="_blank" href='{{preurl~"/"~lang~report.viewBag.url}}''>{{'Ver reportaje'|_}}</a>
+          {% endif %}
+      	</div>
+      </div>
+      <div class="shr">
+      </div>	     
+      <div class="publicacion">
+      		{% set dated = report.viewBag.dateReportaje|split(' ')[0] %}
+			{% set datef = dated|split('-') %}
+			<span class='reportDate reportDatem'>{{datef[2]}}.{{datef[1]}}.{{datef[0]|slice(2,2)}}</span>
+          <h6 class="publi-title h6m">{{report.viewBag.title}}</h6>
+          <div>      
+        	<p class="publi-desc">{{report.viewBag.descrptn}}</p>
+      	  </div>
+      </div>
+    </div>
+{% endfor %}
+</div>
+
+{% else %}
+
+<div class="mock-space-prensa">
+	<p>Vuelve más tarde, tendremos un montón de reportajes para ti.</p>
+</div>
+
+
+{% endif %}

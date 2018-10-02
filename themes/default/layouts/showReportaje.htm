@@ -29,6 +29,12 @@ code = "redes-sociales"
 
     function onStart()
     {
+        if (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false) {
+            $this['preurl'] = 'http://localhost:8888/cadizturismo';
+        } else {
+            $this['preurl'] = '';
+        }
+
         $this['lang']=\App::getLocale();
         if($this['lang']==''){
             $this['lang']='es';
@@ -123,11 +129,13 @@ code = "redes-sociales"
         </div>
         <div class="feature">
             <img src="/cadizturismo/storage/app/media/uploaded-files/templates/calendar-event.svg" class="fr-fil fr-dib">
-            <p class="feature-txt">{{rdate}}</p>
+            {% set dated = rdate|split(' ')[0] %}
+            {% set datef = dated|split('-') %}
+            <p class="feature-txt">{{datef[2]}}.{{datef[1]}}.{{datef[0]|slice(2,2)}}</p>
         </div>
         <div class="feature">
             <img src="/cadizturismo/storage/app/media/uploaded-files/templates/share-reportaje.svg" class="fr-fil fr-dib">
-            <p class="feature-txt"><a href="">Facebook</a> | <a href="">WhatsApp</a> | <a href="">Twitter</a></p>
+            <p class="feature-txt"><a href='https://www.facebook.com/sharer/sharer.php?u={{preurl~"/"~lang~urlPage}}' target="_blank">Facebook</a> | <a data-action="share/whatsapp/share" href='whatsapp://send?text={{preurl~"/"~lang~urlPage}}'>WhatsApp</a> | <a href='https://twitter.com/home?status={{preurl~"/"~lang~urlPage}}' target="_blank">Twitter</a></p>
         </div>
         
     </div>
