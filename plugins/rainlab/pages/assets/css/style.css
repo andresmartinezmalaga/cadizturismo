@@ -1859,18 +1859,21 @@ html, body {
   .contpbl{
     display: grid;
     display: -ms-grid;
-    grid-template-columns: 290px 351px;
-    -ms-grid-template-columns: 290px 351px;
+    grid-template-columns: 290px 10px 351px;
+    -ms-grid-template-columns: 290px 10px 351px;
     margin-bottom: 30px;
   }
   .shr { 
     z-index: 9;
     position: relative;
-    left: 255px;
-    bottom: 60px;
+    left: -30px;
+    top: 55px;
+  }
+  .shr img{
   }
   .contpbl .bimage{
     height: 434px;
+    z-index:99999;
   }
 
    .publis .download-link{
@@ -1905,7 +1908,8 @@ html, body {
   .publis .publicacion {
     background-color: white;
      height: 434px;
-     position: relative; 
+     position: relative;    
+     margin-left: -10px;
     }
   .publis span {     
     color:#CECECE;

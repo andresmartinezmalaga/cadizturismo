@@ -27,17 +27,17 @@
 {% for publication in publications %}
     <div class='contpbl'>
       <div class="bimage" style="background-image:url({{publication.viewBag.urlimage}}); background-repeat: no-repeat; background-size: cover;">
-        <div class="links-container">          
-                   
+        <div class="links-container">                  
           {% if publication.viewBag.urlExternaZip !='' %}
             <a class="download-link" target="_blank" href="{{publication.viewBag.urlExternaZip}}">{{'Descargar'|_}}</a>
           {% endif %}
-
            {% if publication.viewBag.urlExternaVideo !='' %}
             <a class="see-link" target="_blank" href="{{publication.viewBag.urlExternaVideo}}">{{'Ver'|_}} {{publication.viewBag.type|_}}</a>
           {% endif %}
-        </div> 
-        <img class ="shr" src="{{preurl}}/storage/app/media/uploaded-files/templates/shr.svg" alt="">      
+        </div>
+      </div>      
+       <div class="shr">
+        <img src="{{preurl}}/storage/app/media/uploaded-files/templates/shr.svg" alt=""> 
       </div>
       <div class="publicacion">
           <h6 class="publi-title">{{publication.viewBag.title}}</h6>
