@@ -4788,9 +4788,159 @@ p > br {
     margin: 0 0 10px;
 }
 
-
-
- .header-reports {
+.header-reports {
   background-image: url("../img/reportajes.jpg");
   transform: rotate(0deg);
-  }
+}
+.cntdossier{
+  margin: 0 auto;
+  width: 1440px;
+  color: white;
+  font-size: 16px;
+}
+
+.gdossier {
+  background-color: #F4F4F4;
+}
+.dossier {
+  background-image: url("../img/dossier.jpg");
+  transform: rotate(0deg);
+  height: 800px;
+  background-repeat: no-repeat;
+}
+.mapdossier {
+  background-color: #F5A623;
+  height: 830px;
+}
+.contactdossier {
+  background-color: #F4F4F4;
+  //height: 830px;
+}
+.gdossier .dossier{
+  padding-top: 19%;
+  display: flex;
+  display: -ms-flex;
+  align-items: center;
+  flex-direction: column;
+}
+.gdossier .dossier .info{ 
+  width: 1200px;
+}
+.gdossier .dossier .info span, .dossier .info a{
+  display: block;
+}
+.gdossier .dossier .info a{
+  margin: 30px 0;
+  text-decoration: none;
+  color:#F5A623;
+  font-size: 15px;
+  line-height: 27px;
+}
+.gdossier .dossier .info a img{
+  margin-left: 10px;
+}
+.gdossier .dossier .info .title{
+  font-size: 64px;
+  line-height: 90px;
+  font-family: 'AvenirNext-DemiBold';
+}
+.gdossier .dossier .info .stitle{
+  font-size: 20px;
+  line-height: 31px;
+}
+
+.contactdossier .contac{
+  width: 1200px;
+  margin: 0 auto;
+  color:black;
+  margin-top: 60px;
+}
+
+.contactdossier .contac .title{
+  font-size: 44px;
+  line-height: 57px;
+  width: 788px;
+  display: block;
+}
+
+.contactdossier .contac .box {
+  margin-top: 30px;
+  display: grid;
+  display: -ms-grid;
+  grid-template-columns: repeat(2, 615px);
+  -ms-grid-template-columns: repeat(2, 615px);
+}
+
+.contactdossier .contac .box .box1, .contactdossier .contac .box .box2{
+  border-bottom: 1px solid #CECECE;
+  padding-top: 30px;
+  height: 280px;
+  color: #9B9B9B;
+  display: flex;
+  display: -ms-flex;
+  flex-direction: column;
+}
+.contactdossier .contac .box .box2{
+  border-left: 1px solid #CECECE;
+  padding-left: 60px;
+}
+.contactdossier .contac .box div{
+   margin-bottom: 25px;
+}
+.contactdossier .contac .box img{
+  margin-right: 20px;
+  width: 41px;
+  height: 44px;
+}
+.contactdossier .contac .box span{
+  font-size: 16px;
+  color: #9B9B9B;
+  line-height: 20px;
+  width: 345px;
+  height: 39px; 
+ 
+}
+
+.contactdossier .contac .box p{
+ padding-left: 61px;
+ margin-top: -11px;
+}
+
+.addressdossier .address{
+  width: 1200px;
+  margin: 0 auto;
+  color:black;  
+  display: flex;
+  display: -ms-flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 73px;
+}
+
+.addressdossier .address .imgadd{
+    width: 46px;
+    height: 47px;
+    margin-bottom: 22px;
+    
+}
+.addressdossier .address span{
+  font-size: 16px;
+  color: #9B9B9B;
+  line-height: 23px;
+  
+}
+
+.sp1{
+  font-size: 18px;
+  color: #4A4A4A;
+  line-height: 23px;
+  margin-top:22px!important;
+  margin-bottom: 22px!important;
+}
+
+.sp2{
+  margin-top:22px!important;
+}
+
+
+

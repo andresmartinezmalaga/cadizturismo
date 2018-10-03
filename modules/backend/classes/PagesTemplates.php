@@ -2216,8 +2216,50 @@ class PagesTemplates
       $ayuda = PagesTemplates::getFinalTemplate(PagesTemplates::$ayuda);
       return $ayuda;
     }
-
+    
     static $sala = '
+    <div class="plantillaSala gdossier">
+        <div class="cntdossier">
+            <div class="dossier">
+                <div class="info">
+                    <span class="title">DOSSIER DE PRENSA</span>
+                    <span class="stitle">Obtén tu dossier de prensa en diferentes idiomas.</span>
+                    <a href="">Descargar dossier <img src="***_preurl_***/storage/app/media/uploaded-files/templates/dossierdw.svg" alt=""></a>
+                    <img src="***_preurl_***/storage/app/media/uploaded-files/templates/reportlineyellow.png" alt="">
+                </div>
+            </div>                
+            <div class="contactdossier">
+                <div class="contac">
+                    <span class="title">¿Necesitas contactar con el Departamento de Comunicación?</span> 
+                    <img src="***_preurl_***/storage/app/media/uploaded-files/templates/reportlineyellow.png" alt="">
+                    <div class="box">
+                        <div class="box1">
+                            <div><img src="***_preurl_***/storage/app/media/uploaded-files/templates/contacti1.svg" alt=""><span>Amparo Ortega Parra<p>Periodista / Responsable de comunicación</p></span></div>
+                            <div><img src="***_preurl_***/storage/app/media/uploaded-files/templates/contacti2.svg" alt=""><span>TLF.: 956 807 048</span></div>
+                            <div><img src="***_preurl_***/storage/app/media/uploaded-files/templates/contacti3.svg" alt=""><span>aortega@visitacadiz.com</span></div>
+                        </div>
+                        <div class="box2">
+                            <div><img src="***_preurl_***/storage/app/media/uploaded-files/templates/contacti1.svg" alt=""><span>Manuel de la Varga López<p>Periodista</p></span></div>
+                            <div><img src="***_preurl_***/storage/app/media/uploaded-files/templates/contacti2.svg" alt=""><span>TLF.: 956 808 380</span></div>
+                            <div><img src="***_preurl_***/storage/app/media/uploaded-files/templates/contacti3.svg" alt=""><span>mdelavarga@visitacadiz.com</span></div>
+                        </div>
+                    </div>       
+                </div>
+            </div>
+            <div class="addressdossier">
+              <div class="address">
+            <img class ="imgadd" src="***_preurl_***/storage/app/media/uploaded-files/templates/address.svg" alt="">
+            <span class="sp1">PATRONATO TURISMO DE CÁDIZ</span>
+            <img src="***_preurl_***/storage/app/media/uploaded-files/templates/reportlineyellow.png" alt="">
+                    <span class="sp2">Plaza de Madrid s/n</span>
+                    <span>Estadio Ramón de Carranza (Fondo Sur) 4º Planta</span>
+                    <span>11011 Cádiz (España)</span>
+          </div>
+            </div>
+        </div>
+    </div>';
+
+    static $salaOLD = '
     <div class="plantillaSala static-header about-header">
       <img class="img-header"
       src="***_preurl_***/storage/app/media/uploaded-files/templates/sala-prensa.jpg"
