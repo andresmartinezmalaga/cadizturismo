@@ -41,18 +41,39 @@ code = "redes-sociales"
     	if($this['lang']==''){
     		$this['lang']='es';
     	}
+
+        $this['idm'] = \App::getLocale();
         
         $this['ptitle'] = 'Cádiz | Reportajes';
         $this['metaTitle'] = 'Cádiz | Reportajes';
 
         $this['startPag'] = 1;
-        $this['numberReg'] = 9;
+        $this['numberReg'] = 6;
 
         $this['numPag'] = ceil($this->staticApp->reportListCount()/$this['numberReg']);
         $this['reports'] = $this->staticApp->reportListPag(1,$this['numberReg'],$this['lang']);
 	}
 
+    function onPaginate(){
 
+        $pag = $_POST['ipag'];
+        $numberReg = $_POST['inumberReg'];
+      
+        $this['idm'] = \App::getLocale();
+      
+        $this['startPag'] = $_POST['ipag'];
+        $this['numberReg'] = 6;
+        $this['lang'] = $_POST['iidm'];
+
+        $this['numPag'] = ceil($this->staticApp->reportListCount()/$this['numberReg']);
+       
+        $this['reports'] = $this->staticApp->reportListPag($pag,$numberReg, $this['lang']);
+
+        return [
+            '#prtlPagination' => $this->renderPartial('pagination'),
+            '#prtlReports' => $this->renderPartial('allreports')
+        ];
+    }
 ?>
 ==
 <!DOCTYPE html>

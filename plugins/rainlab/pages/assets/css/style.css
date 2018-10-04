@@ -5133,3 +5133,60 @@ line-height: 31px;
   left: 607px; 
 }
 
+
+.header-news{
+    background-image: url("../img/salaprensa.jpg");
+    transform: rotate(0deg);
+    height: 740px;
+}
+
+.header-news:before {
+    z-index: 2;
+    content: '';
+    top: 0;
+    bottom: -10.7vw;
+    right: 0;
+    left: 0;
+    position: absolute;
+    background: url(../svg/oval-pub.svg) no-repeat center bottom -1px;
+    background-size: contain;
+}
+
+.allnewslist .all-events-container{
+  margin-top: -220px;
+}
+
+.header-news .header-container {
+  margin-top: -30px;
+}
+
+.header-news .header-container .header-txt .first-word-rutas{
+  font-size: 180px;
+}
+.header-news .header-container .header-txt .second-word{
+  
+  display: block;
+  font-size: 180px;
+  text-transform: capitalize;
+}
+
+.allnewslist .publicacion .publi-title{
+  margin-top: -5px!important;
+  font-family: 'Avenir-Medium';
+}
+
+
+span.reportDatem {
+    margin-top: 45px;
+    display: block;
+    font-size: 16px!important;
+    line-height: 26px;
+    font-family: 'Avenir-Medium';
+    margin-left: 30px!important;
+    text-transform: capitalize;
+}
+
+#prtllnews{
+  background-color: #F4F4F4;
+}
+

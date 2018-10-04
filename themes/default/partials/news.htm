@@ -13,6 +13,47 @@
 ?>
 
 ==
+
+{% if news|length > 0 %}
+  
+<div class="publis">
+{% for new in news %}
+    <div class='contpbl'>
+      <div class="bimage" style="background-image:url({{new.viewBag.urlImage}}); background-repeat: no-repeat; background-size: cover;">
+        <div class="links-container">                  
+          {% if new.viewBag.urlExternaZip !='' %}
+            <a class="download-link" target="_blank" href='{{new.viewBag.urlExternaZip}}''>{{'Descargar pdf'|_}}</a>
+          {% endif %}
+          {% if new.viewBag.urlExterna !='' %}
+            <a class="download-link" target="_blank" href='{{new.viewBag.urlExterna }}''>{{'Ver noticia'|_}}</a>
+          {% endif %}
+      	</div>
+      </div>
+      <div class="shr">
+      </div>	     
+      <div class="publicacion">
+      		{% set dated = new.viewBag.date|split(' ')[0] %}
+			{% set datef = dated|split('-') %}
+			<span class='newDate reportDatem'>{{new.viewBag.diario}} | {{datef[2]}}.{{datef[1]}}.{{datef[0]|slice(2,2)}}</span>
+          <h6 class="publi-title h6m">{{new.viewBag.title}}</h6>
+          <div>      
+        	<p class="publi-desc">{{new.viewBag.descrptn}}</p>
+      	  </div>
+      </div>
+    </div>
+{% endfor %}
+</div>
+
+{% else %}
+
+<div class="mock-space-prensa">
+	<p>{{'Vuelve más tarde, tendremos un montón de noticias para ti.' |_}}</p>
+</div>
+
+
+{% endif %}
+
+<!--
 {% if news|length > 0 %}
 <div id="container-sala-prensa" class="publis">
 	{% for new in news %}
@@ -32,8 +73,8 @@
 {% else %}
 
 <div class="mock-space-prensa">
-	<p>Vuelve más tarde, tendremos un montón de noticias para ti.</p>
+	<p>{{'Vuelve más tarde, tendremos un montón de noticias para ti.'|_}}</p>
 </div>
 
 
-{% endif %}
+{% endif %} -->

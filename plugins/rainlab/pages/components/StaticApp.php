@@ -1533,29 +1533,66 @@ class StaticApp extends ComponentBase
     }
 
 
+    public function getNewPaisString($pais){
+        $paises = [
+            'alemania' => 'alemania',
+            'argentina' => 'argentina',
+            'australia' => 'australia',
+            'austria' => 'austria',
+            'brasil' => 'brasil',
+            'belgica' => 'bélgica',
+            'canada' => 'canadá',
+            'china' => 'china',
+            'costa_rica' => 'costa rica',
+            'dinamarca' => 'dinamarca',
+            'españa' => 'españa',
+            'estados_unidos' => 'estados unidos', 
+            'estonia' => 'estonia',
+            'finlandia' => 'finlandia',
+            'francia' => 'francia',
+            'holanda' => 'holanda',
+            'hungria' => 'hungría',
+            'irlanda' => 'irlanda',
+            'italia' => 'italia',
+            'japon' => 'japón',
+            'mexico' => 'méxico',
+            'noruega' => 'noruega',
+            'polonia' => 'polonia',
+            'portugal' => 'portugal',
+            'reino_unido' => 'reino unido',
+            'republica_checa' => 'república checa',
+            'rusia' => 'rusia',
+            'singapur' => 'singapur',
+            'suecia' => 'suecia',
+            'suiza' => 'suiza',
+            'ucrania' => 'ucrania'
+        ];
+        
+        return $paises[$pais];
+    }
 
-    public function newList($idm)
+    public function newList($pais)
     {
         $theme = Theme::getActiveTheme();
         $pages = Page::listInTheme($theme, false);
         $news =  new \Illuminate\Support\Collection($pages);
 
-        $result = $news->where("is_hidden",0)->where("subtemplate","sala-prensa-prensa")->where("idioma",$idm)->values();
+        $result = $news->where("is_hidden",0)->where("subtemplate","sala-prensa-prensa")->where("pais",$pais)->values();
 
         return $result;
     }
 
-    public function newListCount($idm){
-        return count($this->newList($idm));
+    public function newListCount($pais){
+        return count($this->newList($pais));
     }
 
-    public function newListPag($idm, $pag = 1, $number = 1)
+    public function newListPag($pais, $pag = 1, $number = 1)
     {
         $theme = Theme::getActiveTheme();
         $pages = Page::listInTheme($theme, false);
         $news =  new \Illuminate\Support\Collection($pages);
 
-        $result = $news->where("is_hidden",0)->where("subtemplate","sala-prensa-prensa")->where("idioma",$idm)->values();
+        $result = $news->where("is_hidden",0)->where("subtemplate","sala-prensa-prensa")->where("pais",$pais)->values();
 
         $pagination = $result->slice((($pag-1)*$number),$number);
 
@@ -1583,11 +1620,12 @@ class StaticApp extends ComponentBase
         $theme = Theme::getActiveTheme();
         $pages = Page::listInTheme($theme, false);
         $reports =  new \Illuminate\Support\Collection($pages);
-
+       
         $rreports = collect();
         $results = $reports->where("is_hidden",0)->where("subtemplate","sala-prensa-reportajes")->sortByDesc('dateReportaje')->values();
-       
+    
         if($lang != 'es'){
+
             foreach ($results as $key => $result) {
                 $vbo = $result->settings['components']['viewBag'];
                 $vb = $result->viewBag;
@@ -1595,11 +1633,10 @@ class StaticApp extends ComponentBase
                 if($vbo['title'] != $vb['title'] && $vbo['descrptn'] != $vb['descrptn']){
                    $rreports->push($result);
                 }
-            }
-          
+            }          
             $results = $rreports;
         } 
-
+           
         $pagination = $results->slice((($pag-1)*$number),$number);
 
         return $pagination;

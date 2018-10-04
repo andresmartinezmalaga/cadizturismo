@@ -33,7 +33,7 @@ fields:
 
     viewBag[diario]:
         span: right
-        placeholder: /
+        placeholder: 'Nombre del diario'
         label: 'Nombre del diario'
 
     viewBag[descrptn]:

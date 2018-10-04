@@ -20,6 +20,7 @@
                 <input type="hidden" name = "ipag" value="{{i}}">
                 <input type="hidden" name = "inumberReg" value="{{numberReg}}">                
                 <input type="hidden" name = "iidm" value="{{idm}}">
+                <input type="hidden" name = "ipais" value="{{pais}}">
                 {% if i == startPag %}
           			<button id="numPag{{i}}" class="btnNumPag active" type="submit">{{i}}</button>
           			{% else %}
@@ -36,6 +37,7 @@
               <input type="hidden" name = "ipag" value="{{numPag}}">
               <input type="hidden" name = "inumberReg" value="{{numberReg}}">
               <input type="hidden" name = "iidm" value="{{idm}}">
+              <input type="hidden" name = "ipais" value="{{pais}}">
               <button id="numPag{{numPag}}" class="btnNumPag" type="submit">{{numPag}}</button>
           </form>          
       {% endif %}

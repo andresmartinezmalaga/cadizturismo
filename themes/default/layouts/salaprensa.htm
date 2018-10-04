@@ -40,7 +40,7 @@ code = "redes-sociales"
             $this['preurl'] = '';
         }
         $this['startPag'] = 1;
-        $this['numberReg'] = 9;
+        $this['numberReg'] = 5;
 
         $this['numPag'] = ceil($this->staticApp->reportListCount()/$this['numberReg']);
         $this['reports'] = $this->staticApp->reportListPag(1,$this['numberReg'],$this['lang']);
@@ -192,7 +192,7 @@ code = "redes-sociales"
                 <div class="gm g6">
                     <div id='g6' class="mapboxd">
                         <div id='e6'  class="enlaces">
-                            <a href="">España<div class="flechapais"></div></a>
+                            <a href="{{preurl}}/sala-prensa/prensa/españa">España<div class="flechapais"></div></a>
                             <a href="">Francia<div class="flechapais"></div></a>
                             <a href="">Irlanda<div class="flechapais"></div></a>
                             <a href="">Portugal<div class="flechapais"></div></a>
