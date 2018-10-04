@@ -162,6 +162,7 @@ class Empresa extends Model
         'san fernando' => 'San Fernando',
         'san josé del valle' => 'San José del Valle',
         'sanlúcar de barrameda' => 'Sanlúcar de Barrameda',
+        'san martín del tesorillo' => 'San Martín del Tesorillo',
         'san roque' => 'San Roque',
         'setenil de las bodegas' => 'Setenil de las Bodegas',
         'tarifa' => 'Tarifa',
