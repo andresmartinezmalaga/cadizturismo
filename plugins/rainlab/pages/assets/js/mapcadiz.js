@@ -1,9 +1,8 @@
 $( document ).ready(function() {
 
-   jQuery('.pointmap').hover(
+  jQuery('.pointmap').hover(
    		function(e) {
    			var target = '.g'+($(e.target).attr("id"));    			  			
-			console.log(target);
 			mcs(target);
 		},function(e){
 			var target = '.g'+($(e.target).attr("id")); 					
@@ -20,8 +19,19 @@ $( document ).ready(function() {
 		}
 	);
 
-   jQuery('.enlaces').hover(
+   jQuery('.mapboxd').hover(
    		function(e) {   			
+   			var target = '.'+$(e.target).attr("id");    			  			
+			mcs(target);
+		},function(e){			
+			var target = '.'+$(e.target).attr("id"); 					
+			ocs(target);
+		}
+	);
+
+   jQuery('.enlaces').hover(   
+   		function(e) {   
+   				console.log('enlaces');			
    			var target = '.'+$(e.target).attr("id"); 
    			var res = target.replace("e", "g");   			  			
 			mcs(res);
@@ -35,10 +45,14 @@ $( document ).ready(function() {
    function mcs(els){
    		$(els +' .mapbox').css('visibility', 'visible');
 		$(els +' .mapbox').css('z-index', 999999);
+		$(els +' .mapboxd').css('visibility', 'visible');
+		$(els +' .mapboxd').css('z-index', 999999);
    }
    function ocs(els){
    		$(els +' .mapbox').css('visibility', 'hidden');
 		$(els +' .mapbox').css('z-index', 0);
+		$(els +' .mapboxd').css('visibility', 'hidden');
+		$(els +' .mapboxd').css('z-index', 0);
    }
 
 });

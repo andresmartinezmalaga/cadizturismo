@@ -145,6 +145,44 @@ class Page extends ContentBase
 
     }
 
+
+    // sort ok
+    public function getNewsPaisOptions(){
+        return [
+            'alemania' => 'ALEMANIA',
+            'argentina' => 'ARGENTINA',
+            'australia' => 'AUSTRALIA',
+            'austria' => 'AUSTRIA',
+            'brasil' => 'BRASIL',
+            'belgica' => 'BÉLGICA',
+            'canada' => 'CANADÁ',
+            'china' => 'CHINA',
+            'costa_rica' => 'COSTA RICA',
+            'dinamarca' => 'DINAMARCA',
+            'españa' => 'ESPAÑA',
+            'estados_unidos' => 'ESTADOS UNIDOS', 
+            'estonia' => 'ESTONIA',
+            'finlandia' => 'FINLANDIA',
+            'francia' => 'FRANCIA',
+            'holanda' => 'HOLANDA',
+            'hungria' => 'HUNGRÍA',
+            'irlanda' => 'IRLANDA',
+            'italia' => 'ITALIA',
+            'japon' => 'JAPÓN',
+            'mexico' => 'MÉXICO',
+            'noruega' => 'NORUEGA',
+            'polonia' => 'POLONIA',
+            'portugal' => 'PORTUGAL',
+            'reino_unido' => 'REINO UNIDO',
+            'republica_checa' => 'REPÚBLICA CHECA',
+            'rusia' => 'RUSIA',
+            'singapur' => 'SINGAPUR',
+            'suecia' => 'SUECIA',
+            'suiza' => 'SUIZA',
+            'ucrania' => 'UCRANIA'
+        ];
+    }
+
     // sort ok
     public function getNewsIdiomasOptions(){
         return [
@@ -254,7 +292,8 @@ class Page extends ContentBase
         'san fernando' => 'San Fernando',
         'san josé del valle' => 'San José del Valle',
         'sanlúcar de barrameda' => 'Sanlúcar de Barrameda',
-        'san roque' => 'San Roque',
+        'san martín del tesorillo' => 'San Martín del Tesorillo',
+        'san roque' => 'San Roque',        
         'setenil de las bodegas' => 'Setenil de las Bodegas',
         'tarifa' => 'Tarifa',
         'torre alháquime' => 'Torre Alháquime',

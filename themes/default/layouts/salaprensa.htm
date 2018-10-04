@@ -34,7 +34,11 @@ code = "redes-sociales"
         if($this['lang']==''){
             $this['lang']='es';
         }
-
+        if (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false) {
+            $this['preurl'] = '/cadizturismo';
+        } else {
+            $this['preurl'] = '';
+        }
         $this['startPag'] = 1;
         $this['numberReg'] = 9;
 
@@ -132,7 +136,152 @@ code = "redes-sociales"
     
     <div class="gdossier">
     <div class="cntdossier">
-        <div class="mapdossier"></div>
+        <div class="mapdossier">
+            <div class='mpds mapcd'>
+                <div class="gm g1">
+                    <div id='g1' class="mapboxd">
+                        <div id='e1'  class="enlaces">
+                            <a href="">Canadá<div class="flechapais"></div></a>
+                        </div>
+                        <img src="{{preurl}}/storage/app/media/uploaded-files/templates/mapbox.svg" alt="">
+                    </div>
+                    <div id='1' class="pointmap"></div>
+                </div>
+                <div class="gm g2">
+                    <div id='g2' class="mapboxd">
+                        <div id='e2'  class="enlaces">
+                            <a href="">Estados Unidos<div class="flechapais"></div></a>
+                        </div>
+                        <img src="{{preurl}}/storage/app/media/uploaded-files/templates/mapbox.svg" alt="">
+                    </div>
+                    <div id='2' class="pointmap"></div>
+                </div>
+                <div class="gm g3">
+                    <div id='g3' class="mapboxd">
+                        <div id='e3'  class="enlaces">
+                            <a href="">Costa Rica<div class="flechapais"></div></a>
+                            <a href="">México<div class="flechapais"></div></a>
+                        </div>
+                        <img src="{{preurl}}/storage/app/media/uploaded-files/templates/mapbox.svg" alt="">
+                    </div>
+                    <div id='3' class="pointmap"></div>
+                </div>
+                <div class="gm g4">
+                    <div id='g4' class="mapboxd">
+                        <div id='e4'  class="enlaces">
+                            <a href="">Argentina<div class="flechapais"></div></a>
+                            <a href="">Brasil<div class="flechapais"></div></a>
+                        </div>
+                        <img src="{{preurl}}/storage/app/media/uploaded-files/templates/mapbox.svg" alt="">
+                    </div>
+                    <div id='4' class="pointmap"></div>
+                </div>
+                <div class="gm g5">
+                    <div id='g5' class="mapboxd">
+                        <div id='e5'  class="enlaces">
+                            <a href="">Dinamarca<div class="flechapais"></div></a>
+                            <a href="">Estonia<div class="flechapais"></div></a>
+                            <a href="">Finlandia<div class="flechapais"></div></a>
+                            <a href="">Noruega<div class="flechapais"></div></a>
+                            <a href="">Suecia<div class="flechapais"></div></a>
+                        </div>
+                        <img src="{{preurl}}/storage/app/media/uploaded-files/templates/mapbox.svg" alt="">
+                    </div>
+                    <div id='5' class="pointmap"></div>
+                </div>
+                <div class="gm g6">
+                    <div id='g6' class="mapboxd">
+                        <div id='e6'  class="enlaces">
+                            <a href="">España<div class="flechapais"></div></a>
+                            <a href="">Francia<div class="flechapais"></div></a>
+                            <a href="">Irlanda<div class="flechapais"></div></a>
+                            <a href="">Portugal<div class="flechapais"></div></a>
+                            <a href="">Reino Unido<div class="flechapais"></div></a>
+                        </div>
+                        <img src="{{preurl}}/storage/app/media/uploaded-files/templates/mapbox.svg" alt="">
+                    </div>
+                    <div id='6' class="pointmap"></div>
+                </div>
+                <div class="gm g7">
+                    <div id='g7' class="mapboxd">
+                        <div id='e7'  class="enlaces">
+                            <a href="">Alemania<div class="flechapais"></div></a>
+                            <a href="">Austria<div class="flechapais"></div></a>
+                            <a href="">Bélgica<div class="flechapais"></div></a>
+                            <a href="">Holanda<div class="flechapais"></div></a>
+                            <a href="">Hungría<div class="flechapais"></div></a>
+                            <a href="">Italia<div class="flechapais"></div></a>
+                            <a href="">Polonia<div class="flechapais"></div></a>
+                            <a href="">República Checa<div class="flechapais"></div></a>
+                            <a href="">Suiza<div class="flechapais"></div></a>
+                            <a href="">Ucrania<div class="flechapais"></div></a>
+                        </div>
+                        <img src="{{preurl}}/storage/app/media/uploaded-files/templates/mapbox.svg" alt="">
+                    </div>
+                    <div id='7' class="pointmap"></div>
+                </div>
+                <div class="gm g8">
+                    <div id='g8' class="mapboxd">
+                        <div id='e8'  class="enlaces">
+                            <a href="">Israel<div class="flechapais"></div></a>
+                        </div>
+                        <img src="{{preurl}}/storage/app/media/uploaded-files/templates/mapbox.svg" alt="">
+                    </div>
+                    <div id='8' class="pointmap"></div>
+                </div>
+                <div class="gm g9">
+                    <div id='g9' class="mapboxd">
+                        <div id='e9'  class="enlaces">
+                            <a href="">Rusia<div class="flechapais"></div></a>
+                        </div>
+                        <img src="{{preurl}}/storage/app/media/uploaded-files/templates/mapbox.svg" alt="">
+                    </div>
+                    <div id='9' class="pointmap"></div>
+                </div>
+                <div class="gm g10">
+                    <div id='g10' class="mapboxd">
+                        <div id='e10'  class="enlaces">
+                            <a href="">China<div class="flechapais"></div></a>
+                        </div>
+                        <img src="{{preurl}}/storage/app/media/uploaded-files/templates/mapbox.svg" alt="">
+                    </div>
+                    <div id='10' class="pointmap"></div>
+                </div>
+                <div class="gm g11">
+                    <div id='g11' class="mapboxd">
+                        <div id='e11'  class="enlaces">
+                            <a href="">Japón<div class="flechapais"></div></a>
+                        </div>
+                        <img src="{{preurl}}/storage/app/media/uploaded-files/templates/mapbox.svg" alt="">
+                    </div>
+                    <div id='11' class="pointmap"></div>
+                </div>
+                <div class="gm g12">
+                    <div id='g12' class="mapboxd">
+                        <div id='e12'  class="enlaces">
+                            <a href="">Singapur<div class="flechapais"></div></a>
+                        </div>
+                        <img src="{{preurl}}/storage/app/media/uploaded-files/templates/mapbox.svg" alt="">
+                    </div>
+                    <div id='12' class="pointmap"></div>
+                </div>
+                <div class="gmv g13">
+                    <div id='g13' class="mapboxd">
+                        <div id='e13'  class="enlaces">
+                            <a href="">Australia<div class="flechapais"></div></a>
+                        </div>
+                        <img src="{{preurl}}/storage/app/media/uploaded-files/templates/mapbox.svg" alt="">
+                    </div>
+                    <div id='13' class="pointmap"></div>
+                </div>
+            </div>
+            <div></div>
+            <div class ='qdn'>
+                <span class="title">¿QUÉ SE DICE DE NOSOTROS?</span>
+                <img class="mapsline" src="{{preurl}}/storage/app/media/uploaded-files/templates/mapsline.svg" alt="">
+                <span class="stitle">Descubre qué se dice de Cádiz alrededor del mundo.</span>
+            </div>
+        </div>
     </div> 
     </div>
     {% component 'staticPage' %}

@@ -10,6 +10,11 @@ fields:
         attributes:
             default-focus: 1
 
+    viewBag[urlImage]:
+        span: right
+        placeholder: /
+        label: 'URL media de la imagen'
+
     viewBag[url]:
         span: right
         placeholder: /
@@ -19,28 +24,40 @@ fields:
             type: url
             prefixInput: input[data-parent-url]
         cssClass: ocl
-
-    viewBag[media]:
-        span: right
-        label: 'Media'
-
+   
     viewBag[date]:
         span: left
         label: 'Fecha de publicación'
         type: datepicker
         mode: date 
-   
-    viewBag[idioma]:
-        span: right
-        label: 'Idioma'
-        placeholder: 'Seleccione un idioma'
-        type: dropdown
-        options: getNewsIdiomasOptions
 
+    viewBag[diario]:
+        span: right
+        placeholder: /
+        label: 'Nombre del diario'
+
+    viewBag[descrptn]:
+        span: full
+        type: textarea
+        label: 'Descripción (max. 120 caracteres)'
+        size: tiny
+       
     viewBag[urlExternaZip]:
         span: left
         placeholder: /
         label: 'URL para descargar el zip'
+
+    viewBag[urlExterna]:
+        span: right
+        placeholder: /
+        label: 'URL para visionar la noticia'
+
+    viewBag[pais]:
+        span: left
+        label: 'País'
+        placeholder: 'Seleccione un país'
+        type: dropdown
+        options: getNewsPaisOptions
 
     toolbar:
         type: partial

@@ -4808,10 +4808,7 @@ p > br {
   height: 800px;
   background-repeat: no-repeat;
 }
-.mapdossier {
-  background-color: #F5A623;
-  height: 830px;
-}
+
 .contactdossier {
   background-color: #F4F4F4;
   //height: 830px;
@@ -4942,5 +4939,197 @@ p > br {
   margin-top:22px!important;
 }
 
+.mapdossier {
+  padding-top: 40px;
+  width: 1440px;
+  background-color: #F5A623;
+  height: 780px;
+  display: grid;
+  display: -ms-grid;
+  grid-template-columns: 780px 80px 420px;
+  -ms-grid-template-columns: 780px 80px 420px;
+  justify-content: center;
+  align-items: center;
+  
+}
 
+.mapcd{
+  position: relative;
+}
+
+.mapdossier .mpds{
+  background-image: url("../img/mapdossier.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 472px;
+}
+
+.mapdossier .qdn{
+  padding-top: 40px;
+  padding-right: 70px;
+  height: 472px;
+}
+
+.mapdossier span{
+  display: block;
+}
+.mapdossier .title{
+  font-size: 64px;
+  line-height: 65px;
+  font-family: 'AvenirNext-DemiBold';
+}
+
+.mapdossier .stitle{
+font-size: 23px;
+color:#4A4A4A;
+line-height: 31px;
+}
+
+.mapdossier .mapsline{
+  margin: 50px 0;
+}
+
+.mapcd .mapboxd {
+  position: absolute;
+  width: 188px;
+  bottom: 34px;
+  visibility: hidden;
+
+}
+
+.mapcd .mapboxd .enlaces { 
+  background-color: #F4F4F4;
+  border-radius: 4px;
+  border: solid 1px #F4F4F4;
+  padding: 5px 20px;
+  z-index: 2;
+  width: 189px;
+  line-height: 15px;
+  padding-top: 15px;
+  padding-bottom: 0;
+}
+
+.mapcd .mapboxd .enlaces a{
+  font-size: 16px;
+  color: black;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.mapcd .mapboxd .enlaces .flechapais {  
+  background-image: url("../svg/flechaplayas.svg");
+  height: 9px;
+  width: 10px !important;
+  margin-left: 15px;
+  display: inline-block;
+  background-repeat: no-repeat;
+}
+
+.mapcd .mapboxd img {
+  margin-top: -10px;
+  margin-left: 37px;
+  height: 25px;
+  width: 25px;       
+  position: relative;
+  z-index: -1;
+
+}
+
+.mapcd .pointmap {
+  position: relative;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: left top;
+  height: 22px;
+  width: 22px;
+  bottom: 16px;
+  left: 40px;
+  cursor: pointer;
+  z-index: 888888;
+}
+
+.mapcd .gm {
+  position: absolute;
+}
+
+.mapcd .gmv {
+  position: absolute;
+}
+.mapcd .g1{
+  width: 188px;
+  top: 171px;
+  left: 66px; 
+}
+
+.mapcd .g2{
+  width: 188px;
+  top: 215px;
+  left: 84px; 
+}
+
+.mapcd .g3{
+  width: 188px;
+  top: 264px;
+  left: 84px; 
+}
+
+.mapcd .g4{
+  width: 188px;
+  top: 347px;
+  left: 174px; 
+}
+
+.mapcd .g5{
+  width: 188px;
+  top: 141px;
+  left: 333px; 
+}
+
+.mapcd .g6{
+  width: 188px;
+  top: 206px;
+  left: 291px; 
+}
+
+.mapcd .g7{
+  width: 188px;
+  top: 188px;
+  left: 385px; 
+}
+
+.mapcd .g8{
+  width: 188px;
+  top: 254px;
+  left: 366px; 
+}
+
+.mapcd .g9{
+  width: 188px;
+  top: 115px;
+  left: 525px; 
+}
+
+.mapcd .g10{
+  width: 188px;
+  top: 189px;
+  left: 566px; 
+}
+
+.mapcd .g11{
+  width: 188px;
+  top: 225px;
+  left: 617px; 
+}
+
+.mapcd .g12{
+  width: 188px;
+  top: 296px;
+  left: 574px; 
+}
+
+.mapcd .g13{
+  width: 188px;
+  top: 367px;
+  left: 607px; 
+}
 
