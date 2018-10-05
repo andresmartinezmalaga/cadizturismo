@@ -1,4 +1,4 @@
-description = "Publicacion Layout"
+description = "Prensa Layout"
 
 [staticPage]
 useContent = 1
@@ -28,7 +28,6 @@ code = "redes-sociales"
 
 <?php
 
-
     function onStart()
     {
         $this['lang']=\App::getLocale();
@@ -36,11 +35,7 @@ code = "redes-sociales"
             $this['lang']='es';
         }
 
-        $this['startPag'] = 1;
-        $this['numberReg'] = 6;
-        $this['numPag'] = ceil($this->staticApp->publicationListCount()/$this['numberReg']);
-
-        $this['publications'] = $this->staticApp->publicationListPag(1,$this['numberReg']);
+        //$this['news'] = $this->staticApp->newList();
 
         $this['urlPage'] = $this->page->url;
 
@@ -84,45 +79,6 @@ code = "redes-sociales"
         }
     }
 
-    function onPaginate(){
-
-        $pag = $_POST['ipag'];
-        $numberReg = $_POST['inumberReg'];
-
-        $this['startPag'] = $_POST['ipag'];
-        $this['numberReg'] = 6;
-
-        $this['numPag'] = ceil($this->staticApp->publicationListCount()/$this['numberReg']);
-        $this['publications'] = $this->staticApp->publicationListPag($pag,$numberReg);
-
-        return [
-            '#prtlPagination' => $this->renderPartial('pagination'),
-            '#prtlPublications' => $this->renderPartial('allpublications')
-        ];
-    }
-
-    function onFindPublicacion(){
-              
-        $aLang = App::getLocale();
-
-        $psearch = $_POST['search'];
-        if($psearch == ''){
-            $search = 'todas-las-publicaciones';
-        } else {
-            $search = str_replace(' ','_',$psearch);
-        }
-        
-        $type = $_POST['type'];
-        $interests = implode('_',$_POST['interests']);
-        $lang = $_POST['lang'];
-
-        $pubcount = $this->staticApp->publicacionesFindCount($search,$type,$interests,$lang);
-        $publications = $this->staticApp->publicacionesFindPag($search,$type,$interests,$lang,1,6);
-
-        return Redirect::to($aLang.'/listado-de-publicaciones/'.$search.'/'.$type.'/'.$interests.'/'.$lang);
-
-    }
-
 ?>
 
 ==
@@ -153,46 +109,23 @@ code = "redes-sociales"
     {% partial 'device-rotate' %}
     {% partial 'site/header' %}
 
-    <!-- HEADER -->
-    <div class="header-general header-publications">
-        <div class="header-container">
-            <div class="header-txt">
-                <h1 class="txt-rutas"><span class="first-word-rutas">{{ "Publicaciones"|_ }}</span><span class="con-encanto" style="display: block;"> &nbsp</span></h1>
-                <img class="brush brushTop" src="{{preurl}}/storage/app/media/uploaded-files/templates/brush-header.svg" alt="">
-            </div>
-            <!-- SEARCH -->
-            <div id='prtlSearch'>
-                {% partial "site/searchpub" %}
-            </div>
-        </div>
-    </div>
-    </div>
-    
     {% component 'staticPage' %}
 
-     <div class="all-events">
-        <div id='prtlPublications' class="all-events-container">
-        {% partial "allpublications" %}
+    <!-- <div id='prtlNews' class="all-events">
+        <div class="all-events-container">
+        {% partial "news" %}
         </div>
-    </div>
+    </div> -->
 
-    <div id='prtlPagination' class="prtlPaginationPub">
-        {% partial "pagination" %}
-    </div>
-    
     {% partial 'site/footer' %}
 
     <!-- SCRIPTS -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.full.min.js"></script>
     <script type="text/javascript" src="{{url('/')}}/plugins/rainlab/pages/assets/js/script-select2.js"></script>
-    <script type="text/javascript" src="{{url('/')}}/plugins/rainlab/pages/assets/iziModal/js/iziModal.js"></script>
+<script type="text/javascript" src="{{url('/')}}/plugins/rainlab/pages/assets/iziModal/js/iziModal.js"></script>
 
     <script type="text/javascript" src="{{url('/')}}/plugins/rainlab/pages/assets/js/style.js"></script>
-
-     <script type="text/javascript" src="{{url('/')}}/plugins/rainlab/pages/assets/js/mapcadiz.js"></script>
-    
-    {% framework %}
 
   </body>
 </html>
