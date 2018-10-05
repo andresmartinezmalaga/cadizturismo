@@ -5230,3 +5230,8 @@ span.reportDatem {
 .reportInfo .feature .feature-txt a:hover{
   opacity: 1;
 }
+
+.publis .publicacion .publi-title{
+   font-family: 'Avenir-Medium'!important;
+   color: #4A4A4A;
+}
