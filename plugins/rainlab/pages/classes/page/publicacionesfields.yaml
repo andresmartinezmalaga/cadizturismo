@@ -4,11 +4,18 @@
 
 fields:
     viewBag[title]:
-        span: left
+        span: full
         label: rainlab.pages::lang.editor.title
         placeholder: rainlab.pages::lang.editor.new_title
         attributes:
             default-focus: 1
+
+    viewBag[created_at]:
+        type: datepicker
+        mode: date 
+        default: now
+        label: 'Fecha publicación'
+        span: left 
 
     viewBag[type]:
         span: right
@@ -82,12 +89,6 @@ fields:
         label: 'cover'
         default: 'default.jpg'
         cssClass: ocl     
-
-    viewBag[created_at]:
-        type: datepicker
-        default: now
-        cssClass: ocl       
-
 
 tabs:
     fields:

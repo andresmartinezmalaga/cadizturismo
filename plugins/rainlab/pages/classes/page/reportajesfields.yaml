@@ -32,6 +32,7 @@ fields:
     viewBag[dateReportaje]:
         type: datepicker
         mode: date 
+        default: now
         label: 'Fecha publicación'
         span: right
 
