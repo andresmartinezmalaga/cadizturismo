@@ -2488,7 +2488,7 @@ static $reportaje = '
               <img class="brush" src="***_preurl_***/storage/app/media/uploaded-files/templates/brush-header.svg" alt="">
               <div class="send-info">
                 <div class="button-send-info">
-                  <a class="urldonwload" href="#">Descargar este reportaje</a>
+                  <a class="urldonwload" href="#">Descarga este reportaje</a>
                 </div>
               </div>
             </div>
