@@ -270,7 +270,7 @@ class Index extends Controller
             }
 
             if($pageFileName == 'sala-prensa-reportajes.htm' && $templateMarkup ==''){
-                $object['markup'] = PagesTemplates::getTReportaje();
+                //$object['markup'] = PagesTemplates::getTReportaje();
             }
 
             if($pageFileName == 'politica-de-cookies.htm' && $templateMarkup ==''){
