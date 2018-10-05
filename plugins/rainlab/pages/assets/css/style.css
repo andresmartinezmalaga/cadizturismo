@@ -1820,11 +1820,12 @@ html, body {
   margin-top: -160px;
   display: grid;
   display: -ms-grid;
-  justify-content: center;
-  grid-template-columns: repeat(2, 656px);
-  -ms-grid-template-columns: repeat(2, 656px);
+  justify-content: space-between;
+  grid-template-columns: repeat(2, 642px);
+  -ms-grid-template-columns: repeat(2, 642px);
   padding-bottom: 90px;
-  padding-top: 40px; }
+  padding-top: 40px; 
+}
 
 .pdown {
   margin-top: -10px!important;
@@ -1859,8 +1860,8 @@ html, body {
   .contpbl{
     display: grid;
     display: -ms-grid;
-    grid-template-columns: 290px 10px 351px;
-    -ms-grid-template-columns: 290px 10px 351px;
+    grid-template-columns: 286px 0px 357px;
+    -ms-grid-template-columns: 286px 0px 357px;
     margin-bottom: 30px;
   }
   .shr { 
@@ -1870,6 +1871,7 @@ html, body {
     top: 55px;
   }
   .shr img{
+    opacity: 0.7;
   }
   .contpbl .bimage{
     height: 434px;
@@ -1889,7 +1891,13 @@ html, body {
     color: white;
     background-color: #F5A623;
     border-radius: 4px; 
+    text-decoration: none;
    }
+
+   .publis .download-link:hover{
+     background-color: #D0860C;
+    }
+
 
    .publis .see-link{
     position: relative;
@@ -1903,7 +1911,13 @@ html, body {
     font-family: 'AvenirNext-DemiBold';
     color: white;
     opacity: 0.6;
+    text-decoration: none;
    }
+
+   .publis .see-link:hover{
+      opacity: 0.7;
+    }
+
 
   .publis .publicacion {
     background-color: white;
@@ -4039,14 +4053,21 @@ p > br {
 /* **************************************************************************** */
 /* **************************************************************************** */
  
- .header-publications {
+.header-publications {
   background-image: url("../img/publicaciones.jpg");
   transform: rotate(0deg);
-  }
+}
+
+
+#prtlPublications .links-container{
+  height: 100%;
+  background-image: linear-gradient(-180deg, rgba(107,97,119,0.00) 0%, #101010 100%);
+}
 
   .header-publications h1{
     margin-top: -200px!important;
     margin-bottom: -40px!important;
+    margin-left: 40px;
   }
   .header-publications h1 span{
     font-size: 200px!important;
