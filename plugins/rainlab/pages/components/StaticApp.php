@@ -1510,7 +1510,7 @@ class StaticApp extends ComponentBase
         $pages = Page::listInTheme($theme, false);
         $publications =  new \Illuminate\Support\Collection($pages);
 
-        $result = $publications->where("is_hidden",0)->where("subtemplate","publicaciones")->values();
+        $result = $publications->where("is_hidden",0)->where("subtemplate","publicaciones")->sortByDesc('created_at')->values();
 
         return $result;
     }
@@ -1525,7 +1525,7 @@ class StaticApp extends ComponentBase
         $pages = Page::listInTheme($theme, false);
         $publications =  new \Illuminate\Support\Collection($pages);
 
-        $result = $publications->where("is_hidden",0)->where("subtemplate","publicaciones")->values();
+        $result = $publications->where("is_hidden",0)->where("subtemplate","publicaciones")->sortByDesc('created_at')->values();
 
         $pagination = $result->slice((($pag-1)*$number),$number);
 

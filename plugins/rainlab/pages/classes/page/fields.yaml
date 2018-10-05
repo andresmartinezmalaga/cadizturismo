@@ -36,7 +36,7 @@ fields:
     viewBag[cover]:
         label: 'cover'
         default: 'default.jpg'
-        cssClass: ocl     
+        cssClass: ocl   
 
 tabs:
     fields:
