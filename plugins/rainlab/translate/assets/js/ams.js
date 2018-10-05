@@ -427,9 +427,6 @@ var ams = function(){
         } else if(element.find('.plantillaPrensa').length>0){
             element.html(pPrensa);
 
-        } else if(element.find('.plantillaReportaje').length>0){
-            element.html(pReportaje);
-
         } else if(element.find('.plantillaReportajes').length>0){
             element.html(pReportaje);
 
