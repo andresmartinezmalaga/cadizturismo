@@ -5216,3 +5216,17 @@ span.reportDatem {
   background-color: #F4F4F4;
 }
 
+#showreportaje .header-container .header-txt h1{
+  font-size: 180px;
+  margin-bottom: -50px;
+}
+
+
+.reportInfo .feature .feature-txt a,.reportInfo .feature .feature-txt{
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.reportInfo .feature .feature-txt a:hover{
+  opacity: 1;
+}
