@@ -5268,3 +5268,14 @@ span.reportDatem {
   opacity: 0.6;
 }
 
+.cntreports .gr .rprtc6 .rpart3 a {
+  font-family: 'AvenirNext-DemiBold';
+}
+
+.cntreports .gr .rprtc6 .rpart3 a img{
+  margin-left: 12px;
+}
+
+.cntreports{
+  margin-bottom: 100px;
+}
