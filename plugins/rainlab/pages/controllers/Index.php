@@ -1025,6 +1025,7 @@ class Index extends Controller
                 $agastronomia = explode('gastronomia-', $getFileName);
                 $adiversion = explode('diversion-', $getFileName);
                 $aen =  explode('naturaleza-espacios-naturales', $getFileName);
+                $pub =  explode('publicaciones-', $getFileName);
 
             } else {
 
@@ -1038,6 +1039,7 @@ class Index extends Controller
                 $agastronomia = explode('/gastronomia/', $getFileName);
                 $adiversion = explode('/diversion/', $getFileName);
                 $aen =  explode('/naturaleza/espacios-naturales', $getFileName);
+                $pub =  explode('/publicaciones/', $getFileName);
             }
 
             if(
@@ -1080,6 +1082,10 @@ class Index extends Controller
             if($getFileName == 'sala-prensa.htm' ){
 
                 $objectData['settings']['viewBag']['layout'] = 'prensa';
+            }
+
+            if( count($pub) > 1){
+                $objectData['settings']['viewBag']['layout'] = 'publicacion';
             }
 
             // Andrés Martínez : add cover url

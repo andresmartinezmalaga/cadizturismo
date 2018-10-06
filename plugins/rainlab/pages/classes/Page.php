@@ -534,6 +534,7 @@ class Page extends ContentBase
             }
 
             $layout = Layout::load($this->theme, $parentPage->layout);
+
             $component = $layout ? $layout->getComponent('staticPage') : null;
             $childLayoutName = $component ? $component->property('childLayout', null) : null;
             if ($childLayoutName) {

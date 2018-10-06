@@ -42,7 +42,9 @@ code = "redes-sociales"
 
         $this['report'] = $this->staticApp->reportFindByUrl($this->page->url);
         $this['rdate'] =  $this['report'][0]['viewBag']['dateReportaje'];
-        $this['rwebinfo'] =  $this['report'][0]['viewBag']['webInfo'];
+        if(isset($this['report'][0]['viewBag']['webInfo'])){
+            $this['rwebinfo'] = $this['report'][0]['viewBag']['webInfo'];
+        }
         
         $this['urlPage'] = $this->page->url;
 
