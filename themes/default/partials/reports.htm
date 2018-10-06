@@ -31,7 +31,7 @@
 						{% set datef = dated|split('-') %}
 						<span class='reportDate'>{{datef[2]}}.{{datef[1]}}.{{datef[0]|slice(2,2)}}</span>
 						<span class='reportTitle'>{{reports[0].viewBag.title}}</span>
-						<img src="/cadizturismo/storage/app/media/uploaded-files/templates/reportlineyellow.png" alt="">
+						<img src="{{preurl}}/storage/app/media/uploaded-files/templates/reportlineyellow.png" alt="">
 						<span class='reportDescrptn'>{{reports[0].viewBag.descrptn|length > 114 ? reports[0].viewBag.descrptn|slice(0, 115) ~ '...' : reports[0].viewBag.descrptn}}</span>
 					</div>
 				</a>
@@ -46,7 +46,7 @@
 						{% set datef = dated|split('-') %}
 						<span class='reportDate'>{{datef[2]}}.{{datef[1]}}.{{datef[0]|slice(2,2)}}</span>
 						<span class='reportTitle'>{{reports[1].viewBag.title}}</span>
-						<img src="/cadizturismo/storage/app/media/uploaded-files/templates/reportlineyellow.png" alt="">
+						<img src="{{preurl}}/storage/app/media/uploaded-files/templates/reportlineyellow.png" alt="">
 					</div>
 				</div>
 				<div class="rprtc2 rpart2">
@@ -70,7 +70,7 @@
 							{% set datef = dated|split('-') %}
 							<span class='reportDate'>{{datef[2]}}.{{datef[1]}}.{{datef[0]|slice(2,2)}}</span>
 							<span class='reportTitle'>{{reports[2].viewBag.title}}</span>
-							<img src="/cadizturismo/storage/app/media/uploaded-files/templates/reportlineyellow.png" alt="">
+							<img src="{{preurl}}/storage/app/media/uploaded-files/templates/reportlineyellow.png" alt="">
 						</div>
 					</div>
 					<div class="rprtc3 rpart2">
@@ -89,7 +89,7 @@
 						{% set datef = dated|split('-') %}
 						<span class='reportDate'>{{datef[2]}}.{{datef[1]}}.{{datef[0]|slice(2,2)}}</span>
 						<span class='reportTitle'>{{reports[3].viewBag.title}}</span>
-						<img src="/cadizturismo/storage/app/media/uploaded-files/templates/reportlineyellow.png" alt="">
+						<img src="{{preurl}}/storage/app/media/uploaded-files/templates/reportlineyellow.png" alt="">
 						<span class='reportDescrptn'>{{reports[3].viewBag.descrptn|length > 233 ? reports[3].viewBag.descrptn|slice(0, 234) ~ '...' : reports[3].viewBag.descrptn}}</span>
 					</div>
 				</a>
@@ -100,7 +100,7 @@
 	<div class="gr gr3">
 		<div class="rprtc5">
 			{{'CONOCE CÁDIZ EN REPORTAJES'|_}}
-			<img src="/cadizturismo/storage/app/media/uploaded-files/templates/reportlineyellow2.png" alt="">
+			<img src="{{preurl}}/storage/app/media/uploaded-files/templates/reportlineyellow2.png" alt="">
 		</div>
 		
 		<div class="rprtc6">
@@ -112,7 +112,7 @@
 						{% set datef = dated|split('-') %}
 						<span class='reportDate'>{{datef[2]}}.{{datef[1]}}.{{datef[0]|slice(2,2)}}</span>
 						<span class='reportTitle'>{{reports[4].viewBag.title}}</span>
-						<img src="/cadizturismo/storage/app/media/uploaded-files/templates/reportlineyellow.png" alt="">
+						<img src="{{preurl}}/storage/app/media/uploaded-files/templates/reportlineyellow.png" alt="">
 					</div>
 				</div>
 				<div class="rprtc6 rpart2">

@@ -5032,9 +5032,15 @@ line-height: 31px;
 
 .mapcd .mapboxd .enlaces a{
   font-size: 16px;
-  color: black;
+  color: #4A4A4A;
   display: block;
   margin-bottom: 15px;
+  text-decoration: none;
+}
+
+.mapcd .mapboxd .enlaces a:hover{  
+  color: #9B9B9B;
+ 
 }
 
 .mapcd .mapboxd .enlaces .flechapais {  
@@ -5067,6 +5073,12 @@ line-height: 31px;
   left: 40px;
   cursor: pointer;
   z-index: 888888;
+  background-image: url("../img/pointmapp.png");
+}
+
+.mapcd .pointmap:hover {
+  
+  background-image: url("../img/pointmaph.png");
 }
 
 .mapcd .gm {
@@ -5235,3 +5247,24 @@ span.reportDatem {
    font-family: 'Avenir-Medium'!important;
    color: #4A4A4A;
 }
+
+
+
+.addressdossier .address .sp1{
+  font-family: 'AvenirNext-DemiBold';
+  color:#4A4A4A;
+}
+
+.contactdossier .contac .title {
+  font-family: 'AvenirNext-DemiBold';
+  color:#4A4A4A;
+  line-height: 57px;
+  margin-bottom: 12px;
+}
+
+
+.qdn .stitle{
+  color:#4A4A4A;
+  opacity: 0.6;
+}
+
