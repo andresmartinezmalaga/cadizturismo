@@ -4622,6 +4622,7 @@ p > br {
   -ms-grid-template-columns: repeat(3, 434px);
   color: white;
   font-size: 16px;
+  margin-top: 50px;
 }
 
 .cntreports .gr a{
@@ -5195,6 +5196,7 @@ line-height: 31px;
 
 .header-news .header-container .header-txt .first-word-rutas{
   font-size: 180px;
+  border:solid 1px red;
 }
 .header-news .header-container .header-txt .second-word{
   
@@ -5278,4 +5280,14 @@ span.reportDatem {
 
 .cntreports{
   margin-bottom: 100px;
+}
+
+.cntreports .gr3 .rprtc5 {
+  font-family: 'AvenirNext-DemiBold';
+}
+
+
+.header-general .header-container .header-txt h1{
+  margin-bottom: 90px;
+}
 }
