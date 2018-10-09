@@ -4663,6 +4663,11 @@ p > br {
   color:black;
   padding-left: 80px; 
 }
+
+.cntreports .gr .rprtc6r{
+  display: none;
+}
+
 .cntreports .rprtc6{
   height: 594px;
 }
@@ -5287,6 +5292,10 @@ span.reportDatem {
   font-family: 'AvenirNext-DemiBold';
 }
 
+ .rprtc5r{
+  display: none;
+ }
+
 
 .header-general .header-container .header-txt h1{
   margin-bottom: 90px;
@@ -5341,6 +5350,111 @@ span.reportDatem {
     height: 70px!important;
   }
 
+  /*REPORTAJES*/
+  .header-salaprensa{
+    height: 760px;
+  }
+  .brushTop{
+    margin-top: -30px!important;
+  }
+  .header-salaprensa .header-container .header-txt .txt-rutas .first-word-rutas{
+    font-size: 180px;
+  }
+  .cntreports{
+    margin: 0 auto;
+    width: 568;
+    height: 1220px;
+    display: grid;
+    display: -ms-grid;
+    grid-template-columns: repeat(2, 384px);
+    -ms-grid-template-columns: repeat(2, 384px);
+    color: white;
+    font-size: 16px;
+    margin-top: 50px;
+  }
+  .cntreports .gr div{
+    width: 384px;
+  }
+  .cntreports .gr3{
+    display: none;
+  }
+  .gdossier .cntdossier{
+    width: 768px;
+  }
+  .gdossier .cntdossier .mapdossier{
+    width: 768px;
+  }
+  .mapdossier {
+    width: 768px;
+    background-color: #F5A623;
+    height: 1002px;
+    display: flex;
+    display: -ms-flex;
+    flex-direction: column-reverse !important;
+  }  
+  .mapdossier .mpds{
+    height: 780px;
+  }  
+  .mapdossier .qdn {
+    height: 252;
+  }
+  .mapdossier .mpds, .mapdossier .qdn {
+    width: 768px;     
+  }
+  .mapdossier .qdn {
+    padding: 40px;
+  }
+  .gdossier .dossier .info {
+    width: 768px;
+    padding: 40px;
+    padding-top: 130px;
+  }
+  .contactdossier .contac {
+    width: 768px;
+    padding: 40px;
+  }
+  .contactdossier .contac .box {
+    grid-template-columns: repeat(2, 354px);
+  }
+  .addressdossier .address{
+    width: 768px;
+  }
+  .qdn .stitle{
+    width: 400px;
+  }
+  .qdn .title{
+   width: 400px;
+  }
+  .cntreports .gr .rprtc6r{
+    display: inline-block;
+    text-align: right;
+  }
+  .cntreports .gr .rprtc6r a{
+    color: #F5A623;
+    margin-top: 80px;
+ 
+  }
+  .cntreports .gr .rprtc6r a img{
+       margin-top: -1px;
+       margin-left: 10px;
+       margin-right: 40px;
+  }
+  .rprtc5r{
+    display: inline-block;
+    margin-bottom: -60px;
+    margin-left: -40px;
+    margin-top:60px;
+    width: 400px;
+    height: 300px; 
+    font-size: 64px;
+    line-height: 65px;
+    color:black;
+    padding-left: 80px;
+   }
+
+   .cntreports{
+    margin-bottom: 100px;
+   }
 }
 
 /*PHONE*/

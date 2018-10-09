@@ -19,8 +19,13 @@
 ?>
 
 == 
+	<div class="rprtc5r">
+		{{'CONOCE CÁDIZ EN REPORTAJES'|_}}
+		<img src="{{preurl}}/storage/app/media/uploaded-files/templates/reportlineyellow2.png" alt="">
+	</div>
 
 <div class="cntreports">
+
 	{% if(reports[0]) %}
 		<div class="gr gr1">
 		{% if(reports[0]) %}			
@@ -94,7 +99,10 @@
 					</div>
 				</a>
 			</div>
-		{% endif %}	
+		{% endif %}
+		<div class="rprtc6r rpart3">
+				<a href='{{preurl~"/"~lang}}/todos-los-reportajes'>{{'Todos los reportajes'|_}}<img src="{{preurl}}/storage/app/media/uploaded-files/templates/link-icono.svg" alt=""></a>
+		</div>
 		</div>
 	{% endif %}
 	<div class="gr gr3">
