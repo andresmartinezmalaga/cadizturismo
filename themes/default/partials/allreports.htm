@@ -19,10 +19,8 @@
 {% for report in reports %}
     <div class='contpbl'>
       <div class="bimage" style="background-image:url({{report.viewBag.cover}}); background-repeat: no-repeat; background-size: cover;">
-        <div class="links-container">                  
-          {% if report.viewBag.reportUrl !='' %}
-            <a class="download-link" target="_blank" href='{{preurl~"/"~lang~report.viewBag.url}}''>{{'Ver reportaje'|_}}</a>
-          {% endif %}
+        <div class="links-container">  
+            <a class="download-link" href='{{preurl~"/"~lang~report.viewBag.url}}''>{{'Ver reportaje'|_}}</a>
       	</div>
       </div>
       <div class="shr">
