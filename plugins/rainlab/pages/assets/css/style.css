@@ -4068,6 +4068,7 @@ p > br {
     margin-top: -200px!important;
     margin-bottom: -40px!important;
     margin-left: 40px;
+    color:color: #4A4A4A;
   }
   .header-publications h1 span{
     font-size: 200px!important;
@@ -5290,4 +5291,58 @@ span.reportDatem {
 .header-general .header-container .header-txt h1{
   margin-bottom: 90px;
 }
+
+/*TABLET*/
+@media (max-width: 920px) and (min-width: 710px) {
+  #search-publications{
+    margin: 0 auto;
+  }
+  .publis {
+    width: 694px;
+    margin: 0 auto;
+    margin-top: -160px;   
+    flex-direction: column;
+    display: flex;
+    display: -ms-flex;
+    grid-template-columns: 642px;
+    -ms-grid-template-columns: 642px;
+    padding-bottom: 90px;
+    padding-top: 40px; 
+  }
+  .contpbl{
+    grid-template-columns: 304px 0px 390px;
+  }
+  .header-publications h1 span {
+    font-size: 180px!important;
+  }
+  #prtlPublications .publis .publicacion .publi-title{
+    font-size: 30px;
+  }
+
+  #prtlPublicationsl {
+    background-color: #F4F4F4;
+    margin-top: 70px!important;
+  }
+  
+  #prtlPublicationsl .search-title-container{
+    margin-top: 30px;
+  }
+  
+  #search-publications{
+    margin-top: -30px;
+  }
+  #search-publications .search-bar{
+    border:none!important;
+    height: 86px;
+  }
+
+  #search-publications form, #search-publications .inputs-container{
+    height: 70px!important;
+  }
+
+}
+
+/*PHONE*/
+@media (max-width: 709px) {
+  
 }
