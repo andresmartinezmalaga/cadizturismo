@@ -4053,7 +4053,9 @@ p > br {
 /* **************************************************************************** */
 /* **************************************************************************** */
 /* **************************************************************************** */
- 
+.links-containerm{
+  display: none;
+}
 .header-publications {
   background-image: url("../img/publicaciones.jpg");
   transform: rotate(0deg);
@@ -4999,6 +5001,10 @@ p > br {
   height: 472px;
 }
 
+.mapdossier .qdnm{
+  display: none;
+}
+
 .mapdossier span{
   display: block;
 }
@@ -5305,6 +5311,10 @@ span.reportDatem {
   display: inline;
 }
 
+.publi-descm{
+  display: none;
+}
+
 /*TABLET*/
 @media (max-width: 1350px) and (min-width: 726px) {
   /*PUBLICACIONES*/
@@ -5365,17 +5375,25 @@ span.reportDatem {
   .brushTop{
     margin-top: -30px!important;
   }
+
+  .header-reports .header-container .header-txt .txt-rutas .first-word-rutas{
+    font-size: 180px;
+  }
   .header-salaprensa .header-container .header-txt .txt-rutas .first-word-rutas{
     font-size: 180px;
   }
+  .plantillaSala .cntdossier{
+    margin-top: -40px;
+  }
   .cntreports{
     margin: 0 auto;
-    width: 568;
+    width: 100%;
     height: 1220px;
     display: grid;
     display: -ms-grid;
     grid-template-columns: repeat(2, 384px);
     -ms-grid-template-columns: repeat(2, 384px);
+    justify-content: center;
     color: white;
     font-size: 16px;
     margin-top: 50px;
@@ -5387,13 +5405,16 @@ span.reportDatem {
     display: none;
   }
   .gdossier .cntdossier{
-    width: 768px;
+    /*width: 768px;*/
+    width: 100%;
   }
   .gdossier .cntdossier .mapdossier{
-    width: 768px;
+    /*width: 768px;*/
+     width: 100%;
   }
   .mapdossier {
-    width: 768px;
+    /*width: 768px;*/
+    width: 100%;
     background-color: #F5A623;
     height: 1002px;
     display: flex;
@@ -5472,116 +5493,96 @@ span.reportDatem {
       margin-top: -220px!important;
       margin-bottom: 50px!important;
   }
-  .header-publications-min .header-container .header-txt{
-      margin-top: -320px!important;
-      margin-bottom: 100px!important;
-  }
   .header-publications .header-txt .brush, .header-publications-min .header-txt .brush{
       margin-top: -130px!important;
       height: 20px!important;
       width: 200px!important;
-      border:solid 1px red!important;
   }
-  .header-publications h1 .first-word-rutas, .header-publications-min h1 .first-word-rutas{
+  .header-publications h1 .first-word-rutas, .header-publications-min h1 .first-word-rutas{ 
     font-size: 85px!important;  
   }
-
+  .header-publications-min .header-container .header-txt{
+      margin-top: -320px!important;
+      margin-bottom: 100px!important;
+  }
   #search-publications{   
     display: block!important;
     width: 295px!important;
     margin: 0 auto!important;
     margin-top: -70px!important;    
   }
-
   #search-publications #publicacion-search{
     width: 295px!important;
   }
-
   #search-publications form, #search-publications .inputs-container{
     height: auto !important;
     display: block!important;
     width: 295px!important;
   }
-
   #publicacion-type, #publicacion-interests{
     width: 295px!important;
     border-bottom: solid 1px #DDDDDD!important;
   }
-
   #publicacion-langs, .button-container{
     width: 295px!important;
   }
-
   #prtlPublications .publis, #prtlPublicationsl .publis{
     margin-top: -150px!important;
     grid-template-columns: 295px !important;
-  }
-  
+  }  
   .contpbl{
    display: block!important;
    margin-bottom: 30px!important;
-  }
-  
+  }  
   .contpbl .publicacion{
     height: 444px!important;
     margin-left: 0!important;
     margin-bottom: 20px!important;
     margin-top: -50px!important;
     border:solid 1px white!important;
-  }
-  
+  }  
   #prtlPublications .publis .publicacion:before, #prtlPublicationsl .publis .publicacion:before{
     background-color: white!important;
   }
   .contpbl .bimage{
     height: 193px!important;
   }
-
   .contpbl .shr{
     display: none!important;
   }
-
   .contpbl .publicacion .publi-title{
     color: white!important;
     margin-top: -50px!important;
     margin-bottom: 35px!important;
     font-size: 30px!important;
     z-index: 9999999999999!important;
-  }
-  
+  }  
   .contpbl .publicacion .publi-icon{ 
     padding-left: 15px!important;  
-  }
-  
+  }  
   .contint{
     display: block!important;
-     padding-left: 15px!important; 
+    padding-left: 15px!important; 
   }
-
   .contpbl .publicacion span{ 
     margin-right: 15px!important;  
   }
-
   .publis span{
     margin-left: 5px!important;
   }
   .publi-desc {
     padding-left: 15px!important;
-  }
-  
+  }  
   .header-publications {
     background-position: center;
     height: 950px !important;
   }
-
   #search-publications .search-bar {
     border-top: solid 7px #fff;
   }
-  
   #prtlPublications .publis{
     margin-top: -10px!important;
   }
-
   #prtlPublicationsl .pdown{
     margin-top: 100px!important;
   }
@@ -5590,6 +5591,193 @@ span.reportDatem {
   }
   #prtlPublicationsl .title-search{
     margin-top: 100px!important;
+  }
+
+
+  /*SALA PRENSA*/
+  .header-salaprensa{
+    height: 662px;
+  }
+  .header-salaprensa .header-txt .brush{
+      margin-top: -30px!important;
+      height: 20px!important;
+      width: 200px!important;
+  }
+ .header-salaprensa h1 .first-word-rutas{ 
+    font-size: 85px!important;  
+  }
+  .rprtc5r{
+    display: inline-block;
+    margin-bottom: -60px;    
+    margin-top:60px;
+    width: 400px;
+    height: 300px; 
+    font-size: 52px;
+    line-height: 65px;
+    color:black;
+    text-align: center;
+    margin: 40px auto;
+    margin-bottom: -100px;
+   }
+  .cntreports .gr .rprtc6r{
+    display: inline-block;
+    text-align: right;
+  }
+  .cntreports .gr .rprtc6r a{
+    color: #F5A623;
+    margin-top: 80px;
+ 
+  }
+  .cntreports .gr .rprtc6r a img{
+       margin-top: -1px;
+       margin-left: 10px;
+       margin-right: 40px;
+  }
+  .cntreports {
+    margin-top: -1200px;
+    grid-template-columns: 434px !important;
+    justify-content: center;
+    width: 100%;
+  }
+  .gdossier .cntdossier{
+      width: 100%;
+  }
+  .gdossier .dossier .info {
+    width: 100%;
+    padding: 15px;
+  }
+  .gdossier .cntdossier .mapdossier{
+    display: none;
+  }
+  .cntreports .gr3{
+    display: none;
+  }
+  #prtlSalaprensa .all-events-container{
+    height: 2750px;
+  }
+  .contactdossier .contac{    
+    width: 90%; 
+    justify-content: center;
+  }
+  .contactdossier .contac .title{
+    font-size: 30px;
+    padding-right: 300px;
+    width: 100%;
+  }
+  .contactdossier .contac .box{
+    grid-template-columns: 90%;
+    justify-content: center;
+  }
+  .contactdossier .contac .box .box1{
+    
+  }
+  .contactdossier .contac .box .box2{
+    padding-left: 0;
+    border-left:none;
+  }
+  .addressdossier .address {
+    width: 90%;
+  }
+  .addressdossier .address span{
+   text-align: center;
+  }
+  .qdnm{
+    width: 100%;
+    background-color: #F5A623;
+    padding: 15px;
+    padding-top: 50px;   
+    height: 370px;
+    display: inline-block;
+  }
+  .qdnm span,.qdnm img {
+    display: block;
+    margin: 0 auto;
+  }
+  .qdnm .title{
+    font-size: 40px;
+    color: #FFFFFF;
+    line-height: 46px;
+    margin-bottom: 20px;
+    width: 95%;
+  }
+ .qdnm .stitle{
+    font-size: 20px;
+    color:#4A4A4A;
+    opacity: 0.6;
+    line-height: 31px;
+    margin-top: 20px;
+    width: 95%;
+  } 
+  .cntdossier .dossier .info 
+  {   
+   width: 95%;
+   margin:0 auto;
+  }
+
+  /*REPORTAJES*/
+  .header-reports{
+  height: 662px;
+  }
+  .header-reports .header-container .header-txt .txt-rutas .first-word-rutas{
+    font-size: 85px;
+  }
+  .header-reports .header-txt .brush{
+      margin-top: -30px!important;
+      height: 20px!important;
+      width: 200px!important;
+  }
+  .publis {
+    width: auto;
+    grid-template-columns: 325px!important;
+  }
+  #prtlReports .links-container, #prtlReports .reportDatem{
+    display: none;
+  }
+  .links-containerm{
+    display: inline-block;
+  }  
+  #prtlReports .publis .bimage {
+     position: relative;
+    height: 370px!important;
+  }
+  #prtlReports .publis .publicacion {
+    position: relative;
+    height: 235px!important;   
+  }
+  
+  .links-containerm .download-link{   
+    position: absolute;
+    bottom: 20px;
+    left: 32px;
+    width: 256px;
+    height: 54px;
+    display: block;
+    padding: 18px;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'AvenirNext-DemiBold';
+    color: white!important;
+    background-color: #F5A623;
+    border-radius: 4px;
+    text-decoration: none;
+  }
+
+  .publi-desc{
+    display: none;
+  }
+  .publi-descm{
+    position: absolute;
+    top: 60px;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 26px;
+    color: #9B9B9B;
+    height: 100px;
+    width: 100%;
+  
+    padding-left: 15px;
+    padding-right: 15px;
+   
   }
 
 }
