@@ -44,9 +44,11 @@
           <div>
             <img class="publi-icon" src="{{preurl}}/storage/app/media/uploaded-files/templates/pb1-icon.svg" alt="">
             <span>{{publication.viewBag.type|_}}</span>
-            <img class="publi-icon par" src="{{preurl}}/storage/app/media/uploaded-files/templates/pb2-icon.svg" alt="">
-            {% set ints = publication.viewBag.interests|split(',') %}
-            <span>{{ints[0]|_}} Y {{ints[1]|_}}</span>
+            <div class="contint">
+              <img class="publi-icon par" src="{{preurl}}/storage/app/media/uploaded-files/templates/pb2-icon.svg" alt="">
+              {% set ints = publication.viewBag.interests|split(',') %}
+              <span>{{ints[0]|_}} Y {{ints[1]|_}}</span>
+            </div>
           </div>
           <img class="publi-icon" src="{{preurl}}/storage/app/media/uploaded-files/templates/pb3-icon.svg" alt="">
           <div class="contplangs">

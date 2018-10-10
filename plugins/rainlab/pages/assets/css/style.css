@@ -2411,6 +2411,7 @@ html, body {
     line-height: 114px !important; } }
 
 @media (max-width: 600px) {
+
   #prtlSearch > #listEmp #search-event {
     margin-bottom: 50px !important; }
   .con-encanto {
@@ -5300,8 +5301,12 @@ span.reportDatem {
   margin-bottom: 90px;
 }
 
+.contint{
+  display: inline;
+}
+
 /*TABLET*/
-@media (max-width: 920px) and (min-width: 710px) {
+@media (max-width: 1350px) and (min-width: 726px) {
   /*PUBLICACIONES*/
   #search-publications{
     margin: 0 auto;
@@ -5457,92 +5462,125 @@ span.reportDatem {
 }
 
 /*PHONE*/
-@media (max-width: 709px) {
- 
+@media (max-width: 725px) {
+   /*PUBLICACIONES*/
+  .header-publications .header-container .header-txt{
+      margin-top: -220px!important;
+      margin-bottom: 50px!important;
+  }
+  .header-publications .header-txt .brush{
+      margin-top: -130px!important;
+      height: 20px!important;
+      width: 200px!important;
+      border:solid 1px red!important;
+  }
   .header-publications h1 .first-word-rutas{
-    font-size: 85px!important;
-    margin-bottom: -220px!important;
-    margin-left: -20px;
-   
+    font-size: 85px!important;  
   }
 
-  .header-publications-min h1 .first-word-rutas{
-    margin-top: -100px;
-    margin-left: 20px;
-  }
-
-  .header-publications-min{
-      margin-bottom: -70px;
-  }
-
-  #prtlPublicationsl .search-title-container .title-search{
-    margin-top: 70px;
-  }
-
-  #prtlPublicationsl .pdown{
-    margin-top: 40px!important;
-  }
-
-  #search-publications{
+  #search-publications{   
     display: block!important;
-    width: 295px;
-    margin: 0 auto;
+    width: 295px!important;
+    margin: 0 auto!important;
+    margin-top: -70px!important;    
   }
 
   #search-publications #publicacion-search{
-    width: 295px;
+    width: 295px!important;
   }
 
   #search-publications form, #search-publications .inputs-container{
     display: block!important;
     width: 295px!important;
   }
-  #prtlPublications .publis{
-    margin-top: 0px!important;
-  }
 
   #publicacion-type, #publicacion-interests{
-    width: 295px;
+    width: 295px!important;
     border-bottom: solid 1px #DDDDDD!important;
   }
 
   #publicacion-langs, .button-container{
-    width: 295px;
+    width: 295px!important;
   }
 
+  #prtlPublications .publis{
+    margin-top: -150px!important;
+    grid-template-columns: 295px !important;
+  }
+  
   .contpbl{
-   display: block;
+   display: block!important;
+   margin-bottom: 30px!important;
   }
-
+  
+  .contpbl .publicacion{
+    height: 444px!important;
+    margin-left: 0!important;
+    margin-bottom: 20px!important;
+    margin-top: -50px!important;
+    border:solid 1px white!important;
+  }
+  
+  #prtlPublications .publis .publicacion:before{
+    background-color: white!important;
+  }
   .contpbl .bimage{
-    height: 193px;
+    height: 193px!important;
   }
 
   .contpbl .shr{
-    display: none;
-  }
-
-  .contpbl .publicacion{
-    height: 444px;
-    margin-left: 0;
-    margin-bottom: 20px;
-    margin-top: -50px;
-    border:solid 1px white;
+    display: none!important;
   }
 
   .contpbl .publicacion .publi-title{
-    color: white;
+    color: white!important;
     margin-top: -50px!important;
-    margin-bottom: 35px;
-    z-index: 9999999999999;
+    margin-bottom: 35px!important;
+    font-size: 30px!important;
+    z-index: 9999999999999!important;
+  }
+  
+  .contpbl .publicacion .publi-icon{ 
+    padding-left: 15px!important;  
+  }
+  
+  .contint{
+    display: block!important;
+     padding-left: 15px!important; 
   }
 
   .contpbl .publicacion span{ 
-    margin-right: 15px;  
+    margin-right: 15px!important;  
   }
 
   .publis span{
-    margin-left: 5px;
+    margin-left: 5px!important;
+  }
+  .publi-desc {
+    padding-left: 15px!important;
+  }
+  
+  .header-publications {
+    background-position: center;
+    height: 950px !important;
   }
 
+  .header-txt {
+  }
+  /*
+ 
+
+
+
+  
+  
+  
+
+  
+
+  
+
+  */
+
 }
+
