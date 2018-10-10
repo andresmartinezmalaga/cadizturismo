@@ -5311,6 +5311,10 @@ span.reportDatem {
   #search-publications{
     margin: 0 auto;
   }
+  
+  #search-publications .search-bar{
+    margin-top: -120px;
+  }
   .publis {
     width: 694px;
     margin: 0 auto;
@@ -5468,13 +5472,17 @@ span.reportDatem {
       margin-top: -220px!important;
       margin-bottom: 50px!important;
   }
-  .header-publications .header-txt .brush{
+  .header-publications-min .header-container .header-txt{
+      margin-top: -320px!important;
+      margin-bottom: 100px!important;
+  }
+  .header-publications .header-txt .brush, .header-publications-min .header-txt .brush{
       margin-top: -130px!important;
       height: 20px!important;
       width: 200px!important;
       border:solid 1px red!important;
   }
-  .header-publications h1 .first-word-rutas{
+  .header-publications h1 .first-word-rutas, .header-publications-min h1 .first-word-rutas{
     font-size: 85px!important;  
   }
 
@@ -5490,6 +5498,7 @@ span.reportDatem {
   }
 
   #search-publications form, #search-publications .inputs-container{
+    height: auto !important;
     display: block!important;
     width: 295px!important;
   }
@@ -5503,7 +5512,7 @@ span.reportDatem {
     width: 295px!important;
   }
 
-  #prtlPublications .publis{
+  #prtlPublications .publis, #prtlPublicationsl .publis{
     margin-top: -150px!important;
     grid-template-columns: 295px !important;
   }
@@ -5521,7 +5530,7 @@ span.reportDatem {
     border:solid 1px white!important;
   }
   
-  #prtlPublications .publis .publicacion:before{
+  #prtlPublications .publis .publicacion:before, #prtlPublicationsl .publis .publicacion:before{
     background-color: white!important;
   }
   .contpbl .bimage{
@@ -5565,22 +5574,23 @@ span.reportDatem {
     height: 950px !important;
   }
 
-  .header-txt {
+  #search-publications .search-bar {
+    border-top: solid 7px #fff;
   }
-  /*
- 
-
-
-
   
-  
-  
+  #prtlPublications .publis{
+    margin-top: -10px!important;
+  }
 
-  
-
-  
-
-  */
+  #prtlPublicationsl .pdown{
+    margin-top: 100px!important;
+  }
+  #prtlPublicationsl{
+    margin-top: 10px!important;
+  }
+  #prtlPublicationsl .title-search{
+    margin-top: 100px!important;
+  }
 
 }
 
