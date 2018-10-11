@@ -63,4 +63,21 @@ $( document ).ready(function() {
 		$(els +' .mapboxd').css('z-index', 0);
    }
 
+    jQuery('.spmv').on('touchstart',
+   		function(e) {   			
+   			var target = $(e.target).parent().attr("id");
+			var els = $('#'+target+' .listps');
+			var elsimg = $('#'+target+'>span>div');
+			
+			if(els.css('display') == 'none'){
+				els.css('display', 'inline');
+				elsimg.css('background','url(/plugins/rainlab/pages/assets/images/mpmvu.png)');
+			} else {
+				els.css('display', 'none');
+				elsimg.css('background','url(/plugins/rainlab/pages/assets/images/mpmvd.png)');
+			}
+		}
+	);
+	// background: url(../svg/mpmv.svg) no-repeat;
+
 });

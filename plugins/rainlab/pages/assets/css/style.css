@@ -4981,6 +4981,9 @@ p > br {
   margin-top:22px!important;
 }
 
+.mapdossiermv{
+  display: none;
+}
 .mapdossier {
   padding-top: 40px;
   width: 1440px;
@@ -5864,12 +5867,10 @@ span.reportDatem {
 
   #showreportaje .header-event{
     min-height: 1050px!important;
-  }
-
+   }
    #showreportaje #phantom-div{
     margin-bottom: -315px;
    }
-
    #showreportaje{
     padding-bottom: 200px;
    }
@@ -5884,7 +5885,6 @@ span.reportDatem {
   .allnewslist .reportDatem {
     display: none;
   }
-
   .allnewslist .h6m {
     display: none;
   }
@@ -5906,5 +5906,57 @@ span.reportDatem {
     display: inline-block;
   }  
   
+  /*MAPA MOVILES*/
+  .cntdossier .qdnm span {
+    width: 70%;
+    margin-left: 15px!important;
+  }
+  .cntdossier .qdnm img {
+    margin-left: 15px!important;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .cntdossier .qdnm {
+    display: block!important;
+    text-align: left!important;
+    margin-bottom: -10px!important;
+  }
+  .mapdossiermv{
+    display: block;
+    background-color: #F5A623;
+    padding:30px;
+    padding-top: 60px;
+  }
+  .mapdossiermv span{
+    display: block;
+    color:white;
+    font-size: 20px;
+    margin-bottom:15px;
+    cursor: pointer;
+  }
+  .mapdossiermv a{
+    display: block;
+    opacity: 0.5;
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+    margin-top: -5px!important;
+    text-decoration: none;
+  }
+
+  .mapdossiermv a:hover{
+    color:white;
+  }
+
+  .mapdossiermv .listps{
+    display: none;
+  }
+  .mapdossiermv span div{
+    display: inline-block;
+    height: 7px;
+    width:20px;
+    margin-left: 15px;
+    background: url(../images/mpmvd.png) no-repeat;
+
 }
 
