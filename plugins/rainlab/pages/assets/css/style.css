@@ -5835,6 +5835,9 @@ span.reportDatem {
     padding-left: 15px;
     width: 50px;
   }
+  #prtlReports .h6m{
+    display: none;
+  }
 
   /*SHOW REPORT*/
   #showreportaje .header-container{
@@ -5870,5 +5873,38 @@ span.reportDatem {
    #showreportaje{
     padding-bottom: 200px;
    }
+
+   /*NOTICIAS*/
+  .allnewslist .contpbl .bimage {
+    height: 350px!important;
+  }
+  .allnewslist .contpbl .publicacion {
+    height: 255px!important;
+  }
+  .allnewslist .reportDatem {
+    display: none;
+  }
+
+  .allnewslist .h6m {
+    display: none;
+  }
+  .header-news .header-container .header-txt{
+    margin-top: -60px!important;
+  }
+  .header-news .header-container .header-txt .first-word-rutas {
+    font-size: 85px;
+  }
+  .header-news .header-container .header-txt .second-word {
+    font-size: 85px;
+    margin-bottom: -85px;
+    margin-top: 30px;
+  }
+  #prtllnews .links-container{
+    display: none;
+  }
+  .links-containerm{
+    display: inline-block;
+  }  
+  
 }
 
