@@ -5012,8 +5012,8 @@ p > br {
   height: 472px;
 }
 
-.mapdossier .qdnm{
-  display: none;
+.cntdossier .qdnm{
+  display: none!important;
 }
 
 .mapdossier span{

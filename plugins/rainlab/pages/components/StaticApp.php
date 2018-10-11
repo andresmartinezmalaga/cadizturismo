@@ -1553,6 +1553,7 @@ class StaticApp extends ComponentBase
             'holanda' => 'holanda',
             'hungria' => 'hungría',
             'irlanda' => 'irlanda',
+            'israel' => 'israel',
             'italia' => 'italia',
             'japon' => 'japón',
             'mexico' => 'méxico',

@@ -28,11 +28,19 @@ $( document ).ready(function() {
 			ocs(target);
 		}
 	);
+   jQuery('.enlaces').on('touchstart',
+   	function(e) {
+   	var url = $(e.target).attr("href");  
+   		console.log('click');
+   		console.log(url);
+   		window.location.href = url;
+   	}
+   );
 
-   jQuery('.enlaces').hover(   
+   jQuery('.enlaces').click(   
    		function(e) {   
-   				console.log('enlaces');			
-   			var target = '.'+$(e.target).attr("id"); 
+   			console.log('enlaces');			
+   			var target = '.'+$(e.target); 
    			var res = target.replace("e", "g");   			  			
 			mcs(res);
 		},function(e){			
@@ -51,7 +59,7 @@ $( document ).ready(function() {
    function ocs(els){
    		$(els +' .mapbox').css('visibility', 'hidden');
 		$(els +' .mapbox').css('z-index', 0);
-		$(els +' .mapboxd').css('visibility', 'hidden');
+		$(els +' .mapboxd').css('visibility', 'hidden');		
 		$(els +' .mapboxd').css('z-index', 0);
    }
 
