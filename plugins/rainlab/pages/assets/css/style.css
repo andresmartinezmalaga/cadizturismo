@@ -5326,13 +5326,16 @@ span.reportDatem {
   display: none;
 }
 
+#showreportaje{
+    padding-bottom: 200px;
+}
+
 /*TABLET*/
 @media (max-width: 1350px) and (min-width: 726px) {
   /*PUBLICACIONES*/
   #search-publications{
     margin: 0 auto;
   }
-  
   #search-publications .search-bar{
     margin-top: -120px;
   }
@@ -5491,10 +5494,32 @@ span.reportDatem {
     color:black;
     padding-left: 80px;
    }
-
    .cntreports{
     margin-bottom: 100px;
    }
+   /*SHOW REPORT*/
+   #showreportaje .header-container{
+    margin-top: -200px;
+   }
+   .reportInfo{
+      padding: 0px!important;
+      margin-top: 200px;
+      display: block;
+      background-color: black;
+      height:450px;
+   }
+   .reportInfo .feature{
+      margin-top: 50px;
+      margin-right: 0px!important;
+   }
+
+   #showreportaje .header-event{
+    min-height: 1400px!important;
+  }
+  
+  #showreportaje{
+    padding-bottom: 200px;
+  }
 }
 
 /*PHONE*/
@@ -5810,5 +5835,40 @@ span.reportDatem {
     padding-left: 15px;
     width: 50px;
   }
+
+  /*SHOW REPORT*/
+  #showreportaje .header-container{
+    margin-top: -350px!important;
+  }
+  #showreportaje .plantillaReportajes .header-txt img {
+    margin-top:50px;
+  }
+  #showreportaje .header-event .txt {
+    font-size: 94px !important;
+    max-width: 79% !important;
+  }
+  .reportInfo{
+      padding: 0px!important;
+      margin-top: -200px;
+      display: block;
+      background-color: black;
+      height:450px;
+  }
+  .reportInfo .feature{
+      margin-top: 50px;
+      margin-right: 0px!important;
+  }
+
+  #showreportaje .header-event{
+    min-height: 1050px!important;
+  }
+
+   #showreportaje #phantom-div{
+    margin-bottom: -315px;
+   }
+
+   #showreportaje{
+    padding-bottom: 200px;
+   }
 }
 
