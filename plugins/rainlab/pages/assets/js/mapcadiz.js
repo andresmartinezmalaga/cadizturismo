@@ -71,10 +71,10 @@ $( document ).ready(function() {
 			
 			if(els.css('display') == 'none'){
 				els.css('display', 'inline');
-				elsimg.css('background','url(/plugins/rainlab/pages/assets/images/mpmvu.png)');
+				elsimg.css('background','url(/plugins/rainlab/pages/assets/images/mpmvu.png),no-repeat');
 			} else {
 				els.css('display', 'none');
-				elsimg.css('background','url(/plugins/rainlab/pages/assets/images/mpmvd.png)');
+				elsimg.css('background','url(/plugins/rainlab/pages/assets/images/mpmvd.png,no-repeat)');
 			}
 		}
 	);
