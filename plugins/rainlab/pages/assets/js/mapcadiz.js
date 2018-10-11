@@ -74,7 +74,7 @@ $( document ).ready(function() {
 				elsimg.css('background','url(/plugins/rainlab/pages/assets/images/mpmvu.png),no-repeat');
 			} else {
 				els.css('display', 'none');
-				elsimg.css('background','url(/plugins/rainlab/pages/assets/images/mpmvd.png,no-repeat)');
+				elsimg.css('background','url(/plugins/rainlab/pages/assets/images/mpmvd.png),no-repeat');
 			}
 		}
 	);
