@@ -4750,10 +4750,21 @@ p > br {
   margin-left: 30px!important;
 }
 
+.reportDatemrm{
+  display: none;
+}
+
 .publis .publicacion .h6m{
   margin-top: -10px!important;
 }
 
+.h6mrm{
+  display: none;
+}
+
+.imgrpmv{
+  display: none;
+}
 .cntreports .gr .reportTitle {
   display: block;
   font-size: 39px;
@@ -5743,8 +5754,7 @@ span.reportDatem {
   #prtlReports .publis .publicacion {
     position: relative;
     height: 235px!important;   
-  }
-  
+  }  
   .links-containerm .download-link{   
     position: absolute;
     bottom: 20px;
@@ -5761,7 +5771,6 @@ span.reportDatem {
     border-radius: 4px;
     text-decoration: none;
   }
-
   .publi-desc{
     display: none;
   }
@@ -5773,12 +5782,33 @@ span.reportDatem {
     line-height: 26px;
     color: #9B9B9B;
     height: 100px;
-    width: 100%;
-  
+    width: 100%;  
     padding-left: 15px;
     padding-right: 15px;
-   
   }
-
+  .reportDatemrm{
+    padding-top: 155px;
+    display: block;
+    padding-left: 10px!important;
+    font-family: AvenirNext-Regular;
+    font-size: 18px;
+    color: #FFFFFF!important;
+    line-height: 30px;
+  }
+  .h6mrm{
+    margin-top: -10px;
+    padding-left: 15px!important;
+    display: block;
+    font-family: AvenirNext-DemiBold;
+    font-size: 32px;
+    color: #FFFFFF!important;
+    line-height: 39px;
+    text-transform: uppercase;
+  }
+  .imgrpmv{
+    display: inline-block;
+    padding-left: 15px;
+    width: 50px;
+  }
 }
 

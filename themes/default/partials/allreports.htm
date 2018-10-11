@@ -17,8 +17,13 @@
   
 <div class="publis">
 {% for report in reports %}
+    {% set dated = report.viewBag.dateReportaje|split(' ')[0] %}
+    {% set datef = dated|split('-') %}
     <div class='contpbl'>
       <div class="bimage" style="background-image:url({{report.viewBag.cover}}); background-repeat: no-repeat; background-size: cover;">
+        <span class='reportDate reportDatemrm'>{{datef[2]}}.{{datef[1]}}.{{datef[0]|slice(2,2)}}</span>
+        <h6 class="publi-title h6mrm">{{report.viewBag.title}}</h6>
+        <img class="imgrpmv" src="/cadizturismo/storage/app/media/uploaded-files/templates/reportlineyellow2.png" alt="">
         <div class="links-container">  
             <a class="download-link" href='{{preurl~"/"~lang~report.viewBag.url}}''>{{'Ver reportaje'|_}}</a>
       	</div>
@@ -26,14 +31,12 @@
       <div class="shr">
         <img src="{{preurl}}/storage/app/media/uploaded-files/templates/shr.svg" alt=""> 
       </div>	     
-      <div class="publicacion">
-      		{% set dated = report.viewBag.dateReportaje|split(' ')[0] %}
-			   {% set datef = dated|split('-') %}
-			   <span class='reportDate reportDatem'>{{datef[2]}}.{{datef[1]}}.{{datef[0]|slice(2,2)}}</span>
+      <div class="publicacion">      	
+			    <span class='reportDate reportDatem'>{{datef[2]}}.{{datef[1]}}.{{datef[0]|slice(2,2)}}</span>
           <h6 class="publi-title h6m">{{report.viewBag.title}}</h6>
           <div>  
-        	<p class="publi-desc">{{report.viewBag.descrptn}}</p>
-          <p class="publi-descm">{{report.viewBag.descrptn|length > 100 ? report.viewBag.descrptn|slice(0, 101) ~ '...' : report.viewBag.descrptn}}</p>
+          	<p class="publi-desc">{{report.viewBag.descrptn}}</p>
+            <p class="publi-descm">{{report.viewBag.descrptn|length > 100 ? report.viewBag.descrptn|slice(0, 101) ~ '...' : report.viewBag.descrptn}}</p>
       	  </div>
           <div class="links-containerm">  
             <a class="download-link" href='{{preurl~"/"~lang~report.viewBag.url}}''>{{'Ver reportaje'|_}}</a>
