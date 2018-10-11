@@ -73,10 +73,12 @@ $( document ).ready(function() {
 				els.css('display', 'inline');
 				elsimg.css('background-repeat','no-repeat')
 				elsimg.css('background','url(/plugins/rainlab/pages/assets/images/mpmvu.png)');
+				elsimg.css('background-repeat','no-repeat')
 			} else {
 				els.css('display', 'none');
 				elsimg.css('background-repeat','no-repeat')
 				elsimg.css('background','url(/plugins/rainlab/pages/assets/images/mpmvd.png)');
+				elsimg.css('background-repeat','no-repeat')
 			}
 		}
 	);
