@@ -1829,6 +1829,118 @@ class StaticApp extends ComponentBase
 
         return $pagination;
     }
+    public function publicacionesFindC($search, $type, $interests, $lang){
+        
+
+        if($type == 'video'){
+            $type = 'vídeo';
+        }
+        if($type == 'guia'){
+            $type = 'guía';
+        }
+
+        $lang = strtoupper($lang);
+
+        if($lang == 'ALEMAN'){
+            $lang = 'ALEMÁN';
+        }   
+        if($lang == 'DANES'){
+            $lang = 'DANÉS';
+        }   
+        if($lang == 'FINLANDES'){
+            $lang = 'FINLANDÉS';
+        }   
+        if($lang == 'FRANCES'){
+            $lang = 'FRANCÉS';
+        }   
+        if($lang == 'HISPANOMERICA'){
+            $lang = 'HISPANOMÉRICA';
+        }   
+        if($lang == 'HOLANDES'){
+            $lang = 'HOLANDÉS';
+        }   
+        if($lang == 'HUNGARO'){
+            $lang = 'HÚNGARO';
+        }   
+        if($lang == 'INGLES'){
+            $lang = 'INGLÉS';
+        }   
+        if($lang == 'JAPONES'){
+            $lang = 'JAPONÉS';
+        }   
+        if($lang == 'PORTUGUES'){
+            $lang = 'PORTUGUÉS';
+        }
+
+        if($lang == 'TODOS-LOS-IDIOMAS'){
+            $lang = 'all';           
+        }
+
+        $theme = Theme::getActiveTheme();
+        $pages = Page::listInTheme($theme, false);
+        $publicaciones =  new \Illuminate\Support\Collection($pages);
+
+        $typeOperator = '=';
+        if($type == 'todos-los-tipos'){
+            $type = null;
+            $typeOperator = '!=';
+        }
+
+        $results = $publicaciones->where("is_hidden",0)->where('subtemplate','publicaciones')->where('type',$typeOperator,$type)->values();
+        
+        if($lang != 'all'){
+            foreach ($results as $key => $result) {
+                if(strpos($result->idiomas, $lang)!==false){
+                } else {
+                    $results->forget($key);
+                }
+            }
+        }
+
+        if($interests != 'todos-los-intereses'){
+            $aInterests = explode("_", $interests);
+            foreach ($results as $key => $result) {
+                $forget = true;
+                foreach ($aInterests as $interest) {
+                    if($forget == true){
+                        if(strpos($result->interests, $interest)!==false){                            
+                            $forget = false;
+                        }
+                    }      
+                }
+                if($forget == true){
+                    $results->forget($key);
+                }
+            }
+        }
+
+        if($search != 'todas-las-publicaciones'){
+            $aSearchs = explode("_", $search);
+            foreach ($aSearchs as $key => $value) {
+                if(strlen($value)<4){
+                    unset($aSearchs[$key]);
+                }
+            }
+            foreach ($results as $key => $result) {
+                $forget = true;
+                foreach ($aSearchs as $search) {
+                    if($forget == true){
+                        if(strpos($result->title, $search)!==false){                            
+                            $forget = false;
+                        }
+                        if(strpos($result->descrptn, $search)!==false){                            
+                            $forget = false;
+                        }
+                    }      
+                }
+                if($forget == true){
+                    $results->forget($key);
+                }
+            }
+        }
+        
+        return count($results);
+    }
 
      public function publicacionesFind($search, $type, $interests, $lang){
 

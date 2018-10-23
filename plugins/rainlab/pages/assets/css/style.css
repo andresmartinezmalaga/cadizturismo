@@ -4665,6 +4665,7 @@ p > br {
   line-height: 65px;
   color:black;
   padding-left: 80px; 
+  color: #4A4A4A;
 }
 
 .cntreports .gr .rprtc6r{
@@ -4720,8 +4721,22 @@ p > br {
   height: 100px;
 }
 .cntreports .gr .rprtc6 .rpart3 a{
-  color: #D0860C; 
+  color: #F5A623; 
   height: 15px; 
+}
+.cntreports .gr .rprtc6 .rpart3 a .imghf{
+  display: none;
+}
+.cntreports .gr .rprtc6 .rpart3 a:hover{
+  color: #D0860C; 
+}
+
+.cntreports .gr .rprtc6 .rpart3 a:hover .imgnf{
+  display: none;
+}
+
+.cntreports .gr .rprtc6 .rpart3 a:hover .imghf{
+  display: inline-block;
 }
 
 .cntreports .gr .rprtc6 .rpart3 img{
@@ -4836,7 +4851,7 @@ p > br {
 }
 .cntdossier{
   margin: 0 auto;
-  width: 1440px;
+  /*width: 1440px;*/
   color: white;
   font-size: 16px;
 }
@@ -4845,7 +4860,9 @@ p > br {
   background-color: #F4F4F4;
 }
 .dossier {
+  /*width: 100%;*/
   background-image: url("../img/dossier.jpg");
+  background-size: cover;
   transform: rotate(0deg);
   height: 800px;
   background-repeat: no-repeat;
@@ -4959,7 +4976,7 @@ p > br {
 .addressdossier .address .imgadd{
     width: 46px;
     height: 47px;
-    margin-bottom: 22px;
+    margin-bottom: 1px;
     
 }
 .addressdossier .address span{
@@ -4986,7 +5003,7 @@ p > br {
 }
 .mapdossier {
   padding-top: 40px;
-  width: 1440px;
+  /*width: 1440px;*/
   background-color: #F5A623;
   height: 780px;
   display: grid;
@@ -5354,11 +5371,19 @@ span.reportDatem {
     padding-bottom: 90px;
     padding-top: 40px; 
   }
+   .header-publications .txt-rutas{
+    padding-top: 1px;
+   }
   .contpbl{
     grid-template-columns: 304px 0px 390px;
   }
   .header-publications h1 span {
     font-size: 180px!important;
+    padding-top: 100px;
+  }
+
+  .header-publications .brushTop{  
+    margin-top: -250px!important;
   }
   #prtlPublications .publis .publicacion .publi-title{
     font-size: 30px;
@@ -5523,11 +5548,40 @@ span.reportDatem {
   #showreportaje{
     padding-bottom: 200px;
   }
+
+  .plantillaReportajes .header-container .brush{
+    margin-top: 30px;   
+  }
 }
 
 /*PHONE*/
 @media (max-width: 725px) {
+   #prtlPublicationsl .publi-descn, #prtlPublications .publi-descn{
+    display: none;
+  }
+  #prtlPublicationsl .publi-descm, #prtlPublications .publi-descm{
+    margin-top: 130px;
+    display: block;
+  }
    /*PUBLICACIONES*/
+  .links-container-m{
+    display: block!important;
+   position: absolute;
+   bottom: 330px;
+   width: 100%;
+  }
+  #publicacion-type, #publicacion-interests {
+    border-right:none;
+  }
+  .links-container-m .see-link{
+    color:#4A4A4A!important;
+    font-size: 14px!important;
+  }
+
+  .links-container-m .download-link{
+    color:white!important;
+    font-size: 14px!important;
+  }
   .header-publications .header-container .header-txt{
       margin-top: -220px!important;
       margin-bottom: 50px!important;
@@ -5591,7 +5645,8 @@ span.reportDatem {
   }
   .contpbl .publicacion .publi-title{
     color: white!important;
-    margin-top: -50px!important;
+    height: 86px;
+    margin-top: -100px!important;
     margin-bottom: 35px!important;
     font-size: 30px!important;
     z-index: 9999999999999!important;
@@ -5620,7 +5675,7 @@ span.reportDatem {
     border-top: solid 7px #fff;
   }
   #prtlPublications .publis{
-    margin-top: -10px!important;
+    margin-top: -150px!important;
   }
   #prtlPublicationsl .pdown{
     margin-top: 100px!important;
@@ -5674,8 +5729,11 @@ span.reportDatem {
   }
   .cntreports {
     margin-top: -1200px;
-    grid-template-columns: 434px !important;
+    grid-template-columns: 100% !important;
     justify-content: center;
+    width: 100%;
+  }
+  .cntreports .gr div {
     width: 100%;
   }
   .gdossier .cntdossier{
@@ -5781,7 +5839,7 @@ span.reportDatem {
   }
   #prtlReports .publis .publicacion {
     position: relative;
-    height: 235px!important;   
+    height: 255px!important;   
   }  
   .links-containerm .download-link{   
     position: absolute;
@@ -5815,7 +5873,7 @@ span.reportDatem {
     padding-right: 15px;
   }
   .reportDatemrm{
-    padding-top: 155px;
+    padding-top: 195px;
     display: block;
     padding-left: 10px!important;
     font-family: AvenirNext-Regular;
@@ -5957,6 +6015,101 @@ span.reportDatem {
     width:20px;
     margin-left: 15px;
     background: url(../images/mpmvd.png) no-repeat;
+  }
 
+  .OvalHReportM{
+    display: block!important;
+    position: absolute;
+    height: 34px;
+    width: 100%;
+    z-index: 9999999999999999999999;
+    background: url(../svg/OvalHReport.svg) no-repeat;
+    opacity: 1;
+    transform: rotate(180deg);
+    left: -25%;
+  }
+
+  .OvalHNew{
+    display: block!important;
+    position: absolute;
+    bottom: -21px;
+    height: 34px;
+    width: 100%;
+    z-index: 40;
+    background: url(../svg/OvalHReport.svg) no-repeat;
+    opacity: 0.14;
+    top:-10px;
+    left:0;
+    transform: rotate(180deg);
+  }
 }
 
+/*-----------*/
+
+.publi-descm{
+  display: none;
+}
+
+.links-container-m{
+  display: none;
+}
+#showreportaje .plantillaReportajes::after{
+  content: "";
+  position: absolute;
+  background: linear-gradient(-180deg, rgba(107,97,119,0.00) 0%, #101010 100%);
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.gdossier .cntdossier {
+  width: 100%!important;
+}
+.gdossier .cntdossier .mapdossier {
+  width: 100%!important;
+}
+.OvalHReport{
+  position: absolute; 
+  height: 34px;
+  width: 100%!important;
+  z-index: 40;
+  background: url(../svg/OvalHReport.svg) no-repeat;
+  opacity: 0.14;
+  top:363px;
+  left: 0; 
+}
+
+.OvalHNew{
+ display: none;
+}
+
+
+.OvalHReportM{
+  display: none;
+}
+
+#prtlPublicationsl .pdown .contpbl .publicacion::before, #prtlReports .contpbl .publicacion::before{
+    content: '';
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    width: 1px;
+    height: 93.5%;
+    background: none!important;
+  }
+
+
+  .plantillaReportajes .header-container .brush{
+    margin-top: 30px;   
+  }
+
+  @media (max-width: 709px) {
+    .header-search.header-playas .header-txt .brush {
+        margin-top: -15px !important;
+        margin-bottom: 120px;
+    }
+
+    .header-general.header-playas .header-txt .brush {
+        margin-top: -185px !important;
+    }
+  }

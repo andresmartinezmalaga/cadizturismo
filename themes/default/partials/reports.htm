@@ -29,7 +29,7 @@
 	{% if(reports[0]) %}
 		<div class="gr gr1">
 		{% if(reports[0]) %}			
-			<div class="rprtc1" style="background-image: url({{reports[0].viewBag.cover}});">
+			<div class="rprtc1" style="background-image: url({{reports[0].viewBag.cover|replace({' ':'%20'})}});">
 				<a href='{{preurl~"/"~lang~reports[0].viewBag.url}}'>
 					<div class="rprInfCont">
 						{% set dated = reports[0].viewBag.dateReportaje|split(' ')[0] %}
@@ -45,7 +45,7 @@
 		{% if(reports[1]) %}
 		<div class="rprtc2">
 			<a href='{{preurl~"/"~lang~reports[1].viewBag.url}}'>
-				<div class="rprtc2 rpart1" style="background-image: url({{reports[1].viewBag.cover}});">
+				<div class="rprtc2 rpart1" style="background-image: url({{reports[1].viewBag.cover|replace({' ':'%20'})}});">
 					<div class="rprInfCont">
 						{% set dated = reports[1].viewBag.dateReportaje|split(' ')[0] %}
 						{% set datef = dated|split('-') %}
@@ -53,6 +53,7 @@
 						<span class='reportTitle'>{{reports[1].viewBag.title}}</span>
 						<img src="{{preurl}}/storage/app/media/uploaded-files/templates/reportlineyellow.png" alt="">
 					</div>
+					<div class='OvalHReport'></div>
 				</div>
 				<div class="rprtc2 rpart2">
 					<div class="rprInfCont">
@@ -69,7 +70,7 @@
 		{% if(reports[2]) %}
 			<div class="rprtc3">
 				<a href='{{preurl~"/"~lang~reports[2].viewBag.url}}'>
-					<div class="rprtc3 rpart1" style="background-image: url({{reports[2].viewBag.cover}});">
+					<div class="rprtc3 rpart1" style="background-image: url({{reports[2].viewBag.cover|replace({' ':'%20'})}});">
 						<div class="rprInfCont">
 							{% set dated = reports[2].viewBag.dateReportaje|split(' ')[0] %}
 							{% set datef = dated|split('-') %}
@@ -77,6 +78,7 @@
 							<span class='reportTitle'>{{reports[2].viewBag.title}}</span>
 							<img src="{{preurl}}/storage/app/media/uploaded-files/templates/reportlineyellow.png" alt="">
 						</div>
+						<div class='OvalHReport'></div>
 					</div>
 					<div class="rprtc3 rpart2">
 						<div class="rprInfCont">
@@ -87,7 +89,7 @@
 			</div>
 		{% endif %}
 		{% if(reports[3]) %}
-			<div class="rprtc4" style="background-image: url({{reports[3].viewBag.cover}});">
+			<div class="rprtc4" style="background-image: url({{reports[3].viewBag.cover|replace({' ':'%20'})}});">
 				<a href='{{preurl~"/"~lang~reports[3].viewBag.url}}'>
 					<div class="rprInfCont">
 						{% set dated = reports[3].viewBag.dateReportaje|split(' ')[0] %}
@@ -114,7 +116,7 @@
 		<div class="rprtc6">
 			{% if(reports[4]) %}
 			<a href='{{preurl~"/"~lang~reports[4].viewBag.url}}'>
-				<div class="rprtc6 rpart1" style="background-image: url({{reports[4].viewBag.cover}});">
+				<div class="rprtc6 rpart1" style="background-image: url({{reports[4].viewBag.cover|replace({' ':'%20'})}});">
 					<div class="rprInfCont">
 						{% set dated = reports[4].viewBag.dateReportaje|split(' ')[0] %}
 						{% set datef = dated|split('-') %}
@@ -122,7 +124,9 @@
 						<span class='reportTitle'>{{reports[4].viewBag.title}}</span>
 						<img src="{{preurl}}/storage/app/media/uploaded-files/templates/reportlineyellow.png" alt="">
 					</div>
+					<div class='OvalHReport'></div>
 				</div>
+
 				<div class="rprtc6 rpart2">
 					<div class="rprInfCont">
 						<span class='reportDescrptn'>{{reports[4].viewBag.descrptn|length > 243 ? reports[4].viewBag.descrptn|slice(0, 244) ~ '...' : reports[4].viewBag.descrptn}}</span>
@@ -131,7 +135,10 @@
 			</a>
 			{% endif %}
 			<div class="rprtc6 rpart3">
-				<a href='{{preurl~"/"~lang}}/todos-los-reportajes'>{{'Todos los reportajes'|_}}<img src="{{preurl}}/storage/app/media/uploaded-files/templates/link-icono.svg" alt=""></a>
+				<a href='{{preurl~"/"~lang}}/todos-los-reportajes'>{{'Todos los reportajes'|_}}
+					<img class="imgnf" src="{{preurl}}/plugins/rainlab/pages/assets/svg/Stroke1c.svg" alt="">
+					<img class="imghf" src="{{preurl}}/plugins/rainlab/pages/assets/svg/Stroke1h.svg" alt="">
+				</a>
 			</div>			
 		</div>		
 	</div>	

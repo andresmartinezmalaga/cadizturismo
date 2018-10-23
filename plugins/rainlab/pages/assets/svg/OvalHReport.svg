@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="330px" height="72px" viewBox="0 0 330 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Oval 4 Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-67.4%" y="-7.7%" width="234.7%" height="115.4%" filterUnits="objectBoundingBox" id="filter-1">
+            <feGaussianBlur stdDeviation="7.63392857" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="Sala-prensa" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.140401786">
+        <g id="Sala-prensa-estado" transform="translate(-918.000000, -1480.000000)" fill="#000000">
+            <ellipse id="Oval-4-Copy" filter="url(#filter-1)" transform="translate(1083.000000, 1516.000000) rotate(-270.000000) translate(-1083.000000, -1516.000000) " cx="1083" cy="1516" rx="17" ry="149"></ellipse>
+        </g>
+    </g>
+</svg>

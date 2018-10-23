@@ -40,9 +40,9 @@ code = "redes-sociales"
         $this['startPag'] = 1;
         $this['numberReg'] = 6;
 
-        $this['numPag'] = ceil($this->staticApp->publicacionesFindCount($this->param('search'),$this->param('type'),$this->param('interests'),$this->param('lang'))/$this['numberReg']);
+        $this['numPag'] = ceil($this->staticApp->publicacionesFindC($this->param('search'),$this->param('type'),$this->param('interests'),$this->param('lang'))/$this['numberReg']);
         $this['publications'] = $this->staticApp->publicacionesFindPag($this->param('search'),$this->param('type'),$this->param('interests'),$this->param('lang'),$this['startPag'],$this['numberReg']);
-        $this['pubcount'] = $this->staticApp->publicacionesFindCount($this->param('search'),$this->param('type'),$this->param('interests'),$this->param('lang'));
+        $this['pubcount'] = $this->staticApp->publicacionesFindC($this->param('search'),$this->param('type'),$this->param('interests'),$this->param('lang'));
 
         $this['ptitle'] = 'Cádiz | Publicaciones';
         $this['metaTitle'] = 'Cádiz | Publicaciones';
@@ -68,9 +68,9 @@ code = "redes-sociales"
     $this['startPag'] = 1;
     $this['numberReg'] = 6;
 
-    $this['numPag'] = ceil($this->staticApp->publicacionesFindCount($search,$type,$interests,$lang)/$this['numberReg']);
+    $this['numPag'] = ceil($this->staticApp->publicacionesFindC($search,$type,$interests,$lang)/$this['numberReg']);
     $this['publications'] = $this->staticApp->publicacionesFindPag($search,$type,$interests,$lang,$this['startPag'],$this['numberReg']);
-    $this['pubcount'] = $this->staticApp->publicacionesFindCount($search,$type,$interests,$this->param('lang'));
+    $this['pubcount'] = $this->staticApp->publicacionesFindC($search,$type,$interests,$lang);
 
     return [
         '#prtlPublicationsl' => $this->renderPartial('publications'),
@@ -84,9 +84,9 @@ code = "redes-sociales"
     $this['startPag'] = $_POST['ipag'];
     $this['numberReg'] = 6;
 
-    $this['numPag'] = ceil($this->staticApp->publicacionesFindCount($this->param('search'),$this->param('type'),$this->param('interests'),$this->param('lang'))/$this['numberReg']);
+    $this['numPag'] = ceil($this->staticApp->publicacionesFindC($this->param('search'),$this->param('type'),$this->param('interests'),$this->param('lang'))/$this['numberReg']);
     $this['publications'] = $this->staticApp->publicacionesFindPag($this->param('search'),$this->param('type'),$this->param('interests'),$this->param('lang'),$this['startPag'],$this['numberReg']);
-    $this['pubcount'] = $this->staticApp->publicacionesFindCount($this->param('search'),$this->param('type'),$this->param('interests'),$this->param('lang'));
+    $this['pubcount'] = $this->staticApp->publicacionesFindC($this->param('search'),$this->param('type'),$this->param('interests'),$this->param('lang'));
 
     return [
         '#prtlPublicationsl' => $this->renderPartial('publications'),

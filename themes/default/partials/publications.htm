@@ -17,9 +17,9 @@
   
 <div class="search-title-container">
   {% if publications|length > 1 %}
-    <p class="title-search"> {{ 'Hemos encontrado'|_ }} {{publications|length}} {{ 'publicaciones que se adapta tus criterios de búsqueda.'|_ }}</p>
+    <p class="title-search"> {{ 'Hemos encontrado'|_ }} {{pubcount}} {{ 'publicaciones que se adapta tus criterios de búsqueda.'|_ }}</p>
   {% else %}
-    <p class="title-search"> {{ 'Hemos encontrado'|_ }} {{publications|length}} {{ 'publicación que se adapta tus criterios de búsqueda.'|_ }}</p>
+    <p class="title-search"> {{ 'Hemos encontrado'|_ }} {{pubcount}} {{ 'publicación que se adapta tus criterios de búsqueda.'|_ }}</p>
   {% endif %}
 </div>
 
@@ -55,7 +55,17 @@
             <span>{{publication.viewBag.idiomas|replace({ ',': ', '})}}</span>
           </div>
        
-        <p class="publi-desc">{{publication.viewBag.descrptn}}</p>
+        <p class="publi-desc publi-descn">{{publication.viewBag.descrptn}}</p>
+        <p class="publi-desc publi-descm">{{publication.viewBag.descrptn|length > 90 ? publication.viewBag.descrptn|slice(0, 91) ~ '...' : publication.viewBag.descrptn}}</p>
+
+        <div class="links-container-m">                  
+          {% if publication.viewBag.urlExternaZip !='' %}
+            <a class="download-link" target="_blank" href="{{publication.viewBag.urlExternaZip}}">{{'Descargar'|_}}</a>
+          {% endif %}
+           {% if publication.viewBag.urlExternaVideo !='' %}
+            <a class="see-link" target="_blank" href="{{publication.viewBag.urlExternaVideo}}">{{'Ver'|_}} {{publication.viewBag.type|_}}</a>
+          {% endif %}
+        </div>
        
           
       </div>
