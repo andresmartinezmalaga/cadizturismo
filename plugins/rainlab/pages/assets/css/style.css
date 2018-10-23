@@ -6026,7 +6026,8 @@ span.reportDatem {
     background: url(../svg/OvalHReport.svg) no-repeat;
     opacity: 1;
     transform: rotate(180deg);
-    left: -25%;
+    left: 0px;
+    top:45px;
   }
 
   .OvalHNew{
@@ -6041,6 +6042,9 @@ span.reportDatem {
     top:-10px;
     left:0;
     transform: rotate(180deg);
+  }
+  .publi-descm{
+    display: block!important;
   }
 }
 
