@@ -6092,7 +6092,7 @@ span.reportDatem {
   display: none;
 }
 
-#prtlPublicationsl .pdown .contpbl .publicacion::before, #prtlPublicationsl .contpbl .publicacion::before, #prtlReports .contpbl .publicacion::before{
+#prtlPublicationsl .pdown .contpbl .publicacion::before, #prtlPublications .publis .contpbl .publicacion::before, #prtlReports .contpbl .publicacion::before{
     content: '';
     position: absolute;
     z-index: 10;
