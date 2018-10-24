@@ -186,8 +186,8 @@ var ams = function(){
              pt.find('.plantillaReportajes').length > 0) {
 
             if(btnwsya.length<1){
-                toolbar.append('<span data-toggle="tooltip" data-placement="bottom" data-delay="200" title="Título + descripción" class="btwtitleDesc custom-wysiwyg"> <img src="/storage/app/media/uploaded-files/templates/parrafo.svg"/></span>');
-                toolbar.append('<span data-toggle="tooltip" data-placement="bottom" data-delay="200" title="Parrafo" class="btwtitleParag custom-wysiwyg"> <img src="/storage/app/media/uploaded-files/templates/parrafo.svg"/></span>');
+                toolbar.append('<span data-toggle="tooltip" data-placement="bottom" data-delay="200" title="Título + descripción" class="btwtitleDesc custom-wysiwyg"> <img src="/storage/app/media/uploaded-files/templates/titulo.svg"/></span>');
+                toolbar.append('<span data-toggle="tooltip" data-placement="bottom" data-delay="200" title="Párrafo" class="btwtitleParag custom-wysiwyg"> <img src="/storage/app/media/uploaded-files/templates/parrafo.svg"/></span>');
                 toolbar.append('<span data-toggle="tooltip" data-placement="bottom" data-delay="200" title="Sección destacada" class="btwdestacado custom-wysiwyg"> <img src="/storage/app/media/uploaded-files/templates/destacado.svg"/></span>');
                 toolbar.append('<span data-toggle="tooltip" data-placement="bottom" data-delay="200" title="Imagen" class="btwfullImage custom-wysiwyg"> <img src="/storage/app/media/uploaded-files/templates/galeria1.svg"/></span>');
                 toolbar.append('<span data-toggle="tooltip" data-placement="bottom" data-delay="200" title="Galería 2" class="btwtwoImages custom-wysiwyg"> <img src="/storage/app/media/uploaded-files/templates/galeriados.svg"/></span>');
