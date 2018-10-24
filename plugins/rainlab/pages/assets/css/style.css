@@ -6046,10 +6046,29 @@ span.reportDatem {
   .publi-descm{
     display: block!important;
   }
-    #prtlReports .publicacion .links-containerm .download-link {
-      font-size: 14px!important;
-      padding-top: 15px;
-    }
+  #prtlReports .publicacion .links-containerm .download-link {
+    font-size: 14px!important;
+    padding-top: 15px;
+  }  
+  .contactdossier .contac .title{
+     padding-right: 40px;
+  }
+
+  .bimage .reportDate{
+    font-size: 16px;
+  }
+
+  .bimage .publi-title{
+    padding-right: 35px;
+  }
+
+  .bimage .imgrpmv{
+    padding-bottom: 10px;
+  }
+
+  .publi-descm{
+    padding-top: 5px;
+  }
 
 }
 
