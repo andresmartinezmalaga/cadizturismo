@@ -1723,6 +1723,10 @@ class StaticApp extends ComponentBase
 
         $lang = strtoupper($lang);
 
+        if($lang == 'ESPANOL'){
+            $lang = 'ESPAÑOL';
+        }   
+
         if($lang == 'ALEMAN'){
             $lang = 'ALEMÁN';
         }   
