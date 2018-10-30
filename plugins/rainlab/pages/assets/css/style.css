@@ -5401,7 +5401,7 @@ span.reportDatem {
   }
 
   .header-publications .brushTop{  
-    margin-top: -250px!important;
+    /*margin-top: -250px!important;*/
   }
   #prtlPublications .publis .publicacion .publi-title{
     font-size: 30px;
