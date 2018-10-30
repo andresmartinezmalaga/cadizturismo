@@ -5353,11 +5353,21 @@ span.reportDatem {
 /*TABLET*/
 @media (max-width: 1350px) and (min-width: 726px) {
   .header-publications #prtlSearch {
-    margin-top: 300px!important;
+    margin-top: 0px!important;
   }
+
+   .header-publications .brush .brushTop {
+    margin-top: 100px!important;
+  }
+
+  
   
    .header-publications-min #prtlSearch {
-    margin-top: 330px!important;
+    margin-top: 0px!important;
+  }
+
+   .header-publications-min .brush .brushTop {
+    margin-top: 60px!important;
   }
 
   /*PUBLICACIONES*/
