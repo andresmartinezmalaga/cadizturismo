@@ -5587,7 +5587,7 @@ span.reportDatem {
     margin-top: 100px!important;
   }
 
-   .header-publications .brush {
+   .header-publications .header-txt .brush {
     margin-top: 94px!important;
     margin-bottom: 20px;
   }
@@ -5596,7 +5596,7 @@ span.reportDatem {
     margin-top: 100px!important;
   }
 
-   .header-publications-min .brush {
+   .header-publications-min .header-txt .brush {
     margin-top: 94px!important;
     margin-bottom: 20px;
   }
@@ -5646,7 +5646,7 @@ span.reportDatem {
       margin-bottom: 50px!important;
   }
   .header-publications .header-txt .brush, .header-publications-min .header-txt .brush{
-      margin-top: -130px!important;
+      /*margin-top: -130px!important;*/
       height: 20px!important;
       width: 200px!important;
   }
