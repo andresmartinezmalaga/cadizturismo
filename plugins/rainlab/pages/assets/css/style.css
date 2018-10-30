@@ -6169,3 +6169,8 @@ span.reportDatem {
     z-index: 1;
     top:0;
   }
+
+  /********************************************************/
+  .close-modal{
+    cursor: pointer;
+  }
