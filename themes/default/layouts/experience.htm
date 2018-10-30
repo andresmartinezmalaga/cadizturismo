@@ -78,8 +78,8 @@ code = "redes-sociales"
         }
 
         $this['experience'] = $this->staticApp->experienceFindByUrl($this->page->url);
-        $intrs =  $this->staticApp->getInteresesById(str_slug($this['experience'][0]['interest'],'-'));
-        //$intrs =  $this->staticApp->getInteresesById(intval($this['experience'][0]['interest']));
+        //$intrs =  $this->staticApp->getInteresesById(str_slug($this['experience'][0]['interest'],'-'));
+        $intrs =  $this->staticApp->getInteresesById(intval($this['experience'][0]['interest']));
 
         if(isset($intrs[0])){
          $this['intrs1'] = $intrs[0];
@@ -88,8 +88,8 @@ code = "redes-sociales"
         $this['intrs2'] = $intrs[1];
         }
 
-        $this['stvisit'] = $this->staticApp->getTvisitaById(str_slug($this['experience'][0]['tvisit'].'-'));
-        //$this['stvisit'] = $this->staticApp->getTvisitaById(intval($this['experience'][0]['tvisit']));
+        //$this['stvisit'] = $this->staticApp->getTvisitaById(str_slug($this['experience'][0]['tvisit'].'-'));
+        $this['stvisit'] = $this->staticApp->getTvisitaById(intval($this['experience'][0]['tvisit']));
     }
 
     function onMailExperience(){
