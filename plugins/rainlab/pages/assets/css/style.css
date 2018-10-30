@@ -1871,7 +1871,7 @@ html, body {
     top: 55px;
   }
   .shr img{
-    opacity: 0.7;
+    opacity: 0.4;
   }
   .contpbl .bimage{
     height: 434px;
@@ -4062,7 +4062,7 @@ p > br {
 }
 
 
-#prtlPublications .links-container{
+#prtlPublications .links-container, #prtlPublicationsl .links-container{
   height: 100%;
   background-image: linear-gradient(-180deg, rgba(107,97,119,0.00) 0%, #101010 100%);
 }
@@ -5519,7 +5519,8 @@ span.reportDatem {
     height: 300px; 
     font-size: 64px;
     line-height: 65px;
-    color:black;
+    /*color:black;*/
+    color: #4A4A4A;
     padding-left: 80px;
    }
    .cntreports{
@@ -5552,10 +5553,34 @@ span.reportDatem {
   .plantillaReportajes .header-container .brush{
     margin-top: 30px;   
   }
+
+  #prtlReports .bimage::after{
+  content: "";
+  position: absolute;
+  margin-top: -58px;
+  background: linear-gradient(-180deg, rgba(107,97,119,0.00) 0%, #101010 100%);
+  height: 434px;
+  width:306px!important;
+  z-index: -1;
+  }
 }
 
 /*PHONE*/
 @media (max-width: 725px) {
+  #prtlPublicationsl .publis img.par, #prtlPublications .publis img.par{
+    margin-left: -17px!important;
+  }
+
+   #prtlReports .bimage::after{
+      content: "";
+      position: absolute;
+      margin-top: -305px!important;
+      margin-left: -50px;
+      background: linear-gradient(-180deg, rgba(107,97,119,0.00) 0%, #101010 100%);
+      height: 373px!important;
+      width:325px!important;
+      z-index: -1;
+    }
    #prtlPublicationsl .publi-descn, #prtlPublications .publi-descn{
     display: none;
   }
@@ -5661,9 +5686,20 @@ span.reportDatem {
   .contpbl .publicacion span{ 
     margin-right: 15px!important;  
   }
-  .publis span{
+   #prtlPublications .publis, #prtlPublicationsl .publis span{
     margin-left: 5px!important;
   }
+   #prtlPublications .contplangs,  #prtlPublicationsl .contplangs{
+    margin-left: 5px!important; 
+  }
+  #prtlPublications .contplangs span, #prtlPublicationsl .contplangs span {
+    margin-left: 0px!important;
+  }
+
+   #prtlPublications .publi-icon, #prtlPublicationsl .publi-icon{
+    margin-left: -2px;
+   }
+
   .publi-desc {
     padding-left: 15px!important;
   }  
@@ -5708,7 +5744,8 @@ span.reportDatem {
     height: 300px; 
     font-size: 52px;
     line-height: 65px;
-    color:black;
+    /*color:black;*/
+    color: #4A4A4A;
     text-align: center;
     margin: 40px auto;
     margin-bottom: -100px;
@@ -6090,6 +6127,16 @@ span.reportDatem {
   z-index: -1;
 }
 
+#prtlReports .bimage::after{
+  content: "";
+  position: absolute;
+  margin-top: -58px;
+  background: linear-gradient(-180deg, rgba(107,97,119,0.00) 0%, #101010 100%);
+  height: 434px;
+  width: 286px;
+  z-index: -1;
+}
+
 .gdossier .cntdossier {
   width: 100%!important;
 }
@@ -6126,7 +6173,6 @@ span.reportDatem {
     height: 93.5%;
     background: none!important;
   }
-
 
   .plantillaReportajes .header-container .brush{
     margin-top: 30px;   
