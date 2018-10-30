@@ -5352,6 +5352,14 @@ span.reportDatem {
 
 /*TABLET*/
 @media (max-width: 1350px) and (min-width: 726px) {
+  .header-publications #prtlSearch {
+    margin-top: 300px!important;
+  }
+  
+   .header-publications-min #prtlSearch {
+    margin-top: 330px!important;
+  }
+
   /*PUBLICACIONES*/
   #search-publications{
     margin: 0 auto;
@@ -5686,7 +5694,7 @@ span.reportDatem {
   .contpbl .publicacion span{ 
     margin-right: 15px!important;  
   }
-   #prtlPublications .publis, #prtlPublicationsl .publis span{
+   #prtlPublications .publis span, #prtlPublicationsl .publis span{
     margin-left: 5px!important;
   }
    #prtlPublications .contplangs,  #prtlPublicationsl .contplangs{
@@ -6220,3 +6228,17 @@ span.reportDatem {
   .close-modal{
     cursor: pointer;
   }
+
+  .header-publications .con-encanto {
+    display: none!important;
+  }
+
+  .header-publications #prtlSearch {
+    margin-top: 200px;
+  }
+  
+   .header-publications-min #prtlSearch {
+    margin-top: 240px;
+  }
+
+  
