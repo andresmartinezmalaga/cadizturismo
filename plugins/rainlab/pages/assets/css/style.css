@@ -4053,6 +4053,23 @@ p > br {
 /* **************************************************************************** */
 /* **************************************************************************** */
 /* **************************************************************************** */
+
+.header-publications #prtlSearch {
+    margin-top: 0px!important;
+  }
+
+   .header-publications .brushTop {
+    margin-top: 100px!important;   
+  }
+    
+   .header-publications-min #prtlSearch {
+    margin-top: 0px!important;
+  }
+
+   .header-publications-min .brushTop {
+    margin-top: 60px!important;   
+  }
+
 .links-containerm{
   display: none;
 }
