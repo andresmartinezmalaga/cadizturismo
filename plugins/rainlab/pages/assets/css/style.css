@@ -5607,6 +5607,10 @@ span.reportDatem {
       margin-left: 0px!important;
      
   }
+
+  .header-publications-min h1 {
+     margin-top: 0px!important;
+  }
   .header-publications #prtlSearch {
     margin-top: 100px!important;
   }
