@@ -1338,7 +1338,7 @@ class StaticApp extends ComponentBase
     public function sendMailExperience($mail, $url) {
 
         $contactName ='Cadiz Turismo';
-        $sendContact ='noreply@cadizturismo.es';
+        $sendContact ='noreplyy@cadizturismo.es';
         $sendTo =  $mail;
 
         $experience = $this->experienceFindByUrl($url);
