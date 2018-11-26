@@ -1799,7 +1799,6 @@ class StaticApp extends ComponentBase
                 }
             }
         }
-
         if($search != 'todas-las-publicaciones'){
             $aSearchs = explode("_", $search);
             foreach ($aSearchs as $key => $value) {
@@ -1811,10 +1810,10 @@ class StaticApp extends ComponentBase
                 $forget = true;
                 foreach ($aSearchs as $search) {
                     if($forget == true){
-                        if(strpos($result->title, $search)!==false){                            
+                        if(strpos(str_slug($result->title), str_slug($search))!==false){                            
                             $forget = false;
                         }
-                        if(strpos($result->descrptn, $search)!==false){                            
+                        if(strpos(str_slug($result->descrptn), str_slug($search))!==false){                            
                             $forget = false;
                         }
                     }      
@@ -1823,8 +1822,7 @@ class StaticApp extends ComponentBase
                     $results->forget($key);
                 }
             }
-        }
-        
+        }        
         if(count($results)>0){
             $pagination = $results->slice((($pag-1)*$number),$number);
         } else {
@@ -1933,10 +1931,10 @@ class StaticApp extends ComponentBase
                 $forget = true;
                 foreach ($aSearchs as $search) {
                     if($forget == true){
-                        if(strpos($result->title, $search)!==false){                            
+                        if(strpos(str_slug($result->title),str_slug($search))!==false){                            
                             $forget = false;
                         }
-                        if(strpos($result->descrptn, $search)!==false){                            
+                        if(strpos(str_slug($result->descrptn), str_slug($search))!==false){                            
                             $forget = false;
                         }
                     }      
