@@ -4078,10 +4078,10 @@ p > br {
   transform: rotate(0deg);
 }
 
-
 #prtlPublications .links-container, #prtlPublicationsl .links-container{
   height: 100%;
-  background-image: linear-gradient(-180deg, rgba(107,97,119,0.00) 0%, #101010 100%);
+  /*background-image: linear-gradient(-180deg, rgba(107,97,119,0.00) 0%, #101010 100%);*/
+  background-image: linear-gradient(-180deg, rgba(107,97,119,0.00) 0%, rgba(16,16,16,0.70) 100%)
 }
 
   .header-publications h1{
