@@ -192,8 +192,9 @@
 <div class="mini-logo-container">
   <a href="{{url('/')}}/{{lang}}"><img src="{{preurl}}/storage/app/media/uploaded-files/templates/mini-logo.svg"></a>
 </div>
-<div class="language-container">
-  <!-- Añadir la clase 'active-lang' al enlace cuando esté activo el idioma correspondiente - de ejemplo está puesto en ESPAÑOL -->
+<!-- Quitar el style, cuando queramos mostrar todos los idiomas -->
+<div class="language-container" style="width:60px!important">
+  <!-- Añadir la clase 'active-lang' al enlace cuando esté activo el idioma correspondiente - de ejemplo está puesto en ESPAÑOL --> 
   <p class="languages">
     <a href="{{url('/')}}/en{{this.page.url}}" class="lang {{(lang=='en')?'active-lang':''}}">EN</a>
     <a class="separator separator-lang"> · </a>
