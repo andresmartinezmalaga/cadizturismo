@@ -731,7 +731,8 @@ class StaticApp extends ComponentBase
         $pagesList = Page::listInTheme($theme, false);
         $pages =  new \Illuminate\Support\Collection($pagesList);
 
-        $event = $pages->where("is_hidden",0)->where("url",$url)->values();
+        //$event = $pages->where("is_hidden",0)->where("url",$url)->values();
+        $event = $pages->where("url",$url)->values();
 
 
         $event[0]->date_start_pretty_num = (new DateTime($event[0]->date_start))->format('d.m.y');
@@ -1055,8 +1056,8 @@ class StaticApp extends ComponentBase
         $pagesList = Page::listInTheme($theme, false);
         $pages =  new \Illuminate\Support\Collection($pagesList);
 
-        $ruta = $pages->where("is_hidden",0)->where("url",$url)->values();
-
+        //$ruta = $pages->where("is_hidden",0)->where("url",$url)->values();
+        $ruta = $pages->where("url",$url)->values();
         return $ruta;
     }
 
@@ -1181,7 +1182,8 @@ class StaticApp extends ComponentBase
         $pagesList = Page::listInTheme($theme, false);
         $pages =  new \Illuminate\Support\Collection($pagesList);
 
-        $experience = $pages->where("is_hidden",0)->where("url",$url)->values();
+        //$experience = $pages->where("is_hidden",0)->where("url",$url)->values();
+        $experience = $pages->where("url",$url)->values();
 
         return $experience;
     }
