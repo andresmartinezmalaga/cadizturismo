@@ -5,10 +5,9 @@
 
   function onStart()
   {
-    if($this->staticApp->getHomeVars()){
+    if(isset($this->staticApp) && $this->staticApp->getHomeVars()){
       $this['home'] = $this->staticApp->getHomeVars();
-    }
-    
+    }    
   }
 
 ?>
