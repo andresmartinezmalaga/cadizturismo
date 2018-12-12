@@ -4,12 +4,10 @@
 
   function onStart()
   {
-
     $this['lang']=\App::getLocale();
     if($this['lang']==''){
       $this['lang']='es';
     }
-
     $this['langs'] = $this->staticApp->getNewsIdiomasOptions();
     $this['types'] = $this->staticApp->getPublicationsType();
     $this['interests'] = $this->staticApp->getPublicationsInterests();
@@ -58,14 +56,30 @@
                 <option value="todos-los-idiomas" selected=>{{'Todos'|_ }}</option>
               </select>
               <span class="select-title">{{ 'IDIOMAS'|_ }}</span>
-            </div>
-        </div>
-
-        
+            </div>            
+        </div>        
         <div class="button-container">
           <input id="" type="submit" value="{{ 'Encontrar publicaciones'|_ }}">
         </div>
-     
+    </form>    
+  </div> 
+</div>
+
+<div id="modal-pub"> <!-- data-iziModal-fullscreen="true"  data-iziModal-title="Welcome"  data-iziModal-subtitle="Subtitle"  data-iziModal-icon="icon-home" -->
+  <!-- Modal content -->
+  <div class="modal-container">
+    <img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/pubdwl.svg">
+    <img id="close-modal-pub" data-izimodal-close="#modal-pub" class="close-modal" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/close-modal.svg">
+    <p id="urlpubh"></p>
+    <h3>{{'¿Quieres descargar esta publicación?'|_}}</h3>
+    <p>{{'Esta publicaciónse encuentra en diferentes idiomas, selecciona el tuyo y llévate la publicación contigo.'|_}}</p>
+    <form id = "modalSendPub" class="">
+      <div id="contentpubslc">
+        <div id="langPub" class="" name="lang">Selecciona un idioma <img id='pubarr' src="{{url('/')}}/plugins/rainlab/pages/assets/svg/pubarrd.svg">
+        </div>
+        <div id="slctoptpub">
+        </div>
+      </div>
+      <a id="aPubHref" href="">Descargar publicación</a>
     </form>
-  </div>
 </div>
