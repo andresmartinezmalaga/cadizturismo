@@ -6295,4 +6295,181 @@ span.reportDatem {
     margin-top: 240px;
   }
 
-  
+  /***MODAL PUB*********/
+  /* Modal */
+#modal-pub {
+  max-width: 660px;
+  height: 745px;
+  display: none; }
+  #modal-pub .modal-container {
+    width: 90%;
+    height: 100%;
+    max-width: 340px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+    #modal-pub .modal-container img {
+      padding-top: 55px; }
+    #modal-pub .modal-container h3 {
+      text-align: center;
+      font-family: 'AvenirNext-DemiBold', sans-serif;
+      color: #4A4A4A;
+      font-size: 30px;
+      line-height: 35px;
+      margin-top: 50px; }
+    #modal-pub .modal-container p {
+      color: #9B9B9B;
+      font-size: 16px;
+      line-height: 22px;
+      text-align: center;
+      margin-bottom: 30px; }
+    #modal-pub .modal-container form {
+      width: 100%;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      flex-direction: column; }
+      #modal-pub .modal-container form input {
+        width: 100%;
+        height: 57px; }
+       #modal-pub .modal-container form select {
+        width: 100%;
+        height: 57px; }
+      #modal-pub .modal-container form input[type="email"] {
+        background-color: rgba(206, 206, 206, 0.3);
+        color: #9B9B9B;
+        font-size: 16px;
+        padding-left: 20px;
+        box-shadow: none;
+        border: none;
+        border-radius: 4px;
+        margin-bottom: 20px; }
+        #modal-pub .modal-container form input[type="email"]:focus, #modal-pub .modal-container form input[type="email"]:active {
+          outline: none; }
+      #modal-pub .modal-container form input[type="submit"] {
+        background-color: #F5A623;
+        font-family: 'AvenirNext-DemiBold', sans-serif;
+        color: white;
+        font-size: 16px;
+        box-shadow: none;
+        border: none;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+        margin-bottom: 70px; }
+        #modal-pub .modal-container form input[type="submit"]:focus, #modal-pub .modal-container form input[type="submit"]:active, #modal-pub .modal-container form input[type="submit"]:hover {
+          outline: none;
+          background-color: #D0860C; }
+    #modal-pub .modal-container a {
+      color: #F5A623;
+      font-size: 14px;
+      margin-bottom: 190px; }
+      #modal-pub .modal-container a:focus, #modal-pub .modal-container a:active, #modal-pub .modal-container a:hover {
+        outline: none;
+        color: #D0860C;}
+
+         #modal-pub h3{
+          margin-bottom: 33px;
+         }
+
+  #urlpubh{
+    display: none;
+  }
+
+  #aPubHref{
+    background-color: #F5A623;
+    font-family: 'AvenirNext-DemiBold', sans-serif;
+    color: white!important;
+    font-size: 16px!important;
+    box-shadow: none;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 70px;
+    width: 100%;
+    height: 57px;
+    cursor: pointer;
+    align-items: flex-start;
+    text-align: center;
+    padding-top: 18px;
+    text-decoration: none;
+  }
+
+  #aPubHref:hover{
+    background-color: #D0860C;
+  }
+
+  #contentpubslc{
+    position: relative;
+  }
+  #langPub, #slctoptpub{
+    cursor: pointer;
+    border:none!important;
+    background-color: #F4F4F4!important;
+    color:#9B9B9B!important;
+    font-size: 16px!important;
+    
+    -webkit-appearance: none;
+    -moz-appearance: none;    
+    text-overflow: '';
+    
+  }
+   #langPub{
+   height: 57px;
+    padding: 15px;
+    
+  }
+
+ #langPub:focus{
+  outline: none;
+ }
+  #langPub option{
+    display: none;
+  }
+
+  #slctoptpub{
+   display: none;
+   position: absolute;
+   width: 100%;
+   max-height: 190px;
+   overflow: scroll;
+  }
+  #slctoptpub span{
+    cursor: pointer;
+    display: block;
+    height: 38px;
+    color: #9B9B9B;
+    padding: 15px;
+    padding-top: 10px;
+    padding-bottom: 13px;
+    text-indent: 0px!important;
+  }
+
+  #slctoptpub span:hover{   
+    display: block;
+    height: 38px;
+    color: #9B9B9B;
+    background-color: #CECECE;
+  }
+ 
+  .optmsl, #langPub{
+     text-transform: lowercase;
+  }
+  .optmsl:first-letter, #langPub:first-letter{
+    text-transform: capitalize;
+  }
+
+  #pubarr{
+    padding-top: 0px!important;
+    position: absolute;
+    right: 15px;
+    top: 23px;
+
+  }
