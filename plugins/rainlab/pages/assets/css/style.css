@@ -1912,6 +1912,7 @@ html, body {
     color: white;
     opacity: 0.6;
     text-decoration: none;
+    margin-top: -15px;
    }
 
    .publis .see-link:hover{
