@@ -92,3 +92,74 @@ $("span.download").click(function(){
 
    $("#modal-exp").iziModal();
    $("#modal-success").iziModal();
+   $("#modal-pub").iziModal();
+
+  // Click Donwload Publication
+  $(".download-link-pub").click(function(e){
+      e.preventDefault();
+      var datapub = $(e.target).attr('href').split("-#@-");
+      // Url
+      var purlpub =  datapub[0].split('.');
+      var posExt = purlpub.length-1;      
+      var urlpubExt = datapub[0].split('.')[posExt];
+      var urlpub =  datapub[0].split('.'+urlpubExt)[0];
+      // Langs
+      var ilangspub = datapub[1].split(',');
+      var plangspub = datapub[1];
+      var langspub = plangspub.replace(/Á'/g, 'A');
+      var langspub = langspub.replace(/Á/g, 'A');
+      var langspub = langspub.replace(/É/g, 'E');
+      var langspub = langspub.replace(/Í/g, 'I');
+      var langspub = langspub.replace(/Ó/g, 'O');
+      var langspub = langspub.replace(/Ú/g, 'U');
+      var langspub = langspub.replace(/Ñ/g, 'N');
+      var flangspub = langspub.split(',');
+      // Final Url
+      var urlpub = urlpub+'-'+flangspub[0].toString().toLowerCase()+'.'+urlpubExt;
+      $("#slctoptpub").html("");  
+      // Create Options
+      for (var i = 0; i < flangspub.length; i++) {             
+          elementspn = $("#slctoptpub").append("<span class='optmsl' value='"+flangspub[i].toString().toLowerCase()+"'>"+ilangspub[i]+"</span>");         
+          $(elementspn).on('click', function(e) {            
+            slcopt(e);
+          })     
+      }      
+      // Insert Final Url At Hiden Html     
+      $("#urlpubh").html(urlpub);
+      $("#aPubHref").attr('href',urlpub);      
+      // Open Modal
+      $("#modal-pub").show(); 
+  })
+
+  // Change Donwload Lang Publication 
+  function slcopt(e) { 
+      var htmlurlpub = $("#urlpubh").html();
+      var preurlpub = htmlurlpub.split('-');
+      var posPreExt1 = preurlpub.length-1; 
+      var preExt1 = preurlpub[posPreExt1];
+      var surlpub = htmlurlpub.split('-'+preExt1)[0];
+      var urlpubExt = preExt1.split('.')[1];
+      var urlpub = surlpub+'-'+$(e.target).attr('value')+'.'+urlpubExt; 
+      $("#urlpubh").html(urlpub); 
+      $("#aPubHref").attr('href',urlpub); 
+      $("#slctoptpub").hide(); 
+      $("#langPub").html($(e.target).html()+"<img id='pubarr' src='http://localhost:8888/cadizturismo/plugins/rainlab/pages/assets/svg/pubarrd.svg'>");
+  };
+
+  // Close Publication Modal
+  $("#close-modal-pub").click(function(e){   
+      $("#modal-pub").hide();
+      $("#slctoptpub").hide();
+      $("#langPub").html("Selecciona un idioma <img id='pubarr' src='http://localhost:8888/cadizturismo/plugins/rainlab/pages/assets/svg/pubarrd.svg'>");
+  })
+
+  // Click On Select
+  $("#langPub").click(function(e){    
+     if($('#slctoptpub').is(':hidden')){
+      $("#slctoptpub").show();
+      $("#pubarr").attr('src','http://localhost:8888/cadizturismo/plugins/rainlab/pages/assets/svg/pubarru.svg');
+    } else {
+      $("#slctoptpub").hide();
+      $("#pubarr").attr('src','http://localhost:8888/cadizturismo/plugins/rainlab/pages/assets/svg/pubarrd.svg');
+    }
+  })
