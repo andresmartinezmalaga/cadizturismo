@@ -109,8 +109,10 @@ code = "redes-sociales"
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+ 
 
     <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/bootstrap/3/css/bootstrap.css" />
+       <link rel="stylesheet" href="{{url('/')}}/plugins/rainlab/pages/assets/iziModal/css/iziModal.css"/>
     <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
 
     <link rel="stylesheet" href="{{url('/')}}/plugins/rainlab/pages/assets/css/style-comarcas.css"/>
@@ -155,6 +157,27 @@ code = "redes-sociales"
 </div>
 
  {% partial 'site/footer' %}
+
+ <div id="modal-pub"> <!-- data-iziModal-fullscreen="true"  data-iziModal-title="Welcome"  data-iziModal-subtitle="Subtitle"  data-iziModal-icon="icon-home" -->
+        <!-- Modal content -->
+        <div class="modal-container">
+            <img src="{{url('/')}}/plugins/rainlab/pages/assets/svg/pubdwl.svg">
+            <img id="close-modal-pub" data-izimodal-close="#modal-pub" class="close-modal" src="{{url('/')}}/plugins/rainlab/pages/assets/svg/close-modal.svg">
+            <p id="urlpubh"></p>
+            <h3>{{'¿Quieres descargar esta publicación?'|_}}</h3>
+            <p>{{'Esta publicación se encuentra en diferentes idiomas, selecciona el tuyo y llévate la publicación contigo.'|_}}</p>
+            <form id = "modalSendPub" class="">
+              <div id="contentpubslc">
+                <img id='pubicon' src="{{url('/')}}/plugins/rainlab/pages/assets/svg/pubicon.svg">
+                <div id="langPub" name="lang"> Selecciona un idioma <img id='pubarr' src="{{url('/')}}/plugins/rainlab/pages/assets/svg/pubarrd.svg">
+                </div>
+                <div id="slctoptpub">
+                </div>
+              </div>
+              <a id="aPubHref" class="pubsearcha" href="">Descargar publicación</a>
+            </form>
+        </div> 
+    </div> 
 
  <!-- SCRIPTS -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
