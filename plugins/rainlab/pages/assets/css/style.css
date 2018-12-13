@@ -6401,14 +6401,18 @@ span.reportDatem {
     text-align: center;
     padding-top: 18px;
     text-decoration: none;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
   }
 
   #aPubHref:hover{
-    background-color: #D0860C;
+    background-color: #D0860C;    
   }
 
   #contentpubslc{
-    position: relative;
+    position: relative;   
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
   }
   #langPub, #slctoptpub{
     cursor: pointer;
@@ -6422,17 +6426,19 @@ span.reportDatem {
     text-overflow: '';
     
   }
-   #langPub{
+  #langPub{
    height: 57px;
-    padding: 15px;
-    
+   padding: 15px;
+   border-top-right-radius: 4px;
+   border-top-left-radius: 4px; 
+   padding-left: 60px!important;   
   }
 
  #langPub:focus{
   outline: none;
  }
   #langPub option{
-    display: none;
+    display: none;    
   }
 
   #slctoptpub{
@@ -6471,6 +6477,20 @@ span.reportDatem {
     padding-top: 0px!important;
     position: absolute;
     right: 15px;
-    top: 23px;
+    top: 22px;
 
   }
+
+  #pubicon{
+    padding-top: 0px!important;
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    margin-right: 200px;
+  }
+
+  .pubsearcha{
+    margin-bottom: 120px!important;
+  }
+
+
