@@ -1501,7 +1501,6 @@
 $("#modal-pub").iziModal();
 // Click Donwload Publication
   $(".download-link-pub").click(function(e){
-   
       e.preventDefault();
       var datapub = $(e.target).attr('href').split("-#@-");
       // Url
