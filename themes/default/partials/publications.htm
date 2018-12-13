@@ -28,11 +28,15 @@
     <div class='contpbl'>
       <div class="bimage" style="background-image:url({{publication.viewBag.urlimage}}); background-repeat: no-repeat; background-size: cover;">
         <div class="links-container">                  
-          {% if publication.viewBag.urlExternaZip !='' %}
-            <a class="download-link" target="_blank" href="{{publication.viewBag.urlExternaZip}}">{{'Descargar'|_}}</a>
+          {% if publication.viewBag.urlExternaVideo !='' %}
+            <a class="download-link" target="_blank" href="{{publication.viewBag.urlExternaVideo}}">{{'Ver'|_}} {{publication.viewBag.type|_}} </a>
+          {% else %}
+            <a class="download-link" style="visibility:hidden">{{'Ver'|_}} {{publication.viewBag.type|_}} </a>
           {% endif %}
-           {% if publication.viewBag.urlExternaVideo !='' %}
-            <a class="see-link" target="_blank" href="{{publication.viewBag.urlExternaVideo}}">{{'Ver'|_}} {{publication.viewBag.type|_}}</a>
+          {% if publication.viewBag.urlExternaZip !='' %}
+
+            <a class="see-link download-link-pub" style="margin-top: 10px;" target="_blank" href="{{publication.viewBag.urlExternaZip}}-#@-{{publication.viewBag.idiomas}}">{{'Descargar'|_}}</a>
+            <!--<a class="download-link" target="_blank" data-izimodal-title="{{publication.viewBag.urlExternaZip}}" data-izimodal-open="#modal-pub">{{'Descargar'|_}}-->
           {% endif %}
         </div>
       </div>      
@@ -64,11 +68,15 @@
         <p class="publi-desc publi-descm">{{publication.viewBag.descrptn|length > 90 ? publication.viewBag.descrptn|slice(0, 91) ~ '...' : publication.viewBag.descrptn}}</p>
 
         <div class="links-container-m">                  
-          {% if publication.viewBag.urlExternaZip !='' %}
-            <a class="download-link" target="_blank" href="{{publication.viewBag.urlExternaZip}}">{{'Descargar'|_}}</a>
+          {% if publication.viewBag.urlExternaVideo !='' %}
+            <a class="download-link" target="_blank" href="{{publication.viewBag.urlExternaVideo}}">{{'Ver'|_}} {{publication.viewBag.type|_}} </a>
+          {% else %}
+            <a class="download-link" style="visibility:hidden">{{'Ver'|_}} {{publication.viewBag.type|_}} </a>
           {% endif %}
-           {% if publication.viewBag.urlExternaVideo !='' %}
-            <a class="see-link" target="_blank" href="{{publication.viewBag.urlExternaVideo}}">{{'Ver'|_}} {{publication.viewBag.type|_}}</a>
+          {% if publication.viewBag.urlExternaZip !='' %}
+
+            <a class="see-link download-link-pub" style="margin-top: 10px;" target="_blank" href="{{publication.viewBag.urlExternaZip}}-#@-{{publication.viewBag.idiomas}}">{{'Descargar'|_}}</a>
+            <!--<a class="download-link" target="_blank" data-izimodal-title="{{publication.viewBag.urlExternaZip}}" data-izimodal-open="#modal-pub">{{'Descargar'|_}}-->
           {% endif %}
         </div>
        
@@ -87,3 +95,8 @@
 
 
 {% endif %}
+<!-- SCRIPTS -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.full.min.js"></script>
+<script type="text/javascript" src="{{url('/')}}/plugins/rainlab/pages/assets/iziModal/js/iziModal.js"></script>
+<script type="text/javascript" src="{{url('/')}}/plugins/rainlab/pages/assets/js/style2.js"></script>
