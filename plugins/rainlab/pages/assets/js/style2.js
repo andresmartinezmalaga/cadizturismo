@@ -32,5 +32,6 @@
       $("#urlpubh").html(urlpub);
       $("#aPubHref").attr('href',urlpub);      
       // Open Modal
-      $("#modal-pub").show(); 
+      //$("#modal-pub").show(); 
+      $('#modal-pub').iziModal('open');
   })

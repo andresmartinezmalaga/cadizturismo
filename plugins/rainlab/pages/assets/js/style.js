@@ -128,7 +128,8 @@ $("span.download").click(function(){
       $("#urlpubh").html(urlpub);
       $("#aPubHref").attr('href',urlpub);      
       // Open Modal
-      $("#modal-pub").show(); 
+      //$("#modal-pub").show(); 
+      $('#modal-pub').iziModal('open');
   })
 
   // Change Donwload Lang Publication 
@@ -148,7 +149,7 @@ $("span.download").click(function(){
 
   // Close Publication Modal
   $("#close-modal-pub").click(function(e){   
-      $("#modal-pub").hide();
+      //$("#modal-pub").hide();
       $("#slctoptpub").hide();
       $("#langPub").html("Selecciona un idioma <img id='pubarr' src='http://localhost:8888/cadizturismo/plugins/rainlab/pages/assets/svg/pubarrd.svg'>");
   })
