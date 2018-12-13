@@ -21,10 +21,13 @@
       <div class="bimage" style="background-image:url({{publication.viewBag.urlimage}}); background-repeat: no-repeat; background-size: cover;">
         <div class="links-container">  
           {% if publication.viewBag.urlExternaVideo !='' %}
-            <a class="see-link" target="_blank" href="{{publication.viewBag.urlExternaVideo}}">{{'Ver'|_}} {{publication.viewBag.type|_}} </a>
+            <a class="download-link" target="_blank" href="{{publication.viewBag.urlExternaVideo}}">{{'Ver'|_}} {{publication.viewBag.type|_}} </a>
+          {% else %}
+            <a class="download-link" style="visibility:hidden">{{'Ver'|_}} {{publication.viewBag.type|_}} </a>
           {% endif %}
           {% if publication.viewBag.urlExternaZip !='' %}
-            <a class="download-link download-link-pub" target="_blank" href="{{publication.viewBag.urlExternaZip}}-#@-{{publication.viewBag.idiomas}}">{{'Descargar'|_}}</a>
+            <br>
+            <a class="see-link download-link-pub" target="_blank" href="{{publication.viewBag.urlExternaZip}}-#@-{{publication.viewBag.idiomas}}">{{'Descargar'|_}}</a>
             <!--<a class="download-link" target="_blank" data-izimodal-title="{{publication.viewBag.urlExternaZip}}" data-izimodal-open="#modal-pub">{{'Descargar'|_}}-->
           {% endif %}
           
@@ -58,10 +61,13 @@
 
         <div class="links-container-m">                  
           {% if publication.viewBag.urlExternaVideo !='' %}
-            <a class="see-link" target="_blank" href="{{publication.viewBag.urlExternaVideo}}">{{'Ver'|_}} {{publication.viewBag.type|_}}</a>
+            <a class="download-link" target="_blank" href="{{publication.viewBag.urlExternaVideo}}">{{'Ver'|_}} {{publication.viewBag.type|_}}</a>
+          {% else %}
+            <a class="download-link" style="visibility:hidden">{{'Ver'|_}} {{publication.viewBag.type|_}} </a>
           {% endif %}
           {% if publication.viewBag.urlExternaZip !='' %}
-          <a class="download-link download-link-pub" target="_blank" href="{{publication.viewBag.urlExternaZip}}-#@-{{publication.viewBag.idiomas}}">{{'Descargar'|_}}</a>
+          
+          <a class="see-link download-link-pub" target="_blank" href="{{publication.viewBag.urlExternaZip}}-#@-{{publication.viewBag.idiomas}}">{{'Descargar'|_}}</a>
            <!--<a class="download-link" target="_blank" name="{{publication.viewBag.urlExternaZip}}" data-izimodal-open="#modal-pub">{{'Descargar'|_}}-->
           {% endif %}
           
