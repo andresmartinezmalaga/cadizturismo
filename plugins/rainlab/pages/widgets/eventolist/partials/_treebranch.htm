@@ -24,8 +24,9 @@
                      $dt = ($pageObj->page->getViewBag()->property('date_start'));
                      $dtf = explode(' ', $dt);
                      $dtfp = explode('-', $dtf[0]);
-                     echo $dtfp[2].'.'.$dtfp[1].'.'.substr($dtfp[0],-2);
-
+                     if(isset($dtfp[2])){
+                         echo $dtfp[2].'.'.$dtfp[1].'.'.substr($dtfp[0],-2);
+                     }
                      } ?></span></p>
                    
                     <?php if ($pageObj->page->getViewBag()->property('is_hidden') == 1): ?>
