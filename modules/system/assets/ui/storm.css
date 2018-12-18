@@ -3073,3 +3073,15 @@ ul.autocomplete.dropdown-menu.inspector-autocomplete li a{padding:5px 12px;white
 .list-cell-name-municipality::first-letter{
   text-transform: capitalize!important;
 }
+
+/*sudo*/
+#select2-Form-field-Preference-locale-container, #select2-Form-field-Preference-timezone-container{
+    color:white!important;
+}
+
+
+#select2-Form-field-Preference-editor_theme-container, #select2-Form-field-Preference-editor_word_wrap-container, #select2-Form-field-Preference-editor_font_size-container, #select2-Form-field-Preference-editor_tab_size-container, #select2-Form-field-Preference-editor_code_folding-container, #select2-Form-field-Preference-editor_autocompletion-container{
+	 color:white!important;
+}
+
+
