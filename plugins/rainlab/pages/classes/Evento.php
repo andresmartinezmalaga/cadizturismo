@@ -239,7 +239,7 @@ class Evento extends ContentBase
     // sort ok
     public function getEventsCategories(){
       
-      $catgeventos = Catgeventos::all();
+      $catgeventos = Catgeventos::orderBy('name')->get();
 
       $result = collect();
 
