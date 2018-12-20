@@ -3821,7 +3821,9 @@ footer {
     font-family: AvenirNext-Medium;
     font-size: 18px;
     color: #9B9B9B;
-    line-height: 33px; }
+    line-height: 33px;
+    white-space: pre-line;
+     }
 
 .bussinesPage.llls section.desc {
   margin-top: 220px; }
