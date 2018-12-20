@@ -888,7 +888,8 @@ class StaticApp extends ComponentBase
 
                 $contador = 0;
                 foreach ($valores as $valor) {
-                    if(strpos(strtolower($iEmpresa->name), strtolower($valor)) !== false) {
+                    //if(strpos(strtolower($iEmpresa->name), strtolower($valor)) !== false) {
+                    if(strpos(str_slug($iEmpresa->name), str_slug($valor)) !== false) {
                         $contador = $contador+1;
                     }
                 }
