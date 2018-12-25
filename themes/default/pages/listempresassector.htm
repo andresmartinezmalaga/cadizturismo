@@ -37,6 +37,8 @@ is_hidden = 0
     } else {
         $search = 'todas-las-empresas';
     }
+
+    $this['type'] = $this->staticApp->getTipoBySlug($this->param('type'));
     
     $this['numPag'] = ceil($this->staticApp->empresasFindCount($this->param('type'),$ubicacion,$search)/$this['numberReg']);
     $this['empresas'] = $this->staticApp->empresasFindPag($this->param('type'),$ubicacion,$search, $this['startPag'],$this['numberReg']);
