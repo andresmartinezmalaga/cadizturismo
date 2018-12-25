@@ -36,6 +36,42 @@ is_hidden = 0
 
 	}
 
+  function onFindEmpresa(){
+
+    //$type = $_POST['type'];
+    $type = $this->param('type');
+    if (isset($_POST['location'])){
+       $pubicacion = $_POST['location'];
+    }
+
+    $psearch = $_POST['search'];
+
+    if(isset($pubicacion[0])){
+      $ubicacion = implode('_', $pubicacion);
+    } else {
+      $ubicacion = 'todos-los-municipios';
+    }
+
+    if($psearch == ''){
+        $search = 'todas-las-empresas';
+    } else {
+        $search = str_replace(' ','_',$psearch);
+    }
+
+    $this['startPag'] = 1;
+    $this['numberReg'] = 9;
+
+    $this['empresas'] = $this->staticApp->empresasFindPag($type,$ubicacion,$search,$this['startPag'],$this['numberReg']);   
+    $this['empcount'] = $this->staticApp->empresasFindCount($type, $ubicacion, $search);
+    $this['numPag'] = ceil($this->staticApp->empresasFindCount($type,$ubicacion,$search)/$this['numberReg']);
+
+    return [
+        '#prtlEmpresasl' => $this->renderPartial('empresas'),
+        '#prtlPagination' => $this->renderPartial('pagination')
+    ];
+
+  }
+
   function onPaginate(){
 
         $this['startPag'] = $_POST['ipag'];
