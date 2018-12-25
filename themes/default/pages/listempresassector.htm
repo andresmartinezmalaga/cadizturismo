@@ -1,5 +1,5 @@
-title = "allEvents"
-url = "/empresas-por-sector/:type/"
+title = "listEmpresa"
+url = "/empresas-por-sector/:type/:location?/:search?"
 layout = "dinamic"
 is_hidden = 0
 
@@ -26,19 +26,54 @@ is_hidden = 0
     $this['idm'] = \App::getLocale();
     $this['numberReg'] = 9;
 
-    $this['numPag'] = ceil($this->staticApp->empresasFindTypeCount($this->param('type'))/$this['numberReg']);
-    $this['empresas'] = $this->staticApp->empresasFindByTypePag($this->param('type'), $this['startPag'],$this['numberReg']);
+    if($this->param('location')){
+          $ubicacion = $this->param('location');
+    } else {
+      $ubicacion = 'todos-los-municipios';
+    }
 
-    $this['type'] = $this->staticApp->getTipoBySlug($this->param('type'));
-
+    if($this->param('search')){
+        $search = $this->param('search');
+    } else {
+        $search = 'todas-las-empresas';
+    }
+    
+    $this['numPag'] = ceil($this->staticApp->empresasFindCount($this->param('type'),$ubicacion,$search)/$this['numberReg']);
+    $this['empresas'] = $this->staticApp->empresasFindPag($this->param('type'),$ubicacion,$search, $this['startPag'],$this['numberReg']);
+    $this['empcount'] = $this->staticApp->empresasFindCount($this->param('type'),$ubicacion,$search);
+    
     $this['ptitle'] = 'Cádiz | Empresas';
     $this['metaTitle'] = 'Cádiz | Empresas';
 
 	}
 
-  function onFindEmpresa(){
+	function onFindEmpresa(){
+    $aLang = App::getLocale();
+    $type = $this->param('type');
+    if (isset($_POST['location'])){
+        $pubicacion = $_POST['location'];
+    }
+    
+    $psearch = $_POST['search'];
 
-    //$type = $_POST['type'];
+    if($pubicacion[0]){
+      $ubicacion = implode('_', $pubicacion);
+    } else {
+      $ubicacion = 'todos-los-municipios';
+    }
+
+    if($psearch == ''){
+        $search = 'todas-las-empresas';
+    } else {
+        $search = str_replace(' ','_',$psearch);
+    }
+
+    $empcount = $this->staticApp->empresasFindCount($type, $ubicacion, $search);
+    $empresas = $this->staticApp->empresasFindPag($type,$ubicacion,$search,1,9);
+
+    return Redirect::to($aLang.'/empresas-por-sector/'.$type.'/'.$ubicacion.'/'.$search);
+
+    /*
     $type = $this->param('type');
     if (isset($_POST['location'])){
        $pubicacion = $_POST['location'];
@@ -68,17 +103,34 @@ is_hidden = 0
     return [
         '#prtlEmpresasl' => $this->renderPartial('empresas'),
         '#prtlPagination' => $this->renderPartial('pagination')
-    ];
+    ];*/
 
   }
 
   function onPaginate(){
-
+        
         $this['startPag'] = $_POST['ipag'];
         $this['numberReg'] = 9;
 
-        $this['numPag'] = ceil($this->staticApp->empresasFindTypeCount($this->param('type'))/$this['numberReg']);
-        $this['empresas'] = $this->staticApp->empresasFindByTypePag($this->param('type'), $this['startPag'],$this['numberReg']);
+        if($this->param('location')){
+          $ubicacion = $this->param('location');
+        } else {
+          $ubicacion = 'todos-los-municipios';
+        }
+
+        if($this->param('search')){
+            $search = $this->param('search');
+        } else {
+            $search = 'todas-las-empresas';
+        }
+
+        //return dd('-'.$this->param('type').'-'.$ubicacion.'-'.$search);
+
+        $this['numPag'] = ceil($this->staticApp->empresasFindCount($this->param('type'),$ubicacion,$search)/$this['numberReg']);
+        $this['empresas'] = $this->staticApp->empresasFindPag($this->param('type'),$ubicacion,$search, $this['startPag'],$this['numberReg']);
+        $this['empcount'] = $this->staticApp->empresasFindCount($this->param('type'),$ubicacion,$search);
+
+        //return dd($this['empresas']);
 
         return [
             '#prtlEmpresasl' => $this->renderPartial('empresas'),
@@ -88,7 +140,6 @@ is_hidden = 0
 
 ?>
 ==
-
 <!-- HEADER -->
 <div id="header-sector" class="header-search search-exp bussinesPage" style="background-image: url({{type.image}})">
 
@@ -98,13 +149,12 @@ is_hidden = 0
 
         <img class="brush" src="{{preurl}}/storage/app/media/uploaded-files/templates/brush-header.svg" alt="">
     </div>
-    <!-- SEARCH -->
+     <!-- SEARCH -->
     <div id='prtlSearch'>
       <div id ="listEmp">
-        {% partial "site/searchempresa" %}
+        {% partial "site/searchempresab" %}
       </div>
     </div>
-
   </div>
 </div>
 
@@ -115,3 +165,11 @@ is_hidden = 0
 <div id='prtlPagination'>
   {% partial "pagination" %}
 </div>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('html, body').animate({
+				scrollTop: $(".search-title-container").offset().top
+		}, 2000);
+});
+</script>

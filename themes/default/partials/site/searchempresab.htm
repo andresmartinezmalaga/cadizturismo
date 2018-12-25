@@ -1,0 +1,70 @@
+==
+
+<?php
+
+    function onStart()
+    {
+        if (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false) {
+          $this['preurl'] = '/cadizturismo';
+        } else {
+          $this['preurl'] = '';
+        }
+
+        $this['lang']=\App::getLocale();
+
+        if($this['lang']==''){
+          $this['lang']='es';
+        }
+
+        $this['municipalities'] = $this->staticApp->getMunicipalities();
+        $this['types'] = $this->staticApp->getTiposEmpresas();
+
+
+    }
+?>
+
+==
+
+<div id="search-event" class="search-bar-container" style="margin: auto">
+          <div class="search-bar">
+            <form data-request="onFindEmpresa">
+              
+              <div id="empresa-inputs-container" class="inputs-container">
+              
+                <div id="empresa-search" class="days-container empresa-search">
+                  <input id="inpSearch" type="text" name="search" placeholder="¿Qué estás buscando?" value="">
+                  <span class="select-title">{{ 'NOMBRE DE EMPRESA'|_ }}</span>
+                </div>
+              
+                <div id="empresa-category" class="days-container">
+                  <select id="sltType" class="custom-select select-days" name="type">
+                    {% for key,value in types %}
+                        <option value="{{str_slug(value)}}">{{ value |_ }}</option>
+                    {% endfor %}
+                    <option value="todos-los-tipos" selected=>{{'Todas las empresas'|_ }}</option>
+                  </select>
+                  <span class="select-title">{{ 'TIPO DE EMPRESA'|_ }}</span>
+                </div>
+
+                <div id="empresa-location" class="type-container">
+                  <select id="sltLocation" class="custom-select select-type" name="location[]" multiple="multiple">
+                    {% for key,value in municipalities %}
+                        <option value="{{str_slug(value)}}">{{value}}</option>
+                    {% endfor %}
+                    <option class="all-municipios" value="todos-los-municipios" selected=>{{'Todos los municipios'|_ }}</option>
+                  </select>
+                  <span class="select-title">{{ 'UBICACIÓN'|_ }}</span>
+              
+                </div>
+              </div>
+              
+              <div class="button-container">
+                <input id="bscEmpresab" type="submit" value="{{ 'Buscar empresa'|_ }}">
+              </div>
+            
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
