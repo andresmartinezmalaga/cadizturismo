@@ -31,19 +31,9 @@
               
               <div id="empresa-inputs-container" class="inputs-container">
               
-                <div id="empresa-search" class="days-container empresa-search">
+                <div style='width: 100%!important' id="empresa-search" class="days-container empresa-search">
                   <input id="inpSearch" type="text" name="search" placeholder="¿Qué estás buscando?" value="">
                   <span class="select-title">{{ 'NOMBRE DE EMPRESA'|_ }}</span>
-                </div>
-              
-                <div id="empresa-category" class="days-container">
-                  <select id="sltType" class="custom-select select-days" name="type">
-                    {% for key,value in types %}
-                        <option value="{{str_slug(value)}}">{{ value |_ }}</option>
-                    {% endfor %}
-                    <option value="todos-los-tipos" selected=>{{'Todas las empresas'|_ }}</option>
-                  </select>
-                  <span class="select-title">{{ 'TIPO DE EMPRESA'|_ }}</span>
                 </div>
 
                 <div id="empresa-location" class="type-container">
