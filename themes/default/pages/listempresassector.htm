@@ -72,43 +72,7 @@ is_hidden = 0
     
     $this['empcount'] = $this->staticApp->empresasFindCount($type, $ubicacion, $search);
 
-    //$empcount = $this->staticApp->empresasFindCount($type, $ubicacion, $search);
-    //$empresas = $this->staticApp->empresasFindPag($type,$ubicacion,$search,1,9);
-
     return Redirect::to($aLang.'/empresas-por-sector/'.$type.'/'.$ubicacion.'/'.$search);
-
-    /*
-    $type = $this->param('type');
-    if (isset($_POST['location'])){
-       $pubicacion = $_POST['location'];
-    }
-
-    $psearch = $_POST['search'];
-
-    if(isset($pubicacion[0])){
-      $ubicacion = implode('_', $pubicacion);
-    } else {
-      $ubicacion = 'todos-los-municipios';
-    }
-
-    if($psearch == ''){
-        $search = 'todas-las-empresas';
-    } else {
-        $search = str_replace(' ','_',$psearch);
-    }
-
-    $this['startPag'] = 1;
-    $this['numberReg'] = 9;
-
-    $this['empresas'] = $this->staticApp->empresasFindPag($type,$ubicacion,$search,$this['startPag'],$this['numberReg']);   
-    $this['empcount'] = $this->staticApp->empresasFindCount($type, $ubicacion, $search);
-    $this['numPag'] = ceil($this->staticApp->empresasFindCount($type,$ubicacion,$search)/$this['numberReg']);
-
-    return [
-        '#prtlEmpresasl' => $this->renderPartial('empresas'),
-        '#prtlPagination' => $this->renderPartial('pagination')
-    ];*/
-
   }
 
   function onPaginate(){
@@ -128,13 +92,9 @@ is_hidden = 0
             $search = 'todas-las-empresas';
         }
 
-        //return dd('-'.$this->param('type').'-'.$ubicacion.'-'.$search);
-
         $this['numPag'] = ceil($this->staticApp->empresasFindCount($this->param('type'),$ubicacion,$search)/$this['numberReg']);
         $this['empresas'] = $this->staticApp->empresasFindPag($this->param('type'),$ubicacion,$search, $this['startPag'],$this['numberReg']);
         $this['empcount'] = $this->staticApp->empresasFindCount($this->param('type'),$ubicacion,$search);
-
-        //return dd($this['empresas']);
 
         return [
             '#prtlEmpresasl' => $this->renderPartial('empresas'),
