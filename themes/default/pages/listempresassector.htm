@@ -144,21 +144,22 @@ is_hidden = 0
 
 ?>
 ==
+
 <!-- HEADER -->
-<div id="header-sector" class="header-search search-exp bussinesPage" style="background-image: url({{type.image}})">
+<div id="search-empresas" class="header-general search-empresas bussinesPage" style="background-image: url({{type.image}})">
 
   <div class="header-container big-div">
     <div id="exp-header" class="header-txt">
       <p class="txt"><span id="exp" class="first-word">{{type.name}}</span></p>
-
         <img class="brush" src="{{preurl}}/storage/app/media/uploaded-files/templates/brush-header.svg" alt="">
     </div>
-     <!-- SEARCH -->
+    <!-- SEARCH -->
     <div id='prtlSearch'>
       <div id ="listEmp">
-        {% partial "site/searchempresab" %}
+        {% partial "site/searchempresa" %}
       </div>
     </div>
+
   </div>
 </div>
 
