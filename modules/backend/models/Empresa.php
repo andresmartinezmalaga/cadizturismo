@@ -220,29 +220,29 @@ class Empresa extends Model
 
     public function afterUpdate()
     {
-        //$iEmpresa = Empresa::find($this->id);
+        $iEmpresa = Empresa::find($this->id);
         if($this->catAlminarOld != $this->catAlminar && $this->catAlminarOld != 0){
            $sEmpresa = new Empresa();
-           $sEmpresa->slug = $this->slug;
-           $sEmpresa->type_id = $this->type_id;
-           $sEmpresa->name = $this->name;
-           $sEmpresa->tlf = $this->tlf;
-           $sEmpresa->tlf2 = $this->tlf2;
-           $sEmpresa->fax = $this->fax;
-           $sEmpresa->cp = $this->cp;
-           $sEmpresa->email = $this->email;
-           $sEmpresa->email2 = $this->email2;
-           $sEmpresa->municipality = $this->municipality;
-           $sEmpresa->mslug = $this->mslug;
-           $sEmpresa->url_map = $this->url_map;
-           $sEmpresa->title = $this->title;
-           $sEmpresa->description = $this->description;
-           $sEmpresa->info = $this->info;
-           $sEmpresa->extract = $this->extract;
-           $sEmpresa->site = $this->site;
-           $sEmpresa->direccion = $this->direccion;
-           $sEmpresa->movil = $this->movil;
-           $sEmpresa->catAlminar = $this->catAlminar;
+           $sEmpresa->slug = $iEmpresa->slug;
+           $sEmpresa->type_id = $iEmpresa->type_id;
+           $sEmpresa->name = $iEmpresa->name;
+           $sEmpresa->tlf = $iEmpresa->tlf;
+           $sEmpresa->tlf2 = $iEmpresa->tlf2;
+           $sEmpresa->fax = $iEmpresa->fax;
+           $sEmpresa->cp = $iEmpresa->cp;
+           $sEmpresa->email = $iEmpresa->email;
+           $sEmpresa->email2 = $iEmpresa->email2;
+           $sEmpresa->municipality = $iEmpresa->municipality;
+           $sEmpresa->mslug = $iEmpresa->mslug;
+           $sEmpresa->url_map = $iEmpresa->url_map;
+           $sEmpresa->title = $iEmpresa->title;
+           $sEmpresa->description = $iEmpresa->description;
+           $sEmpresa->info = $iEmpresa->info;
+           $sEmpresa->extract = $iEmpresa->extract;
+           $sEmpresa->site = $iEmpresa->site;
+           $sEmpresa->direccion = $iEmpresa->direccion;
+           $sEmpresa->movil = $iEmpresa->movil;
+           $sEmpresa->catAlminar = $iEmpresa->catAlminar;
            $sEmpresa->save();
         }
     }    
