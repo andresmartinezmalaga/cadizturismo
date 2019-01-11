@@ -220,8 +220,9 @@ class Empresa extends Model
 
     public function afterUpdate()
     {
+        //$iEmpresa = Empresa::find($this->id);
         if($this->catAlminarOld != $this->catAlminar){
-           $sEmpresa = new Empresad();
+           $sEmpresa = new Empresa();
            $sEmpresa->slug = $this->slug;
            $sEmpresa->type_id = $this->type_id;
            $sEmpresa->name = $this->name;
