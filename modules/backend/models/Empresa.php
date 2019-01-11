@@ -243,8 +243,10 @@ class Empresa extends Model
            $sEmpresa->direccion = $this->direccion;
            $sEmpresa->movil = $this->movil;
            $sEmpresa->catAlminar = $this->catAlminarOld;
-           $sEmpresa->catAlminarOld = $this->catAlminarOld;
+           $sEmpresa->catAlminarOld = 0;
            $sEmpresa->save();
+           $iEmpresa->catAlminarOld = 0;
+           $iEmpresa->save();
         }
     }    
 
