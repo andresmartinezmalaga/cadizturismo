@@ -247,6 +247,7 @@ class Empresa extends Model
            $sEmpresa->save();
            $iEmpresa->catAlminarOld = 0;
            $iEmpresa->save();
+           $sEmpresa->delete();
         }
     }    
 
