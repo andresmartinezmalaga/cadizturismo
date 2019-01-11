@@ -212,4 +212,37 @@ class Empresa extends Model
        $sEmpresa->save();
     }
 
+    public function beforeUpdate()
+    {
+        $this->catAlminarOld = $this->catAlminar;
+    }
+
+    public function afterUpdate()
+    {
+        if($this->catAlminarOld != $this->catAlminar){
+           $sEmpresa = new Empresad();
+           $sEmpresa->slug = $this->slug;
+           $sEmpresa->type_id = $this->type_id;
+           $sEmpresa->name = $this->name;
+           $sEmpresa->tlf = $this->tlf;
+           $sEmpresa->tlf2 = $this->tlf2;
+           $sEmpresa->fax = $this->fax;
+           $sEmpresa->cp = $this->cp;
+           $sEmpresa->email = $this->email;
+           $sEmpresa->email2 = $this->email2;
+           $sEmpresa->municipality = $this->municipality;
+           $sEmpresa->mslug = $this->mslug;
+           $sEmpresa->url_map = $this->url_map;
+           $sEmpresa->title = $this->title;
+           $sEmpresa->description = $this->description;
+           $sEmpresa->info = $this->info;
+           $sEmpresa->extract = $this->extract;
+           $sEmpresa->site = $this->site;
+           $sEmpresa->direccion = $this->direccion;
+           $sEmpresa->movil = $this->movil;
+           $sEmpresa->catAlminar = $this->catAlminar;
+           $sEmpresa->save();
+        }
+    }    
+
 }
