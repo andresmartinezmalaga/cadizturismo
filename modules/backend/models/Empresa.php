@@ -214,7 +214,8 @@ class Empresa extends Model
 
     public function beforeUpdate()
     {
-        $this->catAlminarOld = $this->catAlminar;
+         $iEmpresa = Empresa::find($this->id);
+         $this->catAlminarOld = $iEmpresa->catAlminar;
     }
 
     public function afterUpdate()
