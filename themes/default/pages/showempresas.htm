@@ -41,8 +41,11 @@ is_hidden = 0
 ?>
 ==
 <!-- HEADER -->
+{% if empresa.image != '' %}
 <div class="header-empresa bussinesPage sxxx" style="background-image: url({{empresa.image}})">
-
+{% else %}
+<div class="header-empresa bussinesPage sxxx" style="background-image: url({{preurl}}/storage/app/uploads/public/5c3/889/642/5c3889642d2a8430997626.jpg)">
+{% endif %}
     <div class="header-container">
         <div id="exp-header" class="header-txt">
             <p class="txt"><span id="exp" class="first-word">{{empresa.name}}</span></p>
