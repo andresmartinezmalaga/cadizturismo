@@ -41,7 +41,12 @@
 		<div class="event">
 			<div class="overlay-img">
 				<br>
-			</div><img class="rec-img fr-fic fr-dii" src="{{empresa.image}}">
+			</div>
+			{% if empresa.image != '' %}
+			<img class="rec-img fr-fic fr-dii" src="{{empresa.image}}">
+			{% else %}
+			<img class="rec-img fr-fic fr-dii" src="{{preurl}}/storage/app/uploads/public/5c3/889/642/5c3889642d2a8430997626.jpg">
+			{% endif %}
 			<div class="txt-container">
 
 				<p class="name">{{empresa.name | capitalize}}</p><img class="separator fr-fic fr-dii" src="{{preurl}}/storage/app/media/uploaded-files/templates/small-yellow-separator.svg">
