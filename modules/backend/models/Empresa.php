@@ -189,6 +189,7 @@ class Empresa extends Model
     {       
        //$this->image->delete();
        $sEmpresa = new Empresad();
+       $sEmpresa->id = $this->id;
        $sEmpresa->slug = $this->slug;
        $sEmpresa->type_id = $this->type_id;
        $sEmpresa->name = $this->name;
