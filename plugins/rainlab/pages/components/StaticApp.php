@@ -1793,7 +1793,8 @@ class StaticApp extends ComponentBase
                 $forget = true;
                 foreach ($aInterests as $interest) {
                     if($forget == true){
-                        if(strpos($result->interests, $interest)!==false){                            
+                        if(strpos(str_slug($result->interests), str_slug($interest))!==false){ 
+                        //if(strpos($result->interests, $interest)!==false){                            
                             $forget = false;
                         }
                     }      
@@ -1913,7 +1914,8 @@ class StaticApp extends ComponentBase
                 $forget = true;
                 foreach ($aInterests as $interest) {
                     if($forget == true){
-                        if(strpos($result->interests, $interest)!==false){                            
+                        if(strpos(str_slug($result->interests),str_slug($interests))!==false){ 
+                        //if(strpos($result->interests, $interest)!==false){                            
                             $forget = false;
                         }
                     }      
