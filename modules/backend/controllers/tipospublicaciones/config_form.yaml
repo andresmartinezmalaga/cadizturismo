@@ -1,0 +1,16 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+name: Tipo de intereses de publicaciones
+form: ~/modules/backend/models/tiposintereses/fields.yaml
+modelClass: Backend\Models\Tiposintereses
+defaultRedirect: backend/tiposintereses
+
+create:
+    redirect: backend/tiposintereses/update/:id
+    redirectClose: backend/tiposintereses
+
+update:
+    redirect: backend/tiposintereses
+    redirectClose: backend/tiposintereses

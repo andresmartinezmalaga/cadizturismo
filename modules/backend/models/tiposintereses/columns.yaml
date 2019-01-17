@@ -1,0 +1,9 @@
+# ===================================
+#  Column Definitions
+# ===================================
+
+columns:
+
+    name:
+        label: Nombre del tipo de interes
+        searchable: true
