@@ -5,5 +5,5 @@
 columns:
 
     name:
-        label: Nombre del tipo de interes
+        label: Nombre del tipo de interés
         searchable: true
