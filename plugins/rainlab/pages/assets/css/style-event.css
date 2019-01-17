@@ -47,7 +47,7 @@
     .header-event .header-txt .brush, .header-empresa .header-txt .brush {
       margin-top: -14px;
       margin-bottom: 150px; }
-    .header-event .header-txt .txt, .header-empresa .header-txt .txt {
+    .header-event .header-txt .txt {
       font-size: 144px;
       transform: rotate(-9deg);
       text-align: center;
