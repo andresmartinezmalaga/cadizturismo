@@ -11,7 +11,7 @@ use Model;
  *
  * @author Andrés Martínez
  */
-class Tiposintereses extends Model
+class Tipospublicaciones extends Model
 {
     /**
      * @var string The database table used by the model.
