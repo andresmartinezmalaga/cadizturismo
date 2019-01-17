@@ -3,9 +3,9 @@
 # ===================================
 
 title: backend::lang.user.list_title
-list: ~/modules/backend/models/tiposintereses/columns.yaml
-modelClass: Backend\Models\Tiposintereses
-recordUrl: backend/tiposintereses/update/:id
+list: ~/modules/backend/models/tipospublicaciones/columns.yaml
+modelClass: Backend\Models\Tipospublicaciones
+recordUrl: backend/tipospublicaciones/update/:id
 noRecordsMessage: backend::lang.list.no_records
 recordsPerPage: 20
 showSetup: true

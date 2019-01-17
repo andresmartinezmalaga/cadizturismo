@@ -3,14 +3,14 @@
 # ===================================
 
 name: Tipo de intereses de publicaciones
-form: ~/modules/backend/models/tiposintereses/fields.yaml
-modelClass: Backend\Models\Tiposintereses
-defaultRedirect: backend/tiposintereses
+form: ~/modules/backend/models/tipospublicaciones/fields.yaml
+modelClass: Backend\Models\Tipospublicaciones
+defaultRedirect: backend/tipospublicaciones
 
 create:
-    redirect: backend/tiposintereses/update/:id
-    redirectClose: backend/tiposintereses
+    redirect: backend/tipospublicaciones/update/:id
+    redirectClose: backend/tipospublicaciones
 
 update:
-    redirect: backend/tiposintereses
-    redirectClose: backend/tiposintereses
+    redirect: backend/tipospublicaciones
+    redirectClose: backend/tipospublicaciones
