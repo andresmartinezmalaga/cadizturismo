@@ -30,7 +30,7 @@ use Backend\Models\Intereses;
 use Backend\Models\Tiposvisitas;
 use Backend\Models\Catgeventos;
 use Backend\Models\Catgrutas;
-
+use Backend\Models\Tipospublicaciones;
 
 use RainLab\Translate\Models\Locale;
 use RainLab\Translate\Classes\MLCmsObject;
@@ -1705,7 +1705,20 @@ class StaticApp extends ComponentBase
 
     // sort ok
     public function getPublicationsInterests(){
-        return [
+       
+
+        $tipospublicaciones = Tipospublicaciones::orderBy('name')->get();
+
+        $result = collect();
+
+        foreach ($tipospublicaciones as $itipospublicacion) {
+            $result->put($itipospublicacion->id, ucwords($itipospublicacion->name));
+        }
+
+        return $result;
+
+ 
+        /*return [
             'aventura' => 'Aventura',
             'cultura' => 'Cultura',
             'gastronomía' => 'Gastronomía',
@@ -1713,7 +1726,7 @@ class StaticApp extends ComponentBase
             'playa' => 'Playa',
             'tradición' => 'Tradición'
 
-        ];
+        ];*/
     }
 
     public function publicacionesFindPag($search, $type, $interests, $lang, $pag = 1, $number = 1){

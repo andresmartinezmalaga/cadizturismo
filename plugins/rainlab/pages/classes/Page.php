@@ -25,6 +25,8 @@ use ApplicationException;
 // Andrés Martinez : add use class for create templates for pages
 use Backend\Classes\PagesTemplates;
 
+use Backend\Models\Tipospublicaciones;
+use Backend\Models\Catgrutas;
 /**
  * Represents a static page.
  *
@@ -223,7 +225,18 @@ class Page extends ContentBase
 
     // sort ok
     public function getPublicationsInterests(){
-        return [
+       
+        $tipospublicaciones = Tipospublicaciones::orderBy('name')->get();
+ 
+        $result = collect();
+
+        foreach ($tipospublicaciones as $itipospublicacion) {
+            $result->put($itipospublicacion->name,ucwords($itipospublicacion->name));
+        }
+
+        return $result->toArray();
+
+        /*return[
             'aventura' => 'Aventura',
             'cultura' => 'Cultura',
             'gastronomía' => 'Gastronomía',
@@ -231,7 +244,7 @@ class Page extends ContentBase
             'playa' => 'Playa',
             'tradición' => 'Tradición'
 
-        ];
+        ];*/
     }
 
     // sort ok
