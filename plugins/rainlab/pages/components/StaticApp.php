@@ -1923,11 +1923,13 @@ class StaticApp extends ComponentBase
 
         if($interests != 'todos-los-intereses'){
             $aInterests = explode("_", $interests);
+           
+
             foreach ($results as $key => $result) {
                 $forget = true;
                 foreach ($aInterests as $interest) {
                     if($forget == true){
-                        if(strpos(str_slug($result->interests),str_slug($interests))!==false){ 
+                        if(strpos(str_slug($result->interests),str_slug($interest))!==false){ 
                         //if(strpos($result->interests, $interest)!==false){                            
                             $forget = false;
                         }
