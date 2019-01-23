@@ -143,11 +143,6 @@
       transform: rotate(-9deg);
       text-align: center;
       font-family: Ryssa;
-      display:block;
-      text-transform: lowercase;
-      &:first-letter {
-        text-transform: uppercase;
-      }
     }
   }
   .send-info {
