@@ -72,22 +72,23 @@ code = "redes-sociales"
     $this['publications'] = $this->staticApp->publicacionesFindPag($search,$type,$interests,$lang,$this['startPag'],$this['numberReg']);
     $this['pubcount'] = $this->staticApp->publicacionesFindC($search,$type,$interests,$lang);
 
-    return [
+    return Redirect::to($aLang.'/listado-de-publicaciones/'.$search.'/'.$type.'/'.$interests.'/'.$lang);
+
+    /*return [
         '#prtlPublicationsl' => $this->renderPartial('publications'),
         '#prtlPagination' => $this->renderPartial('pagination')
-    ];
+    ];*/
 
   }
 
   function onPaginate(){
-
+  
     $this['startPag'] = $_POST['ipag'];
     $this['numberReg'] = 6;
-
     $this['numPag'] = ceil($this->staticApp->publicacionesFindC($this->param('search'),$this->param('type'),$this->param('interests'),$this->param('lang'))/$this['numberReg']);
     $this['publications'] = $this->staticApp->publicacionesFindPag($this->param('search'),$this->param('type'),$this->param('interests'),$this->param('lang'),$this['startPag'],$this['numberReg']);
     $this['pubcount'] = $this->staticApp->publicacionesFindC($this->param('search'),$this->param('type'),$this->param('interests'),$this->param('lang'));
-
+    
     return [
         '#prtlPublicationsl' => $this->renderPartial('publications'),
         '#prtlPagination' => $this->renderPartial('pagination')

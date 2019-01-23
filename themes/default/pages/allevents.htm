@@ -50,16 +50,20 @@ is_hidden = 0
       $category = 'todas-las-categorias';
     }
 
-    $edaystart = explode('.', $datepicker[0]);
-    $edayend = explode('.', $datepicker[1]);
+    if(isset($datepicker) && isset($datepicker[0]) && isset($datepicker[1])){
+      $edaystart = explode('.', $datepicker[0]);
+      $edayend = explode('.', $datepicker[1]);
 
-    $daystart = (new Date(intval($edaystart[2]).'-'.intval($edaystart[1]).'-'.intval($edaystart[0])))->format('d-m-Y');
-    $dayend = (new Date(intval($edayend[2]).'-'.intval($edayend[1]).'-'.intval($edayend[0])))->format('d-m-Y');
+      $daystart = (new Date(intval($edaystart[2]).'-'.intval($edaystart[1]).'-'.intval($edaystart[0])))->format('d-m-Y');
+      $dayend = (new Date(intval($edayend[2]).'-'.intval($edayend[1]).'-'.intval($edayend[0])))->format('d-m-Y');
 
-  	$aLang = App::getLocale();
-    $events = $this->staticApp->eventFind($category,$daystart,$dayend,$location);
+  	  $aLang = App::getLocale();
+      $events = $this->staticApp->eventFind($category,$daystart,$dayend,$location);
+
+      return Redirect::to($aLang.'/listado-de-eventos'.'/'.str_slug($category).'/'.$daystart.'/'.$dayend.'/'.str_slug($location));
+    } 
     
-    return Redirect::to($aLang.'/listado-de-eventos'.'/'.str_slug($category).'/'.$daystart.'/'.$dayend.'/'.str_slug($location));
+    //return Redirect::to($aLang.'/listado-de-eventos'.'/'.str_slug($category).'/'.$daystart.'/'.$dayend.'/'.str_slug($location));
  
   }
 

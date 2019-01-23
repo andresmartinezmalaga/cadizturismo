@@ -43,21 +43,27 @@ is_hidden = 0
         $location = $_POST['location'];
         $datepicker = explode('-', $_POST['datepicker']);
         
-        $edaystart = explode('.', $datepicker[0]);
-        $edayend = explode('.', $datepicker[1]);
+        if(isset($datepicker) && isset($datepicker[0]) && isset($datepicker[1])){
 
-        $daystart = (new Date(intval($edaystart[2]).'-'.intval($edaystart[1]).'-'.intval($edaystart[0])))->format('d-m-Y');
-        $dayend = (new Date(intval($edayend[2]).'-'.intval($edayend[1]).'-'.intval($edayend[0])))->format('d-m-Y');
+          $edaystart = explode('.', $datepicker[0]);
+          $edayend = explode('.', $datepicker[1]);
 
-        if($category == 'todas-las-categorias'){
-          $category = 'all';
-        }
+          $daystart = (new Date(intval($edaystart[2]).'-'.intval($edaystart[1]).'-'.intval($edaystart[0])))->format('d-m-Y');
+          $dayend = (new Date(intval($edayend[2]).'-'.intval($edayend[1]).'-'.intval($edayend[0])))->format('d-m-Y');
 
-        if($location == 'todos-los-municipios'){
-          $location = 'all';
-        }
+          if($category == 'todas-las-categorias'){
+            $category = 'all';
+          }
+
+          if($location == 'todos-los-municipios'){
+            $location = 'all';
+          }
           
-        $this['events'] = $this->staticApp->eventFind($category,$daystart,$dayend,$location);
+          $this['events'] = $this->staticApp->eventFind($category,$daystart,$dayend,$location);
+
+        } else {
+           $this['events'] = [];
+        }
 
         return [
             '#prtlEventsl' => $this->renderPartial('events')
