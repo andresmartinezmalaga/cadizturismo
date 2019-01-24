@@ -10,7 +10,9 @@
               <input type="hidden" name = "iidm" value="{{idm}}">
               <button id="numPag1" class="btnNumPag" type="submit">1</button>
           </form>
-          <span>...</span>
+          {% if numPag > 3 %}
+            <span>...</span>
+          {% endif %}
       {% endif %}
 
       {% for i in (startPag-1)..numPag %}
@@ -32,7 +34,9 @@
       {% endfor %}
 
       {% if startPag < numPag-2 %}
-          <span>...</span>
+          {% if numPag > 3 %}
+            <span>...</span>
+          {% endif %}
           <form data-request="onPaginate">
               <input type="hidden" name = "ipag" value="{{numPag}}">
               <input type="hidden" name = "inumberReg" value="{{numberReg}}">
@@ -40,6 +44,16 @@
               <input type="hidden" name = "ipais" value="{{pais}}">
               <button id="numPag{{numPag}}" class="btnNumPag" type="submit">{{numPag}}</button>
           </form>          
+      {% endif %}
+
+      {% if startPag == numPag-2 %}
+          <form data-request="onPaginate">
+              <input type="hidden" name = "ipag" value="{{numPag}}">
+              <input type="hidden" name = "inumberReg" value="{{numberReg}}">
+              <input type="hidden" name = "iidm" value="{{idm}}">
+              <input type="hidden" name = "ipais" value="{{pais}}">
+              <button id="numPag{{numPag}}" class="btnNumPag" type="submit">{{numPag}}</button>
+          </form>    
       {% endif %}
 
     </div>
